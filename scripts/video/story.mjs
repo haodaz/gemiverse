@@ -11,7 +11,9 @@ const ENC = ["-c:v", "libx264", "-preset", "medium", "-crf", "18", "-pix_fmt", "
 // A still, moving slowly in toward (fx, fy).
 const still = (img, out, D, fx = 0.5, fy = 0.5, rate = 0.0006) => run(["-loop", "1", "-i", img, "-vf", `scale=3840:2160:force_original_aspect_ratio=increase,crop=3840:2160,zoompan=z='1+${rate}*on':x='iw*${fx}-(iw/zoom)*${fx}':y='ih*${fy}-(ih/zoom)*${fy}':d=${Math.ceil(D * 30)}:s=1920x1080:fps=30`, "-t", D.toFixed(2), ...ENC, out]);
 const clip = (src, out, D) => run(["-i", src, "-vf", "tpad=stop_mode=clone:stop_duration=6,scale=1920:1080", "-t", D.toFixed(2), ...ENC, out]);
-const PLAN = [["n1", "still", ART + "touch.jpg", 0.56, 0.56, 0.0011], ["n2", "clip", "room"], ["n3", "card", "budget"], ["n4", "clip", "ask"], ["n5", "card", "check"], ["n6", "card", "chart"], ["n7", "clip", "choose"], ["n8", "card", "deeds"], ["n9", "clip", "spaces"], ["n10", "still", ART + "both2.jpg", 0.5, 0.45, 0.0006]];
+// With FILM_ME=1 the opening and ending use stills made from the founder's own photo, kept outside this repo.
+const ME = process.env.FILM_ME ? "/Users/aisandbox/Documents/gem4/video/" : null;
+const PLAN = [["n1", "still", ME ? ME + "touch-me.jpg" : ART + "touch.jpg", ME ? 0.3 : 0.56, 0.6, 0.0011], ["n2", "clip", "room"], ["n3", "card", "budget"], ["n4", "clip", "ask"], ["n5", "card", "check"], ["n6", "card", "chart"], ["n7", "clip", "choose"], ["n8", "card", "deeds"], ["n9", "clip", "spaces"], ["n10", "still", ME ? ME + "both-me2.jpg" : ART + "both2.jpg", ME ? 0.62 : 0.5, 0.5, 0.0007]];
 fs.mkdirSync(B + "seg", { recursive: true }); for (const f of fs.readdirSync(B + "seg")) fs.unlinkSync(B + "seg/" + f);
 const browser = await puppeteer.launch({ executablePath: "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome", headless: "new", defaultViewport: { width: 1600, height: 900, deviceScaleFactor: 2.4 } });
 const page = await browser.newPage();
