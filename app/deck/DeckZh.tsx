@@ -84,7 +84,7 @@ export default function Deck({ onLang }: { onLang?: () => void }) {
       <div className="flex h-full flex-col">
         <div className="flex items-end justify-between gap-10"><div><Eyebrow>Gemini 4 纽约黑客松 · 赛道一，5 Sigma · 今天做的</Eyebrow><h1 className="mt-2 text-[4.6rem] font-bold leading-none tracking-tight">Gemiverse</h1></div>
           <p className="max-w-[46%] pb-2 text-xl leading-relaxed text-[#4a4356]">每个大学生都有一个 <b>Gemi</b>。它进入一个空间，在里面一天天更懂你；每天花的 token 很少，换来的东西却留得住。</p></div>
-        <div className="mt-4 min-h-0 flex-1"><Banner t={{ s1: ["一个 Gemi", "一个学生的 AI 投射"], s2: ["进入一个空间", "它能读懂、也能改变的小屋和校园"], s3: ["心智升维", "七条「你怎么选」的轴，每条都有宽度"], s4: ["token 拉长成时间", "每天只花一点；换来的东西一直留着"], day1: "第 1 天", later: "第 5 天", spent: "当天花掉的 Gem Star", stays: "留下来的：核对过的事实、它对你的了解", days: "天" }} /></div>
+        <div className="mt-4 min-h-0 flex-1"><Banner t={{ s1: ["一个 Gemi", "一个学生的 AI 投射"], s2: ["进入一个空间", "它能读懂、也能改变的小屋和校园"], s3: ["心智升维", "六种能力，每一种都站在下面那一种之上"], s4: ["token 拉长成时间", "每天只花一点；换来的东西一直留着"], minds: [["感知", "听你说话，看懂海报"], ["核对", "来源上找得到才算事实"], ["认识你", "七条「你怎么选」的轴，带宽度"], ["预测", "你选之前先封存一个猜测"], ["规划", "把预算花在最不了解的地方"], ["反思和创造", "日记里记下自己的错；攒星星；做东西"]], spent: "当天花掉的 Gem Star", stays: "留下来的：核对过的事实、它对你的了解", days: "天" }} /></div>
         <p className="mt-3 text-center text-2xl font-bold" style={{ color: "#7c4dce" }}>宁可漏掉，也不说错。</p>
       </div>) },
 
@@ -115,7 +115,7 @@ export default function Deck({ onLang }: { onLang?: () => void }) {
     { id: "基线", body: (
       <div className="h-full"><Eyebrow>问题一 · 基线是什么，好了多少</Eyebrow><H>对手是在同样页面上的一次模型调用。</H>
         <div className="mt-4 grid grid-cols-[1.25fr_1fr] gap-10">
-          <div><Bars yMax={0.1} yLabel="展示出来的错误事实 / 展示出来的事实" fmt={(v) => `${(v * 100).toFixed(1)}%`} h={330} groups={[
+          <div><Bars yMax={0.1} yLabel="错误率" fmt={(v) => `${(v * 100).toFixed(1)}%`} h={330} groups={[
             { label: `活动列表 · ${proof.listings.facts} 条事实`, bars: [{ name: "基线", value: L.baseline.error_rate, color: GREY }, { name: "我们", value: L.v3.error_rate, color: PUR }] },
             { label: `原始页面，第一次跑 · ${proof.pages.facts} 条事实`, bars: [{ name: "基线", value: P1.baseline.error_rate, color: GREY }, { name: "我们", value: P1.system.error_rate ?? P1.system_v1?.error_rate, color: RED }] },
             { label: "原始页面，修复之后", bars: [{ name: "基线", value: PG.baseline.error_rate, color: GREY }, { name: "基线+读取器", value: PG.baseline_visible.error_rate, color: "#8f879c" }, { name: "我们", value: PG.system_v2.error_rate, color: PUR }] }]} /></div>
@@ -186,12 +186,12 @@ export default function Deck({ onLang }: { onLang?: () => void }) {
 
     { id: "稀缺", body: (
       <div className="grid h-full grid-cols-[1.1fr_1fr] items-center gap-10">
-        <div><Eyebrow>为什么 Gemi 的预算很小</Eyebrow><H>去找宝贝，不要堆垃圾。</H>
+        <div><Eyebrow>为什么要给 Gemi 有限的预算，并让它自己演绎</Eyebrow><H>去找宝贝，不要堆垃圾。</H>
           <P>人的一天里，时间、精力和注意力都有限。Gemi 的一天里，Gem Star 的数量有限，而且它们是真实的 token。两者形状相同，所以它的选择能对应到真实的一天。</P>
           <ul className="mt-3"><Li><b>稀缺逼出真正要紧的问题：</b>今天什么值得做？没有上限的话，智能体会带回一千个活动，还说这是帮忙。</Li>
             <Li><b>不是每个学生都有无限的算力。</b>我们算的是一个 token 换来了什么，不是烧掉了多少。</Li>
             <Li><b>它可以选择不花。</b>它可以攒几天去做一件更大的事：一首歌要 6 颗，一个新空间要 12 颗。</Li>
-            <Li><b>你开口要的都免费。</b>星星只用在它自己决定去做的事上。</Li></ul></div>
+            <Li><b>你开口要的都免费。</b>星星只用在它自己决定去做的事上。</Li><Li><b>然后放手让它自己跑。</b>每天它自己排计划、花、攒，并写下理由，没有人指挥。有了上限，这件事才值得看，也才敢放手。</Li></ul></div>
         <table className="w-full"><tbody>
           <tr><Cell head w="46%">在真实的一天里</Cell><Cell head>在 Gemiverse 里</Cell></tr>
           <tr><Cell>时间、精力、注意力</Cell><Cell>Gem Star，分装两个钱袋：一个为你，一个为它自己</Cell></tr>

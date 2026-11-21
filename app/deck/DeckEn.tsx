@@ -161,11 +161,12 @@ export default function Deck({ onLang }: { onLang?: () => void }) {
 
     { id: "Scarcity", body: (
       <div className="grid h-full grid-cols-[1.1fr_1fr] items-center gap-10">
-        <div><Eyebrow>Why the Gemi has a small budget</Eyebrow><H>Find treasure. Do not pile up junk.</H>
+        <div><Eyebrow>Why we give the Gemi a limited budget, and let it play out on its own</Eyebrow><H>Find treasure. Do not pile up junk.</H>
           <P>A person&apos;s day has finite time, energy and attention. A Gemi&apos;s day has a finite number of Gem Stars, and they are real tokens. Same shape, so its choices map onto a real day.</P>
           <ul className="mt-3"><Li><b>Scarcity forces the question that matters:</b> what is worth doing today? With no limit, an agent brings back a thousand events and calls it help.</Li>
             <Li><b>Not every student owns unlimited compute.</b> We count what a token bought, not how many were burned.</Li>
             <Li><b>It may choose not to spend.</b> It can save for days toward one larger thing: a song costs 6, a new space 12.</Li>
+            <Li><b>Then we let it run.</b> Each day it plans, spends, saves and writes down why, with nobody steering. A limit is what makes that worth watching, and safe to allow.</Li>
             <Li><b>What you ask for is free.</b> Stars are only for what it decides to do on its own.</Li></ul></div>
         <table className="w-full"><tbody>
           <tr><Cell head w="46%">In a real day</Cell><Cell head>In the Gemiverse</Cell></tr>

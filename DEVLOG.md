@@ -218,3 +218,11 @@ Entry format:
 - **Gemini's part**: Argon is the baseline; Hydrogen fills; Decisions gates each field.
 - **Checked**: every number on the deck is imported from `lib/proof.json`, written by `scripts/proof-summary.mjs` from the run files. Curves on the mind slide call the same `step()` as the room. Each slide looked at in the browser at 1600×900.
 - **Failure**: the first raw-pages run lost to the baseline (9.6% against 8.7%): hidden `display:none` text was read and the gate confirmed it. After reading only visible text: 3.2% against 8.4%; the baseline with the same reader gets 4.3%, so most of the gain is the reader. 12 online-or-not errors remain unexplained.
+
+## 14:45 · Demo path tested; Gemi to Gemi; Chinese deck; cover banner
+- **Demo path, by API on inputs nobody prepared**: a mixed Chinese and English note came back verbatim with the need tied to the exact words (7 s); a trip returned 3 finds with no numbers in them and a seal; reveal recomputed the same hash; the poster was recognised as an event already in the base at 0.86 (11 s).
+- **Failure found**: a trip took 101 s because Carbon planned at medium thinking. Set to low: 9 to 15 s.
+- **Three unattended days** (`/api/day`): each day it planned, went out twice and saved 2 Gem Stars; on day 3 the bank reached 6 and it wrote a song with Lyria. 43 to 54 s a day.
+- **Gemi to Gemi** (`lib/server/meet.ts`, `/meet`, run kept in `base/runs/09-meet.json`): Carbon invents three simulated students, one with a pushy Gemi. Each Gemi (Hydrogen) sees only its own side. The Decisions API gates every message for private content and for promises made on the student's behalf, and checks each name card against what was actually sent. Run: 9 messages sent, 0 held, the pushy request was declined, 2 of 3 cards kept; one card was dropped for claiming a shared interest the conversation did not contain (0.36).
+- **Before / after**: the card check first judged the suggested next step too, which is never in the transcript, so 0 of 3 cards passed. Now it judges only what the card claims was said.
+- **Deck**: Chinese version behind a switch (`/deck?lang=zh`); cover is one picture in four stages: a Gemi, enters a space, its mind gains six capacities, tokens stretch into time.
