@@ -7,7 +7,7 @@ import { PRESETS } from "@/lib/demo";
 import { saveSchool, type SchoolId } from "@/lib/schools";
 
 type Day = { day: number; steps: any[]; trips: any[]; diary: string; tokens: number; spent: { for_you: number; for_itself: number }; saved: { for_you: number; for_itself: number };
-  metrics: { hits: number; shown: number; meanHalo: number; error: number; signRight: number; choices: number; kept: number }; stage: number; unlocked: string[]; beliefs: Record<string, { m: number; u: number }>; error?: string };
+  metrics: { hits: number; shown: number; meanHalo: number; error: number; signRight: number; choices: number; kept: number }; stage: number; unlocked: string[]; bank: number; song: { title: string; brief: string; mime: string; audio: string } | null; beliefs: Record<string, { m: number; u: number }>; error?: string };
 
 const STAGES = ["", "Unpacked", "Observer", "Scout", "Interlocutor", "Steward"];
 
@@ -38,7 +38,7 @@ export default function Admin() {
     if (!days.length) saveLog(school, []);
     for (let i = 0; i < n && !stop.current; i++) {
       const day = done.length + 1; setRunning(`Day ${day}: deciding, going out, the student chooses…`);
-      const r: Day = await fetch("/api/day", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ school, day, log }) }).then((x) => x.json()).catch(() => ({ error: "The day could not be run." } as any));
+      const r: Day = await fetch("/api/day", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ school, day, log, bank: done.length ? done[done.length - 1].bank : 0 }) }).then((x) => x.json()).catch(() => ({ error: "The day could not be run." } as any));
       if (r.error) { setRunning(r.error); return; }
       log = [...log, ...((r as any).events as LogEvent[])]; saveLog(school, log); saveSchool(school);       // the same private log the room reads
       done = [...done, r]; setDays(done);
@@ -100,7 +100,7 @@ export default function Admin() {
         {[...days].reverse().map((d) => (
           <section key={d.day} className="rounded-[24px] border-[3px] bg-[#fffaf0] p-5" style={{ borderColor: INK }}>
             <div className="flex items-baseline justify-between"><h2 className="text-lg font-bold">Day {d.day}</h2>
-              <span className="text-xs text-[#8a8296]">spent {d.spent.for_you} for the student, {d.spent.for_itself} for itself · saved {d.saved.for_you + d.saved.for_itself} · {d.tokens.toLocaleString()} tokens</span></div>
+              <span className="text-xs text-[#8a8296]">spent {d.spent.for_you} for the student, {d.spent.for_itself} for itself · savings {d.bank} · {d.tokens.toLocaleString()} tokens</span></div>
             <ol className="mt-3 space-y-3">{d.steps.map((s, i) => (
               <li key={i} className="rounded-2xl border-2 bg-white px-4 py-3 text-sm" style={{ borderColor: "#d9d0c0" }}>
                 <div className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-wider text-[#8a8296]"><span className="rounded-full px-2 py-0.5 text-white" style={{ background: s.by === "student" ? "#3d8fd1" : "#7c4dce" }}>{s.by === "student" ? "student" : s.mode ?? "act"}</span>{s.tool}{s.place ? ` · ${s.place}` : ""}{s.stars ? <span className="flex items-center">· {s.stars}<Icon name="star" size={14} /> {s.purse === "for_you" ? "for the student" : "its own"}</span> : null}{s.model ? ` · ${s.model}` : ""}</div>
@@ -111,6 +111,7 @@ export default function Admin() {
                   <td className="py-1.5 pr-2"><b>{r.title}</b><div className="text-[#8a8296]">{r.why}</div></td>
                   <td className="w-24 py-1.5 text-right tabular-nums">guessed {Math.round(r.p_keep * 100)}%</td>
                   <td className="w-44 py-1.5 pl-3"><b style={{ color: r.action === "keep" ? "#2f7a3d" : "#8a8296" }}>{r.action === "keep" ? "kept" : "skipped"}</b> <span style={{ color: r.right ? "#2f7a3d" : "#b26a00" }}>{r.right ? "· right" : "· wrong"}</span><div className="text-[#8a8296]">“{r.student_why}”</div></td></tr>))}</tbody></table>)}
+                {s.tool === "write_song" && d.song && (<div className="mt-2"><b>“{d.song.title}”</b> <span className="text-[#5f576c]">{d.song.brief}</span><audio controls className="mt-2 w-full" src={`data:${d.song.mime};base64,${d.song.audio}`} /></div>)}
                 {s.tool === "write_diary" && <p className="mt-1.5 italic leading-relaxed text-[#3d3648]">{s.text}</p>}
                 {s.note && <p className="mt-1.5 text-[#b26a00]">{s.note}</p>}
               </li>))}</ol>

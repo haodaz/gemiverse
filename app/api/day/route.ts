@@ -15,7 +15,8 @@ const DAILY = { for_you: 6, for_itself: 4 };
 
 export async function POST(req: Request) {
   try {
-    const { school = "nyu", day = 1, log = [], lang = "en" } = (await req.json()) as { school: "nyu" | "columbia"; day: number; log: LogEvent[]; lang: string };
+    const { school = "nyu", day = 1, log = [], lang = "en", bank = 0 } = (await req.json()) as { school: "nyu" | "columbia"; day: number; log: LogEvent[]; lang: string; bank: number };
+    const SONG = 6;
     const preset = PRESETS[school], events: LogEvent[] = [], steps: any[] = [], when = () => new Date().toISOString();
     let tokens = 0; const purse = { ...DAILY };
 
@@ -35,10 +36,10 @@ export async function POST(req: Request) {
 What the student cares about (need: weight): ${JSON.stringify(m0.care)}
 How unsure you are on each axis of how they choose (1.00 = you know nothing): ${halos}
 Places you can visit (3 stars each): ${Object.entries(PLACE_NEEDS).map(([k, v]) => `${k} (${v.join(", ")})`).join("; ")}
-Things you can do for yourself: write_diary (1 star), decorate_room (1 star).
+Things you can do for yourself: write_diary (1 star), decorate_room (1 star). Bigger things cost more than one day: write_song (${SONG} stars). You have ${bank} saved from earlier days; whatever you do not spend today is saved. You may choose to spend nothing on yourself today in order to save.
 Already brought back: ${seen().length} things.
 Decide. Spend where the student cares most and you know least. You may make up to two trips. Do not spend for its own sake; unspent stars are saved.
-Return only JSON: {"thought": "two sentences in the first person, in ${lang}: what you will do today and why", "trips": ["place", ...], "self": ["write_diary" | "decorate_room", ...]}`, "low");
+Return only JSON: {"thought": "two sentences in the first person, in ${lang}: what you will do today and why", "trips": ["place", ...], "self": ["write_diary" | "decorate_room", ...], "saving_for": "write_song" or null}`, "low");
     const plan = parseJson(p.text); tokens += p.usage.total_tokens ?? 0; purse.for_itself -= 2;
     steps.push({ tool: "plan_day", by: "gemi", mode: "think", stars: 2, purse: "for_itself", thought: plan.thought, model: p.model });
 
@@ -79,6 +80,13 @@ WHAT MOVED: ${JSON.stringify(moved)}`, "low");
     }
     if ((plan.self ?? []).includes("decorate_room") && purse.for_itself >= 1) { purse.for_itself -= 1; steps.push({ tool: "decorate_room", by: "gemi", mode: "act", stars: 1, purse: "for_itself", palette: day % 3 }); }
 
+    // SAVE or MAKE: what it did not spend on itself goes into its savings; when the savings reach the price, it makes the big thing
+    let saved = bank + purse.for_itself, song: any = null;
+    if (plan.saving_for === "write_song" && saved >= SONG) {
+      try { const origin = new URL(req.url).origin; const r = await fetch(`${origin}/api/song`, { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ about: `${diary}\n${trips.map((t) => t.reason).join("\n")}`, lang }) }).then((x) => x.json());
+        if (!r.error) { saved -= SONG; song = { title: r.title, brief: r.brief, mime: r.mime, audio: r.audio }; tokens += r.tokens ?? 0; steps.push({ tool: "write_song", by: "gemi", mode: "make", stars: SONG, purse: "for_itself", title: r.title, text: r.brief, model: "gemini-4-hydrogen + lyria-3-clip-preview" });
+          events.push({ id: uid(), at: when(), type: "room", by: "gemi", what: `wrote a song, "${r.title}"` }); } } catch {}
+    } else if (plan.saving_for) steps.push({ tool: "save", by: "gemi", mode: "think", stars: 0, note: `Saving for a song: ${saved} of ${SONG} Gem Stars.` });
     // measures: guesses, uncertainty, and (simulation only) distance from the hidden tendencies
     const all = [...log, ...events], choices = all.filter((e) => e.type === "choice").length, b = m1.beliefs;
     const meanHalo = AXES.reduce((a, x) => a + b[x.id].u, 0) / AXES.length;
@@ -88,7 +96,7 @@ WHAT MOVED: ${JSON.stringify(moved)}`, "low");
     // stage: today's plain conditions (the full rule from the growth design needs weeks of data)
     const stage = choices >= 15 && meanHalo <= 0.6 ? 3 : choices >= 5 ? 2 : 1;
     const unlocked = TOOLS.filter((t) => t.minStage <= stage).map((t) => t.name);
-    return Response.json({ day, steps, trips, diary, events, tokens, spent: { for_you: DAILY.for_you - purse.for_you, for_itself: DAILY.for_itself - purse.for_itself }, saved: purse,
+    return Response.json({ bank: saved, song, day, steps, trips, diary, events, tokens, spent: { for_you: DAILY.for_you - purse.for_you, for_itself: DAILY.for_itself - purse.for_itself }, saved: purse,
       metrics: { hits, shown, meanHalo: +meanHalo.toFixed(3), error: +error.toFixed(3), signRight, choices, kept: all.filter((e: any) => e.type === "choice" && e.action === "keep").length }, stage, unlocked, beliefs: b });
   } catch (e) { return Response.json({ error: String((e as Error).message) }, { status: 500 }); }
 }

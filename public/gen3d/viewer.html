@@ -174,7 +174,7 @@ renderer.domElement.addEventListener("click", (ev) => {
   if (!picked) return;
   const pt = new THREE.Vector3(); if (!ray.ray.intersectPlane(floorPlane, pt)) return;
   const p = [Math.round(pt.x / GRID) * GRID, 0, Math.round(pt.z / GRID) * GRID];
-  if (fits(picked, p, layout[picked].r)) { layout[picked].p = p; place(picked); marker.setFromObject(placed[picked]); saveLayout(); document.getElementById("say").textContent = `${picked} moved`; }
+  if (fits(picked, p, layout[picked].r)) { layout[picked].p = p; place(picked); marker.setFromObject(placed[picked]); saveLayout(); document.getElementById("say").textContent = `${picked} moved`; tell("layout", { item: picked, p, r: layout[picked].r }); }
   else document.getElementById("say").textContent = "no room there";
 });
 document.getElementById("arr").onclick = () => { arranging = !arranging; grid.visible = arranging; marker.visible = false; picked = null; if (who) who.visible = !arranging;

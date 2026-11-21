@@ -1,0 +1,7724 @@
+{
+ "at": "2026-11-21T19:09:53.020Z",
+ "pages": 122,
+ "facts": 610,
+ "schools": {
+  "NYU": 7,
+  "Princeton": 20,
+  "Penn": 30,
+  "Yale": 25,
+  "Rutgers": 20,
+  "Duke": 20
+ },
+ "edge_pages": 91,
+ "overall": {
+  "baseline": {
+   "right": 512,
+   "wrong": 49,
+   "withheld": 2,
+   "correctly_blank": 47,
+   "shown": 561,
+   "error_rate": 0.0873,
+   "coverage": 0.9094
+  },
+  "ungated": {
+   "right": 499,
+   "wrong": 53,
+   "withheld": 5,
+   "correctly_blank": 53,
+   "shown": 552,
+   "error_rate": 0.096,
+   "coverage": 0.8959
+  },
+  "system": {
+   "right": 499,
+   "wrong": 53,
+   "withheld": 5,
+   "correctly_blank": 53,
+   "shown": 552,
+   "error_rate": 0.096,
+   "coverage": 0.8959
+  }
+ },
+ "unseen_schools_only": {
+  "baseline": {
+   "right": 478,
+   "wrong": 49,
+   "withheld": 2,
+   "correctly_blank": 46,
+   "shown": 527,
+   "error_rate": 0.093,
+   "coverage": 0.9036
+  },
+  "ungated": {
+   "right": 471,
+   "wrong": 47,
+   "withheld": 5,
+   "correctly_blank": 52,
+   "shown": 518,
+   "error_rate": 0.0907,
+   "coverage": 0.9006
+  },
+  "system": {
+   "right": 471,
+   "wrong": 47,
+   "withheld": 5,
+   "correctly_blank": 52,
+   "shown": 518,
+   "error_rate": 0.0907,
+   "coverage": 0.9006
+  }
+ },
+ "edge_cases_only": {
+  "baseline": {
+   "right": 373,
+   "wrong": 33,
+   "withheld": 2,
+   "correctly_blank": 47,
+   "shown": 406,
+   "error_rate": 0.0813,
+   "coverage": 0.9142
+  },
+  "ungated": {
+   "right": 369,
+   "wrong": 28,
+   "withheld": 5,
+   "correctly_blank": 53,
+   "shown": 397,
+   "error_rate": 0.0705,
+   "coverage": 0.9179
+  },
+  "system": {
+   "right": 369,
+   "wrong": 28,
+   "withheld": 5,
+   "correctly_blank": 53,
+   "shown": 397,
+   "error_rate": 0.0705,
+   "coverage": 0.9179
+  }
+ },
+ "by_field": {
+  "date": {
+   "baseline": {
+    "right": 122,
+    "wrong": 0,
+    "withheld": 0,
+    "correctly_blank": 0
+   },
+   "ungated": {
+    "right": 122,
+    "wrong": 0,
+    "withheld": 0,
+    "correctly_blank": 0
+   },
+   "system": {
+    "right": 122,
+    "wrong": 0,
+    "withheld": 0,
+    "correctly_blank": 0
+   }
+  },
+  "start": {
+   "baseline": {
+    "right": 122,
+    "wrong": 0,
+    "withheld": 0,
+    "correctly_blank": 0
+   },
+   "ungated": {
+    "right": 122,
+    "wrong": 0,
+    "withheld": 0,
+    "correctly_blank": 0
+   },
+   "system": {
+    "right": 122,
+    "wrong": 0,
+    "withheld": 0,
+    "correctly_blank": 0
+   }
+  },
+  "end": {
+   "baseline": {
+    "right": 122,
+    "wrong": 0,
+    "withheld": 0,
+    "correctly_blank": 0
+   },
+   "ungated": {
+    "right": 122,
+    "wrong": 0,
+    "withheld": 0,
+    "correctly_blank": 0
+   },
+   "system": {
+    "right": 122,
+    "wrong": 0,
+    "withheld": 0,
+    "correctly_blank": 0
+   }
+  },
+  "place": {
+   "baseline": {
+    "right": 61,
+    "wrong": 12,
+    "withheld": 2,
+    "correctly_blank": 47
+   },
+   "ungated": {
+    "right": 58,
+    "wrong": 6,
+    "withheld": 5,
+    "correctly_blank": 53
+   },
+   "system": {
+    "right": 58,
+    "wrong": 6,
+    "withheld": 5,
+    "correctly_blank": 53
+   }
+  },
+  "online": {
+   "baseline": {
+    "right": 85,
+    "wrong": 37,
+    "withheld": 0,
+    "correctly_blank": 0
+   },
+   "ungated": {
+    "right": 75,
+    "wrong": 47,
+    "withheld": 0,
+    "correctly_blank": 0
+   },
+   "system": {
+    "right": 75,
+    "wrong": 47,
+    "withheld": 0,
+    "correctly_blank": 0
+   }
+  }
+ },
+ "tokens": {
+  "baseline": 116541,
+  "system": 293607
+ },
+ "errors": [],
+ "wrong": {
+  "baseline": [
+   {
+    "id": "princeton-17874868",
+    "school": "Princeton",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.princeton.edu/event/17874868"
+   },
+   {
+    "id": "princeton-17249913",
+    "school": "Princeton",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.princeton.edu/event/17249913"
+   },
+   {
+    "id": "princeton-17875543",
+    "school": "Princeton",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.princeton.edu/event/17875543"
+   },
+   {
+    "id": "princeton-17249908",
+    "school": "Princeton",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.princeton.edu/event/17249908"
+   },
+   {
+    "id": "princeton-17410534",
+    "school": "Princeton",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.princeton.edu/event/17410534"
+   },
+   {
+    "id": "princeton-17356230",
+    "school": "Princeton",
+    "edge": [
+     "no location"
+    ],
+    "field": "place",
+    "shown": "Firestone Library",
+    "truth": null,
+    "url": "https://libcal.princeton.edu/event/17356230"
+   },
+   {
+    "id": "princeton-17249911",
+    "school": "Princeton",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.princeton.edu/event/17249911"
+   },
+   {
+    "id": "princeton-17249910",
+    "school": "Princeton",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.princeton.edu/event/17249910"
+   },
+   {
+    "id": "princeton-17963998",
+    "school": "Princeton",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.princeton.edu/event/17963998"
+   },
+   {
+    "id": "princeton-17249912",
+    "school": "Princeton",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.princeton.edu/event/17249912"
+   },
+   {
+    "id": "princeton-17746415",
+    "school": "Princeton",
+    "edge": [
+     "no location"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.princeton.edu/event/17746415"
+   },
+   {
+    "id": "princeton-17384491",
+    "school": "Princeton",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.princeton.edu/event/17384491"
+   },
+   {
+    "id": "penn-17394668",
+    "school": "Penn",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/17394668"
+   },
+   {
+    "id": "penn-17340127",
+    "school": "Penn",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/17340127"
+   },
+   {
+    "id": "penn-17427160",
+    "school": "Penn",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/17427160"
+   },
+   {
+    "id": "penn-17340124",
+    "school": "Penn",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/17340124"
+   },
+   {
+    "id": "penn-17514200",
+    "school": "Penn",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/17514200"
+   },
+   {
+    "id": "penn-18004320",
+    "school": "Penn",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/18004320"
+   },
+   {
+    "id": "penn-17344217",
+    "school": "Penn",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/17344217"
+   },
+   {
+    "id": "penn-17427495",
+    "school": "Penn",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/17427495"
+   },
+   {
+    "id": "penn-17427496",
+    "school": "Penn",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/17427496"
+   },
+   {
+    "id": "penn-17344218",
+    "school": "Penn",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/17344218"
+   },
+   {
+    "id": "penn-17427158",
+    "school": "Penn",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/17427158"
+   },
+   {
+    "id": "penn-17340169",
+    "school": "Penn",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/17340169"
+   },
+   {
+    "id": "penn-17414068",
+    "school": "Penn",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/17414068"
+   },
+   {
+    "id": "penn-17480934",
+    "school": "Penn",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/17480934"
+   },
+   {
+    "id": "penn-17317188",
+    "school": "Penn",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/17317188"
+   },
+   {
+    "id": "penn-17427159",
+    "school": "Penn",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/17427159"
+   },
+   {
+    "id": "penn-17974657",
+    "school": "Penn",
+    "edge": [
+     "online",
+     "no location",
+     "recurring"
+    ],
+    "field": "place",
+    "shown": "Online",
+    "truth": null,
+    "url": "https://libcal.library.upenn.edu/event/17974657"
+   },
+   {
+    "id": "yale-18061528",
+    "school": "Yale",
+    "edge": [
+     "online",
+     "no location"
+    ],
+    "field": "place",
+    "shown": "Medical School",
+    "truth": null,
+    "url": "https://schedule.yale.edu/event/18061528"
+   },
+   {
+    "id": "yale-18061057",
+    "school": "Yale",
+    "edge": [
+     "online",
+     "no location"
+    ],
+    "field": "place",
+    "shown": "Medical School",
+    "truth": null,
+    "url": "https://schedule.yale.edu/event/18061057"
+   },
+   {
+    "id": "yale-17448627",
+    "school": "Yale",
+    "edge": [
+     "online",
+     "no location",
+     "recurring"
+    ],
+    "field": "place",
+    "shown": "Medical School",
+    "truth": null,
+    "url": "https://schedule.yale.edu/event/17448627"
+   },
+   {
+    "id": "yale-18061171",
+    "school": "Yale",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://schedule.yale.edu/event/18061171"
+   },
+   {
+    "id": "yale-17476049",
+    "school": "Yale",
+    "edge": [
+     "online",
+     "no location",
+     "recurring"
+    ],
+    "field": "place",
+    "shown": "Medical School",
+    "truth": null,
+    "url": "https://schedule.yale.edu/event/17476049"
+   },
+   {
+    "id": "yale-17844505",
+    "school": "Yale",
+    "edge": [
+     "online",
+     "no location"
+    ],
+    "field": "place",
+    "shown": "Medical School",
+    "truth": null,
+    "url": "https://schedule.yale.edu/event/17844505"
+   },
+   {
+    "id": "duke-17407923",
+    "school": "Duke",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://duke.libcal.com/event/17407923"
+   },
+   {
+    "id": "duke-17407925",
+    "school": "Duke",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://duke.libcal.com/event/17407925"
+   },
+   {
+    "id": "duke-18035796",
+    "school": "Duke",
+    "edge": [],
+    "field": "place",
+    "shown": "Service Desk, 1st Floor Perkins Library",
+    "truth": "Other (see event description)",
+    "url": "https://duke.libcal.com/event/18035796"
+   },
+   {
+    "id": "duke-18035796",
+    "school": "Duke",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://duke.libcal.com/event/18035796"
+   },
+   {
+    "id": "duke-18035792",
+    "school": "Duke",
+    "edge": [],
+    "field": "place",
+    "shown": "Service Desk, 1st Floor Perkins Library",
+    "truth": "Other (see event description)",
+    "url": "https://duke.libcal.com/event/18035792"
+   },
+   {
+    "id": "duke-18035792",
+    "school": "Duke",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://duke.libcal.com/event/18035792"
+   },
+   {
+    "id": "duke-17407924",
+    "school": "Duke",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://duke.libcal.com/event/17407924"
+   },
+   {
+    "id": "duke-17408002",
+    "school": "Duke",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://duke.libcal.com/event/17408002"
+   },
+   {
+    "id": "duke-17413576",
+    "school": "Duke",
+    "edge": [
+     "recurring"
+    ],
+    "field": "place",
+    "shown": "Music Library Seminar Rom (East Campus)",
+    "truth": "Other (see event description)",
+    "url": "https://duke.libcal.com/event/17413576"
+   },
+   {
+    "id": "duke-17413576",
+    "school": "Duke",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://duke.libcal.com/event/17413576"
+   },
+   {
+    "id": "duke-18035777",
+    "school": "Duke",
+    "edge": [],
+    "field": "place",
+    "shown": "Service Desk, 1st Floor Perkins Library",
+    "truth": "Other (see event description)",
+    "url": "https://duke.libcal.com/event/18035777"
+   },
+   {
+    "id": "duke-18035777",
+    "school": "Duke",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://duke.libcal.com/event/18035777"
+   },
+   {
+    "id": "duke-17408001",
+    "school": "Duke",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://duke.libcal.com/event/17408001"
+   },
+   {
+    "id": "duke-17743566",
+    "school": "Duke",
+    "edge": [],
+    "field": "place",
+    "shown": "Gillespie East Asia Reading Room, Bostock Library",
+    "truth": "Other (see event description)",
+    "url": "https://duke.libcal.com/event/17743566"
+   }
+  ],
+  "ungated": [
+   {
+    "id": "nyu-17899797",
+    "school": "NYU",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://nyu.libcal.com/event/17899797"
+   },
+   {
+    "id": "nyu-17899909",
+    "school": "NYU",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://nyu.libcal.com/event/17899909"
+   },
+   {
+    "id": "nyu-17533953",
+    "school": "NYU",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://nyu.libcal.com/event/17533953"
+   },
+   {
+    "id": "nyu-17316019",
+    "school": "NYU",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://nyu.libcal.com/event/17316019"
+   },
+   {
+    "id": "nyu-17316001",
+    "school": "NYU",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://nyu.libcal.com/event/17316001"
+   },
+   {
+    "id": "nyu-17765592",
+    "school": "NYU",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://nyu.libcal.com/event/17765592"
+   },
+   {
+    "id": "princeton-17874868",
+    "school": "Princeton",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.princeton.edu/event/17874868"
+   },
+   {
+    "id": "princeton-17249913",
+    "school": "Princeton",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.princeton.edu/event/17249913"
+   },
+   {
+    "id": "princeton-17875543",
+    "school": "Princeton",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.princeton.edu/event/17875543"
+   },
+   {
+    "id": "princeton-17249908",
+    "school": "Princeton",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.princeton.edu/event/17249908"
+   },
+   {
+    "id": "princeton-17410534",
+    "school": "Princeton",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.princeton.edu/event/17410534"
+   },
+   {
+    "id": "princeton-17356230",
+    "school": "Princeton",
+    "edge": [
+     "no location"
+    ],
+    "field": "place",
+    "shown": "Firestone Library",
+    "truth": null,
+    "url": "https://libcal.princeton.edu/event/17356230"
+   },
+   {
+    "id": "princeton-17249911",
+    "school": "Princeton",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.princeton.edu/event/17249911"
+   },
+   {
+    "id": "princeton-17249910",
+    "school": "Princeton",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.princeton.edu/event/17249910"
+   },
+   {
+    "id": "princeton-17963998",
+    "school": "Princeton",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.princeton.edu/event/17963998"
+   },
+   {
+    "id": "princeton-17249912",
+    "school": "Princeton",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.princeton.edu/event/17249912"
+   },
+   {
+    "id": "princeton-17746415",
+    "school": "Princeton",
+    "edge": [
+     "no location"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.princeton.edu/event/17746415"
+   },
+   {
+    "id": "princeton-17384491",
+    "school": "Princeton",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.princeton.edu/event/17384491"
+   },
+   {
+    "id": "penn-17394668",
+    "school": "Penn",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/17394668"
+   },
+   {
+    "id": "penn-17340127",
+    "school": "Penn",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/17340127"
+   },
+   {
+    "id": "penn-17427160",
+    "school": "Penn",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/17427160"
+   },
+   {
+    "id": "penn-17340124",
+    "school": "Penn",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/17340124"
+   },
+   {
+    "id": "penn-17514200",
+    "school": "Penn",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/17514200"
+   },
+   {
+    "id": "penn-18004320",
+    "school": "Penn",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/18004320"
+   },
+   {
+    "id": "penn-17344217",
+    "school": "Penn",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/17344217"
+   },
+   {
+    "id": "penn-17427495",
+    "school": "Penn",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/17427495"
+   },
+   {
+    "id": "penn-17427496",
+    "school": "Penn",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/17427496"
+   },
+   {
+    "id": "penn-17344218",
+    "school": "Penn",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/17344218"
+   },
+   {
+    "id": "penn-17427158",
+    "school": "Penn",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/17427158"
+   },
+   {
+    "id": "penn-17340169",
+    "school": "Penn",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/17340169"
+   },
+   {
+    "id": "penn-17414068",
+    "school": "Penn",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/17414068"
+   },
+   {
+    "id": "penn-17480934",
+    "school": "Penn",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/17480934"
+   },
+   {
+    "id": "penn-17317188",
+    "school": "Penn",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/17317188"
+   },
+   {
+    "id": "penn-17427159",
+    "school": "Penn",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/17427159"
+   },
+   {
+    "id": "yale-17881844",
+    "school": "Yale",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://schedule.yale.edu/event/17881844"
+   },
+   {
+    "id": "yale-18061171",
+    "school": "Yale",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://schedule.yale.edu/event/18061171"
+   },
+   {
+    "id": "yale-18013506",
+    "school": "Yale",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://schedule.yale.edu/event/18013506"
+   },
+   {
+    "id": "yale-18061358",
+    "school": "Yale",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://schedule.yale.edu/event/18061358"
+   },
+   {
+    "id": "duke-17407923",
+    "school": "Duke",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://duke.libcal.com/event/17407923"
+   },
+   {
+    "id": "duke-17407925",
+    "school": "Duke",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://duke.libcal.com/event/17407925"
+   },
+   {
+    "id": "duke-18035796",
+    "school": "Duke",
+    "edge": [],
+    "field": "place",
+    "shown": "Service Desk, 1st Floor Perkins Library",
+    "truth": "Other (see event description)",
+    "url": "https://duke.libcal.com/event/18035796"
+   },
+   {
+    "id": "duke-18035796",
+    "school": "Duke",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://duke.libcal.com/event/18035796"
+   },
+   {
+    "id": "duke-18035792",
+    "school": "Duke",
+    "edge": [],
+    "field": "place",
+    "shown": "Service Desk, 1st Floor Perkins Library",
+    "truth": "Other (see event description)",
+    "url": "https://duke.libcal.com/event/18035792"
+   },
+   {
+    "id": "duke-18035792",
+    "school": "Duke",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://duke.libcal.com/event/18035792"
+   },
+   {
+    "id": "duke-17407924",
+    "school": "Duke",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://duke.libcal.com/event/17407924"
+   },
+   {
+    "id": "duke-17408002",
+    "school": "Duke",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://duke.libcal.com/event/17408002"
+   },
+   {
+    "id": "duke-17677226",
+    "school": "Duke",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://duke.libcal.com/event/17677226"
+   },
+   {
+    "id": "duke-17413576",
+    "school": "Duke",
+    "edge": [
+     "recurring"
+    ],
+    "field": "place",
+    "shown": "Music Library Seminar Rom (East Campus)",
+    "truth": "Other (see event description)",
+    "url": "https://duke.libcal.com/event/17413576"
+   },
+   {
+    "id": "duke-17413576",
+    "school": "Duke",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://duke.libcal.com/event/17413576"
+   },
+   {
+    "id": "duke-18035777",
+    "school": "Duke",
+    "edge": [],
+    "field": "place",
+    "shown": "Service Desk, 1st Floor Perkins Library",
+    "truth": "Other (see event description)",
+    "url": "https://duke.libcal.com/event/18035777"
+   },
+   {
+    "id": "duke-18035777",
+    "school": "Duke",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://duke.libcal.com/event/18035777"
+   },
+   {
+    "id": "duke-17408001",
+    "school": "Duke",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://duke.libcal.com/event/17408001"
+   },
+   {
+    "id": "duke-17743566",
+    "school": "Duke",
+    "edge": [],
+    "field": "place",
+    "shown": "Gillespie East Asia Reading Room, Bostock Library",
+    "truth": "Other (see event description)",
+    "url": "https://duke.libcal.com/event/17743566"
+   }
+  ],
+  "system": [
+   {
+    "id": "nyu-17899797",
+    "school": "NYU",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://nyu.libcal.com/event/17899797"
+   },
+   {
+    "id": "nyu-17899909",
+    "school": "NYU",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://nyu.libcal.com/event/17899909"
+   },
+   {
+    "id": "nyu-17533953",
+    "school": "NYU",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://nyu.libcal.com/event/17533953"
+   },
+   {
+    "id": "nyu-17316019",
+    "school": "NYU",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://nyu.libcal.com/event/17316019"
+   },
+   {
+    "id": "nyu-17316001",
+    "school": "NYU",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://nyu.libcal.com/event/17316001"
+   },
+   {
+    "id": "nyu-17765592",
+    "school": "NYU",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://nyu.libcal.com/event/17765592"
+   },
+   {
+    "id": "princeton-17874868",
+    "school": "Princeton",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.princeton.edu/event/17874868"
+   },
+   {
+    "id": "princeton-17249913",
+    "school": "Princeton",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.princeton.edu/event/17249913"
+   },
+   {
+    "id": "princeton-17875543",
+    "school": "Princeton",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.princeton.edu/event/17875543"
+   },
+   {
+    "id": "princeton-17249908",
+    "school": "Princeton",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.princeton.edu/event/17249908"
+   },
+   {
+    "id": "princeton-17410534",
+    "school": "Princeton",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.princeton.edu/event/17410534"
+   },
+   {
+    "id": "princeton-17356230",
+    "school": "Princeton",
+    "edge": [
+     "no location"
+    ],
+    "field": "place",
+    "shown": "Firestone Library",
+    "truth": null,
+    "url": "https://libcal.princeton.edu/event/17356230"
+   },
+   {
+    "id": "princeton-17249911",
+    "school": "Princeton",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.princeton.edu/event/17249911"
+   },
+   {
+    "id": "princeton-17249910",
+    "school": "Princeton",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.princeton.edu/event/17249910"
+   },
+   {
+    "id": "princeton-17963998",
+    "school": "Princeton",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.princeton.edu/event/17963998"
+   },
+   {
+    "id": "princeton-17249912",
+    "school": "Princeton",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.princeton.edu/event/17249912"
+   },
+   {
+    "id": "princeton-17746415",
+    "school": "Princeton",
+    "edge": [
+     "no location"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.princeton.edu/event/17746415"
+   },
+   {
+    "id": "princeton-17384491",
+    "school": "Princeton",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.princeton.edu/event/17384491"
+   },
+   {
+    "id": "penn-17394668",
+    "school": "Penn",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/17394668"
+   },
+   {
+    "id": "penn-17340127",
+    "school": "Penn",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/17340127"
+   },
+   {
+    "id": "penn-17427160",
+    "school": "Penn",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/17427160"
+   },
+   {
+    "id": "penn-17340124",
+    "school": "Penn",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/17340124"
+   },
+   {
+    "id": "penn-17514200",
+    "school": "Penn",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/17514200"
+   },
+   {
+    "id": "penn-18004320",
+    "school": "Penn",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/18004320"
+   },
+   {
+    "id": "penn-17344217",
+    "school": "Penn",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/17344217"
+   },
+   {
+    "id": "penn-17427495",
+    "school": "Penn",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/17427495"
+   },
+   {
+    "id": "penn-17427496",
+    "school": "Penn",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/17427496"
+   },
+   {
+    "id": "penn-17344218",
+    "school": "Penn",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/17344218"
+   },
+   {
+    "id": "penn-17427158",
+    "school": "Penn",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/17427158"
+   },
+   {
+    "id": "penn-17340169",
+    "school": "Penn",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/17340169"
+   },
+   {
+    "id": "penn-17414068",
+    "school": "Penn",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/17414068"
+   },
+   {
+    "id": "penn-17480934",
+    "school": "Penn",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/17480934"
+   },
+   {
+    "id": "penn-17317188",
+    "school": "Penn",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/17317188"
+   },
+   {
+    "id": "penn-17427159",
+    "school": "Penn",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/17427159"
+   },
+   {
+    "id": "yale-17881844",
+    "school": "Yale",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://schedule.yale.edu/event/17881844"
+   },
+   {
+    "id": "yale-18061171",
+    "school": "Yale",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://schedule.yale.edu/event/18061171"
+   },
+   {
+    "id": "yale-18013506",
+    "school": "Yale",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://schedule.yale.edu/event/18013506"
+   },
+   {
+    "id": "yale-18061358",
+    "school": "Yale",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://schedule.yale.edu/event/18061358"
+   },
+   {
+    "id": "duke-17407923",
+    "school": "Duke",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://duke.libcal.com/event/17407923"
+   },
+   {
+    "id": "duke-17407925",
+    "school": "Duke",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://duke.libcal.com/event/17407925"
+   },
+   {
+    "id": "duke-18035796",
+    "school": "Duke",
+    "edge": [],
+    "field": "place",
+    "shown": "Service Desk, 1st Floor Perkins Library",
+    "truth": "Other (see event description)",
+    "url": "https://duke.libcal.com/event/18035796"
+   },
+   {
+    "id": "duke-18035796",
+    "school": "Duke",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://duke.libcal.com/event/18035796"
+   },
+   {
+    "id": "duke-18035792",
+    "school": "Duke",
+    "edge": [],
+    "field": "place",
+    "shown": "Service Desk, 1st Floor Perkins Library",
+    "truth": "Other (see event description)",
+    "url": "https://duke.libcal.com/event/18035792"
+   },
+   {
+    "id": "duke-18035792",
+    "school": "Duke",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://duke.libcal.com/event/18035792"
+   },
+   {
+    "id": "duke-17407924",
+    "school": "Duke",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://duke.libcal.com/event/17407924"
+   },
+   {
+    "id": "duke-17408002",
+    "school": "Duke",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://duke.libcal.com/event/17408002"
+   },
+   {
+    "id": "duke-17677226",
+    "school": "Duke",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://duke.libcal.com/event/17677226"
+   },
+   {
+    "id": "duke-17413576",
+    "school": "Duke",
+    "edge": [
+     "recurring"
+    ],
+    "field": "place",
+    "shown": "Music Library Seminar Rom (East Campus)",
+    "truth": "Other (see event description)",
+    "url": "https://duke.libcal.com/event/17413576"
+   },
+   {
+    "id": "duke-17413576",
+    "school": "Duke",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://duke.libcal.com/event/17413576"
+   },
+   {
+    "id": "duke-18035777",
+    "school": "Duke",
+    "edge": [],
+    "field": "place",
+    "shown": "Service Desk, 1st Floor Perkins Library",
+    "truth": "Other (see event description)",
+    "url": "https://duke.libcal.com/event/18035777"
+   },
+   {
+    "id": "duke-18035777",
+    "school": "Duke",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://duke.libcal.com/event/18035777"
+   },
+   {
+    "id": "duke-17408001",
+    "school": "Duke",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://duke.libcal.com/event/17408001"
+   },
+   {
+    "id": "duke-17743566",
+    "school": "Duke",
+    "edge": [],
+    "field": "place",
+    "shown": "Gillespie East Asia Reading Room, Bostock Library",
+    "truth": "Other (see event description)",
+    "url": "https://duke.libcal.com/event/17743566"
+   }
+  ]
+ },
+ "rows": [
+  {
+   "id": "nyu-17975301",
+   "school": "NYU",
+   "seen_school": true,
+   "edge": [
+    "online",
+    "no location"
+   ],
+   "url": "https://nyu.libcal.com/event/17975301",
+   "truth": {
+    "date": "2026-12-01",
+    "start": "15:00",
+    "end": "16:00",
+    "place": null,
+    "online": true
+   },
+   "chars": 4206,
+   "tokens": {
+    "baseline": 1186,
+    "system": 2745
+   },
+   "baseline": {
+    "date": "2026-12-01",
+    "start": "15:00",
+    "end": "16:00",
+    "place": null,
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-01",
+    "start": "15:00",
+    "end": "16:00",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-01",
+    "start": "15:00",
+    "end": "16:00",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.984,
+    "start": 0.983,
+    "end": 0.983,
+    "online": 0.99
+   }
+  },
+  {
+   "id": "nyu-17899797",
+   "school": "NYU",
+   "seen_school": true,
+   "edge": [],
+   "url": "https://nyu.libcal.com/event/17899797",
+   "truth": {
+    "date": "2027-01-14",
+    "start": "10:00",
+    "end": "15:00",
+    "place": "Bobst Library, 7th Floor, Rm. 745",
+    "online": false
+   },
+   "chars": 4034,
+   "tokens": {
+    "baseline": 1211,
+    "system": 3058
+   },
+   "baseline": {
+    "date": "2027-01-14",
+    "start": "10:00",
+    "end": "15:00",
+    "place": "Bobst Library, 7th Floor, Rm. 745",
+    "online": false
+   },
+   "system": {
+    "date": "2027-01-14",
+    "start": "10:00",
+    "end": "15:00",
+    "place": "Bobst Library, 7th Floor, Rm. 745",
+    "online": true
+   },
+   "ungated": {
+    "date": "2027-01-14",
+    "start": "10:00",
+    "end": "15:00",
+    "place": "Bobst Library, 7th Floor, Rm. 745",
+    "online": true
+   },
+   "gate": {
+    "date": 0.973,
+    "start": 0.979,
+    "end": 0.973,
+    "place": 0.959,
+    "online": 0.594
+   }
+  },
+  {
+   "id": "nyu-17899909",
+   "school": "NYU",
+   "seen_school": true,
+   "edge": [],
+   "url": "https://nyu.libcal.com/event/17899909",
+   "truth": {
+    "date": "2027-01-14",
+    "start": "10:00",
+    "end": "15:00",
+    "place": "Bobst Library, 7th Floor, Rm. 743",
+    "online": false
+   },
+   "chars": 4058,
+   "tokens": {
+    "baseline": 1233,
+    "system": 3099
+   },
+   "baseline": {
+    "date": "2027-01-14",
+    "start": "10:00",
+    "end": "15:00",
+    "place": "Bobst Library, 7th Floor, Rm. 743",
+    "online": false
+   },
+   "system": {
+    "date": "2027-01-14",
+    "start": "10:00",
+    "end": "15:00",
+    "place": "Bobst Library, 7th Floor, Rm. 743",
+    "online": true
+   },
+   "ungated": {
+    "date": "2027-01-14",
+    "start": "10:00",
+    "end": "15:00",
+    "place": "Bobst Library, 7th Floor, Rm. 743",
+    "online": true
+   },
+   "gate": {
+    "date": 0.979,
+    "start": 0.976,
+    "end": 0.968,
+    "place": 0.977,
+    "online": 0.613
+   }
+  },
+  {
+   "id": "nyu-17533953",
+   "school": "NYU",
+   "seen_school": true,
+   "edge": [],
+   "url": "https://nyu.libcal.com/event/17533953",
+   "truth": {
+    "date": "2026-12-15",
+    "start": "15:00",
+    "end": "15:30",
+    "place": "Bobst Library, 7th Floor, Rm. 745",
+    "online": false
+   },
+   "chars": 3557,
+   "tokens": {
+    "baseline": 1084,
+    "system": 2776
+   },
+   "baseline": {
+    "date": "2026-12-15",
+    "start": "15:00",
+    "end": "15:30",
+    "place": "Bobst Library, 7th Floor, Rm. 745",
+    "online": false
+   },
+   "system": {
+    "date": "2026-12-15",
+    "start": "15:00",
+    "end": "15:30",
+    "place": "Bobst Library, 7th Floor, Rm. 745",
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-15",
+    "start": "15:00",
+    "end": "15:30",
+    "place": "Bobst Library, 7th Floor, Rm. 745",
+    "online": true
+   },
+   "gate": {
+    "date": 0.987,
+    "start": 0.987,
+    "end": 0.986,
+    "place": 0.974,
+    "online": 0.774
+   }
+  },
+  {
+   "id": "nyu-17316019",
+   "school": "NYU",
+   "seen_school": true,
+   "edge": [],
+   "url": "https://nyu.libcal.com/event/17316019",
+   "truth": {
+    "date": "2026-12-16",
+    "start": "17:00",
+    "end": "18:00",
+    "place": "Bobst Library, 7th Floor, Rm. 745",
+    "online": false
+   },
+   "chars": 3426,
+   "tokens": {
+    "baseline": 1058,
+    "system": 2682
+   },
+   "baseline": {
+    "date": "2026-12-16",
+    "start": "17:00",
+    "end": "18:00",
+    "place": "Bobst Library, 7th Floor, Rm. 745",
+    "online": false
+   },
+   "system": {
+    "date": "2026-12-16",
+    "start": "17:00",
+    "end": "18:00",
+    "place": "Bobst Library, 7th Floor, Rm. 745",
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-16",
+    "start": "17:00",
+    "end": "18:00",
+    "place": "Bobst Library, 7th Floor, Rm. 745",
+    "online": true
+   },
+   "gate": {
+    "date": 0.983,
+    "start": 0.99,
+    "end": 0.99,
+    "place": 0.978,
+    "online": 0.696
+   }
+  },
+  {
+   "id": "nyu-17316001",
+   "school": "NYU",
+   "seen_school": true,
+   "edge": [],
+   "url": "https://nyu.libcal.com/event/17316001",
+   "truth": {
+    "date": "2026-12-02",
+    "start": "17:00",
+    "end": "18:00",
+    "place": "Bobst Library, 7th Floor, Rm. 745",
+    "online": false
+   },
+   "chars": 3425,
+   "tokens": {
+    "baseline": 1057,
+    "system": 2665
+   },
+   "baseline": {
+    "date": "2026-12-02",
+    "start": "17:00",
+    "end": "18:00",
+    "place": "Bobst Library, 7th Floor, Rm. 745",
+    "online": false
+   },
+   "system": {
+    "date": "2026-12-02",
+    "start": "17:00",
+    "end": "18:00",
+    "place": "Bobst Library, 7th Floor, Rm. 745",
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-02",
+    "start": "17:00",
+    "end": "18:00",
+    "place": "Bobst Library, 7th Floor, Rm. 745",
+    "online": true
+   },
+   "gate": {
+    "date": 0.964,
+    "start": 0.99,
+    "end": 0.984,
+    "place": 0.98,
+    "online": 0.737
+   }
+  },
+  {
+   "id": "nyu-17765592",
+   "school": "NYU",
+   "seen_school": true,
+   "edge": [],
+   "url": "https://nyu.libcal.com/event/17765592",
+   "truth": {
+    "date": "2026-12-16",
+    "start": "16:00",
+    "end": "17:00",
+    "place": "Dibner Library, LC 433",
+    "online": false
+   },
+   "chars": 3069,
+   "tokens": {
+    "baseline": 1000,
+    "system": 2714
+   },
+   "baseline": {
+    "date": "2026-12-16",
+    "start": "16:00",
+    "end": "17:00",
+    "place": "Dibner Library, LC 433",
+    "online": false
+   },
+   "system": {
+    "date": "2026-12-16",
+    "start": "16:00",
+    "end": "17:00",
+    "place": "Dibner Library, LC 433",
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-16",
+    "start": "16:00",
+    "end": "17:00",
+    "place": "Dibner Library, LC 433",
+    "online": true
+   },
+   "gate": {
+    "date": 0.976,
+    "start": 0.99,
+    "end": 0.99,
+    "place": 0.989,
+    "online": 0.553
+   }
+  },
+  {
+   "id": "princeton-17874868",
+   "school": "Princeton",
+   "seen_school": false,
+   "edge": [],
+   "url": "https://libcal.princeton.edu/event/17874868",
+   "truth": {
+    "date": "2026-12-09",
+    "start": "13:30",
+    "end": "18:00",
+    "place": "Special Collections Large Classroom - C Floor",
+    "online": false
+   },
+   "chars": 3529,
+   "tokens": {
+    "baseline": 1010,
+    "system": 2589
+   },
+   "baseline": {
+    "date": "2026-12-09",
+    "start": "13:30",
+    "end": "18:00",
+    "place": "Special Collections Large Classroom - C Floor",
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-09",
+    "start": "13:30",
+    "end": "18:00",
+    "place": "Special Collections Large Classroom - C Floor",
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-09",
+    "start": "13:30",
+    "end": "18:00",
+    "place": "Special Collections Large Classroom - C Floor",
+    "online": true
+   },
+   "gate": {
+    "date": 0.987,
+    "start": 0.978,
+    "end": 0.98,
+    "place": 0.963,
+    "online": 0.922
+   }
+  },
+  {
+   "id": "princeton-17391630",
+   "school": "Princeton",
+   "seen_school": false,
+   "edge": [],
+   "url": "https://libcal.princeton.edu/event/17391630",
+   "truth": {
+    "date": "2026-12-10",
+    "start": "13:00",
+    "end": "14:00",
+    "place": "Commons Library Curiosity Studio",
+    "online": false
+   },
+   "chars": 1749,
+   "tokens": {
+    "baseline": 599,
+    "system": 1602
+   },
+   "baseline": {
+    "date": "2026-12-10",
+    "start": "13:00",
+    "end": "14:00",
+    "place": "Commons Library Curiosity Studio",
+    "online": false
+   },
+   "system": {
+    "date": "2026-12-10",
+    "start": "13:00",
+    "end": "14:00",
+    "place": "Commons Library Curiosity Studio",
+    "online": false
+   },
+   "ungated": {
+    "date": "2026-12-10",
+    "start": "13:00",
+    "end": "14:00",
+    "place": "Commons Library Curiosity Studio",
+    "online": false
+   },
+   "gate": {
+    "date": 0.981,
+    "start": 0.976,
+    "end": 0.985,
+    "place": 0.969,
+    "online": 0.054
+   }
+  },
+  {
+   "id": "princeton-17591333",
+   "school": "Princeton",
+   "seen_school": false,
+   "edge": [],
+   "url": "https://libcal.princeton.edu/event/17591333",
+   "truth": {
+    "date": "2026-12-17",
+    "start": "14:00",
+    "end": "16:00",
+    "place": "Firestone Lobby",
+    "online": false
+   },
+   "chars": 1465,
+   "tokens": {
+    "baseline": 525,
+    "system": 1535
+   },
+   "baseline": {
+    "date": "2026-12-17",
+    "start": "14:00",
+    "end": "16:00",
+    "place": "Firestone Lobby",
+    "online": false
+   },
+   "system": {
+    "date": "2026-12-17",
+    "start": "14:00",
+    "end": "16:00",
+    "place": "Firestone Lobby",
+    "online": false
+   },
+   "ungated": {
+    "date": "2026-12-17",
+    "start": "14:00",
+    "end": "16:00",
+    "place": "Firestone Lobby",
+    "online": false
+   },
+   "gate": {
+    "date": 0.975,
+    "start": 0.981,
+    "end": 0.986,
+    "place": 0.983,
+    "online": 0.039
+   }
+  },
+  {
+   "id": "princeton-17249913",
+   "school": "Princeton",
+   "seen_school": false,
+   "edge": [
+    "recurring"
+   ],
+   "url": "https://libcal.princeton.edu/event/17249913",
+   "truth": {
+    "date": "2027-05-21",
+    "start": "09:30",
+    "end": "10:25",
+    "place": "Firestone Lobby",
+    "online": false
+   },
+   "chars": 1984,
+   "tokens": {
+    "baseline": 662,
+    "system": 1910
+   },
+   "baseline": {
+    "date": "2027-05-21",
+    "start": "09:30",
+    "end": "10:25",
+    "place": "Firestone Lobby",
+    "online": true
+   },
+   "system": {
+    "date": "2027-05-21",
+    "start": "09:30",
+    "end": "10:25",
+    "place": "Firestone Lobby",
+    "online": true
+   },
+   "ungated": {
+    "date": "2027-05-21",
+    "start": "09:30",
+    "end": "10:25",
+    "place": "Firestone Lobby",
+    "online": true
+   },
+   "gate": {
+    "date": 0.989,
+    "start": 0.985,
+    "end": 0.99,
+    "place": 0.939,
+    "online": 0.936
+   }
+  },
+  {
+   "id": "princeton-17875543",
+   "school": "Princeton",
+   "seen_school": false,
+   "edge": [],
+   "url": "https://libcal.princeton.edu/event/17875543",
+   "truth": {
+    "date": "2026-12-09",
+    "start": "16:00",
+    "end": "18:00",
+    "place": "Special Collections Large Classroom - C Floor",
+    "online": false
+   },
+   "chars": 4531,
+   "tokens": {
+    "baseline": 1191,
+    "system": 2896
+   },
+   "baseline": {
+    "date": "2026-12-09",
+    "start": "16:00",
+    "end": "18:00",
+    "place": "Special Collections Large Classroom - C Floor",
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-09",
+    "start": "16:00",
+    "end": "18:00",
+    "place": "Special Collections Large Classroom - C Floor",
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-09",
+    "start": "16:00",
+    "end": "18:00",
+    "place": "Special Collections Large Classroom - C Floor",
+    "online": true
+   },
+   "gate": {
+    "date": 0.99,
+    "start": 0.986,
+    "end": 0.99,
+    "place": 0.976,
+    "online": 0.969
+   }
+  },
+  {
+   "id": "princeton-17227495",
+   "school": "Princeton",
+   "seen_school": false,
+   "edge": [],
+   "url": "https://libcal.princeton.edu/event/17227495",
+   "truth": {
+    "date": "2026-11-24",
+    "start": "12:30",
+    "end": "13:00",
+    "place": "Milberg Gallery",
+    "online": false
+   },
+   "chars": 2117,
+   "tokens": {
+    "baseline": 700,
+    "system": 1908
+   },
+   "baseline": {
+    "date": "2026-11-24",
+    "start": "12:30",
+    "end": "13:00",
+    "place": "Milberg Gallery, Firestone Library",
+    "online": false
+   },
+   "system": {
+    "date": "2026-11-24",
+    "start": "12:30",
+    "end": "13:00",
+    "place": "Milberg Gallery",
+    "online": false
+   },
+   "ungated": {
+    "date": "2026-11-24",
+    "start": "12:30",
+    "end": "13:00",
+    "place": "Milberg Gallery",
+    "online": false
+   },
+   "gate": {
+    "date": 0.99,
+    "start": 0.985,
+    "end": 0.982,
+    "place": 0.979,
+    "online": 0.04
+   }
+  },
+  {
+   "id": "princeton-17249908",
+   "school": "Princeton",
+   "seen_school": false,
+   "edge": [
+    "recurring"
+   ],
+   "url": "https://libcal.princeton.edu/event/17249908",
+   "truth": {
+    "date": "2026-12-18",
+    "start": "09:30",
+    "end": "10:25",
+    "place": "Firestone Lobby",
+    "online": false
+   },
+   "chars": 2136,
+   "tokens": {
+    "baseline": 737,
+    "system": 2160
+   },
+   "baseline": {
+    "date": "2026-12-18",
+    "start": "09:30",
+    "end": "10:25",
+    "place": "Firestone Lobby",
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-18",
+    "start": "09:30",
+    "end": "10:25",
+    "place": "Firestone Lobby",
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-18",
+    "start": "09:30",
+    "end": "10:25",
+    "place": "Firestone Lobby",
+    "online": true
+   },
+   "gate": {
+    "date": 0.892,
+    "start": 0.99,
+    "end": 0.99,
+    "place": 0.961,
+    "online": 0.939
+   }
+  },
+  {
+   "id": "princeton-17410534",
+   "school": "Princeton",
+   "seen_school": false,
+   "edge": [],
+   "url": "https://libcal.princeton.edu/event/17410534",
+   "truth": {
+    "date": "2026-12-02",
+    "start": "17:00",
+    "end": "18:00",
+    "place": "Commons Library Curiosity Studio",
+    "online": false
+   },
+   "chars": 2944,
+   "tokens": {
+    "baseline": 885,
+    "system": 2406
+   },
+   "baseline": {
+    "date": "2026-12-02",
+    "start": "17:00",
+    "end": "18:00",
+    "place": "Commons Library Curiosity Studio",
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-02",
+    "start": "17:00",
+    "end": "18:00",
+    "place": "Commons Library Curiosity Studio",
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-02",
+    "start": "17:00",
+    "end": "18:00",
+    "place": "Commons Library Curiosity Studio",
+    "online": true
+   },
+   "gate": {
+    "date": 0.985,
+    "start": 0.983,
+    "end": 0.989,
+    "place": 0.972,
+    "online": 0.958
+   }
+  },
+  {
+   "id": "princeton-17391649",
+   "school": "Princeton",
+   "seen_school": false,
+   "edge": [],
+   "url": "https://libcal.princeton.edu/event/17391649",
+   "truth": {
+    "date": "2026-12-07",
+    "start": "13:00",
+    "end": "14:00",
+    "place": "Firestone Lobby",
+    "online": false
+   },
+   "chars": 1360,
+   "tokens": {
+    "baseline": 523,
+    "system": 1534
+   },
+   "baseline": {
+    "date": "2026-12-07",
+    "start": "13:00",
+    "end": "14:00",
+    "place": "Firestone Library, Firestone Lobby",
+    "online": false
+   },
+   "system": {
+    "date": "2026-12-07",
+    "start": "13:00",
+    "end": "14:00",
+    "place": "Firestone Lobby",
+    "online": false
+   },
+   "ungated": {
+    "date": "2026-12-07",
+    "start": "13:00",
+    "end": "14:00",
+    "place": "Firestone Lobby",
+    "online": false
+   },
+   "gate": {
+    "date": 0.985,
+    "start": 0.976,
+    "end": 0.982,
+    "place": 0.972,
+    "online": 0.041
+   }
+  },
+  {
+   "id": "princeton-17356230",
+   "school": "Princeton",
+   "seen_school": false,
+   "edge": [
+    "no location"
+   ],
+   "url": "https://libcal.princeton.edu/event/17356230",
+   "truth": {
+    "date": "2026-12-02",
+    "start": "10:30",
+    "end": "12:00",
+    "place": null,
+    "online": false
+   },
+   "chars": 2007,
+   "tokens": {
+    "baseline": 662,
+    "system": 1814
+   },
+   "baseline": {
+    "date": "2026-12-02",
+    "start": "10:30",
+    "end": "12:00",
+    "place": "Firestone Library",
+    "online": false
+   },
+   "system": {
+    "date": "2026-12-02",
+    "start": "10:30",
+    "end": "12:00",
+    "place": "Firestone Library",
+    "online": false
+   },
+   "ungated": {
+    "date": "2026-12-02",
+    "start": "10:30",
+    "end": "12:00",
+    "place": "Firestone Library",
+    "online": false
+   },
+   "gate": {
+    "date": 0.978,
+    "start": 0.979,
+    "end": 0.967,
+    "place": 0.969,
+    "online": 0.041
+   }
+  },
+  {
+   "id": "princeton-17249911",
+   "school": "Princeton",
+   "seen_school": false,
+   "edge": [
+    "recurring"
+   ],
+   "url": "https://libcal.princeton.edu/event/17249911",
+   "truth": {
+    "date": "2027-03-19",
+    "start": "09:30",
+    "end": "10:25",
+    "place": "Firestone Lobby",
+    "online": false
+   },
+   "chars": 2053,
+   "tokens": {
+    "baseline": 695,
+    "system": 2039
+   },
+   "baseline": {
+    "date": "2027-03-19",
+    "start": "09:30",
+    "end": "10:25",
+    "place": "Firestone Lobby",
+    "online": true
+   },
+   "system": {
+    "date": "2027-03-19",
+    "start": "09:30",
+    "end": "10:25",
+    "place": "Firestone Lobby",
+    "online": true
+   },
+   "ungated": {
+    "date": "2027-03-19",
+    "start": "09:30",
+    "end": "10:25",
+    "place": "Firestone Lobby",
+    "online": true
+   },
+   "gate": {
+    "date": 0.965,
+    "start": 0.99,
+    "end": 0.99,
+    "place": 0.961,
+    "online": 0.95
+   }
+  },
+  {
+   "id": "princeton-17249910",
+   "school": "Princeton",
+   "seen_school": false,
+   "edge": [
+    "recurring"
+   ],
+   "url": "https://libcal.princeton.edu/event/17249910",
+   "truth": {
+    "date": "2027-02-19",
+    "start": "09:30",
+    "end": "10:25",
+    "place": "Firestone Lobby",
+    "online": false
+   },
+   "chars": 2081,
+   "tokens": {
+    "baseline": 712,
+    "system": 2058
+   },
+   "baseline": {
+    "date": "2027-02-19",
+    "start": "09:30",
+    "end": "10:25",
+    "place": "Firestone Lobby, Firestone Library",
+    "online": true
+   },
+   "system": {
+    "date": "2027-02-19",
+    "start": "09:30",
+    "end": "10:25",
+    "place": "Firestone Lobby",
+    "online": true
+   },
+   "ungated": {
+    "date": "2027-02-19",
+    "start": "09:30",
+    "end": "10:25",
+    "place": "Firestone Lobby",
+    "online": true
+   },
+   "gate": {
+    "date": 0.924,
+    "start": 0.986,
+    "end": 0.99,
+    "place": 0.967,
+    "online": 0.948
+   }
+  },
+  {
+   "id": "princeton-17407761",
+   "school": "Princeton",
+   "seen_school": false,
+   "edge": [
+    "online"
+   ],
+   "url": "https://libcal.princeton.edu/event/17407761",
+   "truth": {
+    "date": "2026-12-02",
+    "start": "15:00",
+    "end": "16:00",
+    "place": "Commons Library Classroom (D112)",
+    "online": true
+   },
+   "chars": 2398,
+   "tokens": {
+    "baseline": 748,
+    "system": 2059
+   },
+   "baseline": {
+    "date": "2026-12-02",
+    "start": "15:00",
+    "end": "16:00",
+    "place": "Commons Library Classroom (D112)",
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-02",
+    "start": "15:00",
+    "end": "16:00",
+    "place": "Commons Library Classroom (D112)",
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-02",
+    "start": "15:00",
+    "end": "16:00",
+    "place": "Commons Library Classroom (D112)",
+    "online": true
+   },
+   "gate": {
+    "date": 0.976,
+    "start": 0.99,
+    "end": 0.987,
+    "place": 0.985,
+    "online": 0.987
+   }
+  },
+  {
+   "id": "princeton-17963998",
+   "school": "Princeton",
+   "seen_school": false,
+   "edge": [],
+   "url": "https://libcal.princeton.edu/event/17963998",
+   "truth": {
+    "date": "2026-12-03",
+    "start": "17:00",
+    "end": "18:30",
+    "place": "Commons Library Curiosity Studio",
+    "online": false
+   },
+   "chars": 4112,
+   "tokens": {
+    "baseline": 1114,
+    "system": 2760
+   },
+   "baseline": {
+    "date": "2026-12-03",
+    "start": "17:00",
+    "end": "18:30",
+    "place": "Commons Library Curiosity Studio",
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-03",
+    "start": "17:00",
+    "end": "18:30",
+    "place": "Commons Library Curiosity Studio",
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-03",
+    "start": "17:00",
+    "end": "18:30",
+    "place": "Commons Library Curiosity Studio",
+    "online": true
+   },
+   "gate": {
+    "date": 0.987,
+    "start": 0.988,
+    "end": 0.988,
+    "place": 0.976,
+    "online": 0.969
+   }
+  },
+  {
+   "id": "princeton-17249912",
+   "school": "Princeton",
+   "seen_school": false,
+   "edge": [
+    "recurring"
+   ],
+   "url": "https://libcal.princeton.edu/event/17249912",
+   "truth": {
+    "date": "2027-04-16",
+    "start": "09:30",
+    "end": "10:25",
+    "place": "Firestone Lobby",
+    "online": false
+   },
+   "chars": 2028,
+   "tokens": {
+    "baseline": 701,
+    "system": 1905
+   },
+   "baseline": {
+    "date": "2027-04-16",
+    "start": "09:30",
+    "end": "10:25",
+    "place": "Firestone Lobby, Firestone Library",
+    "online": true
+   },
+   "system": {
+    "date": "2027-04-16",
+    "start": "09:30",
+    "end": "10:25",
+    "place": "Firestone Lobby",
+    "online": true
+   },
+   "ungated": {
+    "date": "2027-04-16",
+    "start": "09:30",
+    "end": "10:25",
+    "place": "Firestone Lobby",
+    "online": true
+   },
+   "gate": {
+    "date": 0.973,
+    "start": 0.99,
+    "end": 0.99,
+    "place": 0.974,
+    "online": 0.941
+   }
+  },
+  {
+   "id": "princeton-17405009",
+   "school": "Princeton",
+   "seen_school": false,
+   "edge": [
+    "online"
+   ],
+   "url": "https://libcal.princeton.edu/event/17405009",
+   "truth": {
+    "date": "2026-12-03",
+    "start": "16:00",
+    "end": "17:00",
+    "place": "Center for Modern Aging (formerly PSRC), 101 Poor Farm Road, Princeton, NJ 08540",
+    "online": true
+   },
+   "chars": 4689,
+   "tokens": {
+    "baseline": 1240,
+    "system": 3117
+   },
+   "baseline": {
+    "date": "2026-12-03",
+    "start": "16:00",
+    "end": "17:00",
+    "place": "Center for Modern Aging (formerly PSRC), 101 Poor Farm Road, Princeton, NJ 08540",
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-03",
+    "start": "16:00",
+    "end": "17:00",
+    "place": "Center for Modern Aging (formerly PSRC), 101 Poor Farm Road, Princeton, NJ 08540",
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-03",
+    "start": "16:00",
+    "end": "17:00",
+    "place": "Center for Modern Aging (formerly PSRC), 101 Poor Farm Road, Princeton, NJ 08540",
+    "online": true
+   },
+   "gate": {
+    "date": 0.984,
+    "start": 0.99,
+    "end": 0.983,
+    "place": 0.972,
+    "online": 0.985
+   }
+  },
+  {
+   "id": "princeton-17746415",
+   "school": "Princeton",
+   "seen_school": false,
+   "edge": [
+    "no location"
+   ],
+   "url": "https://libcal.princeton.edu/event/17746415",
+   "truth": {
+    "date": "2027-01-12",
+    "start": "13:00",
+    "end": "15:00",
+    "place": null,
+    "online": false
+   },
+   "chars": 1150,
+   "tokens": {
+    "baseline": 473,
+    "system": 1334
+   },
+   "baseline": {
+    "date": "2027-01-12",
+    "start": "13:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
+   },
+   "system": {
+    "date": "2027-01-12",
+    "start": "13:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2027-01-12",
+    "start": "13:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.974,
+    "start": 0.983,
+    "end": 0.99,
+    "online": 0.99
+   }
+  },
+  {
+   "id": "princeton-17384491",
+   "school": "Princeton",
+   "seen_school": false,
+   "edge": [
+    "recurring"
+   ],
+   "url": "https://libcal.princeton.edu/event/17384491",
+   "truth": {
+    "date": "2026-11-29",
+    "start": "14:00",
+    "end": "16:00",
+    "place": "Commons Library Curiosity Studio",
+    "online": false
+   },
+   "chars": 1700,
+   "tokens": {
+    "baseline": 599,
+    "system": 1720
+   },
+   "baseline": {
+    "date": "2026-11-29",
+    "start": "14:00",
+    "end": "16:00",
+    "place": "Commons Library Curiosity Studio",
+    "online": true
+   },
+   "system": {
+    "date": "2026-11-29",
+    "start": "14:00",
+    "end": "16:00",
+    "place": "Commons Library Curiosity Studio",
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-11-29",
+    "start": "14:00",
+    "end": "16:00",
+    "place": "Commons Library Curiosity Studio",
+    "online": true
+   },
+   "gate": {
+    "date": 0.988,
+    "start": 0.99,
+    "end": 0.989,
+    "place": 0.959,
+    "online": 0.936
+   }
+  },
+  {
+   "id": "princeton-17227468",
+   "school": "Princeton",
+   "seen_school": false,
+   "edge": [],
+   "url": "https://libcal.princeton.edu/event/17227468",
+   "truth": {
+    "date": "2026-12-06",
+    "start": "13:00",
+    "end": "13:45",
+    "place": "Milberg Gallery",
+    "online": false
+   },
+   "chars": 2114,
+   "tokens": {
+    "baseline": 698,
+    "system": 1837
+   },
+   "baseline": {
+    "date": "2026-12-06",
+    "start": "13:00",
+    "end": "13:45",
+    "place": "Milberg Gallery, Firestone Library",
+    "online": false
+   },
+   "system": {
+    "date": "2026-12-06",
+    "start": "13:00",
+    "end": "13:45",
+    "place": "Milberg Gallery",
+    "online": false
+   },
+   "ungated": {
+    "date": "2026-12-06",
+    "start": "13:00",
+    "end": "13:45",
+    "place": "Milberg Gallery",
+    "online": false
+   },
+   "gate": {
+    "date": 0.989,
+    "start": 0.986,
+    "end": 0.99,
+    "place": 0.978,
+    "online": 0.026
+   }
+  },
+  {
+   "id": "princeton-17227463",
+   "school": "Princeton",
+   "seen_school": false,
+   "edge": [],
+   "url": "https://libcal.princeton.edu/event/17227463",
+   "truth": {
+    "date": "2026-12-05",
+    "start": "13:00",
+    "end": "13:45",
+    "place": "Milberg Gallery",
+    "online": false
+   },
+   "chars": 2116,
+   "tokens": {
+    "baseline": 698,
+    "system": 1907
+   },
+   "baseline": {
+    "date": "2026-12-05",
+    "start": "13:00",
+    "end": "13:45",
+    "place": "Milberg Gallery, Firestone Library",
+    "online": false
+   },
+   "system": {
+    "date": "2026-12-05",
+    "start": "13:00",
+    "end": "13:45",
+    "place": "Milberg Gallery",
+    "online": false
+   },
+   "ungated": {
+    "date": "2026-12-05",
+    "start": "13:00",
+    "end": "13:45",
+    "place": "Milberg Gallery",
+    "online": false
+   },
+   "gate": {
+    "date": 0.99,
+    "start": 0.989,
+    "end": 0.99,
+    "place": 0.985,
+    "online": 0.034
+   }
+  },
+  {
+   "id": "penn-17394668",
+   "school": "Penn",
+   "seen_school": false,
+   "edge": [
+    "recurring"
+   ],
+   "url": "https://libcal.library.upenn.edu/event/17394668",
+   "truth": {
+    "date": "2027-01-08",
+    "start": "10:00",
+    "end": "11:00",
+    "place": "Research Data and Digital Scholarship Exchange",
+    "online": false
+   },
+   "chars": 2051,
+   "tokens": {
+    "baseline": 700,
+    "system": 2005
+   },
+   "baseline": {
+    "date": "2027-01-08",
+    "start": "10:00",
+    "end": "11:00",
+    "place": "Research Data and Digital Scholarship Exchange, Van Pelt-Dietrich Library Center",
+    "online": true
+   },
+   "system": {
+    "date": "2027-01-08",
+    "start": "10:00",
+    "end": "11:00",
+    "place": "Research Data and Digital Scholarship Exchange",
+    "online": true
+   },
+   "ungated": {
+    "date": "2027-01-08",
+    "start": "10:00",
+    "end": "11:00",
+    "place": "Research Data and Digital Scholarship Exchange",
+    "online": true
+   },
+   "gate": {
+    "date": 0.963,
+    "start": 0.99,
+    "end": 0.99,
+    "place": 0.968,
+    "online": 0.791
+   }
+  },
+  {
+   "id": "penn-17340127",
+   "school": "Penn",
+   "seen_school": false,
+   "edge": [
+    "recurring"
+   ],
+   "url": "https://libcal.library.upenn.edu/event/17340127",
+   "truth": {
+    "date": "2026-12-14",
+    "start": "09:00",
+    "end": "10:00",
+    "place": "Research Data and Digital Scholarship Exchange",
+    "online": false
+   },
+   "chars": 1637,
+   "tokens": {
+    "baseline": 575,
+    "system": 1665
+   },
+   "baseline": {
+    "date": "2026-12-14",
+    "start": "09:00",
+    "end": "10:00",
+    "place": "Research Data and Digital Scholarship Exchange, Van Pelt-Dietrich Library Center",
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-14",
+    "start": "09:00",
+    "end": "10:00",
+    "place": "Research Data and Digital Scholarship Exchange",
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-14",
+    "start": "09:00",
+    "end": "10:00",
+    "place": "Research Data and Digital Scholarship Exchange",
+    "online": true
+   },
+   "gate": {
+    "date": 0.988,
+    "start": 0.986,
+    "end": 0.987,
+    "place": 0.971,
+    "online": 0.962
+   }
+  },
+  {
+   "id": "penn-17799996",
+   "school": "Penn",
+   "seen_school": false,
+   "edge": [
+    "recurring"
+   ],
+   "url": "https://libcal.library.upenn.edu/event/17799996",
+   "truth": {
+    "date": "2026-11-23",
+    "start": "12:00",
+    "end": "17:00",
+    "place": "RDDSx nook",
+    "online": false
+   },
+   "chars": 1880,
+   "tokens": {
+    "baseline": 659,
+    "system": 1820
+   },
+   "baseline": {
+    "date": "2026-11-23",
+    "start": "12:00",
+    "end": "17:00",
+    "place": "Van Pelt-Dietrich Library Center, RDDSx nook",
+    "online": false
+   },
+   "system": {
+    "date": "2026-11-23",
+    "start": "12:00",
+    "end": "17:00",
+    "place": "RDDSx nook",
+    "online": false
+   },
+   "ungated": {
+    "date": "2026-11-23",
+    "start": "12:00",
+    "end": "17:00",
+    "place": "RDDSx nook",
+    "online": false
+   },
+   "gate": {
+    "date": 0.979,
+    "start": 0.99,
+    "end": 0.99,
+    "place": 0.971,
+    "online": 0.031
+   }
+  },
+  {
+   "id": "penn-17974770",
+   "school": "Penn",
+   "seen_school": false,
+   "edge": [
+    "online",
+    "no location",
+    "recurring"
+   ],
+   "url": "https://libcal.library.upenn.edu/event/17974770",
+   "truth": {
+    "date": "2027-01-13",
+    "start": "13:00",
+    "end": "13:30",
+    "place": null,
+    "online": true
+   },
+   "chars": 1848,
+   "tokens": {
+    "baseline": 761,
+    "system": 1940
+   },
+   "baseline": {
+    "date": "2027-01-13",
+    "start": "13:00",
+    "end": "13:30",
+    "place": null,
+    "online": true
+   },
+   "system": {
+    "date": "2027-01-13",
+    "start": "13:00",
+    "end": "13:30",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2027-01-13",
+    "start": "13:00",
+    "end": "13:30",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.982,
+    "start": 0.989,
+    "end": 0.99,
+    "online": 0.984
+   }
+  },
+  {
+   "id": "penn-17415255",
+   "school": "Penn",
+   "seen_school": false,
+   "edge": [
+    "recurring"
+   ],
+   "url": "https://libcal.library.upenn.edu/event/17415255",
+   "truth": {
+    "date": "2026-12-07",
+    "start": "14:00",
+    "end": "15:00",
+    "place": "Research Data and Digital Scholarship Exchange",
+    "online": false
+   },
+   "chars": 1428,
+   "tokens": {
+    "baseline": 548,
+    "system": 1597
+   },
+   "baseline": {
+    "date": "2026-12-07",
+    "start": "14:00",
+    "end": "15:00",
+    "place": "Research Data and Digital Scholarship Exchange, Van Pelt-Dietrich Library Center",
+    "online": false
+   },
+   "system": {
+    "date": "2026-12-07",
+    "start": "14:00",
+    "end": "15:00",
+    "place": "Research Data and Digital Scholarship Exchange",
+    "online": false
+   },
+   "ungated": {
+    "date": "2026-12-07",
+    "start": "14:00",
+    "end": "15:00",
+    "place": "Research Data and Digital Scholarship Exchange",
+    "online": false
+   },
+   "gate": {
+    "date": 0.987,
+    "start": 0.988,
+    "end": 0.99,
+    "place": 0.964,
+    "online": 0.023
+   }
+  },
+  {
+   "id": "penn-17427160",
+   "school": "Penn",
+   "seen_school": false,
+   "edge": [
+    "recurring"
+   ],
+   "url": "https://libcal.library.upenn.edu/event/17427160",
+   "truth": {
+    "date": "2026-12-09",
+    "start": "16:00",
+    "end": "17:00",
+    "place": "Research Data and Digital Scholarship Exchange",
+    "online": false
+   },
+   "chars": 1316,
+   "tokens": {
+    "baseline": 543,
+    "system": 1747
+   },
+   "baseline": {
+    "date": "2026-12-09",
+    "start": "16:00",
+    "end": "17:00",
+    "place": "Research Data and Digital Scholarship Exchange, Van Pelt-Dietrich Library Center",
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-09",
+    "start": "16:00",
+    "end": "17:00",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-09",
+    "start": "16:00",
+    "end": "17:00",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.988,
+    "start": 0.99,
+    "end": 0.99,
+    "online": 0.976
+   }
+  },
+  {
+   "id": "penn-17687493",
+   "school": "Penn",
+   "seen_school": false,
+   "edge": [
+    "recurring"
+   ],
+   "url": "https://libcal.library.upenn.edu/event/17687493",
+   "truth": {
+    "date": "2026-12-02",
+    "start": "10:00",
+    "end": "15:00",
+    "place": "RDDSx nook",
+    "online": false
+   },
+   "chars": 1797,
+   "tokens": {
+    "baseline": 629,
+    "system": 1750
+   },
+   "baseline": {
+    "date": "2026-12-02",
+    "start": "10:00",
+    "end": "15:00",
+    "place": "Van Pelt-Dietrich Library Center, RDDSx nook",
+    "online": false
+   },
+   "system": {
+    "date": "2026-12-02",
+    "start": "10:00",
+    "end": "15:00",
+    "place": "RDDSx nook",
+    "online": false
+   },
+   "ungated": {
+    "date": "2026-12-02",
+    "start": "10:00",
+    "end": "15:00",
+    "place": "RDDSx nook",
+    "online": false
+   },
+   "gate": {
+    "date": 0.988,
+    "start": 0.99,
+    "end": 0.99,
+    "place": 0.979,
+    "online": 0.028
+   }
+  },
+  {
+   "id": "penn-17340124",
+   "school": "Penn",
+   "seen_school": false,
+   "edge": [
+    "recurring"
+   ],
+   "url": "https://libcal.library.upenn.edu/event/17340124",
+   "truth": {
+    "date": "2026-11-23",
+    "start": "09:00",
+    "end": "10:00",
+    "place": "Research Data and Digital Scholarship Exchange",
+    "online": false
+   },
+   "chars": 1736,
+   "tokens": {
+    "baseline": 637,
+    "system": 1741
+   },
+   "baseline": {
+    "date": "2026-11-23",
+    "start": "09:00",
+    "end": "10:00",
+    "place": "Research Data and Digital Scholarship Exchange, Van Pelt-Dietrich Library Center",
+    "online": true
+   },
+   "system": {
+    "date": "2026-11-23",
+    "start": "09:00",
+    "end": "10:00",
+    "place": "Research Data and Digital Scholarship Exchange",
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-11-23",
+    "start": "09:00",
+    "end": "10:00",
+    "place": "Research Data and Digital Scholarship Exchange",
+    "online": true
+   },
+   "gate": {
+    "date": 0.985,
+    "start": 0.99,
+    "end": 0.982,
+    "place": 0.971,
+    "online": 0.961
+   }
+  },
+  {
+   "id": "penn-17514200",
+   "school": "Penn",
+   "seen_school": false,
+   "edge": [],
+   "url": "https://libcal.library.upenn.edu/event/17514200",
+   "truth": {
+    "date": "2026-12-01",
+    "start": "17:30",
+    "end": "19:30",
+    "place": "Kislak Center Class of 1978 Orrery Pavilion, 6th Floor",
+    "online": false
+   },
+   "chars": 3145,
+   "tokens": {
+    "baseline": 1831,
+    "system": 4148
+   },
+   "baseline": {
+    "date": "2026-12-01",
+    "start": "17:30",
+    "end": "19:30",
+    "place": "Kislak Center Class of 1978 Orrery Pavilion, 6th Floor, Van Pelt-Dietrich Library Center",
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-01",
+    "start": "17:30",
+    "end": "19:30",
+    "place": "Kislak Center Class of 1978 Orrery Pavilion, 6th Floor",
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-01",
+    "start": "17:30",
+    "end": "19:30",
+    "place": "Kislak Center Class of 1978 Orrery Pavilion, 6th Floor",
+    "online": true
+   },
+   "gate": {
+    "date": 0.99,
+    "start": 0.976,
+    "end": 0.976,
+    "place": 0.962,
+    "online": 0.973
+   }
+  },
+  {
+   "id": "penn-18004320",
+   "school": "Penn",
+   "seen_school": false,
+   "edge": [],
+   "url": "https://libcal.library.upenn.edu/event/18004320",
+   "truth": {
+    "date": "2026-12-16",
+    "start": "12:00",
+    "end": "13:00",
+    "place": "Fairchild Classroom (Vet) Hill 234",
+    "online": false
+   },
+   "chars": 1608,
+   "tokens": {
+    "baseline": 616,
+    "system": 1806
+   },
+   "baseline": {
+    "date": "2026-12-16",
+    "start": "12:00",
+    "end": "13:00",
+    "place": "Fairchild Classroom (Vet) Hill 234",
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-16",
+    "start": "12:00",
+    "end": "13:00",
+    "place": "Fairchild Classroom (Vet) Hill 234",
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-16",
+    "start": "12:00",
+    "end": "13:00",
+    "place": "Fairchild Classroom (Vet) Hill 234",
+    "online": true
+   },
+   "gate": {
+    "date": 0.99,
+    "start": 0.985,
+    "end": 0.99,
+    "place": 0.986,
+    "online": 0.846
+   }
+  },
+  {
+   "id": "penn-17344217",
+   "school": "Penn",
+   "seen_school": false,
+   "edge": [
+    "recurring"
+   ],
+   "url": "https://libcal.library.upenn.edu/event/17344217",
+   "truth": {
+    "date": "2026-12-01",
+    "start": "13:00",
+    "end": "15:00",
+    "place": "RDDSx nook",
+    "online": false
+   },
+   "chars": 2662,
+   "tokens": {
+    "baseline": 781,
+    "system": 2168
+   },
+   "baseline": {
+    "date": "2026-12-01",
+    "start": "13:00",
+    "end": "15:00",
+    "place": "Van Pelt-Dietrich Library Center, RDDSx nook",
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-01",
+    "start": "13:00",
+    "end": "15:00",
+    "place": "RDDSx nook",
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-01",
+    "start": "13:00",
+    "end": "15:00",
+    "place": "RDDSx nook",
+    "online": true
+   },
+   "gate": {
+    "date": 0.985,
+    "start": 0.985,
+    "end": 0.99,
+    "place": 0.967,
+    "online": 0.97
+   }
+  },
+  {
+   "id": "penn-17427495",
+   "school": "Penn",
+   "seen_school": false,
+   "edge": [
+    "recurring"
+   ],
+   "url": "https://libcal.library.upenn.edu/event/17427495",
+   "truth": {
+    "date": "2026-11-30",
+    "start": "11:00",
+    "end": "12:00",
+    "place": "Online",
+    "online": false
+   },
+   "chars": 1356,
+   "tokens": {
+    "baseline": 564,
+    "system": 1617
+   },
+   "baseline": {
+    "date": "2026-11-30",
+    "start": "11:00",
+    "end": "12:00",
+    "place": null,
+    "online": true
+   },
+   "system": {
+    "date": "2026-11-30",
+    "start": "11:00",
+    "end": "12:00",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-11-30",
+    "start": "11:00",
+    "end": "12:00",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.988,
+    "start": 0.988,
+    "end": 0.987,
+    "online": 0.989
+   }
+  },
+  {
+   "id": "penn-15790718",
+   "school": "Penn",
+   "seen_school": false,
+   "edge": [
+    "online",
+    "no location",
+    "recurring"
+   ],
+   "url": "https://libcal.library.upenn.edu/event/15790718",
+   "truth": {
+    "date": "2026-12-09",
+    "start": "12:30",
+    "end": "13:00",
+    "place": null,
+    "online": true
+   },
+   "chars": 1485,
+   "tokens": {
+    "baseline": 592,
+    "system": 1547
+   },
+   "baseline": {
+    "date": "2026-12-09",
+    "start": "12:30",
+    "end": "13:00",
+    "place": null,
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-09",
+    "start": "12:30",
+    "end": "13:00",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-09",
+    "start": "12:30",
+    "end": "13:00",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.99,
+    "start": 0.987,
+    "end": 0.99,
+    "online": 0.99
+   }
+  },
+  {
+   "id": "penn-17427496",
+   "school": "Penn",
+   "seen_school": false,
+   "edge": [
+    "recurring"
+   ],
+   "url": "https://libcal.library.upenn.edu/event/17427496",
+   "truth": {
+    "date": "2026-12-07",
+    "start": "11:00",
+    "end": "12:00",
+    "place": "Online",
+    "online": false
+   },
+   "chars": 1328,
+   "tokens": {
+    "baseline": 550,
+    "system": 1531
+   },
+   "baseline": {
+    "date": "2026-12-07",
+    "start": "11:00",
+    "end": "12:00",
+    "place": null,
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-07",
+    "start": "11:00",
+    "end": "12:00",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-07",
+    "start": "11:00",
+    "end": "12:00",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.986,
+    "start": 0.988,
+    "end": 0.99,
+    "online": 0.98
+   }
+  },
+  {
+   "id": "penn-17939889",
+   "school": "Penn",
+   "seen_school": false,
+   "edge": [
+    "online",
+    "no location"
+   ],
+   "url": "https://libcal.library.upenn.edu/event/17939889",
+   "truth": {
+    "date": "2026-12-03",
+    "start": "12:00",
+    "end": "12:30",
+    "place": null,
+    "online": true
+   },
+   "chars": 2118,
+   "tokens": {
+    "baseline": 716,
+    "system": 1848
+   },
+   "baseline": {
+    "date": "2026-12-03",
+    "start": "12:00",
+    "end": "12:30",
+    "place": null,
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-03",
+    "start": "12:00",
+    "end": "12:30",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-03",
+    "start": "12:00",
+    "end": "12:30",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.977,
+    "start": 0.98,
+    "end": 0.967,
+    "online": 0.986
+   }
+  },
+  {
+   "id": "penn-15790716",
+   "school": "Penn",
+   "seen_school": false,
+   "edge": [
+    "online",
+    "no location",
+    "recurring"
+   ],
+   "url": "https://libcal.library.upenn.edu/event/15790716",
+   "truth": {
+    "date": "2026-11-25",
+    "start": "12:30",
+    "end": "13:00",
+    "place": null,
+    "online": true
+   },
+   "chars": 1546,
+   "tokens": {
+    "baseline": 619,
+    "system": 1603
+   },
+   "baseline": {
+    "date": "2026-11-25",
+    "start": "12:30",
+    "end": "13:00",
+    "place": null,
+    "online": true
+   },
+   "system": {
+    "date": "2026-11-25",
+    "start": "12:30",
+    "end": "13:00",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-11-25",
+    "start": "12:30",
+    "end": "13:00",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.99,
+    "start": 0.986,
+    "end": 0.99,
+    "online": 0.99
+   }
+  },
+  {
+   "id": "penn-17344218",
+   "school": "Penn",
+   "seen_school": false,
+   "edge": [
+    "recurring"
+   ],
+   "url": "https://libcal.library.upenn.edu/event/17344218",
+   "truth": {
+    "date": "2026-12-08",
+    "start": "13:00",
+    "end": "15:00",
+    "place": "RDDSx nook",
+    "online": false
+   },
+   "chars": 2618,
+   "tokens": {
+    "baseline": 764,
+    "system": 2165
+   },
+   "baseline": {
+    "date": "2026-12-08",
+    "start": "13:00",
+    "end": "15:00",
+    "place": "RDDSx nook, Van Pelt-Dietrich Library Center",
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-08",
+    "start": "13:00",
+    "end": "15:00",
+    "place": "RDDSx nook",
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-08",
+    "start": "13:00",
+    "end": "15:00",
+    "place": "RDDSx nook",
+    "online": true
+   },
+   "gate": {
+    "date": 0.974,
+    "start": 0.982,
+    "end": 0.987,
+    "place": 0.981,
+    "online": 0.98
+   }
+  },
+  {
+   "id": "penn-17974718",
+   "school": "Penn",
+   "seen_school": false,
+   "edge": [
+    "online",
+    "no location",
+    "recurring"
+   ],
+   "url": "https://libcal.library.upenn.edu/event/17974718",
+   "truth": {
+    "date": "2027-01-13",
+    "start": "12:30",
+    "end": "13:00",
+    "place": null,
+    "online": true
+   },
+   "chars": 1856,
+   "tokens": {
+    "baseline": 772,
+    "system": 1908
+   },
+   "baseline": {
+    "date": "2027-01-13",
+    "start": "12:30",
+    "end": "13:00",
+    "place": null,
+    "online": true
+   },
+   "system": {
+    "date": "2027-01-13",
+    "start": "12:30",
+    "end": "13:00",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2027-01-13",
+    "start": "12:30",
+    "end": "13:00",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.99,
+    "start": 0.989,
+    "end": 0.99,
+    "online": 0.99
+   }
+  },
+  {
+   "id": "penn-15791235",
+   "school": "Penn",
+   "seen_school": false,
+   "edge": [
+    "online",
+    "no location",
+    "recurring"
+   ],
+   "url": "https://libcal.library.upenn.edu/event/15791235",
+   "truth": {
+    "date": "2026-12-16",
+    "start": "14:30",
+    "end": "15:00",
+    "place": null,
+    "online": true
+   },
+   "chars": 1452,
+   "tokens": {
+    "baseline": 576,
+    "system": 1507
+   },
+   "baseline": {
+    "date": "2026-12-16",
+    "start": "14:30",
+    "end": "15:00",
+    "place": null,
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-16",
+    "start": "14:30",
+    "end": "15:00",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-16",
+    "start": "14:30",
+    "end": "15:00",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.99,
+    "start": 0.99,
+    "end": 0.983,
+    "online": 0.98
+   }
+  },
+  {
+   "id": "penn-17427158",
+   "school": "Penn",
+   "seen_school": false,
+   "edge": [
+    "recurring"
+   ],
+   "url": "https://libcal.library.upenn.edu/event/17427158",
+   "truth": {
+    "date": "2026-11-25",
+    "start": "16:00",
+    "end": "17:00",
+    "place": "Research Data and Digital Scholarship Exchange",
+    "online": false
+   },
+   "chars": 1392,
+   "tokens": {
+    "baseline": 576,
+    "system": 1862
+   },
+   "baseline": {
+    "date": "2026-11-25",
+    "start": "16:00",
+    "end": "17:00",
+    "place": "Research Data and Digital Scholarship Exchange, Van Pelt-Dietrich Library Center",
+    "online": true
+   },
+   "system": {
+    "date": "2026-11-25",
+    "start": "16:00",
+    "end": "17:00",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-11-25",
+    "start": "16:00",
+    "end": "17:00",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.99,
+    "start": 0.983,
+    "end": 0.989,
+    "online": 0.978
+   }
+  },
+  {
+   "id": "penn-17340169",
+   "school": "Penn",
+   "seen_school": false,
+   "edge": [
+    "recurring"
+   ],
+   "url": "https://libcal.library.upenn.edu/event/17340169",
+   "truth": {
+    "date": "2026-12-08",
+    "start": "14:00",
+    "end": "15:00",
+    "place": "Research Data and Digital Scholarship Exchange",
+    "online": false
+   },
+   "chars": 1681,
+   "tokens": {
+    "baseline": 591,
+    "system": 1684
+   },
+   "baseline": {
+    "date": "2026-12-08",
+    "start": "14:00",
+    "end": "15:00",
+    "place": "Research Data and Digital Scholarship Exchange, Van Pelt-Dietrich Library Center",
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-08",
+    "start": "14:00",
+    "end": "15:00",
+    "place": "Research Data and Digital Scholarship Exchange",
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-08",
+    "start": "14:00",
+    "end": "15:00",
+    "place": "Research Data and Digital Scholarship Exchange",
+    "online": true
+   },
+   "gate": {
+    "date": 0.986,
+    "start": 0.99,
+    "end": 0.99,
+    "place": 0.956,
+    "online": 0.963
+   }
+  },
+  {
+   "id": "penn-17414068",
+   "school": "Penn",
+   "seen_school": false,
+   "edge": [],
+   "url": "https://libcal.library.upenn.edu/event/17414068",
+   "truth": {
+    "date": "2026-12-03",
+    "start": "10:00",
+    "end": "12:00",
+    "place": "Fisher B Level Seminar Room",
+    "online": false
+   },
+   "chars": 1981,
+   "tokens": {
+    "baseline": 725,
+    "system": 2011
+   },
+   "baseline": {
+    "date": "2026-12-03",
+    "start": "10:00",
+    "end": "12:00",
+    "place": "Fisher Fine Arts Library, Fisher B Level Seminar Room",
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-03",
+    "start": "10:00",
+    "end": "12:00",
+    "place": "Fisher B Level Seminar Room",
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-03",
+    "start": "10:00",
+    "end": "12:00",
+    "place": "Fisher B Level Seminar Room",
+    "online": true
+   },
+   "gate": {
+    "date": 0.988,
+    "start": 0.985,
+    "end": 0.988,
+    "place": 0.968,
+    "online": 0.712
+   }
+  },
+  {
+   "id": "penn-17480934",
+   "school": "Penn",
+   "seen_school": false,
+   "edge": [],
+   "url": "https://libcal.library.upenn.edu/event/17480934",
+   "truth": {
+    "date": "2026-11-24",
+    "start": "14:00",
+    "end": "16:00",
+    "place": "Common Press",
+    "online": false
+   },
+   "chars": 3153,
+   "tokens": {
+    "baseline": 889,
+    "system": 2385
+   },
+   "baseline": {
+    "date": "2026-11-24",
+    "start": "14:00",
+    "end": "16:00",
+    "place": "Common Press, Fisher Fine Arts Library",
+    "online": true
+   },
+   "system": {
+    "date": "2026-11-24",
+    "start": "14:00",
+    "end": "16:00",
+    "place": "Common Press",
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-11-24",
+    "start": "14:00",
+    "end": "16:00",
+    "place": "Common Press",
+    "online": true
+   },
+   "gate": {
+    "date": 0.985,
+    "start": 0.976,
+    "end": 0.99,
+    "place": 0.979,
+    "online": 0.955
+   }
+  },
+  {
+   "id": "penn-17317188",
+   "school": "Penn",
+   "seen_school": false,
+   "edge": [
+    "recurring"
+   ],
+   "url": "https://libcal.library.upenn.edu/event/17317188",
+   "truth": {
+    "date": "2026-12-02",
+    "start": "15:30",
+    "end": "16:30",
+    "place": "Yablon Financial Resources Lab, room 244",
+    "online": false
+   },
+   "chars": 1998,
+   "tokens": {
+    "baseline": 792,
+    "system": 2157
+   },
+   "baseline": {
+    "date": "2026-12-02",
+    "start": "15:30",
+    "end": "16:30",
+    "place": "Yablon Financial Resources Lab, room 244, Lippincott Library",
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-02",
+    "start": "15:30",
+    "end": "16:30",
+    "place": "Yablon Financial Resources Lab, room 244",
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-02",
+    "start": "15:30",
+    "end": "16:30",
+    "place": "Yablon Financial Resources Lab, room 244",
+    "online": true
+   },
+   "gate": {
+    "date": 0.965,
+    "start": 0.99,
+    "end": 0.99,
+    "place": 0.972,
+    "online": 0.968
+   }
+  },
+  {
+   "id": "penn-17799999",
+   "school": "Penn",
+   "seen_school": false,
+   "edge": [
+    "recurring"
+   ],
+   "url": "https://libcal.library.upenn.edu/event/17799999",
+   "truth": {
+    "date": "2026-12-02",
+    "start": "15:00",
+    "end": "17:00",
+    "place": "RDDSx nook",
+    "online": false
+   },
+   "chars": 1823,
+   "tokens": {
+    "baseline": 630,
+    "system": 1765
+   },
+   "baseline": {
+    "date": "2026-12-02",
+    "start": "15:00",
+    "end": "17:00",
+    "place": "RDDSx nook, Van Pelt-Dietrich Library Center",
+    "online": false
+   },
+   "system": {
+    "date": "2026-12-02",
+    "start": "15:00",
+    "end": "17:00",
+    "place": "RDDSx nook",
+    "online": false
+   },
+   "ungated": {
+    "date": "2026-12-02",
+    "start": "15:00",
+    "end": "17:00",
+    "place": "RDDSx nook",
+    "online": false
+   },
+   "gate": {
+    "date": 0.981,
+    "start": 0.989,
+    "end": 0.987,
+    "place": 0.981,
+    "online": 0.032
+   }
+  },
+  {
+   "id": "penn-17427159",
+   "school": "Penn",
+   "seen_school": false,
+   "edge": [
+    "recurring"
+   ],
+   "url": "https://libcal.library.upenn.edu/event/17427159",
+   "truth": {
+    "date": "2026-12-02",
+    "start": "16:00",
+    "end": "17:00",
+    "place": "Research Data and Digital Scholarship Exchange",
+    "online": false
+   },
+   "chars": 1361,
+   "tokens": {
+    "baseline": 554,
+    "system": 1710
+   },
+   "baseline": {
+    "date": "2026-12-02",
+    "start": "16:00",
+    "end": "17:00",
+    "place": "Research Data and Digital Scholarship Exchange",
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-02",
+    "start": "16:00",
+    "end": "17:00",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-02",
+    "start": "16:00",
+    "end": "17:00",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.97,
+    "start": 0.988,
+    "end": 0.99,
+    "online": 0.981
+   }
+  },
+  {
+   "id": "penn-15790665",
+   "school": "Penn",
+   "seen_school": false,
+   "edge": [
+    "online",
+    "no location",
+    "recurring"
+   ],
+   "url": "https://libcal.library.upenn.edu/event/15790665",
+   "truth": {
+    "date": "2026-12-09",
+    "start": "12:00",
+    "end": "12:30",
+    "place": null,
+    "online": true
+   },
+   "chars": 1480,
+   "tokens": {
+    "baseline": 587,
+    "system": 1535
+   },
+   "baseline": {
+    "date": "2026-12-09",
+    "start": "12:00",
+    "end": "12:30",
+    "place": null,
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-09",
+    "start": "12:00",
+    "end": "12:30",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-09",
+    "start": "12:00",
+    "end": "12:30",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.978,
+    "start": 0.974,
+    "end": 0.982,
+    "online": 0.986
+   }
+  },
+  {
+   "id": "penn-15790663",
+   "school": "Penn",
+   "seen_school": false,
+   "edge": [
+    "online",
+    "no location",
+    "recurring"
+   ],
+   "url": "https://libcal.library.upenn.edu/event/15790663",
+   "truth": {
+    "date": "2026-11-25",
+    "start": "12:00",
+    "end": "12:30",
+    "place": null,
+    "online": true
+   },
+   "chars": 1541,
+   "tokens": {
+    "baseline": 614,
+    "system": 1582
+   },
+   "baseline": {
+    "date": "2026-11-25",
+    "start": "12:00",
+    "end": "12:30",
+    "place": null,
+    "online": true
+   },
+   "system": {
+    "date": "2026-11-25",
+    "start": "12:00",
+    "end": "12:30",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-11-25",
+    "start": "12:00",
+    "end": "12:30",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.99,
+    "start": 0.985,
+    "end": 0.99,
+    "online": 0.985
+   }
+  },
+  {
+   "id": "penn-15790773",
+   "school": "Penn",
+   "seen_school": false,
+   "edge": [
+    "online",
+    "no location",
+    "recurring"
+   ],
+   "url": "https://libcal.library.upenn.edu/event/15790773",
+   "truth": {
+    "date": "2026-12-23",
+    "start": "13:00",
+    "end": "13:30",
+    "place": null,
+    "online": true
+   },
+   "chars": 1399,
+   "tokens": {
+    "baseline": 552,
+    "system": 1522
+   },
+   "baseline": {
+    "date": "2026-12-23",
+    "start": "13:00",
+    "end": "13:30",
+    "place": null,
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-23",
+    "start": "13:00",
+    "end": "13:30",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-23",
+    "start": "13:00",
+    "end": "13:30",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.989,
+    "start": 0.985,
+    "end": 0.99,
+    "online": 0.99
+   }
+  },
+  {
+   "id": "penn-17974657",
+   "school": "Penn",
+   "seen_school": false,
+   "edge": [
+    "online",
+    "no location",
+    "recurring"
+   ],
+   "url": "https://libcal.library.upenn.edu/event/17974657",
+   "truth": {
+    "date": "2027-01-13",
+    "start": "12:00",
+    "end": "12:30",
+    "place": null,
+    "online": true
+   },
+   "chars": 1851,
+   "tokens": {
+    "baseline": 768,
+    "system": 1893
+   },
+   "baseline": {
+    "date": "2027-01-13",
+    "start": "12:00",
+    "end": "12:30",
+    "place": "Online",
+    "online": true
+   },
+   "system": {
+    "date": "2027-01-13",
+    "start": "12:00",
+    "end": "12:30",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2027-01-13",
+    "start": "12:00",
+    "end": "12:30",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.984,
+    "start": 0.977,
+    "end": 0.99,
+    "online": 0.99
+   }
+  },
+  {
+   "id": "yale-18061479",
+   "school": "Yale",
+   "seen_school": false,
+   "edge": [
+    "online",
+    "no location"
+   ],
+   "url": "https://schedule.yale.edu/event/18061479",
+   "truth": {
+    "date": "2026-12-17",
+    "start": "16:00",
+    "end": "18:00",
+    "place": null,
+    "online": true
+   },
+   "chars": 7164,
+   "tokens": {
+    "baseline": 1797,
+    "system": 4093
+   },
+   "baseline": {
+    "date": "2026-12-17",
+    "start": "16:00",
+    "end": "18:00",
+    "place": null,
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-17",
+    "start": "16:00",
+    "end": "18:00",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-17",
+    "start": "16:00",
+    "end": "18:00",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.983,
+    "start": 0.987,
+    "end": 0.975,
+    "online": 0.99
+   }
+  },
+  {
+   "id": "yale-17881844",
+   "school": "Yale",
+   "seen_school": false,
+   "edge": [
+    "recurring"
+   ],
+   "url": "https://schedule.yale.edu/event/17881844",
+   "truth": {
+    "date": "2026-12-04",
+    "start": "10:00",
+    "end": "12:00",
+    "place": "SHM L 111, Cushing/Whitney Medical Library, 333 Cedar Street",
+    "online": false
+   },
+   "chars": 6188,
+   "tokens": {
+    "baseline": 1703,
+    "system": 4075
+   },
+   "baseline": {
+    "date": "2026-12-04",
+    "start": "10:00",
+    "end": "12:00",
+    "place": "SHM L 111, Cushing/Whitney Medical Library, 333 Cedar Street",
+    "online": false
+   },
+   "system": {
+    "date": "2026-12-04",
+    "start": "10:00",
+    "end": "12:00",
+    "place": "SHM L 111, Cushing/Whitney Medical Library, 333 Cedar Street",
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-04",
+    "start": "10:00",
+    "end": "12:00",
+    "place": "SHM L 111, Cushing/Whitney Medical Library, 333 Cedar Street",
+    "online": true
+   },
+   "gate": {
+    "date": 0.971,
+    "start": 0.987,
+    "end": 0.972,
+    "place": 0.971,
+    "online": 0.833
+   }
+  },
+  {
+   "id": "yale-18061528",
+   "school": "Yale",
+   "seen_school": false,
+   "edge": [
+    "online",
+    "no location"
+   ],
+   "url": "https://schedule.yale.edu/event/18061528",
+   "truth": {
+    "date": "2026-12-20",
+    "start": "13:00",
+    "end": "14:00",
+    "place": null,
+    "online": true
+   },
+   "chars": 4797,
+   "tokens": {
+    "baseline": 1346,
+    "system": 3136
+   },
+   "baseline": {
+    "date": "2026-12-20",
+    "start": "13:00",
+    "end": "14:00",
+    "place": "Medical School",
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-20",
+    "start": "13:00",
+    "end": "14:00",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-20",
+    "start": "13:00",
+    "end": "14:00",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.978,
+    "start": 0.979,
+    "end": 0.988,
+    "online": 0.987
+   }
+  },
+  {
+   "id": "yale-18060992",
+   "school": "Yale",
+   "seen_school": false,
+   "edge": [
+    "online",
+    "no location"
+   ],
+   "url": "https://schedule.yale.edu/event/18060992",
+   "truth": {
+    "date": "2026-12-09",
+    "start": "17:00",
+    "end": "18:00",
+    "place": null,
+    "online": true
+   },
+   "chars": 4799,
+   "tokens": {
+    "baseline": 1343,
+    "system": 3101
+   },
+   "baseline": {
+    "date": "2026-12-09",
+    "start": "17:00",
+    "end": "18:00",
+    "place": null,
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-09",
+    "start": "17:00",
+    "end": "18:00",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-09",
+    "start": "17:00",
+    "end": "18:00",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.973,
+    "start": 0.975,
+    "end": 0.986,
+    "online": 0.984
+   }
+  },
+  {
+   "id": "yale-18069538",
+   "school": "Yale",
+   "seen_school": false,
+   "edge": [
+    "online",
+    "no location"
+   ],
+   "url": "https://schedule.yale.edu/event/18069538",
+   "truth": {
+    "date": "2026-12-03",
+    "start": "19:30",
+    "end": "20:00",
+    "place": null,
+    "online": true
+   },
+   "chars": 4125,
+   "tokens": {
+    "baseline": 1183,
+    "system": 2756
+   },
+   "baseline": {
+    "date": "2026-12-03",
+    "start": "19:30",
+    "end": "20:00",
+    "place": null,
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-03",
+    "start": "19:30",
+    "end": "20:00",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-03",
+    "start": "19:30",
+    "end": "20:00",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.976,
+    "start": 0.977,
+    "end": 0.971,
+    "online": 0.99
+   }
+  },
+  {
+   "id": "yale-17844513",
+   "school": "Yale",
+   "seen_school": false,
+   "edge": [
+    "online",
+    "no location"
+   ],
+   "url": "https://schedule.yale.edu/event/17844513",
+   "truth": {
+    "date": "2026-11-30",
+    "start": "15:00",
+    "end": "16:00",
+    "place": null,
+    "online": true
+   },
+   "chars": 4797,
+   "tokens": {
+    "baseline": 1344,
+    "system": 3150
+   },
+   "baseline": {
+    "date": "2026-11-30",
+    "start": "15:00",
+    "end": "16:00",
+    "place": null,
+    "online": true
+   },
+   "system": {
+    "date": "2026-11-30",
+    "start": "15:00",
+    "end": "16:00",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-11-30",
+    "start": "15:00",
+    "end": "16:00",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.971,
+    "start": 0.964,
+    "end": 0.978,
+    "online": 0.982
+   }
+  },
+  {
+   "id": "yale-17448626",
+   "school": "Yale",
+   "seen_school": false,
+   "edge": [
+    "online",
+    "no location",
+    "recurring"
+   ],
+   "url": "https://schedule.yale.edu/event/17448626",
+   "truth": {
+    "date": "2026-12-04",
+    "start": "15:00",
+    "end": "16:00",
+    "place": null,
+    "online": true
+   },
+   "chars": 3616,
+   "tokens": {
+    "baseline": 1094,
+    "system": 2643
+   },
+   "baseline": {
+    "date": "2026-12-04",
+    "start": "15:00",
+    "end": "16:00",
+    "place": null,
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-04",
+    "start": "15:00",
+    "end": "16:00",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-04",
+    "start": "15:00",
+    "end": "16:00",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.966,
+    "start": 0.985,
+    "end": 0.99,
+    "online": 0.987
+   }
+  },
+  {
+   "id": "yale-18054840",
+   "school": "Yale",
+   "seen_school": false,
+   "edge": [
+    "online",
+    "no location"
+   ],
+   "url": "https://schedule.yale.edu/event/18054840",
+   "truth": {
+    "date": "2026-12-07",
+    "start": "13:00",
+    "end": "14:00",
+    "place": null,
+    "online": true
+   },
+   "chars": 4796,
+   "tokens": {
+    "baseline": 1343,
+    "system": 3137
+   },
+   "baseline": {
+    "date": "2026-12-07",
+    "start": "13:00",
+    "end": "14:00",
+    "place": null,
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-07",
+    "start": "13:00",
+    "end": "14:00",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-07",
+    "start": "13:00",
+    "end": "14:00",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.972,
+    "start": 0.981,
+    "end": 0.973,
+    "online": 0.989
+   }
+  },
+  {
+   "id": "yale-18061542",
+   "school": "Yale",
+   "seen_school": false,
+   "edge": [
+    "online",
+    "no location"
+   ],
+   "url": "https://schedule.yale.edu/event/18061542",
+   "truth": {
+    "date": "2026-12-20",
+    "start": "15:00",
+    "end": "15:45",
+    "place": null,
+    "online": true
+   },
+   "chars": 6214,
+   "tokens": {
+    "baseline": 1565,
+    "system": 3603
+   },
+   "baseline": {
+    "date": "2026-12-20",
+    "start": "15:00",
+    "end": "15:45",
+    "place": null,
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-20",
+    "start": "15:00",
+    "end": "15:45",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-20",
+    "start": "15:00",
+    "end": "15:45",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.972,
+    "start": 0.977,
+    "end": 0.983,
+    "online": 0.981
+   }
+  },
+  {
+   "id": "yale-18013520",
+   "school": "Yale",
+   "seen_school": false,
+   "edge": [],
+   "url": "https://schedule.yale.edu/event/18013520",
+   "truth": {
+    "date": "2026-12-14",
+    "start": "11:00",
+    "end": "12:30",
+    "place": "Haas Arts Library",
+    "online": false
+   },
+   "chars": 3538,
+   "tokens": {
+    "baseline": 1064,
+    "system": 2613
+   },
+   "baseline": {
+    "date": "2026-12-14",
+    "start": "11:00",
+    "end": "12:30",
+    "place": "Haas Arts Library, Central Campus",
+    "online": false
+   },
+   "system": {
+    "date": "2026-12-14",
+    "start": "11:00",
+    "end": "12:30",
+    "place": "Haas Arts Library",
+    "online": false
+   },
+   "ungated": {
+    "date": "2026-12-14",
+    "start": "11:00",
+    "end": "12:30",
+    "place": "Haas Arts Library",
+    "online": false
+   },
+   "gate": {
+    "date": 0.975,
+    "start": 0.986,
+    "end": 0.987,
+    "place": 0.975,
+    "online": 0.019
+   }
+  },
+  {
+   "id": "yale-18061057",
+   "school": "Yale",
+   "seen_school": false,
+   "edge": [
+    "online",
+    "no location"
+   ],
+   "url": "https://schedule.yale.edu/event/18061057",
+   "truth": {
+    "date": "2026-12-14",
+    "start": "12:15",
+    "end": "12:45",
+    "place": null,
+    "online": true
+   },
+   "chars": 4653,
+   "tokens": {
+    "baseline": 1353,
+    "system": 3234
+   },
+   "baseline": {
+    "date": "2026-12-14",
+    "start": "12:15",
+    "end": "12:45",
+    "place": "Medical School",
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-14",
+    "start": "12:15",
+    "end": "12:45",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-14",
+    "start": "12:15",
+    "end": "12:45",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.968,
+    "start": 0.967,
+    "end": 0.962,
+    "online": 0.96
+   }
+  },
+  {
+   "id": "yale-18054729",
+   "school": "Yale",
+   "seen_school": false,
+   "edge": [
+    "online",
+    "no location"
+   ],
+   "url": "https://schedule.yale.edu/event/18054729",
+   "truth": {
+    "date": "2026-12-07",
+    "start": "10:00",
+    "end": "10:45",
+    "place": null,
+    "online": true
+   },
+   "chars": 4311,
+   "tokens": {
+    "baseline": 1264,
+    "system": 2927
+   },
+   "baseline": {
+    "date": "2026-12-07",
+    "start": "10:00",
+    "end": "10:45",
+    "place": null,
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-07",
+    "start": "10:00",
+    "end": "10:45",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-07",
+    "start": "10:00",
+    "end": "10:45",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.965,
+    "start": 0.984,
+    "end": 0.969,
+    "online": 0.988
+   }
+  },
+  {
+   "id": "yale-18054683",
+   "school": "Yale",
+   "seen_school": false,
+   "edge": [
+    "online",
+    "no location"
+   ],
+   "url": "https://schedule.yale.edu/event/18054683",
+   "truth": {
+    "date": "2026-12-03",
+    "start": "12:00",
+    "end": "14:00",
+    "place": null,
+    "online": true
+   },
+   "chars": 5518,
+   "tokens": {
+    "baseline": 1508,
+    "system": 3490
+   },
+   "baseline": {
+    "date": "2026-12-03",
+    "start": "12:00",
+    "end": "14:00",
+    "place": null,
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-03",
+    "start": "12:00",
+    "end": "14:00",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-03",
+    "start": "12:00",
+    "end": "14:00",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.984,
+    "start": 0.98,
+    "end": 0.977,
+    "online": 0.983
+   }
+  },
+  {
+   "id": "yale-17448627",
+   "school": "Yale",
+   "seen_school": false,
+   "edge": [
+    "online",
+    "no location",
+    "recurring"
+   ],
+   "url": "https://schedule.yale.edu/event/17448627",
+   "truth": {
+    "date": "2026-12-11",
+    "start": "15:00",
+    "end": "16:00",
+    "place": null,
+    "online": true
+   },
+   "chars": 3589,
+   "tokens": {
+    "baseline": 1083,
+    "system": 2656
+   },
+   "baseline": {
+    "date": "2026-12-11",
+    "start": "15:00",
+    "end": "16:00",
+    "place": "Medical School",
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-11",
+    "start": "15:00",
+    "end": "16:00",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-11",
+    "start": "15:00",
+    "end": "16:00",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.951,
+    "start": 0.978,
+    "end": 0.982,
+    "online": 0.988
+   }
+  },
+  {
+   "id": "yale-18061556",
+   "school": "Yale",
+   "seen_school": false,
+   "edge": [
+    "online",
+    "no location"
+   ],
+   "url": "https://schedule.yale.edu/event/18061556",
+   "truth": {
+    "date": "2026-12-21",
+    "start": "18:00",
+    "end": "20:00",
+    "place": null,
+    "online": true
+   },
+   "chars": 5516,
+   "tokens": {
+    "baseline": 1508,
+    "system": 3479
+   },
+   "baseline": {
+    "date": "2026-12-21",
+    "start": "18:00",
+    "end": "20:00",
+    "place": null,
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-21",
+    "start": "18:00",
+    "end": "20:00",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-21",
+    "start": "18:00",
+    "end": "20:00",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.988,
+    "start": 0.979,
+    "end": 0.977,
+    "online": 0.982
+   }
+  },
+  {
+   "id": "yale-18061171",
+   "school": "Yale",
+   "seen_school": false,
+   "edge": [],
+   "url": "https://schedule.yale.edu/event/18061171",
+   "truth": {
+    "date": "2026-12-14",
+    "start": "10:00",
+    "end": "12:00",
+    "place": "SHM L 111, Cushing/Whitney Medical Library, 333 Cedar Street",
+    "online": false
+   },
+   "chars": 6342,
+   "tokens": {
+    "baseline": 1782,
+    "system": 4173
+   },
+   "baseline": {
+    "date": "2026-12-14",
+    "start": "10:00",
+    "end": "12:00",
+    "place": "SHM L 111, Cushing/Whitney Medical Library, 333 Cedar Street",
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-14",
+    "start": "10:00",
+    "end": "12:00",
+    "place": "SHM L 111, Cushing/Whitney Medical Library, 333 Cedar Street",
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-14",
+    "start": "10:00",
+    "end": "12:00",
+    "place": "SHM L 111, Cushing/Whitney Medical Library, 333 Cedar Street",
+    "online": true
+   },
+   "gate": {
+    "date": 0.976,
+    "start": 0.988,
+    "end": 0.981,
+    "place": 0.979,
+    "online": 0.894
+   }
+  },
+  {
+   "id": "yale-18061249",
+   "school": "Yale",
+   "seen_school": false,
+   "edge": [
+    "online",
+    "no location"
+   ],
+   "url": "https://schedule.yale.edu/event/18061249",
+   "truth": {
+    "date": "2026-12-16",
+    "start": "13:00",
+    "end": "14:00",
+    "place": null,
+    "online": true
+   },
+   "chars": 6036,
+   "tokens": {
+    "baseline": 1578,
+    "system": 3532
+   },
+   "baseline": {
+    "date": "2026-12-16",
+    "start": "13:00",
+    "end": "14:00",
+    "place": null,
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-16",
+    "start": "13:00",
+    "end": "14:00",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-16",
+    "start": "13:00",
+    "end": "14:00",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.971,
+    "start": 0.978,
+    "end": 0.983,
+    "online": 0.987
+   }
+  },
+  {
+   "id": "yale-17676449",
+   "school": "Yale",
+   "seen_school": false,
+   "edge": [
+    "online",
+    "no location",
+    "recurring"
+   ],
+   "url": "https://schedule.yale.edu/event/17676449",
+   "truth": {
+    "date": "2026-12-17",
+    "start": "12:00",
+    "end": "13:00",
+    "place": null,
+    "online": true
+   },
+   "chars": 3885,
+   "tokens": {
+    "baseline": 1150,
+    "system": 2735
+   },
+   "baseline": {
+    "date": "2026-12-17",
+    "start": "12:00",
+    "end": "13:00",
+    "place": null,
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-17",
+    "start": "12:00",
+    "end": "13:00",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-17",
+    "start": "12:00",
+    "end": "13:00",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.98,
+    "start": 0.971,
+    "end": 0.975,
+    "online": 0.99
+   }
+  },
+  {
+   "id": "yale-18061178",
+   "school": "Yale",
+   "seen_school": false,
+   "edge": [
+    "online",
+    "no location"
+   ],
+   "url": "https://schedule.yale.edu/event/18061178",
+   "truth": {
+    "date": "2026-12-15",
+    "start": "17:00",
+    "end": "18:00",
+    "place": null,
+    "online": true
+   },
+   "chars": 4798,
+   "tokens": {
+    "baseline": 1344,
+    "system": 3128
+   },
+   "baseline": {
+    "date": "2026-12-15",
+    "start": "17:00",
+    "end": "18:00",
+    "place": null,
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-15",
+    "start": "17:00",
+    "end": "18:00",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-15",
+    "start": "17:00",
+    "end": "18:00",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.971,
+    "start": 0.974,
+    "end": 0.985,
+    "online": 0.97
+   }
+  },
+  {
+   "id": "yale-18013506",
+   "school": "Yale",
+   "seen_school": false,
+   "edge": [],
+   "url": "https://schedule.yale.edu/event/18013506",
+   "truth": {
+    "date": "2026-12-15",
+    "start": "12:00",
+    "end": "13:00",
+    "place": "Haas Arts Library",
+    "online": false
+   },
+   "chars": 3757,
+   "tokens": {
+    "baseline": 1114,
+    "system": 2831
+   },
+   "baseline": {
+    "date": "2026-12-15",
+    "start": "12:00",
+    "end": "13:00",
+    "place": "Haas Arts Library, Central Campus",
+    "online": false
+   },
+   "system": {
+    "date": "2026-12-15",
+    "start": "12:00",
+    "end": "13:00",
+    "place": "Haas Arts Library",
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-15",
+    "start": "12:00",
+    "end": "13:00",
+    "place": "Haas Arts Library",
+    "online": true
+   },
+   "gate": {
+    "date": 0.967,
+    "start": 0.977,
+    "end": 0.98,
+    "place": 0.965,
+    "online": 0.734
+   }
+  },
+  {
+   "id": "yale-18061035",
+   "school": "Yale",
+   "seen_school": false,
+   "edge": [
+    "online",
+    "no location"
+   ],
+   "url": "https://schedule.yale.edu/event/18061035",
+   "truth": {
+    "date": "2026-12-10",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
+   },
+   "chars": 5382,
+   "tokens": {
+    "baseline": 1443,
+    "system": 3326
+   },
+   "baseline": {
+    "date": "2026-12-10",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-10",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-10",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.989,
+    "start": 0.983,
+    "end": 0.974,
+    "online": 0.99
+   }
+  },
+  {
+   "id": "yale-17476049",
+   "school": "Yale",
+   "seen_school": false,
+   "edge": [
+    "online",
+    "no location",
+    "recurring"
+   ],
+   "url": "https://schedule.yale.edu/event/17476049",
+   "truth": {
+    "date": "2026-12-10",
+    "start": "12:00",
+    "end": "13:00",
+    "place": null,
+    "online": true
+   },
+   "chars": 4588,
+   "tokens": {
+    "baseline": 1331,
+    "system": 3125
+   },
+   "baseline": {
+    "date": "2026-12-10",
+    "start": "12:00",
+    "end": "13:00",
+    "place": "Medical School",
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-10",
+    "start": "12:00",
+    "end": "13:00",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-10",
+    "start": "12:00",
+    "end": "13:00",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.947,
+    "start": 0.97,
+    "end": 0.977,
+    "online": 0.985
+   }
+  },
+  {
+   "id": "yale-17448628",
+   "school": "Yale",
+   "seen_school": false,
+   "edge": [
+    "online",
+    "no location",
+    "recurring"
+   ],
+   "url": "https://schedule.yale.edu/event/17448628",
+   "truth": {
+    "date": "2026-12-18",
+    "start": "15:00",
+    "end": "16:00",
+    "place": null,
+    "online": true
+   },
+   "chars": 3543,
+   "tokens": {
+    "baseline": 1079,
+    "system": 2565
+   },
+   "baseline": {
+    "date": "2026-12-18",
+    "start": "15:00",
+    "end": "16:00",
+    "place": null,
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-18",
+    "start": "15:00",
+    "end": "16:00",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-18",
+    "start": "15:00",
+    "end": "16:00",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.989,
+    "start": 0.99,
+    "end": 0.983,
+    "online": 0.99
+   }
+  },
+  {
+   "id": "yale-17844505",
+   "school": "Yale",
+   "seen_school": false,
+   "edge": [
+    "online",
+    "no location"
+   ],
+   "url": "https://schedule.yale.edu/event/17844505",
+   "truth": {
+    "date": "2026-11-23",
+    "start": "13:00",
+    "end": "14:00",
+    "place": null,
+    "online": true
+   },
+   "chars": 5624,
+   "tokens": {
+    "baseline": 1502,
+    "system": 3462
+   },
+   "baseline": {
+    "date": "2026-11-23",
+    "start": "13:00",
+    "end": "14:00",
+    "place": "Medical School",
+    "online": true
+   },
+   "system": {
+    "date": "2026-11-23",
+    "start": "13:00",
+    "end": "14:00",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-11-23",
+    "start": "13:00",
+    "end": "14:00",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.964,
+    "start": 0.974,
+    "end": 0.987,
+    "online": 0.983
+   }
+  },
+  {
+   "id": "yale-18061358",
+   "school": "Yale",
+   "seen_school": false,
+   "edge": [],
+   "url": "https://schedule.yale.edu/event/18061358",
+   "truth": {
+    "date": "2026-12-17",
+    "start": "10:00",
+    "end": "12:00",
+    "place": "SHM L 111, Cushing/Whitney Medical Library, 333 Cedar Street",
+    "online": false
+   },
+   "chars": 6002,
+   "tokens": {
+    "baseline": 1585,
+    "system": 3742
+   },
+   "baseline": {
+    "date": "2026-12-17",
+    "start": "10:00",
+    "end": "12:00",
+    "place": "SHM L 111, Cushing/Whitney Medical Library, 333 Cedar Street",
+    "online": false
+   },
+   "system": {
+    "date": "2026-12-17",
+    "start": "10:00",
+    "end": "12:00",
+    "place": "SHM L 111, Cushing/Whitney Medical Library, 333 Cedar Street",
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-17",
+    "start": "10:00",
+    "end": "12:00",
+    "place": "SHM L 111, Cushing/Whitney Medical Library, 333 Cedar Street",
+    "online": true
+   },
+   "gate": {
+    "date": 0.97,
+    "start": 0.99,
+    "end": 0.985,
+    "place": 0.971,
+    "online": 0.918
+   }
+  },
+  {
+   "id": "rutgers-17858021",
+   "school": "Rutgers",
+   "seen_school": false,
+   "edge": [
+    "online",
+    "no location"
+   ],
+   "url": "https://libcal.rutgers.edu/event/17858021",
+   "truth": {
+    "date": "2026-12-10",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
+   },
+   "chars": 4543,
+   "tokens": {
+    "baseline": 1188,
+    "system": 2731
+   },
+   "baseline": {
+    "date": "2026-12-10",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-10",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-10",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.981,
+    "start": 0.976,
+    "end": 0.977,
+    "online": 0.983
+   }
+  },
+  {
+   "id": "rutgers-17402837",
+   "school": "Rutgers",
+   "seen_school": false,
+   "edge": [
+    "online",
+    "no location"
+   ],
+   "url": "https://libcal.rutgers.edu/event/17402837",
+   "truth": {
+    "date": "2026-12-02",
+    "start": "13:00",
+    "end": "14:00",
+    "place": null,
+    "online": true
+   },
+   "chars": 3542,
+   "tokens": {
+    "baseline": 998,
+    "system": 2345
+   },
+   "baseline": {
+    "date": "2026-12-02",
+    "start": "13:00",
+    "end": "14:00",
+    "place": null,
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-02",
+    "start": "13:00",
+    "end": "14:00",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-02",
+    "start": "13:00",
+    "end": "14:00",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.981,
+    "start": 0.978,
+    "end": 0.985,
+    "online": 0.989
+   }
+  },
+  {
+   "id": "rutgers-17542997",
+   "school": "Rutgers",
+   "seen_school": false,
+   "edge": [
+    "online",
+    "no location"
+   ],
+   "url": "https://libcal.rutgers.edu/event/17542997",
+   "truth": {
+    "date": "2026-11-24",
+    "start": "16:00",
+    "end": "18:00",
+    "place": null,
+    "online": true
+   },
+   "chars": 2555,
+   "tokens": {
+    "baseline": 791,
+    "system": 1972
+   },
+   "baseline": {
+    "date": "2026-11-24",
+    "start": "16:00",
+    "end": "18:00",
+    "place": null,
+    "online": true
+   },
+   "system": {
+    "date": "2026-11-24",
+    "start": "16:00",
+    "end": "18:00",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-11-24",
+    "start": "16:00",
+    "end": "18:00",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.99,
+    "start": 0.984,
+    "end": 0.99,
+    "online": 0.983
+   }
+  },
+  {
+   "id": "rutgers-17866917",
+   "school": "Rutgers",
+   "seen_school": false,
+   "edge": [
+    "online",
+    "no location"
+   ],
+   "url": "https://libcal.rutgers.edu/event/17866917",
+   "truth": {
+    "date": "2027-03-31",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
+   },
+   "chars": 3727,
+   "tokens": {
+    "baseline": 1082,
+    "system": 2529
+   },
+   "baseline": {
+    "date": "2027-03-31",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
+   },
+   "system": {
+    "date": "2027-03-31",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2027-03-31",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.982,
+    "start": 0.974,
+    "end": 0.99,
+    "online": 0.984
+   }
+  },
+  {
+   "id": "rutgers-17563545",
+   "school": "Rutgers",
+   "seen_school": false,
+   "edge": [
+    "online",
+    "no location"
+   ],
+   "url": "https://libcal.rutgers.edu/event/17563545",
+   "truth": {
+    "date": "2027-03-10",
+    "start": "15:30",
+    "end": "17:00",
+    "place": null,
+    "online": true
+   },
+   "chars": 3727,
+   "tokens": {
+    "baseline": 1083,
+    "system": 2604
+   },
+   "baseline": {
+    "date": "2027-03-10",
+    "start": "15:30",
+    "end": "17:00",
+    "place": null,
+    "online": true
+   },
+   "system": {
+    "date": "2027-03-10",
+    "start": "15:30",
+    "end": "17:00",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2027-03-10",
+    "start": "15:30",
+    "end": "17:00",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.978,
+    "start": 0.981,
+    "end": 0.989,
+    "online": 0.983
+   }
+  },
+  {
+   "id": "rutgers-17862332",
+   "school": "Rutgers",
+   "seen_school": false,
+   "edge": [
+    "online",
+    "no location"
+   ],
+   "url": "https://libcal.rutgers.edu/event/17862332",
+   "truth": {
+    "date": "2027-02-23",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
+   },
+   "chars": 3316,
+   "tokens": {
+    "baseline": 1002,
+    "system": 2468
+   },
+   "baseline": {
+    "date": "2027-02-23",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
+   },
+   "system": {
+    "date": "2027-02-23",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2027-02-23",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.981,
+    "start": 0.983,
+    "end": 0.984,
+    "online": 0.989
+   }
+  },
+  {
+   "id": "rutgers-17862306",
+   "school": "Rutgers",
+   "seen_school": false,
+   "edge": [
+    "online",
+    "no location"
+   ],
+   "url": "https://libcal.rutgers.edu/event/17862306",
+   "truth": {
+    "date": "2027-03-02",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
+   },
+   "chars": 3352,
+   "tokens": {
+    "baseline": 1007,
+    "system": 2427
+   },
+   "baseline": {
+    "date": "2027-03-02",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
+   },
+   "system": {
+    "date": "2027-03-02",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2027-03-02",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.986,
+    "start": 0.984,
+    "end": 0.985,
+    "online": 0.983
+   }
+  },
+  {
+   "id": "rutgers-17667213",
+   "school": "Rutgers",
+   "seen_school": false,
+   "edge": [
+    "online",
+    "no location"
+   ],
+   "url": "https://libcal.rutgers.edu/event/17667213",
+   "truth": {
+    "date": "2026-11-23",
+    "start": "12:00",
+    "end": "13:00",
+    "place": null,
+    "online": true
+   },
+   "chars": 3512,
+   "tokens": {
+    "baseline": 1026,
+    "system": 2401
+   },
+   "baseline": {
+    "date": "2026-11-23",
+    "start": "12:00",
+    "end": "13:00",
+    "place": null,
+    "online": true
+   },
+   "system": {
+    "date": "2026-11-23",
+    "start": "12:00",
+    "end": "13:00",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-11-23",
+    "start": "12:00",
+    "end": "13:00",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.986,
+    "start": 0.968,
+    "end": 0.971,
+    "online": 0.981
+   }
+  },
+  {
+   "id": "rutgers-17998611",
+   "school": "Rutgers",
+   "seen_school": false,
+   "edge": [
+    "online"
+   ],
+   "url": "https://libcal.rutgers.edu/event/17998611",
+   "truth": {
+    "date": "2026-12-02",
+    "start": "10:00",
+    "end": "11:30",
+    "place": "Alexander Library Digital Humanities Lab, Rm. 406-407",
+    "online": true
+   },
+   "chars": 3474,
+   "tokens": {
+    "baseline": 1023,
+    "system": 2614
+   },
+   "baseline": {
+    "date": "2026-12-02",
+    "start": "10:00",
+    "end": "11:30",
+    "place": "Alexander Library Digital Humanities Lab, Rm. 406-407",
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-02",
+    "start": "10:00",
+    "end": "11:30",
+    "place": "Alexander Library Digital Humanities Lab, Rm. 406-407",
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-02",
+    "start": "10:00",
+    "end": "11:30",
+    "place": "Alexander Library Digital Humanities Lab, Rm. 406-407",
+    "online": true
+   },
+   "gate": {
+    "date": 0.985,
+    "start": 0.99,
+    "end": 0.989,
+    "place": 0.973,
+    "online": 0.972
+   }
+  },
+  {
+   "id": "rutgers-17563519",
+   "school": "Rutgers",
+   "seen_school": false,
+   "edge": [
+    "online",
+    "no location"
+   ],
+   "url": "https://libcal.rutgers.edu/event/17563519",
+   "truth": {
+    "date": "2027-02-17",
+    "start": "15:30",
+    "end": "17:00",
+    "place": null,
+    "online": true
+   },
+   "chars": 3302,
+   "tokens": {
+    "baseline": 1000,
+    "system": 2428
+   },
+   "baseline": {
+    "date": "2027-02-17",
+    "start": "15:30",
+    "end": "17:00",
+    "place": null,
+    "online": true
+   },
+   "system": {
+    "date": "2027-02-17",
+    "start": "15:30",
+    "end": "17:00",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2027-02-17",
+    "start": "15:30",
+    "end": "17:00",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.983,
+    "start": 0.983,
+    "end": 0.988,
+    "online": 0.986
+   }
+  },
+  {
+   "id": "rutgers-17858065",
+   "school": "Rutgers",
+   "seen_school": false,
+   "edge": [
+    "online",
+    "no location"
+   ],
+   "url": "https://libcal.rutgers.edu/event/17858065",
+   "truth": {
+    "date": "2026-12-15",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
+   },
+   "chars": 4994,
+   "tokens": {
+    "baseline": 1369,
+    "system": 3088
+   },
+   "baseline": {
+    "date": "2026-12-15",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-15",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-15",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.984,
+    "start": 0.99,
+    "end": 0.99,
+    "online": 0.989
+   }
+  },
+  {
+   "id": "rutgers-18050624",
+   "school": "Rutgers",
+   "seen_school": false,
+   "edge": [],
+   "url": "https://libcal.rutgers.edu/event/18050624",
+   "truth": {
+    "date": "2026-12-14",
+    "start": "13:00",
+    "end": "15:00",
+    "place": "Library of Science and Medicine (LSM)",
+    "online": false
+   },
+   "chars": 2371,
+   "tokens": {
+    "baseline": 764,
+    "system": 2016
+   },
+   "baseline": {
+    "date": "2026-12-14",
+    "start": "13:00",
+    "end": "15:00",
+    "place": "Library of Science and Medicine (LSM)",
+    "online": false
+   },
+   "system": {
+    "date": "2026-12-14",
+    "start": "13:00",
+    "end": "15:00",
+    "place": "Library of Science and Medicine (LSM)",
+    "online": false
+   },
+   "ungated": {
+    "date": "2026-12-14",
+    "start": "13:00",
+    "end": "15:00",
+    "place": "Library of Science and Medicine (LSM)",
+    "online": false
+   },
+   "gate": {
+    "date": 0.99,
+    "start": 0.98,
+    "end": 0.981,
+    "place": 0.961,
+    "online": 0.012
+   }
+  },
+  {
+   "id": "rutgers-17380289",
+   "school": "Rutgers",
+   "seen_school": false,
+   "edge": [
+    "online",
+    "no location"
+   ],
+   "url": "https://libcal.rutgers.edu/event/17380289",
+   "truth": {
+    "date": "2026-12-04",
+    "start": "16:00",
+    "end": "17:00",
+    "place": null,
+    "online": true
+   },
+   "chars": 2774,
+   "tokens": {
+    "baseline": 858,
+    "system": 2229
+   },
+   "baseline": {
+    "date": "2026-12-04",
+    "start": "16:00",
+    "end": "17:00",
+    "place": null,
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-04",
+    "start": "16:00",
+    "end": "17:00",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-04",
+    "start": "16:00",
+    "end": "17:00",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.984,
+    "start": 0.98,
+    "end": 0.99,
+    "online": 0.989
+   }
+  },
+  {
+   "id": "rutgers-17563484",
+   "school": "Rutgers",
+   "seen_school": false,
+   "edge": [
+    "online",
+    "no location"
+   ],
+   "url": "https://libcal.rutgers.edu/event/17563484",
+   "truth": {
+    "date": "2027-02-03",
+    "start": "15:30",
+    "end": "17:00",
+    "place": null,
+    "online": true
+   },
+   "chars": 3357,
+   "tokens": {
+    "baseline": 1008,
+    "system": 2420
+   },
+   "baseline": {
+    "date": "2027-02-03",
+    "start": "15:30",
+    "end": "17:00",
+    "place": null,
+    "online": true
+   },
+   "system": {
+    "date": "2027-02-03",
+    "start": "15:30",
+    "end": "17:00",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2027-02-03",
+    "start": "15:30",
+    "end": "17:00",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.988,
+    "start": 0.983,
+    "end": 0.99,
+    "online": 0.99
+   }
+  },
+  {
+   "id": "rutgers-17866909",
+   "school": "Rutgers",
+   "seen_school": false,
+   "edge": [
+    "online",
+    "no location"
+   ],
+   "url": "https://libcal.rutgers.edu/event/17866909",
+   "truth": {
+    "date": "2027-03-30",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
+   },
+   "chars": 3291,
+   "tokens": {
+    "baseline": 1006,
+    "system": 2375
+   },
+   "baseline": {
+    "date": "2027-03-30",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
+   },
+   "system": {
+    "date": "2027-03-30",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2027-03-30",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.985,
+    "start": 0.985,
+    "end": 0.99,
+    "online": 0.986
+   }
+  },
+  {
+   "id": "rutgers-17862125",
+   "school": "Rutgers",
+   "seen_school": false,
+   "edge": [
+    "online",
+    "no location"
+   ],
+   "url": "https://libcal.rutgers.edu/event/17862125",
+   "truth": {
+    "date": "2027-02-16",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
+   },
+   "chars": 3223,
+   "tokens": {
+    "baseline": 980,
+    "system": 2393
+   },
+   "baseline": {
+    "date": "2027-02-16",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
+   },
+   "system": {
+    "date": "2027-02-16",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2027-02-16",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.99,
+    "start": 0.99,
+    "end": 0.981,
+    "online": 0.987
+   }
+  },
+  {
+   "id": "rutgers-17563533",
+   "school": "Rutgers",
+   "seen_school": false,
+   "edge": [
+    "online",
+    "no location"
+   ],
+   "url": "https://libcal.rutgers.edu/event/17563533",
+   "truth": {
+    "date": "2027-03-03",
+    "start": "15:30",
+    "end": "17:00",
+    "place": null,
+    "online": true
+   },
+   "chars": 3875,
+   "tokens": {
+    "baseline": 1097,
+    "system": 2609
+   },
+   "baseline": {
+    "date": "2027-03-03",
+    "start": "15:30",
+    "end": "17:00",
+    "place": null,
+    "online": true
+   },
+   "system": {
+    "date": "2027-03-03",
+    "start": "15:30",
+    "end": "17:00",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2027-03-03",
+    "start": "15:30",
+    "end": "17:00",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.986,
+    "start": 0.99,
+    "end": 0.974,
+    "online": 0.979
+   }
+  },
+  {
+   "id": "rutgers-17856963",
+   "school": "Rutgers",
+   "seen_school": false,
+   "edge": [
+    "online",
+    "no location"
+   ],
+   "url": "https://libcal.rutgers.edu/event/17856963",
+   "truth": {
+    "date": "2026-12-08",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
+   },
+   "chars": 5586,
+   "tokens": {
+    "baseline": 1440,
+    "system": 3244
+   },
+   "baseline": {
+    "date": "2026-12-08",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-08",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-08",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.983,
+    "start": 0.99,
+    "end": 0.99,
+    "online": 0.99
+   }
+  },
+  {
+   "id": "rutgers-17866915",
+   "school": "Rutgers",
+   "seen_school": false,
+   "edge": [
+    "online",
+    "no location"
+   ],
+   "url": "https://libcal.rutgers.edu/event/17866915",
+   "truth": {
+    "date": "2027-03-24",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
+   },
+   "chars": 3876,
+   "tokens": {
+    "baseline": 1097,
+    "system": 2600
+   },
+   "baseline": {
+    "date": "2027-03-24",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
+   },
+   "system": {
+    "date": "2027-03-24",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2027-03-24",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.967,
+    "start": 0.986,
+    "end": 0.983,
+    "online": 0.986
+   }
+  },
+  {
+   "id": "rutgers-17866906",
+   "school": "Rutgers",
+   "seen_school": false,
+   "edge": [
+    "online",
+    "no location"
+   ],
+   "url": "https://libcal.rutgers.edu/event/17866906",
+   "truth": {
+    "date": "2027-03-23",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
+   },
+   "chars": 3299,
+   "tokens": {
+    "baseline": 997,
+    "system": 2423
+   },
+   "baseline": {
+    "date": "2027-03-23",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
+   },
+   "system": {
+    "date": "2027-03-23",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2027-03-23",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.98,
+    "start": 0.983,
+    "end": 0.99,
+    "online": 0.986
+   }
+  },
+  {
+   "id": "duke-17407923",
+   "school": "Duke",
+   "seen_school": false,
+   "edge": [
+    "recurring"
+   ],
+   "url": "https://duke.libcal.com/event/17407923",
+   "truth": {
+    "date": "2026-11-24",
+    "start": "14:00",
+    "end": "17:00",
+    "place": "Bostock 121 (Murthy Digital Studio)",
+    "online": false
+   },
+   "chars": 2493,
+   "tokens": {
+    "baseline": 856,
+    "system": 2333
+   },
+   "baseline": {
+    "date": "2026-11-24",
+    "start": "14:00",
+    "end": "17:00",
+    "place": "Bostock 121 (Murthy Digital Studio)",
+    "online": true
+   },
+   "system": {
+    "date": "2026-11-24",
+    "start": "14:00",
+    "end": "17:00",
+    "place": "Bostock 121 (Murthy Digital Studio)",
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-11-24",
+    "start": "14:00",
+    "end": "17:00",
+    "place": "Bostock 121 (Murthy Digital Studio)",
+    "online": true
+   },
+   "gate": {
+    "date": 0.965,
+    "start": 0.974,
+    "end": 0.973,
+    "place": 0.967,
+    "online": 0.977
+   }
+  },
+  {
+   "id": "duke-17507373",
+   "school": "Duke",
+   "seen_school": false,
+   "edge": [
+    "recurring"
+   ],
+   "url": "https://duke.libcal.com/event/17507373",
+   "truth": {
+    "date": "2026-12-04",
+    "start": "12:15",
+    "end": "12:45",
+    "place": "Mary Duke Biddle Room (Rubenstein Library)",
+    "online": false
+   },
+   "chars": 2395,
+   "tokens": {
+    "baseline": 831,
+    "system": 2113
+   },
+   "baseline": {
+    "date": "2026-12-04",
+    "start": "12:15",
+    "end": "12:45",
+    "place": "Mary Duke Biddle Room (Rubenstein Library)",
+    "online": false
+   },
+   "system": {
+    "date": "2026-12-04",
+    "start": "12:15",
+    "end": "12:45",
+    "place": "Mary Duke Biddle Room (Rubenstein Library)",
+    "online": false
+   },
+   "ungated": {
+    "date": "2026-12-04",
+    "start": "12:15",
+    "end": "12:45",
+    "place": "Mary Duke Biddle Room (Rubenstein Library)",
+    "online": false
+   },
+   "gate": {
+    "date": 0.961,
+    "start": 0.981,
+    "end": 0.968,
+    "place": 0.972,
+    "online": 0.031
+   }
+  },
+  {
+   "id": "duke-17407925",
+   "school": "Duke",
+   "seen_school": false,
+   "edge": [
+    "recurring"
+   ],
+   "url": "https://duke.libcal.com/event/17407925",
+   "truth": {
+    "date": "2026-12-08",
+    "start": "14:00",
+    "end": "17:00",
+    "place": "Bostock 121 (Murthy Digital Studio)",
+    "online": false
+   },
+   "chars": 2417,
+   "tokens": {
+    "baseline": 824,
+    "system": 2196
+   },
+   "baseline": {
+    "date": "2026-12-08",
+    "start": "14:00",
+    "end": "17:00",
+    "place": "Bostock 121 (Murthy Digital Studio)",
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-08",
+    "start": "14:00",
+    "end": "17:00",
+    "place": "Bostock 121 (Murthy Digital Studio)",
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-08",
+    "start": "14:00",
+    "end": "17:00",
+    "place": "Bostock 121 (Murthy Digital Studio)",
+    "online": true
+   },
+   "gate": {
+    "date": 0.985,
+    "start": 0.977,
+    "end": 0.964,
+    "place": 0.988,
+    "online": 0.96
+   }
+  },
+  {
+   "id": "duke-18035796",
+   "school": "Duke",
+   "seen_school": false,
+   "edge": [],
+   "url": "https://duke.libcal.com/event/18035796",
+   "truth": {
+    "date": "2027-01-15",
+    "start": "11:00",
+    "end": "12:00",
+    "place": "Other (see event description)",
+    "online": false
+   },
+   "chars": 2533,
+   "tokens": {
+    "baseline": 852,
+    "system": 2352
+   },
+   "baseline": {
+    "date": "2027-01-15",
+    "start": "11:00",
+    "end": "12:00",
+    "place": "Service Desk, 1st Floor Perkins Library",
+    "online": true
+   },
+   "system": {
+    "date": "2027-01-15",
+    "start": "11:00",
+    "end": "12:00",
+    "place": "Service Desk, 1st Floor Perkins Library",
+    "online": true
+   },
+   "ungated": {
+    "date": "2027-01-15",
+    "start": "11:00",
+    "end": "12:00",
+    "place": "Service Desk, 1st Floor Perkins Library",
+    "online": true
+   },
+   "gate": {
+    "date": 0.864,
+    "start": 0.968,
+    "end": 0.961,
+    "place": 0.887,
+    "online": 0.908
+   }
+  },
+  {
+   "id": "duke-17507374",
+   "school": "Duke",
+   "seen_school": false,
+   "edge": [
+    "recurring"
+   ],
+   "url": "https://duke.libcal.com/event/17507374",
+   "truth": {
+    "date": "2027-01-01",
+    "start": "12:15",
+    "end": "12:45",
+    "place": "Mary Duke Biddle Room (Rubenstein Library)",
+    "online": false
+   },
+   "chars": 2368,
+   "tokens": {
+    "baseline": 818,
+    "system": 2166
+   },
+   "baseline": {
+    "date": "2027-01-01",
+    "start": "12:15",
+    "end": "12:45",
+    "place": "Mary Duke Biddle Room (Rubenstein Library)",
+    "online": false
+   },
+   "system": {
+    "date": "2027-01-01",
+    "start": "12:15",
+    "end": "12:45",
+    "place": "Mary Duke Biddle Room (Rubenstein Library)",
+    "online": false
+   },
+   "ungated": {
+    "date": "2027-01-01",
+    "start": "12:15",
+    "end": "12:45",
+    "place": "Mary Duke Biddle Room (Rubenstein Library)",
+    "online": false
+   },
+   "gate": {
+    "date": 0.96,
+    "start": 0.968,
+    "end": 0.962,
+    "place": 0.973,
+    "online": 0.03
+   }
+  },
+  {
+   "id": "duke-18014247",
+   "school": "Duke",
+   "seen_school": false,
+   "edge": [
+    "online",
+    "no location"
+   ],
+   "url": "https://duke.libcal.com/event/18014247",
+   "truth": {
+    "date": "2027-02-12",
+    "start": "10:00",
+    "end": "11:30",
+    "place": null,
+    "online": true
+   },
+   "chars": 4634,
+   "tokens": {
+    "baseline": 1254,
+    "system": 2962
+   },
+   "baseline": {
+    "date": "2027-02-12",
+    "start": "10:00",
+    "end": "11:30",
+    "place": null,
+    "online": true
+   },
+   "system": {
+    "date": "2027-02-12",
+    "start": "10:00",
+    "end": "11:30",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2027-02-12",
+    "start": "10:00",
+    "end": "11:30",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.971,
+    "start": 0.974,
+    "end": 0.974,
+    "online": 0.975
+   }
+  },
+  {
+   "id": "duke-18035792",
+   "school": "Duke",
+   "seen_school": false,
+   "edge": [],
+   "url": "https://duke.libcal.com/event/18035792",
+   "truth": {
+    "date": "2027-01-12",
+    "start": "12:00",
+    "end": "13:00",
+    "place": "Other (see event description)",
+    "online": false
+   },
+   "chars": 2533,
+   "tokens": {
+    "baseline": 868,
+    "system": 2367
+   },
+   "baseline": {
+    "date": "2027-01-12",
+    "start": "12:00",
+    "end": "13:00",
+    "place": "Service Desk, 1st Floor Perkins Library",
+    "online": true
+   },
+   "system": {
+    "date": "2027-01-12",
+    "start": "12:00",
+    "end": "13:00",
+    "place": "Service Desk, 1st Floor Perkins Library",
+    "online": true
+   },
+   "ungated": {
+    "date": "2027-01-12",
+    "start": "12:00",
+    "end": "13:00",
+    "place": "Service Desk, 1st Floor Perkins Library",
+    "online": true
+   },
+   "gate": {
+    "date": 0.866,
+    "start": 0.979,
+    "end": 0.965,
+    "place": 0.888,
+    "online": 0.918
+   }
+  },
+  {
+   "id": "duke-17400868",
+   "school": "Duke",
+   "seen_school": false,
+   "edge": [
+    "recurring"
+   ],
+   "url": "https://duke.libcal.com/event/17400868",
+   "truth": {
+    "date": "2026-12-04",
+    "start": "14:30",
+    "end": "17:30",
+    "place": "Bostock 121 (Murthy Digital Studio)",
+    "online": false
+   },
+   "chars": 2247,
+   "tokens": {
+    "baseline": 770,
+    "system": 2046
+   },
+   "baseline": {
+    "date": "2026-12-04",
+    "start": "14:30",
+    "end": "17:30",
+    "place": "Bostock 121 (Murthy Digital Studio)",
+    "online": false
+   },
+   "system": {
+    "date": "2026-12-04",
+    "start": "14:30",
+    "end": "17:30",
+    "place": "Bostock 121 (Murthy Digital Studio)",
+    "online": false
+   },
+   "ungated": {
+    "date": "2026-12-04",
+    "start": "14:30",
+    "end": "17:30",
+    "place": "Bostock 121 (Murthy Digital Studio)",
+    "online": false
+   },
+   "gate": {
+    "date": 0.952,
+    "start": 0.984,
+    "end": 0.97,
+    "place": 0.978,
+    "online": 0.026
+   }
+  },
+  {
+   "id": "duke-18033523",
+   "school": "Duke",
+   "seen_school": false,
+   "edge": [
+    "online",
+    "no location"
+   ],
+   "url": "https://duke.libcal.com/event/18033523",
+   "truth": {
+    "date": "2026-12-15",
+    "start": "10:00",
+    "end": "12:00",
+    "place": null,
+    "online": true
+   },
+   "chars": 2321,
+   "tokens": {
+    "baseline": 747,
+    "system": 1974
+   },
+   "baseline": {
+    "date": "2026-12-15",
+    "start": "10:00",
+    "end": "12:00",
+    "place": null,
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-15",
+    "start": "10:00",
+    "end": "12:00",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-15",
+    "start": "10:00",
+    "end": "12:00",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.967,
+    "start": 0.979,
+    "end": 0.982,
+    "online": 0.981
+   }
+  },
+  {
+   "id": "duke-17407924",
+   "school": "Duke",
+   "seen_school": false,
+   "edge": [
+    "recurring"
+   ],
+   "url": "https://duke.libcal.com/event/17407924",
+   "truth": {
+    "date": "2026-12-01",
+    "start": "14:00",
+    "end": "17:00",
+    "place": "Bostock 121 (Murthy Digital Studio)",
+    "online": false
+   },
+   "chars": 2464,
+   "tokens": {
+    "baseline": 842,
+    "system": 2331
+   },
+   "baseline": {
+    "date": "2026-12-01",
+    "start": "14:00",
+    "end": "17:00",
+    "place": "Bostock 121 (Murthy Digital Studio)",
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-01",
+    "start": "14:00",
+    "end": "17:00",
+    "place": "Bostock 121 (Murthy Digital Studio)",
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-01",
+    "start": "14:00",
+    "end": "17:00",
+    "place": "Bostock 121 (Murthy Digital Studio)",
+    "online": true
+   },
+   "gate": {
+    "date": 0.914,
+    "start": 0.976,
+    "end": 0.96,
+    "place": 0.98,
+    "online": 0.966
+   }
+  },
+  {
+   "id": "duke-17408002",
+   "school": "Duke",
+   "seen_school": false,
+   "edge": [
+    "recurring"
+   ],
+   "url": "https://duke.libcal.com/event/17408002",
+   "truth": {
+    "date": "2026-12-10",
+    "start": "10:00",
+    "end": "13:00",
+    "place": "Bostock 121 (Murthy Digital Studio)",
+    "online": false
+   },
+   "chars": 2420,
+   "tokens": {
+    "baseline": 826,
+    "system": 2204
+   },
+   "baseline": {
+    "date": "2026-12-10",
+    "start": "10:00",
+    "end": "13:00",
+    "place": "Bostock 121 (Murthy Digital Studio)",
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-10",
+    "start": "10:00",
+    "end": "13:00",
+    "place": "Bostock 121 (Murthy Digital Studio)",
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-10",
+    "start": "10:00",
+    "end": "13:00",
+    "place": "Bostock 121 (Murthy Digital Studio)",
+    "online": true
+   },
+   "gate": {
+    "date": 0.98,
+    "start": 0.984,
+    "end": 0.981,
+    "place": 0.98,
+    "online": 0.963
+   }
+  },
+  {
+   "id": "duke-17677226",
+   "school": "Duke",
+   "seen_school": false,
+   "edge": [],
+   "url": "https://duke.libcal.com/event/17677226",
+   "truth": {
+    "date": "2026-12-08",
+    "start": "12:00",
+    "end": "13:30",
+    "place": "Alumni Memorial Conference Room, Langford 152 (Duke Divinity School)",
+    "online": false
+   },
+   "chars": 4142,
+   "tokens": {
+    "baseline": 1161,
+    "system": 2879
+   },
+   "baseline": {
+    "date": "2026-12-08",
+    "start": "12:00",
+    "end": "13:30",
+    "place": "Alumni Memorial Conference Room, Langford 152 (Duke Divinity School)",
+    "online": false
+   },
+   "system": {
+    "date": "2026-12-08",
+    "start": "12:00",
+    "end": "13:30",
+    "place": "Alumni Memorial Conference Room, Langford 152 (Duke Divinity School)",
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-08",
+    "start": "12:00",
+    "end": "13:30",
+    "place": "Alumni Memorial Conference Room, Langford 152 (Duke Divinity School)",
+    "online": true
+   },
+   "gate": {
+    "date": 0.981,
+    "start": 0.976,
+    "end": 0.981,
+    "place": 0.963,
+    "online": 0.944
+   }
+  },
+  {
+   "id": "duke-17413576",
+   "school": "Duke",
+   "seen_school": false,
+   "edge": [
+    "recurring"
+   ],
+   "url": "https://duke.libcal.com/event/17413576",
+   "truth": {
+    "date": "2026-12-16",
+    "start": "12:00",
+    "end": "13:00",
+    "place": "Other (see event description)",
+    "online": false
+   },
+   "chars": 3301,
+   "tokens": {
+    "baseline": 1017,
+    "system": 2585
+   },
+   "baseline": {
+    "date": "2026-12-16",
+    "start": "12:00",
+    "end": "13:00",
+    "place": "Music Library Seminar Rom (East Campus)",
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-16",
+    "start": "12:00",
+    "end": "13:00",
+    "place": "Music Library Seminar Rom (East Campus)",
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-16",
+    "start": "12:00",
+    "end": "13:00",
+    "place": "Music Library Seminar Rom (East Campus)",
+    "online": true
+   },
+   "gate": {
+    "date": 0.99,
+    "start": 0.979,
+    "end": 0.988,
+    "place": 0.966,
+    "online": 0.99
+   }
+  },
+  {
+   "id": "duke-18035777",
+   "school": "Duke",
+   "seen_school": false,
+   "edge": [],
+   "url": "https://duke.libcal.com/event/18035777",
+   "truth": {
+    "date": "2027-01-08",
+    "start": "11:00",
+    "end": "12:00",
+    "place": "Other (see event description)",
+    "online": false
+   },
+   "chars": 2532,
+   "tokens": {
+    "baseline": 851,
+    "system": 2287
+   },
+   "baseline": {
+    "date": "2027-01-08",
+    "start": "11:00",
+    "end": "12:00",
+    "place": "Service Desk, 1st Floor Perkins Library",
+    "online": true
+   },
+   "system": {
+    "date": "2027-01-08",
+    "start": "11:00",
+    "end": "12:00",
+    "place": "Service Desk, 1st Floor Perkins Library",
+    "online": true
+   },
+   "ungated": {
+    "date": "2027-01-08",
+    "start": "11:00",
+    "end": "12:00",
+    "place": "Service Desk, 1st Floor Perkins Library",
+    "online": true
+   },
+   "gate": {
+    "date": 0.907,
+    "start": 0.965,
+    "end": 0.964,
+    "place": 0.937,
+    "online": 0.85
+   }
+  },
+  {
+   "id": "duke-17507377",
+   "school": "Duke",
+   "seen_school": false,
+   "edge": [
+    "recurring"
+   ],
+   "url": "https://duke.libcal.com/event/17507377",
+   "truth": {
+    "date": "2027-04-02",
+    "start": "12:15",
+    "end": "12:45",
+    "place": "Mary Duke Biddle Room (Rubenstein Library)",
+    "online": false
+   },
+   "chars": 2291,
+   "tokens": {
+    "baseline": 779,
+    "system": 2090
+   },
+   "baseline": {
+    "date": "2027-04-02",
+    "start": "12:15",
+    "end": "12:45",
+    "place": "Mary Duke Biddle Room (Rubenstein Library)",
+    "online": false
+   },
+   "system": {
+    "date": "2027-04-02",
+    "start": "12:15",
+    "end": "12:45",
+    "place": "Mary Duke Biddle Room (Rubenstein Library)",
+    "online": false
+   },
+   "ungated": {
+    "date": "2027-04-02",
+    "start": "12:15",
+    "end": "12:45",
+    "place": "Mary Duke Biddle Room (Rubenstein Library)",
+    "online": false
+   },
+   "gate": {
+    "date": 0.952,
+    "start": 0.966,
+    "end": 0.983,
+    "place": 0.98,
+    "online": 0.033
+   }
+  },
+  {
+   "id": "duke-17400869",
+   "school": "Duke",
+   "seen_school": false,
+   "edge": [
+    "recurring"
+   ],
+   "url": "https://duke.libcal.com/event/17400869",
+   "truth": {
+    "date": "2026-12-11",
+    "start": "14:30",
+    "end": "17:30",
+    "place": "Bostock 121 (Murthy Digital Studio)",
+    "online": false
+   },
+   "chars": 2201,
+   "tokens": {
+    "baseline": 757,
+    "system": 1989
+   },
+   "baseline": {
+    "date": "2026-12-11",
+    "start": "14:30",
+    "end": "17:30",
+    "place": "Bostock 121 (Murthy Digital Studio)",
+    "online": false
+   },
+   "system": {
+    "date": "2026-12-11",
+    "start": "14:30",
+    "end": "17:30",
+    "place": "Bostock 121 (Murthy Digital Studio)",
+    "online": false
+   },
+   "ungated": {
+    "date": "2026-12-11",
+    "start": "14:30",
+    "end": "17:30",
+    "place": "Bostock 121 (Murthy Digital Studio)",
+    "online": false
+   },
+   "gate": {
+    "date": 0.983,
+    "start": 0.979,
+    "end": 0.99,
+    "place": 0.974,
+    "online": 0.042
+   }
+  },
+  {
+   "id": "duke-17408001",
+   "school": "Duke",
+   "seen_school": false,
+   "edge": [
+    "recurring"
+   ],
+   "url": "https://duke.libcal.com/event/17408001",
+   "truth": {
+    "date": "2026-12-03",
+    "start": "10:00",
+    "end": "13:00",
+    "place": "Bostock 121 (Murthy Digital Studio)",
+    "online": false
+   },
+   "chars": 2468,
+   "tokens": {
+    "baseline": 844,
+    "system": 2208
+   },
+   "baseline": {
+    "date": "2026-12-03",
+    "start": "10:00",
+    "end": "13:00",
+    "place": "Bostock 121 (Murthy Digital Studio)",
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-03",
+    "start": "10:00",
+    "end": "13:00",
+    "place": "Bostock 121 (Murthy Digital Studio)",
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-03",
+    "start": "10:00",
+    "end": "13:00",
+    "place": "Bostock 121 (Murthy Digital Studio)",
+    "online": true
+   },
+   "gate": {
+    "date": 0.945,
+    "start": 0.976,
+    "end": 0.965,
+    "place": 0.973,
+    "online": 0.94
+   }
+  },
+  {
+   "id": "duke-17743566",
+   "school": "Duke",
+   "seen_school": false,
+   "edge": [],
+   "url": "https://duke.libcal.com/event/17743566",
+   "truth": {
+    "date": "2026-12-02",
+    "start": "15:00",
+    "end": "16:30",
+    "place": "Other (see event description)",
+    "online": false
+   },
+   "chars": 2467,
+   "tokens": {
+    "baseline": 775,
+    "system": 2067
+   },
+   "baseline": {
+    "date": "2026-12-02",
+    "start": "15:00",
+    "end": "16:30",
+    "place": "Gillespie East Asia Reading Room, Bostock Library",
+    "online": false
+   },
+   "system": {
+    "date": "2026-12-02",
+    "start": "15:00",
+    "end": "16:30",
+    "place": "Gillespie East Asia Reading Room, Bostock Library",
+    "online": false
+   },
+   "ungated": {
+    "date": "2026-12-02",
+    "start": "15:00",
+    "end": "16:30",
+    "place": "Gillespie East Asia Reading Room, Bostock Library",
+    "online": false
+   },
+   "gate": {
+    "date": 0.976,
+    "start": 0.971,
+    "end": 0.961,
+    "place": 0.958,
+    "online": 0.041
+   }
+  },
+  {
+   "id": "duke-17364595",
+   "school": "Duke",
+   "seen_school": false,
+   "edge": [
+    "online",
+    "no location"
+   ],
+   "url": "https://duke.libcal.com/event/17364595",
+   "truth": {
+    "date": "2026-12-11",
+    "start": "12:00",
+    "end": "13:00",
+    "place": null,
+    "online": true
+   },
+   "chars": 3431,
+   "tokens": {
+    "baseline": 971,
+    "system": 2365
+   },
+   "baseline": {
+    "date": "2026-12-11",
+    "start": "12:00",
+    "end": "13:00",
+    "place": null,
+    "online": true
+   },
+   "system": {
+    "date": "2026-12-11",
+    "start": "12:00",
+    "end": "13:00",
+    "place": null,
+    "online": true
+   },
+   "ungated": {
+    "date": "2026-12-11",
+    "start": "12:00",
+    "end": "13:00",
+    "place": null,
+    "online": true
+   },
+   "gate": {
+    "date": 0.986,
+    "start": 0.981,
+    "end": 0.977,
+    "online": 0.984
+   }
+  },
+  {
+   "id": "duke-18058792",
+   "school": "Duke",
+   "seen_school": false,
+   "edge": [],
+   "url": "https://duke.libcal.com/event/18058792",
+   "truth": {
+    "date": "2027-01-12",
+    "start": "17:00",
+    "end": "19:00",
+    "place": "Lilly Library",
+    "online": false
+   },
+   "chars": 3454,
+   "tokens": {
+    "baseline": 964,
+    "system": 2417
+   },
+   "baseline": {
+    "date": "2027-01-12",
+    "start": "17:00",
+    "end": "19:00",
+    "place": "Lilly Library",
+    "online": false
+   },
+   "system": {
+    "date": "2027-01-12",
+    "start": "17:00",
+    "end": "19:00",
+    "place": "Lilly Library",
+    "online": false
+   },
+   "ungated": {
+    "date": "2027-01-12",
+    "start": "17:00",
+    "end": "19:00",
+    "place": "Lilly Library",
+    "online": false
+   },
+   "gate": {
+    "date": 0.984,
+    "start": 0.969,
+    "end": 0.976,
+    "place": 0.972,
+    "online": 0.017
+   }
+  }
+ ]
+}

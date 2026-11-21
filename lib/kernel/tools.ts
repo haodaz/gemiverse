@@ -45,6 +45,12 @@ export const TOOLS: ToolSpec[] = [
   { name: "make_item", mode: "make", does: "Design a new object for its room. You approve it before it appears.", serves: ["self: its space"],
     reads: ["private"], writes: ["private"], purse: "for_itself", stars: 4, dailyCap: 1, reversible: true, confirm: "always", minStage: 2,
     model: "gemini-4-neon", params: { idea: "one sentence" } },
+  { name: "write_song", mode: "make", does: "Write a short song about its week and play it in the room. It has to save for this.", serves: ["self: its space", "self: know itself"],
+    reads: ["private"], writes: ["private"], purse: "for_itself", stars: 6, dailyCap: 1, reversible: true, confirm: "never", minStage: 1,
+    model: "lyria-3-clip-preview", params: { about: "what happened lately" } },
+  { name: "open_space", mode: "make", does: "Open a second space next to its room (a loft, a reading room, a lab). Several days of saving.", serves: ["self: its space"],
+    reads: ["private"], writes: ["private"], purse: "for_itself", stars: 12, dailyCap: 1, reversible: true, confirm: "always", minStage: 2,
+    params: { space: "loft|readingRoom|lab|backyard|rooftop|greenhouse" } },
 ];
 
 export const tool = (name: string) => TOOLS.find((t) => t.name === name);

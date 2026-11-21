@@ -32,6 +32,7 @@ export function step(b: Belief, x: number, tier: Tier, weight = 1): Belief {
 export type LogEvent =
   | { id: string; at: string; type: "said"; needs: { id: string; quote: string }[]; text: string; undone?: boolean }
   | { id: string; at: string; type: "choice"; find: string; title: string; action: "keep" | "skip"; shownWith: string[]; evidence: { axis: AxisId; x: number; why: string }[]; undone?: boolean }
+  | { id: string; at: string; type: "room"; by: "student" | "gemi"; what: string; item?: string; undone?: boolean }   // a change to the shared space, and who made it
   | { id: string; at: string; type: "trip"; place: string; stars: number; found: string[]; predicted: Record<string, number>; seal: string; reason: string; undone?: boolean };
 
 // Recompute everything from the log. A keep is evidence toward the find's side of an axis; a skip is weaker evidence away from it.

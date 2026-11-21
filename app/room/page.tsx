@@ -59,6 +59,8 @@ export default function Room() {
       if (m.type === "tapped") setTap(m.value);
       if (m.type === "released") setTap(null);
       if (m.type === "ready" && school) { send("look", PRESETS[school].look); setTimeout(() => auto.current?.(), 600); }
+      if (m.type === "layout" && school) { const it = String(m.value?.item ?? "something"); roomTouched.current = it; lastTouch.current = Date.now();
+        setLog((l) => { const n = [...l, { id: Math.random().toString(36).slice(2, 10), at: new Date().toISOString(), type: "room" as const, by: "student" as const, what: `moved the ${it}`, item: it }]; saveLog(school, n); return n; }); }
       if (m.type === "focus") { if (m.value === "desk") setPanel("desk"); else if (m.value === "board") setPanel("diary"); }
     };
     addEventListener("message", on); return () => removeEventListener("message", on);
@@ -75,7 +77,7 @@ export default function Room() {
   // Its own initiative: left alone with nothing waiting on the desk and enough Gem Stars, it decides to go out by itself.
   // It picks the place that serves what the student cares about most; this trip is paid from its own allowance.
   // Autonomy: the policy table in lib/kernel/autonomy.ts is evaluated every few seconds; whatever row matches decides what it does.
-  const auto = useRef<(() => void) | null>(null), lastTouch = useRef(0), [now, setNow] = useState<ReturnType<typeof decideNow> | null>(null), diaryDone = useRef(false);
+  const auto = useRef<(() => void) | null>(null), lastTouch = useRef(0), [now, setNow] = useState<ReturnType<typeof decideNow> | null>(null), diaryDone = useRef(false), roomTouched = useRef<string | null>(null);
   useEffect(() => { lastTouch.current = Date.now(); const touch = () => { lastTouch.current = Date.now(); }; addEventListener("pointerdown", touch); addEventListener("keydown", touch); return () => { removeEventListener("pointerdown", touch); removeEventListener("keydown", touch); }; }, []);
   useEffect(() => { const id = setInterval(() => auto.current?.(), 5000); return () => clearInterval(id); }, []);
   const s = school ? SCHOOLS[school] : null, preset = school ? PRESETS[school] : null;
@@ -130,9 +132,10 @@ export default function Room() {
 
   auto.current = () => {
     const d = decideNow({ pending: pendingNow, outNow: !!outAt, starsYou: state.purses.for_you, starsSelf: state.purses.for_itself, choices: choicesMade, widestHalo: Math.max(...AXES.map((a) => mind.beliefs[a.id].u)),
-      topCare: Math.max(0, ...Object.values(mind.care)), hour: new Date().getHours(), idleSeconds: (Date.now() - lastTouch.current) / 1000, diaryToday: diaryDone.current, paused: state.paused });
+      topCare: Math.max(0, ...Object.values(mind.care)), hour: new Date().getHours(), idleSeconds: (Date.now() - lastTouch.current) / 1000, diaryToday: diaryDone.current, paused: state.paused, bank: 0, goalCost: 6, goalName: "a song", roomChangedByStudent: !!roomTouched.current });
     setNow(d); send("mode", d.state === "waiting" ? "waiting" : "free");
     if (busy || campus || panel === "talk" || tap) return;                      // it never acts on its own while you are in the middle of something
+    if (d.rule === "notice") { const it = roomTouched.current; roomTouched.current = null; send("express", "surprised"); send("play", "think"); setDoing(`noticed you moved the ${it}`); return; }
     if (d.rule === "go" && mayCall("go_out", state, "", "gemi").ok) {
       const top = Object.entries(mind.care).sort((a, b) => b[1] - a[1])[0]?.[0];
       goOut(top && ["find_my_people", "make_and_express"].includes(top) ? "clubs" : top && ["get_experience", "decide_a_direction", "fund_my_path"].includes(top) ? "career" : top === "rest_and_recover" ? "commons" : "library", "gemi");

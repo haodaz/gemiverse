@@ -1,0 +1,3215 @@
+{
+ "at": "2026-11-21T19:08:07.081Z",
+ "listings": 70,
+ "facts": 210,
+ "edge_listings": 22,
+ "overall": {
+  "baseline": {
+   "right": 193,
+   "wrong": 2,
+   "withheld": 0,
+   "correctly_blank": 15,
+   "shown": 195,
+   "error_rate": 0.0103,
+   "coverage": 0.9897
+  },
+  "v1": {
+   "right": 106,
+   "wrong": 1,
+   "withheld": 87,
+   "correctly_blank": 16,
+   "shown": 107,
+   "error_rate": 0.0093,
+   "coverage": 0.5464
+  },
+  "v2": {
+   "right": 172,
+   "wrong": 1,
+   "withheld": 21,
+   "correctly_blank": 16,
+   "shown": 173,
+   "error_rate": 0.0058,
+   "coverage": 0.8866
+  },
+  "v3": {
+   "right": 188,
+   "wrong": 1,
+   "withheld": 5,
+   "correctly_blank": 16,
+   "shown": 189,
+   "error_rate": 0.0053,
+   "coverage": 0.9691
+  }
+ },
+ "edge_cases_only": {
+  "baseline": {
+   "right": 49,
+   "wrong": 2,
+   "withheld": 0,
+   "correctly_blank": 15,
+   "shown": 51,
+   "error_rate": 0.0392,
+   "coverage": 0.9608
+  },
+  "v1": {
+   "right": 24,
+   "wrong": 1,
+   "withheld": 25,
+   "correctly_blank": 16,
+   "shown": 25,
+   "error_rate": 0.04,
+   "coverage": 0.48
+  },
+  "v2": {
+   "right": 42,
+   "wrong": 1,
+   "withheld": 7,
+   "correctly_blank": 16,
+   "shown": 43,
+   "error_rate": 0.0233,
+   "coverage": 0.84
+  },
+  "v3": {
+   "right": 45,
+   "wrong": 1,
+   "withheld": 4,
+   "correctly_blank": 16,
+   "shown": 46,
+   "error_rate": 0.0217,
+   "coverage": 0.9
+  }
+ },
+ "by_field": {
+  "date": {
+   "baseline": {
+    "right": 70,
+    "wrong": 0,
+    "withheld": 0,
+    "correctly_blank": 0
+   },
+   "v1": {
+    "right": 2,
+    "wrong": 0,
+    "withheld": 68,
+    "correctly_blank": 0
+   },
+   "v2": {
+    "right": 68,
+    "wrong": 0,
+    "withheld": 2,
+    "correctly_blank": 0
+   },
+   "v3": {
+    "right": 68,
+    "wrong": 0,
+    "withheld": 2,
+    "correctly_blank": 0
+   }
+  },
+  "time": {
+   "baseline": {
+    "right": 55,
+    "wrong": 0,
+    "withheld": 0,
+    "correctly_blank": 15
+   },
+   "v1": {
+    "right": 39,
+    "wrong": 0,
+    "withheld": 16,
+    "correctly_blank": 15
+   },
+   "v2": {
+    "right": 39,
+    "wrong": 0,
+    "withheld": 16,
+    "correctly_blank": 15
+   },
+   "v3": {
+    "right": 55,
+    "wrong": 0,
+    "withheld": 0,
+    "correctly_blank": 15
+   }
+  },
+  "place": {
+   "baseline": {
+    "right": 68,
+    "wrong": 2,
+    "withheld": 0,
+    "correctly_blank": 0
+   },
+   "v1": {
+    "right": 65,
+    "wrong": 1,
+    "withheld": 3,
+    "correctly_blank": 1
+   },
+   "v2": {
+    "right": 65,
+    "wrong": 1,
+    "withheld": 3,
+    "correctly_blank": 1
+   },
+   "v3": {
+    "right": 65,
+    "wrong": 1,
+    "withheld": 3,
+    "correctly_blank": 1
+   }
+  }
+ },
+ "tokens": {
+  "baseline": 22432,
+  "system": 74019
+ },
+ "errors": 0,
+ "wrong": {
+  "baseline": [
+   {
+    "id": "nyu-379314",
+    "edge": [
+     "all-day",
+     "no location"
+    ],
+    "field": "place",
+    "shown": "School of Law",
+    "truth": null
+   },
+   {
+    "id": "nyu-412911",
+    "edge": [
+     "online",
+     "no location"
+    ],
+    "field": "place",
+    "shown": "Online event",
+    "truth": null
+   }
+  ],
+  "v1": [
+   {
+    "id": "nyu-379314",
+    "edge": [
+     "all-day",
+     "no location"
+    ],
+    "field": "place",
+    "shown": "School of Law",
+    "truth": null
+   }
+  ],
+  "v2": [
+   {
+    "id": "nyu-379314",
+    "edge": [
+     "all-day",
+     "no location"
+    ],
+    "field": "place",
+    "shown": "School of Law",
+    "truth": null
+   }
+  ],
+  "v3": [
+   {
+    "id": "nyu-379314",
+    "edge": [
+     "all-day",
+     "no location"
+    ],
+    "field": "place",
+    "shown": "School of Law",
+    "truth": null
+   }
+  ]
+ },
+ "rows": [
+  {
+   "id": "nyu-379314",
+   "school": "NYU",
+   "edge": [
+    "all-day",
+    "no location"
+   ],
+   "truth": {
+    "date": "2026-11-30",
+    "time": null,
+    "place": null,
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 224,
+    "system": 850
+   },
+   "baseline": {
+    "date": "2026-11-30",
+    "time": null,
+    "place": "School of Law"
+   },
+   "v1": {
+    "date": "2026-11-30",
+    "time": null,
+    "place": "School of Law"
+   },
+   "v2": {
+    "date": "2026-11-30",
+    "time": null,
+    "place": "School of Law"
+   },
+   "v3": {
+    "date": "2026-11-30",
+    "time": null,
+    "place": "School of Law"
+   },
+   "gate": {
+    "time12": 0,
+    "date": 0.99,
+    "time": 0,
+    "place": 0.9734334768726897
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\n(11/30/26) Last Day of Classes - Fall 2026\nNovember 30 (all day)\nSchool of Law\nLast day of classes."
+  },
+  {
+   "id": "nyu-412154",
+   "school": "NYU",
+   "edge": [
+    "all-day"
+   ],
+   "truth": {
+    "date": "2026-11-26",
+    "time": null,
+    "place": "Online",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 350,
+    "system": 942
+   },
+   "baseline": {
+    "date": "2026-11-26",
+    "time": null,
+    "place": "Online"
+   },
+   "v1": {
+    "date": null,
+    "time": null,
+    "place": null
+   },
+   "v2": {
+    "date": "2026-11-26",
+    "time": null,
+    "place": null
+   },
+   "v3": {
+    "date": "2026-11-26",
+    "time": null,
+    "place": null
+   },
+   "gate": {
+    "time12": 0,
+    "date": 0.9875767914583309,
+    "time": 0,
+    "place": 0
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nSPS SCRIBE/BPC/HTES: Virtual Book Donation Drive\nNovember 26 (all day)\nOnline\nNYU Engage\nClick on the link below and donate to our team page! For every $30 donated, Reach Out & Read will purchase 6 books for hospital waiting rooms. Our goal is $300–donate today and help us reach this goal! https://give.reachoutandread.org/NYUSPS Hosted by: SPS Hospitality, Tourism and Events Society, SPS Society of Creative Writers, Readers, Interpreters, and Book Enthusiasts , SPS Black Professionals Collective Online Location: https://give.reachoutandread.org/NYUSPS Additional Information can be found at: https://engage.nyu.edu/event/12970187"
+  },
+  {
+   "id": "nyu-410424",
+   "school": "NYU",
+   "edge": [
+    "cancelled"
+   ],
+   "truth": {
+    "date": "2026-11-26",
+    "time": "12:30",
+    "place": "2 W 4th St, 3rd Floor, Room 317",
+    "cancelled": true
+   },
+   "tokens": {
+    "baseline": 406,
+    "system": 1193
+   },
+   "baseline": {
+    "date": "2026-11-26",
+    "time": "12:30",
+    "place": "2 W 4th St, 3rd Floor, Room 317"
+   },
+   "v1": {
+    "date": null,
+    "time": null,
+    "place": "2 W 4th St, 3rd Floor, Room 317"
+   },
+   "v2": {
+    "date": "2026-11-26",
+    "time": null,
+    "place": "2 W 4th St, 3rd Floor, Room 317"
+   },
+   "v3": {
+    "date": "2026-11-26",
+    "time": "12:30",
+    "place": "2 W 4th St, 3rd Floor, Room 317"
+   },
+   "gate": {
+    "time12": 0.99,
+    "date": 0.9899441859423815,
+    "time": 0.700775225123966,
+    "place": 0.984610137049456
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nCANCELED: Supplemental Learning Group - Organic Chemistry I (Weck)\nCANCELED\nNovember 26, 12:30pm - 1:45pm\n2 W 4th St, 3rd Floor, Room 317\nNYU Engage\nSupplemental Learning Groups (SLGs) are lecture specific and give you a chance to practice and test your understanding of the material from the past week’s lecture(s) in a collaborative group environment. This is process-based learning, meaning if you continue to attend, your learning will compound over the course of the semester. One time attendance will likely not be very helpful. In order for this to be effective: - You must come ready to collaborate. - You must come ready to speak.- You must be active. This will be a framework that you might not be used to. In this space, the primary aim is to construct knowledge, which can feel frustrating. Hosted by: University Learning Center Addition"
+  },
+  {
+   "id": "nyu-412154",
+   "school": "NYU",
+   "edge": [
+    "all-day"
+   ],
+   "truth": {
+    "date": "2026-11-25",
+    "time": null,
+    "place": "Online",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 350,
+    "system": 896
+   },
+   "baseline": {
+    "date": "2026-11-25",
+    "time": null,
+    "place": "Online"
+   },
+   "v1": {
+    "date": null,
+    "time": null,
+    "place": null
+   },
+   "v2": {
+    "date": "2026-11-25",
+    "time": null,
+    "place": null
+   },
+   "v3": {
+    "date": "2026-11-25",
+    "time": null,
+    "place": null
+   },
+   "gate": {
+    "time12": 0,
+    "date": 0.9807298081298067,
+    "time": 0,
+    "place": 0
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nSPS SCRIBE/BPC/HTES: Virtual Book Donation Drive\nNovember 26 (all day)\nOnline\nNYU Engage\nClick on the link below and donate to our team page! For every $30 donated, Reach Out & Read will purchase 6 books for hospital waiting rooms. Our goal is $300–donate today and help us reach this goal! https://give.reachoutandread.org/NYUSPS Hosted by: SPS Hospitality, Tourism and Events Society, SPS Society of Creative Writers, Readers, Interpreters, and Book Enthusiasts , SPS Black Professionals Collective Online Location: https://give.reachoutandread.org/NYUSPS Additional Information can be found at: https://engage.nyu.edu/event/12970187"
+  },
+  {
+   "id": "nyu-413027",
+   "school": "NYU",
+   "edge": [
+    "all-day"
+   ],
+   "truth": {
+    "date": "2026-12-03",
+    "time": null,
+    "place": "N101, ICA at NYU Shanghai",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 353,
+    "system": 1005
+   },
+   "baseline": {
+    "date": "2026-12-03",
+    "time": null,
+    "place": "N101, ICA at NYU Shanghai"
+   },
+   "v1": {
+    "date": null,
+    "time": null,
+    "place": "N101, ICA at NYU Shanghai"
+   },
+   "v2": {
+    "date": "2026-12-03",
+    "time": null,
+    "place": "N101, ICA at NYU Shanghai"
+   },
+   "v3": {
+    "date": "2026-12-03",
+    "time": null,
+    "place": "N101, ICA at NYU Shanghai"
+   },
+   "gate": {
+    "time12": 0,
+    "date": 0.977233584661424,
+    "time": 0,
+    "place": 0.9794714322240944
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nVitalisms II\nDecember 3 (all day)\nN101, ICA at NYU Shanghai\nNYU Shanghai - NYC Events\nVitalisms II is an exhibition-as-experiment that continues a long-term research and education project on contemporary painting in China. Following the first chapter’s inquiry into the historicity of painting, we now turn toward a different question: How does value come into being through our encounters with painting? As the opening season of our new artistic research program Untimely Inheritances (2026–28), Vitalisms II considers inheritance as a condition we inhabit and reinterpret. Within the financial imagination, value is rendered calculable, comparable, and exchangeable. Yet value can also name artistic, historical, social, institutional, and affective relations. What happens when a pai"
+  },
+  {
+   "id": "nyu-402953",
+   "school": "NYU",
+   "edge": [
+    "all-day"
+   ],
+   "truth": {
+    "date": "2026-12-04",
+    "time": null,
+    "place": "80 Washington Square East, NYC",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 270,
+    "system": 795
+   },
+   "baseline": {
+    "date": "2026-12-04",
+    "time": null,
+    "place": "80 Washington Square East, NYC"
+   },
+   "v1": {
+    "date": null,
+    "time": null,
+    "place": "80 Washington Square East, NYC"
+   },
+   "v2": {
+    "date": "2026-12-04",
+    "time": null,
+    "place": "80 Washington Square East, NYC"
+   },
+   "v3": {
+    "date": "2026-12-04",
+    "time": null,
+    "place": "80 Washington Square East, NYC"
+   },
+   "gate": {
+    "time12": 0,
+    "date": 0.9745690374439986,
+    "time": 0,
+    "place": 0.9693020973049685
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\n80WSE Gallery Exhibition: Incendiaries: The People’s Flag Show 1970\nDecember 4 (all day)\n80 Washington Square East, NYC\nNYU Steinhardt\nIncendiaries draws on rare photographs, video documentation, and archival materials from the Judson Memorial Church Archive to trace a formative chapter in the intertwined histories of art, activism, and public dissent."
+  },
+  {
+   "id": "nyu-406771",
+   "school": "NYU",
+   "edge": [
+    "all-day"
+   ],
+   "truth": {
+    "date": "2026-11-26",
+    "time": null,
+    "place": "80WSE Gallery, 80 Washington Square East, New York, NY 10003",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 292,
+    "system": 869
+   },
+   "baseline": {
+    "date": "2026-11-26",
+    "time": null,
+    "place": "80WSE Gallery, 80 Washington Square East, New York, NY 10003"
+   },
+   "v1": {
+    "date": null,
+    "time": null,
+    "place": "80WSE Gallery, 80 Washington Square East, New York, NY 10003"
+   },
+   "v2": {
+    "date": null,
+    "time": null,
+    "place": "80WSE Gallery, 80 Washington Square East, New York, NY 10003"
+   },
+   "v3": {
+    "date": null,
+    "time": null,
+    "place": "80WSE Gallery, 80 Washington Square East, New York, NY 10003"
+   },
+   "gate": {
+    "time12": 0,
+    "date": 0.6490393193847501,
+    "time": 0,
+    "place": 0.99
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\n2026 MFA Project Space\nNovember 26 (all day)\n80WSE Gallery, 80 Washington Square East, New York, NY 10003\nNYU Steinhardt\nFrom September through December, the Project Space at 80WSE will feature 10 weeks of solo exhibitions from the members of the 2027 NYU Steinhardt Master of Fine Arts cohort."
+  },
+  {
+   "id": "nyu-410519",
+   "school": "NYU",
+   "edge": [
+    "all-day"
+   ],
+   "truth": {
+    "date": "2026-11-29",
+    "time": null,
+    "place": "Kimmel gcasl room 288",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 350,
+    "system": 997
+   },
+   "baseline": {
+    "date": "2026-11-29",
+    "time": null,
+    "place": "Kimmel gcasl room 288"
+   },
+   "v1": {
+    "date": null,
+    "time": null,
+    "place": "Kimmel gcasl room 288"
+   },
+   "v2": {
+    "date": "2026-11-29",
+    "time": null,
+    "place": "Kimmel gcasl room 288"
+   },
+   "v3": {
+    "date": "2026-11-29",
+    "time": null,
+    "place": "Kimmel gcasl room 288"
+   },
+   "gate": {
+    "time12": 0,
+    "date": 0.9099516050317079,
+    "time": 0,
+    "place": 0.9678282223815577
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nThursday Small Group\nNovember 29 (all day)\nKimmel gcasl room 288\nNYU Engage\nEach Thursday we gather in a relaxed setting with snacks, fun games, and meaningful Bible study. We start by hanging out, having snacks and playing a few lighthearted games to build community, and then dive into Scripture through open discussion, reflection, and prayer. It’s a place where questions are welcome, friendships deepen, and faith becomes personal. Whether you’ve been walking with God for years or you’re just curious, small group is a space to belong. Hosted by: Asian American Christian Fellowship - All-University Additional Information can be found at: https://engage.nyu.edu/event/12772220"
+  },
+  {
+   "id": "nyu-411529",
+   "school": "NYU",
+   "edge": [
+    "multi-day"
+   ],
+   "truth": {
+    "date": "2026-12-05",
+    "time": "00:00",
+    "place": "Linda Gross Theater",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 388,
+    "system": 1197
+   },
+   "baseline": {
+    "date": "2026-12-05",
+    "time": "00:00",
+    "place": "Linda Gross Theater"
+   },
+   "v1": {
+    "date": "2026-12-05",
+    "time": null,
+    "place": "Linda Gross Theater"
+   },
+   "v2": {
+    "date": "2026-12-05",
+    "time": null,
+    "place": "Linda Gross Theater"
+   },
+   "v3": {
+    "date": "2026-12-05",
+    "time": "00:00",
+    "place": "Linda Gross Theater"
+   },
+   "gate": {
+    "time12": 0.9137899395479318,
+    "date": 0.9780172695552605,
+    "time": 0.7650828252525524,
+    "place": 0.9757112927350293
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nTNT’s Sunday in the Park with George: In Concert\nDecember 5, 12:00am\nLinda Gross Theater\nNYU Engage\nDecember 5th & 6th, 2026, Off-Broadway at the Linda Gross Theater, TNT presents Sunday in the Park with George: In Concert, a concert staging of the full script and score of the iconic Stephen Sondheim musical. Audition Through 10/2/26Apply for the Production Team Through 9/24/26 Produced by SOPHIA ASHBAHIAN in association with TISCH NEW THEATREDirector CLARK WORDEN | Music Director LUCA MILLARD-KISHLighting Designer SOPHIE DIBELLA | Sound Designer GRACE KELLY | Projection Designer CRYSTAL ZHAO Production Manager MADI SNYDER | Production Stage Manager TAMMY LAM | Technical Consultant ZACH DEGEN | Marketing Director/Associate Producer ANA JULIA BAKER | Company Manager/Associate Producer MATTH"
+  },
+  {
+   "id": "nyu-400574",
+   "school": "NYU",
+   "edge": [
+    "online"
+   ],
+   "truth": {
+    "date": "2026-12-01",
+    "time": "11:00",
+    "place": "Kimmel Center for University Life",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 321,
+    "system": 1103
+   },
+   "baseline": {
+    "date": "2026-12-01",
+    "time": "11:00",
+    "place": "Rosenthal Pavilion, 10th Fl, Kimmel Center for University Life"
+   },
+   "v1": {
+    "date": null,
+    "time": "11:00",
+    "place": "Rosenthal Pavilion, 10th Fl, Kimmel Center for University Life"
+   },
+   "v2": {
+    "date": "2026-12-01",
+    "time": "11:00",
+    "place": "Rosenthal Pavilion, 10th Fl, Kimmel Center for University Life"
+   },
+   "v3": {
+    "date": "2026-12-01",
+    "time": "11:00",
+    "place": "Rosenthal Pavilion, 10th Fl, Kimmel Center for University Life"
+   },
+   "gate": {
+    "time12": 0.99,
+    "date": 0.99,
+    "time": 0.9477591504889487,
+    "place": 0.9678276657992618
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nAMC Fireside Chat with President Linda Mills (HYBRID)\nDecember 1, 11:00am - 1:00pm\nRosenthal Pavilion, 10th Fl, Kimmel Center for University Life\nOnline event\nCost: Free\nAdministrative Management Council\nThe Administrative Management Council (AMC) fosters University-wide relationships that inspire thoughtful engagement, innovative progress, and professional excellence. Get involved in committees and advocacy work, and hear about special initiatives from guest speakers. AMC Meetings are open to all full-time administrators. You are welcome and encouraged to attend!"
+  },
+  {
+   "id": "nyu-413025",
+   "school": "NYU",
+   "edge": [
+    "all-day"
+   ],
+   "truth": {
+    "date": "2026-12-01",
+    "time": null,
+    "place": "NYU Shanghai New Bund Campus",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 225,
+    "system": 768
+   },
+   "baseline": {
+    "date": "2026-12-01",
+    "time": null,
+    "place": "NYU Shanghai New Bund Campus"
+   },
+   "v1": {
+    "date": null,
+    "time": null,
+    "place": "NYU Shanghai New Bund Campus"
+   },
+   "v2": {
+    "date": "2026-12-01",
+    "time": null,
+    "place": "NYU Shanghai New Bund Campus"
+   },
+   "v3": {
+    "date": "2026-12-01",
+    "time": null,
+    "place": "NYU Shanghai New Bund Campus"
+   },
+   "gate": {
+    "time12": 0,
+    "date": 0.9394565591996599,
+    "time": 0,
+    "place": 0.9691487004162945
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nFall 2026\nDecember 1 (all day)\nNYU Shanghai New Bund Campus\nNYU Shanghai - NYC Events\nCheck out the Academic Calendar for detailed class schedule."
+  },
+  {
+   "id": "nyu-406771",
+   "school": "NYU",
+   "edge": [
+    "all-day"
+   ],
+   "truth": {
+    "date": "2026-12-04",
+    "time": null,
+    "place": "80WSE Gallery, 80 Washington Square East, New York, NY 10003",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 290,
+    "system": 890
+   },
+   "baseline": {
+    "date": "2026-12-04",
+    "time": null,
+    "place": "80WSE Gallery, 80 Washington Square East, New York, NY 10003"
+   },
+   "v1": {
+    "date": null,
+    "time": null,
+    "place": "80WSE Gallery, 80 Washington Square East, New York, NY 10003"
+   },
+   "v2": {
+    "date": "2026-12-04",
+    "time": null,
+    "place": "80WSE Gallery, 80 Washington Square East, New York, NY 10003"
+   },
+   "v3": {
+    "date": "2026-12-04",
+    "time": null,
+    "place": "80WSE Gallery, 80 Washington Square East, New York, NY 10003"
+   },
+   "gate": {
+    "time12": 0,
+    "date": 0.9155255709842465,
+    "time": 0,
+    "place": 0.9833284771390066
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\n2026 MFA Project Space\nNovember 26 (all day)\n80WSE Gallery, 80 Washington Square East, New York, NY 10003\nNYU Steinhardt\nFrom September through December, the Project Space at 80WSE will feature 10 weeks of solo exhibitions from the members of the 2027 NYU Steinhardt Master of Fine Arts cohort."
+  },
+  {
+   "id": "nyu-410522",
+   "school": "NYU",
+   "edge": [
+    "cancelled"
+   ],
+   "truth": {
+    "date": "2026-11-26",
+    "time": "17:00",
+    "place": "25 W 4th St, 3rd Floor, Room 317",
+    "cancelled": true
+   },
+   "tokens": {
+    "baseline": 407,
+    "system": 1331
+   },
+   "baseline": {
+    "date": "2026-11-26",
+    "time": "17:00",
+    "place": "25 W 4th St, 3rd Floor, Room 317"
+   },
+   "v1": {
+    "date": null,
+    "time": "17:00",
+    "place": "25 W 4th St, 3rd Floor, Room 317"
+   },
+   "v2": {
+    "date": "2026-11-26",
+    "time": "17:00",
+    "place": "25 W 4th St, 3rd Floor, Room 317"
+   },
+   "v3": {
+    "date": "2026-11-26",
+    "time": "17:00",
+    "place": "25 W 4th St, 3rd Floor, Room 317"
+   },
+   "gate": {
+    "time12": 0.99,
+    "date": 0.986025106811274,
+    "time": 0.886879093810203,
+    "place": 0.99
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nCANCELED: Supplemental Learning Group - Organic Chemistry I (Kwok)\nCANCELED\nNovember 26, 5:00pm - 6:15pm\n25 W 4th St, 3rd Floor, Room 317\nNYU Engage\nSupplemental Learning Groups (SLGs) are lecture specific and give you a chance to practice and test your understanding of the material from the past week’s lecture(s) in a collaborative group environment. This is process-based learning, meaning if you continue to attend, your learning will compound over the course of the semester. One time attendance will likely not be very helpful. In order for this to be effective: - You must come ready to collaborate. - You must come ready to speak.- You must be active. This will be a framework that you might not be used to. In this space, the primary aim is to construct knowledge, which can feel frustrating. Hosted by: University Learning Center Addition"
+  },
+  {
+   "id": "nyu-406771",
+   "school": "NYU",
+   "edge": [
+    "all-day"
+   ],
+   "truth": {
+    "date": "2026-11-30",
+    "time": null,
+    "place": "80WSE Gallery, 80 Washington Square East, New York, NY 10003",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 292,
+    "system": 911
+   },
+   "baseline": {
+    "date": "2026-11-30",
+    "time": null,
+    "place": "80WSE Gallery, 80 Washington Square East, New York, NY 10003"
+   },
+   "v1": {
+    "date": null,
+    "time": null,
+    "place": "80WSE Gallery, 80 Washington Square East, New York, NY 10003"
+   },
+   "v2": {
+    "date": null,
+    "time": null,
+    "place": "80WSE Gallery, 80 Washington Square East, New York, NY 10003"
+   },
+   "v3": {
+    "date": null,
+    "time": null,
+    "place": "80WSE Gallery, 80 Washington Square East, New York, NY 10003"
+   },
+   "gate": {
+    "time12": 0,
+    "date": 0.7449082604017192,
+    "time": 0,
+    "place": 0.9764210015813993
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\n2026 MFA Project Space\nNovember 26 (all day)\n80WSE Gallery, 80 Washington Square East, New York, NY 10003\nNYU Steinhardt\nFrom September through December, the Project Space at 80WSE will feature 10 weeks of solo exhibitions from the members of the 2027 NYU Steinhardt Master of Fine Arts cohort."
+  },
+  {
+   "id": "nyu-412483",
+   "school": "NYU",
+   "edge": [
+    "all-day"
+   ],
+   "truth": {
+    "date": "2026-12-07",
+    "time": null,
+    "place": "NYU Meyers | 7th Floor (cubicle 745-A) and at other campus locations",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 384,
+    "system": 1099
+   },
+   "baseline": {
+    "date": "2026-12-07",
+    "time": null,
+    "place": "NYU Meyers | 7th Floor (cubicle 745-A) and at other campus locations"
+   },
+   "v1": {
+    "date": null,
+    "time": null,
+    "place": "NYU Meyers | 7th Floor (cubicle 745-A) and at other campus locations"
+   },
+   "v2": {
+    "date": "2026-12-07",
+    "time": null,
+    "place": "NYU Meyers | 7th Floor (cubicle 745-A) and at other campus locations"
+   },
+   "v3": {
+    "date": "2026-12-07",
+    "time": null,
+    "place": "NYU Meyers | 7th Floor (cubicle 745-A) and at other campus locations"
+   },
+   "gate": {
+    "time12": 0,
+    "date": 0.9770009439878311,
+    "time": 0,
+    "place": 0.971054369127197
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\n2026 Thanksgiving Food Drive\nDecember 7 (all day)\nNYU Meyers | 7th Floor (cubicle 745-A) and at other campus locations\nRory Meyers College of Nursing\nIn the spirit of gratitude and generosity, we invite you to support the annual AMC Thanksgiving Food Drive. Every contribution, no matter how small, will help provide essential support to those facing food insecurity in our community. Donations will benefit NYU Violet Essentials part of NYU’s Office of Basic Needs. Donate unopened, unexpired, non-perishable food items at select campus locations. Find more information on drop-off locations and pantry items needed at the AMC Food Drive document. Contact amc.community.service@nyu.edu if you have questions. https://nursing.nyu.edu/news/events/2026-thanksgiving-food-drive"
+  },
+  {
+   "id": "nyu-413025",
+   "school": "NYU",
+   "edge": [
+    "all-day"
+   ],
+   "truth": {
+    "date": "2026-11-28",
+    "time": null,
+    "place": "NYU Shanghai New Bund Campus",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 227,
+    "system": 851
+   },
+   "baseline": {
+    "date": "2026-11-28",
+    "time": null,
+    "place": "NYU Shanghai New Bund Campus"
+   },
+   "v1": {
+    "date": null,
+    "time": null,
+    "place": "NYU Shanghai New Bund Campus"
+   },
+   "v2": {
+    "date": "2026-11-28",
+    "time": null,
+    "place": "NYU Shanghai New Bund Campus"
+   },
+   "v3": {
+    "date": "2026-11-28",
+    "time": null,
+    "place": "NYU Shanghai New Bund Campus"
+   },
+   "gate": {
+    "time12": 0,
+    "date": 0.9834376570168554,
+    "time": 0,
+    "place": 0.9627152158112008
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nFall 2026\nDecember 1 (all day)\nNYU Shanghai New Bund Campus\nNYU Shanghai - NYC Events\nCheck out the Academic Calendar for detailed class schedule."
+  },
+  {
+   "id": "nyu-412483",
+   "school": "NYU",
+   "edge": [
+    "all-day"
+   ],
+   "truth": {
+    "date": "2026-11-25",
+    "time": null,
+    "place": "NYU Meyers | 7th Floor (cubicle 745-A) and at other campus locations",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 386,
+    "system": 1188
+   },
+   "baseline": {
+    "date": "2026-11-25",
+    "time": null,
+    "place": "NYU Meyers | 7th Floor (cubicle 745-A) and at other campus locations"
+   },
+   "v1": {
+    "date": null,
+    "time": null,
+    "place": "NYU Meyers | 7th Floor (cubicle 745-A) and at other campus locations"
+   },
+   "v2": {
+    "date": "2026-11-25",
+    "time": null,
+    "place": "NYU Meyers | 7th Floor (cubicle 745-A) and at other campus locations"
+   },
+   "v3": {
+    "date": "2026-11-25",
+    "time": null,
+    "place": "NYU Meyers | 7th Floor (cubicle 745-A) and at other campus locations"
+   },
+   "gate": {
+    "time12": 0,
+    "date": 0.9821555694671475,
+    "time": 0,
+    "place": 0.9728131285807804
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\n2026 Thanksgiving Food Drive\nDecember 7 (all day)\nNYU Meyers | 7th Floor (cubicle 745-A) and at other campus locations\nRory Meyers College of Nursing\nIn the spirit of gratitude and generosity, we invite you to support the annual AMC Thanksgiving Food Drive. Every contribution, no matter how small, will help provide essential support to those facing food insecurity in our community. Donations will benefit NYU Violet Essentials part of NYU’s Office of Basic Needs. Donate unopened, unexpired, non-perishable food items at select campus locations. Find more information on drop-off locations and pantry items needed at the AMC Food Drive document. Contact amc.community.service@nyu.edu if you have questions. https://nursing.nyu.edu/news/events/2026-thanksgiving-food-drive"
+  },
+  {
+   "id": "nyu-412911",
+   "school": "NYU",
+   "edge": [
+    "online",
+    "no location"
+   ],
+   "truth": {
+    "date": "2026-12-03",
+    "time": "18:00",
+    "place": null,
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 272,
+    "system": 882
+   },
+   "baseline": {
+    "date": "2026-12-03",
+    "time": "18:00",
+    "place": "Online event"
+   },
+   "v1": {
+    "date": null,
+    "time": "18:00",
+    "place": null
+   },
+   "v2": {
+    "date": "2026-12-03",
+    "time": "18:00",
+    "place": null
+   },
+   "v3": {
+    "date": "2026-12-03",
+    "time": "18:00",
+    "place": null
+   },
+   "gate": {
+    "time12": 0.9733713717802029,
+    "date": 0.9766041320360485,
+    "time": 0.844485100435825,
+    "place": 0
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nThe AI Playbook: Compass CTO Shay Artzi\nDecember 3, 6:00pm - 7:00pm\nOnline event\nCost: Free\nStern School of Business\nJoin us for our AI Playbook speaker series! In this next session, Fubon Innovation Director Melissa Schilling chats with Shay Artzi about how he is navigating AI strategy as CTO of the global real estate firm Compass."
+  },
+  {
+   "id": "nyu-413025",
+   "school": "NYU",
+   "edge": [
+    "all-day"
+   ],
+   "truth": {
+    "date": "2026-11-27",
+    "time": null,
+    "place": "NYU Shanghai New Bund Campus",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 227,
+    "system": 761
+   },
+   "baseline": {
+    "date": "2026-11-27",
+    "time": null,
+    "place": "NYU Shanghai New Bund Campus"
+   },
+   "v1": {
+    "date": null,
+    "time": null,
+    "place": "NYU Shanghai New Bund Campus"
+   },
+   "v2": {
+    "date": "2026-11-27",
+    "time": null,
+    "place": "NYU Shanghai New Bund Campus"
+   },
+   "v3": {
+    "date": "2026-11-27",
+    "time": null,
+    "place": "NYU Shanghai New Bund Campus"
+   },
+   "gate": {
+    "time12": 0,
+    "date": 0.9659243032860084,
+    "time": 0,
+    "place": 0.9812014374572635
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nFall 2026\nDecember 1 (all day)\nNYU Shanghai New Bund Campus\nNYU Shanghai - NYC Events\nCheck out the Academic Calendar for detailed class schedule."
+  },
+  {
+   "id": "nyu-411445",
+   "school": "NYU",
+   "edge": [
+    "cancelled"
+   ],
+   "truth": {
+    "date": "2026-12-04",
+    "time": "16:00",
+    "place": "Rosenthal Pavilion",
+    "cancelled": true
+   },
+   "tokens": {
+    "baseline": 311,
+    "system": 1051
+   },
+   "baseline": {
+    "date": "2026-12-04",
+    "time": "16:00",
+    "place": "Rosenthal Pavilion"
+   },
+   "v1": {
+    "date": null,
+    "time": null,
+    "place": "Rosenthal Pavilion"
+   },
+   "v2": {
+    "date": "2026-12-04",
+    "time": null,
+    "place": "Rosenthal Pavilion"
+   },
+   "v3": {
+    "date": "2026-12-04",
+    "time": "16:00",
+    "place": "Rosenthal Pavilion"
+   },
+   "gate": {
+    "time12": 0.99,
+    "date": 0.9854552065086734,
+    "time": 0.7069951195656562,
+    "place": 0.986302578696123
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nCANCELED: FBA Fashion Show 2026\nCANCELED\nDecember 4, 4:00pm - 8:00pm\nRosenthal Pavilion\nNYU Engage\nThe FBA is thrilled to announce it’s 2026 annual fashion show! The theme is Fashion is Art: Interpretations of the Met Gala. Come see the student designers and models showcase their work! Hosted by: Fashion Business Association - All-University Additional Information can be found at: https://engage.nyu.edu/event/12914112"
+  },
+  {
+   "id": "nyu-410637",
+   "school": "NYU",
+   "edge": [
+    "cancelled"
+   ],
+   "truth": {
+    "date": "2026-11-27",
+    "time": "15:30",
+    "place": "25 W 4th St, 3rd Floor, Room 327",
+    "cancelled": true
+   },
+   "tokens": {
+    "baseline": 407,
+    "system": 1283
+   },
+   "baseline": {
+    "date": "2026-11-27",
+    "time": "15:30",
+    "place": "25 W 4th St, 3rd Floor, Room 327"
+   },
+   "v1": {
+    "date": null,
+    "time": "15:30",
+    "place": "25 W 4th St, 3rd Floor, Room 327"
+   },
+   "v2": {
+    "date": "2026-11-27",
+    "time": "15:30",
+    "place": "25 W 4th St, 3rd Floor, Room 327"
+   },
+   "v3": {
+    "date": "2026-11-27",
+    "time": "15:30",
+    "place": "25 W 4th St, 3rd Floor, Room 327"
+   },
+   "gate": {
+    "time12": 0.99,
+    "date": 0.99,
+    "time": 0.9238824687308015,
+    "place": 0.987177781978232
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nCANCELED: Supplemental Learning Group - Organic Chemistry I (Kwok)\nCANCELED\nNovember 27, 3:30pm - 4:45pm\n25 W 4th St, 3rd Floor, Room 327\nNYU Engage\nSupplemental Learning Groups (SLGs) are lecture specific and give you a chance to practice and test your understanding of the material from the past week’s lecture(s) in a collaborative group environment. This is process-based learning, meaning if you continue to attend, your learning will compound over the course of the semester. One time attendance will likely not be very helpful. In order for this to be effective: - You must come ready to collaborate. - You must come ready to speak.- You must be active. This will be a framework that you might not be used to. In this space, the primary aim is to construct knowledge, which can feel frustrating. Hosted by: University Learning Center Addition"
+  },
+  {
+   "id": "nyu-402953",
+   "school": "NYU",
+   "edge": [
+    "all-day"
+   ],
+   "truth": {
+    "date": "2026-12-01",
+    "time": null,
+    "place": "80 Washington Square East, NYC",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 270,
+    "system": 895
+   },
+   "baseline": {
+    "date": "2026-12-01",
+    "time": null,
+    "place": "80 Washington Square East, NYC"
+   },
+   "v1": {
+    "date": null,
+    "time": null,
+    "place": "80 Washington Square East, NYC"
+   },
+   "v2": {
+    "date": "2026-12-01",
+    "time": null,
+    "place": "80 Washington Square East, NYC"
+   },
+   "v3": {
+    "date": "2026-12-01",
+    "time": null,
+    "place": "80 Washington Square East, NYC"
+   },
+   "gate": {
+    "time12": 0,
+    "date": 0.9654852697469251,
+    "time": 0,
+    "place": 0.9760185655601635
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\n80WSE Gallery Exhibition: Incendiaries: The People’s Flag Show 1970\nDecember 4 (all day)\n80 Washington Square East, NYC\nNYU Steinhardt\nIncendiaries draws on rare photographs, video documentation, and archival materials from the Judson Memorial Church Archive to trace a formative chapter in the intertwined histories of art, activism, and public dissent."
+  },
+  {
+   "id": "nyu-410161",
+   "school": "NYU",
+   "edge": [],
+   "truth": {
+    "date": "2026-11-24",
+    "time": "17:00",
+    "place": "25 W 4th St, 3rd Floor, Room 327",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 398,
+    "system": 1170
+   },
+   "baseline": {
+    "date": "2026-11-24",
+    "time": "17:00",
+    "place": "25 W 4th St, 3rd Floor, Room 327"
+   },
+   "v1": {
+    "date": null,
+    "time": "17:00",
+    "place": "25 W 4th St, 3rd Floor, Room 327"
+   },
+   "v2": {
+    "date": "2026-11-24",
+    "time": "17:00",
+    "place": "25 W 4th St, 3rd Floor, Room 327"
+   },
+   "v3": {
+    "date": "2026-11-24",
+    "time": "17:00",
+    "place": "25 W 4th St, 3rd Floor, Room 327"
+   },
+   "gate": {
+    "time12": 0.99,
+    "date": 0.9899926231172723,
+    "time": 0.9362568517872373,
+    "place": 0.9891982581712522
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nSupplemental Learning Group - Organic Chemistry I (Angelo)\nNovember 24, 5:00pm - 6:15pm\n25 W 4th St, 3rd Floor, Room 327\nNYU Engage\nSupplemental Learning Groups (SLGs) are lecture specific and give you a chance to practice and test your understanding of the material from the past week’s lecture(s) in a collaborative group environment. This is process-based learning, meaning if you continue to attend, your learning will compound over the course of the semester. One time attendance will likely not be very helpful. In order for this to be effective: - You must come ready to collaborate. - You must come ready to speak.- You must be active. This will be a framework that you might not be used to. In this space, the primary aim is to construct knowledge, which can feel frustrating. Hosted by: University Learning Center Addition"
+  },
+  {
+   "id": "nyu-402874",
+   "school": "NYU",
+   "edge": [],
+   "truth": {
+    "date": "2026-12-02",
+    "time": "12:30",
+    "place": "King Juan Carlos I of Spain Center Library Room, 53 Washington Square S, New York, NY 10012",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 272,
+    "system": 1379
+   },
+   "baseline": {
+    "date": "2026-12-02",
+    "time": "12:30",
+    "place": "King Juan Carlos I of Spain Center Library Room, 53 Washington Square S, New York, NY 10012"
+   },
+   "v1": {
+    "date": null,
+    "time": "12:30",
+    "place": "King Juan Carlos I of Spain Center Library Room, 53 Washington Square S, New York, NY 10012"
+   },
+   "v2": {
+    "date": "2026-12-02",
+    "time": "12:30",
+    "place": "King Juan Carlos I of Spain Center Library Room, 53 Washington Square S, New York, NY 10012"
+   },
+   "v3": {
+    "date": "2026-12-02",
+    "time": "12:30",
+    "place": "King Juan Carlos I of Spain Center Library Room, 53 Washington Square S, New York, NY 10012"
+   },
+   "gate": {
+    "time12": 0.9506939637929156,
+    "date": 0.9769221949343626,
+    "time": 0.8475690064135636,
+    "place": 0.9835432629942337
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nYiddish Meet-Up with Alona Bach\nDecember 2, 12:30pm - 1:30pm\nKing Juan Carlos I of Spain Center Library Room, 53 Washington Square S, New York, NY 10012\nArts & Science"
+  },
+  {
+   "id": "nyu-407061",
+   "school": "NYU",
+   "edge": [],
+   "truth": {
+    "date": "2026-12-02",
+    "time": "20:00",
+    "place": "38 West Houston Street (at Greene Street) NYC",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 288,
+    "system": 1029
+   },
+   "baseline": {
+    "date": "2026-12-02",
+    "time": "20:00",
+    "place": "38 West Houston Street (at Greene Street) NYC"
+   },
+   "v1": {
+    "date": null,
+    "time": null,
+    "place": "38 West Houston Street (at Greene Street) NYC"
+   },
+   "v2": {
+    "date": "2026-12-02",
+    "time": null,
+    "place": "38 West Houston Street (at Greene Street) NYC"
+   },
+   "v3": {
+    "date": "2026-12-02",
+    "time": "20:00",
+    "place": "38 West Houston Street (at Greene Street) NYC"
+   },
+   "gate": {
+    "time12": 0.9769070433617684,
+    "date": 0.9695669642064296,
+    "time": 0.7693084794786703,
+    "place": 0.9790932625071715
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nNYU Symphony Orchestra\nDecember 2, 8:00pm - 9:30pm\n38 West Houston Street (at Greene Street) NYC\nNYU Steinhardt\nThe NYU Symphony Orchestra performs Frederick Chopin’s 1st Piano Concerto with 2025 NYU Piano Concerto Competition Winner, Seiha Park. Under the baton of David Bloom, the orchestra will also perform Tchaikovsky’s 5th Symphony."
+  },
+  {
+   "id": "nyu-412898",
+   "school": "NYU",
+   "edge": [],
+   "truth": {
+    "date": "2026-11-30",
+    "time": "18:30",
+    "place": "2 Metrotech Center Engagement Suite",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 306,
+    "system": 1007
+   },
+   "baseline": {
+    "date": "2026-11-30",
+    "time": "18:30",
+    "place": "2 Metrotech Center Engagement Suite"
+   },
+   "v1": {
+    "date": null,
+    "time": "18:30",
+    "place": "2 Metrotech Center Engagement Suite"
+   },
+   "v2": {
+    "date": "2026-11-30",
+    "time": "18:30",
+    "place": "2 Metrotech Center Engagement Suite"
+   },
+   "v3": {
+    "date": "2026-11-30",
+    "time": "18:30",
+    "place": "2 Metrotech Center Engagement Suite"
+   },
+   "gate": {
+    "time12": 0.99,
+    "date": 0.99,
+    "time": 0.8812529790657792,
+    "place": 0.9730740637632526
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nNYU Physics Alumni Invitation\nNovember 30, 6:30pm - 7:30pm\n2 Metrotech Center Engagement Suite\nNYU Engage\nMonday, November 30, SoUP will host a panel of NYU Physics alumni to speak with our current students! Come to listen to their stories, learn about your journey, and have a good time! Hosted by: Society of Undergraduate Physicists Additional Information can be found at: https://engage.nyu.edu/event/12992083"
+  },
+  {
+   "id": "nyu-409937",
+   "school": "NYU",
+   "edge": [],
+   "truth": {
+    "date": "2026-12-07",
+    "time": "19:00",
+    "place": "Skirball Center for the Performing Arts",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 333,
+    "system": 1011
+   },
+   "baseline": {
+    "date": "2026-12-07",
+    "time": "19:00",
+    "place": "Skirball Center for the Performing Arts"
+   },
+   "v1": {
+    "date": null,
+    "time": null,
+    "place": "Skirball Center for the Performing Arts"
+   },
+   "v2": {
+    "date": "2026-12-07",
+    "time": null,
+    "place": "Skirball Center for the Performing Arts"
+   },
+   "v3": {
+    "date": "2026-12-07",
+    "time": "19:00",
+    "place": "Skirball Center for the Performing Arts"
+   },
+   "gate": {
+    "time12": 0.9863715650330407,
+    "date": 0.99,
+    "time": 0.6109847540268462,
+    "place": 0.9735672075291892
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nJoy Resounding: A Gospel Holiday Concert\nDecember 7, 7:00pm\nSkirball Center for the Performing Arts\nCost: $23*- NYU Students $32*-$138*-NYU Faculty/Staff/Alumni $38*-$138Full Price *Save $3 by buying in person at the NYU Box Office\nSkirball Center for the Performing Arts\n$23*- NYU Students $32*-$138*-NYU Faculty/Staff/Alumni $38*-$138Full Price *Save $3 by buying in person at the NYU Box Office The gift is JOY, come get yours."
+  },
+  {
+   "id": "nyu-411020",
+   "school": "NYU",
+   "edge": [],
+   "truth": {
+    "date": "2026-12-01",
+    "time": "14:00",
+    "place": "194 Mercer, Room 203",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 381,
+    "system": 1158
+   },
+   "baseline": {
+    "date": "2026-12-01",
+    "time": "14:00",
+    "place": "194 Mercer, Room 203"
+   },
+   "v1": {
+    "date": null,
+    "time": null,
+    "place": "194 Mercer, Room 203"
+   },
+   "v2": {
+    "date": "2026-12-01",
+    "time": null,
+    "place": "194 Mercer, Room 203"
+   },
+   "v3": {
+    "date": "2026-12-01",
+    "time": "14:00",
+    "place": "194 Mercer, Room 203"
+   },
+   "gate": {
+    "time12": 0.99,
+    "date": 0.99,
+    "time": 0.745608983060426,
+    "place": 0.9887393688114232
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nSupplemental Learning Group - Organic Chemistry I (Kwok)\nDecember 1, 2:00pm - 3:15pm\n194 Mercer, Room 203\nNYU Engage\nSupplemental Learning Groups (SLGs) are lecture specific and give you a chance to practice and test your understanding of the material from the past week’s lecture(s) in a collaborative group environment. This is process-based learning, meaning if you continue to attend, your learning will compound over the course of the semester. One time attendance will likely not be very helpful. In order for this to be effective: - You must come ready to collaborate. - You must come ready to speak.- You must be active. This will be a framework that you might not be used to. In this space, the primary aim is to construct knowledge, which can feel frustrating. Hosted by: University Learning Center Addition"
+  },
+  {
+   "id": "nyu-411594",
+   "school": "NYU",
+   "edge": [],
+   "truth": {
+    "date": "2026-12-05",
+    "time": "17:30",
+    "place": "Bronfman Center for Jewish Life",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 277,
+    "system": 960
+   },
+   "baseline": {
+    "date": "2026-12-05",
+    "time": "17:30",
+    "place": "Bronfman Center for Jewish Life"
+   },
+   "v1": {
+    "date": null,
+    "time": "17:30",
+    "place": "Bronfman Center for Jewish Life"
+   },
+   "v2": {
+    "date": "2026-12-05",
+    "time": "17:30",
+    "place": "Bronfman Center for Jewish Life"
+   },
+   "v3": {
+    "date": "2026-12-05",
+    "time": "17:30",
+    "place": "Bronfman Center for Jewish Life"
+   },
+   "gate": {
+    "time12": 0.99,
+    "date": 0.99,
+    "time": 0.8598876234794931,
+    "place": 0.9892646326598892
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nShalashudus\nDecember 5, 5:30pm - 6:30pm\nBronfman Center for Jewish Life\nNYU Engage\nCome enjoy Shalashudus with Shalhevet! Hosted by: Shalhevet at NYU - All-University Additional Information can be found at: https://engage.nyu.edu/event/12872388"
+  },
+  {
+   "id": "nyu-411747",
+   "school": "NYU",
+   "edge": [],
+   "truth": {
+    "date": "2026-12-06",
+    "time": "11:00",
+    "place": "Kimmel Center Eisner and Lubin Auditorium",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 310,
+    "system": 1064
+   },
+   "baseline": {
+    "date": "2026-12-06",
+    "time": "11:00",
+    "place": "Kimmel Center Eisner and Lubin Auditorium"
+   },
+   "v1": {
+    "date": null,
+    "time": "11:00",
+    "place": "Kimmel Center Eisner and Lubin Auditorium"
+   },
+   "v2": {
+    "date": "2026-12-06",
+    "time": "11:00",
+    "place": "Kimmel Center Eisner and Lubin Auditorium"
+   },
+   "v3": {
+    "date": "2026-12-06",
+    "time": "11:00",
+    "place": "Kimmel Center Eisner and Lubin Auditorium"
+   },
+   "gate": {
+    "time12": 0.99,
+    "date": 0.9880081639476167,
+    "time": 0.8330590582878401,
+    "place": 0.9769183996613001
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nPulse Dance Project Fall 2026 Showcase\nDecember 6, 11:00am - 10:00pm\nKimmel Center Eisner and Lubin Auditorium\nNYU Engage\nPulse Dance Project will perform its Fall 2026 Showcase, featuring student choreography and performances by our full company; celebrating with family, friends, and the NYU community. Hosted by: Pulse Dance Project - All-University Additional Information can be found at: https://engage.nyu.edu/event/12838392"
+  },
+  {
+   "id": "nyu-411049",
+   "school": "NYU",
+   "edge": [],
+   "truth": {
+    "date": "2026-12-01",
+    "time": "19:00",
+    "place": "Paulson (room will be announced on instagram day of)",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 357,
+    "system": 1260
+   },
+   "baseline": {
+    "date": "2026-12-01",
+    "time": "19:00",
+    "place": "Paulson"
+   },
+   "v1": {
+    "date": null,
+    "time": null,
+    "place": "Paulson (room will be announced on instagram day of)"
+   },
+   "v2": {
+    "date": "2026-12-01",
+    "time": null,
+    "place": "Paulson (room will be announced on instagram day of)"
+   },
+   "v3": {
+    "date": "2026-12-01",
+    "time": "19:00",
+    "place": "Paulson (room will be announced on instagram day of)"
+   },
+   "gate": {
+    "time12": 0.9842563992128129,
+    "date": 0.99,
+    "time": 0.7265483734315715,
+    "place": 0.9842640973693358
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nTuesday Small Group\nDecember 1, 7:00pm - 9:00pm\nPaulson (room will be announced on instagram day of)\nNYU Engage\nEach Tuesday we gather in a relaxed setting with snacks, fun games, and meaningful Bible study. We start by hanging out, having snacks and playing a few lighthearted games to build community, and then dive into Scripture through open discussion, reflection, and prayer. It’s a place where questions are welcome, friendships deepen, and faith becomes personal. Whether you’ve been walking with God for years or you’re just curious, small group is a space to belong. Hosted by: Asian American Christian Fellowship - All-University Additional Information can be found at: https://engage.nyu.edu/event/12856954"
+  },
+  {
+   "id": "nyu-411038",
+   "school": "NYU",
+   "edge": [],
+   "truth": {
+    "date": "2026-12-01",
+    "time": "20:00",
+    "place": "Zoom",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 272,
+    "system": 949
+   },
+   "baseline": {
+    "date": "2026-12-01",
+    "time": "20:00",
+    "place": "Zoom"
+   },
+   "v1": {
+    "date": null,
+    "time": null,
+    "place": null
+   },
+   "v2": {
+    "date": "2026-12-01",
+    "time": null,
+    "place": null
+   },
+   "v3": {
+    "date": "2026-12-01",
+    "time": "20:00",
+    "place": null
+   },
+   "gate": {
+    "time12": 0.99,
+    "date": 0.970036152570393,
+    "time": 0.675928202826945,
+    "place": 0
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nSLGSA E-Board Meetings\nDecember 1, 8:00pm - 9:00pm\nZoom\nNYU Engage\nE-Board meeting focused on planning upcoming programs, initiatives, and SLGSA responsibilities. Hosted by: Steinhardt LatinX Graduate Student Association Additional Information can be found at: https://engage.nyu.edu/event/12793857"
+  },
+  {
+   "id": "nyu-411454",
+   "school": "NYU",
+   "edge": [],
+   "truth": {
+    "date": "2026-12-04",
+    "time": "13:00",
+    "place": "2 MTC Rm. 801",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 280,
+    "system": 964
+   },
+   "baseline": {
+    "date": "2026-12-04",
+    "time": "13:00",
+    "place": "2 MTC Rm. 801"
+   },
+   "v1": {
+    "date": null,
+    "time": "13:00",
+    "place": "2 MTC Rm. 801"
+   },
+   "v2": {
+    "date": "2026-12-04",
+    "time": "13:00",
+    "place": "2 MTC Rm. 801"
+   },
+   "v3": {
+    "date": "2026-12-04",
+    "time": "13:00",
+    "place": "2 MTC Rm. 801"
+   },
+   "gate": {
+    "time12": 0.9890349499717649,
+    "date": 0.99,
+    "time": 0.8713558652312968,
+    "place": 0.9788428684059258
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nJummah Prayer at Tandon\nDecember 4, 1:00pm - 2:00pm\n2 MTC Rm. 801\nNYU Engage\nJoin us for our weekly Friday Jummah Prayer at Tandon! Hosted by: Tandon Muslim Students Association Additional Information can be found at: https://engage.nyu.edu/event/12532859"
+  },
+  {
+   "id": "nyu-411748",
+   "school": "NYU",
+   "edge": [],
+   "truth": {
+    "date": "2026-12-04",
+    "time": "17:00",
+    "place": "370 Jay St Co-Lab Rm 233",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 373,
+    "system": 1188
+   },
+   "baseline": {
+    "date": "2026-12-04",
+    "time": "17:00",
+    "place": "370 Jay St Co-Lab Rm 233"
+   },
+   "v1": {
+    "date": null,
+    "time": "17:00",
+    "place": "370 Jay St Co-Lab Rm 233"
+   },
+   "v2": {
+    "date": "2026-12-04",
+    "time": "17:00",
+    "place": "370 Jay St Co-Lab Rm 233"
+   },
+   "v3": {
+    "date": "2026-12-04",
+    "time": "17:00",
+    "place": "370 Jay St Co-Lab Rm 233"
+   },
+   "gate": {
+    "time12": 0.99,
+    "date": 0.9788973655926265,
+    "time": 0.9565367733466154,
+    "place": 0.9763049379204879
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nSASE & AACF - Heart of Dinner\nDecember 4, 5:00pm - 7:00pm\n370 Jay St Co-Lab Rm 233\nNYU Engage\nJoin SASE and AACF for a service event in support of Heart of Dinner, a nonprofit that addresses food insecurity and cares for NYC’s elderly Asian community! Enjoy free catering, connect with fellow students, and engage in meaningful activities that directly support Heart of Dinner’s mission. This is a wonderful chance to learn more about their impactful work and contribute to the community. We can’t wait to see you there! Hosted by: Asian American Christian Fellowship - All-University, Society of Asian Scientists and Engineers Additional Information can be found at: https://engage.nyu.edu/event/12961235"
+  },
+  {
+   "id": "nyu-410983",
+   "school": "NYU",
+   "edge": [],
+   "truth": {
+    "date": "2026-11-30",
+    "time": "18:00",
+    "place": "Kimmel 905/907",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 288,
+    "system": 1020
+   },
+   "baseline": {
+    "date": "2026-11-30",
+    "time": "18:00",
+    "place": "Kimmel 905/907"
+   },
+   "v1": {
+    "date": null,
+    "time": "18:00",
+    "place": "Kimmel 905/907"
+   },
+   "v2": {
+    "date": "2026-11-30",
+    "time": "18:00",
+    "place": "Kimmel 905/907"
+   },
+   "v3": {
+    "date": "2026-11-30",
+    "time": "18:00",
+    "place": "Kimmel 905/907"
+   },
+   "gate": {
+    "time12": 0.99,
+    "date": 0.9864333739971436,
+    "time": 0.8354937990004069,
+    "place": 0.9871971003984462
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nAttorney Panel\nNovember 30, 6:00pm - 7:30pm\nKimmel 905/907\nNYU Engage\nJoin us for a panel featuring attorneys from different legal fields and a networking session following the panel! Hosted by: Undergraduate Law Society - All-University Additional Information can be found at: https://engage.nyu.edu/event/12928684"
+  },
+  {
+   "id": "nyu-411234",
+   "school": "NYU",
+   "edge": [],
+   "truth": {
+    "date": "2026-12-02",
+    "time": "19:00",
+    "place": "25 W 4th St, 3rd Floor, Room 302",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 398,
+    "system": 1155
+   },
+   "baseline": {
+    "date": "2026-12-02",
+    "time": "19:00",
+    "place": "25 W 4th St, 3rd Floor, Room 302"
+   },
+   "v1": {
+    "date": null,
+    "time": "19:00",
+    "place": "25 W 4th St, 3rd Floor, Room 302"
+   },
+   "v2": {
+    "date": "2026-12-02",
+    "time": "19:00",
+    "place": "25 W 4th St, 3rd Floor, Room 302"
+   },
+   "v3": {
+    "date": "2026-12-02",
+    "time": "19:00",
+    "place": "25 W 4th St, 3rd Floor, Room 302"
+   },
+   "gate": {
+    "time12": 0.9898563301251071,
+    "date": 0.987062802544293,
+    "time": 0.8449058336204633,
+    "place": 0.9864079257216594
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nSupplemental Learning Group - Calculus I (Selin)\nDecember 2, 7:00pm - 8:15pm\n25 W 4th St, 3rd Floor, Room 302\nNYU Engage\nSupplemental Learning Groups: Supplemental Learning Groups (SLGs) are lecture specific and give you a chance to practice and test your understanding of the material from the past week’s lecture(s) in a collaborative group environment. This is process-based learning, meaning if you continue to attend, your learning will compound over the course of the semester. One time attendance will likely not be very helpful. In order for this to be effective: - You must come ready to collaborate. - You must come ready to speak. - You must be active. This will be a framework that you might not be used to. In this space, the primary aim is to construct knowledge, which can feel frustrating. Hosted by: Univ"
+  },
+  {
+   "id": "nyu-411814",
+   "school": "NYU",
+   "edge": [],
+   "truth": {
+    "date": "2026-12-07",
+    "time": "19:45",
+    "place": "Room 102",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 333,
+    "system": 1089
+   },
+   "baseline": {
+    "date": "2026-12-07",
+    "time": "19:45",
+    "place": "Room 102"
+   },
+   "v1": {
+    "date": null,
+    "time": "19:45",
+    "place": "Room 102"
+   },
+   "v2": {
+    "date": "2026-12-07",
+    "time": "19:45",
+    "place": "Room 102"
+   },
+   "v3": {
+    "date": "2026-12-07",
+    "time": "19:45",
+    "place": "Room 102"
+   },
+   "gate": {
+    "time12": 0.99,
+    "date": 0.9612670286659987,
+    "time": 0.919018894552556,
+    "place": 0.9737740038371622
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nGeneral Meeting\nDecember 7, 7:45pm - 9:30pm\nRoom 102\nNYU Engage\nThese meeting will recur each monday for our chapter to meet and discuss prevalent medical topics in our society today, plan and host fundraising events and charity drives, and further our members learning in the medical field. We will also host workshops and events open to the broader NYU community focusing on the transition to medical school, discussing topics such as how to apply to medical school, MCAT resources, and interview prep. Hosted by: Phi Delta Epsilon Additional Information can be found at: https://engage.nyu.edu/event/12660947"
+  },
+  {
+   "id": "nyu-410312",
+   "school": "NYU",
+   "edge": [],
+   "truth": {
+    "date": "2026-11-25",
+    "time": "19:30",
+    "place": "GCASL",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 284,
+    "system": 981
+   },
+   "baseline": {
+    "date": "2026-11-25",
+    "time": "19:30",
+    "place": "GCASL"
+   },
+   "v1": {
+    "date": null,
+    "time": "19:30",
+    "place": "GCASL"
+   },
+   "v2": {
+    "date": "2026-11-25",
+    "time": "19:30",
+    "place": "GCASL"
+   },
+   "v3": {
+    "date": "2026-11-25",
+    "time": "19:30",
+    "place": "GCASL"
+   },
+   "gate": {
+    "time12": 0.99,
+    "date": 0.9846424350935583,
+    "time": 0.8484008736013925,
+    "place": 0.9796762997386329
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nBooksgiving\nNovember 25, 7:30pm - 8:30pm\nGCASL\nNYU Engage\nCome join us on 11/25 from 7:30 PM to 8:30 PM for Booksgiving! Hosted by: Literacy Matters at NYU - All-University Additional Information can be found at: https://engage.nyu.edu/event/12920127"
+  },
+  {
+   "id": "nyu-412516",
+   "school": "NYU",
+   "edge": [],
+   "truth": {
+    "date": "2026-12-04",
+    "time": "17:00",
+    "place": "Kimmel Center for University Life",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 276,
+    "system": 1010
+   },
+   "baseline": {
+    "date": "2026-12-04",
+    "time": "17:00",
+    "place": "Kimmel Center for University Life"
+   },
+   "v1": {
+    "date": null,
+    "time": "17:00",
+    "place": "Kimmel Center for University Life"
+   },
+   "v2": {
+    "date": "2026-12-04",
+    "time": "17:00",
+    "place": "Kimmel Center for University Life"
+   },
+   "v3": {
+    "date": "2026-12-04",
+    "time": "17:00",
+    "place": "Kimmel Center for University Life"
+   },
+   "gate": {
+    "time12": 0.99,
+    "date": 0.9868595221950148,
+    "time": 0.8464217143010668,
+    "place": 0.9769306213290391
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nAn Apple Adieu\nDecember 4, 5:00pm - 6:00pm\nKimmel Center for University Life\nNYU Engage\nJoin CommAg for a festive apple-themed last meeting of the semester! Hosted by: Community Agriculture Project - All-University Additional Information can be found at: https://engage.nyu.edu/event/12979078"
+  },
+  {
+   "id": "nyu-412870",
+   "school": "NYU",
+   "edge": [],
+   "truth": {
+    "date": "2026-12-04",
+    "time": "17:00",
+    "place": "NYU global center for academic and spiritual life",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 310,
+    "system": 1317
+   },
+   "baseline": {
+    "date": "2026-12-04",
+    "time": "17:00",
+    "place": "NYU global center for academic and spiritual life"
+   },
+   "v1": {
+    "date": null,
+    "time": "17:00",
+    "place": "NYU global center for academic and spiritual life"
+   },
+   "v2": {
+    "date": "2026-12-04",
+    "time": "17:00",
+    "place": "NYU global center for academic and spiritual life"
+   },
+   "v3": {
+    "date": "2026-12-04",
+    "time": "17:00",
+    "place": "NYU global center for academic and spiritual life"
+   },
+   "gate": {
+    "time12": 0.99,
+    "date": 0.9793037813011745,
+    "time": 0.9409004898707705,
+    "place": 0.9639270368515579
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nSip,relax &recharge\nDecember 4, 5:00pm - 7:00pm\nNYU global center for academic and spiritual life\nNYU Engage\nTaking a break from the finals stress for a cozy Hot Chocolate & De-Stress event! To enjoy a warm cup of hot chocolate, eat, unwind, connect with fellow students. Hosted by: Muslim Graduate Student Group (MGSG) - All-University Additional Information can be found at: https://engage.nyu.edu/event/12990400"
+  },
+  {
+   "id": "nyu-409773",
+   "school": "NYU",
+   "edge": [],
+   "truth": {
+    "date": "2026-12-06",
+    "time": "15:00",
+    "place": "Broadway Theater",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 291,
+    "system": 942
+   },
+   "baseline": {
+    "date": "2026-12-06",
+    "time": "15:00",
+    "place": "Broadway Theater"
+   },
+   "v1": {
+    "date": null,
+    "time": null,
+    "place": "Broadway Theater"
+   },
+   "v2": {
+    "date": "2026-12-06",
+    "time": null,
+    "place": "Broadway Theater"
+   },
+   "v3": {
+    "date": "2026-12-06",
+    "time": "15:00",
+    "place": "Broadway Theater"
+   },
+   "gate": {
+    "time12": 0.99,
+    "date": 0.99,
+    "time": 0.7624087289719769,
+    "place": 0.9841765019042248
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nThe Great Gatsby\nDecember 6, 3:00pm\nBroadway Theater\nCost: $58* – Mezzanine Seating *Online Price with fees included. Save $4 web fee by purchasing in person at the NYU Box Office\nNYU Box Office - Discounted Tickets\n$58* – Mezzanine Seating *Online Price with fees included. Save $4 web fee by purchasing in person at the NYU Box Office Tony Award-winning stage adaptation of F. Scott Fitzgerald’s timeless novel."
+  },
+  {
+   "id": "nyu-412812",
+   "school": "NYU",
+   "edge": [],
+   "truth": {
+    "date": "2026-11-24",
+    "time": "18:00",
+    "place": "Bronfman Center for Jewish Life",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 285,
+    "system": 939
+   },
+   "baseline": {
+    "date": "2026-11-24",
+    "time": "18:00",
+    "place": "Bronfman Center for Jewish Life"
+   },
+   "v1": {
+    "date": null,
+    "time": null,
+    "place": "Bronfman Center for Jewish Life"
+   },
+   "v2": {
+    "date": "2026-11-24",
+    "time": null,
+    "place": "Bronfman Center for Jewish Life"
+   },
+   "v3": {
+    "date": "2026-11-24",
+    "time": "18:00",
+    "place": "Bronfman Center for Jewish Life"
+   },
+   "gate": {
+    "time12": 0.9836410695876533,
+    "date": 0.99,
+    "time": 0.6922626703662634,
+    "place": 0.9794783890609275
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nPre-Thanksgiving Shiur\nNovember 24, 6:00pm - 7:00pm\nBronfman Center for Jewish Life\nNYU Engage\nCome experience a hands-on shiur with Gabi at Shalhevet! Hosted by: Shalhevet at NYU - All-University Additional Information can be found at: https://engage.nyu.edu/event/12987362"
+  },
+  {
+   "id": "nyu-410991",
+   "school": "NYU",
+   "edge": [],
+   "truth": {
+    "date": "2026-11-30",
+    "time": "17:30",
+    "place": "Kimmel 211",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 273,
+    "system": 885
+   },
+   "baseline": {
+    "date": "2026-11-30",
+    "time": "17:30",
+    "place": "Kimmel 211"
+   },
+   "v1": {
+    "date": null,
+    "time": "17:30",
+    "place": "Kimmel 211"
+   },
+   "v2": {
+    "date": "2026-11-30",
+    "time": "17:30",
+    "place": "Kimmel 211"
+   },
+   "v3": {
+    "date": "2026-11-30",
+    "time": "17:30",
+    "place": "Kimmel 211"
+   },
+   "gate": {
+    "time12": 0.9825513800708381,
+    "date": 0.9757259425667849,
+    "time": 0.9205872442830688,
+    "place": 0.9775407916420188
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nArts Committee Meeting\nNovember 30, 5:30pm - 6:00pm\nKimmel 211\nNYU Engage\nProgram Board Arts Committee Meeting ~ every Monday at 5:30. Hosted by: NYU Program Board Additional Information can be found at: https://engage.nyu.edu/event/12784751"
+  },
+  {
+   "id": "nyu-410973",
+   "school": "NYU",
+   "edge": [],
+   "truth": {
+    "date": "2026-11-30",
+    "time": "19:00",
+    "place": "GCASL Lounge",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 351,
+    "system": 1060
+   },
+   "baseline": {
+    "date": "2026-11-30",
+    "time": "19:00",
+    "place": "GCASL Lounge"
+   },
+   "v1": {
+    "date": null,
+    "time": "19:00",
+    "place": "GCASL Lounge"
+   },
+   "v2": {
+    "date": "2026-11-30",
+    "time": "19:00",
+    "place": "GCASL Lounge"
+   },
+   "v3": {
+    "date": "2026-11-30",
+    "time": "19:00",
+    "place": "GCASL Lounge"
+   },
+   "gate": {
+    "time12": 0.99,
+    "date": 0.99,
+    "time": 0.9267184604587012,
+    "place": 0.9780560599279332
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nMonday Small Group\nNovember 30, 7:00pm - 9:00pm\nGCASL Lounge\nNYU Engage\nEach Monday we gather in a relaxed setting with snacks, fun games, and meaningful Bible study. We start by hanging out, having snacks and playing a few lighthearted games to build community, and then dive into Scripture through open discussion, reflection, and prayer. It’s a place where questions are welcome, friendships deepen, and faith becomes personal. Whether you’ve been walking with God for years or you’re just curious, small group is a space to belong. Hosted by: Asian American Christian Fellowship - All-University Additional Information can be found at: https://engage.nyu.edu/event/12772330"
+  },
+  {
+   "id": "nyu-407060",
+   "school": "NYU",
+   "edge": [],
+   "truth": {
+    "date": "2026-12-03",
+    "time": "20:00",
+    "place": "38 West Houston Street (at Greene Street) NYC",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 272,
+    "system": 994
+   },
+   "baseline": {
+    "date": "2026-12-03",
+    "time": "20:00",
+    "place": "38 West Houston Street (at Greene Street) NYC"
+   },
+   "v1": {
+    "date": null,
+    "time": null,
+    "place": "38 West Houston Street (at Greene Street) NYC"
+   },
+   "v2": {
+    "date": "2026-12-03",
+    "time": null,
+    "place": "38 West Houston Street (at Greene Street) NYC"
+   },
+   "v3": {
+    "date": "2026-12-03",
+    "time": "20:00",
+    "place": "38 West Houston Street (at Greene Street) NYC"
+   },
+   "gate": {
+    "time12": 0.99,
+    "date": 0.99,
+    "time": 0.7465625835284783,
+    "place": 0.9805123402331709
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nNYU Broadway Orchestra\nDecember 3, 8:00pm - 9:30pm\n38 West Houston Street (at Greene Street) NYC\nNYU Steinhardt\nLed by conductor Ted Sperling, the Broadway Orchestra performs its fall concert. Featuring works by Rodgers and Hammerstein, Sondheim, Kirkwood Jr. and Dante, and more."
+  },
+  {
+   "id": "nyu-410322",
+   "school": "NYU",
+   "edge": [],
+   "truth": {
+    "date": "2026-11-25",
+    "time": "17:00",
+    "place": "Education Building",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 270,
+    "system": 918
+   },
+   "baseline": {
+    "date": "2026-11-25",
+    "time": "17:00",
+    "place": "Education Building"
+   },
+   "v1": {
+    "date": null,
+    "time": "17:00",
+    "place": "Education Building"
+   },
+   "v2": {
+    "date": "2026-11-25",
+    "time": "17:00",
+    "place": "Education Building"
+   },
+   "v3": {
+    "date": "2026-11-25",
+    "time": "17:00",
+    "place": "Education Building"
+   },
+   "gate": {
+    "time12": 0.99,
+    "date": 0.9831926065740234,
+    "time": 0.8205305081657076,
+    "place": 0.9798292848882183
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nWest 4th E-Board Meeting\nNovember 25, 5:00pm - 6:00pm\nEducation Building\nNYU Engage\nWest 4th Stage Company’s Weekly E-Board Meeting. Hosted by: West Fourth Stage Company Additional Information can be found at: https://engage.nyu.edu/event/12697935"
+  },
+  {
+   "id": "nyu-411449",
+   "school": "NYU",
+   "edge": [],
+   "truth": {
+    "date": "2026-12-04",
+    "time": "15:30",
+    "place": "25 W 4th St, 3rd Floor, Room 327",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 397,
+    "system": 1202
+   },
+   "baseline": {
+    "date": "2026-12-04",
+    "time": "15:30",
+    "place": "25 W 4th St, 3rd Floor, Room 327"
+   },
+   "v1": {
+    "date": null,
+    "time": "15:30",
+    "place": "25 W 4th St, 3rd Floor, Room 327"
+   },
+   "v2": {
+    "date": "2026-12-04",
+    "time": "15:30",
+    "place": "25 W 4th St, 3rd Floor, Room 327"
+   },
+   "v3": {
+    "date": "2026-12-04",
+    "time": "15:30",
+    "place": "25 W 4th St, 3rd Floor, Room 327"
+   },
+   "gate": {
+    "time12": 0.99,
+    "date": 0.99,
+    "time": 0.9335273493251578,
+    "place": 0.9804767036552919
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nSupplemental Learning Group - Organic Chemistry I (Kwok)\nDecember 4, 3:30pm - 4:45pm\n25 W 4th St, 3rd Floor, Room 327\nNYU Engage\nSupplemental Learning Groups (SLGs) are lecture specific and give you a chance to practice and test your understanding of the material from the past week’s lecture(s) in a collaborative group environment. This is process-based learning, meaning if you continue to attend, your learning will compound over the course of the semester. One time attendance will likely not be very helpful. In order for this to be effective: - You must come ready to collaborate. - You must come ready to speak.- You must be active. This will be a framework that you might not be used to. In this space, the primary aim is to construct knowledge, which can feel frustrating. Hosted by: University Learning Center Addition"
+  },
+  {
+   "id": "nyu-411382",
+   "school": "NYU",
+   "edge": [],
+   "truth": {
+    "date": "2026-12-03",
+    "time": "18:00",
+    "place": "Kimmel 602 (LGBTQ+ Center)",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 297,
+    "system": 925
+   },
+   "baseline": {
+    "date": "2026-12-03",
+    "time": "18:00",
+    "place": "Kimmel 602 (LGBTQ+ Center)"
+   },
+   "v1": {
+    "date": null,
+    "time": null,
+    "place": "Kimmel 602 (LGBTQ+ Center)"
+   },
+   "v2": {
+    "date": "2026-12-03",
+    "time": null,
+    "place": "Kimmel 602 (LGBTQ+ Center)"
+   },
+   "v3": {
+    "date": "2026-12-03",
+    "time": "18:00",
+    "place": "Kimmel 602 (LGBTQ+ Center)"
+   },
+   "gate": {
+    "time12": 0.99,
+    "date": 0.99,
+    "time": 0.702189543209499,
+    "place": 0.9879364632445993
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nWinter Movie + Hot Chocolate\nDecember 3, 6:00pm - 7:00pm\nKimmel 602 (LGBTQ+ Center)\nNYU Engage\nAt the end of the semester, Campgrrl will hold a social event for members to relax and get cozy. Hosted by: CampGrrl - All-University Additional Information can be found at: https://engage.nyu.edu/event/12856876"
+  },
+  {
+   "id": "nyu-411456",
+   "school": "NYU",
+   "edge": [],
+   "truth": {
+    "date": "2026-12-04",
+    "time": "13:00",
+    "place": "Kimmel",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 281,
+    "system": 944
+   },
+   "baseline": {
+    "date": "2026-12-04",
+    "time": "13:00",
+    "place": "Kimmel"
+   },
+   "v1": {
+    "date": null,
+    "time": null,
+    "place": "Kimmel"
+   },
+   "v2": {
+    "date": "2026-12-04",
+    "time": null,
+    "place": "Kimmel"
+   },
+   "v3": {
+    "date": "2026-12-04",
+    "time": "13:00",
+    "place": "Kimmel"
+   },
+   "gate": {
+    "time12": 0.9885644006126687,
+    "date": 0.9850683724447052,
+    "time": 0.7787274479755332,
+    "place": 0.9839992404802537
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nSOFSET Pop Up\nDecember 4, 1:00pm - 3:30pm\nKimmel\nNYU Engage\nPop up in collaboration with one other sorority + open to NYU - SOFSET (internship / work clothes for girls) Hosted by: Delta Phi Epsilon Sorority - All-University Additional Information can be found at: https://engage.nyu.edu/event/12953653"
+  },
+  {
+   "id": "nyu-412518",
+   "school": "NYU",
+   "edge": [],
+   "truth": {
+    "date": "2026-12-04",
+    "time": "16:00",
+    "place": "NYU Kimball Hall - Lobby",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 247,
+    "system": 907
+   },
+   "baseline": {
+    "date": "2026-12-04",
+    "time": "16:00",
+    "place": "NYU Kimball Hall - Lobby"
+   },
+   "v1": {
+    "date": null,
+    "time": "16:00",
+    "place": "NYU Kimball Hall - Lobby"
+   },
+   "v2": {
+    "date": "2026-12-04",
+    "time": "16:00",
+    "place": "NYU Kimball Hall - Lobby"
+   },
+   "v3": {
+    "date": "2026-12-04",
+    "time": "16:00",
+    "place": "NYU Kimball Hall - Lobby"
+   },
+   "gate": {
+    "time12": 0.9848533203049371,
+    "date": 0.9896269865561529,
+    "time": 0.8554226082736223,
+    "place": 0.9807245716125198
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nBench to Bedside By NASL\nDecember 4, 4:00pm - 7:00pm\nNYU Kimball Hall - Lobby\nNYU Engage\nPlease RSVP here! This is a student-led event supported by a Changemaker Collective grant."
+  },
+  {
+   "id": "nyu-405779",
+   "school": "NYU",
+   "edge": [],
+   "truth": {
+    "date": "2026-12-01",
+    "time": "12:00",
+    "place": "20 Cooper Square",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 323,
+    "system": 1043
+   },
+   "baseline": {
+    "date": "2026-12-01",
+    "time": "12:00",
+    "place": "20 Cooper Square"
+   },
+   "v1": {
+    "date": null,
+    "time": "12:00",
+    "place": "20 Cooper Square"
+   },
+   "v2": {
+    "date": "2026-12-01",
+    "time": "12:00",
+    "place": "20 Cooper Square"
+   },
+   "v3": {
+    "date": "2026-12-01",
+    "time": "12:00",
+    "place": "20 Cooper Square"
+   },
+   "gate": {
+    "time12": 0.9873635344333812,
+    "date": 0.9744580598491476,
+    "time": 0.9429652925324482,
+    "place": 0.9840165909254692
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nSống: Photographs by Ocean Vuong\nDecember 1, 12:00pm - 6:00pm\n20 Cooper Square\nCost: Free\nAsian/Pacific/American Institute\nS ng: Photographs by Ocean Vuong , the artist’s first New York City exhibition, foregrounds working-class diasporic Vietnamese life through a photographic archive spanning nearly twenty years. The photographs on view echo the narratives from Vuong’s literary works by drawing attention to the quotidian and the deeply personal – Vuong’s brother’s shoes, home altars, a mother feeding her baby, an embrace between friends, an American flag."
+  },
+  {
+   "id": "nyu-412939",
+   "school": "NYU",
+   "edge": [],
+   "truth": {
+    "date": "2026-11-30",
+    "time": "18:30",
+    "place": "Film Forum",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 381,
+    "system": 1183
+   },
+   "baseline": {
+    "date": "2026-11-30",
+    "time": "18:30",
+    "place": "Film Forum"
+   },
+   "v1": {
+    "date": null,
+    "time": "18:30",
+    "place": "Film Forum"
+   },
+   "v2": {
+    "date": "2026-11-30",
+    "time": "18:30",
+    "place": "Film Forum"
+   },
+   "v3": {
+    "date": "2026-11-30",
+    "time": "18:30",
+    "place": "Film Forum"
+   },
+   "gate": {
+    "time12": 0.9848431221157361,
+    "date": 0.99,
+    "time": 0.8758736328603262,
+    "place": 0.9701036725092476
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\n“All of a Sudden” Advanced Screening (RSVP through the link in the description!)\nNovember 30, 6:30pm - 9:30pm\nFilm Forum\nNYU Engage\noin NYU Program Board and NEON at a free, advance screening of ALL OF A SUDDEN directed by Ryusuke Hamaguchi (DRIVE MY CAR) before its theatrical release!Director of a care facility for the elderly, Marie-Lou strives to introduce an innovative care philosophy based on listening and respecting residents’ dignity, despite resistance from part of her staff. Her encounter with Mari, a Japanese theater director battling cancer, will profoundly reshape her path. By forming a deep, supportive friendship, the two women join forces in a shared struggle to make the impossible possible.All seating is first-come, first-served, and we re excited to see you there! Monday, November 30th 6:30pm Film Forum ("
+  },
+  {
+   "id": "nyu-412361",
+   "school": "NYU",
+   "edge": [],
+   "truth": {
+    "date": "2026-12-04",
+    "time": "18:30",
+    "place": "NYU Production Lab",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 378,
+    "system": 1156
+   },
+   "baseline": {
+    "date": "2026-12-04",
+    "time": "18:30",
+    "place": "NYU Production Lab, 16 Washington Place"
+   },
+   "v1": {
+    "date": null,
+    "time": "18:30",
+    "place": "NYU Production Lab"
+   },
+   "v2": {
+    "date": "2026-12-04",
+    "time": "18:30",
+    "place": "NYU Production Lab"
+   },
+   "v3": {
+    "date": "2026-12-04",
+    "time": "18:30",
+    "place": "NYU Production Lab"
+   },
+   "gate": {
+    "time12": 0.99,
+    "date": 0.9822918677332992,
+    "time": 0.9122448635601439,
+    "place": 0.9349571871286552
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nCORIOLANUS: Shakespeare in the Square\nDecember 4, 6:30pm - 8:30pm\nNYU Production Lab\nNYU Engage\nNature teaches beasts to know their friends. In a world where Shakespeare’s last historical tragedy was never written, a group of friends get together for a game of Ancient Roman tabletop roleplay. Endless popcorn and energy drinks later, the line between players and characters starts to blur. Thus unfolds the tale of an infallible war-god felled by conspiracy and slander. SITS’ Coriolanus is the story of young souls who would kill to change the world— or who would kill to be loved as they are. If only those two things were one and the same. Tickets are available for free HERE. This event is hosted by the NYU Production Lab, 16 Washington Place. Adapted and Directed by Sam Bisbee Assistant D"
+  },
+  {
+   "id": "nyu-411312",
+   "school": "NYU",
+   "edge": [],
+   "truth": {
+    "date": "2026-12-03",
+    "time": "15:00",
+    "place": "Third Avenue North C3 Lounge",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 321,
+    "system": 990
+   },
+   "baseline": {
+    "date": "2026-12-03",
+    "time": "15:00",
+    "place": "Third Avenue North C3 Lounge"
+   },
+   "v1": {
+    "date": null,
+    "time": "15:00",
+    "place": "Third Avenue North C3 Lounge"
+   },
+   "v2": {
+    "date": "2026-12-03",
+    "time": "15:00",
+    "place": "Third Avenue North C3 Lounge"
+   },
+   "v3": {
+    "date": "2026-12-03",
+    "time": "15:00",
+    "place": "Third Avenue North C3 Lounge"
+   },
+   "gate": {
+    "time12": 0.9839146888514011,
+    "date": 0.9871653632359979,
+    "time": 0.8581647707586214,
+    "place": 0.9818504318195954
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nEvery Nation Campus (Co-ed Connect Group)\nDecember 3, 3:00pm - 4:00pm\nThird Avenue North C3 Lounge\nNYU Engage\nJoin us for our weekly meetings where we discuss how to apply our faith practically throughout our lives! This is a setting where we can grow spiritually and in fellowship! All are welcomed no matter if you’re a believer, non-believer or just curious! :) Hosted by: Every Nation Campus Ministry - All-University Additional Information can be found at: https://engage.nyu.edu/event/12908569"
+  },
+  {
+   "id": "nyu-411744",
+   "school": "NYU",
+   "edge": [],
+   "truth": {
+    "date": "2026-12-06",
+    "time": "15:30",
+    "place": "25 W 4th St, 3rd Floor, Room 317",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 396,
+    "system": 1235
+   },
+   "baseline": {
+    "date": "2026-12-06",
+    "time": "15:30",
+    "place": "25 W 4th St, 3rd Floor, Room 317"
+   },
+   "v1": {
+    "date": null,
+    "time": "15:30",
+    "place": "25 W 4th St, 3rd Floor, Room 317"
+   },
+   "v2": {
+    "date": "2026-12-06",
+    "time": "15:30",
+    "place": "25 W 4th St, 3rd Floor, Room 317"
+   },
+   "v3": {
+    "date": "2026-12-06",
+    "time": "15:30",
+    "place": "25 W 4th St, 3rd Floor, Room 317"
+   },
+   "gate": {
+    "time12": 0.99,
+    "date": 0.9851758794715845,
+    "time": 0.8663031860117106,
+    "place": 0.9894249337553046
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nSupplemental Learning Group - Calculus I (Selin)\nDecember 6, 3:30pm - 4:30pm\n25 W 4th St, 3rd Floor, Room 317\nNYU Engage\nSupplemental Learning Groups (SLGs) are lecture specific and give you a chance to practice and test your understanding of the material from the past week’s lecture(s) in a collaborative group environment. This is process-based learning, meaning if you continue to attend, your learning will compound over the course of the semester. One time attendance will likely not be very helpful. In order for this to be effective: - You must come ready to collaborate. - You must come ready to speak.- You must be active. This will be a framework that you might not be used to. In this space, the primary aim is to construct knowledge, which can feel frustrating. Hosted by: University Learning Center Addition"
+  },
+  {
+   "id": "nyu-411245",
+   "school": "NYU",
+   "edge": [],
+   "truth": {
+    "date": "2026-12-03",
+    "time": "09:00",
+    "place": "KC 405/406 (Kimmel)",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 351,
+    "system": 1105
+   },
+   "baseline": {
+    "date": "2026-12-03",
+    "time": "09:00",
+    "place": "KC 405/406 (Kimmel)"
+   },
+   "v1": {
+    "date": null,
+    "time": "09:00",
+    "place": "KC 405/406 (Kimmel)"
+   },
+   "v2": {
+    "date": "2026-12-03",
+    "time": "09:00",
+    "place": "KC 405/406 (Kimmel)"
+   },
+   "v3": {
+    "date": "2026-12-03",
+    "time": "09:00",
+    "place": "KC 405/406 (Kimmel)"
+   },
+   "gate": {
+    "time12": 0.99,
+    "date": 0.9485990433516672,
+    "time": 0.9549883721952431,
+    "place": 0.98318494992918
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nStudent Senators Council\nDecember 3, 9:00am - 11:00am\nKC 405/406 (Kimmel)\nNYU Engage\nStudent Senators Council (SSC) consists of School Senators, Senators at-Large, and Alternate Senators at-Large. All Student Senators Council meetings occur bi-weekly on Thursdays from 9:00 AM to 11:00 AM ET. Meetings are not open to the public, though students may receive a guest pass from a current School Senator or Senator at-Large. Hosted by: Student Government Assembly / Student Senators Council Additional Information can be found at: https://engage.nyu.edu/event/12700696"
+  },
+  {
+   "id": "nyu-403106",
+   "school": "NYU",
+   "edge": [],
+   "truth": {
+    "date": "2026-11-26",
+    "time": "09:30",
+    "place": "238 Thompson Street (GCASL), Room 461 [Hybrid]",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 302,
+    "system": 1189
+   },
+   "baseline": {
+    "date": "2026-11-26",
+    "time": "09:30",
+    "place": "238 Thompson Street (GCASL), Room 461"
+   },
+   "v1": {
+    "date": null,
+    "time": "09:30",
+    "place": "238 Thompson Street (GCASL), Room 461"
+   },
+   "v2": {
+    "date": "2026-11-26",
+    "time": "09:30",
+    "place": "238 Thompson Street (GCASL), Room 461"
+   },
+   "v3": {
+    "date": "2026-11-26",
+    "time": "09:30",
+    "place": "238 Thompson Street (GCASL), Room 461"
+   },
+   "gate": {
+    "time12": 0.9743543824908076,
+    "date": 0.9828876063230495,
+    "time": 0.8449743231994645,
+    "place": 0.9739043580958183
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nRestorative Yoga with Brain Liem\nNovember 26, 9:30am - 10:30am\n238 Thompson Street (GCASL), Room 461 [Hybrid]\nCost: Free\nGlobal Spiritual Life at NYU\nRestorative Yoga with Brian is a kind, gentle, and graceful practice. Connect body, breath, and mind to explore balance and deep rest. Relax your muscles, ease your mind, and nurture your spirit. Open to all."
+  },
+  {
+   "id": "nyu-412615",
+   "school": "NYU",
+   "edge": [],
+   "truth": {
+    "date": "2026-12-06",
+    "time": "11:00",
+    "place": "Fairfield, CT",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 240,
+    "system": 898
+   },
+   "baseline": {
+    "date": "2026-12-06",
+    "time": "11:00",
+    "place": "Fairfield, CT"
+   },
+   "v1": {
+    "date": null,
+    "time": "11:00",
+    "place": "Fairfield, CT"
+   },
+   "v2": {
+    "date": "2026-12-06",
+    "time": "11:00",
+    "place": "Fairfield, CT"
+   },
+   "v3": {
+    "date": "2026-12-06",
+    "time": "11:00",
+    "place": "Fairfield, CT"
+   },
+   "gate": {
+    "time12": 0.9711939800144024,
+    "date": 0.9623175755318998,
+    "time": 0.9090411707048768,
+    "place": 0.9763762425918366
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nNew York University Women’s Fencing vs Vassar College\nDecember 6, 11:00am - 2:00pm\nFairfield, CT\nNYU Athletics\nNew York University Women’s Fencing vs Vassar College"
+  },
+  {
+   "id": "nyu-411904",
+   "school": "NYU",
+   "edge": [],
+   "truth": {
+    "date": "2026-12-07",
+    "time": "18:00",
+    "place": "Houston Hall ADDRESS:222 W Houston St New York, NY 10014",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 297,
+    "system": 1028
+   },
+   "baseline": {
+    "date": "2026-12-07",
+    "time": "18:00",
+    "place": "Houston Hall, 222 W Houston St, New York, NY 10014"
+   },
+   "v1": {
+    "date": null,
+    "time": "18:00",
+    "place": "Houston Hall"
+   },
+   "v2": {
+    "date": "2026-12-07",
+    "time": "18:00",
+    "place": "Houston Hall"
+   },
+   "v3": {
+    "date": "2026-12-07",
+    "time": "18:00",
+    "place": "Houston Hall"
+   },
+   "gate": {
+    "time12": 0.982914173471382,
+    "date": 0.9841085220133684,
+    "time": 0.8448085062896026,
+    "place": 0.969997045262354
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nNYU Tisch Alumni Holiday Party 2026\nDecember 7, 6:00pm - 9:00pm\nHouston Hall ADDRESS:222 W Houston St New York, NY 10014\nTisch School of the Arts\nThe NYU Tisch Office of Alumni Relations is back with our annual Holiday Party! Reconnect with fellow graduates, expand your creative network, and kick off the holidays together."
+  },
+  {
+   "id": "nyu-403062",
+   "school": "NYU",
+   "edge": [],
+   "truth": {
+    "date": "2026-12-07",
+    "time": "17:00",
+    "place": "2 MetroTech Center, Room 1054",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 308,
+    "system": 1020
+   },
+   "baseline": {
+    "date": "2026-12-07",
+    "time": "17:00",
+    "place": "2 MetroTech Center, Room 1054"
+   },
+   "v1": {
+    "date": null,
+    "time": "17:00",
+    "place": "2 MetroTech Center, Room 1054"
+   },
+   "v2": {
+    "date": "2026-12-07",
+    "time": "17:00",
+    "place": "2 MetroTech Center, Room 1054"
+   },
+   "v3": {
+    "date": "2026-12-07",
+    "time": "17:00",
+    "place": "2 MetroTech Center, Room 1054"
+   },
+   "gate": {
+    "time12": 0.99,
+    "date": 0.9794132846516158,
+    "time": 0.8986354552966903,
+    "place": 0.9752655899100396
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nGround, Flow & Release with Jennifer Brilliant\nDecember 7, 5:00pm - 6:00pm\n2 MetroTech Center, Room 1054\nCost: Free\nGlobal Spiritual Life at NYU\nThis trauma-informed 60-minute class will leave you feeling grounded and rejuvenated. With a focus on breathwork, alignment, and yoga philosophy, we will move towards resiliency as we feel into what it’s like to be human. This class is a great fit for both seasoned and newer practitioners."
+  },
+  {
+   "id": "nyu-410317",
+   "school": "NYU",
+   "edge": [],
+   "truth": {
+    "date": "2026-11-25",
+    "time": "18:30",
+    "place": "Kimmel (Check email or discord for exact room)",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 385,
+    "system": 1375
+   },
+   "baseline": {
+    "date": "2026-11-25",
+    "time": "18:30",
+    "place": "Kimmel (Check email or discord for exact room)"
+   },
+   "v1": {
+    "date": null,
+    "time": "18:30",
+    "place": "Kimmel (Check email or discord for exact room)"
+   },
+   "v2": {
+    "date": "2026-11-25",
+    "time": "18:30",
+    "place": "Kimmel (Check email or discord for exact room)"
+   },
+   "v3": {
+    "date": "2026-11-25",
+    "time": "18:30",
+    "place": "Kimmel (Check email or discord for exact room)"
+   },
+   "gate": {
+    "time12": 0.9803031106158168,
+    "date": 0.99,
+    "time": 0.8916621678370139,
+    "place": 0.9743424908203612
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nChess Club Weekly Meeting\nNovember 25, 6:30pm - 7:30pm\nKimmel (Check email or discord for exact room)\nNYU Engage\nWelcome to NYU’s one and only Chess Club! Look out for our weekly email reminders, and join our discord HERE. Our meetings consist of both casual teaching and playing, including friendly competitions! Come develop your skills, meet and play fellow chess enthusiasts, and eat free pizza! We have members of all skill levels and encourage all to join! We’re a super chill, low-pressure environment (though, for the more skilled players, we can promise that you’ll meet your match (or perhaps better) here, too). If you have any questions or ideas for future chess meetings, please let us know! Hope to see you there :) Hosted by: Chess Club - All-University, Chess Team - All-University Additional Info"
+  },
+  {
+   "id": "nyu-412919",
+   "school": "NYU",
+   "edge": [],
+   "truth": {
+    "date": "2026-12-03",
+    "time": "10:30",
+    "place": "NYU UDAR | 115 5th Avenue, New York",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 387,
+    "system": 1215
+   },
+   "baseline": {
+    "date": "2026-12-03",
+    "time": "10:30",
+    "place": "NYU UDAR | 115 5th Avenue, New York"
+   },
+   "v1": {
+    "date": null,
+    "time": "10:30",
+    "place": "NYU UDAR | 115 5th Avenue, New York"
+   },
+   "v2": {
+    "date": "2026-12-03",
+    "time": "10:30",
+    "place": "NYU UDAR | 115 5th Avenue, New York"
+   },
+   "v3": {
+    "date": "2026-12-03",
+    "time": "10:30",
+    "place": "NYU UDAR | 115 5th Avenue, New York"
+   },
+   "gate": {
+    "time12": 0.9859053973949845,
+    "date": 0.9513382054441657,
+    "time": 0.808834823654269,
+    "place": 0.9745503659723427
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nNYU Aging & Technology Breakfast\nDecember 3, 10:30am - 12:00pm\nNYU UDAR | 115 5th Avenue, New York\nRory Meyers College of Nursing\nJoin the conversation with program officials and representatives on aging, technology, reserach and commercialization. The moderated conversation with Dr. Nina Gray, NYU Interim Vice Provost for Research, will explore emerging priorities in aging and technology, federal funding opportunities, cross-sector collaboration, and strategies for moving promising innovations from research into practice. There will be plenty of opportunities to connect with our speakers, NYU research leadership, and colleagues across disciplines.If you have any questions, feel free to reach out to Tina Sadarangani at tina.sadarangani@nyu.edu https://nursing.nyu.edu/news/events/nyu-aging-technology-breakfast"
+  },
+  {
+   "id": "nyu-412276",
+   "school": "NYU",
+   "edge": [],
+   "truth": {
+    "date": "2026-12-04",
+    "time": "12:30",
+    "place": "KMC 4-60",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 303,
+    "system": 1438
+   },
+   "baseline": {
+    "date": "2026-12-04",
+    "time": "12:30",
+    "place": "KMC 4-60"
+   },
+   "v1": {
+    "date": null,
+    "time": null,
+    "place": "KMC 4-60"
+   },
+   "v2": {
+    "date": "2026-12-04",
+    "time": null,
+    "place": "KMC 4-60"
+   },
+   "v3": {
+    "date": "2026-12-04",
+    "time": "12:30",
+    "place": "KMC 4-60"
+   },
+   "gate": {
+    "time12": 0.99,
+    "date": 0.99,
+    "time": 0.787616336974139,
+    "place": 0.9843925158307011
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nTribeca & Gramercy: HeyTea\nDecember 4, 12:30pm - 1:45pm\nKMC 4-60\nNYU Engage\nCome join the Tribeca & Gramercy Cohorts for HeyTea, Korean Corndogs & gingerbread house making! Class of 2030 Social! Hosted by: Stern Class of 2030 Additional Information can be found at: https://engage.nyu.edu/event/12974071"
+  },
+  {
+   "id": "nyu-403136",
+   "school": "NYU",
+   "edge": [],
+   "truth": {
+    "date": "2026-11-27",
+    "time": "13:00",
+    "place": "238 Thompson Street (GCASL), Room 461 [Hybrid]",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 332,
+    "system": 1094
+   },
+   "baseline": {
+    "date": "2026-11-27",
+    "time": "13:00",
+    "place": "238 Thompson Street (GCASL), Room 461"
+   },
+   "v1": {
+    "date": null,
+    "time": "13:00",
+    "place": "238 Thompson Street (GCASL), Room 461 [Hybrid]"
+   },
+   "v2": {
+    "date": "2026-11-27",
+    "time": "13:00",
+    "place": "238 Thompson Street (GCASL), Room 461 [Hybrid]"
+   },
+   "v3": {
+    "date": "2026-11-27",
+    "time": "13:00",
+    "place": "238 Thompson Street (GCASL), Room 461 [Hybrid]"
+   },
+   "gate": {
+    "time12": 0.9781835467080355,
+    "date": 0.99,
+    "time": 0.8902805076742902,
+    "place": 0.9826474667211856
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nEmbodied Vinyasa Flow & Restore with Amanda Valdes\nNovember 27, 1:00pm - 2:15pm\n238 Thompson Street (GCASL), Room 461 [Hybrid]\nCost: Free\nGlobal Spiritual Life at NYU\nThis class is a mix of Vinyasa Yoga - connecting breath and movement for the first 45 mins of class. The last 15 minutes of the class will focus on restoring the mind, body, and breath . This class is open to all and will center on community connection, mindful movement, accessibility for all bodies, and normalizing yoga props."
+  },
+  {
+   "id": "nyu-412647",
+   "school": "NYU",
+   "edge": [],
+   "truth": {
+    "date": "2026-12-02",
+    "time": "16:00",
+    "place": "GCASL Room 475",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 318,
+    "system": 1045
+   },
+   "baseline": {
+    "date": "2026-12-02",
+    "time": "16:00",
+    "place": "GCASL Room 475"
+   },
+   "v1": {
+    "date": null,
+    "time": null,
+    "place": "GCASL Room 475"
+   },
+   "v2": {
+    "date": "2026-12-02",
+    "time": null,
+    "place": "GCASL Room 475"
+   },
+   "v3": {
+    "date": "2026-12-02",
+    "time": "16:00",
+    "place": "GCASL Room 475"
+   },
+   "gate": {
+    "time12": 0.9884862841766352,
+    "date": 0.99,
+    "time": 0.46771181414616575,
+    "place": 0.9893234402292826
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nEvery Nation Campus Connect Group - Coed (Washington Square Campus)\nDecember 2, 4:00pm - 5:00pm\nGCASL Room 475\nNYU Engage\nCome join Every Nation Campus for our weekly connect group on Wednesdays at 4pm at GCASL room 475!!! We discuss about the Bible and how God’s word can be reflected in our lives as students! Hosted by: Every Nation Campus Ministry - All-University Additional Information can be found at: https://engage.nyu.edu/event/12984648"
+  },
+  {
+   "id": "nyu-412182",
+   "school": "NYU",
+   "edge": [],
+   "truth": {
+    "date": "2026-12-06",
+    "time": "18:30",
+    "place": "Kaye Playhouse",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 273,
+    "system": 1233
+   },
+   "baseline": {
+    "date": "2026-12-06",
+    "time": "18:30",
+    "place": "Kaye Playhouse"
+   },
+   "v1": {
+    "date": null,
+    "time": "18:30",
+    "place": "Kaye Playhouse"
+   },
+   "v2": {
+    "date": "2026-12-06",
+    "time": "18:30",
+    "place": "Kaye Playhouse"
+   },
+   "v3": {
+    "date": "2026-12-06",
+    "time": "18:30",
+    "place": "Kaye Playhouse"
+   },
+   "gate": {
+    "time12": 0.99,
+    "date": 0.99,
+    "time": 0.8100084866469762,
+    "place": 0.98372988526125
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nBallet of Lights: Sleeping Beauty Performance\nDecember 6, 6:30pm - 8:00pm\nKaye Playhouse\nNYU Engage\nCome with The Ballet Company to watch Ballet of Lights: Sleeping Beauty! Hosted by: The Ballet Company - All-University Additional Information can be found at: https://engage.nyu.edu/event/12970813"
+  },
+  {
+   "id": "nyu-411888",
+   "school": "NYU",
+   "edge": [],
+   "truth": {
+    "date": "2026-12-08",
+    "time": "19:00",
+    "place": "Kimmel Center for University Life",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 317,
+    "system": 1148
+   },
+   "baseline": {
+    "date": "2026-12-08",
+    "time": "19:00",
+    "place": "Kimmel Center for University Life, Room GC 269"
+   },
+   "v1": {
+    "date": null,
+    "time": "19:00",
+    "place": "Kimmel Center, room GC 269"
+   },
+   "v2": {
+    "date": "2026-12-08",
+    "time": "19:00",
+    "place": "Kimmel Center, room GC 269"
+   },
+   "v3": {
+    "date": "2026-12-08",
+    "time": "19:00",
+    "place": "Kimmel Center, room GC 269"
+   },
+   "gate": {
+    "time12": 0.9886902225390137,
+    "date": 0.99,
+    "time": 0.9270033544836994,
+    "place": 0.9736320698570042
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nSEED Meeting #6\nDecember 8, 7:00pm - 9:00pm\nKimmel Center for University Life\nNYU Engage\nOur sixth and last meeting of the semester will be on Tuesday, 12/8, at Kimmel Center, room GC 269, from 7pm-9pm. As always, dinner will be served. Hosted by: Seed (Christian Publication) - All-University Additional Information can be found at: https://engage.nyu.edu/event/12799748"
+  },
+  {
+   "id": "nyu-411007",
+   "school": "NYU",
+   "edge": [],
+   "truth": {
+    "date": "2026-12-01",
+    "time": "09:30",
+    "place": "25 W 4th St, 3rd Floor, Room 302",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 398,
+    "system": 1208
+   },
+   "baseline": {
+    "date": "2026-12-01",
+    "time": "09:30",
+    "place": "25 W 4th St, 3rd Floor, Room 302"
+   },
+   "v1": {
+    "date": null,
+    "time": "09:30",
+    "place": "25 W 4th St, 3rd Floor, Room 302"
+   },
+   "v2": {
+    "date": "2026-12-01",
+    "time": "09:30",
+    "place": "25 W 4th St, 3rd Floor, Room 302"
+   },
+   "v3": {
+    "date": "2026-12-01",
+    "time": "09:30",
+    "place": "25 W 4th St, 3rd Floor, Room 302"
+   },
+   "gate": {
+    "time12": 0.9483594608737426,
+    "date": 0.988576310590206,
+    "time": 0.941984462474713,
+    "place": 0.9781791870084182
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nSupplemental Learning Group - Math for Economics I (Gibson)\nDecember 1, 9:30am - 10:45am\n25 W 4th St, 3rd Floor, Room 302\nNYU Engage\nSupplemental Learning Groups (SLGs) are lecture specific and give you a chance to practice and test your understanding of the material from the past week’s lecture(s) in a collaborative group environment. This is process-based learning, meaning if you continue to attend, your learning will compound over the course of the semester. One time attendance will likely not be very helpful. In order for this to be effective: - You must come ready to collaborate. - You must come ready to speak.- You must be active. This will be a framework that you might not be used to. In this space, the primary aim is to construct knowledge, which can feel frustrating. Hosted by: University Learning Center Addition"
+  },
+  {
+   "id": "nyu-405776",
+   "school": "NYU",
+   "edge": [],
+   "truth": {
+    "date": "2026-11-25",
+    "time": "12:00",
+    "place": "20 Cooper Square",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 325,
+    "system": 1040
+   },
+   "baseline": {
+    "date": "2026-11-25",
+    "time": "12:00",
+    "place": "20 Cooper Square"
+   },
+   "v1": {
+    "date": null,
+    "time": "12:00",
+    "place": "20 Cooper Square"
+   },
+   "v2": {
+    "date": "2026-11-25",
+    "time": "12:00",
+    "place": "20 Cooper Square"
+   },
+   "v3": {
+    "date": "2026-11-25",
+    "time": "12:00",
+    "place": "20 Cooper Square"
+   },
+   "gate": {
+    "time12": 0.99,
+    "date": 0.9778739713548015,
+    "time": 0.9684680915977688,
+    "place": 0.9809231621822451
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nSống: Photographs by Ocean Vuong\nNovember 25, 12:00pm - 6:00pm\n20 Cooper Square\nCost: Free\nAsian/Pacific/American Institute\nS ng: Photographs by Ocean Vuong , the artist’s first New York City exhibition, foregrounds working-class diasporic Vietnamese life through a photographic archive spanning nearly twenty years. The photographs on view echo the narratives from Vuong’s literary works by drawing attention to the quotidian and the deeply personal – Vuong’s brother’s shoes, home altars, a mother feeding her baby, an embrace between friends, an American flag."
+  },
+  {
+   "id": "nyu-412367",
+   "school": "NYU",
+   "edge": [],
+   "truth": {
+    "date": "2026-12-01",
+    "time": "19:30",
+    "place": "Room 303, Steinhardt Education Building",
+    "cancelled": false
+   },
+   "tokens": {
+    "baseline": 395,
+    "system": 1192
+   },
+   "baseline": {
+    "date": "2026-12-01",
+    "time": "19:30",
+    "place": "Room 303, Steinhardt Education Building"
+   },
+   "v1": {
+    "date": null,
+    "time": null,
+    "place": "Room 303, Steinhardt Education Building"
+   },
+   "v2": {
+    "date": "2026-12-01",
+    "time": null,
+    "place": "Room 303, Steinhardt Education Building"
+   },
+   "v3": {
+    "date": "2026-12-01",
+    "time": "19:30",
+    "place": "Room 303, Steinhardt Education Building"
+   },
+   "gate": {
+    "time12": 0.99,
+    "date": 0.99,
+    "time": 0.6734370564692408,
+    "place": 0.9607149790336774
+   },
+   "text": "NYU Events Calendar. Listing read on Saturday, November 21, 2026.\nWinter Songwriter Circle\nDecember 1, 7:30pm - 8:30pm\nRoom 303, Steinhardt Education Building\nNYU Engage\nCalling all songwriters! Apply for our last CMS event of the semester- The Winter Songwriters Circle. Join us Tuesday, December 1st @ 7:30 pm in the Ed. Building Room 303! If you’re interested in showcasing one of your original songs, apply with the form below or in our instagram linktree! Any and all genres are welcome. Even if you’re not performing, come hang, network, and enjoy live music from NYU’s songwriting community! Treats for songwriters will be provided :) Winter Songwriter Circle Application Event Date: Tuesday, December 1st Time: 7:30 PM Location: Room 303 in the Steinhardt Education Building Hosted by: Contemporary Music Society Additional Information can be found at: https://e"
+  }
+ ]
+}
