@@ -10,7 +10,7 @@ let j = await r.json();
 while (j.status && !["completed", "failed", "cancelled", "incomplete"].includes(j.status)) { await new Promise((x) => setTimeout(x, 4000)); j = await (await fetch(`https://generativelanguage.googleapis.com/v1beta/interactions/${j.id}`, { headers: { "x-goog-api-key": key } })).json(); }
 const img = (j.steps ?? []).flatMap((s) => s.content ?? []).find((c) => c.type === "image" && c.data);
 if (!img) { console.log("no image", r.status, JSON.stringify(j).slice(0, 500)); process.exit(1); }
-const dir = new URL("../../public/art/film/", import.meta.url); fs.mkdirSync(dir, { recursive: true });
+const dir = process.env.OUT_DIR ? new URL("file://" + process.env.OUT_DIR.replace(/\/?$/, "/")) : new URL("../../public/art/film/", import.meta.url);   // OUT_DIR keeps private stills out of the repo fs.mkdirSync(dir, { recursive: true });
 const ext = (img.mime_type ?? "image/png").includes("jpeg") ? "jpg" : "png";
 fs.writeFileSync(new URL(`${name}.${ext}`, dir), Buffer.from(img.data, "base64"));
 fs.writeFileSync(new URL(`${name}.meta.json`, dir), JSON.stringify({ model: MODEL, prompt, reference: refs.length ? refs.map((f) => f.split("/").pop()) : null, seconds: Math.round((Date.now() - t) / 1000), tokens: j.usage?.total_tokens ?? null, at: new Date().toISOString() }, null, 1));
