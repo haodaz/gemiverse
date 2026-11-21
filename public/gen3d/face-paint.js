@@ -12,7 +12,7 @@ function place(x, y, W, H) {
 
 function drawEye(g, W, H, cx, cy, side, o) {
   const p = place(cx, cy, W, H), u = H / Math.PI;                 // u: pixels per unit of arc
-  const w = 0.20 * u * p.sx, h = 0.25 * u;                        // half sizes
+  const w = 0.205 * u * p.sx, h = 0.275 * u;                      // half sizes: a tall eye
   g.save(); g.translate(p.px, p.py);
   if (o.closed === "squint") {                                     // > <
     g.strokeStyle = o.line; g.lineWidth = h * 0.16; g.lineCap = "round"; g.lineJoin = "round"; g.beginPath();
@@ -23,13 +23,16 @@ function drawEye(g, W, H, cx, cy, side, o) {
     if (o.closed === "happy") { g.moveTo(-w, h * 0.15); g.quadraticCurveTo(0, -h * 0.7, w, h * 0.15); } else { g.moveTo(-w, -h * 0.05); g.quadraticCurveTo(0, h * 0.5, w, -h * 0.05); }
     g.stroke(); g.restore(); return;
   }
-  const eye = new Path2D(); eye.ellipse(0, 0, w, h, 0, 0, TAU);
+  // The opening is a tall rounded shape, a little flatter on top (the lid) and rounder below, not a plain ellipse.
+  const eye = new Path2D(); eye.moveTo(-w, -h * 0.25); eye.bezierCurveTo(-w, -h * 0.95, -w * 0.5, -h, 0, -h); eye.bezierCurveTo(w * 0.5, -h, w, -h * 0.95, w, -h * 0.25);
+  eye.bezierCurveTo(w, h * 0.55, w * 0.62, h, 0, h); eye.bezierCurveTo(-w * 0.62, h, -w, h * 0.55, -w, -h * 0.25); eye.closePath();
   g.save(); g.clip(eye);
   g.fillStyle = "#fffaf5"; g.fillRect(-w, -h, w * 2, h * 2);
   const ix = (o.look?.[0] ?? 0) * w * 0.25, iy = (o.look?.[1] ?? 0) * h * 0.2 + h * 0.06;
   const iris = g.createLinearGradient(0, -h, 0, h); iris.addColorStop(0, shade(o.eye, -0.55)); iris.addColorStop(0.55, o.eye); iris.addColorStop(1, shade(o.eye, 0.45));
-  const is = o.irisScale ?? 1; g.fillStyle = iris; g.beginPath(); g.ellipse(ix, iy, w * 0.86 * is, h * 0.9 * is, 0, 0, TAU); g.fill();
-  if (!o.shape) { g.fillStyle = shade(o.eye, -0.75); g.beginPath(); g.ellipse(ix, iy - h * 0.12 * is, w * 0.4 * is, h * 0.42 * is, 0, 0, TAU); g.fill(); }   // pupil
+  const is = o.irisScale ?? 1; g.fillStyle = iris; g.beginPath(); g.ellipse(ix, iy - h * 0.04, w * 0.80 * is, h * 1.08 * is, 0, 0, TAU); g.fill();
+  g.strokeStyle = shade(o.eye, -0.7); g.lineWidth = w * 0.05; g.stroke();
+  if (!o.shape) { g.fillStyle = shade(o.eye, -0.75); g.beginPath(); g.ellipse(ix, iy - h * 0.1 * is, w * 0.36 * is, h * 0.44 * is, 0, 0, TAU); g.fill(); }   // pupil
   g.fillStyle = shade(o.eye, 0.6); g.globalAlpha = 0.55; g.beginPath(); g.ellipse(ix, iy + h * 0.55, w * 0.5, h * 0.2, 0, 0, TAU); g.fill(); g.globalAlpha = 1;   // lower glow
   const top = g.createLinearGradient(0, -h, 0, -h * 0.2); top.addColorStop(0, "rgba(40,25,30,0.45)"); top.addColorStop(1, "rgba(40,25,30,0)"); g.fillStyle = top; g.fillRect(-w, -h, w * 2, h);  // lid shadow
   if (o.shape === "star" || o.shape === "heart") {                // a star or a heart in place of the pupil
@@ -38,14 +41,15 @@ function drawEye(g, W, H, cx, cy, side, o) {
     else { const q = w * 0.42; g.moveTo(ix, iy + q * 0.9); g.bezierCurveTo(ix - q * 1.6, iy - q * 0.2, ix - q * 0.7, iy - q * 1.3, ix, iy - q * 0.4); g.bezierCurveTo(ix + q * 0.7, iy - q * 1.3, ix + q * 1.6, iy - q * 0.2, ix, iy + q * 0.9); g.fillStyle = "#ff8fb0"; }
     g.closePath(); g.fill();
   }
-  g.fillStyle = "#fff"; g.beginPath(); g.ellipse(ix - w * 0.34 * side * -1, iy - h * 0.42, w * 0.24, h * 0.2, 0, 0, TAU); g.fill();    // big highlight
-  g.beginPath(); g.ellipse(ix + w * 0.3 * side * -1, iy + h * 0.3, w * 0.1, h * 0.085, 0, 0, TAU); g.fill();                          // small highlight
+  g.fillStyle = "#fff"; g.beginPath(); g.ellipse(ix - w * 0.3, iy - h * 0.46, w * 0.27, h * 0.2, -0.3, 0, TAU); g.fill();    // big highlight, upper left on both eyes
+  g.beginPath(); g.ellipse(ix + w * 0.34, iy + h * 0.36, w * 0.11, h * 0.08, 0, 0, TAU); g.fill();                          // small highlight, lower right
   g.restore();
-  // upper lash line, thicker toward the outer corner, with a small flick
-  g.strokeStyle = o.line; g.lineCap = "round"; g.lineJoin = "round";
-  for (let i = 0; i < 14; i++) { const a0 = Math.PI + (i / 14) * Math.PI, a1 = Math.PI + ((i + 1.2) / 14) * Math.PI, t = side > 0 ? i / 14 : 1 - i / 14;
-    g.lineWidth = h * (0.07 + 0.11 * t); g.beginPath(); g.ellipse(0, h * 0.04, w * 1.04, h * 1.04, 0, a0, a1); g.stroke(); }
-  g.lineWidth = h * 0.09; g.beginPath(); g.moveTo(side * w * 1.02, -h * 0.02); g.lineTo(side * w * 1.3, -h * 0.3); g.stroke();
+  // upper lid: one bold stroke along the flat top, heavier at the outer corner, with a short flick
+  g.strokeStyle = o.line; g.fillStyle = o.line; g.lineCap = "round"; g.lineJoin = "round";
+  g.beginPath(); g.moveTo(-w * 1.04, -h * 0.2); g.bezierCurveTo(-w * 1.04, -h * 1.0, -w * 0.5, -h * 1.08, 0, -h * 1.08); g.bezierCurveTo(w * 0.5, -h * 1.08, w * 1.04, -h * 1.0, w * 1.04, -h * 0.2);
+  g.lineWidth = h * 0.13; g.stroke();
+  g.beginPath(); g.moveTo(side * w * 1.02, -h * 0.5); g.quadraticCurveTo(side * w * 1.25, -h * 0.55, side * w * 1.34, -h * 0.82); g.lineWidth = h * 0.11; g.stroke();
+  g.beginPath(); g.moveTo(side * w * 0.5, h * 0.99); g.quadraticCurveTo(side * w * 0.85, h * 0.9, side * w * 1.0, h * 0.5); g.lineWidth = h * 0.045; g.globalAlpha = 0.7; g.stroke(); g.globalAlpha = 1;   // a faint lower line at the outer corner only
   if (o.lashes) { g.lineWidth = h * 0.06; for (const k of [0.55, 0.85]) { g.beginPath(); g.moveTo(side * w * k, -h * 0.9 * Math.sqrt(1 - k * k * 0.9)); g.lineTo(side * w * (k + 0.2), -h * (1.15 - k * 0.35)); g.stroke(); } }
   g.restore();
 }
@@ -58,7 +62,7 @@ export function paintFace(THREE, kit, look, expression = "awake") {
       gr.addColorStop(0, colour); gr.addColorStop(1, "rgba(255,255,255,0)"); g.save(); g.globalAlpha = alpha; g.translate(p.px, p.py); g.scale((rx * p.sx) / Math.max(rx * p.sx, ry), ry / Math.max(rx * p.sx, ry)); g.translate(-p.px, -p.py);
       g.fillStyle = gr; g.fillRect(p.px - R, p.py - R, R * 2, R * 2); g.restore(); };
     if (look.blush !== false) { soft(-0.5, -0.5, 0.2, 0.13, "#ff8fa3", 0.55); soft(0.5, -0.5, 0.2, 0.13, "#ff8fa3", 0.55); }
-    const EY = -0.3, EX = 0.4;
+    const EY = -0.3, EX = 0.37;
     const E = { asleep: { closed: "sleep" }, blink: { closed: "sleep" }, happy: { closed: "happy" }, laugh: { closed: "happy" }, squint: { closed: "squint" }, thinking: { look: [0.9, -1] },
       surprised: { irisScale: 0.62 }, star: { shape: "star" }, heart: { shape: "heart" }, sad: { look: [0, 0.6] }, wink: {} }[expression] ?? {};
     for (const side of [-1, 1]) drawEye(g, W, H, EX * side, EY, side, { eye: look.eye ?? "#6b4a3a", line, lashes: look.lashes, look: [0, 0], ...E, ...(expression === "wink" && side > 0 ? { closed: "happy" } : {}) });
