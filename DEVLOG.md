@@ -193,3 +193,11 @@ Entry format:
 - Second character, from Elodie's low-poly reference: `chibi-lowpoly.js`, one Neon call, faceted head and hair, flat painted anime eyes, 10 hair styles, 6 tops, 5 bottoms, glasses and bags, body width and height. It uses the same skeleton names, so the 29-clip motion library drives it unchanged. Our mistake: its blink function takes how closed the eyes are (0 to 1) and we passed time, so the eyes stayed shut; fixed in the caller.
 - Boys checked on both characters.
 - Still wrong: on both, the lower half of the face is shaded darker than the upper. Long low-poly hair reads as a slab from the side.
+
+## 12:46 · The face: what was really wrong, and who should draw it
+- Three generated faces failed in a row. The last one layered a painted shell and two gloss patches over the head; Elodie could see the extra layer under the fringe.
+- Decision: the face is written by hand by the assistant (`public/gen3d/face-paint.js`), because the assistant can render, look and adjust within a minute and the generating model cannot see. The face is painted straight into the head's colour map (no overlay): large low-set eyes with a gradient iris and two highlights, an upper lash line only, small brows, a tiny nose, a small mouth, soft blush; five expressions and a blink by repainting.
+- The real cause of the "dark lower face", present since the first character and misdiagnosed three times (as paint, as chin shape, as the fringe's shadow): the viewer had only top light, so the underside of any round head reflected the dark floor of the environment map. Found by removing the hair altogether. Fixed with a hemisphere light and a front fill.
+- Head form also by hand, then reshaped to chibi head references Elodie supplied (front and side views): wider than tall, fullest at the cheeks just below the eye line, small chin, nearly flat face plane, full forehead, tiny nose. Neck shortened.
+- What generation did well and stays: the jointed body, the three clothing modules, the motion library, the clay-style hair (being thickened after Elodie counted the locks).
+- Music: Google's Lyria (`lyria-3-clip-preview`) returns a 30-second MP3 in about 15 seconds through the same interactions endpoint. Six tracks saved in `public/music/` with their prompts. Not yet played in the app.

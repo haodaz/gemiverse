@@ -11,3 +11,4 @@
 - Growth stages do not advance.
 - Outbox gate and AI-to-AI messages are not built.
 - Chosen character and motion library are not in the room yet.
+- Head with sculpted eye sockets, lids and lips like the chibi topology references, instead of a painted face on a smooth head (Elodie, 13:22).

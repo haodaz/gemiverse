@@ -48,7 +48,7 @@ export function paintFace(THREE, kit, look, expression = "awake") {
       gr.addColorStop(0, colour); gr.addColorStop(1, "rgba(255,255,255,0)"); g.save(); g.globalAlpha = alpha; g.translate(p.px, p.py); g.scale((rx * p.sx) / Math.max(rx * p.sx, ry), ry / Math.max(rx * p.sx, ry)); g.translate(-p.px, -p.py);
       g.fillStyle = gr; g.fillRect(p.px - R, p.py - R, R * 2, R * 2); g.restore(); };
     if (look.blush !== false) { soft(-0.5, -0.5, 0.2, 0.13, "#ff8fa3", 0.55); soft(0.5, -0.5, 0.2, 0.13, "#ff8fa3", 0.55); }
-    const EY = -0.3, EX = 0.38;
+    const EY = -0.3, EX = 0.4;
     const closed = expression === "asleep" ? "sleep" : expression === "happy" ? "happy" : expression === "blink" ? "sleep" : null;
     const lookDir = expression === "thinking" ? [0.9, -1] : [0, 0];
     for (const side of [-1, 1]) drawEye(g, W, H, EX * side, EY, side, { eye: look.eye ?? "#6b4a3a", line, lashes: look.lashes, closed, look: lookDir });
@@ -72,13 +72,24 @@ export function paintFace(THREE, kit, look, expression = "awake") {
 // The head form, also by hand: a sphere whose lower third narrows gently to a small soft chin. The taper is mild and even,
 // so the lower face keeps facing forward and takes light; a hard forward chin made every earlier face go dark below the eyes.
 export function headGeometry(THREE) {
-  const g = new THREE.SphereGeometry(1, 96, 72), p = g.attributes.position, ss = (a, b, x) => { const t = Math.max(0, Math.min(1, (x - a) / (b - a))); return t * t * (3 - 2 * t); };
+  // Profile taken from chibi head references (front and side views): wide head, widest at the cheeks just below the eye line,
+  // a small rounded chin, an almost vertical face plane with a full forehead, a tiny nose, a big round back of the skull.
+  const g = new THREE.SphereGeometry(1, 128, 96), p = g.attributes.position;
+  const ss = (a, b, x) => { const t = Math.max(0, Math.min(1, (x - a) / (b - a))); return t * t * (3 - 2 * t); }, bump = (d, r) => Math.exp(-(d * d) / (r * r));
   for (let i = 0; i < p.count; i++) {
     let x = p.getX(i), y = p.getY(i), z = p.getZ(i);
-    const t = ss(-0.15, -1, y), k = 1 - 0.30 * t * t;            // narrow toward the chin
-    x *= k * (1 + 0.05 * ss(0.2, -0.45, y) * ss(-1, -0.45, y));   // a little fullness at the cheeks
-    z *= z > 0 ? (1 - 0.06 * ss(-0.9, 0.2, y)) * (1 - 0.12 * t * t) : k;
-    if (y < 0) y *= 0.95;
+    const front = Math.max(0, z), t = ss(-0.35, -1, y);
+    let wx = 1 + 0.07 * bump(y + 0.32, 0.38);                      // cheeks: the widest point
+    wx *= 1 - 0.40 * Math.pow(t, 1.7);                              // then in to a small chin
+    let wz = 1 - 0.34 * Math.pow(t, 1.5);
+    x *= wx;
+    if (z > 0) { z *= wz * (1 - 0.10 * bump(y + 0.25, 0.55));      // a calm, nearly flat face plane
+      z += 0.05 * front * bump(y - 0.45, 0.4);                      // full forehead
+      z += 0.045 * bump(Math.hypot(x, y + 0.47), 0.085) * front;    // tiny nose
+      z += 0.02 * bump(Math.hypot(x, y + 0.66), 0.13) * front;      // mouth mound
+      z += 0.03 * front * bump(Math.hypot(Math.abs(x) - 0.5, y + 0.5), 0.22);  // cheek fullness
+    } else z *= 1 + 0.06 * bump(y - 0.05, 0.6);                    // big round back of the skull
+    if (y < 0) y *= 0.93;
     p.setXYZ(i, x, y, z);
   }
   g.computeVertexNormals(); return g;
@@ -91,7 +102,7 @@ export function applyFace(THREE, kit, headGroup, look) {
   if (!old) return null;
   headGroup.traverse((o) => { if (o.isMesh && (o === old || o.material.transparent || o.material.map)) o.visible = false; });
   const head = new THREE.Mesh(headGeometry(THREE), new THREE.MeshPhysicalMaterial({ color: "#ffffff", roughness: 0.62, sheen: 0.3, sheenRoughness: 0.6 }));
-  head.scale.set(0.18, 0.17, 0.165); head.position.set(0, 0.165, 0); head.userData.face = true; headGroup.add(head);
+  head.scale.set(0.192, 0.172, 0.172); head.position.set(0, 0.165, 0); head.userData.face = true; headGroup.add(head);
   headGroup.traverse((o) => { if (o.isMesh && o.visible && o !== head) { o.material = o.material.clone(); o.material.color = new THREE.Color(look.skin); o.material.map = null; } });   // ears and neck in the same skin
   const set = (name) => { head.material.map?.dispose?.(); head.material.map = paintFace(THREE, kit, look, name); head.material.needsUpdate = true; };
   let current = "awake", shut = false; set(current);
