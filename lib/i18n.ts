@@ -41,7 +41,7 @@ const T: Record<string, Record<Lang, string>> = {
   btn_talk: { en: "Talk", zh: "聊聊", es: "Hablar" }, btn_desk: { en: "Desk", zh: "书桌", es: "Escritorio" }, btn_diary: { en: "Diary", zh: "日记", es: "Diario" },
   btn_wardrobe: { en: "Wardrobe", zh: "衣柜", es: "Armario" }, tab_wardrobe: { en: "Wardrobe", zh: "衣柜", es: "Armario" },
   btn_campus: { en: "Campus", zh: "去校园", es: "Campus" }, btn_arrange: { en: "Arrange", zh: "布置", es: "Ordenar" }, btn_more: { en: "Abilities", zh: "能力", es: "Habilidades" },
-  btn_outbox: { en: "Outbox", zh: "发件", es: "Salida" }, close: { en: "Close", zh: "关闭", es: "Cerrar" },
+  btn_outbox: { en: "Social", zh: "社交", es: "Social" }, close: { en: "Close", zh: "关闭", es: "Cerrar" },
   tap_talk: { en: "Talk to me", zh: "跟我说话", es: "Háblame" }, tap_doing: { en: "What are you doing?", zh: "你在干嘛？", es: "¿Qué haces?" },
   tap_out: { en: "Go to campus", zh: "去校园逛逛", es: "Ir al campus" }, tap_look: { en: "Change my look", zh: "换个样子", es: "Cambiar mi aspecto" },
   for_you: { en: "for you", zh: "为你", es: "para ti" }, for_itself: { en: "for itself", zh: "为自己", es: "para sí" },
