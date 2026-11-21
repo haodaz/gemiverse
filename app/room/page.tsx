@@ -18,7 +18,7 @@ import { Chunky, GamePanel, Icon, IconButton, INK, RadialMenu } from "@/componen
 
 type Entity = { id: string; name: string; fields: Record<string, any>; tier: number };
 type Evidence = { entity_id: string; field: string; check_confidence: number | null; passed: boolean | null };
-type Panel = "talk" | "desk" | "diary" | "tools" | "outbox" | null;
+type Panel = "talk" | "desk" | "diary" | "tools" | "outbox" | "wardrobe" | null;
 type Item = { id: number; who: "you" | "gemi"; text?: string; image?: string; heard?: any; saw?: any; cost?: string; error?: boolean; step?: boolean };
 type Find = { id: string; title: string; fields: Record<string, any>; why: string; evidence: { axis: AxisId; x: number; why: string }[]; checks: { field: string; confidence: number; passed: boolean }[] };
 type Trip = { place: string; by: "gemi" | "student"; reason: string; finds: Find[]; seal: string; sealed: string; revealed?: { predicted: Record<string, number>; nonce: string; verified: boolean }; contrast_axis?: string; tokens?: number; model?: string; choices: Record<string, "keep" | "skip"> };
@@ -36,6 +36,7 @@ export default function Room() {
   const [lang, setLang] = useState<Lang>("en");
   const [panel, setPanel] = useState<Panel>(null);
   const [deskView, setDeskView] = useState(false);
+  const [look, setLook] = useState<Record<string, any>>({});
   const doNext = useRef<any>(null);
   const [campus, setCampus] = useState(false);
   const [outAt, setOutAt] = useState<string | null>(null);
@@ -60,7 +61,8 @@ export default function Room() {
       if (m.type === "doing") setDoing(m.value);
       if (m.type === "tapped") setTap(m.value);
       if (m.type === "released") setTap(null);
-      if (m.type === "ready" && school) { send("look", PRESETS[school].look); setTimeout(() => auto.current?.(), 600); }
+      if (m.type === "open") { if (m.value === "door") { setPanel(null); setDeskView(false); setCampus(true); } else if (m.value === "wardrobe") setPanel("wardrobe"); }
+      if (m.type === "ready" && school) { let saved = null; try { saved = JSON.parse(localStorage.getItem(`gemi.look.${school}`) ?? "null"); } catch {} send("look", saved ?? PRESETS[school].look); if (saved) setLook(saved); setTimeout(() => auto.current?.(), 600); }
       if (m.type === "layout" && school) { const it = String(m.value?.item ?? "something"); roomTouched.current = it; lastTouch.current = Date.now();
         setLog((l) => { const n = [...l, { id: Math.random().toString(36).slice(2, 10), at: new Date().toISOString(), type: "room" as const, by: "student" as const, what: `moved the ${it}`, item: it }]; saveLog(school, n); return n; }); }
       if (m.type === "focus") { if (m.value === "desk") setDeskView(true); else if (m.value === "room") setDeskView(false); }   // a click on the desk in 3D enters the desk view; panels open only from buttons
@@ -193,7 +195,7 @@ export default function Room() {
     );
   };
 
-  const titles: Record<string, [string, string]> = { talk: ["tab_talk", "talk"], desk: ["tab_desk", "desk"], diary: ["tab_diary", "diary"], tools: ["tab_tools", "abilities"], outbox: ["tab_outbox", "outbox"] };
+  const titles: Record<string, [string, string]> = { talk: ["tab_talk", "talk"], desk: ["tab_desk", "desk"], diary: ["tab_diary", "diary"], tools: ["tab_tools", "abilities"], outbox: ["tab_outbox", "outbox"], wardrobe: ["tab_wardrobe", "wardrobe"] };
 
   return (
     <main className="relative h-screen overflow-hidden bg-[#f6f2ee] text-[#2b2536]">
@@ -224,6 +226,7 @@ export default function Room() {
         <IconButton icon="desk" label={tt("btn_desk")} active={deskView || panel === "desk"} accent={s.soft} badge={pending || undefined} onClick={() => { const on = !deskView; setDeskView(on); setPanel(null); setCampus(false); releaseGemi(); send("focus", on ? "desk" : "room"); }} />
         <IconButton icon="diary" label={tt("btn_diary")} active={panel === "diary"} accent={s.soft} onClick={() => openPanel(panel === "diary" ? null : "diary")} />
         <IconButton icon="campus" label={tt("btn_campus")} active={campus} accent={s.soft} onClick={() => { setCampus(true); setPanel(null); releaseGemi(); }} />
+        <IconButton icon="wardrobe" label={tt("btn_wardrobe")} active={panel === "wardrobe"} accent={s.soft} onClick={() => openPanel(panel === "wardrobe" ? null : "wardrobe")} />
         <IconButton icon="arrange" label={tt("btn_arrange")} onClick={() => { setPanel(null); send("arrange"); }} />
         <IconButton icon="abilities" label={tt("btn_more")} active={panel === "tools"} accent={s.soft} onClick={() => openPanel(panel === "tools" ? null : "tools")} />
         <IconButton icon="outbox" label={tt("btn_outbox")} active={panel === "outbox"} accent={s.soft} onClick={() => openPanel(panel === "outbox" ? null : "outbox")} />
@@ -242,6 +245,23 @@ export default function Room() {
       {panel && (
         <GamePanel title={tt(titles[panel][0])} icon={titles[panel][1]} accent={s.accent} onClose={() => { setPanel(null); send("focus", deskView ? "desk" : "room"); }} closeLabel={tt("close")}
           footer={panel === "talk" ? <Composer lang={lang} accent={s.accent} busy={busy} onSend={onSend} /> : undefined}>
+          {panel === "wardrobe" && (() => {
+            const cur: Record<string, any> = { ...preset.look, ...look };
+            const wear = (patch: Record<string, any>) => { const n = { ...cur, ...patch }; setLook(n); try { localStorage.setItem(`gemi.look.${school}`, JSON.stringify(n)); } catch {} send("look", n); append({ id: uid(), at: new Date().toISOString(), type: "room", what: `changed its look: ${Object.keys(patch).join(", ")}`, by: "student" } as any); };
+            const row = (title: string, key: string, opts: string[]) => (<div key={key}><div className="mb-1 mt-3 text-[11px] font-bold uppercase tracking-wider text-[#8a8296]">{title}</div>
+              <div className="flex flex-wrap gap-1.5">{opts.map((o) => <button key={o} onClick={() => wear({ [key]: o })} className="rounded-full border-2 px-2.5 py-0.5 text-[13px]" style={{ borderColor: INK, background: cur[key] === o ? INK : "#fff", color: cur[key] === o ? "#fff" : INK }}>{o.replace(/([A-Z])/g, " $1").toLowerCase()}</button>)}</div></div>);
+            const dots = (title: string, key: string, cols: string[]) => (<div key={key}><div className="mb-1 mt-3 text-[11px] font-bold uppercase tracking-wider text-[#8a8296]">{title}</div>
+              <div className="flex flex-wrap gap-2">{cols.map((c) => <button key={c} onClick={() => wear({ [key]: c })} aria-label={c} className="h-7 w-7 rounded-full border-[3px]" style={{ background: c, borderColor: cur[key] === c ? "#7c4dce" : INK, boxShadow: cur[key] === c ? "0 0 0 2px #fff, 0 0 0 4px #7c4dce" : undefined }} />)}</div></div>);
+            const COL = ["#b8a2e3", "#8fc1e8", "#f2a7b8", "#ffe08a", "#a8e0c0", "#ffffff", "#3d3648", "#5b7bb5", "#d9534f", "#7fb48a"];
+            return (<div>
+              {row("Hair", "hairStyle", ["bob", "longStraight", "longWavy", "twinTails", "sidePonytail", "highPonytail", "bun", "shortCrop", "sidePart", "tousled", "curtainBangs", "pixie", "curlyMedium"])}
+              {dots("Hair colour", "hairColor", ["#2a2226", "#2a1d18", "#6b4a2f", "#c9a063", "#a8482f", "#f2a7b8", "#8fc1e8", "#d8d4dc"])}
+              {row("Top", "top", ["cardigan", "hoodie", "sweater", "shirt", "tee", "blazer"])}{dots("Top colour", "topColor", COL)}
+              {row("Bottom", "bottom", ["pleatedSkirt", "trousers", "jeans", "shorts", "longSkirt"])}{dots("Bottom colour", "bottomColor", COL)}
+              {row("Shoes", "shoes", ["maryJanes", "sneakers", "boots", "loafers"])}
+              <div className="mb-1 mt-3 text-[11px] font-bold uppercase tracking-wider text-[#8a8296]">Build</div>
+              <input type="range" min="0.9" max="1.3" step="0.02" value={cur.bodyWidth ?? 1} onChange={(e) => wear({ bodyWidth: +e.target.value })} className="w-full" aria-label="Body width" />
+            </div>); })()}
           {panel === "talk" && (
             <div className="space-y-3">
               <div className="sticky top-0 z-[1] -mx-1 flex items-center gap-3 rounded-2xl border-2 bg-[#fffaf0] px-2 py-1" style={{ borderColor: INK }}>

@@ -39,6 +39,7 @@ const T: Record<string, Record<Lang, string>> = {
   diary_empty: { en: "Nothing yet.", zh: "还没有内容。", es: "Nada todavía." },
   outbox_empty: { en: "Nothing has left this room.", zh: "还没有任何东西从这里出去。", es: "Nada ha salido de este cuarto." },
   btn_talk: { en: "Talk", zh: "聊聊", es: "Hablar" }, btn_desk: { en: "Desk", zh: "书桌", es: "Escritorio" }, btn_diary: { en: "Diary", zh: "日记", es: "Diario" },
+  btn_wardrobe: { en: "Wardrobe", zh: "衣柜", es: "Armario" }, tab_wardrobe: { en: "Wardrobe", zh: "衣柜", es: "Armario" },
   btn_campus: { en: "Campus", zh: "去校园", es: "Campus" }, btn_arrange: { en: "Arrange", zh: "布置", es: "Ordenar" }, btn_more: { en: "Abilities", zh: "能力", es: "Habilidades" },
   btn_outbox: { en: "Outbox", zh: "发件", es: "Salida" }, close: { en: "Close", zh: "关闭", es: "Cerrar" },
   tap_talk: { en: "Talk to me", zh: "跟我说话", es: "Háblame" }, tap_doing: { en: "What are you doing?", zh: "你在干嘛？", es: "¿Qué haces?" },
