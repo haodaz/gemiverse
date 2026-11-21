@@ -5,7 +5,7 @@ Every college student gets a twin: an AI projection that lives on campus, goes o
 Built at the Gemini 4 NYC Hackathon, Saturday 2026-11-21.
 
 - **All code in this repo was written today**, after 10:30 ET, with an AI coding assistant (Claude Code).
-- The concepts (a campus twin, a portrait with uncertainty, a shared knowledge base) come from our earlier work. No earlier code is reused.
+- The idea began with Cocoverse, our mind-projection product for pets. The concepts (a projected companion with a room of its own, a portrait with uncertainty, a shared knowledge base) come from our earlier work. No earlier code is reused.
 - `DESIGN.md` is the living design doc. `DEVLOG.md` records every step, including failures.
 
 ## The task and the proof (Track 1, 5 Sigma)

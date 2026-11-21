@@ -101,7 +101,7 @@ A small daily allowance of real tokens. Two purses: for the student (going out, 
 2. Foundry step 1: only 16 of 25 seed pages gave usable text. Six Columbia pages return 403; two events.nyu.edu pages are drawn by JavaScript; one page did not contain the recorded quote.
 
 ## 10. What was built today, and what was not
-All code is written on 2026-11-21 after 10:30 ET, with an AI coding assistant. The concepts (a campus twin, a portrait with uncertainty, a shared knowledge base) come from our earlier work; no earlier code is reused.
+All code is written on 2026-11-21 after 10:30 ET, with an AI coding assistant. The idea began with Cocoverse, our mind-projection product for pets. The concepts (a projected companion with a room of its own, a portrait with uncertainty, a shared knowledge base) come from our earlier work; no earlier code is reused.
 
 ## Why the Gemi has a small budget (ruled by Elodie, 14:15)
 - A limited token budget is the projection of a real day: a person's time, energy and attention are finite too.

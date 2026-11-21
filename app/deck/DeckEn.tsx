@@ -50,7 +50,7 @@ const MAP: [string, string, string, string][] = [
   ["Out on campus", "The room is empty, door ajar", "Being somewhere else", "Gemi"],
 ];
 
-const SECTIONS: [string, number][] = [["Product", 6], ["What makes it different", 8], ["How we got here", 6], ["What it opens", 3]];
+const SECTIONS: [string, number][] = [["Product", 7], ["What makes it different", 8], ["How we got here", 6], ["What it opens", 3]];
 const sectionOf = (i: number) => { let k = 0; for (const [name, n] of SECTIONS) { if (i < k + n) return name; k += n; } return ""; };
 
 export default function Deck({ onLang }: { onLang?: () => void }) {
@@ -103,6 +103,23 @@ export default function Deck({ onLang }: { onLang?: () => void }) {
               <Li>No feed, no ranking, no recommender in the middle. Gemis and club agents form the network; people decide.</Li></ul></Frame>
         </div>
         <p className="mt-8 text-center text-2xl font-bold">Shared facts. Private understanding.</p>
+      </div>) },
+
+    { id: "Deeds and mind", body: (
+      <div className="flex h-full flex-col justify-center">
+        <Eyebrow>Two words the whole design hangs on</Eyebrow>
+        <div className="mt-6 grid grid-cols-2 gap-10">
+          <div className="rounded-3xl border-[3px] bg-[#fffaf0] p-9" style={{ borderColor: INK }}>
+            <div className="flex items-baseline gap-5"><span className="text-[6.5rem] font-bold leading-none" style={{ color: "#7c4dce" }}>论迹</span><span className="text-2xl font-bold text-[#8a8296]">lùn jì · by its deeds</span></div>
+            <p className="mt-6 text-[1.9rem] font-bold leading-snug">For behaviour to exist, the AI needs a space it can change.</p>
+            <p className="mt-4 text-lg leading-relaxed text-[#4a4356]">The room, the desk, the jars, the door. Whatever it does leaves a trace you can see, count and undo: a card it brought, a star it spent, a chair it moved. That is the Verse.</p></div>
+          <div className="rounded-3xl border-[3px] bg-[#fffaf0] p-9" style={{ borderColor: INK }}>
+            <div className="flex items-baseline gap-5"><span className="text-[6.5rem] font-bold leading-none" style={{ color: "#2f9e8f" }}>论心</span><span className="text-2xl font-bold text-[#8a8296]">lùn xīn · by its mind</span></div>
+            <p className="mt-6 text-[1.9rem] font-bold leading-snug">For a mind to exist, the AI needs a world it can sense.</p>
+            <p className="mt-4 text-lg leading-relaxed text-[#4a4356]">Your words in any language, a poster, checked pages of a real campus, what you kept and what you skipped, the furniture you moved. From these it holds beliefs with a width, and guesses. That is the Gemi.</p></div>
+        </div>
+        <p className="mt-8 text-center text-2xl font-bold">We judge it by its deeds, and we let you read its mind. Neither is possible without the other.</p>
+        <p className="mt-2 text-center text-[15px] text-[#8a8296]">The idea began with Cocoverse, a product that projects the mind of a pet. A student is harder: the world it must sense is a campus, and what it says must be true.</p>
       </div>) },
 
     { id: "Who", body: (
@@ -363,7 +380,7 @@ export default function Deck({ onLang }: { onLang?: () => void }) {
           <ul className="mt-5"><Li>Say twenty seconds about yourself, in any language.</Li><Li>Show it a poster from this room.</Li><Li>Send it out. Open any card and read the checks.</Li><Li>Keep one, skip one. Open the diary.</Li></ul>
           <div className="mt-8 flex flex-wrap gap-3 text-lg font-bold">{[["/room", "The room"], ["/foundry", "Foundry: the base"], ["/admin", "Admin: run days"], ["/gen3d/doll.html?cam=front", "The character"]].map(([h, l]) => (
             <a key={h} href={h} className="rounded-full border-[3px] bg-[#ffe08a] px-5 py-2" style={{ borderColor: INK, boxShadow: `0 4px 0 ${INK}` }}>{l}</a>))}</div>
-          <p className="mt-8 text-sm text-[#8a8296]">All code written on 2026-11-21 with an AI coding assistant. Concepts from our earlier work on a campus twin and a portrait with uncertainty. github.com/haodaz/gemiverse</p></div>
+          <p className="mt-8 text-sm text-[#8a8296]">All code written on 2026-11-21 with an AI coding assistant. The idea began with Cocoverse, our mind-projection product for pets; concepts come from our earlier work. github.com/haodaz/gemiverse</p></div>
         <div className="h-[78vh]"><Live src="/gen3d/viewer.html?embed=1&bare=1&school=columbia" /></div>
       </div>) }
   ];

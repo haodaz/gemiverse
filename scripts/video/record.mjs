@@ -48,7 +48,7 @@ if (want("s3") || want("s4")) {
     const c3 = await shoot(dur.s4 - 2.1); await write("s4", [c1, c2, c3], dur.s4); }
 }
 if (want("s5")) { await wide(); await open("/deck?s=15", 2500); const a = await shoot(3.2);   // the whole slide first, then move in on the chart
-  await page.evaluate(() => { const m = document.querySelector("main"); m.style.transformOrigin = "6% 62%"; m.style.transition = "transform 0.9s ease"; m.style.transform = "scale(1.75)"; });
+  await page.evaluate(() => { const m = document.querySelector("main"); m.style.transformOrigin = "0% 55%"; m.style.transition = "transform 0.9s ease"; m.style.transform = "scale(1.55)"; });
   const b = await shoot(dur.s5 - 3.2); await write("s5", [a, b], dur.s5); }
 if (want("s6")) { await wide(); await open("/deck?s=17", 2000); const a = await shoot(dur.s6 * 0.5); await open("/deck?s=20", 2000); const b = await shoot(dur.s6 * 0.5); await write("s6", [a, b], dur.s6); }
 if (want("s7")) { await page.evaluate(() => localStorage.setItem("gemi.went.nyu", JSON.stringify([{ find: "demo-1", title: "an event", matched: true }, { find: "demo-2", title: "another", matched: true }])));

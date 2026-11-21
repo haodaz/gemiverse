@@ -76,7 +76,7 @@ const FAILS: [string, string, string, string][] = [
     "25 个全部可用（17 个静态页面，8 条数据源记录）"],
 ];
 
-const SECTIONS: [string, number][] = [["产品", 6], ["特色与价值", 8], ["过程", 6], ["展望", 3]];
+const SECTIONS: [string, number][] = [["产品", 7], ["特色与价值", 8], ["过程", 6], ["展望", 3]];
 const sectionOf = (i: number) => { let k = 0; for (const [name, n] of SECTIONS) { if (i < k + n) return name; k += n; } return ""; };
 
 export default function Deck({ onLang }: { onLang?: () => void }) {
@@ -128,6 +128,23 @@ export default function Deck({ onLang }: { onLang?: () => void }) {
               <Li>中间没有信息流，没有排名，没有推荐系统。Gemi 和社团的智能体组成网络；做决定的是人。</Li></ul></Frame>
         </div>
         <p className="mt-8 text-center text-2xl font-bold">事实共享。理解私有。</p>
+      </div>) },
+
+    { id: "论迹 论心", body: (
+      <div className="flex h-full flex-col justify-center">
+        <Eyebrow>整个设计挂在这两个词上</Eyebrow>
+        <div className="mt-6 grid grid-cols-2 gap-10">
+          <div className="rounded-3xl border-[3px] bg-[#fffaf0] p-9" style={{ borderColor: INK }}>
+            <div className="text-[6.5rem] font-bold leading-none" style={{ color: "#7c4dce" }}>论迹</div>
+            <p className="mt-6 text-[1.9rem] font-bold leading-snug">要有行为，需要有 AI 能改变的空间。</p>
+            <p className="mt-4 text-lg leading-relaxed text-[#4a4356]">小屋、书桌、罐子、门。它做的每件事都留下看得见、数得清、撤得回的痕迹：带回来的一张卡，花掉的一颗星，挪过的一把椅子。这就是 Verse。</p></div>
+          <div className="rounded-3xl border-[3px] bg-[#fffaf0] p-9" style={{ borderColor: INK }}>
+            <div className="text-[6.5rem] font-bold leading-none" style={{ color: "#2f9e8f" }}>论心</div>
+            <p className="mt-6 text-[1.9rem] font-bold leading-snug">要有心智，需要有 AI 能感受的世界。</p>
+            <p className="mt-4 text-lg leading-relaxed text-[#4a4356]">你用任何语言说的话，一张海报，真实校园里核对过的页面，你留下什么、跳过什么，你挪动的家具。它据此形成带宽度的判断，并且去猜。这就是 Gemi。</p></div>
+        </div>
+        <p className="mt-8 text-center text-2xl font-bold">我们按行为评判它，也让你读得到它的心。两者缺一个，另一个也立不住。</p>
+        <p className="mt-2 text-center text-[15px] text-[#8a8296]">这个想法最初来自 Cocoverse，一个投射宠物心智的产品。学生更难：它要感受的世界是一座校园，而且它说的话必须是真的。</p>
       </div>) },
 
     { id: "给谁用", body: (
@@ -387,7 +404,7 @@ export default function Deck({ onLang }: { onLang?: () => void }) {
           <ul className="mt-5"><Li>用任何语言，说二十秒关于你自己的话。</Li><Li>给它看这个会场里的一张海报。</Li><Li>让它出门。打开任意一张卡片，看核对记录。</Li><Li>留下一个，跳过一个。打开日记。</Li></ul>
           <div className="mt-8 flex flex-wrap gap-3 text-lg font-bold">{[["/room", "房间"], ["/foundry", "Foundry：底座"], ["/admin", "Admin：按天运行"], ["/gen3d/doll.html?cam=front", "角色"]].map(([h, l]) => (
             <a key={h} href={h} className="rounded-full border-[3px] bg-[#ffe08a] px-5 py-2" style={{ borderColor: INK, boxShadow: `0 4px 0 ${INK}` }}>{l}</a>))}</div>
-          <p className="mt-8 text-sm text-[#8a8296]">所有代码都是 2026-11-21 当天在 AI 编程助手的帮助下写的。概念来自我们之前做的校园分身和带不确定度的画像。github.com/haodaz/gemiverse</p></div>
+          <p className="mt-8 text-sm text-[#8a8296]">所有代码都是 2026-11-21 当天在 AI 编程助手的帮助下写的。这个想法最初来自 Cocoverse，我们做的宠物心智投射产品；概念来自我们之前的工作。github.com/haodaz/gemiverse</p></div>
         <div className="h-[78vh]"><Live src="/gen3d/viewer.html?embed=1&bare=1&school=columbia" /></div>
       </div>) },
   ];

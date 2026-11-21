@@ -25,10 +25,10 @@ export default function Home() {
       <section className="mx-auto grid max-w-6xl grid-cols-[1fr_1.15fr] items-center gap-6 px-8 pb-10 pt-14">
         <div>
           <Eyebrow>For college students · NYU and Columbia first</Eyebrow>
-          <h1 className="mt-4 text-[5.2rem] font-semibold leading-[0.98] tracking-tight">Meet your<br />Gemi.</h1>
-          <p className="mt-6 max-w-xl text-[22px] leading-relaxed" style={{ color: MUTE }}>A small you that lives on campus. While you are in class it goes out, reads the pages you have no time for, and comes back with three things worth your evening.</p>
+          <h1 className="mt-4 text-[4.6rem] font-semibold leading-[1.0] tracking-tight">Meet your Gemi,<br />and build a universe together.</h1>
+          <p className="mt-6 max-w-xl text-[22px] leading-relaxed" style={{ color: MUTE }}>It begins as a point of light, and exists because you met it. Then it is a small you that lives on campus. While you are in class it goes out, reads the pages you have no time for, and comes back with three things worth your evening.</p>
           <div className="mt-8 flex items-center gap-4">
-            <a href="/start" className="rounded-full px-8 py-3.5 text-lg font-semibold text-white" style={{ background: PUR, boxShadow: "0 6px 0 #5a35a0" }}>Move in</a>
+            <a href="/start" className="rounded-full px-8 py-3.5 text-lg font-semibold text-white" style={{ background: PUR, boxShadow: "0 6px 0 #5a35a0" }}>Meet your Gemi</a>
             <a href="#day" className="rounded-full border-2 px-7 py-3 text-lg font-semibold" style={{ borderColor: INK }}>See a day with it</a>
           </div>
           <p className="mt-5 text-sm" style={{ color: "#8a8296" }}>No sign-up. What it learns about you stays in your browser.</p>
@@ -128,7 +128,7 @@ export default function Home() {
           <Eyebrow>Start here</Eyebrow>
           <h2 className="mt-3 text-5xl font-semibold tracking-tight">What are you here to do?</h2>
           <div className="mt-9 grid grid-cols-3 gap-6">
-            {[["/start", "I am a student", "Pick your campus, name your Gemi, tell it one thing. About a minute.", "Move in", PUR, "#fff"],
+            {[["/start", "I am a student", "Meet your Gemi, tell it one thing, then choose where you two live. About a minute.", "Meet your Gemi", PUR, "#fff"],
               ["/deck", "I want to know how it works", "The task, the baseline, the test set, the failures, the mathematics and the layers. In English and Chinese.", "Open the deck", "#fff", INK],
               ["/admin", "I run this", "The back office: the shared base and its flywheel, what each Gemini model did, the measured results, and days run at speed.", "Open admin", "#fff", INK]].map(([href, t, d, cta, bg, fg]) => (
               <a key={href} href={href} className="flex flex-col rounded-3xl border-2 bg-white p-7 transition hover:-translate-y-1" style={{ borderColor: INK, boxShadow: "0 6px 0 #2b253633" }}>
