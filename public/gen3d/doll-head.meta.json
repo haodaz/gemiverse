@@ -1,0 +1,32 @@
+{
+ "model": "gemini-4-neon",
+ "thinking": "high",
+ "reviewed_image": "scripts/../docs/shots/doll-clothed-1236.jpg",
+ "prompt": "The attached image is a real render of a doll character built from code you wrote earlier (body, hair, clothes and a painted face). Look at it carefully. The body, clothes, hair and motion are good. The HEAD AND FACE are the one thing that is still ugly, and you are being shown the picture so you can see why.\n\nWhat is wrong in the picture:\n1. The head shape reads as an egg with a narrow, dark lower half: the cheeks do not exist, the jaw pinches in, and the underside catches a muddy shadow, so the face looks sunken. A cute chibi head is the opposite: widest at the CHEEKS (below the eye line), a broad soft jaw, a short rounded chin, a flat-ish front so the face is one calm surface.\n2. The eyes are ringed by a thick black outline with a white rim and a red iris, which looks startled. They should have a dark upper lid only, no ring, and the iris colour that was asked for.\n3. The face paint sits on a patch whose edge and curvature do not match the head, so the features look pasted on.\n\nWrite ONE new ES module that replaces both the head mesh and the face, so the paint fits the form exactly:\n\nexport function buildHead(THREE, opts, kit) -> THREE.Group to be added to the \"head\" pivot of the rig (the host removes the old head meshes). The pivot is at the base of the skull; the head's centre is 0.14 above it. Overall size about 0.31 wide, 0.30 tall, 0.28 deep. Face toward +z.\nopts = { skin, eye (iris colour, use it exactly), eyeShape: \"round\" | \"almond\" | \"droopy\" | \"upturned\", brow: \"soft\" | \"straight\" | \"arched\", browColor, lip, blush: boolean, freckles: boolean, lashes: boolean }.\n\nHEAD FORM, built as ONE smooth mesh: start from a SphereGeometry(1, 64, 48) and move each vertex with an explicit profile so the shape is deliberate, then scale to size and computeVertexNormals. With unit coordinates (x right, y up, z front, each from -1 to 1):\n- Width by height (multiply x): 0.94 at the crown (y = 1), 1.00 at y = 0.35, 1.06 at y = -0.25 (the cheeks, the widest point), 0.98 at y = -0.6, 0.78 at y = -0.9, closing smoothly to a broad chin at y = -1. Interpolate smoothly between these.\n- Depth: back of the skull full and round (z multiplied by 1.0 for z < 0); the front flattened (for z > 0 multiply z by 0.86) with the flattening strongest between y = -0.5 and y = 0.4 so the face is a gentle plane; a very slight forward swell of the cheeks (add up to 0.04 to z around x = +-0.55, y = -0.3) and a tiny nose bump (add up to 0.035 to z within a radius of 0.09 of x = 0, y = -0.18).\n- Shorten the lower half slightly (for y < 0 multiply y by 0.92) so the chin is short.\n- No dents, no eye sockets, no neck stub that changes the silhouette (add a short neck socket ring hidden under the chin only).\n- Skin material: MeshPhysicalMaterial, color = opts.skin, roughness 0.6, sheen 0.3, NO texture map on the head (a uniform colour: no gradients, no darker regions).\n- Two small ears at x = +-1.0, y = -0.05, flattened, with a simple inner fold, same skin colour.\n\nFACE PAINT: do not use a separate patch. Paint ONE 2048 x 1024 equirectangular CanvasTexture with a transparent background and apply it as a second mesh that is an exact clone of the head geometry scaled by 1.004 (so it follows every curve), with a MeshStandardMaterial { map, transparent: true, roughness: 1, depthWrite: false, polygonOffset: true, polygonOffsetFactor: -2 }. Compute where to draw from the sphere's own UVs: the centre of the face (x = 0, z front) is at a known u, and features are placed in (u, v) by converting the unit positions below through the same sphere mapping, so they land exactly where intended and are not stretched (compensate the horizontal stretch of equirectangular mapping at each feature's latitude).\nFeature positions in unit coordinates on the front surface:\n- Eyes: centres at x = +-0.40, y = -0.12 (below the middle). Each eye about 0.42 wide and 0.50 tall in unit terms. Paint: a dark brown (#3a2a26) upper lid arc, thick in the middle and at the outer corner, thin at the inner; three small lashes at the outer corner if opts.lashes; NO outline around the rest of the eye. Iris: a tall rounded shape filling most of the eye, vertical gradient from a darkened opts.eye at the top to a lighter, more saturated opts.eye at the bottom; a soft darker pupil in the upper middle; a pale crescent along the bottom inside the iris; two pure white highlights (large upper left, small lower right). A sliver of off-white sclera only at the left and right of the iris, no white rim above or below.\n- Brows: short soft strokes at y = +0.22 above each eye, colour opts.browColor at 85 percent alpha.\n- Nose: a tiny soft shadow dot at x = 0, y = -0.22, very light.\n- Mouth: a small curved smile centred at x = 0, y = -0.47, about 0.16 wide, muted rose-brown, rounded ends.\n- Blush: two wide very soft pink ovals at x = +-0.52, y = -0.33, alpha about 0.3.\n- Freckles: a dozen tiny dots across the nose bridge and upper cheeks if opts.freckles.\n\nexport function setExpression(group, name): \"awake\" | \"happy\" (eyes become thick upward arcs, open smile filled darker rose) | \"asleep\" (downward arcs) | \"thinking\" (irises shifted up and to one side, one brow raised, small flat mouth) | \"unsure\" (brows tilted up in the middle, small wavy mouth). Redraw the canvas and set needsUpdate.\nexport function blink(group, t): closed arcs for about 0.12 s every 3 to 5 s, then the current expression again.\n\nRules: a plain ES module, no imports, no globals (THREE and kit are arguments; kit.canvasTexture(width, height, (ctx, w, h) => {...}) returns a THREE.CanvasTexture). No document, window, fetch or storage. Under 700 lines. Return only the code in one ```js block.\n",
+ "usage": {
+  "total_tokens": 41388,
+  "total_input_tokens": 2698,
+  "input_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 1634
+   },
+   {
+    "modality": "image",
+    "tokens": 1064
+   }
+  ],
+  "total_cached_tokens": 0,
+  "total_output_tokens": 12461,
+  "output_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 12461
+   }
+  ],
+  "total_tool_use_tokens": 0,
+  "total_thought_tokens": 26229
+ },
+ "ms": 299429,
+ "made_at": "2026-11-21T17:29:31.881Z"
+}

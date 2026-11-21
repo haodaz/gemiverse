@@ -1,0 +1,1245 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <!-- Soft subtle lawn mowing stripes -->
+    <pattern id="lawn-stripes" width="32" height="16" patternUnits="userSpaceOnUse">
+      <polygon points="0,8 16,0 32,8 16,16" fill="#88A977" opacity="0.35"/>
+    </pattern>
+
+    <!-- Reusable Round Tree -->
+    <g id="tree-round">
+      <ellipse cx="14" cy="4" rx="19" ry="9" fill="#3E4D3B" opacity="0.22"/>
+      <polygon points="-2,2 2,2 3,-12 -3,-12" fill="#6F5B4B"/>
+      <polygon points="0,2 2,2 3,-12 0,-12" fill="#5A483A"/>
+      <circle cx="-6" cy="-19" r="13" fill="#6D9161"/>
+      <circle cx="7" cy="-18" r="12" fill="#5B7E52"/>
+      <circle cx="0" cy="-26" r="14" fill="#7EA370"/>
+      <circle cx="-4" cy="-29" r="9" fill="#92B582"/>
+    </g>
+
+    <!-- Reusable Large Round Tree -->
+    <g id="tree-large">
+      <ellipse cx="18" cy="5" rx="25" ry="12" fill="#3E4D3B" opacity="0.22"/>
+      <polygon points="-3,3 3,3 4,-16 -4,-16" fill="#6A5647"/>
+      <circle cx="-10" cy="-24" r="16" fill="#6B8E5F"/>
+      <circle cx="10" cy="-23" r="15" fill="#56784D"/>
+      <circle cx="0" cy="-34" r="17" fill="#7EA171"/>
+      <circle cx="-6" cy="-38" r="11" fill="#93B684"/>
+    </g>
+
+    <!-- Reusable Tall Cypress / Poplar Tree -->
+    <g id="tree-tall">
+      <ellipse cx="12" cy="3" rx="13" ry="6" fill="#3E4D3B" opacity="0.22"/>
+      <rect x="-1.5" y="-10" width="3" height="12" fill="#635143"/>
+      <ellipse cx="0" cy="-26" rx="9" ry="20" fill="#567A54"/>
+      <ellipse cx="-2.5" cy="-28" rx="6" ry="16" fill="#6E946A"/>
+      <ellipse cx="-3.5" cy="-32" rx="3.5" ry="9" fill="#82A87D"/>
+    </g>
+
+    <!-- Reusable Flowering Magnolia / Cherry Tree -->
+    <g id="tree-flower">
+      <ellipse cx="13" cy="4" rx="17" ry="8" fill="#3E4D3B" opacity="0.20"/>
+      <polygon points="-2,2 2,2 2.5,-11 -2.5,-11" fill="#705B4E"/>
+      <circle cx="-6" cy="-18" r="11" fill="#D5A2AC"/>
+      <circle cx="6" cy="-17" r="10.5" fill="#C48D98"/>
+      <circle cx="0" cy="-24" r="12" fill="#E3B9C1"/>
+      <circle cx="-3" cy="-27" r="7.5" fill="#EFE0E3"/>
+    </g>
+
+    <!-- Reusable Cream Blossom Tree -->
+    <g id="tree-blossom">
+      <ellipse cx="13" cy="4" rx="17" ry="8" fill="#3E4D3B" opacity="0.20"/>
+      <polygon points="-2,2 2,2 2.5,-11 -2.5,-11" fill="#705B4E"/>
+      <circle cx="-6" cy="-18" r="11" fill="#DDD4C3"/>
+      <circle cx="6" cy="-17" r="10" fill="#CBC0AD"/>
+      <circle cx="0" cy="-24" r="12" fill="#EAE3D5"/>
+      <circle cx="-3" cy="-27" r="7" fill="#F5F1E8"/>
+    </g>
+
+    <!-- Lamp Post with Light Blue University Banner -->
+    <g id="lamp-banner">
+      <polygon points="0,0 16,5 18,4 2,-1" fill="#3E463E" opacity="0.22"/>
+      <rect x="-1.5" y="-26" width="3" height="26" fill="#464E54"/>
+      <polygon points="-3.5,0 3.5,0 2,-4 -2,-4" fill="#3B4247"/>
+      <!-- Crossbar and Light Blue Banner -->
+      <rect x="1" y="-21" width="7" height="1.2" fill="#464E54"/>
+      <polygon points="2,-19.8 7.5,-19.8 7.5,-10.5 4.75,-12.5 2,-10.5" fill="#7CAED4"/>
+      <polygon points="2,-19.8 4.75,-19.8 4.75,-12.5 2,-10.5" fill="#92C0E3"/>
+      <!-- Globe Lantern -->
+      <circle cx="0" cy="-28" r="3" fill="#F2EBD9"/>
+      <path d="M-3,-28 A3,3 0 0,1 3,-28 Z" fill="#464E54"/>
+    </g>
+
+    <!-- Lamp Post (Banner facing left) -->
+    <g id="lamp-banner-l">
+      <polygon points="0,0 16,5 18,4 2,-1" fill="#3E463E" opacity="0.22"/>
+      <rect x="-1.5" y="-26" width="3" height="26" fill="#464E54"/>
+      <polygon points="-3.5,0 3.5,0 2,-4 -2,-4" fill="#3B4247"/>
+      <rect x="-8" y="-21" width="7" height="1.2" fill="#464E54"/>
+      <polygon points="-7.5,-19.8 -2,-19.8 -2,-10.5 -4.75,-12.5 -7.5,-10.5" fill="#7CAED4"/>
+      <polygon points="-7.5,-19.8 -4.75,-19.8 -4.75,-12.5 -7.5,-10.5" fill="#92C0E3"/>
+      <circle cx="0" cy="-28" r="3" fill="#F2EBD9"/>
+      <path d="M-3,-28 A3,3 0 0,1 3,-28 Z" fill="#464E54"/>
+    </g>
+
+    <!-- Isometric Bench facing SE (along SW-NE path) -->
+    <g id="bench-se">
+      <polygon points="-8,2 8,-6 12,-4 -4,4" fill="#3E4A3E" opacity="0.22"/>
+      <polygon points="-9,1 7,-7 10,-5.5 -6,2.5" fill="#9A785B"/>
+      <polygon points="-9,-2 7,-10 7,-7 -9,1" fill="#84644A"/>
+      <polygon points="-8,1 -7,1.5 -7,4 -8,3.5" fill="#474E52"/>
+      <polygon points="6,-6 7,-5.5 7,-3 6,-3.5" fill="#474E52"/>
+    </g>
+
+    <!-- Isometric Bench facing SW (along NW-SE path) -->
+    <g id="bench-sw">
+      <polygon points="-8,-4 8,4 4,6 -12,-2" fill="#3E4A3E" opacity="0.22"/>
+      <polygon points="-9,-5 7,3 4,4.5 -12,-3.5" fill="#A68365"/>
+      <polygon points="-9,-8 7,0 7,3 -9,-5" fill="#8D6C51"/>
+      <polygon points="-8,-3 -7,-2.5 -7,0 -8,-0.5" fill="#474E52"/>
+      <polygon points="5,3.5 6,4 6,6.5 5,6" fill="#474E52"/>
+    </g>
+
+    <!-- Isometric Picnic Table -->
+    <g id="picnic-table">
+      <ellipse cx="4" cy="3" rx="15" ry="7" fill="#3E4A3E" opacity="0.2"/>
+      <!-- Benches -->
+      <polygon points="-14,-1 2,-9 5,-7.5 -11,0.5" fill="#A88565"/>
+      <polygon points="-3,4.5 13,-3.5 16,-2 0,6" fill="#9A7758"/>
+      <!-- Table Top -->
+      <polygon points="-10,-2 6,-10 12,-7 -4,1" fill="#B89574"/>
+      <polygon points="-10,-2 -4,1 -4,2.5 -10,-0.5" fill="#8C6B4E"/>
+      <polygon points="-4,1 12,-7 12,-5.5 -4,2.5" fill="#7A5B40"/>
+    </g>
+
+    <!-- Bike Rack -->
+    <g id="bike-rack">
+      <polygon points="-14,0 14,-14 18,-12 -10,2" fill="#3E4A3E" opacity="0.18"/>
+      <path d="M-10,0 L-10,-5 A3,3 0 0,1 -4,-8 L-4,-3 M-2,-4 L-2,-9 A3,3 0 0,1 4,-12 L4,-7 M6,-8 L6,-13 A3,3 0 0,1 12,-16 L12,-11" fill="none" stroke="#5A636B" stroke-width="1.4"/>
+      <!-- Tiny simplified parked bikes -->
+      <circle cx="-7" cy="-3" r="2.2" fill="none" stroke="#4D6E8A" stroke-width="1"/>
+      <circle cx="-3" cy="-5" r="2.2" fill="none" stroke="#4D6E8A" stroke-width="1"/>
+      <circle cx="2" cy="-7.5" r="2.2" fill="none" stroke="#A85D52" stroke-width="1"/>
+      <circle cx="6" cy="-9.5" r="2.2" fill="none" stroke="#A85D52" stroke-width="1"/>
+    </g>
+
+    <!-- Tiny Simplified People (No Faces) -->
+    <g id="p-navy">
+      <ellipse cx="2" cy="1" rx="3" ry="1.4" fill="#3E463E" opacity="0.25"/>
+      <rect x="-1.5" y="-5" width="1.2" height="5" fill="#3D4652"/>
+      <rect x="0.3" y="-5" width="1.2" height="5" fill="#2E3640"/>
+      <rect x="-2" y="-10" width="4" height="5.5" rx="1" fill="#465D78"/>
+      <circle cx="0" cy="-12" r="1.7" fill="#D9B89C"/>
+    </g>
+    <g id="p-burgundy">
+      <ellipse cx="2" cy="1" rx="3" ry="1.4" fill="#3E463E" opacity="0.25"/>
+      <rect x="-1.4" y="-5" width="1.1" height="5" fill="#4A4542"/>
+      <rect x="0.3" y="-5" width="1.1" height="5" fill="#3A3633"/>
+      <rect x="-2" y="-10" width="4" height="5.5" rx="1" fill="#8C4E53"/>
+      <circle cx="0" cy="-12" r="1.7" fill="#C9A386"/>
+    </g>
+    <g id="p-ochre">
+      <ellipse cx="2" cy="1" rx="3" ry="1.4" fill="#3E463E" opacity="0.25"/>
+      <rect x="-1.4" y="-5" width="1.1" height="5" fill="#455059"/>
+      <rect x="0.3" y="-5" width="1.1" height="5" fill="#364047"/>
+      <rect x="-2" y="-10" width="4" height="5.5" rx="1" fill="#C29B59"/>
+      <circle cx="0" cy="-12" r="1.7" fill="#DFC0A5"/>
+    </g>
+    <g id="p-cream">
+      <ellipse cx="2" cy="1" rx="3" ry="1.4" fill="#3E463E" opacity="0.25"/>
+      <rect x="-1.4" y="-5" width="1.1" height="5" fill="#525D6B"/>
+      <rect x="0.3" y="-5" width="1.1" height="5" fill="#434D59"/>
+      <rect x="-2" y="-10" width="4" height="5.5" rx="1" fill="#D8D2C5"/>
+      <circle cx="0" cy="-12" r="1.7" fill="#B58D70"/>
+    </g>
+    <g id="p-sit">
+      <ellipse cx="1.5" cy="1" rx="3.2" ry="1.5" fill="#3E463E" opacity="0.22"/>
+      <polygon points="-2,-1 2.5,1 3.5,-0.5 -1,-2.5" fill="#455466"/>
+      <rect x="-2" y="-6.5" width="3.8" height="5" rx="1" fill="#6384A3"/>
+      <circle cx="0" cy="-8.3" r="1.6" fill="#D9B89C"/>
+    </g>
+  </defs>
+
+  <!-- ===================================================================== -->
+  <!-- LAYER 1: FULL-BLEED CAMPUS LAWN BASE & FRAMING STREETS                -->
+  <!-- ===================================================================== -->
+  <rect x="0" y="0" width="1600" height="900" fill="#8FAF7E"/>
+  <rect x="0" y="0" width="1600" height="900" fill="url(#lawn-stripes)"/>
+
+  <!-- Secondary soft green campus zones -->
+  <polygon points="480,450 840,270 1200,450 840,630" fill="#87A876" opacity="0.45"/>
+  <polygon points="0,350 450,125 650,225 200,450" fill="#84A573" opacity="0.4"/>
+  <polygon points="1050,650 1450,450 1600,525 1200,725" fill="#84A573" opacity="0.4"/>
+
+  <!-- FRAMING EDGE STREETS (Isometric 2:1, Broadway / Amsterdam / 114th / 120th) -->
+  <!-- Upper-Left Avenue (NW edge, SW-NE) -->
+  <polygon points="0,240 480,0 590,0 0,295" fill="#CFC9BE"/>
+  <polygon points="0,252 504,0 568,0 0,284" fill="#7A7E82"/>
+  <line x1="20" y1="258" x2="536" y2="0" stroke="#B7B3A8" stroke-width="2" stroke-dasharray="14,12"/>
+
+  <!-- Upper-Right Street (NE edge, NW-SE) -->
+  <polygon points="1030,0 1130,0 1600,235 1600,285" fill="#CFC9BE"/>
+  <polygon points="1052,0 1110,0 1600,245 1600,274" fill="#7A7E82"/>
+  <line x1="1081" y1="0" x2="1600" y2="259.5" stroke="#B7B3A8" stroke-width="2" stroke-dasharray="14,12"/>
+
+  <!-- Lower-Left Street (SW edge, NW-SE) -->
+  <polygon points="0,670 460,900 350,900 0,725" fill="#CFC9BE"/>
+  <polygon points="0,682 436,900 374,900 0,713" fill="#7A7E82"/>
+  <line x1="0" y1="697.5" x2="405" y2="900" stroke="#B7B3A8" stroke-width="2" stroke-dasharray="14,12"/>
+
+  <!-- Lower-Right Avenue (SE edge, SW-NE) -->
+  <polygon points="1160,900 1600,680 1600,735 1270,900" fill="#CFC9BE"/>
+  <polygon points="1184,900 1600,692 1600,723 1246,900" fill="#7A7E82"/>
+  <line x1="1215" y1="900" x2="1600" y2="707.5" stroke="#B7B3A8" stroke-width="2" stroke-dasharray="14,12"/>
+
+  <!-- ===================================================================== -->
+  <!-- LAYER 2: QUAD PAVED PATHS, COLLEGE WALK, SOUTH LAWN & COURTS          -->
+  <!-- ===================================================================== -->
+
+  <!-- Main Campus Paved Perimeter & Inner Quad Walks (Pale Stone) -->
+  <!-- College Walk (broad NW-SE promenade in front of Low Library) -->
+  <polygon points="460,365 496,347 1140,669 1104,687" fill="#DDD6C8"/>
+  <polygon points="464,363 492,349 1136,671 1108,685" fill="#E3DDD0"/>
+
+  <!-- NE-SW Walks flanking the central quad -->
+  <!-- NW Quad Walk -->
+  <polygon points="460,365 820,185 846,198 486,378" fill="#DDD6C8"/>
+  <polygon points="270,460 486,352 508,363 292,471" fill="#DDD6C8"/>
+  <!-- SE Quad Walk -->
+  <polygon points="780,535 1140,355 1166,368 806,548" fill="#DDD6C8"/>
+  <!-- North Quad Path -->
+  <polygon points="730,230 1070,400 1046,412 706,242" fill="#DDD6C8"/>
+  <!-- South Quad Walk (SW of Butler Library & SE of South Lawn) -->
+  <polygon points="440,565 820,755 796,767 416,577" fill="#DDD6C8"/>
+  <polygon points="620,655 960,485 984,497 644,667" fill="#DDD6C8"/>
+  <!-- Connecting Walk toward Lower-Right Amphitheatre -->
+  <polygon points="800,745 1080,605 1102,616 822,756" fill="#DDD6C8"/>
+  <!-- Connecting Walk to Upper-Right Sports Court -->
+  <polygon points="940,335 1140,235 1160,245 960,345" fill="#DDD6C8"/>
+  <!-- Entry Walk from Upper-Left Street Gate -->
+  <polygon points="240,175 490,300 470,310 220,185" fill="#DDD6C8"/>
+
+  <!-- Low Library Grand Raised Limestone Plaza -->
+  <polygon points="685,435 845,355 975,420 815,500" fill="#C9C1B3"/>
+  <polygon points="690,432 845,354 970,417 815,495" fill="#E4DDD1"/>
+  <polygon points="700,432 845,360 960,417 815,489" fill="#EAE4D9"/>
+
+  <!-- SOUTH LAWN (Long lush green lawn facing Low Library with crossing brick paths) -->
+  <!-- Outer stone curbing around South Lawn -->
+  <polygon points="545,515 705,435 815,490 655,570" fill="#CFC8BA"/>
+  <!-- Two-tone soft green lawn interior -->
+  <polygon points="552,515 705,438.5 808,490 655,566.5" fill="#82A470"/>
+  <!-- Subtle lawn bands -->
+  <polygon points="580,501 705,438.5 725,448.5 600,511" fill="#8DB07B"/>
+  <polygon points="620,521 745,458.5 765,468.5 640,531" fill="#8DB07B"/>
+  <polygon points="660,541 785,478.5 805,488.5 680,551" fill="#8DB07B"/>
+
+  <!-- Crossing Brick Paths on South Lawn (Classic X + central medallion + border walk) -->
+  <polygon points="623,479 635,473 737,524 725,530" fill="#B98A77"/>
+  <polygon points="598,538 750,462 762,468 610,544" fill="#B98A77"/>
+  <!-- Diagonal X brick paths -->
+  <polygon points="554,514 562,510 806,491 798,495" fill="#C19380"/>
+  <polygon points="651,564 701,440 709,444 659,568" fill="#C19380"/>
+  <!-- Central stone/brick medallion on South Lawn -->
+  <ellipse cx="680" cy="502" rx="18" ry="9" fill="#DFD8CA"/>
+  <ellipse cx="680" cy="502" rx="13" ry="6.5" fill="#B98A77"/>
+  <ellipse cx="680" cy="502" rx="6" ry="3" fill="#E4DDD0"/>
+
+  <!-- Flower Beds framing South Lawn corners -->
+  <polygon points="558,515 574,507 584,512 568,520" fill="#6F8F60"/>
+  <circle cx="568" cy="513" r="2.2" fill="#DC9FA8"/>
+  <circle cx="574" cy="511" r="2" fill="#EBD898"/>
+  <circle cx="571" cy="516" r="2" fill="#C98792"/>
+
+  <polygon points="782,485 798,477 808,482 792,490" fill="#6F8F60"/>
+  <circle cx="792" cy="483" r="2.2" fill="#DC9FA8"/>
+  <circle cx="798" cy="481" r="2" fill="#EBD898"/>
+  <circle cx="795" cy="486" r="2" fill="#8FB3D4"/>
+
+  <polygon points="642,557 658,549 668,554 652,562" fill="#6F8F60"/>
+  <circle cx="652" cy="555" r="2.2" fill="#DC9FA8"/>
+  <circle cx="658" cy="553" r="2" fill="#EBD898"/>
+
+  <!-- North Quad Courtyard & Fountain behind Low Library -->
+  <polygon points="845,270 935,225 1025,270 935,315" fill="#DDD6C8"/>
+  <polygon points="860,270 935,232 1010,270 935,308" fill="#89AB78"/>
+  <ellipse cx="935" cy="270" rx="22" ry="11" fill="#CFC7B8"/>
+  <ellipse cx="935" cy="268" rx="17" ry="8.5" fill="#8FB5C4"/>
+  <ellipse cx="935" cy="267" rx="6" ry="3" fill="#DFD8CA"/>
+
+  <!-- SPORTS COURT (Tennis / Basketball court in NE athletic corner, well above Plot 2) -->
+  <g id="sports-court" transform="translate(1155, 130)">
+    <!-- Outer apron -->
+    <polygon points="0,-58 116,0 0,58 -116,0" fill="#C9C2B5"/>
+    <!-- Clay / terracotta surround -->
+    <polygon points="0,-52 104,0 0,52 -104,0" fill="#B5826F"/>
+    <!-- Green playing court -->
+    <polygon points="0,-40 80,0 0,40 -80,0" fill="#6E947A"/>
+    <!-- White court lines -->
+    <polygon points="0,-40 80,0 0,40 -80,0" fill="none" stroke="#EAE4D9" stroke-width="1.5"/>
+    <line x1="-40" y1="20" x2="40" y2="-20" stroke="#EAE4D9" stroke-width="1.5"/>
+    <polygon points="-24,-12 24,-36 56,-20 8,4" fill="none" stroke="#EAE4D9" stroke-width="1" opacity="0.85"/>
+    <polygon points="-56,20 -8,-4 24,12 -24,36" fill="none" stroke="#EAE4D9" stroke-width="1" opacity="0.85"/>
+    <!-- Center net -->
+    <line x1="-42" y1="16" x2="42" y2="-26" stroke="#EAE4D9" stroke-width="2"/>
+    <polygon points="-42,21 42,-21 42,-26 -42,16" fill="#FFFFFF" opacity="0.28"/>
+    <line x1="-42" y1="21" x2="-42" y2="14" stroke="#4D5459" stroke-width="2"/>
+    <line x1="42" y1="-21" x2="42" y2="-28" stroke="#4D5459" stroke-width="2"/>
+    <!-- Low perimeter fence posts -->
+    <polyline points="-114,0 0,-57 114,0" fill="none" stroke="#5D6965" stroke-width="1.2" opacity="0.65"/>
+    <polyline points="-114,-8 0,-65 114,-8" fill="none" stroke="#5D6965" stroke-width="1" opacity="0.5"/>
+  </g>
+
+  <!-- SMALL CLASSICAL AMPHITHEATRE (Lower-right quad, centered at 975, 735, clear of Plot 4) -->
+  <g id="amphitheatre" transform="translate(975, 735)">
+    <!-- Outer stone ring -->
+    <ellipse cx="0" cy="0" rx="76" ry="38" fill="#C9C0B1"/>
+    <!-- Tier 1 (outer seating) -->
+    <path d="M-72,0 A72,36 0 0,1 72,0 L62,0 A62,31 0 0,0 -62,0 Z" fill="#DED7C9"/>
+    <path d="M-62,0 A62,31 0 0,1 62,0 L62,5 A62,31 0 0,0 -62,5 Z" fill="#B5AC9C"/>
+    <!-- Tier 2 -->
+    <path d="M-56,2 A56,28 0 0,1 56,2 L46,2 A46,23 0 0,0 -46,2 Z" fill="#E3DCD0"/>
+    <path d="M-46,2 A46,23 0 0,1 46,2 L46,6 A46,23 0 0,0 -46,6 Z" fill="#B5AC9C"/>
+    <!-- Tier 3 (inner seating) -->
+    <path d="M-40,4 A40,20 0 0,1 40,4 L30,4 A30,15 0 0,0 -30,4 Z" fill="#E8E1D5"/>
+    <!-- Stage / lawn orchestra -->
+    <ellipse cx="0" cy="8" rx="34" ry="17" fill="#89AA79"/>
+    <ellipse cx="0" cy="10" rx="22" ry="11" fill="#DFD8CA"/>
+    <!-- Low stone stage backdrop on lower edge -->
+    <path d="M-28,16 A32,16 0 0,0 28,16 L24,22 A28,14 0 0,1 -24,22 Z" fill="#CFC7B8"/>
+  </g>
+
+  <!-- ===================================================================== -->
+  <!-- LAYER 3: FOUR CLEAR EMPTY BUILDING PLOTS (EXACT 260x130 DIAMONDS)     -->
+  <!-- NOTHING MAY BE DRAWN ON TOP OF THESE FOUR DIAMONDS!                   -->
+  <!-- Centres: (340,330), (1260,330), (340,650), (1260,650)                 -->
+  <!-- ===================================================================== -->
+
+  <!-- Connecting Short Paths from each Plot to the Quad -->
+  <!-- Plot 1 (340,330) SE edge to NW quad walk -->
+  <polygon points="392,371 420,357 492,393 464,407" fill="#DDD6C8"/>
+  <!-- Plot 2 (1260,330) SW edge to NE quad walk -->
+  <polygon points="1180,357 1208,371 1136,407 1108,393" fill="#DDD6C8"/>
+  <!-- Plot 3 (340,650) NE edge to SW quad walk -->
+  <polygon points="392,609 420,623 482,592 454,578" fill="#DDD6C8"/>
+  <!-- Plot 4 (1260,650) NW edge to SE quad walk -->
+  <polygon points="1180,623 1208,609 1130,570 1102,584" fill="#DDD6C8"/>
+
+  <!-- PLOT 1: Centred exactly at (340, 330), 260 wide x 130 tall -->
+  <g id="plot-1">
+    <polygon points="340,265 470,330 340,395 210,330" fill="#A89F91"/>
+    <polygon points="340,270 460,330 340,390 220,330" fill="#E5DED1"/>
+    <polygon points="340,276 448,330 340,384 232,330" fill="none" stroke="#CEC6B8" stroke-width="1.5"/>
+  </g>
+
+  <!-- PLOT 2: Centred exactly at (1260, 330), 260 wide x 130 tall -->
+  <g id="plot-2">
+    <polygon points="1260,265 1390,330 1260,395 1130,330" fill="#A89F91"/>
+    <polygon points="1260,270 1380,330 1260,390 1140,330" fill="#E5DED1"/>
+    <polygon points="1260,276 1368,330 1260,384 1152,330" fill="none" stroke="#CEC6B8" stroke-width="1.5"/>
+  </g>
+
+  <!-- PLOT 3: Centred exactly at (340, 650), 260 wide x 130 tall -->
+  <g id="plot-3">
+    <polygon points="340,585 470,650 340,715 210,650" fill="#A89F91"/>
+    <polygon points="340,590 460,650 340,710 220,650" fill="#E5DED1"/>
+    <polygon points="340,596 448,650 340,704 232,650" fill="none" stroke="#CEC6B8" stroke-width="1.5"/>
+  </g>
+
+  <!-- PLOT 4: Centred exactly at (1260, 650), 260 wide x 130 tall -->
+  <g id="plot-4">
+    <polygon points="1260,585 1390,650 1260,715 1130,650" fill="#A89F91"/>
+    <polygon points="1260,590 1380,650 1260,710 1140,650" fill="#E5DED1"/>
+    <polygon points="1260,596 1368,650 1260,704 1152,650" fill="none" stroke="#CEC6B8" stroke-width="1.5"/>
+  </g>
+
+  <!-- ===================================================================== -->
+  <!-- LAYER 4: EDGE BUILDINGS, IRON FENCES/GATES & NORTH ACADEMIC HALLS     -->
+  <!-- ===================================================================== -->
+
+  <!-- Top-Left Corner Cropped Uptown Brownstones (beyond Broadway) -->
+  <g id="corner-nw-buildings">
+    <!-- Building NW-1 -->
+    <polygon points="-20,80 120,10 175,37.5 35,107.5" fill="#7D868E"/>
+    <polygon points="-20,145 35,172.5 35,107.5 -20,80" fill="#A87462"/>
+    <polygon points="35,172.5 175,102.5 175,37.5 35,107.5" fill="#8C5D4D"/>
+    <polygon points="35,112 175,42 175,37.5 35,107.5" fill="#D5CCB9"/>
+    <!-- Windows -->
+    <polygon points="52,115 64,109 64,121 52,127" fill="#4C5966"/>
+    <polygon points="74,104 86,98 86,110 74,116" fill="#4C5966"/>
+    <polygon points="96,93 108,87 108,99 96,105" fill="#4C5966"/>
+    <polygon points="118,82 130,76 130,88 118,94" fill="#4C5966"/>
+    <polygon points="140,71 152,65 152,77 140,83" fill="#4C5966"/>
+    <polygon points="52,135 64,129 64,141 52,147" fill="#4C5966"/>
+    <polygon points="74,124 86,118 86,130 74,136" fill="#4C5966"/>
+    <polygon points="96,113 108,107 108,119 96,125" fill="#4C5966"/>
+    <polygon points="118,102 130,96 130,108 118,114" fill="#4C5966"/>
+    <polygon points="140,91 152,85 152,97 140,103" fill="#4C5966"/>
+
+    <!-- Building NW-2 (sandstone corner annex) -->
+    <polygon points="180,-20 310,-85 370,-55 240,10" fill="#879098"/>
+    <polygon points="180,45 240,75 240,10 180,-20" fill="#D4C9B8"/>
+    <polygon points="240,75 370,10 370,-55 240,10" fill="#B5AA98"/>
+    <polygon points="258,20 272,13 272,27 258,34" fill="#505D6A"/>
+    <polygon points="284,7 298,0 298,14 284,21" fill="#505D6A"/>
+    <polygon points="258,42 272,35 272,49 258,56" fill="#505D6A"/>
+    <polygon points="284,29 298,22 298,36 284,43" fill="#505D6A"/>
+  </g>
+
+  <!-- BUS STOP on Upper-Left Edge Street (Broadway) -->
+  <g id="bus-stop" transform="translate(178, 184)">
+    <!-- Painted bus lane box -->
+    <polygon points="-32,16 32,-16 44,-10 -20,22" fill="#8F8A7E" opacity="0.5"/>
+    <!-- Shelter shadow -->
+    <polygon points="-14,-4 16,-19 26,-14 -4,1" fill="#3E4448" opacity="0.25"/>
+    <!-- Glass back panel -->
+    <polygon points="-16,-6 14,-21 14,-39 -16,-24" fill="#9BB7C7" opacity="0.65"/>
+    <polygon points="-16,-6 14,-21 14,-23 -16,-8" fill="#4A5258"/>
+    <!-- Side glass -->
+    <polygon points="14,-21 20,-18 20,-36 14,-39" fill="#84A0B0" opacity="0.6"/>
+    <!-- Shelter Roof -->
+    <polygon points="-18,-25 14,-41 23,-36.5 -9,-20.5" fill="#555E66"/>
+    <!-- Support posts -->
+    <line x1="-15" y1="-6" x2="-15" y2="-24" stroke="#3F474D" stroke-width="2"/>
+    <line x1="14" y1="-21" x2="14" y2="-39" stroke="#3F474D" stroke-width="2"/>
+    <!-- Shelter bench -->
+    <polygon points="-10,-10 8,-19 11,-17.5 -7,-8.5" fill="#A68567"/>
+    <!-- Bus stop sign post -->
+    <line x1="-24" y1="0" x2="-24" y2="-22" stroke="#4D555C" stroke-width="1.8"/>
+    <rect x="-27.5" y="-23" width="7" height="6" rx="1" fill="#5B8BB3"/>
+  </g>
+
+  <!-- Wrought-Iron Campus Fence & Grand Iron Gates along Upper-Left Edge Street -->
+  <g id="nw-iron-fence">
+    <!-- Left fence segment -->
+    <polygon points="12,292 208,194 208,199 12,297" fill="#C9C0B1"/>
+    <line x1="12" y1="281" x2="208" y2="183" stroke="#3E454B" stroke-width="1.5"/>
+    <line x1="12" y1="291" x2="208" y2="193" stroke="#3E454B" stroke-width="1.2"/>
+    <!-- Stone Gate Piers (Grand Iron Gate at 230, 182) -->
+    <polygon points="204,196 212,192 212,172 204,176" fill="#DDD5C6"/>
+    <polygon points="212,192 220,196 220,176 212,172" fill="#B8AF9F"/>
+    <polygon points="204,176 212,172 220,176 212,180" fill="#EAE3D7"/>
+    <circle cx="212" cy="171" r="3" fill="#CFC7B8"/>
+
+    <!-- Open Wrought-Iron Gate Leaves -->
+    <polygon points="218,190 232,197 232,181 218,174" fill="none" stroke="#3B4248" stroke-width="1.5"/>
+    <polygon points="246,176 260,183 260,167 246,160" fill="none" stroke="#3B4248" stroke-width="1.5"/>
+
+    <polygon points="256,170 264,166 264,146 256,150" fill="#DDD5C6"/>
+    <polygon points="264,166 272,170 272,150 264,146" fill="#B8AF9F"/>
+    <polygon points="256,150 264,146 272,150 264,154" fill="#EAE3D7"/>
+    <circle cx="264" cy="145" r="3" fill="#CFC7B8"/>
+
+    <!-- Right fence segment -->
+    <polygon points="272,162 560,18 560,23 272,167" fill="#C9C0B1"/>
+    <line x1="272" y1="151" x2="560" y2="7" stroke="#3E454B" stroke-width="1.5"/>
+    <line x1="272" y1="161" x2="560" y2="17" stroke="#3E454B" stroke-width="1.2"/>
+  </g>
+
+  <!-- NORTH EDGE CROPPED HALL (Top-center, above North Quad) -->
+  <g id="hall-north-edge">
+    <polygon points="780,65 920,-5 1030,50 890,120" fill="#3E4B3E" opacity="0.22"/>
+    <!-- Brick walls -->
+    <polygon points="735,45 845,100 845,45 735,-10" fill="#B67260"/>
+    <polygon points="845,100 985,30 985,-25 845,45" fill="#945848"/>
+    <!-- Limestone cornice -->
+    <polygon points="733,-7 845,49 987,-22 987,-27 845,44 733,-12" fill="#DFD6C7"/>
+    <!-- Copper-green pitched roof -->
+    <polygon points="735,-12 845,43 985,-27 875,-82" fill="#6D9787"/>
+    <polygon points="765,-27 845,13 955,-42 875,-82" fill="#82AB9B"/>
+    <!-- Windows -->
+    <g fill="#4E5D6B">
+      <polygon points="755,15 765,20 765,33 755,28"/>
+      <polygon points="775,25 785,30 785,43 775,38"/>
+      <polygon points="795,35 805,40 805,53 795,48"/>
+      <polygon points="815,45 825,50 825,63 815,58"/>
+      <polygon points="755,36 765,41 765,54 755,49"/>
+      <polygon points="775,46 785,51 785,64 775,59"/>
+      <polygon points="795,56 805,61 805,74 795,69"/>
+      <polygon points="815,66 825,71 825,84 815,79"/>
+    </g>
+    <g fill="#3E4C59">
+      <polygon points="865,50 877,44 877,57 865,63"/>
+      <polygon points="891,37 903,31 903,44 891,50"/>
+      <polygon points="917,24 929,18 929,31 917,37"/>
+      <polygon points="943,11 955,5 955,18 943,24"/>
+      <polygon points="865,70 877,64 877,77 865,83"/>
+      <polygon points="891,57 903,51 903,64 891,70"/>
+      <polygon points="917,44 929,38 929,51 917,57"/>
+      <polygon points="943,31 955,25 955,38 943,44"/>
+    </g>
+  </g>
+
+  <!-- HALL B (Upper-Left Academic Hall, NW of North Quad, clear of Plot 1) -->
+  <g id="hall-b">
+    <!-- Ground shadow -->
+    <polygon points="560,155 680,95 755,132 635,192" fill="#3E4B3E" opacity="0.22"/>
+    <!-- Limestone rusticated base -->
+    <polygon points="510,145 580,180 580,167 510,132" fill="#DDD4C5"/>
+    <polygon points="580,180 710,115 710,102 580,167" fill="#BEB4A3"/>
+    <!-- Red-brick main walls -->
+    <polygon points="510,132 580,167 580,112 510,77" fill="#B67260"/>
+    <polygon points="580,167 710,102 710,47 580,112" fill="#945848"/>
+    <!-- Limestone cornice -->
+    <polygon points="507,77 580,113.5 713,47 713,42 580,108.5 507,72" fill="#E3DACB"/>
+    <!-- Copper-green pitched mansard roof -->
+    <polygon points="510,73 580,108 710,43 640,8" fill="#5D8677"/>
+    <polygon points="510,73 580,108 580,88 532,64" fill="#77A191"/>
+    <polygon points="580,108 710,43 688,32 580,88" fill="#52786A"/>
+    <polygon points="532,64 580,88 688,32 640,8" fill="#85AE9E"/>
+    <!-- Skylight & Chimneys -->
+    <polygon points="585,62 635,37 645,42 595,67" fill="#A9C5CE"/>
+    <polygon points="552,66 560,70 560,55 552,51" fill="#A86756"/>
+    <polygon points="560,70 568,66 568,51 560,55" fill="#864E40"/>
+    <!-- Entrance portico on SE side -->
+    <polygon points="628,156 662,139 662,126 628,143" fill="#E3DACB"/>
+    <polygon points="632,143 658,130 658,108 632,121" fill="#786C5F"/>
+    <polygon points="626,122 664,103 645,92" fill="#DDD4C4"/>
+    <!-- Rows of mullioned windows -->
+    <g fill="#4E5D6B">
+      <polygon points="522,95 532,100 532,112 522,107"/>
+      <polygon points="540,104 550,109 550,121 540,116"/>
+      <polygon points="558,113 568,118 568,130 558,125"/>
+      <polygon points="522,115 532,120 532,132 522,127"/>
+      <polygon points="540,124 550,129 550,141 540,136"/>
+      <polygon points="558,133 568,138 568,150 558,145"/>
+    </g>
+    <g fill="#3E4C59">
+      <polygon points="592,116 602,111 602,123 592,128"/>
+      <polygon points="610,107 620,102 620,114 610,119"/>
+      <polygon points="670,77 680,72 680,84 670,89"/>
+      <polygon points="688,68 698,63 698,75 688,80"/>
+      <polygon points="592,136 602,131 602,143 592,148"/>
+      <polygon points="610,127 620,122 620,134 610,139"/>
+      <polygon points="670,97 680,92 680,104 670,109"/>
+      <polygon points="688,88 698,83 698,95 688,100"/>
+    </g>
+  </g>
+
+  <!-- HALL A (Symmetrical Red-Brick Hall NW of Low Library, centered ~635, 290, clear of Plot 1) -->
+  <g id="hall-a">
+    <!-- Ground shadow -->
+    <polygon points="630,348 750,288 790,308 670,368" fill="#3E4B3E" opacity="0.22"/>
+    <!-- Limestone base -->
+    <polygon points="555,295 630,332.5 630,320 555,282.5" fill="#DDD4C5"/>
+    <polygon points="630,332.5 745,275 745,262.5 630,320" fill="#BEB4A3"/>
+    <!-- Red-brick walls -->
+    <polygon points="555,282.5 630,320 630,262 555,224.5" fill="#B67260"/>
+    <polygon points="630,320 745,262.5 745,204.5 630,262" fill="#945848"/>
+    <!-- Limestone horizontal belt course & cornice -->
+    <polygon points="555,256 630,293.5 745,236 745,233 630,290.5 555,253" fill="#DFD6C7"/>
+    <polygon points="552,225 630,264 748,205 748,200 630,259 552,220" fill="#E3DACB"/>
+    <!-- Copper-green pitched roof -->
+    <polygon points="555,221 630,258.5 745,201 670,163.5" fill="#628C7D"/>
+    <polygon points="555,221 630,258.5 630,238 575,210.5" fill="#7CA696"/>
+    <polygon points="630,258.5 745,201 725,191 630,238" fill="#52786A"/>
+    <polygon points="575,210.5 630,238 725,191 670,163.5" fill="#89B2A2"/>
+    <!-- Roof skylights & chimney -->
+    <polygon points="615,215 685,180 695,185 625,220" fill="#A9C5CE"/>
+    <polygon points="695,188 703,192 703,176 695,172" fill="#A86756"/>
+    <polygon points="703,192 711,188 711,172 703,176" fill="#864E40"/>
+    <!-- SW Entrance Portico with Steps -->
+    <polygon points="574,306 608,323 602,326 568,309" fill="#E4DDD0"/>
+    <polygon points="577,303 605,317 605,290 577,276" fill="#7D6F63"/>
+    <polygon points="578,303 582,305 582,280 578,278" fill="#E3DACB"/>
+    <polygon points="600,314 604,316 604,291 600,289" fill="#E3DACB"/>
+    <polygon points="574,277 608,294 591,273" fill="#E3DACB"/>
+    <!-- Mullioned windows -->
+    <g fill="#4E5D6B">
+      <polygon points="562,238 571,242.5 571,254 562,249.5"/>
+      <polygon points="582,248 591,252.5 591,264 582,259.5"/>
+      <polygon points="602,258 611,262.5 611,274 602,269.5"/>
+      <polygon points="616,265 625,269.5 625,281 616,276.5"/>
+      <polygon points="562,262 571,266.5 571,278 562,273.5"/>
+      <polygon points="616,289 625,293.5 625,305 616,300.5"/>
+    </g>
+    <g fill="#3E4C59">
+      <polygon points="642,266 652,261 652,273 642,278"/>
+      <polygon points="662,256 672,251 672,263 662,268"/>
+      <polygon points="682,246 692,241 692,253 682,258"/>
+      <polygon points="702,236 712,231 712,243 702,248"/>
+      <polygon points="722,226 732,221 732,233 722,238"/>
+      <polygon points="642,290 652,285 652,297 642,302"/>
+      <polygon points="662,280 672,275 672,287 662,292"/>
+      <polygon points="682,270 692,265 692,277 682,282"/>
+      <polygon points="702,260 712,255 712,267 702,272"/>
+      <polygon points="722,250 732,245 732,257 722,262"/>
+    </g>
+  </g>
+
+  <!-- HALL C (Symmetrical Red-Brick Hall NE of Low Library, centered ~1025, 315, clear of Plot 2) -->
+  <g id="hall-c">
+    <!-- Ground shadow -->
+    <polygon points="1030,360 1125,312 1140,320 1055,375" fill="#3E4B3E" opacity="0.22"/>
+    <!-- Limestone base -->
+    <polygon points="940,320 1020,360 1020,348 940,308" fill="#DDD4C5"/>
+    <polygon points="1020,360 1110,315 1110,303 1020,348" fill="#BEB4A3"/>
+    <!-- Red-brick walls -->
+    <polygon points="940,308 1020,348 1020,290 940,250" fill="#B67260"/>
+    <polygon points="1020,348 1110,303 1110,245 1020,290" fill="#945848"/>
+    <!-- Limestone belt course & cornice -->
+    <polygon points="940,282 1020,322 1110,277 1110,274 1020,319 940,279" fill="#DFD6C7"/>
+    <polygon points="937,250 1020,291.5 1113,245 1113,240 1020,286.5 937,245" fill="#E3DACB"/>
+    <!-- Copper-green roof -->
+    <polygon points="940,246 1020,286 1110,241 1030,201" fill="#628C7D"/>
+    <polygon points="940,246 1020,286 1020,266 960,236" fill="#7CA696"/>
+    <polygon points="1020,286 1110,241 1090,231 1020,266" fill="#52786A"/>
+    <polygon points="960,236 1020,266 1090,231 1030,201" fill="#89B2A2"/>
+    <!-- Skylight & Chimney -->
+    <polygon points="995,242 1050,214 1060,219 1005,247" fill="#A9C5CE"/>
+    <polygon points="975,236 983,240 983,225 975,221" fill="#A86756"/>
+    <polygon points="983,240 991,236 991,221 983,225" fill="#864E40"/>
+    <!-- Mullioned windows -->
+    <g fill="#4E5D6B">
+      <polygon points="950,264 960,269 960,281 950,276"/>
+      <polygon points="968,273 978,278 978,290 968,285"/>
+      <polygon points="986,282 996,287 996,299 986,294"/>
+      <polygon points="1004,291 1014,296 1014,308 1004,303"/>
+      <polygon points="950,288 960,293 960,305 950,300"/>
+      <polygon points="968,297 978,302 978,314 968,309"/>
+      <polygon points="986,306 996,311 996,323 986,318"/>
+      <polygon points="1004,315 1014,320 1014,332 1004,327"/>
+    </g>
+    <g fill="#3E4C59">
+      <polygon points="1032,294 1042,289 1042,301 1032,306"/>
+      <polygon points="1052,284 1062,279 1062,291 1052,296"/>
+      <polygon points="1072,274 1082,269 1082,281 1072,286"/>
+      <polygon points="1092,264 1102,259 1102,271 1092,276"/>
+      <polygon points="1032,318 1042,313 1042,325 1032,330"/>
+      <polygon points="1052,308 1062,303 1062,315 1052,320"/>
+      <polygon points="1072,298 1082,293 1082,305 1072,310"/>
+      <polygon points="1092,288 1102,283 1102,295 1092,300"/>
+    </g>
+  </g>
+
+  <!-- NE CORNER CROPPED BUILDINGS (Beyond 120th St) -->
+  <g id="corner-ne-buildings">
+    <polygon points="1280,-10 1430,65 1430,10 1280,-65" fill="#C4B6A2"/>
+    <polygon points="1430,65 1540,10 1540,-45 1430,10" fill="#A69884"/>
+    <polygon points="1450,85 1620,170 1620,105 1450,20" fill="#B2705E"/>
+    <polygon points="1450,20 1620,105 1680,75 1510,-10" fill="#7D868E"/>
+    <g fill="#4E5D6B">
+      <polygon points="1470,45 1484,52 1484,66 1470,59"/>
+      <polygon points="1496,58 1510,65 1510,79 1496,72"/>
+      <polygon points="1522,71 1536,78 1536,92 1522,85"/>
+      <polygon points="1548,84 1562,91 1562,105 1548,98"/>
+      <polygon points="1574,97 1588,104 1588,118 1574,111"/>
+    </g>
+  </g>
+
+  <!-- ===================================================================== -->
+  <!-- LAYER 5: THE CENTREPIECE LANDMARK — LOW LIBRARY (AROUND 800, 440)     -->
+  <!-- Domed neoclassical library, colonnade, wide stone steps, bronze statue-->
+  <!-- ===================================================================== -->
+  <g id="low-library">
+    <!-- Soft ground shadow cast to East/SE -->
+    <polygon points="845,442 945,392 1015,427 915,477" fill="#3E463E" opacity="0.22"/>
+
+    <!-- VERY WIDE STONE STEPS descending SW from Low Library portico (around 710..815, 420..480) -->
+    <!-- Stepped limestone cheek walls flanking the grand staircase -->
+    <!-- NW Cheek wall -->
+    <polygon points="698,426 756,397 766,402 708,431" fill="#E6DFD2"/>
+    <polygon points="698,426 708,431 708,439 698,434" fill="#CFC7B8"/>
+    <!-- SE Cheek wall -->
+    <polygon points="784,469 842,440 852,445 794,474" fill="#E6DFD2"/>
+    <polygon points="794,474 852,445 852,453 794,482" fill="#B8AF9F"/>
+
+    <!-- 8 Wide Limestone Steps (lit treads + subtle risers) -->
+    <polygon points="708,431 794,474 842,450 756,407" fill="#CFC7B8"/>
+    <polygon points="708,431 794,474 798,472 712,429" fill="#EAE3D6"/>
+    <polygon points="714,428 800,471 804,469 718,426" fill="#D4CCC0"/>
+    <polygon points="718,426 804,469 808,467 722,424" fill="#EAE3D6"/>
+    <polygon points="724,423 810,466 814,464 728,421" fill="#D4CCC0"/>
+    <polygon points="728,421 814,464 818,462 732,419" fill="#EAE3D6"/>
+    <polygon points="734,418 820,461 824,459 738,416" fill="#D4CCC0"/>
+    <polygon points="738,416 824,459 828,457 742,414" fill="#EAE3D6"/>
+    <polygon points="744,413 830,456 834,454 748,411" fill="#D4CCC0"/>
+    <polygon points="748,411 834,454 838,452 752,409" fill="#EAE3D6"/>
+    <polygon points="754,408 840,451 844,449 758,406" fill="#D4CCC0"/>
+
+    <!-- Main Limestone Stylobate / Plinth of Low Library -->
+    <polygon points="748,395 844,443 844,433 748,385" fill="#D6CEC0"/>
+    <polygon points="844,443 940,395 940,385 844,433" fill="#B6ADA0"/>
+
+    <!-- Main Neoclassical Building Block (Greek Cross Wings) -->
+    <!-- SW Lit Wall -->
+    <polygon points="748,385 844,433 844,385 748,337" fill="#DFD7C8"/>
+    <!-- SE Shaded Wall -->
+    <polygon points="844,433 940,385 940,337 844,385" fill="#C0B7A7"/>
+    <!-- Roof Deck / Attic Parapet -->
+    <polygon points="748,337 844,385 940,337 844,289" fill="#EAE3D7"/>
+    <polygon points="756,337 844,381 932,337 844,293" fill="#D7CFC1"/>
+
+    <!-- SE Side Wing Pilasters & Tall Arched Windows -->
+    <g fill="#6E675C">
+      <polygon points="862,388 872,383 872,407 862,412"/>
+      <polygon points="880,379 890,374 890,398 880,403"/>
+      <polygon points="898,370 908,365 908,389 898,394"/>
+      <polygon points="916,361 926,356 926,380 916,385"/>
+    </g>
+    <!-- SE Pediment accent -->
+    <polygon points="864,375 924,345 894,332" fill="#CFC7B8"/>
+
+    <!-- GRAND SW FRONT PORTICO & IONIC COLONNADE -->
+    <!-- Portico floor projecting SW -->
+    <polygon points="744,397 820,435 836,427 760,389" fill="#E6DFD2"/>
+    <polygon points="744,397 820,435 820,443 744,405" fill="#CFC7B8"/>
+    <!-- Deep shaded portico recess behind columns -->
+    <polygon points="760,389 832,425 832,385 760,349" fill="#8C8375"/>
+    <!-- Tall Grand Entrance Doorway inside portico -->
+    <polygon points="786,402 806,412 806,386 786,376" fill="#594F45"/>
+
+    <!-- 6 Tall Neoclassical Ionic Columns across the SW Portico -->
+    <g>
+      <!-- Col 1 -->
+      <rect x="748" y="357" width="4.5" height="40" fill="#ECE6DA"/>
+      <rect x="751" y="357" width="1.5" height="40" fill="#C9C0B1"/>
+      <!-- Col 2 -->
+      <rect x="761" y="363.5" width="4.5" height="40" fill="#ECE6DA"/>
+      <rect x="764" y="363.5" width="1.5" height="40" fill="#C9C0B1"/>
+      <!-- Col 3 -->
+      <rect x="774" y="370" width="4.5" height="40" fill="#ECE6DA"/>
+      <rect x="777" y="370" width="1.5" height="40" fill="#C9C0B1"/>
+      <!-- Col 4 -->
+      <rect x="787" y="376.5" width="4.5" height="40" fill="#ECE6DA"/>
+      <rect x="790" y="376.5" width="1.5" height="40" fill="#C9C0B1"/>
+      <!-- Col 5 -->
+      <rect x="800" y="383" width="4.5" height="40" fill="#ECE6DA"/>
+      <rect x="803" y="383" width="1.5" height="40" fill="#C9C0B1"/>
+      <!-- Col 6 -->
+      <rect x="813" y="389.5" width="4.5" height="40" fill="#ECE6DA"/>
+      <rect x="816" y="389.5" width="1.5" height="40" fill="#C9C0B1"/>
+    </g>
+
+    <!-- Portico Entablature, Cornice & Triangular Pediment -->
+    <polygon points="743,356 821,395 821,387 743,348" fill="#E3DACB"/>
+    <polygon points="821,395 837,387 837,379 821,387" fill="#BEB5A5"/>
+    <!-- Triangular Pediment facing SW -->
+    <polygon points="742,348 822,388 782,346" fill="#EBE5D9"/>
+    <polygon points="749,349 815,382 782,350" fill="#D2C9BA"/>
+    <!-- Portico pitched roof behind pediment -->
+    <polygon points="782,346 822,388 839,380 799,338" fill="#C6BEB0"/>
+
+    <!-- OCTAGONAL / CIRCULAR LIMESTONE DRUM -->
+    <!-- Drum base -->
+    <path d="M792,334 A52,26 0 0,0 896,334 L896,306 A52,26 0 0,1 792,306 Z" fill="#DFD7C8"/>
+    <!-- Drum shaded right half -->
+    <path d="M844,360 A52,26 0 0,0 896,334 L896,306 A52,26 0 0,1 844,332 Z" fill="#C0B7A7"/>
+    <!-- Drum cornice ring -->
+    <ellipse cx="844" cy="306" rx="54" ry="27" fill="#EAE3D7"/>
+    <ellipse cx="844" cy="305" rx="50" ry="25" fill="#D5CDC0"/>
+    <!-- Clerestory arched windows around the drum -->
+    <g fill="#5C666E">
+      <rect x="802" y="320" width="6" height="14" rx="3"/>
+      <rect x="816" y="326" width="6" height="14" rx="3"/>
+      <rect x="831" y="330" width="6" height="14" rx="3"/>
+      <rect x="846" y="330" width="6" height="14" rx="3"/>
+      <rect x="861" y="326" width="6" height="14" rx="3"/>
+      <rect x="875" y="320" width="6" height="14" rx="3"/>
+    </g>
+
+    <!-- RIBBED COPPER-GREEN NEOCLASSICAL DOME -->
+    <!-- Main dome silhouette -->
+    <path d="M796,305 C796,265 818,248 844,248 C870,248 892,265 892,305 A48,24 0 0,1 796,305 Z" fill="#6F9A8A"/>
+    <!-- Shaded right half of dome -->
+    <path d="M844,248 C870,248 892,265 892,305 A48,24 0 0,1 844,329 Z" fill="#577E70"/>
+    <!-- Lit highlight on left side of dome -->
+    <path d="M806,305 C806,272 823,254 841,250 C826,256 818,278 820,316 Z" fill="#89B2A2"/>
+    <!-- Subtle dome ribs -->
+    <path d="M844,248 Q825,278 822,324" fill="none" stroke="#4D7063" stroke-width="1" opacity="0.5"/>
+    <path d="M844,248 Q844,282 844,328" fill="none" stroke="#4D7063" stroke-width="1" opacity="0.5"/>
+    <path d="M844,248 Q863,278 866,324" fill="none" stroke="#426357" stroke-width="1" opacity="0.5"/>
+    <!-- Dome Cupola / Lantern -->
+    <ellipse cx="844" cy="249" rx="11" ry="5.5" fill="#DFD7C8"/>
+    <rect x="837" y="238" width="14" height="11" fill="#E6DFD2"/>
+    <rect x="844" y="238" width="7" height="11" fill="#C4BBAE"/>
+    <path d="M836,238 Q844,228 852,238 Z" fill="#7CA696"/>
+    <line x1="844" y1="231" x2="844" y2="223" stroke="#5A7D70" stroke-width="1.5"/>
+
+    <!-- SEATED BRONZE STATUE (ALMA MATER) ON CENTRAL STEP PEDESTAL (around 756, 434) -->
+    <g id="alma-mater-statue" transform="translate(756, 436)">
+      <!-- Pedestal shadow -->
+      <polygon points="0,4 16,-4 22,-1 6,7" fill="#5C564D" opacity="0.28"/>
+      <!-- Limestone pedestal -->
+      <polygon points="-8,0 0,4 0,-8 -8,-12" fill="#E3DACB"/>
+      <polygon points="0,4 8,0 8,-12 0,-8" fill="#BEB5A5"/>
+      <polygon points="-8,-12 0,-16 8,-12 0,-8" fill="#EFE8DC"/>
+      <!-- Seated bronze throne & figure -->
+      <polygon points="-5,-11 0,-8.5 5,-11 5,-18 -5,-18" fill="#6E624D"/>
+      <!-- Draped bronze robes -->
+      <path d="M-4,-11 L4,-11 L3,-20 L-3,-20 Z" fill="#7D7058"/>
+      <!-- Outstretched welcoming arms -->
+      <path d="M-6,-18 L-2,-19 L2,-19 L6,-17" fill="none" stroke="#8C7E63" stroke-width="2" stroke-linecap="round"/>
+      <!-- Head & subtle verdigris patina highlight -->
+      <circle cx="0" cy="-22.5" r="2.3" fill="#8C7E63"/>
+      <circle cx="-0.6" cy="-23" r="1" fill="#7EA393"/>
+    </g>
+  </g>
+
+  <!-- LEFT-SIDE RED-BRICK ACADEMIC HALL (between Plot 1 and Plot 3, cropped at left edge) -->
+  <g id="hall-left-edge">
+    <polygon points="150,535 280,470 315,488 185,553" fill="#3E4B3E" opacity="0.22"/>
+    <!-- Limestone base -->
+    <polygon points="70,480 155,522.5 155,510 70,467.5" fill="#DDD4C5"/>
+    <polygon points="155,522.5 270,465 270,452.5 155,510" fill="#BEB4A3"/>
+    <!-- Brick walls -->
+    <polygon points="70,467.5 155,510 155,452 70,409.5" fill="#B67260"/>
+    <polygon points="155,510 270,452.5 270,394.5 155,452" fill="#945848"/>
+    <!-- Cornice -->
+    <polygon points="67,410 155,454 273,395 273,390 155,449 67,405" fill="#E3DACB"/>
+    <!-- Slate flat roof with skylights & roof unit -->
+    <polygon points="70,406 155,448.5 270,391 185,348.5" fill="#7D8790"/>
+    <polygon points="82,406 155,442.5 258,391 185,354.5" fill="#8E97A0"/>
+    <!-- Roof HVAC unit & skylight -->
+    <polygon points="145,400 175,385 188,391.5 158,406.5" fill="#A9C5CE"/>
+    <polygon points="195,382 215,392 215,382 195,372" fill="#B5B0A6"/>
+    <polygon points="215,392 230,384.5 230,374.5 215,382" fill="#948F86"/>
+    <polygon points="195,372 210,364.5 230,374.5 215,382" fill="#CFCAC0"/>
+    <!-- Windows -->
+    <g fill="#4E5D6B">
+      <polygon points="85,428 96,433.5 96,445 85,439.5"/>
+      <polygon points="105,438 116,443.5 116,455 105,449.5"/>
+      <polygon points="125,448 136,453.5 136,465 125,459.5"/>
+      <polygon points="85,452 96,457.5 96,469 85,463.5"/>
+      <polygon points="105,462 116,467.5 116,479 105,473.5"/>
+      <polygon points="125,472 136,477.5 136,489 125,483.5"/>
+    </g>
+    <g fill="#3E4C59">
+      <polygon points="170,458 182,452 182,464 170,470"/>
+      <polygon points="192,447 204,441 204,453 192,459"/>
+      <polygon points="214,436 226,430 226,442 214,448"/>
+      <polygon points="236,425 248,419 248,431 236,437"/>
+      <polygon points="170,482 182,476 182,488 170,494"/>
+      <polygon points="192,471 204,465 204,477 192,483"/>
+      <polygon points="214,460 226,454 226,466 214,472"/>
+      <polygon points="236,449 248,443 248,455 236,461"/>
+    </g>
+  </g>
+
+  <!-- Cropped Far-Left Edge Building (0..80, 420..560) -->
+  <g id="hall-far-left-cropped">
+    <polygon points="-30,520 50,560 50,495 -30,455" fill="#C4B6A1"/>
+    <polygon points="50,560 100,535 100,470 50,495" fill="#A59783"/>
+    <polygon points="-30,455 50,495 100,470 20,430" fill="#779E8F"/>
+  </g>
+
+  <!-- HALL D (Symmetrical Red-Brick Hall SE of Low Library, centered ~995, 480) -->
+  <g id="hall-d">
+    <!-- Ground shadow -->
+    <polygon points="995,532 1105,477 1135,492 1025,547" fill="#3E4B3E" opacity="0.22"/>
+    <!-- Limestone base -->
+    <polygon points="915,485 995,525 995,513 915,473" fill="#DDD4C5"/>
+    <polygon points="995,525 1100,472.5 1100,460.5 995,513" fill="#BEB4A3"/>
+    <!-- Red-brick walls -->
+    <polygon points="915,473 995,513 995,455 915,415" fill="#B67260"/>
+    <polygon points="995,513 1100,460.5 1100,402.5 995,455" fill="#945848"/>
+    <!-- Belt course & cornice -->
+    <polygon points="915,447 995,487 1100,434.5 1100,431.5 995,484 915,444" fill="#DFD6C7"/>
+    <polygon points="912,415 995,456.5 1103,402.5 1103,397.5 995,451.5 912,410" fill="#E3DACB"/>
+    <!-- Copper-green pitched roof -->
+    <polygon points="915,411 995,451 1100,398.5 1020,358.5" fill="#628C7D"/>
+    <polygon points="915,411 995,451 995,431 935,401" fill="#7CA696"/>
+    <polygon points="995,451 1100,398.5 1080,388.5 995,431" fill="#52786A"/>
+    <polygon points="935,401 995,431 1080,388.5 1020,358.5" fill="#89B2A2"/>
+    <!-- Skylight & Chimney -->
+    <polygon points="975,408 1040,375.5 1050,380.5 985,413" fill="#A9C5CE"/>
+    <polygon points="955,402 963,406 963,391 955,387" fill="#A86756"/>
+    <polygon points="963,406 971,402 971,387 963,391" fill="#864E40"/>
+    <!-- Mullioned windows -->
+    <g fill="#4E5D6B">
+      <polygon points="926,429 936,434 936,446 926,441"/>
+      <polygon points="944,438 954,443 954,455 944,450"/>
+      <polygon points="962,447 972,452 972,464 962,459"/>
+      <polygon points="980,456 990,461 990,473 980,468"/>
+      <polygon points="926,453 936,458 936,470 926,465"/>
+      <polygon points="944,462 954,467 954,479 944,474"/>
+      <polygon points="962,471 972,476 972,488 962,483"/>
+      <polygon points="980,480 990,485 990,497 980,492"/>
+    </g>
+    <g fill="#3E4C59">
+      <polygon points="1008,458 1018,453 1018,465 1008,470"/>
+      <polygon points="1028,448 1038,443 1038,455 1028,460"/>
+      <polygon points="1048,438 1058,433 1058,445 1048,450"/>
+      <polygon points="1068,428 1078,423 1078,435 1068,440"/>
+      <polygon points="1008,482 1018,477 1018,489 1008,494"/>
+      <polygon points="1028,472 1038,467 1038,479 1028,484"/>
+      <polygon points="1048,462 1058,457 1058,469 1048,474"/>
+      <polygon points="1068,452 1078,447 1078,459 1068,464"/>
+    </g>
+  </g>
+
+  <!-- RIGHT-EDGE RED-BRICK HALL (between Plot 2 and Plot 4, centered ~1485, 485) -->
+  <g id="hall-right-edge">
+    <polygon points="1385,485 1475,530 1475,465 1385,420" fill="#B67260"/>
+    <polygon points="1475,530 1615,460 1615,395 1475,465" fill="#945848"/>
+    <polygon points="1385,485 1475,530 1475,542 1385,497" fill="#DDD4C5"/>
+    <polygon points="1475,530 1615,460 1615,472 1475,542" fill="#BEB4A3"/>
+    <polygon points="1382,420 1475,466.5 1618,395 1618,390 1475,461.5 1382,415" fill="#E3DACB"/>
+    <!-- Copper-green roof -->
+    <polygon points="1385,416 1475,461 1615,391 1525,346" fill="#689282"/>
+    <polygon points="1405,406 1475,441 1595,381 1525,346" fill="#82AB9B"/>
+    <g fill="#4E5D6B">
+      <polygon points="1400,438 1412,444 1412,456 1400,450"/>
+      <polygon points="1420,448 1432,454 1432,466 1420,460"/>
+      <polygon points="1440,458 1452,464 1452,476 1440,470"/>
+      <polygon points="1400,462 1412,468 1412,480 1400,474"/>
+      <polygon points="1420,472 1432,478 1432,490 1420,484"/>
+      <polygon points="1440,482 1452,488 1452,500 1440,494"/>
+    </g>
+    <g fill="#3E4C59">
+      <polygon points="1490,468 1502,462 1502,474 1490,480"/>
+      <polygon points="1512,457 1524,451 1524,463 1512,469"/>
+      <polygon points="1534,446 1546,440 1546,452 1534,458"/>
+      <polygon points="1556,435 1568,429 1568,441 1556,447"/>
+      <polygon points="1490,492 1502,486 1502,498 1490,504"/>
+      <polygon points="1512,481 1524,475 1524,487 1512,493"/>
+      <polygon points="1534,470 1546,464 1546,476 1534,482"/>
+      <polygon points="1556,459 1568,453 1568,465 1556,471"/>
+    </g>
+  </g>
+
+  <!-- ===================================================================== -->
+  <!-- LAYER 6: SECOND COLONNADED LIBRARY (BUTLER LIBRARY) & SOUTH QUAD HALLS-->
+  <!-- Positioned at the far SW end of South Lawn (centered ~530, 565)       -->
+  <!-- Verified 68px+ clear of Plot 3 (340, 650)!                            -->
+  <!-- ===================================================================== -->
+  <g id="butler-library">
+    <!-- Ground shadow cast to East/SE -->
+    <polygon points="575,638 665,593 695,608 605,653" fill="#3E463E" opacity="0.22"/>
+
+    <!-- Wide limestone base plinth -->
+    <polygon points="418,554 574,632 574,619 418,541" fill="#DDD4C5"/>
+    <polygon points="574,632 642,598 642,585 574,619" fill="#BEB4A3"/>
+
+    <!-- Main Sandstone / Cream Neoclassical Walls -->
+    <polygon points="418,541 574,619 574,565 418,487" fill="#E1D8C9"/>
+    <polygon points="574,619 642,585 642,531 574,565" fill="#C2B8A7"/>
+
+    <!-- Deep Recessed Colonnade Gallery along the Long Facade (SW) -->
+    <polygon points="434,536 558,598 558,563 434,501" fill="#8C8375"/>
+    <!-- Tall Mullioned Windows behind the Colonnade -->
+    <g fill="#4E5B66">
+      <polygon points="442,512 450,516 450,540 442,536"/>
+      <polygon points="458,520 466,524 466,548 458,544"/>
+      <polygon points="474,528 482,532 482,556 474,552"/>
+      <polygon points="490,536 498,540 498,564 490,560"/>
+      <polygon points="506,544 514,548 514,572 506,568"/>
+      <polygon points="522,552 530,556 530,580 522,576"/>
+      <polygon points="538,560 546,564 546,588 538,584"/>
+    </g>
+    <!-- 8 Grand Ionic Columns across the Colonnade -->
+    <g>
+      <rect x="436" y="502" width="4" height="36" fill="#EFE8DC"/>
+      <rect x="452" y="510" width="4" height="36" fill="#EFE8DC"/>
+      <rect x="468" y="518" width="4" height="36" fill="#EFE8DC"/>
+      <rect x="484" y="526" width="4" height="36" fill="#EFE8DC"/>
+      <rect x="500" y="534" width="4" height="36" fill="#EFE8DC"/>
+      <rect x="516" y="542" width="4" height="36" fill="#EFE8DC"/>
+      <rect x="532" y="550" width="4" height="36" fill="#EFE8DC"/>
+      <rect x="548" y="558" width="4" height="36" fill="#EFE8DC"/>
+    </g>
+
+    <!-- SE Side Facade Pilasters & Tall Windows -->
+    <g fill="#4A5661">
+      <polygon points="586,574 596,569 596,593 586,598"/>
+      <polygon points="604,565 614,560 614,584 604,589"/>
+      <polygon points="622,556 632,551 632,575 622,580"/>
+    </g>
+
+    <!-- Heavy Classical Entablature & Attic Parapet -->
+    <polygon points="415,487 574,566.5 645,531 645,525 574,560.5 415,481" fill="#EAE3D7"/>
+    <polygon points="418,481 574,559 642,525 486,447" fill="#D5CDC0"/>
+    <polygon points="426,481 574,555 634,525 486,451" fill="#8B949D"/>
+
+    <!-- Butler Library Setback Upper Attic & Copper-Green Skylight Monitors -->
+    <polygon points="462,482 562,532 598,514 498,464" fill="#DFD7C8"/>
+    <polygon points="462,482 562,532 562,521 462,471" fill="#D4CBBB"/>
+    <polygon points="562,532 598,514 598,503 562,521" fill="#B5AC9C"/>
+    <polygon points="462,471 562,521 598,503 498,453" fill="#77A191"/>
+    <!-- Skylight lantern on top -->
+    <polygon points="494,474 548,501 564,493 510,466" fill="#A9C5CE"/>
+  </g>
+
+  <!-- HALL E (Red-Brick Hall flanking the SE side of South Lawn, centered ~845, 615) -->
+  <g id="hall-e">
+    <!-- Ground shadow -->
+    <polygon points="840,672 955,615 985,630 870,687" fill="#3E4B3E" opacity="0.22"/>
+    <!-- Limestone base -->
+    <polygon points="755,625 835,665 835,652 755,612" fill="#DDD4C5"/>
+    <polygon points="835,665 950,607.5 950,594.5 835,652" fill="#BEB4A3"/>
+    <!-- Red-brick walls -->
+    <polygon points="755,612 835,652 835,594 755,554" fill="#B67260"/>
+    <polygon points="835,652 950,594.5 950,536.5 835,594" fill="#945848"/>
+    <!-- Belt course & cornice -->
+    <polygon points="755,586 835,626 950,568.5 950,565.5 835,623 755,583" fill="#DFD6C7"/>
+    <polygon points="752,554 835,595.5 953,536.5 953,531.5 835,590.5 752,549" fill="#E3DACB"/>
+    <!-- Copper-green pitched roof -->
+    <polygon points="755,550 835,590 950,532.5 870,492.5" fill="#628C7D"/>
+    <polygon points="755,550 835,590 835,570 775,540" fill="#7CA696"/>
+    <polygon points="835,590 950,532.5 930,522.5 835,570" fill="#52786A"/>
+    <polygon points="775,540 835,570 930,522.5 870,492.5" fill="#89B2A2"/>
+    <!-- Skylight & Chimneys -->
+    <polygon points="815,546 885,511 895,516 825,551" fill="#A9C5CE"/>
+    <polygon points="895,518 903,522 903,507 895,503" fill="#A86756"/>
+    <polygon points="903,522 911,518 911,503 903,507" fill="#864E40"/>
+    <!-- Entrance Portico on SW facade -->
+    <polygon points="780,639 810,654 804,657 774,642" fill="#E4DDD0"/>
+    <polygon points="783,636 807,648 807,620 783,608" fill="#786B5E"/>
+    <polygon points="780,609 810,624 795,604" fill="#E3DACB"/>
+    <!-- Mullioned windows -->
+    <g fill="#4E5D6B">
+      <polygon points="764,568 774,573 774,585 764,580"/>
+      <polygon points="784,578 794,583 794,595 784,590"/>
+      <polygon points="804,588 814,593 814,605 804,600"/>
+      <polygon points="820,596 830,601 830,613 820,608"/>
+      <polygon points="764,592 774,597 774,609 764,604"/>
+      <polygon points="820,620 830,625 830,637 820,632"/>
+    </g>
+    <g fill="#3E4C59">
+      <polygon points="848,598 858,593 858,605 848,610"/>
+      <polygon points="868,588 878,583 878,595 868,600"/>
+      <polygon points="888,578 898,573 898,585 888,590"/>
+      <polygon points="908,568 918,563 918,575 908,580"/>
+      <polygon points="928,558 938,553 938,565 928,570"/>
+      <polygon points="848,622 858,617 858,629 848,634"/>
+      <polygon points="868,612 878,607 878,619 868,624"/>
+      <polygon points="888,602 898,597 898,609 888,614"/>
+      <polygon points="908,592 918,587 918,599 908,604"/>
+      <polygon points="928,582 938,577 938,589 928,594"/>
+    </g>
+  </g>
+
+  <!-- ===================================================================== -->
+  <!-- LAYER 7: FOREGROUND / BOTTOM-EDGE HALLS & CROPPED CITY BLOCKS         -->
+  <!-- ===================================================================== -->
+
+  <!-- HALL F (Grand Red-Brick Hall at Bottom-Center, South of Butler Library) -->
+  <g id="hall-f">
+    <polygon points="695,845 815,785 845,800 725,860" fill="#3E4B3E" opacity="0.22"/>
+    <!-- Limestone base -->
+    <polygon points="565,775 685,835 685,822 565,762" fill="#DDD4C5"/>
+    <polygon points="685,835 805,775 805,762 685,822" fill="#BEB4A3"/>
+    <!-- Red-brick walls -->
+    <polygon points="565,762 685,822 685,762 565,702" fill="#B67260"/>
+    <polygon points="685,822 805,762 805,702 685,762" fill="#945848"/>
+    <!-- Belt course & cornice -->
+    <polygon points="565,735 685,795 805,735 805,732 685,792 565,732" fill="#DFD6C7"/>
+    <polygon points="562,702 685,763.5 808,702 808,697 685,758.5 562,697" fill="#E3DACB"/>
+    <!-- Slate pitched roof with dormers & copper ridge -->
+    <polygon points="565,698 685,758 805,698 685,638" fill="#6F7982"/>
+    <polygon points="565,698 685,758 685,734 592,687.5" fill="#828C95"/>
+    <polygon points="685,758 805,698 778,684.5 685,734" fill="#5D6770"/>
+    <polygon points="592,687.5 685,734 778,684.5 685,638" fill="#8F99A2"/>
+    <!-- Copper skylight ridge & chimneys -->
+    <polygon points="645,692 715,657 725,662 655,697" fill="#7CA696"/>
+    <polygon points="615,695 623,699 623,682 615,678" fill="#A86756"/>
+    <polygon points="623,699 631,695 631,678 623,682" fill="#864E40"/>
+    <!-- Mullioned windows -->
+    <g fill="#4E5D6B">
+      <polygon points="580,718 591,723.5 591,735 580,729.5"/>
+      <polygon points="602,729 613,734.5 613,746 602,740.5"/>
+      <polygon points="624,740 635,745.5 635,757 624,751.5"/>
+      <polygon points="646,751 657,756.5 657,768 646,762.5"/>
+      <polygon points="668,762 679,767.5 679,779 668,773.5"/>
+      <polygon points="580,743 591,748.5 591,760 580,754.5"/>
+      <polygon points="602,754 613,759.5 613,771 602,765.5"/>
+      <polygon points="624,765 635,770.5 635,782 624,776.5"/>
+      <polygon points="646,776 657,781.5 657,793 646,787.5"/>
+      <polygon points="668,787 679,792.5 679,804 668,798.5"/>
+    </g>
+    <g fill="#3E4C59">
+      <polygon points="700,766 711,760.5 711,772 700,777.5"/>
+      <polygon points="722,755 733,749.5 733,761 722,766.5"/>
+      <polygon points="744,744 755,738.5 755,750 744,755.5"/>
+      <polygon points="766,733 777,727.5 777,739 766,744.5"/>
+      <polygon points="788,722 799,716.5 799,728 788,733.5"/>
+      <polygon points="700,791 711,785.5 711,797 700,802.5"/>
+      <polygon points="722,780 733,774.5 733,786 722,791.5"/>
+      <polygon points="744,769 755,763.5 755,775 744,780.5"/>
+      <polygon points="766,758 777,752.5 777,764 766,769.5"/>
+      <polygon points="788,747 799,741.5 799,753 788,758.5"/>
+    </g>
+  </g>
+
+  <!-- Bottom-Left Corner Cropped Buildings (beyond 114th St) -->
+  <g id="corner-sw-buildings">
+    <polygon points="-20,830 140,910 140,845 -20,765" fill="#B2705E"/>
+    <polygon points="140,910 240,860 240,795 140,845" fill="#905647"/>
+    <polygon points="-20,765 140,845 240,795 80,715" fill="#7D868E"/>
+    <polygon points="160,920 310,995 310,930 160,855" fill="#C9BCA8"/>
+    <polygon points="160,855 310,930 390,890 240,815" fill="#779E8F"/>
+  </g>
+
+  <!-- Bottom-Right Corner Cropped Buildings (beyond Amsterdam Ave) -->
+  <g id="corner-se-buildings">
+    <polygon points="1340,920 1470,985 1470,920 1340,855" fill="#B67260"/>
+    <polygon points="1470,985 1620,910 1620,845 1470,920" fill="#945848"/>
+    <polygon points="1340,855 1470,920 1620,845 1490,780" fill="#7D868E"/>
+    <polygon points="1490,780 1620,845 1620,785 1490,720" fill="#D4C9B8"/>
+    <polygon points="1490,720 1620,785 1680,755 1550,690" fill="#6F9788"/>
+  </g>
+
+  <!-- ===================================================================== -->
+  <!-- LAYER 8: HEDGED WALKS, PICNIC TABLES, BIKE RACKS, LAMP POSTS,         -->
+  <!--          BENCHES, VARIETY OF TREES & TINY PEOPLE                      -->
+  <!-- All strictly positioned OUTSIDE the 4 empty building plots!           -->
+  <!-- ===================================================================== -->
+
+  <!-- HEDGED WALKS (Crisp 3-tone isometric boxwood hedges) -->
+  <g id="hedges">
+    <!-- Hedges along NW side of South Lawn -->
+    <polygon points="548,505 686,436 692,439 554,508" fill="#84A676"/>
+    <polygon points="548,505 554,508 554,515 548,512" fill="#6F9162"/>
+    <polygon points="554,508 692,439 692,446 554,515" fill="#5A7850"/>
+
+    <!-- Hedges along SE side of South Lawn -->
+    <polygon points="670,566 808,497 814,500 676,569" fill="#84A676"/>
+    <polygon points="670,566 676,569 676,576 670,573" fill="#6F9162"/>
+    <polygon points="676,569 814,500 814,507 676,576" fill="#5A7850"/>
+
+    <!-- Hedges along College Walk NW -->
+    <polygon points="518,354 630,410 624,413 512,357" fill="#84A676"/>
+    <polygon points="512,357 624,413 624,420 512,364" fill="#6F9162"/>
+
+    <!-- Hedges along College Walk SE -->
+    <polygon points="942,566 1054,622 1048,625 936,569" fill="#84A676"/>
+    <polygon points="936,569 1048,625 1048,632 936,576" fill="#6F9162"/>
+
+    <!-- Hedged walk flanking North Quad -->
+    <polygon points="828,266 912,224 918,227 834,269" fill="#84A676"/>
+    <polygon points="834,269 918,227 918,233 834,275" fill="#5A7850"/>
+  </g>
+
+  <!-- PICNIC TABLES (in sunny lawn pockets near Amphitheatre & North Quad) -->
+  <use href="#picnic-table" x="1038" y="692"/>
+  <use href="#picnic-table" x="1072" y="718"/>
+  <use href="#picnic-table" x="1028" y="790"/>
+  <use href="#picnic-table" x="765" y="195"/>
+  <use href="#picnic-table" x="805" y="212"/>
+
+  <!-- BIKE RACKS (near academic halls & College Walk) -->
+  <use href="#bike-rack" x="556" y="346"/>
+  <use href="#bike-rack" x="928" y="528"/>
+  <use href="#bike-rack" x="646" y="616"/>
+
+  <!-- QUAD BENCHES -->
+  <use href="#bench-sw" x="665" y="462"/>
+  <use href="#bench-sw" x="705" y="482"/>
+  <use href="#bench-se" x="598" y="538"/>
+  <use href="#bench-se" x="748" y="518"/>
+  <use href="#bench-sw" x="862" y="558"/>
+  <use href="#bench-se" x="935" y="312"/>
+
+  <!-- LAMP POSTS WITH LIGHT BLUE UNIVERSITY BANNERS along College Walk & Quad -->
+  <use href="#lamp-banner" x="515" y="388"/>
+  <use href="#lamp-banner-l" x="580" y="418"/>
+  <use href="#lamp-banner" x="645" y="452"/>
+  <use href="#lamp-banner-l" x="702" y="480"/>
+  <use href="#lamp-banner" x="815" y="536"/>
+  <use href="#lamp-banner-l" x="880" y="568"/>
+  <use href="#lamp-banner" x="965" y="610"/>
+  <use href="#lamp-banner-l" x="1040" y="648"/>
+  <!-- Lamp posts flanking South Lawn & North Quad -->
+  <use href="#lamp-banner" x="552" y="526"/>
+  <use href="#lamp-banner-l" x="655" y="576"/>
+  <use href="#lamp-banner" x="850" y="280"/>
+  <use href="#lamp-banner-l" x="1015" y="275"/>
+  <use href="#lamp-banner" x="268" y="192"/>
+
+  <!-- VARIETY OF TREES (Round, Large, Tall Cypress, Flowering Magnolia, Cream Blossom) -->
+  <!-- Carefully placed in back-to-front Y order, strictly avoiding all 4 empty plots! -->
+  <!-- Top / North zone (y = 50..240) -->
+  <use href="#tree-round" x="425" y="135"/>
+  <use href="#tree-flower" x="468" y="158"/>
+  <use href="#tree-tall" x="502" y="175"/>
+  <use href="#tree-large" x="698" y="68"/>
+  <use href="#tree-tall" x="745" y="148"/>
+  <use href="#tree-blossom" x="875" y="152"/>
+  <use href="#tree-round" x="945" y="138"/>
+  <use href="#tree-large" x="1018" y="112"/>
+  <use href="#tree-tall" x="1055" y="185"/>
+  <use href="#tree-flower" x="1325" y="148"/>
+  <use href="#tree-round" x="1378" y="182"/>
+  <use href="#tree-tall" x="1435" y="218"/>
+
+  <!-- Upper-mid zone (y = 240..390) -->
+  <use href="#tree-round" x="128" y="268"/>
+  <use href="#tree-flower" x="172" y="252"/>
+  <use href="#tree-tall" x="518" y="268"/>
+  <use href="#tree-round" x="542" y="328"/>
+  <use href="#tree-blossom" x="772" y="272"/>
+  <use href="#tree-tall" x="795" y="295"/>
+  <use href="#tree-flower" x="1078" y="242"/>
+  <use href="#tree-round" x="1485" y="288"/>
+  <use href="#tree-large" x="1548" y="328"/>
+
+  <!-- Central quad & side gaps (y = 390..540) -->
+  <!-- Gap between Plot 1 (y max 395) and Plot 3 (y min 585): safe band x=290..460, y=420..540 -->
+  <use href="#tree-large" x="315" y="452"/>
+  <use href="#tree-flower" x="368" y="472"/>
+  <use href="#tree-round" x="422" y="446"/>
+  <use href="#tree-tall" x="462" y="425"/>
+  <use href="#tree-blossom" x="342" y="528"/>
+  <use href="#tree-round" x="268" y="518"/>
+  <!-- Around Low Library & Hall D -->
+  <use href="#tree-tall" x="945" y="388"/>
+  <use href="#tree-flower" x="1065" y="398"/>
+  <use href="#tree-round" x="1128" y="438"/>
+  <!-- Gap between Plot 2 (y max 395) and Plot 4 (y min 585): safe band x=1160..1360, y=435..545 -->
+  <use href="#tree-large" x="1220" y="465"/>
+  <use href="#tree-blossom" x="1275" y="492"/>
+  <use href="#tree-round" x="1325" y="468"/>
+  <use href="#tree-tall" x="1352" y="518"/>
+  <use href="#tree-flower" x="1165" y="512"/>
+
+  <!-- Lower-mid zone (y = 540..720) -->
+  <use href="#tree-round" x="118" y="618"/>
+  <use href="#tree-tall" x="165" y="648"/>
+  <use href="#tree-flower" x="585" y="648"/>
+  <use href="#tree-round" x="718" y="612"/>
+  <use href="#tree-large" x="975" y="592"/>
+  <use href="#tree-blossom" x="1028" y="618"/>
+  <use href="#tree-tall" x="1445" y="585"/>
+  <use href="#tree-round" x="1522" y="625"/>
+
+  <!-- Foreground / Bottom zone (y = 720..880) -->
+  <use href="#tree-large" x="488" y="758"/>
+  <use href="#tree-flower" x="535" y="798"/>
+  <use href="#tree-round" x="425" y="818"/>
+  <use href="#tree-tall" x="845" y="782"/>
+  <use href="#tree-round" x="888" y="832"/>
+  <use href="#tree-blossom" x="1085" y="788"/>
+  <use href="#tree-large" x="1152" y="828"/>
+  <use href="#tree-round" x="1245" y="795"/>
+  <use href="#tree-flower" x="1325" y="768"/>
+  <use href="#tree-tall" x="285" y="785"/>
+
+  <!-- TINY SIMPLIFIED PEOPLE WALKING & SITTING (No faces, muted tones) -->
+  <!-- On Low Library steps & plaza -->
+  <use href="#p-navy" x="738" y="452"/>
+  <use href="#p-burgundy" x="746" y="456"/>
+  <use href="#p-ochre" x="782" y="464"/>
+  <use href="#p-cream" x="768" y="446"/>
+  <!-- Walking along College Walk -->
+  <use href="#p-navy" x="620" y="442"/>
+  <use href="#p-cream" x="628" y="445"/>
+  <use href="#p-burgundy" x="855" y="548"/>
+  <use href="#p-ochre" x="920" y="580"/>
+  <!-- Sitting & strolling on South Lawn -->
+  <use href="#p-sit" x="642" y="492"/>
+  <use href="#p-sit" x="650" y="495"/>
+  <use href="#p-sit" x="712" y="504"/>
+  <use href="#p-navy" x="678" y="508"/>
+  <use href="#p-burgundy" x="605" y="534"/>
+  <!-- Near Butler Library & Amphitheatre -->
+  <use href="#p-ochre" x="655" y="608"/>
+  <use href="#p-cream" x="965" y="742"/>
+  <use href="#p-sit" x="952" y="724"/>
+  <use href="#p-sit" x="994" y="725"/>
+  <!-- Waiting at Bus Stop on NW Edge Street -->
+  <use href="#p-navy" x="172" y="182"/>
+  <use href="#p-burgundy" x="182" y="178"/>
+  <!-- Near North Quad & Sports Court -->
+  <use href="#p-cream" x="918" y="286"/>
+  <use href="#p-ochre" x="1135" y="138"/>
+  <use href="#p-navy" x="1178" y="122"/>
+</svg>

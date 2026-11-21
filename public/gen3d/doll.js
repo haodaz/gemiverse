@@ -19,6 +19,7 @@ export async function buildDoll(THREE, look, kit, report = console.warn) {
   // newer versions of a module win when they exist (face2 over face, hair2 over hair)
   const first = async (...names) => { for (const n of names) { try { return await import(`./doll-${n}.js`); } catch {} } report(`doll-${names.at(-1)}: not available`); return null; };
   const [body, face, hair, tops, bottoms, shoes, motion] = await Promise.all([load("body"), first("face2", "face"), first("hair2", "hair"), first("tops"), first("bottoms"), first("shoes"), first("motion")]);
+  let headMod = null; try { headMod = await import("./doll-head.js"); } catch {}   // third version: head and face as one module, made after Neon was shown a render
   if (!body) return null;
   let root; try { root = body.buildBody(THREE, look, kit); } catch (e) { report("body: " + e.message); return null; }
   const head = root.getObjectByName("head");
@@ -26,7 +27,8 @@ export async function buildDoll(THREE, look, kit, report = console.warn) {
   for (const n of ["handL", "handR"]) root.getObjectByName(n)?.scale.multiplyScalar(1.7);
   head?.traverse((o) => { if (o.isMesh && o.material && o.userData.slot === "skin") { o.material = o.material.clone(); o.material.map = null; o.material.color = new THREE.Color(look.skin); o.material.needsUpdate = true; } });
   let faceGroup = null, hairGroup = null;
-  if (face && head) try { faceGroup = face.buildFace(THREE, look, kit); head.add(faceGroup); } catch (e) { report("face: " + e.message); }
+  if (headMod && head) try { for (const c of [...head.children]) c.visible = false; faceGroup = headMod.buildHead(THREE, look, kit); head.add(faceGroup); } catch (e) { report("head: " + e.message); headMod = null; for (const c of head.children) c.visible = true; }
+  if (!headMod && face && head) try { faceGroup = face.buildFace(THREE, look, kit); head.add(faceGroup); } catch (e) { report("face: " + e.message); }
   if (hair && head) try { hairGroup = hair.buildHair(THREE, look, kit); head.add(hairGroup); } catch (e) { report("hair: " + e.message); }
   for (const [mod, fn] of [[tops, "wearTop"], [bottoms, "wearBottom"], [shoes, "wearShoes"]]) if (mod?.[fn]) try { mod[fn](THREE, root, look, kit); } catch (e) { report(`${fn}: ${e.message}`); }
   // A ball joint under a sleeve, trouser leg, sock or boot is cloth-coloured and slightly larger, so no skin ball shows through.
@@ -41,11 +43,11 @@ export async function buildDoll(THREE, look, kit, report = console.warn) {
   return {
     root, look,
     play: (clip, opts) => { try { animator?.play(clip, opts); } catch (e) { report(`clip ${clip}: ${e.message}`); } },
-    express: (name) => { try { face?.setExpression?.(faceGroup, name); } catch {} },
+    express: (name) => { try { (headMod ?? face)?.setExpression?.(faceGroup, name); } catch {} },
     walkSpeed: (clip) => motion?.walkSpeed?.(clip) ?? 0.5,
     update(t, dt) {
       if (animator) animator.update(dt); else if (body.pose) body.pose(root, "stand", t);
-      if (faceGroup && face?.blink) face.blink(faceGroup, t);
+      if (faceGroup) (headMod ?? face)?.blink?.(faceGroup, t);
       if (hairGroup && hair?.sway) hair.sway(hairGroup, t, 1);
     },
   };

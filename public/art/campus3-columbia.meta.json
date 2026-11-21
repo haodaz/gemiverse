@@ -1,0 +1,27 @@
+{
+ "model": "gemini-4-neon",
+ "thinking": "medium",
+ "prompt": "Draw an isometric campus map for a classical uptown New York university. In the centre (around 800,440) the landmark: a domed neoclassical library with a colonnade and very wide stone steps with a seated bronze statue, facing a long lawn with crossing brick paths and a second colonnaded library at the far end. Around it symmetrical red-brick halls with copper-green roofs and limestone trim, iron gates, hedged walks, light blue banners on lamp posts. This is a rich, lovingly detailed university campus, not a diagram: academic buildings with real architecture (brick or stone walls with rows of mullioned windows, cornices, entrance porticos with steps, pitched or flat roofs with chimneys, skylights and roof units), a quad with crossing paved paths, benches, lamp posts, bike racks, hedges, flower beds, a variety of trees (round, tall, flowering) with shadows, a sports court, a small amphitheatre, picnic tables, a bus stop on the edge street, a few tiny simplified people walking and sitting (no faces). Colour: buildings in warm brick red, sandstone and cream with slate or copper-green roofs; lawns in two soft greens; paths in pale stone. Keep scenery slightly softer in saturation than a toy, because four special buildings will be placed on top later and must stand out. Leave FOUR clear empty building plots, each an isometric diamond of pale paving 260 wide and 130 tall with a darker edging and a short path connecting it to the quad, centred exactly at (340,330), (1260,330), (340,650), (1260,650); draw nothing on the plots. viewBox 0 0 1600 900; fill the entire canvas to every edge with campus (lawn, streets, buildings cropped by the edges); no sky, no empty margins. True isometric projection throughout (2:1 dimetric: ground lines at 26.57 degrees, verticals vertical), the look of a polished isometric city-builder game. Flat vector shading with three tones per surface (lit side, shaded side, roof), crisp edges, soft ground shadows at one consistent angle, no black outlines.",
+ "usage": {
+  "total_tokens": 50409,
+  "total_input_tokens": 528,
+  "input_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 528
+   }
+  ],
+  "total_cached_tokens": 0,
+  "total_output_tokens": 34461,
+  "output_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 34461
+   }
+  ],
+  "total_tool_use_tokens": 0,
+  "total_thought_tokens": 15420
+ },
+ "ms": 448828,
+ "made_at": "2026-11-21T17:29:53.655Z"
+}
