@@ -52,6 +52,9 @@ export default function Room() {
   const [lang, setLang] = useState<Lang>("en");
   const [panel, setPanel] = useState<Panel>(null);
   const [deskView, setDeskView] = useState(false);
+  // First visit: there is no account system. Who you are to your Gemi lives in this browser only (gemi.me.<school>).
+  const [me, setMe] = useState<{ name: string; demo?: boolean } | null | undefined>(undefined);
+  const [draft, setDraft] = useState({ name: "", about: "", step: 0 });
   const [space, setSpace] = useState(0);   // 0 is the room; the others are spaces the Gemi opens with Gem Stars it saved
   const [head, setHead] = useState<{ x: number; y: number } | null>(null);
   const [spoke, setSpoke] = useState<{ text: string; until: number } | null>(null);
@@ -88,7 +91,7 @@ export default function Room() {
       if (m.type === "tapped") setTap(m.value);
       if (m.type === "released") setTap(null);
       if (m.type === "open") { if (m.value === "door") { setPanel(null); setDeskView(false); setCampus(true); } else if (m.value === "wardrobe") setPanel("wardrobe"); }
-      if (m.type === "ready" && school) { let saved = null; try { saved = JSON.parse(localStorage.getItem(`gemi.look.${school}`) ?? "null"); } catch {} send("look", saved ?? PRESETS[school].look); if (saved) setLook(saved); try { setOwned(JSON.parse(localStorage.getItem(`gemi.inv.${school}`) ?? "[]")); } catch {} try { setWent(JSON.parse(localStorage.getItem(`gemi.went.${school}`) ?? "[]")); guesses.current = JSON.parse(localStorage.getItem(`gemi.guess.${school}`) ?? "{}"); } catch {} setTimeout(() => auto.current?.(), 600); }
+      if (m.type === "ready" && school) { let saved = null; try { saved = JSON.parse(localStorage.getItem(`gemi.look.${school}`) ?? "null"); } catch {} send("look", saved ?? PRESETS[school].look); if (saved) setLook(saved); try { setOwned(JSON.parse(localStorage.getItem(`gemi.inv.${school}`) ?? "[]")); } catch {} try { setMe(JSON.parse(localStorage.getItem(`gemi.me.${school}`) ?? "null")); } catch { setMe(null); } try { setWent(JSON.parse(localStorage.getItem(`gemi.went.${school}`) ?? "[]")); guesses.current = JSON.parse(localStorage.getItem(`gemi.guess.${school}`) ?? "{}"); } catch {} setTimeout(() => auto.current?.(), 600); }
       if (m.type === "layout" && school) { const it = String(m.value?.item ?? "something"); roomTouched.current = it; lastTouch.current = Date.now();
         setLog((l) => { const n = [...l, { id: Math.random().toString(36).slice(2, 10), at: new Date().toISOString(), type: "room" as const, by: "student" as const, what: `moved the ${it}`, item: it }]; saveLog(school, n); return n; }); }
       if (m.type === "focus") { if (m.value === "desk") setDeskView(true); else if (m.value === "room") setDeskView(false); }   // a click on the desk in 3D enters the desk view; panels open only from buttons
@@ -110,7 +113,7 @@ export default function Room() {
   const auto = useRef<(() => void) | null>(null), lastTouch = useRef(0), [now, setNow] = useState<ReturnType<typeof decideNow> | null>(null), diaryDone = useRef(false), roomTouched = useRef<string | null>(null);
   useEffect(() => { lastTouch.current = Date.now(); const touch = () => { lastTouch.current = Date.now(); }; addEventListener("pointerdown", touch); addEventListener("keydown", touch); return () => { removeEventListener("pointerdown", touch); removeEventListener("keydown", touch); }; }, []);
   useEffect(() => { const id = setInterval(() => auto.current?.(), 5000); return () => clearInterval(id); }, []);
-  const s = school ? SCHOOLS[school] : null, preset = school ? PRESETS[school] : null;
+  const s = school ? SCHOOLS[school] : null, preset = school ? { ...PRESETS[school], gemiName: me?.name || PRESETS[school].gemiName } : null;
   const evidenceOf = useMemo(() => { const m: Record<string, Evidence[]> = {}; for (const e of base?.evidence ?? []) (m[e.entity_id] ??= []).push(e); return m; }, [base]);
   if (!s || !preset || !school) return null;
   const tt = (k: string) => t(k, lang);
@@ -275,6 +278,36 @@ export default function Room() {
         <IconButton icon="abilities" label={tt("btn_more")} active={panel === "tools"} accent={s.soft} onClick={() => openPanel(panel === "tools" ? null : "tools")} />
         <IconButton icon="outbox" label={tt("btn_outbox")} active={panel === "outbox"} accent={s.soft} onClick={() => openPanel(panel === "outbox" ? null : "outbox")} />
       </div>
+
+      {me === null && (() => {
+        const begin = (m: { name: string; demo?: boolean }) => { try { localStorage.setItem(`gemi.me.${school}`, JSON.stringify(m)); } catch {} setMe(m); };
+        const finish = () => { const name = draft.name.trim() || PRESETS[school!].gemiName; begin({ name }); if (draft.about.trim()) { setPanel("talk"); setTimeout(() => onSend({ kind: "text", text: draft.about.trim() }), 400); } };
+        const btn = "rounded-full border-[3px] px-6 py-2 text-base font-bold";
+        return (
+          <div className="absolute inset-0 z-40 grid place-items-center bg-[#2b2536]/45 backdrop-blur-[2px]">
+            <div className="w-[min(34rem,90vw)] rounded-2xl border-[3px] bg-[#fffaf0] p-7" style={{ borderColor: INK, boxShadow: `0 8px 0 ${INK}55` }}>
+              <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#8a8296]">{tri("First time here", "第一次来", "Primera vez")} · {draft.step + 1} / 3</p>
+              {draft.step === 0 && (<>
+                <h2 className="mt-2 text-3xl font-bold">{tri("Name your Gemi", "给你的 Gemi 起个名字", "Ponle nombre a tu Gemi")}</h2>
+                <p className="mt-2 text-[15px] text-[#5f576c]">{tri("It is a small you that lives on campus. It is not you, and it does not have to look like you.", "它是住在校园里的一个小小的你。它不是你本人，也不必长得像你。", "Es un pequeño tú que vive en el campus. No eres tú, ni tiene que parecerse a ti.")}</p>
+                <input autoFocus value={draft.name} onChange={(e) => setDraft({ ...draft, name: e.target.value.slice(0, 16) })} placeholder={PRESETS[school!].gemiName} className="mt-4 w-full rounded-xl border-[3px] bg-white px-4 py-2.5 text-lg font-bold outline-none" style={{ borderColor: INK }} /></>)}
+              {draft.step === 1 && (<>
+                <h2 className="mt-2 text-3xl font-bold">{tri("Tell it one thing about you", "告诉它一件关于你的事", "Cuéntale algo de ti")}</h2>
+                <p className="mt-2 text-[15px] text-[#5f576c]">{tri("Any language. What you are looking for this term, or what tires you. It keeps this in your browser only, and you can undo it.", "什么语言都行。这学期想找什么，或者什么让你累。它只存在你的浏览器里，可以撤回。", "En cualquier idioma. Qué buscas este curso o qué te cansa. Se guarda solo en tu navegador.")}</p>
+                <textarea autoFocus value={draft.about} onChange={(e) => setDraft({ ...draft, about: e.target.value.slice(0, 600) })} rows={4} className="mt-4 w-full resize-none rounded-xl border-[3px] bg-white px-4 py-2.5 text-[15px] outline-none" style={{ borderColor: INK }} /></>)}
+              {draft.step === 2 && (<>
+                <h2 className="mt-2 text-3xl font-bold">{tri("How it works here", "这里的规矩", "Cómo funciona")}</h2>
+                <ul className="mt-3 space-y-2 text-[15px] leading-snug text-[#3d3648]">
+                  <li><b>{tri("What you ask for is free.", "你让它做的事不花钱。", "Lo que pides es gratis.")}</b> {tri("Its Gem Stars are for what it decides to do on its own.", "Gem Star 是它自己拿主意时花的。", "Sus Gem Stars son para lo que decide por su cuenta.")}</li>
+                  <li><b>{tri("It tells you only what it could check.", "它只告诉你核对过的。", "Solo te cuenta lo que pudo comprobar.")}</b> {tri("Open any card to see the source.", "点开任何一张卡都能看到出处。", "Abre cualquier tarjeta para ver la fuente.")}</li>
+                  <li><b>{tri("You decide.", "决定是你做。", "Tú decides.")}</b> {tri("Clothes are free in the wardrobe. Keepsakes come from things you really went to.", "衣柜里的衣服都免费。纪念品来自你真的去了的事。", "La ropa es gratis. Los recuerdos vienen de lo que hiciste de verdad.")}</li></ul></>)}
+              <div className="mt-6 flex items-center justify-between">
+                <button onClick={() => begin({ name: PRESETS[school!].gemiName, demo: true })} className="text-sm text-[#8a8296] underline">{tri("Skip: use the demo Gemi", "跳过：用演示的 Gemi", "Saltar: usar el Gemi de demostración")}</button>
+                <div className="flex gap-2">{draft.step > 0 && <button onClick={() => setDraft({ ...draft, step: draft.step - 1 })} className={btn} style={{ borderColor: INK, background: "#fff" }}>{tri("Back", "上一步", "Atrás")}</button>}
+                  <button onClick={() => (draft.step < 2 ? setDraft({ ...draft, step: draft.step + 1 }) : finish())} className={btn} style={{ borderColor: INK, background: "#ffe08a", boxShadow: `0 4px 0 ${INK}` }}>{draft.step < 2 ? tri("Next", "下一步", "Siguiente") : tri("Wake it up", "叫醒它", "Despertarlo")}</button></div>
+              </div>
+            </div>
+          </div>); })()}
 
       {/* What the Gemi says on its own comes up as a dialogue card, as a character speaks in a game: name tag, typed line, tap to dismiss. */}
       {spoke && !campus && !panel && !tap && <Dialogue key={spoke.text + lang} name={preset.gemiName} text={say(spoke.text, lang)} accent={s.accent} onDone={() => setSpoke(null)} />}

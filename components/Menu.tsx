@@ -8,6 +8,7 @@ const TRACKS: [string, string][] = [["room-morning", "Room, morning"], ["room-du
 const L: Record<string, Record<Lang, string>> = {
   menu: { en: "Menu", zh: "菜单", es: "Menú" }, language: { en: "Language", zh: "语言", es: "Idioma" }, music: { en: "Music", zh: "音乐", es: "Música" }, off: { en: "Off", zh: "关", es: "No" },
   account: { en: "Account", zh: "账号", es: "Cuenta" }, local: { en: "Kept in this browser only. Sign-in opens later.", zh: "现在只存在这个浏览器里，登录稍后开放。", es: "Solo en este navegador. El acceso llegará después." },
+  fresh: { en: "Start over as a new student", zh: "当作新同学重新开始", es: "Empezar de nuevo" },
   more: { en: "Behind the room", zh: "小屋背后", es: "Detrás del cuarto" }, school: { en: "Change school", zh: "换学校", es: "Cambiar de escuela" },
 };
 export function Menu({ lang, onLang }: { lang: Lang; onLang: (l: Lang) => void }) {
@@ -35,6 +36,7 @@ export function Menu({ lang, onLang }: { lang: Lang; onLang: (l: Lang) => void }
               <button onClick={() => setIdx((idx + 1) % TRACKS.length)} aria-label="Next track" className="grid h-7 w-7 place-items-center rounded-full text-lg font-bold hover:bg-[#f1ebf7]">›</button></div>
           </div>
           <div className={head}>{L.account[lang]}</div><p className="text-xs leading-snug text-[#6d6579]">{L.local[lang]}</p>
+          <button onClick={() => { try { const sc = localStorage.getItem("gemi.school"); for (const k of Object.keys(localStorage)) if (k.startsWith("gemi.") && k.endsWith(`.${sc}`)) localStorage.removeItem(k); } catch {} location.reload(); }} className="mt-1.5 rounded-full border-2 px-3 py-0.5 text-xs font-bold" style={{ borderColor: INK }}>{L.fresh[lang]}</button>
           <div className={head}>{L.more[lang]}</div>
           <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm font-bold underline">{[["/", L.school[lang]], ["/meet", "Gemi to Gemi"], ["/foundry", "Foundry"], ["/admin", "Admin"], ["/deck", "Deck"]].map(([h, n]) => <a key={h} href={h}>{n}</a>)}</div>
         </div>)}
