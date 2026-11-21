@@ -99,3 +99,9 @@ Entry format:
 - Check: opened in the browser. Room, 11 items and the character render. The three buttons work: palette change recolours everything, style change swaps plank floor for herringbone, the bed frame for an upholstered one, the wooden chair for a swivel chair; random look changes hair, skin, headwear.
 - Failed / still wrong: items.js used a global THREE in its helpers although the contract said not to (the page now provides it). Slot layout crowds the desk behind the shelf and wardrobe. The character is small and its face is hard to read from the default camera.
 - The flat SVG scenes stay in `public/art/` as a fallback.
+
+## 11:22 · Room layout is data on a grid; Arrange mode; the Gemi moves on its own
+- Decided (Elodie): when arranging, switch to a 2.5D view with a grid so models and positions are easy to compute. When nobody is talking to it, the Gemi keeps itself busy in the room, stays quiet, or is out on campus. The campus outside is 2D: a few shared functional buildings plus each school's landmarks as decoration, with the Gemi shown on the map.
+- How: a layout is plain data (item → position, quarter turns, kind) on a 0.25 m grid over the 4 m × 4 m floor, saved in the browser. Arrange mode shows the grid; click an item, click a cell; a move is refused if the footprint leaves the room or overlaps another floor item. Outside Arrange mode the Gemi walks between five spots (desk, window, rug, middle of the room, door), changes expression and shows a short line about what it is doing.
+- Check: in the browser, moved the plant from the back wall to the front; it stayed after reload. Rotate and Reset buttons appear only in Arrange mode. The Gemi walked to a spot and stopped.
+- Not yet: its behaviour is a random loop, not driven by its thinking; the campus map; texture detail on materials.

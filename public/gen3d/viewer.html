@@ -2,7 +2,7 @@
 <meta charset="utf-8"><title>Gemiverse 3D lab</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <style>html,body{margin:0;height:100%;background:#f3eef8;font:14px system-ui}#ui{position:fixed;left:12px;top:12px;display:flex;gap:8px;flex-wrap:wrap;max-width:60vw}button{border:0;border-radius:999px;padding:8px 14px;background:#fff;box-shadow:0 1px 4px #0002;cursor:pointer}#err{position:fixed;bottom:8px;left:8px;color:#b00;white-space:pre-wrap;max-width:90vw}</style>
-<div id="ui"><button id="pal">Change colours</button><button id="look">Random look</button><button id="var">Next furniture style</button></div><div id="err"></div>
+<div id="ui"><button id="pal">Change colours</button><button id="look">Random look</button><button id="var">Next furniture style</button><button id="arr">Arrange</button><button id="rot" hidden>Rotate</button><button id="reset" hidden>Reset layout</button><span id="say" style="align-self:center;padding:6px 12px;background:#fff;border-radius:999px;box-shadow:0 1px 4px #0002"></span></div><div id="err"></div>
 <script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}</script>
 <script type="module">
 import * as THREE from "three";
@@ -24,7 +24,7 @@ renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadow
 renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.outputColorSpace = THREE.SRGBColorSpace;
 document.body.appendChild(renderer.domElement);
 const scene = new THREE.Scene(); scene.background = new THREE.Color("#f3eef8");
-const d = 3.1, a = innerWidth / innerHeight;
+const d = 2.9, a = innerWidth / innerHeight;
 const camera = new THREE.OrthographicCamera(-d * a, d * a, d, -d, 0.1, 100);
 camera.position.set(9, 8, 9); const controls = new OrbitControls(camera, renderer.domElement); controls.target.set(0, 1.0, 0); controls.update();
 scene.environment = new THREE.PMREMGenerator(renderer).fromScene(new RoomEnvironment(), 0.04).texture; scene.environmentIntensity = 0.55;
@@ -39,28 +39,89 @@ const PALETTES = [
   { wall: "#e4eef7", trim: "#ffffff", floor: "#b98a5e", primary: "#8fc1e8", secondary: "#fdf6e8", accent: "#f6c453", wood: "#8a5a3a", metal: "#9aa3ad", fabric: "#8fc1e8" },
   { wall: "#e9f1e4", trim: "#fffaf0", floor: "#e2c9a0", primary: "#7fb48a", secondary: "#f3e1cf", accent: "#e98b6d", wood: "#e2c9a0", metal: "#2f2f35", fabric: "#7fb48a" },
 ];
-let pi = 0, vi = 0, world, who;
+// The room is a 4 m x 4 m floor on a 0.25 m grid. A layout is data: item name -> { p:[x,y,z], r: quarter turns, kind }.
+// Floor items snap to the grid and may not overlap; wall and surface items keep their place.
+const GRID = 0.25;
+const DEFAULT_LAYOUT = {
+  bed: { p: [-1.4, 0, -0.95], r: 0, kind: "floor" }, wardrobe: { p: [-0.4, 0, -1.7], r: 0, kind: "floor" },
+  desk: { p: [0.7, 0, -1.65], r: 0, kind: "floor" }, chair: { p: [0.7, 0, -1.05], r: 2, kind: "floor" },
+  shelf: { p: [1.6, 0, -1.8], r: 0, kind: "floor" }, rug: { p: [0.25, 0, 0.5], r: 0, kind: "rug" },
+  plant: { p: [1.7, 0, -0.9], r: 0, kind: "floor" }, lamp: { p: [0.25, 0.75, -1.72], r: 0, kind: "surface" },
+  diary: { p: [0.95, 0.75, -1.55], r: 0, kind: "surface" }, wallArt: { p: [-1.4, 1.65, -1.97], r: 0, kind: "wall" },
+  corkboard: { p: [-1.97, 1.5, -0.7], r: 1, kind: "wall" },
+};
+let layout; try { layout = JSON.parse(localStorage.getItem("gemi.layout")) } catch {} layout ??= structuredClone(DEFAULT_LAYOUT);
+const saveLayout = () => { try { localStorage.setItem("gemi.layout", JSON.stringify(layout)) } catch {} };
+let pi = 0, vi = 0, world, who, placed = {}, arranging = false, picked = null, lookNow = null;
+const grid = new THREE.GridHelper(4, 16, "#5b46e0", "#7c6cf0"); grid.position.y = 0.012; grid.visible = false; scene.add(grid);
+const marker = new THREE.BoxHelper(new THREE.Object3D(), "#7c6cf0"); marker.visible = false; scene.add(marker);
+function place(name) { const g = placed[name], L = layout[name]; g.position.set(...L.p); g.rotation.y = L.r * Math.PI / 2; }
 function build() {
-  if (world) scene.remove(world); world = new THREE.Group(); scene.add(world);
+  if (world) scene.remove(world); world = new THREE.Group(); scene.add(world); placed = {};
   const p = PALETTES[pi];
   try { if (room) world.add(room.buildRoom(THREE, { wall: p.wall, trim: p.trim, floor: p.floor, floorStyle: ["planks", "herringbone", "carpet"][vi % 3], windowView: null })); } catch (e) { err("room: " + e.message); }
-  if (room && items) for (const [name, slot] of Object.entries(room.SLOTS)) {
+  if (items) for (const name of Object.keys(layout)) {
     const make = items.ITEMS[name]; if (!make) continue;
-    try { const g = make(THREE, { ...p, material: ["wood", "painted", "fabric"][vi % 3], variant: vi % 3 }); g.position.set(...slot.position); g.rotation.y = slot.rotationY ?? 0; world.add(g); } catch (e) { err(`${name}: ${e.message}`); }
+    try { const g = make(THREE, { ...p, material: ["wood", "painted", "fabric"][vi % 3], variant: vi % 3 }); g.userData.item = name; placed[name] = g; place(name); world.add(g); } catch (e) { err(`${name}: ${e.message}`); }
   }
-  spawn();
+  spawn(lookNow);
 }
-function spawn() {
+function spawn(look) {
   if (!character) return; if (who) world.remove(who);
   const P = character.PARTS, r = (a) => a[Math.floor(Math.random() * a.length)];
-  try { who = character.buildCharacter(THREE, { skin: r(P.skin), hairStyle: r(P.hairStyles), hairColor: r(P.hairColors), eyes: r(P.eyes), top: r(P.tops), topColor: PALETTES[pi].primary, bottom: r(P.bottoms), bottomColor: "#4a5568", shoeColor: "#ffffff", headwear: r(P.headwear), glasses: r(P.glasses), blush: true });
-    who.position.set(0.3, 0, 0.6); world.add(who); character.setExpression?.(who, "happy"); } catch (e) { err("character: " + e.message); }
+  lookNow = look ?? { skin: r(P.skin), hairStyle: r(P.hairStyles), hairColor: r(P.hairColors), eyes: r(P.eyes), top: r(P.tops), bottom: r(P.bottoms), bottomColor: "#4a5568", shoeColor: "#ffffff", headwear: r(P.headwear), glasses: r(P.glasses), blush: true };
+  try { who = character.buildCharacter(THREE, { ...lookNow, topColor: PALETTES[pi].primary });
+    who.scale.setScalar(1.25); who.position.set(0.25, 0, 0.5); world.add(who); character.setExpression?.(who, "happy"); } catch (e) { err("character: " + e.message); }
 }
+// What it does when nobody is talking to it: a small loop of walking to a spot and staying there a while.
+const SPOTS = [
+  { at: [0.7, -0.55], face: Math.PI, say: "writing in the diary", mood: "thinking" },
+  { at: [1.2, -0.3], face: Math.PI, say: "looking out the window", mood: "awake" },
+  { at: [0.25, 0.5], face: 0, say: "just being here", mood: "happy" },
+  { at: [-0.75, 0.2], face: -Math.PI / 2, say: "wondering what you'd like", mood: "unsure" },
+  { at: [-1.3, 1.1], face: -Math.PI / 2, say: "about to head out", mood: "awake" },
+];
+let goal = null, waitUntil = 0;
+function live(t, dt) {
+  if (!who || arranging) return;
+  if (!goal && t > waitUntil) { goal = SPOTS[Math.floor(Math.random() * SPOTS.length)]; document.getElementById("say").textContent = "…"; }
+  if (goal) {
+    const dx = goal.at[0] - who.position.x, dz = goal.at[1] - who.position.z, dist = Math.hypot(dx, dz);
+    if (dist < 0.03) { who.rotation.y = goal.face; character.setExpression?.(who, goal.mood); document.getElementById("say").textContent = goal.say; waitUntil = t + 4 + Math.random() * 4; goal = null; }
+    else { const step = Math.min(dist, 0.55 * dt); who.position.x += dx / dist * step; who.position.z += dz / dist * step; who.rotation.y = Math.atan2(dx, dz); who.position.y = Math.abs(Math.sin(t * 9)) * 0.025; }
+  } else who.position.y = 0;
+}
+// Arrange mode: the same room, with the grid showing. Click an item, then click a floor cell.
+const ray = new THREE.Raycaster(), floorPlane = new THREE.Plane(new THREE.Vector3(0, 1, 0), 0);
+const boxOf = (name, p, r) => { const g = placed[name], keepP = g.position.clone(), keepR = g.rotation.y; g.position.set(...p); g.rotation.y = r * Math.PI / 2; g.updateMatrixWorld(true); const b = new THREE.Box3().setFromObject(g); g.position.copy(keepP); g.rotation.y = keepR; g.updateMatrixWorld(true); return b; };
+function fits(name, p, r) {
+  const b = boxOf(name, p, r); if (b.min.x < -2.01 || b.max.x > 2.01 || b.min.z < -2.01 || b.max.z > 2.01) return false;
+  b.expandByScalar(-0.03);
+  return !Object.keys(placed).some((o) => o !== name && layout[o].kind === "floor" && layout[name].kind === "floor" && b.intersectsBox(boxOf(o, layout[o].p, layout[o].r)));
+}
+renderer.domElement.addEventListener("click", (ev) => {
+  if (!arranging) return;
+  ray.setFromCamera(new THREE.Vector2(ev.clientX / innerWidth * 2 - 1, -(ev.clientY / innerHeight) * 2 + 1), camera);
+  const hit = ray.intersectObjects(Object.values(placed), true)[0];
+  let o = hit?.object; while (o && !o.userData.item) o = o.parent;
+  if (o && (!picked || o.userData.item !== picked) && ["floor", "rug"].includes(layout[o.userData.item].kind)) { picked = o.userData.item; marker.setFromObject(o); marker.visible = true; return; }
+  if (!picked) return;
+  const pt = new THREE.Vector3(); if (!ray.ray.intersectPlane(floorPlane, pt)) return;
+  const p = [Math.round(pt.x / GRID) * GRID, 0, Math.round(pt.z / GRID) * GRID];
+  if (fits(picked, p, layout[picked].r)) { layout[picked].p = p; place(picked); marker.setFromObject(placed[picked]); saveLayout(); document.getElementById("say").textContent = `${picked} moved`; }
+  else document.getElementById("say").textContent = "no room there";
+});
+document.getElementById("arr").onclick = () => { arranging = !arranging; grid.visible = arranging; marker.visible = false; picked = null; if (who) who.visible = !arranging;
+  document.getElementById("rot").hidden = document.getElementById("reset").hidden = !arranging; document.getElementById("arr").textContent = arranging ? "Done" : "Arrange";
+  document.getElementById("say").textContent = arranging ? "click an item, then a floor cell" : ""; };
+document.getElementById("rot").onclick = () => { if (!picked) return; const r = (layout[picked].r + 1) % 4; if (fits(picked, layout[picked].p, r)) { layout[picked].r = r; place(picked); marker.setFromObject(placed[picked]); saveLayout(); } else document.getElementById("say").textContent = "no room to turn"; };
+document.getElementById("reset").onclick = () => { layout = structuredClone(DEFAULT_LAYOUT); saveLayout(); picked = null; marker.visible = false; build(); who.visible = false; };
 build();
 document.getElementById("pal").onclick = () => { pi = (pi + 1) % PALETTES.length; build(); };
 document.getElementById("var").onclick = () => { vi++; build(); };
-document.getElementById("look").onclick = spawn;
+document.getElementById("look").onclick = () => spawn(null);
 addEventListener("resize", () => { const a = innerWidth / innerHeight; camera.left = -d * a; camera.right = d * a; camera.updateProjectionMatrix(); renderer.setSize(innerWidth, innerHeight); composer.setSize(innerWidth, innerHeight); });
 const clock = new THREE.Clock();
-renderer.setAnimationLoop(() => { const t = clock.getElapsedTime(); if (who && character?.idle) try { character.idle(who, t); } catch {} composer.render(); });
+let last = 0;
+renderer.setAnimationLoop(() => { const t = clock.getElapsedTime(), dt = Math.min(0.05, t - last); last = t; live(t, dt); if (who && character?.idle) try { character.idle(who, t); } catch {} composer.render(); });
 </script>
