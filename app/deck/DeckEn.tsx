@@ -37,7 +37,7 @@ const LAYERS: [string, string, string, string][] = [
   ["5 · Autonomy and governance", "A first-match policy over measured state; 14 registered methods, two purses, stages, confirm, kill switch.", "12 policy rows, in code", "#c8e6a0"],
   ["4 · Mind", "Seven axes, each a position and an uncertainty. One update rule; evidence weighted by how it was earned. Append-only log, replay to undo.", "Carbon cut 9 axes to 7", "#a8e0c0"],
   ["3 · The gate", "One Decisions question per field against the source. Below 0.8 it is withheld, and shown as withheld.", `${pct(PG.system_v2.error_rate)} error on unseen pages`, "#a8d4ff"],
-  ["2 · The shared base", "Entities, links, evidence with source tier and quote. Designed by Carbon and a second designer in parallel, then merged.", "166 entities, 420 checked fields", "#c8b4f0"],
+  ["2 · The shared base", "Entities, links, evidence with source tier and quote. Designed by Carbon and a second designer in parallel, then merged.", "467 entities, 1,054 checked fields", "#c8b4f0"],
   ["1 · Public pages", "Static pages and public JSON feeds of six universities. Hidden text, missing years, bot walls.", "202 pages read today", "#e6dfd0"],
 ];
 const MAP: [string, string, string, string][] = [

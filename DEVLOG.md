@@ -253,3 +253,7 @@ Entry format:
 ## 16:00 · A try at the character's proportions, not shipped
 - **What**: compared our doll with the Gemi in the generated stills (larger head, smaller body). Tried scaling the head 1.25 and 1.4 times, with and without a shorter body, behind `?cute=`.
 - **Result**: worse. The neck shows, the fringe no longer sits on the face, and the hair does not scale with the head. Left off by default. The real fix is a head, hair and face built to one proportion, which is more than a parameter.
+
+## 16:05 · Second harvest; film finished; builder-guide fixes
+- **Second harvest** (`06b-harvest-more.mjs`, record in `base/runs/06b-harvest-more.json`): 320 records from the same public feeds; 304 entered (88 clubs, 216 events; NYU 198, Columbia 106), 16 rejected at the title check, 634 fields checked and passed. Hydrogen tagging 112,515 tokens, Decisions checking 93,277. The base went from 166 to 467 entities. Opportunities: still 0, there is no feed for them.
+- **Film**: cover title on the first shot, a quiet Lyria track under the voice, 57.6 s. One build was cut short by `| head` closing the pipe and gave a 24 s file; found by checking the duration, rebuilt in full.

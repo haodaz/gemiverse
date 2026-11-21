@@ -55,7 +55,7 @@ export default function Film() {
 post("/decisions", {
   model: "gemini-decision-1",
   questions: { start: { type: "noul", ... } } })`}</pre></div>
-        <div className="space-y-3">{[["A shared base", "designed by Gemini 4 Carbon · 166 checked entities", "#c8b4f0"], ["A gate on every field", "Decisions API · confidence checked in code", "#a8d4ff"], ["A mind with uncertainty", "seven axes · one update rule · undo", "#a8e0c0"], ["Autonomy under rules", "12 policy rows · 14 governed tools · real tokens", "#ffe08a"], ["A Managed Agent", "goes back to the source, live, in a sandbox", "#ffd6e0"]].map(([t, d, col]) => (
+        <div className="space-y-3">{[["A shared base", "designed by Gemini 4 Carbon · 467 checked entities", "#c8b4f0"], ["A gate on every field", "Decisions API · confidence checked in code", "#a8d4ff"], ["A mind with uncertainty", "seven axes · one update rule · undo", "#a8e0c0"], ["Autonomy under rules", "12 policy rows · 14 governed tools · real tokens", "#ffe08a"], ["A Managed Agent", "goes back to the source, live, in a sandbox", "#ffd6e0"]].map(([t, d, col]) => (
           <div key={t} className="rounded-3xl border-[4px] px-7 py-4" style={{ borderColor: INK, background: col }}><p className="text-[2.1rem] font-semibold leading-tight">{t}</p><p className="text-[1.35rem]" style={{ color: "#4a4356" }}>{d}</p></div>))}</div></div>)}
 
       {c === "deeds" && (<div className="w-full max-w-[1300px]"><div className="grid grid-cols-2 gap-12">

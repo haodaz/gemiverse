@@ -110,7 +110,7 @@ export default function Home() {
           <div className="mt-10 grid grid-cols-3 gap-6">
             {[["0 of 76", "made-up details shown", "On ten event pages it had never seen. A single AI call on the same pages showed 29 details the page did not contain."],
               [`${(PG.system_v2.error_rate * 100).toFixed(1)}%`, "facts wrong", `On ${proof.pages.n} raw pages from six universities, against ${(PG.baseline.error_rate * 100).toFixed(1)}% for a single AI call. Our first try did worse than that; we kept the record.`],
-              ["166", "checked things on campus", "Events, clubs and places in the shared base today, each field with the sentence it came from."]].map(([v, l, d]) => (
+              ["467", "checked things on campus", "Events, clubs and places in the shared base today, each field with the sentence it came from."]].map(([v, l, d]) => (
               <div key={l} className="rounded-2xl border-2 p-6" style={{ borderColor: INK }}><div className="text-6xl font-semibold tracking-tight" style={{ color: PUR }}>{v}</div><div className="mt-1 text-lg font-semibold">{l}</div><p className="mt-2 text-[15px] leading-relaxed" style={{ color: MUTE }}>{d}</p></div>))}
           </div>
           <p className="mt-6 text-[15px]" style={{ color: MUTE }}>It still gets things wrong, mostly events that are both in a room and online. The full method, the failures and what we changed are in <a href="/deck" className="font-semibold underline" style={{ color: INK }}>how it works</a>.</p>
