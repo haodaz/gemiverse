@@ -67,6 +67,7 @@ const T: Record<string, Record<Lang, string>> = {
   its_idea: { en: "its own idea, 3 Gem Stars", zh: "它自己要去的，花了 3 颗 Gem Star", es: "idea suya, 3 Gem Stars" }, your_idea: { en: "you asked", zh: "你让它去的", es: "tú lo pediste" },
   back_room: { en: "Back to the room", zh: "回小屋", es: "Volver al cuarto" },
   added_base: { en: "Added to the shared base: every Gemi can now find it.", zh: "已加入共享底座：所有 Gemi 都能读到它了。", es: "Añadido a la base compartida: todos los Gemi pueden encontrarlo." },
+  same_base: { en: "Already in the base, now seen from two sources:", zh: "底座里已经有了，现在有两个来源印证：", es: "Ya está en la base, ahora con dos fuentes:" },
   cost: { en: "cost", zh: "花费", es: "coste" }, you: { en: "You", zh: "你", es: "Tú" },
 };
 export const t = (key: string, lang: Lang) => T[key]?.[lang] ?? T[key]?.en ?? key;

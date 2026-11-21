@@ -233,6 +233,7 @@ export default function Room() {
                         {i.saw.fields.map((f: any) => <div key={f.field} className="flex justify-between gap-3 py-0.5"><span className="text-[#8a8296]">{f.field.replace(/_/g, " ")}</span><span className="text-right">{f.passed ? String(f.value) : <i className="text-[#b0a8ba]">{tt("withheld")}</i>} <b className="tabular-nums" style={{ color: f.passed ? "#2f7a3d" : "#b26a00" }}>{Math.round(f.confidence * 100)}%</b></span></div>)}
                         {!i.saw.fields.some((f: any) => f.field === "start") && <div className="py-0.5 text-[#b26a00]">start: {tt("withheld")} (no year printed)</div>}
                         {i.saw.added && <div className="mt-1 rounded-lg bg-[#e6f5e6] px-2 py-1 font-semibold text-[#2f7a3d]">{tt("added_base")}</div>}
+                        {i.saw.same && <div className="mt-1 rounded-lg bg-[#e8eefc] px-2 py-1 font-semibold text-[#3a4f9a]">{tt("same_base")} “{i.saw.same.name}” ({Math.round(i.saw.same.confidence * 100)}%)</div>}
                       </div>
                     )}
                     {i.cost && <div className="mt-1.5 text-[10px] text-[#a79fb1]">{tt("cost")}: {i.cost}</div>}
