@@ -81,6 +81,7 @@ const sectionOf = (i: number) => { let k = 0; for (const [name, n] of SECTIONS) 
 
 export default function Deck({ onLang }: { onLang?: () => void }) {
   const [i, setI] = useState(0);
+  useEffect(() => { const n = +(new URLSearchParams(location.search).get("s") ?? 0); if (n > 0) setI(n - 1); }, []);   // ?s=14 opens on slide 14
 
   const slides: { id: string; body: ReactNode }[] = [
     { id: "Gemiverse", body: (
