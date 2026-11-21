@@ -241,3 +241,11 @@ Entry format:
 - **Room**: dialogue card for what the Gemi says on its own; one language at a time; menu; wardrobe as an inventory; door opens the map; the Gemi sits on the chair; first-visit setup in three steps. There is no account system: everything about the student is in the browser.
 - **Failures of mine**: twice a comment I appended swallowed the rest of a line and broke a 3D page for a minute. Now every 3D page is syntax-checked before commit.
 - **Video**: `scripts/video/` records each segment from the running app in headless Chrome (about 15 frames a second), voices the narration, and assembles. Waiting for models is not captured.
+
+## 15:50 · Read against the builder guide; three gaps closed
+- **Guide says**: check the Decisions confidence in code; do not prompt models in plain text to invent JSON tool calls; spend the hours on Decisions routing and a real Managed Agents verification loop; no mocked responses.
+- **Gap 1, fixed**: `decide()` now returns the confidence of every answer. The poster gate requires yes at 0.8 or more and confidence at 0.5 or more.
+- **Gap 2, fixed**: "what should the Gemi do about what it heard" was a JSON field written by Hydrogen. It is now a Decisions choice question over eight options with a catch-all `other`; under 0.6 confidence nothing is done. Tested on four requests and one vague sentence (routed to `other` at 0.82, about 260 ms).
+- **Gap 3, fixed**: the Managed Agent is wired (`/api/agent`, button "Look again, live" on each find). It fetches the source page itself in a Google-hosted sandbox; the Decisions API then judges each stored field against its report. Two runs: 30 s and 22 s, 19k and 28k tokens, 8 of 8 fields still on the page. Record in `base/runs/11-agent-trip.json`.
+- **Found while doing it**: a concept card for the video showed a room number I had made up. Replaced with the real checked fields of that event.
+- **Still open against the guide**: other prompts still ask Hydrogen for JSON in text rather than structured outputs; daily trips do not browse live.
