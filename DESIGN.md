@@ -46,6 +46,14 @@ The world graph, the learning graph and the Gemi's own growth were each designed
 - Growth: five dimensions, five stages (Unpacked, Observer, Scout, Interlocutor, Steward), 10 stars a day (6 for you, 4 for itself).
 - Tools and governance: 12 registered tools in three modes (think, act, make), enforced in `lib/kernel/`. Not yet reviewed by Carbon.
 
+## 3c. The flywheel · built
+What one Gemi checks, every Gemi reads for free. `/foundry` shows contents, checks, freshness, gaps and an anonymous "carried back" count per entity. A revisit compares a fingerprint of the page and spends tokens only if it changed. A checked poster shown by a student enters the base after an identity check. The base holds 166 entities and 471 checked fields, of which 420 passed.
+
+## 3d. Autonomy, methods and the room · built
+- Methods: twelve registered tools in three modes (think, act, make), `lib/kernel/tools.ts`. What the student asks for is free; Gem Stars pay only for what the Gemi does on its own.
+- Autonomy: one policy table, first match wins, `lib/kernel/autonomy.ts`. It never acts while the student is in the middle of something.
+- The room is a readout: `lib/kernel/space.ts` lists every fact and the one thing that shows it (desk cards, corkboard pins, Gem Star jars, trophies, the Gemi's place and expression).
+
 ## 4. The mind: one loop
 | Stage | What | Trust |
 |---|---|---|
