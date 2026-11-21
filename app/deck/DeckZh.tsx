@@ -76,7 +76,7 @@ const FAILS: [string, string, string, string][] = [
     "25 个全部可用（17 个静态页面，8 条数据源记录）"],
 ];
 
-const SECTIONS: [string, number][] = [["产品", 6], ["特色与价值", 7], ["过程", 6], ["展望", 3]];
+const SECTIONS: [string, number][] = [["产品", 6], ["特色与价值", 8], ["过程", 6], ["展望", 3]];
 const sectionOf = (i: number) => { let k = 0; for (const [name, n] of SECTIONS) { if (i < k + n) return name; k += n; } return ""; };
 
 export default function Deck({ onLang }: { onLang?: () => void }) {
@@ -252,6 +252,20 @@ export default function Deck({ onLang }: { onLang?: () => void }) {
         </div>
       </div>) },
 
+    { id: "长期养成", body: (
+      <div className="grid h-full grid-cols-[1.15fr_1fr] items-center gap-8">
+        <div><Eyebrow>长期养成 · 东西怎么来</Eyebrow><H>没有商店，没有货币。每样东西都对应一件真实发生的事。</H>
+          <table className="mt-4 w-full"><tbody>
+            <tr><Cell head w="22%">东西</Cell><Cell head w="40%">怎么来</Cell><Cell head>它代表什么</Cell></tr>
+            <tr><Cell><b>发型、衣服</b></Cell><Cell>衣柜里一开始就全部免费</Cell><Cell>不代表什么：长什么样是你自己的事</Cell></tr>
+            <tr><Cell><b>纪念品</b></Cell><Cell>你把留下的活动标成「我去了」</Cell><Cell>一次真实到场</Cell></tr>
+            <tr><Cell><b>小伙伴</b></Cell><Cell>它封存的预测猜你会留，而你真的去了</Cell><Cell>它猜对你的一次</Cell></tr>
+            <tr><Cell><b>新空间</b></Cell><Cell>只能由 Gemi 自己攒 Gem Star 打开</Cell><Cell>它忍住没花的那些天</Cell></tr>
+          </tbody></table>
+          <p className="mt-3 text-[15px] leading-snug text-[#4a4356]">这条规则是 <b>Gemini 4 Carbon</b> 在 14:50 读完整套设计后提出的，它否掉了「做任务换积分去小铺买」：积分循环就是打卡诱导。每个空间有自己的用途：阅览室用来读深，屋顶用来认识别的 Gemi，实验室用来检验一个猜想。空间今天可以预览，功能还在设计中。</p></div>
+        <div className="h-[80vh]"><Live src="/gen3d/spaces.html?embed=1&auto=3&friends=pip,kai" /></div>
+      </div>) },
+
     { id: "基线", body: (
       <div className="h-full"><Eyebrow>问题一 · 基线是什么，好了多少</Eyebrow><H>对手是在同样页面上的一次模型调用。</H>
         <div className="mt-4 grid grid-cols-[1.25fr_1fr] gap-10">
@@ -320,7 +334,7 @@ export default function Deck({ onLang }: { onLang?: () => void }) {
             <tr><Cell>一个把自身状态显示出来的 3D 房间；一个带关节的角色，有 29 个动作和 12 种表情</Cell><Cell><b>角色还很粗糙。</b>生成的三张脸都失败了；脸暂时是手绘的</Cell></tr>
           </tbody></table>
           <p className="mt-4 text-lg"><b>接下来：</b>衣柜和从一段语音里诞生，伙伴和纪念品，靠现实世界里的结果换来的空间，有自己智能体的社团，第三个校园。</p></div>
-        <div className="h-[70vh]"><Live src="/gen3d/doll.html?embed=1&cam=front&looks=pip,mochi&show=walk,sitDown,wave,think,reachShelf,stretch" /></div>
+        <div className="h-[70vh]"><Live src="/gen3d/spaces.html?embed=1&auto=3&space=loft" /></div>
       </div>) },
 
     { id: "Gemini", body: (

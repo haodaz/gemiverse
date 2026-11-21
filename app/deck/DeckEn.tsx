@@ -50,7 +50,7 @@ const MAP: [string, string, string, string][] = [
   ["Out on campus", "The room is empty, door ajar", "Being somewhere else", "Gemi"],
 ];
 
-const SECTIONS: [string, number][] = [["Product", 6], ["What makes it different", 7], ["How we got here", 6], ["What it opens", 3]];
+const SECTIONS: [string, number][] = [["Product", 6], ["What makes it different", 8], ["How we got here", 6], ["What it opens", 3]];
 const sectionOf = (i: number) => { let k = 0; for (const [name, n] of SECTIONS) { if (i < k + n) return name; k += n; } return ""; };
 
 export default function Deck({ onLang }: { onLang?: () => void }) {
@@ -228,6 +228,20 @@ export default function Deck({ onLang }: { onLang?: () => void }) {
         </div>
       </div>) },
 
+    { id: "Over time", body: (
+      <div className="grid h-full grid-cols-[1.15fr_1fr] items-center gap-8">
+        <div><Eyebrow>Over time · how things arrive</Eyebrow><H>No shop, no currency. Every object stands for something that really happened.</H>
+          <table className="mt-4 w-full"><tbody>
+            <tr><Cell head w="22%">Thing</Cell><Cell head w="40%">How it arrives</Cell><Cell head>What it stands for</Cell></tr>
+            <tr><Cell><b>Hair, clothes</b></Cell><Cell>Free in the wardrobe from the start</Cell><Cell>Nothing: how you look is your own</Cell></tr>
+            <tr><Cell><b>Keepsake</b></Cell><Cell>You mark a kept find &ldquo;I went&rdquo;</Cell><Cell>One event really attended</Cell></tr>
+            <tr><Cell><b>Companion</b></Cell><Cell>Its sealed guess said you would keep it, and you really went</Cell><Cell>One time it guessed you right</Cell></tr>
+            <tr><Cell><b>New space</b></Cell><Cell>Only with Gem Stars the Gemi saved itself</Cell><Cell>The days it chose not to spend</Cell></tr>
+          </tbody></table>
+          <p className="mt-3 text-[15px] leading-snug text-[#4a4356]">This rule came from <b>Gemini 4 Carbon</b>, which read the whole design at 14:50 and argued against tasks-for-points-for-a-shop: a points loop is engagement bait. Each space has its own use: the reading room for going deep, the rooftop for meeting other Gemis, the lab for testing a guess. Spaces can be previewed today; their functions are designed, not built.</p></div>
+        <div className="h-[80vh]"><Live src="/gen3d/spaces.html?embed=1&auto=3&friends=pip,kai" /></div>
+      </div>) },
+
     { id: "Baseline", body: (
       <div className="h-full"><Eyebrow>Question 1 · the baseline, and how much better</Eyebrow><H>Against one model call on the same pages.</H>
         <div className="mt-4 grid grid-cols-[1.25fr_1fr] gap-10">
@@ -296,7 +310,7 @@ export default function Deck({ onLang }: { onLang?: () => void }) {
             <tr><Cell>A 3D room that reads out its state; a jointed character with 29 motions and 12 expressions</Cell><Cell><b>The character is still rough.</b> Three generated faces failed; the face is hand-painted for now</Cell></tr>
           </tbody></table>
           <p className="mt-4 text-lg"><b>Next:</b> wardrobe and birth from a voice note, companions and keepsakes, spaces earned by real-world outcomes, clubs with their own agents, a third campus.</p></div>
-        <div className="h-[70vh]"><Live src="/gen3d/doll.html?embed=1&cam=front&looks=pip,mochi&show=walk,sitDown,wave,think,reachShelf,stretch" /></div>
+        <div className="h-[70vh]"><Live src="/gen3d/spaces.html?embed=1&auto=3&space=loft" /></div>
       </div>) },
 
     { id: "Gemini", body: (
