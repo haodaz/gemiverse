@@ -22,8 +22,8 @@ type Find = { id: string; title: string; fields: Record<string, any>; why: strin
 type Trip = { place: string; by: "gemi" | "student"; reason: string; finds: Find[]; seal: string; sealed: string; revealed?: { predicted: Record<string, number>; nonce: string; verified: boolean }; contrast_axis?: string; tokens?: number; model?: string; choices: Record<string, "keep" | "skip"> };
 
 const BUILDINGS = [
-  { id: "library", art: "/art/bld-library.svg", x: 21.25, y: 36.7 }, { id: "clubs", art: "/art/bld-clubs.svg", x: 78.75, y: 36.7 },
-  { id: "commons", art: "/art/bld-commons.svg", x: 21.25, y: 72.2 }, { id: "career", art: "/art/bld-career.svg", x: 78.75, y: 72.2 },
+  { id: "library", art: "/art/bld2-library.svg", x: 21.25, y: 36.7 }, { id: "clubs", art: "/art/bld2-clubs.svg", x: 78.75, y: 36.7 },
+  { id: "commons", art: "/art/bld2-commons.svg", x: 21.25, y: 72.2 }, { id: "career", art: "/art/bld2-career.svg", x: 78.75, y: 72.2 },
 ] as const;
 const uid = () => Math.random().toString(36).slice(2, 10);
 
@@ -356,7 +356,7 @@ export default function Room() {
           {BUILDINGS.map((b) => { const here = outAt === b.id; return (
             <button key={b.id} disabled={!!outAt} onClick={() => goOut(b.id)} className="group absolute -translate-x-1/2 -translate-y-1/2 text-center" style={{ left: `${b.x}%`, top: `${b.y}%` }}>
               <div className="absolute left-1/2 top-[58%] h-16 w-40 -translate-x-1/2 rounded-[50%] opacity-60 blur-md" style={{ background: s.accent }} />
-              <img src={b.art} alt="" className="relative mx-auto h-48 w-48 drop-shadow-xl transition group-hover:-translate-y-2" />
+              <img src={b.art} alt="" className="relative mx-auto h-56 w-56 drop-shadow-xl transition group-hover:-translate-y-2" />
               {here && <div className="absolute left-1/2 top-2 grid h-12 w-12 place-items-center rounded-full border-[3px] bg-[#fffaf0]" style={{ borderColor: INK, animation: "gemi-walk 0.6s ease-in-out infinite" }}><Icon name="out" size={28} /></div>}
               <div className="relative -mt-4 inline-flex items-center gap-2 rounded-full border-[3px] bg-[#fffaf0] py-1 pl-1 pr-4" style={{ borderColor: INK, boxShadow: `0 4px 0 ${INK}` }}>
                 <span className="grid h-9 w-9 place-items-center rounded-full border-2" style={{ borderColor: INK, background: s.soft }}><Icon name={b.id} size={22} /></span>
