@@ -29,6 +29,13 @@ export async function buildDoll(THREE, look, kit, report = console.warn) {
   if (face && head) try { faceGroup = face.buildFace(THREE, look, kit); head.add(faceGroup); } catch (e) { report("face: " + e.message); }
   if (hair && head) try { hairGroup = hair.buildHair(THREE, look, kit); head.add(hairGroup); } catch (e) { report("hair: " + e.message); }
   for (const [mod, fn] of [[tops, "wearTop"], [bottoms, "wearBottom"], [shoes, "wearShoes"]]) if (mod?.[fn]) try { mod[fn](THREE, root, look, kit); } catch (e) { report(`${fn}: ${e.message}`); }
+  // A ball joint under a sleeve, trouser leg, sock or boot is cloth-coloured and slightly larger, so no skin ball shows through.
+  const long = !["shorts", "pleatedSkirt"].includes(look.bottom), sleeves = look.top !== "tee";
+  const cover = [[["legL", "legR"], long || look.bottom === "pleatedSkirt" ? look.bottomColor : null], [["shinL", "shinR"], long ? look.bottomColor : look.socks === "knee" ? null : null],
+    [["armL", "armR", "forearmL", "forearmR"], sleeves ? look.topColor : null], [["footL", "footR"], look.shoes === "boots" ? look.shoeColor : look.socks !== "none" ? look.sockColor : null]];
+  for (const [names, colour] of cover) if (colour) for (const n of names) for (const child of root.getObjectByName(n)?.children ?? [])
+    if (child.isMesh && child.userData.dollBody !== false && /Sphere/.test(child.geometry?.type ?? "") && child.position.length() < 0.02) {
+      child.material = new THREE.MeshPhysicalMaterial({ color: colour, roughness: 0.9, sheen: 0.4 }); child.scale.multiplyScalar(1.22); }
   root.traverse((o) => { if (o.isMesh) { o.castShadow = true; o.receiveShadow = true; } });
   let animator = null; if (motion?.createAnimator) try { animator = motion.createAnimator(root); animator.play("idle"); } catch (e) { report("motion: " + e.message); }
   return {
