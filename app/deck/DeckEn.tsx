@@ -51,7 +51,7 @@ const MAP: [string, string, string, string][] = [
   ["Out on campus", "The room is empty, door ajar", "Being somewhere else", "Gemi"],
 ];
 
-const SECTIONS: [string, number][] = [["Product", 7], ["What makes it different", 9], ["How we got here", 6], ["What it opens", 3]];
+const SECTIONS: [string, number][] = [["Product", 8], ["What makes it different", 9], ["How we got here", 6], ["What it opens", 3]];
 const sectionOf = (i: number) => { let k = 0; for (const [name, n] of SECTIONS) { if (i < k + n) return name; k += n; } return ""; };
 
 export default function Deck({ onLang }: { onLang?: () => void }) {
@@ -66,6 +66,13 @@ export default function Deck({ onLang }: { onLang?: () => void }) {
           <p className="max-w-[46%] pb-2 text-xl leading-relaxed text-[#4a4356]">Every college student gets a <b>Gemi</b>. It enters a space, and day by day its picture of you gains dimensions. The tokens it spends each day are few; what they buy stays.</p></div>
         <div className="mt-4 min-h-0 flex-1"><Banner /></div>
         <p className="mt-3 text-center text-2xl font-bold" style={{ color: "#7c4dce" }}>It would rather miss than be wrong.</p>
+      </div>) },
+
+    { id: "One minute", body: (
+      <div className="flex h-full flex-col items-center justify-center">
+        <Eyebrow>In one minute · recorded from the running product</Eyebrow>
+        {/* The one-minute film: stills by Gemini's image model, concept cards, and clips recorded from the running product. */}
+        <video src="/film/gemiverse-1min.mp4" poster="/film/gemiverse-1min-cover.png" controls playsInline className="mt-4 max-h-[76vh] w-auto rounded-2xl border-[3px]" style={{ borderColor: INK, boxShadow: `0 8px 0 ${INK}22` }} />
       </div>) },
 
     { id: "What it is", body: (

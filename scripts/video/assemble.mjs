@@ -17,6 +17,9 @@ fs.writeFileSync(`${OUT}/${NAME}.srt`, cues.join("\n"));
 const inputs = ["-i", B + "out/video.mp4"], fl = []; let mix = "";
 tl.forEach((s, i) => { inputs.push("-i", s.wav); const ms = Math.round((s.start + LEAD) * 1000); fl.push(`[${i + 1}:a]atempo=${TEMPO},aresample=48000,adelay=${ms}|${ms}[a${i}]`); mix += `[a${i}]`; });
 const final = `${OUT}/${NAME}.mp4`;
-run([...inputs, "-filter_complex", fl.join(";") + `;${mix}amix=inputs=${tl.length}:normalize=0,alimiter=limit=0.9[aout]`, "-map", "0:v", "-map", "[aout]", "-c:v", "copy", "-c:a", "aac", "-b:a", "160k", "-t", t.toFixed(2), "-movflags", "+faststart", final]);
+// A quiet bed of music under the voice: one of the tracks Lyria wrote today, looped, faded in and out.
+const MUSIC = B + "../../public/music/room-morning.mp3"; inputs.push("-stream_loop", "-1", "-i", MUSIC);
+fl.push(`[${tl.length + 1}:a]aresample=48000,volume=0.11,afade=t=in:d=1.2,afade=t=out:st=${(t - 2.2).toFixed(2)}:d=2.2[bed]`);
+run([...inputs, "-filter_complex", fl.join(";") + `;${mix}amix=inputs=${tl.length}:normalize=0,volume=2.0[voice];[voice][bed]amix=inputs=2:normalize=0,alimiter=limit=0.95[aout]`, "-map", "0:v", "-map", "[aout]", "-c:v", "copy", "-c:a", "aac", "-b:a", "160k", "-t", t.toFixed(2), "-movflags", "+faststart", final]);
 run(["-ss", "1", "-i", B + "out/video.mp4", "-frames:v", "1", `${OUT}/${NAME}-cover.png`]);
 console.log("done", final, (fs.statSync(final).size / 1048576).toFixed(1) + "MB", t.toFixed(1) + "s"); for (const s of tl) console.log(" ", s.id, s.start.toFixed(1), "+" + s.dur.toFixed(1), "voice", s.voice.toFixed(1));

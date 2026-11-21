@@ -13,7 +13,7 @@ const still = (img, out, D, fx = 0.5, fy = 0.5, rate = 0.0006) => run(["-loop", 
 const clip = (src, out, D) => run(["-i", src, "-vf", "tpad=stop_mode=clone:stop_duration=6,scale=1920:1080", "-t", D.toFixed(2), ...ENC, out]);
 // With FILM_ME=1 the opening and ending use stills made from the founder's own photo, kept outside this repo.
 const ME = process.env.FILM_ME ? "/Users/aisandbox/Documents/gem4/video/" : null;
-const PLAN = [["n1", "still", ME ? ME + "touch-me.jpg" : ART + "touch-red2.jpg", ME ? 0.3 : 0.56, 0.6, 0.0011], ["n2", "clip", "room"], ["n3", "card", "budget"], ["n4", "clip", "ask"], ["n5", "card", "check"], ["n6", "card", "chart"], ["n7", "clip", "choose"], ["n8", "pair", "under", "agent"], ["n9", "clip", "spaces"], ["n10", "still", ME ? ME + "both-me2.jpg" : ART + "both-red2.jpg", ME ? 0.62 : 0.5, 0.5, 0.0007]];
+const PLAN = [["n1", "card", "cover"], ["n2", "clip", "room"], ["n3", "card", "budget"], ["n4", "clip", "ask"], ["n5", "card", "check"], ["n6", "card", "chart"], ["n7", "clip", "choose"], ["n8", "pair", "under", "agent"], ["n9", "clip", "spaces"], ["n10", "still", ME ? ME + "both-me2.jpg" : ART + "both-red2.jpg", ME ? 0.62 : 0.5, 0.5, 0.0007]];
 fs.mkdirSync(B + "seg", { recursive: true }); for (const f of fs.readdirSync(B + "seg")) fs.unlinkSync(B + "seg/" + f);
 const browser = await puppeteer.launch({ executablePath: "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome", headless: "new", defaultViewport: { width: 1600, height: 900, deviceScaleFactor: 2.4 } });
 const page = await browser.newPage();

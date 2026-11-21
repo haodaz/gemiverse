@@ -77,7 +77,7 @@ const FAILS: [string, string, string, string][] = [
     "25 个全部可用（17 个静态页面，8 条数据源记录）"],
 ];
 
-const SECTIONS: [string, number][] = [["产品", 7], ["特色与价值", 9], ["过程", 6], ["展望", 3]];
+const SECTIONS: [string, number][] = [["产品", 8], ["特色与价值", 9], ["过程", 6], ["展望", 3]];
 const sectionOf = (i: number) => { let k = 0; for (const [name, n] of SECTIONS) { if (i < k + n) return name; k += n; } return ""; };
 
 export default function Deck({ onLang }: { onLang?: () => void }) {
@@ -91,6 +91,13 @@ export default function Deck({ onLang }: { onLang?: () => void }) {
           <p className="max-w-[46%] pb-2 text-xl leading-relaxed text-[#4a4356]">每个大学生都有一个 <b>Gemi</b>。它进入一个空间，在里面一天天更懂你；每天花的 token 很少，换来的东西却留得住。</p></div>
         <div className="mt-4 min-h-0 flex-1"><Banner t={{ s1: ["一个 Gemi", "一个学生的 AI 投射"], s2: ["进入一个空间", "它能读懂、也能改变的小屋和校园"], s3: ["心智升维", "六种能力，每一种都站在下面那一种之上"], s4: ["token 拉长成时间", "每天只花一点；换来的东西一直留着"], minds: [["感知", "听你说话，看懂海报"], ["核对", "来源上找得到才算事实"], ["认识你", "七条「你怎么选」的轴，带宽度"], ["预测", "你选之前先封存一个猜测"], ["规划", "把预算花在最不了解的地方"], ["反思和创造", "日记里记下自己的错；攒星星；做东西"]], spent: "当天花掉的 Gem Star", stays: "留下来的：核对过的事实、它对你的了解", days: "天" }} /></div>
         <p className="mt-3 text-center text-2xl font-bold" style={{ color: "#7c4dce" }}>宁可漏掉，也不说错。</p>
+      </div>) },
+
+    { id: "一分钟", body: (
+      <div className="flex h-full flex-col items-center justify-center">
+        <Eyebrow>一分钟看完 · 画面录自正在运行的产品</Eyebrow>
+        {/* The one-minute film: stills by Gemini's image model, concept cards, and clips recorded from the running product. */}
+        <video src="/film/gemiverse-1min.mp4" poster="/film/gemiverse-1min-cover.png" controls playsInline className="mt-4 max-h-[76vh] w-auto rounded-2xl border-[3px]" style={{ borderColor: INK, boxShadow: `0 8px 0 ${INK}22` }} />
       </div>) },
 
     { id: "它是什么", body: (

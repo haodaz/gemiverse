@@ -14,6 +14,16 @@ export default function Film() {
   useEffect(() => { setC(new URLSearchParams(location.search).get("c") ?? "budget"); }, []);
   return (
     <main className="grid h-screen place-items-center overflow-hidden bg-[#faf8f5] px-24 text-[#2b2536]">
+      {c === "cover" && (<div className="fixed inset-0">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/art/film/touch-red2.jpg" alt="" className="absolute inset-0 h-full w-full object-cover" />
+        <div className="absolute inset-0" style={{ background: "linear-gradient(90deg, #1d1828f2 0%, #1d1828cc 30%, #1d182866 46%, #1d182800 62%)" }} />
+        <div className="absolute inset-y-0 left-0 flex w-[46%] flex-col justify-center pl-24 text-white">
+          <p className="text-[20px] font-bold uppercase tracking-[0.3em] text-[#e8dcff]">Gemini 4 NYC Hackathon · 5 Sigma</p>
+          <h1 className="mt-5 text-[8.2rem] font-semibold leading-none tracking-tight">Gemiverse</h1>
+          <p className="mt-7 text-[2.5rem] font-semibold leading-tight text-[#ffe08a]">Meet your Gemi,<br />and build a universe together.</p>
+        </div></div>)}
+
       {c === "budget" && (<div className="w-full max-w-[1300px]"><Eyebrow>Why a small budget</Eyebrow><Title>Your day has limits.<br />So does its day.</Title>
         <div className="mt-12 grid grid-cols-2 gap-10">
           <div className="rounded-[32px] border-[4px] bg-white p-9" style={{ borderColor: INK }}><p className="text-3xl font-semibold">You</p>

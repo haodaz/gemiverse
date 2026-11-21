@@ -1,0 +1,71 @@
+1
+00:00:00,200 --> 00:00:01,697
+Meet your Gemi.
+
+2
+00:00:01,747 --> 00:00:04,687
+It exists because you met it.
+
+3
+00:00:05,130 --> 00:00:08,599
+A small you, living on your campus.
+
+4
+00:00:09,060 --> 00:00:10,722
+Your day has limits.
+
+5
+00:00:10,772 --> 00:00:12,091
+So does its day.
+
+6
+00:00:12,141 --> 00:00:14,658
+It has to choose what matters.
+
+7
+00:00:15,130 --> 00:00:16,835
+Ask in any language.
+
+8
+00:00:16,885 --> 00:00:19,293
+It brings back three things.
+
+9
+00:00:19,760 --> 00:00:23,877
+Every detail is checked against its source, or not shown.
+
+10
+00:00:24,330 --> 00:00:26,408
+On pages we didn't pick:
+
+11
+00:00:26,458 --> 00:00:30,576
+3.2 percent wrong, against 8.4 for one AI call.
+
+12
+00:00:24,330 --> 00:00:29,697
+It guesses before you choose, and shows when it was wrong.
+
+13
+00:00:24,330 --> 00:00:25,154
+Underneath:
+
+14
+00:00:25,204 --> 00:00:33,261
+a base Gemini designed, a gate on every field, and a Managed Agent that goes back to the source, live.
+
+15
+00:00:24,330 --> 00:00:28,099
+Go somewhere real, and a keepsake arrives.
+
+16
+00:00:28,149 --> 00:00:31,826
+It opens new rooms and meets other Gemis.
+
+17
+00:00:24,330 --> 00:00:25,154
+Gemiverse.
+
+18
+00:00:25,204 --> 00:00:27,428
+Build a universe together.
