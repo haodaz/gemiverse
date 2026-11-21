@@ -1,0 +1,136 @@
+{
+ "at": "2026-11-21T21:04:41.194Z",
+ "harvested": 320,
+ "entered": 304,
+ "rejected_title_check": 16,
+ "clubs": 88,
+ "events": 216,
+ "opportunities": 0,
+ "nyu": 198,
+ "columbia": 106,
+ "fields_checked": 634,
+ "fields_passed": 634,
+ "links": 10,
+ "tokens": {
+  "tag": 112515,
+  "check": 93277
+ },
+ "failures": [],
+ "sample": [
+  {
+   "id": "nyu:club:swing-dance-society-all-university",
+   "type": "Organisation",
+   "school": "nyu",
+   "name": "Swing Dance Society - All-University",
+   "fields": {
+    "summary": "Learn swing dancing from peers and professional instructors, go social dancing around the city, and meet fellow dancers.",
+    "needs": [
+     "find_my_people",
+     "make_and_express"
+    ],
+    "url": "https://engage.nyu.edu/organization/swing-dance-society-all-university",
+    "source_kind": "json_feed",
+    "inferred": [
+     "needs"
+    ],
+    "categories": [
+     "Culture & Identity-Based",
+     "Performance & Arts"
+    ]
+   },
+   "tier": 1,
+   "ontology_version": "v2"
+  },
+  {
+   "id": "nyu:club:psychiatry-club",
+   "type": "Organisation",
+   "school": "nyu",
+   "name": "Headspace Hub (Psychiatry Interest Group)",
+   "fields": {
+    "summary": "Explore different sides of psychiatry and what it means to enter the field through lectures, workshops, and discussions.",
+    "needs": [
+     "explore_a_field",
+     "decide_a_direction"
+    ],
+    "url": "https://engage.nyu.edu/organization/psychiatry-club",
+    "source_kind": "json_feed",
+    "inferred": [
+     "needs"
+    ],
+    "categories": [
+     "Academic",
+     "Health Professions & Clinical Interests",
+     "Professional Development"
+    ]
+   },
+   "tier": 1,
+   "ontology_version": "v2"
+  },
+  {
+   "id": "nyu:club:gallatinsupperclub",
+   "type": "Organisation",
+   "school": "nyu",
+   "name": "Gallatin Supper Club",
+   "fields": {
+    "summary": "Join recurring supper nights to share meals and build connections with other members of the Gallatin community.",
+    "needs": [
+     "find_my_people"
+    ],
+    "url": "https://engage.nyu.edu/organization/gallatinsupperclub",
+    "source_kind": "json_feed",
+    "inferred": [
+     "needs"
+    ],
+    "categories": []
+   },
+   "tier": 1,
+   "ontology_version": "v2"
+  },
+  {
+   "id": "nyu:club:global-medicine-club",
+   "type": "Organisation",
+   "school": "nyu",
+   "name": "Global Medicine Club",
+   "fields": {
+    "summary": "Engage with global health issues and promote awareness and education to help improve health worldwide.",
+    "needs": [
+     "explore_a_field",
+     "contribute_beyond_self"
+    ],
+    "url": "https://engage.nyu.edu/organization/global-medicine-club",
+    "source_kind": "json_feed",
+    "inferred": [
+     "needs"
+    ],
+    "categories": [
+     "Academic",
+     "Health Professions & Clinical Interests",
+     "Science & Technology"
+    ]
+   },
+   "tier": 1,
+   "ontology_version": "v2"
+  },
+  {
+   "id": "nyu:club:chai",
+   "type": "Organisation",
+   "school": "nyu",
+   "name": "Community Health Access Initiative",
+   "fields": {
+    "summary": "Support underserved NYC populations by providing preventative care, health screenings, and health education.",
+    "needs": [
+     "contribute_beyond_self",
+     "get_experience"
+    ],
+    "url": "https://engage.nyu.edu/organization/chai",
+    "source_kind": "json_feed",
+    "inferred": [
+     "needs"
+    ],
+    "categories": []
+   },
+   "tier": 1,
+   "ontology_version": "v2"
+  }
+ ]
+}

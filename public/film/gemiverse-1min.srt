@@ -43,29 +43,29 @@ On pages we didn't pick:
 3.2 percent wrong, against 8.4 for one AI call.
 
 12
-00:00:24,330 --> 00:00:29,697
+00:00:31,030 --> 00:00:36,397
 It guesses before you choose, and shows when it was wrong.
 
 13
-00:00:24,330 --> 00:00:25,154
+00:00:36,860 --> 00:00:37,684
 Underneath:
 
 14
-00:00:25,204 --> 00:00:33,261
+00:00:37,734 --> 00:00:45,791
 a base Gemini designed, a gate on every field, and a Managed Agent that goes back to the source, live.
 
 15
-00:00:24,330 --> 00:00:28,099
+00:00:46,260 --> 00:00:50,029
 Go somewhere real, and a keepsake arrives.
 
 16
-00:00:28,149 --> 00:00:31,826
+00:00:50,079 --> 00:00:53,756
 It opens new rooms and meets other Gemis.
 
 17
-00:00:24,330 --> 00:00:25,154
+00:00:54,230 --> 00:00:55,054
 Gemiverse.
 
 18
-00:00:25,204 --> 00:00:27,428
+00:00:55,104 --> 00:00:57,328
 Build a universe together.
