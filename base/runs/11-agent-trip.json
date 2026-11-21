@@ -1,0 +1,58 @@
+{
+ "at": "2026-11-21T20:46:16.165Z",
+ "entity": "nyu-11",
+ "name": "Prompt Clinic: From Bad Prompts to Better Results",
+ "url": "https://nyu.libcal.com/event/18030132",
+ "agent": "antigravity-preview-09-2026",
+ "status": "completed",
+ "seconds": 30,
+ "tokens": 19266,
+ "steps": [
+  "thought",
+  "code_execution_call",
+  "code_execution_result",
+  "thought",
+  "code_execution_call",
+  "code_execution_result",
+  "model_output",
+  "thought"
+ ],
+ "report": "From [https://nyu.libcal.com/event/18030132](https://nyu.libcal.com/event/18030132), here are the visible event details:\n\n- **Title:** \"Prompt Clinic: From Bad Prompts to Better Results\"\n- **Date:** \"Thursday, December 3, 2026\"\n- **Start and end time:** \"1:00pm - 4:00pm\" (Time Zone: \"Eastern Time - US & Canada\")\n- **Location:** \"Bobst Library, 5th floor, SPARK Lab\" (Location/Library: \"Bobst Library\", listed as \"In-Person\")\n- **Registration:** \"Registration is required. There are 49 seats available.\"",
+ "recheck": [
+  {
+   "field": "building_name",
+   "stored": "Bobst Library",
+   "agrees": 0.9670706649532195
+  },
+  {
+   "field": "organisation_name",
+   "stored": "NYU Libraries",
+   "agrees": 0.49897152198705513
+  },
+  {
+   "field": "start",
+   "stored": "2026-12-03T13:00",
+   "agrees": 0.9732438692129984
+  },
+  {
+   "field": "title",
+   "stored": "Prompt Clinic: From Bad Prompts to Better Results",
+   "agrees": 0.983451109248868
+  },
+  {
+   "field": "event_kind",
+   "stored": "workshop",
+   "agrees": 0.5609222996246017
+  },
+  {
+   "field": "venue_name",
+   "stored": "SPARK Lab",
+   "agrees": 0.8747984535259687
+  },
+  {
+   "field": "registration_rule",
+   "stored": "required",
+   "agrees": 0.9849673540284073
+  }
+ ]
+}

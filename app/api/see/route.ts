@@ -28,9 +28,9 @@ ${needList()}` }, file], "low");
     const rec = parseJson(r.text);
     const questions: Record<string, Question> = {};
     for (const k of STATED) if (rec[k]) questions[k] = { type: "noul", instructions: `Does this file show that ${LABEL[k]} "${String(rec[k]).replace(/_/g, " ")}"? Answer no if it is not printed there or says something different.` };
-    let checks: Record<string, number> = {}; var checkTokens = 0;
-    if (Object.keys(questions).length) { const d = await decide([{ type: "text", text: "Check each claim against this file." }, file], questions); checks = d.answers; checkTokens = d.usage.total_tokens ?? 0; }
-    const fields = STATED.filter((k) => rec[k]).map((k) => ({ field: k, value: rec[k], confidence: checks[k] ?? 0, passed: (checks[k] ?? 0) >= 0.8 }));
+    let checks: Record<string, number> = {}, sure: Record<string, number> = {}; var checkTokens = 0;
+    if (Object.keys(questions).length) { const d = await decide([{ type: "text", text: "Check each claim against this file." }, file], questions); checks = d.answers; sure = d.confidence; checkTokens = d.usage.total_tokens ?? 0; }
+    const fields = STATED.filter((k) => rec[k]).map((k) => ({ field: k, value: rec[k], confidence: checks[k] ?? 0, passed: (checks[k] ?? 0) >= 0.8 && (sure[k] ?? 0) >= 0.5 }));   // a yes the gate itself is unsure of does not pass
     // What a student shows becomes part of the shared base, so the next Gemi does not have to find it again. Only the thing enters:
     // an event with a checked title. Who showed it, and that it was shown at all, is not recorded. Posters rank below official pages (tier 3).
     let added: string | null = null, same: { id: string; name: string; confidence: number } | null = null;

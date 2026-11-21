@@ -76,7 +76,7 @@ const FAILS: [string, string, string, string][] = [
     "25 个全部可用（17 个静态页面，8 条数据源记录）"],
 ];
 
-const SECTIONS: [string, number][] = [["产品", 7], ["特色与价值", 8], ["过程", 6], ["展望", 3]];
+const SECTIONS: [string, number][] = [["产品", 7], ["特色与价值", 9], ["过程", 6], ["展望", 3]];
 const sectionOf = (i: number) => { let k = 0; for (const [name, n] of SECTIONS) { if (i < k + n) return name; k += n; } return ""; };
 
 export default function Deck({ onLang }: { onLang?: () => void }) {
@@ -253,6 +253,23 @@ export default function Deck({ onLang }: { onLang?: () => void }) {
             <Box c="#fff"><b>治理内核。</b>只能用登记过的方法。调用之前先扣费。每天有上限。必须先到达某个成长阶段。有些需要你确认。还有一个暂停，优先于每一条策略。</Box>
             <Box c="#fff"><b>三种模式。</b>想（计划、预测、写日记）。做（外出、核对、询问）。造（装饰、作曲、搭建）；它写成代码的任何东西，运行前都要先扫描。</Box>
             <Box c="#fff"><b>它看得到你做了什么。</b>搬动它的家具，第 5 条就会触发：它走过去，看一看，记下来。</Box></div>
+        </div>
+      </div>) },
+
+    { id: "Managed Agent", body: (
+      <div className="grid h-full grid-cols-[1.35fr_1fr] items-center gap-10">
+        <div><Eyebrow>Managed Agent · 一个真实的核对回路</Eyebrow><H>它现在、自己，再回到出处看一眼。</H>
+          <div className="mt-5 space-y-1.5">
+            <div className="grid grid-cols-[2.6rem_1fr_17rem] items-center gap-3 rounded-xl border-2 px-3 py-2" style={{ borderColor: INK, background: "#ffe08a" }}><b className="text-xl">1</b><span className="text-[16px] font-bold leading-snug">你在一张卡上点「现在再去看一眼」</span><span className="text-right font-mono text-[12px]">小屋</span></div>
+            <div className="grid grid-cols-[2.6rem_1fr_17rem] items-center gap-3 rounded-xl border-2 px-3 py-2" style={{ borderColor: INK, background: "#c8b4f0" }}><b className="text-xl">2</b><span className="text-[16px] font-bold leading-snug">Managed Agent 在 Google 托管的沙箱里启动</span><span className="text-right font-mono text-[12px]">antigravity-preview-09-2026 · background</span></div>
+            <div className="grid grid-cols-[2.6rem_1fr_17rem] items-center gap-3 rounded-xl border-2 px-3 py-2" style={{ borderColor: INK, background: "#c8b4f0" }}><b className="text-xl">3</b><span className="text-[16px] font-bold leading-snug">它自己跑命令：抓页面、读页面、丢掉隐藏文字</span><span className="text-right font-mono text-[12px]">thought → code_execution_call → result  × 2–3</span></div>
+            <div className="grid grid-cols-[2.6rem_1fr_17rem] items-center gap-3 rounded-xl border-2 px-3 py-2" style={{ borderColor: INK, background: "#c8b4f0" }}><b className="text-xl">4</b><span className="text-[16px] font-bold leading-snug">它用页面原话报告读者看得到的内容</span><span className="text-right font-mono text-[12px]">model_output</span></div>
+            <div className="grid grid-cols-[2.6rem_1fr_17rem] items-center gap-3 rounded-xl border-2 px-3 py-2" style={{ borderColor: INK, background: "#a8d4ff" }}><b className="text-xl">5</b><span className="text-[16px] font-bold leading-snug">Decisions API：每个已存字段一道题，带置信度</span><span className="text-right font-mono text-[12px]">gemini-decision-1 · ~250 ms</span></div>
+            <div className="grid grid-cols-[2.6rem_1fr_17rem] items-center gap-3 rounded-xl border-2 px-3 py-2" style={{ borderColor: INK, background: "#a8e0c0" }}><b className="text-xl">6</b><span className="text-[16px] font-bold leading-snug">卡片逐字段显示：还在页面上 / 未确认 / 页面写的不一样</span><span className="text-right font-mono text-[12px]">不往底座里写任何东西</span></div>
+          </div></div>
+        <div>
+          <div className="grid grid-cols-3 gap-3 text-center">{[["22–30 s", "每次现场复核"], ["19–28k", "token（agent 加核对）"], ["8 / 8", "留档的那次：已存字段仍在页面上"]].map(([v, l]) => <div key={l} className="rounded-2xl border-2 bg-white py-3" style={{ borderColor: INK }}><div className="text-3xl font-bold">{v}</div><div className="px-1 text-xs text-[#6d6579]">{l}</div></div>)}</div>
+          <ul className="mt-5"><Li><b>为什么这里用 agent：</b>页面在我们核对之后可能会变。agent 在它自己的沙箱里重新抓一次，命令不在这台电脑上跑。</Li><Li><b>两个模型两份工：</b>agent 负责读，Decisions API 负责判。agent 的报告本身不被直接采信。</Li><Li><b>人说了算：</b>只有你点了才跑，不改底座，不再一致的字段照实标出来。</Li><Li><b>还没做的：</b>Gemi 每天自己的出门仍然读核对过的底座，不现场浏览。留档：<code>base/runs/11-agent-trip.json</code>。</Li></ul>
         </div>
       </div>) },
 

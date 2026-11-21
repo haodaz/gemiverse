@@ -50,7 +50,7 @@ const MAP: [string, string, string, string][] = [
   ["Out on campus", "The room is empty, door ajar", "Being somewhere else", "Gemi"],
 ];
 
-const SECTIONS: [string, number][] = [["Product", 7], ["What makes it different", 8], ["How we got here", 6], ["What it opens", 3]];
+const SECTIONS: [string, number][] = [["Product", 7], ["What makes it different", 9], ["How we got here", 6], ["What it opens", 3]];
 const sectionOf = (i: number) => { let k = 0; for (const [name, n] of SECTIONS) { if (i < k + n) return name; k += n; } return ""; };
 
 export default function Deck({ onLang }: { onLang?: () => void }) {
@@ -232,6 +232,23 @@ export default function Deck({ onLang }: { onLang?: () => void }) {
         </div>
       </div>) },
 
+    { id: "Managed Agent", body: (
+      <div className="grid h-full grid-cols-[1.35fr_1fr] items-center gap-10">
+        <div><Eyebrow>Managed Agent · a real verification loop</Eyebrow><H>It goes back to the source, now, by itself.</H>
+          <div className="mt-5 space-y-1.5">
+            <div className="grid grid-cols-[2.6rem_1fr_17rem] items-center gap-3 rounded-xl border-2 px-3 py-2" style={{ borderColor: INK, background: "#ffe08a" }}><b className="text-xl">1</b><span className="text-[16px] font-bold leading-snug">You tap “Look again, live” on a find</span><span className="text-right font-mono text-[12px]">the room</span></div>
+            <div className="grid grid-cols-[2.6rem_1fr_17rem] items-center gap-3 rounded-xl border-2 px-3 py-2" style={{ borderColor: INK, background: "#c8b4f0" }}><b className="text-xl">2</b><span className="text-[16px] font-bold leading-snug">Managed Agent starts in a Google-hosted sandbox</span><span className="text-right font-mono text-[12px]">antigravity-preview-09-2026 · background</span></div>
+            <div className="grid grid-cols-[2.6rem_1fr_17rem] items-center gap-3 rounded-xl border-2 px-3 py-2" style={{ borderColor: INK, background: "#c8b4f0" }}><b className="text-xl">3</b><span className="text-[16px] font-bold leading-snug">It runs its own commands: fetch the page, read it, drop hidden text</span><span className="text-right font-mono text-[12px]">thought → code_execution_call → result  × 2–3</span></div>
+            <div className="grid grid-cols-[2.6rem_1fr_17rem] items-center gap-3 rounded-xl border-2 px-3 py-2" style={{ borderColor: INK, background: "#c8b4f0" }}><b className="text-xl">4</b><span className="text-[16px] font-bold leading-snug">It reports what a reader sees, in the page's own words</span><span className="text-right font-mono text-[12px]">model_output</span></div>
+            <div className="grid grid-cols-[2.6rem_1fr_17rem] items-center gap-3 rounded-xl border-2 px-3 py-2" style={{ borderColor: INK, background: "#a8d4ff" }}><b className="text-xl">5</b><span className="text-[16px] font-bold leading-snug">Decisions API: one question per stored field, with confidence</span><span className="text-right font-mono text-[12px]">gemini-decision-1 · ~250 ms</span></div>
+            <div className="grid grid-cols-[2.6rem_1fr_17rem] items-center gap-3 rounded-xl border-2 px-3 py-2" style={{ borderColor: INK, background: "#a8e0c0" }}><b className="text-xl">6</b><span className="text-[16px] font-bold leading-snug">The card shows, field by field: still on the page / not confirmed / page says otherwise</span><span className="text-right font-mono text-[12px]">nothing is written to the base</span></div>
+          </div></div>
+        <div>
+          <div className="grid grid-cols-3 gap-3 text-center">{[["22–30 s", "per live re-check"], ["19–28k", "tokens, agent plus gate"], ["8 / 8", "stored fields still on the page, in the run we kept"]].map(([v, l]) => <div key={l} className="rounded-2xl border-2 bg-white py-3" style={{ borderColor: INK }}><div className="text-3xl font-bold">{v}</div><div className="px-1 text-xs text-[#6d6579]">{l}</div></div>)}</div>
+          <ul className="mt-5"><Li><b>Why an agent here:</b> a page can change after we checked it. The agent fetches it again in its own sandbox, so the laptop never runs its commands.</Li><Li><b>Two models, two jobs:</b> the agent reads; the Decisions API judges. The agent's report is never trusted on its own.</Li><Li><b>The person stays in control:</b> it runs only when you tap, changes nothing in the base, and a field that no longer agrees is shown as such.</Li><Li><b>Not yet:</b> the Gemi's own daily trips still read the checked base; they do not browse live. Record: <code>base/runs/11-agent-trip.json</code>.</Li></ul>
+        </div>
+      </div>) },
+
     { id: "Scope", body: (
       <div className="h-full"><Eyebrow>Scope · everything the Gemi can do</Eyebrow><H>{TOOLS.length} methods. Nothing outside this list can be called.</H>
         <div className="mt-3 grid grid-cols-[1.25fr_1fr] gap-8">
@@ -322,7 +339,7 @@ export default function Deck({ onLang }: { onLang?: () => void }) {
           <table className="mt-5 w-full"><tbody>
             <tr><Cell head w="50%">Works today</Cell><Cell head>Not yet</Cell></tr>
             <tr><Cell>Shared base designed by Gemini, filled, checked, measured against a baseline on unseen pages</Cell><Cell>Institution structure and opportunities are nearly empty</Cell></tr>
-            <tr><Cell>Hear in many languages, see a poster, go out, three finds, keep or skip, sealed guess, diary with undo</Cell><Cell>Live browsing by the Managed Agent; trips read the checked base</Cell></tr>
+            <tr><Cell>Hear in many languages, see a poster, go out, three finds, keep or skip, sealed guess, diary with undo</Cell><Cell>Daily trips still read the checked base; the Managed Agent only re-checks one find when asked</Cell></tr>
             <tr><Cell>Its own initiative on its own Gem Stars; fourteen governed methods; an admin mode that runs whole days</Cell><Cell>Gemi to Gemi runs only against simulated students invented by Carbon; club agents are not built</Cell></tr>
             <tr><Cell>A 3D room that reads out its state; a jointed character with 29 motions and 12 expressions</Cell><Cell><b>The character is still rough.</b> Three generated faces failed; the face is hand-painted for now</Cell></tr>
           </tbody></table>
@@ -340,7 +357,7 @@ export default function Deck({ onLang }: { onLang?: () => void }) {
           <tr><Cell><b>Gemini 4 Argon</b></Cell><Cell>The single-call baseline we measure against.</Cell><Cell>Invented an end time; wrote 2025 for a 2026 event.</Cell></tr>
           <tr><Cell><b>Gemini 4 Neon</b></Cell><Cell>Writes the 3D: room, furniture, body, clothes, hair, 29-clip motion library, 36 creatures, maps and icons. Shown its own renders to correct them.</Cell><Cell>Strong at structure and motion. Faces needed a human eye.</Cell></tr>
           <tr><Cell><b>Lyria</b></Cell><Cell>Background music, 30 seconds a track.</Cell><Cell>Six tracks in about 15 seconds each.</Cell></tr>
-          <tr><Cell><b>Managed Agent</b></Cell><Cell>Planned for live trips to public pages.</Cell><Cell>Not wired today.</Cell></tr>
+          <tr><Cell><b>Managed Agent</b></Cell><Cell>Re-checks one find live: fetches the source page itself in a sandbox and reports.</Cell><Cell>22 to 30 s, 2 to 3 commands a run. Daily trips do not use it yet.</Cell></tr>
         </tbody></table>
       </div>) },
 

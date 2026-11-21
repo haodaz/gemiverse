@@ -22,7 +22,7 @@ Built at the Gemini 4 NYC Hackathon, Saturday 2026-11-21.
 - **Where it still fails:** 18 facts, listed in `base/runs/08-eval-pages.json`. 12 are events called online against a key that says in person: 9 are hybrid (a room and Zoom), 2 are titled "online via zoom", 1 is a real error. The field needs three values, not yes or no.
 - **What we changed after seeing failures:** 14 corrections with before, how and after in `base/runs/improvements.json`.
 - Rerun: `node scripts/foundry/07-eval.mjs`, `node scripts/foundry/08-eval-pages.mjs`, then `node scripts/proof-summary.mjs`.
-- Other models used: `gemini-4-neon` writes the 3D room, character, motion and icons as code; `lyria-3-clip-preview` writes music. The Managed Agent is not wired.
+- Other models used: `gemini-4-neon` writes the 3D room, character, motion and icons as code; `lyria-3-clip-preview` writes music. The Managed Agent (`antigravity-preview-09-2026`) re-checks one find live on request: it fetches the source page itself in a Google-hosted sandbox, and the Decisions API judges field by field whether what we stored still agrees (`/api/agent`, record in `base/runs/11-agent-trip.json`). The intent of what a student says is routed by a Decisions choice question with a confidence check, not by free-text JSON.
 
 ## Run it
 

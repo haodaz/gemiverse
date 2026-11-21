@@ -52,6 +52,7 @@ export default function Room() {
   const [lang, setLang] = useState<Lang>("en");
   const [panel, setPanel] = useState<Panel>(null);
   const [deskView, setDeskView] = useState(false);
+  const [live, setLive] = useState<Record<string, any>>({});
   // First visit: there is no account system. Who you are to your Gemi lives in this browser only (gemi.me.<school>).
   const [me, setMe] = useState<{ name: string; demo?: boolean } | null | undefined>(undefined);
   const [draft, setDraft] = useState({ name: "", about: "", step: 0 });
@@ -148,7 +149,7 @@ export default function Room() {
         push({ who: "gemi", text: r.reply, heard: r, cost: `${r.tokens} tokens · ${r.model}` });
         // Agentic: what it heard as a request becomes a step it takes, after the same governance check as a button press.
         const d = r.do?.tool && r.do.tool !== "none" ? r.do : null;
-        if (d) { push({ who: "gemi", text: `→ ${d.tool}${d.place ? ` · ${d.place}` : ""} · ${tt("your_idea")}`, step: true }); doNext.current = d; }
+        if (d) { push({ who: "gemi", text: `→ ${d.tool}${d.place ? ` · ${d.place}` : ""} · ${tt("your_idea")} · Decisions ${r.route?.confidence ?? ""}`, step: true }); doNext.current = d; }
       }
     } catch { push({ who: "gemi", text: "Something went wrong reaching the model.", error: true }); }
     finally { setBusy(false); const d = doNext.current; doNext.current = null;
@@ -428,8 +429,14 @@ export default function Room() {
                         <div className="mt-3 flex items-center gap-2">
                           {!c ? (<><Chunky color="#a8e0c0" onClick={() => choose(f, "keep")}><Icon name="keep" size={18} />{tt("keep")}</Chunky><Chunky color="#fffaf0" onClick={() => choose(f, "skip")}><Icon name="skip" size={18} />{tt("skip")}</Chunky></>)
                             : <span className="text-xs font-bold" style={{ color: c === "keep" ? "#2f7a3d" : "#8a8296" }}>{tt(c === "keep" ? "kept" : "skipped")}</span>}
+                          <button onClick={async () => { setLive((l) => ({ ...l, [f.id]: { busy: true } })); const r = await fetch("/api/agent", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ id: f.id, school }) }).then((x) => x.json()).catch(() => ({ error: "The agent could not be reached." })); setLive((l) => ({ ...l, [f.id]: r })); }}
+                            disabled={live[f.id]?.busy} className="rounded-full border-2 bg-white px-2.5 py-0.5 text-[11px] font-bold disabled:opacity-60" style={{ borderColor: INK }}>{live[f.id]?.busy ? tri("Agent is on the page…", "Agent 正在看页面…", "El agente está en la página…") : tri("Look again, live", "现在再去看一眼", "Mirar de nuevo, en vivo")}</button>
                           {allChosen && <span className="ml-auto text-[11px] text-[#5f576c]">{Math.round(pk(f.id) * 100)}% {tt("guessed")} · <b style={{ color: (pk(f.id) >= 0.5) === (c === "keep") ? "#2f7a3d" : "#b26a00" }}>{tt((pk(f.id) >= 0.5) === (c === "keep") ? "right" : "wrong")}</b></span>}
                         </div>
+                        {live[f.id] && !live[f.id].busy && (<div className="mt-2 rounded-xl border-2 border-dashed px-3 py-2 text-[12px] leading-snug" style={{ borderColor: INK, background: "#f3fbf6" }}>
+                          {live[f.id].error ? <span className="text-[#b26a00]">{live[f.id].error}</span> : (<>
+                            <div className="font-bold">Managed Agent · {live[f.id].seconds}s · {live[f.id].tokens} tokens · {live[f.id].steps?.filter((x: string) => x === "code_execution_call").length} commands run in its sandbox</div>
+                            {live[f.id].fields.map((x: any) => <div key={x.field} className="flex justify-between gap-3 py-0.5"><span className="text-[#6d6579]">{x.field.replace(/_/g, " ")}</span><span className="text-right"><b style={{ color: x.verdict === "still on the page" ? "#2f7a3d" : "#b26a00" }}>{x.verdict}</b> <span className="tabular-nums text-[#8a8296]">{x.agrees}</span></span></div>)}</>)}</div>)}
                       </li>); })}
                   </ul>
                   {allChosen && <p className="mt-3 rounded-2xl border-2 px-3.5 py-2.5 text-sm font-semibold" style={{ borderColor: INK, background: s.soft }}>{tt("reveal")}: {hits} / {trip.finds.length} {tt("right")}. <button className="underline" onClick={() => setPanel("diary")}>{tt("learned")} →</button></p>}
