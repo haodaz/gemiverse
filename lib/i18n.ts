@@ -65,6 +65,7 @@ const T: Record<string, Record<Lang, string>> = {
   out_note: { en: "Looking around…", zh: "正在逛…", es: "Mirando…" },
   send_here: { en: "Send it here", zh: "让它去这里", es: "Enviar aquí" }, sources: { en: "checked fields", zh: "核对过的字段", es: "datos comprobados" },
   its_idea: { en: "its own idea, 3 Gem Stars", zh: "它自己要去的，花了 3 颗 Gem Star", es: "idea suya, 3 Gem Stars" }, your_idea: { en: "you asked", zh: "你让它去的", es: "tú lo pediste" },
+  back_room: { en: "Back to the room", zh: "回小屋", es: "Volver al cuarto" },
   cost: { en: "cost", zh: "花费", es: "coste" }, you: { en: "You", zh: "你", es: "Tú" },
 };
 export const t = (key: string, lang: Lang) => T[key]?.[lang] ?? T[key]?.en ?? key;

@@ -61,6 +61,7 @@ export default function Room() {
     addEventListener("message", on); return () => removeEventListener("message", on);
   }, [school]);
   useEffect(() => { feedEnd.current?.scrollIntoView({ behavior: "smooth" }); }, [feed, panel]);
+  useEffect(() => { const on = (e: KeyboardEvent) => { if (e.key === "Escape") { setCampus(false); setPanel(null); } }; addEventListener("keydown", on); return () => removeEventListener("keydown", on); }, []);
 
   const mind = useMemo(() => replay(log), [log]);
   // Its own initiative: left alone with nothing waiting on the desk and enough Gem Stars, it decides to go out by itself.
@@ -352,13 +353,15 @@ export default function Room() {
             <div className="text-base font-bold">{outAt ? `${preset.gemiName} ${tt("at_place")} ${tt(`b_${outAt}`)}` : tt("campus_title")}</div>
             <div className="mt-0.5 max-w-md text-xs text-[#5f576c]">{outAt ? tt("out_note") : tt("campus_note")}</div>
           </div>
-          {!outAt && <div className="absolute right-5 top-4"><Chunky color="#fffaf0" onClick={() => setCampus(false)}><Icon name="close" size={16} />{tt("close")}</Chunky></div>}
+          {/* the way back is always on top of the buildings, whatever the window size */}
+          {!outAt && <div className="absolute bottom-5 left-1/2 z-50 -translate-x-1/2"><Chunky color="#ffe08a" onClick={() => setCampus(false)}><Icon name="out" size={20} />{tt("back_room")}</Chunky></div>}
+          {!outAt && <div className="absolute right-5 top-4 z-50"><Chunky color="#fffaf0" onClick={() => setCampus(false)}><Icon name="close" size={16} />{tt("close")}</Chunky></div>}
           {BUILDINGS.map((b) => { const here = outAt === b.id; return (
             <button key={b.id} disabled={!!outAt} onClick={() => goOut(b.id)} className="group absolute -translate-x-1/2 -translate-y-1/2 text-center" style={{ left: `${b.x}%`, top: `${b.y}%` }}>
               <div className="absolute left-1/2 top-[58%] h-16 w-40 -translate-x-1/2 rounded-[50%] opacity-60 blur-md" style={{ background: s.accent }} />
-              <img src={b.art} alt="" className="relative mx-auto h-72 w-72 drop-shadow-xl transition group-hover:-translate-y-2" />
+              <img src={b.art} alt="" className="relative mx-auto h-[min(18rem,30vh)] w-[min(18rem,30vh)] drop-shadow-xl transition duration-200 group-hover:brightness-110 group-hover:[filter:drop-shadow(0_0_18px_#ffe9a8)_drop-shadow(0_0_6px_#fff)]" />
               {here && <div className="absolute left-1/2 top-2 grid h-12 w-12 place-items-center rounded-full border-[3px] bg-[#fffaf0]" style={{ borderColor: INK, animation: "gemi-walk 0.6s ease-in-out infinite" }}><Icon name="out" size={28} /></div>}
-              <div className="relative -mt-10 inline-flex items-center gap-2 rounded-full border-[3px] bg-[#fffaf0] py-1 pl-1 pr-4" style={{ borderColor: INK, boxShadow: `0 4px 0 ${INK}` }}>
+              <div className="relative -mt-10 inline-flex items-center gap-2 rounded-full border-[3px] bg-[#fffaf0] py-1 pl-1 pr-4 transition-transform duration-200 group-hover:-translate-y-1.5 group-hover:scale-105" style={{ borderColor: INK, boxShadow: `0 4px 0 ${INK}` }}>
                 <span className="grid h-9 w-9 place-items-center rounded-full border-2" style={{ borderColor: INK, background: s.soft }}><Icon name={b.id} size={22} /></span>
                 <span className="text-left"><span className="block text-sm font-bold leading-tight">{tt(`b_${b.id}`)}</span><span className="block text-[10px] text-[#8a8296]">{tt(`b_${b.id}_n`)}</span></span>
                 

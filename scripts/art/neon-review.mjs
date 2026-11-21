@@ -7,7 +7,7 @@ let prompt = readFileSync(promptFile, "utf8");
 if (sourceFile) prompt += `\n\nCURRENT SOURCE OF THE MODULE (${sourceFile})\n\n` + readFileSync(sourceFile, "utf8");
 const t0 = Date.now(), H = { "content-type": "application/json", "x-goog-api-key": key }, BASE = "https://generativelanguage.googleapis.com/v1beta/interactions";
 let res = await fetch(BASE, { method: "POST", headers: H, body: JSON.stringify({ model: "gemini-4-neon", generation_config: { thinking_level: "high" }, background: true,
-  input: [{ type: "text", text: prompt }, { type: "image", data: readFileSync(image).toString("base64"), mime_type: "image/jpeg" }] }) });
+  input: [{ type: "text", text: prompt }, ...image.split(",").map((f) => ({ type: "image", data: readFileSync(f).toString("base64"), mime_type: "image/jpeg" }))] }) });   // several images: comma-separated paths
 let json = await res.json();
 while (json.status && !["completed", "failed", "cancelled", "incomplete"].includes(json.status)) { await new Promise((r) => setTimeout(r, 5000)); res = await fetch(`${BASE}/${json.id}`, { headers: H }); if (res.ok) json = await res.json(); }
 const text = (json.steps ?? []).filter((s) => s.type === "model_output").flatMap((s) => s.content ?? []).map((c) => c.text ?? "").join("");

@@ -1,0 +1,29 @@
+You are given four images.
+IMAGE 1 and IMAGE 2: photographs of small ball-jointed doll blanks that the user finds cute. Study the HEAD SHAPE: a very large, smooth, almost spherical cranium; the face is the lower front of that sphere and narrows quickly to a tiny soft chin; no cheekbones, no brow ridge, a barely-there nose; eyes set LOW (well below the middle of the head) and wide apart; large simple ears set low at the sides, sticking out a little.
+IMAGE 3: a finished chibi figure the user likes. Study the FACE PAINT and finish: big glossy eyes low on the face with a dark upper lash line, warm iris with a lighter lower half and clean highlights, tiny nose, tiny closed mouth, very soft blush, matte smooth skin with gentle shading. Do not copy this character; take the proportions, the smoothness and the calm, sweet expression.
+IMAGE 4: a render of OUR current doll, built from code you wrote. Its body, clothes and motion are fine. Its head is what must change: it is too small for the body, too egg-like and narrow, the lower face is dark, and the face is not delicate.
+
+Write ONE new ES module that replaces the head and the face of our doll so that it has the charm of images 1 to 3.
+
+export function buildHead(THREE, opts, kit) -> THREE.Group, added to the rig's "head" pivot (the pivot is at the base of the skull, Y up, face toward +z; the host hides the old head).
+opts = { skin, eye (iris colour, use exactly), eyeShape: "round" | "almond" | "droopy" | "upturned", brow: "soft" | "straight" | "arched", browColor, lip, blush: boolean, freckles: boolean, lashes: boolean }.
+
+HEAD FORM (one perfectly smooth mesh; SphereGeometry(1, 96, 72) with vertices moved by an explicit function, then computeVertexNormals; no facets, no dents):
+- Final size: 0.36 wide, 0.34 tall, 0.33 deep (larger than before: the head should be about 36 percent of the doll's 1.0 m height). Its centre sits 0.165 above the pivot.
+- In unit coordinates (x right, y up, z front): keep the top two thirds a true sphere. Below y = -0.25 taper the width and depth smoothly toward a small rounded chin: width factor 1.0 at y = -0.25, 0.86 at y = -0.6, 0.55 at y = -0.9, closing in a soft point at y = -1; apply the taper more strongly to the front (z > 0) than the back so the back of the skull stays round and full and the chin sits forward under the face.
+- The face area (z > 0.3, -0.75 < y < 0.1) is gently flattened by about 8 percent in z so the eyes lie on a calm surface; a nose is only a 0.02 bump at (0, -0.33, front); very slight cheek fullness at (+-0.5, -0.45).
+- Ears: two large simple ears (about 0.16 of the head height tall), set low with their centres at y = -0.28, at the widest points of the head, angled outward about 35 degrees, each a smooth flattened ellipsoid with one soft inner hollow; same skin material.
+- A short neck plug under the chin so there is no gap to the body's neck.
+- Skin: MeshPhysicalMaterial, color opts.skin, roughness 0.55, sheen 0.35, sheenRoughness 0.6, no texture map, no vertex colours (a single even colour; do NOT darken the lower face).
+
+FACE PAINT: one 2048 x 1024 CanvasTexture with transparent background on an exact clone of the head mesh scaled 1.003 (MeshStandardMaterial { map, transparent: true, roughness: 0.9, depthWrite: false, polygonOffset: true, polygonOffsetFactor: -2 }). Place features through the sphere's own UV mapping, compensating for horizontal stretch at each latitude, using the DEFORMED vertex positions to find where a given (x, y) on the front lands.
+- Eyes: centres at x = +-0.43, y = -0.30 (low on the face, wide apart). Each eye 0.40 wide and 0.46 tall in unit terms. A dark warm-brown upper lash line that is thickest over the outer half and flicks slightly up at the outer corner; a thin short lower line only under the outer third; if opts.lashes, three fine lashes. Iris nearly fills the opening: vertical gradient from a deep shade of opts.eye at the top to a light, luminous shade at the bottom; a darker ring at the rim; a soft pupil high in the iris; a light reflected arc in the lower third; one large round white highlight upper-left and one small one lower-right. Only slivers of white at the sides.
+- Then ADD GLOSS: over each eye place a thin transparent lens mesh that follows the head surface (a small patch of the head geometry scaled 1.006, not a dome), MeshPhysicalMaterial { transparent: true, opacity: 0.25, roughness: 0.05, clearcoat: 1 } so the eyes catch a soft specular glint without bulging.
+- Brows: fine, short, soft arcs at y = +0.02 relative to... place them 0.30 above the eye centres, colour opts.browColor at 70 percent alpha.
+- Nose: a faint small shadow under the nose bump. Mouth: a tiny closed mouth at x = 0, y = -0.62, 0.10 wide: a short soft curved line in a muted rose, slightly darker at the centre, with a hint of a lighter lower lip beneath. Blush: two soft round pink clouds at x = +-0.55, y = -0.50, alpha 0.28, radius 0.2. Freckles if asked.
+
+export function setExpression(group, name): "awake" | "happy" (eyes become gentle upward arcs, small open smile) | "asleep" (downward arcs, relaxed mouth) | "thinking" (irises up and to one side, one brow raised, mouth a small dot) | "unsure" (brows tilted up in the middle, tiny wavy mouth). Redraw and set needsUpdate.
+export function blink(group, t): t is time in seconds; eyes closed for 0.12 s every 3 to 5 s.
+export const HEAD = { centerY: 0.165, radii: [0.18, 0.17, 0.165] } so the hair module can fit this head.
+
+Rules: a plain ES module, no imports, no globals (THREE and kit are arguments; kit.canvasTexture(width, height, (ctx, w, h) => {...}) returns a THREE.CanvasTexture). No document, window, fetch or storage. Under 750 lines. Return only the code in one ```js block.
