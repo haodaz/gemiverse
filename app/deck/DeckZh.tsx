@@ -76,6 +76,9 @@ const FAILS: [string, string, string, string][] = [
     "25 个全部可用（17 个静态页面，8 条数据源记录）"],
 ];
 
+const SECTIONS: [string, number][] = [["产品", 6], ["特色与价值", 7], ["过程", 6], ["展望", 3]];
+const sectionOf = (i: number) => { let k = 0; for (const [name, n] of SECTIONS) { if (i < k + n) return name; k += n; } return ""; };
+
 export default function Deck({ onLang }: { onLang?: () => void }) {
   const [i, setI] = useState(0);
 
@@ -86,6 +89,16 @@ export default function Deck({ onLang }: { onLang?: () => void }) {
           <p className="max-w-[46%] pb-2 text-xl leading-relaxed text-[#4a4356]">每个大学生都有一个 <b>Gemi</b>。它进入一个空间，在里面一天天更懂你；每天花的 token 很少，换来的东西却留得住。</p></div>
         <div className="mt-4 min-h-0 flex-1"><Banner t={{ s1: ["一个 Gemi", "一个学生的 AI 投射"], s2: ["进入一个空间", "它能读懂、也能改变的小屋和校园"], s3: ["心智升维", "六种能力，每一种都站在下面那一种之上"], s4: ["token 拉长成时间", "每天只花一点；换来的东西一直留着"], minds: [["感知", "听你说话，看懂海报"], ["核对", "来源上找得到才算事实"], ["认识你", "七条「你怎么选」的轴，带宽度"], ["预测", "你选之前先封存一个猜测"], ["规划", "把预算花在最不了解的地方"], ["反思和创造", "日记里记下自己的错；攒星星；做东西"]], spent: "当天花掉的 Gem Star", stays: "留下来的：核对过的事实、它对你的了解", days: "天" }} /></div>
         <p className="mt-3 text-center text-2xl font-bold" style={{ color: "#7c4dce" }}>宁可漏掉，也不说错。</p>
+      </div>) },
+
+    { id: "它是什么", body: (
+      <div className="grid h-full grid-cols-[1fr_1.25fr] items-center gap-10">
+        <div><Eyebrow>Gemiverse 是什么</Eyebrow><H>一个分身，有房间，有预算，对事实有良心。</H>
+          <ul className="mt-5"><Li>你用任何语言跟它说话，或者给它看一张海报。它听的是你说了什么，不是你听起来怎么样。</Li>
+            <Li>它去校园里的四个地方，带回三样东西，每个字段都对照来源核对过。</Li>
+            <Li>你留下或跳过。它由此学到你是怎么选的，并把学到的给你看。其中任何一条你都可以撤销。</Li>
+            <Li>没人管它的时候，它花自己的 Gem Star：想事情，外出，写日记，改自己的房间。</Li></ul></div>
+        <div className="h-[78vh]"><Live src="/gen3d/viewer.html?embed=1&bare=1&school=nyu" /></div>
       </div>) },
 
     { id: "任务", body: (
@@ -101,6 +114,42 @@ export default function Deck({ onLang }: { onLang?: () => void }) {
           <p className="mt-4 text-[15px] text-[#8a8296]">我们还没有做到五个西格玛。我们做出来的，是让错误率可以测量、并且能把它压下去的东西。</p></div>
       </div>) },
 
+    { id: "Gemi + Verse", body: (
+      <div className="h-full"><Eyebrow>为什么是 Gemi，为什么是 Verse</Eyebrow><H>心智要有身体才能被读懂。事实要有地方才能被共享。</H>
+        <div className="mt-8 grid grid-cols-2 gap-8">
+          <Frame className="p-7"><Tag>Gemi · 人</Tag>
+            <ul className="mt-4"><Li>它心里的你是不确定的。一个角色能把这一点<b>表现出来</b>：它站在哪，手里拿着什么，猜错时的表情。</Li>
+              <Li>它只属于你。它对你的了解都留在你的浏览器里。没有平台画像。</Li>
+              <Li>养它就是养自己：每一次留下或跳过，都让你看到自己是怎么选的。</Li></ul></Frame>
+          <Frame className="p-7"><Tag c="#a8d4ff">Verse · 地方</Tag>
+            <ul className="mt-4"><Li>校园里的事实是一个共享底座。一个 Gemi 核对过的，每个 Gemi 都能免费读。</Li>
+              <Li>房间是一块读数盘：书桌上的卡片是等你看的东西，钉起来的是你留下的，罐子里装着它的 Gem Star。</Li>
+              <Li>中间没有信息流，没有排名，没有推荐系统。Gemi 和社团的智能体组成网络；做决定的是人。</Li></ul></Frame>
+        </div>
+        <p className="mt-8 text-center text-2xl font-bold">事实共享。理解私有。</p>
+      </div>) },
+
+    { id: "给谁用", body: (
+      <div className="grid h-full grid-cols-[1.15fr_1fr] items-center gap-10">
+        <div><Eyebrow>给谁用，为什么是他们</Eyebrow><H>大学生。先做 NYU 和 Columbia。</H>
+          <ul className="mt-5"><Li><b>是太多，不是太少。</b>NYU 的一个日历数据源，三周里就列了大约一千个活动。学生不缺信息；他们缺的是一个替他们读、又不乱编的东西。</Li>
+            <Li><b>页面是公开的，可以核对。</b>校园是一个有边界的小世界，有官方来源。正因为这样，对事实提五个西格玛的标准才有可能做到。</Li>
+            <Li><b>这里的选择会塑造一个人。</b>大一时你走进哪个房间是有分量的。研究也说得很清楚：只有存在真实的机会，归属感才会跟着来。</Li>
+            <Li><b>垂直领域让成本负担得起。</b>成千上万的学生面对同一批活动，所以核对一次，所有人都能用。</Li></ul></div>
+        <div className="h-[70vh]"><img src="/art/campus3-nyu.svg" alt="一张手绘风格的校园地图" className="h-full w-full object-cover [mask-image:radial-gradient(ellipse_at_center,black_55%,transparent_78%)]" /></div>
+      </div>) },
+
+    { id: "价值", body: (
+      <div className="h-full"><Eyebrow>痛点，它怎么应对，以及证据</Eyebrow><H>四个问题，四个回答。</H>
+        <table className="mt-6 w-full"><tbody>
+          <tr><Cell head w="24%">痛点</Cell><Cell head w="38%">Gemi 怎么做</Cell><Cell head>今天的证据</Cell></tr>
+          <tr><Cell><b>AI 的回答听起来对，其实不对。</b></Cell><Cell>它带回来的每样东西，每个字段都由 Decisions API 对照来源核对。低于 0.8 就不展示，并且标明没有展示。</Cell><Cell>在 10 个没见过的页面上，单次模型调用展示的 103 个字段里有 29 个在页面上找不到依据；我们的一个也没有。在六所大学的 122 个原始页面上：错 3.2%，对比 8.4%。</Cell></tr>
+          <tr><Cell><b>一千个活动，没有时间。</b></Cell><Cell>每天一小笔预算逼它做选择：每次外出带回三样东西，挑在你最在意、而它了解最少的地方。</Cell><Cell>Carbon 挑两样东西，让它们在它最没把握的那条轴上形成对比，所以不管你留下哪一个，它都能学到点什么。</Cell></tr>
+          <tr><Cell><b>黑箱式的个性化。</b></Cell><Cell>七条随情境而定的轴，每条都带一圈光晕。每一次移动都对应到某一次选择，并且可以撤销。在你选择之前，它先封存一个预测。</Cell><Cell>封存是真的先承诺后揭示；浏览器会重新计算哈希。它早期的预测经常是错的，它在日记里也这么写。</Cell></tr>
+          <tr><Cell><b>让你一直聊下去的陪伴产品。</b></Cell><Cell>短时间到访。不搞连续打卡，不搞排行榜。成功看的是你在现实世界里做了什么。</Cell><Cell>依据研究，从设计之初就这样定下；成长按核对过的事实和留下的东西来算，绝不按花掉的时间算。</Cell></tr>
+        </tbody></table>
+      </div>) },
+
     { id: "外表简单", body: (
       <div className="grid h-full grid-cols-[1fr_1.35fr] items-center gap-8">
         <div className="flex h-full flex-col"><Eyebrow>看起来简单，其实不简单。</Eyebrow><H>它是从底下往上长出来的。</H>
@@ -110,63 +159,6 @@ export default function Deck({ onLang }: { onLang?: () => void }) {
           <div key={name} className="grid grid-cols-[190px_1fr_170px] items-center gap-3 rounded-xl border-2 px-3 py-2" style={{ borderColor: INK, background: c }}>
             <b className="text-[15px]">{name}</b><span className="text-[14px] leading-snug">{what}</span><span className="text-right text-[12.5px] font-bold">{num}</span></div>))}
           <p className="pt-2 text-[14px] text-[#8a8296]">在任何界面出现之前，Gemini 先设计了第 2 层和第 4 层。另一位设计者同时并行工作；两份草稿和合并结果都在仓库里，没有任何一份被覆盖。</p></div>
-      </div>) },
-
-    { id: "基线", body: (
-      <div className="h-full"><Eyebrow>问题一 · 基线是什么，好了多少</Eyebrow><H>对手是在同样页面上的一次模型调用。</H>
-        <div className="mt-4 grid grid-cols-[1.25fr_1fr] gap-10">
-          <div><Bars yMax={0.1} yLabel="错误率" fmt={(v) => `${(v * 100).toFixed(1)}%`} h={330} groups={[
-            { label: `活动列表 · ${proof.listings.facts} 条事实`, bars: [{ name: "基线", value: L.baseline.error_rate, color: GREY }, { name: "我们", value: L.v3.error_rate, color: PUR }] },
-            { label: `原始页面，第一次跑 · ${proof.pages.facts} 条事实`, bars: [{ name: "基线", value: P1.baseline.error_rate, color: GREY }, { name: "我们", value: P1.system.error_rate ?? P1.system_v1?.error_rate, color: RED }] },
-            { label: "原始页面，修复之后", bars: [{ name: "基线", value: PG.baseline.error_rate, color: GREY }, { name: "基线+读取器", value: PG.baseline_visible.error_rate, color: "#8f879c" }, { name: "我们", value: PG.system_v2.error_rate, color: PUR }] }]} /></div>
-          <div className="text-[17px] leading-relaxed">
-            <p><b>基线：</b>Gemini 4 Argon，一次调用，输入页面文本，输出五项事实。没有结构，没有核对。</p>
-            <p className="mt-3"><b>我们：</b>Hydrogen 往 Carbon 设计的结构里填内容；Decisions API 对照来源，每个字段回答一个问题；年份由代码里的一条规则确定。</p>
-            <p className="mt-3"><b>第一次跑输了。</b>{pct(P1.system?.error_rate ?? P1.system_v1?.error_rate)} 对 {pct(P1.baseline.error_rate)}。核对关卡确认了隐藏文字，因为那些字确实在页面里。这根柱子我们照样放出来。</p>
-            <p className="mt-3"><b>修复之后：</b>{pct(PG.system_v2.error_rate)} 对 {pct(PG.baseline.error_rate)}，覆盖率 {pct(PG.system_v2.coverage)}。把我们的读取器给基线用，它能到 {pct(PG.baseline_visible.error_rate)}：大部分提升来自读取器；核对关卡自身的优势在地点上，错 6 条，对比 12 条。</p>
-            <p className="mt-3 text-[15px] text-[#8a8296]">成本：每个页面 {Math.round(TPP.sys)} 个 token，对比 {Math.round(TPP.base)} 个。下一页讲这笔钱谁来付。</p></div>
-        </div>
-      </div>) },
-
-    { id: "测试集", body: (
-      <div className="h-full"><Eyebrow>问题二 · 测试集</Eyebrow><H>页面不是我们挑的，标准答案不是我们写的。</H>
-        <div className="mt-5 grid grid-cols-[1fr_1.1fr] gap-10">
-          <div><div className="grid grid-cols-3 gap-3"><Stat v={String(proof.pages.n)} l="原始活动页面" /><Stat v="6" l="所大学；其中 5 所设计时从没见过" /><Stat v={String(proof.pages.edge_pages)} l="带特殊情况的页面" /></div>
-            <Bars yMax={32} yLabel="页面数" h={230} groups={Object.entries(proof.pages.schools).map(([k, v]) => ({ label: k, bars: [{ name: "", value: v as number, color: k === "NYU" ? PUR : TEAL }] }))} />
-            <p className="text-[14px] text-[#8a8296]">另有 {proof.listings.n} 条 NYU 活动列表（{proof.listings.facts} 条事实），以及设计阶段特意留着没用的十页考题集。</p></div>
-          <table className="w-full self-start"><tbody>
-            <tr><Cell head w="34%">规则</Cell><Cell head>怎么守住</Cell></tr>
-            <tr><Cell><b>输入不是我们的</b></Cell><Cell>六所大学的图书馆日历返回的每一个即将举办的活动，按数据源的顺序。不手挑。</Cell></tr>
-            <tr><Cell><b>标准答案是独立的</b></Cell><Cell>答案来自日历自己的结构化字段（日期、开始、结束、地点、是否线上）。各系统只看得到渲染出来的页面。</Cell></tr>
-            <tr><Cell><b>故意选乱的</b></Cell><Cell>重复举办的活动、没有地点、只在线上、跨多天、已取消、缺年份、被页面隐藏的文字。</Cell></tr>
-            <tr><Cell><b>评分规则先定死</b></Cell><Cell>每一组都用同一个评分器。不展示的算在覆盖率的损失里，绝不算对。</Cell></tr>
-            <tr><Cell><b>也有现场输入</b></Cell><Cell>这个会场里的语音和海报，在台上走同一道核对关卡。</Cell></tr>
-          </tbody></table>
-        </div>
-      </div>) },
-
-    { id: "失败", body: (
-      <div className="h-full"><Eyebrow>问题三 · 哪里失败了，我们改了什么</Eyebrow><H>之前，怎么改，之后。</H>
-        <table className="mt-4 w-full"><tbody>
-          <tr><Cell head w="27%">我们看到了什么</Cell><Cell head w="17%">之前</Cell><Cell head w="31%">我们改了什么</Cell><Cell head>之后</Cell></tr>
-          {FAILS.map((row, n) => (
-            <tr key={n}>{row.map((t: string, k: number) => <td key={k} className="border-t-2 px-3 py-2 align-top text-[14.5px] leading-snug" style={{ borderColor: "#e6dfd0", fontWeight: k === 3 ? 700 : 400 }}>{t.length > 100 ? t.slice(0, 98) + "…" : t}</td>)}</tr>))}
-        </tbody></table>
-        <p className="mt-3 text-[15px] text-[#8a8296]">共记录了 {proof.improvements.length} 次修正，证据文件都列在 <code>base/runs/improvements.json</code> 里。其中三次是我们的测量出了错，不是系统出了错。</p>
-      </div>) },
-
-    { id: "仍然失败", body: (
-      <div className="grid h-full grid-cols-[1.2fr_1fr] items-center gap-10">
-        <div><Eyebrow>问题三 · 哪里仍然失败</Eyebrow><H>还有 {PG.system_v2.wrong} 条事实是错的。都在这里。</H>
-          <table className="mt-4 w-full"><tbody>
-            <tr><Cell head w="16%">哪所学校</Cell><Cell head w="14%">事实</Cell><Cell head w="36%">我们展示的</Cell><Cell head>日历上写的</Cell></tr>
-            {[0, 1, 9, 13].map((k) => { const w = (proof.pages.still_wrong as any[])[k]; return w ? (<tr key={k}><Cell>{w.school}</Cell><Cell>{w.field}</Cell><Cell>{String(w.shown)}</Cell><Cell>{String(w.truth)}</Cell></tr>) : null; })}
-          </tbody></table>
-          <ul className="mt-4"><Li><b>18 条里的 12 条</b>是 Penn 和 Duke 重复举办的活动被说成线上。原因我们还没找到。</Li>
-            <Li><b>18 条里的 4 条</b>是 Duke 的房间：我们从描述里读出了房间，而日历字段写的是「Other」。我们仍然把它们算作错。</Li>
-            <Li>第一次跑活动列表时覆盖率是 54.6%：核对关卡太严也是一种失败。</Li></ul></div>
-        <div><p className="text-sm font-bold uppercase tracking-wider text-[#8a8296]">数字之外</p>
-          <ul className="mt-2"><Li>Columbia 的记录没有进入活动列表测试。</Li><Li>外出读的是核对过的底座；Managed Agent 的实时浏览还没有接上。</Li><Li>学习这一侧只在一个模拟学生上测过。第一天：6 个封存的预测对了 2 个。</Li><Li>生成的三张脸都被否掉了；现在的脸是手绘的。</Li></ul></div>
       </div>) },
 
     { id: "token 持续回本", body: (
@@ -259,29 +251,75 @@ export default function Deck({ onLang }: { onLang?: () => void }) {
         </div>
       </div>) },
 
-    { id: "Gemi + Verse", body: (
-      <div className="h-full"><Eyebrow>为什么是 Gemi，为什么是 Verse</Eyebrow><H>心智要有身体才能被读懂。事实要有地方才能被共享。</H>
-        <div className="mt-8 grid grid-cols-2 gap-8">
-          <Frame className="p-7"><Tag>Gemi · 人</Tag>
-            <ul className="mt-4"><Li>它心里的你是不确定的。一个角色能把这一点<b>表现出来</b>：它站在哪，手里拿着什么，猜错时的表情。</Li>
-              <Li>它只属于你。它对你的了解都留在你的浏览器里。没有平台画像。</Li>
-              <Li>养它就是养自己：每一次留下或跳过，都让你看到自己是怎么选的。</Li></ul></Frame>
-          <Frame className="p-7"><Tag c="#a8d4ff">Verse · 地方</Tag>
-            <ul className="mt-4"><Li>校园里的事实是一个共享底座。一个 Gemi 核对过的，每个 Gemi 都能免费读。</Li>
-              <Li>房间是一块读数盘：书桌上的卡片是等你看的东西，钉起来的是你留下的，罐子里装着它的 Gem Star。</Li>
-              <Li>中间没有信息流，没有排名，没有推荐系统。Gemi 和社团的智能体组成网络；做决定的是人。</Li></ul></Frame>
+    { id: "基线", body: (
+      <div className="h-full"><Eyebrow>问题一 · 基线是什么，好了多少</Eyebrow><H>对手是在同样页面上的一次模型调用。</H>
+        <div className="mt-4 grid grid-cols-[1.25fr_1fr] gap-10">
+          <div><Bars yMax={0.1} yLabel="错误率" fmt={(v) => `${(v * 100).toFixed(1)}%`} h={330} groups={[
+            { label: `活动列表 · ${proof.listings.facts} 条事实`, bars: [{ name: "基线", value: L.baseline.error_rate, color: GREY }, { name: "我们", value: L.v3.error_rate, color: PUR }] },
+            { label: `原始页面，第一次跑 · ${proof.pages.facts} 条事实`, bars: [{ name: "基线", value: P1.baseline.error_rate, color: GREY }, { name: "我们", value: P1.system.error_rate ?? P1.system_v1?.error_rate, color: RED }] },
+            { label: "原始页面，修复之后", bars: [{ name: "基线", value: PG.baseline.error_rate, color: GREY }, { name: "基线+读取器", value: PG.baseline_visible.error_rate, color: "#8f879c" }, { name: "我们", value: PG.system_v2.error_rate, color: PUR }] }]} /></div>
+          <div className="text-[17px] leading-relaxed">
+            <p><b>基线：</b>Gemini 4 Argon，一次调用，输入页面文本，输出五项事实。没有结构，没有核对。</p>
+            <p className="mt-3"><b>我们：</b>Hydrogen 往 Carbon 设计的结构里填内容；Decisions API 对照来源，每个字段回答一个问题；年份由代码里的一条规则确定。</p>
+            <p className="mt-3"><b>第一次跑输了。</b>{pct(P1.system?.error_rate ?? P1.system_v1?.error_rate)} 对 {pct(P1.baseline.error_rate)}。核对关卡确认了隐藏文字，因为那些字确实在页面里。这根柱子我们照样放出来。</p>
+            <p className="mt-3"><b>修复之后：</b>{pct(PG.system_v2.error_rate)} 对 {pct(PG.baseline.error_rate)}，覆盖率 {pct(PG.system_v2.coverage)}。把我们的读取器给基线用，它能到 {pct(PG.baseline_visible.error_rate)}：大部分提升来自读取器；核对关卡自身的优势在地点上，错 6 条，对比 12 条。</p>
+            <p className="mt-3 text-[15px] text-[#8a8296]">成本：每个页面 {Math.round(TPP.sys)} 个 token，对比 {Math.round(TPP.base)} 个。下一页讲这笔钱谁来付。</p></div>
         </div>
-        <p className="mt-8 text-center text-2xl font-bold">事实共享。理解私有。</p>
       </div>) },
 
-    { id: "给谁用", body: (
-      <div className="grid h-full grid-cols-[1.15fr_1fr] items-center gap-10">
-        <div><Eyebrow>给谁用，为什么是他们</Eyebrow><H>大学生。先做 NYU 和 Columbia。</H>
-          <ul className="mt-5"><Li><b>是太多，不是太少。</b>NYU 的一个日历数据源，三周里就列了大约一千个活动。学生不缺信息；他们缺的是一个替他们读、又不乱编的东西。</Li>
-            <Li><b>页面是公开的，可以核对。</b>校园是一个有边界的小世界，有官方来源。正因为这样，对事实提五个西格玛的标准才有可能做到。</Li>
-            <Li><b>这里的选择会塑造一个人。</b>大一时你走进哪个房间是有分量的。研究也说得很清楚：只有存在真实的机会，归属感才会跟着来。</Li>
-            <Li><b>垂直领域让成本负担得起。</b>成千上万的学生面对同一批活动，所以核对一次，所有人都能用。</Li></ul></div>
-        <div className="h-[70vh]"><img src="/art/campus3-nyu.svg" alt="一张手绘风格的校园地图" className="h-full w-full object-cover [mask-image:radial-gradient(ellipse_at_center,black_55%,transparent_78%)]" /></div>
+    { id: "测试集", body: (
+      <div className="h-full"><Eyebrow>问题二 · 测试集</Eyebrow><H>页面不是我们挑的，标准答案不是我们写的。</H>
+        <div className="mt-5 grid grid-cols-[1fr_1.1fr] gap-10">
+          <div><div className="grid grid-cols-3 gap-3"><Stat v={String(proof.pages.n)} l="原始活动页面" /><Stat v="6" l="所大学；其中 5 所设计时从没见过" /><Stat v={String(proof.pages.edge_pages)} l="带特殊情况的页面" /></div>
+            <Bars yMax={32} yLabel="页面数" h={230} groups={Object.entries(proof.pages.schools).map(([k, v]) => ({ label: k, bars: [{ name: "", value: v as number, color: k === "NYU" ? PUR : TEAL }] }))} />
+            <p className="text-[14px] text-[#8a8296]">另有 {proof.listings.n} 条 NYU 活动列表（{proof.listings.facts} 条事实），以及设计阶段特意留着没用的十页考题集。</p></div>
+          <table className="w-full self-start"><tbody>
+            <tr><Cell head w="34%">规则</Cell><Cell head>怎么守住</Cell></tr>
+            <tr><Cell><b>输入不是我们的</b></Cell><Cell>六所大学的图书馆日历返回的每一个即将举办的活动，按数据源的顺序。不手挑。</Cell></tr>
+            <tr><Cell><b>标准答案是独立的</b></Cell><Cell>答案来自日历自己的结构化字段（日期、开始、结束、地点、是否线上）。各系统只看得到渲染出来的页面。</Cell></tr>
+            <tr><Cell><b>故意选乱的</b></Cell><Cell>重复举办的活动、没有地点、只在线上、跨多天、已取消、缺年份、被页面隐藏的文字。</Cell></tr>
+            <tr><Cell><b>评分规则先定死</b></Cell><Cell>每一组都用同一个评分器。不展示的算在覆盖率的损失里，绝不算对。</Cell></tr>
+            <tr><Cell><b>也有现场输入</b></Cell><Cell>这个会场里的语音和海报，在台上走同一道核对关卡。</Cell></tr>
+          </tbody></table>
+        </div>
+      </div>) },
+
+    { id: "失败", body: (
+      <div className="h-full"><Eyebrow>问题三 · 哪里失败了，我们改了什么</Eyebrow><H>之前，怎么改，之后。</H>
+        <table className="mt-4 w-full"><tbody>
+          <tr><Cell head w="27%">我们看到了什么</Cell><Cell head w="17%">之前</Cell><Cell head w="31%">我们改了什么</Cell><Cell head>之后</Cell></tr>
+          {FAILS.map((row, n) => (
+            <tr key={n}>{row.map((t: string, k: number) => <td key={k} className="border-t-2 px-3 py-2 align-top text-[14.5px] leading-snug" style={{ borderColor: "#e6dfd0", fontWeight: k === 3 ? 700 : 400 }}>{t.length > 100 ? t.slice(0, 98) + "…" : t}</td>)}</tr>))}
+        </tbody></table>
+        <p className="mt-3 text-[15px] text-[#8a8296]">共记录了 {proof.improvements.length} 次修正，证据文件都列在 <code>base/runs/improvements.json</code> 里。其中三次是我们的测量出了错，不是系统出了错。</p>
+      </div>) },
+
+    { id: "仍然失败", body: (
+      <div className="grid h-full grid-cols-[1.2fr_1fr] items-center gap-10">
+        <div><Eyebrow>问题三 · 哪里仍然失败</Eyebrow><H>还有 {PG.system_v2.wrong} 条事实是错的。都在这里。</H>
+          <table className="mt-4 w-full"><tbody>
+            <tr><Cell head w="16%">哪所学校</Cell><Cell head w="14%">事实</Cell><Cell head w="36%">我们展示的</Cell><Cell head>日历上写的</Cell></tr>
+            {[0, 1, 9, 13].map((k) => { const w = (proof.pages.still_wrong as any[])[k]; return w ? (<tr key={k}><Cell>{w.school}</Cell><Cell>{w.field}</Cell><Cell>{String(w.shown)}</Cell><Cell>{String(w.truth)}</Cell></tr>) : null; })}
+          </tbody></table>
+          <ul className="mt-4"><Li><b>18 条里的 12 条</b>是 Penn 和 Duke 重复举办的活动被说成线上。原因我们还没找到。</Li>
+            <Li><b>18 条里的 4 条</b>是 Duke 的房间：我们从描述里读出了房间，而日历字段写的是「Other」。我们仍然把它们算作错。</Li>
+            <Li>第一次跑活动列表时覆盖率是 54.6%：核对关卡太严也是一种失败。</Li></ul></div>
+        <div><p className="text-sm font-bold uppercase tracking-wider text-[#8a8296]">数字之外</p>
+          <ul className="mt-2"><Li>Columbia 的记录没有进入活动列表测试。</Li><Li>外出读的是核对过的底座；Managed Agent 的实时浏览还没有接上。</Li><Li>学习这一侧只在一个模拟学生上测过。第一天：6 个封存的预测对了 2 个。</Li><Li>生成的三张脸都被否掉了；现在的脸是手绘的。</Li></ul></div>
+      </div>) },
+
+    { id: "今天和以后", body: (
+      <div className="grid h-full grid-cols-[1.3fr_1fr] items-center gap-10">
+        <div><Eyebrow>一天之内我们走到了哪，照实说</Eyebrow><H>哪些能用，哪些测过，哪里还粗糙。</H>
+          <table className="mt-5 w-full"><tbody>
+            <tr><Cell head w="50%">今天能用</Cell><Cell head>还没有</Cell></tr>
+            <tr><Cell>共享底座由 Gemini 设计，已填充、已核对，并在没见过的页面上对照基线测量过</Cell><Cell>机构结构和机会这两部分几乎是空的</Cell></tr>
+            <tr><Cell>听多种语言，看海报，外出，带回三样东西，留下或跳过，封存的预测，可以撤销的日记</Cell><Cell>Managed Agent 的实时浏览；外出读的是核对过的底座</Cell></tr>
+            <tr><Cell>用它自己的 Gem Star 主动做事；十四个受治理的方法；一个能整天整天运行的管理模式</Cell><Cell>Gemi 对 Gemi 只和 Carbon 编出来的模拟学生跑过；社团的智能体还没有做</Cell></tr>
+            <tr><Cell>一个把自身状态显示出来的 3D 房间；一个带关节的角色，有 29 个动作和 12 种表情</Cell><Cell><b>角色还很粗糙。</b>生成的三张脸都失败了；脸暂时是手绘的</Cell></tr>
+          </tbody></table>
+          <p className="mt-4 text-lg"><b>接下来：</b>衣柜和从一段语音里诞生，伙伴和纪念品，靠现实世界里的结果换来的空间，有自己智能体的社团，第三个校园。</p></div>
+        <div className="h-[70vh]"><Live src="/gen3d/doll.html?embed=1&cam=front&looks=pip,mochi&show=walk,sitDown,wave,think,reachShelf,stretch" /></div>
       </div>) },
 
     { id: "Gemini", body: (
@@ -296,6 +334,21 @@ export default function Deck({ onLang }: { onLang?: () => void }) {
           <tr><Cell><b>Lyria</b></Cell><Cell>背景音乐，每首 30 秒。</Cell><Cell>六首，每首大约 15 秒生成。</Cell></tr>
           <tr><Cell><b>Managed Agent</b></Cell><Cell>计划用来实时外出访问公开网页。</Cell><Cell>今天没有接上。</Cell></tr>
         </tbody></table>
+      </div>) },
+
+    { id: "对 Gemini 的意义", body: (
+      <div className="grid h-full grid-cols-[1.2fr_1fr] items-center gap-10">
+        <div><Eyebrow>这件事为 Gemini 探索了什么</Eyebrow><H>模型之间互相设计、核对、纠正，而且有预算。</H>
+          <ul className="mt-5"><Li><b>模型设计自己的地基。</b>Carbon 写了本体；另一位设计者并行写了一份；合并时记下了每一处分歧。</Li>
+            <Li><b>一个模型的说法，是另一个模型的问题。</b>Hydrogen 写的任何东西，没有 Decisions 高于 0.8 的回答，就到不了学生面前。</Li>
+            <Li><b>一个看得到自己作品的模型。</b>Neon 看不出自己做的脸不对，直到把渲染图给它看。</Li>
+            <Li><b>把预算当作设计材料。</b>token 稀缺，智能体就得做选择，而它换来的东西成为公共财产。</Li>
+            <Li><b>规则写在代码里的自主。</b>想、做、造：方法要登记，先扣费，分阶段，有总开关。</Li></ul></div>
+        <Frame className="h-[62vh] p-6"><p className="text-sm font-bold uppercase tracking-wider text-[#8a8296]">五个西格玛，在这个产品里</p>
+          <p className="mt-4 text-3xl font-bold leading-tight">一条事实只有能在它的来源上指出来，才会到学生面前。</p>
+          <p className="mt-5 text-lg leading-relaxed text-[#4a4356]">我们还没有做到五个西格玛。我们做出来的，是让错误率可以测量、并且把它压下去的东西：每个字段一道核对关卡，一条基线，一套考题集，一份失败记录。</p>
+          <div className="mt-6 grid grid-cols-2 gap-3 text-center"><div className="rounded-2xl border-2 bg-white py-3" style={{ borderColor: INK }}><div className="text-3xl font-bold">0 / 76</div><div className="text-xs text-[#8a8296]">展示了无依据的字段，没见过的页面</div></div>
+            <div className="rounded-2xl border-2 bg-white py-3" style={{ borderColor: INK }}><div className="text-3xl font-bold">29 / 103</div><div className="text-xs text-[#8a8296]">同样的页面，单次模型调用</div></div></div></Frame>
       </div>) },
 
     { id: "理论", body: (
@@ -336,7 +389,7 @@ export default function Deck({ onLang }: { onLang?: () => void }) {
         <button onClick={() => setI(Math.max(0, i - 1))} aria-label="上一页" className="mr-3 h-10 w-10 rounded-full border-[3px] bg-[#fffaf0] text-lg font-bold" style={{ borderColor: INK, boxShadow: `0 3px 0 ${INK}` }}>‹</button>
         {slides.map((s, k) => <button key={s.id} onClick={() => setI(k)} title={s.id} aria-label={`第 ${k + 1} 页：${s.id}`} className="h-3 rounded-full border-2 transition-all" style={{ borderColor: INK, width: k === i ? 34 : 12, background: k === i ? "#7c4dce" : "#fffaf0" }} />)}
         <button onClick={() => setI(Math.min(slides.length - 1, i + 1))} aria-label="下一页" className="ml-3 h-10 w-10 rounded-full border-[3px] bg-[#fffaf0] text-lg font-bold" style={{ borderColor: INK, boxShadow: `0 3px 0 ${INK}` }}>›</button>
-        <span className="ml-4 text-xs tabular-nums text-[#8a8296]">{i + 1} / {slides.length} · {slides[i].id}</span>
+        <span className="ml-4 text-xs tabular-nums text-[#8a8296]">{sectionOf(i)} · {i + 1} / {slides.length} · {slides[i].id}</span>
         {onLang && <button onClick={onLang} className="ml-4 rounded-full border-[3px] bg-[#fffaf0] px-3 py-1 text-sm font-bold" style={{ borderColor: INK, boxShadow: `0 3px 0 ${INK}` }}>English</button>}
       </nav>
     </main>

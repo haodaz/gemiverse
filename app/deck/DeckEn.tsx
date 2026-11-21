@@ -50,6 +50,9 @@ const MAP: [string, string, string, string][] = [
   ["Out on campus", "The room is empty, door ajar", "Being somewhere else", "Gemi"],
 ];
 
+const SECTIONS: [string, number][] = [["Product", 6], ["What makes it different", 7], ["How we got here", 6], ["What it opens", 3]];
+const sectionOf = (i: number) => { let k = 0; for (const [name, n] of SECTIONS) { if (i < k + n) return name; k += n; } return ""; };
+
 export default function Deck({ onLang }: { onLang?: () => void }) {
   const [i, setI] = useState(0);
   const imp = (id: string) => (proof.improvements as any[]).find((x) => x.id === id);
@@ -61,6 +64,16 @@ export default function Deck({ onLang }: { onLang?: () => void }) {
           <p className="max-w-[46%] pb-2 text-xl leading-relaxed text-[#4a4356]">Every college student gets a <b>Gemi</b>. It enters a space, and day by day its picture of you gains dimensions. The tokens it spends each day are few; what they buy stays.</p></div>
         <div className="mt-4 min-h-0 flex-1"><Banner /></div>
         <p className="mt-3 text-center text-2xl font-bold" style={{ color: "#7c4dce" }}>It would rather miss than be wrong.</p>
+      </div>) },
+
+    { id: "What it is", body: (
+      <div className="grid h-full grid-cols-[1fr_1.25fr] items-center gap-10">
+        <div><Eyebrow>What Gemiverse is</Eyebrow><H>A twin with a room, a budget and a conscience about facts.</H>
+          <ul className="mt-5"><Li>You talk to it in any language, or show it a poster. It listens to what you said, not how you sounded.</Li>
+            <Li>It goes out to four places on campus and brings back three things, each field checked against its source.</Li>
+            <Li>You keep or skip. From that it learns how you choose, and shows you what it learned. You can undo any of it.</Li>
+            <Li>Left alone, it spends its own Gem Stars: thinking, going out, keeping its diary, changing its room.</Li></ul></div>
+        <div className="h-[78vh]"><Live src="/gen3d/viewer.html?embed=1&bare=1&school=nyu" /></div>
       </div>) },
 
     { id: "The task", body: (
@@ -76,6 +89,42 @@ export default function Deck({ onLang }: { onLang?: () => void }) {
           <p className="mt-4 text-[15px] text-[#8a8296]">We are not at five sigma. We built what makes the error rate measurable and pushes it down.</p></div>
       </div>) },
 
+    { id: "Gemi + Verse", body: (
+      <div className="h-full"><Eyebrow>Why a Gemi, why a Verse</Eyebrow><H>A mind needs a body to be read. Facts need a place to be shared.</H>
+        <div className="mt-8 grid grid-cols-2 gap-8">
+          <Frame className="p-7"><Tag>Gemi · the person</Tag>
+            <ul className="mt-4"><Li>Its picture of you is uncertain. A character can <b>show</b> that: where it stands, what it holds, its face when a guess was wrong.</Li>
+              <Li>It is yours alone. What it learns about you stays in your browser. No platform profile.</Li>
+              <Li>Raising it is raising yourself: every keep or skip shows you how you choose.</Li></ul></Frame>
+          <Frame className="p-7"><Tag c="#a8d4ff">Verse · the place</Tag>
+            <ul className="mt-4"><Li>Campus facts are one shared base. What one Gemi checks, every Gemi reads for free.</Li>
+              <Li>The room is a readout: cards on the desk are finds waiting, pins are finds kept, jars hold its Gem Stars.</Li>
+              <Li>No feed, no ranking, no recommender in the middle. Gemis and club agents form the network; people decide.</Li></ul></Frame>
+        </div>
+        <p className="mt-8 text-center text-2xl font-bold">Shared facts. Private understanding.</p>
+      </div>) },
+
+    { id: "Who", body: (
+      <div className="grid h-full grid-cols-[1.15fr_1fr] items-center gap-10">
+        <div><Eyebrow>Who it is for, and why them</Eyebrow><H>College students. NYU and Columbia first.</H>
+          <ul className="mt-5"><Li><b>Too much, not too little.</b> One NYU calendar feed lists about a thousand events in three weeks. Students do not lack information; they lack something that reads it for them and does not make things up.</Li>
+            <Li><b>The pages are public and checkable.</b> A campus is a small, bounded world with official sources. That is what makes a five-sigma standard for facts reachable at all.</Li>
+            <Li><b>Choices here shape a person.</b> Which room you walk into in your first year matters, and the research is clear that belonging only follows real opportunities.</Li>
+            <Li><b>A vertical makes it affordable.</b> Thousands of students share the same events, so one check serves all of them.</Li></ul></div>
+        <div className="h-[70vh]"><img src="/art/campus3-nyu.svg" alt="An illustrated campus map" className="h-full w-full object-cover [mask-image:radial-gradient(ellipse_at_center,black_55%,transparent_78%)]" /></div>
+      </div>) },
+
+    { id: "Value", body: (
+      <div className="h-full"><Eyebrow>The pain, what it does about it, and the evidence</Eyebrow><H>Four problems, four answers.</H>
+        <table className="mt-6 w-full"><tbody>
+          <tr><Cell head w="24%">The pain</Cell><Cell head w="38%">What the Gemi does</Cell><Cell head>Evidence today</Cell></tr>
+          <tr><Cell><b>AI answers that sound right and are not.</b></Cell><Cell>Every field of everything it brings back is checked against its source by the Decisions API. Below 0.8 it is withheld and shown as withheld.</Cell><Cell>On 10 unseen pages a single model call showed 29 of 103 fields with no support on the page; ours showed none. On 122 raw pages from six universities: 3.2% wrong against 8.4%.</Cell></tr>
+          <tr><Cell><b>A thousand events, no time.</b></Cell><Cell>A small daily budget forces a choice: three finds per trip, picked where you care most and it knows least.</Cell><Cell>Carbon picks two finds that contrast on the axis it is least sure of, so whichever you keep teaches it something.</Cell></tr>
+          <tr><Cell><b>Black-box personalisation.</b></Cell><Cell>Seven situational axes, each with an uncertainty band. Every move is tied to one choice and can be undone. It seals a guess before you choose.</Cell><Cell>The seal is a real commit and reveal; the browser re-computes the hash. Its early guesses are often wrong, and it says so in its diary.</Cell></tr>
+          <tr><Cell><b>Companions that keep you chatting.</b></Cell><Cell>Short visits. No streaks, no leaderboards. Success is what you did in the real world.</Cell><Cell>Designed in from the research; growth is measured in checked facts and kept finds, never in time spent.</Cell></tr>
+        </tbody></table>
+      </div>) },
+
     { id: "Simple outside", body: (
       <div className="grid h-full grid-cols-[1fr_1.35fr] items-center gap-8">
         <div className="flex h-full flex-col"><Eyebrow>It looks simple. It is not.</Eyebrow><H>It grows from the bottom up.</H>
@@ -85,63 +134,6 @@ export default function Deck({ onLang }: { onLang?: () => void }) {
           <div key={name} className="grid grid-cols-[190px_1fr_170px] items-center gap-3 rounded-xl border-2 px-3 py-2" style={{ borderColor: INK, background: c }}>
             <b className="text-[15px]">{name}</b><span className="text-[14px] leading-snug">{what}</span><span className="text-right text-[12.5px] font-bold">{num}</span></div>))}
           <p className="pt-2 text-[14px] text-[#8a8296]">Gemini designed layers 2 and 4 before any screen existed. A second designer worked in parallel; both drafts and the merge are in the repo, nothing overwritten.</p></div>
-      </div>) },
-
-    { id: "Baseline", body: (
-      <div className="h-full"><Eyebrow>Question 1 · the baseline, and how much better</Eyebrow><H>Against one model call on the same pages.</H>
-        <div className="mt-4 grid grid-cols-[1.25fr_1fr] gap-10">
-          <div><Bars yMax={0.1} yLabel="wrong facts shown / facts shown" fmt={(v) => `${(v * 100).toFixed(1)}%`} h={330} groups={[
-            { label: `Listings · ${proof.listings.facts} facts`, bars: [{ name: "baseline", value: L.baseline.error_rate, color: GREY }, { name: "ours", value: L.v3.error_rate, color: PUR }] },
-            { label: `Raw pages, first run · ${proof.pages.facts} facts`, bars: [{ name: "baseline", value: P1.baseline.error_rate, color: GREY }, { name: "ours", value: P1.system.error_rate ?? P1.system_v1?.error_rate, color: RED }] },
-            { label: "Raw pages, after the fix", bars: [{ name: "baseline", value: PG.baseline.error_rate, color: GREY }, { name: "base+reader", value: PG.baseline_visible.error_rate, color: "#8f879c" }, { name: "ours", value: PG.system_v2.error_rate, color: PUR }] }]} /></div>
-          <div className="text-[17px] leading-relaxed">
-            <p><b>Baseline:</b> Gemini 4 Argon, one call, the page text in, the five facts out. No structure, no check.</p>
-            <p className="mt-3"><b>Ours:</b> Hydrogen fills a structure Carbon designed; the Decisions API answers one question per field against the source; a rule in code resolves the year.</p>
-            <p className="mt-3"><b>The first run lost.</b> {pct(P1.system?.error_rate ?? P1.system_v1?.error_rate)} against {pct(P1.baseline.error_rate)}. The gate confirmed hidden text, because the words were there. We show that bar.</p>
-            <p className="mt-3"><b>After the fix:</b> {pct(PG.system_v2.error_rate)} against {pct(PG.baseline.error_rate)}, with coverage {pct(PG.system_v2.coverage)}. Give the baseline our reader and it reaches {pct(PG.baseline_visible.error_rate)}: most of the gain is the reader; the gate&apos;s own margin is on places, 6 wrong against 12.</p>
-            <p className="mt-3 text-[15px] text-[#8a8296]">Cost: {Math.round(TPP.sys)} tokens a page against {Math.round(TPP.base)}. Next slide says who pays.</p></div>
-        </div>
-      </div>) },
-
-    { id: "Test set", body: (
-      <div className="h-full"><Eyebrow>Question 2 · the test set</Eyebrow><H>Pages we did not pick, truth we did not write.</H>
-        <div className="mt-5 grid grid-cols-[1fr_1.1fr] gap-10">
-          <div><div className="grid grid-cols-3 gap-3"><Stat v={String(proof.pages.n)} l="raw event pages" /><Stat v="6" l="universities; 5 never seen while designing" /><Stat v={String(proof.pages.edge_pages)} l="pages with an edge case" /></div>
-            <Bars yMax={32} yLabel="pages" h={230} groups={Object.entries(proof.pages.schools).map(([k, v]) => ({ label: k, bars: [{ name: "", value: v as number, color: k === "NYU" ? PUR : TEAL }] }))} />
-            <p className="text-[14px] text-[#8a8296]">Plus {proof.listings.n} NYU listings ({proof.listings.facts} facts), and a ten-page exam set held back from the design step.</p></div>
-          <table className="w-full self-start"><tbody>
-            <tr><Cell head w="34%">Rule</Cell><Cell head>How it is kept</Cell></tr>
-            <tr><Cell><b>Inputs are not ours</b></Cell><Cell>Every upcoming event the library calendars of six universities returned, in feed order. No hand picking.</Cell></tr>
-            <tr><Cell><b>Truth is independent</b></Cell><Cell>The answer key is the calendar&apos;s own structured fields (date, start, end, place, online). The systems only see the rendered page.</Cell></tr>
-            <tr><Cell><b>Messy on purpose</b></Cell><Cell>Recurring events, no location, online only, multi-day, cancelled, missing year, text the page hides.</Cell></tr>
-            <tr><Cell><b>Scoring fixed first</b></Cell><Cell>Same scorer for every arm. Withheld counts against coverage, never as right.</Cell></tr>
-            <tr><Cell><b>Live inputs too</b></Cell><Cell>Voice notes and posters from this room go through the same gate on stage.</Cell></tr>
-          </tbody></table>
-        </div>
-      </div>) },
-
-    { id: "Failures", body: (
-      <div className="h-full"><Eyebrow>Question 3 · what failed, and what we changed</Eyebrow><H>Before, how, after.</H>
-        <table className="mt-4 w-full"><tbody>
-          <tr><Cell head w="27%">What we saw</Cell><Cell head w="17%">Before</Cell><Cell head w="31%">What we changed</Cell><Cell head>After</Cell></tr>
-          {["hidden-text", "year-never-printed", "gate-asked-in-24h", "labels-vs-facts", "seal-not-checkable", "sources-blocked"].map((id) => { const x = imp(id); return (
-            <tr key={id}>{[x.saw, x.before, x.how, x.after].map((t: string, k: number) => <td key={k} className="border-t-2 px-3 py-2 align-top text-[14.5px] leading-snug" style={{ borderColor: "#e6dfd0", fontWeight: k === 3 ? 700 : 400 }}>{t.length > 190 ? t.slice(0, 188) + "…" : t}</td>)}</tr>); })}
-        </tbody></table>
-        <p className="mt-3 text-[15px] text-[#8a8296]">{proof.improvements.length} corrections are logged with evidence files in <code>base/runs/improvements.json</code>. Three of them were our measurement being wrong, not the system.</p>
-      </div>) },
-
-    { id: "Still fails", body: (
-      <div className="grid h-full grid-cols-[1.2fr_1fr] items-center gap-10">
-        <div><Eyebrow>Question 3 · where it still fails</Eyebrow><H>{PG.system_v2.wrong} facts still wrong. Here they are.</H>
-          <table className="mt-4 w-full"><tbody>
-            <tr><Cell head w="16%">Where</Cell><Cell head w="14%">Fact</Cell><Cell head w="36%">We showed</Cell><Cell head>The calendar says</Cell></tr>
-            {[0, 1, 9, 13].map((k) => { const w = (proof.pages.still_wrong as any[])[k]; return w ? (<tr key={k}><Cell>{w.school}</Cell><Cell>{w.field}</Cell><Cell>{String(w.shown)}</Cell><Cell>{String(w.truth)}</Cell></tr>) : null; })}
-          </tbody></table>
-          <ul className="mt-4"><Li><b>12 of 18</b> are recurring Penn and Duke events called online. We have not found the cause yet.</Li>
-            <Li><b>4 of 18</b> are Duke rooms we read from the description while the calendar field says &ldquo;Other&rdquo;. We left them counted as wrong.</Li>
-            <Li>Coverage on the first listings run was 54.6%: a gate that is too strict is also a failure.</Li></ul></div>
-        <div><p className="text-sm font-bold uppercase tracking-wider text-[#8a8296]">Outside the numbers</p>
-          <ul className="mt-2"><Li>Columbia records never reached the listings test.</Li><Li>Trips read the checked base; live browsing by the Managed Agent is not wired.</Li><Li>The learning side is measured on a simulated student only. Day one: 2 of 6 sealed guesses right.</Li><Li>Three generated faces were rejected; the face is hand-painted.</Li></ul></div>
       </div>) },
 
     { id: "Tokens keep paying", body: (
@@ -235,29 +227,75 @@ export default function Deck({ onLang }: { onLang?: () => void }) {
         </div>
       </div>) },
 
-    { id: "Gemi + Verse", body: (
-      <div className="h-full"><Eyebrow>Why a Gemi, why a Verse</Eyebrow><H>A mind needs a body to be read. Facts need a place to be shared.</H>
-        <div className="mt-8 grid grid-cols-2 gap-8">
-          <Frame className="p-7"><Tag>Gemi · the person</Tag>
-            <ul className="mt-4"><Li>Its picture of you is uncertain. A character can <b>show</b> that: where it stands, what it holds, its face when a guess was wrong.</Li>
-              <Li>It is yours alone. What it learns about you stays in your browser. No platform profile.</Li>
-              <Li>Raising it is raising yourself: every keep or skip shows you how you choose.</Li></ul></Frame>
-          <Frame className="p-7"><Tag c="#a8d4ff">Verse · the place</Tag>
-            <ul className="mt-4"><Li>Campus facts are one shared base. What one Gemi checks, every Gemi reads for free.</Li>
-              <Li>The room is a readout: cards on the desk are finds waiting, pins are finds kept, jars hold its Gem Stars.</Li>
-              <Li>No feed, no ranking, no recommender in the middle. Gemis and club agents form the network; people decide.</Li></ul></Frame>
+    { id: "Baseline", body: (
+      <div className="h-full"><Eyebrow>Question 1 · the baseline, and how much better</Eyebrow><H>Against one model call on the same pages.</H>
+        <div className="mt-4 grid grid-cols-[1.25fr_1fr] gap-10">
+          <div><Bars yMax={0.1} yLabel="wrong facts shown / facts shown" fmt={(v) => `${(v * 100).toFixed(1)}%`} h={330} groups={[
+            { label: `Listings · ${proof.listings.facts} facts`, bars: [{ name: "baseline", value: L.baseline.error_rate, color: GREY }, { name: "ours", value: L.v3.error_rate, color: PUR }] },
+            { label: `Raw pages, first run · ${proof.pages.facts} facts`, bars: [{ name: "baseline", value: P1.baseline.error_rate, color: GREY }, { name: "ours", value: P1.system.error_rate ?? P1.system_v1?.error_rate, color: RED }] },
+            { label: "Raw pages, after the fix", bars: [{ name: "baseline", value: PG.baseline.error_rate, color: GREY }, { name: "base+reader", value: PG.baseline_visible.error_rate, color: "#8f879c" }, { name: "ours", value: PG.system_v2.error_rate, color: PUR }] }]} /></div>
+          <div className="text-[17px] leading-relaxed">
+            <p><b>Baseline:</b> Gemini 4 Argon, one call, the page text in, the five facts out. No structure, no check.</p>
+            <p className="mt-3"><b>Ours:</b> Hydrogen fills a structure Carbon designed; the Decisions API answers one question per field against the source; a rule in code resolves the year.</p>
+            <p className="mt-3"><b>The first run lost.</b> {pct(P1.system?.error_rate ?? P1.system_v1?.error_rate)} against {pct(P1.baseline.error_rate)}. The gate confirmed hidden text, because the words were there. We show that bar.</p>
+            <p className="mt-3"><b>After the fix:</b> {pct(PG.system_v2.error_rate)} against {pct(PG.baseline.error_rate)}, with coverage {pct(PG.system_v2.coverage)}. Give the baseline our reader and it reaches {pct(PG.baseline_visible.error_rate)}: most of the gain is the reader; the gate&apos;s own margin is on places, 6 wrong against 12.</p>
+            <p className="mt-3 text-[15px] text-[#8a8296]">Cost: {Math.round(TPP.sys)} tokens a page against {Math.round(TPP.base)}. Next slide says who pays.</p></div>
         </div>
-        <p className="mt-8 text-center text-2xl font-bold">Shared facts. Private understanding.</p>
       </div>) },
 
-    { id: "Who", body: (
-      <div className="grid h-full grid-cols-[1.15fr_1fr] items-center gap-10">
-        <div><Eyebrow>Who it is for, and why them</Eyebrow><H>College students. NYU and Columbia first.</H>
-          <ul className="mt-5"><Li><b>Too much, not too little.</b> One NYU calendar feed lists about a thousand events in three weeks. Students do not lack information; they lack something that reads it for them and does not make things up.</Li>
-            <Li><b>The pages are public and checkable.</b> A campus is a small, bounded world with official sources. That is what makes a five-sigma standard for facts reachable at all.</Li>
-            <Li><b>Choices here shape a person.</b> Which room you walk into in your first year matters, and the research is clear that belonging only follows real opportunities.</Li>
-            <Li><b>A vertical makes it affordable.</b> Thousands of students share the same events, so one check serves all of them.</Li></ul></div>
-        <div className="h-[70vh]"><img src="/art/campus3-nyu.svg" alt="An illustrated campus map" className="h-full w-full object-cover [mask-image:radial-gradient(ellipse_at_center,black_55%,transparent_78%)]" /></div>
+    { id: "Test set", body: (
+      <div className="h-full"><Eyebrow>Question 2 · the test set</Eyebrow><H>Pages we did not pick, truth we did not write.</H>
+        <div className="mt-5 grid grid-cols-[1fr_1.1fr] gap-10">
+          <div><div className="grid grid-cols-3 gap-3"><Stat v={String(proof.pages.n)} l="raw event pages" /><Stat v="6" l="universities; 5 never seen while designing" /><Stat v={String(proof.pages.edge_pages)} l="pages with an edge case" /></div>
+            <Bars yMax={32} yLabel="pages" h={230} groups={Object.entries(proof.pages.schools).map(([k, v]) => ({ label: k, bars: [{ name: "", value: v as number, color: k === "NYU" ? PUR : TEAL }] }))} />
+            <p className="text-[14px] text-[#8a8296]">Plus {proof.listings.n} NYU listings ({proof.listings.facts} facts), and a ten-page exam set held back from the design step.</p></div>
+          <table className="w-full self-start"><tbody>
+            <tr><Cell head w="34%">Rule</Cell><Cell head>How it is kept</Cell></tr>
+            <tr><Cell><b>Inputs are not ours</b></Cell><Cell>Every upcoming event the library calendars of six universities returned, in feed order. No hand picking.</Cell></tr>
+            <tr><Cell><b>Truth is independent</b></Cell><Cell>The answer key is the calendar&apos;s own structured fields (date, start, end, place, online). The systems only see the rendered page.</Cell></tr>
+            <tr><Cell><b>Messy on purpose</b></Cell><Cell>Recurring events, no location, online only, multi-day, cancelled, missing year, text the page hides.</Cell></tr>
+            <tr><Cell><b>Scoring fixed first</b></Cell><Cell>Same scorer for every arm. Withheld counts against coverage, never as right.</Cell></tr>
+            <tr><Cell><b>Live inputs too</b></Cell><Cell>Voice notes and posters from this room go through the same gate on stage.</Cell></tr>
+          </tbody></table>
+        </div>
+      </div>) },
+
+    { id: "Failures", body: (
+      <div className="h-full"><Eyebrow>Question 3 · what failed, and what we changed</Eyebrow><H>Before, how, after.</H>
+        <table className="mt-4 w-full"><tbody>
+          <tr><Cell head w="27%">What we saw</Cell><Cell head w="17%">Before</Cell><Cell head w="31%">What we changed</Cell><Cell head>After</Cell></tr>
+          {["hidden-text", "year-never-printed", "gate-asked-in-24h", "labels-vs-facts", "seal-not-checkable", "sources-blocked"].map((id) => { const x = imp(id); return (
+            <tr key={id}>{[x.saw, x.before, x.how, x.after].map((t: string, k: number) => <td key={k} className="border-t-2 px-3 py-2 align-top text-[14.5px] leading-snug" style={{ borderColor: "#e6dfd0", fontWeight: k === 3 ? 700 : 400 }}>{t.length > 190 ? t.slice(0, 188) + "…" : t}</td>)}</tr>); })}
+        </tbody></table>
+        <p className="mt-3 text-[15px] text-[#8a8296]">{proof.improvements.length} corrections are logged with evidence files in <code>base/runs/improvements.json</code>. Three of them were our measurement being wrong, not the system.</p>
+      </div>) },
+
+    { id: "Still fails", body: (
+      <div className="grid h-full grid-cols-[1.2fr_1fr] items-center gap-10">
+        <div><Eyebrow>Question 3 · where it still fails</Eyebrow><H>{PG.system_v2.wrong} facts still wrong. Here they are.</H>
+          <table className="mt-4 w-full"><tbody>
+            <tr><Cell head w="16%">Where</Cell><Cell head w="14%">Fact</Cell><Cell head w="36%">We showed</Cell><Cell head>The calendar says</Cell></tr>
+            {[0, 1, 9, 13].map((k) => { const w = (proof.pages.still_wrong as any[])[k]; return w ? (<tr key={k}><Cell>{w.school}</Cell><Cell>{w.field}</Cell><Cell>{String(w.shown)}</Cell><Cell>{String(w.truth)}</Cell></tr>) : null; })}
+          </tbody></table>
+          <ul className="mt-4"><Li><b>12 of 18</b> are recurring Penn and Duke events called online. We have not found the cause yet.</Li>
+            <Li><b>4 of 18</b> are Duke rooms we read from the description while the calendar field says &ldquo;Other&rdquo;. We left them counted as wrong.</Li>
+            <Li>Coverage on the first listings run was 54.6%: a gate that is too strict is also a failure.</Li></ul></div>
+        <div><p className="text-sm font-bold uppercase tracking-wider text-[#8a8296]">Outside the numbers</p>
+          <ul className="mt-2"><Li>Columbia records never reached the listings test.</Li><Li>Trips read the checked base; live browsing by the Managed Agent is not wired.</Li><Li>The learning side is measured on a simulated student only. Day one: 2 of 6 sealed guesses right.</Li><Li>Three generated faces were rejected; the face is hand-painted.</Li></ul></div>
+      </div>) },
+
+    { id: "Today and next", body: (
+      <div className="grid h-full grid-cols-[1.3fr_1fr] items-center gap-10">
+        <div><Eyebrow>How far we got in one day, honestly</Eyebrow><H>Working, measured, and where it is still rough.</H>
+          <table className="mt-5 w-full"><tbody>
+            <tr><Cell head w="50%">Works today</Cell><Cell head>Not yet</Cell></tr>
+            <tr><Cell>Shared base designed by Gemini, filled, checked, measured against a baseline on unseen pages</Cell><Cell>Institution structure and opportunities are nearly empty</Cell></tr>
+            <tr><Cell>Hear in many languages, see a poster, go out, three finds, keep or skip, sealed guess, diary with undo</Cell><Cell>Live browsing by the Managed Agent; trips read the checked base</Cell></tr>
+            <tr><Cell>Its own initiative on its own Gem Stars; fourteen governed methods; an admin mode that runs whole days</Cell><Cell>Gemi to Gemi runs only against simulated students invented by Carbon; club agents are not built</Cell></tr>
+            <tr><Cell>A 3D room that reads out its state; a jointed character with 29 motions and 12 expressions</Cell><Cell><b>The character is still rough.</b> Three generated faces failed; the face is hand-painted for now</Cell></tr>
+          </tbody></table>
+          <p className="mt-4 text-lg"><b>Next:</b> wardrobe and birth from a voice note, companions and keepsakes, spaces earned by real-world outcomes, clubs with their own agents, a third campus.</p></div>
+        <div className="h-[70vh]"><Live src="/gen3d/doll.html?embed=1&cam=front&looks=pip,mochi&show=walk,sitDown,wave,think,reachShelf,stretch" /></div>
       </div>) },
 
     { id: "Gemini", body: (
@@ -272,6 +310,21 @@ export default function Deck({ onLang }: { onLang?: () => void }) {
           <tr><Cell><b>Lyria</b></Cell><Cell>Background music, 30 seconds a track.</Cell><Cell>Six tracks in about 15 seconds each.</Cell></tr>
           <tr><Cell><b>Managed Agent</b></Cell><Cell>Planned for live trips to public pages.</Cell><Cell>Not wired today.</Cell></tr>
         </tbody></table>
+      </div>) },
+
+    { id: "For Gemini", body: (
+      <div className="grid h-full grid-cols-[1.2fr_1fr] items-center gap-10">
+        <div><Eyebrow>What this explores for Gemini</Eyebrow><H>Models that design, check and correct each other, on a budget.</H>
+          <ul className="mt-5"><Li><b>A model designs its own ground.</b> Carbon wrote the ontology; a second designer wrote one in parallel; the merge records every disagreement.</Li>
+            <Li><b>One model's claim is another model's question.</b> Nothing Hydrogen writes reaches a student without a Decisions answer above 0.8.</Li>
+            <Li><b>A model that can see its own work.</b> Neon could not tell its faces were wrong until it was shown the render.</Li>
+            <Li><b>Budget as a design material.</b> Scarce tokens make the agent choose, and what it buys becomes common property.</Li>
+            <Li><b>Autonomy under rules in code.</b> Think, act, make: registered methods, charged first, staged, with a kill switch.</Li></ul></div>
+        <Frame className="h-[62vh] p-6"><p className="text-sm font-bold uppercase tracking-wider text-[#8a8296]">Five sigma, in this product</p>
+          <p className="mt-4 text-3xl font-bold leading-tight">A fact reaches a student only if it can be shown on its source.</p>
+          <p className="mt-5 text-lg leading-relaxed text-[#4a4356]">We are not at five sigma. We built the thing that makes the error rate measurable and drives it down: a gate on every field, a baseline, an exam set, and a log of what failed.</p>
+          <div className="mt-6 grid grid-cols-2 gap-3 text-center"><div className="rounded-2xl border-2 bg-white py-3" style={{ borderColor: INK }}><div className="text-3xl font-bold">0 / 76</div><div className="text-xs text-[#8a8296]">unsupported fields shown, unseen pages</div></div>
+            <div className="rounded-2xl border-2 bg-white py-3" style={{ borderColor: INK }}><div className="text-3xl font-bold">29 / 103</div><div className="text-xs text-[#8a8296]">same pages, one model call</div></div></div></Frame>
       </div>) },
 
     { id: "Theory", body: (
@@ -297,7 +350,7 @@ export default function Deck({ onLang }: { onLang?: () => void }) {
             <a key={h} href={h} className="rounded-full border-[3px] bg-[#ffe08a] px-5 py-2" style={{ borderColor: INK, boxShadow: `0 4px 0 ${INK}` }}>{l}</a>))}</div>
           <p className="mt-8 text-sm text-[#8a8296]">All code written on 2026-11-21 with an AI coding assistant. Concepts from our earlier work on a campus twin and a portrait with uncertainty. github.com/haodaz/gemiverse</p></div>
         <div className="h-[78vh]"><Live src="/gen3d/viewer.html?embed=1&bare=1&school=columbia" /></div>
-      </div>) },
+      </div>) }
   ];
 
   useEffect(() => {
@@ -312,7 +365,7 @@ export default function Deck({ onLang }: { onLang?: () => void }) {
         <button onClick={() => setI(Math.max(0, i - 1))} aria-label="Previous slide" className="mr-3 h-10 w-10 rounded-full border-[3px] bg-[#fffaf0] text-lg font-bold" style={{ borderColor: INK, boxShadow: `0 3px 0 ${INK}` }}>‹</button>
         {slides.map((s, k) => <button key={s.id} onClick={() => setI(k)} title={s.id} aria-label={`Slide ${k + 1}: ${s.id}`} className="h-3 rounded-full border-2 transition-all" style={{ borderColor: INK, width: k === i ? 34 : 12, background: k === i ? "#7c4dce" : "#fffaf0" }} />)}
         <button onClick={() => setI(Math.min(slides.length - 1, i + 1))} aria-label="Next slide" className="ml-3 h-10 w-10 rounded-full border-[3px] bg-[#fffaf0] text-lg font-bold" style={{ borderColor: INK, boxShadow: `0 3px 0 ${INK}` }}>›</button>
-        <span className="ml-4 text-xs tabular-nums text-[#8a8296]">{i + 1} / {slides.length} · {slides[i].id}</span>
+        <span className="ml-4 text-xs tabular-nums text-[#8a8296]">{sectionOf(i)} · {i + 1} / {slides.length} · {slides[i].id}</span>
         {onLang && <button onClick={onLang} className="ml-4 rounded-full border-[3px] bg-[#fffaf0] px-3 py-1 text-sm font-bold" style={{ borderColor: INK, boxShadow: `0 3px 0 ${INK}` }}>中文</button>}
       </nav>
     </main>

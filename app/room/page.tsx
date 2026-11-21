@@ -19,7 +19,7 @@ import { Chunky, GamePanel, Icon, IconButton, INK, RadialMenu } from "@/componen
 type Entity = { id: string; name: string; fields: Record<string, any>; tier: number };
 type Evidence = { entity_id: string; field: string; check_confidence: number | null; passed: boolean | null };
 type Panel = "talk" | "desk" | "diary" | "tools" | "outbox" | null;
-type Item = { id: number; who: "you" | "gemi"; text?: string; image?: string; heard?: any; saw?: any; cost?: string; error?: boolean };
+type Item = { id: number; who: "you" | "gemi"; text?: string; image?: string; heard?: any; saw?: any; cost?: string; error?: boolean; step?: boolean };
 type Find = { id: string; title: string; fields: Record<string, any>; why: string; evidence: { axis: AxisId; x: number; why: string }[]; checks: { field: string; confidence: number; passed: boolean }[] };
 type Trip = { place: string; by: "gemi" | "student"; reason: string; finds: Find[]; seal: string; sealed: string; revealed?: { predicted: Record<string, number>; nonce: string; verified: boolean }; contrast_axis?: string; tokens?: number; model?: string; choices: Record<string, "keep" | "skip"> };
 
@@ -35,6 +35,8 @@ export default function Room() {
   const [school, setSchool] = useState<SchoolId | null>(null);
   const [lang, setLang] = useState<Lang>("en");
   const [panel, setPanel] = useState<Panel>(null);
+  const [deskView, setDeskView] = useState(false);
+  const doNext = useRef<any>(null);
   const [campus, setCampus] = useState(false);
   const [outAt, setOutAt] = useState<string | null>(null);
   const [tap, setTap] = useState<{ x: number; y: number } | null>(null);
@@ -88,7 +90,7 @@ export default function Room() {
   const append = (e: LogEvent) => setLog((l) => { const n = [...l, e]; saveLog(school, n); return n; });
   const when = (f: Record<string, any>) => { const v = f.occurrences?.[0]?.start; return v ? new Date(v).toLocaleString(lang === "zh" ? "zh-CN" : lang === "es" ? "es" : "en-US", { weekday: "short", month: "short", day: "numeric", hour: "numeric", minute: "2-digit" }) : tt("date_unconfirmed"); };
   const releaseGemi = () => { setTap(null); send("release"); };
-  const openPanel = (p: Panel) => { setPanel(p); setCampus(false); releaseGemi(); send("focus", p === "desk" ? "desk" : p === "diary" ? "board" : "room"); };
+  const openPanel = (p: Panel) => { setPanel(p); setCampus(false); releaseGemi(); if (p !== "desk") setDeskView(false); send("focus", p === "desk" ? "desk" : p === "diary" ? "board" : "room"); };
   const charge = (tool: string, stars: number, purse: "for_you" | "for_itself") => setState((st) => ({ ...st, purses: { ...st.purses, [purse]: st.purses[purse] - stars }, usedToday: { ...st.usedToday, [tool]: (st.usedToday[tool] ?? 0) + 1 } }));
 
   async function onSend(m: Sent) {
@@ -110,9 +112,14 @@ export default function Room() {
         if (r.needs?.length) append({ id: uid(), at: new Date().toISOString(), type: "said", needs: r.needs.map((n: any) => ({ id: n.id, quote: n.quote })), text: r.transcript ?? (m.kind === "text" ? m.text : "") });
         if (r.wants?.length) setWants((w) => [...w, ...r.wants].slice(-12));
         push({ who: "gemi", text: r.reply, heard: r, cost: `${r.tokens} tokens · ${r.model}` });
+        // Agentic: what it heard as a request becomes a step it takes, after the same governance check as a button press.
+        const d = r.do?.tool && r.do.tool !== "none" ? r.do : null;
+        if (d) { push({ who: "gemi", text: `→ ${d.tool}${d.place ? ` · ${d.place}` : ""} · ${tt("your_idea")}`, step: true }); doNext.current = d; }
       }
     } catch { push({ who: "gemi", text: "Something went wrong reaching the model.", error: true }); }
-    finally { setBusy(false); }
+    finally { setBusy(false); const d = doNext.current; doNext.current = null;
+      if (d?.tool === "go_out" && ["library", "clubs", "commons", "opportunities"].includes(d.place)) setTimeout(() => goOut(d.place, "student"), 600);
+      else if (d?.tool === "open_diary") openPanel("diary"); else if (d?.tool === "show_desk") { setPanel(null); setDeskView(true); send("focus", "desk"); } else if (d?.tool === "meet_gemis") window.open("/meet", "_blank"); }
   }
 
   async function goOut(place: string, by: "gemi" | "student" = "student") {
@@ -214,7 +221,7 @@ export default function Room() {
 
       <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-4">
         <IconButton icon="talk" label={tt("btn_talk")} active={panel === "talk"} accent={s.soft} onClick={() => openPanel(panel === "talk" ? null : "talk")} />
-        <IconButton icon="desk" label={tt("btn_desk")} active={panel === "desk"} accent={s.soft} badge={pending || undefined} onClick={() => openPanel(panel === "desk" ? null : "desk")} />
+        <IconButton icon="desk" label={tt("btn_desk")} active={deskView || panel === "desk"} accent={s.soft} badge={pending || undefined} onClick={() => { const on = !deskView; setDeskView(on); setPanel(null); setCampus(false); releaseGemi(); send("focus", on ? "desk" : "room"); }} />
         <IconButton icon="diary" label={tt("btn_diary")} active={panel === "diary"} accent={s.soft} onClick={() => openPanel(panel === "diary" ? null : "diary")} />
         <IconButton icon="campus" label={tt("btn_campus")} active={campus} accent={s.soft} onClick={() => { setCampus(true); setPanel(null); releaseGemi(); }} />
         <IconButton icon="arrange" label={tt("btn_arrange")} onClick={() => { setPanel(null); send("arrange"); }} />
@@ -222,11 +229,25 @@ export default function Room() {
         <IconButton icon="outbox" label={tt("btn_outbox")} active={panel === "outbox"} accent={s.soft} onClick={() => openPanel(panel === "outbox" ? null : "outbox")} />
       </div>
 
+      {deskView && !panel && !campus && (
+        <div className="absolute left-6 top-1/2 z-10 flex -translate-y-1/2 flex-col gap-3">
+          {[{ k: "finds", icon: "desk", title: tt("tab_desk"), sub: pending ? `${pending} · ${tt("brought_back")}` : "0", go: () => setPanel("desk") },
+            { k: "diary", icon: "diary", title: tt("btn_diary"), sub: `${log.filter((e) => e.type === "choice").length}`, go: () => setPanel("diary") },
+            { k: "stars", icon: "star", title: "Gem Star", sub: `${state.purses.for_you} + ${state.purses.for_itself}`, go: () => setPanel("tools") }].map((h) => (
+            <button key={h.k} onClick={h.go} className="flex items-center gap-3 rounded-2xl border-[3px] bg-[#fffaf0] px-4 py-2.5 text-left transition hover:translate-x-1" style={{ borderColor: INK, boxShadow: `0 4px 0 ${INK}` }}>
+              <Icon name={h.icon} size={30} /><span><span className="block text-sm font-bold leading-tight">{h.title}</span><span className="block text-xs text-[#8a8296]">{h.sub}</span></span></button>))}
+          <button onClick={() => { setDeskView(false); send("focus", "room"); }} className="rounded-full border-[3px] bg-[#ffe08a] px-4 py-2 text-sm font-bold" style={{ borderColor: INK, boxShadow: `0 4px 0 ${INK}` }}>{tt("back_room")}</button>
+        </div>)}
+
       {panel && (
-        <GamePanel title={tt(titles[panel][0])} icon={titles[panel][1]} accent={s.accent} onClose={() => { setPanel(null); send("focus", "room"); }} closeLabel={tt("close")}
+        <GamePanel title={tt(titles[panel][0])} icon={titles[panel][1]} accent={s.accent} onClose={() => { setPanel(null); send("focus", deskView ? "desk" : "room"); }} closeLabel={tt("close")}
           footer={panel === "talk" ? <Composer lang={lang} accent={s.accent} busy={busy} onSend={onSend} /> : undefined}>
           {panel === "talk" && (
             <div className="space-y-3">
+              <div className="sticky top-0 z-[1] -mx-1 flex items-center gap-3 rounded-2xl border-2 bg-[#fffaf0] px-2 py-1" style={{ borderColor: INK }}>
+                <iframe src={`/gen3d/doll.html?embed=1&cam=face&looks=${preset.gemiName.toLowerCase()}`} title={preset.gemiName} className="h-24 w-24 shrink-0 border-0 bg-transparent" />
+                <div className="min-w-0"><div className="text-base font-bold">{preset.gemiName}</div><div className="text-xs leading-snug text-[#6d6579]">{busy ? "…" : doing ?? ""}</div></div>
+              </div>
               {feed.length === 0 && <p className="text-sm leading-relaxed text-[#5f576c]">{tt("empty_today")}</p>}
               {feed.map((i) => (
                 <div key={i.id} className={i.who === "you" ? "flex justify-end" : ""}>

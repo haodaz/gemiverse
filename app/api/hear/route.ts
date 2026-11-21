@@ -14,9 +14,11 @@ Return only JSON:
  "languages": ["every language heard, as ISO codes, most used first"],
  "needs": [{"id": "one id from the list", "quote": "the exact words that show it, in the original language", "gloss": "the same in English, only if the quote is not English, else null"}],
  "wants": ["short plain phrases for concrete things they said they want or want to avoid, each traceable to their words, written in the language they used"],
- "reply": "one warm sentence back to them that repeats what you understood and asks nothing. Answer in the language they mostly spoke; if they typed or said nothing clear, use ${lang}"}
+ "do": {"tool": "go_out | open_diary | show_desk | meet_gemis | none", "place": "library | clubs | commons | opportunities | null"},
+ "reply": "one warm sentence back to them that repeats what you understood and asks nothing; if do.tool is not none, say what you are about to do. Answer in the language they mostly spoke; if they typed or said nothing clear, use ${lang}"}
 
 Rules:
+- do: what the student asked the companion to do right now, as a proposal the app will check against its rules before anything runs. go_out when they ask it to go and look for something (library: skills, study, research; clubs: people, groups, making; commons: meeting people, rest, food; opportunities: jobs, experience, direction). open_diary when they ask what it learned about them. show_desk when they ask what it brought back. meet_gemis when they ask it to meet other students' Gemis. Otherwise none. Telling it about themselves is not a request to act.
 - needs: at most three, only when their own words support it. Ids:
 ${needList()}
 - People here speak many languages and mix them. Understand names of places, courses and clubs said in English inside another language. Understand idiom by meaning, not word by word.
