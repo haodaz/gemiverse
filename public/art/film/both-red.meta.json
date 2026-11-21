@@ -1,0 +1,10 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "Edit the attached photograph. Keep everything exactly as it is: the same young woman with the black bob and round glasses smiling on the park bench, the same stone arch and yellow autumn trees, the same laptop and the same screen content on the right, the same framing and light. Change only her clothing: instead of the lilac cardigan she wears a cosy rust-red fleece jacket with a stand-up collar, plain, with no logo or text. Keep the laptop lid plain with no logo. No other changes. No text, no logos, no watermarks.",
+ "reference": [
+  "both2.jpg"
+ ],
+ "seconds": 46,
+ "tokens": 2058,
+ "at": "2026-11-21T20:37:28.557Z"
+}

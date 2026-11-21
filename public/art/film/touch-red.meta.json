@@ -1,0 +1,10 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "Edit the attached photograph. Keep everything exactly as it is: the same woman, the same hand and fingertip touching the laptop screen, the same screen content with the little character reaching up and the warm glow, the same framing, light and background. Change only her clothing: instead of the lilac cardigan she wears a cosy rust-red fleece jacket with a stand-up collar, plain, with no logo or text. No other changes. No text, no logos, no watermarks.",
+ "reference": [
+  "touch.jpg"
+ ],
+ "seconds": 15,
+ "tokens": 2036,
+ "at": "2026-11-21T20:36:57.614Z"
+}
