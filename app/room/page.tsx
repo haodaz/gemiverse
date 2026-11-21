@@ -91,7 +91,7 @@ export default function Room() {
         const verdict = mayCall("see_poster", state, "", "student");
         push({ who: "you", text: m.name, image: m.preview });
         if (!verdict.ok) { push({ who: "gemi", text: verdict.reason, error: true }); return; }
-        const r = await fetch("/api/see", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ data: m.data, mime: m.mime, lang }) }).then((x) => x.json());
+        const r = await fetch("/api/see", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ data: m.data, mime: m.mime, lang, school }) }).then((x) => x.json());
         if (r.error) { push({ who: "gemi", text: r.error, error: true }); return; }
         charge("see_poster", verdict.charge.stars, "for_you");
         push({ who: "gemi", text: r.reply, saw: r, cost: `${r.tokens} tokens · ${r.models.join(" + ")}` });
@@ -232,6 +232,7 @@ export default function Room() {
                         <div className="mb-1 text-[#8a8296]">{tt("saw")}</div>
                         {i.saw.fields.map((f: any) => <div key={f.field} className="flex justify-between gap-3 py-0.5"><span className="text-[#8a8296]">{f.field.replace(/_/g, " ")}</span><span className="text-right">{f.passed ? String(f.value) : <i className="text-[#b0a8ba]">{tt("withheld")}</i>} <b className="tabular-nums" style={{ color: f.passed ? "#2f7a3d" : "#b26a00" }}>{Math.round(f.confidence * 100)}%</b></span></div>)}
                         {!i.saw.fields.some((f: any) => f.field === "start") && <div className="py-0.5 text-[#b26a00]">start: {tt("withheld")} (no year printed)</div>}
+                        {i.saw.added && <div className="mt-1 rounded-lg bg-[#e6f5e6] px-2 py-1 font-semibold text-[#2f7a3d]">{tt("added_base")}</div>}
                       </div>
                     )}
                     {i.cost && <div className="mt-1.5 text-[10px] text-[#a79fb1]">{tt("cost")}: {i.cost}</div>}

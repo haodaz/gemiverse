@@ -1,5 +1,7 @@
 import { ask, decide, parseJson, starsFor, type Part, type Question } from "@/lib/server/gemini";
 import { needList } from "@/lib/needs";
+import { createHash } from "node:crypto";
+import { replaceEvidence, upsertEntities } from "@/lib/server/base";
 
 // See what the student shows: a poster photo, a screenshot or a PDF. Hydrogen reads it into one Event record;
 // the Decisions API then checks every stated field against the same image. Only checked fields are returned as facts.
@@ -9,7 +11,7 @@ const LABEL: Record<string, string> = { title: "the title is", start: "it starts
 
 export async function POST(req: Request) {
   try {
-    const { data, mime, lang = "en" } = await req.json();
+    const { data, mime, lang = "en", school = "nyu" } = await req.json();
     if (!data || !mime) return Response.json({ error: "Nothing to look at." }, { status: 400 });
     const kind: Part["type"] = String(mime).startsWith("image/") ? "image" : "document";
     const file: Part = { type: kind, data, mime_type: mime } as Part;
@@ -29,7 +31,22 @@ ${needList()}` }, file], "low");
     let checks: Record<string, number> = {}, checkTokens = 0;
     if (Object.keys(questions).length) { const d = await decide([{ type: "text", text: "Check each claim against this file." }, file], questions); checks = d.answers; checkTokens = d.usage.total_tokens ?? 0; }
     const fields = STATED.filter((k) => rec[k]).map((k) => ({ field: k, value: rec[k], confidence: checks[k] ?? 0, passed: (checks[k] ?? 0) >= 0.8 }));
-    return Response.json({ what: rec.what, is_event: rec.is_event, summary: rec.summary, needs: rec.needs ?? [], reply: rec.reply, seen_text: rec.seen_text, fields,
+    // What a student shows becomes part of the shared base, so the next Gemi does not have to find it again. Only the thing enters:
+    // an event with a checked title. Who showed it, and that it was shown at all, is not recorded. Posters rank below official pages (tier 3).
+    let added: string | null = null;
+    const ok = (k: string) => fields.find((f) => f.field === k)?.passed;
+    if (rec.is_event && ok("title")) {
+      try {
+        const id = `poster:${createHash("sha256").update(String(rec.title).toLowerCase() + "|" + (rec.street_address ?? rec.building_name ?? "")).digest("hex").slice(0, 10)}`;
+        const f: Record<string, unknown> = { summary: rec.summary, needs: rec.needs ?? [], source_kind: "poster shown by a student", inferred: [] };
+        for (const k of ["venue_name", "building_name", "street_address", "organisation_name", "cost_type"]) if (ok(k)) f[k] = rec[k];
+        if (ok("start")) f.occurrences = [{ start: rec.start, end: ok("end") ? rec.end : null }];
+        await upsertEntities([{ id, type: "Event", school: school === "columbia" ? "columbia" : "nyu", name: rec.title, fields: f, tier: 3, ontology_version: "v2" } as any]);
+        await replaceEvidence(id, fields.map((x) => ({ field: x.field, quote: String(x.value), url: null, check_confidence: x.confidence, passed: x.passed })) as any);
+        added = id;
+      } catch { /* the base is optional here: seeing still works without it */ }
+    }
+    return Response.json({ added, what: rec.what, is_event: rec.is_event, summary: rec.summary, needs: rec.needs ?? [], reply: rec.reply, seen_text: rec.seen_text, fields,
       models: [r.model, "gemini-decision-1"], tokens: (r.usage.total_tokens ?? 0) + checkTokens, stars: starsFor({ total_tokens: (r.usage.total_tokens ?? 0) + checkTokens }) });
   } catch (e) {
     return Response.json({ error: String((e as Error).message) }, { status: 500 });
