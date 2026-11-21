@@ -22,18 +22,16 @@ export default function Home() {
       </header>
 
       {/* 1 · what it is: two stills drawn by Gemini's image model from a screenshot of the real room, moving slowly and fading into each other */}
-      <style>{`@keyframes kb1{0%{opacity:1;transform:scale(1.02) translate(0,0)}42%{opacity:1}50%{opacity:0;transform:scale(1.14) translate(-1.5%,-1%)}92%{opacity:0}100%{opacity:1;transform:scale(1.02)}}
-@keyframes kb2{0%{opacity:0;transform:scale(1.12) translate(1%,0)}42%{opacity:0}50%{opacity:1}92%{opacity:1;transform:scale(1.02) translate(0,0)}100%{opacity:0}}`}</style>
+      <style>{`@keyframes kb{0%{opacity:0;transform:scale(1.03)}5%{opacity:1}33%{opacity:1}40%{opacity:0;transform:scale(1.12)}100%{opacity:0;transform:scale(1.12)}}`}</style>
       <section className="snap-start relative h-[calc(100vh-60px)] min-h-[560px] overflow-hidden bg-[#2b2536]">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/art/film/touch.jpg" alt="A hand touches a laptop screen; inside, a small character in its room reaches back" className="absolute inset-0 h-full w-full object-cover" style={{ animation: "kb1 18s ease-in-out infinite" }} />
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/art/film/both2.jpg" alt="A student on a park bench with a laptop; on its screen, her Gemi waves from its room" className="absolute inset-0 h-full w-full object-cover" style={{ animation: "kb2 18s ease-in-out infinite" }} />
+        {[["walk", "A student walks across a campus quad in autumn; a small Gemi floats beside her shoulder", "-1.2s", "70% 40%"], ["touch", "A hand touches a laptop screen; inside, a small character in its room reaches back", "6.8s", "50% 50%"], ["both2", "A student on a park bench with a laptop; on its screen, her Gemi waves from its room", "14.8s", "50% 40%"]].map(([f, alt, delay, pos]) => (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img key={f} src={`/art/film/${f}.jpg`} alt={alt} className="absolute inset-0 h-full w-full object-cover opacity-0" style={{ animation: `kb 24s ease-in-out ${delay} infinite`, objectPosition: pos }} />))}
         <div className="absolute inset-0" style={{ background: "linear-gradient(90deg, #1d1828e6 0%, #1d1828b3 34%, #1d182800 62%)" }} />
         <div className="relative mx-auto flex h-full max-w-6xl flex-col justify-center px-8 text-white">
           <p className="text-[13px] font-bold uppercase tracking-[0.22em] text-[#e8dcff]">For college students · NYU and Columbia first</p>
           <h1 className="mt-4 max-w-2xl text-[4.4rem] font-semibold leading-[1.02] tracking-tight">Meet your Gemi,<br />and build a universe together.</h1>
-          <p className="mt-6 max-w-xl text-[21px] leading-relaxed text-white/85">It begins as a point of light, and exists because you met it. Then it is a small you that lives on campus, goes out while you are in class, and comes back with three things worth your evening.</p>
+          <p className="mt-6 max-w-xl text-[21px] leading-relaxed text-white/85">An AI of your own, and a campus world for it to live in. Your Gemi knows what is on at your university, goes out to look for you, and tells you only what it has checked.</p>
           <div className="mt-8 flex items-center gap-4">
             <a href="/start" className="rounded-full bg-[#ffe08a] px-8 py-3.5 text-lg font-semibold text-[#2b2536]" style={{ boxShadow: "0 6px 0 #b8963a" }}>Meet your Gemi</a>
             <a href="#day" className="rounded-full border-2 border-white/80 px-7 py-3 text-lg font-semibold">See a day with it</a>
@@ -51,7 +49,7 @@ export default function Home() {
               ["One rule", "Miss rather than be wrong", "Every date, time and room it shows you was found on the source page. What it could not check, it does not show."]].map(([k, t, d]) => (
               <div key={k}><Eyebrow>{k}</Eyebrow><h3 className="mt-1.5 text-3xl font-semibold">{t}</h3><p className="mt-2 text-[17px] leading-relaxed" style={{ color: MUTE }}>{d}</p></div>))}
           </div>
-          <div><div className="h-[60vh]"><Live src="/gen3d/viewer.html?embed=1&bare=1&school=nyu" title="A Gemi in its room, live" /></div><p className="text-center text-sm" style={{ color: "#8a8296" }}>This is the real room, running now. The pictures above were drawn by Gemini from a screenshot of it.</p></div>
+          <div><div className="h-[60vh]"><Live src="/gen3d/viewer.html?embed=1&bare=1&school=nyu" title="A Gemi in its room, live" /></div><p className="text-center text-sm" style={{ color: "#8a8296" }}>This is the real room, running now. The pictures above were drawn by Gemini's image model, using a screenshot of it.</p></div>
         </div>
       </section>
 

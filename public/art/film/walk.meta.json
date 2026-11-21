@@ -1,0 +1,11 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A cinematic 16:9 photograph, warm golden-hour autumn light, shallow depth of field. The same young woman as in the first attached photo (black bob, round glasses, lilac cardigan), now with a backpack, walks along a tree-lined path across a university campus quad: brick and stone academic buildings, a library with tall arched windows, other students walking and sitting on the grass in the soft-focus background, yellow leaves on the ground. Floating in the air beside her shoulder, as if walking with her, is the small chibi doll character from the second attached image (black bob, lilac cardigan), about the size of her hand, softly glowing with a warm light and a faint trail of sparkles; she glances at it and smiles. The woman is on the right third of the frame, the left half has open space of path and campus. No text, no logos, no university names, no watermarks.",
+ "reference": [
+  "both2.jpg",
+  "room.jpg"
+ ],
+ "seconds": 15,
+ "tokens": 2880,
+ "at": "2026-11-21T20:57:17.883Z"
+}

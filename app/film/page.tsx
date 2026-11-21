@@ -36,6 +36,18 @@ export default function Film() {
             <div key={l as string} className="flex w-56 flex-col items-center justify-end" style={{ height: "100%" }}><span className="mb-3 text-[4.6rem] font-semibold leading-none" style={{ color: col as string }}>{((v as number) * 100).toFixed(1)}%</span>
               <div className="w-full rounded-t-3xl" style={{ height: `${((v as number) / 0.1) * 78}%`, background: col as string }} /><span className="absolute translate-y-14 text-3xl font-semibold">{l}</span></div>))}</div></div>)}
 
+      {c === "under" && (<div className="grid w-full max-w-[1400px] grid-cols-[1fr_1.05fr] items-center gap-12"><div><Eyebrow>It looks simple</Eyebrow><Title>Underneath,<br />built today:</Title>
+          <pre className="mt-8 overflow-hidden rounded-3xl bg-[#2b2536] px-7 py-6 font-mono text-[19px] leading-relaxed text-[#fdf6e3]">{`post("/interactions", {
+  agent: "antigravity-preview-09-2026",
+  environment: { type: "remote" },
+  input: "Fetch this page and read it" })
+
+post("/decisions", {
+  model: "gemini-decision-1",
+  questions: { start: { type: "noul", ... } } })`}</pre></div>
+        <div className="space-y-3">{[["A shared base", "designed by Gemini 4 Carbon · 166 checked entities", "#c8b4f0"], ["A gate on every field", "Decisions API · confidence checked in code", "#a8d4ff"], ["A mind with uncertainty", "seven axes · one update rule · undo", "#a8e0c0"], ["Autonomy under rules", "12 policy rows · 14 governed tools · real tokens", "#ffe08a"], ["A Managed Agent", "goes back to the source, live, in a sandbox", "#ffd6e0"]].map(([t, d, col]) => (
+          <div key={t} className="rounded-3xl border-[4px] px-7 py-4" style={{ borderColor: INK, background: col }}><p className="text-[2.1rem] font-semibold leading-tight">{t}</p><p className="text-[1.35rem]" style={{ color: "#4a4356" }}>{d}</p></div>))}</div></div>)}
+
       {c === "deeds" && (<div className="w-full max-w-[1300px]"><div className="grid grid-cols-2 gap-12">
         {[["论迹", "by its deeds", "To act, it needs a space it can change.", PUR], ["论心", "by its mind", "To have a mind, it needs a world it can sense.", "#2f9e8f"]].map(([zh, en, line, col]) => (
           <div key={zh} className="rounded-[36px] border-[4px] bg-white p-12" style={{ borderColor: INK }}><div className="flex items-baseline gap-6"><span className="text-[9rem] font-bold leading-none" style={{ color: col }}>{zh}</span><span className="text-3xl font-semibold" style={{ color: MUTE }}>{en}</span></div>

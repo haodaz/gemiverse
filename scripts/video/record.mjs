@@ -7,6 +7,7 @@ const puppeteer = createRequire("/Users/aisandbox/Documents/vsbp/package.json")(
 const B = new URL(".", import.meta.url).pathname, FF = "/Users/aisandbox/Documents/companydata/node_modules/ffmpeg-static/ffmpeg", O = "http://localhost:3000";
 const TEMPO = 1.08, PAD = 0.45;
 const dur = Object.fromEntries(JSON.parse(fs.readFileSync(B + "tts/durations.json", "utf8")).map((d) => [d.id.replace("n", "s"), d.dur / TEMPO + PAD]));
+if (process.env.REC_MIN) for (const k of ["s1", "s2", "s3", "s4", "s5", "s6", "s7", "s8"]) dur[k] = Math.max(dur[k] ?? 0, +process.env.REC_MIN);   // record clips long; the story cut trims them
 fs.mkdirSync(B + "seg", { recursive: true });
 const only = process.argv.slice(2), want = (id) => !only.length || only.includes(id);
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
