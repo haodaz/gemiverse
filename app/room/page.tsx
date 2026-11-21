@@ -121,7 +121,7 @@ export default function Room() {
   useEffect(() => { const id = setInterval(() => auto.current?.(), 5000); return () => clearInterval(id); }, []);
   const s = school ? SCHOOLS[school] : null, preset = school ? { ...PRESETS[school], gemiName: me?.name || PRESETS[school].gemiName } : null;
   const evidenceOf = useMemo(() => { const m: Record<string, Evidence[]> = {}; for (const e of base?.evidence ?? []) (m[e.entity_id] ??= []).push(e); return m; }, [base]);
-  useEffect(() => { if (tour === null) return; send("focus", ["jars", "jars", "desk", "board", "door"][tour] ?? "room"); setPanel(null); setDeskView(false);
+  useEffect(() => { if (tour === null) return; send("focus", ["room", "room", "desk", "board", "door"][tour] ?? "room"); setPanel(null); setDeskView(false);
     if (tour !== 0) return; setPoured(0); let n = 0; const id = setInterval(() => { n += 1; setPoured(n); if (n >= 12) clearInterval(id); }, 320); return () => clearInterval(id); }, [tour]);   // eslint-disable-line react-hooks/exhaustive-deps
   if (!s || !preset || !school) return null;
   const tt = (k: string) => t(k, lang);
@@ -327,8 +327,20 @@ export default function Room() {
         ];
         const k = tour, x = T[k], last = k === T.length - 1;
         const end = () => { try { localStorage.setItem(`gemi.toured.${school}`, "1"); } catch {} setTour(null); send("focus", "room"); const w = firstWords.current; firstWords.current = null; if (w) setTimeout(() => { setPanel("talk"); onSend({ kind: "text", text: w }); }, 900); };
+        // The pile the stars settle into, bottom row first: [x, y] inside the jar.
+        const PILE: [number, number][] = [[104, 262], [150, 268], [196, 262], [127, 232], [173, 232], [104, 204], [150, 200], [196, 204], [127, 172], [173, 170]];
+        const jarOnly = k <= 1;
         return (
-          <div className="absolute inset-x-0 bottom-28 z-30 flex justify-center px-6">
+          <div className={jarOnly ? "absolute inset-0 z-30 flex flex-col items-center justify-center gap-5 bg-[#faf8f5] px-6" : "absolute inset-x-0 bottom-28 z-30 flex justify-center px-6"}>
+            {jarOnly && (<>
+              <style>{`@keyframes gemdrop{0%{transform:translateY(-300px) rotate(-40deg);opacity:0}12%{opacity:1}78%{transform:translateY(8px) rotate(6deg)}100%{transform:translateY(0) rotate(0);opacity:1}}@keyframes gemglow{0%,100%{filter:drop-shadow(0 0 4px #ffd24a88)}50%{filter:drop-shadow(0 0 12px #ffd24acc)}}`}</style>
+              <svg viewBox="0 0 300 330" className="h-[40vh] w-auto" aria-label={`A jar with ${state.purses.for_you + state.purses.for_itself} Gem Stars falling in`}>
+                <rect x="96" y="22" width="108" height="26" rx="9" fill="#c89462" stroke={INK} strokeWidth="5" />
+                <path d="M88 60 Q88 48 104 48 H196 Q212 48 212 60 Q236 74 236 110 V268 Q236 304 200 304 H100 Q64 304 64 268 V110 Q64 74 88 60 Z" fill="#ffffff" fillOpacity="0.72" stroke={INK} strokeWidth="5" strokeLinejoin="round" />
+                {PILE.map(([x, y], i) => (<g key={i} style={{ animation: `gemdrop 0.9s cubic-bezier(.3,.7,.4,1) ${0.35 + i * 0.3}s both`, transformBox: "fill-box" }}>
+                  <path transform={`translate(${x - 22} ${y - 22}) scale(1.85)`} d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z" fill={i < state.purses.for_you ? "#ffd24a" : "#b89cff"} stroke={INK} strokeWidth="1.5" strokeLinejoin="round" style={{ animation: "gemglow 2.4s ease-in-out infinite" }} /></g>))}
+                <path d="M84 104 Q80 150 84 232" fill="none" stroke="#ffffff" strokeWidth="7" strokeLinecap="round" opacity="0.9" />
+              </svg></>)}
             <div className="relative w-[min(46rem,92vw)] rounded-xl border-[3px] bg-[#fffaf0] px-7 pb-5 pt-6" style={{ borderColor: INK, boxShadow: `0 6px 0 ${INK}33, 0 14px 30px #0003` }}>
               <span className="absolute -top-4 left-7 -rotate-2 rounded-lg border-[3px] px-3.5 py-0.5 text-sm font-bold text-white" style={{ background: s!.accent, borderColor: INK }}>{preset.gemiName}</span>
               <p className="text-[1.7rem] font-bold leading-tight">{x.big}</p>
@@ -343,7 +355,7 @@ export default function Room() {
       {/* What the Gemi says on its own comes up as a dialogue card, as a character speaks in a game: name tag, typed line, tap to dismiss. */}
       {spoke && tour === null && !campus && !panel && !tap && <Dialogue key={spoke.text + lang} name={preset.gemiName} text={say(spoke.text, lang)} accent={s.accent} onDone={() => setSpoke(null)} />}
 
-      {deskView && !panel && !campus && (
+      {deskView && tour === null && !panel && !campus && (
         <div className="absolute left-6 top-1/2 z-10 flex -translate-y-1/2 flex-col gap-3">
           {[{ k: "finds", icon: "desk", title: tt("tab_desk"), sub: pending ? `${pending} · ${tt("brought_back")}` : "0", go: () => setPanel("desk") },
             { k: "diary", icon: "diary", title: tt("btn_diary"), sub: `${log.filter((e) => e.type === "choice").length}`, go: () => setPanel("diary") },
