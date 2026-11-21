@@ -12,3 +12,4 @@
 - Outbox gate and AI-to-AI messages are not built.
 - Chosen character and motion library are not in the room yet.
 - Head with sculpted eye sockets, lids and lips like the chibi topology references, instead of a painted face on a smooth head (Elodie, 13:22).
+- Head built from explicit side and front profiles read off the references (`scripts/art/face-paint-profile.wip.js`): the side silhouette matched (broad cranium, vertical face, chin shelf, flat underside, neck under the middle, ears) but the face paint did not land on the new surface and the shading banded. Parked at 13:00; the previous head is in use.

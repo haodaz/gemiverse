@@ -76,7 +76,7 @@ export function paintFace(THREE, kit, look, expression = "awake") {
       g.beginPath(); g.moveTo(a.px, a.py); g.quadraticCurveTo(m.px, m.py, b.px, b.py); g.stroke(); }
     g.globalAlpha = 1;
     // nose: a tiny warm dot
-    soft(0, -0.50, 0.02, 0.014, shade(look.skin, -0.28), 0.5);
+    soft(0, -0.44, 0.02, 0.014, shade(look.skin, -0.28), 0.5);
     // mouth
     const mp = place(0, -0.645, W, H), mw = 0.055 * u; g.strokeStyle = look.lip ?? "#c9777a"; g.lineWidth = u * 0.018; g.lineCap = "round"; g.beginPath();
     if (expression === "surprised") { g.fillStyle = "#b85a66"; g.ellipse(mp.px, mp.py + mw * 0.2, mw * 0.4, mw * 0.55, 0, 0, TAU); g.fill(); }
@@ -108,7 +108,7 @@ export function headGeometry(THREE) {
     x *= wx;
     if (z > 0) { z *= wz * (1 - 0.10 * bump(y + 0.25, 0.55));      // a calm, nearly flat face plane
       z += 0.05 * front * bump(y - 0.45, 0.4);                      // full forehead
-      z += 0.045 * bump(Math.hypot(x, y + 0.47), 0.085) * front;    // tiny nose
+      z += 0.05 * bump(Math.hypot(x, y + 0.41), 0.085) * front;     // tiny nose, a little higher (Elodie)
       z += 0.02 * bump(Math.hypot(x, y + 0.66), 0.13) * front;      // mouth mound
       z += 0.03 * front * bump(Math.hypot(Math.abs(x) - 0.5, y + 0.5), 0.22);  // cheek fullness
     } else z *= 1 + 0.06 * bump(y - 0.05, 0.6);                    // big round back of the skull
