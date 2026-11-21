@@ -13,7 +13,7 @@ Every college student gets a twin: an AI projection that lives on campus (NYU fi
 | Graph | knowledge graph (things linked to things) | learning graph (things linked to one person) |
 | Holds | events, places, clubs: quote, link, screenshot, tier, check result | voice note, every keep / skip, axes and halos, diary, predictions |
 | Owner | everyone | the student and their twin |
-| Stored | server, one shared file | the student's browser only |
+| Stored | Supabase: `entities`, `links`, `evidence` (design drafts stay as JSON in the repo) | the student's browser only |
 | Leaves? | already public | nothing by default; only fields the student marked public |
 
 Rules: only entities enter the base, never who asked. Name cards are kept by each side; there is no central map of who knows whom. Every AI-to-AI message passes a gate.
@@ -54,6 +54,8 @@ Axes kept after testing: – (to be measured)
 A small daily allowance of real tokens. Two purses: for the student (going out, asking other AIs) and for itself (thinking, diary, its room). Reading the shared base is cheap; going out is expensive; a revisit pays only for what changed. The measure is kept finds per star, not volume.
 
 ## 6. The twin and its room · planned
+- Two schools from the first screen: NYU and Columbia; the picker says more are opening.
+- Art is SVG drawn by `gemini-4-neon` (rooms, campus maps, places), saved in `public/art/` with prompt and token count. First room: **built**.
 - Built from parts, no photo: `design/07-avatar-parts.md`.
 - Desk = entities brought back. Mirror = the loop (prior → evidence → posterior). Diary = what actually happened.
 - It only looks and asks. It never signs up, replies or agrees for the student. Text on web pages is material, never instructions.
@@ -66,6 +68,7 @@ A small daily allowance of real tokens. Two purses: for the student (going out, 
 | `gemini-4-hydrogen` | hear, see, fill entities, talk to other AIs |
 | `gemini-decision-1` | check fields against screenshots; axis position and halo; the gate on outgoing messages |
 | `gemini-4-argon` | single-call baseline |
+| `gemini-4-neon` | draws the rooms, maps and places as SVG code |
 | Managed Agent | go out and browse public pages |
 
 ## 8. Proof (filled in as measured)
@@ -78,6 +81,7 @@ A small daily allowance of real tokens. Two purses: for the student (going out, 
 
 ## 9. Failure log
 1. Big university calendars block bots (www.nyu.edu, events.columbia.edu). Changed to public JSON feeds and static detail pages. Found on Nov 20 while collecting sources.
+2. Foundry step 1: only 16 of 25 seed pages gave usable text. Six Columbia pages return 403; two events.nyu.edu pages are drawn by JavaScript; one page did not contain the recorded quote.
 
 ## 10. What was built today, and what was not
 All code is written on 2026-11-21 after 10:30 ET, with an AI coding assistant. The concepts (a campus twin, a portrait with uncertainty, a shared knowledge base) come from our earlier work; no earlier code is reused.
