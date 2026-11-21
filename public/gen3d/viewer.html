@@ -9,6 +9,7 @@ import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import { offered } from "./hidden.js";
 import { makeKit } from "./kit.js";
+import { buildDoll, LOOKS } from "./doll.js";
 import { RoomEnvironment } from "three/addons/environments/RoomEnvironment.js";
 import { EffectComposer } from "three/addons/postprocessing/EffectComposer.js";
 import { RenderPass } from "three/addons/postprocessing/RenderPass.js";
@@ -77,33 +78,38 @@ function build() {
   spawn(lookNow);
 }
 const HAIR = ["short", "bob", "longStraight", "curly", "ponytail", "afro", "braids", "buzz"], SKIN = ["#f6dcc6", "#f1cfb4", "#e8b796", "#d49a72", "#b9794f", "#a86f4c", "#8d5a3c", "#6b4226"], HAIRC = ["#1f1a1c", "#3b2a22", "#6b4a2f", "#c98b4a", "#a5482f", "#e58fb0", "#5b8fd6", "#c8ccd4"];
-function spawn(look) {
-  if (!character) return; if (who) world.remove(who);
+// The Gemi is the jointed doll: generated body, clothes, hair and motion library, with the hand-painted face.
+let doll = null, spawnId = 0;
+const DEFAULT_LOOK = SCHOOL === "columbia" ? LOOKS.kai : LOOKS.mochi;
+async function spawn(look) {
+  const mine = ++spawnId;
   const r = (a) => a[Math.floor(Math.random() * a.length)];
-  lookNow = look ?? { skin: r(SKIN), hairStyle: r(HAIR), hairColor: r(HAIRC), eye: "#3b2a22", top: r(["hoodie", "tee", "shirt", "cardigan"]), bottom: r(["trousers", "shorts", "skirt"]), bottomColor: "#4a5568", shoeColor: "#ffffff", glasses: r(["none", "none", "round", "square"]), blush: true, bodyWidth: 1 };
-  try { who = character.build(THREE, { eye: "#3b2a22", ...lookNow, topColor: lookNow.topColor ?? PALETTES[pi].primary }, kit);
-    const w = lookNow.bodyWidth ?? 1;                              // body width: applied to the body, not the head
-    for (const n of ["torso", "armL", "armR", "legL", "legR"]) { const part = who.getObjectByName(n); if (part) { part.scale.x *= w; part.scale.z *= w; } }
-    who.traverse((o) => { if (o.isMesh) { o.castShadow = true; o.receiveShadow = true; } });
-    who.scale.setScalar(1.15); who.position.set(0.25, 0, 0.5); who.visible = !away && !arranging; world.add(who); character.setExpression?.(who, "happy"); } catch (e) { err("character: " + e.message); }
+  lookNow = look ? { ...DEFAULT_LOOK, ...look } : lookNow && look !== null ? lookNow : { ...r(Object.values(LOOKS)), hairStyle: r(["bob", "shortLayered", "longWavy", "ponytail", "twinTails", "curlyMedium", "pixie", "bun"]), top: r(["hoodie", "cardigan", "sweater", "shirt", "tee", "blazer"]), bottom: r(["pleatedSkirt", "trousers", "jeans", "shorts", "longSkirt"]) };
+  const d = await buildDoll(THREE, lookNow, kit, err);
+  if (!d || mine !== spawnId) return;
+  if (who) world.remove(who);
+  doll = d; who = d.root; who.scale.setScalar(1.12); who.position.set(0.25, 0, 0.5); who.visible = !away && !arranging; world.add(who); d.express("happy");
 }
 // What it does when nobody is talking to it: a small loop of walking to a spot and staying there a while.
 const SPOTS = [
-  { at: [0.7, -0.55], face: Math.PI, say: "writing in the diary", mood: "thinking" },
-  { at: [1.2, -0.3], face: Math.PI, say: "looking out the window", mood: "awake" },
-  { at: [0.25, 0.5], face: 0, say: "just being here", mood: "happy" },
-  { at: [-0.75, 0.2], face: -Math.PI / 2, say: "wondering what you'd like", mood: "unsure" },
-  { at: [-1.3, 1.1], face: -Math.PI / 2, say: "about to head out", mood: "awake" },
+  { at: [0.7, -0.6], face: Math.PI, say: "writing in the diary", mood: "thinking", clip: "writeAtDesk" },
+  { at: [1.5, -1.25], face: Math.PI, say: "picking a book from the shelf", mood: "awake", clip: "reachShelf" },
+  { at: [1.2, -0.3], face: Math.PI, say: "looking out the window", mood: "awake", clip: "idle" },
+  { at: [0.25, 0.5], face: 0, say: "stretching", mood: "happy", clip: "stretch" },
+  { at: [0.25, 0.5], face: 0, say: "just being here", mood: "happy", clip: "sitDown" },
+  { at: [-0.75, 0.2], face: -Math.PI / 2, say: "wondering what you'd like", mood: "unsure", clip: "think" },
+  { at: [-1.3, 1.1], face: -Math.PI / 2, say: "about to head out", mood: "awake", clip: "idle" },
 ];
 let goal = null, waitUntil = 0;
 function live(t, dt) {
   if (!who || arranging || away || held) return;
-  if (!goal && t > waitUntil) { goal = SPOTS[Math.floor(Math.random() * SPOTS.length)]; document.getElementById("say").textContent = "…"; }
+  if (!goal && t > waitUntil) { goal = SPOTS[Math.floor(Math.random() * SPOTS.length)]; document.getElementById("say").textContent = "…"; doll?.play("walk"); doll?.express("awake"); }
   if (goal) {
     const dx = goal.at[0] - who.position.x, dz = goal.at[1] - who.position.z, dist = Math.hypot(dx, dz);
-    if (dist < 0.03) { who.rotation.y = goal.face; character.setExpression?.(who, goal.mood); document.getElementById("say").textContent = goal.say; tell("doing", goal.say); waitUntil = t + 4 + Math.random() * 4; goal = null; }
-    else { const step = Math.min(dist, 0.55 * dt); who.position.x += dx / dist * step; who.position.z += dz / dist * step; who.rotation.y = Math.atan2(dx, dz); who.position.y = Math.abs(Math.sin(t * 9)) * 0.025; }
-  } else who.position.y = 0;
+    if (dist < 0.03) { who.rotation.y = goal.face; doll?.express(goal.mood); doll?.play(goal.clip ?? "idle"); document.getElementById("say").textContent = goal.say; tell("doing", goal.say); waitUntil = t + 5 + Math.random() * 4; goal = null; }
+    else { const step = Math.min(dist, (doll?.walkSpeed("walk") ?? 0.5) * 1.12 * dt); who.position.x += dx / dist * step; who.position.z += dz / dist * step;   // speed matched to the walk cycle so the feet do not slide
+      let turn = Math.atan2(dx, dz) - who.rotation.y; turn = Math.atan2(Math.sin(turn), Math.cos(turn)); who.rotation.y += turn * Math.min(1, dt * 8); }
+  }
 }
 // Arrange mode: the same room, with the grid showing. Click an item, then click a floor cell.
 const ray = new THREE.Raycaster(), floorPlane = new THREE.Plane(new THREE.Vector3(0, 1, 0), 0);
@@ -113,11 +119,11 @@ function fits(name, p, r) {
   b.expandByScalar(-0.03);
   return !Object.keys(placed).some((o) => o !== name && layout[o].kind === "floor" && layout[name].kind === "floor" && b.intersectsBox(boxOf(o, layout[o].p, layout[o].r)));
 }
-function headOnScreen() { const p = new THREE.Vector3(); who.getWorldPosition(p); p.y += 1.45; p.project(camera); return { x: (p.x + 1) / 2 * innerWidth, y: (1 - p.y) / 2 * innerHeight }; }
+function headOnScreen() { const p = new THREE.Vector3(); who.getWorldPosition(p); p.y += 1.25; p.project(camera); return { x: (p.x + 1) / 2 * innerWidth, y: (1 - p.y) / 2 * innerHeight }; }
 renderer.domElement.addEventListener("click", (ev) => {
   if (!arranging && who && who.visible) {
     ray.setFromCamera(new THREE.Vector2(ev.clientX / innerWidth * 2 - 1, -(ev.clientY / innerHeight) * 2 + 1), camera);
-    if (ray.intersectObject(who, true).length) { held = true; goal = null; who.rotation.y = Math.atan2(camera.position.x - who.position.x, camera.position.z - who.position.z); character.setExpression?.(who, "happy"); tell("tapped", headOnScreen()); }
+    if (ray.intersectObject(who, true).length) { held = true; goal = null; who.rotation.y = Math.atan2(camera.position.x - who.position.x, camera.position.z - who.position.z); doll?.express("happy"); doll?.play("wave"); tell("tapped", headOnScreen()); }
     else if (held) { held = false; tell("released"); }
     return;
   }
@@ -145,7 +151,9 @@ addEventListener("resize", () => { const a = innerWidth / innerHeight; camera.le
 // The room page tells the room what the Gemi is doing; the room only shows it.
 addEventListener("message", (ev) => { const m = ev.data; if (!m || m.source !== "gemiverse") return;
   if (m.type === "away") { away = !!m.value; if (who) who.visible = !away && !arranging; }
-  if (m.type === "release") held = false;
+  if (m.type === "release") { held = false; doll?.play("idle"); }
+  if (m.type === "express" && m.value) doll?.express(m.value);
+  if (m.type === "play" && m.value) doll?.play(m.value);
   if (m.type === "arrange") document.getElementById("arr").click();
   if (m.type === "look" && m.value) spawn(m.value);
   if (m.type === "palette") { pi = m.value % PALETTES.length; build(); } });
@@ -153,5 +161,5 @@ const tell = (type, value) => { if (EMBED) parent.postMessage({ source: "gemiver
 tell("ready");
 const clock = new THREE.Clock();
 let last = 0;
-renderer.setAnimationLoop(() => { const t = clock.getElapsedTime(), dt = Math.min(0.05, t - last); last = t; live(t, dt); if (who && character?.idle) try { character.idle(who, t); } catch {} composer.render(); });
+renderer.setAnimationLoop(() => { const t = clock.getElapsedTime(), dt = Math.min(0.05, t - last); last = t; live(t, dt); if (doll) try { doll.update(t, dt); } catch {} composer.render(); });
 </script>

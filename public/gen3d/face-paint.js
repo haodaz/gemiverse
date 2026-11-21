@@ -91,10 +91,10 @@ export function headGeometry(THREE) {
   const ss = (a, b, x) => { const t = Math.max(0, Math.min(1, (x - a) / (b - a))); return t * t * (3 - 2 * t); }, bump = (d, r) => Math.exp(-(d * d) / (r * r));
   for (let i = 0; i < p.count; i++) {
     let x = p.getX(i), y = p.getY(i), z = p.getZ(i);
-    const front = Math.max(0, z), t = ss(-0.35, -1, y);
+    const front = Math.max(0, z), t = ss(-0.5, -1, y);
     let wx = 1 + 0.07 * bump(y + 0.32, 0.38);                      // cheeks: the widest point
-    wx *= 1 - 0.40 * Math.pow(t, 1.7);                              // then in to a small chin
-    let wz = 1 - 0.34 * Math.pow(t, 1.5);
+    wx *= 1 - 0.26 * Math.pow(t, 1.6);                              // a jaw that stays wide, then rounds into the chin
+    let wz = 1 - 0.12 * Math.pow(t, 1.5);
     x *= wx;
     if (z > 0) { z *= wz * (1 - 0.10 * bump(y + 0.25, 0.55));      // a calm, nearly flat face plane
       z += 0.05 * front * bump(y - 0.45, 0.4);                      // full forehead
@@ -102,7 +102,11 @@ export function headGeometry(THREE) {
       z += 0.02 * bump(Math.hypot(x, y + 0.66), 0.13) * front;      // mouth mound
       z += 0.03 * front * bump(Math.hypot(Math.abs(x) - 0.5, y + 0.5), 0.22);  // cheek fullness
     } else z *= 1 + 0.06 * bump(y - 0.05, 0.6);                    // big round back of the skull
-    if (y < 0) y *= 0.93;
+    // A chin is a shape of its own: the underside of the jaw is nearly flat and the chin sits forward of the neck.
+    // (Before this, the face funnelled from the nose straight into the neck.)
+    if (z > 0) z += 0.07 * front * bump(Math.hypot(x * 0.8, y + 0.86), 0.2);                  // chin point, forward
+    if (y < -0.72) y = -0.72 - (-(y) - 0.72) * 0.5;                                            // flatten the underside of the jaw
+    if (y < 0) y *= 0.95;
     p.setXYZ(i, x, y, z);
   }
   g.computeVertexNormals(); return g;

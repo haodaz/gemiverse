@@ -20,12 +20,12 @@ export async function buildDoll(THREE, look, kit, report = console.warn) {
   const load = async (n) => { try { return await import(`./doll-${n}.js`); } catch (e) { report(`doll-${n}: ${e.message}`); return null; } };
   // newer versions of a module win when they exist (face2 over face, hair2 over hair)
   const first = async (...names) => { for (const n of names) { try { return await import(`./doll-${n}.js`); } catch {} } report(`doll-${names.at(-1)}: not available`); return null; };
-  const [body, face, hair, tops, bottoms, shoes, motion] = await Promise.all([load("body"), first("face2", "face"), first("hair3", "hair2", "hair"), first("tops"), first("bottoms"), first("shoes"), first("motion")]);
+  const [body, face, hair, tops, bottoms, shoes, motion] = await Promise.all([load("body"), first("face2", "face"), first("hair4", "hair3", "hair2", "hair"), first("tops"), first("bottoms"), first("shoes"), first("motion")]);
   let headMod = null; for (const n of ["doll-head4", "doll-head"]) { try { headMod = await import(`./${n}.js`); break; } catch {} }   // third version: head and face as one module, made after Neon was shown a render
   if (!body) return null;
   let root; try { root = body.buildBody(THREE, look, kit); } catch (e) { report("body: " + e.message); return null; }
   const head = root.getObjectByName("head");
-  if (head) head.position.y -= 0.032;   // a shorter neck (Elodie): the head sits lower on the shoulders
+  if (head) head.position.y -= 0.012;   // a shorter neck (Elodie): the head sits lower on the shoulders
   // Hand corrections after Elodie's review: hands were sculpted too small, and the head carried a dark painted gradient.
   for (const n of ["handL", "handR"]) root.getObjectByName(n)?.scale.multiplyScalar(1.7);
   head?.traverse((o) => { if (o.isMesh && o.material && o.userData.slot === "skin") { o.material = o.material.clone(); o.material.map = null; o.material.color = new THREE.Color(look.skin); o.material.needsUpdate = true; } });
