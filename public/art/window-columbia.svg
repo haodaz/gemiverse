@@ -1,0 +1,827 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 768" width="1024" height="768">
+  <defs>
+    <!-- Sky & Atmosphere Gradients -->
+    <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9ccae8"/>
+      <stop offset="45%" stop-color="#c3e1f4"/>
+      <stop offset="80%" stop-color="#e5f2fa"/>
+      <stop offset="100%" stop-color="#f6efe6"/>
+    </linearGradient>
+
+    <radialGradient id="sunGlow" cx="0.86" cy="0.14" r="0.45">
+      <stop offset="0%" stop-color="#fff9e6" stop-opacity="0.85"/>
+      <stop offset="35%" stop-color="#fff4d6" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#fff4d6" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="sunBeam" x1="1" y1="0" x2="0.2" y2="0.9">
+      <stop offset="0%" stop-color="#fff9e2" stop-opacity="0.16"/>
+      <stop offset="60%" stop-color="#fff9e2" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#fff9e2" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- River & Distant Hills -->
+    <linearGradient id="riverGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#b4d2e6"/>
+      <stop offset="45%" stop-color="#9cc0d9"/>
+      <stop offset="100%" stop-color="#87aec9"/>
+    </linearGradient>
+
+    <linearGradient id="palisadesGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a5bdd3"/>
+      <stop offset="100%" stop-color="#c3d5e4"/>
+    </linearGradient>
+
+    <!-- Classical Limestone Gradients -->
+    <linearGradient id="domeGrad" x1="0.85" y1="0.15" x2="0.15" y2="0.85">
+      <stop offset="0%" stop-color="#f5efe3"/>
+      <stop offset="45%" stop-color="#e4dac8"/>
+      <stop offset="85%" stop-color="#c8bca8"/>
+      <stop offset="100%" stop-color="#b4a794"/>
+    </linearGradient>
+
+    <linearGradient id="stoneLight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f7f2e8"/>
+      <stop offset="100%" stop-color="#e6ddce"/>
+    </linearGradient>
+
+    <linearGradient id="stoneMid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e3d9c7"/>
+      <stop offset="100%" stop-color="#cec2ae"/>
+    </linearGradient>
+
+    <linearGradient id="stoneShadow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#bcae9c"/>
+      <stop offset="100%" stop-color="#a79886"/>
+    </linearGradient>
+
+    <linearGradient id="porticoDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7c736b"/>
+      <stop offset="100%" stop-color="#9e9489"/>
+    </linearGradient>
+
+    <!-- Red Brick & Copper Roof Gradients -->
+    <linearGradient id="brickSun" x1="0" y1="0" x2="1" y2="0.8">
+      <stop offset="0%" stop-color="#d47b65"/>
+      <stop offset="100%" stop-color="#be634f"/>
+    </linearGradient>
+
+    <linearGradient id="brickShade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a95241"/>
+      <stop offset="100%" stop-color="#8c4033"/>
+    </linearGradient>
+
+    <linearGradient id="copperSun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8ec0af"/>
+      <stop offset="100%" stop-color="#6fa393"/>
+    </linearGradient>
+
+    <linearGradient id="copperShade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#649485"/>
+      <stop offset="100%" stop-color="#4e7a6d"/>
+    </linearGradient>
+
+    <!-- Lawn & Brick Path Gradients -->
+    <linearGradient id="lawnGrad" x1="0.8" y1="0" x2="0.2" y2="1">
+      <stop offset="0%" stop-color="#a5cc7f"/>
+      <stop offset="45%" stop-color="#8bb86c"/>
+      <stop offset="100%" stop-color="#719f59"/>
+    </linearGradient>
+
+    <linearGradient id="lawnLight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#b5d88d"/>
+      <stop offset="100%" stop-color="#92be70"/>
+    </linearGradient>
+
+    <linearGradient id="brickPathGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e1a993"/>
+      <stop offset="50%" stop-color="#d3967f"/>
+      <stop offset="100%" stop-color="#c3846e"/>
+    </linearGradient>
+
+    <linearGradient id="plazaStone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ede4d5"/>
+      <stop offset="100%" stop-color="#dcd0bd"/>
+    </linearGradient>
+
+    <!-- Foliage Gradients -->
+    <radialGradient id="foliageBright" cx="0.65" cy="0.3" r="0.7">
+      <stop offset="0%" stop-color="#b2d683"/>
+      <stop offset="55%" stop-color="#82b062"/>
+      <stop offset="100%" stop-color="#5d8a48"/>
+    </radialGradient>
+
+    <radialGradient id="foliageDeep" cx="0.6" cy="0.25" r="0.75">
+      <stop offset="0%" stop-color="#8db96b"/>
+      <stop offset="55%" stop-color="#65914f"/>
+      <stop offset="100%" stop-color="#466c3b"/>
+    </radialGradient>
+
+    <radialGradient id="blossomGrad" cx="0.65" cy="0.3" r="0.7">
+      <stop offset="0%" stop-color="#fbe7ea"/>
+      <stop offset="55%" stop-color="#f2c9d1"/>
+      <stop offset="100%" stop-color="#d9a1ae"/>
+    </radialGradient>
+
+    <!-- Reusable Window -->
+    <g id="winBrick">
+      <rect x="0" y="0" width="12" height="19" rx="1.5" fill="#4f5f6d"/>
+      <rect x="1.5" y="1.5" width="9" height="7" rx="0.5" fill="#89a7bc" opacity="0.65"/>
+      <rect x="1.5" y="10" width="9" height="7.5" rx="0.5" fill="#6f8da3" opacity="0.5"/>
+      <rect x="-1" y="18.5" width="14" height="2.2" rx="0.5" fill="#eae0cf"/>
+      <rect x="-1" y="-1.8" width="14" height="2" rx="0.5" fill="#e2d7c5"/>
+    </g>
+
+    <!-- Reusable Campus Globe Lamp -->
+    <g id="lampPost">
+      <ellipse cx="0" cy="0" rx="5" ry="2" fill="#3a4c45" opacity="0.25"/>
+      <rect x="-1.6" y="-34" width="3.2" height="34" rx="1" fill="#3d4f49"/>
+      <rect x="-3" y="-4" width="6" height="4" rx="1" fill="#33423d"/>
+      <rect x="-2.4" y="-29" width="4.8" height="2" rx="0.8" fill="#4f645d"/>
+      <circle cx="0" cy="-37" r="4.5" fill="#fff8e3"/>
+      <circle cx="-1" cy="-38" r="2" fill="#ffffff" opacity="0.8"/>
+      <path d="M-3.5,-34 Q0,-32.5 3.5,-34" fill="none" stroke="#3d4f49" stroke-width="1.2"/>
+    </g>
+
+    <!-- Reusable Campus Bench -->
+    <g id="campusBench">
+      <ellipse cx="14" cy="9" rx="16" ry="3.5" fill="#42613b" opacity="0.28"/>
+      <rect x="2" y="3" width="24" height="3.5" rx="1" fill="#8d5d43"/>
+      <rect x="2" y="-1.5" width="24" height="3.2" rx="1" fill="#a26e52"/>
+      <rect x="4" y="-2" width="2" height="10" rx="0.8" fill="#3b4944"/>
+      <rect x="22" y="-2" width="2" height="10" rx="0.8" fill="#3b4944"/>
+    </g>
+  </defs>
+
+  <!-- ==================== 1. SKY & CLOUDS ==================== -->
+  <rect x="0" y="0" width="1024" height="350" fill="url(#skyGrad)"/>
+  <rect x="0" y="0" width="1024" height="350" fill="url(#sunGlow)"/>
+
+  <!-- Soft Rounded Morning Clouds -->
+  <g fill="#ffffff" opacity="0.72">
+    <path d="M75,88 Q90,72 115,76 Q132,62 158,72 Q178,68 190,82 Q206,84 208,95 Q208,102 195,102 L82,102 Q68,102 75,88 Z"/>
+    <path d="M370,56 Q388,42 414,48 Q432,36 458,48 Q476,46 485,60 Q495,66 482,70 L376,70 Q360,68 370,56 Z" opacity="0.62"/>
+    <path d="M710,92 Q728,74 756,80 Q776,64 806,76 Q830,74 842,90 Q856,94 852,104 L714,104 Q698,103 710,92 Z" opacity="0.78"/>
+    <path d="M905,124 Q920,112 942,116 Q958,106 980,116 Q996,118 1002,130 L906,130 Q896,129 905,124 Z" opacity="0.55"/>
+    <path d="M232,126 Q244,116 262,120 Q276,112 292,122 Q304,124 306,132 L234,132 Q226,131 232,126 Z" opacity="0.48"/>
+  </g>
+
+  <!-- ==================== 2. FAR HORIZON & PALISADES ==================== -->
+  <!-- Distant New Jersey Palisades Cliffs -->
+  <path d="M0,218 L0,194 Q45,186 92,190 Q145,184 205,189 Q270,182 340,188 Q420,183 510,189 Q595,185 685,191 Q775,185 860,192 Q945,188 1024,195 L1024,218 Z" fill="url(#palisadesGrad)"/>
+  <!-- Subtle distant ridge highlight -->
+  <path d="M0,218 L0,204 Q80,198 180,202 Q300,197 430,202 Q580,198 730,203 Q880,199 1024,205 L1024,218 Z" fill="#92aec7" opacity="0.55"/>
+  <!-- Tiny distant horizon buildings on far bank -->
+  <g fill="#9cb5cc" opacity="0.7">
+    <rect x="64" y="182" width="12" height="14" rx="1"/>
+    <rect x="82" y="186" width="8" height="10" rx="1"/>
+    <rect x="192" y="180" width="10" height="14" rx="1"/>
+    <rect x="206" y="184" width="14" height="10" rx="1"/>
+    <rect x="764" y="180" width="11" height="15" rx="1"/>
+    <rect x="780" y="185" width="9" height="10" rx="1"/>
+    <rect x="892" y="183" width="13" height="13" rx="1"/>
+  </g>
+
+  <!-- ==================== 3. HUDSON RIVER & SUSPENSION BRIDGE ==================== -->
+  <rect x="0" y="216" width="1024" height="72" fill="url(#riverGrad)"/>
+
+  <!-- Gentle Morning Sun Shimmer on River -->
+  <g fill="#e4f2fb" opacity="0.5">
+    <rect x="740" y="224" width="54" height="2" rx="1"/>
+    <rect x="765" y="231" width="76" height="2.2" rx="1"/>
+    <rect x="720" y="239" width="48" height="1.8" rx="1"/>
+    <rect x="802" y="245" width="64" height="2" rx="1"/>
+    <rect x="752" y="253" width="42" height="1.6" rx="1"/>
+    <rect x="115" y="229" width="38" height="1.8" rx="1" opacity="0.6"/>
+    <rect x="172" y="241" width="52" height="1.8" rx="1" opacity="0.55"/>
+    <rect x="295" y="233" width="44" height="1.8" rx="1" opacity="0.5"/>
+  </g>
+
+  <!-- Suspension Bridge (George Washington Bridge inspired) -->
+  <g id="suspensionBridge" opacity="0.88">
+    <!-- Bridge Deck -->
+    <rect x="0" y="205" width="1024" height="4.5" fill="#7c96ad"/>
+    <rect x="0" y="204" width="1024" height="1.5" fill="#d5e4f0"/>
+
+    <!-- Main Catenary Suspension Cables -->
+    <path d="M0,192 Q95,204 195,146" fill="none" stroke="#8aa4ba" stroke-width="2"/>
+    <path d="M195,146 Q490,224 785,146" fill="none" stroke="#8aa4ba" stroke-width="2.2"/>
+    <path d="M785,146 Q905,204 1024,190" fill="none" stroke="#8aa4ba" stroke-width="2"/>
+    <!-- Secondary Cable -->
+    <path d="M195,149 Q490,227 785,149" fill="none" stroke="#b6cadc" stroke-width="1"/>
+
+    <!-- Vertical Suspender Cables -->
+    <g stroke="#92abc0" stroke-width="0.9" opacity="0.85">
+      <line x1="70" y1="192" x2="70" y2="205"/>
+      <line x1="105" y1="186" x2="105" y2="205"/>
+      <line x1="140" y1="175" x2="140" y2="205"/>
+      <line x1="170" y1="160" x2="170" y2="205"/>
+      <line x1="225" y1="158" x2="225" y2="205"/>
+      <line x1="260" y1="169" x2="260" y2="205"/>
+      <line x1="295" y1="177" x2="295" y2="205"/>
+      <line x1="330" y1="184" x2="330" y2="205"/>
+      <line x1="365" y1="189" x2="365" y2="205"/>
+      <line x1="650" y1="183" x2="650" y2="205"/>
+      <line x1="685" y1="176" x2="685" y2="205"/>
+      <line x1="720" y1="168" x2="720" y2="205"/>
+      <line x1="755" y1="158" x2="755" y2="205"/>
+      <line x1="820" y1="163" x2="820" y2="205"/>
+      <line x1="855" y1="175" x2="855" y2="205"/>
+      <line x1="890" y1="184" x2="890" y2="205"/>
+      <line x1="925" y1="190" x2="925" y2="205"/>
+    </g>
+
+    <!-- Left Steel Tower -->
+    <g fill="#849eb5">
+      <rect x="184" y="142" width="4.5" height="82" rx="1"/>
+      <rect x="201" y="142" width="4.5" height="82" rx="1"/>
+      <rect x="184" y="148" width="21.5" height="4"/>
+      <rect x="184" y="164" width="21.5" height="3.5"/>
+      <rect x="184" y="182" width="21.5" height="3.5"/>
+      <path d="M188.5,148 L201,164 M201,148 L188.5,164 M188.5,167 L201,182 M201,167 L188.5,182" stroke="#849eb5" stroke-width="1.2"/>
+      <!-- Tower highlight -->
+      <rect x="204" y="142" width="1.5" height="82" fill="#c7d9e8"/>
+    </g>
+
+    <!-- Right Steel Tower -->
+    <g fill="#849eb5">
+      <rect x="774" y="142" width="4.5" height="82" rx="1"/>
+      <rect x="791" y="142" width="4.5" height="82" rx="1"/>
+      <rect x="774" y="148" width="21.5" height="4"/>
+      <rect x="774" y="164" width="21.5" height="3.5"/>
+      <rect x="774" y="182" width="21.5" height="3.5"/>
+      <path d="M778.5,148 L791,164 M791,148 L778.5,164 M778.5,167 L791,182 M791,167 L778.5,182" stroke="#849eb5" stroke-width="1.2"/>
+      <rect x="794" y="142" width="1.5" height="82" fill="#c7d9e8"/>
+    </g>
+
+    <!-- Soft Tower Reflections in Water -->
+    <g fill="#7494ad" opacity="0.28">
+      <rect x="185" y="224" width="4" height="22" rx="2"/>
+      <rect x="201" y="224" width="4" height="22" rx="2"/>
+      <rect x="775" y="224" width="4" height="22" rx="2"/>
+      <rect x="791" y="224" width="4" height="22" rx="2"/>
+    </g>
+  </g>
+
+  <!-- ==================== 4. MID-FAR URBAN BANK & TREELINE ==================== -->
+  <!-- Hazy Riverside Park Treeline & Distant Upper Manhattan Rooftops -->
+  <g opacity="0.88">
+    <!-- Far riverside buildings peeking over trees -->
+    <rect x="28" y="248" width="52" height="58" rx="2" fill="#c8b8b2"/>
+    <rect x="92" y="236" width="46" height="70" rx="2" fill="#d4c6be"/>
+    <rect x="150" y="252" width="58" height="54" rx="2" fill="#bfaeb0"/>
+    <rect x="218" y="244" width="48" height="62" rx="2" fill="#cfc1b8"/>
+    <rect x="742" y="246" width="54" height="60" rx="2" fill="#d3c4bc"/>
+    <rect x="810" y="238" width="48" height="68" rx="2" fill="#c4b5b2"/>
+    <rect x="872" y="250" width="60" height="56" rx="2" fill="#d6c8bf"/>
+    <rect x="945" y="242" width="64" height="64" rx="2" fill="#c5b7b4"/>
+
+    <!-- Soft hazy green treeline along riverside -->
+    <path d="M0,295 Q35,264 78,278 Q120,256 172,276 Q220,258 272,278 Q318,266 360,285 L360,330 L0,330 Z" fill="#89ae88"/>
+    <path d="M665,286 Q715,260 765,278 Q818,255 872,275 Q925,258 978,276 Q1005,266 1024,274 L1024,330 L665,330 Z" fill="#89ae88"/>
+  </g>
+
+  <!-- ==================== 5. CLASSICAL DOMED LIBRARY (CENTERPIECE) ==================== -->
+  <g id="classicalLibrary">
+    <!-- Ground / Rear Terrace Backdrop -->
+    <rect x="240" y="340" width="544" height="110" fill="#dfd5c4"/>
+
+    <!-- Library Main Dome & Cupola -->
+    <!-- Cupola / Lantern -->
+    <rect x="507" y="138" width="10" height="11" rx="2" fill="#e8dfd0"/>
+    <path d="M505,140 Q512,130 519,140 Z" fill="#92b2a4"/>
+    <line x1="512" y1="128" x2="512" y2="134" stroke="#859e93" stroke-width="1.5" stroke-linecap="round"/>
+
+    <!-- Shallow Classical Dome -->
+    <path d="M412,216 C414,162 462,144 512,144 C562,144 610,162 612,216 Z" fill="url(#domeGrad)"/>
+    <!-- Subtle Dome Ribs -->
+    <path d="M512,144 C495,164 486,188 484,216" fill="none" stroke="#c3b7a4" stroke-width="1.2" opacity="0.6"/>
+    <path d="M512,144 C529,164 538,188 540,216" fill="none" stroke="#ffffff" stroke-width="1.2" opacity="0.5"/>
+    <path d="M512,144 C472,162 454,186 448,216" fill="none" stroke="#b5a894" stroke-width="1.2" opacity="0.55"/>
+    <path d="M512,144 C552,162 570,186 576,216" fill="none" stroke="#ffffff" stroke-width="1.2" opacity="0.45"/>
+
+    <!-- Dome Drum / Base -->
+    <rect x="404" y="212" width="216" height="8" rx="2" fill="#f3ede1"/>
+    <rect x="410" y="220" width="204" height="36" fill="url(#stoneMid)"/>
+    <!-- Drum Shadow on Left -->
+    <rect x="410" y="220" width="66" height="36" fill="#b4a693" opacity="0.45"/>
+    <!-- Drum Arched Windows -->
+    <g fill="#736c66">
+      <rect x="424" y="227" width="12" height="20" rx="6"/>
+      <rect x="450" y="227" width="12" height="20" rx="6"/>
+      <rect x="478" y="227" width="12" height="20" rx="6"/>
+      <rect x="506" y="227" width="12" height="20" rx="6"/>
+      <rect x="534" y="227" width="12" height="20" rx="6"/>
+      <rect x="562" y="227" width="12" height="20" rx="6"/>
+      <rect x="588" y="227" width="12" height="20" rx="6"/>
+    </g>
+    <!-- Drum Window Glint -->
+    <g fill="#9fb5c2" opacity="0.45">
+      <rect x="480" y="230" width="4" height="14" rx="2"/>
+      <rect x="508" y="230" width="4" height="14" rx="2"/>
+      <rect x="536" y="230" width="4" height="14" rx="2"/>
+      <rect x="564" y="230" width="4" height="14" rx="2"/>
+      <rect x="590" y="230" width="4" height="14" rx="2"/>
+    </g>
+
+    <!-- Flanking Symmetrical Library Wings -->
+    <!-- Left Wing -->
+    <rect x="292" y="266" width="108" height="106" fill="url(#stoneMid)"/>
+    <rect x="288" y="260" width="114" height="8" rx="1.5" fill="#f4eee2"/>
+    <rect x="292" y="268" width="108" height="4" fill="#b8aa96" opacity="0.5"/>
+    <!-- Left Wing Windows -->
+    <g fill="#6d6864">
+      <rect x="308" y="286" width="16" height="32" rx="8"/>
+      <rect x="336" y="286" width="16" height="32" rx="8"/>
+      <rect x="364" y="286" width="16" height="32" rx="8"/>
+      <rect x="308" y="330" width="16" height="24" rx="2"/>
+      <rect x="336" y="330" width="16" height="24" rx="2"/>
+      <rect x="364" y="330" width="16" height="24" rx="2"/>
+    </g>
+
+    <!-- Right Wing -->
+    <rect x="624" y="266" width="108" height="106" fill="url(#stoneLight)"/>
+    <rect x="622" y="260" width="114" height="8" rx="1.5" fill="#fbf7ef"/>
+    <rect x="624" y="268" width="108" height="4" fill="#c7b9a6" opacity="0.4"/>
+    <!-- Right Wing Windows -->
+    <g fill="#736e6a">
+      <rect x="644" y="286" width="16" height="32" rx="8"/>
+      <rect x="672" y="286" width="16" height="32" rx="8"/>
+      <rect x="700" y="286" width="16" height="32" rx="8"/>
+      <rect x="644" y="330" width="16" height="24" rx="2"/>
+      <rect x="672" y="330" width="16" height="24" rx="2"/>
+      <rect x="700" y="330" width="16" height="24" rx="2"/>
+    </g>
+
+    <!-- Attic Wall behind Pediment -->
+    <rect x="394" y="250" width="236" height="22" fill="url(#stoneLight)"/>
+    <rect x="390" y="246" width="244" height="5" rx="1.5" fill="#faf5eb"/>
+
+    <!-- Deep Portico Recess -->
+    <rect x="402" y="286" width="220" height="88" fill="url(#porticoDark)"/>
+    <!-- Grand Entrance Doors in Portico -->
+    <rect x="494" y="324" width="36" height="50" rx="2" fill="#4f4842"/>
+    <rect x="498" y="328" width="12" height="46" fill="#635a52"/>
+    <rect x="514" y="328" width="12" height="46" fill="#635a52"/>
+    <!-- Flanking Portico Windows -->
+    <rect x="434" y="308" width="18" height="36" rx="2" fill="#5e5751"/>
+    <rect x="462" y="308" width="18" height="36" rx="2" fill="#5e5751"/>
+    <rect x="544" y="308" width="18" height="36" rx="2" fill="#5e5751"/>
+    <rect x="572" y="308" width="18" height="36" rx="2" fill="#5e5751"/>
+
+    <!-- Classical Triangular Pediment -->
+    <polygon points="384,284 512,246 640,284" fill="#f7f2e8"/>
+    <polygon points="402,280 512,252 622,280" fill="#dfd5c3"/>
+    <!-- Subtle Pediment Relief Shadow -->
+    <polygon points="408,280 512,256 616,280" fill="#cbbda8" opacity="0.5"/>
+    <!-- Entablature / Frieze -->
+    <rect x="388" y="284" width="248" height="12" fill="#efe7d9"/>
+    <rect x="392" y="295" width="240" height="4" fill="#c7bba7"/>
+
+    <!-- 10 Grand Ionic Columns -->
+    <g id="porticoColumns">
+      <!-- Column helper: each column has shaft, sunlit right edge, base, and capital -->
+      <g transform="translate(402,299)">
+        <rect x="0" y="0" width="11" height="72" fill="#ebe3d5"/><rect x="7" y="0" width="4" height="72" fill="#faf6ee"/><rect x="-2" y="0" width="15" height="4" rx="1.5" fill="#f6f1e6"/><rect x="-2" y="69" width="15" height="4" rx="1" fill="#e1d7c6"/>
+      </g>
+      <g transform="translate(425,299)">
+        <rect x="0" y="0" width="11" height="72" fill="#ebe3d5"/><rect x="7" y="0" width="4" height="72" fill="#faf6ee"/><rect x="-2" y="0" width="15" height="4" rx="1.5" fill="#f6f1e6"/><rect x="-2" y="69" width="15" height="4" rx="1" fill="#e1d7c6"/>
+      </g>
+      <g transform="translate(448,299)">
+        <rect x="0" y="0" width="11" height="72" fill="#ebe3d5"/><rect x="7" y="0" width="4" height="72" fill="#faf6ee"/><rect x="-2" y="0" width="15" height="4" rx="1.5" fill="#f6f1e6"/><rect x="-2" y="69" width="15" height="4" rx="1" fill="#e1d7c6"/>
+      </g>
+      <g transform="translate(471,299)">
+        <rect x="0" y="0" width="11" height="72" fill="#ebe3d5"/><rect x="7" y="0" width="4" height="72" fill="#faf6ee"/><rect x="-2" y="0" width="15" height="4" rx="1.5" fill="#f6f1e6"/><rect x="-2" y="69" width="15" height="4" rx="1" fill="#e1d7c6"/>
+      </g>
+      <g transform="translate(494,299)">
+        <rect x="0" y="0" width="11" height="72" fill="#ebe3d5"/><rect x="7" y="0" width="4" height="72" fill="#faf6ee"/><rect x="-2" y="0" width="15" height="4" rx="1.5" fill="#f6f1e6"/><rect x="-2" y="69" width="15" height="4" rx="1" fill="#e1d7c6"/>
+      </g>
+      <g transform="translate(519,299)">
+        <rect x="0" y="0" width="11" height="72" fill="#ebe3d5"/><rect x="7" y="0" width="4" height="72" fill="#faf6ee"/><rect x="-2" y="0" width="15" height="4" rx="1.5" fill="#f6f1e6"/><rect x="-2" y="69" width="15" height="4" rx="1" fill="#e1d7c6"/>
+      </g>
+      <g transform="translate(542,299)">
+        <rect x="0" y="0" width="11" height="72" fill="#ebe3d5"/><rect x="7" y="0" width="4" height="72" fill="#faf6ee"/><rect x="-2" y="0" width="15" height="4" rx="1.5" fill="#f6f1e6"/><rect x="-2" y="69" width="15" height="4" rx="1" fill="#e1d7c6"/>
+      </g>
+      <g transform="translate(565,299)">
+        <rect x="0" y="0" width="11" height="72" fill="#ebe3d5"/><rect x="7" y="0" width="4" height="72" fill="#faf6ee"/><rect x="-2" y="0" width="15" height="4" rx="1.5" fill="#f6f1e6"/><rect x="-2" y="69" width="15" height="4" rx="1" fill="#e1d7c6"/>
+      </g>
+      <g transform="translate(588,299)">
+        <rect x="0" y="0" width="11" height="72" fill="#ebe3d5"/><rect x="7" y="0" width="4" height="72" fill="#faf6ee"/><rect x="-2" y="0" width="15" height="4" rx="1.5" fill="#f6f1e6"/><rect x="-2" y="69" width="15" height="4" rx="1" fill="#e1d7c6"/>
+      </g>
+      <g transform="translate(611,299)">
+        <rect x="0" y="0" width="11" height="72" fill="#ebe3d5"/><rect x="7" y="0" width="4" height="72" fill="#faf6ee"/><rect x="-2" y="0" width="15" height="4" rx="1.5" fill="#f6f1e6"/><rect x="-2" y="69" width="15" height="4" rx="1" fill="#e1d7c6"/>
+      </g>
+    </g>
+
+    <!-- Monumental Wide Steps & Terraces -->
+    <!-- Upper Landing -->
+    <polygon points="365,372 659,372 678,392 346,392" fill="#efe7d9"/>
+    <!-- Upper Flight of Steps -->
+    <polygon points="346,392 678,392 706,422 318,422" fill="#e7decb"/>
+    <g stroke="#c7bba7" stroke-width="1.3">
+      <line x1="341" y1="397" x2="683" y2="397"/>
+      <line x1="336" y1="402" x2="688" y2="402"/>
+      <line x1="331" y1="407" x2="693" y2="407"/>
+      <line x1="326" y1="412" x2="698" y2="412"/>
+      <line x1="321" y1="417" x2="703" y2="417"/>
+    </g>
+    <!-- Middle Plaza Landing -->
+    <polygon points="318,422 706,422 722,438 302,438" fill="#f3ece0"/>
+    <!-- Lower Flight of Wide Steps -->
+    <polygon points="302,438 722,438 748,468 276,468" fill="#e5dbc8"/>
+    <g stroke="#c4b7a2" stroke-width="1.4">
+      <line x1="297" y1="443" x2="727" y2="443"/>
+      <line x1="292" y1="448" x2="732" y2="448"/>
+      <line x1="287" y1="453" x2="737" y2="453"/>
+      <line x1="282" y1="458" x2="742" y2="458"/>
+      <line x1="278" y1="463" x2="746" y2="463"/>
+    </g>
+
+    <!-- Flanking Classical Stone Balustrade Walls -->
+    <polygon points="274,372 346,372 318,422 260,422" fill="#dfd5c3"/>
+    <polygon points="678,372 750,372 764,422 706,422" fill="#eee6d8"/>
+    <rect x="260" y="422" width="42" height="46" fill="#d3c8b5"/>
+    <rect x="722" y="422" width="42" height="46" fill="#e4dac8"/>
+    <!-- Low Stone Urns / Pedestals on Step Cheeks -->
+    <rect x="336" y="382" width="16" height="12" rx="1" fill="#f2eadc"/>
+    <rect x="672" y="382" width="16" height="12" rx="1" fill="#f7f1e5"/>
+    <rect x="294" y="426" width="18" height="14" rx="1" fill="#ece3d3"/>
+    <rect x="712" y="426" width="18" height="14" rx="1" fill="#f5efe3"/>
+
+    <!-- Small Bronze-Green Classical Statue (Alma Mater inspired) centered on Middle Landing -->
+    <g transform="translate(512,418)">
+      <!-- Long morning shadow to lower-left -->
+      <polygon points="-8,8 8,8 -14,16 -24,14" fill="#a89e8e" opacity="0.45"/>
+      <!-- Pedestal -->
+      <rect x="-11" y="2" width="22" height="8" rx="1" fill="#d9cebc"/>
+      <rect x="-8" y="-5" width="16" height="8" rx="1" fill="#ebe3d4"/>
+      <!-- Seated Bronze Figure -->
+      <path d="M-6,-5 L6,-5 L5,-16 Q0,-20 -5,-16 Z" fill="#5e7f72"/>
+      <circle cx="0" cy="-21" r="3.2" fill="#6d9182"/>
+      <path d="M-5,-14 L-9,-11 M5,-14 L9,-11" stroke="#5e7f72" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <!-- Gentle Morning Shadow Cast Across Left Side of Steps -->
+    <polygon points="276,468 380,468 415,438 302,438" fill="#8b96a3" opacity="0.14"/>
+  </g>
+
+  <!-- ==================== 6. MIDGROUND TREES FRAMING LIBRARY ==================== -->
+  <!-- Behind Left Brick Hall & Library Wing -->
+  <g id="midTreesLeft">
+    <circle cx="256" cy="348" r="34" fill="url(#foliageDeep)"/>
+    <circle cx="284" cy="362" r="28" fill="url(#foliageBright)"/>
+    <circle cx="232" cy="370" r="30" fill="url(#foliageDeep)"/>
+    <circle cx="268" cy="382" r="26" fill="url(#foliageBright)"/>
+  </g>
+  <!-- Behind Right Brick Hall & Library Wing -->
+  <g id="midTreesRight">
+    <circle cx="766" cy="346" r="34" fill="url(#foliageDeep)"/>
+    <circle cx="738" cy="364" r="26" fill="url(#foliageBright)"/>
+    <circle cx="790" cy="368" r="30" fill="url(#foliageDeep)"/>
+    <circle cx="758" cy="382" r="25" fill="url(#foliageBright)"/>
+  </g>
+
+  <!-- ==================== 7. FLANKING RED BRICK BUILDINGS WITH GREEN COPPER ROOFS ==================== -->
+  <!-- LEFT RED BRICK HALL -->
+  <g id="leftBrickHall">
+    <!-- Green Copper Mansard / Hipped Roof -->
+    <polygon points="-10,278 212,278 242,326 -10,326" fill="url(#copperSun)"/>
+    <polygon points="212,278 242,326 226,326 198,278" fill="url(#copperShade)"/>
+    <!-- Copper Roof Ridge & Standing Seams -->
+    <rect x="-10" y="274" width="224" height="5" rx="2" fill="#a1cfc0"/>
+    <g stroke="#5a8a7b" stroke-width="1.2" opacity="0.55">
+      <line x1="25" y1="278" x2="25" y2="326"/>
+      <line x1="65" y1="278" x2="65" y2="326"/>
+      <line x1="105" y1="278" x2="105" y2="326"/>
+      <line x1="145" y1="278" x2="145" y2="326"/>
+      <line x1="185" y1="278" x2="185" y2="326"/>
+    </g>
+    <!-- Roof Chimneys -->
+    <rect x="44" y="254" width="16" height="24" rx="1" fill="#b85d4b"/>
+    <rect x="42" y="252" width="20" height="4" rx="1" fill="#eae0cf"/>
+    <rect x="164" y="258" width="14" height="20" rx="1" fill="#b85d4b"/>
+    <rect x="162" y="256" width="18" height="4" rx="1" fill="#eae0cf"/>
+    <!-- Copper Dormer Windows -->
+    <g>
+      <polygon points="36,304 46,294 56,304" fill="#649485"/>
+      <rect x="38" y="304" width="16" height="16" fill="#e8dfd0"/>
+      <rect x="41" y="307" width="10" height="11" rx="1" fill="#4f5f6d"/>
+
+      <polygon points="96,304 106,294 116,304" fill="#649485"/>
+      <rect x="98" y="304" width="16" height="16" fill="#e8dfd0"/>
+      <rect x="101" y="307" width="10" height="11" rx="1" fill="#4f5f6d"/>
+
+      <polygon points="156,304 166,294 176,304" fill="#649485"/>
+      <rect x="158" y="304" width="16" height="16" fill="#e8dfd0"/>
+      <rect x="161" y="307" width="10" height="11" rx="1" fill="#4f5f6d"/>
+    </g>
+
+    <!-- Main Red Brick Facade (Side & Front Perspective) -->
+    <!-- Sunlit Right-Facing Wall -->
+    <polygon points="212,326 244,326 244,506 212,516" fill="url(#brickSun)"/>
+    <!-- Front Wall (slightly shaded) -->
+    <rect x="-10" y="326" width="222" height="190" fill="url(#brickShade)"/>
+    <!-- Subtle Brick Horizontal Stone Courses -->
+    <rect x="-10" y="324" width="256" height="7" fill="#efe6d6"/>
+    <rect x="-10" y="366" width="254" height="4" fill="#e6dccb"/>
+    <rect x="-10" y="458" width="254" height="5" fill="#e6dccb"/>
+    <!-- Limestone Ground Floor Base -->
+    <rect x="-10" y="463" width="222" height="53" fill="#dcd1bf"/>
+    <polygon points="212,463 244,458 244,506 212,516" fill="#ebe2d2"/>
+
+    <!-- Window Grid on Left Brick Building -->
+    <g transform="translate(14,340)">
+      <use href="#winBrick" x="0" y="0"/><use href="#winBrick" x="30" y="0"/><use href="#winBrick" x="60" y="0"/><use href="#winBrick" x="90" y="0"/><use href="#winBrick" x="120" y="0"/><use href="#winBrick" x="150" y="0"/><use href="#winBrick" x="178" y="0"/>
+      <use href="#winBrick" x="0" y="38"/><use href="#winBrick" x="30" y="38"/><use href="#winBrick" x="60" y="38"/><use href="#winBrick" x="90" y="38"/><use href="#winBrick" x="120" y="38"/><use href="#winBrick" x="150" y="38"/><use href="#winBrick" x="178" y="38"/>
+      <use href="#winBrick" x="0" y="76"/><use href="#winBrick" x="30" y="76"/><use href="#winBrick" x="60" y="76"/><use href="#winBrick" x="90" y="76"/><use href="#winBrick" x="120" y="76"/><use href="#winBrick" x="150" y="76"/><use href="#winBrick" x="178" y="76"/>
+    </g>
+    <!-- Ground Floor Arched Windows -->
+    <g fill="#5b6670">
+      <rect x="16" y="476" width="18" height="28" rx="9"/>
+      <rect x="52" y="476" width="18" height="28" rx="9"/>
+      <rect x="88" y="476" width="18" height="28" rx="9"/>
+      <rect x="124" y="476" width="18" height="28" rx="9"/>
+      <rect x="160" y="476" width="18" height="28" rx="9"/>
+    </g>
+    <!-- Side Wall Windows -->
+    <g fill="#4f5f6d">
+      <rect x="223" y="340" width="9" height="18" rx="1"/>
+      <rect x="223" y="378" width="9" height="18" rx="1"/>
+      <rect x="223" y="416" width="9" height="18" rx="1"/>
+    </g>
+  </g>
+
+  <!-- RIGHT RED BRICK HALL -->
+  <g id="rightBrickHall">
+    <!-- Green Copper Mansard / Hipped Roof -->
+    <polygon points="812,272 1034,272 1034,322 782,322" fill="url(#copperSun)"/>
+    <polygon points="812,272 782,322 798,322 826,272" fill="url(#copperShade)"/>
+    <rect x="810" y="268" width="224" height="5" rx="2" fill="#a7d4c6"/>
+    <!-- Standing Seams -->
+    <g stroke="#5a8a7b" stroke-width="1.2" opacity="0.55">
+      <line x1="840" y1="272" x2="840" y2="322"/>
+      <line x1="880" y1="272" x2="880" y2="322"/>
+      <line x1="920" y1="272" x2="920" y2="322"/>
+      <line x1="960" y1="272" x2="960" y2="322"/>
+      <line x1="1000" y1="272" x2="1000" y2="322"/>
+    </g>
+    <!-- Roof Cupola & Chimney -->
+    <rect x="944" y="248" width="16" height="24" rx="1" fill="#c76956"/>
+    <rect x="942" y="246" width="20" height="4" rx="1" fill="#f2eadc"/>
+    <rect x="850" y="252" width="14" height="20" rx="1" fill="#c76956"/>
+    <rect x="848" y="250" width="18" height="4" rx="1" fill="#f2eadc"/>
+    <!-- Dormers -->
+    <g>
+      <polygon points="844,298 854,288 864,298" fill="#649485"/>
+      <rect x="846" y="298" width="16" height="16" fill="#f0e7d8"/>
+      <rect x="849" y="301" width="10" height="11" rx="1" fill="#4f5f6d"/>
+
+      <polygon points="904,298 914,288 924,298" fill="#649485"/>
+      <rect x="906" y="298" width="16" height="16" fill="#f0e7d8"/>
+      <rect x="909" y="301" width="10" height="11" rx="1" fill="#4f5f6d"/>
+
+      <polygon points="964,298 974,288 984,298" fill="#649485"/>
+      <rect x="966" y="298" width="16" height="16" fill="#f0e7d8"/>
+      <rect x="969" y="301" width="10" height="11" rx="1" fill="#4f5f6d"/>
+    </g>
+
+    <!-- Main Red Brick Facade -->
+    <!-- Shaded Left-Facing Side Wall -->
+    <polygon points="780,322 812,322 812,516 780,506" fill="url(#brickShade)"/>
+    <!-- Sunlit Front Wall -->
+    <rect x="812" y="322" width="222" height="194" fill="url(#brickSun)"/>
+    <!-- Limestone Trim & Cornices -->
+    <rect x="778" y="320" width="256" height="7" fill="#f5ede0"/>
+    <rect x="780" y="362" width="254" height="4" fill="#ede4d4"/>
+    <rect x="780" y="456" width="254" height="5" fill="#ede4d4"/>
+    <!-- Limestone Ground Floor Base -->
+    <rect x="812" y="461" width="222" height="55" fill="#eee5d5"/>
+    <polygon points="780,456 812,461 812,516 780,506" fill="#d3c7b4"/>
+
+    <!-- Window Grid on Right Brick Building -->
+    <g transform="translate(826,336)">
+      <use href="#winBrick" x="0" y="0"/><use href="#winBrick" x="30" y="0"/><use href="#winBrick" x="60" y="0"/><use href="#winBrick" x="90" y="0"/><use href="#winBrick" x="120" y="0"/><use href="#winBrick" x="150" y="0"/><use href="#winBrick" x="178" y="0"/>
+      <use href="#winBrick" x="0" y="38"/><use href="#winBrick" x="30" y="38"/><use href="#winBrick" x="60" y="38"/><use href="#winBrick" x="90" y="38"/><use href="#winBrick" x="120" y="38"/><use href="#winBrick" x="150" y="38"/><use href="#winBrick" x="178" y="38"/>
+      <use href="#winBrick" x="0" y="76"/><use href="#winBrick" x="30" y="76"/><use href="#winBrick" x="60" y="76"/><use href="#winBrick" x="90" y="76"/><use href="#winBrick" x="120" y="76"/><use href="#winBrick" x="150" y="76"/><use href="#winBrick" x="178" y="76"/>
+    </g>
+    <!-- Ground Floor Arched Windows -->
+    <g fill="#5b6670">
+      <rect x="832" y="474" width="18" height="28" rx="9"/>
+      <rect x="868" y="474" width="18" height="28" rx="9"/>
+      <rect x="904" y="474" width="18" height="28" rx="9"/>
+      <rect x="940" y="474" width="18" height="28" rx="9"/>
+      <rect x="976" y="474" width="18" height="28" rx="9"/>
+    </g>
+    <!-- Side Wall Windows -->
+    <g fill="#42505c">
+      <rect x="791" y="336" width="9" height="18" rx="1"/>
+      <rect x="791" y="374" width="9" height="18" rx="1"/>
+      <rect x="791" y="412" width="9" height="18" rx="1"/>
+    </g>
+  </g>
+
+  <!-- ==================== 8. CAMPUS GROUNDS, LAWNS & BRICK PATHS ==================== -->
+  <!-- Base Green Campus Lawn -->
+  <rect x="0" y="468" width="1024" height="300" fill="url(#lawnGrad)"/>
+
+  <!-- Subtle Mowed Lawn Stripes for Premium Life-Sim Polish -->
+  <g fill="#b4d68c" opacity="0.22">
+    <polygon points="0,535 1024,535 1024,565 0,565"/>
+    <polygon points="0,600 1024,600 1024,635 0,635"/>
+    <polygon points="0,675 1024,675 1024,715 0,715"/>
+  </g>
+
+  <!-- Long Morning Shadow Cast by Right Brick Building onto Lawn -->
+  <polygon points="780,506 1024,516 1024,625 650,610" fill="#456b49" opacity="0.24"/>
+
+  <!-- Main Horizontal Brick Promenade (College Walk) -->
+  <rect x="0" y="468" width="1024" height="58" fill="url(#brickPathGrad)"/>
+  <!-- Stone Curbs Along Promenade -->
+  <rect x="0" y="468" width="1024" height="4" fill="#ece3d3"/>
+  <rect x="0" y="523" width="1024" height="5" fill="#e5dac7"/>
+  <!-- Subtle Brick Promenade Paving Lines -->
+  <g stroke="#bc7d68" stroke-width="1" opacity="0.32">
+    <line x1="0" y1="482" x2="1024" y2="482"/>
+    <line x1="0" y1="496" x2="1024" y2="496"/>
+    <line x1="0" y1="510" x2="1024" y2="510"/>
+  </g>
+
+  <!-- Central Circular Brick & Stone Sundial Plaza + Radiating Brick Walkways -->
+  <g id="brickPaths">
+    <!-- Left Diagonal Brick Path -->
+    <polygon points="432,526 474,526 218,768 122,768" fill="url(#brickPathGrad)"/>
+    <!-- Right Diagonal Brick Path -->
+    <polygon points="550,526 592,526 902,768 806,768" fill="url(#brickPathGrad)"/>
+    <!-- Central North-South Brick Path -->
+    <polygon points="484,526 540,526 568,768 456,768" fill="url(#brickPathGrad)"/>
+    <!-- Cross Curved Brick Path -->
+    <path d="M0,645 Q260,612 512,612 Q764,612 1024,645 L1024,678 Q764,645 512,645 Q260,645 0,678 Z" fill="url(#brickPathGrad)"/>
+
+    <!-- Pale Stone Curb Outlines on Paths -->
+    <g stroke="#eadfce" stroke-width="3" fill="none">
+      <line x1="432" y1="526" x2="122" y2="768"/>
+      <line x1="474" y1="526" x2="218" y2="768"/>
+      <line x1="550" y1="526" x2="806" y2="768"/>
+      <line x1="592" y1="526" x2="902" y2="768"/>
+      <line x1="484" y1="526" x2="456" y2="768"/>
+      <line x1="540" y1="526" x2="568" y2="768"/>
+    </g>
+
+    <!-- Central Round Plaza -->
+    <ellipse cx="512" cy="628" rx="92" ry="38" fill="#e8decb"/>
+    <ellipse cx="512" cy="628" rx="82" ry="33" fill="url(#brickPathGrad)"/>
+    <ellipse cx="512" cy="628" rx="34" ry="14" fill="#efe6d6"/>
+    <!-- Decorative Stone Sundial / Compass Centerpiece -->
+    <ellipse cx="506" cy="630" rx="18" ry="6" fill="#a87c6a" opacity="0.32"/>
+    <ellipse cx="512" cy="626" rx="13" ry="5.5" fill="#d9cebc"/>
+    <rect x="506" y="612" width="12" height="14" rx="2" fill="#e8dfd0"/>
+    <ellipse cx="512" cy="612" rx="9" ry="3.5" fill="#f7f2e8"/>
+    <circle cx="512" cy="609" r="3.5" fill="#739c8d"/>
+  </g>
+
+  <!-- Low Campus Flowerbeds Along Promenade Curbs -->
+  <g id="flowerBeds">
+    <!-- Left Flowerbed -->
+    <path d="M242,534 Q312,530 385,534 Q392,544 378,548 Q312,550 246,546 Q236,542 242,534 Z" fill="#5e874d"/>
+    <g>
+      <circle cx="262" cy="539" r="3.5" fill="#f7c8d0"/><circle cx="274" cy="542" r="3" fill="#fff2b2"/>
+      <circle cx="290" cy="538" r="3.5" fill="#f7c8d0"/><circle cx="308" cy="541" r="3.2" fill="#e5d4f5"/>
+      <circle cx="326" cy="539" r="3.5" fill="#fff2b2"/><circle cx="344" cy="542" r="3" fill="#f7c8d0"/>
+      <circle cx="362" cy="539" r="3.5" fill="#e5d4f5"/><circle cx="374" cy="541" r="2.8" fill="#fff2b2"/>
+    </g>
+    <!-- Right Flowerbed -->
+    <path d="M638,534 Q708,530 780,534 Q786,544 774,548 Q708,550 644,546 Q632,542 638,534 Z" fill="#5e874d"/>
+    <g>
+      <circle cx="656" cy="539" r="3.5" fill="#fff2b2"/><circle cx="672" cy="541" r="3.2" fill="#f7c8d0"/>
+      <circle cx="690" cy="538" r="3.5" fill="#e5d4f5"/><circle cx="708" cy="542" r="3" fill="#f7c8d0"/>
+      <circle cx="726" cy="539" r="3.5" fill="#fff2b2"/><circle cx="744" cy="541" r="3.2" fill="#f7c8d0"/>
+      <circle cx="762" cy="539" r="3.5" fill="#e5d4f5"/>
+    </g>
+  </g>
+
+  <!-- ==================== 9. COZY CAMPUS DETAILS (BENCHES, LAMPS, TINY FIGURES) ==================== -->
+  <!-- Vintage Globe Streetlamps -->
+  <use href="#lampPost" x="282" y="522"/>
+  <use href="#lampPost" x="412" y="522"/>
+  <use href="#lampPost" x="612" y="522"/>
+  <use href="#lampPost" x="742" y="522"/>
+  <use href="#lampPost" x="394" y="616"/>
+  <use href="#lampPost" x="630" y="616"/>
+
+  <!-- Wooden Campus Benches -->
+  <use href="#campusBench" x="322" y="514"/>
+  <use href="#campusBench" x="666" y="514"/>
+  <use href="#campusBench" x="410" y="638"/>
+  <use href="#campusBench" x="588" y="638"/>
+
+  <!-- Tiny Life-Sim Students Strolling & Reading -->
+  <!-- Couple strolling on College Walk -->
+  <g transform="translate(468,498)">
+    <ellipse cx="-6" cy="14" rx="8" ry="2.2" fill="#7d4f41" opacity="0.28"/>
+    <rect x="-2" y="4" width="5" height="10" rx="2" fill="#465b73"/>
+    <rect x="-3" y="-6" width="7" height="11" rx="3" fill="#e8b86d"/>
+    <circle cx="0.5" cy="-10" r="3.2" fill="#f4cfb2"/>
+    <path d="M-2.5,-11 Q0.5,-15 3.5,-11" fill="#4a382e"/>
+  </g>
+  <g transform="translate(480,500)">
+    <ellipse cx="-6" cy="14" rx="8" ry="2.2" fill="#7d4f41" opacity="0.28"/>
+    <rect x="-2" y="4" width="5" height="10" rx="2" fill="#525a66"/>
+    <rect x="-3" y="-5" width="7" height="10" rx="3" fill="#6f9bb5"/>
+    <circle cx="0.5" cy="-9" r="3" fill="#e6b798"/>
+    <circle cx="0.5" cy="-10.5" r="2.6" fill="#3a2d28"/>
+  </g>
+
+  <!-- Student walking on right path with backpack -->
+  <g transform="translate(658,582)">
+    <ellipse cx="-7" cy="15" rx="9" ry="2.5" fill="#7d4f41" opacity="0.28"/>
+    <rect x="-2" y="4" width="5" height="11" rx="2" fill="#3e5166"/>
+    <rect x="2" y="-5" width="4" height="8" rx="1.5" fill="#c96453"/>
+    <rect x="-3" y="-6" width="7" height="11" rx="3" fill="#f0ece4"/>
+    <circle cx="0.5" cy="-10" r="3.2" fill="#f3cbb0"/>
+    <path d="M-2.5,-11 Q0.5,-15 3.5,-10.5" fill="#594132"/>
+  </g>
+
+  <!-- Student sitting on blanket reading on sunny left lawn -->
+  <g transform="translate(278,618)">
+    <polygon points="-24,6 18,2 26,16 -16,20" fill="#f5e7d0" opacity="0.92"/>
+    <polygon points="-22,7 16,3 20,10 -18,14" fill="#d97b6c" opacity="0.35"/>
+    <ellipse cx="0" cy="8" rx="6" ry="3" fill="#5a7291"/>
+    <rect x="-4" y="-3" width="8" height="10" rx="3" fill="#89b59d"/>
+    <circle cx="0" cy="-7" r="3.2" fill="#ecc0a2"/>
+    <!-- Tiny open book -->
+    <polygon points="5,2 12,0 13,5 6,7" fill="#ffffff"/>
+  </g>
+
+  <!-- ==================== 10. LUSH FOREGROUND & FRAMING TREES ==================== -->
+  <!-- Gentle Long Tree Shadows on Lawn & Paths -->
+  <g fill="#426943" opacity="0.22">
+    <ellipse cx="95" cy="618" rx="115" ry="34"/>
+    <ellipse cx="86" cy="728" rx="135" ry="38"/>
+    <ellipse cx="892" cy="615" rx="120" ry="34"/>
+    <ellipse cx="898" cy="732" rx="140" ry="40"/>
+  </g>
+
+  <!-- Left Mid-Foreground Spring Blossom Tree (Soft Pastel Pink-Cream) -->
+  <g id="leftBlossomTree">
+    <path d="M188,588 Q186,545 190,512" stroke="#6c5246" stroke-width="9" stroke-linecap="round" fill="none"/>
+    <path d="M188,546 L168,524 M189,538 L208,518" stroke="#6c5246" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+    <circle cx="164" cy="512" r="34" fill="url(#blossomGrad)"/>
+    <circle cx="212" cy="508" r="32" fill="url(#blossomGrad)"/>
+    <circle cx="188" cy="488" r="38" fill="url(#blossomGrad)"/>
+    <circle cx="186" cy="516" r="28" fill="#f7d5dc" opacity="0.8"/>
+    <!-- Fallen petals on grass -->
+    <g fill="#f7d2da" opacity="0.85">
+      <circle cx="156" cy="588" r="2.2"/><circle cx="172" cy="594" r="1.8"/><circle cx="198" cy="592" r="2"/>
+      <circle cx="214" cy="586" r="2.2"/><circle cx="182" cy="598" r="1.8"/>
+    </g>
+  </g>
+
+  <!-- Left Large Framing Elm / Oak Trees -->
+  <g id="leftFramingTrees">
+    <!-- Tree Trunk -->
+    <path d="M62,720 Q66,645 64,578" stroke="#5e493d" stroke-width="18" stroke-linecap="round" fill="none"/>
+    <path d="M64,638 L26,595 M65,622 L104,582" stroke="#5e493d" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <!-- Layered Rounded Foliage Canopy -->
+    <circle cx="18" cy="568" r="64" fill="url(#foliageDeep)"/>
+    <circle cx="96" cy="574" r="56" fill="url(#foliageDeep)"/>
+    <circle cx="54" cy="526" r="68" fill="url(#foliageBright)"/>
+    <circle cx="114" cy="534" r="46" fill="url(#foliageBright)"/>
+    <circle cx="12" cy="512" r="52" fill="url(#foliageBright)"/>
+    <!-- Foreground Corner Bush / Tree Canopy -->
+    <circle cx="-12" cy="742" r="76" fill="url(#foliageDeep)"/>
+    <circle cx="52" cy="758" r="56" fill="url(#foliageBright)"/>
+  </g>
+
+  <!-- Right Large Framing Elm / Oak Trees -->
+  <g id="rightFramingTrees">
+    <!-- Mid-Right Ornamental Tree -->
+    <path d="M838,582 Q836,544 838,512" stroke="#634c40" stroke-width="9" stroke-linecap="round" fill="none"/>
+    <circle cx="816" cy="508" r="32" fill="url(#foliageDeep)"/>
+    <circle cx="858" cy="512" r="30" fill="url(#foliageDeep)"/>
+    <circle cx="838" cy="488" r="36" fill="url(#foliageBright)"/>
+
+    <!-- Large Right Foreground Tree -->
+    <path d="M962,724 Q958,645 960,572" stroke="#5e493d" stroke-width="18" stroke-linecap="round" fill="none"/>
+    <path d="M960,636 L918,592 M959,622 L998,580" stroke="#5e493d" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <!-- Layered Rounded Foliage Canopy -->
+    <circle cx="1008" cy="562" r="68" fill="url(#foliageDeep)"/>
+    <circle cx="924" cy="574" r="56" fill="url(#foliageDeep)"/>
+    <circle cx="968" cy="520" r="70" fill="url(#foliageBright)"/>
+    <circle cx="908" cy="532" r="46" fill="url(#foliageBright)"/>
+    <circle cx="1014" cy="504" r="54" fill="url(#foliageBright)"/>
+    <!-- Foreground Corner Bush / Blossom Accent -->
+    <circle cx="1032" cy="744" r="78" fill="url(#foliageDeep)"/>
+    <circle cx="968" cy="760" r="58" fill="url(#foliageBright)"/>
+    <circle cx="920" cy="768" r="36" fill="url(#blossomGrad)"/>
+  </g>
+
+  <!-- Subtle Morning Birds in Upper Sky -->
+  <g fill="none" stroke="#6e91ab" stroke-width="1.5" stroke-linecap="round" opacity="0.65">
+    <path d="M312,114 Q316,109 320,114 Q324,109 328,114"/>
+    <path d="M336,124 Q339,120 342,124 Q345,120 348,124"/>
+    <path d="M642,96 Q646,91 650,96 Q654,91 658,96"/>
+  </g>
+
+  <!-- ==================== 11. SOFT MORNING SUNLIGHT ATMOSPHERIC WASH ==================== -->
+  <rect x="0" y="0" width="1024" height="768" fill="url(#sunBeam)" pointer-events="none"/>
+</svg>

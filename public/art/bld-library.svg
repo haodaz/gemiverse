@@ -1,0 +1,625 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <!-- Soft Ground & Ambient Shadows -->
+    <filter id="groundBlur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" />
+    </filter>
+    <filter id="contactBlur" x="-15%" y="-15%" width="130%" height="130%">
+      <feGaussianBlur stdDeviation="2.5" />
+    </filter>
+    <filter id="lampGlowBlur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" />
+    </filter>
+
+    <!-- Wall Gradients -->
+    <linearGradient id="wallSunlit" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF9F0" />
+      <stop offset="100%" stop-color="#F3E5D3" />
+    </linearGradient>
+    <linearGradient id="wallShaded" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EFE1CF" />
+      <stop offset="100%" stop-color="#DFCBB5" />
+    </linearGradient>
+
+    <!-- Plinth & Stone Gradients -->
+    <linearGradient id="stoneTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F2EAE0" />
+      <stop offset="100%" stop-color="#E3D7C8" />
+    </linearGradient>
+    <linearGradient id="stoneLeft" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#DED3C7" />
+      <stop offset="100%" stop-color="#CFC2B4" />
+    </linearGradient>
+    <linearGradient id="stoneRight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#C9BBB0" />
+      <stop offset="100%" stop-color="#B8A99D" />
+    </linearGradient>
+
+    <!-- Roof Gradients (Soft Terracotta / Dusty Coral) -->
+    <linearGradient id="roofSlope" x1="10%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#ECA18A" />
+      <stop offset="55%" stop-color="#DE8973" />
+      <stop offset="100%" stop-color="#CA735E" />
+    </linearGradient>
+    <linearGradient id="roofBackSlope" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F2B29C" />
+      <stop offset="100%" stop-color="#E2937C" />
+    </linearGradient>
+    <linearGradient id="sageRoof" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A5C2A8" />
+      <stop offset="100%" stop-color="#7B9B80" />
+    </linearGradient>
+
+    <!-- Interior & Window Gradients -->
+    <radialGradient id="windowGlow" cx="50%" cy="42%" r="65%">
+      <stop offset="0%" stop-color="#FFF6D6" />
+      <stop offset="60%" stop-color="#F4D392" />
+      <stop offset="100%" stop-color="#D9A866" />
+    </radialGradient>
+    <linearGradient id="glassShine" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.38" />
+      <stop offset="45%" stop-color="#FFFFFF" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#FFF5D9" stop-opacity="0.0" />
+    </linearGradient>
+
+    <!-- Wood & Door Gradients -->
+    <linearGradient id="doorWood" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B98763" />
+      <stop offset="100%" stop-color="#966848" />
+    </linearGradient>
+    <linearGradient id="tableWood" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C99872" />
+      <stop offset="100%" stop-color="#A37350" />
+    </linearGradient>
+
+    <!-- Greenery Gradients -->
+    <radialGradient id="bushLight" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#B5D3AC" />
+      <stop offset="65%" stop-color="#8EB089" />
+      <stop offset="100%" stop-color="#71926F" />
+    </radialGradient>
+    <radialGradient id="bushDeep" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#9BBD95" />
+      <stop offset="70%" stop-color="#789974" />
+      <stop offset="100%" stop-color="#60805E" />
+    </radialGradient>
+
+    <!-- Lamp Glow -->
+    <radialGradient id="lampHalo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF4B8" stop-opacity="0.85" />
+      <stop offset="45%" stop-color="#FFE18A" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#FFD470" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Window Clip Paths (in local window coords: 0..32 x 0..52) -->
+    <clipPath id="archWinClip">
+      <path d="M 2 50 L 2 18 A 14 14 0 0 1 30 18 L 30 50 Z" />
+    </clipPath>
+
+    <!-- Reusable Bookshelf Interior Symbol -->
+    <g id="bookshelfWindow">
+      <!-- Deep Window Recess Frame -->
+      <path d="M 0 52 L 0 17 A 16 16 0 0 1 32 17 L 32 52 Z" fill="#7D9B84" />
+      <!-- Inner Jamb Depth -->
+      <path d="M 2 50 L 2 18 A 14 14 0 0 1 30 18 L 30 50 Z" fill="#637E69" />
+
+      <!-- Warm Clipped Interior -->
+      <g clip-path="url(#archWinClip)">
+        <rect x="2" y="2" width="28" height="48" fill="url(#windowGlow)" />
+        <!-- Inner recessed shadow along top-left -->
+        <path d="M 2 50 L 2 18 A 14 14 0 0 1 30 18 L 27 18 A 11 11 0 0 0 5 18 L 5 50 Z" fill="#8C6A4A" opacity="0.22" />
+
+        <!-- Bookshelf Back & Uprights -->
+        <rect x="4" y="14" width="24" height="36" fill="#C79663" opacity="0.35" />
+        <rect x="4" y="14" width="2" height="36" fill="#8F6343" />
+        <rect x="26" y="14" width="2" height="36" fill="#8F6343" />
+        <rect x="15" y="15" width="1.6" height="35" fill="#9B6E4C" />
+
+        <!-- Shelf 1 (Top under arch) -->
+        <rect x="4" y="21" width="24" height="2" fill="#8A5E3E" />
+        <!-- Books Row 1 -->
+        <rect x="6.5" y="15.5" width="2.2" height="5.5" rx="0.4" fill="#D97F73" />
+        <rect x="9" y="16.5" width="2" height="4.5" rx="0.4" fill="#7FA4B8" />
+        <rect x="11.3" y="15" width="2.4" height="6" rx="0.4" fill="#E8C272" />
+        <rect x="17.2" y="16" width="2.1" height="5" rx="0.4" fill="#8EB093" />
+        <rect x="19.6" y="15.2" width="2.3" height="5.8" rx="0.4" fill="#B496B8" />
+        <rect x="22.2" y="16.4" width="2.5" height="4.6" rx="0.4" fill="#DE9378" />
+
+        <!-- Shelf 2 -->
+        <rect x="4" y="30" width="24" height="2" fill="#8A5E3E" />
+        <!-- Books Row 2 -->
+        <rect x="6.3" y="23.8" width="2.3" height="6.2" rx="0.4" fill="#8EB093" />
+        <rect x="8.9" y="24.5" width="2.1" height="5.5" rx="0.4" fill="#F2D7B1" />
+        <rect x="11.4" y="24.2" width="2.2" height="5.8" rx="0.4" fill="#D97F73" transform="rotate(-8 12.5 30)" />
+        <rect x="17" y="23.6" width="2.4" height="6.4" rx="0.4" fill="#7FA4B8" />
+        <rect x="19.7" y="25" width="2.2" height="5" rx="0.4" fill="#E6BD70" />
+        <rect x="22.3" y="24" width="2.6" height="6" rx="0.4" fill="#C97E7E" />
+
+        <!-- Shelf 3 -->
+        <rect x="4" y="39" width="24" height="2" fill="#8A5E3E" />
+        <!-- Books Row 3 -->
+        <rect x="6.5" y="32.5" width="2.5" height="6.5" rx="0.4" fill="#B496B8" />
+        <rect x="9.3" y="33.5" width="2" height="5.5" rx="0.4" fill="#E8C272" />
+        <rect x="11.6" y="33" width="2.4" height="6" rx="0.4" fill="#7FA4B8" />
+        <rect x="17.2" y="33.4" width="2.1" height="5.6" rx="0.4" fill="#D97F73" />
+        <rect x="19.6" y="32.8" width="2.5" height="6.2" rx="0.4" fill="#8EB093" />
+        <rect x="22.8" y="34" width="2.2" height="5" rx="0.4" fill="#F2D7B1" transform="rotate(10 23.5 39)" />
+
+        <!-- Shelf 4 (Bottom) -->
+        <rect x="4" y="48" width="24" height="2" fill="#8A5E3E" />
+        <!-- Books Row 4 -->
+        <rect x="6.4" y="42" width="2.2" height="6" rx="0.4" fill="#DE9378" />
+        <rect x="8.9" y="41.5" width="2.5" height="6.5" rx="0.4" fill="#7FA4B8" />
+        <rect x="11.7" y="42.6" width="2.3" height="5.4" rx="0.4" fill="#8EB093" />
+        <!-- Horizontal stacked books on right -->
+        <rect x="17.4" y="45.8" width="7.2" height="2.2" rx="0.4" fill="#D97F73" />
+        <rect x="17.8" y="43.7" width="6.4" height="2" rx="0.4" fill="#E8C272" />
+
+        <!-- Soft Glass Mullions & Diagonal Shine -->
+        <polygon points="2,18 20,2 28,2 2,26" fill="url(#glassShine)" />
+        <polygon points="2,34 30,8 30,15 2,41" fill="url(#glassShine)" opacity="0.6" />
+        <!-- Fine Window Muntins -->
+        <line x1="16" y1="4" x2="16" y2="50" stroke="#7D9B84" stroke-width="1.3" />
+        <line x1="2" y1="18" x2="30" y2="18" stroke="#7D9B84" stroke-width="1.3" />
+        <line x1="2" y1="34" x2="30" y2="34" stroke="#7D9B84" stroke-width="1.1" opacity="0.85" />
+      </g>
+
+      <!-- Outer Arch Molding Highlight -->
+      <path d="M 1 51 L 1 17.5 A 15 15 0 0 1 31 17.5 L 31 51" fill="none" stroke="#A6C1AC" stroke-width="1.2" />
+      <!-- Rounded Stone Window Sill -->
+      <rect x="-2" y="50" width="36" height="3.8" rx="1.6" fill="#EDE4D9" />
+      <rect x="-2" y="52.4" width="36" height="1.6" rx="0.8" fill="#CBBFB3" />
+    </g>
+  </defs>
+
+  <!-- ==================== 1. SOFT GROUND SHADOWS ==================== -->
+  <g id="ground-shadows">
+    <!-- Long Gentle Cast Shadow (toward bottom-right) -->
+    <polygon
+      points="76,232 195,172 358,255 362,272 252,328 168,286 136,282 90,256"
+      fill="#766D82"
+      opacity="0.18"
+      filter="url(#groundBlur)"
+    />
+    <!-- Tight Contact Shadow under Plinth & Steps -->
+    <polygon
+      points="66,229 168,280 236,314 346,259 290,210 188,162"
+      fill="#6B6275"
+      opacity="0.16"
+      filter="url(#contactBlur)"
+    />
+    <polygon
+      points="83,251 126,272 142,264 99,243"
+      fill="#6B6275"
+      opacity="0.18"
+      filter="url(#contactBlur)"
+    />
+  </g>
+
+  <!-- ==================== 2. STONE PLINTH & TERRACE BASE ==================== -->
+  <g id="plinth-and-terrace">
+    <!-- Terrace Plinth Sides (z = 0..10) -->
+    <!-- Front-left continuous plinth face: (-60,60) -> (108,60) -->
+    <polygon points="68,218 236,302 236,312 68,228" fill="url(#stoneLeft)" />
+    <!-- Outer-right terrace plinth face: (108,60) -> (108,-48) -->
+    <polygon points="236,302 344,248 344,258 236,312" fill="url(#stoneRight)" />
+
+    <!-- Main & Terrace Top Surface (z = 10) -->
+    <polygon points="188,158 288,208 276,214 344,248 236,302 68,218" fill="url(#stoneTop)" />
+
+    <!-- Subtle Flagstone Paving Pattern on Reading Terrace -->
+    <g stroke="#D3C6B8" stroke-width="0.9" fill="none" opacity="0.85">
+      <!-- Lines parallel to -v (bottom-left to top-right) -->
+      <line x1="184" y1="274" x2="292" y2="220" />
+      <line x1="201" y1="282.5" x2="309" y2="228.5" />
+      <line x1="218" y1="291" x2="326" y2="237" />
+      <!-- Lines parallel to +u (top-left to bottom-right) -->
+      <line x1="258" y1="223" x2="326" y2="257" />
+      <line x1="238" y1="233" x2="306" y2="267" />
+      <line x1="218" y1="243" x2="286" y2="277" />
+      <line x1="198" y1="253" x2="266" y2="287" />
+      <line x1="178" y1="263" x2="246" y2="297" />
+    </g>
+
+    <!-- Soft Shadow cast by Building onto Reading Terrace -->
+    <polygon points="168,263 278,208 308,223 198,278" fill="#8C7E77" opacity="0.16" />
+
+    <!-- Plinth Top Edge Highlights -->
+    <polyline points="68,218 236,302 344,248" fill="none" stroke="#F8F3EC" stroke-width="1.3" stroke-linejoin="round" />
+
+    <!-- Subtle Plinth Masonry Joint Lines -->
+    <g stroke="#B8AA9E" stroke-width="0.8" opacity="0.55">
+      <line x1="92" y1="230" x2="92" y2="240" />
+      <line x1="146" y1="257" x2="146" y2="267" />
+      <line x1="192" y1="280" x2="192" y2="290" />
+      <line x1="216" y1="292" x2="216" y2="302" />
+      <line x1="262" y1="289" x2="262" y2="299" />
+      <line x1="292" y1="274" x2="292" y2="284" />
+      <line x1="320" y1="260" x2="320" y2="270" />
+    </g>
+
+    <!-- Small Back-Right Terrace Topiary Bush (behind balustrade) -->
+    <g id="back-terrace-bush">
+      <ellipse cx="322" cy="242" rx="13" ry="7" fill="#7D726C" opacity="0.18" />
+      <circle cx="315" cy="233" r="11" fill="url(#bushDeep)" />
+      <circle cx="327" cy="235" r="9.5" fill="url(#bushDeep)" />
+      <circle cx="321" cy="226" r="10.5" fill="url(#bushLight)" />
+      <!-- Tiny pastel blossoms -->
+      <circle cx="317" cy="224" r="1.7" fill="#FFF4D9" />
+      <circle cx="325" cy="228" r="1.5" fill="#FADAD4" />
+      <circle cx="321" cy="232" r="1.6" fill="#FFF4D9" />
+    </g>
+  </g>
+
+  <!-- ==================== 3. MAIN LIBRARY BUILDING WALLS ==================== -->
+  <g id="building-walls">
+    <!-- Front-Left Sunlit Entrance Facade (with Gable) -->
+    <polygon points="78,218 168,263 168,191 123,120.5 78,146" fill="url(#wallSunlit)" />
+
+    <!-- Front-Right Shaded Reading Hall Facade -->
+    <polygon points="168,263 278,208 278,136 168,191" fill="url(#wallShaded)" />
+
+    <!-- Decorative Corner Stone Quoins (Left, Center, Right) -->
+    <g fill="#EAE0D4" stroke="#D8CBBE" stroke-width="0.6">
+      <!-- Left corner quoins -->
+      <polygon points="78,208 86,212 86,217 78,213" />
+      <polygon points="78,194 84,197 84,202 78,199" />
+      <polygon points="78,180 86,184 86,189 78,185" />
+      <polygon points="78,166 84,169 84,174 78,171" />
+      <!-- Center front corner quoins (left face) -->
+      <polygon points="160,253 168,257 168,262 160,258" />
+      <polygon points="162,240 168,243 168,248 162,245" />
+      <polygon points="160,226 168,230 168,235 160,231" />
+      <polygon points="162,213 168,216 168,221 162,218" />
+    </g>
+    <g fill="#DDD0C1" stroke="#CBBCAE" stroke-width="0.6">
+      <!-- Center front corner quoins (right face) -->
+      <polygon points="168,257 175,253.5 175,258.5 168,262" />
+      <polygon points="168,243 173,240.5 173,245.5 168,248" />
+      <polygon points="168,230 175,226.5 175,231.5 168,235" />
+      <polygon points="168,216 173,213.5 173,218.5 168,221" />
+    </g>
+
+    <!-- Soft Eave Shadow Cast onto Walls -->
+    <polygon points="78,146 123,120.5 168,191 168,198 123,129 78,153" fill="#B59E8C" opacity="0.24" />
+    <polygon points="168,191 278,136 278,148 168,203" fill="#A6907E" opacity="0.28" />
+
+    <!-- Horizontal Decorative Stone Stringcourse Belt -->
+    <line x1="78" y1="215" x2="168" y2="260" stroke="#E0D2C3" stroke-width="2" />
+    <line x1="168" y1="260" x2="278" y2="205" stroke="#CEBFAE" stroke-width="2" />
+  </g>
+
+  <!-- ==================== 4. FRONT-LEFT ENTRANCE, DOOR & OPEN BOOK EMBLEM ==================== -->
+  <g id="entrance-facade">
+    <!-- Everything on the Front-Left facade aligned in isometric plane via skewY(26.565) -->
+    <g transform="translate(123, 196.5) skewY(26.565)">
+      <!-- Arched Stone Door Surround -->
+      <path d="M -17 44 L -17 15 A 17 17 0 0 1 17 15 L 17 44 Z" fill="#EAE0D4" stroke="#D2C4B5" stroke-width="1" />
+      <!-- Sage Door Frame -->
+      <path d="M -14 44 L -14 15 A 14 14 0 0 1 14 15 L 14 44 Z" fill="#7D9B84" />
+      <!-- Warm Wooden Double Door -->
+      <path d="M -11.5 44 L -11.5 15 A 11.5 11.5 0 0 1 11.5 15 L 11.5 44 Z" fill="url(#doorWood)" />
+      <!-- Arched Transom Glass Window in Door -->
+      <path d="M -9 14 A 9 9 0 0 1 9 14 Z" fill="url(#windowGlow)" />
+      <line x1="0" y1="5" x2="0" y2="14" stroke="#7D9B84" stroke-width="1.2" />
+      <path d="M -9 14 A 9 9 0 0 1 9 14 Z" fill="none" stroke="#855A3C" stroke-width="1" />
+      <!-- Door Panels -->
+      <rect x="-9" y="18" width="7" height="10" rx="1.2" fill="#A67452" stroke="#855A3C" stroke-width="0.7" />
+      <rect x="2" y="18" width="7" height="10" rx="1.2" fill="#A67452" stroke="#855A3C" stroke-width="0.7" />
+      <rect x="-9" y="31" width="7" height="9" rx="1.2" fill="#A67452" stroke="#855A3C" stroke-width="0.7" />
+      <rect x="2" y="31" width="7" height="9" rx="1.2" fill="#A67452" stroke="#855A3C" stroke-width="0.7" />
+      <!-- Center Seam & Tiny Brass Handles -->
+      <line x1="0" y1="14" x2="0" y2="44" stroke="#734C32" stroke-width="1.1" />
+      <circle cx="-2.4" cy="29.5" r="1.1" fill="#F2CE74" />
+      <circle cx="2.4" cy="29.5" r="1.1" fill="#F2CE74" />
+
+      <!-- Small Flanking Wall Lanterns -->
+      <g transform="translate(-23, 18)">
+        <rect x="-2" y="0" width="4" height="6" rx="1.5" fill="#FFF4C2" stroke="#68786E" stroke-width="0.8" />
+        <path d="M -3 0 L 0 -2.5 L 3 0 Z" fill="#68786E" />
+      </g>
+      <g transform="translate(23, 18)">
+        <rect x="-2" y="0" width="4" height="6" rx="1.5" fill="#FFF4C2" stroke="#68786E" stroke-width="0.8" />
+        <path d="M -3 0 L 0 -2.5 L 3 0 Z" fill="#68786E" />
+      </g>
+
+      <!-- OPEN BOOK EMBLEM ABOVE THE DOOR (No letters, pure sculptural shapes) -->
+      <g transform="translate(0, -18)">
+        <!-- Decorative Stone Medallion Plaque -->
+        <ellipse cx="0" cy="0" rx="16.5" ry="11.5" fill="#EAE0D4" stroke="#D5C7B8" stroke-width="1.2" />
+        <ellipse cx="0" cy="0" rx="13.5" ry="9" fill="#829F89" />
+
+        <!-- Open Book Cover (Terracotta / Warm Coral) -->
+        <path d="M -10.5 3.5 C -6 1.5 -2 2.5 0 4.5 C 2 2.5 6 1.5 10.5 3.5 L 11.5 -2.5 C 6.5 -4.5 2 -3 0 -1 C -2 -3 -6.5 -4.5 -11.5 -2.5 Z" fill="#D97F6B" />
+
+        <!-- Left Open Page (Warm Cream) -->
+        <path d="M 0 3.2 C -2.2 1 -6.2 0.3 -9.8 2 L -10.4 -3.6 C -6.5 -5.4 -2.2 -4.2 0 -1.8 Z" fill="#FFFBF2" />
+        <!-- Right Open Page (Soft Ivory) -->
+        <path d="M 0 3.2 C 2.2 1 6.2 0.3 9.8 2 L 10.4 -3.6 C 6.5 -5.4 2.2 -4.2 0 -1.8 Z" fill="#F4E8D6" />
+
+        <!-- Subtle Layered Page Edges & Center Spine -->
+        <path d="M 0 -1.8 L 0 3.2" stroke="#C7B6A2" stroke-width="0.9" />
+        <path d="M -8.5 -2.4 C -5.5 -3.4 -2.8 -2.8 -1.2 -1.4" fill="none" stroke="#DFD2C0" stroke-width="0.7" />
+        <path d="M -8.3 -0.5 C -5.5 -1.4 -2.8 -0.8 -1.2 0.5" fill="none" stroke="#DFD2C0" stroke-width="0.7" />
+        <path d="M 8.5 -2.4 C 5.5 -3.4 2.8 -2.8 1.2 -1.4" fill="none" stroke="#D5C6B3" stroke-width="0.7" />
+        <path d="M 8.3 -0.5 C 5.5 -1.4 2.8 -0.8 1.2 0.5" fill="none" stroke="#D5C6B3" stroke-width="0.7" />
+
+        <!-- Tiny Golden Ribbon Bookmark -->
+        <path d="M 0 3.2 L 1.2 6.5 L 0 5.5 L -1.2 6.5 Z" fill="#F0C66B" />
+      </g>
+
+      <!-- Small Round Gable Oculus Window above Emblem -->
+      <g transform="translate(0, -45)">
+        <circle cx="0" cy="0" r="8.5" fill="#EAE0D4" stroke="#D4C6B7" stroke-width="0.9" />
+        <circle cx="0" cy="0" r="6.5" fill="#7D9B84" />
+        <circle cx="0" cy="0" r="5" fill="url(#windowGlow)" />
+        <line x1="-5" y1="0" x2="5" y2="0" stroke="#7D9B84" stroke-width="1" />
+        <line x1="0" y1="-5" x2="0" y2="5" stroke="#7D9B84" stroke-width="1" />
+      </g>
+    </g>
+
+    <!-- Stone Entrance Steps (descending toward front-left) -->
+    <g id="front-steps">
+      <!-- Upper Step (z = 6..10) -->
+      <polygon points="105,231.5 141,249.5 133,253.5 97,235.5" fill="#F2EAE0" />
+      <polygon points="97,235.5 133,253.5 133,258.5 97,240.5" fill="#D8CCC0" />
+      <polygon points="133,253.5 141,249.5 141,254.5 133,258.5" fill="#C4B6A9" />
+      <!-- Lower Step (z = 0..6) -->
+      <polygon points="95,238.5 135,258.5 125,263.5 85,243.5" fill="#EDE3D8" />
+      <polygon points="85,243.5 125,263.5 125,269.5 85,249.5" fill="#CFC2B5" />
+      <polygon points="125,263.5 135,258.5 135,264.5 125,269.5" fill="#B8A99D" />
+    </g>
+  </g>
+
+  <!-- ==================== 5. TALL ARCHED WINDOWS WITH BOOKSHELVES ==================== -->
+  <g id="arched-windows">
+    <!-- Window 1 (Front-Right, closer to front corner) -->
+    <g transform="translate(183, 193.5) skewY(-26.565)">
+      <use href="#bookshelfWindow" />
+    </g>
+
+    <!-- Window 2 (Front-Right, further back) -->
+    <g transform="translate(231, 169.5) skewY(-26.565)">
+      <use href="#bookshelfWindow" />
+    </g>
+
+    <!-- Small Decorative Wall Ivy & Sconce on Center Pier Between Windows -->
+    <g id="center-pier-detail">
+      <circle cx="223" cy="197" r="3" fill="#8EB089" />
+      <circle cx="220" cy="202" r="2.5" fill="#A5C49E" />
+      <circle cx="224" cy="207" r="2.8" fill="#7C9E78" />
+      <circle cx="222" cy="213" r="2.2" fill="#9BBF95" />
+      <circle cx="223" cy="201" r="1.2" fill="#FFF3D6" />
+    </g>
+  </g>
+
+  <!-- ==================== 6. ROOF, CHIMNEY & CUPOLA ==================== -->
+  <g id="roof-assembly">
+    <!-- Tiny Stone Chimney on Back-Left Slope -->
+    <g id="chimney">
+      <polygon points="178,108 189,113.5 189,88 178,82.5" fill="#EFE4D8" />
+      <polygon points="189,113.5 200,108 200,82.5 189,88" fill="#D8C9BC" />
+      <!-- Terracotta Cap -->
+      <polygon points="176,82.5 189,89 202,82.5 189,76" fill="#E3927B" />
+      <polygon points="181,82.5 189,86.5 197,82.5 189,78.5" fill="#B86B57" />
+    </g>
+
+    <!-- Back-Left Roof Overhang Edge (peeking slightly at top-left) -->
+    <polygon points="65,150.5 117,121.5 239,60.5 187,89.5" fill="url(#roofBackSlope)" />
+
+    <!-- Main Visible Right Roof Slope -->
+    <polygon points="117,121.5 239,60.5 291,141.5 169,202.5" fill="url(#roofSlope)" />
+
+    <!-- Subtle Pastel Shingle Courses on Roof Slope -->
+    <g stroke="#C66E5A" stroke-width="0.9" opacity="0.32" fill="none">
+      <line x1="128" y1="138" x2="250" y2="77" />
+      <line x1="139" y1="154.5" x2="261" y2="93.5" />
+      <line x1="150" y1="171" x2="272" y2="110" />
+      <line x1="160" y1="187.5" x2="282" y2="126.5" />
+    </g>
+    <!-- Soft Shingle Highlights -->
+    <g fill="#F4B49F" opacity="0.32">
+      <rect x="172" y="128" width="12" height="4" rx="1.5" transform="rotate(-26.5 172 128)" />
+      <rect x="218" y="106" width="14" height="4" rx="1.5" transform="rotate(-26.5 218 106)" />
+      <rect x="195" y="150" width="13" height="4" rx="1.5" transform="rotate(-26.5 195 150)" />
+      <rect x="242" y="129" width="11" height="4" rx="1.5" transform="rotate(-26.5 242 129)" />
+      <rect x="176" y="176" width="14" height="4" rx="1.5" transform="rotate(-26.5 176 176)" />
+    </g>
+
+    <!-- Roof Ridge Cap (Warm Cream / Terracotta Trim) -->
+    <line x1="117" y1="121.5" x2="239" y2="60.5" stroke="#F7EFE6" stroke-width="4" stroke-linecap="round" />
+    <line x1="117" y1="121.5" x2="239" y2="60.5" stroke="#E0947E" stroke-width="1.6" stroke-linecap="round" />
+
+    <!-- Right Eaves Fascia Trim (Cream + Sage Gutter Accent) -->
+    <polygon points="169,202.5 291,141.5 291,146.5 169,207.5" fill="#F2E8DC" />
+    <line x1="169" y1="205.5" x2="291" y2="144.5" stroke="#8AA890" stroke-width="1.6" />
+
+    <!-- Front Gable Rounded Bargeboard Trim -->
+    <polyline
+      points="65,150.5 117,121.5 169,202.5"
+      fill="none"
+      stroke="#FAF3EA"
+      stroke-width="6"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <polyline
+      points="65,150.5 117,121.5 169,202.5"
+      fill="none"
+      stroke="#8CA992"
+      stroke-width="1.6"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+
+    <!-- Charming Roof Lantern Cupola -->
+    <g id="roof-cupola" transform="translate(182, 92)">
+      <!-- Cupola Base Skirt -->
+      <polygon points="-14,0 0,7 14,0 0,-7" fill="#E8DDD0" />
+      <polygon points="-12,0 0,6 0,-12 -12,-18" fill="#FAF2E8" />
+      <polygon points="0,6 12,0 12,-18 0,-12" fill="#E6D8C8" />
+      <!-- Glowing Cupola Windows -->
+      <polygon points="-9,-3 -2,0.5 -2,-11 -9,-14.5" fill="url(#windowGlow)" stroke="#7D9B84" stroke-width="1.2" />
+      <polygon points="2,0.5 9,-3 9,-14.5 2,-11" fill="url(#windowGlow)" stroke="#7D9B84" stroke-width="1.2" />
+      <!-- Curved Sage Bell Roof -->
+      <path d="M -15,-17 Q -6,-26 0,-32 Q 6,-26 15,-17 L 0,-10 Z" fill="url(#sageRoof)" />
+      <path d="M -15,-17 Q -6,-26 0,-32 L 0,-10 Z" fill="#B1CEB4" opacity="0.45" />
+      <!-- Tiny Brass Finial -->
+      <line x1="0" y1="-32" x2="0" y2="-38" stroke="#D9A84E" stroke-width="1.5" stroke-linecap="round" />
+      <circle cx="0" cy="-39" r="2.2" fill="#F4CE74" />
+    </g>
+  </g>
+
+  <!-- ==================== 7. READING TERRACE FURNITURE, LAMP & BALUSTRADE ==================== -->
+  <g id="reading-terrace">
+    <!-- Cozy Reading Table & Chairs (centered around 250, 255) -->
+    <g id="reading-nook">
+      <!-- Back Chair (behind table) -->
+      <g transform="translate(267, 244)">
+        <ellipse cx="0" cy="4" rx="7" ry="4" fill="#7D7068" opacity="0.18" />
+        <!-- Legs -->
+        <line x1="-4" y1="-2" x2="-4" y2="4" stroke="#8C5E3E" stroke-width="1.6" />
+        <line x1="4" y1="-2" x2="4" y2="4" stroke="#8C5E3E" stroke-width="1.6" />
+        <line x1="0" y1="0" x2="0" y2="5" stroke="#8C5E3E" stroke-width="1.6" />
+        <!-- Cushion & Seat -->
+        <ellipse cx="0" cy="-3" rx="6.5" ry="3.8" fill="#E6A58F" />
+        <!-- Curved Backrest -->
+        <path d="M -5.5,-3 Q 0,-14 5.5,-5" fill="none" stroke="#A67452" stroke-width="2.4" stroke-linecap="round" />
+      </g>
+
+      <!-- Round Wooden Reading Table -->
+      <g transform="translate(248, 255)">
+        <ellipse cx="1" cy="5" rx="13" ry="7.2" fill="#7D7068" opacity="0.2" />
+        <!-- Pedestal Base -->
+        <ellipse cx="0" cy="3.5" rx="5.5" ry="3" fill="#8C5E3E" />
+        <rect x="-1.6" y="-10" width="3.2" height="13.5" fill="#9E6E4C" />
+        <!-- Tabletop Rim & Surface -->
+        <ellipse cx="0" cy="-10" rx="13" ry="7.2" fill="#9E6E4C" />
+        <ellipse cx="0" cy="-11.5" rx="13" ry="7.2" fill="url(#tableWood)" />
+        <!-- Tiny Open Book on Table -->
+        <polygon points="-5,-12 0,-14.5 5,-12 0,-9.5" fill="#D97F6B" />
+        <polygon points="-4.2,-12.2 0,-14.2 0,-10.2 -4.2,-12.2" fill="#FFFDF7" />
+        <polygon points="4.2,-12.2 0,-14.2 0,-10.2 4.2,-12.2" fill="#F2E6D5" />
+        <!-- Tiny Sage Teacup -->
+        <ellipse cx="6.5" cy="-10.5" rx="2.6" ry="1.5" fill="#F6EFE6" />
+        <rect x="5" y="-13" width="3" height="2.4" rx="1" fill="#8EB093" />
+      </g>
+
+      <!-- Front Chair (beside table) -->
+      <g transform="translate(230, 263)">
+        <ellipse cx="1" cy="4.5" rx="7" ry="4" fill="#7D7068" opacity="0.18" />
+        <line x1="-4" y1="-2" x2="-4" y2="4" stroke="#8C5E3E" stroke-width="1.6" />
+        <line x1="4" y1="-2" x2="4" y2="4" stroke="#8C5E3E" stroke-width="1.6" />
+        <line x1="0" y1="0" x2="0" y2="5" stroke="#8C5E3E" stroke-width="1.6" />
+        <ellipse cx="0" cy="-3" rx="6.5" ry="3.8" fill="#96B89A" />
+        <path d="M -5.5,-3 Q -6,-12 2,-10" fill="none" stroke="#A67452" stroke-width="2.4" stroke-linecap="round" />
+      </g>
+    </g>
+
+    <!-- Low Stone Terrace Balustrade (Outer-Right & Front-Right edges) -->
+    <g id="terrace-balustrade">
+      <!-- Outer-Right Rail: (236, 302) -> (344, 248) -->
+      <!-- Low Curb & Railing Wall -->
+      <polygon points="236,302 340,250 340,239 236,291" fill="#CFC2B6" />
+      <!-- Decorative Vertical Balusters / Openings -->
+      <g fill="#EAE0D5" opacity="0.65">
+        <polygon points="250,292 258,288 258,282 250,286" />
+        <polygon points="266,284 274,280 274,274 266,278" />
+        <polygon points="282,276 290,272 290,266 282,270" />
+        <polygon points="298,268 306,264 306,258 298,262" />
+        <polygon points="314,260 322,256 322,250 314,254" />
+      </g>
+      <!-- Top Stone Cap of Outer-Right Rail -->
+      <polygon points="233,289.5 337,237.5 342,240 238,292" fill="#F2EAE0" />
+
+      <!-- Front-Left Terrace Rail Segment: (174, 271) -> (236, 302) -->
+      <polygon points="174,271 236,302 236,291 174,260" fill="#DDD2C6" />
+      <g fill="#F4ECE2" opacity="0.65">
+        <polygon points="184,273 192,277 192,271 184,267" />
+        <polygon points="200,281 208,285 208,279 200,275" />
+        <polygon points="216,289 224,293 224,287 216,283" />
+      </g>
+      <!-- Top Stone Cap of Front Rail -->
+      <polygon points="172,260 177,257.5 239,288.5 234,291" fill="#F6EFE6" />
+
+      <!-- Corner Stone Pillars (Front-Right Corner, Mid-Front, Outer-Back) -->
+      <!-- Front-Right Corner Pillar at (236, 302) -->
+      <g transform="translate(236, 302)">
+        <polygon points="-6,-3 0,0 0,-16 -6,-19" fill="#E3D8CC" />
+        <polygon points="0,0 6,-3 6,-19 0,-16" fill="#CBBFB3" />
+        <polygon points="-7,-19 0,-15.5 7,-19 0,-22.5" fill="#F7F0E8" />
+        <circle cx="0" cy="-21.5" r="2.8" fill="#EFE6DC" stroke="#D5C8BB" stroke-width="0.6" />
+      </g>
+      <!-- Outer-Back Pillar at (339, 250) -->
+      <g transform="translate(339, 250)">
+        <polygon points="-5,-2.5 0,0 0,-15 -5,-17.5" fill="#E3D8CC" />
+        <polygon points="0,0 5,-2.5 5,-17.5 0,-15" fill="#CBBFB3" />
+        <polygon points="-6,-17.5 0,-14.5 6,-17.5 0,-20.5" fill="#F7F0E8" />
+      </g>
+      <!-- Front-Left Rail End Pillar at (175, 271) -->
+      <g transform="translate(175, 271)">
+        <polygon points="-5,-2.5 0,0 0,-15 -5,-17.5" fill="#E3D8CC" />
+        <polygon points="0,0 5,-2.5 5,-17.5 0,-15" fill="#CBBFB3" />
+        <polygon points="-6,-17.5 0,-14.5 6,-17.5 0,-20.5" fill="#F7F0E8" />
+      </g>
+    </g>
+
+    <!-- CHARMING READING TERRACE LAMP (with soft glowing halo) -->
+    <g id="terrace-lamp" transform="translate(238, 286)">
+      <!-- Soft Warm Light Halo washing over the Terrace -->
+      <circle cx="0" cy="-54" r="36" fill="url(#lampHalo)" filter="url(#lampGlowBlur)" />
+      <!-- Lamp Cast Shadow on Terrace -->
+      <ellipse cx="5" cy="2" rx="7" ry="3.5" fill="#7D7068" opacity="0.22" />
+      <!-- Decorative Fluted Base -->
+      <ellipse cx="0" cy="0" rx="5.5" ry="2.8" fill="#5D6B64" />
+      <path d="M -3.5 0 L -2 -9 L 2 -9 L 3.5 0 Z" fill="#6B7B73" />
+      <!-- Slender Wrought-Iron Post -->
+      <rect x="-1.4" y="-46" width="2.8" height="38" rx="1" fill="#5D6B64" />
+      <!-- Subtle Scroll Accent -->
+      <path d="M -1.4 -40 Q -6 -43 -4 -47" fill="none" stroke="#5D6B64" stroke-width="1.2" stroke-linecap="round" />
+      <path d="M 1.4 -40 Q 6 -43 4 -47" fill="none" stroke="#5D6B64" stroke-width="1.2" stroke-linecap="round" />
+      <!-- Lantern Collar -->
+      <ellipse cx="0" cy="-46" rx="4.5" ry="2.2" fill="#52605A" />
+      <!-- Warm Glowing Glass Lantern Globe -->
+      <ellipse cx="0" cy="-54" rx="6.8" ry="8" fill="#FFF8D6" stroke="#D9B468" stroke-width="0.9" />
+      <ellipse cx="-1.5" cy="-56" rx="2.5" ry="3.5" fill="#FFFFFF" opacity="0.7" />
+      <!-- Lantern Sage Cap & Finial -->
+      <path d="M -8 -60 Q 0 -67 8 -60 Z" fill="#6F8C76" />
+      <circle cx="0" cy="-65" r="1.7" fill="#E8BE6B" />
+    </g>
+  </g>
+
+  <!-- ==================== 8. FOREGROUND LUSH PASTEL GREENERY ==================== -->
+  <g id="foreground-greenery">
+    <!-- Left Corner Shrub Cluster -->
+    <g transform="translate(76, 224)">
+      <ellipse cx="2" cy="8" rx="16" ry="7.5" fill="#766D82" opacity="0.16" />
+      <circle cx="-8" cy="1" r="10.5" fill="url(#bushDeep)" />
+      <circle cx="6" cy="4" r="9.5" fill="url(#bushDeep)" />
+      <circle cx="-1" cy="-4" r="10" fill="url(#bushLight)" />
+      <!-- Tiny Pastel Flowers -->
+      <circle cx="-5" cy="-5" r="1.8" fill="#FFF4D6" />
+      <circle cx="4" cy="0" r="1.6" fill="#FADAD4" />
+      <circle cx="0" cy="4" r="1.5" fill="#FFF4D6" />
+    </g>
+
+    <!-- Right of Front Steps Potted Shrub -->
+    <g transform="translate(152, 265)">
+      <ellipse cx="2" cy="7" rx="12" ry="6" fill="#766D82" opacity="0.16" />
+      <circle cx="-4" cy="1" r="8.5" fill="url(#bushDeep)" />
+      <circle cx="5" cy="2" r="7.5" fill="url(#bushDeep)" />
+      <circle cx="1" cy="-4" r="8" fill="url(#bushLight)" />
+      <circle cx="-2" cy="-4" r="1.6" fill="#FADAD4" />
+      <circle cx="4" cy="-1" r="1.5" fill="#FFF4D6" />
+    </g>
+
+    <!-- Small Terracotta Planter on Left of Entrance Steps -->
+    <g transform="translate(96, 232)">
+      <path d="M -4 -1 L -3 5 L 3 5 L 4 -1 Z" fill="#D98B76" />
+      <ellipse cx="0" cy="-1" rx="4.5" ry="2" fill="#E69E8A" />
+      <circle cx="-2" cy="-5" r="4.2" fill="url(#bushDeep)" />
+      <circle cx="2" cy="-4.5" r="3.8" fill="url(#bushLight)" />
+      <circle cx="0" cy="-7" r="1.4" fill="#FFF4D6" />
+    </g>
+  </g>
+</svg>

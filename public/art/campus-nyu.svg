@@ -1,0 +1,1035 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <!-- Soft Palette Gradients -->
+    <linearGradient id="sidewalkGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ECE5D9"/>
+      <stop offset="100%" stop-color="#DFD7C8"/>
+    </linearGradient>
+
+    <linearGradient id="roadV" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#696E7F"/>
+      <stop offset="15%" stop-color="#767B8D"/>
+      <stop offset="85%" stop-color="#767B8D"/>
+      <stop offset="100%" stop-color="#64697A"/>
+    </linearGradient>
+
+    <linearGradient id="roadH" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#696E7F"/>
+      <stop offset="15%" stop-color="#767B8D"/>
+      <stop offset="85%" stop-color="#767B8D"/>
+      <stop offset="100%" stop-color="#64697A"/>
+    </linearGradient>
+
+    <linearGradient id="grassGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#A5C28B"/>
+      <stop offset="55%" stop-color="#92B27A"/>
+      <stop offset="100%" stop-color="#7FA168"/>
+    </linearGradient>
+
+    <linearGradient id="parkPathGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F2ECE1"/>
+      <stop offset="100%" stop-color="#E4DCCE"/>
+    </linearGradient>
+
+    <radialGradient id="waterGrad" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#9AD8E4"/>
+      <stop offset="55%" stop-color="#6FB9CA"/>
+      <stop offset="100%" stop-color="#5198AB"/>
+    </radialGradient>
+
+    <linearGradient id="marbleFront" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FCFBF7"/>
+      <stop offset="100%" stop-color="#EAE3D7"/>
+    </linearGradient>
+
+    <linearGradient id="marbleSide" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E6DFD3"/>
+      <stop offset="100%" stop-color="#CFC6B8"/>
+    </linearGradient>
+
+    <linearGradient id="plotSurface" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F6F2EA"/>
+      <stop offset="100%" stop-color="#E9E2D5"/>
+    </linearGradient>
+
+    <!-- Sandstone Library Gradients -->
+    <linearGradient id="sandstoneFront" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C86D61"/>
+      <stop offset="100%" stop-color="#AD5247"/>
+    </linearGradient>
+    <linearGradient id="sandstoneRoof" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#DC877B"/>
+      <stop offset="100%" stop-color="#C26A5E"/>
+    </linearGradient>
+    <linearGradient id="sandstoneDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#98453C"/>
+      <stop offset="100%" stop-color="#7E362E"/>
+    </linearGradient>
+
+    <!-- Brick & Brownstone Gradients -->
+    <linearGradient id="brickWarm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#CE7D6B"/>
+      <stop offset="100%" stop-color="#B56454"/>
+    </linearGradient>
+    <linearGradient id="brickRose" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C57B74"/>
+      <stop offset="100%" stop-color="#A8605B"/>
+    </linearGradient>
+    <linearGradient id="brownstoneA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#B67C68"/>
+      <stop offset="100%" stop-color="#996150"/>
+    </linearGradient>
+    <linearGradient id="brownstoneB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#A47467"/>
+      <stop offset="100%" stop-color="#875A4E"/>
+    </linearGradient>
+    <linearGradient id="brownstoneC" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C69378"/>
+      <stop offset="100%" stop-color="#A9775E"/>
+    </linearGradient>
+    <linearGradient id="limestoneWall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E5DDD0"/>
+      <stop offset="100%" stop-color="#CFC5B5"/>
+    </linearGradient>
+
+    <linearGradient id="roofSlate" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7F7D8E"/>
+      <stop offset="100%" stop-color="#666475"/>
+    </linearGradient>
+    <linearGradient id="roofWarm" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#9B8B82"/>
+      <stop offset="100%" stop-color="#817168"/>
+    </linearGradient>
+    <linearGradient id="roofTerracotta" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#C48671"/>
+      <stop offset="100%" stop-color="#A86C58"/>
+    </linearGradient>
+
+    <linearGradient id="glassReflect" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7888A8"/>
+      <stop offset="45%" stop-color="#535D78"/>
+      <stop offset="100%" stop-color="#3F455C"/>
+    </linearGradient>
+
+    <linearGradient id="violetBanner" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8F63C4"/>
+      <stop offset="100%" stop-color="#6B429E"/>
+    </linearGradient>
+
+    <!-- Atmospheric Sun Glow -->
+    <radialGradient id="sunWash" cx="15%" cy="10%" r="85%">
+      <stop offset="0%" stop-color="#FFF4D6" stop-opacity="0.16"/>
+      <stop offset="55%" stop-color="#FFEAD0" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#5D4B7A" stop-opacity="0.06"/>
+    </radialGradient>
+
+    <!-- Reusable Autumn Trees -->
+    <g id="tree-gold">
+      <ellipse cx="7" cy="11" rx="18" ry="12" fill="#463E5B" opacity="0.22"/>
+      <rect x="-2.5" y="-2" width="5" height="12" rx="2" fill="#7D5A47"/>
+      <circle cx="-8" cy="-8" r="12" fill="#D9983A"/>
+      <circle cx="8" cy="-7" r="11" fill="#CF8C30"/>
+      <circle cx="0" cy="-14" r="14" fill="#EBB452"/>
+      <circle cx="-4" cy="-18" r="8" fill="#F5CB74"/>
+      <circle cx="6" cy="-12" r="7" fill="#E2A442"/>
+    </g>
+
+    <g id="tree-orange">
+      <ellipse cx="7" cy="11" rx="19" ry="12" fill="#463E5B" opacity="0.22"/>
+      <rect x="-2.5" y="-2" width="5" height="12" rx="2" fill="#785240"/>
+      <circle cx="-9" cy="-8" r="12" fill="#CC6638"/>
+      <circle cx="9" cy="-8" r="12" fill="#BF5B2E"/>
+      <circle cx="0" cy="-15" r="14" fill="#E47F4B"/>
+      <circle cx="-5" cy="-19" r="8" fill="#F19D6A"/>
+      <circle cx="6" cy="-13" r="6.5" fill="#D8713E"/>
+    </g>
+
+    <g id="tree-crimson">
+      <ellipse cx="6" cy="10" rx="17" ry="11" fill="#463E5B" opacity="0.22"/>
+      <rect x="-2" y="-2" width="4.5" height="11" rx="2" fill="#6F4C3F"/>
+      <circle cx="-7" cy="-8" r="11" fill="#B54949"/>
+      <circle cx="8" cy="-7" r="10.5" fill="#A43E40"/>
+      <circle cx="0" cy="-14" r="13" fill="#D4605D"/>
+      <circle cx="-4" cy="-18" r="7.5" fill="#E57D77"/>
+    </g>
+
+    <g id="tree-olive">
+      <ellipse cx="6" cy="10" rx="17" ry="11" fill="#463E5B" opacity="0.22"/>
+      <rect x="-2" y="-2" width="4.5" height="11" rx="2" fill="#755544"/>
+      <circle cx="-8" cy="-7" r="11" fill="#6E8C5C"/>
+      <circle cx="8" cy="-7" r="11" fill="#617E50"/>
+      <circle cx="0" cy="-14" r="13.5" fill="#86A672"/>
+      <circle cx="-4" cy="-18" r="7.5" fill="#A0BE8A"/>
+    </g>
+
+    <g id="tree-small-gold">
+      <ellipse cx="5" cy="8" rx="12" ry="8" fill="#463E5B" opacity="0.2"/>
+      <rect x="-1.8" y="-1" width="3.6" height="9" rx="1.5" fill="#7D5A47"/>
+      <circle cx="-5" cy="-6" r="8" fill="#D9983A"/>
+      <circle cx="5" cy="-5" r="7.5" fill="#CF8C30"/>
+      <circle cx="0" cy="-10" r="9.5" fill="#EEBA5B"/>
+      <circle cx="-3" cy="-13" r="5" fill="#F7D384"/>
+    </g>
+
+    <!-- Classic NYC Street Lamp with Violet Pennant -->
+    <g id="street-lamp">
+      <ellipse cx="5" cy="4" rx="7" ry="3.5" fill="#463E5B" opacity="0.2"/>
+      <rect x="-1.5" y="-22" width="3" height="24" rx="1.2" fill="#3B3D4D"/>
+      <rect x="-3" y="-2" width="6" height="4" rx="1.5" fill="#2E303E"/>
+      <path d="M0,-21 Q5,-26 8,-22" fill="none" stroke="#3B3D4D" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="8" cy="-21" r="3.2" fill="#FFF2C6"/>
+      <circle cx="8" cy="-21" r="5.5" fill="#FFE699" opacity="0.28"/>
+      <!-- Violet NYU-style pennant -->
+      <path d="M-1.5,-17 L-8,-15.5 L-8,-9.5 L-1.5,-11 Z" fill="#8155B8"/>
+      <path d="M-1.5,-14.5 L-7.5,-13.5" stroke="#D9C4F5" stroke-width="0.9"/>
+    </g>
+
+    <!-- Park Lamp (Simpler globe) -->
+    <g id="park-lamp">
+      <ellipse cx="4" cy="3" rx="5.5" ry="2.8" fill="#463E5B" opacity="0.2"/>
+      <rect x="-1.3" y="-17" width="2.6" height="19" rx="1" fill="#3E4152"/>
+      <circle cx="0" cy="-19" r="3.4" fill="#FFF5D4"/>
+      <circle cx="0" cy="-19" r="6" fill="#FFE699" opacity="0.25"/>
+    </g>
+
+    <!-- Park Bench Horizontal -->
+    <g id="bench-h">
+      <rect x="-13" y="-2" width="26" height="9" rx="2.5" fill="#463E5B" opacity="0.18"/>
+      <rect x="-14" y="-5" width="28" height="7" rx="2" fill="#8C624A"/>
+      <rect x="-14" y="-5" width="28" height="2.4" rx="1" fill="#A77A60"/>
+      <rect x="-12" y="-5" width="2" height="7" fill="#3B3D4D"/>
+      <rect x="10" y="-5" width="2" height="7" fill="#3B3D4D"/>
+    </g>
+
+    <!-- Yellow Taxi Horizontal (facing East) -->
+    <g id="taxi-e">
+      <rect x="-15" y="-4" width="34" height="17" rx="5.5" fill="#463E5B" opacity="0.24"/>
+      <rect x="-18" y="-9" width="36" height="16" rx="5" fill="#E3AA24"/>
+      <rect x="-18" y="-10" width="36" height="13.5" rx="4.5" fill="#F7C944"/>
+      <!-- Cabin & Windows -->
+      <rect x="-9" y="-9" width="18" height="11" rx="3" fill="#464B5E"/>
+      <rect x="-5.5" y="-8" width="11" height="9" rx="2" fill="#FAD76B"/>
+      <rect x="-1.5" y="-5.5" width="3" height="4" rx="0.8" fill="#FFFDF5"/>
+      <!-- Headlights & Taillights -->
+      <rect x="16" y="-8" width="2" height="3" rx="0.8" fill="#FFF8D2"/>
+      <rect x="16" y="-1" width="2" height="3" rx="0.8" fill="#FFF8D2"/>
+      <rect x="-18" y="-8" width="1.8" height="3" rx="0.8" fill="#D95753"/>
+      <rect x="-18" y="-1" width="1.8" height="3" rx="0.8" fill="#D95753"/>
+    </g>
+
+    <!-- Yellow Taxi Horizontal (facing West) -->
+    <g id="taxi-w">
+      <rect x="-15" y="-4" width="34" height="17" rx="5.5" fill="#463E5B" opacity="0.24"/>
+      <rect x="-18" y="-9" width="36" height="16" rx="5" fill="#E3AA24"/>
+      <rect x="-18" y="-10" width="36" height="13.5" rx="4.5" fill="#F7C944"/>
+      <rect x="-9" y="-9" width="18" height="11" rx="3" fill="#464B5E"/>
+      <rect x="-5.5" y="-8" width="11" height="9" rx="2" fill="#FAD76B"/>
+      <rect x="-1.5" y="-5.5" width="3" height="4" rx="0.8" fill="#FFFDF5"/>
+      <rect x="-18" y="-8" width="2" height="3" rx="0.8" fill="#FFF8D2"/>
+      <rect x="-18" y="-1" width="2" height="3" rx="0.8" fill="#FFF8D2"/>
+      <rect x="16.2" y="-8" width="1.8" height="3" rx="0.8" fill="#D95753"/>
+      <rect x="16.2" y="-1" width="1.8" height="3" rx="0.8" fill="#D95753"/>
+    </g>
+
+    <!-- Yellow Taxi Vertical (facing South) -->
+    <g id="taxi-s">
+      <rect x="-5" y="-13" width="18" height="35" rx="5.5" fill="#463E5B" opacity="0.24"/>
+      <rect x="-9" y="-17" width="18" height="34" rx="5" fill="#E3AA24"/>
+      <rect x="-9" y="-18" width="18" height="31" rx="4.5" fill="#F7C944"/>
+      <rect x="-7.5" y="-9" width="15" height="17" rx="3" fill="#464B5E"/>
+      <rect x="-6.2" y="-7" width="12.4" height="10" rx="2" fill="#FAD76B"/>
+      <rect x="-2.2" y="-3.5" width="4.4" height="2.6" rx="0.8" fill="#FFFDF5"/>
+      <rect x="-7" y="13" width="3.2" height="2.2" rx="0.8" fill="#FFF8D2"/>
+      <rect x="3.8" y="13" width="3.2" height="2.2" rx="0.8" fill="#FFF8D2"/>
+    </g>
+
+    <!-- Yellow Taxi Vertical (facing North) -->
+    <g id="taxi-n">
+      <rect x="-5" y="-13" width="18" height="35" rx="5.5" fill="#463E5B" opacity="0.24"/>
+      <rect x="-9" y="-17" width="18" height="34" rx="5" fill="#E3AA24"/>
+      <rect x="-9" y="-18" width="18" height="31" rx="4.5" fill="#F7C944"/>
+      <rect x="-7.5" y="-10" width="15" height="17" rx="3" fill="#464B5E"/>
+      <rect x="-6.2" y="-5" width="12.4" height="10" rx="2" fill="#FAD76B"/>
+      <rect x="-2.2" y="-1.5" width="4.4" height="2.6" rx="0.8" fill="#FFFDF5"/>
+      <rect x="-7" y="-17.5" width="3.2" height="2.2" rx="0.8" fill="#FFF8D2"/>
+      <rect x="3.8" y="-17.5" width="3.2" height="2.2" rx="0.8" fill="#FFF8D2"/>
+    </g>
+
+    <!-- Empty Paved Plot Template (170x120 centered at 0,0) -->
+    <g id="empty-plot">
+      <!-- Outer recessed stone curb -->
+      <rect x="-88" y="-63" width="176" height="126" rx="18" fill="#D5CCBC"/>
+      <!-- Main light stone surface -->
+      <rect x="-85" y="-60" width="170" height="120" rx="15" fill="url(#plotSurface)" stroke="#FAF7F0" stroke-width="2"/>
+      <!-- Subtle inner paving frame -->
+      <rect x="-76" y="-51" width="152" height="102" rx="10" fill="none" stroke="#DDD5C5" stroke-width="1.5"/>
+      <!-- Delicate stone tile grid lines -->
+      <g stroke="#E2DACB" stroke-width="1" opacity="0.85">
+        <line x1="-76" y1="-17" x2="76" y2="-17"/>
+        <line x1="-76" y1="17" x2="76" y2="17"/>
+        <line x1="-38" y1="-51" x2="-38" y2="51"/>
+        <line x1="0" y1="-51" x2="0" y2="51"/>
+        <line x1="38" y1="-51" x2="38" y2="51"/>
+      </g>
+      <!-- Subtle corner stone accents -->
+      <circle cx="-68" cy="-43" r="2.2" fill="#CFC5B4"/>
+      <circle cx="68" cy="-43" r="2.2" fill="#CFC5B4"/>
+      <circle cx="-68" cy="43" r="2.2" fill="#CFC5B4"/>
+      <circle cx="68" cy="43" r="2.2" fill="#CFC5B4"/>
+    </g>
+  </defs>
+
+  <!-- ==================== 1. BASE SIDEWALK CANVAS ==================== -->
+  <rect x="0" y="0" width="1600" height="900" fill="url(#sidewalkGrad)"/>
+
+  <!-- ==================== 2. STREET GRID ==================== -->
+  <g id="streets">
+    <!-- North-South Avenues -->
+    <!-- West Avenue (130..185) -->
+    <rect x="130" y="0" width="55" height="900" fill="url(#roadV)"/>
+    <!-- West Park Avenue (430..495) -->
+    <rect x="430" y="0" width="65" height="900" fill="url(#roadV)"/>
+    <!-- East Park Avenue (1105..1170) -->
+    <rect x="1105" y="0" width="65" height="900" fill="url(#roadV)"/>
+    <!-- East Avenue (1415..1470) -->
+    <rect x="1415" y="0" width="55" height="900" fill="url(#roadV)"/>
+    <!-- Fifth Ave North Approach (765..835, y=0..165) -->
+    <rect x="765" y="0" width="70" height="165" fill="url(#roadV)"/>
+
+    <!-- East-West Streets -->
+    <!-- Washington Sq North (115..165) -->
+    <rect x="0" y="115" width="1600" height="50" fill="url(#roadH)"/>
+    <!-- Mid Cross Street West & East (365..415) -->
+    <rect x="0" y="365" width="495" height="50" fill="url(#roadH)"/>
+    <rect x="1105" y="365" width="495" height="50" fill="url(#roadH)"/>
+    <!-- Lower Cross Street West & East (530..575) -->
+    <rect x="0" y="530" width="495" height="45" fill="url(#roadH)"/>
+    <rect x="1105" y="530" width="495" height="45" fill="url(#roadH)"/>
+    <!-- Washington Sq South (600..655) -->
+    <rect x="430" y="600" width="740" height="55" fill="url(#roadH)"/>
+    <!-- South Cross Street West & East (755..805) -->
+    <rect x="0" y="755" width="495" height="50" fill="url(#roadH)"/>
+    <rect x="1105" y="755" width="495" height="50" fill="url(#roadH)"/>
+
+    <!-- Subtle Curb Lines -->
+    <g fill="none" stroke="#C7BEB0" stroke-width="2">
+      <line x1="130" y1="0" x2="130" y2="900"/>
+      <line x1="185" y1="0" x2="185" y2="900"/>
+      <line x1="430" y1="0" x2="430" y2="900"/>
+      <line x1="495" y1="0" x2="495" y2="900"/>
+      <line x1="1105" y1="0" x2="1105" y2="900"/>
+      <line x1="1170" y1="0" x2="1170" y2="900"/>
+      <line x1="1415" y1="0" x2="1415" y2="900"/>
+      <line x1="1470" y1="0" x2="1470" y2="900"/>
+    </g>
+
+    <!-- Dashed Lane Markings -->
+    <g stroke="#E6DFD1" stroke-width="2" stroke-dasharray="14,14" opacity="0.55">
+      <!-- Vertical -->
+      <line x1="157.5" y1="0" x2="157.5" y2="900"/>
+      <line x1="462.5" y1="0" x2="462.5" y2="900"/>
+      <line x1="1137.5" y1="0" x2="1137.5" y2="900"/>
+      <line x1="1442.5" y1="0" x2="1442.5" y2="900"/>
+      <line x1="800" y1="0" x2="800" y2="110"/>
+      <!-- Horizontal -->
+      <line x1="0" y1="140" x2="1600" y2="140"/>
+      <line x1="0" y1="390" x2="430" y2="390"/>
+      <line x1="1170" y1="390" x2="1600" y2="390"/>
+      <line x1="0" y1="552.5" x2="430" y2="552.5"/>
+      <line x1="1170" y1="552.5" x2="1600" y2="552.5"/>
+      <line x1="495" y1="627.5" x2="1105" y2="627.5"/>
+      <line x1="0" y1="780" x2="430" y2="780"/>
+      <line x1="1170" y1="780" x2="1600" y2="780"/>
+    </g>
+
+    <!-- Crosswalks at Key Intersections -->
+    <g fill="#EAE4D8" opacity="0.72">
+      <!-- North Park Corners -->
+      <rect x="437" y="169" width="51" height="5" rx="1.5"/>
+      <rect x="437" y="178" width="51" height="5" rx="1.5"/>
+      <rect x="499" y="121" width="5" height="38" rx="1.5"/>
+      <rect x="508" y="121" width="5" height="38" rx="1.5"/>
+      <rect x="1112" y="169" width="51" height="5" rx="1.5"/>
+      <rect x="1112" y="178" width="51" height="5" rx="1.5"/>
+      <rect x="1087" y="121" width="5" height="38" rx="1.5"/>
+      <rect x="1096" y="121" width="5" height="38" rx="1.5"/>
+      <!-- Arch North Crosswalk -->
+      <rect x="772" y="102" width="56" height="5" rx="1.5"/>
+      <rect x="772" y="110" width="56" height="5" rx="1.5"/>
+      <!-- South Park Corners -->
+      <rect x="437" y="586" width="51" height="5" rx="1.5"/>
+      <rect x="437" y="594" width="51" height="5" rx="1.5"/>
+      <rect x="1112" y="586" width="51" height="5" rx="1.5"/>
+      <rect x="1112" y="594" width="51" height="5" rx="1.5"/>
+      <!-- Library Crosswalk -->
+      <rect x="786" y="606" width="6" height="43" rx="1.5"/>
+      <rect x="797" y="606" width="6" height="43" rx="1.5"/>
+      <rect x="808" y="606" width="6" height="43" rx="1.5"/>
+    </g>
+  </g>
+
+  <!-- ==================== 3. CENTRAL PARK (WASHINGTON SQUARE) ==================== -->
+  <g id="central-park">
+    <!-- Outer Park Sidewalk Rim -->
+    <rect x="495" y="165" width="610" height="435" rx="22" fill="#E8E1D4" stroke="#D1C7B7" stroke-width="2.5"/>
+
+    <!-- Park Lawn Base -->
+    <rect x="515" y="183" width="570" height="399" rx="18" fill="url(#grassGrad)"/>
+
+    <!-- Subtle Sunlit Grass Patches -->
+    <ellipse cx="620" cy="280" rx="75" ry="48" fill="#B2CE96" opacity="0.4"/>
+    <ellipse cx="980" cy="285" rx="78" ry="45" fill="#B2CE96" opacity="0.35"/>
+    <ellipse cx="615" cy="505" rx="72" ry="42" fill="#81A369" opacity="0.35"/>
+    <ellipse cx="985" cy="500" rx="75" ry="44" fill="#81A369" opacity="0.35"/>
+
+    <!-- Radiating Park Paths -->
+    <g fill="url(#parkPathGrad)" stroke="#D9D0C1" stroke-width="1.5">
+      <!-- Perimeter Inner Walk -->
+      <rect x="526" y="194" width="548" height="377" rx="14" fill="none" stroke="#EAE3D6" stroke-width="14"/>
+      <!-- Diagonal Radiating Paths from Fountain (800, 415) -->
+      <polygon points="800,400 814,415 545,212 531,197"/>
+      <polygon points="800,400 786,415 1055,212 1069,197"/>
+      <polygon points="800,430 814,415 545,574 531,560"/>
+      <polygon points="800,430 786,415 1055,574 1069,560"/>
+      <!-- Cardinal Paths -->
+      <rect x="780" y="165" width="40" height="435"/>
+      <rect x="495" y="401" width="610" height="28"/>
+    </g>
+
+    <!-- North Arch Paved Plaza -->
+    <rect x="735" y="176" width="130" height="82" rx="22" fill="url(#parkPathGrad)" stroke="#D9D0C1" stroke-width="1.5"/>
+    <!-- Decorative Plaza Stone Rings under Arch -->
+    <ellipse cx="800" cy="222" rx="44" ry="24" fill="none" stroke="#DFD6C7" stroke-width="1.5"/>
+
+    <!-- Central Round Fountain Plaza -->
+    <circle cx="800" cy="415" r="102" fill="#DFD7C8"/>
+    <circle cx="800" cy="415" r="96" fill="url(#parkPathGrad)" stroke="#FAF6EE" stroke-width="2"/>
+    <circle cx="800" cy="415" r="84" fill="none" stroke="#DDD4C5" stroke-width="1.5" stroke-dasharray="10,6"/>
+
+    <!-- Violet & Autumn Flowerbeds Flanking the Plaza -->
+    <g id="park-flowerbeds">
+      <!-- NW bed -->
+      <ellipse cx="702" cy="350" rx="20" ry="11" fill="#7D9C66"/>
+      <circle cx="694" cy="348" r="4" fill="#9E74D1"/>
+      <circle cx="702" cy="346" r="4.5" fill="#B993E8"/>
+      <circle cx="711" cy="350" r="4" fill="#EBB452"/>
+      <circle cx="700" cy="353" r="3.5" fill="#8A5EC2"/>
+      <!-- NE bed -->
+      <ellipse cx="898" cy="350" rx="20" ry="11" fill="#7D9C66"/>
+      <circle cx="890" cy="349" r="4" fill="#EBB452"/>
+      <circle cx="899" cy="346" r="4.5" fill="#9E74D1"/>
+      <circle cx="907" cy="350" r="4" fill="#B993E8"/>
+      <circle cx="896" cy="353" r="3.5" fill="#8A5EC2"/>
+      <!-- SW bed -->
+      <ellipse cx="702" cy="480" rx="20" ry="11" fill="#7D9C66"/>
+      <circle cx="695" cy="479" r="4" fill="#9E74D1"/>
+      <circle cx="703" cy="477" r="4.5" fill="#E47F4B"/>
+      <circle cx="710" cy="481" r="4" fill="#B993E8"/>
+      <!-- SE bed -->
+      <ellipse cx="898" cy="480" rx="20" ry="11" fill="#7D9C66"/>
+      <circle cx="890" cy="480" r="4" fill="#B993E8"/>
+      <circle cx="898" cy="477" r="4.5" fill="#9E74D1"/>
+      <circle cx="906" cy="481" r="4" fill="#E47F4B"/>
+    </g>
+
+    <!-- Park Benches -->
+    <use href="#bench-h" x="720" y="210"/>
+    <use href="#bench-h" x="880" y="210"/>
+    <use href="#bench-h" x="718" y="405" transform="rotate(-40 718 405)"/>
+    <use href="#bench-h" x="882" y="405" transform="rotate(40 882 405)"/>
+    <use href="#bench-h" x="725" y="485" transform="rotate(35 725 485)"/>
+    <use href="#bench-h" x="875" y="485" transform="rotate(-35 875 485)"/>
+    <use href="#bench-h" x="625" y="400"/>
+    <use href="#bench-h" x="975" y="400"/>
+    <use href="#bench-h" x="640" y="562"/>
+    <use href="#bench-h" x="960" y="562"/>
+
+    <!-- ==================== ROUND FOUNTAIN (800, 415) ==================== -->
+    <g id="fountain" transform="translate(800, 415)">
+      <!-- Soft long shadow -->
+      <ellipse cx="10" cy="12" rx="64" ry="59" fill="#463E5B" opacity="0.22"/>
+      <!-- Outer stone step -->
+      <circle cx="0" cy="0" r="62" fill="#DDD5C6"/>
+      <!-- Raised stone basin rim -->
+      <circle cx="0" cy="-2" r="56" fill="#F4EFE5" stroke="#D3C9B9" stroke-width="2"/>
+      <circle cx="0" cy="-2" r="49" fill="#CFC6B6"/>
+      <!-- Turquoise water -->
+      <circle cx="0" cy="-1" r="46" fill="url(#waterGrad)"/>
+      <!-- Concentric ripples -->
+      <circle cx="0" cy="-1" r="34" fill="none" stroke="#D9F4FA" stroke-width="1.5" opacity="0.6"/>
+      <circle cx="0" cy="-1" r="22" fill="none" stroke="#EAF9FC" stroke-width="1.8" opacity="0.75"/>
+      <!-- Central stone pedestal -->
+      <ellipse cx="3" cy="3" rx="13" ry="11" fill="#3B6E7D" opacity="0.35"/>
+      <circle cx="0" cy="-2" r="12" fill="#EAE3D6" stroke="#D3C9B9" stroke-width="1.5"/>
+      <circle cx="0" cy="-4" r="7" fill="#FBF8F2"/>
+      <!-- Water spray arcs & central plume -->
+      <g fill="none" stroke="#F4FCFE" stroke-width="1.8" stroke-linecap="round" opacity="0.9">
+        <path d="M0,-6 Q-14,-24 -26,-2"/>
+        <path d="M0,-6 Q14,-24 26,-2"/>
+        <path d="M0,-6 Q-10,-20 -18,14"/>
+        <path d="M0,-6 Q10,-20 18,14"/>
+        <path d="M0,-6 Q-8,-22 -14,-18"/>
+        <path d="M0,-6 Q8,-22 14,-18"/>
+      </g>
+      <!-- Central vertical water jet -->
+      <ellipse cx="0" cy="-18" rx="4.5" ry="12" fill="#F5FCFE" opacity="0.88"/>
+      <circle cx="0" cy="-28" r="4" fill="#FFFFFF" opacity="0.95"/>
+      <!-- Splash dots -->
+      <circle cx="-26" cy="-2" r="2.2" fill="#FFFFFF" opacity="0.85"/>
+      <circle cx="26" cy="-2" r="2.2" fill="#FFFFFF" opacity="0.85"/>
+      <circle cx="-18" cy="14" r="2" fill="#FFFFFF" opacity="0.8"/>
+      <circle cx="18" cy="14" r="2" fill="#FFFFFF" opacity="0.8"/>
+    </g>
+
+    <!-- ==================== WHITE MARBLE ARCH (800, 224) ==================== -->
+    <g id="marble-arch" transform="translate(800, 224)">
+      <!-- Long diagonal shadow to bottom-right -->
+      <polygon points="-44,10 44,10 82,42 -6,42" fill="#463E5B" opacity="0.22"/>
+      <!-- Arch Base Plinths -->
+      <rect x="-46" y="3" width="28" height="10" rx="2" fill="#DDD5C8"/>
+      <rect x="18" y="3" width="28" height="10" rx="2" fill="#DDD5C8"/>
+      <!-- Right 3D Side Depth -->
+      <polygon points="43,-62 53,-54 53,6 43,10" fill="url(#marbleSide)"/>
+      <!-- Inner Arch Vault Shadow -->
+      <path d="M-21,10 L-21,-22 A21,21 0 0 1 21,-22 L21,10 L13,10 L13,-20 A13,13 0 0 0 -13,-20 L-13,10 Z" fill="#C4BBAE"/>
+      <!-- Main Front Marble Facade -->
+      <path d="M-43,10 L-43,-62 L43,-62 L43,10 L19,10 L19,-22 A19,19 0 0 0 -19,-22 L-19,10 Z" fill="url(#marbleFront)" stroke="#DED6C8" stroke-width="1"/>
+      <!-- Classical Top Roof / Attic -->
+      <polygon points="-46,-62 -36,-70 53,-70 43,-62" fill="#FFFFFF"/>
+      <rect x="-46" y="-64" width="90" height="6" rx="1.5" fill="#F2ECE1" stroke="#DCD4C6" stroke-width="1"/>
+      <rect x="-44" y="-52" width="88" height="5" fill="#EAE3D7"/>
+      <!-- Attic Sculptural Relief Panels -->
+      <rect x="-35" y="-58" width="22" height="5" rx="1" fill="#E3DBCE"/>
+      <rect x="-9" y="-58" width="18" height="5" rx="1" fill="#DFD7C8"/>
+      <rect x="13" y="-58" width="22" height="5" rx="1" fill="#E3DBCE"/>
+      <!-- Twin Pier Pilasters & Niches -->
+      <rect x="-38" y="-44" width="6" height="46" rx="1" fill="#F4EFE6" stroke="#E0D8CA" stroke-width="0.8"/>
+      <rect x="-27" y="-44" width="6" height="46" rx="1" fill="#F4EFE6" stroke="#E0D8CA" stroke-width="0.8"/>
+      <rect x="21" y="-44" width="6" height="46" rx="1" fill="#F4EFE6" stroke="#E0D8CA" stroke-width="0.8"/>
+      <rect x="32" y="-44" width="6" height="46" rx="1" fill="#F4EFE6" stroke="#E0D8CA" stroke-width="0.8"/>
+      <!-- Small classical wreaths / medallions -->
+      <circle cx="-30" cy="-35" r="3.2" fill="#DDD5C6"/>
+      <circle cx="30" cy="-35" r="3.2" fill="#DDD5C6"/>
+      <!-- Arch Keystone -->
+      <polygon points="-4,-43 4,-43 2.5,-36 -2.5,-36" fill="#E5DDD0"/>
+    </g>
+  </g>
+
+  <!-- ==================== 4. FOUR CLEAR EMPTY PAVED PLOTS ==================== -->
+  <!-- Centres: (300,250), (1300,250), (300,650), (1300,650), each 170x120. Nothing drawn on them. -->
+  <g id="empty-paved-plots">
+    <use href="#empty-plot" x="300" y="250"/>
+    <use href="#empty-plot" x="1300" y="250"/>
+    <use href="#empty-plot" x="300" y="650"/>
+    <use href="#empty-plot" x="1300" y="650"/>
+  </g>
+
+  <!-- Subtle corner planter strips outside the empty plots (strictly clear of the 170x120 plot rectangles) -->
+  <g id="plot-block-borders" opacity="0.9">
+    <!-- Below NW plot (y=330..352) -->
+    <rect x="215" y="334" width="170" height="16" rx="8" fill="#8EAD76"/>
+    <circle cx="240" cy="342" r="4" fill="#9E74D1"/>
+    <circle cx="262" cy="342" r="4" fill="#EBB452"/>
+    <circle cx="338" cy="342" r="4" fill="#EBB452"/>
+    <circle cx="360" cy="342" r="4" fill="#9E74D1"/>
+    <!-- Below NE plot (y=330..352) -->
+    <rect x="1215" y="334" width="170" height="16" rx="8" fill="#8EAD76"/>
+    <circle cx="1240" cy="342" r="4" fill="#9E74D1"/>
+    <circle cx="1262" cy="342" r="4" fill="#EBB452"/>
+    <circle cx="1338" cy="342" r="4" fill="#EBB452"/>
+    <circle cx="1360" cy="342" r="4" fill="#9E74D1"/>
+    <!-- Below SW plot (y=726..742) -->
+    <rect x="215" y="728" width="170" height="14" rx="7" fill="#8EAD76"/>
+    <circle cx="245" cy="735" r="3.5" fill="#B993E8"/>
+    <circle cx="355" cy="735" r="3.5" fill="#B993E8"/>
+    <!-- Below SE plot (y=726..742) -->
+    <rect x="1215" y="728" width="170" height="14" rx="7" fill="#8EAD76"/>
+    <circle cx="1245" cy="735" r="3.5" fill="#B993E8"/>
+    <circle cx="1355" cy="735" r="3.5" fill="#B993E8"/>
+  </g>
+
+  <!-- ==================== 5. BUILDINGS (NORTH TO SOUTH DEPTH) ==================== -->
+
+  <!-- === NORTH EDGE ROW (y = 0..108) === -->
+  <g id="north-buildings">
+    <!-- Far NW Corner Brick Hall (0..120) -->
+    <rect x="0" y="0" width="122" height="106" fill="#463E5B" opacity="0.16"/>
+    <rect x="0" y="0" width="114" height="96" rx="4" fill="url(#brickWarm)"/>
+    <rect x="0" y="0" width="114" height="44" fill="url(#roofSlate)"/>
+    <rect x="10" y="8" width="40" height="24" rx="3" fill="#8E8CA0"/>
+    <!-- Windows -->
+    <g fill="url(#glassReflect)">
+      <rect x="14" y="54" width="14" height="18" rx="2"/><rect x="38" y="54" width="14" height="18" rx="2"/>
+      <rect x="62" y="54" width="14" height="18" rx="2"/><rect x="86" y="54" width="14" height="18" rx="2"/>
+    </g>
+
+    <!-- NW Brownstone Row (x=194..422) -->
+    <rect x="200" y="10" width="228" height="96" rx="5" fill="#463E5B" opacity="0.18"/>
+    <!-- 4 Attached Brownstones -->
+    <g>
+      <!-- #1 -->
+      <rect x="194" y="0" width="56" height="95" fill="url(#brownstoneA)"/>
+      <rect x="194" y="0" width="56" height="36" fill="url(#roofWarm)"/>
+      <rect x="194" y="34" width="56" height="5" fill="#D5C8B8"/>
+      <!-- #2 -->
+      <rect x="250" y="0" width="56" height="95" fill="url(#brownstoneB)"/>
+      <rect x="250" y="0" width="56" height="36" fill="url(#roofSlate)"/>
+      <rect x="250" y="34" width="56" height="5" fill="#CFC2B2"/>
+      <!-- #3 -->
+      <rect x="306" y="0" width="56" height="95" fill="url(#brownstoneC)"/>
+      <rect x="306" y="0" width="56" height="36" fill="url(#roofTerracotta)"/>
+      <rect x="306" y="34" width="56" height="5" fill="#DFD4C5"/>
+      <!-- #4 -->
+      <rect x="362" y="0" width="58" height="95" fill="url(#brickRose)"/>
+      <rect x="362" y="0" width="58" height="36" fill="url(#roofWarm)"/>
+      <rect x="362" y="34" width="58" height="5" fill="#D8CCC0"/>
+      <!-- Windows & Stoops -->
+      <g fill="url(#glassReflect)">
+        <rect x="205" y="46" width="11" height="16" rx="2"/><rect x="228" y="46" width="11" height="16" rx="2"/>
+        <rect x="261" y="46" width="11" height="16" rx="2"/><rect x="284" y="46" width="11" height="16" rx="2"/>
+        <rect x="317" y="46" width="11" height="16" rx="2"/><rect x="340" y="46" width="11" height="16" rx="2"/>
+        <rect x="374" y="46" width="11" height="16" rx="2"/><rect x="397" y="46" width="11" height="16" rx="2"/>
+      </g>
+      <!-- Stoops -->
+      <g fill="#DDD4C6">
+        <rect x="215" y="88" width="16" height="12" rx="1.5"/>
+        <rect x="271" y="88" width="16" height="12" rx="1.5"/>
+        <rect x="327" y="88" width="16" height="12" rx="1.5"/>
+        <rect x="384" y="88" width="16" height="12" rx="1.5"/>
+      </g>
+    </g>
+
+    <!-- Washington Sq North — The Row West of Fifth Ave (x=504..756) -->
+    <rect x="512" y="8" width="252" height="98" rx="5" fill="#463E5B" opacity="0.18"/>
+    <g>
+      <rect x="504" y="0" width="63" height="96" fill="url(#brickWarm)"/>
+      <rect x="567" y="0" width="63" height="96" fill="url(#brownstoneA)"/>
+      <rect x="630" y="0" width="63" height="96" fill="url(#brickRose)"/>
+      <rect x="693" y="0" width="63" height="96" fill="url(#brownstoneC)"/>
+      <!-- Roofs -->
+      <rect x="504" y="0" width="252" height="35" fill="url(#roofSlate)"/>
+      <rect x="504" y="33" width="252" height="5" fill="#ECE4D8"/>
+      <!-- Skylights & Chimneys -->
+      <rect x="525" y="10" width="22" height="14" rx="2" fill="#9FAAC2"/>
+      <rect x="650" y="10" width="22" height="14" rx="2" fill="#9FAAC2"/>
+      <rect x="595" y="12" width="12" height="10" rx="1.5" fill="#B67C68"/>
+      <!-- Arched Greek Revival Windows -->
+      <g fill="url(#glassReflect)">
+        <rect x="516" y="46" width="12" height="18" rx="3"/><rect x="542" y="46" width="12" height="18" rx="3"/>
+        <rect x="579" y="46" width="12" height="18" rx="3"/><rect x="605" y="46" width="12" height="18" rx="3"/>
+        <rect x="642" y="46" width="12" height="18" rx="3"/><rect x="668" y="46" width="12" height="18" rx="3"/>
+        <rect x="705" y="46" width="12" height="18" rx="3"/><rect x="731" y="46" width="12" height="18" rx="3"/>
+      </g>
+      <!-- Violet University Banners -->
+      <rect x="563" y="54" width="7" height="22" rx="1" fill="url(#violetBanner)"/>
+      <rect x="689" y="54" width="7" height="22" rx="1" fill="url(#violetBanner)"/>
+      <!-- White Marble Stoops -->
+      <g fill="#F0EAE0">
+        <rect x="526" y="88" width="18" height="13" rx="2"/>
+        <rect x="589" y="88" width="18" height="13" rx="2"/>
+        <rect x="652" y="88" width="18" height="13" rx="2"/>
+        <rect x="715" y="88" width="18" height="13" rx="2"/>
+      </g>
+    </g>
+
+    <!-- Washington Sq North — The Row East of Fifth Ave (x=844..1096) -->
+    <rect x="852" y="8" width="252" height="98" rx="5" fill="#463E5B" opacity="0.18"/>
+    <g>
+      <rect x="844" y="0" width="63" height="96" fill="url(#brownstoneB)"/>
+      <rect x="907" y="0" width="63" height="96" fill="url(#brickWarm)"/>
+      <rect x="970" y="0" width="63" height="96" fill="url(#brownstoneA)"/>
+      <rect x="1033" y="0" width="63" height="96" fill="url(#limestoneWall)"/>
+      <rect x="844" y="0" width="252" height="35" fill="url(#roofWarm)"/>
+      <rect x="844" y="33" width="252" height="5" fill="#ECE4D8"/>
+      <g fill="url(#glassReflect)">
+        <rect x="856" y="46" width="12" height="18" rx="3"/><rect x="882" y="46" width="12" height="18" rx="3"/>
+        <rect x="919" y="46" width="12" height="18" rx="3"/><rect x="945" y="46" width="12" height="18" rx="3"/>
+        <rect x="982" y="46" width="12" height="18" rx="3"/><rect x="1008" y="46" width="12" height="18" rx="3"/>
+        <rect x="1045" y="46" width="12" height="18" rx="3"/><rect x="1071" y="46" width="12" height="18" rx="3"/>
+      </g>
+      <rect x="903" y="54" width="7" height="22" rx="1" fill="url(#violetBanner)"/>
+      <rect x="1029" y="54" width="7" height="22" rx="1" fill="url(#violetBanner)"/>
+      <g fill="#F0EAE0">
+        <rect x="866" y="88" width="18" height="13" rx="2"/>
+        <rect x="929" y="88" width="18" height="13" rx="2"/>
+        <rect x="992" y="88" width="18" height="13" rx="2"/>
+        <rect x="1055" y="88" width="18" height="13" rx="2"/>
+      </g>
+    </g>
+
+    <!-- NE Academic Brick Block (x=1178..1406) -->
+    <rect x="1186" y="8" width="228" height="98" rx="5" fill="#463E5B" opacity="0.18"/>
+    <rect x="1178" y="0" width="228" height="96" rx="4" fill="url(#brickWarm)"/>
+    <rect x="1178" y="0" width="228" height="38" fill="url(#roofSlate)"/>
+    <rect x="1178" y="36" width="228" height="6" fill="#EAE2D4"/>
+    <!-- Rooftop AC / Skylight -->
+    <rect x="1210" y="10" width="48" height="18" rx="3" fill="#9DA8BF"/>
+    <rect x="1310" y="10" width="38" height="18" rx="3" fill="#8C899C"/>
+    <g fill="url(#glassReflect)">
+      <rect x="1194" y="50" width="16" height="20" rx="2.5"/><rect x="1224" y="50" width="16" height="20" rx="2.5"/>
+      <rect x="1254" y="50" width="16" height="20" rx="2.5"/><rect x="1284" y="50" width="16" height="20" rx="2.5"/>
+      <rect x="1314" y="50" width="16" height="20" rx="2.5"/><rect x="1344" y="50" width="16" height="20" rx="2.5"/>
+      <rect x="1374" y="50" width="16" height="20" rx="2.5"/>
+    </g>
+    <!-- Violet Awning -->
+    <path d="M1276,84 L1312,84 L1316,96 L1272,96 Z" fill="#7D51B5"/>
+
+    <!-- Far NE Corner Building (x=1478..1600) -->
+    <rect x="1478" y="0" width="122" height="96" fill="url(#brownstoneC)"/>
+    <rect x="1478" y="0" width="122" height="40" fill="url(#roofTerracotta)"/>
+    <g fill="url(#glassReflect)">
+      <rect x="1494" y="50" width="14" height="18" rx="2"/><rect x="1522" y="50" width="14" height="18" rx="2"/>
+      <rect x="1550" y="50" width="14" height="18" rx="2"/><rect x="1578" y="50" width="14" height="18" rx="2"/>
+    </g>
+  </g>
+
+  <!-- === FAR WEST EDGE BUILDINGS (x = 0..120) === -->
+  <g id="far-west-buildings">
+    <!-- Upper-Mid West Block (y=175..354) -->
+    <rect x="0" y="182" width="124" height="175" rx="6" fill="#463E5B" opacity="0.18"/>
+    <rect x="0" y="176" width="116" height="86" rx="4" fill="url(#brownstoneA)"/>
+    <rect x="0" y="176" width="116" height="40" rx="3" fill="url(#roofWarm)"/>
+    <rect x="0" y="266" width="116" height="86" rx="4" fill="url(#brickRose)"/>
+    <rect x="0" y="266" width="116" height="38" rx="3" fill="url(#roofSlate)"/>
+    <!-- NYC Rooftop Water Tower -->
+    <circle cx="38" cy="196" r="11" fill="#A88264" stroke="#856349" stroke-width="1.5"/>
+    <circle cx="38" cy="194" r="7" fill="#BA9374"/>
+    <g fill="url(#glassReflect)">
+      <rect x="14" y="226" width="14" height="18" rx="2"/><rect x="44" y="226" width="14" height="18" rx="2"/><rect x="74" y="226" width="14" height="18" rx="2"/>
+      <rect x="14" y="314" width="14" height="18" rx="2"/><rect x="44" y="314" width="14" height="18" rx="2"/><rect x="74" y="314" width="14" height="18" rx="2"/>
+    </g>
+
+    <!-- Mid-Lower West Block (y=424..520) -->
+    <rect x="0" y="430" width="124" height="94" rx="5" fill="#463E5B" opacity="0.18"/>
+    <rect x="0" y="424" width="116" height="92" rx="4" fill="url(#brickWarm)"/>
+    <rect x="0" y="424" width="116" height="40" fill="url(#roofTerracotta)"/>
+    <g fill="url(#glassReflect)">
+      <rect x="16" y="476" width="16" height="18" rx="2"/><rect x="48" y="476" width="16" height="18" rx="2"/><rect x="80" y="476" width="16" height="18" rx="2"/>
+    </g>
+
+    <!-- Lower West Block (y=584..744) -->
+    <rect x="0" y="592" width="124" height="156" rx="6" fill="#463E5B" opacity="0.18"/>
+    <rect x="0" y="584" width="116" height="76" rx="4" fill="url(#brownstoneC)"/>
+    <rect x="0" y="584" width="116" height="34" fill="url(#roofSlate)"/>
+    <rect x="0" y="664" width="116" height="78" rx="4" fill="url(#brownstoneB)"/>
+    <rect x="0" y="664" width="116" height="36" fill="url(#roofWarm)"/>
+    <g fill="url(#glassReflect)">
+      <rect x="16" y="628" width="14" height="16" rx="2"/><rect x="46" y="628" width="14" height="16" rx="2"/><rect x="76" y="628" width="14" height="16" rx="2"/>
+      <rect x="16" y="710" width="14" height="16" rx="2"/><rect x="46" y="710" width="14" height="16" rx="2"/><rect x="76" y="710" width="14" height="16" rx="2"/>
+    </g>
+
+    <!-- Bottom-West Edge (y=815..900) -->
+    <rect x="0" y="815" width="116" height="85" rx="4" fill="url(#brickWarm)"/>
+    <rect x="0" y="815" width="116" height="54" fill="url(#roofSlate)"/>
+  </g>
+
+  <!-- === FAR EAST EDGE BUILDINGS (x = 1480..1600) === -->
+  <g id="far-east-buildings">
+    <!-- Upper-Mid East Block (y=175..354) -->
+    <rect x="1484" y="182" width="116" height="175" rx="6" fill="#463E5B" opacity="0.18"/>
+    <rect x="1482" y="176" width="118" height="86" rx="4" fill="url(#limestoneWall)"/>
+    <rect x="1482" y="176" width="118" height="40" fill="url(#roofSlate)"/>
+    <rect x="1482" y="266" width="118" height="86" rx="4" fill="url(#brickWarm)"/>
+    <rect x="1482" y="266" width="118" height="38" fill="url(#roofTerracotta)"/>
+    <g fill="url(#glassReflect)">
+      <rect x="1498" y="226" width="15" height="18" rx="2"/><rect x="1528" y="226" width="15" height="18" rx="2"/><rect x="1558" y="226" width="15" height="18" rx="2"/>
+      <rect x="1498" y="314" width="15" height="18" rx="2"/><rect x="1528" y="314" width="15" height="18" rx="2"/><rect x="1558" y="314" width="15" height="18" rx="2"/>
+    </g>
+
+    <!-- Mid-Lower East Block (y=424..520) -->
+    <rect x="1482" y="424" width="118" height="92" rx="4" fill="url(#brownstoneA)"/>
+    <rect x="1482" y="424" width="118" height="40" fill="url(#roofWarm)"/>
+    <g fill="url(#glassReflect)">
+      <rect x="1498" y="476" width="15" height="18" rx="2"/><rect x="1528" y="476" width="15" height="18" rx="2"/><rect x="1558" y="476" width="15" height="18" rx="2"/>
+    </g>
+
+    <!-- Lower East Block (y=584..744) -->
+    <rect x="1482" y="584" width="118" height="158" rx="4" fill="url(#brickRose)"/>
+    <rect x="1482" y="584" width="118" height="58" fill="url(#roofSlate)"/>
+    <circle cx="1554" cy="612" r="11" fill="#A88264" stroke="#856349" stroke-width="1.5"/>
+    <g fill="url(#glassReflect)">
+      <rect x="1498" y="656" width="16" height="20" rx="2"/><rect x="1528" y="656" width="16" height="20" rx="2"/><rect x="1558" y="656" width="16" height="20" rx="2"/>
+      <rect x="1498" y="694" width="16" height="20" rx="2"/><rect x="1528" y="694" width="16" height="20" rx="2"/><rect x="1558" y="694" width="16" height="20" rx="2"/>
+    </g>
+
+    <!-- Bottom-East Edge (y=815..900) -->
+    <rect x="1482" y="815" width="118" height="85" rx="4" fill="url(#brownstoneB)"/>
+    <rect x="1482" y="815" width="118" height="52" fill="url(#roofWarm)"/>
+  </g>
+
+  <!-- === MID-SOUTH CAMPUS BLOCKS (y = 424..520, flanking the park) === -->
+  <g id="mid-campus-blocks">
+    <!-- West Mid-South Block (x=194..420, y=424..520) — Classic Brownstone Row & Corner Cafe -->
+    <rect x="204" y="432" width="224" height="94" rx="5" fill="#463E5B" opacity="0.2"/>
+    <!-- 4 charming townhouses -->
+    <rect x="194" y="424" width="56" height="94" rx="3" fill="url(#brownstoneA)"/>
+    <rect x="250" y="424" width="56" height="94" rx="3" fill="url(#brownstoneC)"/>
+    <rect x="306" y="424" width="56" height="94" rx="3" fill="url(#brownstoneB)"/>
+    <rect x="362" y="424" width="58" height="94" rx="3" fill="url(#brickWarm)"/>
+    <!-- Roofs -->
+    <rect x="194" y="424" width="56" height="34" rx="3" fill="url(#roofWarm)"/>
+    <rect x="250" y="424" width="56" height="34" rx="3" fill="url(#roofTerracotta)"/>
+    <rect x="306" y="424" width="56" height="34" rx="3" fill="url(#roofSlate)"/>
+    <rect x="362" y="424" width="58" height="34" rx="3" fill="url(#roofWarm)"/>
+    <!-- Cornices -->
+    <rect x="194" y="456" width="226" height="4.5" fill="#E6DDD0"/>
+    <!-- Windows -->
+    <g fill="url(#glassReflect)">
+      <rect x="205" y="468" width="11" height="16" rx="2"/><rect x="228" y="468" width="11" height="16" rx="2"/>
+      <rect x="261" y="468" width="11" height="16" rx="2"/><rect x="284" y="468" width="11" height="16" rx="2"/>
+      <rect x="317" y="468" width="11" height="16" rx="2"/><rect x="340" y="468" width="11" height="16" rx="2"/>
+      <rect x="374" y="468" width="12" height="16" rx="2"/><rect x="396" y="468" width="12" height="16" rx="2"/>
+    </g>
+    <!-- Violet striped corner awning -->
+    <path d="M366,498 L416,498 L420,510 L362,510 Z" fill="#8256B8"/>
+    <path d="M378,498 L385,498 L386,510 L377,510 Z" fill="#EDE4F7"/>
+    <path d="M398,498 L405,498 L406,510 L397,510 Z" fill="#EDE4F7"/>
+    <!-- Stoops -->
+    <g fill="#E2D9CB">
+      <rect x="215" y="508" width="15" height="12" rx="1.5"/>
+      <rect x="271" y="508" width="15" height="12" rx="1.5"/>
+      <rect x="327" y="508" width="15" height="12" rx="1.5"/>
+    </g>
+
+    <!-- East Mid-South Block (x=1180..1406, y=424..520) — Brick Academic Hall -->
+    <rect x="1190" y="432" width="224" height="94" rx="5" fill="#463E5B" opacity="0.2"/>
+    <rect x="1180" y="424" width="226" height="94" rx="4" fill="url(#brickRose)"/>
+    <rect x="1180" y="424" width="226" height="36" rx="3" fill="url(#roofSlate)"/>
+    <rect x="1180" y="458" width="226" height="5" fill="#EBE3D5"/>
+    <!-- Roof skylight -->
+    <rect x="1256" y="433" width="74" height="18" rx="3" fill="#9AA6BF" stroke="#78758A" stroke-width="1.5"/>
+    <!-- Arched Academic Windows -->
+    <g fill="url(#glassReflect)">
+      <rect x="1196" y="470" width="16" height="22" rx="4"/><rect x="1226" y="470" width="16" height="22" rx="4"/>
+      <rect x="1256" y="470" width="16" height="22" rx="4"/><rect x="1314" y="470" width="16" height="22" rx="4"/>
+      <rect x="1344" y="470" width="16" height="22" rx="4"/><rect x="1374" y="470" width="16" height="22" rx="4"/>
+    </g>
+    <!-- Central Limestone Portal + Violet Banners -->
+    <rect x="1280" y="468" width="26" height="50" rx="2" fill="url(#limestoneWall)"/>
+    <rect x="1286" y="492" width="14" height="26" rx="3" fill="#4B4F63"/>
+    <rect x="1272" y="472" width="6" height="22" rx="1" fill="url(#violetBanner)"/>
+    <rect x="1308" y="472" width="6" height="22" rx="1" fill="url(#violetBanner)"/>
+  </g>
+
+  <!-- === SOUTH CAMPUS EDGE & TALL RED SANDSTONE LIBRARY (y = 665..900) === -->
+  <g id="south-campus-edge">
+    <!-- West Flanking Academic Hall (x=498..618, y=674..892) -->
+    <polygon points="508,684 624,684 646,896 508,896" fill="#463E5B" opacity="0.22"/>
+    <rect x="498" y="674" width="120" height="218" rx="5" fill="url(#brickWarm)"/>
+    <rect x="498" y="674" width="120" height="62" rx="4" fill="url(#roofSlate)"/>
+    <rect x="498" y="734" width="120" height="6" fill="#EAE2D4"/>
+    <rect x="524" y="690" width="68" height="30" rx="3" fill="#8D8BA0"/>
+    <!-- Windows -->
+    <g fill="url(#glassReflect)">
+      <rect x="514" y="752" width="18" height="24" rx="2.5"/><rect x="549" y="752" width="18" height="24" rx="2.5"/><rect x="584" y="752" width="18" height="24" rx="2.5"/>
+      <rect x="514" y="790" width="18" height="24" rx="2.5"/><rect x="549" y="790" width="18" height="24" rx="2.5"/><rect x="584" y="790" width="18" height="24" rx="2.5"/>
+      <rect x="514" y="828" width="18" height="24" rx="2.5"/><rect x="549" y="828" width="18" height="24" rx="2.5"/><rect x="584" y="828" width="18" height="24" rx="2.5"/>
+    </g>
+    <!-- Violet awning on south hall -->
+    <path d="M542,866 L574,866 L578,880 L538,880 Z" fill="#7D51B5"/>
+
+    <!-- ==================== TALL RED SANDSTONE LIBRARY BLOCK (Bobst-style) ==================== -->
+    <g id="red-sandstone-library">
+      <!-- Imposing long directional shadow to bottom-right -->
+      <polygon points="646,684 966,684 1018,744 1018,900 660,900" fill="#463E5B" opacity="0.25"/>
+
+      <!-- Entrance Plaza Steps on North Side (facing Washington Sq South) -->
+      <rect x="742" y="660" width="116" height="16" rx="3" fill="#DDD4C6"/>
+      <rect x="752" y="664" width="96" height="12" rx="2" fill="#EAE3D7"/>
+
+      <!-- Main Tall Red Sandstone Monolith -->
+      <!-- Right 3D Shadowed Side -->
+      <polygon points="964,668 982,684 982,900 964,900" fill="url(#sandstoneDark)"/>
+
+      <!-- Front Sandstone Facade -->
+      <rect x="636" y="668" width="328" height="232" rx="4" fill="url(#sandstoneFront)"/>
+
+      <!-- Roof Level (3/4 Top-Down View with Central Atrium Skylight) -->
+      <rect x="636" y="668" width="328" height="92" rx="4" fill="url(#sandstoneRoof)"/>
+      <!-- Parapet Inner Rim -->
+      <rect x="648" y="678" width="304" height="72" rx="3" fill="#B55B50"/>
+      <!-- Grand Central Glass Atrium Skylight -->
+      <rect x="706" y="690" width="188" height="48" rx="4" fill="url(#glassReflect)" stroke="#E3998D" stroke-width="2.5"/>
+      <g stroke="#92A3C4" stroke-width="1.2" opacity="0.6">
+        <line x1="744" y1="690" x2="744" y2="738"/>
+        <line x1="782" y1="690" x2="782" y2="738"/>
+        <line x1="818" y1="690" x2="818" y2="738"/>
+        <line x1="856" y1="690" x2="856" y2="738"/>
+        <line x1="706" y1="714" x2="894" y2="714"/>
+      </g>
+
+      <!-- Bold Sandstone Cornice Band -->
+      <rect x="634" y="758" width="332" height="8" rx="1.5" fill="#DF8F83"/>
+
+      <!-- Modern Recessed Grid Windows & Vertical Sandstone Piers -->
+      <g fill="url(#glassReflect)">
+        <!-- Row 1 -->
+        <rect x="652" y="776" width="26" height="22" rx="2"/><rect x="688" y="776" width="26" height="22" rx="2"/>
+        <rect x="724" y="776" width="26" height="22" rx="2"/><rect x="760" y="776" width="26" height="22" rx="2"/>
+        <rect x="814" y="776" width="26" height="22" rx="2"/><rect x="850" y="776" width="26" height="22" rx="2"/>
+        <rect x="886" y="776" width="26" height="22" rx="2"/><rect x="922" y="776" width="26" height="22" rx="2"/>
+        <!-- Row 2 -->
+        <rect x="652" y="808" width="26" height="22" rx="2"/><rect x="688" y="808" width="26" height="22" rx="2"/>
+        <rect x="724" y="808" width="26" height="22" rx="2"/><rect x="760" y="808" width="26" height="22" rx="2"/>
+        <rect x="814" y="808" width="26" height="22" rx="2"/><rect x="850" y="808" width="26" height="22" rx="2"/>
+        <rect x="886" y="808" width="26" height="22" rx="2"/><rect x="922" y="808" width="26" height="22" rx="2"/>
+        <!-- Row 3 -->
+        <rect x="652" y="840" width="26" height="22" rx="2"/><rect x="688" y="840" width="26" height="22" rx="2"/>
+        <rect x="724" y="840" width="26" height="22" rx="2"/><rect x="760" y="840" width="26" height="22" rx="2"/>
+        <rect x="814" y="840" width="26" height="22" rx="2"/><rect x="850" y="840" width="26" height="22" rx="2"/>
+        <rect x="886" y="840" width="26" height="22" rx="2"/><rect x="922" y="840" width="26" height="22" rx="2"/>
+      </g>
+
+      <!-- Central Tall Vertical Glass Feature Strip -->
+      <rect x="791" y="774" width="18" height="90" rx="2" fill="#464E66"/>
+      <rect x="794" y="778" width="12" height="82" rx="1" fill="url(#glassReflect)"/>
+
+      <!-- Ground Floor Colonnade Shadow & Columns -->
+      <rect x="646" y="874" width="308" height="26" fill="#78322B"/>
+      <g fill="#C66B5F">
+        <rect x="652" y="874" width="12" height="26"/>
+        <rect x="702" y="874" width="12" height="26"/>
+        <rect x="752" y="874" width="12" height="26"/>
+        <rect x="836" y="874" width="12" height="26"/>
+        <rect x="886" y="874" width="12" height="26"/>
+        <rect x="936" y="874" width="12" height="26"/>
+      </g>
+
+      <!-- Stately Violet University Banners Flanking the Library -->
+      <rect x="768" y="776" width="12" height="44" rx="2" fill="url(#violetBanner)"/>
+      <rect x="771" y="782" width="6" height="3" rx="1" fill="#E3D4F8"/>
+      <rect x="820" y="776" width="12" height="44" rx="2" fill="url(#violetBanner)"/>
+      <rect x="823" y="782" width="6" height="3" rx="1" fill="#E3D4F8"/>
+    </g>
+
+    <!-- East Flanking Limestone & Brick University Hall (x=996..1102, y=674..892) -->
+    <rect x="1004" y="684" width="106" height="216" rx="5" fill="#463E5B" opacity="0.2"/>
+    <rect x="996" y="674" width="106" height="218" rx="5" fill="url(#limestoneWall)"/>
+    <rect x="996" y="674" width="106" height="58" rx="4" fill="url(#roofWarm)"/>
+    <rect x="996" y="730" width="106" height="6" fill="#F2ECE0"/>
+    <g fill="url(#glassReflect)">
+      <rect x="1012" y="750" width="18" height="24" rx="3"/><rect x="1044" y="750" width="18" height="24" rx="3"/><rect x="1074" y="750" width="16" height="24" rx="3"/>
+      <rect x="1012" y="790" width="18" height="24" rx="3"/><rect x="1044" y="790" width="18" height="24" rx="3"/><rect x="1074" y="790" width="16" height="24" rx="3"/>
+      <rect x="1012" y="830" width="18" height="24" rx="3"/><rect x="1044" y="830" width="18" height="24" rx="3"/><rect x="1074" y="830" width="16" height="24" rx="3"/>
+    </g>
+
+    <!-- Bottom-Left & Bottom-Right Edge Building Roofs (y=815..900) -->
+    <g>
+      <rect x="194" y="815" width="110" height="85" rx="4" fill="url(#brownstoneA)"/>
+      <rect x="194" y="815" width="110" height="48" fill="url(#roofSlate)"/>
+      <rect x="308" y="815" width="112" height="85" rx="4" fill="url(#brickRose)"/>
+      <rect x="308" y="815" width="112" height="48" fill="url(#roofTerracotta)"/>
+
+      <rect x="1180" y="815" width="112" height="85" rx="4" fill="url(#brickWarm)"/>
+      <rect x="1180" y="815" width="112" height="48" fill="url(#roofWarm)"/>
+      <rect x="1296" y="815" width="110" height="85" rx="4" fill="url(#brownstoneC)"/>
+      <rect x="1296" y="815" width="110" height="48" fill="url(#roofSlate)"/>
+    </g>
+  </g>
+
+  <!-- ==================== 6. YELLOW TAXIS ==================== -->
+  <g id="yellow-taxis">
+    <use href="#taxi-e" x="640" y="148"/>
+    <use href="#taxi-w" x="965" y="132"/>
+    <use href="#taxi-s" x="450" y="295"/>
+    <use href="#taxi-n" x="476" y="485"/>
+    <use href="#taxi-s" x="1125" y="340"/>
+    <use href="#taxi-n" x="1150" y="510"/>
+    <use href="#taxi-e" x="595" y="638"/>
+    <use href="#taxi-w" x="1010" y="618"/>
+    <use href="#taxi-e" x="305" y="398"/>
+    <use href="#taxi-w" x="1290" y="544"/>
+  </g>
+
+  <!-- ==================== 7. AUTUMN TREES & FOLIAGE ==================== -->
+  <!-- Carefully placed in park lawns, avenues, and courtyards; completely clear of the 4 empty plots -->
+  <g id="autumn-trees">
+    <!-- Park NW Quadrant -->
+    <use href="#tree-gold" x="556" y="218"/>
+    <use href="#tree-orange" x="598" y="212"/>
+    <use href="#tree-olive" x="646" y="214"/>
+    <use href="#tree-crimson" x="556" y="268"/>
+    <use href="#tree-gold" x="620" y="255"/>
+    <use href="#tree-orange" x="556" y="328"/>
+    <use href="#tree-gold" x="598" y="348"/>
+    <use href="#tree-olive" x="546" y="376"/>
+    <use href="#tree-small-gold" x="692" y="220"/>
+
+    <!-- Park NE Quadrant -->
+    <use href="#tree-orange" x="1044" y="218"/>
+    <use href="#tree-gold" x="1002" y="212"/>
+    <use href="#tree-crimson" x="954" y="216"/>
+    <use href="#tree-olive" x="1044" y="270"/>
+    <use href="#tree-gold" x="982" y="260"/>
+    <use href="#tree-crimson" x="1046" y="330"/>
+    <use href="#tree-orange" x="1002" y="352"/>
+    <use href="#tree-gold" x="1052" y="376"/>
+    <use href="#tree-small-gold" x="908" y="220"/>
+
+    <!-- Park SW Quadrant -->
+    <use href="#tree-olive" x="554" y="458"/>
+    <use href="#tree-orange" x="598" y="472"/>
+    <use href="#tree-gold" x="554" y="514"/>
+    <use href="#tree-crimson" x="606" y="538"/>
+    <use href="#tree-gold" x="664" y="548"/>
+    <use href="#tree-olive" x="724" y="554"/>
+    <use href="#tree-orange" x="562" y="564"/>
+
+    <!-- Park SE Quadrant -->
+    <use href="#tree-gold" x="1046" y="458"/>
+    <use href="#tree-crimson" x="1000" y="474"/>
+    <use href="#tree-olive" x="1046" y="516"/>
+    <use href="#tree-orange" x="992" y="542"/>
+    <use href="#tree-gold" x="936" y="550"/>
+    <use href="#tree-olive" x="876" y="554"/>
+    <use href="#tree-crimson" x="1038" y="564"/>
+
+    <!-- Avenue & Sidewalk Trees (strictly outside empty plot boundaries) -->
+    <use href="#tree-small-gold" x="424" y="106"/>
+    <use href="#tree-small-gold" x="1178" y="106"/>
+    <use href="#tree-small-gold" x="188" y="416"/>
+    <use href="#tree-small-gold" x="424" y="416"/>
+    <use href="#tree-small-gold" x="1178" y="416"/>
+    <use href="#tree-small-gold" x="1410" y="416"/>
+    <!-- Trees flanking South Campus Library -->
+    <use href="#tree-gold" x="626" y="672"/>
+    <use href="#tree-orange" x="984" y="672"/>
+    <use href="#tree-small-gold" x="512" y="666"/>
+    <use href="#tree-small-gold" x="1090" y="666"/>
+  </g>
+
+  <!-- ==================== 8. STREET LAMPS & VIOLET BANNERS ==================== -->
+  <g id="street-lamps">
+    <!-- Along Washington Sq North -->
+    <use href="#street-lamp" x="510" y="168"/>
+    <use href="#street-lamp" x="645" y="168"/>
+    <use href="#street-lamp" x="955" y="168"/>
+    <use href="#street-lamp" x="1092" y="168"/>
+    <!-- Along West & East Park Avenues -->
+    <use href="#street-lamp" x="498" y="295"/>
+    <use href="#street-lamp" x="498" y="485"/>
+    <use href="#street-lamp" x="1102" y="295"/>
+    <use href="#street-lamp" x="1102" y="485"/>
+    <!-- Along Washington Sq South -->
+    <use href="#street-lamp" x="530" y="602"/>
+    <use href="#street-lamp" x="715" y="602"/>
+    <use href="#street-lamp" x="885" y="602"/>
+    <use href="#street-lamp" x="1070" y="602"/>
+    <!-- Along Outer Avenues (clear of plots) -->
+    <use href="#street-lamp" x="188" y="168"/>
+    <use href="#street-lamp" x="426" y="528"/>
+    <use href="#street-lamp" x="1174" y="528"/>
+    <use href="#street-lamp" x="1412" y="168"/>
+
+    <!-- Park Interior Globes -->
+    <use href="#park-lamp" x="742" y="254"/>
+    <use href="#park-lamp" x="858" y="254"/>
+    <use href="#park-lamp" x="718" y="346"/>
+    <use href="#park-lamp" x="882" y="346"/>
+    <use href="#park-lamp" x="718" y="492"/>
+    <use href="#park-lamp" x="882" y="492"/>
+  </g>
+
+  <!-- ==================== 9. SOFT GOLDEN AFTERNOON ATMOSPHERE ==================== -->
+  <rect x="0" y="0" width="1600" height="900" fill="url(#sunWash)" pointer-events="none"/>
+</svg>

@@ -1,0 +1,27 @@
+{
+ "model": "gemini-4-neon",
+ "prompt": "Draw one isometric building as a game map icon on a transparent background: a lively student clubs house with colourful blank flags and bunting, a small stage on the porch, blank poster boards, a guitar and a ball by the door. Refined flat illustration with soft gradients, layered depth, gentle long shadows, rounded shapes, harmonious pastel palette; premium life-sim game quality, lots of small careful details. viewBox 0 0 400 400, building centred, transparent background, soft ground shadow.",
+ "usage": {
+  "total_tokens": 23191,
+  "total_input_tokens": 161,
+  "input_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 161
+   }
+  ],
+  "total_cached_tokens": 0,
+  "total_output_tokens": 14419,
+  "output_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 14419
+   }
+  ],
+  "total_tool_use_tokens": 0,
+  "total_thought_tokens": 8611,
+  "initial_input_tokens": 161
+ },
+ "ms": 188940,
+ "made_at": "2026-11-21T16:26:44.628Z"
+}

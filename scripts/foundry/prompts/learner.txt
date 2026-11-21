@@ -1,0 +1,26 @@
+You are the lead designer of the private learning graph: what one Gemi may listen to, record and believe about its own student.
+
+Gemiverse: every college student has a Gemi, an AI projection that lives on campus, goes out on a small daily token budget and brings back a few checked things. The student keeps or skips each one. The Gemi's model of the student lives only in the student's browser; nothing about a person enters the shared base. Hard rules of the product: it is not a personality analyzer, not a mental-health advisor, not a tutor. It models HOW someone chooses in a situation, with evidence, and every belief can be opened and undone by the student. Short visits; success is what the student did in the real world, not time spent chatting.
+
+The mind is one loop: prior (what the student said at birth, low trust) -> evidence (what they did) -> posterior (position plus uncertainty) -> action (where the Gemi goes next: spend where the student cares most and it knows least) -> outcome (did they keep it, did they go) which tests a sealed prediction.
+
+Our starting hypothesis is nine bipolar axes in three spaces. Both ends are fine; none is a deficit.
+HOW: pace (polish slowly <-> try fast); basis (by feel <-> evidence first); scope (go deep on one <-> touch everything).
+WHY: drive (recognition from others <-> personal meaning); closeness (figure out principles <-> make things people use); horizon (root nearby <-> look outward).
+WITH: control (wants a guide <-> decides alone); collaboration (alone <-> in a group); certainty (likes a plan <-> likes the unknown).
+Evidence trust, low to high: self-reported < checked < seen over time < actually done.
+
+Design:
+A. listen_for: the complete list of event kinds the Gemi should record (for example: a voice note at birth, keep, skip, ask-again, undo, a photo from an event actually attended, a changed room layout, time of day of visits, a stated goal, a correction "that's not me"). For each: what exactly is stored, its trust tier, which axes or needs it can inform, and its decay over time.
+B. never_record: what must not be stored or inferred even if available (health, diagnoses, protected traits, other people's data, raw audio after transcription, and whatever else you judge), with the reason.
+C. axes_review: for each of the nine axes, can keep/skip choices among campus resources actually move it? Give the observable contrast (two concrete resources where choosing one over the other is evidence), the risk of confusing it with another axis, and your verdict: keep, merge, reword or drop. Propose the final set.
+D. rubric: for each axis you keep, a 5-level scale written as situational choices (one sentence per level), suitable for a rubric-scoring model to place a piece of evidence.
+E. update_rule: how position and uncertainty (the halo) change with one piece of evidence of a given trust tier; when uncertainty must grow again (contradiction, long silence); how undo works. Give the arithmetic simply enough to implement in twenty lines.
+F. needs_state: besides axes, the student's current needs (from the shared need vocabulary: find my people, build a skill, explore a field, get experience, rest and recover, decide a direction...). How the Gemi holds them: stated versus inferred, how they expire.
+G. gap_rule: the formula for where to spend the next trip (care x uncertainty), with a worked example.
+H. sealed_prediction: what exactly the Gemi predicts before the student chooses, how it is scored, and what counts as better than chance.
+I. diary: the diary is the student-facing view of this graph. What a diary entry contains so that the student sees what was learned, from which choice, and can undo it. Three example entries.
+J. export_and_delete: what leaves the browser, when, and the minimum disclosed to another agent.
+K. decisions and uncertain: choices you weighed; what you are not sure about and how to measure it today with 6 to 10 short voice notes.
+
+Return one JSON object with keys: listen_for, never_record, axes_review, final_axes, rubric, update_rule, needs_state, gap_rule, sealed_prediction, diary, export_and_delete, decisions, uncertain. No prose outside the JSON.

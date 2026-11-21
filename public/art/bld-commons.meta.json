@@ -1,0 +1,27 @@
+{
+ "model": "gemini-4-neon",
+ "prompt": "Draw one isometric building as a game map icon on a transparent background: a friendly commons cafe pavilion for meeting people, with a striped awning, round tables and chairs outside, string lights, two speech-bubble shapes as a roof sign (no letters). Refined flat illustration with soft gradients, layered depth, gentle long shadows, rounded shapes, harmonious pastel palette; premium life-sim game quality, lots of small careful details. viewBox 0 0 400 400, building centred, transparent background, soft ground shadow.",
+ "usage": {
+  "total_tokens": 22703,
+  "total_input_tokens": 165,
+  "input_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 165
+   }
+  ],
+  "total_cached_tokens": 0,
+  "total_output_tokens": 16606,
+  "output_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 16606
+   }
+  ],
+  "total_tool_use_tokens": 0,
+  "total_thought_tokens": 5932,
+  "initial_input_tokens": 165
+ },
+ "ms": 166787,
+ "made_at": "2026-11-21T16:26:22.475Z"
+}

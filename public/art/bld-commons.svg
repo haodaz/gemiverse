@@ -1,0 +1,660 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <!-- Soft Blur Filters -->
+    <filter id="softShadow" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+    <filter id="mildShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5"/>
+    </filter>
+    <filter id="bulbGlowFilter" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="3.2"/>
+    </filter>
+
+    <!-- Ground & Cast Shadows -->
+    <radialGradient id="groundShadowGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#6B5568" stop-opacity="0.32"/>
+      <stop offset="68%" stop-color="#6B5568" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#6B5568" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Patio Platform Gradients -->
+    <linearGradient id="patioTop" x1="15%" y1="10%" x2="85%" y2="90%">
+      <stop offset="0%" stop-color="#FFF5E6"/>
+      <stop offset="55%" stop-color="#F7E5CF"/>
+      <stop offset="100%" stop-color="#ECD4BA"/>
+    </linearGradient>
+    <linearGradient id="patioLeftEdge" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E2C3A5"/>
+      <stop offset="100%" stop-color="#CFA988"/>
+    </linearGradient>
+    <linearGradient id="patioRightEdge" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C49A7A"/>
+      <stop offset="100%" stop-color="#AC8265"/>
+    </linearGradient>
+
+    <!-- Building Wall Gradients -->
+    <linearGradient id="wallLeft" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF9F0"/>
+      <stop offset="100%" stop-color="#F5E4CE"/>
+    </linearGradient>
+    <linearGradient id="wallRight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F1D9C2"/>
+      <stop offset="100%" stop-color="#DFC1A6"/>
+    </linearGradient>
+    <linearGradient id="woodBase" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#D7A77E"/>
+      <stop offset="100%" stop-color="#BC8961"/>
+    </linearGradient>
+
+    <!-- Interior & Window Gradients -->
+    <linearGradient id="warmInterior" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#FFE6A8"/>
+      <stop offset="55%" stop-color="#F6C384"/>
+      <stop offset="100%" stop-color="#DC9968"/>
+    </linearGradient>
+    <linearGradient id="glassTint" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5F7F5" stop-opacity="0.72"/>
+      <stop offset="50%" stop-color="#BCE3E0" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#9BCBC8" stop-opacity="0.55"/>
+    </linearGradient>
+
+    <!-- Roof Gradients (Pastel Terracotta Coral) -->
+    <linearGradient id="roofLeftSlope" x1="15%" y1="0%" x2="85%" y2="100%">
+      <stop offset="0%" stop-color="#F5A88F"/>
+      <stop offset="100%" stop-color="#E6886E"/>
+    </linearGradient>
+    <linearGradient id="roofRightSlope" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5896F"/>
+      <stop offset="100%" stop-color="#CC6C55"/>
+    </linearGradient>
+    <linearGradient id="roofBackSlope" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7B7A2"/>
+      <stop offset="100%" stop-color="#E9977F"/>
+    </linearGradient>
+    <linearGradient id="roofCap" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCE8D5"/>
+      <stop offset="100%" stop-color="#E5C2A3"/>
+    </linearGradient>
+
+    <!-- Awning Gradients -->
+    <linearGradient id="awningCoral" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F1987E"/>
+      <stop offset="100%" stop-color="#DC775D"/>
+    </linearGradient>
+    <linearGradient id="awningCream" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFDF8"/>
+      <stop offset="100%" stop-color="#F2E2CE"/>
+    </linearGradient>
+
+    <!-- Speech Bubble Sign Gradients -->
+    <linearGradient id="bubbleCream" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#FFFDF2"/>
+      <stop offset="60%" stop-color="#FFF1C9"/>
+      <stop offset="100%" stop-color="#F4D594"/>
+    </linearGradient>
+    <linearGradient id="bubbleCreamDepth" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5BA71"/>
+      <stop offset="100%" stop-color="#CCA058"/>
+    </linearGradient>
+    <linearGradient id="bubbleMint" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#B9E5D8"/>
+      <stop offset="55%" stop-color="#89C9B8"/>
+      <stop offset="100%" stop-color="#6BB09E"/>
+    </linearGradient>
+    <linearGradient id="bubbleMintDepth" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#619E8D"/>
+      <stop offset="100%" stop-color="#4B8374"/>
+    </linearGradient>
+
+    <!-- Foliage & Planters -->
+    <linearGradient id="bushLight" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#B5DBBE"/>
+      <stop offset="60%" stop-color="#87B896"/>
+      <stop offset="100%" stop-color="#6A9B7B"/>
+    </linearGradient>
+    <linearGradient id="bushMid" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#9AC8A7"/>
+      <stop offset="100%" stop-color="#5E8E70"/>
+    </linearGradient>
+    <linearGradient id="potGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#EAA083"/>
+      <stop offset="60%" stop-color="#D78467"/>
+      <stop offset="100%" stop-color="#BC6A50"/>
+    </linearGradient>
+
+    <!-- Bistro Furniture -->
+    <linearGradient id="tableTopGrad" x1="15%" y1="0%" x2="85%" y2="100%">
+      <stop offset="0%" stop-color="#FFFDF9"/>
+      <stop offset="100%" stop-color="#EEDAC4"/>
+    </linearGradient>
+    <linearGradient id="chairMint" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A8D8CA"/>
+      <stop offset="100%" stop-color="#76B2A1"/>
+    </linearGradient>
+    <linearGradient id="chairPeach" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7B7A2"/>
+      <stop offset="100%" stop-color="#DF8A70"/>
+    </linearGradient>
+
+    <!-- String Light Bulb Glow -->
+    <radialGradient id="bulbGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF8C9" stop-opacity="1"/>
+      <stop offset="45%" stop-color="#FFE082" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#FFD166" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Clip Path for Patio Tiles -->
+    <clipPath id="patioClip">
+      <path d="M193 177 Q200 173 207 177 L336 252 Q343 256 336 260 L207 335 Q200 339 193 335 L64 260 Q57 256 64 252 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- 1. SOFT GROUND SHADOW -->
+  <g id="ground-shadow">
+    <ellipse cx="206" cy="276" rx="156" ry="88" fill="url(#groundShadowGrad)" filter="url(#softShadow)"/>
+    <path d="M195 190 L345 270 L212 352 L65 268 Z" fill="#6B5568" fill-opacity="0.13" filter="url(#softShadow)"/>
+  </g>
+
+  <!-- 2. PATIO PLATFORM -->
+  <g id="patio-platform">
+    <!-- Slab Side Edges (Thickness 14px) -->
+    <path d="M60 256 L60 268 Q60 272 65 275 L193 349 Q200 353 200 353 L200 338 L64 259 Z" fill="url(#patioLeftEdge)"/>
+    <path d="M340 256 L340 268 Q340 272 335 275 L207 349 Q200 353 200 353 L200 338 L336 259 Z" fill="url(#patioRightEdge)"/>
+
+    <!-- Front Entry Step -->
+    <g id="front-step">
+      <path d="M214 333 L242 317 L251 322 L223 338 Z" fill="#F4E2CD"/>
+      <path d="M214 333 L223 338 L223 346 L214 341 Z" fill="#D4B08E"/>
+      <path d="M223 338 L251 322 L251 330 L223 346 Z" fill="#B68B6B"/>
+    </g>
+
+    <!-- Patio Top Surface -->
+    <path d="M193 177 Q200 173 207 177 L336 252 Q343 256 336 260 L207 335 Q200 339 193 335 L64 260 Q57 256 64 252 Z" fill="url(#patioTop)"/>
+
+    <!-- Subtle Isometric Tile Grid on Patio -->
+    <g clip-path="url(#patioClip)" stroke="#DFC3A6" stroke-width="1" stroke-opacity="0.55" fill="none">
+      <!-- Lines parallel to top-right edge -->
+      <line x1="175" y1="186" x2="318" y2="269"/>
+      <line x1="150" y1="201" x2="293" y2="284"/>
+      <line x1="125" y1="216" x2="268" y2="299"/>
+      <line x1="100" y1="231" x2="243" y2="314"/>
+      <line x1="75" y1="246" x2="218" y2="329"/>
+      <!-- Lines parallel to top-left edge -->
+      <line x1="225" y1="186" x2="82" y2="269"/>
+      <line x1="250" y1="201" x2="107" y2="284"/>
+      <line x1="275" y1="216" x2="132" y2="299"/>
+      <line x1="300" y1="231" x2="157" y2="314"/>
+      <line x1="325" y1="246" x2="182" y2="329"/>
+      <!-- Warm Accent Center Rug / Tile Inlay -->
+      <path d="M200 205 L292 258 L200 311 L108 258 Z" fill="#F5DFC7" fill-opacity="0.35" stroke="#E5C9AC" stroke-width="1.4"/>
+    </g>
+
+    <!-- Inner Bevel Highlight along Top Edges -->
+    <path d="M64 254 L193 179 Q200 175 207 179 L336 254" fill="none" stroke="#FFFFFF" stroke-opacity="0.65" stroke-width="1.6"/>
+  </g>
+
+  <!-- 3. BACK FOLIAGE & SHRUBS -->
+  <g id="back-foliage">
+    <!-- Back-top bush cluster -->
+    <ellipse cx="204" cy="196" rx="22" ry="12" fill="#6B5568" fill-opacity="0.14"/>
+    <circle cx="196" cy="186" r="14" fill="url(#bushMid)"/>
+    <circle cx="212" cy="188" r="12" fill="url(#bushLight)"/>
+    <circle cx="204" cy="179" r="11" fill="url(#bushLight)"/>
+    <!-- Tiny blossoms -->
+    <circle cx="195" cy="182" r="2" fill="#FFF3D6"/>
+    <circle cx="213" cy="184" r="2.2" fill="#F9C5B4"/>
+    <circle cx="205" cy="175" r="1.8" fill="#FFF3D6"/>
+
+    <!-- Back-right hedge cluster -->
+    <ellipse cx="275" cy="233" rx="26" ry="14" fill="#6B5568" fill-opacity="0.15"/>
+    <circle cx="264" cy="222" r="14" fill="url(#bushMid)"/>
+    <circle cx="281" cy="228" r="15" fill="url(#bushLight)"/>
+    <circle cx="295" cy="237" r="12" fill="url(#bushMid)"/>
+    <circle cx="275" cy="217" r="11" fill="url(#bushLight)"/>
+    <circle cx="272" cy="215" r="2.1" fill="#FFF3D6"/>
+    <circle cx="285" cy="225" r="2.2" fill="#F9C5B4"/>
+    <circle cx="294" cy="233" r="1.8" fill="#FFF3D6"/>
+
+    <!-- Back-left hedge cluster -->
+    <ellipse cx="105" cy="235" rx="22" ry="12" fill="#6B5568" fill-opacity="0.14"/>
+    <circle cx="114" cy="224" r="13" fill="url(#bushMid)"/>
+    <circle cx="99" cy="230" r="14" fill="url(#bushLight)"/>
+    <circle cx="106" cy="219" r="10" fill="url(#bushLight)"/>
+    <circle cx="97" cy="226" r="2" fill="#F9C5B4"/>
+    <circle cx="108" cy="217" r="1.8" fill="#FFF3D6"/>
+  </g>
+
+  <!-- 4. BUILDING CAST SHADOW ON PATIO -->
+  <path d="M194 280 L263 240 L299 261 L230 301 Z" fill="#6B5568" fill-opacity="0.18"/>
+  <path d="M116 235 L194 280 L216 293 L138 248 Z" fill="#6B5568" fill-opacity="0.1"/>
+
+  <!-- 5. CAFE PAVILION BUILDING -->
+  <g id="cafe-pavilion">
+    <!-- Left Wall (Lit Side) -->
+    <polygon points="116,163 194,208 194,280 116,235" fill="url(#wallLeft)"/>
+    <!-- Right Wall (Shaded Side) -->
+    <polygon points="194,208 263,168 263,240 194,280" fill="url(#wallRight)"/>
+
+    <!-- Wainscoting / Baseboard Trim -->
+    <polygon points="116,222 194,267 194,280 116,235" fill="#E9D3BA"/>
+    <polygon points="194,267 263,227 263,240 194,280" fill="#D5B89B"/>
+    <!-- Subtle Vertical Wood Planks on Wainscoting -->
+    <g stroke="#C7A687" stroke-width="0.9" stroke-opacity="0.55">
+      <line x1="129" y1="229.5" x2="129" y2="242.5"/>
+      <line x1="142" y1="237" x2="142" y2="250"/>
+      <line x1="155" y1="244.5" x2="155" y2="257.5"/>
+      <line x1="168" y1="252" x2="168" y2="265"/>
+      <line x1="181" y1="259.5" x2="181" y2="272.5"/>
+      <line x1="208" y1="259" x2="208" y2="272"/>
+      <line x1="222" y1="251" x2="222" y2="264"/>
+      <line x1="236" y1="243" x2="236" y2="256"/>
+      <line x1="250" y1="235" x2="250" y2="248"/>
+    </g>
+
+    <!-- Corner Pilasters (Warm Cream/Sage Trim) -->
+    <polygon points="116,163 122,166.5 122,238.5 116,235" fill="#EDE0D0"/>
+    <polygon points="189,205 194,208 194,280 189,277" fill="#F8ECE0"/>
+    <polygon points="194,208 199,205 199,277 194,280" fill="#E3C8AE"/>
+    <polygon points="258,171 263,168 263,240 258,243" fill="#D4B599"/>
+
+    <!-- Eave Cast Shadow on Upper Walls -->
+    <polygon points="116,163 194,208 194,220 116,175" fill="#6B5568" fill-opacity="0.12"/>
+    <polygon points="194,208 263,168 263,180 194,220" fill="#6B5568" fill-opacity="0.15"/>
+
+    <!-- FRONT-LEFT WALL: Large Arched Cafe Window & Flower Box -->
+    <g id="left-window">
+      <!-- Outer Sage Frame -->
+      <path d="M132 225 L132 197 Q132 183 155 196 Q178 209 178 224 L178 252 Z" fill="#7CA88E"/>
+      <!-- Warm Interior Back -->
+      <path d="M135 223 L135 199 Q135 188 155 199.5 Q175 211 175 223 L175 247 Z" fill="url(#warmInterior)"/>
+      <!-- Cozy Hanging Pendant Lamps inside -->
+      <line x1="147" y1="195" x2="147" y2="206" stroke="#A6744C" stroke-width="1"/>
+      <ellipse cx="147" cy="208" rx="4" ry="2.5" fill="#FFF7D4"/>
+      <line x1="163" y1="205" x2="163" y2="215" stroke="#A6744C" stroke-width="1"/>
+      <ellipse cx="163" cy="217" rx="4" ry="2.5" fill="#FFF7D4"/>
+      <!-- Glass Reflection Layer -->
+      <path d="M135 223 L135 199 Q135 188 155 199.5 Q175 211 175 223 L175 247 Z" fill="url(#glassTint)"/>
+      <polygon points="139,200 146,204 140,226 135,223" fill="#FFFFFF" fill-opacity="0.32"/>
+      <!-- Muntin Bars -->
+      <line x1="155" y1="198" x2="155" y2="236" stroke="#7CA88E" stroke-width="2.2"/>
+      <line x1="135" y1="214" x2="175" y2="237" stroke="#7CA88E" stroke-width="2.2"/>
+      <!-- Wooden Window Sill / Flower Box -->
+      <polygon points="128,224 181,254.5 181,262 128,231.5" fill="#C99266"/>
+      <polygon points="128,224 134,220.5 187,251 181,254.5" fill="#E3B389"/>
+      <!-- Tiny Flowers in Window Box -->
+      <circle cx="138" cy="224" r="4.5" fill="#77AA88"/>
+      <circle cx="147" cy="229" r="5" fill="#8BBF9C"/>
+      <circle cx="157" cy="235" r="4.5" fill="#77AA88"/>
+      <circle cx="167" cy="241" r="5" fill="#8BBF9C"/>
+      <circle cx="176" cy="246" r="4.2" fill="#77AA88"/>
+      <circle cx="140" cy="222" r="1.8" fill="#F9B8A3"/>
+      <circle cx="150" cy="228" r="1.8" fill="#FFF4C9"/>
+      <circle cx="160" cy="233" r="1.8" fill="#F9B8A3"/>
+      <circle cx="170" cy="240" r="1.8" fill="#FFF4C9"/>
+    </g>
+
+    <!-- FRONT-RIGHT WALL: Serving Counter Window & Arched Door -->
+    <g id="right-facade">
+      <!-- Serving Counter Opening (Left half of front-right wall) -->
+      <path d="M203 255 L203 226 Q203 215 218 206.5 Q233 198 233 209 L233 238 Z" fill="#6F9A81"/>
+      <path d="M205.5 253 L205.5 227 Q205.5 218 218 210.5 Q230.5 203 230.5 212 L230.5 237 Z" fill="url(#warmInterior)"/>
+      <!-- Tiny Espresso Machine & Pastry Dome on Counter -->
+      <rect x="208" y="233" width="7" height="9" rx="1.5" fill="#78A7A1" transform="skewY(-30) translate(0,122)"/>
+      <!-- Glass Pastry Cloche -->
+      <ellipse cx="222" cy="238" rx="4.5" ry="2.2" fill="#FFF5E6"/>
+      <path d="M218 238 Q222 230 226 238 Z" fill="#E3F5F5" fill-opacity="0.7" stroke="#FFFFFF" stroke-width="0.6"/>
+      <circle cx="222" cy="236.5" r="1.6" fill="#D98B5F"/>
+      <!-- Little Coffee Cups on Counter -->
+      <rect x="210" y="241" width="3.5" height="3.5" rx="0.8" fill="#FFFDF8"/>
+      <rect x="215" y="239" width="3.5" height="3.5" rx="0.8" fill="#F5A68E"/>
+      <!-- Counter Ledge -->
+      <polygon points="200,256 236,235 241,238 205,259" fill="#E5B68B"/>
+      <polygon points="205,259 241,238 241,243 205,264" fill="#BA855D"/>
+      <polygon points="200,256 205,259 205,264 200,261" fill="#CFA077"/>
+
+      <!-- Cozy Arched Cafe Door (Right half of front-right wall) -->
+      <path d="M240 253 L240 212 Q240 201 248.5 196 Q257 191 257 202 L257 243 Z" fill="#6F9A81"/>
+      <path d="M242 252 L242 213 Q242 204 248.5 200 Q255 196 255 205 L255 244 Z" fill="#85B398"/>
+      <!-- Door Window Pane -->
+      <path d="M244 227 L244 214 Q244 207 248.5 204.5 Q253 202 253 208 L253 222 Z" fill="url(#warmInterior)"/>
+      <path d="M244 227 L244 214 Q244 207 248.5 204.5 Q253 202 253 208 L253 222 Z" fill="url(#glassTint)"/>
+      <!-- Door Handle -->
+      <circle cx="244.5" cy="234" r="1.4" fill="#FCE29C"/>
+    </g>
+
+    <!-- STRIPED AWNING: FRONT-LEFT WINDOW -->
+    <g id="awning-left">
+      <!-- Cast Shadow on Wall -->
+      <polygon points="125,187 182,220 182,232 125,199" fill="#6B5568" fill-opacity="0.16"/>
+      <!-- 5 Alternating Stripes (Coral / Cream) -->
+      <!-- Stripe 1 (Coral) -->
+      <polygon points="125.4,182.4 136.8,189.0 118.8,212.4 107.4,205.8" fill="url(#awningCoral)"/>
+      <path d="M107.4 205.8 L118.8 212.4 L118.8 217.4 Q113.1 217.6 107.4 210.8 Z" fill="#C9654D"/>
+      <!-- Stripe 2 (Cream) -->
+      <polygon points="136.8,189.0 148.2,195.6 130.2,219.0 118.8,212.4" fill="url(#awningCream)"/>
+      <path d="M118.8 212.4 L130.2 219.0 L130.2 224.0 Q124.5 224.2 118.8 217.4 Z" fill="#E2CDB6"/>
+      <!-- Stripe 3 (Coral) -->
+      <polygon points="148.2,195.6 159.5,202.1 141.5,225.5 130.2,219.0" fill="url(#awningCoral)"/>
+      <path d="M130.2 219.0 L141.5 225.5 L141.5 230.5 Q135.8 230.7 130.2 224.0 Z" fill="#C9654D"/>
+      <!-- Stripe 4 (Cream) -->
+      <polygon points="159.5,202.1 170.9,208.7 152.9,232.1 141.5,225.5" fill="url(#awningCream)"/>
+      <path d="M141.5 225.5 L152.9 232.1 L152.9 237.1 Q147.2 237.3 141.5 230.5 Z" fill="#E2CDB6"/>
+      <!-- Stripe 5 (Coral) -->
+      <polygon points="170.9,208.7 182.3,215.3 164.3,238.7 152.9,232.1" fill="url(#awningCoral)"/>
+      <path d="M152.9 232.1 L164.3 238.7 L164.3 243.7 Q158.6 243.9 152.9 237.1 Z" fill="#C9654D"/>
+      <!-- Awning Side Triangle (Right side of left awning) -->
+      <polygon points="182.3,215.3 164.3,238.7 182.3,228" fill="#B65B45" fill-opacity="0.65"/>
+    </g>
+
+    <!-- STRIPED AWNING: FRONT-RIGHT MAIN FACADE -->
+    <g id="awning-right">
+      <!-- Cast Shadow on Wall -->
+      <polygon points="196,225 263,186 263,200 196,239" fill="#6B5568" fill-opacity="0.18"/>
+      <!-- Awning Left Side Gusset -->
+      <polygon points="194,222 216,247 194,235" fill="#C76750" fill-opacity="0.75"/>
+      <!-- 7 Alternating Stripes (Coral / Cream) -->
+      <!-- Stripe 1 (Coral) -->
+      <polygon points="194.0,222.0 203.9,216.3 225.9,241.3 216.0,247.0" fill="url(#awningCoral)"/>
+      <path d="M216.0 247.0 L225.9 241.3 L225.9 246.8 Q221.0 252.2 216.0 252.5 Z" fill="#C46049"/>
+      <!-- Stripe 2 (Cream) -->
+      <polygon points="203.9,216.3 213.7,210.6 235.7,235.6 225.9,241.3" fill="url(#awningCream)"/>
+      <path d="M225.9 241.3 L235.7 235.6 L235.7 241.1 Q230.8 246.5 225.9 246.8 Z" fill="#DDC6AE"/>
+      <!-- Stripe 3 (Coral) -->
+      <polygon points="213.7,210.6 223.6,204.9 245.6,229.9 235.7,235.6" fill="url(#awningCoral)"/>
+      <path d="M235.7 235.6 L245.6 229.9 L245.6 235.4 Q240.7 240.8 235.7 241.1 Z" fill="#C46049"/>
+      <!-- Stripe 4 (Cream) -->
+      <polygon points="223.6,204.9 233.4,199.1 255.4,224.1 245.6,229.9" fill="url(#awningCream)"/>
+      <path d="M245.6 229.9 L255.4 224.1 L255.4 229.6 Q250.5 235.0 245.6 235.4 Z" fill="#DDC6AE"/>
+      <!-- Stripe 5 (Coral) -->
+      <polygon points="233.4,199.1 243.3,193.4 265.3,218.4 255.4,224.1" fill="url(#awningCoral)"/>
+      <path d="M255.4 224.1 L265.3 218.4 L265.3 223.9 Q260.4 229.3 255.4 229.6 Z" fill="#C46049"/>
+      <!-- Stripe 6 (Cream) -->
+      <polygon points="243.3,193.4 253.1,187.7 275.1,212.7 265.3,218.4" fill="url(#awningCream)"/>
+      <path d="M265.3 218.4 L275.1 212.7 L275.1 218.2 Q270.2 223.6 265.3 223.9 Z" fill="#DDC6AE"/>
+      <!-- Stripe 7 (Coral) -->
+      <polygon points="253.1,187.7 263.0,182.0 285.0,207.0 275.1,212.7" fill="url(#awningCoral)"/>
+      <path d="M275.1 212.7 L285.0 207.0 L285.0 212.5 Q280.1 217.9 275.1 218.2 Z" fill="#C46049"/>
+    </g>
+
+    <!-- PAVILION ROOF -->
+    <g id="pavilion-roof">
+      <!-- Under-Eave Soffit Shadow -->
+      <polygon points="102,160 194,213 194,218 102,165" fill="#D5B293"/>
+      <polygon points="194,213 277,165 277,170 194,218" fill="#BD9777"/>
+
+      <!-- Back Roof Slopes -->
+      <path d="M185 112 Q180 105 188 95 L167 107 Q142 136 102 160 Z" fill="url(#roofBackSlope)"/>
+      <path d="M185 112 Q198 104 212 109 L277 165 Q232 140 185 112 Z" fill="#E38971"/>
+
+      <!-- Front-Left Roof Slope (Main Lit Face) -->
+      <path d="M102 160 Q144 139 167 107 L191 121 Q194 168 194 213 Z" fill="url(#roofLeftSlope)"/>
+      <!-- Subtle Standing-Seam Roof Ribs (Left Slope) -->
+      <g stroke="#CF7159" stroke-width="1" stroke-opacity="0.35" fill="none">
+        <path d="M122 171.5 Q154 150 172.5 110.5"/>
+        <path d="M144 184 Q167 158 179 114"/>
+        <path d="M168 198 Q181 164 185 117.5"/>
+      </g>
+
+      <!-- Front-Right Roof Slope (Shaded Face) -->
+      <path d="M194 213 Q194 168 191 121 L212 109 Q242 142 277 165 Z" fill="url(#roofRightSlope)"/>
+      <!-- Subtle Standing-Seam Roof Ribs (Right Slope) -->
+      <g stroke="#B15440" stroke-width="1" stroke-opacity="0.35" fill="none">
+        <path d="M215 201 Q207 161 196.5 118"/>
+        <path d="M236 189 Q221 153 202 115"/>
+        <path d="M256 177 Q234 146 207 112"/>
+      </g>
+
+      <!-- Rounded Cream Fascia Trim Along Front Eaves -->
+      <path d="M101 160 L194 213.5 L278 165" fill="none" stroke="#FFF4E4" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M101 162.5 L194 216 L278 167.5" fill="none" stroke="#D9B696" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+
+      <!-- Hipped Roof Ridge Highlight Lines -->
+      <path d="M167 107 Q144 139 102 160" fill="none" stroke="#FCD2C0" stroke-width="1.4" stroke-opacity="0.7"/>
+      <path d="M191 121 Q194 168 194 213" fill="none" stroke="#F8BCA6" stroke-width="1.5" stroke-opacity="0.65"/>
+
+      <!-- Small Pavilion Crown Cap -->
+      <polygon points="188,95 212,109 191,121 167,107" fill="url(#roofCap)" stroke="#D9B391" stroke-width="1"/>
+      <polygon points="167,107 191,121 191,125 167,111" fill="#DFBB99"/>
+      <polygon points="191,121 212,109 212,113 191,125" fill="#C49C7B"/>
+    </g>
+
+    <!-- TWO SPEECH-BUBBLE ROOF SIGN (No Letters) -->
+    <g id="speech-bubble-sign">
+      <!-- Sign Support Posts -->
+      <rect x="174" y="90" width="4" height="20" rx="1.5" fill="#7D6B67"/>
+      <rect x="206" y="92" width="4" height="19" rx="1.5" fill="#7D6B67"/>
+      <ellipse cx="176" cy="109" rx="4.5" ry="2.2" fill="#9A837C"/>
+      <ellipse cx="208" cy="110" rx="4.5" ry="2.2" fill="#9A837C"/>
+
+      <!-- Back-Left Speech Bubble (Cream Butter) -->
+      <g transform="translate(0, 0)">
+        <!-- 3D Extruded Side -->
+        <path d="M150 47 L184 47 Q202 47 202 65 L202 69 Q202 87 184 87 L166 87 L153 98 Q150 100 151 96 L154 87 L150 87 Q132 87 132 69 L132 65 Q132 47 150 47 Z" fill="url(#bubbleCreamDepth)" transform="translate(3, 3.5)"/>
+        <!-- Front Face -->
+        <path d="M150 47 L184 47 Q202 47 202 65 L202 69 Q202 87 184 87 L166 87 L153 98 Q150 100 151 96 L154 87 L150 87 Q132 87 132 69 L132 65 Q132 47 150 47 Z" fill="url(#bubbleCream)" stroke="#FFFDF5" stroke-width="1.2"/>
+        <!-- Soft Gloss Highlight -->
+        <path d="M148 52 L180 52 Q192 52 195 60" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-opacity="0.8"/>
+      </g>
+
+      <!-- Subtle Shadow Cast by Front Bubble onto Back Bubble -->
+      <ellipse cx="194" cy="76" rx="14" ry="12" fill="#8C6D58" fill-opacity="0.18"/>
+
+      <!-- Front-Right Speech Bubble (Pastel Mint) -->
+      <g transform="translate(0, 0)">
+        <!-- 3D Extruded Side -->
+        <path d="M196 58 L226 58 Q242 58 242 74 L242 77 Q242 93 226 93 L222 93 L226 102 Q227 105 224 103 L211 93 L196 93 Q180 93 180 77 L180 74 Q180 58 196 58 Z" fill="url(#bubbleMintDepth)" transform="translate(3, 3.5)"/>
+        <!-- Front Face -->
+        <path d="M196 58 L226 58 Q242 58 242 74 L242 77 Q242 93 226 93 L222 93 L226 102 Q227 105 224 103 L211 93 L196 93 Q180 93 180 77 L180 74 Q180 58 196 58 Z" fill="url(#bubbleMint)" stroke="#D9F4EC" stroke-width="1.2"/>
+        <!-- Soft Gloss Highlight -->
+        <path d="M195 63 L223 63 Q233 63 236 70" fill="none" stroke="#FFFFFF" stroke-width="2.3" stroke-linecap="round" stroke-opacity="0.7"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- 6. OUTDOOR ROUND TABLES, CHAIRS & POTTED PLANTS -->
+  <g id="outdoor-seating">
+    <!-- Potted Olive / Citrus Plant near Left Corner -->
+    <g id="pot-left" transform="translate(106, 250)">
+      <ellipse cx="3" cy="11" rx="9" ry="5" fill="#6B5568" fill-opacity="0.18"/>
+      <path d="M-5 2 L5 2 L4 10 Q0 12 -4 10 Z" fill="url(#potGrad)"/>
+      <ellipse cx="0" cy="2" rx="5.5" ry="2.6" fill="#EBA68A"/>
+      <line x1="0" y1="1" x2="0" y2="-8" stroke="#8C674E" stroke-width="2"/>
+      <circle cx="0" cy="-12" r="8.5" fill="url(#bushLight)"/>
+      <circle cx="-4" cy="-9" r="5" fill="url(#bushMid)"/>
+      <circle cx="4" cy="-14" r="4.5" fill="#C4E6CC"/>
+      <circle cx="3" cy="-11" r="1.5" fill="#FCE08B"/>
+      <circle cx="-3" cy="-14" r="1.4" fill="#FCE08B"/>
+    </g>
+
+    <!-- TABLE 1: Front-Left Patio (around 134, 276) -->
+    <g id="bistro-set-1" transform="translate(136, 278)">
+      <!-- Gentle Long Shadows -->
+      <ellipse cx="6" cy="11" rx="18" ry="9" fill="#6B5568" fill-opacity="0.16"/>
+      <ellipse cx="-14" cy="4" rx="8" ry="4.5" fill="#6B5568" fill-opacity="0.14"/>
+      <ellipse cx="22" cy="12" rx="8" ry="4.5" fill="#6B5568" fill-opacity="0.14"/>
+
+      <!-- Left Chair (Behind-Left) -->
+      <g transform="translate(-17, -2)">
+        <line x1="-4" y1="0" x2="-4" y2="7" stroke="#9D7A62" stroke-width="1.6"/>
+        <line x1="4" y1="0" x2="4" y2="7" stroke="#9D7A62" stroke-width="1.6"/>
+        <ellipse cx="0" cy="0" rx="6.5" ry="3.8" fill="url(#chairPeach)"/>
+        <path d="M-6 -1 Q-7 -11 0 -11 Q5 -11 4 -2" fill="none" stroke="#E08B71" stroke-width="2.6" stroke-linecap="round"/>
+      </g>
+
+      <!-- Round Bistro Table -->
+      <ellipse cx="0" cy="8" rx="6" ry="3.2" fill="#8C746B"/>
+      <line x1="0" y1="-5" x2="0" y2="8" stroke="#9E857B" stroke-width="2.4"/>
+      <ellipse cx="0" cy="-4.5" rx="13.5" ry="7.8" fill="#D9BE9F"/>
+      <ellipse cx="0" cy="-6" rx="13.5" ry="7.8" fill="url(#tableTopGrad)"/>
+      <!-- Tiny Teapot & Cup -->
+      <circle cx="-3" cy="-7" r="2.6" fill="#89C9B8"/>
+      <circle cx="4" cy="-5.5" r="1.6" fill="#FFFDF8" stroke="#E3C7AC" stroke-width="0.6"/>
+
+      <!-- Right Chair (Front-Right) -->
+      <g transform="translate(16, 4)">
+        <line x1="-4" y1="0" x2="-4" y2="7" stroke="#9D7A62" stroke-width="1.6"/>
+        <line x1="4" y1="0" x2="4" y2="7" stroke="#9D7A62" stroke-width="1.6"/>
+        <ellipse cx="0" cy="0" rx="6.5" ry="3.8" fill="url(#chairMint)"/>
+        <path d="M5 -1 Q7 -10 1 -10 Q-3 -10 -4 -2" fill="none" stroke="#6CA897" stroke-width="2.6" stroke-linecap="round"/>
+      </g>
+    </g>
+
+    <!-- TABLE 2: Front-Right Patio (around 262, 274) -->
+    <g id="bistro-set-2" transform="translate(262, 274)">
+      <!-- Gentle Long Shadows -->
+      <ellipse cx="7" cy="11" rx="19" ry="9.5" fill="#6B5568" fill-opacity="0.16"/>
+      <ellipse cx="-14" cy="4" rx="8" ry="4.5" fill="#6B5568" fill-opacity="0.14"/>
+      <ellipse cx="22" cy="11" rx="8" ry="4.5" fill="#6B5568" fill-opacity="0.14"/>
+
+      <!-- Back-Left Chair -->
+      <g transform="translate(-17, -3)">
+        <line x1="-4" y1="0" x2="-4" y2="7" stroke="#9D7A62" stroke-width="1.6"/>
+        <line x1="4" y1="0" x2="4" y2="7" stroke="#9D7A62" stroke-width="1.6"/>
+        <ellipse cx="0" cy="0" rx="6.5" ry="3.8" fill="url(#chairMint)"/>
+        <path d="M-6 -1 Q-7 -11 0 -11 Q5 -11 4 -2" fill="none" stroke="#6CA897" stroke-width="2.6" stroke-linecap="round"/>
+      </g>
+
+      <!-- Round Bistro Table -->
+      <ellipse cx="0" cy="8" rx="6" ry="3.2" fill="#8C746B"/>
+      <line x1="0" y1="-5" x2="0" y2="8" stroke="#9E857B" stroke-width="2.4"/>
+      <ellipse cx="0" cy="-4.5" rx="14" ry="8" fill="#D9BE9F"/>
+      <ellipse cx="0" cy="-6" rx="14" ry="8" fill="url(#tableTopGrad)"/>
+      <!-- Tiny Flower Vase & Two Cups -->
+      <ellipse cx="0" cy="-7" rx="2" ry="3" fill="#F29982"/>
+      <circle cx="-1" cy="-10.5" r="1.6" fill="#FFF3C4"/>
+      <circle cx="1.2" cy="-10" r="1.4" fill="#F9C5B4"/>
+      <circle cx="-5.5" cy="-5" r="1.6" fill="#FFFDF8" stroke="#E3C7AC" stroke-width="0.6"/>
+      <circle cx="5.5" cy="-5" r="1.6" fill="#FFFDF8" stroke="#E3C7AC" stroke-width="0.6"/>
+
+      <!-- Front-Right Chair -->
+      <g transform="translate(17, 3)">
+        <line x1="-4" y1="0" x2="-4" y2="7" stroke="#9D7A62" stroke-width="1.6"/>
+        <line x1="4" y1="0" x2="4" y2="7" stroke="#9D7A62" stroke-width="1.6"/>
+        <ellipse cx="0" cy="0" rx="6.5" ry="3.8" fill="url(#chairPeach)"/>
+        <path d="M5 -1 Q7 -10 1 -10 Q-3 -10 -4 -2" fill="none" stroke="#E08B71" stroke-width="2.6" stroke-linecap="round"/>
+      </g>
+    </g>
+
+    <!-- TABLE 3: Front-Center Patio (around 198, 304) -->
+    <g id="bistro-set-3" transform="translate(198, 304)">
+      <!-- Gentle Long Shadows -->
+      <ellipse cx="7" cy="11" rx="18" ry="9" fill="#6B5568" fill-opacity="0.16"/>
+      <ellipse cx="-14" cy="5" rx="8" ry="4.5" fill="#6B5568" fill-opacity="0.14"/>
+      <ellipse cx="22" cy="10" rx="8" ry="4.5" fill="#6B5568" fill-opacity="0.14"/>
+
+      <!-- Left Chair -->
+      <g transform="translate(-17, -1)">
+        <line x1="-4" y1="0" x2="-4" y2="7" stroke="#9D7A62" stroke-width="1.6"/>
+        <line x1="4" y1="0" x2="4" y2="7" stroke="#9D7A62" stroke-width="1.6"/>
+        <ellipse cx="0" cy="0" rx="6.5" ry="3.8" fill="url(#chairMint)"/>
+        <path d="M-6 -1 Q-7 -11 0 -11 Q5 -11 4 -2" fill="none" stroke="#6CA897" stroke-width="2.6" stroke-linecap="round"/>
+      </g>
+
+      <!-- Round Bistro Table -->
+      <ellipse cx="0" cy="8" rx="6" ry="3.2" fill="#8C746B"/>
+      <line x1="0" y1="-5" x2="0" y2="8" stroke="#9E857B" stroke-width="2.4"/>
+      <ellipse cx="0" cy="-4.5" rx="13.5" ry="7.8" fill="#D9BE9F"/>
+      <ellipse cx="0" cy="-6" rx="13.5" ry="7.8" fill="url(#tableTopGrad)"/>
+      <!-- Tiny Pastry Plate & Coffee Cup -->
+      <ellipse cx="-3" cy="-6" rx="3.4" ry="2" fill="#FFFDF9" stroke="#E0C8B0" stroke-width="0.6"/>
+      <circle cx="-3" cy="-6.5" r="1.5" fill="#E39A67"/>
+      <circle cx="4.5" cy="-5.5" r="1.7" fill="#F29982"/>
+
+      <!-- Right Chair -->
+      <g transform="translate(17, 2)">
+        <line x1="-4" y1="0" x2="-4" y2="7" stroke="#9D7A62" stroke-width="1.6"/>
+        <line x1="4" y1="0" x2="4" y2="7" stroke="#9D7A62" stroke-width="1.6"/>
+        <ellipse cx="0" cy="0" rx="6.5" ry="3.8" fill="url(#chairPeach)"/>
+        <path d="M5 -1 Q7 -10 1 -10 Q-3 -10 -4 -2" fill="none" stroke="#E08B71" stroke-width="2.6" stroke-linecap="round"/>
+      </g>
+    </g>
+
+    <!-- Potted Plant near Right Patio Corner -->
+    <g id="pot-right" transform="translate(302, 264)">
+      <ellipse cx="3" cy="11" rx="9" ry="5" fill="#6B5568" fill-opacity="0.18"/>
+      <path d="M-5 2 L5 2 L4 10 Q0 12 -4 10 Z" fill="url(#potGrad)"/>
+      <ellipse cx="0" cy="2" rx="5.5" ry="2.6" fill="#EBA68A"/>
+      <line x1="0" y1="1" x2="0" y2="-8" stroke="#8C674E" stroke-width="2"/>
+      <circle cx="0" cy="-12" r="8.5" fill="url(#bushLight)"/>
+      <circle cx="4" cy="-9" r="5" fill="url(#bushMid)"/>
+      <circle cx="-3" cy="-14" r="4.5" fill="#C4E6CC"/>
+      <circle cx="-2" cy="-11" r="1.5" fill="#F9B8A3"/>
+      <circle cx="3" cy="-14" r="1.4" fill="#FFF3D6"/>
+    </g>
+  </g>
+
+  <!-- 7. STRING LIGHTS & PATIO POSTS -->
+  <g id="string-lights">
+    <!-- Left Wooden Patio Post -->
+    <ellipse cx="86" cy="259" rx="7" ry="3.5" fill="#6B5568" fill-opacity="0.16"/>
+    <rect x="81" y="196" width="4.5" height="63" rx="2" fill="#8E6C59"/>
+    <circle cx="83.2" cy="196" r="3.2" fill="#B58E76"/>
+
+    <!-- Right Wooden Patio Post -->
+    <ellipse cx="319" cy="259" rx="7" ry="3.5" fill="#6B5568" fill-opacity="0.16"/>
+    <rect x="314" y="196" width="4.5" height="63" rx="2" fill="#8E6C59"/>
+    <circle cx="316.2" cy="196" r="3.2" fill="#B58E76"/>
+
+    <!-- Catenary Light Wires -->
+    <g fill="none" stroke="#6B5852" stroke-width="1.2" stroke-linecap="round">
+      <!-- Left eave to left post -->
+      <path d="M104 162 Q92 184 83 197"/>
+      <!-- Left post sweeping across front-left to front eave -->
+      <path d="M83 197 Q135 232 194 214"/>
+      <!-- Front eave sweeping across front-right to right post -->
+      <path d="M194 214 Q256 232 316 197"/>
+      <!-- Right post back to right eave -->
+      <path d="M316 197 Q297 187 276 167"/>
+    </g>
+
+    <!-- Warm Glowing Bulbs along the Strings -->
+    <!-- String 1 (Left eave to Left post) -->
+    <g>
+      <circle cx="93" cy="183" r="6" fill="url(#bulbGlow)" filter="url(#bulbGlowFilter)"/>
+      <circle cx="93" cy="183" r="2.5" fill="#FFF9D6"/>
+    </g>
+
+    <!-- String 2 (Left post to Front eave) -->
+    <g>
+      <circle cx="101" cy="208" r="6.5" fill="url(#bulbGlow)" filter="url(#bulbGlowFilter)"/>
+      <circle cx="101" cy="208" r="2.6" fill="#FFF9D6"/>
+
+      <circle cx="121" cy="217" r="6.5" fill="url(#bulbGlow)" filter="url(#bulbGlowFilter)"/>
+      <circle cx="121" cy="217" r="2.6" fill="#FFF9D6"/>
+
+      <circle cx="143" cy="221" r="6.5" fill="url(#bulbGlow)" filter="url(#bulbGlowFilter)"/>
+      <circle cx="143" cy="221" r="2.6" fill="#FFF9D6"/>
+
+      <circle cx="165" cy="220" r="6.5" fill="url(#bulbGlow)" filter="url(#bulbGlowFilter)"/>
+      <circle cx="165" cy="220" r="2.6" fill="#FFF9D6"/>
+
+      <circle cx="183" cy="217" r="6" fill="url(#bulbGlow)" filter="url(#bulbGlowFilter)"/>
+      <circle cx="183" cy="217" r="2.4" fill="#FFF9D6"/>
+    </g>
+
+    <!-- String 3 (Front eave to Right post) -->
+    <g>
+      <circle cx="211" cy="218" r="6.5" fill="url(#bulbGlow)" filter="url(#bulbGlowFilter)"/>
+      <circle cx="211" cy="218" r="2.6" fill="#FFF9D6"/>
+
+      <circle cx="233" cy="221" r="6.5" fill="url(#bulbGlow)" filter="url(#bulbGlowFilter)"/>
+      <circle cx="233" cy="221" r="2.6" fill="#FFF9D6"/>
+
+      <circle cx="256" cy="221" r="6.5" fill="url(#bulbGlow)" filter="url(#bulbGlowFilter)"/>
+      <circle cx="256" cy="221" r="2.6" fill="#FFF9D6"/>
+
+      <circle cx="278" cy="216" r="6.5" fill="url(#bulbGlow)" filter="url(#bulbGlowFilter)"/>
+      <circle cx="278" cy="216" r="2.6" fill="#FFF9D6"/>
+
+      <circle cx="299" cy="208" r="6.5" fill="url(#bulbGlow)" filter="url(#bulbGlowFilter)"/>
+      <circle cx="299" cy="208" r="2.6" fill="#FFF9D6"/>
+    </g>
+
+    <!-- String 4 (Right post to Right eave) -->
+    <g>
+      <circle cx="296" cy="185" r="6" fill="url(#bulbGlow)" filter="url(#bulbGlowFilter)"/>
+      <circle cx="296" cy="185" r="2.5" fill="#FFF9D6"/>
+    </g>
+  </g>
+</svg>

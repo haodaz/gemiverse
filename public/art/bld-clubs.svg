@@ -1,0 +1,591 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <!-- Soft Ground Shadow Blur -->
+    <filter id="softBlur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5.5"/>
+    </filter>
+    <filter id="gentleBlur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+
+    <!-- Wall Gradients -->
+    <linearGradient id="wallLit" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFDF8"/>
+      <stop offset="60%" stop-color="#FFF4E3"/>
+      <stop offset="100%" stop-color="#F7E5CC"/>
+    </linearGradient>
+    <linearGradient id="wallShade" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F2DFC6"/>
+      <stop offset="100%" stop-color="#DFC4A5"/>
+    </linearGradient>
+    <linearGradient id="plinthLit" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E5D0B8"/>
+      <stop offset="100%" stop-color="#D4BBA0"/>
+    </linearGradient>
+    <linearGradient id="plinthShade" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#CCAFA0"/>
+      <stop offset="100%" stop-color="#B99A89"/>
+    </linearGradient>
+
+    <!-- Roof Gradients -->
+    <linearGradient id="roofMain" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F28C7D"/>
+      <stop offset="55%" stop-color="#E47364"/>
+      <stop offset="100%" stop-color="#CF5D50"/>
+    </linearGradient>
+    <linearGradient id="roofDormer" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59B8C"/>
+      <stop offset="100%" stop-color="#D96859"/>
+    </linearGradient>
+    <linearGradient id="porchRoofGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8AD4BE"/>
+      <stop offset="55%" stop-color="#6DBFA7"/>
+      <stop offset="100%" stop-color="#56A991"/>
+    </linearGradient>
+
+    <!-- Wood Gradients -->
+    <linearGradient id="deckTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EBB886"/>
+      <stop offset="100%" stop-color="#D79964"/>
+    </linearGradient>
+    <linearGradient id="stageTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F2C696"/>
+      <stop offset="100%" stop-color="#DEA26A"/>
+    </linearGradient>
+    <linearGradient id="woodLit" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#D99862"/>
+      <stop offset="100%" stop-color="#BF7D4A"/>
+    </linearGradient>
+    <linearGradient id="woodShade" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#B87645"/>
+      <stop offset="100%" stop-color="#9A5E34"/>
+    </linearGradient>
+
+    <!-- Window & Door Gradients -->
+    <linearGradient id="windowGlass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C6EEFF"/>
+      <stop offset="55%" stop-color="#8BCBEB"/>
+      <stop offset="100%" stop-color="#69AED6"/>
+    </linearGradient>
+    <linearGradient id="windowWarm" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF2B8"/>
+      <stop offset="50%" stop-color="#B5E3F5"/>
+      <stop offset="100%" stop-color="#79BBE0"/>
+    </linearGradient>
+    <linearGradient id="doorGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7FD0B8"/>
+      <stop offset="100%" stop-color="#54A890"/>
+    </linearGradient>
+
+    <!-- Stage Skirt & Accents -->
+    <linearGradient id="stageSkirt" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#EB7268"/>
+      <stop offset="100%" stop-color="#C95249"/>
+    </linearGradient>
+
+    <!-- Flag Gradients -->
+    <linearGradient id="flagCoral" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF8378"/>
+      <stop offset="55%" stop-color="#F56C63"/>
+      <stop offset="100%" stop-color="#FF9B85"/>
+    </linearGradient>
+    <linearGradient id="flagYellow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFE07D"/>
+      <stop offset="100%" stop-color="#F7C24E"/>
+    </linearGradient>
+    <linearGradient id="flagBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8FD0F5"/>
+      <stop offset="100%" stop-color="#6BB5E3"/>
+    </linearGradient>
+    <linearGradient id="flagLav" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C9B3F5"/>
+      <stop offset="100%" stop-color="#A88CE3"/>
+    </linearGradient>
+    <linearGradient id="flagMint" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8FE0C4"/>
+      <stop offset="100%" stop-color="#64C4A5"/>
+    </linearGradient>
+
+    <!-- Foliage Gradients -->
+    <linearGradient id="bushLit" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A3DE97"/>
+      <stop offset="100%" stop-color="#70BA74"/>
+    </linearGradient>
+    <linearGradient id="bushShade" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7BC47D"/>
+      <stop offset="100%" stop-color="#539C62"/>
+    </linearGradient>
+
+    <!-- Guitar & Ball -->
+    <linearGradient id="guitarBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7C272"/>
+      <stop offset="100%" stop-color="#D98B3E"/>
+    </linearGradient>
+    <radialGradient id="ballGrad" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#FFFDF7"/>
+      <stop offset="70%" stop-color="#F2E7D8"/>
+      <stop offset="100%" stop-color="#D9C8B4"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 1. SOFT GROUND SHADOW (cast gently to right/bottom-right) -->
+  <g id="ground-shadow">
+    <!-- Outer diffused ambient shadow -->
+    <path d="M74 263 L172 313 L218 294 L336 254 L318 232 L212 192 L114 238 Z"
+          fill="#5C4438" opacity="0.16" filter="url(#softBlur)"/>
+    <!-- Crisp-edged gentle long cast shadow -->
+    <path d="M84 261 L168 308 L215 291 L329 251 L304 239 L208 200 L114 242 Z"
+          fill="#5C4438" opacity="0.14" filter="url(#gentleBlur)"/>
+    <!-- Step & A-frame local ground shadows -->
+    <ellipse cx="144" cy="308" rx="22" ry="9" fill="#5C4438" opacity="0.15" filter="url(#gentleBlur)"/>
+    <ellipse cx="222" cy="296" rx="14" ry="6" fill="#5C4438" opacity="0.16" filter="url(#gentleBlur)"/>
+  </g>
+
+  <!-- 2. STEPPING STONES (subtle pastel flagstones by the porch steps) -->
+  <g id="stepping-stones">
+    <ellipse cx="127" cy="311" rx="11" ry="5.5" fill="#EDE0CF" stroke="#D9C6B0" stroke-width="1"/>
+    <ellipse cx="110" cy="321" rx="8.5" ry="4.2" fill="#F2E6D6" stroke="#D9C6B0" stroke-width="1"/>
+  </g>
+
+  <!-- 3. BACK-LEFT BUSH (peeking behind left corner) -->
+  <g id="back-left-bush">
+    <ellipse cx="95" cy="240" rx="16" ry="12" fill="url(#bushShade)"/>
+    <circle cx="88" cy="237" r="9" fill="url(#bushLit)"/>
+    <circle cx="99" cy="233" r="8" fill="url(#bushLit)"/>
+    <circle cx="91" cy="232" r="2.2" fill="#FF9EB5"/>
+    <circle cx="101" cy="235" r="2" fill="#FFE07D"/>
+  </g>
+
+  <!-- 4. MAIN HOUSE BODY -->
+  <g id="main-building">
+    <!-- Front-Left Lit Wall + Gable -->
+    <polygon points="116,240 212,288 212,210 164,124 116,162" fill="url(#wallLit)"/>
+    <!-- Front-Right Shaded Wall -->
+    <polygon points="212,288 304,242 304,164 212,210" fill="url(#wallShade)"/>
+
+    <!-- Subtle Horizontal Siding Lines on Walls -->
+    <g stroke="#E6D2B8" stroke-width="0.9" opacity="0.55">
+      <line x1="116" y1="226" x2="212" y2="274"/>
+      <line x1="116" y1="212" x2="212" y2="260"/>
+      <line x1="116" y1="198" x2="212" y2="246"/>
+      <line x1="116" y1="184" x2="212" y2="232"/>
+      <line x1="116" y1="170" x2="212" y2="218"/>
+    </g>
+    <g stroke="#CFAF8E" stroke-width="0.9" opacity="0.45">
+      <line x1="212" y1="274" x2="304" y2="228"/>
+      <line x1="212" y1="260" x2="304" y2="214"/>
+      <line x1="212" y1="246" x2="304" y2="200"/>
+      <line x1="212" y1="232" x2="304" y2="186"/>
+      <line x1="212" y1="218" x2="304" y2="172"/>
+    </g>
+
+    <!-- Corner Trim Pilasters -->
+    <polygon points="208,286 212,288 212,210 208,208" fill="#FFFBF4"/>
+    <polygon points="212,288 216,286 216,208 212,210" fill="#EBD7BE"/>
+    <polygon points="300,244 304,242 304,164 300,166" fill="#EBD7BE"/>
+
+    <!-- Foundation Plinth -->
+    <polygon points="116,240 212,288 212,280 116,232" fill="url(#plinthLit)"/>
+    <polygon points="212,288 304,242 304,234 212,280" fill="url(#plinthShade)"/>
+
+    <!-- Soft Shadow under Main Roof Eave on Right Wall -->
+    <polygon points="212,210 304,164 304,173 212,219" fill="#8C644C" opacity="0.22"/>
+    <!-- Soft Shadow under Porch Roof on Front-Left Wall -->
+    <polygon points="116,182 212,230 212,243 116,195" fill="#9E7358" opacity="0.18"/>
+
+    <!-- Gable Decorative Timber Trim & Round Attic Window -->
+    <path d="M124 166 L164 134 L204 206" fill="none" stroke="#EED6B8" stroke-width="2.5" stroke-linecap="round"/>
+    <g id="attic-window">
+      <ellipse cx="164" cy="168" rx="11.5" ry="12.5" fill="#FFFDF8" stroke="#DEC5A8" stroke-width="1.5"/>
+      <ellipse cx="164" cy="168" rx="8.5" ry="9.5" fill="url(#windowWarm)"/>
+      <!-- Window sheen -->
+      <path d="M158 162 L166 159 L161 174 L156 171 Z" fill="#FFFFFF" opacity="0.45"/>
+      <!-- Cross mullions -->
+      <line x1="164" y1="158.5" x2="164" y2="177.5" stroke="#FFFDF8" stroke-width="1.6"/>
+      <line x1="155.5" y1="168" x2="172.5" y2="168" stroke="#FFFDF8" stroke-width="1.6"/>
+    </g>
+  </g>
+
+  <!-- 5. FRONT-RIGHT FACADE DETAILS: WINDOW, FLOWER BOX & WALL POSTER BOARD -->
+  <g id="right-facade-details">
+    <!-- Large Clubroom Window (right side of front-right wall) -->
+    <g id="club-window-right">
+      <!-- Outer cream frame -->
+      <polygon points="262,226 292,211 292,181 262,196" fill="#FFFBF4" stroke="#D9C1A7" stroke-width="1"/>
+      <!-- Glass panes -->
+      <polygon points="265,222 289,210 289,185 265,197" fill="url(#windowGlass)"/>
+      <!-- Glass diagonal highlight -->
+      <polygon points="267,201 277,196 272,217 266,220" fill="#FFFFFF" opacity="0.4"/>
+      <polygon points="280,194 285,192 281,212 276,214" fill="#FFFFFF" opacity="0.28"/>
+      <!-- Mullions -->
+      <line x1="277" y1="191" x2="277" y2="216" stroke="#FFFBF4" stroke-width="2"/>
+      <line x1="265" y1="209.5" x2="289" y2="197.5" stroke="#FFFBF4" stroke-width="1.8"/>
+      <!-- Pastel Flower Box under window -->
+      <polygon points="259,227 294,209.5 297,211 262,228.5" fill="#F29B8E"/>
+      <polygon points="262,228.5 297,211 297,219 262,236.5" fill="#DC796C"/>
+      <polygon points="259,227 262,228.5 262,236.5 259,235" fill="#BA5E53"/>
+      <!-- Foliage & tiny flowers in planter -->
+      <circle cx="268" cy="224" r="4.5" fill="#7BC47D"/>
+      <circle cx="276" cy="220" r="5" fill="#95D68E"/>
+      <circle cx="284" cy="216" r="4.8" fill="#7BC47D"/>
+      <circle cx="291" cy="212" r="4.2" fill="#95D68E"/>
+      <circle cx="269" cy="222" r="1.8" fill="#FFE07D"/>
+      <circle cx="277" cy="218" r="1.9" fill="#FF9EB5"/>
+      <circle cx="285" cy="214" r="1.8" fill="#FFF8D6"/>
+      <circle cx="291" cy="211" r="1.7" fill="#FF9EB5"/>
+    </g>
+
+    <!-- Wall-Mounted Blank Poster Board (left side of front-right wall) -->
+    <g id="wall-poster-board">
+      <!-- Cast shadow -->
+      <polygon points="223,254 256,237.5 256,210 223,226.5" fill="#7A5A45" opacity="0.2"/>
+      <!-- Wooden frame -->
+      <polygon points="221,252 254,235.5 254,207.5 221,224" fill="#C98855" stroke="#A66A3E" stroke-width="1"/>
+      <!-- Corkboard backing -->
+      <polygon points="223.5,248.5 251.5,234.5 251.5,211 223.5,225" fill="#E3B98A"/>
+      <!-- Colorful Blank Posters pinned neatly -->
+      <!-- Poster 1 (butter yellow) -->
+      <polygon points="225.5,235 233.5,231 233.5,221 225.5,225" fill="#FFF0A6"/>
+      <circle cx="229.5" cy="223.8" r="1" fill="#E8645A"/>
+      <!-- Poster 2 (blush pink) -->
+      <polygon points="235,230.5 243,226.5 243,216.5 235,220.5" fill="#FFB8C9"/>
+      <circle cx="239" cy="219.3" r="1" fill="#5EAAD9"/>
+      <!-- Poster 3 (mint) -->
+      <polygon points="244.2,226.5 250,223.6 250,214.5 244.2,217.4" fill="#A6E6CE"/>
+      <circle cx="247" cy="216.8" r="1" fill="#F29B4B"/>
+      <!-- Poster 4 (sky blue, slightly tilted) -->
+      <polygon points="226,245.5 235.5,240.8 235.5,232.2 226,236.9" fill="#B3E0FA"/>
+      <circle cx="230.7" cy="235.3" r="1" fill="#F26B6B"/>
+      <!-- Poster 5 (lavender) -->
+      <polygon points="237.5,239.5 246.5,235 246.5,226.8 237.5,231.3" fill="#D5C2F7"/>
+      <circle cx="242" cy="229.8" r="1" fill="#FFE07D"/>
+      <!-- Poster 6 (warm cream small flyer) -->
+      <polygon points="247.5,234.5 250.8,232.8 250.8,225.5 247.5,227.2" fill="#FFFDF7"/>
+    </g>
+  </g>
+
+  <!-- 6. MAIN DOOR, PORCH POSTER BOARD, PORCH DECK & STAGE -->
+  <g id="porch-and-stage">
+    <!-- Porch Deck Base & Top -->
+    <polygon points="116,230 212,278 172,298 76,250" fill="url(#deckTop)"/>
+    <!-- Deck plank lines -->
+    <g stroke="#C2814E" stroke-width="0.8" opacity="0.5">
+      <line x1="108" y1="234" x2="204" y2="282"/>
+      <line x1="100" y1="238" x2="196" y2="286"/>
+      <line x1="92" y1="242" x2="188" y2="290"/>
+      <line x1="84" y1="246" x2="180" y2="294"/>
+    </g>
+    <!-- Porch Fascia (front-left lit, front-right shaded) -->
+    <polygon points="76,250 172,298 172,308 76,260" fill="url(#woodLit)"/>
+    <polygon points="172,298 212,278 212,288 172,308" fill="url(#woodShade)"/>
+    <!-- Under-porch shadow line -->
+    <line x1="76" y1="250" x2="172" y2="298" stroke="#F5CA9B" stroke-width="1.2"/>
+
+    <!-- Small Wall Poster Board on Porch (behind stage) -->
+    <g id="porch-poster-board">
+      <polygon points="124,225 147,236.5 147,216.5 124,205" fill="#C98855" stroke="#A66A3E" stroke-width="0.9"/>
+      <polygon points="126,223.5 145,233 145,218 126,208.5" fill="#E6BE90"/>
+      <!-- Two blank pastel flyers -->
+      <polygon points="128,221 135,224.5 135,215.5 128,212" fill="#FFF2AD"/>
+      <polygon points="136.5,225.5 143.5,229 143.5,220 136.5,216.5" fill="#FFB8C9"/>
+      <circle cx="131.5" cy="214.8" r="0.9" fill="#5EAAD9"/>
+      <circle cx="140" cy="219.2" r="0.9" fill="#64C4A5"/>
+    </g>
+
+    <!-- Main Clubhouse Door (front-left wall, right half) -->
+    <g id="clubhouse-door">
+      <!-- Cream doorframe -->
+      <polygon points="164,254 194,269 194,228 164,213" fill="#FFFDF8" stroke="#DEC5A8" stroke-width="1"/>
+      <!-- Mint-teal door leaf -->
+      <polygon points="167,255.5 191,267.5 191,231 167,219" fill="url(#doorGrad)"/>
+      <!-- Upper arched/rectangular window in door -->
+      <polygon points="171,236 187,244 187,232 171,224" fill="url(#windowWarm)" stroke="#FFFDF8" stroke-width="1.2"/>
+      <!-- Lower door panel molding -->
+      <polygon points="171,252 187,260 187,249 171,241" fill="none" stroke="#47947D" stroke-width="1.1"/>
+      <!-- Brass doorknob -->
+      <circle cx="171.5" cy="244" r="1.8" fill="#FFE07D" stroke="#C98E32" stroke-width="0.6"/>
+      <!-- Cute warm welcome mat -->
+      <polygon points="164,260 186,271 174,277 152,266" fill="#F29B8E" stroke="#DC796C" stroke-width="0.8"/>
+      <polygon points="165,262 182,270.5 174,274.5 157,266" fill="none" stroke="#FFF4E3" stroke-width="0.9" stroke-dasharray="2,1.5"/>
+    </g>
+
+    <!-- SMALL STAGE ON THE PORCH (left half of porch) -->
+    <g id="porch-stage">
+      <!-- Stage cast shadow on porch deck -->
+      <polygon points="125,272 166,251 170,253 129,274" fill="#7A4C2C" opacity="0.22"/>
+      <!-- Stage raised wooden deck -->
+      <polygon points="115,223 161,246 125,264 79,241" fill="url(#stageTop)"/>
+      <!-- Subtle stage plank lines -->
+      <g stroke="#C98A55" stroke-width="0.7" opacity="0.5">
+        <line x1="106" y1="227.5" x2="152" y2="250.5"/>
+        <line x1="97" y1="232" x2="143" y2="255"/>
+        <line x1="88" y1="236.5" x2="134" y2="259.5"/>
+      </g>
+      <!-- Stage coral-red valance skirt (front-left) -->
+      <polygon points="79,241 125,264 125,271 79,248" fill="url(#stageSkirt)"/>
+      <!-- Stage right side skirt -->
+      <polygon points="125,264 161,246 161,253 125,271" fill="#B5463E"/>
+      <!-- Golden stage trim along top edge -->
+      <polyline points="79,241 125,264 161,246" fill="none" stroke="#FFE07D" stroke-width="1.6" stroke-linejoin="round"/>
+      <!-- 3 Tiny glowing footlights along front edge of stage -->
+      <ellipse cx="90" cy="245" rx="2.4" ry="1.4" fill="#FFF7C2" stroke="#D98B3E" stroke-width="0.6"/>
+      <ellipse cx="103" cy="251.5" rx="2.4" ry="1.4" fill="#FFF7C2" stroke="#D98B3E" stroke-width="0.6"/>
+      <ellipse cx="116" cy="258" rx="2.4" ry="1.4" fill="#FFF7C2" stroke="#D98B3E" stroke-width="0.6"/>
+
+      <!-- Cute Pastel Mint Mini Amp / Speaker on Stage -->
+      <g id="stage-amp">
+        <polygon points="111,231 121,236 121,226 111,221" fill="#7FD0B8"/>
+        <polygon points="121,236 128,232.5 128,222.5 121,226" fill="#54A890"/>
+        <polygon points="111,221 118,217.5 128,222.5 121,226" fill="#A6E6CE"/>
+        <!-- Speaker grille -->
+        <polygon points="113,229.5 119,232.5 119,226.5 113,223.5" fill="#46635B"/>
+        <circle cx="116" cy="228" r="2" fill="#5D8076"/>
+      </g>
+
+      <!-- Slender Microphone Stand on Stage -->
+      <g id="stage-mic">
+        <ellipse cx="107" cy="245" rx="4.5" ry="2.2" fill="#5C5350"/>
+        <line x1="107" y1="245" x2="107" y2="225" stroke="#6E6562" stroke-width="1.4" stroke-linecap="round"/>
+        <line x1="107" y1="227" x2="112" y2="224" stroke="#6E6562" stroke-width="1.2" stroke-linecap="round"/>
+        <circle cx="113" cy="223.5" r="2.1" fill="#D9D5D2" stroke="#7A7370" stroke-width="0.6"/>
+      </g>
+    </g>
+
+    <!-- Porch Wooden Steps (leading up to door) -->
+    <g id="porch-steps">
+      <!-- Upper step -->
+      <polygon points="134,279 164,294 156,298 126,283" fill="#EBB886"/>
+      <polygon points="126,283 156,298 156,303 126,288" fill="url(#woodLit)"/>
+      <polygon points="156,298 164,294 164,299 156,303" fill="url(#woodShade)"/>
+      <!-- Lower step -->
+      <polygon points="126,288 156,303 148,307 118,292" fill="#EBB886"/>
+      <polygon points="118,292 148,307 148,312 118,297" fill="url(#woodLit)"/>
+      <polygon points="148,307 156,303 156,308 148,312" fill="url(#woodShade)"/>
+    </g>
+
+    <!-- GUITAR & BALL BY THE DOOR -->
+    <g id="door-guitar-ball">
+      <!-- Acoustic Guitar leaning against wall right next to the door -->
+      <g id="guitar">
+        <!-- Soft shadow behind guitar -->
+        <ellipse cx="198" cy="272" rx="5.5" ry="2.5" fill="#7A4C2C" opacity="0.25"/>
+        <!-- Guitar neck & headstock -->
+        <line x1="196" y1="259" x2="192" y2="242" stroke="#8C532B" stroke-width="2.4" stroke-linecap="round"/>
+        <polygon points="190,242 193.5,241 192.5,237 189.2,238" fill="#6E3E1E"/>
+        <!-- Guitar body (figure-8 warm honey wood) -->
+        <ellipse cx="196.5" cy="260.5" rx="4.2" ry="4.8" transform="rotate(-14 196.5 260.5)" fill="url(#guitarBody)" stroke="#B86F2E" stroke-width="0.8"/>
+        <ellipse cx="198.2" cy="267" rx="5.5" ry="5.8" transform="rotate(-14 198.2 267)" fill="url(#guitarBody)" stroke="#B86F2E" stroke-width="0.8"/>
+        <!-- Soundhole & bridge -->
+        <circle cx="197" cy="262.5" r="2" fill="#593319"/>
+        <line x1="195.8" y1="268.2" x2="200.5" y2="267" stroke="#593319" stroke-width="1.3" stroke-linecap="round"/>
+        <!-- Tiny subtle strings highlight -->
+        <line x1="192" y1="243" x2="198" y2="267" stroke="#FFF6E0" stroke-width="0.45" opacity="0.7"/>
+      </g>
+
+      <!-- Cheerful Pastel Ball resting on the porch by the door -->
+      <g id="ball">
+        <ellipse cx="164" cy="285" rx="6.5" ry="3" fill="#7A4C2C" opacity="0.25"/>
+        <circle cx="163" cy="280" r="6.8" fill="url(#ballGrad)" stroke="#D4BEA6" stroke-width="0.7"/>
+        <!-- Pastel coral & sky-blue curved ball panels -->
+        <path d="M158.2 275.3 A6.8 6.8 0 0 1 167.8 275.3 Q163 279.5 158.2 275.3 Z" fill="#F28579"/>
+        <path d="M167.8 275.3 A6.8 6.8 0 0 1 167.2 285.3 Q163.5 280.5 167.8 275.3 Z" fill="#7EC4EB"/>
+        <path d="M156.6 282.2 A6.8 6.8 0 0 0 164.8 286.6 Q162 282.2 156.6 282.2 Z" fill="#FFE07D"/>
+        <!-- Gloss highlight -->
+        <ellipse cx="160.8" cy="277.2" rx="2" ry="1.2" transform="rotate(-25 160.8 277.2)" fill="#FFFFFF" opacity="0.7"/>
+      </g>
+    </g>
+
+    <!-- Porch Wooden Posts (cream painted) -->
+    <g id="porch-posts">
+      <!-- Left corner post -->
+      <rect x="77" y="213" width="4.5" height="39" rx="1" fill="#FFFDF8" stroke="#DEC5A8" stroke-width="0.7"/>
+      <!-- Center-right post (left of steps) -->
+      <rect x="125" y="237" width="4.5" height="39" rx="1" fill="#FFFDF8" stroke="#DEC5A8" stroke-width="0.7"/>
+      <!-- Front corner post -->
+      <rect x="166" y="257" width="4.5" height="41" rx="1" fill="#FFFDF8" stroke="#DEC5A8" stroke-width="0.7"/>
+      <!-- Cute Porch Railing (between right post and house corner) -->
+      <line x1="170" y1="281" x2="210" y2="261" stroke="#FFFDF8" stroke-width="3" stroke-linecap="round"/>
+      <line x1="170" y1="289" x2="210" y2="269" stroke="#F0DEC8" stroke-width="1.8" stroke-linecap="round"/>
+      <line x1="180" y1="276" x2="180" y2="288" stroke="#FFFDF8" stroke-width="1.8"/>
+      <line x1="190" y1="271" x2="190" y2="283" stroke="#FFFDF8" stroke-width="1.8"/>
+      <line x1="200" y1="266" x2="200" y2="278" stroke="#FFFDF8" stroke-width="1.8"/>
+    </g>
+
+    <!-- Porch Roof (soft sage-mint standing seam) -->
+    <g id="porch-roof">
+      <polygon points="114,180 212,229 170,260 72,211" fill="url(#porchRoofGrad)"/>
+      <!-- Standing-seam roof ribs -->
+      <g stroke="#4E9E87" stroke-width="1" opacity="0.45">
+        <line x1="130" y1="188" x2="88" y2="219"/>
+        <line x1="146" y1="196" x2="104" y2="227"/>
+        <line x1="162" y1="204" x2="120" y2="235"/>
+        <line x1="178" y1="212" x2="136" y2="243"/>
+        <line x1="194" y1="220" x2="152" y2="251"/>
+      </g>
+      <!-- Cream Eave Fascia -->
+      <polygon points="72,211 170,260 170,266 72,217" fill="#FFFDF8"/>
+      <polygon points="170,260 212,229 212,235 170,266" fill="#E8D4BC"/>
+      <!-- Soft mint highlight on top edge -->
+      <line x1="72" y1="211" x2="170" y2="260" stroke="#B5EBD9" stroke-width="1.2"/>
+    </g>
+  </g>
+
+  <!-- 7. MAIN GABLE ROOF & DORMER -->
+  <g id="roof-and-dormer">
+    <!-- Main Right-Facing Terracotta Roof Slope -->
+    <polygon points="156,128 264,74 318,171 210,225" fill="url(#roofMain)"/>
+
+    <!-- Subtle Layered Shingle Rows -->
+    <g stroke="#BD4F42" stroke-width="1" opacity="0.32" fill="none">
+      <line x1="167" y1="147" x2="275" y2="93"/>
+      <line x1="178" y1="167" x2="286" y2="113"/>
+      <line x1="189" y1="186" x2="297" y2="132"/>
+      <line x1="200" y1="206" x2="308" y2="152"/>
+    </g>
+    <!-- Soft Warm Highlight Tiles (playful pastel texture) -->
+    <g opacity="0.22" fill="#FFF0E3">
+      <polygon points="190,136 206,128 212,138 196,146"/>
+      <polygon points="274,132 290,124 296,134 280,142"/>
+      <polygon points="208,195 224,187 230,197 214,205"/>
+      <polygon points="256,162 272,154 278,164 262,172"/>
+    </g>
+
+    <!-- Ridge Cap -->
+    <path d="M155 128 L264 73.5" stroke="#FAABA0" stroke-width="4.5" stroke-linecap="round"/>
+
+    <!-- Cream Bargeboard Trim (Front-Left Gable Overhang) -->
+    <polygon points="102,171 156,128 210,225 210,232 156,135 102,178" fill="#FFFDF8"/>
+    <polyline points="102,171 156,128 210,225" fill="none" stroke="#F7A79B" stroke-width="2" stroke-linejoin="round"/>
+    <!-- Right Eave Trim -->
+    <polygon points="210,225 318,171 318,177 210,231" fill="#E8D4BC"/>
+
+    <!-- Cozy Dormer Window on Right Roof Slope -->
+    <g id="roof-dormer">
+      <!-- Dormer shadow on roof -->
+      <polygon points="236,168 269,151.5 276,155 243,171.5" fill="#8C342B" opacity="0.25"/>
+      <!-- Dormer cheek wall (left) -->
+      <polygon points="222,154 236,167 236,143 222,136" fill="#F2DFC6"/>
+      <!-- Dormer front wall -->
+      <polygon points="236,167 265,152.5 265,129 250.5,119 236,143" fill="#FFF7EA"/>
+      <!-- Dormer window -->
+      <polygon points="241,158 260,148.5 260,134 241,143.5" fill="url(#windowGlass)" stroke="#DEC5A8" stroke-width="1"/>
+      <line x1="250.5" y1="138.8" x2="250.5" y2="153.2" stroke="#FFFDF8" stroke-width="1.5"/>
+      <line x1="241" y1="150.8" x2="260" y2="141.2" stroke="#FFFDF8" stroke-width="1.4"/>
+      <!-- Dormer pitched roof -->
+      <polygon points="232,143 250.5,116 269,127 269,130 250.5,120 232,146" fill="#FFFDF8"/>
+      <polygon points="217,134 236,110 250.5,116 232,143" fill="url(#roofDormer)"/>
+      <line x1="236" y1="110" x2="250.5" y2="116" stroke="#FAABA0" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- 8. FREESTANDING A-FRAME BLANK POSTER BOARD & FOREGROUND BUSH -->
+  <g id="foreground-props">
+    <!-- Freestanding Wooden A-frame Blank Poster Board (near front corner) -->
+    <g id="a-frame-board">
+      <!-- Back leg -->
+      <line x1="227" y1="274" x2="233" y2="294" stroke="#A66A3E" stroke-width="2.2" stroke-linecap="round"/>
+      <!-- Front frame -->
+      <polygon points="213,294 227,287 224,269 210,276" fill="#D99862" stroke="#B07140" stroke-width="1"/>
+      <!-- Blank cream poster sheet -->
+      <polygon points="214.5,291.5 225,286.2 222.8,272 212.3,277.3" fill="#FFFDF7"/>
+      <!-- Pastel mint corner header strip (blank, purely decorative) -->
+      <polygon points="212.3,277.3 222.8,272 223.4,275.5 212.9,280.8" fill="#A6E6CE"/>
+      <!-- Tiny tape accent -->
+      <line x1="216" y1="275.5" x2="219.5" y2="273.8" stroke="#FFE07D" stroke-width="1.6"/>
+      <!-- Feet -->
+      <line x1="213" y1="294" x2="213.5" y2="297.5" stroke="#B07140" stroke-width="2" stroke-linecap="round"/>
+      <line x1="227" y1="287" x2="227.5" y2="290.5" stroke="#B07140" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <!-- Cozy Rounded Bush at Right Corner -->
+    <g id="right-corner-bush">
+      <ellipse cx="308" cy="245" rx="15" ry="10.5" fill="url(#bushShade)"/>
+      <circle cx="302" cy="241" r="8.5" fill="url(#bushLit)"/>
+      <circle cx="313" cy="242" r="7.5" fill="url(#bushLit)"/>
+      <circle cx="307" cy="237" r="6.5" fill="#B2E8A5"/>
+      <!-- Tiny pastel blossoms -->
+      <circle cx="301" cy="239" r="2" fill="#FFB3C6"/>
+      <circle cx="311" cy="238" r="1.8" fill="#FFE07D"/>
+      <circle cx="315" cy="243" r="1.9" fill="#FFB3C6"/>
+    </g>
+  </g>
+
+  <!-- 9. COLOURFUL BLANK FLAGS & FESTIVE BUNTING -->
+  <g id="flags-and-bunting">
+    <!-- Bunting String 1: Draped across the Porch Roof Eaves -->
+    <g id="porch-bunting">
+      <path d="M73 216 Q121 247 169 264" fill="none" stroke="#8C6B5A" stroke-width="1.1"/>
+      <!-- Colorful blank triangular pennants -->
+      <polygon points="79,220 88,225 81,231" fill="#FF8C82"/>
+      <polygon points="90,226.5 99,231.5 92,237.5" fill="#FFE07D"/>
+      <polygon points="101,232.8 110,237.5 103,243.5" fill="#82D6B8"/>
+      <polygon points="112,238.8 121,243.5 114,249.5" fill="#8ACDF5"/>
+      <polygon points="123,244.5 132,249 125,255" fill="#C7AEF5"/>
+      <polygon points="134,249.8 143,254 136,260" fill="#FFA8BD"/>
+      <polygon points="145,254.8 154,258.8 147,264.8" fill="#FFE07D"/>
+      <polygon points="156,259.2 165,262.8 158,268.8" fill="#FF8C82"/>
+    </g>
+
+    <!-- Bunting String 2: Draped along the Right Porch Side -->
+    <g id="side-bunting">
+      <path d="M170 264 Q192 252 211 234" fill="none" stroke="#8C6B5A" stroke-width="1"/>
+      <polygon points="176,260 184,255.5 182,263" fill="#82D6B8"/>
+      <polygon points="186,254 194,248.5 192,256.5" fill="#FFE07D"/>
+      <polygon points="196,247 204,241 202,249" fill="#FFA8BD"/>
+    </g>
+
+    <!-- Bunting String 3: High Festive Gable-to-Eave Bunting -->
+    <g id="gable-bunting">
+      <path d="M104 176 Q154 205 208 228" fill="none" stroke="#8C6B5A" stroke-width="1"/>
+      <polygon points="113,181 122,186 115,191" fill="#8ACDF5"/>
+      <polygon points="125,187.8 134,192.5 127,197.8" fill="#FF8C82"/>
+      <polygon points="137,194.2 146,198.8 139,204.2" fill="#FFE07D"/>
+      <polygon points="149,200.5 158,205 151,210.5" fill="#C7AEF5"/>
+      <polygon points="161,206.5 170,210.8 163,216.2" fill="#82D6B8"/>
+      <polygon points="173,212.2 182,216.5 175,222" fill="#FFA8BD"/>
+      <polygon points="185,217.8 194,221.8 187,227.2" fill="#FFE07D"/>
+    </g>
+
+    <!-- Main Rooftop Flagpole & Large Blank Coral Flag -->
+    <g id="main-roof-flag">
+      <!-- Pole -->
+      <line x1="168" y1="122" x2="168" y2="62" stroke="#FFFDF8" stroke-width="2.8" stroke-linecap="round"/>
+      <line x1="168" y1="122" x2="168" y2="62" stroke="#D9C2A7" stroke-width="0.9"/>
+      <!-- Golden Finial -->
+      <circle cx="168" cy="61" r="3" fill="#FFE07D" stroke="#D49B38" stroke-width="0.8"/>
+      <!-- Waving Blank Coral Flag -->
+      <path d="M169.5 65 Q182 61 194 66 Q203 69 211 65 L206 74 L211 82 Q202 86 193 82 Q181 78 169.5 82 Z"
+            fill="url(#flagCoral)"/>
+      <!-- Soft wave crease highlight -->
+      <path d="M180 65 Q185 73 181 80" fill="none" stroke="#FFB5AC" stroke-width="1.5" opacity="0.6"/>
+    </g>
+
+    <!-- Second Rooftop Flag (Back Ridge, Blank Sunny Yellow) -->
+    <g id="back-roof-flag">
+      <line x1="254" y1="78" x2="254" y2="48" stroke="#FFFDF8" stroke-width="2.2" stroke-linecap="round"/>
+      <circle cx="254" cy="47" r="2.2" fill="#FFE07D" stroke="#D49B38" stroke-width="0.7"/>
+      <path d="M255.2 50 Q266 47 277 52 L273 58 L277 63 Q266 66 255.2 62 Z" fill="url(#flagYellow)"/>
+    </g>
+
+    <!-- Angled Club Flag 1 (Left Porch Roof Corner, Blank Sky Blue) -->
+    <g id="porch-flag-left">
+      <line x1="76" y1="212" x2="54" y2="188" stroke="#FFFDF8" stroke-width="2.2" stroke-linecap="round"/>
+      <circle cx="53.5" cy="187.5" r="2" fill="#FFE07D" stroke="#D49B38" stroke-width="0.6"/>
+      <path d="M55 190 Q46 198 44 209 Q53 206 64 200 Z" fill="url(#flagBlue)"/>
+    </g>
+
+    <!-- Angled Club Flag 2 (Front Porch Corner, Blank Lavender) -->
+    <g id="porch-flag-front">
+      <line x1="170" y1="258" x2="186" y2="233" stroke="#FFFDF8" stroke-width="2.2" stroke-linecap="round"/>
+      <circle cx="186.5" cy="232.5" r="2" fill="#FFE07D" stroke="#D49B38" stroke-width="0.6"/>
+      <path d="M185 235 Q196 238 205 245 Q196 250 178 247 Z" fill="url(#flagLav)"/>
+    </g>
+
+    <!-- Small Dormer Peak Pennant (Blank Mint Green) -->
+    <g id="dormer-flag">
+      <line x1="250.5" y1="116" x2="250.5" y2="96" stroke="#FFFDF8" stroke-width="1.8" stroke-linecap="round"/>
+      <circle cx="250.5" cy="95.5" r="1.7" fill="#FFE07D"/>
+      <path d="M251.5 97.5 Q261 96 270 101 Q261 105 251.5 106 Z" fill="url(#flagMint)"/>
+    </g>
+  </g>
+</svg>

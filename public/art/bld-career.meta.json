@@ -1,0 +1,27 @@
+{
+ "model": "gemini-4-neon",
+ "prompt": "Draw one isometric building as a game map icon on a transparent background: a modern opportunities hub for careers and projects, glass and warm wood, a compass or rising arrow shape as a roof sign (no letters), a notice kiosk with blank cards outside. Refined flat illustration with soft gradients, layered depth, gentle long shadows, rounded shapes, harmonious pastel palette; premium life-sim game quality, lots of small careful details. viewBox 0 0 400 400, building centred, transparent background, soft ground shadow.",
+ "usage": {
+  "total_tokens": 22717,
+  "total_input_tokens": 165,
+  "input_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 165
+   }
+  ],
+  "total_cached_tokens": 0,
+  "total_output_tokens": 13595,
+  "output_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 13595
+   }
+  ],
+  "total_tool_use_tokens": 0,
+  "total_thought_tokens": 8957,
+  "initial_input_tokens": 165
+ },
+ "ms": 174441,
+ "made_at": "2026-11-21T16:26:30.128Z"
+}

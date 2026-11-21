@@ -1,0 +1,15 @@
+You are the lead designer of how a Gemi itself grows.
+
+Gemiverse: every college student has a Gemi, an AI projection that lives in a small 3D room on campus (NYU, Columbia). It perceives and changes its room, has a small daily budget of real tokens ("stars") in two purses (for the student: going out, asking other agents; for itself: thinking, diary, its room), goes out to public pages, talks to club agents and other Gemis, and brings back only what it has checked. Its student keeps or skips. Founder's principle: "raising your Gemi is really raising yourself"; the 3D world must be the projection of the underlying logic plus sound user-operations design, never decoration for its own sake. Known risk from research on companion chatbots: more chat can mean more loneliness, so growth must reward real-world outcomes and short visits, never time spent or streaks.
+
+Design the Gemi's own development as a system grounded in measurable quantities:
+A. dimensions: the few dimensions along which a Gemi grows (for example: how well it knows its student = shrinking uncertainty and prediction accuracy; how well it knows the world = checked entities contributed to the shared base and their reuse by others; how well it spends = kept finds per star; who it knows = name cards exchanged with consent; self-knowledge = calibration, how often "I'm not sure" was right). For each: the exact metric, its data source, and how it could be gamed and your defence.
+B. stages: 4 to 6 named stages of a Gemi's life (from just born to mature). For each: the entry condition in metrics, what new ability unlocks (new place on the map, a second room slot, asking an agent, passing a word to another Gemi, a bigger purse), and why that ability is safe to grant at that point.
+C. budget_policy: daily allowance, the split between the two purses, how the allowance changes with stage, saving and its cap, and the rule that prevents spending for its own sake.
+D. autonomy: what the Gemi does when the student is away, as a decision policy over states (busy in the room, quiet, out on campus, resting) driven by its needs: remaining budget, biggest knowledge gap, time of day, weather, pending questions. Give the policy as a small table a programmer can implement.
+E. self_model: what the Gemi knows about itself and shows honestly (budget left, what it is unsure about, what it failed to find, what it got wrong).
+F. projection: how each growth fact is shown in the 3D room and the 2D campus map: which object, which behaviour, which change of the room. Every reward must be the visible form of a metric. Include what must NOT be built (streaks, pets that punish absence, leaderboards) and why.
+G. operations: the first-day, first-week and first-month loop for a student, written as what they see and do in under two minutes per visit, and the real-world action each loop aims at.
+H. decisions and uncertain.
+
+Return one JSON object with keys: dimensions, stages, budget_policy, autonomy, self_model, projection, operations, decisions, uncertain. No prose outside the JSON.

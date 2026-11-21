@@ -105,3 +105,12 @@ Entry format:
 - How: a layout is plain data (item → position, quarter turns, kind) on a 0.25 m grid over the 4 m × 4 m floor, saved in the browser. Arrange mode shows the grid; click an item, click a cell; a move is refused if the footprint leaves the room or overlaps another floor item. Outside Arrange mode the Gemi walks between five spots (desk, window, rug, middle of the room, door), changes expression and shows a short line about what it is doing.
 - Check: in the browser, moved the plant from the back wall to the front; it stayed after reload. Rotate and Reset buttons appear only in Arrange mode. The Gemi walked to a spot and stopped.
 - Not yet: its behaviour is a random loop, not driven by its thinking; the campus map; texture detail on materials.
+
+## 11:28 · Foundations first: three design jobs for Carbon; the first screen
+- Decided (Elodie): everything grows from the bottom up. The 3D world is only the projection of the underlying logic plus sound operations design. Three foundations must be designed before screens: (1) the world graph (institution and programs, spaces, development resources, student growth needs, organisations, social relations), (2) the learning graph (what a Gemi should listen to and record about its student), (3) how the Gemi itself grows.
+- Honest state before this entry: only a narrow version of (1) was running (an event schema from 15 pages). (2) and (3) had not been started.
+- Did: wrote three design briefs (`scripts/foundry/prompts/world.txt`, `learner.txt`, `growth.txt`) and sent each to Carbon at high thinking (`scripts/foundry/03-design.mjs`). Each brief asks for a "projection" section: which object or behaviour in the room and on the map shows each fact, so nothing on screen is decoration. Each asks for what it is unsure about and how to measure it today.
+- Gemini's part: Carbon designs all three. Results land in `base/design/*.v1.json`, raw output and token counts in `base/runs/`.
+- Did: the first screen (`app/page.tsx`): choose NYU or Columbia, "More campuses opening soon". The card pictures are the window views Neon drew. Checked in the browser at 1440 wide: picking Columbia outlines the card in its blue and the button reads "Move in at Columbia".
+- Art batch 2 from Neon (8 files, 22–31k tokens each): two window views, two wide campus panoramas with empty plots, four shared functional buildings (library, clubs, commons, career).
+- Not yet: `/room` and `/foundry` pages do not exist, so both links on the first screen lead nowhere.

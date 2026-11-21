@@ -1,0 +1,27 @@
+{
+ "model": "gemini-4-neon",
+ "prompt": "Draw a wide top-down three-quarter (isometric-like) campus panorama for a downtown New York university, used as a game map background. In the centre a park with a white marble arch and a round fountain with paths radiating out. Around it: streets in a grid, brownstones, brick buildings, a tall red sandstone library block on the south edge, trees in autumn colours, street lamps, a few yellow taxis. Leave four clear empty paved plots (rounded rectangles of light stone, each about 170 by 120 units) at these centres: (300,250), (1300,250), (300,650), (1300,650); nothing drawn on them. Violet accents. Refined flat illustration with soft gradients, layered depth, gentle long shadows, rounded shapes, harmonious pastel palette; premium life-sim game quality, lots of small careful details. viewBox 0 0 1600 900, fill the whole canvas edge to edge.",
+ "usage": {
+  "total_tokens": 31322,
+  "total_input_tokens": 278,
+  "input_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 278
+   }
+  ],
+  "total_cached_tokens": 0,
+  "total_output_tokens": 25026,
+  "output_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 25026
+   }
+  ],
+  "total_tool_use_tokens": 0,
+  "total_thought_tokens": 6018,
+  "initial_input_tokens": 278
+ },
+ "ms": 211423,
+ "made_at": "2026-11-21T16:27:07.111Z"
+}

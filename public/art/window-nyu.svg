@@ -1,0 +1,944 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 768" width="1024" height="768">
+  <defs>
+    <!-- Sky Gradients -->
+    <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9e93ba"/>
+      <stop offset="28%" stop-color="#d49ea8"/>
+      <stop offset="58%" stop-color="#f5be99"/>
+      <stop offset="85%" stop-color="#fde0ab"/>
+      <stop offset="100%" stop-color="#fff2cb"/>
+    </linearGradient>
+
+    <radialGradient id="sunGlow" cx="76%" cy="56%" r="48%">
+      <stop offset="0%" stop-color="#fff9e2" stop-opacity="0.95"/>
+      <stop offset="22%" stop-color="#ffe2a8" stop-opacity="0.65"/>
+      <stop offset="55%" stop-color="#f7b78e" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#f7b78e" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="cloudLit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff3dc"/>
+      <stop offset="65%" stop-color="#f8cfb5"/>
+      <stop offset="100%" stop-color="#e5adc0"/>
+    </linearGradient>
+
+    <linearGradient id="cloudSoft" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fbe0cb" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#d6a5ba" stop-opacity="0.7"/>
+    </linearGradient>
+
+    <!-- Atmospheric Haze -->
+    <linearGradient id="hazeBack" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffe4bc" stop-opacity="0"/>
+      <stop offset="55%" stop-color="#fde0b8" stop-opacity="0.38"/>
+      <stop offset="100%" stop-color="#f8cda6" stop-opacity="0.68"/>
+    </linearGradient>
+
+    <linearGradient id="hazeMid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f7c8a6" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#f6c7a0" stop-opacity="0.3"/>
+    </linearGradient>
+
+    <!-- Distant Skyline Gradients -->
+    <linearGradient id="skylineFar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#caa4b8"/>
+      <stop offset="55%" stop-color="#dfb7bc"/>
+      <stop offset="100%" stop-color="#f1ceb9"/>
+    </linearGradient>
+
+    <linearGradient id="skylineMid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#b98ea3"/>
+      <stop offset="60%" stop-color="#d5a6ae"/>
+      <stop offset="100%" stop-color="#e9bfa9"/>
+    </linearGradient>
+
+    <linearGradient id="spireLit" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff0d4"/>
+      <stop offset="45%" stop-color="#e8c3c4"/>
+      <stop offset="100%" stop-color="#d1a6b4"/>
+    </linearGradient>
+
+    <linearGradient id="spireShade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#b993aa"/>
+      <stop offset="100%" stop-color="#dfbac0"/>
+    </linearGradient>
+
+    <!-- Red Sandstone Library -->
+    <linearGradient id="libraryFace" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c96b5c"/>
+      <stop offset="50%" stop-color="#be6056"/>
+      <stop offset="100%" stop-color="#a8524e"/>
+    </linearGradient>
+
+    <linearGradient id="librarySide" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e0896d"/>
+      <stop offset="100%" stop-color="#eeaa81"/>
+    </linearGradient>
+
+    <linearGradient id="libraryShadowSide" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#96494b"/>
+      <stop offset="100%" stop-color="#7c3d45"/>
+    </linearGradient>
+
+    <!-- Midground Buildings -->
+    <linearGradient id="brickWarm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#cf7e69"/>
+      <stop offset="100%" stop-color="#b26158"/>
+    </linearGradient>
+
+    <linearGradient id="brickRose" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#be736d"/>
+      <stop offset="100%" stop-color="#99565a"/>
+    </linearGradient>
+
+    <linearGradient id="brownstoneA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a87467"/>
+      <stop offset="100%" stop-color="#875856"/>
+    </linearGradient>
+
+    <linearGradient id="ochreBldg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e0a97c"/>
+      <stop offset="100%" stop-color="#c38467"/>
+    </linearGradient>
+
+    <linearGradient id="creamBldg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#edd0b4"/>
+      <stop offset="100%" stop-color="#d2aa93"/>
+    </linearGradient>
+
+    <linearGradient id="shadeSide" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7f5761"/>
+      <stop offset="100%" stop-color="#61424e"/>
+    </linearGradient>
+
+    <!-- Park Ground & Paths -->
+    <linearGradient id="parkGrass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c5b47c"/>
+      <stop offset="55%" stop-color="#a89e6b"/>
+      <stop offset="100%" stop-color="#89825a"/>
+    </linearGradient>
+
+    <linearGradient id="parkPath" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f3dfc9"/>
+      <stop offset="100%" stop-color="#dcc3b1"/>
+    </linearGradient>
+
+    <linearGradient id="fountainWater" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffe7bf"/>
+      <stop offset="50%" stop-color="#d8c0c8"/>
+      <stop offset="100%" stop-color="#a99cb3"/>
+    </linearGradient>
+
+    <!-- Marble Arch -->
+    <linearGradient id="marbleFront" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f7eadc"/>
+      <stop offset="60%" stop-color="#ead7c6"/>
+      <stop offset="100%" stop-color="#d6bfb4"/>
+    </linearGradient>
+
+    <linearGradient id="marbleLit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fffaf0"/>
+      <stop offset="100%" stop-color="#f7e2c8"/>
+    </linearGradient>
+
+    <linearGradient id="marbleVault" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8c7580"/>
+      <stop offset="65%" stop-color="#b1999e"/>
+      <stop offset="100%" stop-color="#cfb8b4"/>
+    </linearGradient>
+
+    <!-- Autumn Tree Gradients -->
+    <radialGradient id="treeGold" cx="68%" cy="28%" r="70%">
+      <stop offset="0%" stop-color="#ffe28c"/>
+      <stop offset="48%" stop-color="#f1b456"/>
+      <stop offset="100%" stop-color="#c77d46"/>
+    </radialGradient>
+
+    <radialGradient id="treeApricot" cx="68%" cy="26%" r="72%">
+      <stop offset="0%" stop-color="#ffca84"/>
+      <stop offset="52%" stop-color="#e58852"/>
+      <stop offset="100%" stop-color="#b4594c"/>
+    </radialGradient>
+
+    <radialGradient id="treeCoral" cx="65%" cy="25%" r="72%">
+      <stop offset="0%" stop-color="#f5a27d"/>
+      <stop offset="50%" stop-color="#d46358"/>
+      <stop offset="100%" stop-color="#9c424d"/>
+    </radialGradient>
+
+    <radialGradient id="treeBerry" cx="65%" cy="28%" r="72%">
+      <stop offset="0%" stop-color="#e39289"/>
+      <stop offset="52%" stop-color="#bd6368"/>
+      <stop offset="100%" stop-color="#874252"/>
+    </radialGradient>
+
+    <radialGradient id="treeOlive" cx="68%" cy="25%" r="70%">
+      <stop offset="0%" stop-color="#dce090"/>
+      <stop offset="50%" stop-color="#a8a464"/>
+      <stop offset="100%" stop-color="#76764f"/>
+    </radialGradient>
+
+    <!-- Lamp Glow -->
+    <radialGradient id="lampHalo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff8d6" stop-opacity="0.95"/>
+      <stop offset="35%" stop-color="#ffdb94" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#ffbe78" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Soft Shadow Filter for subtle glow -->
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+
+  <!-- ==================== LAYER 1: GOLDEN HOUR SKY ==================== -->
+  <g id="sky">
+    <rect x="0" y="0" width="1024" height="470" fill="url(#skyGrad)"/>
+    <rect x="0" y="0" width="1024" height="470" fill="url(#sunGlow)"/>
+
+    <!-- Soft stylized rounded clouds -->
+    <g opacity="0.88">
+      <!-- High left cloud -->
+      <path d="M70,118 C85,96 125,94 148,108 C168,90 212,92 232,110 C258,108 282,120 286,134 L54,134 C54,124 60,120 70,118 Z" fill="url(#cloudLit)"/>
+      <rect x="52" y="128" width="236" height="10" rx="5" fill="url(#cloudSoft)"/>
+
+      <!-- High right warm cloud -->
+      <path d="M710,92 C730,72 768,70 792,84 C818,64 868,66 894,88 C924,84 956,96 966,112 L688,112 C690,101 698,95 710,92 Z" fill="url(#cloudLit)"/>
+
+      <!-- Mid-sky wispy clouds -->
+      <path d="M295,182 C315,166 348,166 368,176 C388,164 422,168 438,180 C456,178 474,185 480,194 L276,194 C280,187 286,184 295,182 Z" fill="url(#cloudLit)" opacity="0.78"/>
+      <path d="M590,174 C612,158 648,158 670,170 C694,154 734,156 756,172 C778,170 798,179 804,188 L572,188 C576,181 582,176 590,174 Z" fill="url(#cloudLit)" opacity="0.82"/>
+      <path d="M12,210 C38,194 74,196 96,208 C118,196 154,198 172,214 L0,214 Z" fill="url(#cloudSoft)" opacity="0.7"/>
+      <path d="M845,204 C870,190 906,192 928,204 C950,194 988,198 1012,212 L826,212 Z" fill="url(#cloudLit)" opacity="0.72"/>
+    </g>
+
+    <!-- Distant tiny birds gliding in golden sky -->
+    <g fill="none" stroke="#8a687c" stroke-width="1.5" stroke-linecap="round" opacity="0.55">
+      <path d="M402,148 Q407,143 412,148 Q417,143 422,148"/>
+      <path d="M432,160 Q436,156 440,160 Q444,156 448,160"/>
+      <path d="M384,166 Q387,163 390,166 Q393,163 396,166"/>
+      <path d="M712,138 Q716,134 720,138 Q724,134 728,138"/>
+      <path d="M736,149 Q739,146 742,149 Q745,146 748,149"/>
+    </g>
+  </g>
+
+  <!-- ==================== LAYER 2: FAR DISTANT SKYLINE & TALL SPIRE ==================== -->
+  <g id="far-skyline">
+    <!-- Softest furthest towers -->
+    <g fill="url(#skylineFar)" opacity="0.78">
+      <rect x="260" y="295" width="38" height="140" rx="2"/>
+      <rect x="308" y="268" width="44" height="165" rx="2"/>
+      <rect x="318" y="254" width="24" height="16" rx="1"/>
+      <rect x="364" y="288" width="52" height="145" rx="2"/>
+      <rect x="424" y="256" width="46" height="178" rx="2"/>
+      <rect x="480" y="274" width="40" height="160" rx="2"/>
+      <rect x="526" y="246" width="48" height="190" rx="2"/>
+      <rect x="536" y="232" width="28" height="16" rx="1"/>
+      <rect x="676" y="260" width="44" height="175" rx="2"/>
+      <rect x="726" y="282" width="50" height="152" rx="2"/>
+      <rect x="874" y="268" width="48" height="166" rx="2"/>
+      <rect x="932" y="290" width="46" height="145" rx="2"/>
+    </g>
+
+    <!-- One Tall Iconic Spire (One WTC inspired) -->
+    <g id="tall-spire">
+      <!-- Spire antenna -->
+      <line x1="618" y1="86" x2="618" y2="156" stroke="#d8b5c2" stroke-width="2.2" stroke-linecap="round"/>
+      <line x1="618" y1="86" x2="618" y2="120" stroke="#fff3db" stroke-width="1" stroke-linecap="round"/>
+      <!-- Spire communication rings -->
+      <ellipse cx="618" cy="140" rx="7" ry="2" fill="#e6c4c6"/>
+      <ellipse cx="618" cy="148" rx="10" ry="2.5" fill="#d9b2bd"/>
+      <!-- Main faceted tower body -->
+      <polygon points="602,156 634,156 644,415 592,415" fill="url(#spireShade)"/>
+      <!-- Sunlit right facet -->
+      <polygon points="618,156 634,156 644,415 628,415" fill="url(#spireLit)"/>
+      <!-- Center triangular chamfer catching golden light -->
+      <polygon points="602,156 634,156 618,415" fill="#f7decb" opacity="0.45"/>
+      <!-- Subtle sunlit rim -->
+      <line x1="634" y1="156" x2="644" y2="415" stroke="#fff2d6" stroke-width="1.4" opacity="0.8"/>
+    </g>
+
+    <!-- Slightly closer hazy skyline silhouettes -->
+    <g fill="url(#skylineMid)" opacity="0.85">
+      <rect x="290" y="318" width="42" height="120" rx="2"/>
+      <rect x="342" y="294" width="38" height="144" rx="2"/>
+      <polygon points="342,294 361,274 380,294"/>
+      <rect x="392" y="308" width="54" height="130" rx="2"/>
+      <rect x="456" y="284" width="44" height="154" rx="2"/>
+      <rect x="466" y="272" width="24" height="14" rx="1"/>
+      <rect x="510" y="302" width="38" height="136" rx="2"/>
+      <rect x="556" y="278" width="42" height="160" rx="2"/>
+      <rect x="648" y="292" width="46" height="146" rx="2"/>
+      <rect x="700" y="306" width="40" height="132" rx="2"/>
+      <rect x="896" y="304" width="44" height="134" rx="2"/>
+      <rect x="948" y="278" width="52" height="160" rx="2"/>
+    </g>
+
+    <!-- Warm golden atmospheric haze band over far skyline -->
+    <rect x="0" y="250" width="1024" height="200" fill="url(#hazeBack)"/>
+  </g>
+
+  <!-- ==================== LAYER 3: MID-FAR BUILDINGS & RED SANDSTONE LIBRARY ==================== -->
+  <g id="mid-far-city">
+    <!-- Far side of park low-rise Greenwich Village buildings (behind arch) -->
+    <!-- Building C1 -->
+    <g>
+      <rect x="315" y="352" width="76" height="118" rx="2" fill="url(#creamBldg)"/>
+      <rect x="315" y="352" width="76" height="7" fill="#f7e2cb"/>
+      <rect x="387" y="352" width="4" height="118" fill="#ffe7c8" opacity="0.7"/>
+      <!-- Soft windows -->
+      <g fill="#a37c7e" opacity="0.65">
+        <rect x="326" y="368" width="9" height="13" rx="1.5"/>
+        <rect x="342" y="368" width="9" height="13" rx="1.5"/>
+        <rect x="358" y="368" width="9" height="13" rx="1.5"/>
+        <rect x="374" y="368" width="9" height="13" rx="1.5"/>
+        <rect x="326" y="390" width="9" height="13" rx="1.5"/>
+        <rect x="342" y="390" width="9" height="13" rx="1.5"/>
+        <rect x="358" y="390" width="9" height="13" rx="1.5"/>
+        <rect x="374" y="390" width="9" height="13" rx="1.5"/>
+        <rect x="326" y="412" width="9" height="13" rx="1.5"/>
+        <rect x="342" y="412" width="9" height="13" rx="1.5"/>
+        <rect x="358" y="412" width="9" height="13" rx="1.5"/>
+        <rect x="374" y="412" width="9" height="13" rx="1.5"/>
+      </g>
+    </g>
+
+    <!-- Building C2 (warm brick with rooftop water tower) -->
+    <g>
+      <!-- Water tower on roof -->
+      <g transform="translate(410,305)">
+        <line x1="6" y1="24" x2="4" y2="38" stroke="#8c676a" stroke-width="1.8"/>
+        <line x1="14" y1="24" x2="14" y2="38" stroke="#8c676a" stroke-width="1.8"/>
+        <line x1="22" y1="24" x2="24" y2="38" stroke="#8c676a" stroke-width="1.8"/>
+        <line x1="5" y1="30" x2="23" y2="30" stroke="#8c676a" stroke-width="1.2"/>
+        <rect x="4" y="8" width="20" height="17" rx="1.5" fill="#b47e6c"/>
+        <rect x="17" y="8" width="7" height="17" rx="1" fill="#d39a7d"/>
+        <line x1="4" y1="13" x2="24" y2="13" stroke="#7d5654" stroke-width="1"/>
+        <line x1="4" y1="19" x2="24" y2="19" stroke="#7d5654" stroke-width="1"/>
+        <polygon points="2,9 14,0 26,9" fill="#825f64"/>
+      </g>
+      <rect x="391" y="340" width="84" height="130" rx="2" fill="url(#brickRose)"/>
+      <rect x="388" y="338" width="90" height="6" rx="1.5" fill="#d39285"/>
+      <rect x="470" y="340" width="5" height="130" fill="#efb293" opacity="0.6"/>
+      <g fill="#754954" opacity="0.7">
+        <rect x="402" y="354" width="9" height="14" rx="1.5"/>
+        <rect x="418" y="354" width="9" height="14" rx="1.5"/>
+        <rect x="434" y="354" width="9" height="14" rx="1.5"/>
+        <rect x="450" y="354" width="9" height="14" rx="1.5"/>
+        <rect x="402" y="376" width="9" height="14" rx="1.5"/>
+        <rect x="418" y="376" width="9" height="14" rx="1.5"/>
+        <rect x="434" y="376" width="9" height="14" rx="1.5"/>
+        <rect x="450" y="376" width="9" height="14" rx="1.5"/>
+        <rect x="402" y="398" width="9" height="14" rx="1.5"/>
+        <rect x="418" y="398" width="9" height="14" rx="1.5"/>
+        <rect x="434" y="398" width="9" height="14" rx="1.5"/>
+        <rect x="450" y="398" width="9" height="14" rx="1.5"/>
+      </g>
+      <!-- Occasional golden window reflection -->
+      <rect x="450" y="376" width="9" height="14" rx="1.5" fill="#ffd99c" opacity="0.8"/>
+      <rect x="418" y="354" width="9" height="14" rx="1.5" fill="#ffd99c" opacity="0.55"/>
+    </g>
+
+    <!-- Building C3 (ochre apartment) -->
+    <g>
+      <rect x="475" y="362" width="90" height="108" rx="2" fill="url(#ochreBldg)"/>
+      <rect x="473" y="359" width="94" height="6" rx="1.5" fill="#f2c496"/>
+      <g fill="#8c5b53" opacity="0.6">
+        <rect x="486" y="374" width="10" height="13" rx="1.5"/>
+        <rect x="504" y="374" width="10" height="13" rx="1.5"/>
+        <rect x="522" y="374" width="10" height="13" rx="1.5"/>
+        <rect x="540" y="374" width="10" height="13" rx="1.5"/>
+        <rect x="486" y="396" width="10" height="13" rx="1.5"/>
+        <rect x="504" y="396" width="10" height="13" rx="1.5"/>
+        <rect x="522" y="396" width="10" height="13" rx="1.5"/>
+        <rect x="540" y="396" width="10" height="13" rx="1.5"/>
+      </g>
+    </g>
+
+    <!-- Building C4 (tall narrow warm brick between park & library) -->
+    <g>
+      <rect x="565" y="330" width="76" height="140" rx="2" fill="url(#brickWarm)"/>
+      <rect x="562" y="327" width="82" height="6" rx="1.5" fill="#e6a382"/>
+      <rect x="636" y="330" width="5" height="140" fill="#ffd1a1" opacity="0.65"/>
+      <g fill="#78464d" opacity="0.65">
+        <rect x="576" y="344" width="9" height="14" rx="1.5"/>
+        <rect x="592" y="344" width="9" height="14" rx="1.5"/>
+        <rect x="608" y="344" width="9" height="14" rx="1.5"/>
+        <rect x="624" y="344" width="9" height="14" rx="1.5"/>
+        <rect x="576" y="366" width="9" height="14" rx="1.5"/>
+        <rect x="592" y="366" width="9" height="14" rx="1.5"/>
+        <rect x="608" y="366" width="9" height="14" rx="1.5"/>
+        <rect x="624" y="366" width="9" height="14" rx="1.5"/>
+        <rect x="576" y="388" width="9" height="14" rx="1.5"/>
+        <rect x="592" y="388" width="9" height="14" rx="1.5"/>
+        <rect x="608" y="388" width="9" height="14" rx="1.5"/>
+        <rect x="624" y="388" width="9" height="14" rx="1.5"/>
+      </g>
+      <rect x="608" y="344" width="9" height="14" rx="1.5" fill="#ffe2a8" opacity="0.75"/>
+      <rect x="592" y="388" width="9" height="14" rx="1.5" fill="#ffe2a8" opacity="0.6"/>
+    </g>
+
+    <!-- Building C5 (soft sandstone next to library) -->
+    <g>
+      <rect x="641" y="354" width="76" height="116" rx="2" fill="url(#creamBldg)"/>
+      <rect x="639" y="352" width="80" height="5" rx="1" fill="#f7e1c8"/>
+      <g fill="#8c696d" opacity="0.6">
+        <rect x="652" y="368" width="10" height="14" rx="1.5"/>
+        <rect x="670" y="368" width="10" height="14" rx="1.5"/>
+        <rect x="688" y="368" width="10" height="14" rx="1.5"/>
+        <rect x="652" y="390" width="10" height="14" rx="1.5"/>
+        <rect x="670" y="390" width="10" height="14" rx="1.5"/>
+        <rect x="688" y="390" width="10" height="14" rx="1.5"/>
+      </g>
+    </g>
+
+    <!-- ==================== TALL RED SANDSTONE LIBRARY (Bobst inspired) ==================== -->
+    <g id="red-sandstone-library">
+      <!-- Shadowed left return -->
+      <polygon points="718,224 736,216 736,488 718,488" fill="url(#libraryShadowSide)"/>
+      <!-- Main red sandstone facade -->
+      <rect x="736" y="216" width="144" height="272" rx="2" fill="url(#libraryFace)"/>
+      <!-- Sunlit right edge facet -->
+      <polygon points="880,216 894,224 894,488 880,488" fill="url(#librarySide)"/>
+      <!-- Rooftop mechanical penthouse -->
+      <rect x="756" y="200" width="104" height="16" rx="2" fill="#b45a52"/>
+      <rect x="854" y="200" width="6" height="16" fill="#e59b78"/>
+      <!-- Clean modernist sandstone cornice & horizontal stone bands -->
+      <rect x="734" y="214" width="148" height="7" rx="1.5" fill="#df8872"/>
+      <g stroke="#d87f6a" stroke-width="1.2" opacity="0.55">
+        <line x1="736" y1="242" x2="880" y2="242"/>
+        <line x1="736" y1="268" x2="880" y2="268"/>
+        <line x1="736" y1="294" x2="880" y2="294"/>
+        <line x1="736" y1="320" x2="880" y2="320"/>
+        <line x1="736" y1="346" x2="880" y2="346"/>
+        <line x1="736" y1="372" x2="880" y2="372"/>
+        <line x1="736" y1="398" x2="880" y2="398"/>
+        <line x1="736" y1="424" x2="880" y2="424"/>
+      </g>
+
+      <!-- Rhythmic vertical window bays (characteristic red sandstone library grid) -->
+      <g fill="#6d3943" opacity="0.82">
+        <!-- Row 1 -->
+        <rect x="748" y="227" width="12" height="11" rx="1"/>
+        <rect x="768" y="227" width="12" height="11" rx="1"/>
+        <rect x="788" y="227" width="12" height="11" rx="1"/>
+        <rect x="808" y="227" width="12" height="11" rx="1"/>
+        <rect x="828" y="227" width="12" height="11" rx="1"/>
+        <rect x="848" y="227" width="12" height="11" rx="1"/>
+        <rect x="866" y="227" width="8" height="11" rx="1"/>
+        <!-- Row 2 -->
+        <rect x="748" y="250" width="12" height="13" rx="1"/>
+        <rect x="768" y="250" width="12" height="13" rx="1"/>
+        <rect x="788" y="250" width="12" height="13" rx="1"/>
+        <rect x="808" y="250" width="12" height="13" rx="1"/>
+        <rect x="828" y="250" width="12" height="13" rx="1"/>
+        <rect x="848" y="250" width="12" height="13" rx="1"/>
+        <rect x="866" y="250" width="8" height="13" rx="1"/>
+        <!-- Row 3 -->
+        <rect x="748" y="276" width="12" height="13" rx="1"/>
+        <rect x="768" y="276" width="12" height="13" rx="1"/>
+        <rect x="788" y="276" width="12" height="13" rx="1"/>
+        <rect x="808" y="276" width="12" height="13" rx="1"/>
+        <rect x="828" y="276" width="12" height="13" rx="1"/>
+        <rect x="848" y="276" width="12" height="13" rx="1"/>
+        <rect x="866" y="276" width="8" height="13" rx="1"/>
+        <!-- Row 4 -->
+        <rect x="748" y="302" width="12" height="13" rx="1"/>
+        <rect x="768" y="302" width="12" height="13" rx="1"/>
+        <rect x="788" y="302" width="12" height="13" rx="1"/>
+        <rect x="808" y="302" width="12" height="13" rx="1"/>
+        <rect x="828" y="302" width="12" height="13" rx="1"/>
+        <rect x="848" y="302" width="12" height="13" rx="1"/>
+        <rect x="866" y="302" width="8" height="13" rx="1"/>
+        <!-- Row 5 -->
+        <rect x="748" y="328" width="12" height="13" rx="1"/>
+        <rect x="768" y="328" width="12" height="13" rx="1"/>
+        <rect x="788" y="328" width="12" height="13" rx="1"/>
+        <rect x="808" y="328" width="12" height="13" rx="1"/>
+        <rect x="828" y="328" width="12" height="13" rx="1"/>
+        <rect x="848" y="328" width="12" height="13" rx="1"/>
+        <rect x="866" y="328" width="8" height="13" rx="1"/>
+        <!-- Row 6 -->
+        <rect x="748" y="354" width="12" height="13" rx="1"/>
+        <rect x="768" y="354" width="12" height="13" rx="1"/>
+        <rect x="788" y="354" width="12" height="13" rx="1"/>
+        <rect x="808" y="354" width="12" height="13" rx="1"/>
+        <rect x="828" y="354" width="12" height="13" rx="1"/>
+        <rect x="848" y="354" width="12" height="13" rx="1"/>
+        <rect x="866" y="354" width="8" height="13" rx="1"/>
+        <!-- Row 7 -->
+        <rect x="748" y="380" width="12" height="13" rx="1"/>
+        <rect x="768" y="380" width="12" height="13" rx="1"/>
+        <rect x="788" y="380" width="12" height="13" rx="1"/>
+        <rect x="808" y="380" width="12" height="13" rx="1"/>
+        <rect x="828" y="380" width="12" height="13" rx="1"/>
+        <rect x="848" y="380" width="12" height="13" rx="1"/>
+        <rect x="866" y="380" width="8" height="13" rx="1"/>
+        <!-- Row 8 -->
+        <rect x="748" y="406" width="12" height="13" rx="1"/>
+        <rect x="768" y="406" width="12" height="13" rx="1"/>
+        <rect x="788" y="406" width="12" height="13" rx="1"/>
+        <rect x="808" y="406" width="12" height="13" rx="1"/>
+        <rect x="828" y="406" width="12" height="13" rx="1"/>
+        <rect x="848" y="406" width="12" height="13" rx="1"/>
+        <rect x="866" y="406" width="8" height="13" rx="1"/>
+      </g>
+
+      <!-- Warm golden hour library study lights & sun reflections -->
+      <g fill="#ffe1a4" opacity="0.82">
+        <rect x="788" y="250" width="12" height="13" rx="1"/>
+        <rect x="808" y="250" width="12" height="13" rx="1"/>
+        <rect x="848" y="276" width="12" height="13" rx="1"/>
+        <rect x="768" y="302" width="12" height="13" rx="1"/>
+        <rect x="828" y="302" width="12" height="13" rx="1"/>
+        <rect x="848" y="302" width="12" height="13" rx="1"/>
+        <rect x="788" y="328" width="12" height="13" rx="1"/>
+        <rect x="808" y="354" width="12" height="13" rx="1"/>
+        <rect x="848" y="354" width="12" height="13" rx="1"/>
+        <rect x="768" y="380" width="12" height="13" rx="1"/>
+      </g>
+    </g>
+
+    <!-- Right-side brick building flanking the library -->
+    <g>
+      <rect x="894" y="314" width="136" height="196" rx="2" fill="url(#brickWarm)"/>
+      <rect x="892" y="310" width="138" height="7" rx="1.5" fill="#e7a583"/>
+      <!-- Rooftop water tower on far right building -->
+      <g transform="translate(944,254)">
+        <line x1="8" y1="36" x2="5" y2="56" stroke="#7d585b" stroke-width="2.2"/>
+        <line x1="20" y1="36" x2="20" y2="56" stroke="#7d585b" stroke-width="2.2"/>
+        <line x1="32" y1="36" x2="35" y2="56" stroke="#7d585b" stroke-width="2.2"/>
+        <line x1="6" y1="45" x2="34" y2="45" stroke="#7d585b" stroke-width="1.5"/>
+        <line x1="7" y1="38" x2="33" y2="52" stroke="#7d585b" stroke-width="1.2"/>
+        <line x1="33" y1="38" x2="7" y2="52" stroke="#7d585b" stroke-width="1.2"/>
+        <rect x="6" y="12" width="28" height="25" rx="2" fill="#a8705e"/>
+        <rect x="24" y="12" width="10" height="25" rx="1.5" fill="#d39676"/>
+        <line x1="6" y1="19" x2="34" y2="19" stroke="#6f4c4e" stroke-width="1.3"/>
+        <line x1="6" y1="27" x2="34" y2="27" stroke="#6f4c4e" stroke-width="1.3"/>
+        <polygon points="3,13 20,0 37,13" fill="#77545a"/>
+        <polygon points="20,0 37,13 27,13" fill="#9a7272"/>
+      </g>
+      <!-- Windows on right brick building -->
+      <g fill="#73454d" opacity="0.72">
+        <rect x="910" y="332" width="12" height="18" rx="2"/>
+        <rect x="934" y="332" width="12" height="18" rx="2"/>
+        <rect x="958" y="332" width="12" height="18" rx="2"/>
+        <rect x="982" y="332" width="12" height="18" rx="2"/>
+        <rect x="910" y="362" width="12" height="18" rx="2"/>
+        <rect x="934" y="362" width="12" height="18" rx="2"/>
+        <rect x="958" y="362" width="12" height="18" rx="2"/>
+        <rect x="982" y="362" width="12" height="18" rx="2"/>
+        <rect x="910" y="392" width="12" height="18" rx="2"/>
+        <rect x="934" y="392" width="12" height="18" rx="2"/>
+        <rect x="958" y="392" width="12" height="18" rx="2"/>
+        <rect x="982" y="392" width="12" height="18" rx="2"/>
+      </g>
+      <rect x="934" y="362" width="12" height="18" rx="2" fill="#ffe2a6" opacity="0.7"/>
+      <rect x="982" y="332" width="12" height="18" rx="2" fill="#ffe2a6" opacity="0.65"/>
+    </g>
+
+    <!-- Subtle mid-distance haze -->
+    <rect x="0" y="330" width="1024" height="150" fill="url(#hazeMid)"/>
+  </g>
+
+  <!-- ==================== LAYER 4: LEFT BROWNSTONES & BRICK BUILDINGS WITH WATER TOWERS ==================== -->
+  <g id="left-buildings">
+    <!-- Tall brick apartment on far-left with prominent water tower -->
+    <g>
+      <!-- Rooftop water tower -->
+      <g transform="translate(88,186)">
+        <line x1="10" y1="42" x2="6" y2="68" stroke="#6c4d54" stroke-width="2.6"/>
+        <line x1="26" y1="42" x2="26" y2="68" stroke="#6c4d54" stroke-width="2.6"/>
+        <line x1="42" y1="42" x2="46" y2="68" stroke="#6c4d54" stroke-width="2.6"/>
+        <line x1="8" y1="54" x2="44" y2="54" stroke="#6c4d54" stroke-width="1.8"/>
+        <line x1="9" y1="44" x2="43" y2="63" stroke="#6c4d54" stroke-width="1.4"/>
+        <line x1="43" y1="44" x2="9" y2="63" stroke="#6c4d54" stroke-width="1.4"/>
+        <rect x="7" y="14" width="38" height="30" rx="2.5" fill="#9e695c"/>
+        <rect x="31" y="14" width="14" height="30" rx="2" fill="#cf9274"/>
+        <line x1="7" y1="22" x2="45" y2="22" stroke="#65454a" stroke-width="1.5"/>
+        <line x1="7" y1="31" x2="45" y2="31" stroke="#65454a" stroke-width="1.5"/>
+        <line x1="7" y1="39" x2="45" y2="39" stroke="#65454a" stroke-width="1.5"/>
+        <polygon points="3,15 26,0 49,15" fill="#705158"/>
+        <polygon points="26,0 49,15 35,15" fill="#9a7272"/>
+      </g>
+
+      <!-- Brick building body -->
+      <rect x="-10" y="252" width="166" height="320" rx="3" fill="url(#brickWarm)"/>
+      <!-- Sunlit right side wall -->
+      <polygon points="156,252 184,268 184,562 156,572" fill="#e69e7c"/>
+      <!-- Ornate cornice -->
+      <rect x="-10" y="247" width="170" height="9" rx="2" fill="#e6a280"/>
+      <polygon points="160,247 186,263 186,271 160,256" fill="#f7c496"/>
+      <!-- Brick chimney -->
+      <rect x="26" y="226" width="22" height="24" rx="1.5" fill="#a85c54"/>
+      <rect x="24" y="223" width="26" height="5" rx="1" fill="#cf816b"/>
+
+      <!-- Windows -->
+      <g fill="#6d424b" opacity="0.82">
+        <!-- Row 1 -->
+        <rect x="14" y="274" width="18" height="26" rx="2.5"/>
+        <rect x="52" y="274" width="18" height="26" rx="2.5"/>
+        <rect x="90" y="274" width="18" height="26" rx="2.5"/>
+        <rect x="124" y="274" width="18" height="26" rx="2.5"/>
+        <!-- Row 2 -->
+        <rect x="14" y="316" width="18" height="26" rx="2.5"/>
+        <rect x="52" y="316" width="18" height="26" rx="2.5"/>
+        <rect x="90" y="316" width="18" height="26" rx="2.5"/>
+        <rect x="124" y="316" width="18" height="26" rx="2.5"/>
+        <!-- Row 3 -->
+        <rect x="14" y="358" width="18" height="26" rx="2.5"/>
+        <rect x="52" y="358" width="18" height="26" rx="2.5"/>
+        <rect x="90" y="358" width="18" height="26" rx="2.5"/>
+        <rect x="124" y="358" width="18" height="26" rx="2.5"/>
+        <!-- Row 4 -->
+        <rect x="14" y="400" width="18" height="26" rx="2.5"/>
+        <rect x="52" y="400" width="18" height="26" rx="2.5"/>
+        <rect x="90" y="400" width="18" height="26" rx="2.5"/>
+        <rect x="124" y="400" width="18" height="26" rx="2.5"/>
+      </g>
+      <!-- Warm window sills & golden panes -->
+      <g fill="#f0b68d">
+        <rect x="12" y="299" width="22" height="3" rx="1"/>
+        <rect x="50" y="299" width="22" height="3" rx="1"/>
+        <rect x="88" y="299" width="22" height="3" rx="1"/>
+        <rect x="122" y="299" width="22" height="3" rx="1"/>
+        <rect x="12" y="341" width="22" height="3" rx="1"/>
+        <rect x="50" y="341" width="22" height="3" rx="1"/>
+        <rect x="88" y="341" width="22" height="3" rx="1"/>
+        <rect x="122" y="341" width="22" height="3" rx="1"/>
+        <rect x="12" y="383" width="22" height="3" rx="1"/>
+        <rect x="50" y="383" width="22" height="3" rx="1"/>
+        <rect x="88" y="383" width="22" height="3" rx="1"/>
+        <rect x="122" y="383" width="22" height="3" rx="1"/>
+      </g>
+      <!-- Glowing warm rooms -->
+      <rect x="52" y="316" width="18" height="26" rx="2.5" fill="#ffe1a3" opacity="0.78"/>
+      <rect x="124" y="274" width="18" height="26" rx="2.5" fill="#ffe1a3" opacity="0.65"/>
+      <rect x="90" y="358" width="18" height="26" rx="2.5" fill="#ffe1a3" opacity="0.72"/>
+
+      <!-- Delicate wrought-iron fire escape -->
+      <g stroke="#5b3d47" stroke-width="1.6" fill="none" opacity="0.82">
+        <rect x="46" y="292" width="66" height="11" rx="1"/>
+        <rect x="46" y="334" width="66" height="11" rx="1"/>
+        <rect x="46" y="376" width="66" height="11" rx="1"/>
+        <line x1="62" y1="303" x2="96" y2="334"/>
+        <line x1="96" y1="345" x2="62" y2="376"/>
+        <line x1="62" y1="387" x2="96" y2="418"/>
+      </g>
+    </g>
+
+    <!-- Classic Greenwich Village Brownstone Row (stepping down toward park) -->
+    <!-- Brownstone 1 (cocoa brownstone) -->
+    <g>
+      <rect x="172" y="318" width="74" height="218" rx="2" fill="url(#brownstoneA)"/>
+      <polygon points="246,318 262,328 262,530 246,536" fill="#c7907b"/>
+      <rect x="169" y="312" width="79" height="8" rx="2" fill="#ba8677"/>
+      <polygon points="248,312 264,322 264,329 248,320" fill="#dfa98e"/>
+      <!-- Windows with arched lintels -->
+      <g fill="#5e3d47" opacity="0.82">
+        <rect x="184" y="336" width="13" height="22" rx="6" ry="4"/>
+        <rect x="204" y="336" width="13" height="22" rx="6" ry="4"/>
+        <rect x="224" y="336" width="13" height="22" rx="6" ry="4"/>
+        <rect x="184" y="372" width="13" height="22" rx="2"/>
+        <rect x="204" y="372" width="13" height="22" rx="2"/>
+        <rect x="224" y="372" width="13" height="22" rx="2"/>
+        <rect x="184" y="408" width="13" height="22" rx="2"/>
+        <rect x="204" y="408" width="13" height="22" rx="2"/>
+        <rect x="224" y="408" width="13" height="22" rx="2"/>
+      </g>
+      <rect x="204" y="372" width="13" height="22" rx="2" fill="#ffdfa1" opacity="0.72"/>
+    </g>
+
+    <!-- Brownstone 2 (warm rose brick) -->
+    <g>
+      <rect x="248" y="340" width="68" height="184" rx="2" fill="url(#brickRose)"/>
+      <polygon points="316,340 328,348 328,518 316,524" fill="#df9983"/>
+      <rect x="246" y="335" width="72" height="7" rx="1.5" fill="#d89283"/>
+      <!-- Little rooftop skylight -->
+      <polygon points="262,335 270,326 292,326 298,335" fill="#b4797b"/>
+      <g fill="#693e48" opacity="0.78">
+        <rect x="258" y="354" width="12" height="20" rx="2"/>
+        <rect x="277" y="354" width="12" height="20" rx="2"/>
+        <rect x="296" y="354" width="12" height="20" rx="2"/>
+        <rect x="258" y="388" width="12" height="20" rx="2"/>
+        <rect x="277" y="388" width="12" height="20" rx="2"/>
+        <rect x="296" y="388" width="12" height="20" rx="2"/>
+      </g>
+      <rect x="277" y="354" width="12" height="20" rx="2" fill="#ffe2a8" opacity="0.65"/>
+    </g>
+  </g>
+
+  <!-- ==================== LAYER 5: MIDDLE DISTANCE PARK, MARBLE ARCH & AUTUMN TREES ==================== -->
+  <g id="park">
+    <!-- Park Lawn Base -->
+    <path d="M0,475 Q260,458 512,462 Q764,466 1024,478 L1024,768 L0,768 Z" fill="url(#parkGrass)"/>
+
+    <!-- Park Winding Pathways & Central Plaza -->
+    <g fill="url(#parkPath)">
+      <!-- Far east-west promenade behind arch -->
+      <path d="M160,502 Q512,488 890,508 L890,524 Q512,504 160,518 Z"/>
+      <!-- Diagonal paths converging on plaza -->
+      <polygon points="120,650 170,650 485,542 465,532"/>
+      <polygon points="880,660 825,660 535,545 555,534"/>
+      <polygon points="480,502 536,502 552,690 462,690"/>
+      <!-- Central circular plaza -->
+      <ellipse cx="508" cy="574" rx="134" ry="42"/>
+    </g>
+
+    <!-- Soft warm sunlit plaza ring -->
+    <ellipse cx="508" cy="574" rx="112" ry="34" fill="none" stroke="#fff0d9" stroke-width="2" opacity="0.6"/>
+
+    <!-- Background Autumn Tree Line (behind the marble arch, softening building bases) -->
+    <g id="park-trees-back">
+      <!-- Left-mid back trees -->
+      <circle cx="285" cy="468" r="32" fill="url(#treeGold)"/>
+      <circle cx="315" cy="458" r="36" fill="url(#treeApricot)"/>
+      <circle cx="348" cy="466" r="30" fill="url(#treeOlive)"/>
+      <circle cx="384" cy="456" r="34" fill="url(#treeCoral)"/>
+      <circle cx="418" cy="466" r="28" fill="url(#treeGold)"/>
+
+      <!-- Right-mid back trees (behind arch & in front of library) -->
+      <circle cx="598" cy="464" r="32" fill="url(#treeApricot)"/>
+      <circle cx="634" cy="454" r="38" fill="url(#treeGold)"/>
+      <circle cx="674" cy="464" r="34" fill="url(#treeCoral)"/>
+      <circle cx="716" cy="458" r="38" fill="url(#treeOlive)"/>
+      <circle cx="758" cy="468" r="34" fill="url(#treeBerry)"/>
+      <circle cx="798" cy="462" r="36" fill="url(#treeGold)"/>
+      <circle cx="842" cy="472" r="38" fill="url(#treeApricot)"/>
+      <circle cx="892" cy="468" r="40" fill="url(#treeCoral)"/>
+    </g>
+
+    <!-- Long Gentle Golden-Hour Shadow Cast Leftward by the Marble Arch -->
+    <polygon points="448,522 558,522 455,552 335,548" fill="#6f5870" opacity="0.24"/>
+
+    <!-- ==================== WHITE MARBLE ARCH (Washington Square Arch) ==================== -->
+    <g id="marble-arch" transform="translate(442,414)">
+      <!-- Sunlit right side thickness -->
+      <polygon points="116,12 128,18 128,108 116,108" fill="url(#marbleLit)"/>
+      <polygon points="118,4 130,10 130,20 118,14" fill="#fffaf0"/>
+
+      <!-- Main marble arch front body (with arched opening cut out) -->
+      <path d="M0,14 L116,14 L116,108 L82,108 L82,66 C82,48 70,38 58,38 C46,38 34,48 34,66 L34,108 L0,108 Z" fill="url(#marbleFront)"/>
+
+      <!-- Inner arch vault depth (warm mauve shadow) -->
+      <path d="M34,108 L34,66 C34,48 46,38 58,38 C64,38 70,41 74,45 C68,43 62,43 56,46 C46,51 42,60 42,72 L42,108 Z" fill="url(#marbleVault)"/>
+
+      <!-- Attic parapet & classical cornice -->
+      <rect x="-4" y="10" width="124" height="8" rx="1.5" fill="#fff6ea"/>
+      <rect x="2" y="2" width="112" height="10" rx="1.5" fill="#f3e4d4"/>
+      <rect x="-2" y="0" width="120" height="4" rx="1" fill="#fffaf0"/>
+      <!-- Subtle frieze molding line -->
+      <line x1="2" y1="24" x2="114" y2="24" stroke="#d1bab0" stroke-width="1.5"/>
+      <line x1="2" y1="29" x2="114" y2="29" stroke="#fff7ec" stroke-width="1"/>
+
+      <!-- Classical pilasters & plinth bases -->
+      <rect x="5" y="34" width="10" height="66" rx="1" fill="#f9eee0"/>
+      <rect x="101" y="34" width="10" height="66" rx="1" fill="#fff8ee"/>
+      <rect x="-2" y="98" width="38" height="10" rx="1" fill="#e4d0c1"/>
+      <rect x="80" y="98" width="38" height="10" rx="1" fill="#efe0d0"/>
+
+      <!-- Delicate classical medallions / spandrel reliefs -->
+      <circle cx="24" cy="46" r="5" fill="#e5d0c2"/>
+      <circle cx="24" cy="46" r="3" fill="#fff6eb"/>
+      <circle cx="92" cy="46" r="5" fill="#e5d0c2"/>
+      <circle cx="92" cy="46" r="3" fill="#fff6eb"/>
+      <!-- Subtle sculptural niches on piers -->
+      <rect x="14" y="64" width="10" height="24" rx="5" fill="#d9c3b8" opacity="0.65"/>
+      <rect x="92" y="64" width="10" height="24" rx="5" fill="#e4d0c2" opacity="0.7"/>
+      <!-- Keystone at top of arch -->
+      <polygon points="54,32 62,32 60,41 56,41" fill="#fff8ee"/>
+    </g>
+
+    <!-- Central Fountain Basin in Plaza -->
+    <g id="fountain" transform="translate(508,572)">
+      <!-- Long soft fountain shadow -->
+      <ellipse cx="-24" cy="5" rx="52" ry="15" fill="#6f5870" opacity="0.22"/>
+      <!-- Outer stone rim -->
+      <ellipse cx="0" cy="0" rx="50" ry="16" fill="#e7d6c8"/>
+      <ellipse cx="0" cy="-2" rx="48" ry="14.5" fill="#fff4e6"/>
+      <!-- Water surface -->
+      <ellipse cx="0" cy="-1.5" rx="41" ry="11.5" fill="url(#fountainWater)"/>
+      <!-- Ripples & central water jet -->
+      <ellipse cx="0" cy="-1.5" rx="22" ry="6" fill="none" stroke="#fff8e8" stroke-width="1.2" opacity="0.75"/>
+      <ellipse cx="0" cy="-1.5" rx="11" ry="3" fill="none" stroke="#fff8e8" stroke-width="1.2" opacity="0.85"/>
+      <path d="M0,-2 C-4,-12 -2,-20 0,-24 C2,-20 4,-12 0,-2 Z" fill="#fff9ea" opacity="0.88"/>
+      <circle cx="0" cy="-25" r="2.2" fill="#fffcf2" opacity="0.85"/>
+    </g>
+
+    <!-- Midground Autumn Trees Framing the Park & Plaza -->
+    <g id="park-trees-mid">
+      <!-- Tree Shadows cast leftward -->
+      <ellipse cx="322" cy="558" rx="48" ry="13" fill="#6f5870" opacity="0.22"/>
+      <ellipse cx="222" cy="586" rx="58" ry="16" fill="#6f5870" opacity="0.24"/>
+      <ellipse cx="642" cy="560" rx="50" ry="14" fill="#6f5870" opacity="0.22"/>
+      <ellipse cx="766" cy="592" rx="64" ry="17" fill="#6f5870" opacity="0.24"/>
+
+      <!-- Left Park Tree Cluster 1 (golden ochre) -->
+      <g>
+        <path d="M352,556 L354,512 M353,530 L341,516 M354,526 L366,514" stroke="#6f4d4b" stroke-width="4.5" stroke-linecap="round"/>
+        <circle cx="336" cy="508" r="26" fill="url(#treeGold)"/>
+        <circle cx="368" cy="504" r="28" fill="url(#treeGold)"/>
+        <circle cx="352" cy="488" r="30" fill="url(#treeGold)"/>
+        <circle cx="364" cy="482" r="14" fill="#ffeb9c" opacity="0.45"/>
+      </g>
+
+      <!-- Left Park Tree Cluster 2 (rich autumn coral & apricot) -->
+      <g>
+        <path d="M262,584 L264,530 M263,552 L248,536 M264,548 L280,532" stroke="#684748" stroke-width="5.5" stroke-linecap="round"/>
+        <circle cx="240" cy="524" r="32" fill="url(#treeCoral)"/>
+        <circle cx="284" cy="520" r="34" fill="url(#treeApricot)"/>
+        <circle cx="262" cy="498" r="36" fill="url(#treeCoral)"/>
+        <circle cx="276" cy="492" r="18" fill="#ffc494" opacity="0.38"/>
+      </g>
+
+      <!-- Right Park Tree Cluster 1 (warm apricot & olive) -->
+      <g>
+        <path d="M674,558 L674,514 M674,534 L660,518 M674,528 L688,514" stroke="#6f4d4b" stroke-width="4.5" stroke-linecap="round"/>
+        <circle cx="656" cy="508" r="28" fill="url(#treeOlive)"/>
+        <circle cx="690" cy="506" r="26" fill="url(#treeApricot)"/>
+        <circle cx="674" cy="488" r="30" fill="url(#treeApricot)"/>
+        <circle cx="686" cy="482" r="14" fill="#ffe0a6" opacity="0.4"/>
+      </g>
+
+      <!-- Right Park Tree Cluster 2 (lush golden & berry) -->
+      <g>
+        <path d="M808,590 L806,532 M807,554 L790,536 M806,548 L824,534" stroke="#664648" stroke-width="5.5" stroke-linecap="round"/>
+        <circle cx="782" cy="526" r="34" fill="url(#treeBerry)"/>
+        <circle cx="830" cy="522" r="36" fill="url(#treeGold)"/>
+        <circle cx="806" cy="498" r="38" fill="url(#treeGold)"/>
+        <circle cx="822" cy="492" r="18" fill="#fff0ad" opacity="0.45"/>
+      </g>
+    </g>
+
+    <!-- Park Details: Benches, Vintage Globe Lampposts, Tiny Life-Sim Pedestrians -->
+    <g id="park-details">
+      <!-- Park benches -->
+      <g fill="#8c5f56">
+        <rect x="378" y="564" width="22" height="5" rx="1.5"/>
+        <rect x="378" y="570" width="22" height="3" rx="1"/>
+        <rect x="614" y="564" width="22" height="5" rx="1.5"/>
+        <rect x="614" y="570" width="22" height="3" rx="1"/>
+        <rect x="434" y="608" width="24" height="5" rx="1.5"/>
+        <rect x="562" y="608" width="24" height="5" rx="1.5"/>
+      </g>
+
+      <!-- Vintage Park Lampposts with Warm Golden Halos -->
+      <g>
+        <!-- Lamp 1 -->
+        <line x1="418" y1="544" x2="418" y2="574" stroke="#5a454d" stroke-width="2.2"/>
+        <circle cx="418" cy="542" r="14" fill="url(#lampHalo)"/>
+        <circle cx="418" cy="542" r="3.2" fill="#fffbe0"/>
+        <!-- Lamp 2 -->
+        <line x1="598" y1="544" x2="598" y2="574" stroke="#5a454d" stroke-width="2.2"/>
+        <circle cx="598" cy="542" r="14" fill="url(#lampHalo)"/>
+        <circle cx="598" cy="542" r="3.2" fill="#fffbe0"/>
+        <!-- Lamp 3 -->
+        <line x1="364" y1="600" x2="364" y2="638" stroke="#5a454d" stroke-width="2.6"/>
+        <circle cx="364" cy="598" r="17" fill="url(#lampHalo)"/>
+        <circle cx="364" cy="598" r="3.8" fill="#fffbe0"/>
+        <!-- Lamp 4 -->
+        <line x1="654" y1="600" x2="654" y2="638" stroke="#5a454d" stroke-width="2.6"/>
+        <circle cx="654" cy="598" r="17" fill="url(#lampHalo)"/>
+        <circle cx="654" cy="598" r="3.8" fill="#fffbe0"/>
+      </g>
+
+      <!-- Tiny Stylized Pedestrians & Dogs (Life-Sim Charm) -->
+      <g>
+        <!-- Couple strolling left of fountain -->
+        <ellipse cx="445" cy="582" rx="10" ry="3" fill="#6f5870" opacity="0.25"/>
+        <circle cx="448" cy="566" r="3" fill="#f2c4a2"/>
+        <path d="M444,570 Q448,569 452,570 L453,580 L443,580 Z" fill="#c95e5c"/>
+        <circle cx="456" cy="568" r="2.8" fill="#e8b896"/>
+        <path d="M453,572 Q456,571 459,572 L460,581 L452,581 Z" fill="#5e6b85"/>
+
+        <!-- Person walking a little dog right of fountain -->
+        <ellipse cx="578" cy="588" rx="9" ry="2.8" fill="#6f5870" opacity="0.25"/>
+        <circle cx="582" cy="571" r="3" fill="#f0c2a0"/>
+        <path d="M578,575 Q582,574 586,575 L587,586 L577,586 Z" fill="#e6a656"/>
+        <line x1="577" y1="581" x2="569" y2="585" stroke="#856563" stroke-width="0.9"/>
+        <ellipse cx="567" cy="586" rx="3.8" ry="2.2" fill="#9c6b54"/>
+
+        <!-- Person sitting on bench -->
+        <circle cx="446" cy="603" r="3" fill="#f2c6a6"/>
+        <rect x="442" y="606" width="8" height="7" rx="2" fill="#6c8075"/>
+
+        <!-- Stroller on lower path -->
+        <ellipse cx="516" cy="634" rx="10" ry="3" fill="#6f5870" opacity="0.24"/>
+        <circle cx="520" cy="616" r="3.4" fill="#f4c7a6"/>
+        <path d="M515,620 Q520,619 525,620 L526,633 L514,633 Z" fill="#7c6382"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- ==================== LAYER 6: FOREGROUND AUTUMN TREETOPS & NEARBY ROOFTOPS ==================== -->
+  <g id="foreground">
+    <!-- Foreground Lower-Left Brownstone Rooftop & Parapet (grounding the elevated dorm view) -->
+    <g id="fg-left-roof">
+      <polygon points="0,584 196,640 196,768 0,768" fill="#7d545a"/>
+      <polygon points="0,584 196,640 196,654 0,598" fill="#c98570"/>
+      <polygon points="0,580 202,638 196,644 0,588" fill="#e8ae89"/>
+      <!-- Warm sunlit brick chimney with clay pots -->
+      <g transform="translate(34,548)">
+        <rect x="0" y="14" width="38" height="52" rx="2" fill="#a85c55"/>
+        <polygon points="38,14 48,19 48,68 38,66" fill="#d9896c"/>
+        <rect x="-3" y="10" width="44" height="6" rx="1.5" fill="#d3866c"/>
+        <!-- Terracotta chimney pots -->
+        <rect x="6" y="0" width="9" height="11" rx="2" fill="#c7765e"/>
+        <rect x="22" y="0" width="9" height="11" rx="2" fill="#c7765e"/>
+      </g>
+      <!-- Tiny perched pigeons on sunlit parapet -->
+      <g fill="#a397ab">
+        <ellipse cx="122" cy="612" rx="5" ry="3.2"/>
+        <circle cx="126" cy="609" r="2.2"/>
+        <ellipse cx="140" cy="617" rx="5" ry="3.2"/>
+        <circle cx="136" cy="614" r="2.2"/>
+      </g>
+    </g>
+
+    <!-- Foreground Lower-Right Rooftop Corner with Potted Plants -->
+    <g id="fg-right-roof">
+      <polygon points="846,646 1024,592 1024,768 846,768" fill="#6f4b54"/>
+      <polygon points="846,646 1024,592 1024,606 846,660" fill="#ba7968"/>
+      <polygon points="840,643 1024,586 1024,595 846,649" fill="#e3a682"/>
+      <!-- Tiny cozy rooftop terracotta planters -->
+      <rect x="928" y="608" width="16" height="13" rx="2" fill="#c96f55"/>
+      <circle cx="936" cy="602" r="8" fill="#8b965d"/>
+      <rect x="954" y="600" width="14" height="12" rx="2" fill="#c96f55"/>
+      <circle cx="961" cy="595" r="7" fill="#d98752"/>
+    </g>
+
+    <!-- Foreground Lush Autumn Treetops Framing Bottom Edge -->
+    <g id="fg-trees">
+      <!-- Bottom-left rich autumn canopy -->
+      <circle cx="155" cy="705" r="72" fill="url(#treeCoral)"/>
+      <circle cx="236" cy="726" r="68" fill="url(#treeApricot)"/>
+      <circle cx="318" cy="744" r="64" fill="url(#treeGold)"/>
+      <circle cx="204" cy="672" r="54" fill="url(#treeApricot)"/>
+      <circle cx="222" cy="662" r="24" fill="#ffda96" opacity="0.38"/>
+
+      <!-- Bottom-center soft low canopy peeking up -->
+      <circle cx="412" cy="762" r="56" fill="url(#treeOlive)"/>
+      <circle cx="628" cy="756" r="60" fill="url(#treeBerry)"/>
+
+      <!-- Bottom-right rich autumn canopy -->
+      <circle cx="722" cy="738" r="68" fill="url(#treeGold)"/>
+      <circle cx="804" cy="712" r="74" fill="url(#treeApricot)"/>
+      <circle cx="888" cy="728" r="72" fill="url(#treeCoral)"/>
+      <circle cx="834" cy="678" r="52" fill="url(#treeGold)"/>
+      <circle cx="848" cy="668" r="24" fill="#fff0ad" opacity="0.42"/>
+    </g>
+
+    <!-- Gentle Drifting Autumn Leaves in the Golden Breeze -->
+    <g opacity="0.85">
+      <ellipse cx="328" cy="612" rx="4.5" ry="2.2" transform="rotate(-24 328 612)" fill="#f2b857"/>
+      <ellipse cx="394" cy="648" rx="4" ry="2" transform="rotate(18 394 648)" fill="#e57d52"/>
+      <ellipse cx="476" cy="676" rx="4.5" ry="2.2" transform="rotate(-12 476 676)" fill="#f5c667"/>
+      <ellipse cx="566" cy="664" rx="4" ry="2" transform="rotate(28 566 664)" fill="#d66558"/>
+      <ellipse cx="688" cy="628" rx="4.5" ry="2.2" transform="rotate(-30 688 628)" fill="#f2b857"/>
+      <ellipse cx="754" cy="652" rx="4" ry="2" transform="rotate(15 754 652)" fill="#e88c51"/>
+    </g>
+
+    <!-- Subtle Golden Sunbeam Wash from Upper Right -->
+    <polygon points="1024,0 1024,380 420,768 180,768" fill="#ffe6b5" opacity="0.06"/>
+  </g>
+</svg>

@@ -1,0 +1,28 @@
+You are the lead designer of the shared knowledge graph ("the base") under Gemiverse.
+
+Gemiverse: every college student has a Gemi, an AI projection of themselves that lives on campus (NYU and Columbia first). There is no platform in the middle. All Gemis share one base of campus facts; what a Gemi learns about its own student is private and is NOT part of this design. Gemis and club agents talk to each other directly. A Gemi has a small daily token budget, so the base must make reading cheap and make going out to the web rare and worthwhile ("pick treasure, do not pile up junk").
+
+Design the base from the ground up. The domains it must cover:
+1. Institution structure: school, college or division, department, program or major.
+2. Space: campus, building, room or venue, outdoor place; including what a place affords (quiet study, meeting people, making things).
+3. Development resources: opportunities a student can use to grow (events, workshops, courses, research openings, competitions, funding, jobs, mentors, services).
+4. Student growth needs: a shared, impersonal vocabulary of the needs a student may have (for example: find my people, build a skill, explore a field, get experience, rest and recover, decide a direction). This is a public taxonomy that resources and places are tagged against; it never stores any individual.
+5. Organisations: clubs, labs, offices, their public agents.
+6. Social relations at the level of the world: which organisation runs what, which organisations collaborate, which agent speaks for which organisation. Person-to-person relations are NOT stored here: each Gemi keeps its own name cards.
+
+Deliver:
+A. entity_types: each with definition, fields (name, type, required, how a checker verifies it against a public source), and which domain it belongs to.
+B. link_types: from, to, meaning, and why a Gemi would traverse it.
+C. need_taxonomy: the growth needs (8 to 14), each with a one-line definition, the signals in a public page that show a resource serves this need, and the research idea it rests on if any (name the idea, do not invent citations).
+D. affordances: what kinds of things a place or resource lets a student do; the list a Gemi uses to match a need to a place.
+E. source_tiers and trust rules: how a fact earns its place; what happens on contradiction; "rather miss than be wrong".
+F. freshness: for each entity type, how fast it goes stale and what a revisit must re-check (only the diff).
+G. cost model: what is cheap to read from the base, what forces a trip outside, and how the base should grow so that later Gemis spend less.
+H. privacy boundary: the exact rule for what may never enter the base, with three tricky examples and the ruling for each.
+I. projection: how each entity type appears in the 3D/2D world a student sees (the room, the campus map with four shared functional buildings: Library/learning, Clubs, Commons/meeting people, Career/opportunities, plus school landmarks). Every visible thing must be the projection of something in the base or in the private side; say which.
+J. decisions: five to eight design choices you weighed, what you chose, why.
+K. uncertain: what you are not sure about and what measurement today would settle it.
+
+Constraints: small enough that a student can understand it; every field checkable; no field that describes a person. Ground yourself in the sample pages below (real public pages about events at the two schools); note where the domains above have no evidence yet in these samples.
+
+Return one JSON object with keys: entity_types, link_types, need_taxonomy, affordances, source_tiers, freshness, cost_model, privacy_boundary, projection, decisions, uncertain. No prose outside the JSON.

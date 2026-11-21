@@ -1,0 +1,27 @@
+{
+ "model": "gemini-4-neon",
+ "prompt": "Draw one isometric building as a game map icon on a transparent background: a small library and study hall, with tall arched windows showing bookshelves, an open book emblem shape above the door (no letters), a reading terrace with a lamp. Refined flat illustration with soft gradients, layered depth, gentle long shadows, rounded shapes, harmonious pastel palette; premium life-sim game quality, lots of small careful details. viewBox 0 0 400 400, building centred, transparent background, soft ground shadow.",
+ "usage": {
+  "total_tokens": 23862,
+  "total_input_tokens": 162,
+  "input_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 162
+   }
+  ],
+  "total_cached_tokens": 0,
+  "total_output_tokens": 14442,
+  "output_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 14442
+   }
+  ],
+  "total_tool_use_tokens": 0,
+  "total_thought_tokens": 9258,
+  "initial_input_tokens": 162
+ },
+ "ms": 188771,
+ "made_at": "2026-11-21T16:26:44.458Z"
+}

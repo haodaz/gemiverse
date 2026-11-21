@@ -1,0 +1,27 @@
+{
+ "model": "gemini-4-neon",
+ "prompt": "Draw the view from a dorm window in upper Manhattan on a clear morning: a classical campus with a domed library and wide steps, a green lawn with brick paths, red brick buildings with green copper roofs, trees, and far behind a river with a suspension bridge. Layered atmospheric depth, light blue sky. No window frame, just the view. Refined flat illustration with soft gradients, layered depth, gentle long shadows, rounded shapes, harmonious pastel palette; premium life-sim game quality, lots of small careful details. viewBox 0 0 1024 768.",
+ "usage": {
+  "total_tokens": 21894,
+  "total_input_tokens": 175,
+  "input_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 175
+   }
+  ],
+  "total_cached_tokens": 0,
+  "total_output_tokens": 20425,
+  "output_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 20425
+   }
+  ],
+  "total_tool_use_tokens": 0,
+  "total_thought_tokens": 1294,
+  "initial_input_tokens": 175
+ },
+ "ms": 157420,
+ "made_at": "2026-11-21T16:26:13.106Z"
+}

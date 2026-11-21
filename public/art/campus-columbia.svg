@@ -1,0 +1,973 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <!-- Ground & Lawn Gradients -->
+    <linearGradient id="campusGrass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#A8D398"/>
+      <stop offset="50%" stop-color="#96C586"/>
+      <stop offset="100%" stop-color="#84B675"/>
+    </linearGradient>
+    <linearGradient id="southLawnGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9FD08E"/>
+      <stop offset="50%" stop-color="#90C37F"/>
+      <stop offset="100%" stop-color="#82B672"/>
+    </linearGradient>
+    <linearGradient id="plazaStone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F6F1E7"/>
+      <stop offset="100%" stop-color="#E7DEC9"/>
+    </linearGradient>
+    <linearGradient id="brickPathGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#D7907E"/>
+      <stop offset="100%" stop-color="#C67B6A"/>
+    </linearGradient>
+    <linearGradient id="plotStoneGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F9F6F0"/>
+      <stop offset="100%" stop-color="#ECE5D8"/>
+    </linearGradient>
+
+    <!-- Architecture Gradients -->
+    <linearGradient id="limestoneWall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F7F2E8"/>
+      <stop offset="100%" stop-color="#E5DAC8"/>
+    </linearGradient>
+    <linearGradient id="limestoneShade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#DED3C0"/>
+      <stop offset="100%" stop-color="#C9BCA6"/>
+    </linearGradient>
+    <linearGradient id="limestoneRoof" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#EDE5D7"/>
+      <stop offset="100%" stop-color="#D7CCBA"/>
+    </linearGradient>
+    <radialGradient id="domeGrad" cx="38%" cy="32%" r="65%">
+      <stop offset="0%" stop-color="#FDFBF7"/>
+      <stop offset="45%" stop-color="#EAE2D3"/>
+      <stop offset="82%" stop-color="#CFC3AE"/>
+      <stop offset="100%" stop-color="#B9AC96"/>
+    </radialGradient>
+    <linearGradient id="brickWallLit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D77E6C"/>
+      <stop offset="100%" stop-color="#C36957"/>
+    </linearGradient>
+    <linearGradient id="brickWallShade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#BA6150"/>
+      <stop offset="100%" stop-color="#A14E3E"/>
+    </linearGradient>
+    <linearGradient id="copperRoofTop" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#96CBB9"/>
+      <stop offset="55%" stop-color="#7AB3A1"/>
+      <stop offset="100%" stop-color="#649B8B"/>
+    </linearGradient>
+    <linearGradient id="copperRoofShade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6EA695"/>
+      <stop offset="100%" stop-color="#538878"/>
+    </linearGradient>
+    <linearGradient id="windowGlass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9FD4F0"/>
+      <stop offset="100%" stop-color="#6BAAD0"/>
+    </linearGradient>
+    <linearGradient id="fountainWater" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#A6DDF7"/>
+      <stop offset="100%" stop-color="#6BB8E2"/>
+    </linearGradient>
+    <linearGradient id="bronzeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#9E825C"/>
+      <stop offset="45%" stop-color="#776145"/>
+      <stop offset="100%" stop-color="#4F4231"/>
+    </linearGradient>
+
+    <!-- Subtle Patterns -->
+    <pattern id="lawnStripes" width="24" height="24" patternUnits="userSpaceOnUse">
+      <rect width="12" height="24" fill="#FFFFFF" fill-opacity="0.06"/>
+    </pattern>
+    <pattern id="stoneTiles" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#C8BCAA" stroke-width="0.7" stroke-opacity="0.32"/>
+    </pattern>
+
+    <!-- Reusable Elements -->
+    <g id="tree-lg">
+      <ellipse cx="12" cy="14" rx="28" ry="20" fill="#3C5266" fill-opacity="0.16"/>
+      <rect x="-4" y="2" width="8" height="14" rx="3" fill="#8C6B53"/>
+      <circle cx="-11" cy="-6" r="18" fill="#689E64"/>
+      <circle cx="11" cy="-4" r="17" fill="#6EA66A"/>
+      <circle cx="0" cy="-14" r="20" fill="#82B97A"/>
+      <circle cx="-6" cy="-19" r="12" fill="#9BCE8F"/>
+      <circle cx="8" cy="-15" r="9" fill="#92C587"/>
+    </g>
+
+    <g id="tree-md">
+      <ellipse cx="9" cy="11" rx="21" ry="15" fill="#3C5266" fill-opacity="0.15"/>
+      <rect x="-3" y="2" width="6" height="11" rx="2" fill="#8C6B53"/>
+      <circle cx="-8" cy="-4" r="13" fill="#6BA266"/>
+      <circle cx="8" cy="-3" r="12" fill="#74AC6F"/>
+      <circle cx="0" cy="-11" r="15" fill="#89BF80"/>
+      <circle cx="-4" cy="-15" r="8" fill="#A1D495"/>
+    </g>
+
+    <g id="tree-sm">
+      <ellipse cx="7" cy="8" rx="15" ry="10" fill="#3C5266" fill-opacity="0.14"/>
+      <rect x="-2" y="1" width="4" height="8" rx="2" fill="#8C6B53"/>
+      <circle cx="-5" cy="-3" r="9" fill="#72A96C"/>
+      <circle cx="5" cy="-2" r="9" fill="#7AB274"/>
+      <circle cx="0" cy="-8" r="11" fill="#93C789"/>
+      <circle cx="-3" cy="-11" r="5.5" fill="#ABD9A0"/>
+    </g>
+
+    <g id="tree-blossom">
+      <ellipse cx="9" cy="11" rx="20" ry="14" fill="#3C5266" fill-opacity="0.14"/>
+      <rect x="-3" y="2" width="6" height="10" rx="2" fill="#8C6B53"/>
+      <circle cx="-8" cy="-4" r="12" fill="#D9A8B7"/>
+      <circle cx="8" cy="-3" r="11" fill="#E3B7C5"/>
+      <circle cx="0" cy="-11" r="14" fill="#F2CED9"/>
+      <circle cx="-4" cy="-15" r="8" fill="#FBE3EA"/>
+    </g>
+
+    <g id="lamp-post">
+      <ellipse cx="6" cy="4" rx="8" ry="3.5" fill="#3C5266" fill-opacity="0.18"/>
+      <rect x="-2.5" y="-2" width="5" height="5" rx="1.5" fill="#465664"/>
+      <rect x="-1.3" y="-28" width="2.6" height="27" fill="#3E4E5C"/>
+      <!-- Light blue banner -->
+      <path d="M 1.3 -22 L 8.5 -22 L 8.5 -10 L 4.9 -12.5 L 1.3 -10 Z" fill="#7EC2E8"/>
+      <path d="M 1.3 -22 L 8.5 -22 L 8.5 -20.5 L 1.3 -20.5 Z" fill="#F4F8FB"/>
+      <!-- Glowing lamp globe -->
+      <circle cx="0" cy="-31" r="6" fill="#FFF6D6" fill-opacity="0.38"/>
+      <circle cx="0" cy="-31" r="3.4" fill="#FFF9E6" stroke="#465664" stroke-width="0.9"/>
+      <circle cx="-1" cy="-32" r="1.2" fill="#FFFFFF"/>
+    </g>
+
+    <g id="bench-h">
+      <ellipse cx="3" cy="5" rx="15" ry="4.5" fill="#3C5266" fill-opacity="0.15"/>
+      <rect x="-13" y="-4" width="26" height="5" rx="2" fill="#B58B65" stroke="#7A5A3E" stroke-width="0.7"/>
+      <rect x="-13" y="1.5" width="26" height="3.2" rx="1.2" fill="#9E7652"/>
+      <rect x="-11" y="-5" width="2.2" height="10" rx="1" fill="#435361"/>
+      <rect x="8.8" y="-5" width="2.2" height="10" rx="1" fill="#435361"/>
+    </g>
+
+    <g id="fountain">
+      <ellipse cx="5" cy="7" rx="34" ry="24" fill="#3C5266" fill-opacity="0.15"/>
+      <ellipse cx="0" cy="2" rx="33" ry="23" fill="#DDD3C2"/>
+      <ellipse cx="0" cy="0" rx="32" ry="22" fill="#F3EDE2" stroke="#CFC4B2" stroke-width="1.5"/>
+      <ellipse cx="0" cy="0" rx="25.5" ry="17" fill="url(#fountainWater)"/>
+      <ellipse cx="0" cy="0" rx="17" ry="11" fill="none" stroke="#DCF3FF" stroke-width="1.2" stroke-opacity="0.75"/>
+      <ellipse cx="0" cy="0" rx="9" ry="5.5" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0.8"/>
+      <ellipse cx="0" cy="1" rx="6.5" ry="4.5" fill="#E6DDD0"/>
+      <circle cx="0" cy="-3" r="4.5" fill="#F4EFE6"/>
+      <circle cx="0" cy="-5" r="2.2" fill="#FFFFFF"/>
+    </g>
+
+    <!-- Clear Empty Paved Plot (170x120 rounded rectangle, centered at 0,0) -->
+    <g id="empty-plot">
+      <!-- Outer soft border curb -->
+      <rect x="-89" y="-64" width="178" height="128" rx="21" fill="#D5CCB9"/>
+      <!-- Main light stone surface -->
+      <rect x="-85" y="-60" width="170" height="120" rx="18" fill="url(#plotStoneGrad)" stroke="#E2D9C9" stroke-width="1.5"/>
+      <!-- Subtle stone tile lines -->
+      <g stroke="#D9D0C0" stroke-width="0.9" stroke-opacity="0.55">
+        <line x1="-55" y1="-58" x2="-55" y2="58"/>
+        <line x1="-18" y1="-58" x2="-18" y2="58"/>
+        <line x1="18" y1="-58" x2="18" y2="58"/>
+        <line x1="55" y1="-58" x2="55" y2="58"/>
+        <line x1="-83" y1="-25" x2="83" y2="-25"/>
+        <line x1="-83" y1="0" x2="83" y2="0"/>
+        <line x1="-83" y1="25" x2="83" y2="25"/>
+      </g>
+      <!-- Subtle inset highlight border -->
+      <rect x="-79" y="-54" width="158" height="108" rx="13" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-opacity="0.7"/>
+      <!-- Subtle light blue corner paving inlays -->
+      <circle cx="-69" cy="-44" r="3" fill="#B7DDF2" fill-opacity="0.65"/>
+      <circle cx="69" cy="-44" r="3" fill="#B7DDF2" fill-opacity="0.65"/>
+      <circle cx="-69" cy="44" r="3" fill="#B7DDF2" fill-opacity="0.65"/>
+      <circle cx="69" cy="44" r="3" fill="#B7DDF2" fill-opacity="0.65"/>
+    </g>
+  </defs>
+
+  <!-- ==================== LAYER 1: BASE GROUNDS & PATHWAYS ==================== -->
+  <rect x="0" y="0" width="1600" height="900" fill="url(#campusGrass)"/>
+
+  <!-- Subtle outer city avenue sidewalks on far left and far right -->
+  <rect x="0" y="0" width="44" height="900" fill="#E3DDD2"/>
+  <rect x="0" y="0" width="22" height="900" fill="#C9C5BD"/>
+  <rect x="1556" y="0" width="44" height="900" fill="#E3DDD2"/>
+  <rect x="1578" y="0" width="22" height="900" fill="#C9C5BD"/>
+
+  <!-- Top & bottom campus perimeter stone walks -->
+  <rect x="44" y="0" width="1512" height="24" fill="#E9E2D4"/>
+  <rect x="44" y="876" width="1512" height="24" fill="#E9E2D4"/>
+
+  <!-- Main Central Grand Stone Plaza (around Domed Library & Steps) -->
+  <rect x="520" y="50" width="560" height="390" rx="28" fill="url(#plazaStone)"/>
+  <rect x="520" y="50" width="560" height="390" rx="28" fill="url(#stoneTiles)"/>
+
+  <!-- Secondary Wing Plazas connecting to the 4 plots -->
+  <!-- Upper-left walkway network -->
+  <rect x="280" y="110" width="40" height="330" rx="14" fill="#EDE6D8"/>
+  <rect x="170" y="230" width="380" height="40" rx="14" fill="#EDE6D8"/>
+  <!-- Upper-right walkway network -->
+  <rect x="1280" y="110" width="40" height="330" rx="14" fill="#EDE6D8"/>
+  <rect x="1050" y="230" width="380" height="40" rx="14" fill="#EDE6D8"/>
+  <!-- Lower-left walkway network -->
+  <rect x="280" y="450" width="40" height="330" rx="14" fill="#EDE6D8"/>
+  <rect x="170" y="630" width="390" height="40" rx="14" fill="#EDE6D8"/>
+  <!-- Lower-right walkway network -->
+  <rect x="1280" y="450" width="40" height="330" rx="14" fill="#EDE6D8"/>
+  <rect x="1040" y="630" width="390" height="40" rx="14" fill="#EDE6D8"/>
+
+  <!-- East-West Grand Brick Promenade (College Walk) -->
+  <rect x="22" y="424" width="1556" height="54" fill="#EAE2D4"/>
+  <rect x="22" y="430" width="1556" height="42" fill="url(#brickPathGrad)"/>
+  <!-- Subtle brick promenade bands -->
+  <line x1="22" y1="436" x2="1578" y2="436" stroke="#E8B5A7" stroke-width="1.2" stroke-opacity="0.5"/>
+  <line x1="22" y1="466" x2="1578" y2="466" stroke="#B06554" stroke-width="1.2" stroke-opacity="0.4"/>
+  <!-- Center stone inlay where promenade meets steps -->
+  <rect x="650" y="426" width="300" height="50" rx="6" fill="url(#plazaStone)" stroke="#D9CEBC" stroke-width="1.5"/>
+
+  <!-- Bottom Library Plaza -->
+  <rect x="515" y="705" width="570" height="190" rx="22" fill="url(#plazaStone)"/>
+  <rect x="515" y="705" width="570" height="190" rx="22" fill="url(#stoneTiles)"/>
+
+  <!-- ==================== LAYER 2: LONG LAWN WITH CROSSING BRICK PATHS ==================== -->
+  <!-- Stone curb framing the South Lawn -->
+  <rect x="536" y="486" width="528" height="224" rx="18" fill="#E6DEC9" stroke="#D3C8B4" stroke-width="2"/>
+  <!-- Main Lawn Grass -->
+  <rect x="546" y="496" width="508" height="204" rx="12" fill="url(#southLawnGrad)"/>
+  <rect x="546" y="496" width="508" height="204" rx="12" fill="url(#lawnStripes)"/>
+
+  <!-- Crossing Brick Paths on the Lawn -->
+  <g>
+    <!-- Clipping via clean geometry inside the lawn -->
+    <!-- Diagonal X brick paths -->
+    <polygon points="546,496 574,496 1054,688 1054,700 1026,700 546,508" fill="#EAE1D3"/>
+    <polygon points="546,500 568,500 1054,692 1054,700 1032,700 546,508" fill="url(#brickPathGrad)"/>
+
+    <polygon points="1054,496 1026,496 546,688 546,700 574,700 1054,508" fill="#EAE1D3"/>
+    <polygon points="1054,500 1032,500 546,692 546,700 568,700 1054,508" fill="url(#brickPathGrad)"/>
+
+    <!-- Central Vertical Brick Path -->
+    <rect x="782" y="478" width="36" height="240" fill="#EAE1D3"/>
+    <rect x="786" y="478" width="28" height="240" fill="url(#brickPathGrad)"/>
+
+    <!-- Central Horizontal Brick Path -->
+    <rect x="538" y="582" width="524" height="32" fill="#EAE1D3"/>
+    <rect x="538" y="586" width="524" height="24" fill="url(#brickPathGrad)"/>
+
+    <!-- Central Sundial / Medallion Plaza -->
+    <circle cx="800" cy="598" r="36" fill="#EBE3D4" stroke="#D1C5B2" stroke-width="2"/>
+    <circle cx="800" cy="598" r="28" fill="url(#brickPathGrad)"/>
+    <circle cx="800" cy="598" r="18" fill="#F5F0E6"/>
+    <circle cx="800" cy="598" r="12" fill="#9DD3F2" fill-opacity="0.55"/>
+    <circle cx="800" cy="598" r="5" fill="#F7F3EA" stroke="#85B8D9" stroke-width="1.5"/>
+  </g>
+
+  <!-- Low trimmed hedges & light blue hydrangea flowerbeds bordering the lawn -->
+  <g>
+    <!-- Top lawn hedges -->
+    <rect x="556" y="492" width="214" height="10" rx="5" fill="#649C62"/>
+    <rect x="560" y="493" width="206" height="5" rx="2.5" fill="#7BB577"/>
+    <rect x="830" y="492" width="214" height="10" rx="5" fill="#649C62"/>
+    <rect x="834" y="493" width="206" height="5" rx="2.5" fill="#7BB577"/>
+
+    <!-- Bottom lawn hedges -->
+    <rect x="556" y="694" width="214" height="10" rx="5" fill="#649C62"/>
+    <rect x="560" y="695" width="206" height="5" rx="2.5" fill="#7BB577"/>
+    <rect x="830" y="694" width="214" height="10" rx="5" fill="#649C62"/>
+    <rect x="834" y="695" width="206" height="5" rx="2.5" fill="#7BB577"/>
+
+    <!-- Light blue flower clusters at the 4 lawn corners -->
+    <g fill="#8ACBF0">
+      <circle cx="566" cy="512" r="5"/><circle cx="576" cy="509" r="4.5"/><circle cx="571" cy="518" r="4"/>
+      <circle cx="1034" cy="512" r="5"/><circle cx="1024" cy="509" r="4.5"/><circle cx="1029" cy="518" r="4"/>
+      <circle cx="566" cy="684" r="5"/><circle cx="576" cy="687" r="4.5"/><circle cx="571" cy="678" r="4"/>
+      <circle cx="1034" cy="684" r="5"/><circle cx="1024" cy="687" r="4.5"/><circle cx="1029" cy="678" r="4"/>
+    </g>
+    <g fill="#BEE4FA">
+      <circle cx="568" cy="510" r="2.5"/><circle cx="1032" cy="510" r="2.5"/>
+      <circle cx="568" cy="682" r="2.5"/><circle cx="1032" cy="682" r="2.5"/>
+    </g>
+  </g>
+
+  <!-- Charming Side Garden Courtyards flanking the lawn (x=420..520 and x=1080..1180, y=510..685) -->
+  <g>
+    <!-- Left courtyard -->
+    <rect x="424" y="514" width="94" height="168" rx="14" fill="#EAE2D3"/>
+    <rect x="434" y="524" width="74" height="66" rx="10" fill="#97C887"/>
+    <rect x="434" y="606" width="74" height="66" rx="10" fill="#97C887"/>
+    <circle cx="471" cy="557" r="14" fill="#8CCAF0" fill-opacity="0.45"/>
+    <circle cx="471" cy="557" r="8" fill="#B5E0FA"/>
+    <circle cx="471" cy="639" r="14" fill="#8CCAF0" fill-opacity="0.45"/>
+    <circle cx="471" cy="639" r="8" fill="#B5E0FA"/>
+
+    <!-- Right courtyard -->
+    <rect x="1082" y="514" width="94" height="168" rx="14" fill="#EAE2D3"/>
+    <rect x="1092" y="524" width="74" height="66" rx="10" fill="#97C887"/>
+    <rect x="1092" y="606" width="74" height="66" rx="10" fill="#97C887"/>
+    <circle cx="1129" cy="557" r="14" fill="#8CCAF0" fill-opacity="0.45"/>
+    <circle cx="1129" cy="557" r="8" fill="#B5E0FA"/>
+    <circle cx="1129" cy="639" r="14" fill="#8CCAF0" fill-opacity="0.45"/>
+    <circle cx="1129" cy="639" r="8" fill="#B5E0FA"/>
+  </g>
+
+  <!-- ==================== LAYER 3: RED BRICK BUILDINGS WITH GREEN COPPER ROOFS ==================== -->
+
+  <!-- 1. Top-Left Academic Hall (x=46..196, y=22..154) -->
+  <g>
+    <rect x="64" y="42" width="152" height="130" rx="8" fill="#3C5266" fill-opacity="0.16"/>
+    <!-- Brick facade -->
+    <rect x="46" y="76" width="150" height="78" rx="4" fill="url(#brickWallLit)"/>
+    <rect x="46" y="146" width="150" height="8" fill="#EFE8DB"/>
+    <rect x="44" y="72" width="154" height="7" rx="2" fill="#F4EFE6"/>
+    <!-- Arched windows -->
+    <g fill="url(#windowGlass)" stroke="#F2EBE0" stroke-width="1.5">
+      <rect x="60" y="92" width="14" height="22" rx="7"/>
+      <rect x="86" y="92" width="14" height="22" rx="7"/>
+      <rect x="112" y="92" width="14" height="22" rx="7"/>
+      <rect x="138" y="92" width="14" height="22" rx="7"/>
+      <rect x="164" y="92" width="14" height="22" rx="7"/>
+      <rect x="60" y="122" width="14" height="18" rx="2"/>
+      <rect x="86" y="122" width="14" height="18" rx="2"/>
+      <rect x="138" y="122" width="14" height="18" rx="2"/>
+      <rect x="164" y="122" width="14" height="18" rx="2"/>
+    </g>
+    <!-- Entrance portico -->
+    <rect x="109" y="120" width="20" height="26" rx="2" fill="#EFE8DB"/>
+    <rect x="114" y="126" width="10" height="20" rx="4" fill="#5A463B"/>
+    <!-- Green copper hip roof -->
+    <polygon points="44,72 198,72 184,22 58,22" fill="url(#copperRoofTop)"/>
+    <polygon points="184,22 198,72 174,72 164,34" fill="url(#copperRoofShade)"/>
+    <line x1="68" y1="36" x2="174" y2="36" stroke="#B6E0D2" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Dormers -->
+    <g fill="#F4EFE6" stroke="#649B8B" stroke-width="1">
+      <rect x="74" y="48" width="14" height="14" rx="2"/>
+      <rect x="114" y="48" width="14" height="14" rx="2"/>
+      <rect x="154" y="48" width="14" height="14" rx="2"/>
+    </g>
+    <g fill="url(#windowGlass)">
+      <rect x="77" y="51" width="8" height="8" rx="1"/>
+      <rect x="117" y="51" width="8" height="8" rx="1"/>
+      <rect x="157" y="51" width="8" height="8" rx="1"/>
+    </g>
+  </g>
+
+  <!-- 2. Top-Mid-Left Hall (x=414..582, y=22..154) -->
+  <g>
+    <rect x="432" y="42" width="168" height="130" rx="8" fill="#3C5266" fill-opacity="0.16"/>
+    <rect x="414" y="76" width="168" height="78" rx="4" fill="url(#brickWallLit)"/>
+    <rect x="414" y="146" width="168" height="8" fill="#EFE8DB"/>
+    <rect x="412" y="72" width="172" height="7" rx="2" fill="#F4EFE6"/>
+    <g fill="url(#windowGlass)" stroke="#F2EBE0" stroke-width="1.5">
+      <rect x="428" y="92" width="14" height="22" rx="7"/>
+      <rect x="454" y="92" width="14" height="22" rx="7"/>
+      <rect x="480" y="92" width="14" height="22" rx="7"/>
+      <rect x="506" y="92" width="14" height="22" rx="7"/>
+      <rect x="532" y="92" width="14" height="22" rx="7"/>
+      <rect x="556" y="92" width="14" height="22" rx="7"/>
+      <rect x="428" y="122" width="14" height="18" rx="2"/>
+      <rect x="454" y="122" width="14" height="18" rx="2"/>
+      <rect x="532" y="122" width="14" height="18" rx="2"/>
+      <rect x="556" y="122" width="14" height="18" rx="2"/>
+    </g>
+    <rect x="486" y="118" width="24" height="28" rx="2" fill="#EFE8DB"/>
+    <rect x="492" y="125" width="12" height="21" rx="5" fill="#5A463B"/>
+    <polygon points="412,72 584,72 570,22 426,22" fill="url(#copperRoofTop)"/>
+    <polygon points="570,22 584,72 560,72 550,34" fill="url(#copperRoofShade)"/>
+    <line x1="436" y1="36" x2="560" y2="36" stroke="#B6E0D2" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Cupola -->
+    <rect x="488" y="18" width="20" height="16" rx="2" fill="#F3EDE2"/>
+    <path d="M 486 18 Q 498 4 510 18 Z" fill="#7AB3A1"/>
+  </g>
+
+  <!-- 3. Top-Mid-Right Hall (x=1018..1186, y=22..154) -->
+  <g>
+    <rect x="1036" y="42" width="168" height="130" rx="8" fill="#3C5266" fill-opacity="0.16"/>
+    <rect x="1018" y="76" width="168" height="78" rx="4" fill="url(#brickWallLit)"/>
+    <rect x="1018" y="146" width="168" height="8" fill="#EFE8DB"/>
+    <rect x="1016" y="72" width="172" height="7" rx="2" fill="#F4EFE6"/>
+    <g fill="url(#windowGlass)" stroke="#F2EBE0" stroke-width="1.5">
+      <rect x="1030" y="92" width="14" height="22" rx="7"/>
+      <rect x="1056" y="92" width="14" height="22" rx="7"/>
+      <rect x="1082" y="92" width="14" height="22" rx="7"/>
+      <rect x="1108" y="92" width="14" height="22" rx="7"/>
+      <rect x="1134" y="92" width="14" height="22" rx="7"/>
+      <rect x="1158" y="92" width="14" height="22" rx="7"/>
+      <rect x="1030" y="122" width="14" height="18" rx="2"/>
+      <rect x="1056" y="122" width="14" height="18" rx="2"/>
+      <rect x="1134" y="122" width="14" height="18" rx="2"/>
+      <rect x="1158" y="122" width="14" height="18" rx="2"/>
+    </g>
+    <rect x="1090" y="118" width="24" height="28" rx="2" fill="#EFE8DB"/>
+    <rect x="1096" y="125" width="12" height="21" rx="5" fill="#5A463B"/>
+    <polygon points="1016,72 1188,72 1174,22 1030,22" fill="url(#copperRoofTop)"/>
+    <polygon points="1174,22 1188,72 1164,72 1154,34" fill="url(#copperRoofShade)"/>
+    <line x1="1040" y1="36" x2="1164" y2="36" stroke="#B6E0D2" stroke-width="2.5" stroke-linecap="round"/>
+    <rect x="1092" y="18" width="20" height="16" rx="2" fill="#F3EDE2"/>
+    <path d="M 1090 18 Q 1102 4 1114 18 Z" fill="#7AB3A1"/>
+  </g>
+
+  <!-- 4. Top-Right Academic Hall (x=1404..1554, y=22..154) -->
+  <g>
+    <rect x="1420" y="42" width="150" height="130" rx="8" fill="#3C5266" fill-opacity="0.16"/>
+    <rect x="1404" y="76" width="150" height="78" rx="4" fill="url(#brickWallLit)"/>
+    <rect x="1404" y="146" width="150" height="8" fill="#EFE8DB"/>
+    <rect x="1402" y="72" width="154" height="7" rx="2" fill="#F4EFE6"/>
+    <g fill="url(#windowGlass)" stroke="#F2EBE0" stroke-width="1.5">
+      <rect x="1418" y="92" width="14" height="22" rx="7"/>
+      <rect x="1444" y="92" width="14" height="22" rx="7"/>
+      <rect x="1470" y="92" width="14" height="22" rx="7"/>
+      <rect x="1496" y="92" width="14" height="22" rx="7"/>
+      <rect x="1522" y="92" width="14" height="22" rx="7"/>
+      <rect x="1418" y="122" width="14" height="18" rx="2"/>
+      <rect x="1444" y="122" width="14" height="18" rx="2"/>
+      <rect x="1496" y="122" width="14" height="18" rx="2"/>
+      <rect x="1522" y="122" width="14" height="18" rx="2"/>
+    </g>
+    <rect x="1467" y="120" width="20" height="26" rx="2" fill="#EFE8DB"/>
+    <rect x="1472" y="126" width="10" height="20" rx="4" fill="#5A463B"/>
+    <polygon points="1402,72 1556,72 1542,22 1416,22" fill="url(#copperRoofTop)"/>
+    <polygon points="1542,22 1556,72 1532,72 1522,34" fill="url(#copperRoofShade)"/>
+    <line x1="1426" y1="36" x2="1532" y2="36" stroke="#B6E0D2" stroke-width="2.5" stroke-linecap="round"/>
+    <g fill="#F4EFE6" stroke="#649B8B" stroke-width="1">
+      <rect x="1432" y="48" width="14" height="14" rx="2"/>
+      <rect x="1472" y="48" width="14" height="14" rx="2"/>
+      <rect x="1512" y="48" width="14" height="14" rx="2"/>
+    </g>
+    <g fill="url(#windowGlass)">
+      <rect x="1435" y="51" width="8" height="8" rx="1"/>
+      <rect x="1475" y="51" width="8" height="8" rx="1"/>
+      <rect x="1515" y="51" width="8" height="8" rx="1"/>
+    </g>
+  </g>
+
+  <!-- 5. Far-Left Upper Flank Hall (x=48..162, y=198..384) -->
+  <g>
+    <rect x="64" y="218" width="114" height="180" rx="8" fill="#3C5266" fill-opacity="0.16"/>
+    <rect x="48" y="330" width="114" height="54" rx="4" fill="url(#brickWallLit)"/>
+    <rect x="48" y="376" width="114" height="8" fill="#EFE8DB"/>
+    <rect x="46" y="326" width="118" height="6" rx="2" fill="#F4EFE6"/>
+    <!-- Vertical copper roof body (east-west wing) -->
+    <polygon points="46,326 164,326 154,202 56,202" fill="url(#copperRoofTop)"/>
+    <polygon points="154,202 164,326 144,326 138,214" fill="url(#copperRoofShade)"/>
+    <line x1="105" y1="216" x2="105" y2="310" stroke="#B6E0D2" stroke-width="2.5" stroke-linecap="round"/>
+    <g fill="url(#windowGlass)" stroke="#F2EBE0" stroke-width="1.4">
+      <rect x="62" y="344" width="14" height="22" rx="7"/>
+      <rect x="86" y="344" width="14" height="22" rx="7"/>
+      <rect x="110" y="344" width="14" height="22" rx="7"/>
+      <rect x="134" y="344" width="14" height="22" rx="7"/>
+    </g>
+  </g>
+
+  <!-- 6. Far-Left Lower Flank Hall (x=48..162, y=506..702) -->
+  <g>
+    <rect x="64" y="526" width="114" height="190" rx="8" fill="#3C5266" fill-opacity="0.16"/>
+    <rect x="48" y="646" width="114" height="56" rx="4" fill="url(#brickWallLit)"/>
+    <rect x="48" y="694" width="114" height="8" fill="#EFE8DB"/>
+    <rect x="46" y="642" width="118" height="6" rx="2" fill="#F4EFE6"/>
+    <polygon points="46,642 164,642 154,508 56,508" fill="url(#copperRoofTop)"/>
+    <polygon points="154,508 164,642 144,642 138,522" fill="url(#copperRoofShade)"/>
+    <line x1="105" y1="522" x2="105" y2="626" stroke="#B6E0D2" stroke-width="2.5" stroke-linecap="round"/>
+    <g fill="url(#windowGlass)" stroke="#F2EBE0" stroke-width="1.4">
+      <rect x="62" y="660" width="14" height="22" rx="7"/>
+      <rect x="86" y="660" width="14" height="22" rx="7"/>
+      <rect x="110" y="660" width="14" height="22" rx="7"/>
+      <rect x="134" y="660" width="14" height="22" rx="7"/>
+    </g>
+  </g>
+
+  <!-- 7. Far-Right Upper Flank Hall (x=1438..1552, y=198..384) -->
+  <g>
+    <rect x="1454" y="218" width="110" height="180" rx="8" fill="#3C5266" fill-opacity="0.16"/>
+    <rect x="1438" y="330" width="114" height="54" rx="4" fill="url(#brickWallLit)"/>
+    <rect x="1438" y="376" width="114" height="8" fill="#EFE8DB"/>
+    <rect x="1436" y="326" width="118" height="6" rx="2" fill="#F4EFE6"/>
+    <polygon points="1436,326 1554,326 1544,202 1446,202" fill="url(#copperRoofTop)"/>
+    <polygon points="1544,202 1554,326 1534,326 1528,214" fill="url(#copperRoofShade)"/>
+    <line x1="1495" y1="216" x2="1495" y2="310" stroke="#B6E0D2" stroke-width="2.5" stroke-linecap="round"/>
+    <g fill="url(#windowGlass)" stroke="#F2EBE0" stroke-width="1.4">
+      <rect x="1452" y="344" width="14" height="22" rx="7"/>
+      <rect x="1476" y="344" width="14" height="22" rx="7"/>
+      <rect x="1500" y="344" width="14" height="22" rx="7"/>
+      <rect x="1524" y="344" width="14" height="22" rx="7"/>
+    </g>
+  </g>
+
+  <!-- 8. Far-Right Lower Flank Hall (x=1438..1552, y=506..702) -->
+  <g>
+    <rect x="1454" y="526" width="110" height="190" rx="8" fill="#3C5266" fill-opacity="0.16"/>
+    <rect x="1438" y="646" width="114" height="56" rx="4" fill="url(#brickWallLit)"/>
+    <rect x="1438" y="694" width="114" height="8" fill="#EFE8DB"/>
+    <rect x="1436" y="642" width="118" height="6" rx="2" fill="#F4EFE6"/>
+    <polygon points="1436,642 1554,642 1544,508 1446,508" fill="url(#copperRoofTop)"/>
+    <polygon points="1544,508 1554,642 1534,642 1528,522" fill="url(#copperRoofShade)"/>
+    <line x1="1495" y1="522" x2="1495" y2="626" stroke="#B6E0D2" stroke-width="2.5" stroke-linecap="round"/>
+    <g fill="url(#windowGlass)" stroke="#F2EBE0" stroke-width="1.4">
+      <rect x="1452" y="660" width="14" height="22" rx="7"/>
+      <rect x="1476" y="660" width="14" height="22" rx="7"/>
+      <rect x="1500" y="660" width="14" height="22" rx="7"/>
+      <rect x="1524" y="660" width="14" height="22" rx="7"/>
+    </g>
+  </g>
+
+  <!-- 9. Inner-Left Chapel / Pavilion (x=422..516, y=206..328) -->
+  <g>
+    <rect x="436" y="222" width="96" height="118" rx="8" fill="#3C5266" fill-opacity="0.15"/>
+    <rect x="422" y="268" width="94" height="60" rx="4" fill="url(#brickWallLit)"/>
+    <rect x="420" y="264" width="98" height="6" rx="2" fill="#F4EFE6"/>
+    <polygon points="420,264 518,264 506,214 432,214" fill="url(#copperRoofTop)"/>
+    <!-- Small copper dome -->
+    <ellipse cx="469" cy="236" rx="22" ry="16" fill="#6AA292"/>
+    <ellipse cx="467" cy="233" rx="18" ry="13" fill="#89BFAE"/>
+    <circle cx="469" cy="227" r="4" fill="#F4EFE6"/>
+    <g fill="url(#windowGlass)" stroke="#F2EBE0" stroke-width="1.3">
+      <rect x="434" y="282" width="12" height="26" rx="6"/>
+      <rect x="463" y="282" width="12" height="26" rx="6"/>
+      <rect x="492" y="282" width="12" height="26" rx="6"/>
+    </g>
+  </g>
+
+  <!-- 10. Inner-Right Chapel / Pavilion (x=1084..1178, y=206..328) -->
+  <g>
+    <rect x="1098" y="222" width="96" height="118" rx="8" fill="#3C5266" fill-opacity="0.15"/>
+    <rect x="1084" y="268" width="94" height="60" rx="4" fill="url(#brickWallLit)"/>
+    <rect x="1082" y="264" width="98" height="6" rx="2" fill="#F4EFE6"/>
+    <polygon points="1082,264 1180,264 1168,214 1094,214" fill="url(#copperRoofTop)"/>
+    <ellipse cx="1131" cy="236" rx="22" ry="16" fill="#6AA292"/>
+    <ellipse cx="1129" cy="233" rx="18" ry="13" fill="#89BFAE"/>
+    <circle cx="1131" cy="227" r="4" fill="#F4EFE6"/>
+    <g fill="url(#windowGlass)" stroke="#F2EBE0" stroke-width="1.3">
+      <rect x="1096" y="282" width="12" height="26" rx="6"/>
+      <rect x="1125" y="282" width="12" height="26" rx="6"/>
+      <rect x="1154" y="282" width="12" height="26" rx="6"/>
+    </g>
+  </g>
+
+  <!-- 11. Bottom-Left Corner Hall (x=46..196, y=754..882) -->
+  <g>
+    <rect x="64" y="772" width="150" height="122" rx="8" fill="#3C5266" fill-opacity="0.16"/>
+    <rect x="46" y="808" width="150" height="74" rx="4" fill="url(#brickWallLit)"/>
+    <rect x="44" y="804" width="154" height="7" rx="2" fill="#F4EFE6"/>
+    <polygon points="44,804 198,804 184,754 58,754" fill="url(#copperRoofTop)"/>
+    <polygon points="184,754 198,804 174,804 164,766" fill="url(#copperRoofShade)"/>
+    <line x1="68" y1="768" x2="174" y2="768" stroke="#B6E0D2" stroke-width="2.5" stroke-linecap="round"/>
+    <g fill="url(#windowGlass)" stroke="#F2EBE0" stroke-width="1.5">
+      <rect x="62" y="822" width="14" height="22" rx="7"/>
+      <rect x="92" y="822" width="14" height="22" rx="7"/>
+      <rect x="122" y="822" width="14" height="22" rx="7"/>
+      <rect x="152" y="822" width="14" height="22" rx="7"/>
+    </g>
+  </g>
+
+  <!-- 12. Bottom-Mid-Left Hall (x=414..506, y=750..882) -->
+  <g>
+    <rect x="428" y="768" width="94" height="124" rx="8" fill="#3C5266" fill-opacity="0.15"/>
+    <rect x="414" y="806" width="92" height="76" rx="4" fill="url(#brickWallLit)"/>
+    <rect x="412" y="802" width="96" height="6" rx="2" fill="#F4EFE6"/>
+    <polygon points="412,802 508,802 496,752 424,752" fill="url(#copperRoofTop)"/>
+    <line x1="434" y1="766" x2="486" y2="766" stroke="#B6E0D2" stroke-width="2.2" stroke-linecap="round"/>
+    <g fill="url(#windowGlass)" stroke="#F2EBE0" stroke-width="1.4">
+      <rect x="428" y="820" width="14" height="22" rx="7"/>
+      <rect x="453" y="820" width="14" height="22" rx="7"/>
+      <rect x="478" y="820" width="14" height="22" rx="7"/>
+    </g>
+  </g>
+
+  <!-- 13. Bottom-Mid-Right Hall (x=1094..1186, y=750..882) -->
+  <g>
+    <rect x="1108" y="768" width="94" height="124" rx="8" fill="#3C5266" fill-opacity="0.15"/>
+    <rect x="1094" y="806" width="92" height="76" rx="4" fill="url(#brickWallLit)"/>
+    <rect x="1092" y="802" width="96" height="6" rx="2" fill="#F4EFE6"/>
+    <polygon points="1092,802 1188,802 1176,752 1104,752" fill="url(#copperRoofTop)"/>
+    <line x1="1114" y1="766" x2="1166" y2="766" stroke="#B6E0D2" stroke-width="2.2" stroke-linecap="round"/>
+    <g fill="url(#windowGlass)" stroke="#F2EBE0" stroke-width="1.4">
+      <rect x="1108" y="820" width="14" height="22" rx="7"/>
+      <rect x="1133" y="820" width="14" height="22" rx="7"/>
+      <rect x="1158" y="820" width="14" height="22" rx="7"/>
+    </g>
+  </g>
+
+  <!-- 14. Bottom-Right Corner Hall (x=1404..1554, y=754..882) -->
+  <g>
+    <rect x="1420" y="772" width="148" height="122" rx="8" fill="#3C5266" fill-opacity="0.16"/>
+    <rect x="1404" y="808" width="150" height="74" rx="4" fill="url(#brickWallLit)"/>
+    <rect x="1402" y="804" width="154" height="7" rx="2" fill="#F4EFE6"/>
+    <polygon points="1402,804 1556,804 1542,754 1416,754" fill="url(#copperRoofTop)"/>
+    <polygon points="1542,754 1556,804 1532,804 1522,766" fill="url(#copperRoofShade)"/>
+    <line x1="1426" y1="768" x2="1532" y2="768" stroke="#B6E0D2" stroke-width="2.5" stroke-linecap="round"/>
+    <g fill="url(#windowGlass)" stroke="#F2EBE0" stroke-width="1.5">
+      <rect x="1420" y="822" width="14" height="22" rx="7"/>
+      <rect x="1450" y="822" width="14" height="22" rx="7"/>
+      <rect x="1480" y="822" width="14" height="22" rx="7"/>
+      <rect x="1510" y="822" width="14" height="22" rx="7"/>
+    </g>
+  </g>
+
+  <!-- ==================== LAYER 4: CENTRAL DOMED NEOCLASSICAL LIBRARY ==================== -->
+  <g id="domed-library">
+    <!-- Long gentle cast shadow -->
+    <path d="M 638 110 L 998 110 L 1018 320 L 976 340 L 976 426 L 664 426 L 638 330 Z" fill="#3C5266" fill-opacity="0.16"/>
+
+    <!-- Wide Grand Stone Steps descending from portico to promenade -->
+    <g>
+      <!-- Lower broad step terrace -->
+      <rect x="646" y="362" width="308" height="64" rx="4" fill="#EFE8DB" stroke="#D5CAB8" stroke-width="1.5"/>
+      <!-- Upper step terrace -->
+      <rect x="668" y="308" width="264" height="54" rx="3" fill="#F4EFE6" stroke="#D5CAB8" stroke-width="1.5"/>
+      <!-- Horizontal step treads -->
+      <g stroke="#D4C9B6" stroke-width="1.4">
+        <line x1="672" y1="318" x2="928" y2="318"/>
+        <line x1="672" y1="327" x2="928" y2="327"/>
+        <line x1="672" y1="336" x2="928" y2="336"/>
+        <line x1="672" y1="345" x2="928" y2="345"/>
+        <line x1="672" y1="354" x2="928" y2="354"/>
+        <line x1="652" y1="372" x2="948" y2="372"/>
+        <line x1="652" y1="382" x2="948" y2="382"/>
+        <line x1="652" y1="392" x2="948" y2="392"/>
+        <line x1="652" y1="402" x2="948" y2="402"/>
+        <line x1="652" y1="412" x2="948" y2="412"/>
+      </g>
+      <!-- Stone cheek walls & balustrades flanking the steps -->
+      <rect x="634" y="306" width="18" height="122" rx="3" fill="#E8DFCF" stroke="#CFC3B0" stroke-width="1.2"/>
+      <rect x="948" y="306" width="18" height="122" rx="3" fill="#E8DFCF" stroke="#CFC3B0" stroke-width="1.2"/>
+      <!-- Pedestal finials at step corners -->
+      <rect x="631" y="416" width="24" height="14" rx="2" fill="#F4EFE6" stroke="#CFC3B0" stroke-width="1.2"/>
+      <rect x="945" y="416" width="24" height="14" rx="2" fill="#F4EFE6" stroke="#CFC3B0" stroke-width="1.2"/>
+      <!-- Light blue banners flanking the plaza -->
+      <rect x="639" y="352" width="8" height="16" rx="2" fill="#7EC2E8"/>
+      <rect x="953" y="352" width="8" height="16" rx="2" fill="#7EC2E8"/>
+    </g>
+
+    <!-- Flanking Plaza Fountains -->
+    <use href="#fountain" x="582" y="370"/>
+    <use href="#fountain" x="1018" y="370"/>
+
+    <!-- Cruciform Classical Library Base & Wings -->
+    <!-- Left & Right Wings -->
+    <rect x="614" y="138" width="372" height="148" rx="6" fill="url(#limestoneWall)" stroke="#D4C9B6" stroke-width="1.5"/>
+    <!-- Top & Bottom Wings -->
+    <rect x="684" y="82" width="232" height="228" rx="6" fill="url(#limestoneWall)" stroke="#D4C9B6" stroke-width="1.5"/>
+    <!-- Flat Roof Terraces on Wings -->
+    <rect x="622" y="146" width="70" height="92" rx="3" fill="url(#limestoneRoof)"/>
+    <rect x="908" y="146" width="70" height="92" rx="3" fill="url(#limestoneRoof)"/>
+    <rect x="694" y="90" width="212" height="60" rx="3" fill="url(#limestoneRoof)"/>
+
+    <!-- Wing Facade Windows -->
+    <g fill="url(#windowGlass)" stroke="#E3D9C7" stroke-width="1.4">
+      <rect x="632" y="250" width="13" height="24" rx="6.5"/>
+      <rect x="656" y="250" width="13" height="24" rx="6.5"/>
+      <rect x="931" y="250" width="13" height="24" rx="6.5"/>
+      <rect x="955" y="250" width="13" height="24" rx="6.5"/>
+    </g>
+
+    <!-- Grand Front Portico & Columns -->
+    <!-- Deep shaded portico recess -->
+    <rect x="694" y="246" width="212" height="64" fill="#9E9281"/>
+    <!-- Grand bronze entrance doors -->
+    <rect x="782" y="264" width="36" height="44" rx="3" fill="#63513E"/>
+    <rect x="786" y="268" width="13" height="36" rx="1" fill="#7A644D"/>
+    <rect x="801" y="268" width="13" height="36" rx="1" fill="#7A644D"/>
+    <!-- 8 Ionic Columns -->
+    <g fill="#F8F4EC" stroke="#D5CAB8" stroke-width="1">
+      <rect x="696" y="246" width="12" height="64" rx="2"/>
+      <rect x="724" y="246" width="12" height="64" rx="2"/>
+      <rect x="752" y="246" width="12" height="64" rx="2"/>
+      <rect x="780" y="246" width="12" height="64" rx="2"/>
+      <rect x="808" y="246" width="12" height="64" rx="2"/>
+      <rect x="836" y="246" width="12" height="64" rx="2"/>
+      <rect x="864" y="246" width="12" height="64" rx="2"/>
+      <rect x="892" y="246" width="12" height="64" rx="2"/>
+    </g>
+    <!-- Column capitals -->
+    <g fill="#EFE7D8">
+      <rect x="694" y="244" width="16" height="5" rx="1.5"/>
+      <rect x="722" y="244" width="16" height="5" rx="1.5"/>
+      <rect x="750" y="244" width="16" height="5" rx="1.5"/>
+      <rect x="778" y="244" width="16" height="5" rx="1.5"/>
+      <rect x="806" y="244" width="16" height="5" rx="1.5"/>
+      <rect x="834" y="244" width="16" height="5" rx="1.5"/>
+      <rect x="862" y="244" width="16" height="5" rx="1.5"/>
+      <rect x="890" y="244" width="16" height="5" rx="1.5"/>
+    </g>
+
+    <!-- Classical Triangular Pediment -->
+    <rect x="684" y="232" width="232" height="14" rx="2" fill="#F4EFE6" stroke="#CFC4B2" stroke-width="1.2"/>
+    <polygon points="676,232 924,232 800,192" fill="#F8F4EC" stroke="#CFC4B2" stroke-width="1.5"/>
+    <polygon points="696,228 904,228 800,199" fill="#E6DDD0"/>
+    <!-- Subtle light-blue classical accent in pediment frieze -->
+    <circle cx="800" cy="218" r="6" fill="#9FD4F0" fill-opacity="0.7"/>
+
+    <!-- Octagonal / Circular Drum beneath the Dome -->
+    <ellipse cx="800" cy="186" rx="92" ry="66" fill="#D5C9B6"/>
+    <ellipse cx="800" cy="176" rx="88" ry="62" fill="#ECE4D6" stroke="#CFC3B0" stroke-width="1.5"/>
+    <!-- Clerestory arched windows around the drum -->
+    <g fill="url(#windowGlass)" stroke="#F5F0E6" stroke-width="1">
+      <rect x="734" y="176" width="10" height="14" rx="5"/>
+      <rect x="756" y="182" width="10" height="14" rx="5"/>
+      <rect x="780" y="185" width="10" height="14" rx="5"/>
+      <rect x="810" y="185" width="10" height="14" rx="5"/>
+      <rect x="834" y="182" width="10" height="14" rx="5"/>
+      <rect x="856" y="176" width="10" height="14" rx="5"/>
+    </g>
+
+    <!-- Majestic Classical Limestone Dome -->
+    <ellipse cx="800" cy="156" rx="78" ry="58" fill="url(#domeGrad)" stroke="#C8BCAA" stroke-width="1.5"/>
+    <!-- Subtle dome ribs & stepped rings -->
+    <ellipse cx="800" cy="152" rx="64" ry="46" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0.45"/>
+    <ellipse cx="800" cy="147" rx="46" ry="33" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0.45"/>
+    <ellipse cx="800" cy="142" rx="28" ry="20" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0.5"/>
+    <!-- Dome Oculus / Lantern Crown -->
+    <ellipse cx="800" cy="138" rx="16" ry="11" fill="#F7F3EA" stroke="#C8BCAA" stroke-width="1.2"/>
+    <ellipse cx="800" cy="136" rx="9" ry="6" fill="#9FD4F0"/>
+    <circle cx="800" cy="134" r="3" fill="#FFFFFF"/>
+
+    <!-- Seated Bronze Statue (Alma Mater) on the Center of the Steps -->
+    <g id="bronze-statue" transform="translate(800, 366)">
+      <!-- Cast shadow of pedestal & statue -->
+      <ellipse cx="10" cy="10" rx="20" ry="11" fill="#3C5266" fill-opacity="0.22"/>
+      <!-- Stepped stone pedestal -->
+      <rect x="-18" y="-2" width="36" height="14" rx="3" fill="#E8DFCF" stroke="#CFC4B2" stroke-width="1"/>
+      <rect x="-13" y="-12" width="26" height="13" rx="2" fill="#F5F0E6" stroke="#CFC4B2" stroke-width="1"/>
+      <!-- Bronze throne & seated figure -->
+      <rect x="-10" y="-26" width="20" height="15" rx="3" fill="#61503B"/>
+      <!-- Robed seated body -->
+      <path d="M -9 -11 L -7 -25 Q 0 -29 7 -25 L 9 -11 Z" fill="url(#bronzeGrad)"/>
+      <!-- Outstretched welcoming arms -->
+      <path d="M -7 -23 L -13 -19 M 7 -23 L 13 -19" stroke="#856D4E" stroke-width="3" stroke-linecap="round"/>
+      <!-- Head & subtle laurel/crown -->
+      <circle cx="0" cy="-30" r="4.8" fill="#8C7352"/>
+      <circle cx="-1" cy="-31" r="1.8" fill="#B59970"/>
+      <!-- Subtle oxidized verdigris highlight -->
+      <path d="M -4 -18 Q 0 -15 4 -18" fill="none" stroke="#89BFA9" stroke-width="1.2" stroke-opacity="0.7"/>
+    </g>
+  </g>
+
+  <!-- ==================== LAYER 5: COLONNADED LIBRARY AT FAR END OF LAWN ==================== -->
+  <g id="colonnaded-library">
+    <!-- Long cast shadow -->
+    <rect x="546" y="742" width="538" height="152" rx="10" fill="#3C5266" fill-opacity="0.18"/>
+
+    <!-- Wide Entrance Steps facing the Lawn -->
+    <rect x="610" y="710" width="380" height="24" rx="4" fill="#EFE8DB" stroke="#D5CAB8" stroke-width="1.2"/>
+    <line x1="616" y1="716" x2="984" y2="716" stroke="#D5CAB8" stroke-width="1.2"/>
+    <line x1="616" y1="722" x2="984" y2="722" stroke="#D5CAB8" stroke-width="1.2"/>
+    <line x1="616" y1="728" x2="984" y2="728" stroke="#D5CAB8" stroke-width="1.2"/>
+
+    <!-- Main Classical Limestone Building Block -->
+    <rect x="530" y="732" width="540" height="156" rx="6" fill="url(#limestoneWall)" stroke="#D1C6B3" stroke-width="1.5"/>
+
+    <!-- Deep Shaded Colonnade Portico -->
+    <rect x="606" y="734" width="388" height="60" fill="#8F8475"/>
+    <!-- Tall Recessed Library Windows behind the columns -->
+    <g fill="url(#windowGlass)" fill-opacity="0.85">
+      <rect x="626" y="744" width="18" height="40" rx="2"/>
+      <rect x="660" y="744" width="18" height="40" rx="2"/>
+      <rect x="694" y="744" width="18" height="40" rx="2"/>
+      <rect x="728" y="744" width="18" height="40" rx="2"/>
+      <rect x="762" y="744" width="18" height="40" rx="2"/>
+      <rect x="820" y="744" width="18" height="40" rx="2"/>
+      <rect x="854" y="744" width="18" height="40" rx="2"/>
+      <rect x="888" y="744" width="18" height="40" rx="2"/>
+      <rect x="922" y="744" width="18" height="40" rx="2"/>
+      <rect x="956" y="744" width="18" height="40" rx="2"/>
+    </g>
+    <!-- Central Bronze Entrance Portal -->
+    <rect x="786" y="748" width="28" height="44" rx="2" fill="#63513E"/>
+
+    <!-- 12 Fluted Classical Columns along the Colonnade -->
+    <g fill="#F8F4EC" stroke="#D4C9B6" stroke-width="1">
+      <rect x="612" y="734" width="11" height="58" rx="2"/>
+      <rect x="646" y="734" width="11" height="58" rx="2"/>
+      <rect x="680" y="734" width="11" height="58" rx="2"/>
+      <rect x="714" y="734" width="11" height="58" rx="2"/>
+      <rect x="748" y="734" width="11" height="58" rx="2"/>
+      <rect x="782" y="734" width="11" height="58" rx="2"/>
+      <rect x="807" y="734" width="11" height="58" rx="2"/>
+      <rect x="841" y="734" width="11" height="58" rx="2"/>
+      <rect x="875" y="734" width="11" height="58" rx="2"/>
+      <rect x="909" y="734" width="11" height="58" rx="2"/>
+      <rect x="943" y="734" width="11" height="58" rx="2"/>
+      <rect x="977" y="734" width="11" height="58" rx="2"/>
+    </g>
+
+    <!-- Corner Pavilions (Left & Right) -->
+    <g fill="url(#windowGlass)" stroke="#E3D9C7" stroke-width="1.4">
+      <rect x="548" y="748" width="16" height="32" rx="8"/>
+      <rect x="576" y="748" width="16" height="32" rx="8"/>
+      <rect x="1008" y="748" width="16" height="32" rx="8"/>
+      <rect x="1036" y="748" width="16" height="32" rx="8"/>
+    </g>
+
+    <!-- Grand Classical Entablature & Roof Terrace -->
+    <rect x="526" y="792" width="548" height="14" rx="2" fill="#F5F0E6" stroke="#CFC4B2" stroke-width="1.2"/>
+    <!-- Light blue frieze accent line -->
+    <rect x="608" y="797" width="384" height="4" rx="2" fill="#9FD4F0" fill-opacity="0.75"/>
+
+    <!-- Rooftop Terrace with Copper Trim & Skylights -->
+    <rect x="538" y="806" width="524" height="76" rx="4" fill="url(#limestoneRoof)" stroke="#CFC4B2" stroke-width="1.2"/>
+    <!-- Central raised reading-room clerestory roof -->
+    <rect x="614" y="818" width="372" height="52" rx="4" fill="#F4EFE6" stroke="#CFC4B2" stroke-width="1.2"/>
+    <!-- Patinated copper trim & skylight glass -->
+    <rect x="626" y="826" width="348" height="36" rx="3" fill="url(#copperRoofTop)"/>
+    <g fill="#BFE4F7" fill-opacity="0.85">
+      <rect x="642" y="833" width="66" height="22" rx="2"/>
+      <rect x="722" y="833" width="66" height="22" rx="2"/>
+      <rect x="812" y="833" width="66" height="22" rx="2"/>
+      <rect x="892" y="833" width="66" height="22" rx="2"/>
+    </g>
+    <!-- Corner rooftop balustrades -->
+    <rect x="548" y="818" width="52" height="52" rx="3" fill="#E3DACB" stroke="#CFC4B2" stroke-width="1"/>
+    <rect x="1000" y="818" width="52" height="52" rx="3" fill="#E3DACB" stroke="#CFC4B2" stroke-width="1"/>
+  </g>
+
+  <!-- ==================== LAYER 6: WROUGHT-IRON PERIMETER FENCES & GRAND GATES ==================== -->
+  <g id="iron-gates">
+    <!-- Left Grand Gate (Broadway Gate at x=42, y=412..490) -->
+    <!-- Brick & limestone gate piers -->
+    <rect x="34" y="406" width="22" height="22" rx="3" fill="#C96E5D" stroke="#EFE8DB" stroke-width="2"/>
+    <rect x="37" y="409" width="16" height="16" rx="2" fill="#F4EFE6"/>
+    <circle cx="45" cy="417" r="4" fill="#7EC2E8"/>
+
+    <rect x="34" y="474" width="22" height="22" rx="3" fill="#C96E5D" stroke="#EFE8DB" stroke-width="2"/>
+    <rect x="37" y="477" width="16" height="16" rx="2" fill="#F4EFE6"/>
+    <circle cx="45" cy="485" r="4" fill="#7EC2E8"/>
+
+    <!-- Open wrought-iron gate leaves -->
+    <g stroke="#3E4E5C" stroke-width="2.2" stroke-linecap="round">
+      <line x1="56" y1="420" x2="80" y2="416"/>
+      <line x1="56" y1="482" x2="80" y2="486"/>
+      <!-- Iron fence runs along far-left boundary -->
+      <line x1="44" y1="158" x2="44" y2="196"/>
+      <line x1="44" y1="386" x2="44" y2="406"/>
+      <line x1="44" y1="496" x2="44" y2="506"/>
+      <line x1="44" y1="704" x2="44" y2="752"/>
+    </g>
+
+    <!-- Right Grand Gate (Amsterdam Gate at x=1558, y=412..490) -->
+    <rect x="1544" y="406" width="22" height="22" rx="3" fill="#C96E5D" stroke="#EFE8DB" stroke-width="2"/>
+    <rect x="1547" y="409" width="16" height="16" rx="2" fill="#F4EFE6"/>
+    <circle cx="1555" cy="417" r="4" fill="#7EC2E8"/>
+
+    <rect x="1544" y="474" width="22" height="22" rx="3" fill="#C96E5D" stroke="#EFE8DB" stroke-width="2"/>
+    <rect x="1547" y="477" width="16" height="16" rx="2" fill="#F4EFE6"/>
+    <circle cx="1555" cy="485" r="4" fill="#7EC2E8"/>
+
+    <g stroke="#3E4E5C" stroke-width="2.2" stroke-linecap="round">
+      <line x1="1544" y1="420" x2="1520" y2="416"/>
+      <line x1="1544" y1="482" x2="1520" y2="486"/>
+      <!-- Iron fence runs along far-right boundary -->
+      <line x1="1556" y1="158" x2="1556" y2="196"/>
+      <line x1="1556" y1="386" x2="1556" y2="406"/>
+      <line x1="1556" y1="496" x2="1556" y2="506"/>
+      <line x1="1556" y1="704" x2="1556" y2="752"/>
+    </g>
+
+    <!-- Top & Bottom Ornamental Iron Fence Segments with Piers -->
+    <g stroke="#3E4E5C" stroke-width="2" stroke-dasharray="6 4">
+      <line x1="205" y1="24" x2="408" y2="24"/>
+      <line x1="1192" y1="24" x2="1395" y2="24"/>
+      <line x1="205" y1="876" x2="408" y2="876"/>
+      <line x1="1192" y1="876" x2="1395" y2="876"/>
+    </g>
+    <!-- Fence brick piers -->
+    <g fill="#C96E5D" stroke="#F4EFE6" stroke-width="1.5">
+      <rect x="294" y="18" width="12" height="12" rx="2"/>
+      <rect x="1294" y="18" width="12" height="12" rx="2"/>
+      <rect x="294" y="870" width="12" height="12" rx="2"/>
+      <rect x="1294" y="870" width="12" height="12" rx="2"/>
+    </g>
+  </g>
+
+  <!-- ==================== LAYER 7: FOUR CLEAR EMPTY PAVED PLOTS ==================== -->
+  <!-- Centres: (300,250), (1300,250), (300,650), (1300,650) — each 170x120 rounded light stone, completely empty -->
+  <use href="#empty-plot" x="300" y="250"/>
+  <use href="#empty-plot" x="1300" y="250"/>
+  <use href="#empty-plot" x="300" y="650"/>
+  <use href="#empty-plot" x="1300" y="650"/>
+
+  <!-- ==================== LAYER 8: TREES, BENCHES & LAMP POSTS ==================== -->
+  <!-- Carefully placed with generous clearance around all 4 empty plots -->
+
+  <!-- Trees: Upper-Left Zone (away from plot 215..385, 190..310) -->
+  <use href="#tree-lg" x="240" y="84"/>
+  <use href="#tree-md" x="358" y="86"/>
+  <use href="#tree-blossom" x="298" y="138"/>
+  <use href="#tree-sm" x="220" y="142"/>
+  <use href="#tree-sm" x="380" y="140"/>
+  <use href="#tree-md" x="558" y="206"/>
+  <use href="#tree-lg" x="564" y="286"/>
+
+  <!-- Trees: Upper-Right Zone (away from plot 1215..1385, 190..310) -->
+  <use href="#tree-lg" x="1360" y="84"/>
+  <use href="#tree-md" x="1242" y="86"/>
+  <use href="#tree-blossom" x="1302" y="138"/>
+  <use href="#tree-sm" x="1380" y="142"/>
+  <use href="#tree-sm" x="1220" y="140"/>
+  <use href="#tree-md" x="1042" y="206"/>
+  <use href="#tree-lg" x="1036" y="286"/>
+
+  <!-- Trees: Mid-Left Corridor (y=360..405 and y=500..545, safely between left plots) -->
+  <use href="#tree-lg" x="218" y="376"/>
+  <use href="#tree-md" x="366" y="378"/>
+  <use href="#tree-blossom" x="454" y="384"/>
+  <use href="#tree-md" x="518" y="394"/>
+  <use href="#tree-lg" x="216" y="528"/>
+  <use href="#tree-md" x="368" y="528"/>
+  <use href="#tree-sm" x="298" y="514"/>
+
+  <!-- Trees: Mid-Right Corridor (y=360..405 and y=500..545, safely between right plots) -->
+  <use href="#tree-lg" x="1382" y="376"/>
+  <use href="#tree-md" x="1234" y="378"/>
+  <use href="#tree-blossom" x="1146" y="384"/>
+  <use href="#tree-md" x="1082" y="394"/>
+  <use href="#tree-lg" x="1384" y="528"/>
+  <use href="#tree-md" x="1232" y="528"/>
+  <use href="#tree-sm" x="1302" y="514"/>
+
+  <!-- Trees: Flanking the Central Lawn -->
+  <use href="#tree-md" x="470" y="598"/>
+  <use href="#tree-md" x="1130" y="598"/>
+  <use href="#tree-sm" x="526" y="538"/>
+  <use href="#tree-sm" x="526" y="660"/>
+  <use href="#tree-sm" x="1074" y="538"/>
+  <use href="#tree-sm" x="1074" y="660"/>
+
+  <!-- Trees: Bottom-Left Zone (y > 750, safely below plot 215..385, 590..710) -->
+  <use href="#tree-lg" x="242" y="810"/>
+  <use href="#tree-md" x="360" y="814"/>
+  <use href="#tree-blossom" x="300" y="772"/>
+
+  <!-- Trees: Bottom-Right Zone (y > 750, safely below plot 1215..1385, 590..710) -->
+  <use href="#tree-lg" x="1358" y="810"/>
+  <use href="#tree-md" x="1240" y="814"/>
+  <use href="#tree-blossom" x="1300" y="772"/>
+
+  <!-- Trees: Framing the Top of the Domed Library -->
+  <use href="#tree-md" x="626" y="82"/>
+  <use href="#tree-sm" x="664" y="62"/>
+  <use href="#tree-md" x="974" y="82"/>
+  <use href="#tree-sm" x="936" y="62"/>
+
+  <!-- Benches along the Promenade & Plaza -->
+  <use href="#bench-h" x="596" y="420"/>
+  <use href="#bench-h" x="1004" y="420"/>
+  <use href="#bench-h" x="660" y="482"/>
+  <use href="#bench-h" x="940" y="482"/>
+  <use href="#bench-h" x="720" y="712"/>
+  <use href="#bench-h" x="880" y="712"/>
+  <use href="#bench-h" x="260" y="420"/>
+  <use href="#bench-h" x="1340" y="420"/>
+
+  <!-- Lamp Posts with Light-Blue Campus Banners -->
+  <use href="#lamp-post" x="148" y="424"/>
+  <use href="#lamp-post" x="330" y="424"/>
+  <use href="#lamp-post" x="536" y="424"/>
+  <use href="#lamp-post" x="640" y="424"/>
+  <use href="#lamp-post" x="960" y="424"/>
+  <use href="#lamp-post" x="1064" y="424"/>
+  <use href="#lamp-post" x="1270" y="424"/>
+  <use href="#lamp-post" x="1452" y="424"/>
+
+  <use href="#lamp-post" x="148" y="484"/>
+  <use href="#lamp-post" x="330" y="484"/>
+  <use href="#lamp-post" x="536" y="484"/>
+  <use href="#lamp-post" x="1064" y="484"/>
+  <use href="#lamp-post" x="1270" y="484"/>
+  <use href="#lamp-post" x="1452" y="484"/>
+
+  <use href="#lamp-post" x="548" y="716"/>
+  <use href="#lamp-post" x="1052" y="716"/>
+</svg>

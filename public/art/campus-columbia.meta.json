@@ -1,0 +1,27 @@
+{
+ "model": "gemini-4-neon",
+ "prompt": "Draw a wide top-down three-quarter (isometric-like) campus panorama for a classical uptown New York university, used as a game map background. In the centre a domed neoclassical library with wide stone steps and a seated bronze statue, a long lawn with crossing brick paths in front, a colonnaded library at the far end of the lawn. Around: red brick buildings with green copper roofs, iron gates, trees, lamp posts. Leave four clear empty paved plots (rounded rectangles of light stone, each about 170 by 120 units) at these centres: (300,250), (1300,250), (300,650), (1300,650); nothing drawn on them. Light blue accents. Refined flat illustration with soft gradients, layered depth, gentle long shadows, rounded shapes, harmonious pastel palette; premium life-sim game quality, lots of small careful details. viewBox 0 0 1600 900, fill the whole canvas edge to edge.",
+ "usage": {
+  "total_tokens": 30141,
+  "total_input_tokens": 282,
+  "input_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 282
+   }
+  ],
+  "total_cached_tokens": 0,
+  "total_output_tokens": 24075,
+  "output_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 24075
+   }
+  ],
+  "total_tool_use_tokens": 0,
+  "total_thought_tokens": 5784,
+  "initial_input_tokens": 282
+ },
+ "ms": 213677,
+ "made_at": "2026-11-21T16:27:09.364Z"
+}
