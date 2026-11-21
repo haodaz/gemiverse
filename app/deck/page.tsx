@@ -4,7 +4,7 @@ import { useEffect, useState, type ReactNode } from "react";
 import { INK } from "@/components/game";
 
 // The deck is a page of the product itself, so its pictures are the live 3D room and character, not screenshots.
-const Live = ({ src, className = "" }: { src: string; className?: string }) => <iframe src={src} title="live" className={`h-full w-full border-0 ${className}`} loading="lazy" />;
+const Live = ({ src, className = "" }: { src: string; className?: string }) => <iframe src={src} title="live" className={`h-full w-full border-0 bg-transparent ${className}`} loading="lazy" />;
 const Frame = ({ children, className = "" }: { children: ReactNode; className?: string }) => (
   <div className={`overflow-hidden rounded-[28px] border-[3px] bg-[#fffaf0] ${className}`} style={{ borderColor: INK, boxShadow: `0 8px 0 ${INK}22` }}>{children}</div>);
 const Tag = ({ children, c = "#c8b4f0" }: { children: ReactNode; c?: string }) => <span className="mr-2 inline-block rounded-full border-2 px-3 py-0.5 text-sm font-bold" style={{ borderColor: INK, background: c }}>{children}</span>;
@@ -37,7 +37,7 @@ export default function Deck() {
             <Li>It goes out to four places on campus and brings back three things, each field checked against its source.</Li>
             <Li>You keep or skip. From that it learns how you choose, and shows you what it learned. You can undo any of it.</Li>
             <Li>Left alone, it spends its own Gem Stars: thinking, going out, keeping its diary, changing its room.</Li></ul></div>
-        <Frame className="h-[72vh]"><Live src="/gen3d/viewer.html?embed=1&school=nyu" /></Frame>
+        <div className="h-[78vh]"><Live src="/gen3d/viewer.html?embed=1&bare=1&school=nyu" /></div>
       </div>) },
 
     { id: "Gemi + Verse", body: (
@@ -62,7 +62,7 @@ export default function Deck() {
             <Li><b>The pages are public and checkable.</b> A campus is a small, bounded world with official sources. That is what makes a five-sigma standard for facts reachable at all.</Li>
             <Li><b>Choices here shape a person.</b> Which room you walk into in your first year matters, and the research is clear that belonging only follows real opportunities.</Li>
             <Li><b>A vertical makes it affordable.</b> Thousands of students share the same events, so one check serves all of them.</Li></ul></div>
-        <Frame className="h-[66vh]"><img src="/art/campus3-nyu.svg" alt="An illustrated campus map" className="h-full w-full object-cover" /></Frame>
+        <div className="h-[70vh]"><img src="/art/campus3-nyu.svg" alt="An illustrated campus map" className="h-full w-full object-cover [mask-image:radial-gradient(ellipse_at_center,black_55%,transparent_78%)]" /></div>
       </div>) },
 
     { id: "Value", body: (
@@ -151,7 +151,7 @@ export default function Deck() {
           <div className="mt-8 flex flex-wrap gap-3 text-lg font-bold">{[["/room", "The room"], ["/foundry", "Foundry: the base"], ["/admin", "Admin: run days"], ["/gen3d/doll.html?cam=front", "The character"]].map(([h, l]) => (
             <a key={h} href={h} className="rounded-full border-[3px] bg-[#ffe08a] px-5 py-2" style={{ borderColor: INK, boxShadow: `0 4px 0 ${INK}` }}>{l}</a>))}</div>
           <p className="mt-8 text-sm text-[#8a8296]">All code written on 2026-11-21 with an AI coding assistant. Concepts from our earlier work on a campus twin and a portrait with uncertainty. github.com/haodaz/gemiverse</p></div>
-        <Frame className="h-[72vh]"><Live src="/gen3d/viewer.html?embed=1&school=columbia" /></Frame>
+        <div className="h-[78vh]"><Live src="/gen3d/viewer.html?embed=1&bare=1&school=columbia" /></div>
       </div>) },
   ];
 

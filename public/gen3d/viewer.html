@@ -28,7 +28,8 @@ if (EMBED) document.getElementById("ui").style.display = "none";
 let windowView = null;
 try { windowView = await new THREE.TextureLoader().loadAsync(`/art/window-${SCHOOL}.svg`); windowView.colorSpace = THREE.SRGBColorSpace; } catch (e) { err("window view: " + e.message); }
 
-const renderer = new THREE.WebGLRenderer({ antialias: true });
+const BARE = new URLSearchParams(location.search).has("bare");   // bare: no background at all, so the room sits directly on whatever page embeds it
+const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
 renderer.setPixelRatio(Math.min(devicePixelRatio, 2)); renderer.setSize(innerWidth, innerHeight);
 renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.outputColorSpace = THREE.SRGBColorSpace;
@@ -200,9 +201,10 @@ addEventListener("message", (ev) => { const m = ev.data; if (!m || m.source !== 
   if (m.type === "palette") { pi = m.value % PALETTES.length; build(); } });
 const tell = (type, value) => { if (EMBED) parent.postMessage({ source: "gemiverse-room", type, value }, "*"); };
 tell("ready");
+if (BARE) { scene.background = null; renderer.setClearColor(0x000000, 0); document.documentElement.style.background = document.body.style.background = "transparent"; }
 const clock = new THREE.Clock();
 let last = 0;
 renderer.setAnimationLoop(() => { const t = clock.getElapsedTime(), dt = Math.min(0.05, t - last); last = t; live(t, dt); if (doll) try { doll.update(t, dt); } catch {}
   controls.target.lerp(new THREE.Vector3(...view.target), Math.min(1, dt * 4)); camera.zoom += (view.zoom - camera.zoom) * Math.min(1, dt * 4); camera.updateProjectionMatrix(); controls.update();
-  stateGroup?.traverse((o) => { if (o.userData.spin) o.rotation.y += dt * o.userData.spin; }); composer.render(); });
+  stateGroup?.traverse((o) => { if (o.userData.spin) o.rotation.y += dt * o.userData.spin; }); if (BARE) renderer.render(scene, camera); else composer.render(); });
 </script>
