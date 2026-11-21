@@ -1,4 +1,5 @@
 import proof from "@/lib/proof.json";
+import { SignIn } from "@/components/SignIn";
 
 // The introduction. Written for a student who has never seen this, top to bottom: what it is, a day with it, the home it grows,
 // what it helps with, why to believe it, what we hold to, and three doors in. The judges' version, with the method, is /deck.
@@ -15,8 +16,7 @@ export default function Home() {
           <a href="/" className="text-xl font-semibold tracking-tight">Gemiverse</a>
           <nav className="flex items-center gap-7 text-[15px] text-[#5f576c]">
             <a href="#day" className="hover:text-[#2b2536]">A day</a><a href="#home" className="hover:text-[#2b2536]">Its home</a><a href="#proof" className="hover:text-[#2b2536]">Why trust it</a><a href="/deck" className="hover:text-[#2b2536]">How it works</a>
-            <a href="/admin" className="hover:text-[#2b2536]">Admin</a>
-            <a href="/start" className="rounded-full px-5 py-2 font-semibold text-white" style={{ background: PUR }}>Move in</a>
+            <SignIn />
           </nav>
         </div>
       </header>
@@ -136,10 +136,9 @@ export default function Home() {
         <div className="mx-auto w-full max-w-6xl px-8 py-20">
           <Eyebrow>Start here</Eyebrow>
           <h2 className="mt-3 text-5xl font-semibold tracking-tight">What are you here to do?</h2>
-          <div className="mt-9 grid grid-cols-3 gap-6">
+          <div className="mt-9 grid grid-cols-2 gap-6">
             {[["/start", "I am a student", "Meet your Gemi, tell it one thing, then choose where you two live. About a minute.", "Meet your Gemi", PUR, "#fff"],
-              ["/deck", "I want to know how it works", "The task, the baseline, the test set, the failures, the mathematics and the layers. In English and Chinese.", "Open the deck", "#fff", INK],
-              ["/admin", "I run this", "The back office: the shared base and its flywheel, what each Gemini model did, the measured results, and days run at speed.", "Open admin", "#fff", INK]].map(([href, t, d, cta, bg, fg]) => (
+              ["/deck", "I want to know how it works", "The task, the baseline, the test set, the failures, the mathematics and the layers. In English and Chinese.", "Open the deck", "#fff", INK]].map(([href, t, d, cta, bg, fg]) => (
               <a key={href} href={href} className="flex flex-col rounded-3xl border-2 bg-white p-7 transition hover:-translate-y-1" style={{ borderColor: INK, boxShadow: "0 6px 0 #2b253633" }}>
                 <h3 className="text-2xl font-semibold">{t}</h3><p className="mt-2 flex-1 text-[16px] leading-relaxed" style={{ color: MUTE }}>{d}</p>
                 <span className="mt-5 inline-block self-start rounded-full border-2 px-6 py-2 text-base font-semibold" style={{ background: bg, color: fg, borderColor: INK }}>{cta} →</span></a>))}
