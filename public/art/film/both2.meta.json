@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A cinematic 16:9 photograph in warm late-afternoon autumn light. Left half: a young East Asian woman, a graduate student in her twenties with a black bob haircut, round glasses and a lilac cardigan, sits on a bench in a city park with a stone arch and yellow trees softly blurred behind her, in New York. She holds an open laptop on her knees and smiles down at it; the laptop lid is plain matte grey with no logo or brand mark of any kind. Right half of the frame: the laptop screen seen large, showing exactly the attached image: a small isometric 3D bedroom with a tiny chibi doll character who has the same black bob and lilac cardigan, waving up at her. One outside the screen, one inside. Natural, candid, documentary feel. No text, no logos, no brand marks, no watermarks.",
+ "reference": "scripts/video/out/room.jpg",
+ "seconds": 16,
+ "tokens": 2279,
+ "at": "2026-11-21T20:30:39.454Z"
+}
