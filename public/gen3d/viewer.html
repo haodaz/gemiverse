@@ -1,0 +1,66 @@
+<!doctype html>
+<meta charset="utf-8"><title>Gemiverse 3D lab</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>html,body{margin:0;height:100%;background:#f3eef8;font:14px system-ui}#ui{position:fixed;left:12px;top:12px;display:flex;gap:8px;flex-wrap:wrap;max-width:60vw}button{border:0;border-radius:999px;padding:8px 14px;background:#fff;box-shadow:0 1px 4px #0002;cursor:pointer}#err{position:fixed;bottom:8px;left:8px;color:#b00;white-space:pre-wrap;max-width:90vw}</style>
+<div id="ui"><button id="pal">Change colours</button><button id="look">Random look</button><button id="var">Next furniture style</button></div><div id="err"></div>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}</script>
+<script type="module">
+import * as THREE from "three";
+import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+import { RoomEnvironment } from "three/addons/environments/RoomEnvironment.js";
+import { EffectComposer } from "three/addons/postprocessing/EffectComposer.js";
+import { RenderPass } from "three/addons/postprocessing/RenderPass.js";
+import { GTAOPass } from "three/addons/postprocessing/GTAOPass.js";
+import { OutputPass } from "three/addons/postprocessing/OutputPass.js";
+window.THREE = THREE; // some generated helpers read THREE from the page
+const err = (m) => (document.getElementById("err").textContent += m + "\n");
+window.addEventListener("error", (e) => err(e.message));
+const load = async (n) => { try { return await import(`./${n}.js`); } catch (e) { err(`${n}: ${e.message}`); return null; } };
+const [room, items, character] = await Promise.all(["room", "items", "character"].map(load));
+
+const renderer = new THREE.WebGLRenderer({ antialias: true });
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2)); renderer.setSize(innerWidth, innerHeight);
+renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.outputColorSpace = THREE.SRGBColorSpace;
+document.body.appendChild(renderer.domElement);
+const scene = new THREE.Scene(); scene.background = new THREE.Color("#f3eef8");
+const d = 3.1, a = innerWidth / innerHeight;
+const camera = new THREE.OrthographicCamera(-d * a, d * a, d, -d, 0.1, 100);
+camera.position.set(9, 8, 9); const controls = new OrbitControls(camera, renderer.domElement); controls.target.set(0, 1.0, 0); controls.update();
+scene.environment = new THREE.PMREMGenerator(renderer).fromScene(new RoomEnvironment(), 0.04).texture; scene.environmentIntensity = 0.55;
+scene.add(new THREE.HemisphereLight("#fff7ee", "#c9bfe0", 0.5));
+const composer = new EffectComposer(renderer); composer.addPass(new RenderPass(scene, camera));
+const gtao = new GTAOPass(scene, camera, innerWidth, innerHeight); gtao.updateGtaoMaterial({ radius: 0.45, distanceExponent: 1.4, thickness: 1.2, scale: 1.1 }); composer.addPass(gtao); composer.addPass(new OutputPass());
+const sun = new THREE.DirectionalLight("#fff1dd", 2.2); sun.position.set(6, 10, 4); sun.castShadow = true;
+sun.shadow.mapSize.set(2048, 2048); Object.assign(sun.shadow.camera, { left: -6, right: 6, top: 6, bottom: -6 }); sun.shadow.bias = -0.0004; scene.add(sun);
+
+const PALETTES = [
+  { wall: "#f4ebe1", trim: "#ffffff", floor: "#d9a877", primary: "#b8a2e3", secondary: "#f7e7c6", accent: "#f2a7b8", wood: "#c89462", metal: "#d9c08a", fabric: "#b8a2e3" },
+  { wall: "#e4eef7", trim: "#ffffff", floor: "#b98a5e", primary: "#8fc1e8", secondary: "#fdf6e8", accent: "#f6c453", wood: "#8a5a3a", metal: "#9aa3ad", fabric: "#8fc1e8" },
+  { wall: "#e9f1e4", trim: "#fffaf0", floor: "#e2c9a0", primary: "#7fb48a", secondary: "#f3e1cf", accent: "#e98b6d", wood: "#e2c9a0", metal: "#2f2f35", fabric: "#7fb48a" },
+];
+let pi = 0, vi = 0, world, who;
+function build() {
+  if (world) scene.remove(world); world = new THREE.Group(); scene.add(world);
+  const p = PALETTES[pi];
+  try { if (room) world.add(room.buildRoom(THREE, { wall: p.wall, trim: p.trim, floor: p.floor, floorStyle: ["planks", "herringbone", "carpet"][vi % 3], windowView: null })); } catch (e) { err("room: " + e.message); }
+  if (room && items) for (const [name, slot] of Object.entries(room.SLOTS)) {
+    const make = items.ITEMS[name]; if (!make) continue;
+    try { const g = make(THREE, { ...p, material: ["wood", "painted", "fabric"][vi % 3], variant: vi % 3 }); g.position.set(...slot.position); g.rotation.y = slot.rotationY ?? 0; world.add(g); } catch (e) { err(`${name}: ${e.message}`); }
+  }
+  spawn();
+}
+function spawn() {
+  if (!character) return; if (who) world.remove(who);
+  const P = character.PARTS, r = (a) => a[Math.floor(Math.random() * a.length)];
+  try { who = character.buildCharacter(THREE, { skin: r(P.skin), hairStyle: r(P.hairStyles), hairColor: r(P.hairColors), eyes: r(P.eyes), top: r(P.tops), topColor: PALETTES[pi].primary, bottom: r(P.bottoms), bottomColor: "#4a5568", shoeColor: "#ffffff", headwear: r(P.headwear), glasses: r(P.glasses), blush: true });
+    who.position.set(0.3, 0, 0.6); world.add(who); character.setExpression?.(who, "happy"); } catch (e) { err("character: " + e.message); }
+}
+build();
+document.getElementById("pal").onclick = () => { pi = (pi + 1) % PALETTES.length; build(); };
+document.getElementById("var").onclick = () => { vi++; build(); };
+document.getElementById("look").onclick = spawn;
+addEventListener("resize", () => { const a = innerWidth / innerHeight; camera.left = -d * a; camera.right = d * a; camera.updateProjectionMatrix(); renderer.setSize(innerWidth, innerHeight); composer.setSize(innerWidth, innerHeight); });
+const clock = new THREE.Clock();
+renderer.setAnimationLoop(() => { const t = clock.getElapsedTime(); if (who && character?.idle) try { character.idle(who, t); } catch {} composer.render(); });
+</script>

@@ -1,0 +1,27 @@
+{
+ "model": "gemini-4-neon",
+ "prompt": "Write a three.js ES module that builds a stylised chibi character (about 1.1 m tall, head roughly 40% of the height) for a cozy room diorama. It is an AI companion with a human look built from parts; it must look charming and well made, not like stacked boxes: a smooth rounded head, shaped hair made from several lathe/extrude/sphere pieces, a tapered torso, soft limbs with hands and shoes.\n\nExports:\n- export const PARTS = { skin: [8 hex colours from light to deep], hairStyles: [\"short\",\"buzz\",\"middlePart\",\"curly\",\"afro\",\"braids\",\"bob\",\"longStraight\",\"ponytail\",\"hijab\"], hairColors: [8 hex], eyes: [\"round\",\"smile\",\"sleepy\",\"dot\"], tops: [\"hoodie\",\"tee\",\"shirt\",\"cardigan\"], bottoms: [\"trousers\",\"shorts\",\"skirt\"], headwear: [\"none\",\"cap\",\"beanie\",\"headphones\"], glasses: [\"none\",\"round\",\"square\"] }.\n- export function buildCharacter(THREE, look) -> THREE.Group, origin between the feet on the floor, facing +z. look = { skin, hairStyle, hairColor, eyes, top, topColor, bottom, bottomColor, shoeColor, headwear, glasses, blush: boolean }. Every listed option must produce visibly different geometry. Name the groups \"head\", \"hair\", \"torso\", \"armL\", \"armR\", \"legL\", \"legR\" so they can be animated.\n- export function setExpression(group, name) where name is \"asleep\" | \"awake\" | \"thinking\" | \"unsure\" | \"happy\": changes the eyes and mouth (swap or scale small meshes).\n- export function idle(group, t): a gentle breathing and head-sway animation given time in seconds.\n\nRules for the module:\n- It is a plain ES module. Do not import anything. Every exported function receives THREE (three.js r160 namespace) as its first argument.\n- Units are metres. Y is up. Build only from three.js primitives and ExtrudeGeometry/LatheGeometry/RoundedBox-style shapes you make yourself (bevelled extrudes for soft edges). No textures from files, no fonts, no text, no logos.\n- Style: a refined, cozy, stylised diorama, like a premium life-sim game. Soft rounded edges everywhere (no raw sharp boxes), believable proportions, small secondary details (seams, handles, trims, cushions, legs, knobs). Use MeshStandardMaterial with thoughtful roughness/metalness; enable castShadow and receiveShadow on meshes.\n- Everything must be customisable at run time: every mesh that carries a themable colour must have userData.slot set to a short name (for example \"primary\", \"secondary\", \"accent\", \"wood\", \"metal\", \"fabric\"), so a caller can recolour by slot.\n- Return only the code of the module in one ```js block.\n",
+ "usage": {
+  "total_tokens": 27825,
+  "total_input_tokens": 661,
+  "input_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 661
+   }
+  ],
+  "total_cached_tokens": 0,
+  "total_output_tokens": 21513,
+  "output_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 21513
+   }
+  ],
+  "total_tool_use_tokens": 0,
+  "total_thought_tokens": 5651,
+  "initial_input_tokens": 661
+ },
+ "ms": 201379,
+ "made_at": "2026-11-21T16:16:17.297Z"
+}

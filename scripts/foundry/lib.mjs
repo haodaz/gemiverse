@@ -20,9 +20,17 @@ async function post(path, body, tries = 3) {
 }
 
 // One model call. Returns { text, usage, ms }.
+// Long calls (high thinking) run in the background on Google's side and are polled,
+// because a single HTTP request that waits more than five minutes times out in Node.
 export async function ask(model, input, thinking = "medium") {
   const t0 = Date.now();
-  const json = await post("/interactions", { model, input, generation_config: { thinking_level: thinking } });
+  let json = await post("/interactions", { model, input, generation_config: { thinking_level: thinking }, background: true });
+  while (json.status && !["completed", "failed", "cancelled", "incomplete"].includes(json.status)) {
+    await new Promise((r) => setTimeout(r, 5000));
+    const res = await fetch(`${BASE}/interactions/${json.id}`, { headers: { "x-goog-api-key": key } });
+    if (res.ok) json = await res.json();
+  }
+  if (json.status !== "completed") throw new Error(`interaction ${json.status}: ${JSON.stringify(json).slice(0, 300)}`);
   const text = (json.steps ?? []).filter((s) => s.type === "model_output").flatMap((s) => s.content ?? []).map((c) => c.text ?? "").join("").trim();
   return { text, usage: json.usage, ms: Date.now() - t0, model, thinking };
 }

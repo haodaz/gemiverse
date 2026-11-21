@@ -1,0 +1,13 @@
+Write a three.js ES module for the architectural shell of a small single dorm room, seen as a cutaway diorama (floor plus the two back walls; the two front walls are absent).
+
+Exports:
+- export function buildRoom(THREE, opts) -> THREE.Group. Room is 4 m wide (x from -2 to 2), 4 m deep (z from -2 to 2), walls 2.7 m high on the back (z=-2) and left (x=-2) sides. opts = { wall: colour, trim: colour, floor: colour, floorStyle: "planks" | "herringbone" | "carpet", windowView: THREE.Texture | null }. Include: floor with visible plank or herringbone pattern made of geometry, skirting boards, a thick cut edge on walls and floor so it reads as a model, a large window in the back wall with frame, sill and mullions (a plane behind the glass shows opts.windowView if given, else a soft sky gradient colour), a door with frame and handle in the left wall, a ceiling-less top with a crown trim.
+- export const SLOTS: an object of named placements where furniture goes, each { position: [x,y,z], rotationY, footprint: [w,d], kind: "floor" | "wall" | "surface" }. Provide at least: bed, desk, chair, shelf, rug, plant, lamp, wallArt, corkboard, diary (on the desk surface), wardrobe, petBed.
+- export function recolor(group, palette): walks the group and sets material colour for meshes whose userData.slot is a key of palette.
+
+Rules for the module:
+- It is a plain ES module. Do not import anything. Every exported function receives THREE (three.js r160 namespace) as its first argument.
+- Units are metres. Y is up. Build only from three.js primitives and ExtrudeGeometry/LatheGeometry/RoundedBox-style shapes you make yourself (bevelled extrudes for soft edges). No textures from files, no fonts, no text, no logos.
+- Style: a refined, cozy, stylised diorama, like a premium life-sim game. Soft rounded edges everywhere (no raw sharp boxes), believable proportions, small secondary details (seams, handles, trims, cushions, legs, knobs). Use MeshStandardMaterial with thoughtful roughness/metalness; enable castShadow and receiveShadow on meshes.
+- Everything must be customisable at run time: every mesh that carries a themable colour must have userData.slot set to a short name (for example "primary", "secondary", "accent", "wood", "metal", "fabric"), so a caller can recolour by slot.
+- Return only the code of the module in one ```js block.

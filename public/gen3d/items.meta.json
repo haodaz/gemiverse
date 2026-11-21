@@ -1,0 +1,27 @@
+{
+ "model": "gemini-4-neon",
+ "prompt": "Write a three.js ES module of furniture for a small dorm room diorama. Each item is a factory.\n\nExports:\n- export const ITEMS = { bed, desk, chair, shelf, rug, plant, lamp, wallArt, corkboard, diary, wardrobe } where each value is a function (THREE, opts) -> THREE.Group. The group's origin is at the centre of the item's footprint on the floor (y=0), and it faces +z. Sizes: bed 1.0 x 2.0 m, desk 1.2 x 0.6 m and 0.75 m high, chair 0.45 x 0.45, shelf 0.8 x 0.3 and 1.6 high with books, rug 1.6 m round or rectangular, plant in a pot about 0.9 m high, desk lamp about 0.45 m (origin at its base), wallArt and corkboard are thin panels whose origin is the centre of their back face, diary is a small closed notebook with a ribbon and an elastic band (origin at its base), wardrobe 0.9 x 0.55 and 1.9 high.\n- opts = { primary, secondary, accent, wood, metal, material: \"wood\" | \"painted\" | \"metal\" | \"fabric\", variant: 0 | 1 | 2 }. variant changes the shape (for example bed: plain frame, upholstered headboard, loft-style; chair: wooden, swivel, soft armchair). material changes roughness/metalness and detail.\n- The lamp group must contain a THREE.PointLight child named \"glow\" (warm, low intensity).\n- export function recolor(group, palette): sets material colour for meshes whose userData.slot is a key of palette.\n\nRules for the module:\n- It is a plain ES module. Do not import anything. Every exported function receives THREE (three.js r160 namespace) as its first argument.\n- Units are metres. Y is up. Build only from three.js primitives and ExtrudeGeometry/LatheGeometry/RoundedBox-style shapes you make yourself (bevelled extrudes for soft edges). No textures from files, no fonts, no text, no logos.\n- Style: a refined, cozy, stylised diorama, like a premium life-sim game. Soft rounded edges everywhere (no raw sharp boxes), believable proportions, small secondary details (seams, handles, trims, cushions, legs, knobs). Use MeshStandardMaterial with thoughtful roughness/metalness; enable castShadow and receiveShadow on meshes.\n- Everything must be customisable at run time: every mesh that carries a themable colour must have userData.slot set to a short name (for example \"primary\", \"secondary\", \"accent\", \"wood\", \"metal\", \"fabric\"), so a caller can recolour by slot.\n- Return only the code of the module in one ```js block.\n",
+ "usage": {
+  "total_tokens": 37065,
+  "total_input_tokens": 665,
+  "input_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 665
+   }
+  ],
+  "total_cached_tokens": 0,
+  "total_output_tokens": 28009,
+  "output_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 28009
+   }
+  ],
+  "total_tool_use_tokens": 0,
+  "total_thought_tokens": 8391,
+  "initial_input_tokens": 665
+ },
+ "ms": 266402,
+ "made_at": "2026-11-21T16:17:22.320Z"
+}

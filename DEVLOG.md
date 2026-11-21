@@ -85,3 +85,17 @@ Entry format:
 - The room and the campus map follow the layout of our earlier concept (a single room; a full-screen campus map with places to go). Redrawn and rewritten today.
 - Art: a judge pointed us to Gemini 4 Neon for visual assets. Neon returns text, so we ask it for SVG code. First try: an isometric room, 26.7k characters of SVG, 22.5k tokens, 3 minutes, usable as is. Eight more are running (two campus maps, five places, a second room). Every file is saved in `public/art/` with its prompt and token count, because the event's API account expires tonight.
 - Why SVG and not generated bitmaps: it stays sharp at any size, objects in the room can be made tappable, and the prompt and output are both readable in the repo.
+
+## 11:18 · All 25 raw pages; Supabase ready; first failure with Carbon
+- Did: `01b-feeds.mjs` fills the nine pages a plain fetch could not read from each university's own public JSON feed. Now 25 of 25 usable: 17 static pages, 8 feed records (marked `json_feed`, one tier lower). The Columbia proxy returns at most 100 records per call, so it is asked in three date windows.
+- Did: three Supabase tables created (`base/sql/001-base.sql`); all three answer.
+- Failed: the first Carbon design run (high thinking) died after five minutes. Node's fetch gives up when no response headers arrive in 300 s. Fix: `background: true` on the interaction and poll its id every 5 s (`scripts/foundry/lib.mjs`). Checked with a small call; design run restarted.
+
+## 11:18 · The room becomes real 3D, written by Neon to one contract
+- Decided (Elodie): the flat SVG scenes look childish and cannot be customised. The room needs a stable structure that any new item can be placed into, with colours, materials and outfits that change.
+- How: three.js, everything built from code, no model files. Three modules written by `gemini-4-neon` to one written contract (`scripts/art/prompts/`): a room shell that exports named SLOTS (bed, desk, chair, shelf, rug, lamp, wall art, diary...), a furniture kit where every item is a factory with origin on the floor, 3 shape variants, a material option and colour slots, and a character built from parts (skin, 10 hair styles, tops, bottoms, headwear, glasses, five expressions, idle animation). A new item only has to follow the contract to be placed.
+- Our part: the test page (`public/gen3d/viewer.html`) supplies lighting, environment light, soft contact shadows (GTAO) and tone mapping, and places items by slot.
+- Gemini's part: Neon, medium thinking. room.js 30k chars / 24k tokens / 175 s; character.js 49k / 28k / 201 s; items.js 61k / 37k / 266 s.
+- Check: opened in the browser. Room, 11 items and the character render. The three buttons work: palette change recolours everything, style change swaps plank floor for herringbone, the bed frame for an upholstered one, the wooden chair for a swivel chair; random look changes hair, skin, headwear.
+- Failed / still wrong: items.js used a global THREE in its helpers although the contract said not to (the page now provides it). Slot layout crowds the desk behind the shelf and wardrobe. The character is small and its face is hard to read from the default camera.
+- The flat SVG scenes stay in `public/art/` as a fallback.

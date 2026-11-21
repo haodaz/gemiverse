@@ -1,0 +1,14 @@
+Write a three.js ES module that builds a stylised chibi character (about 1.1 m tall, head roughly 40% of the height) for a cozy room diorama. It is an AI companion with a human look built from parts; it must look charming and well made, not like stacked boxes: a smooth rounded head, shaped hair made from several lathe/extrude/sphere pieces, a tapered torso, soft limbs with hands and shoes.
+
+Exports:
+- export const PARTS = { skin: [8 hex colours from light to deep], hairStyles: ["short","buzz","middlePart","curly","afro","braids","bob","longStraight","ponytail","hijab"], hairColors: [8 hex], eyes: ["round","smile","sleepy","dot"], tops: ["hoodie","tee","shirt","cardigan"], bottoms: ["trousers","shorts","skirt"], headwear: ["none","cap","beanie","headphones"], glasses: ["none","round","square"] }.
+- export function buildCharacter(THREE, look) -> THREE.Group, origin between the feet on the floor, facing +z. look = { skin, hairStyle, hairColor, eyes, top, topColor, bottom, bottomColor, shoeColor, headwear, glasses, blush: boolean }. Every listed option must produce visibly different geometry. Name the groups "head", "hair", "torso", "armL", "armR", "legL", "legR" so they can be animated.
+- export function setExpression(group, name) where name is "asleep" | "awake" | "thinking" | "unsure" | "happy": changes the eyes and mouth (swap or scale small meshes).
+- export function idle(group, t): a gentle breathing and head-sway animation given time in seconds.
+
+Rules for the module:
+- It is a plain ES module. Do not import anything. Every exported function receives THREE (three.js r160 namespace) as its first argument.
+- Units are metres. Y is up. Build only from three.js primitives and ExtrudeGeometry/LatheGeometry/RoundedBox-style shapes you make yourself (bevelled extrudes for soft edges). No textures from files, no fonts, no text, no logos.
+- Style: a refined, cozy, stylised diorama, like a premium life-sim game. Soft rounded edges everywhere (no raw sharp boxes), believable proportions, small secondary details (seams, handles, trims, cushions, legs, knobs). Use MeshStandardMaterial with thoughtful roughness/metalness; enable castShadow and receiveShadow on meshes.
+- Everything must be customisable at run time: every mesh that carries a themable colour must have userData.slot set to a short name (for example "primary", "secondary", "accent", "wood", "metal", "fabric"), so a caller can recolour by slot.
+- Return only the code of the module in one ```js block.
