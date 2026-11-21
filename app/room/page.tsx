@@ -11,7 +11,7 @@ import { decide as decideNow, POLICY } from "@/lib/kernel/autonomy";
 import { SPACE } from "@/lib/kernel/space";
 import type { GemiState } from "@/lib/kernel/types";
 import { AXES, blank, loadLog, replay, saveLog, type AxisId, type Beliefs, type LogEvent } from "@/lib/mind";
-import { t, loadLang, saveLang, type Lang } from "@/lib/i18n";
+import { t, loadLang, saveLang, type Lang, say } from "@/lib/i18n";
 import { Menu } from "@/components/Menu";
 import { Composer, type Sent } from "@/components/Composer";
 import { Chunky, GamePanel, Icon, IconButton, INK, RadialMenu } from "@/components/game";
@@ -93,6 +93,7 @@ export default function Room() {
   const evidenceOf = useMemo(() => { const m: Record<string, Evidence[]> = {}; for (const e of base?.evidence ?? []) (m[e.entity_id] ??= []).push(e); return m; }, [base]);
   if (!s || !preset || !school) return null;
   const tt = (k: string) => t(k, lang);
+  const tri = (en: string, zh: string, es: string) => (lang === "zh" ? zh : lang === "es" ? es : en);
   const push = (i: Omit<Item, "id">) => setFeed((f) => [...f, { ...i, id: nextId.current++ }]);
   const append = (e: LogEvent) => setLog((l) => { const n = [...l, e]; saveLog(school, n); return n; });
   const when = (f: Record<string, any>) => { const v = f.occurrences?.[0]?.start; return v ? new Date(v).toLocaleString(lang === "zh" ? "zh-CN" : lang === "es" ? "es" : "en-US", { weekday: "short", month: "short", day: "numeric", hour: "numeric", minute: "2-digit" }) : tt("date_unconfirmed"); };
@@ -218,7 +219,7 @@ export default function Room() {
         {(["for_you", "for_itself"] as const).map((p) => <div key={p} className="flex items-center gap-1 text-sm font-bold tabular-nums"><Icon name="star" size={20} />{state.purses[p]}<span className="text-[11px] font-normal text-[#8a8296]">{tt(p)}</span></div>)}
       </button>
 
-      {!tap && !campus && <div className="absolute left-5 top-[4.6rem] max-w-[min(34rem,60vw)] rounded-2xl border-[3px] bg-[#fffaf0] px-4 py-1.5 text-sm" style={{ borderColor: INK, boxShadow: `0 4px 0 ${INK}` }}><span className="text-[#8a8296]">{tt("right_now")}: </span>{preset.gemiName} {tt("gemi_is")} {busy ? tt("thinking") : doing}{now && now.rule !== "potter" ? <span className="ml-2 text-[11px] text-[#8a8296]">· {now.why}</span> : null}</div>}
+      {!tap && !campus && <div className="absolute left-5 top-[4.6rem] max-w-[min(34rem,60vw)] rounded-2xl border-[3px] bg-[#fffaf0] px-4 py-1.5 text-sm" style={{ borderColor: INK, boxShadow: `0 4px 0 ${INK}` }}><span className="text-[#8a8296]">{tt("right_now")}: </span>{preset.gemiName} {tt("gemi_is")} {busy ? tt("thinking") : say(doing, lang)}{now && now.rule !== "potter" ? <span className="ml-2 text-[11px] text-[#8a8296]">· {say(now.why, lang)}</span> : null}</div>}
 
       {tap && <RadialMenu x={tap.x} y={tap.y} items={[
         { icon: "talk", label: tt("tap_talk"), onClick: () => openPanel("talk") },
@@ -273,14 +274,14 @@ export default function Room() {
             };
             const PAL = wtab === "Hair" ? ["#2a2226", "#2a1d18", "#6b4a2f", "#c9a063", "#a8482f", "#f2a7b8", "#8fc1e8", "#d8d4dc"] : ["#b8a2e3", "#8fc1e8", "#f2a7b8", "#ffe08a", "#a8e0c0", "#ffffff", "#3d3648", "#5b7bb5", "#d9534f", "#7fb48a"];
             return (<div>
-              <div className="flex gap-1.5">{Object.keys(CATS).map((t) => <button key={t} onClick={() => { setWtab(t); setWish(null); }} className="flex-1 rounded-t-2xl border-[3px] border-b-0 px-2 py-1.5 text-sm font-bold" style={{ borderColor: INK, background: wtab === t ? "#fff" : s.soft, opacity: wtab === t ? 1 : 0.75 }}>{t}</button>)}</div>
+              <div className="flex gap-1.5">{Object.keys(CATS).map((t) => <button key={t} onClick={() => { setWtab(t); setWish(null); }} className="flex-1 rounded-t-2xl border-[3px] border-b-0 px-2 py-1.5 text-sm font-bold" style={{ borderColor: INK, background: wtab === t ? "#fff" : s.soft, opacity: wtab === t ? 1 : 0.75 }}>{({ Hair: tri("Hair", "发型", "Pelo"), Tops: tri("Tops", "上衣", "Arriba"), Bottoms: tri("Bottoms", "下装", "Abajo"), Shoes: tri("Shoes", "鞋", "Zapatos") } as Record<string, string>)[t]}</button>)}</div>
               <div className="rounded-b-2xl border-[3px] bg-white p-3" style={{ borderColor: INK }}>
                 <div className="grid grid-cols-3 gap-2.5">{c.items.map((o) => { const own = has(o), on = cur[c.key] === o; return (
                   <button key={o} onClick={() => (own ? wear({ [c.key]: o }) : setWish({ id: o, cost: c.cost }))} className="relative flex aspect-square flex-col items-center justify-center rounded-2xl border-[3px] p-1 text-center transition hover:-translate-y-0.5"
                     style={{ borderColor: on ? "#7c4dce" : INK, background: on ? "#efe7ff" : own ? "#fffaf0" : "#ece7e0", boxShadow: on ? "0 0 0 3px #c8b4f0" : `0 3px 0 ${INK}33` }}>
                     <span className="mb-1 h-7 w-7 rounded-full border-2" style={{ borderColor: INK, background: own ? (cur[c.colorKey ?? ""] ?? "#c8b4f0") : "#cfc8bf" }} />
                     <span className="text-[12px] font-bold leading-tight" style={{ color: own ? INK : "#8a8296" }}>{name(o)}</span>
-                    {on && <span className="absolute -top-2 right-1 rounded-full bg-[#7c4dce] px-1.5 text-[10px] font-bold text-white">on</span>}
+                    {on && <span className="absolute -top-2 right-1 rounded-full bg-[#7c4dce] px-1.5 text-[10px] font-bold text-white">{tri("on", "穿着", "puesto")}</span>}
                     {!own && <span className="absolute right-1.5 top-1.5"><Icon name="lock" size={16} /></span>}
                     {!own && <span className="mt-0.5 flex items-center gap-0.5 text-[10.5px] font-bold text-[#8a8296]"><Icon name="star" size={11} />{c.cost}</span>}
                   </button>); })}</div>
@@ -288,17 +289,17 @@ export default function Room() {
                   {wish.short ? <span><b>{preset.gemiName}</b> has {state.purses.for_itself} of its own Gem Stars today and this takes {wish.cost}. It will keep the wish and save for it.</span>
                     : <div className="flex items-center justify-between gap-2"><span>Ask <b>{preset.gemiName}</b> to get <b>{name(wish.id)}</b>? It spends {wish.cost} of its own Gem Stars.</span>
                       <button onClick={() => ask(wish.id)} className="shrink-0 rounded-full border-[3px] bg-[#ffe08a] px-3 py-1 text-sm font-bold" style={{ borderColor: INK, boxShadow: `0 3px 0 ${INK}` }}>Ask</button></div>}</div>)}
-                {c.colorKey && (<><div className="mb-1.5 mt-3 text-[11px] font-bold uppercase tracking-wider text-[#8a8296]">Colour</div>
+                {c.colorKey && (<><div className="mb-1.5 mt-3 text-[11px] font-bold uppercase tracking-wider text-[#8a8296]">{tri("Colour", "颜色", "Color")}</div>
                   <div className="flex flex-wrap gap-2">{PAL.map((col) => <button key={col} onClick={() => wear({ [c.colorKey!]: col })} aria-label={col} className="h-7 w-7 rounded-full border-[3px]" style={{ background: col, borderColor: cur[c.colorKey!] === col ? "#7c4dce" : INK, boxShadow: cur[c.colorKey!] === col ? "0 0 0 2px #fff, 0 0 0 4px #7c4dce" : undefined }} />)}</div></>)}
               </div>
-              <div className="mb-1 mt-3 text-[11px] font-bold uppercase tracking-wider text-[#8a8296]">Build</div>
+              <div className="mb-1 mt-3 text-[11px] font-bold uppercase tracking-wider text-[#8a8296]">{tri("Build", "体型", "Complexión")}</div>
               <input type="range" min="0.9" max="1.3" step="0.02" value={cur.bodyWidth ?? 1} onChange={(e) => wear({ bodyWidth: +e.target.value })} className="w-full" aria-label="Body width" />
             </div>); })()}
           {panel === "talk" && (
             <div className="space-y-3">
               <div className="sticky top-0 z-[1] -mx-1 flex items-center gap-3 rounded-2xl border-2 bg-[#fffaf0] px-2 py-1" style={{ borderColor: INK }}>
                 <iframe src={`/gen3d/doll.html?embed=1&cam=face&looks=${preset.gemiName.toLowerCase()}`} title={preset.gemiName} className="h-24 w-24 shrink-0 border-0 bg-transparent" />
-                <div className="min-w-0"><div className="text-base font-bold">{preset.gemiName}</div><div className="text-xs leading-snug text-[#6d6579]">{busy ? "…" : doing ?? ""}</div></div>
+                <div className="min-w-0"><div className="text-base font-bold">{preset.gemiName}</div><div className="text-xs leading-snug text-[#6d6579]">{busy ? "…" : say(doing, lang)}</div></div>
               </div>
               {feed.length === 0 && <p className="text-sm leading-relaxed text-[#5f576c]">{tt("empty_today")}</p>}
               {feed.map((i) => (
@@ -396,10 +397,10 @@ export default function Room() {
                     {e.type === "choice" && (<>
                       <div><b>{tt(e.action === "keep" ? "kept" : "skipped")}</b> · {e.title}</div>
                       {e.action === "keep" && !e.undone && (went.some((w) => w.find === e.find)
-                        ? <div className="mt-1 text-[12px] font-bold text-[#2f7a3d]">You went. A keepsake is on the desk{went.find((w) => w.find === e.find)?.matched ? "; it had guessed you would, so a companion moved in" : ""}.</div>
+                        ? <div className="mt-1 text-[12px] font-bold text-[#2f7a3d]">{tri("You went. A keepsake is on the desk", "你去了。桌上多了一件纪念品", "Fuiste. Hay un recuerdo en el escritorio")}{went.find((w) => w.find === e.find)?.matched ? tri("; it had guessed you would, so a companion moved in", "；它当时猜中了，所以有个小伙伴搬了进来", "; lo había adivinado, así que llegó un compañero") : ""}{tri(".", "。", ".")}</div>
                         : <button onClick={() => { const matched = (guesses.current[e.find] ?? 0) >= 0.5; const n = [...went, { find: e.find, title: e.title, matched }]; setWent(n); try { localStorage.setItem(`gemi.went.${school}`, JSON.stringify(n)); } catch {}
                             append({ id: uid(), at: new Date().toISOString(), type: "room", by: "student", what: `went to "${e.title}"; a keepsake arrived${matched ? " and a companion moved in" : ""}`, item: e.find }); }}
-                            className="mt-1.5 rounded-full border-2 bg-[#dff3e6] px-3 py-0.5 text-[12px] font-bold" style={{ borderColor: INK }}>I went</button>)}
+                            className="mt-1.5 rounded-full border-2 bg-[#dff3e6] px-3 py-0.5 text-[12px] font-bold" style={{ borderColor: INK }}>{tri("I went", "我去了", "Fui")}</button>)}
                       {e.evidence.map((ev, k) => (<div key={k} className="mt-2"><div className="text-[11px] text-[#5f576c]">{ev.why}</div>{moves[k] && <Axis id={ev.axis} b={moves[k].after} ghost={moves[k].before} />}</div>))}
                     </>)}
                     <div className="mt-2 text-right"><Chunky small color="#fffaf0" onClick={() => toggleUndo(e.id)}><Icon name="undo" size={14} />{tt(e.undone ? "redo" : "undo")}</Chunky></div>

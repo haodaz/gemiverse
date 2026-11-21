@@ -74,3 +74,28 @@ const T: Record<string, Record<Lang, string>> = {
 export const t = (key: string, lang: Lang) => T[key]?.[lang] ?? T[key]?.en ?? key;
 export const loadLang = (): Lang => { try { const v = localStorage.getItem("gemi.lang"); return v === "zh" || v === "es" ? v : "en"; } catch { return "en"; } };
 export const saveLang = (l: Lang) => { try { localStorage.setItem("gemi.lang", l); } catch {} };
+
+// Sentences that are produced as English by the 3D view (what the Gemi is doing) and by the autonomy table (why). They are shown
+// through say(), so the interface stays in one language. Anything not listed falls back to English.
+const SAY: Record<string, { zh: string; es: string }> = {
+  "settling in": { zh: "安顿下来", es: "instalándose" }, "about to head out": { zh: "准备出门", es: "a punto de salir" }, "just being here": { zh: "就这么待着", es: "simplemente aquí" },
+  "looking out the window": { zh: "看着窗外", es: "mirando por la ventana" }, "picking a book from the shelf": { zh: "从书架上挑书", es: "eligiendo un libro" }, "stretching": { zh: "伸懒腰", es: "estirándose" },
+  "wondering what you'd like": { zh: "琢磨你会喜欢什么", es: "pensando qué te gustaría" }, "writing in the diary": { zh: "写日记", es: "escribiendo en su diario" },
+  "writing in its diary, on its own star": { zh: "用自己的一颗星写日记", es: "escribiendo en su diario, con su propia estrella" }, "changed its room, on its own star": { zh: "用自己的一颗星改了改房间", es: "cambió su cuarto, con su propia estrella" },
+  "You paused me. I do nothing until you say so.": { zh: "你让我暂停了。你不发话我什么都不做。", es: "Me pausaste. No hago nada hasta que lo digas." }, "I am out looking.": { zh: "我在外面找。", es: "Estoy fuera buscando." },
+  "I brought things back. I will not spend more until you have looked.": { zh: "我带了东西回来。你看过之前我不再花星星。", es: "Traje cosas. No gastaré más hasta que las mires." }, "It is night.": { zh: "夜里了。", es: "Es de noche." },
+  "You changed my room. I am taking a look.": { zh: "你动了我的房间，我去看看。", es: "Cambiaste mi cuarto. Voy a mirar." },
+  "I still do not know enough about how you choose. I am going out, on my own stars.": { zh: "我对你怎么选还不够了解。我用自己的星星出门看看。", es: "Aún no sé bastante sobre cómo eliges. Salgo, con mis propias estrellas." },
+  "Today taught me something. I am writing it down.": { zh: "今天学到了点东西，我记下来。", es: "Hoy aprendí algo. Lo estoy anotando." }, "I saved enough. I am making it now.": { zh: "攒够了，我现在就做。", es: "Ahorré suficiente. Lo hago ahora." },
+  "I am not spending today. I am saving for something bigger.": { zh: "今天不花，我在攒一件更大的事。", es: "Hoy no gasto. Ahorro para algo más grande." }, "I have a star of my own. I am changing something in my room.": { zh: "我有一颗自己的星，改改房间。", es: "Tengo una estrella mía. Cambio algo en mi cuarto." },
+  "I have spent today's stars. I will rest until tomorrow.": { zh: "今天的星星花完了，我休息到明天。", es: "Gasté las estrellas de hoy. Descanso hasta mañana." }, "Nothing needs me right now.": { zh: "眼下没什么要我做的。", es: "Nada me necesita ahora." },
+};
+const PLACE: Record<string, { zh: string; es: string }> = { library: { zh: "图书馆", es: "la biblioteca" }, clubs: { zh: "社团", es: "los clubes" }, commons: { zh: "交流广场", es: "el comedor" }, opportunities: { zh: "发展资源", es: "oportunidades" } };
+export function say(text: string | null | undefined, lang: Lang): string {
+  if (!text || lang === "en") return text ?? "";
+  if (SAY[text]) return SAY[text][lang];
+  let m = text.match(/^waiting for you with (\d+) things?$/); if (m) return lang === "zh" ? `带了 ${m[1]} 样东西等你` : `esperándote con ${m[1]} cosa${m[1] === "1" ? "" : "s"}`;
+  m = text.match(/^out at the (\w+), on its own$/); if (m) return lang === "zh" ? `自己去了${PLACE[m[1]]?.zh ?? m[1]}` : `en ${PLACE[m[1]]?.es ?? m[1]}, por su cuenta`;
+  m = text.match(/^noticed you moved the (.+)$/); if (m) return lang === "zh" ? `发现你动了 ${m[1]}` : `notó que moviste: ${m[1]}`;
+  return text;
+}

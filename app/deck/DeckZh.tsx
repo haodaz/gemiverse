@@ -301,7 +301,7 @@ export default function Deck({ onLang }: { onLang?: () => void }) {
             <tr><Cell head w="16%">哪所学校</Cell><Cell head w="14%">事实</Cell><Cell head w="36%">我们展示的</Cell><Cell head>日历上写的</Cell></tr>
             {[0, 1, 9, 13].map((k) => { const w = (proof.pages.still_wrong as any[])[k]; return w ? (<tr key={k}><Cell>{w.school}</Cell><Cell>{w.field}</Cell><Cell>{String(w.shown)}</Cell><Cell>{String(w.truth)}</Cell></tr>) : null; })}
           </tbody></table>
-          <ul className="mt-4"><Li><b>18 条里的 12 条</b>是 Penn 和 Duke 重复举办的活动被说成线上。原因我们还没找到。</Li>
+          <ul className="mt-4"><Li><b>18 条里的 12 条</b>是被判成线上、而答案写线下的活动。我们把 12 个页面都读了：9 个同时写了房间和 Zoom，2 个标题就写着「online via zoom」，1 个是真的错。「是不是线上」这个问法本身不对，这个字段应该有三个值。</Li>
             <Li><b>18 条里的 4 条</b>是 Duke 的房间：我们从描述里读出了房间，而日历字段写的是「Other」。我们仍然把它们算作错。</Li>
             <Li>第一次跑活动列表时覆盖率是 54.6%：核对关卡太严也是一种失败。</Li></ul></div>
         <div><p className="text-sm font-bold uppercase tracking-wider text-[#8a8296]">数字之外</p>

@@ -238,7 +238,7 @@ export default function Deck({ onLang }: { onLang?: () => void }) {
             <p><b>Baseline:</b> Gemini 4 Argon, one call, the page text in, the five facts out. No structure, no check.</p>
             <p className="mt-3"><b>Ours:</b> Hydrogen fills a structure Carbon designed; the Decisions API answers one question per field against the source; a rule in code resolves the year.</p>
             <p className="mt-3"><b>The first run lost.</b> {pct(P1.system?.error_rate ?? P1.system_v1?.error_rate)} against {pct(P1.baseline.error_rate)}. The gate confirmed hidden text, because the words were there. We show that bar.</p>
-            <p className="mt-3"><b>After the fix:</b> {pct(PG.system_v2.error_rate)} against {pct(PG.baseline.error_rate)}, with coverage {pct(PG.system_v2.coverage)}. Give the baseline our reader and it reaches {pct(PG.baseline_visible.error_rate)}: most of the gain is the reader; the gate&apos;s own margin is on places, 6 wrong against 12.</p>
+            <p className="mt-3"><b>After the fix:</b> {pct(PG.system_v2.error_rate)} against {pct(PG.baseline.error_rate)}, coverage {pct(PG.system_v2.coverage)}. <b>Credit where it is due:</b> reading only visible text gets a single call to {pct(PG.baseline_visible.error_rate)} for 40% of our tokens; any honest agent should do that first. Our per-field check pays 2.4 times the tokens for the tail: unsupported fields 29 to 0 on the exam set, edge-page errors {(proof.pages.edge as any).baseline_visible.wrong} to {(proof.pages.edge as any).system_v2.wrong}, places 12 to 6.</p>
             <p className="mt-3 text-[15px] text-[#8a8296]">Cost: {Math.round(TPP.sys)} tokens a page against {Math.round(TPP.base)}. Next slide says who pays.</p></div>
         </div>
       </div>) },
@@ -277,7 +277,7 @@ export default function Deck({ onLang }: { onLang?: () => void }) {
             <tr><Cell head w="16%">Where</Cell><Cell head w="14%">Fact</Cell><Cell head w="36%">We showed</Cell><Cell head>The calendar says</Cell></tr>
             {[0, 1, 9, 13].map((k) => { const w = (proof.pages.still_wrong as any[])[k]; return w ? (<tr key={k}><Cell>{w.school}</Cell><Cell>{w.field}</Cell><Cell>{String(w.shown)}</Cell><Cell>{String(w.truth)}</Cell></tr>) : null; })}
           </tbody></table>
-          <ul className="mt-4"><Li><b>12 of 18</b> are recurring Penn and Duke events called online. We have not found the cause yet.</Li>
+          <ul className="mt-4"><Li><b>12 of 18</b> are events called online against a key that says in person. We read all 12: 9 say both a room and Zoom, 2 are titled &ldquo;online via zoom&rdquo;, 1 is a real error. Yes-or-no was the wrong question; the field should have three values.</Li>
             <Li><b>4 of 18</b> are Duke rooms we read from the description while the calendar field says &ldquo;Other&rdquo;. We left them counted as wrong.</Li>
             <Li>Coverage on the first listings run was 54.6%: a gate that is too strict is also a failure.</Li></ul></div>
         <div><p className="text-sm font-bold uppercase tracking-wider text-[#8a8296]">Outside the numbers</p>

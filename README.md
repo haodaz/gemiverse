@@ -19,7 +19,7 @@ Built at the Gemini 4 NYC Hackathon, Saturday 2026-11-21.
 | 122 raw pages from six universities, 610 facts, first run | 8.7% | 9.6% (we lost) |
 | Same pages after we read only the text a person can see | 8.4% (4.3% with our reader) | 3.2% / 96.4% |
 
-- **Where it still fails:** 18 facts, listed in `base/runs/08-eval-pages.json`. 12 are recurring Penn and Duke events called online; we have not found the cause.
+- **Where it still fails:** 18 facts, listed in `base/runs/08-eval-pages.json`. 12 are events called online against a key that says in person: 9 are hybrid (a room and Zoom), 2 are titled "online via zoom", 1 is a real error. The field needs three values, not yes or no.
 - **What we changed after seeing failures:** 14 corrections with before, how and after in `base/runs/improvements.json`.
 - Rerun: `node scripts/foundry/07-eval.mjs`, `node scripts/foundry/08-eval-pages.mjs`, then `node scripts/proof-summary.mjs`.
 - Other models used: `gemini-4-neon` writes the 3D room, character, motion and icons as code; `lyria-3-clip-preview` writes music. The Managed Agent is not wired.

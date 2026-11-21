@@ -124,8 +124,17 @@
    "saw": "Four of our six remaining place errors are Duke pages where the feed's own location field says 'Other (see event description)' and we read the real room from the description.",
    "before": "counted as 4 wrong",
    "how": "Not changed: the scoring rule was fixed before the run. Listed here as disputed.",
-   "after": "still counted as wrong; 12 'online' errors on recurring Penn and Duke pages remain unexplained",
+   "after": "still counted as wrong; the 12 'online' errors are explained in the next item",
    "evidence": "base/runs/08-eval-pages.json (wrong.system_v2)"
+  },
+  {
+   "id": "hybrid-events",
+   "area": "the measurement",
+   "saw": "12 events were still called online against a key that says in person. Carbon's review named this as the weakest point. We read all 12 pages: 9 say both a room and Zoom (hybrid, or 'you will get the location or the Zoom link'), 2 are titled 'online via zoom' while the calendar's own field says in person, 1 has no cue at all.",
+   "before": "12 'cause unknown'",
+   "how": "Not rescored: the scoring rule was fixed before the run. The finding is that 'online: yes or no' is the wrong question. The field becomes three-valued (in person, online, both), and the gate asks about each separately.",
+   "after": "cause known for 11 of 12; 1 real error; the three-valued field is not built or rerun yet",
+   "evidence": "base/runs/08-eval-pages.json (wrong.system_v2), base/runs/10-carbon-review.medium.json"
   }
  ]
 }
