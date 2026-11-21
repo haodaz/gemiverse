@@ -62,7 +62,7 @@ export default function Deck({ onLang }: { onLang?: () => void }) {
   const slides: { id: string; body: ReactNode }[] = [
     { id: "Gemiverse", body: (
       <div className="flex h-full flex-col">
-        <div className="flex items-end justify-between gap-10"><div><Eyebrow>Gemini 4 NYC Hackathon · Track 1, 5 Sigma · built today</Eyebrow><h1 className="mt-2 text-[4.6rem] font-bold leading-none tracking-tight">Gemiverse</h1></div>
+        <div className="flex items-end justify-between gap-10"><div><Eyebrow>Gemini 4 NYC Hackathon · Track 1, 5 Sigma · built today</Eyebrow><h1 className="mt-2 text-[4.6rem] font-bold leading-none tracking-tight"><span style={{ color: "#d9891c" }}>Gemi</span><span style={{ color: "#7c4dce" }}>verse</span></h1></div>
           <p className="max-w-[46%] pb-2 text-xl leading-relaxed text-[#4a4356]">Every college student gets a <b>Gemi</b>. It enters a space, and day by day its picture of you gains dimensions. The tokens it spends each day are few; what they buy stays.</p></div>
         <div className="mt-4 min-h-0 flex-1"><Banner /></div>
         <p className="mt-3 text-center text-2xl font-bold" style={{ color: "#7c4dce" }}>It would rather miss than be wrong.</p>

@@ -20,7 +20,7 @@ export default function Film() {
         <div className="absolute inset-0" style={{ background: "linear-gradient(90deg, #1d1828f2 0%, #1d1828cc 30%, #1d182866 46%, #1d182800 62%)" }} />
         <div className="absolute inset-y-0 left-0 flex w-[46%] flex-col justify-center pl-24 text-white">
           <p className="text-[20px] font-bold uppercase tracking-[0.3em] text-[#e8dcff]">Gemini 4 NYC Hackathon · 5 Sigma</p>
-          <h1 className="mt-5 text-[8.2rem] font-semibold leading-none tracking-tight">Gemiverse</h1>
+          <h1 className="mt-5 text-[8.2rem] font-semibold leading-none tracking-tight"><span style={{ color: "#ffe08a" }}>Gemi</span><span style={{ color: "#d9c8ff" }}>verse</span></h1>
           <p className="mt-7 text-[2.5rem] font-semibold leading-tight text-[#ffe08a]">Meet your Gemi,<br />and build a universe together.</p>
         </div></div>)}
 

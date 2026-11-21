@@ -13,7 +13,7 @@ export default function Home() {
     <main className="h-screen snap-y snap-proximity overflow-y-auto scroll-pt-[60px] bg-[#faf8f5] text-[#2b2536]" style={{ scrollBehavior: "smooth", overscrollBehavior: "contain" }}>
       <header className="sticky top-0 z-20 border-b border-[#ebe6ee] bg-[#faf8f5]">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-8 py-3.5">
-          <a href="/" className="text-xl font-semibold tracking-tight">Gemiverse</a>
+          <a href="/" className="text-xl font-semibold tracking-tight"><span style={{ color: "#d9891c" }}>Gemi</span><span style={{ color: "#7c4dce" }}>verse</span></a>
           <nav className="flex items-center gap-7 text-[15px] text-[#5f576c]">
             <a href="#day" className="hover:text-[#2b2536]">A day</a><a href="#home" className="hover:text-[#2b2536]">Its home</a><a href="#proof" className="hover:text-[#2b2536]">Why trust it</a><a href="/deck" className="hover:text-[#2b2536]">How it works</a>
             <SignIn />

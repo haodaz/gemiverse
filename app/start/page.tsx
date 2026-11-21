@@ -19,7 +19,7 @@ export default function Start() {
   return (
     <main className="relative min-h-screen overflow-hidden bg-[#faf8f5] text-[#2b2536]">
       <style>{`@keyframes breathe{0%,100%{opacity:.85}50%{opacity:1}}@keyframes drift{0%,100%{transform:translateY(10px)}50%{transform:translateY(-14px)}}`}</style>
-      <a href="/" className="absolute left-8 top-6 text-xl font-semibold tracking-tight text-[#2b2536]">Gemiverse</a>
+      <a href="/" className="absolute left-8 top-6 text-xl font-semibold tracking-tight text-[#2b2536]"><span style={{ color: "#d9891c" }}>Gemi</span><span style={{ color: "#7c4dce" }}>verse</span></a>
       <div className="absolute right-8 top-7 flex gap-2">{[0, 1, 2, 3].map((k) => <span key={k} className="h-2 rounded-full transition-all" style={{ width: k === step ? 28 : 8, background: k <= step ? "#7c4dce" : "#d9d2e3" }} />)}</div>
 
       {step < 3 && (

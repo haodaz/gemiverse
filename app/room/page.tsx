@@ -252,7 +252,7 @@ export default function Room() {
         </div>)}
 
       <div className="absolute left-5 top-4 flex items-center gap-3">
-        <a href="/" className="text-lg font-bold tracking-tight">Gemiverse</a>
+        <a href="/" className="text-lg font-bold tracking-tight"><span style={{ color: "#d9891c" }}>Gemi</span><span style={{ color: "#7c4dce" }}>verse</span></a>
         <span className="rounded-full border-[3px] px-3 py-0.5 text-xs font-bold text-white" style={{ background: s.accent, borderColor: INK }}>{s.short}</span>
         <Menu lang={lang} onLang={(l) => { setLang(l); saveLang(l); }} />
       </div>
