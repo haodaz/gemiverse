@@ -1,0 +1,10 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "Edit the attached photograph. Keep everything exactly as it is: the same young woman in the rust-red fleece on the park bench, the arch and autumn trees, the laptop and the room on its screen, framing and light. Change only one thing: the little chibi character on the laptop screen now wears a rust-red cardigan, the same red as the woman's fleece, instead of the lilac one. No other changes. No text, no logos, no watermarks.",
+ "reference": [
+  "both-red.jpg"
+ ],
+ "seconds": 16,
+ "tokens": 2033,
+ "at": "2026-11-21T20:51:46.480Z"
+}

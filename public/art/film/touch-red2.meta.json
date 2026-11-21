@@ -1,0 +1,10 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "Edit the attached photograph. Keep everything exactly as it is: the same woman in the rust-red fleece, the same hand and fingertip touching the laptop screen, the same room on the screen, the warm glow, framing, light and background. Change only one thing: the little chibi character on the screen now wears a rust-red cardigan, the same red as the woman's fleece, instead of the lilac one. No other changes. No text, no logos, no watermarks.",
+ "reference": [
+  "touch-red.jpg"
+ ],
+ "seconds": 14,
+ "tokens": 2089,
+ "at": "2026-11-21T20:51:44.612Z"
+}

@@ -4,6 +4,7 @@ import { useEffect, useState, type ReactNode } from "react";
 import { INK } from "@/components/game";
 import { LineChart, Bars } from "@/components/charts";
 import proof from "@/lib/proof.json";
+import trip from "@/base/runs/11-agent-trip.json";
 import Banner from "./Banner";
 import { step, type Tier } from "@/lib/mind";
 import { POLICY } from "@/lib/kernel/autonomy";
@@ -244,8 +245,21 @@ export default function Deck({ onLang }: { onLang?: () => void }) {
             <div className="grid grid-cols-[2.6rem_1fr_17rem] items-center gap-3 rounded-xl border-2 px-3 py-2" style={{ borderColor: INK, background: "#a8e0c0" }}><b className="text-xl">6</b><span className="text-[16px] font-bold leading-snug">The card shows, field by field: still on the page / not confirmed / page says otherwise</span><span className="text-right font-mono text-[12px]">nothing is written to the base</span></div>
           </div></div>
         <div>
-          <div className="grid grid-cols-3 gap-3 text-center">{[["22–30 s", "per live re-check"], ["19–28k", "tokens, agent plus gate"], ["8 / 8", "stored fields still on the page, in the run we kept"]].map(([v, l]) => <div key={l} className="rounded-2xl border-2 bg-white py-3" style={{ borderColor: INK }}><div className="text-3xl font-bold">{v}</div><div className="px-1 text-xs text-[#6d6579]">{l}</div></div>)}</div>
-          <ul className="mt-5"><Li><b>Why an agent here:</b> a page can change after we checked it. The agent fetches it again in its own sandbox, so the laptop never runs its commands.</Li><Li><b>Two models, two jobs:</b> the agent reads; the Decisions API judges. The agent's report is never trusted on its own.</Li><Li><b>The person stays in control:</b> it runs only when you tap, changes nothing in the base, and a field that no longer agrees is shown as such.</Li><Li><b>Not yet:</b> the Gemi's own daily trips still read the checked base; they do not browse live. Record: <code>base/runs/11-agent-trip.json</code>.</Li></ul>
+          {/* Evidence, not a diagram: the call as it is in lib/server/gemini.ts, and the record of a real run kept in base/runs/11-agent-trip.json */}
+          <p className="text-[12px] font-bold uppercase tracking-wider text-[#8a8296]">The call · lib/server/gemini.ts</p>
+          <pre className="mt-1 overflow-hidden rounded-xl bg-[#2b2536] px-4 py-3 font-mono text-[12.5px] leading-relaxed text-[#fdf6e3]">{`post("/interactions", {
+  agent: "antigravity-preview-09-2026",
+  environment: { type: "remote" },
+  background: true,
+  input: [{ type: "text", text: "Fetch this public web page with curl ..." }] })`}</pre>
+          <p className="mt-3 text-[12px] font-bold uppercase tracking-wider text-[#8a8296]">A real run · base/runs/11-agent-trip.json · {String(trip.at).slice(11, 16)} UTC</p>
+          <div className="mt-1 rounded-xl border-2 bg-white px-4 py-3 text-[13px] leading-snug" style={{ borderColor: INK }}>
+            <div><b>{trip.name}</b></div>
+            <div className="mt-1 font-mono text-[11.5px] text-[#6d6579]">{trip.status} · {trip.seconds} s · {trip.tokens} tokens · steps: {(trip.steps as string[]).join(" → ")}</div>
+            <div className="mt-2 border-l-4 pl-3 text-[12.5px] italic text-[#4a4356]" style={{ borderColor: "#c8b4f0" }}>{String(trip.report).replace(/\*\*/g, "").split("\n").filter((l: string) => l.trim().startsWith("-")).slice(0, 3).map((l: string, k: number) => <div key={k}>{l.slice(0, 96)}</div>)}</div>
+            <div className="mt-2 grid grid-cols-2 gap-x-5">{(trip.recheck as any[]).map((r) => <div key={r.field} className="flex justify-between border-t py-0.5 text-[12px]" style={{ borderColor: "#eee8f0" }}><span className="text-[#6d6579]">{r.field.replace(/_/g, " ")}</span><b className="tabular-nums" style={{ color: r.agrees >= 0.8 ? "#2f7a3d" : "#b26a00" }}>{Number(r.agrees).toFixed(2)}</b></div>)}</div>
+          </div>
+          <p className="mt-2 text-[13px] leading-snug text-[#4a4356]">The agent reads; the Decisions API judges; the student taps to start it and nothing is written to the base. One field came back at 0.50 and is shown as not confirmed. Daily trips do not browse live yet.</p>
         </div>
       </div>) },
 

@@ -31,7 +31,7 @@ const waitText = (t, ms = 120000) => page.waitForFunction((x) => document.body.i
 
 // A clean first-time state: one campus, English interface, the demo Gemi, nothing learned yet.
 await page.goto(O + "/", { waitUntil: "domcontentloaded" });
-await page.evaluate(() => { for (const k of Object.keys(localStorage)) if (k.startsWith("gemi.")) localStorage.removeItem(k); localStorage.setItem("gemi.school", "nyu"); localStorage.setItem("gemi.lang", "en"); localStorage.setItem("gemi.me.nyu", JSON.stringify({ name: "Mochi", demo: true })); });
+await page.evaluate(() => { for (const k of Object.keys(localStorage)) if (k.startsWith("gemi.")) localStorage.removeItem(k); localStorage.setItem("gemi.school", "nyu"); localStorage.setItem("gemi.lang", "en"); localStorage.setItem("gemi.me.nyu", JSON.stringify({ name: "Mochi", demo: true })); localStorage.setItem("gemi.look.nyu", JSON.stringify({ topColor: "#b5432e" })); });   // the Gemi wears the same red as the student in the stills
 
 if (want("s1")) { await wide(); await open("/deck", 6000); await write("s1", [await shoot(dur.s1)], dur.s1); }
 if (want("s2")) { await big(); await open("/room", 7000); await write("s2", [await shoot(dur.s2)], dur.s2); }
@@ -53,6 +53,6 @@ if (want("s5")) { await wide(); await open("/deck?s=15", 2500); const a = await 
 if (want("s6")) { await wide(); await open("/deck?s=17", 2000); const a = await shoot(dur.s6 * 0.5); await open("/deck?s=20", 2000); const b = await shoot(dur.s6 * 0.5); await write("s6", [a, b], dur.s6); }
 if (want("s7")) { await page.evaluate(() => localStorage.setItem("gemi.went.nyu", JSON.stringify([{ find: "demo-1", title: "an event", matched: true }, { find: "demo-2", title: "another", matched: true }])));
   await big(); await open("/room", 7000); const a = await shoot(2.4); await page.evaluate(() => localStorage.removeItem("gemi.went.nyu"));
-  await wide(); await open("/gen3d/spaces.html?auto=1.35&friends=pip,kai&space=readingRoom", 4200); const b = await shoot(dur.s7 - 2.4); await write("s7", [a, b], dur.s7); }
+  await wide(); await open("/gen3d/spaces.html?auto=1.35&friends=pip,kai&space=readingRoom&look=%7B%22topColor%22%3A%22%23b5432e%22%7D", 4200); const b = await shoot(dur.s7 - 2.4); await write("s7", [a, b], dur.s7); }
 if (want("s8")) { await wide(); await open("/deck", 6000); const D = Math.max(dur.s8, 3.6); await write("s8", [await shoot(D)], D); }
 await browser.close();
