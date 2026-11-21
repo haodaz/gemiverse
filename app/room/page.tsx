@@ -52,6 +52,7 @@ export default function Room() {
   const [lang, setLang] = useState<Lang>("en");
   const [panel, setPanel] = useState<Panel>(null);
   const [deskView, setDeskView] = useState(false);
+  const [out, setOut] = useState<any>(null);
   // The first minute in the room: the Gemi shows its Gem Star jars filling for today, says what they are for, then shows the room.
   const [tour, setTour] = useState<number | null>(null), [poured, setPoured] = useState(0);
   const firstWords = useRef<string | null>(null);
@@ -570,7 +571,21 @@ export default function Room() {
               <ul className="mt-2 space-y-1">{SPACE.map((x) => (<li key={x.fact} className="flex justify-between gap-3 border-t border-[#eee6d6] py-1 text-xs"><span><b>{x.shows_as}</b><br /><span className="text-[#8a8296]">{x.fact}</span></span><span className="shrink-0" style={{ color: x.built ? "#2f7a3d" : "#b0a8ba" }}>{x.built ? "live" : "planned"}</span></li>))}</ul>
             </div>
           )}
-          {panel === "outbox" && <p className="text-sm leading-relaxed text-[#5f576c]">{tt("outbox_empty")}</p>}
+          {panel === "outbox" && (<div className="space-y-3">
+            {/* The privacy ledger: every sentence this Gemi sent to another Gemi, with the gate's score, and what was held back. */}
+            <button onClick={async () => { setOut({ busy: true }); const r = await fetch("/api/meet", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ school, n: 3 }) }).then((x) => x.json()).catch(() => ({ error: "Could not reach the other Gemis." })); setOut(r); }} disabled={out?.busy}
+              className="w-full rounded-full border-[3px] bg-[#ffe08a] px-4 py-2 text-sm font-bold disabled:opacity-60" style={{ borderColor: INK, boxShadow: `0 4px 0 ${INK}` }}>{out?.busy ? tri("Meeting three Gemis… about 35 seconds", "正在认识三个 Gemi…约 35 秒", "Conociendo a tres Gemis…") : tri("Let it meet three other Gemis (simulated)", "让它去认识三个 Gemi（模拟的同学）", "Que conozca a tres Gemis (simulados)")}</button>
+            {!out && <p className="text-sm leading-relaxed text-[#5f576c]">{tt("outbox_empty")}</p>}
+            {out?.error && <p className="text-sm text-[#b26a00]">{out.error}</p>}
+            {out?.totals && (<>
+              <div className="rounded-2xl border-2 bg-white px-3 py-2 text-sm" style={{ borderColor: INK }}><b>{out.totals.sent}</b> {tri("sentences left this room", "句话从这里出去了", "frases salieron")} · <b>{out.totals.held}</b> {tri("held at the privacy gate", "句被隐私关卡拦下", "retenidas")} · <b>{out.totals.cards_kept}/{out.totals.peers}</b> {tri("name cards kept", "张名片留下", "tarjetas")}</div>
+              {out.meetings.map((m: any) => (<div key={m.peer.gemi} className="rounded-2xl border-2 bg-white px-3 py-2" style={{ borderColor: INK }}>
+                <div className="text-sm font-bold">{tri("To", "对", "A")} {m.peer.gemi} <span className="font-normal text-[#8a8296]">· {tri("simulated", "模拟", "simulado")}</span></div>
+                {(m.log ?? []).filter((x: any) => x.from === out.me.gemi).map((x: any, k: number) => (<div key={k} className="mt-1.5 border-t pt-1.5 text-[13px] leading-snug" style={{ borderColor: "#eee8f0", opacity: x.sent ? 1 : 0.6 }}>
+                  <span className="float-right ml-2 rounded-full px-2 py-0.5 text-[11px] font-bold text-white" style={{ background: x.sent ? "#2f9e8f" : "#d9534f" }}>{x.sent ? `${tri("sent", "已发出", "enviado")} · ${x.leak}` : tri("held", "拦下", "retenido")}</span>{x.text}</div>))}
+                {m.card && <div className="mt-2 text-[12px] text-[#6d6579]">{m.card_kept ? tri("Name card kept: ", "名片留下：", "Tarjeta: ") + m.card.shared_ground : tri("Name card not kept: it claimed something that was not said.", "名片没留：它写了对话里没有的内容。", "Tarjeta descartada.")}</div>}
+              </div>))}</>)}
+          </div>)}
         </GamePanel>
       )}
 
