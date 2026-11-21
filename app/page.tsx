@@ -26,9 +26,9 @@ export default function Home() {
 @keyframes kb2{0%{opacity:0;transform:scale(1.12) translate(1%,0)}42%{opacity:0}50%{opacity:1}92%{opacity:1;transform:scale(1.02) translate(0,0)}100%{opacity:0}}`}</style>
       <section className="snap-start relative h-[calc(100vh-60px)] min-h-[560px] overflow-hidden bg-[#2b2536]">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/art/film/touch-red.jpg" alt="A hand touches a laptop screen; inside, a small character in its room reaches back" className="absolute inset-0 h-full w-full object-cover" style={{ animation: "kb1 18s ease-in-out infinite" }} />
+        <img src="/art/film/touch.jpg" alt="A hand touches a laptop screen; inside, a small character in its room reaches back" className="absolute inset-0 h-full w-full object-cover" style={{ animation: "kb1 18s ease-in-out infinite" }} />
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/art/film/both-red.jpg" alt="A student on a park bench with a laptop; on its screen, her Gemi waves from its room" className="absolute inset-0 h-full w-full object-cover" style={{ animation: "kb2 18s ease-in-out infinite" }} />
+        <img src="/art/film/both2.jpg" alt="A student on a park bench with a laptop; on its screen, her Gemi waves from its room" className="absolute inset-0 h-full w-full object-cover" style={{ animation: "kb2 18s ease-in-out infinite" }} />
         <div className="absolute inset-0" style={{ background: "linear-gradient(90deg, #1d1828e6 0%, #1d1828b3 34%, #1d182800 62%)" }} />
         <div className="relative mx-auto flex h-full max-w-6xl flex-col justify-center px-8 text-white">
           <p className="text-[13px] font-bold uppercase tracking-[0.22em] text-[#e8dcff]">For college students · NYU and Columbia first</p>
