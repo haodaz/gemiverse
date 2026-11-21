@@ -1,0 +1,21 @@
+Write a three.js ES module of extra spaces a student's AI companion can earn after its single dorm room, in the same cutaway-diorama form: a floor plus two back walls, front walls absent. Each space is a function (THREE, opts) -> THREE.Group, 4 m by 4 m (x and z from -2 to 2), walls 2.7 m high on z = -2 and x = -2, built complete with its fixed architecture but without movable furniture.
+
+Exports:
+- export const SPACES = { loft, backyard, studyNook, makerLab, rooftop, greenhouse }:
+  loft: a mezzanine platform at y = 1.4 over half the room with a ladder and railing, sloped skylight in the back wall.
+  backyard: grass with stepping stones, a wooden fence instead of walls (1.2 m), a tree with a swing, a small pond.
+  studyNook: floor-to-ceiling built-in bookshelves on both walls, a bay window with a seat, parquet floor.
+  makerLab: pegboard wall with tool outlines, a long workbench fixed to the back wall, concrete floor with a taped safety line, a big roll-up window.
+  rooftop: parapet walls (1.0 m), wooden decking, a water tower in the corner, string-light poles, city-skyline silhouette panels behind the parapet.
+  greenhouse: glass walls and a pitched glass roof made of thin metal frames and transparent panes, raised planting beds along the walls, a tiled floor.
+- opts = { wall, trim, floor, accent, time: "day" | "dusk" | "night" } (time changes emissive lights and a sky-coloured backdrop plane).
+- export const SLOTS: for each space, an object of named placements { position: [x, y, z], rotationY, footprint: [w, d], kind: "floor" | "wall" | "surface" }, at least six per space.
+- export function recolor(group, palette).
+
+Rules for the module:
+- It is a plain ES module. Do not import anything. Do not use any global: every function receives THREE (three.js r160 namespace) as its first argument and must pass it on to any helper it calls.
+- Units are metres. Y is up. Build only from three.js primitives and ExtrudeGeometry/LatheGeometry shapes you make yourself (bevelled extrudes and spheres for soft edges). No textures from files, no fonts, no text, no logos, no network, no document or window.
+- Style: a refined, cozy, stylised diorama, like a premium life-sim game. Soft rounded edges everywhere, believable proportions, small secondary details. MeshStandardMaterial with thoughtful roughness/metalness; castShadow and receiveShadow on meshes.
+- Every mesh that carries a themable colour must have userData.slot set ("primary", "secondary", "accent", "wood", "metal", "fabric", "skin", "fur", "furAccent").
+- Also export const CATALOG: an array of { id, name, kind, footprint: [w, d], placement: "floor" | "wall" | "surface" | "worn" | "pet", variants: number, note } with one entry per thing in the module, so a shop or wardrobe screen can list it.
+- Return only the code of the module in one ```js block.

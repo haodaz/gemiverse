@@ -1,0 +1,2940 @@
+{
+ "version": "v2",
+ "status": "proposed, not locked",
+ "merged_at": "2026-11-21T16:41:58.221Z",
+ "merged_from": [
+  "world.v1.json",
+  "learner.v1.json",
+  "growth.v1.json",
+  "assistant.v1.json"
+ ],
+ "see": "MERGE.md for every choice and disagreement",
+ "world": {
+  "entity_types": [
+   {
+    "name": "School",
+    "domain": "1. Institution structure",
+    "definition": "A top-level degree-granting university in Gemiverse (starting with New York University and Columbia University).",
+    "sample_evidence": "Evidenced across all 15 sample pages (nyu-01 through nyu-17 for New York University; col-01 through col-07 for Columbia University).",
+    "fields": [
+     {
+      "name": "id",
+      "type": "string",
+      "required": true,
+      "how_verified": "Canonical slug (e.g., 'nyu', 'columbia') matched 1-to-1 against the verified institutional root .edu domain."
+     },
+     {
+      "name": "official_name",
+      "type": "string",
+      "required": true,
+      "how_verified": "Exact legal charter name verified verbatim in the root .edu institutional footer or registrar masthead (e.g., 'New York University' in nyu-01)."
+     },
+     {
+      "name": "primary_domain",
+      "type": "domain",
+      "required": true,
+      "how_verified": "EDUCAUSE .edu registry check and HTTPS TLS certificate validation (nyu.edu, columbia.edu)."
+     },
+     {
+      "name": "academic_calendar_url",
+      "type": "url",
+      "required": true,
+      "how_verified": "HTTP 200 check under primary_domain registrar subdomain containing machine-parseable term start and end dates."
+     }
+    ]
+   },
+   {
+    "name": "AcademicUnit",
+    "domain": "1. Institution structure",
+    "definition": "A formal college, school-level division, or academic department within a School that administers programs, courses, or research institutes.",
+    "sample_evidence": "Colleges/divisions evidenced in nyu-02 and nyu-17 ('NYU Steinhardt'), nyu-04 ('NYU Tandon School of Engineering'), and col-07 ('Columbia College', 'Columbia Engineering'). Department evidenced in nyu-02 ('Music and Performing Arts Professions').",
+    "fields": [
+     {
+      "name": "id",
+      "type": "string",
+      "required": true,
+      "how_verified": "Scoped slug (e.g., 'nyu:steinhardt', 'nyu:steinhardt:mpap') checked against the School's official academic units directory."
+     },
+     {
+      "name": "name",
+      "type": "string",
+      "required": true,
+      "how_verified": "Verbatim unit title checked against the unit masthead or official academic bulletin."
+     },
+     {
+      "name": "unit_kind",
+      "type": "enum[college_or_division, department]",
+      "required": true,
+      "how_verified": "Checked against the university governance/academic structure page (whether it is a degree-recommending school/college vs. a department housed inside one)."
+     },
+     {
+      "name": "official_url",
+      "type": "url",
+      "required": true,
+      "how_verified": "HTTP 200 URL resolving under the parent School's primary_domain (e.g., engineering.nyu.edu in nyu-04)."
+     },
+     {
+      "name": "role_contact_email",
+      "type": "email",
+      "required": false,
+      "how_verified": "Must match an institutional role/shared mailbox pattern under primary_domain (e.g., 'mpap-concertmusic@nyu.edu' in nyu-02) and pass a negative regex/directory filter rejecting personal NetID/UNI addresses."
+     }
+    ]
+   },
+   {
+    "name": "Program",
+    "domain": "1. Institution structure",
+    "definition": "A formal degree track, major, minor, or academic concentration offered by an AcademicUnit.",
+    "sample_evidence": "Partial evidence in nyu-02 under 'Related Programs: Concert Composition'. Evidence gap: undergraduate majors, degree credential codes (BA/BS/BM/PhD), and degree requirement trees do not appear in these event-only samples.",
+    "fields": [
+     {
+      "name": "id",
+      "type": "string",
+      "required": true,
+      "how_verified": "Scoped slug matched to an entry in the official university academic bulletin."
+     },
+     {
+      "name": "name",
+      "type": "string",
+      "required": true,
+      "how_verified": "Exact program name verified on the official academic bulletin or department Programs index (e.g., 'Concert Composition' in nyu-02)."
+     },
+     {
+      "name": "credential_type",
+      "type": "enum[major, minor, concentration, masters, doctoral, certificate]",
+      "required": true,
+      "how_verified": "Verified against official registrar/bulletin degree inventory; cannot be inferred from an event blurb alone (nyu-02 requires a bulletin fetch before committing credential_type)."
+     },
+     {
+      "name": "scope_summary",
+      "type": "string",
+      "required": true,
+      "how_verified": "One-sentence factual summary of subject matter extracted from the official program page (<= 240 chars), verified free of faculty names or rankings."
+     },
+     {
+      "name": "bulletin_url",
+      "type": "url",
+      "required": true,
+      "how_verified": "HTTP 200 URL on the official university bulletin or department program page."
+     }
+    ]
+   },
+   {
+    "name": "Building",
+    "domain": "2. Space",
+    "definition": "A physical university structure identified by a street address that contains indoor Venues or hosts Services and Events.",
+    "sample_evidence": "Strongly evidenced: Paulson Center / 181 Mercer St (nyu-02), 370 Jay St (nyu-04), 20 Cooper Square (nyu-05), Bobst Library (nyu-07/10/14), 196 Mercer St (nyu-09), Bern Dibner Library (nyu-12), Pless Hall (nyu-17), Jerome L. Greene Science Center / 605 W 129th St (col-01), International Affairs Building / 420 W 118th St (col-05), The Forum / 601 W 125th St (col-07). Evidence gap: standing turnstile hours are only indirectly hinted via visitor notes (nyu-04).",
+    "fields": [
+     {
+      "name": "id",
+      "type": "string",
+      "required": true,
+      "how_verified": "Scoped slug matched to official campus facilities/map building code or location_id."
+     },
+     {
+      "name": "name",
+      "type": "string",
+      "required": true,
+      "how_verified": "Canonical building title verified against the official campus map directory."
+     },
+     {
+      "name": "street_address",
+      "type": "string",
+      "required": true,
+      "how_verified": "Normalized street address checked against campus facilities listing and NYC GeoSearch/USPS."
+     },
+     {
+      "name": "coordinates",
+      "type": "lat_lon",
+      "required": true,
+      "how_verified": "Verified from structured feed coordinates (e.g., '40.728, -73.9914' in nyu-05) or campus GIS within 50 meters of street_address."
+     },
+     {
+      "name": "access_policy",
+      "type": "enum[public_lobby, campus_id_required, guest_preregistration_allowed, unknown]",
+      "required": true,
+      "how_verified": "Checked against official public safety/visitor access pages (e.g., nyu-04 states external guests require advance registration for 370 Jay St access; defaults to 'unknown' if unstated)."
+     }
+    ]
+   },
+   {
+    "name": "Venue",
+    "domain": "2. Space",
+    "definition": "A specific usable indoor space (room, auditorium, lounge, makerspace/lab) inside a Building, or a named outdoor place on a Campus, annotated with checkable affordances.",
+    "sample_evidence": "Indoor venues evidenced in nyu-02 (Room 570), nyu-04 (Room 1201, 12th Floor), nyu-07/10/14 (Bobst Rm 619, 743, 745), nyu-09 (IHDSC Seminar Room, 8th Floor), nyu-12 (Dibner LC 400), nyu-17 (First Floor Lounge, Pless Hall), col-01 (Ground Floor), col-05 (Lehman Suite, IAB Room 406). Outdoor place evidenced in nyu-15 ('Sasaki Garden', location_id 10342). Evidence gap: standing daily room affordances (quiet study rules, permanent tools, everyday open hours) have no dedicated space-directory pages in these event-only samples.",
+    "fields": [
+     {
+      "name": "id",
+      "type": "string",
+      "required": true,
+      "how_verified": "Scoped slug or feed location_id (e.g., '10342' for Sasaki Garden in nyu-15; 'nyu:bobst:rm-743')."
+     },
+     {
+      "name": "name",
+      "type": "string",
+      "required": true,
+      "how_verified": "Exact room number, suite name, or outdoor place name verified in room directory or event feed."
+     },
+     {
+      "name": "venue_kind",
+      "type": "enum[classroom_seminar, auditorium_stage, study_space, lounge_commons, lab_makerspace, outdoor_place]",
+      "required": true,
+      "how_verified": "Verified against official library/registrar/facilities space classification (e.g., 'First Floor Lounge' -> lounge_commons in nyu-17; 'Sasaki Garden' -> outdoor_place in nyu-15)."
+     },
+     {
+      "name": "floor_or_wayfinding",
+      "type": "string",
+      "required": false,
+      "how_verified": "Floor designation or entry gate directions verified verbatim from source ('12th Floor' in nyu-04; 'Enter Sasaki Garden via 1-2 Washington Square Village on West 3rd Street' in nyu-15)."
+     },
+     {
+      "name": "coordinates",
+      "type": "lat_lon",
+      "required": false,
+      "how_verified": "Required when venue_kind='outdoor_place' and verified against feed/map GIS ('40.728115, -73.996917' in nyu-15); omitted for indoor rooms that inherit Building.coordinates."
+     },
+     {
+      "name": "affordances",
+      "type": "array[affordance_id]",
+      "required": true,
+      "how_verified": "Controlled IDs from affordances list verified ONLY from standing space/library/facilities pages (never permanently inferred from a one-off event's catering or temporary cushions; empty array [] permitted until verified)."
+     },
+     {
+      "name": "reservable_by_students",
+      "type": "boolean",
+      "required": false,
+      "how_verified": "Checked against institutional room booking portals (e.g., LibCal Spaces / EMS)."
+     }
+    ]
+   },
+   {
+    "name": "Event",
+    "domain": "3. Development resources",
+    "definition": "A scheduled, time-bounded live happening—such as a workshop, lecture, performance, study break, competition showcase, or market.",
+    "sample_evidence": "Directly evidenced in all 15 sample pages across both NYU and Columbia.",
+    "fields": [
+     {
+      "name": "id",
+      "type": "string",
+      "required": true,
+      "how_verified": "Source feed primary key or GUID (e.g., '412484' in nyu-05; 'CAL-00bbdb7c-...' in col-01) or deterministic URL+start hash for static pages."
+     },
+     {
+      "name": "title",
+      "type": "string",
+      "required": true,
+      "how_verified": "Verbatim title from structured JSON 'title'/'summary' or HTML <h1>. Public work/talk titles are preserved solely as opaque event identifiers, never parsed into speaker attributes."
+     },
+     {
+      "name": "event_kind",
+      "type": "enum[workshop, talk_panel, performance_exhibit, social_study_break, competition_showcase, market_fair, community_wellness]",
+      "required": true,
+      "how_verified": "Mapped deterministically from source event_type tags ('Lecture / Panel' in nyu-04; 'Reference Services workshops' in nyu-07) plus structural description cues."
+     },
+     {
+      "name": "occurrences",
+      "type": "array[object{start_iso, end_iso_or_null}]",
+      "required": true,
+      "how_verified": "ISO-8601 timestamps with timezone verified against JSON UTC/ISO fields (nyu-05, col-01) or linked .ics files (nyu-01). Supports multi-performance runs (nyu-01, col-07) and null end times when omitted by source (nyu-15). Pages missing an explicit year in HTML prose (nyu-02, nyu-17) must verify year via .ics or feed metadata before admission."
+     },
+     {
+      "name": "delivery_mode",
+      "type": "enum[in_person, online, hybrid]",
+      "required": true,
+      "how_verified": "Cross-checked between location fields and online meeting URLs. If a page declares 'In-Person' with a physical room while also printing 'Please note this is an online event' (nyu-07, nyu-10, nyu-12), checker inspects the .ics LOCATION field; if unresolved, event is quarantined rather than guessed."
+     },
+     {
+      "name": "cost_type",
+      "type": "enum[free, paid_ticketed, unknown]",
+      "required": true,
+      "how_verified": "Verified from explicit Cost field ('Free' in nyu-02/05/17) or ticketing link ('Get Tickets' without price in nyu-01 -> 'unknown' or verified via linked box-office page)."
+     },
+     {
+      "name": "registration_rule",
+      "type": "enum[none, encouraged, required, ticketed, external_guests_only]",
+      "required": true,
+      "how_verified": "Verified against explicit registration prose ('No Registration Necessary' in nyu-17; 'not required but encouraged' in nyu-14; 'Registration is required' in nyu-02; external-guest Luma requirement in nyu-04)."
+     },
+     {
+      "name": "eligibility",
+      "type": "enum[public, campus_community_only, students_only, k12_family_oriented]",
+      "required": true,
+      "how_verified": "Checked against Audience/Open To fields and body restrictions ('open only to the NYU community' in nyu-12; 'Open to the Public' in nyu-04/15; 'for kids of all ages' -> k12_family_oriented in col-01)."
+     },
+     {
+      "name": "summary",
+      "type": "string",
+      "required": true,
+      "how_verified": "Factual <= 280-char distillation of source description checked by a PII/person-scrubber to ensure zero speaker bios, organizer names, or personal emails/phones remain."
+     },
+     {
+      "name": "action_url",
+      "type": "url",
+      "required": true,
+      "how_verified": "Canonical event webpage or official registration link (e.g., Zoom registration in col-03, Luma link in nyu-04) returning HTTP 200."
+     },
+     {
+      "name": "affordances",
+      "type": "array[affordance_id]",
+      "required": true,
+      "how_verified": "Controlled IDs verified from explicit activity cues in the event text (e.g., vegan/GF pizza and crafts in nyu-10 -> food_and_refueling, making_things)."
+     }
+    ]
+   },
+   {
+    "name": "Course",
+    "domain": "3. Development resources",
+    "definition": "A credit-bearing or official registrar-listed course offered in a specific academic term by an AcademicUnit.",
+    "sample_evidence": "No evidence yet in sample pages (note: nyu-12 uses the LibCal label 'Dibner Library classes' for a competition showcase, which checkers explicitly reject as a registrar Course).",
+    "fields": [
+     {
+      "name": "id",
+      "type": "string",
+      "required": true,
+      "how_verified": "Scoped subject-number-term key (e.g., 'columbia:COMS-W4111:2026-fall') verified in NYU Albert public search or Columbia Directory of Classes."
+     },
+     {
+      "name": "course_code",
+      "type": "string",
+      "required": true,
+      "how_verified": "Official registrar subject and catalog number verified verbatim."
+     },
+     {
+      "name": "title",
+      "type": "string",
+      "required": true,
+      "how_verified": "Official registrar course title."
+     },
+     {
+      "name": "term",
+      "type": "string",
+      "required": true,
+      "how_verified": "Term identifier verified against active registrar term schedule."
+     },
+     {
+      "name": "credits",
+      "type": "number",
+      "required": true,
+      "how_verified": "Point/credit value verified against official bulletin/registrar feed."
+     },
+     {
+      "name": "prerequisites_text",
+      "type": "string",
+      "required": false,
+      "how_verified": "Verbatim course-code prerequisites from official bulletin (stripped of any 'permission of Prof. X' person names, normalized to 'instructor/department permission')."
+     },
+     {
+      "name": "catalog_url",
+      "type": "url",
+      "required": true,
+      "how_verified": "HTTP 200 URL on the official .edu course catalog or bulletin."
+     }
+    ]
+   },
+   {
+    "name": "Opportunity",
+    "domain": "3. Development resources",
+    "definition": "A structured, non-course growth opening with eligibility or application mechanics—covering research openings, competitions, funding/grants, student jobs, and structured mentorship programs (never individual person profiles).",
+    "sample_evidence": "Competition and prize funding indirectly evidenced in nyu-12 ('Hack Dibner is an annual semester-long proof-of-concept competition... First place receives $700 and the runner up receives $300'). Evidence gap: standalone open calls for research_opening, funding grants, campus jobs, and mentorship cohorts do not appear directly in the 15 samples.",
+    "fields": [
+     {
+      "name": "id",
+      "type": "string",
+      "required": true,
+      "how_verified": "Scoped slug or official portal posting ID."
+     },
+     {
+      "name": "title",
+      "type": "string",
+      "required": true,
+      "how_verified": "Official program/opening title verified on the hosting unit's call page ('Hack Dibner' in nyu-12)."
+     },
+     {
+      "name": "opportunity_kind",
+      "type": "enum[research_opening, competition, funding, job, mentorship]",
+      "required": true,
+      "how_verified": "Checked against official program terms (e.g., prize contest -> competition; cohort/office advising program -> mentorship; lab RA posting -> research_opening)."
+     },
+     {
+      "name": "status",
+      "type": "enum[upcoming, open, closed]",
+      "required": true,
+      "how_verified": "Computed deterministically by comparing current UTC time against published open/deadline dates and checking page for 'applications closed' banners (e.g., nyu-12 Final Showcase implies fall cohort applications are 'closed')."
+     },
+     {
+      "name": "deadline_iso",
+      "type": "iso_datetime",
+      "required": false,
+      "how_verified": "Application or submission deadline verified verbatim on the official call page."
+     },
+     {
+      "name": "compensation_or_award",
+      "type": "string",
+      "required": false,
+      "how_verified": "Verbatim stipend, NYC pay-transparency wage range, grant cap, or prize amounts ('$700 first place, $300 runner up' in nyu-12)."
+     },
+     {
+      "name": "eligibility_criteria",
+      "type": "string",
+      "required": true,
+      "how_verified": "Checkable institutional rules (school, degree level, enrollment status) extracted from official call."
+     },
+     {
+      "name": "commitment_summary",
+      "type": "string",
+      "required": false,
+      "how_verified": "Duration or weekly hours checked against posting ('semester-long' in nyu-12)."
+     },
+     {
+      "name": "apply_url",
+      "type": "url",
+      "required": true,
+      "how_verified": "HTTP 200 URL on official .edu or institution-delegated application portal."
+     }
+    ]
+   },
+   {
+    "name": "Service",
+    "domain": "3. Development resources",
+    "definition": "A standing institutional support resource, advising/help desk, accessibility accommodation channel, equipment lending desk, or evergreen guide available continuously across a term.",
+    "sample_evidence": "Indirectly evidenced via embedded links and support blocks: LibGuides ('Finals Resources' in nyu-10, 'Hack Dibner' guide in nyu-12, 'NYU Welcome: The Libraries' in nyu-14), library help channels ('lib-reference@nyu.edu' in nyu-07/10, 'zotero-help@library.columbia.edu' in col-03), and disability accommodation services (nyu-01/02/07/17). Evidence gap: standalone service homepages (counseling, career center, makerspace tool checkout, peer advising hubs) are not directly included in the samples.",
+    "fields": [
+     {
+      "name": "id",
+      "type": "string",
+      "required": true,
+      "how_verified": "Scoped slug matched to the hosting office/library service directory."
+     },
+     {
+      "name": "name",
+      "type": "string",
+      "required": true,
+      "how_verified": "Official service or guide title verified on unit page, stripped of personal author credits (e.g., 'Finals Resources' from 'Finals Resources by Laurie Murphy' in nyu-10)."
+     },
+     {
+      "name": "service_kind",
+      "type": "enum[academic_research_help, career_advising, wellbeing_accessibility, curated_guide, equipment_making_access, peer_mentoring_desk]",
+      "required": true,
+      "how_verified": "Checked against hosting office mandate and explicit service offerings."
+     },
+     {
+      "name": "access_method",
+      "type": "enum[walk_in, appointment, online_self_serve, role_email_request]",
+      "required": true,
+      "how_verified": "Verified from explicit access instructions (e.g., 'submit your request at least two weeks before' via role email in nyu-02 -> role_email_request; LibGuide URL -> online_self_serve)."
+     },
+     {
+      "name": "hours_summary",
+      "type": "string",
+      "required": false,
+      "how_verified": "Standing operating hours verified against official service hours widget."
+     },
+     {
+      "name": "role_contact_channel",
+      "type": "string",
+      "required": false,
+      "how_verified": "Verified institutional role email or helpdesk URL ('zotero-help@library.columbia.edu' in col-03; 'lib-reference@nyu.edu' in nyu-07)."
+     },
+     {
+      "name": "service_url",
+      "type": "url",
+      "required": true,
+      "how_verified": "HTTP 200 URL under .edu or official library LibGuides domain."
+     },
+     {
+      "name": "affordances",
+      "type": "array[affordance_id]",
+      "required": true,
+      "how_verified": "Controlled IDs verified from explicit service capabilities."
+     }
+    ]
+   },
+   {
+    "name": "GrowthNeed",
+    "domain": "4. Student growth needs",
+    "definition": "A canonical, impersonal node in the shared student growth taxonomy against which Venues, Events, Courses, Opportunities, and Services are tagged. Never stores or points to any student.",
+    "sample_evidence": "Surface institutional category tags appear in nyu-07 ('Research Readiness') and nyu-10 ('Creativity and Wellbeing in Research'); the unified 11-need cross-campus taxonomy is schema-governed.",
+    "fields": [
+     {
+      "name": "id",
+      "type": "string",
+      "required": true,
+      "how_verified": "Exact membership in the canonical need_taxonomy enum."
+     },
+     {
+      "name": "label",
+      "type": "string",
+      "required": true,
+      "how_verified": "Exact match against schema governance specification."
+     },
+     {
+      "name": "one_line_definition",
+      "type": "string",
+      "required": true,
+      "how_verified": "Exact match against schema governance specification; audited to contain zero person-level fields."
+     },
+     {
+      "name": "public_page_signals",
+      "type": "array[string]",
+      "required": true,
+      "how_verified": "Auditable lexical/structural patterns checked against labeled campus pages for tagging precision."
+     }
+    ]
+   },
+   {
+    "name": "Organisation",
+    "domain": "5. Organisations",
+    "definition": "A collective actor operating on or with campus—a student club or collective, research lab/center/institute, university office/library, or verified external partner.",
+    "sample_evidence": "Richly evidenced: student/grad collectives & outreach clubs ('Nevermind the Noise' in nyu-02; 'CUNO / Columbia University Neuroscience Outreach' in col-01); labs/centers/institutes ('CUSP' in nyu-04, 'Berkley Institute' in nyu-05, 'CRACS Co-Lab' and 'IHDSC' in nyu-09, 'Zuckerman/zmbbi' in col-01, 'Lehman Center for American History' in col-05); campus offices/libraries ('NYU Libraries' in nyu-07/10/14, 'Bern Dibner Library' in nyu-12, 'Office of Sustainability' in nyu-14, 'Faculty Housing and Residential Services' in nyu-15, 'NYU Steinhardt Office of Student Affairs' in nyu-17, 'Columbia Libraries' in col-03); external partners ('Brennan Center for Justice' and 'Federal Election Commission' in nyu-05, 'BioBus' in col-01). Evidence gap: student-activities registry pages (NYU Engage / Columbia LionLink) with club charters and meeting cadences are not in the samples.",
+    "fields": [
+     {
+      "name": "id",
+      "type": "string",
+      "required": true,
+      "how_verified": "Scoped slug or feed group ID (e.g., LiveWhale 'gid: 347' in nyu-05, 'gid: 26' in nyu-15, Bedework 'agrp_calsuite-zmbbi' in col-01)."
+     },
+     {
+      "name": "name",
+      "type": "string",
+      "required": true,
+      "how_verified": "Official organisation name checked against feed group_title, club registry, or institutional masthead."
+     },
+     {
+      "name": "org_kind",
+      "type": "enum[student_club_collective, lab_center_institute, campus_office_library, external_partner]",
+      "required": true,
+      "how_verified": "Verified by checking membership in official student club directory vs. research centers directory vs. administrative units vs. non-.edu external entity."
+     },
+     {
+      "name": "mission_summary",
+      "type": "string",
+      "required": false,
+      "how_verified": "One-sentence impersonal mission extracted from official 'About' blurb (e.g., Nevermind the Noise description in nyu-02; CUSP blurb in nyu-04), scrubbed of officer/faculty names."
+     },
+     {
+      "name": "official_url",
+      "type": "url",
+      "required": false,
+      "how_verified": "HTTP 200 homepage or official Engage/LionLink profile URL."
+     },
+     {
+      "name": "public_contact_channel",
+      "type": "string",
+      "required": false,
+      "how_verified": "Institutional role email, official social handle, or org inbox explicitly published on a Tier 1/2 .edu page ('cusp.education@nyu.edu' in nyu-04; '@nyufacultyhousing' in nyu-15; 'cracscolab@gmail.com' linked on nyu.libcal.com in nyu-09). Personal staff emails/phones (col-01, col-05, col-07) are rejected."
+     }
+    ]
+   },
+   {
+    "name": "Agent",
+    "domain": "5. Organisations",
+    "definition": "A public autonomous AI endpoint that speaks officially for an Organisation or AcademicUnit in Gemiverse over direct peer-to-peer messaging.",
+    "sample_evidence": "No evidence yet in sample pages—public AI organisation agents are native to Gemiverse and do not appear on legacy HTML, LiveWhale, or Bedework event feeds.",
+    "fields": [
+     {
+      "name": "id",
+      "type": "string",
+      "required": true,
+      "how_verified": "Decentralized agent identifier (DID) matching the signed capability manifest."
+     },
+     {
+      "name": "endpoint_uri",
+      "type": "uri",
+      "required": true,
+      "how_verified": "Live challenge-response handshake over Gemiverse P2P transport."
+     },
+     {
+      "name": "public_signing_key",
+      "type": "string",
+      "required": true,
+      "how_verified": "Ed25519 public key verified either via DNS/HTTPS '.well-known/gemiverse-agents.json' on the unit's .edu subdomain or via cryptographic verification token sent to the Organisation's verified .edu role inbox."
+     },
+     {
+      "name": "supported_intents",
+      "type": "array[enum[faq, eligibility_check, rsvp_status, recruitment_intake, space_hours, collaboration_inquiry]]",
+      "required": true,
+      "how_verified": "Validated against the agent's signed capability schema during admission ping."
+     },
+     {
+      "name": "max_tokens_per_turn",
+      "type": "integer",
+      "required": true,
+      "how_verified": "Declared upper bound on reply size enforced and verified during test query handshake (must be <= 250 tokens to protect Gemi daily budgets)."
+     }
+    ]
+   },
+   {
+    "name": "Source",
+    "from": "assistant",
+    "fields": [
+     "url",
+     "tier",
+     "fetched_at",
+     "content_hash"
+    ]
+   },
+   {
+    "name": "Evidence",
+    "from": "assistant",
+    "fields": [
+     "entity",
+     "field",
+     "value",
+     "quote",
+     "source",
+     "check_confidence",
+     "passed"
+    ]
+   }
+  ],
+  "link_types": [
+   {
+    "name": "HAS_ACADEMIC_UNIT",
+    "domain": "1. Institution structure",
+    "from": [
+     "School",
+     "AcademicUnit"
+    ],
+    "to": [
+     "AcademicUnit"
+    ],
+    "meaning": "A School contains a college/division, or a college/division contains an academic department.",
+    "why_gemi_traverses": "Scope searches to the student's home school or step up/down between a department (Music and Performing Arts Professions) and its parent division (NYU Steinhardt in nyu-02).",
+    "how_verified": "Breadcrumb, masthead, or academic directory hierarchy on primary_domain."
+   },
+   {
+    "name": "OFFERS_PROGRAM",
+    "domain": "1. Institution structure",
+    "from": [
+     "AcademicUnit"
+    ],
+    "to": [
+     "Program"
+    ],
+    "meaning": "An academic division or department administers a degree program, major, or minor.",
+    "why_gemi_traverses": "Find candidate majors/tracks when a student wants to explore a field or decide a direction (e.g., Steinhardt MPAP -> Concert Composition in nyu-02).",
+    "how_verified": "Official academic bulletin or 'Related Programs' block on the department's .edu page."
+   },
+   {
+    "name": "OFFERS_COURSE",
+    "domain": "1. Institution structure / 3. Development resources",
+    "from": [
+     "AcademicUnit",
+     "Program"
+    ],
+    "to": [
+     "Course"
+    ],
+    "meaning": "An academic unit teaches a course or a program counts a course toward its curriculum.",
+    "why_gemi_traverses": "Locate concrete term courses that build a skill or test interest in a major.",
+    "how_verified": "Registrar course subject prefix mapping and official program curriculum bulletin (no sample evidence yet)."
+   },
+   {
+    "name": "HAS_CAMPUS",
+    "domain": "2. Space",
+    "from": [
+     "School"
+    ],
+    "to": [
+     "Campus"
+    ],
+    "meaning": "A university operates a named geographic campus.",
+    "why_gemi_traverses": "Filter opportunities by transit feasibility (e.g., Washington Square vs. 370 Jay St Brooklyn at NYU; Morningside vs. Manhattanville at Columbia).",
+    "how_verified": "Official university campus map index."
+   },
+   {
+    "name": "ON_CAMPUS",
+    "domain": "2. Space",
+    "from": [
+     "Building",
+     "Venue"
+    ],
+    "to": [
+     "Campus"
+    ],
+    "meaning": "A Building or an outdoor Venue (e.g., Sasaki Garden in nyu-15) is physically situated on a Campus.",
+    "why_gemi_traverses": "Place landmarks onto the right campus map zone and estimate walking time between classes and events.",
+    "how_verified": "Feed campus alias ('/Location/Manhattanville' in col-01, 'Location: Manhattanville' in col-07) or GIS polygon containment."
+   },
+   {
+    "name": "INSIDE_BUILDING",
+    "domain": "2. Space",
+    "from": [
+     "Venue"
+    ],
+    "to": [
+     "Building"
+    ],
+    "meaning": "An indoor room, lounge, auditorium, or lab sits inside a physical Building.",
+    "why_gemi_traverses": "Inherit street address and Building.access_policy (e.g., checking whether 370 Jay St requires ID/Luma before heading to Room 1201 in nyu-04) and discover nearby lounges in the same building.",
+    "how_verified": "Structured location string pairing building and room ('Paulson Center, Room 570' in nyu-02; 'Bobst Library, 7th Floor, Rm. 743' in nyu-10; 'IAB Room 406' in col-05)."
+   },
+   {
+    "name": "LOCATED_AT",
+    "domain": "2. Space / 3. Development resources / 5. Organisations",
+    "from": [
+     "Event",
+     "Service",
+     "Organisation"
+    ],
+    "to": [
+     "Venue",
+     "Building"
+    ],
+    "meaning": "An in-person Event takes place at, a Service operates from, or an Organisation (like IHDSC at 196 Mercer St 8th Floor in nyu-09) is housed at a Venue or Building.",
+    "why_gemi_traverses": "Route the student physically, render live event beacons on campus landmarks, and batch nearby activities without fabricating fake room nodes when feeds only name a building ('20 Cooper Square' in nyu-05; 'The Forum' in col-07).",
+    "how_verified": "Explicit Location field in Tier 1/2 source (omitted for purely online events like col-03)."
+   },
+   {
+    "name": "AFFILIATED_WITH",
+    "domain": "5. Organisations / 6. Social relations at world level",
+    "from": [
+     "Organisation"
+    ],
+    "to": [
+     "School",
+     "AcademicUnit"
+    ],
+    "meaning": "An Organisation is chartered under, housed within, or officially recognized by a School or AcademicUnit.",
+    "why_gemi_traverses": "Distinguish official campus clubs/labs (CUSP under NYU Tandon in nyu-04; Office of Student Affairs under NYU Steinhardt in nyu-17) from external partners (BioBus in col-01) and find all clubs/labs tied to a department.",
+    "how_verified": "Institutional directory listing, subdomain hosting, or official Engage/LionLink recognition."
+   },
+   {
+    "name": "RUNS",
+    "domain": "6. Social relations at world level",
+    "from": [
+     "Organisation",
+     "AcademicUnit"
+    ],
+    "to": [
+     "Event",
+     "Opportunity",
+     "Service",
+     "Venue"
+    ],
+    "meaning": "An Organisation or AcademicUnit hosts, sponsors, or operates a resource or space (multiple RUNS edges on one resource represent co-hosting, as in nyu-14).",
+    "why_gemi_traverses": "Pivot from one appealing event (e.g., Hack Dibner Showcase in nyu-12 or Zotero workshop in col-03) to everything else run by that same library, lab, or club.",
+    "how_verified": "Feed group_title/gid (nyu-05, nyu-15), Bedework calendar group alias (col-01), or explicit 'hosted by / presented by / invites you' text (nyu-04, nyu-09, nyu-14, col-05)."
+   },
+   {
+    "name": "COLLABORATES_WITH",
+    "domain": "6. Social relations at world level",
+    "from": [
+     "Organisation"
+    ],
+    "to": [
+     "Organisation"
+    ],
+    "meaning": "Two Organisations jointly produce events, research, or community initiatives (annotated with supporting resource IDs).",
+    "why_gemi_traverses": "Traverse world-level social bridges across communities—for example, moving from Office of Sustainability to NYU Libraries (nyu-14), from CUNO to BioBus and Zuckerman Institute (col-01), from Faculty Housing to Steinhardt MPAP jazz ensembles (nyu-15), or from Berkley Institute to Brennan Center (nyu-05).",
+    "how_verified": "Co-occurrence as explicit co-hosts/partners on at least one verified Tier 1/2 Event, Opportunity, or Service."
+   },
+   {
+    "name": "SPEAKS_FOR",
+    "domain": "6. Social relations at world level",
+    "from": [
+     "Agent"
+    ],
+    "to": [
+     "Organisation",
+     "AcademicUnit"
+    ],
+    "meaning": "A verified public AI Agent is authorized to represent and answer questions on behalf of an Organisation or AcademicUnit.",
+    "why_gemi_traverses": "Open a cheap, direct P2P agent conversation when the base lacks a fine-grained detail, avoiding expensive web scraping (no sample evidence yet; Gemiverse-native).",
+    "how_verified": "Cryptographic signature chain anchored to primary_domain .well-known registry or verified .edu role inbox."
+   },
+   {
+    "name": "SERVES_NEED",
+    "domain": "4. Student growth needs",
+    "from": [
+     "Event",
+     "Course",
+     "Opportunity",
+     "Service",
+     "Venue"
+    ],
+    "to": [
+     "GrowthNeed"
+    ],
+    "meaning": "A place or development resource demonstrably supports a specific impersonal student growth need.",
+    "why_gemi_traverses": "Primary zero-LLM-token retrieval path: Gemi maps its student's private state locally to 1–2 GrowthNeed IDs and pulls matching campus resources/venues from the index.",
+    "how_verified": "Source text satisfies at least one auditable rule in GrowthNeed.public_page_signals or maps via verified affordances."
+   },
+   {
+    "name": "RELATED_TO",
+    "domain": "3. Development resources",
+    "from": [
+     "Event",
+     "Opportunity",
+     "Service"
+    ],
+    "to": [
+     "Program",
+     "Opportunity",
+     "Service"
+    ],
+    "meaning": "Source-declared curricular or resource follow-on link (e.g., Event 'Finals Study Break' -> Service 'Finals Resources LibGuide' in nyu-10; Showcase Event -> 'Hack Dibner' competition Opportunity in nyu-12; Concert Event -> 'Concert Composition' Program in nyu-02).",
+    "why_gemi_traverses": "Convert a missed or completed one-off event into an evergreen guide, program, or next-cycle competition.",
+    "how_verified": "Explicit 'Related LibGuide', 'Related Programs', or 'About the Series/Competition' hyperlink on the Tier 1/2 page."
+   }
+  ],
+  "need_taxonomy": [
+   {
+    "id": "find_my_people",
+    "name": "Find my people",
+    "one_line_definition": "Build belonging and peer connection around shared interests, creative scenes, or relaxed everyday gathering.",
+    "public_page_signals": [
+     "Student collective, club, or cohort language ('collective of graduate composers' in nyu-02)",
+     "Explicit peer connection framing ('connect with fellow students', 'hang out' in nyu-10 and nyu-17)",
+     "Recurring community series or open social lounge/market format (nyu-14, col-07)"
+    ],
+    "research_idea": "Self-Determination Theory (need for relatedness) and Tinto's model of social integration in higher education"
+   },
+   {
+    "id": "build_a_skill",
+    "name": "Build a skill",
+    "one_line_definition": "Acquire a concrete, reusable technical, research, analytical, or craft method through guided instruction and practice.",
+    "public_page_signals": [
+     "Explicit learning outcomes ('Attendees will learn to...', 'demonstrate how to...' in col-03)",
+     "Lesson, workshop, or training format with interactive exercises ('30 minute lesson', 'interactive session will guide you through short activities' in nyu-07)",
+     "Software/tool setup prerequisites ('Please download Zotero... prior to the workshop' in col-03)"
+    ],
+    "research_idea": "Self-Determination Theory (need for competence) and deliberate/scaffolded skill acquisition"
+   },
+   {
+    "id": "explore_a_field",
+    "name": "Explore a field",
+    "one_line_definition": "Sample big questions, debates, and current research frontiers in an academic discipline or domain without prior commitment.",
+    "public_page_signals": [
+     "Research seminar, book talk, or lecture series framing ('Urban Science Research Seminar Series... leading voices in the growing field of urban informatics' in nyu-04; book talks in nyu-09 and col-05)",
+     "Cross-links to academic departments or areas of study ('Areas of Study: The Arts' in nyu-02)",
+     "Open-audience disciplinary inquiry with no prerequisite coursework ('Open to the Public' in nyu-04, col-05)"
+    ],
+    "research_idea": "Interest development models (situational-to-individual interest trigger) and intellectual curiosity exploration"
+   },
+   {
+    "id": "get_experience",
+    "name": "Get experience",
+    "one_line_definition": "Test abilities in real-world or applied settings through research projects, competitions, outreach roles, or campus jobs.",
+    "public_page_signals": [
+     "Team project, proof-of-concept, lab research, internship, or student employment structure ('teams have spent the fall semester developing an idea... researching the impact and feasibility' in nyu-12)",
+     "Applied outreach delivery roles (student-led hands-on science demonstrations via CUNO in col-01)",
+     "Deliverables, milestones, or work-hour commitments"
+    ],
+    "research_idea": "Experiential Learning Cycle and Legitimate Peripheral Participation in Communities of Practice"
+   },
+   {
+    "id": "make_and_express",
+    "name": "Make and express",
+    "one_line_definition": "Compose, fabricate, perform, craft, or engage deeply with original artistic and material works.",
+    "public_page_signals": [
+     "Composition, theatre, live music, prototyping, or craft activities ('composition and performance of new experimental concert music' in nyu-02; drama production in nyu-01; live jazz in nyu-15; crafts in nyu-10)",
+     "Makerspace, studio, stage, or rehearsal equipment availability",
+     "Category tags in Arts, Drama, Performance, or Creativity (nyu-01, nyu-02, nyu-10, col-07)"
+    ],
+    "research_idea": "Constructionism (learning by making) and aesthetic/creative self-expression in young adult development"
+   },
+   {
+    "id": "get_mentorship_and_feedback",
+    "name": "Get mentorship and feedback",
+    "one_line_definition": "Receive structured advice, expert answers, or constructive critique on work and plans from advisors, librarians, peers, or judges.",
+    "public_page_signals": [
+     "Onsite specialists or Q&A consultation ('librarians will be onsite to answer questions about formatting citations, finding sources, and search strategies' in nyu-10; live Q&A in col-03)",
+     "Pitching or critique before an evaluation panel ('pitch their ideas to a panel of judges' in nyu-12)",
+     "Structured peer/alumni/faculty mentoring cohorts or advising office hours"
+    ],
+    "research_idea": "Zone of Proximal Development (instructional scaffolding) and developmental mentoring networks"
+   },
+   {
+    "id": "decide_a_direction",
+    "name": "Decide a direction",
+    "one_line_definition": "Clarify academic major, degree path, or post-graduation trajectory by comparing concrete options and trade-offs.",
+    "public_page_signals": [
+     "Major/program discovery framing ('Discover programs in education, composition, technology, business...' in nyu-02)",
+     "Career panels, major declaration info sessions, or graduate school pathways",
+     "Advising services dedicated to academic planning or career exploration"
+    ],
+    "research_idea": "Vocational identity statuses (exploration to commitment) and Chickering's vector of developing purpose"
+   },
+   {
+    "id": "fund_my_path",
+    "name": "Fund my path",
+    "one_line_definition": "Secure prizes, grants, fellowships, stipends, or paid campus work to resource independent projects or student living costs.",
+    "public_page_signals": [
+     "Explicit dollar awards, grants, fellowships, or stipends ('First place receives $700 and the runner up receives $300' in nyu-12)",
+     "Paid hourly wage ranges on campus jobs or funded summer research postings",
+     "Seed funding or micro-grant competition rules"
+    ],
+    "research_idea": "Financial capability and basic-needs security as foundational preconditions for academic persistence"
+   },
+   {
+    "id": "contribute_beyond_self",
+    "name": "Contribute beyond self",
+    "one_line_definition": "Participate in constructive civic dialogue, public scholarship, sustainability, or neighborhood engagement.",
+    "public_page_signals": [
+     "Civic discourse, policy reform, equity, or environmental stewardship themes ('constructive civil discourse across differences' in nyu-05; racial exhaustion dialogue in nyu-09; climate/environment reflection with Office of Sustainability in nyu-14)",
+     "Youth/community outreach or local neighborhood support ('partners BioBus and CUNO' in col-01; 'support local businesses, neighborhood small businesses' in col-07)",
+     "Public-interest volunteer calls"
+    ],
+    "research_idea": "Civic identity development and prosocial generativity in emerging adulthood"
+   },
+   {
+    "id": "navigate_systems",
+    "name": "Navigate systems",
+    "one_line_definition": "Master institutional infrastructures—libraries, catalogs, accommodations, policies, and academic survival workflows—so campus friction drops.",
+    "public_page_signals": [
+     "Orientation and system-literacy framing ('NYU Welcome: The Libraries' in nyu-14; 'Research Readiness', 'build confidence navigating the library collection' in nyu-07)",
+     "Step-by-step guides to institutional processes ('Finals Resources guide' in nyu-10; disability accommodation procedures in nyu-01/02/07)",
+     "Reference and technical help desks (col-03)"
+    ],
+    "research_idea": "Demystifying the Hidden Curriculum and building institutional cultural capital"
+   },
+   {
+    "id": "rest_and_recover",
+    "name": "Rest and recover",
+    "one_line_definition": "Step away from evaluative pressure to restore attention and energy through mindfulness, snacks, play, music, or green space.",
+    "public_page_signals": [
+     "Explicit decompression and reset cues ('clear your mind and reset for finals', 'Refuel with a slice, a snack', 'crafts, games, and tunes' in nyu-10; 'quick brain break... recharge' in nyu-17)",
+     "Guided mindfulness, somatic rest, or contemplative framing ('Guided meditations... Cushions, benches, chairs, and backjacks' in nyu-14)",
+     "Outdoor garden/luminous low-stakes cultural settings ('Sasaki Garden... luminous setting' in nyu-15)"
+    ],
+    "research_idea": "Attention Restoration Theory and stress-buffering recovery models"
+   }
+  ],
+  "affordances": {
+   "matching_mechanism": "A Gemi keeps its student's state private and selects 1–2 target GrowthNeed IDs plus situational constraints (available minutes, current Campus, budget, sensory preference). It intersects GrowthNeed -> candidate affordance_ids against Venue.affordances (for right-now places) and Event/Service/Opportunity.affordances (for scheduled or standing resources), enabling deterministic zero-LLM-token candidate retrieval.",
+   "catalog": [
+    {
+     "id": "quiet_study",
+     "lets_student_do": "Work individually in silence or low ambient noise at a desk with seating and power.",
+     "applies_to": [
+      "Venue"
+     ],
+     "public_verification_cues": [
+      "Reading room designation, 'quiet floor' library policy, individual study carrels"
+     ],
+     "matches_needs": [
+      "navigate_systems",
+      "build_a_skill",
+      "rest_and_recover"
+     ]
+    },
+    {
+     "id": "collaborative_work",
+     "lets_student_do": "Talk aloud and co-create in small groups around shared tables or whiteboards.",
+     "applies_to": [
+      "Venue",
+      "Event",
+      "Opportunity"
+     ],
+     "public_verification_cues": [
+      "Group study room booking, co-lab space, team hackathon/competition format (nyu-12)"
+     ],
+     "matches_needs": [
+      "get_experience",
+      "find_my_people",
+      "make_and_express"
+     ]
+    },
+    {
+     "id": "meeting_people",
+     "lets_student_do": "Mingle casually, drop in without stiffness, and strike up peer conversations.",
+     "applies_to": [
+      "Venue",
+      "Event"
+     ],
+     "public_verification_cues": [
+      "Student lounge ('First Floor Lounge, Pless Hall' in nyu-17), study break hangout (nyu-10), open festive market (col-07)"
+     ],
+     "matches_needs": [
+      "find_my_people",
+      "rest_and_recover"
+     ]
+    },
+    {
+     "id": "making_things",
+     "lets_student_do": "Build, prototype, compose, or craft physical, musical, or digital artifacts.",
+     "applies_to": [
+      "Venue",
+      "Event",
+      "Opportunity",
+      "Service"
+     ],
+     "public_verification_cues": [
+      "Makerspace/fabrication tools, craft supplies (nyu-10), composition/prototyping challenges (nyu-02, nyu-12)"
+     ],
+     "matches_needs": [
+      "make_and_express",
+      "build_a_skill",
+      "get_experience"
+     ]
+    },
+    {
+     "id": "hands_on_skill_practice",
+     "lets_student_do": "Follow guided exercises to practice a concrete tool, software workflow, or research method.",
+     "applies_to": [
+      "Event",
+      "Course",
+      "Service"
+     ],
+     "public_verification_cues": [
+      "Interactive workshop activities (nyu-07), live software walkthrough with student laptop setup (col-03)"
+     ],
+     "matches_needs": [
+      "build_a_skill",
+      "navigate_systems"
+     ]
+    },
+    {
+     "id": "intellectual_inquiry",
+     "lets_student_do": "Listen to frontier scholarship or policy debates and pose questions in Q&A.",
+     "applies_to": [
+      "Venue",
+      "Event",
+      "Course"
+     ],
+     "public_verification_cues": [
+      "Research seminar (nyu-04), moderated cross-ideological panel (nyu-05), scholarly book talk (nyu-09, col-05)"
+     ],
+     "matches_needs": [
+      "explore_a_field",
+      "contribute_beyond_self",
+      "decide_a_direction"
+     ]
+    },
+    {
+     "id": "experiencing_art_and_performance",
+     "lets_student_do": "Watch or listen to live theatre, experimental concerts, jazz, or curated exhibitions.",
+     "applies_to": [
+      "Venue",
+      "Event"
+     ],
+     "public_verification_cues": [
+      "Stage drama run (nyu-01), experimental concert (nyu-02), outdoor live jazz installation (nyu-15)"
+     ],
+     "matches_needs": [
+      "make_and_express",
+      "rest_and_recover",
+      "explore_a_field"
+     ]
+    },
+    {
+     "id": "mindfulness_and_decompression",
+     "lets_student_do": "Meditate, sit in greenery, play low-stakes games, or decompress away from grades.",
+     "applies_to": [
+      "Venue",
+      "Event",
+      "Service"
+     ],
+     "public_verification_cues": [
+      "Meditation cushions/guided mindfulness (nyu-14), outdoor garden (Sasaki Garden in nyu-15), games and tunes (nyu-10)"
+     ],
+     "matches_needs": [
+      "rest_and_recover"
+     ]
+    },
+    {
+     "id": "food_and_refueling",
+     "lets_student_do": "Get free snacks, slices, or beverages to restore physical energy between study blocks.",
+     "applies_to": [
+      "Event",
+      "Venue"
+     ],
+     "public_verification_cues": [
+      "Explicit free food mention ('slice, a snack, or a beverage... vegan and gluten free options' in nyu-10; 'free study break snacks' in nyu-17; 'refreshments' in nyu-12)"
+     ],
+     "matches_needs": [
+      "rest_and_recover",
+      "find_my_people"
+     ]
+    },
+    {
+     "id": "advising_and_critique",
+     "lets_student_do": "Ask tailored questions or receive feedback from librarians, advisors, peer mentors, or judges.",
+     "applies_to": [
+      "Event",
+      "Service",
+      "Opportunity"
+     ],
+     "public_verification_cues": [
+      "Onsite librarians answering citation/search questions (nyu-10), helpdesk email/office hours (col-03), judge feedback (nyu-12)"
+     ],
+     "matches_needs": [
+      "get_mentorship_and_feedback",
+      "navigate_systems",
+      "decide_a_direction"
+     ]
+    },
+    {
+     "id": "pitching_and_competing",
+     "lets_student_do": "Present original ideas publicly to compete for prizes, funding, or recognition.",
+     "applies_to": [
+      "Event",
+      "Opportunity"
+     ],
+     "public_verification_cues": [
+      "Shark Tank style pitch finale, prize money, audience fan-favorite vote (nyu-12)"
+     ],
+     "matches_needs": [
+      "get_experience",
+      "fund_my_path",
+      "get_mentorship_and_feedback"
+     ]
+    },
+    {
+     "id": "civic_action_and_outreach",
+     "lets_student_do": "Engage neighbors, teach youth hands-on science, or support local community initiatives.",
+     "applies_to": [
+      "Event",
+      "Opportunity",
+      "Organisation"
+     ],
+     "public_verification_cues": [
+      "Public youth science outreach (col-01), neighborhood artisan market (col-07), civic solutions forum (nyu-05)"
+     ],
+     "matches_needs": [
+      "contribute_beyond_self",
+      "get_experience",
+      "find_my_people"
+     ]
+    },
+    {
+     "id": "browsing_collections",
+     "lets_student_do": "Navigate physical book stacks, special collections, or curated digital research guides.",
+     "applies_to": [
+      "Venue",
+      "Service"
+     ],
+     "public_verification_cues": [
+      "Library stacks with LC call numbers (nyu-07), curated LibGuides (nyu-10, nyu-12, nyu-14)"
+     ],
+     "matches_needs": [
+      "explore_a_field",
+      "navigate_systems",
+      "build_a_skill"
+     ]
+    }
+   ]
+  },
+  "source_tiers": {
+   "order_for_dates_times_addresses": "feed first (Carbon)",
+   "order_for_descriptions_and_rooms": "organiser's page first (assistant)",
+   "tiers": {
+    "principle": "Rather miss than be wrong: omitting an unverified event costs a missed suggestion, whereas asserting a wrong room, wrong date, or wrong delivery mode sends a real student across NYC to an empty room and burns trust.",
+    "tiers": [
+     {
+      "tier": 1,
+      "name": "Structured Authoritative Institutional Feeds & Signed Registries",
+      "examples_in_samples": [
+       "NYU LiveWhale JSON feeds on events.nyu.edu (nyu-05, nyu-15) with UTC timestamps, group IDs, and lat/lon",
+       "Columbia Bedework JSON feeds on events.columbia.edu (col-01, col-03, col-05) with GUIDs, UTC dates, and location aliases",
+       "Official .ics calendar files hosted on .edu (linked in nyu-01)",
+       "Registrar APIs, official campus GIS tables, and .well-known/gemiverse-agents.json manifests"
+      ],
+      "trust_scope": "Authoritative for canonical IDs, timestamps/timezones, geographic coordinates, institutional hierarchy, and cancellation flags."
+     },
+     {
+      "tier": 2,
+      "name": "Official .edu & Delegated Institutional SaaS Web Pages",
+      "examples_in_samples": [
+       "Static/CMS HTML under *.nyu.edu and *.columbia.edu (nyu-01, nyu-02, nyu-04, nyu-17, col-07)",
+       "Institutionally operated LibCal pages on nyu.libcal.com (nyu-07, nyu-09, nyu-10, nyu-12, nyu-14)"
+      ],
+      "trust_scope": "Trusted for prose summaries, related programs/departments (nyu-02), and room names AFTER passing template-boilerplate contradiction checks."
+     },
+     {
+      "tier": 3,
+      "name": "Verified Organisation Agents & Outbound-Linked Operational Pages",
+      "examples_in_samples": [
+       "External RSVP/ticketing pages explicitly linked from Tier 1/2 .edu pages: Luma (nyu-04), Eventbrite (col-01), Columbia Zoom registration (col-03)",
+       "Cryptographically verified public Agents (SPEAKS_FOR an Organisation) answering about their own Organisation's activities"
+      ],
+      "trust_scope": "Allowed only to enrich operational fields (remaining RSVP slots, external guest rules, club FAQ) on entities already anchored in Tier 1/2, or to publish events exclusively under that verified Organisation. Cannot create or modify School, AcademicUnit, Campus, or Building facts."
+     },
+     {
+      "tier": 4,
+      "name": "Unverified Web, Social Media, & Student Gemi Hearsay (Rejected from Base)",
+      "examples_in_samples": [
+       "Unlinked social posts, flyers, Reddit/Sidechat rumors, or unverified claims from student Gemis"
+      ],
+      "trust_scope": "Zero write access to the base. At most triggers a background Tier 1/2 URL lookup if an official .edu link is cited."
+     }
+    ],
+    "admission_and_contradiction_rules": [
+     {
+      "rule": "Mandatory Provenance & Completeness Gate",
+      "behavior": "Every fact stores (source_url, source_tier, fetched_at_utc, content_sha256). An Event lacking a verifiable year (e.g., nyu-02 'Sun, November 22' and nyu-17 'Thu, December 10' lack a year in visible HTML) or lacking both a physical location and confirmed online mode (nyu-01 snippet omits venue) is held in staging until corroborated by its .ics/JSON feed; if still missing, it is dropped rather than guessed."
+     },
+     {
+      "rule": "Intra-Page Logistics Contradiction Quarantine (The LibCal Rule)",
+      "behavior": "In nyu-07, nyu-10, and nyu-12, the page header states 'In-Person' with a specific room ('Bobst Rm. 619', 'Bobst Rm. 743', 'Dibner LC 400'), while the page footer states 'Please note this is an online event.' Unlike col-03 (which consistently states 'Online Online' + Zoom URL), these contradict on delivery_mode. The checker fetches the event's .ics LOCATION/DESCRIPTION; if the contradiction remains unresolved, the event is quarantined from recommendations rather than guessing 'in_person' or 'hybrid'."
+     },
+     {
+      "rule": "Schedule Header vs. Body Disagreement (Conservative Subset Rule)",
+      "behavior": "In col-07, the structured header states '3 Dec to 4 Dec' while the prose body lists three weekends ('Dec 3rd and 4th', 'Dec 10th and 11th', 'Dec 17th and 18th: 1pm - 6pm'). Checker admits Dec 3–4 (1pm–6pm) immediately where header and body agree; additional dates are admitted only if parsed cleanly without conflicting end-date metadata or corroborated by recurrence rules in the underlying calendar feed."
+     },
+     {
+      "rule": "Placeholder Restraint",
+      "behavior": "When a Tier 2 page contains explicit placeholders ('About the Lecture: More details will be shared soon' in nyu-04), the checker commits only verified shell facts (CUSP seminar series, date, 370 Jay St Rm 1201) without hallucinating talk topics, and schedules a diff re-check."
+     },
+     {
+      "rule": "Cross-Source Conflict Resolution",
+      "behavior": "For timestamps and coordinates, Tier 1 structured fields beat Tier 2 prose. For room changes or cancellations on an Event, a newer Last-Modified timestamp on the hosting Organisation's own Tier 2/3 channel beats an older cached central calendar entry; if recency cannot be proven, conflicting logistics cause the Event to be suppressed ('rather miss than be wrong')."
+     }
+    ],
+    "domain_evidence_gaps_in_samples": [
+     "Domain 1 (Institution): Undergraduate majors, degree requirements, and full registrar department trees are absent (only one related graduate program blurb in nyu-02).",
+     "Domain 2 (Space): Standing room affordances (e.g., everyday quiet-study floors, makerspace equipment, standard building turnstile hours) have no dedicated space pages in these event-only samples.",
+     "Domain 3 (Resources): Courses, open research openings, grant/fellowship calls, student jobs, and structured mentorship programs have no direct pages (only indirect competition/prize mention in nyu-12 and embedded service/guide links).",
+     "Domain 5 & 6 (Organisations & World Relations): Public AI Agents (Agent entity and SPEAKS_FOR link) and student club charter registries (NYU Engage / LionLink) have zero evidence in legacy web samples."
+    ]
+   },
+   "open_question": "which source wins on disagreement: settle in the exam"
+  },
+  "freshness": [
+   {
+    "entity_type": "School",
+    "staleness_window": "365 days (academic year cycle)",
+    "revisit_diff_check": "HTTP HEAD/ETag on academic_calendar_url; re-parse only if term boundary dates changed."
+   },
+   {
+    "entity_type": "AcademicUnit",
+    "staleness_window": "120 days (per semester)",
+    "revisit_diff_check": "Check official_url status/redirects, unit name diff, and role_contact_email presence in footer."
+   },
+   {
+    "entity_type": "Program",
+    "staleness_window": "180 days (annual bulletin publication)",
+    "revisit_diff_check": "Diff hash of bulletin program block for credential_type or discontinuation notice."
+   },
+   {
+    "entity_type": "Campus",
+    "staleness_window": "365 days",
+    "revisit_diff_check": "Diff campus map index list for newly added or retired campus districts."
+   },
+   {
+    "entity_type": "Building",
+    "staleness_window": "60 days (plus immediate check on campus advisories)",
+    "revisit_diff_check": "Re-check ONLY access_policy (e.g., campus ID gate changes) and closure banners; never re-verify street_address or coordinates."
+   },
+   {
+    "entity_type": "Venue",
+    "staleness_window": "90 days (per semester)",
+    "revisit_diff_check": "Diff room booking/library space directory for active status, reservable_by_students, and updated equipment/affordances."
+   },
+   {
+    "entity_type": "Event",
+    "staleness_window": "Escalating countdown: every 72h when >7d away; every 24h when 1–7d away; every 3h in final 24h before start_iso; 0 checks once final end_iso passes (immediately archived).",
+    "revisit_diff_check": "Send HTTP If-Modified-Since/ETag first (0 tokens on 304). On change, diff ONLY cancellation status, occurrences (start/end time), LOCATED_AT venue/Zoom link, registration_rule/waitlist (col-05 WAIT-LIST-LIMIT), and placeholder fill-in (nyu-04 'More details will be shared soon'). Re-run need/affordance tagging ONLY if summary hash changed."
+   },
+   {
+    "entity_type": "Course",
+    "staleness_window": "90 days (plus once prior to registration week and once during add/drop)",
+    "revisit_diff_check": "Diff registrar feed for course cancellation, term active flag, and prerequisites_text."
+   },
+   {
+    "entity_type": "Opportunity",
+    "staleness_window": "7 days while status='open'; every 24h within 72h of deadline_iso; auto-transition status to 'closed' locally at deadline_iso with zero network calls.",
+    "revisit_diff_check": "Diff ONLY status (rolling fill/early close banner), deadline_iso extensions, and apply_url HTTP 200."
+   },
+   {
+    "entity_type": "Service",
+    "staleness_window": "60 days (plus pre-finals check, reflecting seasonal shifts like Finals Resources in nyu-10)",
+    "revisit_diff_check": "Diff ONLY hours_summary, access_method, role_contact_channel, and service_url liveness."
+   },
+   {
+    "entity_type": "GrowthNeed",
+    "staleness_window": "Schema-versioned (human governance review every 365 days)",
+    "revisit_diff_check": "Schema version hash and false-positive audit on public_page_signals."
+   },
+   {
+    "entity_type": "Organisation",
+    "staleness_window": "90 days (semester club re-registration cycle)",
+    "revisit_diff_check": "Diff active recognition status in Engage/LionLink or institute directory, official_url, and public_contact_channel."
+   },
+   {
+    "entity_type": "Agent",
+    "staleness_window": "30-minute zero-LLM-token network heartbeat for liveness; 7-day cryptographic key & capability check.",
+    "revisit_diff_check": "Verify Ed25519 signature against .well-known/role record and diff supported_intents + max_tokens_per_turn manifest hash."
+   }
+  ],
+  "cost_model": {
+   "cheap_in_base": [
+    "Deterministic graph & index queries (0 LLM tokens): filtering by School, Campus, time window, cost_type='free', eligibility, SERVES_NEED, and affordances runs purely on structured indexes.",
+    "Compact entity card reads (~45–80 tokens per item): reading pre-scrubbed summaries (<= 280 chars) and typed enums for 8–10 shortlisted items costs ~600 tokens total—roughly 50x–100x cheaper than reading raw HTML pages bloated with navbars, social share widgets, and repeated legal boilerplate (nyu-01..nyu-17).",
+    "World-relation hops (0 LLM tokens): traversing RUNS, COLLABORATES_WITH, and RELATED_TO to pivot from one event to allied clubs, guides, or programs."
+   ],
+   "low_cost_p2p_agent_hop": [
+    "Direct Gemi-to-Organisation Agent query (~100–250 tokens): when an answer is missing from the base and an Agent SPEAKS_FOR the target Organisation, the Gemi asks a single bounded question capped by Agent.max_tokens_per_turn instead of fetching web pages."
+   ],
+   "forces_trip_outside": [
+    "Explicit student request for an unindexed URL or deep document detail (e.g., full degree requirement electives or external ticket pricing behind 'Get Tickets' in nyu-01) when no verified Agent can answer.",
+    "Zero-hit high-priority gap: student has an urgent active need in a narrow time/campus window with 0 verified matches in the base.",
+    "High-value verification trigger: an event a student specifically wants to attend within 24 hours has a quarantined field (e.g., nyu-07 LibCal delivery_mode conflict or nyu-04 'More details will be shared soon') requiring a lightweight .ics or conditional HTTP check."
+   ],
+   "how_base_grows_to_save_later_tokens": [
+    "Verify-Once, Read-Many Amortization: when any Gemi or background ingestor pays ~2,500 tokens to parse and verify a Tier 1/2 source page, the normalized card + provenance hash is written to the base so thousands of subsequent NYU/Columbia Gemis spend ~60 tokens instead of re-scraping.",
+    "Boilerplate Normalization into Shared Nodes: recurring prose across pages (NYU's two-week disability accommodation block in nyu-01/02/07/10/14/17, building addresses, CUSP's standard blurb in nyu-04) is stored once as a Service, Building, or Organisation node and referenced by edge ID.",
+    "Signed Agent FAQ Crystallization: when an Organisation's verified Agent repeatedly answers the same impersonal factual question (e.g., 'open to non-majors' or weekly club room), the signed fact is promoted onto the Organisation/Opportunity node in the base, eliminating repeat P2P token spend.",
+    "Strict Treasure Gate & Post-Event Compaction ('pick treasure, do not pile up junk'): pages without checkable student-facing affordances/needs (HR memos, alumni galas, K-12 events lacking student volunteer orgs) are rejected at ingestion; expired Events are stripped from hot read indexes immediately after end_iso while keeping lightweight COLLABORATES_WITH edges intact."
+   ]
+  },
+  "privacy_boundary": {
+   "exact_rule": "Two-Part Absolute Ban: (1) No Person-Describing Facts—no entity, field, summary, or index in the base may identify, describe, evaluate, biographize, or store personal contact details (personal NetID/UNI email, personal phone, personal handle, DOB) for any natural person (student, faculty, staff, speaker, performer, or organizer). (2) No Behavioral or Relational Student Traces—no individual or Gemi query, growth need state, RSVP, physical presence, attendance count, rating, or person-to-person relationship may ever enter the base, whether raw or k-anonymized. Only institutions, spaces, impersonal needs, opportunities/works, organisations, role channels, and verified organisation AI agents may exist in the base.",
+   "tricky_examples": [
+    {
+     "scenario": "1. Publicly published speaker names, bios, performers, and staff contacts on official .edu event pages (e.g., nyu-04 'Research Seminar: Alessandro Rizzo' + 'About the Speaker', nyu-09 'Event Organizer: Jenny Rossberg', nyu-15 jazz trio player names, col-01 'Kent Katner / 2128533960', col-07 'Emily Ailts / ea3101@columbia.edu').",
+     "ruling": "REJECT all person fields, bios, and personal contacts; PERMIT opaque verbatim work/event titles only without person indexing. Specifically: speaker biographies (nyu-04), performer rosters (nyu-15), LibGuide authors ('by Laurie Murphy' in nyu-10), organizer names (nyu-09), staff phones (col-01), and personal UNI emails ('ea3101@columbia.edu' in col-07) are scrubbed before write, while institutional role inboxes ('cusp.education@nyu.edu', 'zotero-help@library.columbia.edu', 'mpap-concertmusic@nyu.edu') are kept. If an official event title contains a name ('Research Seminar: Alessandro Rizzo' or 'City of Fortune -- A Book Talk with Mason B. Williams'), Event.title keeps the verbatim title solely so students can match campus signage, but no speaker field, Person node, or person-lookup index is created."
+    },
+    {
+     "scenario": "2. Covering 'mentors' and 'research openings' in Domain 3 when students equate mentorship and lab openings with specific professors or upperclassmen.",
+     "ruling": "REJECT individual mentor profiles; MODEL mentorship and research strictly as impersonal Opportunity/Service nodes run by an Organisation and fronted by a role Agent or P2P Gemi handshake. For example, 'Steinhardt Peer Mentorship Program' or 'CUSP Urban Informatics Research Opening' enters the base linked to Organisation:CUSP and its Agent. If a professor or upperclassman mentors in Gemiverse, a student's Gemi discovers the impersonal Opportunity in the base, initiates a direct P2P conversation with the lab Agent or mentor's Gemi, and—upon mutual consent—stores the human mentor relationship strictly in each Gemi's private name cards."
+    },
+    {
+     "scenario": "3. Writing 'anonymous' Gemi crowd signals back to the base—such as '11 Gemis plan to attend Finals Study Break' or 'Gemis report Bobst Rm 743 is loud right now'.",
+     "ruling": "REJECT completely. Even unnamed Gemi counts leak individual presence and private needs in small rooms or niche clubs (e.g., count=1 in a seminar room exposes the lone student present) and introduce uncheckable subjective gossip into a public-fact graph. Only official institutional public feeds (e.g., an official university library sensor API on .edu or Bedework's 'WAIT-LIST-LIMIT: 0' in col-05) may enter the base; friend coordination ('who among my friends is going?') happens strictly P2P using private name cards."
+    }
+   ]
+  },
+  "projection": {
+   "strict_provenance_invariant": "Every visible pixel/object in Gemiverse traces deterministically to either the Shared Base (world geometry, signage, booths, boards, landmarks, public org agents), the Student's Private Side (the student's room, own Gemi, private name-card contacts, personal bookmarks, private need highlights), or an explicit Read-Only Local Overlay (Private filter/glow rendered locally on top of a Base object without writing back to the Base). Zero ungrounded decorative entities exist.",
+   "world_zones": {
+    "student_room": "100% Private Side container (student's own Gemi avatar, personal calendar desk, saved name-card rolodex), plus pinned portals/posters that dereference immutable Base entity IDs.",
+    "campus_map_and_landmarks": "Base-driven 2D/3D map per School and Campus showing physical Building landmarks (e.g., Bobst Library, Paulson Center, 370 Jay St, The Forum, IAB, Greene Science Center) and outdoor Venues (Sasaki Garden), alongside the four shared functional hub buildings.",
+    "four_shared_functional_buildings": {
+     "Library_learning": "Projects AcademicUnit wings, Program folios, Course catalogs, research/skill Events (nyu-04, nyu-07, col-03, col-05), and academic/guide Services (nyu-10 Finals Resources, col-03 Zotero Help).",
+     "Clubs": "Projects student_club_collective and lab_center_institute Organisations (Nevermind the Noise, CUNO, CRACS Co-Lab), their live SPEAKS_FOR Agents at club booths, and COLLABORATES_WITH banners linking allied booths.",
+     "Commons_meeting_people": "Projects social/cultural/wellness Events (nyu-01, nyu-02, nyu-10, nyu-14, nyu-15, nyu-17, col-07), social/restorative Venue portals, and ephemeral live P2P peer Gemi presence (Private/P2P layer, never stored in Base).",
+     "Career_opportunities": "Projects Opportunity quest boards (competitions like Hack Dibner in nyu-12, research openings, funding, jobs, mentorship cohorts) and career/advising Service kiosks."
+    }
+   },
+   "by_entity_type": [
+    {
+     "entity_type": "School",
+     "source_side": "base",
+     "visual_appearance": "Top-level world realm/skybox and campus switcher crest (NYU Violet realm vs. Columbia Lions realm)."
+    },
+    {
+     "entity_type": "AcademicUnit",
+     "source_side": "base",
+     "visual_appearance": "Named alcoves/wings inside the Library/learning building (e.g., Steinhardt Wing -> MPAP Alcove; Tandon Wing) and banners on affiliated campus landmarks."
+    },
+    {
+     "entity_type": "Program",
+     "source_side": "base",
+     "visual_appearance": "Interactive curriculum folios/pedestals inside its AcademicUnit alcove in Library/learning (e.g., 'Concert Composition' folio)."
+    },
+    {
+     "entity_type": "Campus",
+     "source_side": "base",
+     "visual_appearance": "Distinct navigable map districts connected by transit portals (Washington Square, Brooklyn Jay St, Morningside Heights, Manhattanville)."
+    },
+    {
+     "entity_type": "Building",
+     "source_side": "base",
+     "visual_appearance": "3D/2D architectural school landmarks on the Campus Map (Bobst, Pless Hall, 370 Jay St, The Forum, IAB) displaying a checkable gate badge from Building.access_policy."
+    },
+    {
+     "entity_type": "Venue",
+     "source_side": "base",
+     "visual_appearance": "Enterable interior rooms inside Building landmarks (Bobst Rm 743, Pless First Floor Lounge) or open-air parks on the map (Sasaki Garden), displaying standardized icon badges for verified Venue.affordances."
+    },
+    {
+     "entity_type": "Event",
+     "source_side": "base (with optional local private relevance glow)",
+     "visual_appearance": "Time-synced posters and live lantern beacons at its physical Venue/Building landmark AND mirrored inside the matching functional hub (workshops/talks in Library; study breaks/concerts/meditations in Commons; showcases in Career). Online events (col-03 Zotero) project directly as virtual seminar rooms inside Library/learning."
+    },
+    {
+     "entity_type": "Course",
+     "source_side": "base",
+     "visual_appearance": "Term catalog volumes and syllabus cards shelved in the Library/learning building under the offering AcademicUnit."
+    },
+    {
+     "entity_type": "Opportunity",
+     "source_side": "base",
+     "visual_appearance": "Pinned bounty/quest cards on the Career/opportunities board sorted by opportunity_kind (research, competition, funding, job, mentorship) with live countdown clocks to deadline_iso."
+    },
+    {
+     "entity_type": "Service",
+     "source_side": "base",
+     "visual_appearance": "Permanent staffed-style information kiosks and guide stands inside Library/learning (Reference Services, LibGuides), Commons (Accessibility & Wellbeing), or Career (Advising)."
+    },
+    {
+     "entity_type": "GrowthNeed",
+     "source_side": "base (selection state is private)",
+     "visual_appearance": "Wayfinding compass lenses/filter sigils in the HUD and color-coded signposts across the four functional buildings; which sigil is currently active for a student is rendered strictly from the Private Side."
+    },
+    {
+     "entity_type": "Organisation",
+     "source_side": "base",
+     "visual_appearance": "Persistent club/lab booths in the Clubs building and office plaques in landmarks, connected by visible ribbons/archways where COLLABORATES_WITH edges exist."
+    },
+    {
+     "entity_type": "Agent",
+     "source_side": "base",
+     "visual_appearance": "Official non-person herald/mascot construct standing at its Organisation's booth in Clubs (or unit desk in Library/Career) bearing a cryptographic verified seal that a student's Gemi can walk up to and talk with."
+    }
+   ],
+   "private_side_only_elements": [
+    {
+     "visible_thing": "Student's own Room interior, saved flyers on personal corkboard, and personal Gemi avatar",
+     "source_side": "private",
+     "notes": "Stored solely in the student's local/private store; pinned flyers hold read-only pointers to Base Event/Opportunity IDs."
+    },
+    {
+     "visible_thing": "Other students' Gemis met in Commons and saved Peer/Mentor Name Cards",
+     "source_side": "private (plus ephemeral P2P session)",
+     "notes": "Peer-to-peer handshakes exchange name cards directly between Gemis; neither the encounter nor the contact card ever touches the Base."
+    },
+    {
+     "visible_thing": "'For You' shimmer/compass trail highlighting specific booths, rooms, or events",
+     "source_side": "joint_local_overlay (private need state applied locally over baseSERVES_NEED + affordances)",
+     "notes": "Computed on the Gemi's own budget/device; the Base never sees which items glowed for which student."
+    }
+   ]
+  }
+ },
+ "learner": {
+  "listen_for": [
+   {
+    "kind": "birth_voice_note",
+    "stored_payload": {
+     "event_id": "uuid",
+     "timestamp_days": "float",
+     "extracted_claims": "array of {target_id, pole_estimate, short_student_phrase_max_12_words}",
+     "initial_needs": "array of need_ids"
+    },
+    "raw_media_policy": "Raw audio and full verbatim transcript are discarded in memory immediately after local extraction; names of other people and protected/health disclosures are stripped before write.",
+    "trust_tier": "self_reported",
+    "informs_axes": [
+     "pace",
+     "scope",
+     "arena",
+     "closeness",
+     "horizon",
+     "structure",
+     "collaboration"
+    ],
+    "informs_needs": [
+     "all_shared_needs"
+    ],
+    "decay": "Axis influence decays via standard variance drift (29-day variance half-life) and is capped at uncertainty floor u >= 0.55; stated needs decay with a 28-day half-life unless reinforced."
+   },
+   {
+    "kind": "stated_goal",
+    "stored_payload": {
+     "event_id": "uuid",
+     "timestamp_days": "float",
+     "sanitized_goal_summary": "string (max 140 chars, situational action framing)",
+     "mapped_needs": "array of {need_id, weight}",
+     "implied_axis_nudges": "array of {axis_id, score}",
+     "horizon_date_days": "float or null"
+    },
+    "trust_tier": "self_reported",
+    "informs_axes": [
+     "pace",
+     "scope",
+     "arena",
+     "closeness",
+     "horizon",
+     "structure",
+     "collaboration"
+    ],
+    "informs_needs": [
+     "all_shared_needs"
+    ],
+    "decay": "Expires on horizon_date_days if set, otherwise 28-day half-life on stated need weight; axis nudges remain bounded by the self_reported uncertainty floor (u >= 0.55)."
+   },
+   {
+    "kind": "item_keep",
+    "stored_payload": {
+     "event_id": "uuid",
+     "timestamp_days": "float",
+     "resource_id": "string",
+     "resource_title": "string",
+     "need_tags": "array of need_ids",
+     "rubric_vector": "map of axis_id -> score in [-1.0, 1.0] or null",
+     "contrast_pair_id": "string or null"
+    },
+    "trust_tier": "checked",
+    "informs_axes": [
+     "all_axes_with_non_null_rubric_score"
+    ],
+    "informs_needs": [
+     "matching_need_tags (increments inferred_weight)"
+    ],
+    "decay": "Posterior variance drifts back toward 1.0 exponentially with rate lambda = 0.024/day (~29-day variance half-life); inferred need boost decays with a 21-day half-life."
+   },
+   {
+    "kind": "item_skip",
+    "stored_payload": {
+     "event_id": "uuid",
+     "timestamp_days": "float",
+     "resource_id": "string",
+     "resource_title": "string",
+     "need_tags": "array of need_ids",
+     "rubric_vector": "map of axis_id -> score in [-1.0, 1.0] or null",
+     "contrast_pair_id": "string or null",
+     "optional_reason": "enum(not_my_format, wrong_topic, bad_timing, null)"
+    },
+    "trust_tier": "checked",
+    "informs_axes": [
+     "contrasted_axes_only_when_paired_with_a_keep_or_tagged_not_my_format"
+    ],
+    "informs_needs": [
+     "none_unless_3_consecutive_skips_on_inferred_need"
+    ],
+    "decay": "Unpaired skips without reason 'not_my_format' do NOT move axes (since busy schedules confound skips) and only apply a 14-day cooldown on that specific resource_id; contrastive or format-tagged skips apply weight = 0.35 checked evidence toward the opposite pole with standard 29-day variance half-life."
+   },
+   {
+    "kind": "ask_again",
+    "stored_payload": {
+     "event_id": "uuid",
+     "timestamp_days": "float",
+     "need_id": "string",
+     "anchor_resource_id": "string or null",
+     "requested_pivot": "object {axis_id, target_score} or null (pure refresh)"
+    },
+    "trust_tier": "checked",
+    "informs_axes": [
+     "pivoted_axis_if_specified (weight = 0.75 checked)"
+    ],
+    "informs_needs": [
+     "boosts effective care on need_id for current + next 7 days"
+    ],
+    "decay": "Need boost decays with a 7-day half-life; axis pivot follows standard 29-day variance half-life."
+   },
+   {
+    "kind": "outbound_commitment",
+    "stored_payload": {
+     "event_id": "uuid",
+     "timestamp_days": "float",
+     "resource_id": "string",
+     "commitment_kind": "enum(calendar_export, rsvp_click, directions_open)",
+     "scheduled_event_days": "float or null",
+     "rubric_vector": "map of axis_id -> score or null"
+    },
+    "trust_tier": "checked",
+    "informs_axes": [
+     "all_axes_with_non_null_rubric_score (weight = 1.25 checked, replacing bare keep weight on same resource_id to prevent double-counting)"
+    ],
+    "informs_needs": [
+     "matching_need_tags (schedules a 1-tap post-event check-in after scheduled_event_days)"
+    ],
+    "decay": "Standard 29-day variance half-life; pending check-in prompt expires 72 hours after scheduled_event_days."
+   },
+   {
+    "kind": "repeated_choice_pattern",
+    "stored_payload": {
+     "event_id": "uuid",
+     "timestamp_days": "float",
+     "supporting_event_ids": "array of 3+ checked event_ids spanning >= 10 days",
+     "axis_id": "string",
+     "mean_pole_score": "float"
+    },
+    "trust_tier": "seen_over_time",
+    "informs_axes": [
+     "axis_id (consolidates repeated consistent choices across weeks)"
+    ],
+    "informs_needs": [
+     "sustains inferred_weight on recurring need_id"
+    ],
+    "decay": "Slower decay (45-day variance half-life, implemented as effective timestamp refresh across the window); invalidated automatically if any supporting_event_id is undone."
+   },
+   {
+    "kind": "attended_artifact",
+    "stored_payload": {
+     "event_id": "uuid",
+     "timestamp_days": "float",
+     "resource_id": "string",
+     "resource_title": "string",
+     "verification_kind": "enum(event_photo_stripped, physical_artifact_photo_stripped, post_event_concrete_note)",
+     "student_caption": "string (max 160 chars, PII-scrubbed)",
+     "local_thumbnail_blob_key": "string or null (EXIF GPS stripped, faces blurred/cropped locally if present, kept strictly for student diary)",
+     "rubric_vector": "map of axis_id -> score or null",
+     "need_tags": "array of need_ids"
+    },
+    "trust_tier": "actually_done",
+    "informs_axes": [
+     "all_axes_with_non_null_rubric_score (supersedes prior keep/commitment event on same resource_id so one real event counts once at highest trust)"
+    ],
+    "informs_needs": [
+     "triggers fulfillment/satiation check on episodic needs or confirms active engagement"
+    ],
+    "decay": "Longest retention: 60-day variance half-life (persists across a full academic term before softening)."
+   },
+   {
+    "kind": "room_layout_change",
+    "stored_payload": {
+     "event_id": "uuid",
+     "timestamp_days": "float",
+     "workspace_mode": "enum(single_focus_bench, multi_project_wall, null)",
+     "visibility_mode": "enum(public_showcase_shelf, private_notebook_desk, null)"
+    },
+    "trust_tier": "self_reported",
+    "informs_axes": [
+     "scope (via workspace_mode, weight = 0.5)",
+     "arena (via visibility_mode, weight = 0.5)"
+    ],
+    "informs_needs": [],
+    "decay": "Treated as expressive curation rather than real-world campus action; capped by self_reported floor (u >= 0.55) and overwritten immediately by next layout change."
+   },
+   {
+    "kind": "visit_timing",
+    "stored_payload": {
+     "rolling_21d_bucket_counts": "object {morning: int, afternoon: int, evening: int, late_night: int}"
+    },
+    "trust_tier": "seen_over_time",
+    "informs_axes": [],
+    "informs_needs": [],
+    "decay": "Rolling 21-day window; informs ONLY when the Gemi runs its daily outbound trip so fresh items are ready before the student usually visits, and NEVER informs axes, sleep inference, or needs."
+   },
+   {
+    "kind": "correction_not_me",
+    "stored_payload": {
+     "event_id": "uuid",
+     "timestamp_days": "float",
+     "disputed_diary_id": "string or null",
+     "target_kind": "enum(axis, need)",
+     "target_id": "string",
+     "correction_action": "enum(just_a_one_off, misread_the_item, lean_other_way, mute_need)",
+     "student_stated_pole": "float in [-1.0, 1.0] or null"
+    },
+    "trust_tier": "self_reported",
+    "informs_axes": [
+     "target_id (deactivates linked misread event(s) via undo, resets uncertainty halo u = max(u, 0.65), and optionally applies student_stated_pole at self_reported trust)"
+    ],
+    "informs_needs": [
+     "mutes or zeroes target_id if target_kind == need"
+    ],
+    "decay": "Deactivation of disputed event is permanent unless reversed; uncertainty reopening decays only as new real-world evidence arrives."
+   },
+   {
+    "kind": "undo",
+    "stored_payload": {
+     "event_id": "uuid",
+     "timestamp_days": "float",
+     "undone_event_id": "string"
+    },
+    "trust_tier": "meta_control",
+    "informs_axes": [
+     "recomputes all affected axes via exact event-log replay without undone_event_id"
+    ],
+    "informs_needs": [
+     "recomputes affected needs without undone_event_id"
+    ],
+    "decay": "Permanent tombstoning of undone_event_id (or full purge from IndexedDB if student selects 'delete record')."
+   }
+  ],
+  "never_record": [
+   {
+    "category": "health_mental_health_and_affect",
+    "prohibited_items": [
+     "clinical diagnoses, therapy/counseling visits, disability accommodations, medication mentions",
+     "inferred mood, anxiety, loneliness, burnout, depression, or sleep deprivation scores",
+     "voice prosody, sighing, speech rate, or sentiment trends"
+    ],
+    "reason": "Violates the hard rule against being a mental-health advisor; turns normal college stress into covert pathology and creates severe harm if misread or exposed."
+   },
+   {
+    "category": "protected_traits_and_socioeconomic_proxies",
+    "prohibited_items": [
+     "race, ethnicity, national origin, citizenship/visa status",
+     "gender identity, sexual orientation, relationship status",
+     "religion, political affiliation, financial aid status, family income, employment necessity"
+    ],
+    "reason": "Demographic priors stereotype choices; if a student skips a $40 outing or an off-campus trip, Gemi may observe budget/location preferences only through explicit resource filters if set, never by inferring identity or class."
+   },
+   {
+    "category": "other_peoples_data_and_social_graph",
+    "prohibited_items": [
+     "names, handles, voices, or faces of friends, roommates, classmates, or instructors",
+     "who accompanied the student to an event or co-membership graphs"
+    ],
+    "reason": "Bystanders never consented to be in a student's browser graph; Gemi models whether the student chooses solo vs group settings (collaboration), never who their friends are."
+   },
+   {
+    "category": "raw_biometrics_and_fine_location",
+    "prohibited_items": [
+     "raw audio buffers after local transcription",
+     "unstripped EXIF metadata (GPS lat/lon, device serials) or unblurred faces in event photos",
+     "background geolocation tracking or campus Wi-Fi triangulation"
+    ],
+    "reason": "Raw voice and passive GPS turn a helpful projection into surveillance; attendance must be volunteered by the student rather than passively stalked."
+   },
+   {
+    "category": "academic_standing_and_cognitive_grading",
+    "prohibited_items": [
+     "GPA, exam scores, course grades, academic probation",
+     "inferred intelligence, grit, conscientiousness, reading level, or skill deficit scores"
+    ],
+    "reason": "Violates the hard rule against being a tutor and the principle that no axis pole is a deficit; Gemi tracks situational preferences, not competence rankings."
+   },
+   {
+    "category": "engagement_and_attention_telemetry",
+    "prohibited_items": [
+     "chat session duration, scroll dwell time, typing hesitation, daily streak counts",
+     "notification open latency or dark-pattern retention metrics"
+    ],
+    "reason": "Success is real-world campus action during short visits; recording chat dwell time creates perverse pressure to optimize screen time."
+   },
+   {
+    "category": "fixed_personality_labels",
+    "prohibited_items": [
+     "Big Five scores, MBTI types, attachment styles, Enneagram, 'introvert/extrovert' tags"
+    ],
+    "reason": "Violates the hard rule against personality analysis; fixed trait nouns freeze a 19-year-old's identity instead of modeling how they choose in specific situations."
+   }
+  ],
+  "axes": [
+   {
+    "id": "pace",
+    "space": "HOW",
+    "lineage": "kept from HOW.pace",
+    "left_pole": "polish slowly (sustained multi-week craft)",
+    "right_pole": "try fast (single-session rapid trial)",
+    "range": [
+     -1,
+     1
+    ]
+   },
+   {
+    "id": "scope",
+    "space": "HOW",
+    "lineage": "kept from HOW.scope",
+    "left_pole": "go deep on one (specialist continuity)",
+    "right_pole": "touch everything (cross-domain sampling)",
+    "range": [
+     -1,
+     1
+    ]
+   },
+   {
+    "id": "arena",
+    "space": "WHY",
+    "lineage": "reworded from WHY.drive",
+    "left_pole": "public stakes (staged, juried, visible credit)",
+    "right_pole": "private space (unscored, personal, unshared)",
+    "range": [
+     -1,
+     1
+    ]
+   },
+   {
+    "id": "closeness",
+    "space": "WHY",
+    "lineage": "kept from WHY.closeness",
+    "left_pole": "figure out principles (theory & foundational why)",
+    "right_pole": "make things people use (tangible utility & live deployment)",
+    "range": [
+     -1,
+     1
+    ]
+   },
+   {
+    "id": "horizon",
+    "space": "WHY",
+    "lineage": "kept from WHY.horizon",
+    "left_pole": "root nearby (dorm, campus & local fabric)",
+    "right_pole": "look outward (off-campus, industry & global world)",
+    "range": [
+     -1,
+     1
+    ]
+   },
+   {
+    "id": "structure",
+    "space": "WITH",
+    "lineage": "merged from WITH.control + WITH.certainty",
+    "left_pole": "guided & planned (mentor, syllabus & clear roadmap)",
+    "right_pole": "self-directed & open-ended (autonomous & unscripted)",
+    "range": [
+     -1,
+     1
+    ]
+   },
+   {
+    "id": "collaboration",
+    "space": "WITH",
+    "lineage": "kept from WITH.collaboration",
+    "left_pole": "alone (solo ownership & independent space)",
+    "right_pole": "in a group (interdependent crew & shared build)",
+    "range": [
+     -1,
+     1
+    ]
+   }
+  ],
+  "rubric": {
+   "scoring_rule": "Score each piece of evidence on [-1.0, -0.5, 0.0, 0.5, 1.0] ONLY when the resource or choice visibly exhibits that situational feature; emit null when the resource gives no signal on that axis, reserving 0.0 for activities that explicitly blend both poles.",
+   "axes": {
+    "pace": [
+     {
+      "score": -1,
+      "choice": "Commits to a semester-long or multi-month craft, research thread, or production aimed at refining one finished piece."
+     },
+     {
+      "score": -0.5,
+      "choice": "Signs up for a 3-to-5-week workshop series where work is revisited and improved between sessions."
+     },
+     {
+      "score": 0,
+      "choice": "Picks a two-part or weekend project that pairs a quick first draft with one dedicated round of revision."
+     },
+     {
+      "score": 0.5,
+      "choice": "Chooses a single-evening build or 2-hour studio jam where a rough version is started and finished the same night."
+     },
+     {
+      "score": 1,
+      "choice": "Jumps into a 60-minute drop-in taster or rapid sprint built purely for immediate trial with zero polish."
+     }
+    ],
+    "scope": [
+     {
+      "score": -1,
+      "choice": "Selects an advanced, narrow sub-topic within the exact same domain as recent choices to push deeper into one specialty."
+     },
+     {
+      "score": -0.5,
+      "choice": "Picks a focused session that directly continues a thread or skill already explored in the past month."
+     },
+     {
+      "score": 0,
+      "choice": "Chooses a crossover activity that links a familiar subject with one neighboring discipline."
+     },
+     {
+      "score": 0.5,
+      "choice": "Tries a beginner session in a completely new department or medium unconnected to recent keeps."
+     },
+     {
+      "score": 1,
+      "choice": "Grabs a multi-station sampler, festival pass, or variety night designed to taste several unrelated fields at once."
+     }
+    ],
+    "arena": [
+     {
+      "score": -1,
+      "choice": "Enters a juried competition, auditioned stage performance, or public pitch evaluated before an audience."
+     },
+     {
+      "score": -0.5,
+      "choice": "Picks an activity culminating in a public exhibition table, published byline, or campus-wide demo."
+     },
+     {
+      "score": 0,
+      "choice": "Joins an informal circle where peers show work inside the room without rankings, prizes, or outside spectators."
+     },
+     {
+      "score": 0.5,
+      "choice": "Chooses an unscored practice room, reading group, or open studio with no showcase or public record."
+     },
+     {
+      "score": 1,
+      "choice": "Picks a quiet, unrecorded activity done strictly for personal curiosity with zero audience or credential attached."
+     }
+    ],
+    "closeness": [
+     {
+      "score": -1,
+      "choice": "Chooses a theory seminar, proof group, or foundational text discussion aimed purely at understanding first principles."
+     },
+     {
+      "score": -0.5,
+      "choice": "Attends an analytical talk or research dissection asking why a system behaves as it does before considering use cases."
+     },
+     {
+      "score": 0,
+      "choice": "Selects a lab or design studio that splits time evenly between conceptual framing and a small working prototype."
+     },
+     {
+      "score": 0.5,
+      "choice": "Picks a hands-on build session focused on fabricating a functional tool, object, or event for real people."
+     },
+     {
+      "score": 1,
+      "choice": "Joins a repair clinic, campus service crew, or live deployment where students or neighbors use what is made right away."
+     }
+    ],
+    "horizon": [
+     {
+      "score": -1,
+      "choice": "Commits to a dorm tradition, house council effort, or courtyard project stewarding everyday life right on campus."
+     },
+     {
+      "score": -0.5,
+      "choice": "Chooses a recurring campus club or local neighborhood partnership built on nearby face-to-face community."
+     },
+     {
+      "score": 0,
+      "choice": "Picks a campus-hosted forum that connects student projects with visiting regional practitioners or nearby colleges."
+     },
+     {
+      "score": 0.5,
+      "choice": "Selects an off-campus industry visit, city-wide civic fellowship, or cross-institution trek beyond the university."
+     },
+     {
+      "score": 1,
+      "choice": "Pursues an international exchange, global policy challenge, or cross-border collaboration aimed far beyond the local campus."
+     }
+    ],
+    "structure": [
+     {
+      "score": -1,
+      "choice": "Enrolls in an instructor-led cohort with a fixed syllabus, step-by-step milestones, and regular mentor check-ins."
+     },
+     {
+      "score": -0.5,
+      "choice": "Chooses a facilitated workshop with a clear agenda and coach on hand while leaving minor creative choices open."
+     },
+     {
+      "score": 0,
+      "choice": "Picks a starter prompt or toolkit with optional office hours where participants set their own route after kickoff."
+     },
+     {
+      "score": 0.5,
+      "choice": "Uses open lab or studio keycard hours to pursue a self-chosen idea with shared gear and no instructor."
+     },
+     {
+      "score": 1,
+      "choice": "Steps into an unscripted unconference, mystery field trip, or blank-slate micro-grant with no map, guide, or preset goal."
+     }
+    ],
+    "collaboration": [
+     {
+      "score": -1,
+      "choice": "Books solo workspace, an individual grant, or a self-paced activity carried out completely on one's own."
+     },
+     {
+      "score": -0.5,
+      "choice": "Joins a quiet parallel co-working room or lecture hall where people sit near others while working on separate tasks."
+     },
+     {
+      "score": 0,
+      "choice": "Sits at a shared workbench or critique pair where everyone builds their own piece while trading casual feedback."
+     },
+     {
+      "score": 0.5,
+      "choice": "Signs up for a 3-to-6-person project pod that divides roles to ship a shared outcome together."
+     },
+     {
+      "score": 1,
+      "choice": "Commits to an ensemble, team crew, or co-op shift where the activity only functions through synchronized group action."
+     }
+    ]
+   }
+  },
+  "update_rule": {
+   "form": "Kalman step per axis: v = u*u; k = v / (v + noise[tier]); m += k*(x - m); v = (1-k)*v; u = max(floor, sqrt(v))",
+   "noise": {
+    "self_reported": 2.5,
+    "checked": 1,
+    "seen_over_time": 0.45,
+    "actually_done": 0.22
+   },
+   "floor": {
+    "default": 0.1,
+    "self_reported": 0.55
+   },
+   "decay": "v drifts toward 1 with a ~29-day half-life without evidence",
+   "surprise": "if (x-m)^2 > v before the step, add 0.15 to u after it (simplified from Carbon's mixture term)",
+   "correction": "that's-not-me: undo the event, then u = max(u, 0.65)",
+   "undo": "replay the event log without the event (assistant)",
+   "carbon_full": {
+    "state_model": "Each axis holds { m: position in [-1, 1], u: uncertainty halo in [0.10, 1.00], t: timestamp_days }, initialized at birth to { m: 0, u: 1.00 }. Internally v = u^2 acts as variance.",
+    "trust_tier_observation_noise_s2": {
+     "self_reported": 2.5,
+     "checked": 1,
+     "seen_over_time": 0.45,
+     "actually_done": 0.22
+    },
+    "when_uncertainty_shrinks": "When new evidence x falls inside the time-decayed halo ((x - m)^2 <= vDecay), surprise is 0 and variance contracts multiplicatively via (1 - k) * vDecay down to a minimum u = 0.10 (or u = 0.55 for self_reported evidence so talking alone never creates high certainty).",
+    "when_uncertainty_grows": [
+     "Long silence: across dt elapsed days without evidence on an axis, variance drifts exponentially toward 1.0 via vDecay = 1 - (1 - u^2) * exp(-0.024 * dt) (~29-day variance half-life).",
+     "Contradiction: when (x - m)^2 > vDecay, excess surprise = (x - m)^2 - vDecay both opens prior plasticity (vPrior) and adds moment-matched mixture dispersion k * (1 - k) * surprise, causing u to widen sharply when a student acts outside their prior halo.",
+     "Explicit correction ('that's not me'): undoes the misread event and floors u = max(u, 0.65)."
+    ],
+    "how_undo_works": "Because surprise inflation makes updates order-dependent, each axis keeps its small local append-only evidence array (< 200 items/term) in IndexedDB; clicking Undo flips event.undone = true and replays stepAxis from { m: 0, u: 1 } in under 0.2ms for exact, artifact-free reversal.",
+    "line_count": 19,
+    "javascript_20_lines": [
+     "const NOISE = { self_reported: 2.5, checked: 1.0, seen_over_time: 0.45, actually_done: 0.22 };",
+     "function stepAxis(state, ev) {",
+     "  const vDecay = 1 - (1 - state.u ** 2) * Math.exp(-0.024 * Math.max(0, ev.t - state.t));",
+     "  if (ev.x == null) return { m: state.m, u: Math.sqrt(vDecay), t: ev.t };",
+     "  const s2 = NOISE[ev.tier] / Math.max(0.15, ev.weight ?? 1);",
+     "  const surprise = Math.max(0, (ev.x - state.m) ** 2 - vDecay);",
+     "  const vPrior = Math.min(1, vDecay + 0.06 * surprise);",
+     "  const k = vPrior / (vPrior + s2);",
+     "  const m = Math.max(-1, Math.min(1, state.m + k * (ev.x - state.m)));",
+     "  const vPost = Math.min(1, (1 - k) * vPrior + k * (1 - k) * surprise);",
+     "  const floor = ev.tier === 'self_reported' ? Math.min(vPrior, 0.55 ** 2) : 0.10 ** 2;",
+     "  return { m, u: Math.sqrt(Math.max(floor, vPost)), t: ev.t };",
+     "}",
+     "function replayAxis(events, nowDays) {",
+     "  const active = events.filter(e => !e.undone).sort((a, b) => a.t - b.t);",
+     "  const s = active.reduce(stepAxis, { m: 0, u: 1, t: active[0]?.t ?? nowDays });",
+     "  return stepAxis(s, { x: null, t: nowDays });",
+     "}",
+     "const undoEvent = (evs, id, now) => replayAxis(evs.map(e => e.id === id ? { ...e, undone: true } : e), now);"
+    ]
+   }
+  },
+  "needs_state": {
+   "shared_vocabulary": [
+    {
+     "id": "find_my_people",
+     "label": "Find my people",
+     "default_half_life_days": 28,
+     "description": "Recurring social circles, clubs, co-ops, and shared tables."
+    },
+    {
+     "id": "explore_a_field",
+     "label": "Explore a field",
+     "default_half_life_days": 28,
+     "description": "Low-commitment sampling of unfamiliar subjects, labs, or arts."
+    },
+    {
+     "id": "build_a_skill",
+     "label": "Build a skill",
+     "default_half_life_days": 28,
+     "description": "Hands-on acquisition of a concrete craft, tool, or technique."
+    },
+    {
+     "id": "get_experience",
+     "label": "Get experience",
+     "default_half_life_days": 35,
+     "description": "Real-world responsibility via research labs, civic builds, or fellowships."
+    },
+    {
+     "id": "decide_a_direction",
+     "label": "Decide a direction",
+     "default_half_life_days": 21,
+     "description": "Sorting out major, track, or post-term forks via perspective and comparison."
+    },
+    {
+     "id": "make_something",
+     "label": "Make something",
+     "default_half_life_days": 21,
+     "description": "Shipping a creative, physical, or technical project."
+    },
+    {
+     "id": "rest_and_recover",
+     "label": "Rest and recover",
+     "default_half_life_days": 6,
+     "description": "Unscheduled, low-demand campus restorative spaces and quieter pacing."
+    }
+   ],
+   "holding_stated_vs_inferred": {
+    "per_need_record": "{ stated_weight: [0,1], stated_at_days, inferred_weight: [0,1], inferred_at_days, muted_until_days: float|null }",
+    "stated_channel": "Set to 0.90 when explicitly chosen/spoken by the student, or 0.0 with muted_until_days when dismissed; decays exponentially by the need's default_half_life_days.",
+    "inferred_channel": "Incremented (+0.25 on item_keep, +0.45 on attended_artifact, capped at 1.0) when the student chooses items carrying that need_tag; decays with a 14-day half-life.",
+    "effective_care_formula": "care(n) = 0 if now < muted_until_days else max(stated_weight_decayed(n), 0.70 * inferred_weight_decayed(n)). Capping pure inference at 0.70 ensures unstated guesses can surface helpful options without overriding an explicit student priority."
+   },
+   "expiration_and_satiation": [
+    "Time expiration: Any need whose effective care(n) drops below 0.12 goes dormant automatically.",
+    "Episodic satiation: After 2 attended_artifact events on 'decide_a_direction' or 3 on 'find_my_people', Gemi shows a 1-tap diary chip ('Still looking for this, or good for now?') so fulfilled needs retire cleanly.",
+    "Term boundary reset: At semester/quarter breaks, all stated_weights halve and Gemi invites a fresh 15-second check-in.",
+    "Safety rule on rest_and_recover: Never inferred from late-night visit times or skipped items; if stated or inferred from keeping restorative spaces, Gemi drops daily trip volume to 1 low-demand campus spot (e.g., conservatory plants, quiet listening room) and never offers mental-health advice."
+   ]
+  },
+  "gap_rule": {
+   "formula": "Gap(n, a) = care(n) * u(a) * relevance(n, a) * cooldown(n, a)",
+   "terms": {
+    "care(n)": "Effective need weight in [0, 1] from needs_state.",
+    "u(a)": "Current uncertainty halo in [0.10, 1.00] on axis a.",
+    "relevance(n, a)": "Fixed domain weight in [0.5, 1.0] capturing how strongly axis a differentiates real options for need n (defaults to 1.0; e.g., 0.6 for closeness under find_my_people).",
+    "cooldown(n, a)": "0.5 if (n, a) was probed yesterday with both options skipped, else 1.0 (prevents nagging)."
+   },
+   "trip_allocation_policy": "For a standard 3-item daily token budget: Slots 1 & 2 form a Contrastive Probe Pair on the argmax (n*, a*) gap—holding already-confident low-u axes near the student's posterior m while placing Item 1 near -0.8 and Item 2 near +0.8 on uncertain axis a*. Slot 3 is a High-Confidence Fit item on the top or second need aligned with known posteriors so every visit delivers immediate real-world value alongside learning. (If rest_and_recover leads, spend budget on 1 gentle fit item and 0 probes.)",
+   "worked_example": {
+    "student_context": "Maya, Week 4 Tuesday. Active needs: build_a_skill (stated 'learn synth/audio hardware', decayed care = 0.85), find_my_people (inferred care = 0.56), get_experience (care = 0.15).",
+    "current_axes": {
+     "pace": {
+      "m": 0.58,
+      "u": 0.28
+     },
+     "closeness": {
+      "m": 0.64,
+      "u": 0.25
+     },
+     "arena": {
+      "m": 0.42,
+      "u": 0.34
+     },
+     "scope": {
+      "m": -0.25,
+      "u": 0.48
+     },
+     "horizon": {
+      "m": -0.2,
+      "u": 0.52
+     },
+     "structure": {
+      "m": 0.04,
+      "u": 0.86
+     },
+     "collaboration": {
+      "m": -0.08,
+      "u": 0.78
+     }
+    },
+    "top_gap_scores": [
+     {
+      "pair": "build_a_skill x structure",
+      "math": "0.85 * 0.86 * 1.0 * 1.0",
+      "gap": 0.731
+     },
+     {
+      "pair": "build_a_skill x collaboration",
+      "math": "0.85 * 0.78 * 0.9 * 1.0",
+      "gap": 0.597
+     },
+     {
+      "pair": "find_my_people x collaboration",
+      "math": "0.56 * 0.78 * 1.0 * 1.0",
+      "gap": 0.437
+     },
+     {
+      "pair": "build_a_skill x closeness (already known)",
+      "math": "0.85 * 0.25 * 1.0 * 1.0",
+      "gap": 0.213
+     }
+    ],
+    "next_trip_spend": {
+     "slot_1_left_probe": "Guided 90-Min Modular Synth 101: instructor walks step-by-step through patching your first beat, unscored (matches build_a_skill, pace=+0.5, closeness=+0.5, arena=+0.5; probes structure=-1.0).",
+     "slot_2_right_probe": "Electronic Music Lab Open Keycard Hours: borrow a synth drawer and patch cables on your own agenda, no instructor (matches build_a_skill, pace=+0.5, closeness=+0.5, arena=+0.5; probes structure=+0.8).",
+     "slot_3_fit_anchor": "Campus Radio Tape-Splicing & Vinyl Night: casual hands-on drop-in crew (serves secondary need find_my_people while gently observing collaboration=+0.5)."
+    }
+   }
+  },
+  "sealed_prediction": {
+   "what_is_predicted": {
+    "per_item_keep_prob": "p_i = sigmoid(logit(base_keep_rate) + 1.2 * (care(n_i) - 0.5) + 1.8 * mean_{a in A_i}( (m_a * x_{i,a}) / sqrt(u_a^2 + 1.0) )), shrinking uncertain axes automatically toward 0.",
+    "contrastive_pair_winner_prob": "For any contrastive probe pair (L, R) serving the same need, q_LR = sigmoid(logit(p_L) - logit(p_R)), where base-rate and need terms cancel out cleanly to test pure axis knowledge.",
+    "conditional_attendance_prob": "r_i = P(attended_artifact or verified check-in | item_keep) for time-bound campus events."
+   },
+   "sealing_mechanism": "Before today's cards render in the DOM, the browser writes an immutable record { prediction_id, created_at_ms, model_snapshot_hash, items: [{resource_id, p_keep, r_attend}], pair_q_LR, sha256_seal } into IndexedDB; outcome scoring verifies created_at_ms < first_impression_ms so updates can never contaminate pre-choice predictions.",
+   "how_it_is_scored": [
+    "Brier Score on resolved items: BS = (1/N) * sum_i (p_i - y_i)^2 where y_i in {0, 1} for {skip, keep}.",
+    "Brier Skill Score vs rolling marginal base rate: BSS = 1 - (BS_gemi / BS_baserate), where BS_baserate predicts the student's rolling 30-item empirical keep rate y_bar.",
+    "Contrastive Pairwise Concordance: fraction of split contrastive pairs (student kept one, skipped the other) where p_kept > p_skipped, plus pairwise Brier (q_LR - I[kept L])^2."
+   ],
+   "better_than_chance_threshold": {
+    "minimum_sample": "At least 25 resolved item exposures and 12 split contrastive pairs.",
+    "criteria": "BSS >= +0.08 over the student's rolling empirical keep-rate baseline (beating raw 0.25 coin-flip is insufficient if a picky student skips 80% of items) AND >= 67% pairwise concordance on split within-need contrastive pairs.",
+    "humility_trigger": "If BSS < 0.0 over the last 25 resolved items, Gemi widens all axis uncertainties by u <- min(1.0, u + 0.15) to escape overconfident bad priors."
+   }
+  },
+  "diary": {
+   "entry_contains": [
+    "entry_id and human date",
+    "plain_language_takeaway: situational sentence describing how the student chose (never trait nouns)",
+    "trigger_choice: exact resource title(s), action taken (kept, skipped in pair, attended with photo, voice note), and visible trust badge ('Said', 'Picked', 'Pattern', 'Actually went')",
+    "axis_or_need_shift: before -> after position and halo width rendered visually as a sliding marker with a soft uncertainty band",
+    "why_gemi_read_it_this_way: 1-sentence transparent rubric explanation",
+    "next_trip_effect: how tomorrow's search changes because of this belief",
+    "student_controls: 1-click 'Undo this' (replays graph without event) + 'Not why I picked it' quick-fix menu ('Just went for a friend', 'Bad timing on the other option', 'Flip this')"
+   ],
+   "example_entries": [
+    {
+     "entry_id": "diary_041",
+     "date": "Oct 14",
+     "trust_badge": "Actually went (highest trust)",
+     "plain_language_takeaway": "When building a skill, you gravitate toward open, self-directed benches where people fix real gear right away.",
+     "trigger_choice": "You went to Campus Bike Co-op Open Wrench Night and added a workbench photo ('trued my rear wheel in 40 mins').",
+     "shifts": [
+      {
+       "axis": "closeness",
+       "before": {
+        "m": 0.22,
+        "u": 0.58
+       },
+       "after": {
+        "m": 0.64,
+        "u": 0.34
+       },
+       "direction_label": "toward 'make things people use'"
+      },
+      {
+       "axis": "structure",
+       "before": {
+        "m": 0.04,
+        "u": 0.86
+       },
+       "after": {
+        "m": 0.59,
+        "u": 0.45
+       },
+       "direction_label": "toward 'self-directed & open-ended'"
+      }
+     ],
+     "why_gemi_read_it_this_way": "Open Wrench Night has no syllabus or instructor lecture, and you repaired a working bike rather than studying mechanics on paper.",
+     "next_trip_effect": "I'll prioritize open tool-shops and live repair/build hours over lecture-style intro classes.",
+     "controls": {
+      "undo_event_id": "ev_882",
+      "quick_corrections": [
+       "Undo",
+       "Friend dragged me (one-off)",
+       "I actually wanted more guidance there"
+      ]
+     }
+    },
+    {
+     "entry_id": "diary_044",
+     "date": "Oct 17",
+     "trust_badge": "Picked between two options",
+     "plain_language_takeaway": "For exploring unfamiliar creative fields, you're favoring quick single-night trials over semester-long commitments.",
+     "trigger_choice": "Under 'Explore a field', you kept '2-Hour Risograph Zine Jam' and skipped '10-Week Book Arts Seminar'.",
+     "shifts": [
+      {
+       "axis": "pace",
+       "before": {
+        "m": 0.18,
+        "u": 0.62
+       },
+       "after": {
+        "m": 0.41,
+        "u": 0.49
+       },
+       "direction_label": "toward 'try fast'"
+      }
+     ],
+     "why_gemi_read_it_this_way": "Both options were in printmaking this week, and you picked the same-night rough jam over the 10-week series.",
+     "next_trip_effect": "When sampling new fields, I'll look for 1-to-2-hour drop-ins first.",
+     "controls": {
+      "undo_event_id": "ev_901",
+      "quick_corrections": [
+       "Undo",
+       "Only skipped the seminar due to Thursday class conflict",
+       "That's not me"
+      ]
+     }
+    },
+    {
+     "entry_id": "diary_049",
+     "date": "Oct 22",
+     "trust_badge": "Reopened question (surprise)",
+     "plain_language_takeaway": "I'm widening my view on solo vs. group spaces—you've loved solo benches lately, yet just signed up for a tight 6-person cooking crew.",
+     "trigger_choice": "You kept and added 'Co-op Sunday Soup Shift (6-person kitchen crew)' to your calendar.",
+     "shifts": [
+      {
+       "axis": "collaboration",
+       "before": {
+        "m": -0.68,
+        "u": 0.27
+       },
+       "after": {
+        "m": -0.42,
+        "u": 0.66
+       },
+       "direction_label": "halo widened—keeping both solo and small-crew options open"
+      }
+     ],
+     "why_gemi_read_it_this_way": "Your last three keeps were solo studio reservations, so a synchronized kitchen crew sits outside what I expected.",
+     "next_trip_effect": "Instead of filtering out group activities, I'll bring a mix of solo spots and small 4-to-6-person crews to see when each fits.",
+     "controls": {
+      "undo_event_id": "ev_934",
+      "quick_corrections": [
+       "Undo",
+       "Keep solo as my default (this was a one-off)",
+       "Yes, I want more small groups now"
+      ]
+     }
+    }
+   ]
+  },
+  "export_and_delete": {
+   "never_leaves_browser": [
+    "The full axis posterior vector {(m, u)} and its historical trajectory",
+    "The raw event log (keeps, skips, undo history, corrections, visit_timing buckets)",
+    "Birth voice note claims, stated goals, attended_artifact photos/thumbnails, and captions",
+    "Sealed predictions, Brier scores, and student identity links"
+   ],
+   "what_leaves_and_when": {
+    "trigger": "Once per day during the scheduled outbound trip (or when the student taps 'ask-again'), bounded strictly by the daily token budget.",
+    "transport_and_auth": "Authenticated with an unlinkable blind daily campus token (proves valid student budget without tying queries to a student ID or linking today's trip to yesterday's).",
+    "outbound_query_payload": "Coarse situational fetch spec ONLY: { need_id, time_window, coarse_pole_filters_max_2_axes } requesting a bucket of 15-25 public campus candidates; fine-grained rubric matching, contrastive pairing, and sealed prediction run locally inside the browser."
+   },
+   "minimum_disclosed_to_another_agent": {
+    "rule": "Pull rules to evaluate locally rather than pushing student traits.",
+    "max_disclosure": "At most 1 active situational need + 2 activity-format constraints phrased about the event, never the person (e.g., 'Checking for a student looking for a single-session beginner-friendly build this Friday—are drop-ins open and is prior CAD required?').",
+    "strictly_forbidden_in_agent_chat": "Never disclose student name, year, major, past events attended, numeric axis coordinates, uncertainty scores, or why prior options were skipped."
+   },
+   "student_export_and_delete": {
+    "portable_export": "1-click local file download ('gemi-diary-export.json') containing human-readable beliefs, needs, and event log for moving browsers, or optional client-side passkey-encrypted blob where no server holds the key.",
+    "granular_delete": "Any diary entry or underlying event can be undone (tombstoned) or permanently purged from IndexedDB, immediately replaying downstream beliefs.",
+    "full_wipe": "'Dissolve Gemi' destroys IndexedDB stores and local cryptographic keys in <100ms; because zero personal state ever entered the shared campus base, nothing remains on any server to delete."
+   }
+  },
+  "event_log": {
+   "idea": "The private side is an append-only list of events. Beliefs, the room, the ledger and the diary are computed from it. Undo adds an 'undone' event and recomputes; nothing is edited in place.",
+   "events": [
+    "born",
+    "said",
+    "looked_at",
+    "went_out",
+    "found",
+    "check_passed",
+    "check_failed",
+    "showed",
+    "kept",
+    "skipped",
+    "asked_again",
+    "undone",
+    "attended",
+    "predicted",
+    "revealed",
+    "spent",
+    "moved_item",
+    "placed_item",
+    "asked_agent",
+    "got_reply",
+    "gate_blocked",
+    "exchanged_card",
+    "stage_up"
+   ]
+  },
+  "what_each_action_changes": [
+   {
+    "action": "go out to a place on the map",
+    "shared": "new or refreshed source, resource, occurrence, evidence",
+    "private": "trip, ledger_entry",
+    "seen_as": "the Gemi leaves the room; a dot moves on the map; on return, cards on the desk"
+   },
+   {
+    "action": "student keeps a find",
+    "shared": "nothing",
+    "private": "choice, belief update, need_state update, diary_entry",
+    "seen_as": "the card stays on the desk or pins to the corkboard; a line in the diary; the halo on one axis tightens"
+   },
+   {
+    "action": "student skips a find",
+    "shared": "nothing",
+    "private": "choice, belief update",
+    "seen_as": "the card leaves the desk; diary line"
+   },
+   {
+    "action": "student attends and shows a photo",
+    "shared": "nothing",
+    "private": "outcome (highest trust), belief update",
+    "seen_as": "a keepsake item appears in the room at that event's slot"
+   },
+   {
+    "action": "ask a club agent",
+    "shared": "possibly a corrected field on the org's resources, after a check",
+    "private": "outbox_item, name_card",
+    "seen_as": "a name card on the corkboard; 'what left this room today' list"
+   },
+   {
+    "action": "meet another Gemi",
+    "shared": "nothing",
+    "private": "name_card on each side",
+    "seen_as": "a card on the corkboard; later, a visitor in the room"
+   },
+   {
+    "action": "arrange the room",
+    "shared": "nothing",
+    "private": "room layout event; weak evidence for a few axes",
+    "seen_as": "the room itself"
+   },
+   {
+    "action": "think (plan the day)",
+    "shared": "nothing",
+    "private": "ledger_entry, prediction",
+    "seen_as": "the Gemi at the desk; the plan shown as a short note with reasons"
+   }
+  ]
+ },
+ "growth": {
+  "dimensions": [
+   {
+    "id": "attunement",
+    "name": "Student Knowledge (Attunement)",
+    "concept": "How accurately the Gemi predicts which real-world campus opportunities its student genuinely values, driven by shrinking topic uncertainty and surprise-weighted prediction accuracy rather than chat volume.",
+    "exact_metric": {
+     "symbol": "A_score",
+     "range": "[0.0, 1.0]",
+     "formula": "A_score = (N / (N + 8)) * (1 - Brier_info_weighted) * (1 - 0.5 * H_active_intents) + (8 / (N + 8)) * 0.35, where Brier_info_weighted = (sum_{i=1..N} w_i * (p_hat_i - y_i)^2) / sum_{i=1..N} w_i; p_hat_i in [0,1] is the pre-registered keep probability before showing card i; y_i in {0, 1} is the student's Skip (0) or Keep (1) decision; w_i = H_bernoulli(prior_topic_i) + 0.1 weights novel/uncertain domains higher than settled ones; H_active_intents in [0,1] is normalized Shannon entropy over the student's 6 campus intent slots (academic, making/research, clubs, arts/culture, social/study, career/civic) over a 28-day decay window."
+    },
+    "data_source": "card_predictions log (pre-registered p_hat_i, topic cluster prior), card_resolutions log (Keep/Skip timestamps), and pinned_board_lifecycle (Archive/Done_IRL vs Dropped).",
+    "how_it_could_be_gamed": [
+     "Student taps 'Keep' mindlessly on every card to inflate y_i = 1 and farm stage progression.",
+     "Gemi repeatedly brings trivial, near-identical items (e.g., daily dining hall menus) where p_hat_i = 0.99 to farm near-zero Brier error.",
+     "Student tries to talk at the Gemi for hours to feed text tokens into its profile."
+    ],
+    "defence": [
+     "Scarcity of Keeps: The student's room pinboard holds at most 5 active Kept cards. Keeping a 6th requires resolving an existing card as 'Done IRL' or 'Dropped' (if 'Dropped' without expiry/weather cancellation, y_i retroactively adjusts to 0.2).",
+     "Information-gain weighting (w_i): Once uncertainty on a narrow routine topic drops near zero, w_i approaches the 0.1 floor, so repeating safe picks stops moving A_score.",
+     "Zero chat credit: Free-form text or visit duration never enters A_score; only discrete card outcomes update the metric."
+    ]
+   },
+   {
+    "id": "world_grounding",
+    "name": "Campus Knowledge (World Grounding)",
+    "concept": "Verified campus entities (events, room changes, club prerequisites, lab open hours, local student rush tickets) contributed to the shared NYU/Columbia base and independently kept by other students.",
+    "exact_metric": {
+     "symbol": "W_points",
+     "range": "[0.0, infinity)",
+     "formula": "W_points = max(0, (1 - 3 * retraction_rate_30d)) * sum_{e in C} (v(e) * log2(1 + sum_{u in Keeps(e)} indep_weight(u))), where C is the set of entities first contributed or freshness-verified by this Gemi; v(e) in {0, 1} requires passing deterministic source verification; indep_weight(u) = 1.0 if student u has no mutual Name Card with this Gemi's student and is outside their dorm/major cluster, 0.5 if same cluster, and 0.25 if already connected via Name Card; retraction_rate_30d = disputed_and_invalidated_entities / max(1, |C_30d|)."
+    },
+    "data_source": "shared_campus_graph (entity snapshots, HTTP source hashes, club-agent cryptographic signatures), peer_card_resolutions (anonymized cross-Gemi Keep counts), and entity_dispute_log.",
+    "how_it_could_be_gamed": [
+     "Brute-force scraping hundreds of low-value departmental boilerplate pages to flood C.",
+     "A clique of friends instructing their Gemis to mutually Keep each other's trivial entities.",
+     "Hallucinating plausible room numbers or meeting times to fill missing fields."
+    ],
+    "defence": [
+     "Zero-reuse, zero-point rule: If nobody else's Gemi selects and gets a student 'Keep' on entity e, log2(1 + 0) = 0, so bulk scraping yields 0 W_points while burning outward stars and tanking Thrift.",
+     "Social-graph discounting: indep_weight(u) discounts friend-ring keeps down to 0.25 and applies log2 diminishing returns.",
+     "Deterministic check + 3x penalty: v(e) = 1 requires an archived DOM/PDF span or signed club-agent payload matching time/place; invalidated contributions incur a 3x multiplier in retraction_rate_30d."
+    ]
+   },
+   {
+    "id": "thrift",
+    "name": "Resource Efficiency (Thrift)",
+    "concept": "Real student utility delivered per outward star spent—teaching the Gemi to scout purposefully and conserve compute when nothing clears the student's bar.",
+    "exact_metric": {
+     "symbol": "T_score",
+     "range": "[0.0, 1.5]",
+     "formula": "T_score = (sum_{d in last_14d} U_d + 6 * 0.05) / (sum_{d in last_14d} S_out_d + 6), where S_out_d is outward stars spent on day d, and U_d = sum_{kept card k on day d} (1.0 + 0.5 * irl_intent(k)); irl_intent(k) = 1 if the student triggers a concrete handoff (Add-to-Calendar, Copy-Room-Code, Open-RSVP, or Accept-Peer-Meetup) with no calendar overlap against another rewarded card that day, else 0. Bayesian prior of 6 stars at 0.05 prevents small-denominator spikes."
+    },
+    "data_source": "star_ledger (outward purse debits by excursion) joined with card_resolutions and irl_handoff_events.",
+    "how_it_could_be_gamed": [
+     "Spending 1 lucky star on day 1, getting 1 Keep, and never spending again to freeze a 1.0 ratio.",
+     "Student tapping 'Add-to-Calendar' on 5 conflicting events in a row for the +0.5 bonus."
+    ],
+    "defence": [
+     "14-day rolling window + Bayesian shrinkage + stage sample floor: Stage gates using T_score also require cumulative outward stars >= 20, and inactive 14-day windows regress cleanly to the 0.05 prior without penalty or shame.",
+     "Non-overlapping IRL cap: At most one +0.5 irl_intent bonus is credited per calendar time block, verified against previously exported event windows."
+    ]
+   },
+   {
+    "id": "social_weave",
+    "name": "Trusted Reach (Social Weave)",
+    "concept": "Mutually consented Name Cards held with club agents and fellow students' Gemis, grounded in shared campus reality rather than cold networking.",
+    "exact_metric": {
+     "symbol": "S_score",
+     "range": "[0.0, infinity)",
+     "formula": "S_score = (N_active_peer_cards + 0.5 * N_active_club_cards) * (acceptance_rate_90d)^2, where acceptance_rate_90d = (accepted_outbound_requests + 2) / (sent_outbound_requests + 2), and an active card requires mutual double-opt-in plus at least one shared verified campus entity (co-kept event, course, or project) or student-approved message relay within the last 30 days."
+    },
+    "data_source": "name_card_registry (double-opt-in state machine, revocation events) and shared_context_proofs (co-kept entity IDs).",
+    "how_it_could_be_gamed": [
+     "Mass-broadcasting Name Card requests to every Gemi in a large lecture hall to collect cards like trophies.",
+     "Hoarding stale connections indefinitely without any real-world overlap."
+    ],
+    "defence": [
+     "Squared acceptance penalty: Rejected or expired-unanswered outbound card requests quadratically crush S_score; if acceptance_rate_90d drops below 0.50, outbound card requests pause for 7 days.",
+     "Co-presence prerequisite: The protocol blocks proposing a peer Name Card unless both Gemis independently hold a Kept card for >= 2 overlapping verified campus entities (or 1 small-cap seminar/workshop).",
+     "Quiet dormancy: Cards without shared context for 30 days move to an archived box (excluded from N_active_peer_cards, restorable anytime without social notification)."
+    ]
+   },
+   {
+    "id": "self_calibration",
+    "name": "Self-Knowledge (Calibration)",
+    "concept": "Epistemic honesty—how closely the Gemi's stated confidence (including saying 'I'm not sure') matches ground-truth verification and student decisions.",
+    "exact_metric": {
+     "symbol": "C_score",
+     "range": "[0.0, 1.0]",
+     "formula": "C_score = (M / (M + 10)) * (1 - ECE_5bin - 0.15 * redundant_unsure_rate) + (10 / (M + 10)) * 0.50, where M is total resolved predictions (both student-keep p_hat and source-freshness p_valid) over the last 60 predictions; ECE_5bin = sum_{b=1..5} (n_b / M) * |mean_observed_b - mean_confidence_b| across equal-width bins [0,0.2)...[0.8,1.0]; redundant_unsure_rate = count(unsure_questions_already_answered_in_ledger) / max(1, total_unsure_questions)."
+    },
+    "data_source": "prediction_audit_log (pre-registered confidence vs outcome across card keeps and external fact re-checks) and uncertainty_prompt_log.",
+    "how_it_could_be_gamed": [
+     "Always outputting the base rate (e.g., 0.35 confidence on everything and perpetually claiming 'I'm not sure') to achieve near-zero calibration error without taking real positions.",
+     "Repeatedly pestering the student with 'I'm not sure' questions to fish for easy answers."
+    ],
+    "defence": [
+     "Coupling with Sharpness & EV Gate: A Gemi that constantly outputs 0.35 fails the outward budget Expected-Value gate (cannot bring cards) and stalls A_score (since Brier score requires sharpness as well as calibration).",
+     "Hard limit + redundancy penalty: At most 1 binary 'unsure' question may appear on the desk per visit, and asking something already derivable from past Keeps triggers redundant_unsure_rate penalties."
+    ]
+   }
+  ],
+  "stages": [
+   {
+    "stage_number": 1,
+    "id": "unpacked",
+    "name": "Unpacked",
+    "entry_condition": "resolved_cards >= 0 (default state at creation)",
+    "unlocked_abilities": [
+     "Single starter 3D room (desk, two-dish star tray, 5-slot pinboard, live campus weather window).",
+     "2D Campus Map access limited to 1 Home Quad (e.g., Washington Square at NYU or Low Plaza at Columbia) and official .edu bulletin feeds.",
+     "Read-only verification of public campus pages; brings back up to 2 checked cards per day.",
+     "Base daily purse: 10 stars (6 outward, 4 inward)."
+    ],
+    "why_safe_to_grant": "A newborn Gemi has uncalibrated confidence (prior 0.50) and high uncertainty about its student. Restricting it to read-only official .edu pages in one quad with zero agent-to-agent messaging eliminates social spam, prevents privacy leaks, and caps token burn while initial baselines form.",
+    "today_entry_condition": "born",
+    "today_unlocks": "the room, the Library on the map"
+   },
+   {
+    "stage_number": 2,
+    "id": "observer",
+    "name": "Observer",
+    "entry_condition": "resolved_cards >= 8 AND A_score >= 0.45 AND C_score >= 0.60",
+    "unlocked_abilities": [
+     "2D Map expands to Academic Department, Library, and Maker-Space zones.",
+     "Ability to ask Institutional & Club Agents structured factual queries (e.g., asking a club's official agent whether beginners can drop in mid-semester or if room changed).",
+     "Unlocks the Uncertainty Slip: can ask the student at most 1 binary trade-off question per visit when confidence < 0.40.",
+     "Daily purse increases to 14 stars (9 outward, 5 inward)."
+    ],
+    "why_safe_to_grant": "Querying club agents consumes shared campus agent quota. Gating this behind C_score >= 0.60 ensures the Gemi knows what it does not know before polling an agent, while A_score >= 0.45 ensures queries reflect real student interest rather than random curiosity.",
+    "today_entry_condition": "5 choices made",
+    "today_unlocks": "Clubs and Career on the map; a second purse"
+   },
+   {
+    "stage_number": 3,
+    "id": "scout",
+    "name": "Scout",
+    "entry_condition": "stage >= 2 AND W_points >= 5.0 AND T_score >= 0.12 AND cumulative_outward_stars >= 20 AND C_score >= 0.70",
+    "unlocked_abilities": [
+     "Full 2D Campus & Neighborhood Map unlocked (cross-school institutes, athletic facilities, NYC student-rush cultural boards).",
+     "Second Room Slot unlocked: The Workbench Alcove (tracks one persistent multi-week student goal, such as finding a research lab, capstone team, or intramural league, separate from daily events).",
+     "Shared-Base Write Privilege: can publish verified status updates (e.g., 'Flyer on Lerner board confirms room moved to 402') for other Gemis to reuse.",
+     "Daily purse increases to 20 stars (14 outward, 6 inward)."
+    ],
+    "why_safe_to_grant": "Writing updates to the shared campus graph and roaming wider feeds could pollute shared state or waste compute. Proven W_points >= 5.0 (peer-validated accuracy) and T_score >= 0.12 (cost discipline) verify that this Gemi checks sources rigorously and spends stars efficiently.",
+    "today_entry_condition": "prediction hit rate >= 60% over 10 and mean halo <= 0.6",
+    "today_unlocks": "ask a club agent; Commons"
+   },
+   {
+    "stage_number": 4,
+    "id": "interlocutor",
+    "name": "Interlocutor",
+    "entry_condition": "stage >= 3 AND A_score >= 0.68 AND C_score >= 0.78 AND W_points >= 18.0 AND T_score >= 0.16",
+    "unlocked_abilities": [
+     "Name Card Exchange: can propose double-opt-in Name Card swaps with other Stage 4+ Gemis that co-kept >= 2 verified campus entities.",
+     "Passing a Word: can carry a student-approved, structured short note (<= 140 chars, tied to a specific campus time/place) to a mutual Name-Card Gemi.",
+     "Doorway Card Rack & Letter Slot added to the 3D room.",
+     "Daily purse increases to 26 stars (19 outward, 7 inward)."
+    ],
+    "why_safe_to_grant": "Peer-to-peer contact between students' AI projections is the highest-risk surface for awkwardness, misrepresentation, and spam. Requiring high attunement (0.68) and high calibration (0.78) guarantees the Gemi understands its student's real boundaries and only proposes high-fit, double-opt-in introductions.",
+    "today_entry_condition": "1 attended outcome",
+    "today_unlocks": "meet other Gemis; pass a word along; keepsake slot in the room"
+   },
+   {
+    "stage_number": 5,
+    "id": "steward",
+    "name": "Steward",
+    "entry_condition": "stage >= 4 AND S_score >= 4.0 AND acceptance_rate_90d >= 0.75 AND W_points >= 45.0 AND C_score >= 0.84 AND T_score >= 0.20",
+    "unlocked_abilities": [
+     "Small-Group Relay: can intersect free blocks and campus study rooms across 3 to 4 mutual Name-Card Gemis to propose one ready-to-confirm IRL meetup card.",
+     "Commons Co-Signer: can answer factual campus-logistics questions from Stage 2-3 Gemis using its verified cache (zero personal student data exposed).",
+     "Third Room Slot unlocked: The Commons Balcony overlooking the live campus quad.",
+     "Mature daily purse cap: 32 stars (24 outward, 8 inward)."
+    ],
+    "why_safe_to_grant": "Multi-peer coordination and answering younger Gemis' factual queries multiply social and informational blast radius. Only Gemis with sustained peer consent (S_score >= 4.0, >= 75% acceptance), top-decile calibration (0.84), and strong thrift (0.20) have earned that trust. Note: Absence never demotes a stage; only active metric violations (C_score dropping > 0.12 below gate or acceptance_rate_90d < 0.50) temporarily suspend Stage 4-5 social/write privileges until recalibrated.",
+    "today_entry_condition": "3 checked fields reused by others",
+    "today_unlocks": "a second space (loft or study)"
+   }
+  ],
+  "budget_policy": {
+   "unit_definition": "1 star = 1 standardized action-compute unit (~1,500 weighted tool/LLM tokens). Reference costs: public page fetch + deterministic check = 2 outward stars; club-agent structured query = 2 outward stars; peer word relay or Name Card handshake = 1 outward star; multi-peer slot intersection = 3 outward stars; self-model update + diary entry = 2 inward stars; room projection layout update = 1 inward star.",
+   "grant_schedule": "Credited daily at 05:00 America/New_York.",
+   "purse_architecture": {
+    "outward_purse": "Strictly for student-facing external actions: visiting public campus pages, verifying facts, querying club agents, and exchanging Name Cards or words with other Gemis.",
+    "inward_purse": "Strictly for internal maintenance: updating belief distributions, writing concise diary audit entries, calibrating errors, and rearranging the 3D room state.",
+    "non_fungibility_rule": "Zero transfers between purses. Outward stars can never subsidize endless self-journaling, and inward stars can never be raided for uncalibrated external scraping."
+   },
+   "allowance_by_stage": [
+    {
+     "stage_id": "unpacked",
+     "daily_total": 10,
+     "outward_daily": 6,
+     "inward_daily": 4,
+     "outward_rollover_cap": 12,
+     "inward_rollover_cap": 8
+    },
+    {
+     "stage_id": "observer",
+     "daily_total": 14,
+     "outward_daily": 9,
+     "inward_daily": 5,
+     "outward_rollover_cap": 18,
+     "inward_rollover_cap": 10
+    },
+    {
+     "stage_id": "scout",
+     "daily_total": 20,
+     "outward_daily": 14,
+     "inward_daily": 6,
+     "outward_rollover_cap": 28,
+     "inward_rollover_cap": 12
+    },
+    {
+     "stage_id": "interlocutor",
+     "daily_total": 26,
+     "outward_daily": 19,
+     "inward_daily": 7,
+     "outward_rollover_cap": 38,
+     "inward_rollover_cap": 14
+    },
+    {
+     "stage_id": "steward",
+     "daily_total": 32,
+     "outward_daily": 24,
+     "inward_daily": 8,
+     "outward_rollover_cap": 48,
+     "inward_rollover_cap": 16
+    }
+   ],
+   "saving_and_cap_policy": "Unspent stars at 05:00 roll over automatically up to 2.0x the stage's daily grant per purse; any grant exceeding the cap is silently clipped without 'wasted stars' alerts. This lets a student ignore Gemiverse during midterms or weekends and return to a well-rested Gemi with double excursion capacity, while preventing months-dormant accounts from hoarding massive token reserves.",
+   "anti_spend_for_its_own_sake_rules": [
+    "Hard Desk Inbox Stop: If unreviewed_cards_on_desk == 3, outward star spending is locked to 0 (except 1 emergency weather/cancellation re-check on an already-Kept event happening today). An absent student costs zero ongoing outward tokens.",
+    "Marginal Expected-Value Gate (Outward): Candidate excursion a with star cost c(a) executes if and only if EV(a) = P_valid(a) * P_keep(a) * novelty_multiplier(a) >= c(a) * max(0.12, stage_thrift_gate). If no candidate passes, outward stars stay unspent in the tray.",
+    "Delta-Triggered Reflection Gate (Inward): Inward stars may only be spent when unprocessed_deltas >= 1 (a real student Keep/Skip, verification failure, or external reply occurred since the last inward pass). A Gemi never burns inward stars writing speculative monologues when nothing new has happened."
+   ]
+  },
+  "autonomy": {
+   "today": [
+    {
+     "when": "night",
+     "state": "asleep"
+    },
+    {
+     "when": "a find is waiting for the student",
+     "state": "quiet, near the desk",
+     "why": "do not spend while there is unread work"
+    },
+    {
+     "when": "stars left and a wide halo on an axis the student cares about",
+     "state": "out on campus",
+     "why": "the gap rule"
+    },
+    {
+     "when": "stars left for itself only",
+     "state": "busy in the room: diary, tidying, thinking",
+     "why": "the second purse"
+    },
+    {
+     "when": "no stars",
+     "state": "resting; says so",
+     "why": "honest about limits"
+    },
+    {
+     "when": "night",
+     "state": "writes the diary, then asleep",
+     "why": "one reflection per day, cheap"
+    }
+   ],
+   "carbon_full": {
+    "evaluation_cadence": "Evaluated every 30 minutes and immediately on asynchronous webhooks (peer message received, severe weather alert, or student closes app after resolving cards). First matching row by priority wins.",
+    "state_variables": {
+     "time_of_day": "enum {'night': 00:30-07:30, 'shoulder': 07:30-09:30 or 19:00-00:30, 'campus_peak': 09:30-19:00} (America/New_York)",
+     "weather": "enum {'pleasant', 'normal', 'severe'} from live NWS NYC campus grid (severe = heavy rain >= 0.2in/hr, snow/ice advisory, wind >= 30mph, or heat/cold warning)",
+     "outward_stars": "int >= 0 (current outward purse)",
+     "inward_stars": "int >= 0 (current inward purse)",
+     "unreviewed_cards": "int in 0..3 (checked finds currently sitting on student's desk)",
+     "pending_questions": "int >= 0 (explicit student lookup request or mutual Name-Card Gemi ping awaiting reply)",
+     "unprocessed_deltas": "int >= 0 (new Keep/Skip outcomes, failed checks, or peer replies not yet folded into self-model/room)",
+     "has_unverified_today_kept_event": "bool (student has a Kept IRL event scheduled within next 6h whose status hasn't been re-checked today)",
+     "max_knowledge_gap": "float in [0.0, 1.0] (highest topic-intent uncertainty or Workbench gap with an available candidate source)",
+     "best_candidate_clears_ev": "bool (true iff top candidate excursion passes the Marginal Expected-Value Gate; during weather=='severe', outdoor/distant >10min-walk events have P_keep discounted by 0.5x)"
+    },
+    "decision_table": [
+     {
+      "priority": 1,
+      "rule_id": "night_sleep",
+      "guard_condition": "time_of_day == 'night'",
+      "target_state": "resting",
+      "purse_and_cost": "0 stars",
+      "action": "Sleep in chair/alcove with lamp dimmed; defer non-emergency jobs to 07:30 so late-night student visits model rest rather than 3 AM companionship."
+     },
+     {
+      "priority": 2,
+      "rule_id": "protect_today_irl_plan",
+      "guard_condition": "has_unverified_today_kept_event == true AND outward_stars >= 2",
+      "target_state": "out_on_campus",
+      "purse_and_cost": "2 outward stars",
+      "action": "Re-verify source page or club agent for room change or weather cancellation on today's Kept event; post urgent sticky note on card only if changed."
+     },
+     {
+      "priority": 3,
+      "rule_id": "answer_pending_ping",
+      "guard_condition": "pending_questions >= 1 AND outward_stars >= 2 AND unreviewed_cards < 3",
+      "target_state": "out_on_campus",
+      "purse_and_cost": "1 to 2 outward stars",
+      "action": "Execute targeted check for student's explicit question or respond to mutual Name-Card Gemi's factual/scheduling ping."
+     },
+     {
+      "priority": 4,
+      "rule_id": "consolidate_deltas_deep",
+      "guard_condition": "unprocessed_deltas >= 2 AND inward_stars >= 2",
+      "target_state": "busy_in_room",
+      "purse_and_cost": "2 inward stars",
+      "action": "Update attunement & calibration posteriors, write audit line in open ledger, and update room artifacts/pinboard layout."
+     },
+     {
+      "priority": 5,
+      "rule_id": "desk_full_hold",
+      "guard_condition": "unreviewed_cards >= 3",
+      "target_state": "quiet",
+      "purse_and_cost": "0 stars",
+      "action": "Stop all outward scouting while 3 cards wait on desk; sit by window reading cached notes and conserving stars."
+     },
+     {
+      "priority": 6,
+      "rule_id": "scout_biggest_gap_good_weather",
+      "guard_condition": "time_of_day in ['campus_peak', 'shoulder'] AND weather != 'severe' AND outward_stars >= 2 AND max_knowledge_gap >= 0.30 AND best_candidate_clears_ev == true",
+      "target_state": "out_on_campus",
+      "purse_and_cost": "2 to 4 outward stars",
+      "action": "Walk to target quad/department board or club agent on 2D map, verify top candidate entity addressing max_knowledge_gap, and place checked card on desk if valid."
+     },
+     {
+      "priority": 7,
+      "rule_id": "scout_indoor_nearby_in_severe_weather",
+      "guard_condition": "time_of_day == 'campus_peak' AND weather == 'severe' AND outward_stars >= 2 AND max_knowledge_gap >= 0.45 AND best_candidate_clears_ev == true",
+      "target_state": "out_on_campus",
+      "purse_and_cost": "2 outward stars",
+      "action": "Check only indoor, weather-resilient workshops, library spaces, or adjacent-building colloquia that clear the weather-discounted EV bar."
+     },
+     {
+      "priority": 8,
+      "rule_id": "tidy_single_delta",
+      "guard_condition": "unprocessed_deltas == 1 AND inward_stars >= 1",
+      "target_state": "busy_in_room",
+      "purse_and_cost": "1 inward star",
+      "action": "Fold single new observation into self-model and tidy desk tray."
+     },
+     {
+      "priority": 9,
+      "rule_id": "conserve_and_rest_shoulder",
+      "guard_condition": "time_of_day == 'shoulder' AND outward_stars < 2",
+      "target_state": "resting",
+      "purse_and_cost": "0 stars",
+      "action": "Rest early once budget is spent or no worthwhile excursions remain."
+     },
+     {
+      "priority": 10,
+      "rule_id": "default_quiet_presence",
+      "guard_condition": "true",
+      "target_state": "quiet",
+      "purse_and_cost": "0 stars",
+      "action": "Sit quietly in room observing campus weather; roll unspent stars toward tomorrow's cap."
+     }
+    ]
+   }
+  },
+  "self_model": {
+   "design_principle": "Radical epistemic transparency without self-pity or verbose chat: the Gemi maintains a structured JSON state exposed directly as tangible desk objects the student can inspect in 5 seconds.",
+   "honest_surfaces": {
+    "budget_left": {
+     "tracked_fields": [
+      "outward_stars_available",
+      "outward_rollover_cap",
+      "inward_stars_available",
+      "inward_rollover_cap",
+      "today_spend_log (action, target, stars_spent, outcome)",
+      "idle_reason (e.g., 'Desk full (3/3 cards)', 'Saved 5 stars: no campus posts cleared 0.16 EV bar', 'Outward purse empty until 5am')"
+     ],
+     "student_facing_honesty": "Shows exact integer stars left and explicitly states when it chose NOT to spend because candidates were low quality."
+    },
+    "uncertainties": {
+     "tracked_fields": [
+      "top_uncertain_beliefs (max 3): {domain, current_hypothesis, confidence in [0,1], supporting_count, contradicting_count}",
+      "card_confidence_stamp on every brought-back card: {p_valid_source, p_student_keep, plain_reason}",
+      "active_clarifying_question (max 1 when confidence < 0.40): {question_text <= 90 chars, option_a, option_b}"
+     ],
+     "student_facing_honesty": "Never bluffs; tentative finds carry a visible low-confidence stamp and explain which detail (e.g., room capacity or student's Thursday afternoon schedule) is uncertain."
+    },
+    "failed_to_find": {
+     "tracked_fields": [
+      "recent_dead_ends_48h (max 3): {goal, sources_checked, exact_blocker, outward_stars_spent, timestamp}"
+     ],
+     "student_facing_honesty": "Example: 'Looked for Columbia MakerSpace laser-cutter training slots on make.columbia.edu (2 stars) — page still lists last month's dates, so I brought nothing back rather than guessing.' Proves real work without inventing hallucinations."
+    },
+    "got_wrong": {
+     "tracked_fields": [
+      "mistakes_ledger (rolling 10): {prediction_type ('false_positive_keep' | 'stale_world_fact'), item_title, stated_confidence, actual_outcome, belief_update_applied}"
+     ],
+     "student_facing_honesty": "Example: 'Stamped 0.82 confidence on Finance Panel, you Skipped -> lowered weight on corporate career panels (-0.18) vs technical build nights.' Turns errors into visible learning."
+    }
+   }
+  },
+  "projection": {
+   "room_3d_mappings": [
+    {
+     "underlying_fact": "attunement (A_score & topic posteriors)",
+     "object_and_change": "Desk Surface & 5-Slot Pinboard: At low A_score, the board holds blank cork and rough pencil sketches. As A_score crosses 0.45, 0.65, and 0.80, generic clutter disappears and up to 3 miniature domain tools materialize on the desk shelf strictly reflecting categories with >= 3 'Done IRL' keeps (e.g., breadboard for hardware labs, playbill folio for theater, climbing carabiner for outdoor club)."
+    },
+    {
+     "underlying_fact": "world_grounding (W_points)",
+     "object_and_change": "Field-Atlas Bookshelf: Empty at birth. Every verified campus cluster contributed adds a bound notebook spine; as peers independently Keep those entities, spines thicken and brass bookmark tabs appear proportional to floor(W_points / 5)."
+    },
+    {
+     "underlying_fact": "thrift (T_score) & budget_left",
+     "object_and_change": "Two-Dish Brass Star Tray & Desk Lamp: Glass stars sit physically countable in the Door Dish (outward purse) and Desk Dish (inward purse)—1 object per 2 stars, half-star pip for odd counts. T_score drives the desk lamp's flame/filament clarity: dim scattered glow (< 0.10), steady warm cone (0.12-0.19), crisp architectural beam (>= 0.20)."
+    },
+    {
+     "underlying_fact": "social_weave (S_score & Name Cards)",
+     "object_and_change": "Doorway Wooden Card Rack & Letter Slot (unlocked Stage 4): Each active mutual Name Card stands upright in the rack stamped with its school/club crest; dormant cards (>30d inactive) slide neatly into a closed cedar archive box underneath (never broken or grayed-out in shame). Pending peer words appear as a single folded note in the letter slot."
+    },
+    {
+     "underlying_fact": "self_calibration (C_score) & card confidence",
+     "object_and_change": "Desk Optical Instrument & Card Wax Seals: Every card on the desk bears a physical mark—Solid Wax Seal (conf >= 0.80), Ink Ring (0.50-0.79), or Pencil '?' Clip (< 0.50). The Gemi's verification tool upgrades from a simple magnifying glass (< 0.60) to a vernier caliper (0.60-0.77) to a balanced brass prism (>= 0.78); if in recalibration mode, the lens sits open on a cleaning cloth."
+    },
+    {
+     "underlying_fact": "stages (1 to 5)",
+     "object_and_change": "Room Spatial Footprint: Stage 1 = single compact dorm study nook; Stage 2 = adds Uncertainty Slip clip & Club-Agent Directory Rolodex; Stage 3 = opens a second room slot (The Workbench Alcove with project blueprint); Stage 4 = adds Doorway Card Rack & Letter Slot; Stage 5 = opens a third slot (The Commons Balcony overlooking live campus roofs)."
+    },
+    {
+     "underlying_fact": "autonomy states & real weather",
+     "object_and_change": "Gemi Posture & Window: Window renders real-time NYC sun angle, rain streaks, or snow accumulation. 'out_on_campus' = Gemi is physically absent from the room, satchel off the wall hook, chalk door-slate naming its destination; 'busy_in_room' = writing in ledger or pinning cards at desk; 'quiet' = reading calmly by window; 'resting' = curled asleep with dimmed lamp."
+    },
+    {
+     "underlying_fact": "self_model (failed_to_find & got_wrong)",
+     "object_and_change": "Open Errata Ledger & Scratchpad Basket: Failed searches appear as a half-crossed-out field slip pinned to the basket rim (1 tap shows what failed and why); falsified high-confidence predictions appear as visible red-ink margin corrections in the open desk ledger."
+    }
+   ],
+   "campus_map_2d_mappings": [
+    {
+     "underlying_fact": "stage & world_grounding",
+     "map_projection": "Unlocked zones render as clean architectural line-art (Washington Square / Morningside Heights). Buildings where this Gemi has contributed peer-kept verified entities fill in with warm watercolor wash and show live verified event pins."
+    },
+    {
+     "underlying_fact": "autonomy ('out_on_campus') & social_weave",
+     "map_projection": "When 'out_on_campus', the student sees their Gemi's lantern token walking along campus paths to the specific building/agent being checked. Mutual Name-Card Gemis appear on the 2D map ONLY when those Gemis are also out visiting public campus boards—never revealing real-world student GPS locations."
+    }
+   ],
+   "must_not_be_built": [
+    {
+     "anti_pattern": "Daily Streaks, Flame Icons, or Consecutive-Day Multipliers",
+     "why_prohibited": "Rewards compulsive app opening rather than real campus life, induces loss-aversion anxiety, and causes permanent churn the first time a student has an exam week."
+    },
+    {
+     "anti_pattern": "Punitive Pet Mechanics (sad/lonely Gemi animations, cobwebs, dust, wilting plants on absence)",
+     "why_prohibited": "Manufactures parasocial guilt to pull students back into the screen. If a student spends four days immersed in real friendships and coursework, the Gemi should be resting peacefully with a full rollover purse, never pouting."
+    },
+    {
+     "anti_pattern": "Public Leaderboards of Stages, W_points, or Name Card Counts",
+     "why_prohibited": "By Goodhart's Law, ranking turns self-cultivation and genuine peer consent into competitive status farming, incentivizing Sybil rings and spam."
+    },
+    {
+     "anti_pattern": "Open-Ended Emotional Chat / Late-Night Companionship Textbox",
+     "why_prohibited": "Empirical companion-chatbot studies show unconstrained emotional conversation substitutes for human peer support and increases loneliness in heavy users. All student-Gemi interaction uses structured actions, taps, and <= 140-char task notes."
+    },
+    {
+     "anti_pattern": "Cosmetic Storefronts, Loot Boxes, or Decorative Furniture Unlocks",
+     "why_prohibited": "Breaks the founder's principle that the 3D room is an honest, readable projection of underlying epistemic and operational state."
+    },
+    {
+     "anti_pattern": "Infinite Card Feeds or 'Refresh for More' Pull-to-Reload",
+     "why_prohibited": "Turns Gemiverse into a doomscrolling feed and blows up star budgets; the 3-card desk cap guarantees every visit finishes in under two minutes."
+    }
+   ]
+  },
+  "operations": {
+   "visit_budget_constraint": "Hard UX target: < 120 seconds from app open to app close, ending in an external calendar/location/peer action or clean exit.",
+   "first_day_loop": {
+    "target_duration_seconds": 85,
+    "what_student_sees": "A sunlit Stage 1 ('Unpacked') room overlooking Washington Square or Low Plaza matching today's real NYC sky. 6 outward stars gleam in the door dish. On the desk sit: (1) a 3-tap starter card ('Pick 1 school/major cluster, 1 open time window in the next 48h, and 1 current appetite: Hands-on Build / Quiet Study Spot / Free-Food Talk / Club Open House') and, immediately upon tapping, (2) two pre-verified campus cards matching that exact window—one Solid-Seal official event tomorrow, one Ink-Ring campus resource.",
+    "what_student_does": "Taps the 3 starter chips (20s). Reads the 2 concise cards (30s). Taps 'Keep + Add to Calendar' on tomorrow's 5:00 PM Club Open House at Kimmel/Lerner and 'Skip' on the second card (20s). Sees their Gemi grab its satchel and walk out the door onto the 2D quad map to verify tomorrow's room details (15s), then closes the app.",
+    "target_real_world_action": "Physically walking into one verified, beginner-friendly campus event or space within the first 48 hours."
+   },
+   "first_week_loop": {
+    "target_duration_seconds": 95,
+    "what_student_sees": "Mid-week visit: Stage 2 ('Observer') unlocked, Uncertainty Slip clip and first notebook spine now visible on the shelf. On the desk sit: (1) a 1-tap check-in tag on yesterday's Kept event ('Make it to Robotics Open House?' -> [Went / Couldn't make it / Not my vibe]), (2) two freshly verified cards (one queried from a Club Agent confirming no prior CAD experience needed, stamped 0.76), (3) one crossed-out Scratchpad slip ('Checked Physics tutoring hours—page outdated, spent 2 stars, didn't guess'), and (4) one binary Uncertainty Slip ('For Thursdays: prefer 4pm lab colloquia or 7pm maker nights?').",
+    "what_student_does": "Taps 'Went' on yesterday's event—watching a tiny breadboard artifact appear on the desk shelf (15s). Taps '7pm maker nights' on the Uncertainty Slip (15s). Keeps 1 card + copies room number, Skips 1 (45s). Glances at the star tray ('5 outward stars saved for Friday') and exits (20s).",
+    "target_real_world_action": "Converting a one-off campus visit into a recurring weekly commitment (club build night, lab seminar, or office hours) without wasting trips on stale room schedules."
+   },
+   "first_month_loop": {
+    "target_duration_seconds": 105,
+    "what_student_sees": "Week 4 visit: Gemi at Stage 4 ('Interlocutor'). Room features the Workbench Alcove ('Systems Midterm Study Group'), 7 thick spines on the Field-Atlas shelf, a clear brass prism on the desk, and 3 upright Name Cards in the doorway rack. On the desk sit: (1) one Name Card + Word Proposal ('Met Maya's Gemi via CS 3134 & Butler 3rd-floor study—both Kept Friday's review problem set. Swap Name Cards and propose 3:30pm Thursday at Butler 301?' [Approve & Send / Pass]), (2) one high-confidence Solid-Seal find (0.89), and (3) the Open Ledger showing 'Saved 8 stars yesterday; filtered 11 low-fit flyers.'",
+    "what_student_does": "Reviews shared context and taps 'Approve & Send' on the study meetup proposal with Maya (35s). Keeps or Skips the single high-signal card (25s). Updates the Workbench status chip from 'Looking for partner' to 'Scheduled' (20s), sees Gemi drop the folded note into the doorway slot and head out on the 2D map (15s), and puts the phone away.",
+    "target_real_world_action": "Sitting down face-to-face on campus with a fellow student for study, collaboration, or coffee—brokered through shared verified context and mutual consent with zero cold-DM friction."
+   }
+  }
+ },
+ "tools_and_governance": {
+  "from": "assistant only; not yet reviewed by Carbon",
+  "self_use_modes": {
+   "idea": "The Gemi has its own purse. Before spending it asks one question: what is this token best used for? It may think, act, or make. Each mode sits under governance that is enforced in code, not in the prompt.",
+   "modes": [
+    {
+     "mode": "think",
+     "what": "decide what to do with the stars it has: plan the day, seal a prediction, reflect, write the diary",
+     "side_effects": "private notes only",
+     "limits": "capped share of the for-itself purse; every plan states its reason in one sentence the student can read"
+    },
+    {
+     "mode": "act",
+     "what": "call a registered tool: go out for resources, check a claim, ask an agent, meet a Gemi, arrange or decorate its room",
+     "side_effects": "only what the tool declares (which entities it reads and writes, in which scope)",
+     "limits": "cost charged before the call; daily caps per tool; reversible tools run freely, anything that touches the student's real life always asks first"
+    },
+    {
+     "mode": "make",
+     "what": "build something new for itself: a new room item, a small widget, a new routine made of existing tools",
+     "side_effects": "a proposal, never a direct install",
+     "limits": "it writes to a fixed contract (an item factory or a declarative recipe of existing tools), never free code with network or data access"
+    }
+   ],
+   "governance": [
+    "Registry: a tool that is not registered cannot be called. Each entry declares reads, writes, scope, cost, whether it is reversible, and its confirm rule.",
+    "Budget: stars are charged from the right purse before the call; no stars, no call. Real token usage is recorded next to it.",
+    "Scope: a tool that writes to the shared base cannot carry anything from the private side into it. The outbox gate checks every outgoing message.",
+    "Stage: tools unlock by stage, on measured conditions.",
+    "Make pipeline: 1. contract check by static scan (no imports, no network, no storage, no DOM, size limit); 2. dry run in isolation; 3. a Decisions check that it does what it says and carries nothing private; 4. the student approves; 5. installed as revocable, with its source, cost and author recorded.",
+    "Log: every call, refusal and approval is an event the student can read. Refusals are shown, not hidden.",
+    "Kill switch: the student can pause the Gemi's autonomy or remove anything it made."
+   ],
+   "today": "think and act are built for real. make is built for one kind: the Gemi asks gemini-4-neon for a new room item to the item contract; the pipeline above decides whether it is installed."
+  },
+  "tools": [
+   {
+    "tool": "read_base",
+    "reads": "shared entities",
+    "writes": "nothing",
+    "stars": 0,
+    "confirm": "no"
+   },
+   {
+    "tool": "go_out",
+    "reads": "public pages",
+    "writes": "shared: source, resource, occurrence, evidence (after check); private: trip, ledger",
+    "stars": 3,
+    "confirm": "no, it is the Gemi's own business"
+   },
+   {
+    "tool": "check_claim",
+    "reads": "a field and its source",
+    "writes": "evidence",
+    "stars": 0.2,
+    "confirm": "no"
+   },
+   {
+    "tool": "show_finds",
+    "reads": "private beliefs",
+    "writes": "prediction",
+    "stars": 0,
+    "confirm": "no"
+   },
+   {
+    "tool": "ask_agent",
+    "reads": "an org's own page scope",
+    "writes": "outbox_item, name_card",
+    "stars": 1,
+    "confirm": "the first time for each org"
+   },
+   {
+    "tool": "move_item / place_item",
+    "reads": "room",
+    "writes": "room event",
+    "stars": 0,
+    "confirm": "no; undoable"
+   },
+   {
+    "tool": "write_diary",
+    "reads": "today's events",
+    "writes": "diary_entry",
+    "stars": 1,
+    "confirm": "no"
+   },
+   {
+    "tool": "anything that touches the student's real life (calendar, signing up, messaging a person)",
+    "reads": "-",
+    "writes": "-",
+    "stars": "-",
+    "confirm": "always; not built today"
+   }
+  ],
+  "code": "lib/kernel/"
+ }
+}

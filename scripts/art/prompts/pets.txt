@@ -1,0 +1,15 @@
+Write a three.js ES module of small companion animals for a cozy dorm room diorama.
+
+Exports:
+- export const PETS = { cat, dog, rabbit, hamster, bird, fox, turtle, hedgehog, duck, panda, tiger, owl } where each value is a function (THREE, opts) -> THREE.Group. Origin on the floor under the animal's centre, facing +z. Chibi proportions (big head, small body), each clearly recognisable by silhouette (ears, tail, snout, beak, shell, spines, stripes). Sizes 0.25 to 0.5 m; the tiger is a plush-sized cub.
+- opts = { fur, furAccent, eye, variant: 0 | 1 | 2, accessory: "none" | "bow" | "scarf" | "bell" }. variant changes markings or pose (0 standing, 1 sitting, 2 curled or lying). Name child groups "head", "body", "tail" and, where present, "earL", "earR", "wingL", "wingR".
+- export function idle(group, t): gentle breathing, ear or tail motion, occasional blink (scale the eye meshes), given time in seconds.
+- export function recolor(group, palette).
+
+Rules for the module:
+- It is a plain ES module. Do not import anything. Do not use any global: every function receives THREE (three.js r160 namespace) as its first argument and must pass it on to any helper it calls.
+- Units are metres. Y is up. Build only from three.js primitives and ExtrudeGeometry/LatheGeometry shapes you make yourself (bevelled extrudes and spheres for soft edges). No textures from files, no fonts, no text, no logos, no network, no document or window.
+- Style: a refined, cozy, stylised diorama, like a premium life-sim game. Soft rounded edges everywhere, believable proportions, small secondary details. MeshStandardMaterial with thoughtful roughness/metalness; castShadow and receiveShadow on meshes.
+- Every mesh that carries a themable colour must have userData.slot set ("primary", "secondary", "accent", "wood", "metal", "fabric", "skin", "fur", "furAccent").
+- Also export const CATALOG: an array of { id, name, kind, footprint: [w, d], placement: "floor" | "wall" | "surface" | "worn" | "pet", variants: number, note } with one entry per thing in the module, so a shop or wardrobe screen can list it.
+- Return only the code of the module in one ```js block.

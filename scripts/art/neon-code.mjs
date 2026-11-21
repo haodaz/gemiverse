@@ -4,11 +4,15 @@ const key = readFileSync(new URL("../../.env.local", import.meta.url), "utf8").m
 const [name, promptFile] = process.argv.slice(2);
 const prompt = readFileSync(promptFile, "utf8");
 const t0 = Date.now();
-const res = await fetch("https://generativelanguage.googleapis.com/v1beta/interactions", {
-  method: "POST", headers: { "content-type": "application/json", "x-goog-api-key": key },
-  body: JSON.stringify({ model: "gemini-4-neon", generation_config: { thinking_level: "medium" }, input: prompt }),
-});
-const json = await res.json();
+const H = { "content-type": "application/json", "x-goog-api-key": key };
+const BASE = "https://generativelanguage.googleapis.com/v1beta/interactions";
+// background mode + polling, so a long generation cannot hit the five-minute request timeout
+let res = await fetch(BASE, { method: "POST", headers: H, body: JSON.stringify({ model: "gemini-4-neon", generation_config: { thinking_level: "medium" }, input: prompt, background: true }) });
+let json = await res.json();
+while (json.status && !["completed", "failed", "cancelled", "incomplete"].includes(json.status)) {
+  await new Promise((r) => setTimeout(r, 5000));
+  res = await fetch(`${BASE}/${json.id}`, { headers: H }); if (res.ok) json = await res.json();
+}
 const text = (json.steps ?? []).filter((s) => s.type === "model_output").flatMap((s) => s.content ?? []).map((c) => c.text ?? "").join("");
 const code = (text.match(/```(?:js|javascript)?\s*([\s\S]*?)```/)?.[1] ?? text).trim();
 if (!code.includes("export")) { console.log("no module", name, res.status, JSON.stringify(json).slice(0, 300)); process.exit(1); }

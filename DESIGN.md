@@ -37,6 +37,13 @@ Results table (filled in when measured):
 | Fields that pass the check | – | – | – |
 | Made-up fields | – | – | – |
 
+## 3b. Foundations: two designers, one merge · built (proposed, not locked)
+The world graph, the learning graph and the Gemi's own growth were each designed twice in parallel: by `gemini-4-carbon` (high thinking) and by the AI coding assistant. Originals are kept (`base/design/*.v1.json`), the comparison is `base/design/MERGE.md`, the merge is `base/design/final.v2.json`. Nothing is overwritten; later versions are new files.
+- World: 14 entity types, 11 growth needs, lowest source tier rejected, no natural person and no behavioural trace in the base.
+- Learning graph: seven axes (pace, scope, arena, closeness, horizon, structure, collaboration); a Kalman-style update with noise per trust tier; undo by replaying the event log.
+- Growth: five dimensions, five stages (Unpacked, Observer, Scout, Interlocutor, Steward), 10 stars a day (6 for you, 4 for itself).
+- Tools and governance: 12 registered tools in three modes (think, act, make), enforced in `lib/kernel/`. Not yet reviewed by Carbon.
+
 ## 4. The mind: one loop
 | Stage | What | Trust |
 |---|---|---|

@@ -1,0 +1,1455 @@
+{
+ "version": "v1",
+ "designed_by": "gemini-4-carbon (thinking: high)",
+ "designed_at": "2026-11-21T16:40:11.133Z",
+ "entity_types": [
+  {
+   "name": "School",
+   "domain": "1. Institution structure",
+   "definition": "A top-level degree-granting university in Gemiverse (starting with New York University and Columbia University).",
+   "sample_evidence": "Evidenced across all 15 sample pages (nyu-01 through nyu-17 for New York University; col-01 through col-07 for Columbia University).",
+   "fields": [
+    {
+     "name": "id",
+     "type": "string",
+     "required": true,
+     "how_verified": "Canonical slug (e.g., 'nyu', 'columbia') matched 1-to-1 against the verified institutional root .edu domain."
+    },
+    {
+     "name": "official_name",
+     "type": "string",
+     "required": true,
+     "how_verified": "Exact legal charter name verified verbatim in the root .edu institutional footer or registrar masthead (e.g., 'New York University' in nyu-01)."
+    },
+    {
+     "name": "primary_domain",
+     "type": "domain",
+     "required": true,
+     "how_verified": "EDUCAUSE .edu registry check and HTTPS TLS certificate validation (nyu.edu, columbia.edu)."
+    },
+    {
+     "name": "academic_calendar_url",
+     "type": "url",
+     "required": true,
+     "how_verified": "HTTP 200 check under primary_domain registrar subdomain containing machine-parseable term start and end dates."
+    }
+   ]
+  },
+  {
+   "name": "AcademicUnit",
+   "domain": "1. Institution structure",
+   "definition": "A formal college, school-level division, or academic department within a School that administers programs, courses, or research institutes.",
+   "sample_evidence": "Colleges/divisions evidenced in nyu-02 and nyu-17 ('NYU Steinhardt'), nyu-04 ('NYU Tandon School of Engineering'), and col-07 ('Columbia College', 'Columbia Engineering'). Department evidenced in nyu-02 ('Music and Performing Arts Professions').",
+   "fields": [
+    {
+     "name": "id",
+     "type": "string",
+     "required": true,
+     "how_verified": "Scoped slug (e.g., 'nyu:steinhardt', 'nyu:steinhardt:mpap') checked against the School's official academic units directory."
+    },
+    {
+     "name": "name",
+     "type": "string",
+     "required": true,
+     "how_verified": "Verbatim unit title checked against the unit masthead or official academic bulletin."
+    },
+    {
+     "name": "unit_kind",
+     "type": "enum[college_or_division, department]",
+     "required": true,
+     "how_verified": "Checked against the university governance/academic structure page (whether it is a degree-recommending school/college vs. a department housed inside one)."
+    },
+    {
+     "name": "official_url",
+     "type": "url",
+     "required": true,
+     "how_verified": "HTTP 200 URL resolving under the parent School's primary_domain (e.g., engineering.nyu.edu in nyu-04)."
+    },
+    {
+     "name": "role_contact_email",
+     "type": "email",
+     "required": false,
+     "how_verified": "Must match an institutional role/shared mailbox pattern under primary_domain (e.g., 'mpap-concertmusic@nyu.edu' in nyu-02) and pass a negative regex/directory filter rejecting personal NetID/UNI addresses."
+    }
+   ]
+  },
+  {
+   "name": "Program",
+   "domain": "1. Institution structure",
+   "definition": "A formal degree track, major, minor, or academic concentration offered by an AcademicUnit.",
+   "sample_evidence": "Partial evidence in nyu-02 under 'Related Programs: Concert Composition'. Evidence gap: undergraduate majors, degree credential codes (BA/BS/BM/PhD), and degree requirement trees do not appear in these event-only samples.",
+   "fields": [
+    {
+     "name": "id",
+     "type": "string",
+     "required": true,
+     "how_verified": "Scoped slug matched to an entry in the official university academic bulletin."
+    },
+    {
+     "name": "name",
+     "type": "string",
+     "required": true,
+     "how_verified": "Exact program name verified on the official academic bulletin or department Programs index (e.g., 'Concert Composition' in nyu-02)."
+    },
+    {
+     "name": "credential_type",
+     "type": "enum[major, minor, concentration, masters, doctoral, certificate]",
+     "required": true,
+     "how_verified": "Verified against official registrar/bulletin degree inventory; cannot be inferred from an event blurb alone (nyu-02 requires a bulletin fetch before committing credential_type)."
+    },
+    {
+     "name": "scope_summary",
+     "type": "string",
+     "required": true,
+     "how_verified": "One-sentence factual summary of subject matter extracted from the official program page (<= 240 chars), verified free of faculty names or rankings."
+    },
+    {
+     "name": "bulletin_url",
+     "type": "url",
+     "required": true,
+     "how_verified": "HTTP 200 URL on the official university bulletin or department program page."
+    }
+   ]
+  },
+  {
+   "name": "Campus",
+   "domain": "2. Space",
+   "definition": "A named geographic campus district operated by a School.",
+   "sample_evidence": "Explicitly tagged in col-01 and col-07 ('Manhattanville'); evidenced via campus map references and street addresses in nyu-04 ('370 Jay St, Brooklyn'), nyu-02/nyu-07/nyu-15 (Washington Square area), and col-05 ('420 W. 118 St.', Morningside Heights).",
+   "fields": [
+    {
+     "name": "id",
+     "type": "string",
+     "required": true,
+     "how_verified": "Scoped slug (e.g., 'columbia:manhattanville', 'nyu:brooklyn', 'nyu:washington-square') matched against the official university campus map index."
+    },
+    {
+     "name": "name",
+     "type": "string",
+     "required": true,
+     "how_verified": "Official district name verified on the School's campus map page or structured location alias (e.g., '/Location/Manhattanville' in col-01)."
+    },
+    {
+     "name": "municipality",
+     "type": "string",
+     "required": true,
+     "how_verified": "Borough/city and state verified against official campus map addresses ('Brooklyn, NY' in nyu-04; 'New York, NY' in col-01)."
+    },
+    {
+     "name": "centroid",
+     "type": "lat_lon",
+     "required": true,
+     "how_verified": "Latitude/longitude verified to lie inside the official campus map polygon."
+    }
+   ]
+  },
+  {
+   "name": "Building",
+   "domain": "2. Space",
+   "definition": "A physical university structure identified by a street address that contains indoor Venues or hosts Services and Events.",
+   "sample_evidence": "Strongly evidenced: Paulson Center / 181 Mercer St (nyu-02), 370 Jay St (nyu-04), 20 Cooper Square (nyu-05), Bobst Library (nyu-07/10/14), 196 Mercer St (nyu-09), Bern Dibner Library (nyu-12), Pless Hall (nyu-17), Jerome L. Greene Science Center / 605 W 129th St (col-01), International Affairs Building / 420 W 118th St (col-05), The Forum / 601 W 125th St (col-07). Evidence gap: standing turnstile hours are only indirectly hinted via visitor notes (nyu-04).",
+   "fields": [
+    {
+     "name": "id",
+     "type": "string",
+     "required": true,
+     "how_verified": "Scoped slug matched to official campus facilities/map building code or location_id."
+    },
+    {
+     "name": "name",
+     "type": "string",
+     "required": true,
+     "how_verified": "Canonical building title verified against the official campus map directory."
+    },
+    {
+     "name": "street_address",
+     "type": "string",
+     "required": true,
+     "how_verified": "Normalized street address checked against campus facilities listing and NYC GeoSearch/USPS."
+    },
+    {
+     "name": "coordinates",
+     "type": "lat_lon",
+     "required": true,
+     "how_verified": "Verified from structured feed coordinates (e.g., '40.728, -73.9914' in nyu-05) or campus GIS within 50 meters of street_address."
+    },
+    {
+     "name": "access_policy",
+     "type": "enum[public_lobby, campus_id_required, guest_preregistration_allowed, unknown]",
+     "required": true,
+     "how_verified": "Checked against official public safety/visitor access pages (e.g., nyu-04 states external guests require advance registration for 370 Jay St access; defaults to 'unknown' if unstated)."
+    }
+   ]
+  },
+  {
+   "name": "Venue",
+   "domain": "2. Space",
+   "definition": "A specific usable indoor space (room, auditorium, lounge, makerspace/lab) inside a Building, or a named outdoor place on a Campus, annotated with checkable affordances.",
+   "sample_evidence": "Indoor venues evidenced in nyu-02 (Room 570), nyu-04 (Room 1201, 12th Floor), nyu-07/10/14 (Bobst Rm 619, 743, 745), nyu-09 (IHDSC Seminar Room, 8th Floor), nyu-12 (Dibner LC 400), nyu-17 (First Floor Lounge, Pless Hall), col-01 (Ground Floor), col-05 (Lehman Suite, IAB Room 406). Outdoor place evidenced in nyu-15 ('Sasaki Garden', location_id 10342). Evidence gap: standing daily room affordances (quiet study rules, permanent tools, everyday open hours) have no dedicated space-directory pages in these event-only samples.",
+   "fields": [
+    {
+     "name": "id",
+     "type": "string",
+     "required": true,
+     "how_verified": "Scoped slug or feed location_id (e.g., '10342' for Sasaki Garden in nyu-15; 'nyu:bobst:rm-743')."
+    },
+    {
+     "name": "name",
+     "type": "string",
+     "required": true,
+     "how_verified": "Exact room number, suite name, or outdoor place name verified in room directory or event feed."
+    },
+    {
+     "name": "venue_kind",
+     "type": "enum[classroom_seminar, auditorium_stage, study_space, lounge_commons, lab_makerspace, outdoor_place]",
+     "required": true,
+     "how_verified": "Verified against official library/registrar/facilities space classification (e.g., 'First Floor Lounge' -> lounge_commons in nyu-17; 'Sasaki Garden' -> outdoor_place in nyu-15)."
+    },
+    {
+     "name": "floor_or_wayfinding",
+     "type": "string",
+     "required": false,
+     "how_verified": "Floor designation or entry gate directions verified verbatim from source ('12th Floor' in nyu-04; 'Enter Sasaki Garden via 1-2 Washington Square Village on West 3rd Street' in nyu-15)."
+    },
+    {
+     "name": "coordinates",
+     "type": "lat_lon",
+     "required": false,
+     "how_verified": "Required when venue_kind='outdoor_place' and verified against feed/map GIS ('40.728115, -73.996917' in nyu-15); omitted for indoor rooms that inherit Building.coordinates."
+    },
+    {
+     "name": "affordances",
+     "type": "array[affordance_id]",
+     "required": true,
+     "how_verified": "Controlled IDs from affordances list verified ONLY from standing space/library/facilities pages (never permanently inferred from a one-off event's catering or temporary cushions; empty array [] permitted until verified)."
+    },
+    {
+     "name": "reservable_by_students",
+     "type": "boolean",
+     "required": false,
+     "how_verified": "Checked against institutional room booking portals (e.g., LibCal Spaces / EMS)."
+    }
+   ]
+  },
+  {
+   "name": "Event",
+   "domain": "3. Development resources",
+   "definition": "A scheduled, time-bounded live happening—such as a workshop, lecture, performance, study break, competition showcase, or market.",
+   "sample_evidence": "Directly evidenced in all 15 sample pages across both NYU and Columbia.",
+   "fields": [
+    {
+     "name": "id",
+     "type": "string",
+     "required": true,
+     "how_verified": "Source feed primary key or GUID (e.g., '412484' in nyu-05; 'CAL-00bbdb7c-...' in col-01) or deterministic URL+start hash for static pages."
+    },
+    {
+     "name": "title",
+     "type": "string",
+     "required": true,
+     "how_verified": "Verbatim title from structured JSON 'title'/'summary' or HTML <h1>. Public work/talk titles are preserved solely as opaque event identifiers, never parsed into speaker attributes."
+    },
+    {
+     "name": "event_kind",
+     "type": "enum[workshop, talk_panel, performance_exhibit, social_study_break, competition_showcase, market_fair, community_wellness]",
+     "required": true,
+     "how_verified": "Mapped deterministically from source event_type tags ('Lecture / Panel' in nyu-04; 'Reference Services workshops' in nyu-07) plus structural description cues."
+    },
+    {
+     "name": "occurrences",
+     "type": "array[object{start_iso, end_iso_or_null}]",
+     "required": true,
+     "how_verified": "ISO-8601 timestamps with timezone verified against JSON UTC/ISO fields (nyu-05, col-01) or linked .ics files (nyu-01). Supports multi-performance runs (nyu-01, col-07) and null end times when omitted by source (nyu-15). Pages missing an explicit year in HTML prose (nyu-02, nyu-17) must verify year via .ics or feed metadata before admission."
+    },
+    {
+     "name": "delivery_mode",
+     "type": "enum[in_person, online, hybrid]",
+     "required": true,
+     "how_verified": "Cross-checked between location fields and online meeting URLs. If a page declares 'In-Person' with a physical room while also printing 'Please note this is an online event' (nyu-07, nyu-10, nyu-12), checker inspects the .ics LOCATION field; if unresolved, event is quarantined rather than guessed."
+    },
+    {
+     "name": "cost_type",
+     "type": "enum[free, paid_ticketed, unknown]",
+     "required": true,
+     "how_verified": "Verified from explicit Cost field ('Free' in nyu-02/05/17) or ticketing link ('Get Tickets' without price in nyu-01 -> 'unknown' or verified via linked box-office page)."
+    },
+    {
+     "name": "registration_rule",
+     "type": "enum[none, encouraged, required, ticketed, external_guests_only]",
+     "required": true,
+     "how_verified": "Verified against explicit registration prose ('No Registration Necessary' in nyu-17; 'not required but encouraged' in nyu-14; 'Registration is required' in nyu-02; external-guest Luma requirement in nyu-04)."
+    },
+    {
+     "name": "eligibility",
+     "type": "enum[public, campus_community_only, students_only, k12_family_oriented]",
+     "required": true,
+     "how_verified": "Checked against Audience/Open To fields and body restrictions ('open only to the NYU community' in nyu-12; 'Open to the Public' in nyu-04/15; 'for kids of all ages' -> k12_family_oriented in col-01)."
+    },
+    {
+     "name": "summary",
+     "type": "string",
+     "required": true,
+     "how_verified": "Factual <= 280-char distillation of source description checked by a PII/person-scrubber to ensure zero speaker bios, organizer names, or personal emails/phones remain."
+    },
+    {
+     "name": "action_url",
+     "type": "url",
+     "required": true,
+     "how_verified": "Canonical event webpage or official registration link (e.g., Zoom registration in col-03, Luma link in nyu-04) returning HTTP 200."
+    },
+    {
+     "name": "affordances",
+     "type": "array[affordance_id]",
+     "required": true,
+     "how_verified": "Controlled IDs verified from explicit activity cues in the event text (e.g., vegan/GF pizza and crafts in nyu-10 -> food_and_refueling, making_things)."
+    }
+   ]
+  },
+  {
+   "name": "Course",
+   "domain": "3. Development resources",
+   "definition": "A credit-bearing or official registrar-listed course offered in a specific academic term by an AcademicUnit.",
+   "sample_evidence": "No evidence yet in sample pages (note: nyu-12 uses the LibCal label 'Dibner Library classes' for a competition showcase, which checkers explicitly reject as a registrar Course).",
+   "fields": [
+    {
+     "name": "id",
+     "type": "string",
+     "required": true,
+     "how_verified": "Scoped subject-number-term key (e.g., 'columbia:COMS-W4111:2026-fall') verified in NYU Albert public search or Columbia Directory of Classes."
+    },
+    {
+     "name": "course_code",
+     "type": "string",
+     "required": true,
+     "how_verified": "Official registrar subject and catalog number verified verbatim."
+    },
+    {
+     "name": "title",
+     "type": "string",
+     "required": true,
+     "how_verified": "Official registrar course title."
+    },
+    {
+     "name": "term",
+     "type": "string",
+     "required": true,
+     "how_verified": "Term identifier verified against active registrar term schedule."
+    },
+    {
+     "name": "credits",
+     "type": "number",
+     "required": true,
+     "how_verified": "Point/credit value verified against official bulletin/registrar feed."
+    },
+    {
+     "name": "prerequisites_text",
+     "type": "string",
+     "required": false,
+     "how_verified": "Verbatim course-code prerequisites from official bulletin (stripped of any 'permission of Prof. X' person names, normalized to 'instructor/department permission')."
+    },
+    {
+     "name": "catalog_url",
+     "type": "url",
+     "required": true,
+     "how_verified": "HTTP 200 URL on the official .edu course catalog or bulletin."
+    }
+   ]
+  },
+  {
+   "name": "Opportunity",
+   "domain": "3. Development resources",
+   "definition": "A structured, non-course growth opening with eligibility or application mechanics—covering research openings, competitions, funding/grants, student jobs, and structured mentorship programs (never individual person profiles).",
+   "sample_evidence": "Competition and prize funding indirectly evidenced in nyu-12 ('Hack Dibner is an annual semester-long proof-of-concept competition... First place receives $700 and the runner up receives $300'). Evidence gap: standalone open calls for research_opening, funding grants, campus jobs, and mentorship cohorts do not appear directly in the 15 samples.",
+   "fields": [
+    {
+     "name": "id",
+     "type": "string",
+     "required": true,
+     "how_verified": "Scoped slug or official portal posting ID."
+    },
+    {
+     "name": "title",
+     "type": "string",
+     "required": true,
+     "how_verified": "Official program/opening title verified on the hosting unit's call page ('Hack Dibner' in nyu-12)."
+    },
+    {
+     "name": "opportunity_kind",
+     "type": "enum[research_opening, competition, funding, job, mentorship]",
+     "required": true,
+     "how_verified": "Checked against official program terms (e.g., prize contest -> competition; cohort/office advising program -> mentorship; lab RA posting -> research_opening)."
+    },
+    {
+     "name": "status",
+     "type": "enum[upcoming, open, closed]",
+     "required": true,
+     "how_verified": "Computed deterministically by comparing current UTC time against published open/deadline dates and checking page for 'applications closed' banners (e.g., nyu-12 Final Showcase implies fall cohort applications are 'closed')."
+    },
+    {
+     "name": "deadline_iso",
+     "type": "iso_datetime",
+     "required": false,
+     "how_verified": "Application or submission deadline verified verbatim on the official call page."
+    },
+    {
+     "name": "compensation_or_award",
+     "type": "string",
+     "required": false,
+     "how_verified": "Verbatim stipend, NYC pay-transparency wage range, grant cap, or prize amounts ('$700 first place, $300 runner up' in nyu-12)."
+    },
+    {
+     "name": "eligibility_criteria",
+     "type": "string",
+     "required": true,
+     "how_verified": "Checkable institutional rules (school, degree level, enrollment status) extracted from official call."
+    },
+    {
+     "name": "commitment_summary",
+     "type": "string",
+     "required": false,
+     "how_verified": "Duration or weekly hours checked against posting ('semester-long' in nyu-12)."
+    },
+    {
+     "name": "apply_url",
+     "type": "url",
+     "required": true,
+     "how_verified": "HTTP 200 URL on official .edu or institution-delegated application portal."
+    }
+   ]
+  },
+  {
+   "name": "Service",
+   "domain": "3. Development resources",
+   "definition": "A standing institutional support resource, advising/help desk, accessibility accommodation channel, equipment lending desk, or evergreen guide available continuously across a term.",
+   "sample_evidence": "Indirectly evidenced via embedded links and support blocks: LibGuides ('Finals Resources' in nyu-10, 'Hack Dibner' guide in nyu-12, 'NYU Welcome: The Libraries' in nyu-14), library help channels ('lib-reference@nyu.edu' in nyu-07/10, 'zotero-help@library.columbia.edu' in col-03), and disability accommodation services (nyu-01/02/07/17). Evidence gap: standalone service homepages (counseling, career center, makerspace tool checkout, peer advising hubs) are not directly included in the samples.",
+   "fields": [
+    {
+     "name": "id",
+     "type": "string",
+     "required": true,
+     "how_verified": "Scoped slug matched to the hosting office/library service directory."
+    },
+    {
+     "name": "name",
+     "type": "string",
+     "required": true,
+     "how_verified": "Official service or guide title verified on unit page, stripped of personal author credits (e.g., 'Finals Resources' from 'Finals Resources by Laurie Murphy' in nyu-10)."
+    },
+    {
+     "name": "service_kind",
+     "type": "enum[academic_research_help, career_advising, wellbeing_accessibility, curated_guide, equipment_making_access, peer_mentoring_desk]",
+     "required": true,
+     "how_verified": "Checked against hosting office mandate and explicit service offerings."
+    },
+    {
+     "name": "access_method",
+     "type": "enum[walk_in, appointment, online_self_serve, role_email_request]",
+     "required": true,
+     "how_verified": "Verified from explicit access instructions (e.g., 'submit your request at least two weeks before' via role email in nyu-02 -> role_email_request; LibGuide URL -> online_self_serve)."
+    },
+    {
+     "name": "hours_summary",
+     "type": "string",
+     "required": false,
+     "how_verified": "Standing operating hours verified against official service hours widget."
+    },
+    {
+     "name": "role_contact_channel",
+     "type": "string",
+     "required": false,
+     "how_verified": "Verified institutional role email or helpdesk URL ('zotero-help@library.columbia.edu' in col-03; 'lib-reference@nyu.edu' in nyu-07)."
+    },
+    {
+     "name": "service_url",
+     "type": "url",
+     "required": true,
+     "how_verified": "HTTP 200 URL under .edu or official library LibGuides domain."
+    },
+    {
+     "name": "affordances",
+     "type": "array[affordance_id]",
+     "required": true,
+     "how_verified": "Controlled IDs verified from explicit service capabilities."
+    }
+   ]
+  },
+  {
+   "name": "GrowthNeed",
+   "domain": "4. Student growth needs",
+   "definition": "A canonical, impersonal node in the shared student growth taxonomy against which Venues, Events, Courses, Opportunities, and Services are tagged. Never stores or points to any student.",
+   "sample_evidence": "Surface institutional category tags appear in nyu-07 ('Research Readiness') and nyu-10 ('Creativity and Wellbeing in Research'); the unified 11-need cross-campus taxonomy is schema-governed.",
+   "fields": [
+    {
+     "name": "id",
+     "type": "string",
+     "required": true,
+     "how_verified": "Exact membership in the canonical need_taxonomy enum."
+    },
+    {
+     "name": "label",
+     "type": "string",
+     "required": true,
+     "how_verified": "Exact match against schema governance specification."
+    },
+    {
+     "name": "one_line_definition",
+     "type": "string",
+     "required": true,
+     "how_verified": "Exact match against schema governance specification; audited to contain zero person-level fields."
+    },
+    {
+     "name": "public_page_signals",
+     "type": "array[string]",
+     "required": true,
+     "how_verified": "Auditable lexical/structural patterns checked against labeled campus pages for tagging precision."
+    }
+   ]
+  },
+  {
+   "name": "Organisation",
+   "domain": "5. Organisations",
+   "definition": "A collective actor operating on or with campus—a student club or collective, research lab/center/institute, university office/library, or verified external partner.",
+   "sample_evidence": "Richly evidenced: student/grad collectives & outreach clubs ('Nevermind the Noise' in nyu-02; 'CUNO / Columbia University Neuroscience Outreach' in col-01); labs/centers/institutes ('CUSP' in nyu-04, 'Berkley Institute' in nyu-05, 'CRACS Co-Lab' and 'IHDSC' in nyu-09, 'Zuckerman/zmbbi' in col-01, 'Lehman Center for American History' in col-05); campus offices/libraries ('NYU Libraries' in nyu-07/10/14, 'Bern Dibner Library' in nyu-12, 'Office of Sustainability' in nyu-14, 'Faculty Housing and Residential Services' in nyu-15, 'NYU Steinhardt Office of Student Affairs' in nyu-17, 'Columbia Libraries' in col-03); external partners ('Brennan Center for Justice' and 'Federal Election Commission' in nyu-05, 'BioBus' in col-01). Evidence gap: student-activities registry pages (NYU Engage / Columbia LionLink) with club charters and meeting cadences are not in the samples.",
+   "fields": [
+    {
+     "name": "id",
+     "type": "string",
+     "required": true,
+     "how_verified": "Scoped slug or feed group ID (e.g., LiveWhale 'gid: 347' in nyu-05, 'gid: 26' in nyu-15, Bedework 'agrp_calsuite-zmbbi' in col-01)."
+    },
+    {
+     "name": "name",
+     "type": "string",
+     "required": true,
+     "how_verified": "Official organisation name checked against feed group_title, club registry, or institutional masthead."
+    },
+    {
+     "name": "org_kind",
+     "type": "enum[student_club_collective, lab_center_institute, campus_office_library, external_partner]",
+     "required": true,
+     "how_verified": "Verified by checking membership in official student club directory vs. research centers directory vs. administrative units vs. non-.edu external entity."
+    },
+    {
+     "name": "mission_summary",
+     "type": "string",
+     "required": false,
+     "how_verified": "One-sentence impersonal mission extracted from official 'About' blurb (e.g., Nevermind the Noise description in nyu-02; CUSP blurb in nyu-04), scrubbed of officer/faculty names."
+    },
+    {
+     "name": "official_url",
+     "type": "url",
+     "required": false,
+     "how_verified": "HTTP 200 homepage or official Engage/LionLink profile URL."
+    },
+    {
+     "name": "public_contact_channel",
+     "type": "string",
+     "required": false,
+     "how_verified": "Institutional role email, official social handle, or org inbox explicitly published on a Tier 1/2 .edu page ('cusp.education@nyu.edu' in nyu-04; '@nyufacultyhousing' in nyu-15; 'cracscolab@gmail.com' linked on nyu.libcal.com in nyu-09). Personal staff emails/phones (col-01, col-05, col-07) are rejected."
+    }
+   ]
+  },
+  {
+   "name": "Agent",
+   "domain": "5. Organisations",
+   "definition": "A public autonomous AI endpoint that speaks officially for an Organisation or AcademicUnit in Gemiverse over direct peer-to-peer messaging.",
+   "sample_evidence": "No evidence yet in sample pages—public AI organisation agents are native to Gemiverse and do not appear on legacy HTML, LiveWhale, or Bedework event feeds.",
+   "fields": [
+    {
+     "name": "id",
+     "type": "string",
+     "required": true,
+     "how_verified": "Decentralized agent identifier (DID) matching the signed capability manifest."
+    },
+    {
+     "name": "endpoint_uri",
+     "type": "uri",
+     "required": true,
+     "how_verified": "Live challenge-response handshake over Gemiverse P2P transport."
+    },
+    {
+     "name": "public_signing_key",
+     "type": "string",
+     "required": true,
+     "how_verified": "Ed25519 public key verified either via DNS/HTTPS '.well-known/gemiverse-agents.json' on the unit's .edu subdomain or via cryptographic verification token sent to the Organisation's verified .edu role inbox."
+    },
+    {
+     "name": "supported_intents",
+     "type": "array[enum[faq, eligibility_check, rsvp_status, recruitment_intake, space_hours, collaboration_inquiry]]",
+     "required": true,
+     "how_verified": "Validated against the agent's signed capability schema during admission ping."
+    },
+    {
+     "name": "max_tokens_per_turn",
+     "type": "integer",
+     "required": true,
+     "how_verified": "Declared upper bound on reply size enforced and verified during test query handshake (must be <= 250 tokens to protect Gemi daily budgets)."
+    }
+   ]
+  }
+ ],
+ "link_types": [
+  {
+   "name": "HAS_ACADEMIC_UNIT",
+   "domain": "1. Institution structure",
+   "from": [
+    "School",
+    "AcademicUnit"
+   ],
+   "to": [
+    "AcademicUnit"
+   ],
+   "meaning": "A School contains a college/division, or a college/division contains an academic department.",
+   "why_gemi_traverses": "Scope searches to the student's home school or step up/down between a department (Music and Performing Arts Professions) and its parent division (NYU Steinhardt in nyu-02).",
+   "how_verified": "Breadcrumb, masthead, or academic directory hierarchy on primary_domain."
+  },
+  {
+   "name": "OFFERS_PROGRAM",
+   "domain": "1. Institution structure",
+   "from": [
+    "AcademicUnit"
+   ],
+   "to": [
+    "Program"
+   ],
+   "meaning": "An academic division or department administers a degree program, major, or minor.",
+   "why_gemi_traverses": "Find candidate majors/tracks when a student wants to explore a field or decide a direction (e.g., Steinhardt MPAP -> Concert Composition in nyu-02).",
+   "how_verified": "Official academic bulletin or 'Related Programs' block on the department's .edu page."
+  },
+  {
+   "name": "OFFERS_COURSE",
+   "domain": "1. Institution structure / 3. Development resources",
+   "from": [
+    "AcademicUnit",
+    "Program"
+   ],
+   "to": [
+    "Course"
+   ],
+   "meaning": "An academic unit teaches a course or a program counts a course toward its curriculum.",
+   "why_gemi_traverses": "Locate concrete term courses that build a skill or test interest in a major.",
+   "how_verified": "Registrar course subject prefix mapping and official program curriculum bulletin (no sample evidence yet)."
+  },
+  {
+   "name": "HAS_CAMPUS",
+   "domain": "2. Space",
+   "from": [
+    "School"
+   ],
+   "to": [
+    "Campus"
+   ],
+   "meaning": "A university operates a named geographic campus.",
+   "why_gemi_traverses": "Filter opportunities by transit feasibility (e.g., Washington Square vs. 370 Jay St Brooklyn at NYU; Morningside vs. Manhattanville at Columbia).",
+   "how_verified": "Official university campus map index."
+  },
+  {
+   "name": "ON_CAMPUS",
+   "domain": "2. Space",
+   "from": [
+    "Building",
+    "Venue"
+   ],
+   "to": [
+    "Campus"
+   ],
+   "meaning": "A Building or an outdoor Venue (e.g., Sasaki Garden in nyu-15) is physically situated on a Campus.",
+   "why_gemi_traverses": "Place landmarks onto the right campus map zone and estimate walking time between classes and events.",
+   "how_verified": "Feed campus alias ('/Location/Manhattanville' in col-01, 'Location: Manhattanville' in col-07) or GIS polygon containment."
+  },
+  {
+   "name": "INSIDE_BUILDING",
+   "domain": "2. Space",
+   "from": [
+    "Venue"
+   ],
+   "to": [
+    "Building"
+   ],
+   "meaning": "An indoor room, lounge, auditorium, or lab sits inside a physical Building.",
+   "why_gemi_traverses": "Inherit street address and Building.access_policy (e.g., checking whether 370 Jay St requires ID/Luma before heading to Room 1201 in nyu-04) and discover nearby lounges in the same building.",
+   "how_verified": "Structured location string pairing building and room ('Paulson Center, Room 570' in nyu-02; 'Bobst Library, 7th Floor, Rm. 743' in nyu-10; 'IAB Room 406' in col-05)."
+  },
+  {
+   "name": "LOCATED_AT",
+   "domain": "2. Space / 3. Development resources / 5. Organisations",
+   "from": [
+    "Event",
+    "Service",
+    "Organisation"
+   ],
+   "to": [
+    "Venue",
+    "Building"
+   ],
+   "meaning": "An in-person Event takes place at, a Service operates from, or an Organisation (like IHDSC at 196 Mercer St 8th Floor in nyu-09) is housed at a Venue or Building.",
+   "why_gemi_traverses": "Route the student physically, render live event beacons on campus landmarks, and batch nearby activities without fabricating fake room nodes when feeds only name a building ('20 Cooper Square' in nyu-05; 'The Forum' in col-07).",
+   "how_verified": "Explicit Location field in Tier 1/2 source (omitted for purely online events like col-03)."
+  },
+  {
+   "name": "AFFILIATED_WITH",
+   "domain": "5. Organisations / 6. Social relations at world level",
+   "from": [
+    "Organisation"
+   ],
+   "to": [
+    "School",
+    "AcademicUnit"
+   ],
+   "meaning": "An Organisation is chartered under, housed within, or officially recognized by a School or AcademicUnit.",
+   "why_gemi_traverses": "Distinguish official campus clubs/labs (CUSP under NYU Tandon in nyu-04; Office of Student Affairs under NYU Steinhardt in nyu-17) from external partners (BioBus in col-01) and find all clubs/labs tied to a department.",
+   "how_verified": "Institutional directory listing, subdomain hosting, or official Engage/LionLink recognition."
+  },
+  {
+   "name": "RUNS",
+   "domain": "6. Social relations at world level",
+   "from": [
+    "Organisation",
+    "AcademicUnit"
+   ],
+   "to": [
+    "Event",
+    "Opportunity",
+    "Service",
+    "Venue"
+   ],
+   "meaning": "An Organisation or AcademicUnit hosts, sponsors, or operates a resource or space (multiple RUNS edges on one resource represent co-hosting, as in nyu-14).",
+   "why_gemi_traverses": "Pivot from one appealing event (e.g., Hack Dibner Showcase in nyu-12 or Zotero workshop in col-03) to everything else run by that same library, lab, or club.",
+   "how_verified": "Feed group_title/gid (nyu-05, nyu-15), Bedework calendar group alias (col-01), or explicit 'hosted by / presented by / invites you' text (nyu-04, nyu-09, nyu-14, col-05)."
+  },
+  {
+   "name": "COLLABORATES_WITH",
+   "domain": "6. Social relations at world level",
+   "from": [
+    "Organisation"
+   ],
+   "to": [
+    "Organisation"
+   ],
+   "meaning": "Two Organisations jointly produce events, research, or community initiatives (annotated with supporting resource IDs).",
+   "why_gemi_traverses": "Traverse world-level social bridges across communities—for example, moving from Office of Sustainability to NYU Libraries (nyu-14), from CUNO to BioBus and Zuckerman Institute (col-01), from Faculty Housing to Steinhardt MPAP jazz ensembles (nyu-15), or from Berkley Institute to Brennan Center (nyu-05).",
+   "how_verified": "Co-occurrence as explicit co-hosts/partners on at least one verified Tier 1/2 Event, Opportunity, or Service."
+  },
+  {
+   "name": "SPEAKS_FOR",
+   "domain": "6. Social relations at world level",
+   "from": [
+    "Agent"
+   ],
+   "to": [
+    "Organisation",
+    "AcademicUnit"
+   ],
+   "meaning": "A verified public AI Agent is authorized to represent and answer questions on behalf of an Organisation or AcademicUnit.",
+   "why_gemi_traverses": "Open a cheap, direct P2P agent conversation when the base lacks a fine-grained detail, avoiding expensive web scraping (no sample evidence yet; Gemiverse-native).",
+   "how_verified": "Cryptographic signature chain anchored to primary_domain .well-known registry or verified .edu role inbox."
+  },
+  {
+   "name": "SERVES_NEED",
+   "domain": "4. Student growth needs",
+   "from": [
+    "Event",
+    "Course",
+    "Opportunity",
+    "Service",
+    "Venue"
+   ],
+   "to": [
+    "GrowthNeed"
+   ],
+   "meaning": "A place or development resource demonstrably supports a specific impersonal student growth need.",
+   "why_gemi_traverses": "Primary zero-LLM-token retrieval path: Gemi maps its student's private state locally to 1–2 GrowthNeed IDs and pulls matching campus resources/venues from the index.",
+   "how_verified": "Source text satisfies at least one auditable rule in GrowthNeed.public_page_signals or maps via verified affordances."
+  },
+  {
+   "name": "RELATED_TO",
+   "domain": "3. Development resources",
+   "from": [
+    "Event",
+    "Opportunity",
+    "Service"
+   ],
+   "to": [
+    "Program",
+    "Opportunity",
+    "Service"
+   ],
+   "meaning": "Source-declared curricular or resource follow-on link (e.g., Event 'Finals Study Break' -> Service 'Finals Resources LibGuide' in nyu-10; Showcase Event -> 'Hack Dibner' competition Opportunity in nyu-12; Concert Event -> 'Concert Composition' Program in nyu-02).",
+   "why_gemi_traverses": "Convert a missed or completed one-off event into an evergreen guide, program, or next-cycle competition.",
+   "how_verified": "Explicit 'Related LibGuide', 'Related Programs', or 'About the Series/Competition' hyperlink on the Tier 1/2 page."
+  }
+ ],
+ "need_taxonomy": [
+  {
+   "id": "find_my_people",
+   "name": "Find my people",
+   "one_line_definition": "Build belonging and peer connection around shared interests, creative scenes, or relaxed everyday gathering.",
+   "public_page_signals": [
+    "Student collective, club, or cohort language ('collective of graduate composers' in nyu-02)",
+    "Explicit peer connection framing ('connect with fellow students', 'hang out' in nyu-10 and nyu-17)",
+    "Recurring community series or open social lounge/market format (nyu-14, col-07)"
+   ],
+   "research_idea": "Self-Determination Theory (need for relatedness) and Tinto's model of social integration in higher education"
+  },
+  {
+   "id": "build_a_skill",
+   "name": "Build a skill",
+   "one_line_definition": "Acquire a concrete, reusable technical, research, analytical, or craft method through guided instruction and practice.",
+   "public_page_signals": [
+    "Explicit learning outcomes ('Attendees will learn to...', 'demonstrate how to...' in col-03)",
+    "Lesson, workshop, or training format with interactive exercises ('30 minute lesson', 'interactive session will guide you through short activities' in nyu-07)",
+    "Software/tool setup prerequisites ('Please download Zotero... prior to the workshop' in col-03)"
+   ],
+   "research_idea": "Self-Determination Theory (need for competence) and deliberate/scaffolded skill acquisition"
+  },
+  {
+   "id": "explore_a_field",
+   "name": "Explore a field",
+   "one_line_definition": "Sample big questions, debates, and current research frontiers in an academic discipline or domain without prior commitment.",
+   "public_page_signals": [
+    "Research seminar, book talk, or lecture series framing ('Urban Science Research Seminar Series... leading voices in the growing field of urban informatics' in nyu-04; book talks in nyu-09 and col-05)",
+    "Cross-links to academic departments or areas of study ('Areas of Study: The Arts' in nyu-02)",
+    "Open-audience disciplinary inquiry with no prerequisite coursework ('Open to the Public' in nyu-04, col-05)"
+   ],
+   "research_idea": "Interest development models (situational-to-individual interest trigger) and intellectual curiosity exploration"
+  },
+  {
+   "id": "get_experience",
+   "name": "Get experience",
+   "one_line_definition": "Test abilities in real-world or applied settings through research projects, competitions, outreach roles, or campus jobs.",
+   "public_page_signals": [
+    "Team project, proof-of-concept, lab research, internship, or student employment structure ('teams have spent the fall semester developing an idea... researching the impact and feasibility' in nyu-12)",
+    "Applied outreach delivery roles (student-led hands-on science demonstrations via CUNO in col-01)",
+    "Deliverables, milestones, or work-hour commitments"
+   ],
+   "research_idea": "Experiential Learning Cycle and Legitimate Peripheral Participation in Communities of Practice"
+  },
+  {
+   "id": "make_and_express",
+   "name": "Make and express",
+   "one_line_definition": "Compose, fabricate, perform, craft, or engage deeply with original artistic and material works.",
+   "public_page_signals": [
+    "Composition, theatre, live music, prototyping, or craft activities ('composition and performance of new experimental concert music' in nyu-02; drama production in nyu-01; live jazz in nyu-15; crafts in nyu-10)",
+    "Makerspace, studio, stage, or rehearsal equipment availability",
+    "Category tags in Arts, Drama, Performance, or Creativity (nyu-01, nyu-02, nyu-10, col-07)"
+   ],
+   "research_idea": "Constructionism (learning by making) and aesthetic/creative self-expression in young adult development"
+  },
+  {
+   "id": "get_mentorship_and_feedback",
+   "name": "Get mentorship and feedback",
+   "one_line_definition": "Receive structured advice, expert answers, or constructive critique on work and plans from advisors, librarians, peers, or judges.",
+   "public_page_signals": [
+    "Onsite specialists or Q&A consultation ('librarians will be onsite to answer questions about formatting citations, finding sources, and search strategies' in nyu-10; live Q&A in col-03)",
+    "Pitching or critique before an evaluation panel ('pitch their ideas to a panel of judges' in nyu-12)",
+    "Structured peer/alumni/faculty mentoring cohorts or advising office hours"
+   ],
+   "research_idea": "Zone of Proximal Development (instructional scaffolding) and developmental mentoring networks"
+  },
+  {
+   "id": "decide_a_direction",
+   "name": "Decide a direction",
+   "one_line_definition": "Clarify academic major, degree path, or post-graduation trajectory by comparing concrete options and trade-offs.",
+   "public_page_signals": [
+    "Major/program discovery framing ('Discover programs in education, composition, technology, business...' in nyu-02)",
+    "Career panels, major declaration info sessions, or graduate school pathways",
+    "Advising services dedicated to academic planning or career exploration"
+   ],
+   "research_idea": "Vocational identity statuses (exploration to commitment) and Chickering's vector of developing purpose"
+  },
+  {
+   "id": "fund_my_path",
+   "name": "Fund my path",
+   "one_line_definition": "Secure prizes, grants, fellowships, stipends, or paid campus work to resource independent projects or student living costs.",
+   "public_page_signals": [
+    "Explicit dollar awards, grants, fellowships, or stipends ('First place receives $700 and the runner up receives $300' in nyu-12)",
+    "Paid hourly wage ranges on campus jobs or funded summer research postings",
+    "Seed funding or micro-grant competition rules"
+   ],
+   "research_idea": "Financial capability and basic-needs security as foundational preconditions for academic persistence"
+  },
+  {
+   "id": "contribute_beyond_self",
+   "name": "Contribute beyond self",
+   "one_line_definition": "Participate in constructive civic dialogue, public scholarship, sustainability, or neighborhood engagement.",
+   "public_page_signals": [
+    "Civic discourse, policy reform, equity, or environmental stewardship themes ('constructive civil discourse across differences' in nyu-05; racial exhaustion dialogue in nyu-09; climate/environment reflection with Office of Sustainability in nyu-14)",
+    "Youth/community outreach or local neighborhood support ('partners BioBus and CUNO' in col-01; 'support local businesses, neighborhood small businesses' in col-07)",
+    "Public-interest volunteer calls"
+   ],
+   "research_idea": "Civic identity development and prosocial generativity in emerging adulthood"
+  },
+  {
+   "id": "navigate_systems",
+   "name": "Navigate systems",
+   "one_line_definition": "Master institutional infrastructures—libraries, catalogs, accommodations, policies, and academic survival workflows—so campus friction drops.",
+   "public_page_signals": [
+    "Orientation and system-literacy framing ('NYU Welcome: The Libraries' in nyu-14; 'Research Readiness', 'build confidence navigating the library collection' in nyu-07)",
+    "Step-by-step guides to institutional processes ('Finals Resources guide' in nyu-10; disability accommodation procedures in nyu-01/02/07)",
+    "Reference and technical help desks (col-03)"
+   ],
+   "research_idea": "Demystifying the Hidden Curriculum and building institutional cultural capital"
+  },
+  {
+   "id": "rest_and_recover",
+   "name": "Rest and recover",
+   "one_line_definition": "Step away from evaluative pressure to restore attention and energy through mindfulness, snacks, play, music, or green space.",
+   "public_page_signals": [
+    "Explicit decompression and reset cues ('clear your mind and reset for finals', 'Refuel with a slice, a snack', 'crafts, games, and tunes' in nyu-10; 'quick brain break... recharge' in nyu-17)",
+    "Guided mindfulness, somatic rest, or contemplative framing ('Guided meditations... Cushions, benches, chairs, and backjacks' in nyu-14)",
+    "Outdoor garden/luminous low-stakes cultural settings ('Sasaki Garden... luminous setting' in nyu-15)"
+   ],
+   "research_idea": "Attention Restoration Theory and stress-buffering recovery models"
+  }
+ ],
+ "affordances": {
+  "matching_mechanism": "A Gemi keeps its student's state private and selects 1–2 target GrowthNeed IDs plus situational constraints (available minutes, current Campus, budget, sensory preference). It intersects GrowthNeed -> candidate affordance_ids against Venue.affordances (for right-now places) and Event/Service/Opportunity.affordances (for scheduled or standing resources), enabling deterministic zero-LLM-token candidate retrieval.",
+  "catalog": [
+   {
+    "id": "quiet_study",
+    "lets_student_do": "Work individually in silence or low ambient noise at a desk with seating and power.",
+    "applies_to": [
+     "Venue"
+    ],
+    "public_verification_cues": [
+     "Reading room designation, 'quiet floor' library policy, individual study carrels"
+    ],
+    "matches_needs": [
+     "navigate_systems",
+     "build_a_skill",
+     "rest_and_recover"
+    ]
+   },
+   {
+    "id": "collaborative_work",
+    "lets_student_do": "Talk aloud and co-create in small groups around shared tables or whiteboards.",
+    "applies_to": [
+     "Venue",
+     "Event",
+     "Opportunity"
+    ],
+    "public_verification_cues": [
+     "Group study room booking, co-lab space, team hackathon/competition format (nyu-12)"
+    ],
+    "matches_needs": [
+     "get_experience",
+     "find_my_people",
+     "make_and_express"
+    ]
+   },
+   {
+    "id": "meeting_people",
+    "lets_student_do": "Mingle casually, drop in without stiffness, and strike up peer conversations.",
+    "applies_to": [
+     "Venue",
+     "Event"
+    ],
+    "public_verification_cues": [
+     "Student lounge ('First Floor Lounge, Pless Hall' in nyu-17), study break hangout (nyu-10), open festive market (col-07)"
+    ],
+    "matches_needs": [
+     "find_my_people",
+     "rest_and_recover"
+    ]
+   },
+   {
+    "id": "making_things",
+    "lets_student_do": "Build, prototype, compose, or craft physical, musical, or digital artifacts.",
+    "applies_to": [
+     "Venue",
+     "Event",
+     "Opportunity",
+     "Service"
+    ],
+    "public_verification_cues": [
+     "Makerspace/fabrication tools, craft supplies (nyu-10), composition/prototyping challenges (nyu-02, nyu-12)"
+    ],
+    "matches_needs": [
+     "make_and_express",
+     "build_a_skill",
+     "get_experience"
+    ]
+   },
+   {
+    "id": "hands_on_skill_practice",
+    "lets_student_do": "Follow guided exercises to practice a concrete tool, software workflow, or research method.",
+    "applies_to": [
+     "Event",
+     "Course",
+     "Service"
+    ],
+    "public_verification_cues": [
+     "Interactive workshop activities (nyu-07), live software walkthrough with student laptop setup (col-03)"
+    ],
+    "matches_needs": [
+     "build_a_skill",
+     "navigate_systems"
+    ]
+   },
+   {
+    "id": "intellectual_inquiry",
+    "lets_student_do": "Listen to frontier scholarship or policy debates and pose questions in Q&A.",
+    "applies_to": [
+     "Venue",
+     "Event",
+     "Course"
+    ],
+    "public_verification_cues": [
+     "Research seminar (nyu-04), moderated cross-ideological panel (nyu-05), scholarly book talk (nyu-09, col-05)"
+    ],
+    "matches_needs": [
+     "explore_a_field",
+     "contribute_beyond_self",
+     "decide_a_direction"
+    ]
+   },
+   {
+    "id": "experiencing_art_and_performance",
+    "lets_student_do": "Watch or listen to live theatre, experimental concerts, jazz, or curated exhibitions.",
+    "applies_to": [
+     "Venue",
+     "Event"
+    ],
+    "public_verification_cues": [
+     "Stage drama run (nyu-01), experimental concert (nyu-02), outdoor live jazz installation (nyu-15)"
+    ],
+    "matches_needs": [
+     "make_and_express",
+     "rest_and_recover",
+     "explore_a_field"
+    ]
+   },
+   {
+    "id": "mindfulness_and_decompression",
+    "lets_student_do": "Meditate, sit in greenery, play low-stakes games, or decompress away from grades.",
+    "applies_to": [
+     "Venue",
+     "Event",
+     "Service"
+    ],
+    "public_verification_cues": [
+     "Meditation cushions/guided mindfulness (nyu-14), outdoor garden (Sasaki Garden in nyu-15), games and tunes (nyu-10)"
+    ],
+    "matches_needs": [
+     "rest_and_recover"
+    ]
+   },
+   {
+    "id": "food_and_refueling",
+    "lets_student_do": "Get free snacks, slices, or beverages to restore physical energy between study blocks.",
+    "applies_to": [
+     "Event",
+     "Venue"
+    ],
+    "public_verification_cues": [
+     "Explicit free food mention ('slice, a snack, or a beverage... vegan and gluten free options' in nyu-10; 'free study break snacks' in nyu-17; 'refreshments' in nyu-12)"
+    ],
+    "matches_needs": [
+     "rest_and_recover",
+     "find_my_people"
+    ]
+   },
+   {
+    "id": "advising_and_critique",
+    "lets_student_do": "Ask tailored questions or receive feedback from librarians, advisors, peer mentors, or judges.",
+    "applies_to": [
+     "Event",
+     "Service",
+     "Opportunity"
+    ],
+    "public_verification_cues": [
+     "Onsite librarians answering citation/search questions (nyu-10), helpdesk email/office hours (col-03), judge feedback (nyu-12)"
+    ],
+    "matches_needs": [
+     "get_mentorship_and_feedback",
+     "navigate_systems",
+     "decide_a_direction"
+    ]
+   },
+   {
+    "id": "pitching_and_competing",
+    "lets_student_do": "Present original ideas publicly to compete for prizes, funding, or recognition.",
+    "applies_to": [
+     "Event",
+     "Opportunity"
+    ],
+    "public_verification_cues": [
+     "Shark Tank style pitch finale, prize money, audience fan-favorite vote (nyu-12)"
+    ],
+    "matches_needs": [
+     "get_experience",
+     "fund_my_path",
+     "get_mentorship_and_feedback"
+    ]
+   },
+   {
+    "id": "civic_action_and_outreach",
+    "lets_student_do": "Engage neighbors, teach youth hands-on science, or support local community initiatives.",
+    "applies_to": [
+     "Event",
+     "Opportunity",
+     "Organisation"
+    ],
+    "public_verification_cues": [
+     "Public youth science outreach (col-01), neighborhood artisan market (col-07), civic solutions forum (nyu-05)"
+    ],
+    "matches_needs": [
+     "contribute_beyond_self",
+     "get_experience",
+     "find_my_people"
+    ]
+   },
+   {
+    "id": "browsing_collections",
+    "lets_student_do": "Navigate physical book stacks, special collections, or curated digital research guides.",
+    "applies_to": [
+     "Venue",
+     "Service"
+    ],
+    "public_verification_cues": [
+     "Library stacks with LC call numbers (nyu-07), curated LibGuides (nyu-10, nyu-12, nyu-14)"
+    ],
+    "matches_needs": [
+     "explore_a_field",
+     "navigate_systems",
+     "build_a_skill"
+    ]
+   }
+  ]
+ },
+ "source_tiers": {
+  "principle": "Rather miss than be wrong: omitting an unverified event costs a missed suggestion, whereas asserting a wrong room, wrong date, or wrong delivery mode sends a real student across NYC to an empty room and burns trust.",
+  "tiers": [
+   {
+    "tier": 1,
+    "name": "Structured Authoritative Institutional Feeds & Signed Registries",
+    "examples_in_samples": [
+     "NYU LiveWhale JSON feeds on events.nyu.edu (nyu-05, nyu-15) with UTC timestamps, group IDs, and lat/lon",
+     "Columbia Bedework JSON feeds on events.columbia.edu (col-01, col-03, col-05) with GUIDs, UTC dates, and location aliases",
+     "Official .ics calendar files hosted on .edu (linked in nyu-01)",
+     "Registrar APIs, official campus GIS tables, and .well-known/gemiverse-agents.json manifests"
+    ],
+    "trust_scope": "Authoritative for canonical IDs, timestamps/timezones, geographic coordinates, institutional hierarchy, and cancellation flags."
+   },
+   {
+    "tier": 2,
+    "name": "Official .edu & Delegated Institutional SaaS Web Pages",
+    "examples_in_samples": [
+     "Static/CMS HTML under *.nyu.edu and *.columbia.edu (nyu-01, nyu-02, nyu-04, nyu-17, col-07)",
+     "Institutionally operated LibCal pages on nyu.libcal.com (nyu-07, nyu-09, nyu-10, nyu-12, nyu-14)"
+    ],
+    "trust_scope": "Trusted for prose summaries, related programs/departments (nyu-02), and room names AFTER passing template-boilerplate contradiction checks."
+   },
+   {
+    "tier": 3,
+    "name": "Verified Organisation Agents & Outbound-Linked Operational Pages",
+    "examples_in_samples": [
+     "External RSVP/ticketing pages explicitly linked from Tier 1/2 .edu pages: Luma (nyu-04), Eventbrite (col-01), Columbia Zoom registration (col-03)",
+     "Cryptographically verified public Agents (SPEAKS_FOR an Organisation) answering about their own Organisation's activities"
+    ],
+    "trust_scope": "Allowed only to enrich operational fields (remaining RSVP slots, external guest rules, club FAQ) on entities already anchored in Tier 1/2, or to publish events exclusively under that verified Organisation. Cannot create or modify School, AcademicUnit, Campus, or Building facts."
+   },
+   {
+    "tier": 4,
+    "name": "Unverified Web, Social Media, & Student Gemi Hearsay (Rejected from Base)",
+    "examples_in_samples": [
+     "Unlinked social posts, flyers, Reddit/Sidechat rumors, or unverified claims from student Gemis"
+    ],
+    "trust_scope": "Zero write access to the base. At most triggers a background Tier 1/2 URL lookup if an official .edu link is cited."
+   }
+  ],
+  "admission_and_contradiction_rules": [
+   {
+    "rule": "Mandatory Provenance & Completeness Gate",
+    "behavior": "Every fact stores (source_url, source_tier, fetched_at_utc, content_sha256). An Event lacking a verifiable year (e.g., nyu-02 'Sun, November 22' and nyu-17 'Thu, December 10' lack a year in visible HTML) or lacking both a physical location and confirmed online mode (nyu-01 snippet omits venue) is held in staging until corroborated by its .ics/JSON feed; if still missing, it is dropped rather than guessed."
+   },
+   {
+    "rule": "Intra-Page Logistics Contradiction Quarantine (The LibCal Rule)",
+    "behavior": "In nyu-07, nyu-10, and nyu-12, the page header states 'In-Person' with a specific room ('Bobst Rm. 619', 'Bobst Rm. 743', 'Dibner LC 400'), while the page footer states 'Please note this is an online event.' Unlike col-03 (which consistently states 'Online Online' + Zoom URL), these contradict on delivery_mode. The checker fetches the event's .ics LOCATION/DESCRIPTION; if the contradiction remains unresolved, the event is quarantined from recommendations rather than guessing 'in_person' or 'hybrid'."
+   },
+   {
+    "rule": "Schedule Header vs. Body Disagreement (Conservative Subset Rule)",
+    "behavior": "In col-07, the structured header states '3 Dec to 4 Dec' while the prose body lists three weekends ('Dec 3rd and 4th', 'Dec 10th and 11th', 'Dec 17th and 18th: 1pm - 6pm'). Checker admits Dec 3–4 (1pm–6pm) immediately where header and body agree; additional dates are admitted only if parsed cleanly without conflicting end-date metadata or corroborated by recurrence rules in the underlying calendar feed."
+   },
+   {
+    "rule": "Placeholder Restraint",
+    "behavior": "When a Tier 2 page contains explicit placeholders ('About the Lecture: More details will be shared soon' in nyu-04), the checker commits only verified shell facts (CUSP seminar series, date, 370 Jay St Rm 1201) without hallucinating talk topics, and schedules a diff re-check."
+   },
+   {
+    "rule": "Cross-Source Conflict Resolution",
+    "behavior": "For timestamps and coordinates, Tier 1 structured fields beat Tier 2 prose. For room changes or cancellations on an Event, a newer Last-Modified timestamp on the hosting Organisation's own Tier 2/3 channel beats an older cached central calendar entry; if recency cannot be proven, conflicting logistics cause the Event to be suppressed ('rather miss than be wrong')."
+   }
+  ],
+  "domain_evidence_gaps_in_samples": [
+   "Domain 1 (Institution): Undergraduate majors, degree requirements, and full registrar department trees are absent (only one related graduate program blurb in nyu-02).",
+   "Domain 2 (Space): Standing room affordances (e.g., everyday quiet-study floors, makerspace equipment, standard building turnstile hours) have no dedicated space pages in these event-only samples.",
+   "Domain 3 (Resources): Courses, open research openings, grant/fellowship calls, student jobs, and structured mentorship programs have no direct pages (only indirect competition/prize mention in nyu-12 and embedded service/guide links).",
+   "Domain 5 & 6 (Organisations & World Relations): Public AI Agents (Agent entity and SPEAKS_FOR link) and student club charter registries (NYU Engage / LionLink) have zero evidence in legacy web samples."
+  ]
+ },
+ "freshness": [
+  {
+   "entity_type": "School",
+   "staleness_window": "365 days (academic year cycle)",
+   "revisit_diff_check": "HTTP HEAD/ETag on academic_calendar_url; re-parse only if term boundary dates changed."
+  },
+  {
+   "entity_type": "AcademicUnit",
+   "staleness_window": "120 days (per semester)",
+   "revisit_diff_check": "Check official_url status/redirects, unit name diff, and role_contact_email presence in footer."
+  },
+  {
+   "entity_type": "Program",
+   "staleness_window": "180 days (annual bulletin publication)",
+   "revisit_diff_check": "Diff hash of bulletin program block for credential_type or discontinuation notice."
+  },
+  {
+   "entity_type": "Campus",
+   "staleness_window": "365 days",
+   "revisit_diff_check": "Diff campus map index list for newly added or retired campus districts."
+  },
+  {
+   "entity_type": "Building",
+   "staleness_window": "60 days (plus immediate check on campus advisories)",
+   "revisit_diff_check": "Re-check ONLY access_policy (e.g., campus ID gate changes) and closure banners; never re-verify street_address or coordinates."
+  },
+  {
+   "entity_type": "Venue",
+   "staleness_window": "90 days (per semester)",
+   "revisit_diff_check": "Diff room booking/library space directory for active status, reservable_by_students, and updated equipment/affordances."
+  },
+  {
+   "entity_type": "Event",
+   "staleness_window": "Escalating countdown: every 72h when >7d away; every 24h when 1–7d away; every 3h in final 24h before start_iso; 0 checks once final end_iso passes (immediately archived).",
+   "revisit_diff_check": "Send HTTP If-Modified-Since/ETag first (0 tokens on 304). On change, diff ONLY cancellation status, occurrences (start/end time), LOCATED_AT venue/Zoom link, registration_rule/waitlist (col-05 WAIT-LIST-LIMIT), and placeholder fill-in (nyu-04 'More details will be shared soon'). Re-run need/affordance tagging ONLY if summary hash changed."
+  },
+  {
+   "entity_type": "Course",
+   "staleness_window": "90 days (plus once prior to registration week and once during add/drop)",
+   "revisit_diff_check": "Diff registrar feed for course cancellation, term active flag, and prerequisites_text."
+  },
+  {
+   "entity_type": "Opportunity",
+   "staleness_window": "7 days while status='open'; every 24h within 72h of deadline_iso; auto-transition status to 'closed' locally at deadline_iso with zero network calls.",
+   "revisit_diff_check": "Diff ONLY status (rolling fill/early close banner), deadline_iso extensions, and apply_url HTTP 200."
+  },
+  {
+   "entity_type": "Service",
+   "staleness_window": "60 days (plus pre-finals check, reflecting seasonal shifts like Finals Resources in nyu-10)",
+   "revisit_diff_check": "Diff ONLY hours_summary, access_method, role_contact_channel, and service_url liveness."
+  },
+  {
+   "entity_type": "GrowthNeed",
+   "staleness_window": "Schema-versioned (human governance review every 365 days)",
+   "revisit_diff_check": "Schema version hash and false-positive audit on public_page_signals."
+  },
+  {
+   "entity_type": "Organisation",
+   "staleness_window": "90 days (semester club re-registration cycle)",
+   "revisit_diff_check": "Diff active recognition status in Engage/LionLink or institute directory, official_url, and public_contact_channel."
+  },
+  {
+   "entity_type": "Agent",
+   "staleness_window": "30-minute zero-LLM-token network heartbeat for liveness; 7-day cryptographic key & capability check.",
+   "revisit_diff_check": "Verify Ed25519 signature against .well-known/role record and diff supported_intents + max_tokens_per_turn manifest hash."
+  }
+ ],
+ "cost_model": {
+  "cheap_in_base": [
+   "Deterministic graph & index queries (0 LLM tokens): filtering by School, Campus, time window, cost_type='free', eligibility, SERVES_NEED, and affordances runs purely on structured indexes.",
+   "Compact entity card reads (~45–80 tokens per item): reading pre-scrubbed summaries (<= 280 chars) and typed enums for 8–10 shortlisted items costs ~600 tokens total—roughly 50x–100x cheaper than reading raw HTML pages bloated with navbars, social share widgets, and repeated legal boilerplate (nyu-01..nyu-17).",
+   "World-relation hops (0 LLM tokens): traversing RUNS, COLLABORATES_WITH, and RELATED_TO to pivot from one event to allied clubs, guides, or programs."
+  ],
+  "low_cost_p2p_agent_hop": [
+   "Direct Gemi-to-Organisation Agent query (~100–250 tokens): when an answer is missing from the base and an Agent SPEAKS_FOR the target Organisation, the Gemi asks a single bounded question capped by Agent.max_tokens_per_turn instead of fetching web pages."
+  ],
+  "forces_trip_outside": [
+   "Explicit student request for an unindexed URL or deep document detail (e.g., full degree requirement electives or external ticket pricing behind 'Get Tickets' in nyu-01) when no verified Agent can answer.",
+   "Zero-hit high-priority gap: student has an urgent active need in a narrow time/campus window with 0 verified matches in the base.",
+   "High-value verification trigger: an event a student specifically wants to attend within 24 hours has a quarantined field (e.g., nyu-07 LibCal delivery_mode conflict or nyu-04 'More details will be shared soon') requiring a lightweight .ics or conditional HTTP check."
+  ],
+  "how_base_grows_to_save_later_tokens": [
+   "Verify-Once, Read-Many Amortization: when any Gemi or background ingestor pays ~2,500 tokens to parse and verify a Tier 1/2 source page, the normalized card + provenance hash is written to the base so thousands of subsequent NYU/Columbia Gemis spend ~60 tokens instead of re-scraping.",
+   "Boilerplate Normalization into Shared Nodes: recurring prose across pages (NYU's two-week disability accommodation block in nyu-01/02/07/10/14/17, building addresses, CUSP's standard blurb in nyu-04) is stored once as a Service, Building, or Organisation node and referenced by edge ID.",
+   "Signed Agent FAQ Crystallization: when an Organisation's verified Agent repeatedly answers the same impersonal factual question (e.g., 'open to non-majors' or weekly club room), the signed fact is promoted onto the Organisation/Opportunity node in the base, eliminating repeat P2P token spend.",
+   "Strict Treasure Gate & Post-Event Compaction ('pick treasure, do not pile up junk'): pages without checkable student-facing affordances/needs (HR memos, alumni galas, K-12 events lacking student volunteer orgs) are rejected at ingestion; expired Events are stripped from hot read indexes immediately after end_iso while keeping lightweight COLLABORATES_WITH edges intact."
+  ]
+ },
+ "privacy_boundary": {
+  "exact_rule": "Two-Part Absolute Ban: (1) No Person-Describing Facts—no entity, field, summary, or index in the base may identify, describe, evaluate, biographize, or store personal contact details (personal NetID/UNI email, personal phone, personal handle, DOB) for any natural person (student, faculty, staff, speaker, performer, or organizer). (2) No Behavioral or Relational Student Traces—no individual or Gemi query, growth need state, RSVP, physical presence, attendance count, rating, or person-to-person relationship may ever enter the base, whether raw or k-anonymized. Only institutions, spaces, impersonal needs, opportunities/works, organisations, role channels, and verified organisation AI agents may exist in the base.",
+  "tricky_examples": [
+   {
+    "scenario": "1. Publicly published speaker names, bios, performers, and staff contacts on official .edu event pages (e.g., nyu-04 'Research Seminar: Alessandro Rizzo' + 'About the Speaker', nyu-09 'Event Organizer: Jenny Rossberg', nyu-15 jazz trio player names, col-01 'Kent Katner / 2128533960', col-07 'Emily Ailts / ea3101@columbia.edu').",
+    "ruling": "REJECT all person fields, bios, and personal contacts; PERMIT opaque verbatim work/event titles only without person indexing. Specifically: speaker biographies (nyu-04), performer rosters (nyu-15), LibGuide authors ('by Laurie Murphy' in nyu-10), organizer names (nyu-09), staff phones (col-01), and personal UNI emails ('ea3101@columbia.edu' in col-07) are scrubbed before write, while institutional role inboxes ('cusp.education@nyu.edu', 'zotero-help@library.columbia.edu', 'mpap-concertmusic@nyu.edu') are kept. If an official event title contains a name ('Research Seminar: Alessandro Rizzo' or 'City of Fortune -- A Book Talk with Mason B. Williams'), Event.title keeps the verbatim title solely so students can match campus signage, but no speaker field, Person node, or person-lookup index is created."
+   },
+   {
+    "scenario": "2. Covering 'mentors' and 'research openings' in Domain 3 when students equate mentorship and lab openings with specific professors or upperclassmen.",
+    "ruling": "REJECT individual mentor profiles; MODEL mentorship and research strictly as impersonal Opportunity/Service nodes run by an Organisation and fronted by a role Agent or P2P Gemi handshake. For example, 'Steinhardt Peer Mentorship Program' or 'CUSP Urban Informatics Research Opening' enters the base linked to Organisation:CUSP and its Agent. If a professor or upperclassman mentors in Gemiverse, a student's Gemi discovers the impersonal Opportunity in the base, initiates a direct P2P conversation with the lab Agent or mentor's Gemi, and—upon mutual consent—stores the human mentor relationship strictly in each Gemi's private name cards."
+   },
+   {
+    "scenario": "3. Writing 'anonymous' Gemi crowd signals back to the base—such as '11 Gemis plan to attend Finals Study Break' or 'Gemis report Bobst Rm 743 is loud right now'.",
+    "ruling": "REJECT completely. Even unnamed Gemi counts leak individual presence and private needs in small rooms or niche clubs (e.g., count=1 in a seminar room exposes the lone student present) and introduce uncheckable subjective gossip into a public-fact graph. Only official institutional public feeds (e.g., an official university library sensor API on .edu or Bedework's 'WAIT-LIST-LIMIT: 0' in col-05) may enter the base; friend coordination ('who among my friends is going?') happens strictly P2P using private name cards."
+   }
+  ]
+ },
+ "projection": {
+  "strict_provenance_invariant": "Every visible pixel/object in Gemiverse traces deterministically to either the Shared Base (world geometry, signage, booths, boards, landmarks, public org agents), the Student's Private Side (the student's room, own Gemi, private name-card contacts, personal bookmarks, private need highlights), or an explicit Read-Only Local Overlay (Private filter/glow rendered locally on top of a Base object without writing back to the Base). Zero ungrounded decorative entities exist.",
+  "world_zones": {
+   "student_room": "100% Private Side container (student's own Gemi avatar, personal calendar desk, saved name-card rolodex), plus pinned portals/posters that dereference immutable Base entity IDs.",
+   "campus_map_and_landmarks": "Base-driven 2D/3D map per School and Campus showing physical Building landmarks (e.g., Bobst Library, Paulson Center, 370 Jay St, The Forum, IAB, Greene Science Center) and outdoor Venues (Sasaki Garden), alongside the four shared functional hub buildings.",
+   "four_shared_functional_buildings": {
+    "Library_learning": "Projects AcademicUnit wings, Program folios, Course catalogs, research/skill Events (nyu-04, nyu-07, col-03, col-05), and academic/guide Services (nyu-10 Finals Resources, col-03 Zotero Help).",
+    "Clubs": "Projects student_club_collective and lab_center_institute Organisations (Nevermind the Noise, CUNO, CRACS Co-Lab), their live SPEAKS_FOR Agents at club booths, and COLLABORATES_WITH banners linking allied booths.",
+    "Commons_meeting_people": "Projects social/cultural/wellness Events (nyu-01, nyu-02, nyu-10, nyu-14, nyu-15, nyu-17, col-07), social/restorative Venue portals, and ephemeral live P2P peer Gemi presence (Private/P2P layer, never stored in Base).",
+    "Career_opportunities": "Projects Opportunity quest boards (competitions like Hack Dibner in nyu-12, research openings, funding, jobs, mentorship cohorts) and career/advising Service kiosks."
+   }
+  },
+  "by_entity_type": [
+   {
+    "entity_type": "School",
+    "source_side": "base",
+    "visual_appearance": "Top-level world realm/skybox and campus switcher crest (NYU Violet realm vs. Columbia Lions realm)."
+   },
+   {
+    "entity_type": "AcademicUnit",
+    "source_side": "base",
+    "visual_appearance": "Named alcoves/wings inside the Library/learning building (e.g., Steinhardt Wing -> MPAP Alcove; Tandon Wing) and banners on affiliated campus landmarks."
+   },
+   {
+    "entity_type": "Program",
+    "source_side": "base",
+    "visual_appearance": "Interactive curriculum folios/pedestals inside its AcademicUnit alcove in Library/learning (e.g., 'Concert Composition' folio)."
+   },
+   {
+    "entity_type": "Campus",
+    "source_side": "base",
+    "visual_appearance": "Distinct navigable map districts connected by transit portals (Washington Square, Brooklyn Jay St, Morningside Heights, Manhattanville)."
+   },
+   {
+    "entity_type": "Building",
+    "source_side": "base",
+    "visual_appearance": "3D/2D architectural school landmarks on the Campus Map (Bobst, Pless Hall, 370 Jay St, The Forum, IAB) displaying a checkable gate badge from Building.access_policy."
+   },
+   {
+    "entity_type": "Venue",
+    "source_side": "base",
+    "visual_appearance": "Enterable interior rooms inside Building landmarks (Bobst Rm 743, Pless First Floor Lounge) or open-air parks on the map (Sasaki Garden), displaying standardized icon badges for verified Venue.affordances."
+   },
+   {
+    "entity_type": "Event",
+    "source_side": "base (with optional local private relevance glow)",
+    "visual_appearance": "Time-synced posters and live lantern beacons at its physical Venue/Building landmark AND mirrored inside the matching functional hub (workshops/talks in Library; study breaks/concerts/meditations in Commons; showcases in Career). Online events (col-03 Zotero) project directly as virtual seminar rooms inside Library/learning."
+   },
+   {
+    "entity_type": "Course",
+    "source_side": "base",
+    "visual_appearance": "Term catalog volumes and syllabus cards shelved in the Library/learning building under the offering AcademicUnit."
+   },
+   {
+    "entity_type": "Opportunity",
+    "source_side": "base",
+    "visual_appearance": "Pinned bounty/quest cards on the Career/opportunities board sorted by opportunity_kind (research, competition, funding, job, mentorship) with live countdown clocks to deadline_iso."
+   },
+   {
+    "entity_type": "Service",
+    "source_side": "base",
+    "visual_appearance": "Permanent staffed-style information kiosks and guide stands inside Library/learning (Reference Services, LibGuides), Commons (Accessibility & Wellbeing), or Career (Advising)."
+   },
+   {
+    "entity_type": "GrowthNeed",
+    "source_side": "base (selection state is private)",
+    "visual_appearance": "Wayfinding compass lenses/filter sigils in the HUD and color-coded signposts across the four functional buildings; which sigil is currently active for a student is rendered strictly from the Private Side."
+   },
+   {
+    "entity_type": "Organisation",
+    "source_side": "base",
+    "visual_appearance": "Persistent club/lab booths in the Clubs building and office plaques in landmarks, connected by visible ribbons/archways where COLLABORATES_WITH edges exist."
+   },
+   {
+    "entity_type": "Agent",
+    "source_side": "base",
+    "visual_appearance": "Official non-person herald/mascot construct standing at its Organisation's booth in Clubs (or unit desk in Library/Career) bearing a cryptographic verified seal that a student's Gemi can walk up to and talk with."
+   }
+  ],
+  "private_side_only_elements": [
+   {
+    "visible_thing": "Student's own Room interior, saved flyers on personal corkboard, and personal Gemi avatar",
+    "source_side": "private",
+    "notes": "Stored solely in the student's local/private store; pinned flyers hold read-only pointers to Base Event/Opportunity IDs."
+   },
+   {
+    "visible_thing": "Other students' Gemis met in Commons and saved Peer/Mentor Name Cards",
+    "source_side": "private (plus ephemeral P2P session)",
+    "notes": "Peer-to-peer handshakes exchange name cards directly between Gemis; neither the encounter nor the contact card ever touches the Base."
+   },
+   {
+    "visible_thing": "'For You' shimmer/compass trail highlighting specific booths, rooms, or events",
+    "source_side": "joint_local_overlay (private need state applied locally over baseSERVES_NEED + affordances)",
+    "notes": "Computed on the Gemi's own budget/device; the Base never sees which items glowed for which student."
+   }
+  ]
+ },
+ "decisions": [
+  {
+   "choice_weighed": "One monolithic Resource entity vs. nine micro-types (one per Domain 3 noun) vs. four lifecycle-aligned types (Event, Course, Opportunity, Service).",
+   "chosen": "Four lifecycle-aligned types (Event, Course, Opportunity, Service).",
+   "why": "Freshness cadences, required checkable fields, and world projections fracture cleanly along these four lifecycles (hourly/daily occurrences for Event, term registrar schedules for Course, deadline/application status for Opportunity, standing access hours for Service) while keeping the entire schema at 13 student-understandable types."
+  },
+  {
+   "choice_weighed": "Representing faculty, speakers, and mentors as limited public Person nodes vs. banning Person nodes altogether in favor of impersonal Opportunity (mentorship), Organisation, Agent, and private name cards.",
+   "chosen": "Zero Person nodes or person-describing fields in the base.",
+   "why": "Directly honors the non-negotiable privacy rule, avoids stale/defamatory dossiers in a shared decentralized graph, and exploits Gemiverse's P2P architecture where human mentorship connections belong in consenting Gemis' private name cards."
+  },
+  {
+   "choice_weighed": "Tagging Venues directly with GrowthNeeds only vs. introducing observable Affordances between Places/Resources and GrowthNeeds.",
+   "chosen": "Two-layer bridge: checkable Affordances (what a student physically/practically does) mapped to GrowthNeeds (why they seek it).",
+   "why": "Whether Pless Hall Lounge has snacks and casual seating (nyu-17) or Bobst Rm 745 has meditation cushions (nyu-14) is objectively verifiable on a public source, whereas whether a student uses quiet seating to 'build_a_skill' or 'rest_and_recover' depends on private context."
+  },
+  {
+   "choice_weighed": "Auto-resolving LibCal's 'In-Person + Room' vs. 'Please note this is an online event' footer conflict (nyu-07, nyu-10, nyu-12) by trusting the top header vs. labelling 'hybrid' vs. quarantining until .ics/agent verification.",
+   "chosen": "Quarantine conflicting delivery_mode unless deterministically resolved by the Tier 1 .ics payload.",
+   "why": "Enforces 'rather miss than be wrong' on high-regret physical logistics; guessing 'hybrid' would invent a nonexistent Zoom link, while blindly trusting headers could break on genuine last-minute moves online."
+  },
+  {
+   "choice_weighed": "Strict Campus -> Building -> Venue three-tier requirement on every location vs. flexible spatial attachment.",
+   "chosen": "Allow outdoor Venues directly ON_CAMPUS (Sasaki Garden in nyu-15) and allow LOCATED_AT to target Building directly when no room is stated ('20 Cooper Square' in nyu-05, 'The Forum' in col-07).",
+   "why": "Eliminates synthetic placeholder nodes ('Outdoor Building' or 'Unknown Room') so every spatial node corresponds 1-to-1 to a verifiable real-world entity."
+  },
+  {
+   "choice_weighed": "Storing the four shared functional buildings (Library, Clubs, Commons, Career) as synthetic Building rows in the base vs. treating them as deterministic view projections alongside real physical Building landmarks.",
+   "chosen": "Pure projection views over Base entities, while Base Building rows store only real brick-and-mortar campus structures.",
+   "why": "Preserves strict public-source checkability for all Space entities in the base while giving online workshops (col-03), cross-campus clubs, and non-spatial funding calls a natural spatial home in the UI."
+  },
+  {
+   "choice_weighed": "Allowing k-anonymized Gemi interest/attendance counters into the base to rank 'popular' events vs. keeping the base 100% free of student telemetry.",
+   "chosen": "Zero student/Gemi telemetry in the base.",
+   "why": "Prevents small-set presence leaks in niche seminars, blocks popularity cascades from burying high-fit niche opportunities ('pick treasure, do not pile up junk'), and keeps base trust purely source-verifiable."
+  }
+ ],
+ "uncertain": [
+  {
+   "what_is_uncertain": "Whether NYU LibCal's contradictory footer ('Please note this is an online event' appearing on 3 of 5 NYU LibCal samples: nyu-07, nyu-10, nyu-12) is cleanly absent from the linked .ics files or duplicated inside .ics DESCRIPTION, which determines whether strict quarantine drops 0% or 60% of NYU Library events.",
+   "measurement_today_to_settle_it": "Fetch 200 live nyu.libcal.com event HTML pages paired with their .ics downloads and LibCal API JSON payloads; measure contradiction rate and verify whether .ics LOCATION/URL deterministically distinguishes physical-only from Zoom events with 100% precision."
+  },
+  {
+   "what_is_uncertain": "What fraction of campus Venues referenced in event feeds ('IAB Room 406', 'Dibner LC 400', 'Pless Hall First Floor Lounge') actually have Tier 1/2 public space-directory pages documenting standing everyday affordances and open hours.",
+   "measurement_today_to_settle_it": "Extract 100 unique Venue strings from a week of NYU LiveWhale and Columbia Bedework feeds, crawl official library/facilities space directories, and measure the percentage of Venues yielding >=1 checkable standing affordance and access policy."
+  },
+  {
+   "what_is_uncertain": "Whether 11 GrowthNeeds tagged via public_page_signals stay selective (1–2 needs per resource) or over-fire (4+ needs per event), inflating candidate list sizes and Gemi token spend.",
+   "measurement_today_to_settle_it": "Have 3 independent student annotators label 150 real NYU/Columbia resources across the 11 needs, compute inter-annotator Cohen's kappa, and measure average candidate count and token cost per simulated Gemi query."
+  },
+  {
+   "what_is_uncertain": "Cold-start coverage of verified Organisation Agents (SPEAKS_FOR): when <10% of student clubs run live Gemiverse Agents at launch, how often Gemis are forced into expensive external web trips.",
+   "measurement_today_to_settle_it": "Audit 100 active clubs on NYU Engage and Columbia LionLink for checkable public FAQ completeness, and replay 500 real student campus questions against a prototype base at 0%, 15%, and 50% simulated Agent adoption to measure daily token burn per Gemi."
+  },
+  {
+   "what_is_uncertain": "Whether NYU LiveWhale, NYU LibCal, and Columbia Bedework honor HTTP ETag / If-Modified-Since accurately, and when real-world room swaps or cancellations actually occur prior to start_iso.",
+   "measurement_today_to_settle_it": "Poll 300 upcoming NYU and Columbia event URLs every 2 hours over 14 days to log HTTP 304 hit rates and plot the empirical cumulative distribution of time/room/cancellation edits before event start."
+  },
+  {
+   "what_is_uncertain": "Whether retaining verbatim speaker names inside opaque Event.title strings ('Research Seminar: Alessandro Rizzo' in nyu-04) vs. stripping them to series names ('CUSP Urban Science Research Seminar') helps or hurts students when prose topic details are still 'coming soon'.",
+   "measurement_today_to_settle_it": "Sample 200 academic seminar listings across NYU and Columbia to measure what percentage contain zero subject keywords once person names are removed from the title, and run a 20-student A/B test on poster recognition."
+  }
+ ]
+}
