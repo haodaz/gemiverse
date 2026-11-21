@@ -5,11 +5,16 @@ export const LOOKS = {
     hairStyle: "longStraight", hairColor: "#1f1a1c", highlight: "#4a3a3f", fringe: "full", top: "cardigan", topColor: "#b8a2e3", bottom: "pleatedSkirt", bottomColor: "#3d3648", shoes: "maryJanes", shoeColor: "#2b2230", socks: "knee", sockColor: "#ffffff", accent: "#f2a7b8" },
   pip: { skin: "#a86f4c", bodyWidth: 1.05, bodyHeight: 1.04, eye: "#2f1d14", eyeShape: "round", brow: "straight", browColor: "#1d1512", lip: "#9a5a4a", blush: true, freckles: true, lashes: false,
     hairStyle: "curlyMedium", hairColor: "#2a1d18", highlight: "#5a4034", fringe: "none", top: "hoodie", topColor: "#8fc1e8", bottom: "jeans", bottomColor: "#4a5f8a", shoes: "sneakers", shoeColor: "#f6c453", socks: "ankle", sockColor: "#ffffff", accent: "#f6c453" },
+  kai: { skin: "#eac7a8", bodyWidth: 1.08, bodyHeight: 1.05, eye: "#3b2a22", eyeShape: "almond", brow: "straight", browColor: "#1f1a1c", lip: "#c98a80", blush: false, freckles: false, lashes: false,
+    hairStyle: "shortLayered", hairColor: "#1f1a1c", highlight: "#4a4046", fringe: "sideSwept", top: "hoodie", topColor: "#5b7bb5", bottom: "trousers", bottomColor: "#3d3f4a", shoes: "sneakers", shoeColor: "#ffffff", socks: "ankle", sockColor: "#ffffff", accent: "#f6c453" },
+  leo: { skin: "#8d5a3c", bodyWidth: 1.15, bodyHeight: 1.08, eye: "#2f1d14", eyeShape: "round", brow: "arched", browColor: "#1d1512", lip: "#8a5548", blush: false, freckles: false, lashes: false,
+    hairStyle: "buzz", hairColor: "#1d1512", highlight: "#3a2a22", fringe: "none", top: "blazer", topColor: "#4a5568", bottom: "jeans", bottomColor: "#34425e", shoes: "boots", shoeColor: "#5a3d2a", socks: "none", sockColor: "#ffffff", accent: "#7fb48a" },
   wide: { skin: "#e8b796", bodyWidth: 1.28, bodyHeight: 0.94, eye: "#3a6b4a", eyeShape: "droopy", brow: "arched", browColor: "#6b4a2f", lip: "#c97a7a", blush: true, freckles: true, lashes: true,
     hairStyle: "bob", hairColor: "#8a5a34", highlight: "#c08a55", fringe: "sideSwept", top: "sweater", topColor: "#7fb48a", bottom: "trousers", bottomColor: "#d9c08a", shoes: "boots", shoeColor: "#6b4a2f", socks: "none", sockColor: "#ffffff", accent: "#e98b6d" },
 };
 
 export async function buildDoll(THREE, look, kit, report = console.warn) {
+  globalThis.THREE ??= THREE;   // some generated helpers read THREE from the page although the brief said not to
   const load = async (n) => { try { return await import(`./doll-${n}.js`); } catch (e) { report(`doll-${n}: ${e.message}`); return null; } };
   // newer versions of a module win when they exist (face2 over face, hair2 over hair)
   const first = async (...names) => { for (const n of names) { try { return await import(`./doll-${n}.js`); } catch {} } report(`doll-${names.at(-1)}: not available`); return null; };

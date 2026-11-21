@@ -1,4 +1,3 @@
-```js
 export const META = {
   id: 'dorm-student',
   name: 'Dorm Student',
