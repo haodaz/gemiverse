@@ -1,0 +1,252 @@
+[
+ {
+  "id": "nyu-01",
+  "set": "design",
+  "school": "NYU",
+  "status": 200,
+  "chars": 2249,
+  "quoteFound": false,
+  "usable": false,
+  "title": "TDS: COLLABORATION: The House of Bernarda Alba"
+ },
+ {
+  "id": "nyu-02",
+  "set": "design",
+  "school": "NYU",
+  "status": 200,
+  "chars": 1797,
+  "quoteFound": true,
+  "usable": true,
+  "title": "Nevermind the Noise"
+ },
+ {
+  "id": "nyu-03",
+  "set": "exam",
+  "school": "NYU",
+  "status": 200,
+  "chars": 1719,
+  "quoteFound": true,
+  "usable": true,
+  "title": "Composers Collective (Fall Concert)"
+ },
+ {
+  "id": "nyu-04",
+  "set": "design",
+  "school": "NYU",
+  "status": 200,
+  "chars": 1877,
+  "quoteFound": true,
+  "usable": true,
+  "title": "Research Seminar: Alessandro Rizzo"
+ },
+ {
+  "id": "nyu-05",
+  "set": "design",
+  "school": "NYU",
+  "status": 200,
+  "chars": 379,
+  "quoteFound": false,
+  "usable": false,
+  "title": "Berkley Institute Event: Money in Politics"
+ },
+ {
+  "id": "nyu-06",
+  "set": "exam",
+  "school": "NYU",
+  "status": 200,
+  "chars": 3389,
+  "quoteFound": true,
+  "usable": true,
+  "title": "A Beginner's Crash Course in APA Style [RESCHEDULE"
+ },
+ {
+  "id": "nyu-07",
+  "set": "design",
+  "school": "NYU",
+  "status": 200,
+  "chars": 3094,
+  "quoteFound": true,
+  "usable": true,
+  "title": "30 Minute Lightning Lesson: From Search to Shelf ("
+ },
+ {
+  "id": "nyu-08",
+  "set": "exam",
+  "school": "NYU",
+  "status": 200,
+  "chars": 3244,
+  "quoteFound": true,
+  "usable": true,
+  "title": "Mindfulness Moment at Bobst"
+ },
+ {
+  "id": "nyu-09",
+  "set": "design",
+  "school": "NYU",
+  "status": 200,
+  "chars": 1619,
+  "quoteFound": true,
+  "usable": true,
+  "title": "NYU CRACS Co-Lab Presents: \"Racial Exhaustion\" by "
+ },
+ {
+  "id": "nyu-10",
+  "set": "design",
+  "school": "NYU",
+  "status": 200,
+  "chars": 3029,
+  "quoteFound": true,
+  "usable": true,
+  "title": "Finals Study Break"
+ },
+ {
+  "id": "nyu-11",
+  "set": "exam",
+  "school": "NYU",
+  "status": 200,
+  "chars": 2474,
+  "quoteFound": true,
+  "usable": true,
+  "title": "Prompt Clinic: From Bad Prompts to Better Results"
+ },
+ {
+  "id": "nyu-12",
+  "set": "design",
+  "school": "NYU",
+  "status": 200,
+  "chars": 2352,
+  "quoteFound": true,
+  "usable": true,
+  "title": "Hack Dibner 2026 Final Showcase"
+ },
+ {
+  "id": "nyu-13",
+  "set": "exam",
+  "school": "NYU",
+  "status": 200,
+  "chars": 3038,
+  "quoteFound": true,
+  "usable": true,
+  "title": "Special Collections Crafting: Journal and Zine Mak"
+ },
+ {
+  "id": "nyu-14",
+  "set": "design",
+  "school": "NYU",
+  "status": 200,
+  "chars": 1966,
+  "quoteFound": true,
+  "usable": true,
+  "title": "Meditations on Earth"
+ },
+ {
+  "id": "nyu-15",
+  "set": "design",
+  "school": "NYU",
+  "status": 200,
+  "chars": 353,
+  "quoteFound": false,
+  "usable": false,
+  "title": "Sasaki Luminaria"
+ },
+ {
+  "id": "nyu-16",
+  "set": "exam",
+  "school": "NYU",
+  "status": 200,
+  "chars": 1685,
+  "quoteFound": true,
+  "usable": true,
+  "title": "NYU Brass Choir"
+ },
+ {
+  "id": "nyu-17",
+  "set": "design",
+  "school": "NYU",
+  "status": 200,
+  "chars": 1107,
+  "quoteFound": true,
+  "usable": true,
+  "title": "Study Break Snacks"
+ },
+ {
+  "id": "nyu-18",
+  "set": "exam",
+  "school": "NYU",
+  "status": 200,
+  "chars": 1614,
+  "quoteFound": true,
+  "usable": true,
+  "title": "Second Avenue Dance Company December Concert"
+ },
+ {
+  "id": "col-01",
+  "set": "design",
+  "school": "Columbia",
+  "status": 403,
+  "chars": 0,
+  "quoteFound": false,
+  "usable": false,
+  "title": "Saturday Science: Your Body in Motion"
+ },
+ {
+  "id": "col-02",
+  "set": "exam",
+  "school": "Columbia",
+  "status": 403,
+  "chars": 0,
+  "quoteFound": false,
+  "usable": false,
+  "title": "The Columbia Colloquium: Wonder"
+ },
+ {
+  "id": "col-03",
+  "set": "design",
+  "school": "Columbia",
+  "status": 403,
+  "chars": 0,
+  "quoteFound": false,
+  "usable": false,
+  "title": "Introduction to Zotero"
+ },
+ {
+  "id": "col-04",
+  "set": "exam",
+  "school": "Columbia",
+  "status": 403,
+  "chars": 0,
+  "quoteFound": false,
+  "usable": false,
+  "title": "Wholesome Book Time: Brrr! It's Winter in the Arch"
+ },
+ {
+  "id": "col-05",
+  "set": "design",
+  "school": "Columbia",
+  "status": 403,
+  "chars": 0,
+  "quoteFound": false,
+  "usable": false,
+  "title": "\"City of Fortune\" -- A Book Talk with Mason B. Wil"
+ },
+ {
+  "id": "col-06",
+  "set": "exam",
+  "school": "Columbia",
+  "status": 403,
+  "chars": 0,
+  "quoteFound": false,
+  "usable": false,
+  "title": "Database Demo: See How Research Databases Work"
+ },
+ {
+  "id": "col-07",
+  "set": "design",
+  "school": "Columbia",
+  "status": 200,
+  "chars": 1249,
+  "quoteFound": true,
+  "usable": true,
+  "title": "Holiday Market at The Lee C. Bollinger Forum"
+ }
+]

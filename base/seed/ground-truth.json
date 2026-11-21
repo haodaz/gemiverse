@@ -1,0 +1,305 @@
+{
+  "generated": "2026-11-20",
+  "window": [
+    "2026-11-21",
+    "2026-12-12"
+  ],
+  "verified_via_legend": {
+    "static_html": "Fetched page HTML with plain curl (browser UA); title/date/time/place and quote appear in the HTML text.",
+    "json_feed": "Page itself is JS-rendered or bot-blocked for scripts; fields and quote come from the site's own public JSON feed that the page renders. A real browser should show the same text."
+  },
+  "counts": {
+    "total": 25,
+    "nyu": 18,
+    "columbia": 7,
+    "static_html": 17
+  },
+  "events": [
+    {
+      "school": "NYU",
+      "title": "TDS: COLLABORATION: The House of Bernarda Alba",
+      "date": "2026-11-21",
+      "time": "20:00-21:30",
+      "place": "Iris Cantor Theatre, 38 W. Houston St (location from NYU calendar feed)",
+      "url": "https://tisch.nyu.edu/drama/events/tisch-drama-stage--the-house-of-bernarda-alba",
+      "quote": "Lorca's seminal play The House of Bernarda Alba follows a family of five daughters in rural Spain",
+      "verified_via": "static_html",
+      "listed_on": "https://events.nyu.edu/",
+      "note": "Last performance of a Nov 14-21 run; page itself lists dates/times, venue came from the calendar feed."
+    },
+    {
+      "school": "NYU",
+      "title": "Nevermind the Noise",
+      "date": "2026-11-22",
+      "time": "15:00-16:30",
+      "place": "Paulson Center, Room 570, 181 Mercer Street",
+      "url": "https://steinhardt.nyu.edu/events/2026-11/nevermind-noise",
+      "quote": "Nevermind the Noise, a collective of graduate composers, is committed to the composition and performance of new experimental concert music.",
+      "verified_via": "static_html",
+      "listed_on": "https://events.nyu.edu/"
+    },
+    {
+      "school": "NYU",
+      "title": "Composers Collective (Fall Concert)",
+      "date": "2026-11-22",
+      "time": "20:00-21:30",
+      "place": "Room 620, 181 Mercer Street",
+      "url": "https://steinhardt.nyu.edu/events/2026-11/composers-collective",
+      "quote": "The Composers Collective Fall concert showcases the creative diversity of our undergraduate composition majors.",
+      "verified_via": "static_html",
+      "listed_on": "https://events.nyu.edu/"
+    },
+    {
+      "school": "NYU",
+      "title": "Research Seminar: Alessandro Rizzo",
+      "date": "2026-11-23",
+      "time": "13:00-14:00",
+      "place": "370 Jay St, Room 1201, Brooklyn",
+      "url": "http://engineering.nyu.edu/events/2026/11/23/research-seminar-alessandro-rizzo",
+      "quote": "This event will be held in Room 1201 at 370 Jay St.",
+      "verified_via": "static_html",
+      "listed_on": "https://events.nyu.edu/"
+    },
+    {
+      "school": "NYU",
+      "title": "Berkley Institute Event: Money in Politics",
+      "date": "2026-11-23",
+      "time": "16:00-17:30",
+      "place": "20 Cooper Square (poster: 2nd Floor)",
+      "url": "https://events.nyu.edu/event/412484-berkley-institute-event-money-in-politics",
+      "quote": "Just about everyone thinks there is too much money in politics",
+      "verified_via": "json_feed",
+      "listed_on": "https://events.nyu.edu/",
+      "note": "events.nyu.edu event pages are JS-rendered; text taken from the public LiveWhale JSON feed. Poster = posters/poster-01.jpg"
+    },
+    {
+      "school": "NYU",
+      "title": "A Beginner's Crash Course in APA Style [RESCHEDULED]",
+      "date": "2026-11-24",
+      "time": "13:30-14:30",
+      "place": "Online (Zoom)",
+      "url": "https://nyu.libcal.com/event/17975541",
+      "quote": "Join this workshop to learn the basics of APA citation style",
+      "verified_via": "static_html",
+      "listed_on": "https://nyu.libcal.com/calendar"
+    },
+    {
+      "school": "NYU",
+      "title": "30 Minute Lightning Lesson: From Search to Shelf (Call Numbers)",
+      "date": "2026-12-01",
+      "time": "12:30-13:00",
+      "place": "Bobst Library, 6th Floor, Rm. 619",
+      "url": "https://nyu.libcal.com/event/17975327",
+      "quote": "Join this short 30 minute lesson to learn how library call numbers are organized",
+      "verified_via": "static_html",
+      "listed_on": "https://nyu.libcal.com/calendar"
+    },
+    {
+      "school": "NYU",
+      "title": "Mindfulness Moment at Bobst",
+      "date": "2026-12-01",
+      "time": "15:00-15:30",
+      "place": "Bobst Library, 7th Floor, Rm. 745",
+      "url": "https://nyu.libcal.com/event/17533920",
+      "quote": "Registration appreciated, walk-ins welcome.",
+      "verified_via": "static_html",
+      "listed_on": "https://nyu.libcal.com/calendar"
+    },
+    {
+      "school": "NYU",
+      "title": "NYU CRACS Co-Lab Presents: \"Racial Exhaustion\" by Ralina Joseph",
+      "date": "2026-12-01",
+      "time": "17:00-18:30",
+      "place": "IHDSC Seminar Room, 196 Mercer Street, 8th Floor",
+      "url": "https://nyu.libcal.com/event/18058755",
+      "quote": "The event is free to attend.",
+      "verified_via": "static_html",
+      "listed_on": "https://nyu.libcal.com/calendar"
+    },
+    {
+      "school": "NYU",
+      "title": "Finals Study Break",
+      "date": "2026-12-02",
+      "time": "14:00-17:00",
+      "place": "Bobst Library, 7th Floor, Rm. 743",
+      "url": "https://nyu.libcal.com/event/17950942",
+      "quote": "Refuel with a slice, a snack, or a beverage, hang out, and reset at our semesterly Study Break!",
+      "verified_via": "static_html",
+      "listed_on": "https://nyu.libcal.com/calendar"
+    },
+    {
+      "school": "NYU",
+      "title": "Prompt Clinic: From Bad Prompts to Better Results",
+      "date": "2026-12-03",
+      "time": "13:00-16:00",
+      "place": "Bobst Library, 5th floor, SPARK Lab",
+      "url": "https://nyu.libcal.com/event/18030132",
+      "quote": "A hands-on session where students experiment with prompting, compare outputs",
+      "verified_via": "static_html",
+      "listed_on": "https://nyu.libcal.com/calendar"
+    },
+    {
+      "school": "NYU",
+      "title": "Hack Dibner 2026 Final Showcase",
+      "date": "2026-12-07",
+      "time": "16:00-18:00",
+      "place": "Dibner Library, LC 400 (Brooklyn)",
+      "url": "https://nyu.libcal.com/event/18010395",
+      "quote": "Vote for the fan favorite and enjoy refreshments!",
+      "verified_via": "static_html",
+      "listed_on": "https://nyu.libcal.com/calendar"
+    },
+    {
+      "school": "NYU",
+      "title": "Special Collections Crafting: Journal and Zine Making Workshop",
+      "date": "2026-12-09",
+      "time": "12:00-13:30",
+      "place": "Bobst Library, 2nd Floor, NYU Special Collections",
+      "url": "https://nyu.libcal.com/event/17953886",
+      "quote": "Supplies will be provided and no experience is necessary.",
+      "verified_via": "static_html",
+      "listed_on": "https://nyu.libcal.com/calendar"
+    },
+    {
+      "school": "NYU",
+      "title": "Meditations on Earth",
+      "date": "2026-12-09",
+      "time": "17:00-18:00",
+      "place": "Bobst Library, 7th Floor, Rm. 745",
+      "url": "https://nyu.libcal.com/event/17316004",
+      "quote": "Registration is not required but encouraged.",
+      "verified_via": "static_html",
+      "listed_on": "https://nyu.libcal.com/calendar",
+      "note": "Weekly series (also Dec 2, Dec 16). Poster = posters/poster-04.jpg"
+    },
+    {
+      "school": "NYU",
+      "title": "Sasaki Luminaria",
+      "date": "2026-12-09",
+      "time": "18:00",
+      "place": "Sasaki Garden",
+      "url": "https://events.nyu.edu/event/sasaki-luminaria-2026",
+      "quote": "Enjoy live music by the NYU Jazz Trio in a luminous setting",
+      "verified_via": "json_feed",
+      "listed_on": "https://events.nyu.edu/",
+      "note": "JS-rendered event page; from LiveWhale JSON feed. Poster = posters/poster-03.jpg"
+    },
+    {
+      "school": "NYU",
+      "title": "NYU Brass Choir",
+      "date": "2026-12-09",
+      "time": "20:00-21:30",
+      "place": "Paulson Center, Room 620, 181 Mercer Street",
+      "url": "https://steinhardt.nyu.edu/events/2026-12/nyu-brass-choir",
+      "quote": "The NYU Brass Choir presents an evening of dynamic and diverse brass ensemble music.",
+      "verified_via": "static_html",
+      "listed_on": "https://events.nyu.edu/"
+    },
+    {
+      "school": "NYU",
+      "title": "Study Break Snacks",
+      "date": "2026-12-10",
+      "time": "15:00-17:00",
+      "place": "First Floor Lounge, Pless Hall",
+      "url": "https://steinhardt.nyu.edu/events/2026-12/study-break-snacks",
+      "quote": "Need a quick brain break from hitting the books?",
+      "verified_via": "static_html",
+      "listed_on": "https://events.nyu.edu/"
+    },
+    {
+      "school": "NYU",
+      "title": "Second Avenue Dance Company December Concert",
+      "date": "2026-12-10",
+      "time": "19:30 (also Dec 11 and 12)",
+      "place": "Jack Crystal Theater, 5th Floor, 111 2nd Avenue (address from NYU calendar feed)",
+      "url": "https://tisch.nyu.edu/dance/events/sadc-december-concert",
+      "quote": "All performances begin at 7:30pm ET.",
+      "verified_via": "static_html",
+      "listed_on": "https://events.nyu.edu/",
+      "note": "RSVP opens Monday, November 30, 2026 per the page."
+    },
+    {
+      "school": "Columbia",
+      "title": "Saturday Science: Your Body in Motion",
+      "date": "2026-11-21",
+      "time": "13:00-16:00",
+      "place": "Jerome L. Greene Science Center, 605 West 129th Street, Ground Floor",
+      "url": "https://events.columbia.edu/cal/event/eventView.do?b=de&calPath=%2Fpublic%2Fcals%2FMainCal&guid=CAL-00bbdb7c-a1e3a224-01a1-e602a124-0000100eevents%40columbia.edu&recurrenceId=",
+      "quote": "Saturday Science is a free monthly event for kids of all ages to explore the workings of the brain",
+      "verified_via": "json_feed",
+      "listed_on": "https://events.columbia.edu/",
+      "note": "events.columbia.edu is behind Cloudflare (403 to curl/WebFetch); data from the public Bedework feed via Columbia Libraries' proxy."
+    },
+    {
+      "school": "Columbia",
+      "title": "The Columbia Colloquium: Wonder",
+      "date": "2026-11-23",
+      "time": "18:30-19:30",
+      "place": "The Forum at Columbia University, 601 W. 125th St., Auditorium",
+      "url": "https://events.columbia.edu/cal/event/eventView.do?b=de&calPath=%2Fpublic%2Fcals%2FMainCal&guid=CAL-00bbdb7c-a186b96c-01a1-87d5d5bc-00002204events%40columbia.edu&recurrenceId=",
+      "quote": "Wonder: The Universe, Discovery, and the Pursuit of Knowledge",
+      "verified_via": "json_feed",
+      "listed_on": "https://events.columbia.edu/",
+      "note": "Cloudflare-blocked page; from Bedework feed."
+    },
+    {
+      "school": "Columbia",
+      "title": "Introduction to Zotero",
+      "date": "2026-12-02",
+      "time": "14:00-15:00",
+      "place": "Online",
+      "url": "https://events.columbia.edu/cal/event/eventView.do?b=de&calPath=%2Fpublic%2Fcals%2FMainCal&guid=CAL-00bbdb71-9ecf7a23-019e-d20815b7-00005922events%40columbia.edu&recurrenceId=",
+      "quote": "Zotero is a free, open-source bibliographic management program",
+      "verified_via": "json_feed",
+      "listed_on": "https://library.columbia.edu/research-teaching/workshops.html",
+      "note": "Listed by the Columbia Libraries workshops widget (JS); from Bedework feed."
+    },
+    {
+      "school": "Columbia",
+      "title": "Wholesome Book Time: Brrr! It's Winter in the Archives",
+      "date": "2026-12-02",
+      "time": "17:00-18:00",
+      "place": "Butler Library, Rare Book & Manuscript Library (6th Floor East)",
+      "url": "https://events.columbia.edu/cal/event/eventView.do?b=de&calPath=%2Fpublic%2Fcals%2FMainCal&guid=CAL-00bbdb71-a1d42a0a-01a1-d5b6fbc7-00004114events%40columbia.edu&recurrenceId=",
+      "quote": "No advance reading or knowledge required.",
+      "verified_via": "json_feed",
+      "listed_on": "https://library.columbia.edu/research-teaching/workshops.html",
+      "note": "From Bedework feed (Columbia Libraries calendars)."
+    },
+    {
+      "school": "Columbia",
+      "title": "\"City of Fortune\" -- A Book Talk with Mason B. Williams",
+      "date": "2026-12-02",
+      "time": "18:30-20:30",
+      "place": "International Affairs Building, 420 W. 118 St., Lehman Suite, IAB Room 406",
+      "url": "https://events.columbia.edu/cal/event/eventView.do?b=de&calPath=%2Fpublic%2Fcals%2FMainCal&guid=CAL-00bbdb71-a1c4b81f-01a1-c5d02cf8-00002492events%40columbia.edu&recurrenceId=",
+      "quote": "Join the Lehman Center for American History for a conversation with Mason B. Williams",
+      "verified_via": "json_feed",
+      "listed_on": "https://library.columbia.edu/research-teaching/workshops.html",
+      "note": "From Bedework feed (Columbia Libraries calendars)."
+    },
+    {
+      "school": "Columbia",
+      "title": "Database Demo: See How Research Databases Work",
+      "date": "2026-12-03",
+      "time": "11:00-11:45",
+      "place": "Online",
+      "url": "https://events.columbia.edu/cal/event/eventView.do?b=de&calPath=%2Fpublic%2Fcals%2FMainCal&guid=CAL-00bbdb70-9f6f1ab9-019f-719b5a0f-00004304events%40columbia.edu&recurrenceId=",
+      "quote": "This workshop will compare two database platforms: EBSCO and Scopus.",
+      "verified_via": "json_feed",
+      "listed_on": "https://library.columbia.edu/research-teaching/workshops.html",
+      "note": "From Bedework feed (Columbia Libraries calendars)."
+    },
+    {
+      "school": "Columbia",
+      "title": "Holiday Market at The Lee C. Bollinger Forum",
+      "date": "2026-12-03",
+      "time": "13:00-18:00 (also Dec 4, 10, 11)",
+      "place": "The Forum at Columbia University, 601 W. 125th St. (Manhattanville)",
+      "url": "https://www.cc-seas.columbia.edu/events/event/holiday-market-lee-c-bollinger-forum",
+      "quote": "Come shop small, support local businesses, and make holiday shopping a little more special this year.",
+      "verified_via": "static_html",
+      "listed_on": "https://www.cc-seas.columbia.edu/events?date=2026-12"
+    }
+  ]
+}

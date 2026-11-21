@@ -1,0 +1,12 @@
+{
+ "id": "col-02",
+ "set": "exam",
+ "school": "Columbia",
+ "url": "https://events.columbia.edu/cal/event/eventView.do?b=de&calPath=%2Fpublic%2Fcals%2FMainCal&guid=CAL-00bbdb7c-a186b96c-01a1-87d5d5bc-00002204events%40columbia.edu&recurrenceId=",
+ "fetched_at": "2026-11-21T16:01:49.747Z",
+ "http_status": 403,
+ "error": "",
+ "usable": false,
+ "quote_found": false,
+ "text": ""
+}

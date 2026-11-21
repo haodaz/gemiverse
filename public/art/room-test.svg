@@ -1,0 +1,523 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ECE6F8"/>
+      <stop offset="52%" stop-color="#F6EBF4"/>
+      <stop offset="100%" stop-color="#FCECE4"/>
+    </linearGradient>
+
+    <!-- Wall & Shell Gradients -->
+    <linearGradient id="leftWallGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF7F0"/>
+      <stop offset="100%" stop-color="#F7E8DE"/>
+    </linearGradient>
+    <linearGradient id="rightWallGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5E9E4"/>
+      <stop offset="100%" stop-color="#EAD8D2"/>
+    </linearGradient>
+    <linearGradient id="floorBaseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ECCBA6"/>
+      <stop offset="55%" stop-color="#E4BE95"/>
+      <stop offset="100%" stop-color="#DBB084"/>
+    </linearGradient>
+
+    <!-- Twilight City Window Sky -->
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3E3A6B"/>
+      <stop offset="48%" stop-color="#6E5B9A"/>
+      <stop offset="82%" stop-color="#C88EB0"/>
+      <stop offset="100%" stop-color="#F7C2B6"/>
+    </linearGradient>
+
+    <!-- Window Light Shaft -->
+    <linearGradient id="windowGlow" x1="0%" y1="0%" x2="100%" y2="85%">
+      <stop offset="0%" stop-color="#FFE6B8" stop-opacity="0.34"/>
+      <stop offset="55%" stop-color="#F9D2E4" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#F9D2E4" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Desk Lamp Glow -->
+    <radialGradient id="lampGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF4B8" stop-opacity="0.65"/>
+      <stop offset="45%" stop-color="#FFE0A3" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#FFE0A3" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- AI Twin Orb Glow -->
+    <radialGradient id="aiOrbGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#B9F5FF" stop-opacity="0.9"/>
+      <stop offset="45%" stop-color="#C9B8FF" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#C9B8FF" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Mirror Glass Gradient -->
+    <linearGradient id="mirrorGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D9EEFA"/>
+      <stop offset="48%" stop-color="#EEF5FC"/>
+      <stop offset="100%" stop-color="#F5DFEB"/>
+    </linearGradient>
+
+    <!-- Duvet Gradient -->
+    <linearGradient id="duvetGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E7D8F7"/>
+      <stop offset="100%" stop-color="#D4C0EE"/>
+    </linearGradient>
+
+    <!-- Soft Shadow Filter -->
+    <filter id="softBlur" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <filter id="tinyGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.5"/>
+    </filter>
+
+    <!-- Clip Paths -->
+    <clipPath id="floorClip">
+      <polygon points="400,310 150,435 400,560 650,435"/>
+    </clipPath>
+    <clipPath id="windowClip">
+      <polygon points="288,198 180,252 180,346 288,292"/>
+    </clipPath>
+    <clipPath id="mirrorClip">
+      <path d="M 526,374 L 526,286 C 526,268 552,276 556,298 L 556,389 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Soft Pastel Backdrop -->
+  <rect width="800" height="600" fill="url(#bgGrad)"/>
+  <g opacity="0.45">
+    <circle cx="110" cy="115" r="52" fill="#FFFFFF"/>
+    <circle cx="700" cy="130" r="64" fill="#FFF7F2"/>
+    <circle cx="675" cy="520" r="46" fill="#F4E2F5"/>
+    <circle cx="135" cy="515" r="38" fill="#FCE4DC"/>
+  </g>
+
+  <!-- Diorama Ground Drop Shadow -->
+  <polygon points="400,342 132,468 400,596 668,468" fill="#8C7696" opacity="0.18" filter="url(#softBlur)"/>
+
+  <!-- ==================== ROOM CUTAWAY SHELL ==================== -->
+  <g id="room-shell">
+    <!-- Left & Right Interior Walls -->
+    <polygon points="400,310 150,435 150,230 400,105" fill="url(#leftWallGrad)"/>
+    <polygon points="400,310 650,435 650,230 400,105" fill="url(#rightWallGrad)"/>
+
+    <!-- Subtle Wainscot Paneling -->
+    <polygon points="400,310 150,435 150,382 400,257" fill="#F2DFD2" opacity="0.45"/>
+    <polygon points="400,310 650,435 650,382 400,257" fill="#E3CEC6" opacity="0.45"/>
+    <line x1="400" y1="257" x2="150" y2="382" stroke="#E8D2C4" stroke-width="2"/>
+    <line x1="400" y1="257" x2="650" y2="382" stroke="#D9C1B8" stroke-width="2"/>
+
+    <!-- Corner Crease -->
+    <line x1="400" y1="105" x2="400" y2="310" stroke="#DFC8BF" stroke-width="1.5"/>
+
+    <!-- Wooden Floor Base -->
+    <polygon points="400,310 150,435 400,560 650,435" fill="url(#floorBaseGrad)"/>
+
+    <!-- Wooden Floor Planks (Clipped to Floor Diamond) -->
+    <g clip-path="url(#floorClip)">
+      <!-- Alternating subtle plank bands parallel to right wall -->
+      <polygon points="400,310 650,435 630,445 380,320" fill="#E0B78C" opacity="0.35"/>
+      <polygon points="360,330 610,455 590,465 340,340" fill="#F1D4B4" opacity="0.32"/>
+      <polygon points="320,350 570,475 550,485 300,360" fill="#DCAC7E" opacity="0.28"/>
+      <polygon points="280,370 530,495 510,505 260,380" fill="#F3D8BA" opacity="0.28"/>
+      <polygon points="240,390 490,515 470,525 220,400" fill="#DFAF82" opacity="0.3"/>
+      <polygon points="200,410 450,535 430,545 180,420" fill="#F1D3B2" opacity="0.3"/>
+
+      <!-- Plank seam lines -->
+      <g stroke="#C89B6E" stroke-width="1" opacity="0.42">
+        <line x1="380" y1="320" x2="630" y2="445"/>
+        <line x1="360" y1="330" x2="610" y2="455"/>
+        <line x1="340" y1="340" x2="590" y2="465"/>
+        <line x1="320" y1="350" x2="570" y2="475"/>
+        <line x1="300" y1="360" x2="550" y2="485"/>
+        <line x1="280" y1="370" x2="530" y2="495"/>
+        <line x1="260" y1="380" x2="510" y2="505"/>
+        <line x1="240" y1="390" x2="490" y2="515"/>
+        <line x1="220" y1="400" x2="470" y2="525"/>
+        <line x1="200" y1="410" x2="450" y2="535"/>
+        <line x1="180" y1="420" x2="430" y2="545"/>
+        <line x1="160" y1="430" x2="410" y2="555"/>
+        <!-- Cross joints -->
+        <line x1="450" y1="355" x2="430" y2="365"/>
+        <line x1="510" y1="405" x2="490" y2="415"/>
+        <line x1="370" y1="415" x2="350" y2="425"/>
+        <line x1="440" y1="470" x2="420" y2="480"/>
+        <line x1="290" y1="455" x2="270" y2="465"/>
+        <line x1="360" y1="510" x2="340" y2="520"/>
+      </g>
+    </g>
+
+    <!-- Baseboards -->
+    <polygon points="400,310 150,435 150,425 400,300" fill="#FBF2EA"/>
+    <polygon points="400,310 650,435 650,425 400,300" fill="#EFE1DA"/>
+
+    <!-- Cutaway Wall & Floor Thickness -->
+    <!-- Top Bevels -->
+    <polygon points="400,105 150,230 126,218 400,81" fill="#E8D4CB"/>
+    <polygon points="400,105 650,230 674,218 400,81" fill="#DFC7BE"/>
+    <!-- Left Cut Face -->
+    <polygon points="150,230 150,457 126,445 126,218" fill="#D9BFA8" opacity="0.9"/>
+    <polygon points="150,230 150,457 126,445 126,218" fill="#D5BEB5"/>
+    <!-- Right Cut Face -->
+    <polygon points="650,230 650,457 674,445 674,218" fill="#C9B0A7"/>
+    <!-- Floor Front Slab Edges -->
+    <polygon points="150,435 400,560 400,582 150,457" fill="#D3A982"/>
+    <polygon points="400,560 650,435 650,457 400,582" fill="#BF936E"/>
+  </g>
+
+  <!-- ==================== WINDOW WITH CITY LIGHT ==================== -->
+  <g id="window-city">
+    <!-- Outer Soft Frame -->
+    <polygon points="293,191 175,250 175,353 293,294" fill="#F9EFE7" stroke="#DFC7B8" stroke-width="1.5" stroke-linejoin="round"/>
+
+    <!-- City Skyline & Twilight Sky Clipped Inside Window -->
+    <g clip-path="url(#windowClip)">
+      <rect x="175" y="190" width="120" height="165" fill="url(#skyGrad)"/>
+
+      <!-- Crescent Moon -->
+      <circle cx="206" cy="264" r="9" fill="#FFF4C9"/>
+      <circle cx="210" cy="261" r="8" fill="#5D4F88"/>
+
+      <!-- Soft Twilight Clouds -->
+      <path d="M 225,248 Q 238,240 252,245 Q 262,240 272,247 Q 250,256 225,248 Z" fill="#F2B8C9" opacity="0.45"/>
+      <path d="M 184,282 Q 198,274 214,279 Q 222,276 230,282 Z" fill="#F5C3C6" opacity="0.4"/>
+
+      <!-- Twinkling Stars -->
+      <circle cx="242" cy="224" r="1.4" fill="#FFF7D6"/>
+      <circle cx="268" cy="216" r="1.1" fill="#FFF7D6"/>
+      <circle cx="226" cy="236" r="1" fill="#FFF7D6"/>
+
+      <!-- Far City Silhouette -->
+      <polygon points="178,348 178,298 194,290 194,306 206,300 206,274 224,265 224,292 238,285 238,256 258,246 258,278 272,271 272,242 290,233 290,348" fill="#5E4F87" opacity="0.85"/>
+
+      <!-- Near City Silhouette -->
+      <polygon points="178,350 178,314 198,304 198,318 214,310 214,288 234,278 234,304 248,297 248,270 268,260 268,294 282,287 282,268 292,263 292,350" fill="#413766"/>
+
+      <!-- Warm Glowing City Lights -->
+      <g fill="#FFE79E">
+        <rect x="184" y="320" width="4" height="5" rx="1"/>
+        <rect x="191" y="316" width="4" height="5" rx="1"/>
+        <rect x="184" y="329" width="4" height="5" rx="1" fill="#FFC5B8"/>
+        <rect x="218" y="295" width="4" height="5" rx="1"/>
+        <rect x="225" y="291" width="4" height="5" rx="1"/>
+        <rect x="218" y="305" width="4" height="5" rx="1" fill="#B5F2FF"/>
+        <rect x="225" y="301" width="4" height="5" rx="1"/>
+        <rect x="252" y="278" width="4" height="5" rx="1"/>
+        <rect x="259" y="274" width="4" height="5" rx="1" fill="#FFC5B8"/>
+        <rect x="252" y="288" width="4" height="5" rx="1"/>
+        <rect x="259" y="284" width="4" height="5" rx="1"/>
+        <rect x="275" y="276" width="4" height="5" rx="1" fill="#B5F2FF"/>
+        <rect x="242" y="266" width="3" height="4" rx="1" opacity="0.8"/>
+        <rect x="210" y="282" width="3" height="4" rx="1" opacity="0.8"/>
+      </g>
+
+      <!-- Subtle Window Pane Mullions -->
+      <line x1="234" y1="225" x2="234" y2="319" stroke="#F8EDE4" stroke-width="3.5"/>
+      <line x1="180" y1="299" x2="288" y2="245" stroke="#F8EDE4" stroke-width="3.5"/>
+
+      <!-- Inner Window Reveal Depth -->
+      <polygon points="288,198 278,203 278,287 288,292" fill="#E8D4C8" opacity="0.85"/>
+    </g>
+
+    <!-- Window Sill -->
+    <polygon points="295,293 173,354 181,359 303,298" fill="#FFF7F0"/>
+    <polygon points="181,359 303,298 303,303 181,364" fill="#E2CBBF"/>
+
+    <!-- Cute Pastel Sheer Curtains -->
+    <path d="M 173,248 L 194,238 C 192,272 186,304 176,348 L 169,344 C 175,305 174,274 173,248 Z" fill="#FDE6EC" opacity="0.88"/>
+    <path d="M 294,188 L 274,198 C 277,230 282,262 292,296 L 299,292 C 293,258 294,220 294,188 Z" fill="#FDE6EC" opacity="0.88"/>
+    <!-- Curtain Rod -->
+    <line x1="168" y1="248" x2="300" y2="182" stroke="#D3AE91" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="168" cy="248" r="3.5" fill="#D3AE91"/>
+    <circle cx="300" cy="182" r="3.5" fill="#D3AE91"/>
+  </g>
+
+  <!-- Soft Window City-Light Glow Cast on Floor -->
+  <polygon points="180,346 288,292 408,402 276,466" fill="url(#windowGlow)"/>
+
+  <!-- ==================== WALL DECOR ==================== -->
+  <g id="wall-decor">
+    <!-- Fairy String Lights on Left Wall -->
+    <path d="M 394,132 Q 350,174 306,176 Q 254,212 198,224 Q 172,240 156,248" fill="none" stroke="#D7BFA8" stroke-width="1.3"/>
+    <g>
+      <circle cx="378" cy="148" r="5" fill="#FFE7A6" opacity="0.45" filter="url(#tinyGlow)"/>
+      <circle cx="378" cy="148" r="2.2" fill="#FFF7D4"/>
+      <circle cx="348" cy="166" r="5" fill="#FFD1DC" opacity="0.45" filter="url(#tinyGlow)"/>
+      <circle cx="348" cy="166" r="2.2" fill="#FFF2F6"/>
+      <circle cx="316" cy="175" r="5" fill="#FFE7A6" opacity="0.45" filter="url(#tinyGlow)"/>
+      <circle cx="316" cy="175" r="2.2" fill="#FFF7D4"/>
+      <circle cx="274" cy="197" r="5" fill="#C9EEFF" opacity="0.45" filter="url(#tinyGlow)"/>
+      <circle cx="274" cy="197" r="2.2" fill="#F0FAFF"/>
+      <circle cx="232" cy="214" r="5" fill="#FFE7A6" opacity="0.45" filter="url(#tinyGlow)"/>
+      <circle cx="232" cy="214" r="2.2" fill="#FFF7D4"/>
+      <circle cx="186" cy="233" r="5" fill="#FFD1DC" opacity="0.45" filter="url(#tinyGlow)"/>
+      <circle cx="186" cy="233" r="2.2" fill="#FFF2F6"/>
+    </g>
+
+    <!-- Floating Shelf Above Bed (Left Wall) -->
+    <g id="wall-shelf">
+      <polygon points="376,204 316,234 326,239 386,209" fill="#E3BC97"/>
+      <polygon points="326,239 386,209 386,214 326,244" fill="#CE9F76"/>
+      <polygon points="316,234 326,239 326,244 316,239" fill="#C29269"/>
+      <!-- Tiny Pastel Books on Shelf -->
+      <polygon points="354,213 360,210 360,192 354,195" fill="#F4B8C4"/>
+      <polygon points="360,210 365,212 365,194 360,192" fill="#E49EB0"/>
+      <polygon points="365,208 371,205 371,189 365,192" fill="#BBD8F2"/>
+      <polygon points="371,205 375,207 375,191 371,189" fill="#9EC2E4"/>
+      <!-- Mini Potted Vine on Shelf -->
+      <ellipse cx="334" cy="227" rx="6" ry="3" fill="#E5A287"/>
+      <path d="M 328,227 L 330,217 L 338,217 L 340,227 Z" fill="#F0B59A"/>
+      <ellipse cx="334" cy="217" rx="4.5" ry="2.2" fill="#C98A70"/>
+      <path d="M 332,217 C 325,212 321,222 323,234" fill="none" stroke="#8FBC96" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="324" cy="224" r="3" fill="#98C99E"/>
+      <circle cx="322" cy="233" r="2.8" fill="#85B88D"/>
+      <circle cx="335" cy="213" r="3.5" fill="#A5D4AA"/>
+      <circle cx="339" cy="216" r="3" fill="#8FC296"/>
+    </g>
+
+    <!-- Pastel Framed Art on Right Wall -->
+    <g id="wall-art">
+      <polygon points="434,194 490,222 490,274 434,246" fill="#E3C3A8"/>
+      <polygon points="438,199 486,223 486,268 438,244" fill="#FFF9F3"/>
+      <!-- Minimalist Pastel Sunrise & Hills -->
+      <polygon points="442,205 482,225 482,262 442,242" fill="#FCE5DC"/>
+      <circle cx="462" cy="228" r="8" fill="#F7B7A3"/>
+      <path d="M 442,242 Q 456,232 468,246 L 482,262 L 442,242 Z" fill="#C7B6E2"/>
+      <path d="M 454,248 Q 470,240 482,254 L 482,262 L 454,248 Z" fill="#A5C4B4"/>
+    </g>
+  </g>
+
+  <!-- ==================== DOOR (RIGHT WALL) ==================== -->
+  <g id="dorm-door">
+    <!-- Outer Door Frame -->
+    <polygon points="566,244 642,282 642,431 566,393" fill="#FBF4EE" stroke="#DFCBC1" stroke-width="1.2"/>
+    <!-- Door Leaf -->
+    <polygon points="572,252 636,284 636,428 572,396" fill="#D5E4D8"/>
+    <!-- Recessed Door Panels -->
+    <polygon points="580,266 628,290 628,334 580,310" fill="#C6D9CA" stroke="#E4EFE6" stroke-width="1.2"/>
+    <polygon points="580,324 628,348 628,408 580,384" fill="#C6D9CA" stroke="#E4EFE6" stroke-width="1.2"/>
+    <!-- Round Brass Doorknob -->
+    <circle cx="582" cy="336" r="4" fill="#E4BA7C"/>
+    <circle cx="581" cy="335" r="1.4" fill="#FFF2CE"/>
+    <!-- Cute Pastel Wreath/Ornament on Door -->
+    <circle cx="604" cy="298" r="9" fill="none" stroke="#98BC9D" stroke-width="3"/>
+    <circle cx="604" cy="289" r="2.2" fill="#F7B3BE"/>
+    <circle cx="612" cy="300" r="2" fill="#FFE29A"/>
+    <circle cx="596" cy="301" r="2" fill="#F7B3BE"/>
+  </g>
+
+  <!-- ==================== SMALL RUG ==================== -->
+  <g id="small-rug">
+    <ellipse cx="412" cy="470" rx="68" ry="34" fill="#8C738B" opacity="0.1"/>
+    <ellipse cx="412" cy="468" rx="66" ry="33" fill="#F8D8CE"/>
+    <ellipse cx="412" cy="468" rx="56" ry="27.5" fill="#FDF3EB"/>
+    <ellipse cx="412" cy="468" rx="44" ry="21.5" fill="#DCE9DD"/>
+    <ellipse cx="412" cy="468" rx="30" ry="14.5" fill="#F5D9E6"/>
+    <ellipse cx="412" cy="468" rx="16" ry="7.5" fill="#FDF3EB"/>
+  </g>
+
+  <!-- ==================== COZY BED ==================== -->
+  <g id="cozy-bed">
+    <!-- Floor Shadow -->
+    <polygon points="402,320 322,360 440,420 520,380" fill="#7D647D" opacity="0.18" filter="url(#softBlur)"/>
+
+    <!-- Wooden Legs -->
+    <rect x="326" y="346" width="6" height="14" rx="3" fill="#C9986E"/>
+    <rect x="434" y="400" width="6" height="14" rx="3" fill="#BA8960"/>
+    <rect x="506" y="362" width="6" height="14" rx="3" fill="#BA8960"/>
+
+    <!-- Wooden Headboard -->
+    <path d="M 396,260 L 320,298 C 316,300 316,306 316,310 L 316,348 L 324,352 L 404,312 L 404,264 Z" fill="#D9A87E"/>
+    <path d="M 404,264 L 328,302 C 324,304 324,310 324,314 L 324,352 L 404,312 Z" fill="#E6BC96"/>
+    <!-- Headboard Rounded Top Rim -->
+    <polygon points="396,260 320,298 328,302 404,264" fill="#F0CCA9"/>
+
+    <!-- Bed Wooden Side Rails -->
+    <polygon points="324,340 436,396 436,408 324,352" fill="#D4A279"/>
+    <polygon points="436,396 514,357 514,369 436,408" fill="#C49169"/>
+
+    <!-- Soft Mattress -->
+    <polygon points="402,285 326,323 436,378 512,340" fill="#FFF9F4"/>
+    <polygon points="326,323 436,378 436,394 326,339" fill="#EFE4DE"/>
+    <polygon points="436,378 512,340 512,356 436,394" fill="#E3D5CE"/>
+
+    <!-- Pastel Pillows -->
+    <g>
+      <!-- Back-right pillow -->
+      <path d="M 378,292 C 388,284 406,284 416,292 C 424,298 418,308 408,312 C 396,316 380,312 374,305 C 370,300 372,296 378,292 Z" fill="#FCE0E8"/>
+      <path d="M 380,296 C 390,290 404,290 412,296" fill="none" stroke="#FFF4F7" stroke-width="2" stroke-linecap="round"/>
+      <!-- Front-left pillow -->
+      <path d="M 342,310 C 352,302 370,302 380,310 C 388,316 382,326 372,330 C 360,334 344,330 338,323 C 334,318 336,314 342,310 Z" fill="#FFF3D9"/>
+      <path d="M 344,314 C 354,308 368,308 376,314" fill="none" stroke="#FFFBF0" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <!-- Fluffy Pastel Lavender Duvet -->
+    <path d="M 432,300 L 356,338 C 354,344 358,348 364,351 L 434,386 C 438,388 444,388 448,386 L 514,353 C 517,348 517,340 512,336 L 444,302 C 440,300 436,298 432,300 Z" fill="url(#duvetGrad)"/>
+    <!-- Duvet Side Drape -->
+    <path d="M 356,340 L 436,380 L 436,398 C 406,386 380,372 356,356 Z" fill="#C6B1E5"/>
+    <path d="M 436,380 L 514,341 L 514,359 C 490,374 464,387 436,398 Z" fill="#B79FD9"/>
+    <!-- Folded Peach Top Cuff of Duvet -->
+    <path d="M 432,300 L 356,338 C 359,344 366,348 374,346 L 446,310 C 448,305 440,299 432,300 Z" fill="#FAD7CE"/>
+    <!-- Soft Quilted Stitch Lines -->
+    <path d="M 392,344 L 464,308 M 414,356 L 486,320" stroke="#EFE6FA" stroke-width="1.5" opacity="0.6" stroke-linecap="round"/>
+
+    <!-- Cute Pastel Plushie on Bed -->
+    <g transform="translate(394, 315)">
+      <ellipse cx="0" cy="6" rx="9" ry="7" fill="#FFF2E8"/>
+      <circle cx="-6" cy="0" r="3" fill="#FFF2E8"/>
+      <circle cx="6" cy="0" r="3" fill="#FFF2E8"/>
+      <circle cx="-3" cy="5" r="1.1" fill="#6F5C6E"/>
+      <circle cx="3" cy="5" r="1.1" fill="#6F5C6E"/>
+      <circle cx="-5.5" cy="7" r="1.6" fill="#F8B9C6" opacity="0.7"/>
+      <circle cx="5.5" cy="7" r="1.6" fill="#F8B9C6" opacity="0.7"/>
+    </g>
+
+    <!-- Cute Slippers Beside Bed -->
+    <g transform="translate(396, 405)">
+      <ellipse cx="-6" cy="2" rx="7" ry="3.8" transform="rotate(-24 -6 2)" fill="#F7C7D4"/>
+      <ellipse cx="-8" cy="1" rx="3.2" ry="1.8" transform="rotate(-24 -8 1)" fill="#FFF4F7"/>
+      <ellipse cx="8" cy="8" rx="7" ry="3.8" transform="rotate(-24 8 8)" fill="#F7C7D4"/>
+      <ellipse cx="6" cy="7" rx="3.2" ry="1.8" transform="rotate(-24 6 7)" fill="#FFF4F7"/>
+    </g>
+  </g>
+
+  <!-- ==================== STANDING MIRROR ==================== -->
+  <g id="standing-mirror">
+    <!-- Floor Shadow -->
+    <ellipse cx="536" cy="390" rx="22" ry="10" fill="#7D647D" opacity="0.16" filter="url(#softBlur)"/>
+    <!-- Back Easel Support Leg -->
+    <line x1="544" y1="318" x2="554" y2="386" stroke="#C59670" stroke-width="4" stroke-linecap="round"/>
+    <!-- Arched Wooden Frame Back Edge -->
+    <path d="M 521,379 L 521,284 C 521,260 558,270 562,298 L 562,395 Z" fill="#CCA07A"/>
+    <!-- Arched Wooden Frame Front -->
+    <path d="M 520,378 L 520,284 C 520,261 555,271 559,298 L 559,394 Z" fill="#E5BA93"/>
+    <!-- Mirror Glass -->
+    <g clip-path="url(#mirrorClip)">
+      <rect x="520" y="264" width="42" height="130" fill="url(#mirrorGrad)"/>
+      <!-- Diagonal Glossy Reflection Stripes -->
+      <polygon points="520,305 562,282 562,296 520,319" fill="#FFFFFF" opacity="0.55"/>
+      <polygon points="520,328 562,305 562,311 520,334" fill="#FFFFFF" opacity="0.38"/>
+      <polygon points="520,362 562,339 562,349 520,372" fill="#FFFFFF" opacity="0.3"/>
+    </g>
+    <!-- Inner Frame Outline -->
+    <path d="M 526,374 L 526,286 C 526,268 552,276 556,298 L 556,389 Z" fill="none" stroke="#C99A72" stroke-width="1.2"/>
+  </g>
+
+  <!-- ==================== DESK & LAMP & AI TWIN WORKSPACE ==================== -->
+  <g id="desk-area">
+    <!-- Floor Shadow Under Desk -->
+    <polygon points="292,368 180,424 240,454 352,398" fill="#7D647D" opacity="0.17" filter="url(#softBlur)"/>
+
+    <!-- Back Legs -->
+    <rect x="184" y="384" width="5.5" height="40" rx="2.5" fill="#C4936B"/>
+    <rect x="288" y="330" width="5.5" height="40" rx="2.5" fill="#C4936B"/>
+
+    <!-- Desk Drawer Cabinet (Right Side) -->
+    <polygon points="296,348 348,354 348,396 296,390" fill="#EAD7CE"/>
+    <!-- Front-left face of cabinet -->
+    <polygon points="266,364 316,389 316,422 266,397" fill="#F8EEE7"/>
+    <!-- Front-right face of cabinet -->
+    <polygon points="316,389 348,373 348,406 316,422" fill="#E6D5CC"/>
+    <!-- Drawer Lines & Knobs -->
+    <line x1="316" y1="406" x2="348" y2="390" stroke="#D2BEB4" stroke-width="1.2"/>
+    <circle cx="332" cy="389" r="2.3" fill="#D5A67D"/>
+    <circle cx="332" cy="406" r="2.3" fill="#D5A67D"/>
+
+    <!-- Front-Left Tapered Leg -->
+    <rect x="236" y="408" width="6" height="42" rx="3" fill="#D4A47C"/>
+
+    <!-- Desk Tabletop -->
+    <polygon points="292,322 180,378 240,408 352,352" fill="#E9C29B"/>
+    <polygon points="180,378 240,408 240,415 180,385" fill="#D5A67C"/>
+    <polygon points="240,408 352,352 352,359 240,415" fill="#C5946B"/>
+
+    <!-- Pastel Desk Mat -->
+    <polygon points="282,340 232,365 262,380 312,355" fill="#F8D8E2"/>
+
+    <!-- Warm Lamp Glow Pool on Desk -->
+    <ellipse cx="246" cy="368" rx="44" ry="22" fill="url(#lampGlow)"/>
+
+    <!-- Cute Laptop with AI Twin Smiling Screen -->
+    <g id="laptop">
+      <!-- Base -->
+      <polygon points="274,347 248,360 268,370 294,357" fill="#E5E4F0"/>
+      <polygon points="248,360 268,370 268,373 248,363" fill="#C9C7DC"/>
+      <polygon points="268,370 294,357 294,360 268,373" fill="#B8B6CE"/>
+      <!-- Screen Lid -->
+      <polygon points="274,347 248,360 242,334 268,321" fill="#D7D5E8"/>
+      <!-- Glowing Pastel Screen -->
+      <polygon points="272,346 250,357 245,336 267,325" fill="#B8ECFA"/>
+      <!-- Minimalist Cute AI Twin Face (Pure Geometry, No Text) -->
+      <path d="M 253,342 Q 254.5,339 256,341" fill="none" stroke="#4D5478" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M 261,338 Q 262.5,335 264,337" fill="none" stroke="#4D5478" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M 257,343 Q 259,345.5 261,342" fill="none" stroke="#4D5478" stroke-width="1.4" stroke-linecap="round"/>
+    </g>
+
+    <!-- Floating Glowing AI Twin Companion Orb Above Desk -->
+    <g id="ai-twin-orb">
+      <circle cx="294" cy="316" r="14" fill="url(#aiOrbGlow)"/>
+      <circle cx="294" cy="316" r="5.5" fill="#E4FAFF" stroke="#B7E4FA" stroke-width="1"/>
+      <circle cx="292.5" cy="314.5" r="1.5" fill="#FFFFFF"/>
+      <!-- Tiny Orbit Ring -->
+      <ellipse cx="294" cy="316" rx="10" ry="3.5" transform="rotate(-22 294 316)" fill="none" stroke="#D5C4FF" stroke-width="1" opacity="0.8"/>
+    </g>
+
+    <!-- Cute Pastel Mug on Desk -->
+    <g transform="translate(314, 348)">
+      <ellipse cx="0" cy="4" rx="5.5" ry="2.8" fill="#E39FA9"/>
+      <rect x="-5.5" y="-5" width="11" height="9" fill="#F9C5CE"/>
+      <ellipse cx="0" cy="-5" rx="5.5" ry="2.8" fill="#FFF0F3"/>
+      <ellipse cx="0" cy="-5" rx="3.8" ry="1.8" fill="#C99679"/>
+      <path d="M 5.5,-3 C 9,-3 9,2 5.5,2" fill="none" stroke="#F9C5CE" stroke-width="2"/>
+    </g>
+
+    <!-- Cozy Desk Lamp -->
+    <g id="desk-lamp">
+      <!-- Base -->
+      <ellipse cx="218" cy="377" rx="10" ry="5" fill="#F3D68C"/>
+      <ellipse cx="218" cy="375" rx="9" ry="4.5" fill="#FCE5A6"/>
+      <!-- Curved Neck -->
+      <path d="M 218,375 C 210,356 214,334 232,334" fill="none" stroke="#E2C383" stroke-width="3.2" stroke-linecap="round"/>
+      <!-- Glowing Light Bulb Underneath -->
+      <circle cx="235" cy="342" r="10" fill="url(#lampGlow)"/>
+      <circle cx="235" cy="341" r="3.5" fill="#FFF9D6"/>
+      <!-- Rounded Pastel Yellow Lamp Shade -->
+      <path d="M 223,339 C 225,326 242,326 246,339 C 242,344 228,344 223,339 Z" fill="#FBE29D" stroke="#E5C679" stroke-width="1"/>
+    </g>
+  </g>
+
+  <!-- ==================== DESK CHAIR ==================== -->
+  <g id="desk-chair">
+    <!-- Floor Shadow -->
+    <ellipse cx="316" cy="442" rx="22" ry="11" fill="#7D647D" opacity="0.18" filter="url(#softBlur)"/>
+    <!-- Legs -->
+    <line x1="304" y1="414" x2="300" y2="438" stroke="#C79972" stroke-width="3.8" stroke-linecap="round"/>
+    <line x1="328" y1="414" x2="332" y2="438" stroke="#C79972" stroke-width="3.8" stroke-linecap="round"/>
+    <line x1="316" y1="420" x2="316" y2="444" stroke="#B78862" stroke-width="3.8" stroke-linecap="round"/>
+    <!-- Rounded Cushion Seat -->
+    <ellipse cx="316" cy="414" rx="20" ry="10.5" fill="#B5D1BC"/>
+    <ellipse cx="316" cy="410" rx="19.5" ry="10" fill="#CFE4D4"/>
+    <!-- Curved Rounded Backrest -->
+    <path d="M 332,406 C 337,388 328,376 314,378 C 304,380 298,390 298,402 C 306,408 322,410 332,406 Z" fill="#BBD6C2"/>
+    <path d="M 329,403 C 333,389 326,380 315,381 C 307,382 302,390 302,400 C 309,405 321,406 329,403 Z" fill="#D5E8D9"/>
+  </g>
+
+  <!-- ==================== FOREGROUND POTTED PLANT ==================== -->
+  <g id="potted-plant">
+    <!-- Shadow -->
+    <ellipse cx="242" cy="466" rx="18" ry="9" fill="#7D647D" opacity="0.18" filter="url(#softBlur)"/>
+    <!-- Terracotta Pastel Pot -->
+    <path d="M 228,444 L 232,464 C 234,468 250,468 252,464 L 256,444 Z" fill="#E8A98E"/>
+    <ellipse cx="242" cy="444" rx="14.5" ry="6.5" fill="#F2BCA4"/>
+    <ellipse cx="242" cy="444" rx="11.5" ry="4.8" fill="#A67C65"/>
+    <!-- Lush Rounded Pastel Leaves -->
+    <g>
+      <path d="M 242,443 C 236,428 224,424 218,430 C 216,437 228,443 242,443 Z" fill="#8BBF95"/>
+      <path d="M 242,443 C 248,426 262,424 267,431 C 266,439 254,444 242,443 Z" fill="#99CC9F"/>
+      <path d="M 242,442 C 232,422 230,406 239,403 C 247,404 249,422 242,442 Z" fill="#A6D6AC"/>
+      <path d="M 242,443 C 250,424 258,412 250,408 C 243,409 240,425 242,443 Z" fill="#7FB58A"/>
+      <path d="M 242,444 C 232,438 222,442 224,449 C 228,452 238,449 242,444 Z" fill="#9FD1A6"/>
+    </g>
+  </g>
+</svg>
