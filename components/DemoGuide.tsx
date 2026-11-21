@@ -43,9 +43,9 @@ export function DemoGuide() {
   const s = STEPS[i], step = (k: number) => { const n = Math.max(0, Math.min(STEPS.length - 1, k)); setI(n); try { localStorage.setItem("demo.step", String(n)); } catch {} setCopied(false); };
   const go = () => { try { if (s.reset) { for (const k of Object.keys(localStorage)) if (k.startsWith("gemi.")) localStorage.removeItem(k); const t = Date.now(); localStorage.setItem("demo.t0", String(t)); setT0(t); } } catch {} if (s.go) location.href = s.go; };
   const el = t0 ? Math.max(0, Math.floor((now - t0) / 1000)) : 0, mm = `${Math.floor(el / 60)}:${String(el % 60).padStart(2, "0")}`;
-  if (small) return <button onClick={() => setSmall(false)} className="fixed bottom-3 left-3 z-[90] rounded-full bg-[#111827] px-3 py-1.5 text-xs font-semibold text-white opacity-70">{i + 1}/{STEPS.length} · {mm}</button>;
+  if (small) return <button onClick={() => setSmall(false)} className="fixed bottom-3 left-16 z-[90] rounded-full bg-[#111827] px-3 py-1.5 text-xs font-semibold text-white opacity-70">{i + 1}/{STEPS.length} · {mm}</button>;
   return (
-    <div className="fixed bottom-3 left-3 z-[90] w-[23rem] rounded-xl border border-[#d1d5db] bg-white/95 p-3.5 text-[#111827] shadow-xl" style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}>
+    <div className="fixed bottom-3 left-16 z-[90] w-[23rem] rounded-xl border border-[#d1d5db] bg-white/95 p-3.5 text-[#111827] shadow-xl" style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}>
       <div className="flex items-center justify-between text-[12px]"><b>{i + 1} / {STEPS.length} · {s.t} <span className="font-normal text-[#6b7280]">约 {s.sec} 秒</span></b>
         <span className="flex items-center gap-2"><span className="tabular-nums" style={{ color: el > 180 ? "#dc2626" : el > 150 ? "#d97706" : "#6b7280" }}>{mm} / 3:00</span><button onClick={() => setSmall(true)} className="text-[#6b7280]" aria-label="收起">—</button></span></div>
       <ol className="mt-2 list-decimal space-y-0.5 pl-4 text-[12.5px] leading-snug text-[#374151]">{s.doZh.map((d) => <li key={d}>{d}</li>)}</ol>
