@@ -125,7 +125,7 @@ export default function Room() {
       const r = await fetch("/api/go", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ school, place, care: mind.care, beliefs: mind.beliefs, wants, seen, lang }) }).then((x) => x.json());
       if (r.error || !r.finds?.length) { push({ who: "gemi", text: r.error ?? r.reason, error: !!r.error }); setPanel("talk"); return; }
       append({ id: uid(), at: new Date().toISOString(), type: "trip", place, stars: verdict.charge.stars, found: r.finds.map((f: Find) => f.id), predicted: {}, seal: r.seal, reason: r.reason });
-      setTrip({ ...r, by, choices: {} }); if (by === "student") setPanel("desk");
+      setTrip({ ...r, place, by, choices: {} }); if (by === "student") setPanel("desk");
     } catch { push({ who: "gemi", text: "It could not finish the trip.", error: true }); setPanel("talk"); }
     finally { setBusy(false); setOutAt(null); setCampus(false); send("away", false); }
   }
