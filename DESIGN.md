@@ -18,7 +18,7 @@ Every college student gets a twin: an AI projection that lives on campus (NYU fi
 
 Rules: only entities enter the base, never who asked. Name cards are kept by each side; there is no central map of who knows whom. Every AI-to-AI message passes a gate.
 
-## 3. The base, designed by Gemini (Foundry) · planned
+## 3. The base, designed by Gemini (Foundry) · measured
 | Step | What | Model |
 |---|---|---|
 | 1 Design | entities, fields, links, source tiers, from 15 sample events | Carbon, high thinking |
@@ -30,12 +30,14 @@ Rules: only entities enter the base, never who asked. Name cards are kept by eac
 | 7 Weave | propose links; merge duplicates only after a check | Carbon + Decisions |
 | 8 Exam | 10 unseen events; no-base baseline | Hydrogen + Decisions; Argon |
 
-Results table (filled in when measured):
-| Measure | Design set (15) | Unseen set (10) | Baseline (Argon, one call) |
-|---|---|---|---|
-| Fit rate | – | – | – |
-| Fields that pass the check | – | – | – |
-| Made-up fields | – | – | – |
+Results (measured 11:50, threshold 0.8; details and caveats in DEVLOG):
+| Measure | Design set (15) twin / baseline | Unseen set (10) twin / baseline |
+|---|---|---|
+| Fields shown to a student | 118 / 159 | 76 / 103 |
+| Shown without support on the page | 0 / 35 | 0 / 29 |
+| Start date right, wrong, withheld | 11, 0, 4 / 14, 1, 0 | 8, 0, 2 / 10, 0, 0 |
+
+The twin is the same model family plus the base design and a per-field check; the baseline is one Argon call. The twin never showed a wrong date and paid for it in coverage: it withheld dates on pages that print no year.
 
 ## 3b. Foundations: two designers, one merge · built (proposed, not locked)
 The world graph, the learning graph and the Gemi's own growth were each designed twice in parallel: by `gemini-4-carbon` (high thinking) and by the AI coding assistant. Originals are kept (`base/design/*.v1.json`), the comparison is `base/design/MERGE.md`, the merge is `base/design/final.v2.json`. Nothing is overwritten; later versions are new files.

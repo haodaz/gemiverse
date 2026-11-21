@@ -1,0 +1,32 @@
+Write a three.js ES module of small mythical companion creatures for a cozy dorm room diorama. All are animals or beasts; none has a human face, torso or limbs.
+
+Exports:
+- export const MYTHICAL = { westernDragon, easternDragon, unicorn, phoenix, pegasus, griffin, kirin, nineTailFox, jadeRabbit, moonMoth, kitsuneLantern, baku, kelpie, thunderbird, seaSerpent, jackalope } where each value is a function (THREE, opts) -> THREE.Group. Origin on the floor under the creature's centre, facing +z. Chibi proportions (big head, small body), cute and friendly, each instantly recognisable by silhouette:
+  westernDragon: four legs, bat wings, horns, thick tail, belly plates.
+  easternDragon: long serpentine body in a gentle S curve floating just above the floor, no wings, antlers, whiskers, mane, small clawed feet, a pearl.
+  unicorn: small horse, spiral horn, flowing mane and tail.
+  phoenix: long tail plumes, crest, glowing warm emissive feather tips.
+  pegasus: small horse with feathered wings.
+  griffin: eagle head and wings, lion body.
+  kirin: deer-like, scaled body, single branched horn, flame-shaped tufts.
+  nineTailFox: fox with nine fanned tails.
+  jadeRabbit: rabbit holding a small mortar, pale green glow.
+  moonMoth: large fluffy moth with crescent-patterned wings.
+  kitsuneLantern: small fox spirit curled around a paper lantern that glows.
+  baku: tapir-like dream eater with small tusks and a striped back.
+  kelpie: water horse with a wave-shaped mane and fin tail.
+  thunderbird: broad wings with zigzag feather edges.
+  seaSerpent: three arches of body rising from the floor as if from water, finned head.
+  jackalope: hare with small antlers.
+- Sizes 0.25 to 0.55 m.
+- opts = { fur, furAccent, eye, glow, variant: 0 | 1 | 2, accessory: "none" | "bow" | "scarf" | "bell" }. variant changes pose or markings (0 standing, 1 sitting, 2 curled or resting). Name child groups "head", "body", "tail" and, where present, "wingL", "wingR", "horn". Creatures that glow contain a THREE.PointLight child named "glow" (low intensity, colour from opts.glow) and emissive materials.
+- export function idle(group, t): gentle breathing, slow wing or tail motion, occasional blink, a soft pulse of the glow, given time in seconds.
+- export function recolor(group, palette).
+
+Rules for the module:
+- It is a plain ES module. Do not import anything. Do not use any global: every function receives THREE (three.js r160 namespace) as its first argument and must pass it on to any helper it calls.
+- Units are metres. Y is up. Build only from three.js primitives and ExtrudeGeometry/LatheGeometry shapes you make yourself (bevelled extrudes and spheres for soft edges). No textures from files, no fonts, no text, no logos, no network, no document or window.
+- Style: a refined, cozy, stylised diorama, like a premium life-sim game. Soft rounded edges everywhere, believable proportions, small secondary details. MeshStandardMaterial with thoughtful roughness/metalness; castShadow and receiveShadow on meshes.
+- Every mesh that carries a themable colour must have userData.slot set ("primary", "secondary", "accent", "wood", "metal", "fabric", "skin", "fur", "furAccent").
+- Also export const CATALOG: an array of { id, name, kind, footprint: [w, d], placement: "floor" | "wall" | "surface" | "worn" | "pet", variants: number, note } with one entry per thing in the module, so a shop or wardrobe screen can list it.
+- Return only the code of the module in one ```js block.

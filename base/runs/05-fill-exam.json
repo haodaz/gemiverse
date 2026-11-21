@@ -1,0 +1,2221 @@
+{
+ "set": "exam",
+ "at": "2026-11-21T16:47:50.717Z",
+ "threshold": 0.8,
+ "twin": {
+  "records": 10,
+  "fields_filled": 100,
+  "fields_passing_check": 76,
+  "fields_shown": 76,
+  "unsupported_fields_shown": 0,
+  "start_date_right": 8,
+  "start_date_wrong": 0,
+  "start_date_withheld": 2,
+  "start_time_right": 8,
+  "start_time_wrong": 0,
+  "tokens": 23971
+ },
+ "baseline": {
+  "records": 10,
+  "fields_filled": 103,
+  "fields_passing_check": 74,
+  "fields_shown": 103,
+  "unsupported_fields_shown": 29,
+  "start_date_right": 10,
+  "start_date_wrong": 0,
+  "start_date_withheld": 0,
+  "start_time_right": 10,
+  "start_time_wrong": 0,
+  "tokens": 12804
+ },
+ "errors": [],
+ "rows": [
+  {
+   "id": "nyu-03",
+   "school": "NYU",
+   "source_kind": "static_html",
+   "url": "https://steinhardt.nyu.edu/events/2026-11/composers-collective",
+   "truth": {
+    "date": "2026-11-22",
+    "time": "20:00-21:30"
+   },
+   "twin": {
+    "record": {
+     "title": "NYU Composers Collective: Fall Concert",
+     "event_kind": "performance_exhibit",
+     "occurrences": [
+      {
+       "start": "2026-11-22T20:00",
+       "end": "2026-11-22T21:30"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "required",
+     "eligibility": "public",
+     "summary": "Listen to an evening concert of chamber music, solo pieces, film scores, and songs composed by undergraduate students.",
+     "venue_name": "Room 620",
+     "building_name": null,
+     "street_address": "181 Mercer Street",
+     "organisation_name": "Music and Performing Arts Professions",
+     "needs": [
+      "make_and_express"
+     ],
+     "affordances": [
+      "experiencing_art_and_performance"
+     ]
+    },
+    "f": {
+     "title": "NYU Composers Collective: Fall Concert",
+     "event_kind": "performance_exhibit",
+     "start": "2026-11-22T20:00",
+     "end": "2026-11-22T21:30",
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "required",
+     "eligibility": "public",
+     "venue_name": "Room 620",
+     "building_name": null,
+     "street_address": "181 Mercer Street",
+     "organisation_name": "Music and Performing Arts Professions"
+    },
+    "rec": {
+     "title": "NYU Composers Collective: Fall Concert",
+     "event_kind": "performance_exhibit",
+     "occurrences": [
+      {
+       "start": "2026-11-22T20:00",
+       "end": "2026-11-22T21:30"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "required",
+     "eligibility": "public",
+     "summary": "Listen to an evening concert of chamber music, solo pieces, film scores, and songs composed by undergraduate students.",
+     "venue_name": "Room 620",
+     "building_name": null,
+     "street_address": "181 Mercer Street",
+     "organisation_name": "Music and Performing Arts Professions",
+     "needs": [
+      "make_and_express"
+     ],
+     "affordances": [
+      "experiencing_art_and_performance"
+     ]
+    },
+    "checks": {
+     "title": 0.9436277851930682,
+     "event_kind": 0.3152224444754597,
+     "start": 0.5831124192107652,
+     "end": 0.6927845172968313,
+     "delivery_mode": 0.9559026886936659,
+     "cost_type": 0.9797264937382258,
+     "registration_rule": 0.963504853056191,
+     "eligibility": 0.8491056996706975,
+     "venue_name": 0.9691401097208096,
+     "street_address": 0.9754332485730968,
+     "organisation_name": 0.7271819092833566
+    },
+    "usage": {
+     "total_tokens": 1333,
+     "total_input_tokens": 1333,
+     "input_tokens_by_modality": [
+      {
+       "modality": "text",
+       "tokens": 1333
+      }
+     ],
+     "total_output_tokens": 0
+    },
+    "score": {
+     "filled": 11,
+     "passed": 7,
+     "shown": 7,
+     "unsupported_shown": 0,
+     "date_ok": null,
+     "time_ok": null
+    },
+    "tokens": 2114
+   },
+   "baseline": {
+    "record": {
+     "title": "NYU Composers Collective: Fall Concert",
+     "event_kind": "performance_exhibit",
+     "occurrences": [
+      {
+       "start": "2026-11-22T20:00",
+       "end": "2026-11-22T21:30"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "required",
+     "eligibility": "public",
+     "summary": "The Composers Collective Fall concert showcases the creative diversity of NYU Steinhardt's undergraduate composition majors, featuring an evening of chamber music, solo pieces, film scores, and songs across a variety of genres.",
+     "venue_name": "Room 620",
+     "building_name": null,
+     "street_address": "181 Mercer Street",
+     "organisation_name": "Department of Music and Performing Arts Professions, NYU Steinhardt",
+     "needs": [
+      "entertainment",
+      "cultural_identity_expression"
+     ],
+     "affordances": [
+      "live_performance",
+      "student_creative_work"
+     ]
+    },
+    "f": {
+     "title": "NYU Composers Collective: Fall Concert",
+     "event_kind": "performance_exhibit",
+     "start": "2026-11-22T20:00",
+     "end": "2026-11-22T21:30",
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "required",
+     "eligibility": "public",
+     "venue_name": "Room 620",
+     "building_name": null,
+     "street_address": "181 Mercer Street",
+     "organisation_name": "Department of Music and Performing Arts Professions, NYU Steinhardt"
+    },
+    "rec": {
+     "title": "NYU Composers Collective: Fall Concert",
+     "event_kind": "performance_exhibit",
+     "occurrences": [
+      {
+       "start": "2026-11-22T20:00",
+       "end": "2026-11-22T21:30"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "required",
+     "eligibility": "public",
+     "summary": "The Composers Collective Fall concert showcases the creative diversity of NYU Steinhardt's undergraduate composition majors, featuring an evening of chamber music, solo pieces, film scores, and songs across a variety of genres.",
+     "venue_name": "Room 620",
+     "building_name": null,
+     "street_address": "181 Mercer Street",
+     "organisation_name": "Department of Music and Performing Arts Professions, NYU Steinhardt",
+     "needs": [
+      "entertainment",
+      "cultural_identity_expression"
+     ],
+     "affordances": [
+      "live_performance",
+      "student_creative_work"
+     ]
+    },
+    "checks": {
+     "title": 0.9436277851930682,
+     "event_kind": 0.3152224444754597,
+     "start": 0.5831124192107652,
+     "end": 0.6927845172968313,
+     "delivery_mode": 0.9559026886936659,
+     "cost_type": 0.9797264937382258,
+     "registration_rule": 0.963504853056191,
+     "eligibility": 0.8491056996706975,
+     "venue_name": 0.9691401097208096,
+     "street_address": 0.9754332485730968,
+     "organisation_name": 0.6853076940138055
+    },
+    "usage": {
+     "total_tokens": 1340,
+     "total_input_tokens": 1340,
+     "input_tokens_by_modality": [
+      {
+       "modality": "text",
+       "tokens": 1340
+      }
+     ],
+     "total_output_tokens": 0
+    },
+    "score": {
+     "filled": 11,
+     "passed": 7,
+     "shown": 11,
+     "unsupported_shown": 4,
+     "date_ok": true,
+     "time_ok": true
+    },
+    "tokens": 896
+   }
+  },
+  {
+   "id": "nyu-06",
+   "school": "NYU",
+   "source_kind": "static_html",
+   "url": "https://nyu.libcal.com/event/17975541",
+   "truth": {
+    "date": "2026-11-24",
+    "time": "13:30-14:30"
+   },
+   "twin": {
+    "record": {
+     "title": "A Beginner's Crash Course in APA Style [RESCHEDULED]",
+     "event_kind": "workshop",
+     "occurrences": [
+      {
+       "start": "2026-11-24T13:30",
+       "end": "2026-11-24T14:30"
+      }
+     ],
+     "delivery_mode": "online",
+     "cost_type": "unknown",
+     "registration_rule": "required",
+     "eligibility": "campus_community_only",
+     "summary": "Learn the basics of APA citation style, including creating in-text citations and reference lists, avoiding plagiarism, and referencing common types of sources in your research.",
+     "venue_name": null,
+     "building_name": null,
+     "street_address": null,
+     "organisation_name": "NYU Libraries",
+     "needs": [
+      "build_a_skill"
+     ],
+     "affordances": [
+      "hands_on_skill_practice"
+     ]
+    },
+    "f": {
+     "title": "A Beginner's Crash Course in APA Style [RESCHEDULED]",
+     "event_kind": "workshop",
+     "start": "2026-11-24T13:30",
+     "end": "2026-11-24T14:30",
+     "delivery_mode": "online",
+     "cost_type": null,
+     "registration_rule": "required",
+     "eligibility": "campus_community_only",
+     "venue_name": null,
+     "building_name": null,
+     "street_address": null,
+     "organisation_name": "NYU Libraries"
+    },
+    "rec": {
+     "title": "A Beginner's Crash Course in APA Style [RESCHEDULED]",
+     "event_kind": "workshop",
+     "occurrences": [
+      {
+       "start": "2026-11-24T13:30",
+       "end": "2026-11-24T14:30"
+      }
+     ],
+     "delivery_mode": "online",
+     "cost_type": "unknown",
+     "registration_rule": "required",
+     "eligibility": "campus_community_only",
+     "summary": "Learn the basics of APA citation style, including creating in-text citations and reference lists, avoiding plagiarism, and referencing common types of sources in your research.",
+     "venue_name": null,
+     "building_name": null,
+     "street_address": null,
+     "organisation_name": "NYU Libraries",
+     "needs": [
+      "build_a_skill"
+     ],
+     "affordances": [
+      "hands_on_skill_practice"
+     ]
+    },
+    "checks": {
+     "title": 0.970236784730044,
+     "event_kind": 0.9676410964774337,
+     "start": 0.968439095966647,
+     "end": 0.9712990415607219,
+     "delivery_mode": 0.9830205154512256,
+     "registration_rule": 0.99,
+     "eligibility": 0.4914991379962492,
+     "organisation_name": 0.8531570861898097
+    },
+    "usage": {
+     "total_tokens": 1580,
+     "total_input_tokens": 1580,
+     "input_tokens_by_modality": [
+      {
+       "modality": "text",
+       "tokens": 1580
+      }
+     ],
+     "total_output_tokens": 0
+    },
+    "score": {
+     "filled": 8,
+     "passed": 7,
+     "shown": 7,
+     "unsupported_shown": 0,
+     "date_ok": true,
+     "time_ok": true
+    },
+    "tokens": 2244
+   },
+   "baseline": {
+    "record": {
+     "title": "A Beginner's Crash Course in APA Style [RESCHEDULED]",
+     "event_kind": "workshop",
+     "occurrences": [
+      {
+       "start": "2026-11-24T13:30",
+       "end": "2026-11-24T14:30"
+      }
+     ],
+     "delivery_mode": "online",
+     "cost_type": "free",
+     "registration_rule": "required",
+     "eligibility": "campus_community_only",
+     "summary": "An online workshop hosted by NYU Libraries covering the basics of APA citation style, including creating in-text citations, compiling reference lists, and avoiding plagiarism in social science research.",
+     "venue_name": null,
+     "building_name": null,
+     "street_address": null,
+     "organisation_name": "NYU Libraries",
+     "needs": [
+      "learn_practical_skill",
+      "build_career_skills",
+      "get_help_advise"
+     ],
+     "affordances": [
+      "hands_on_instruction",
+      "expert_knowledge",
+      "structured_curriculum"
+     ]
+    },
+    "f": {
+     "title": "A Beginner's Crash Course in APA Style [RESCHEDULED]",
+     "event_kind": "workshop",
+     "start": "2026-11-24T13:30",
+     "end": "2026-11-24T14:30",
+     "delivery_mode": "online",
+     "cost_type": "free",
+     "registration_rule": "required",
+     "eligibility": "campus_community_only",
+     "venue_name": null,
+     "building_name": null,
+     "street_address": null,
+     "organisation_name": "NYU Libraries"
+    },
+    "rec": {
+     "title": "A Beginner's Crash Course in APA Style [RESCHEDULED]",
+     "event_kind": "workshop",
+     "occurrences": [
+      {
+       "start": "2026-11-24T13:30",
+       "end": "2026-11-24T14:30"
+      }
+     ],
+     "delivery_mode": "online",
+     "cost_type": "free",
+     "registration_rule": "required",
+     "eligibility": "campus_community_only",
+     "summary": "An online workshop hosted by NYU Libraries covering the basics of APA citation style, including creating in-text citations, compiling reference lists, and avoiding plagiarism in social science research.",
+     "venue_name": null,
+     "building_name": null,
+     "street_address": null,
+     "organisation_name": "NYU Libraries",
+     "needs": [
+      "learn_practical_skill",
+      "build_career_skills",
+      "get_help_advise"
+     ],
+     "affordances": [
+      "hands_on_instruction",
+      "expert_knowledge",
+      "structured_curriculum"
+     ]
+    },
+    "checks": {
+     "title": 0.970236784730044,
+     "event_kind": 0.9676410964774337,
+     "start": 0.968439095966647,
+     "end": 0.9712990415607219,
+     "delivery_mode": 0.9830205154512256,
+     "cost_type": 0.17014775647686253,
+     "registration_rule": 0.99,
+     "eligibility": 0.4914991379962492,
+     "organisation_name": 0.8531570861898097
+    },
+    "usage": {
+     "total_tokens": 1653,
+     "total_input_tokens": 1653,
+     "input_tokens_by_modality": [
+      {
+       "modality": "text",
+       "tokens": 1653
+      }
+     ],
+     "total_output_tokens": 0
+    },
+    "score": {
+     "filled": 9,
+     "passed": 7,
+     "shown": 9,
+     "unsupported_shown": 2,
+     "date_ok": true,
+     "time_ok": true
+    },
+    "tokens": 1364
+   }
+  },
+  {
+   "id": "nyu-08",
+   "school": "NYU",
+   "source_kind": "static_html",
+   "url": "https://nyu.libcal.com/event/17533920",
+   "truth": {
+    "date": "2026-12-01",
+    "time": "15:00-15:30"
+   },
+   "twin": {
+    "record": {
+     "title": "Mindfulness Moment at Bobst",
+     "event_kind": "community_wellness",
+     "occurrences": [
+      {
+       "start": "2026-12-01T15:00",
+       "end": "2026-12-01T15:30"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "unknown",
+     "registration_rule": "required",
+     "eligibility": "campus_community_only",
+     "summary": "Join a 30-minute guided meditation session using objects like plants, tea, or rocks as a focus to practice mindfulness, stay grounded, and decompress.",
+     "venue_name": "7th Floor, Rm. 745",
+     "building_name": "Bobst Library",
+     "street_address": null,
+     "organisation_name": "NYU Libraries",
+     "needs": [
+      "rest_and_recover"
+     ],
+     "affordances": [
+      "mindfulness_and_decompression"
+     ]
+    },
+    "f": {
+     "title": "Mindfulness Moment at Bobst",
+     "event_kind": "community_wellness",
+     "start": "2026-12-01T15:00",
+     "end": "2026-12-01T15:30",
+     "delivery_mode": "in_person",
+     "cost_type": null,
+     "registration_rule": "required",
+     "eligibility": "campus_community_only",
+     "venue_name": "7th Floor, Rm. 745",
+     "building_name": "Bobst Library",
+     "street_address": null,
+     "organisation_name": "NYU Libraries"
+    },
+    "rec": {
+     "title": "Mindfulness Moment at Bobst",
+     "event_kind": "community_wellness",
+     "occurrences": [
+      {
+       "start": "2026-12-01T15:00",
+       "end": "2026-12-01T15:30"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "unknown",
+     "registration_rule": "required",
+     "eligibility": "campus_community_only",
+     "summary": "Join a 30-minute guided meditation session using objects like plants, tea, or rocks as a focus to practice mindfulness, stay grounded, and decompress.",
+     "venue_name": "7th Floor, Rm. 745",
+     "building_name": "Bobst Library",
+     "street_address": null,
+     "organisation_name": "NYU Libraries",
+     "needs": [
+      "rest_and_recover"
+     ],
+     "affordances": [
+      "mindfulness_and_decompression"
+     ]
+    },
+    "checks": {
+     "title": 0.9870850361802794,
+     "event_kind": 0.9001289500596549,
+     "start": 0.9790349970736912,
+     "end": 0.9694547288167464,
+     "delivery_mode": 0.43697946851248365,
+     "registration_rule": 0.404400120579751,
+     "eligibility": 0.469360506054376,
+     "venue_name": 0.9461324573334122,
+     "building_name": 0.9762773198638813,
+     "organisation_name": 0.7801189492600838
+    },
+    "usage": {
+     "total_tokens": 1707,
+     "total_input_tokens": 1707,
+     "input_tokens_by_modality": [
+      {
+       "modality": "text",
+       "tokens": 1707
+      }
+     ],
+     "total_output_tokens": 0
+    },
+    "score": {
+     "filled": 10,
+     "passed": 6,
+     "shown": 6,
+     "unsupported_shown": 0,
+     "date_ok": true,
+     "time_ok": true
+    },
+    "tokens": 2425
+   },
+   "baseline": {
+    "record": {
+     "title": "Mindfulness Moment at Bobst",
+     "event_kind": "community_wellness",
+     "occurrences": [
+      {
+       "start": "2026-12-01T15:00",
+       "end": "2026-12-01T15:30"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "encouraged",
+     "eligibility": "campus_community_only",
+     "summary": "A 30-minute community meditation session at Bobst Library focused on mindfulness techniques using everyday objects like plants, tea, and rocks as points of contemplation to help participants stay grounded during the semester.",
+     "venue_name": "7th Floor, Rm. 745",
+     "building_name": "Bobst Library",
+     "street_address": null,
+     "organisation_name": "NYU Libraries",
+     "needs": [
+      "mental_health_and_stress_relief"
+     ],
+     "affordances": [
+      "guided_meditation_or_mindfulness",
+      "drop_in_or_flexible_attendance"
+     ]
+    },
+    "f": {
+     "title": "Mindfulness Moment at Bobst",
+     "event_kind": "community_wellness",
+     "start": "2026-12-01T15:00",
+     "end": "2026-12-01T15:30",
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "encouraged",
+     "eligibility": "campus_community_only",
+     "venue_name": "7th Floor, Rm. 745",
+     "building_name": "Bobst Library",
+     "street_address": null,
+     "organisation_name": "NYU Libraries"
+    },
+    "rec": {
+     "title": "Mindfulness Moment at Bobst",
+     "event_kind": "community_wellness",
+     "occurrences": [
+      {
+       "start": "2026-12-01T15:00",
+       "end": "2026-12-01T15:30"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "encouraged",
+     "eligibility": "campus_community_only",
+     "summary": "A 30-minute community meditation session at Bobst Library focused on mindfulness techniques using everyday objects like plants, tea, and rocks as points of contemplation to help participants stay grounded during the semester.",
+     "venue_name": "7th Floor, Rm. 745",
+     "building_name": "Bobst Library",
+     "street_address": null,
+     "organisation_name": "NYU Libraries",
+     "needs": [
+      "mental_health_and_stress_relief"
+     ],
+     "affordances": [
+      "guided_meditation_or_mindfulness",
+      "drop_in_or_flexible_attendance"
+     ]
+    },
+    "checks": {
+     "title": 0.9870850361802794,
+     "event_kind": 0.9001289500596549,
+     "start": 0.9790349970736912,
+     "end": 0.9694547288167464,
+     "delivery_mode": 0.43697946851248365,
+     "cost_type": 0.17581612215164227,
+     "registration_rule": 0.7701092347901202,
+     "eligibility": 0.469360506054376,
+     "venue_name": 0.9461324573334122,
+     "building_name": 0.9762773198638813,
+     "organisation_name": 0.7801189492600838
+    },
+    "usage": {
+     "total_tokens": 1781,
+     "total_input_tokens": 1781,
+     "input_tokens_by_modality": [
+      {
+       "modality": "text",
+       "tokens": 1781
+      }
+     ],
+     "total_output_tokens": 0
+    },
+    "score": {
+     "filled": 11,
+     "passed": 6,
+     "shown": 11,
+     "unsupported_shown": 5,
+     "date_ok": true,
+     "time_ok": true
+    },
+    "tokens": 1347
+   }
+  },
+  {
+   "id": "nyu-11",
+   "school": "NYU",
+   "source_kind": "static_html",
+   "url": "https://nyu.libcal.com/event/18030132",
+   "truth": {
+    "date": "2026-12-03",
+    "time": "13:00-16:00"
+   },
+   "twin": {
+    "record": {
+     "title": "Prompt Clinic: From Bad Prompts to Better Results",
+     "event_kind": "workshop",
+     "occurrences": [
+      {
+       "start": "2026-12-03T13:00",
+       "end": "2026-12-03T16:00"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "unknown",
+     "registration_rule": "required",
+     "eligibility": "students_only",
+     "summary": "Experiment with AI prompting, compare outputs, and learn how context, constraints, and iterative feedback shape results while discussing accuracy, bias, and responsible use.",
+     "venue_name": "SPARK Lab",
+     "building_name": "Bobst Library",
+     "street_address": null,
+     "organisation_name": "NYU Libraries",
+     "needs": [
+      "build_a_skill"
+     ],
+     "affordances": [
+      "hands_on_skill_practice"
+     ]
+    },
+    "f": {
+     "title": "Prompt Clinic: From Bad Prompts to Better Results",
+     "event_kind": "workshop",
+     "start": "2026-12-03T13:00",
+     "end": "2026-12-03T16:00",
+     "delivery_mode": "in_person",
+     "cost_type": null,
+     "registration_rule": "required",
+     "eligibility": "students_only",
+     "venue_name": "SPARK Lab",
+     "building_name": "Bobst Library",
+     "street_address": null,
+     "organisation_name": "NYU Libraries"
+    },
+    "rec": {
+     "title": "Prompt Clinic: From Bad Prompts to Better Results",
+     "event_kind": "workshop",
+     "occurrences": [
+      {
+       "start": "2026-12-03T13:00",
+       "end": "2026-12-03T16:00"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "unknown",
+     "registration_rule": "required",
+     "eligibility": "students_only",
+     "summary": "Experiment with AI prompting, compare outputs, and learn how context, constraints, and iterative feedback shape results while discussing accuracy, bias, and responsible use.",
+     "venue_name": "SPARK Lab",
+     "building_name": "Bobst Library",
+     "street_address": null,
+     "organisation_name": "NYU Libraries",
+     "needs": [
+      "build_a_skill"
+     ],
+     "affordances": [
+      "hands_on_skill_practice"
+     ]
+    },
+    "checks": {
+     "title": 0.9626558101848534,
+     "event_kind": 0.887310797066618,
+     "start": 0.9692940953413692,
+     "end": 0.7040211152625544,
+     "delivery_mode": 0.41580030602897905,
+     "registration_rule": 0.9775716997645033,
+     "eligibility": 0.3122706097120193,
+     "venue_name": 0.9606283612411854,
+     "building_name": 0.9760428303088677,
+     "organisation_name": 0.8741433148620154
+    },
+    "usage": {
+     "total_tokens": 1545,
+     "total_input_tokens": 1545,
+     "input_tokens_by_modality": [
+      {
+       "modality": "text",
+       "tokens": 1545
+      }
+     ],
+     "total_output_tokens": 0
+    },
+    "score": {
+     "filled": 10,
+     "passed": 7,
+     "shown": 7,
+     "unsupported_shown": 0,
+     "date_ok": true,
+     "time_ok": true
+    },
+    "tokens": 2378
+   },
+   "baseline": {
+    "record": {
+     "title": "Prompt Clinic: From Bad Prompts to Better Results",
+     "event_kind": "workshop",
+     "occurrences": [
+      {
+       "start": "2026-12-03T13:00",
+       "end": "2026-12-03T16:00"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "required",
+     "eligibility": "students_only",
+     "summary": "A hands-on session where students experiment with prompting, compare outputs, and learn how context, constraints, and iterative feedback affect results, including discussions on accuracy, bias, and responsible AI use.",
+     "venue_name": "5th floor, SPARK Lab",
+     "building_name": "Bobst Library",
+     "street_address": null,
+     "organisation_name": "NYU Libraries",
+     "needs": [
+      "learn_research_skills",
+      "build_technical_skills",
+      "understand_Current_issues"
+     ],
+     "affordances": [
+      "guided_instruction"
+     ]
+    },
+    "f": {
+     "title": "Prompt Clinic: From Bad Prompts to Better Results",
+     "event_kind": "workshop",
+     "start": "2026-12-03T13:00",
+     "end": "2026-12-03T16:00",
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "required",
+     "eligibility": "students_only",
+     "venue_name": "5th floor, SPARK Lab",
+     "building_name": "Bobst Library",
+     "street_address": null,
+     "organisation_name": "NYU Libraries"
+    },
+    "rec": {
+     "title": "Prompt Clinic: From Bad Prompts to Better Results",
+     "event_kind": "workshop",
+     "occurrences": [
+      {
+       "start": "2026-12-03T13:00",
+       "end": "2026-12-03T16:00"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "required",
+     "eligibility": "students_only",
+     "summary": "A hands-on session where students experiment with prompting, compare outputs, and learn how context, constraints, and iterative feedback affect results, including discussions on accuracy, bias, and responsible AI use.",
+     "venue_name": "5th floor, SPARK Lab",
+     "building_name": "Bobst Library",
+     "street_address": null,
+     "organisation_name": "NYU Libraries",
+     "needs": [
+      "learn_research_skills",
+      "build_technical_skills",
+      "understand_Current_issues"
+     ],
+     "affordances": [
+      "guided_instruction"
+     ]
+    },
+    "checks": {
+     "title": 0.9626558101848534,
+     "event_kind": 0.887310797066618,
+     "start": 0.9692940953413692,
+     "end": 0.7040211152625544,
+     "delivery_mode": 0.41580030602897905,
+     "cost_type": 0.17102433863962543,
+     "registration_rule": 0.9775716997645033,
+     "eligibility": 0.3122706097120193,
+     "venue_name": 0.9689754471896573,
+     "building_name": 0.9760428303088677,
+     "organisation_name": 0.8741433148620154
+    },
+    "usage": {
+     "total_tokens": 1622,
+     "total_input_tokens": 1622,
+     "input_tokens_by_modality": [
+      {
+       "modality": "text",
+       "tokens": 1622
+      }
+     ],
+     "total_output_tokens": 0
+    },
+    "score": {
+     "filled": 11,
+     "passed": 7,
+     "shown": 11,
+     "unsupported_shown": 4,
+     "date_ok": true,
+     "time_ok": true
+    },
+    "tokens": 1173
+   }
+  },
+  {
+   "id": "nyu-13",
+   "school": "NYU",
+   "source_kind": "static_html",
+   "url": "https://nyu.libcal.com/event/17953886",
+   "truth": {
+    "date": "2026-12-09",
+    "time": "12:00-13:30"
+   },
+   "twin": {
+    "record": {
+     "title": "Special Collections Crafting: Journal and Zine Making Workshop",
+     "event_kind": "workshop",
+     "occurrences": [
+      {
+       "start": "2026-12-09T12:00",
+       "end": "2026-12-09T13:30"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "unknown",
+     "registration_rule": "required",
+     "eligibility": "campus_community_only",
+     "summary": "View archival examples and practice book arts and DIY paper crafts by constructing a single-section journal and crafting small-scale zines with provided collage materials.",
+     "venue_name": "Special Collections Classroom 251",
+     "building_name": "Bobst Library",
+     "street_address": null,
+     "organisation_name": "NYU Special Collections",
+     "needs": [
+      "make_and_express",
+      "build_a_skill"
+     ],
+     "affordances": [
+      "making_things",
+      "hands_on_skill_practice"
+     ]
+    },
+    "f": {
+     "title": "Special Collections Crafting: Journal and Zine Making Workshop",
+     "event_kind": "workshop",
+     "start": "2026-12-09T12:00",
+     "end": "2026-12-09T13:30",
+     "delivery_mode": "in_person",
+     "cost_type": null,
+     "registration_rule": "required",
+     "eligibility": "campus_community_only",
+     "venue_name": "Special Collections Classroom 251",
+     "building_name": "Bobst Library",
+     "street_address": null,
+     "organisation_name": "NYU Special Collections"
+    },
+    "rec": {
+     "title": "Special Collections Crafting: Journal and Zine Making Workshop",
+     "event_kind": "workshop",
+     "occurrences": [
+      {
+       "start": "2026-12-09T12:00",
+       "end": "2026-12-09T13:30"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "unknown",
+     "registration_rule": "required",
+     "eligibility": "campus_community_only",
+     "summary": "View archival examples and practice book arts and DIY paper crafts by constructing a single-section journal and crafting small-scale zines with provided collage materials.",
+     "venue_name": "Special Collections Classroom 251",
+     "building_name": "Bobst Library",
+     "street_address": null,
+     "organisation_name": "NYU Special Collections",
+     "needs": [
+      "make_and_express",
+      "build_a_skill"
+     ],
+     "affordances": [
+      "making_things",
+      "hands_on_skill_practice"
+     ]
+    },
+    "checks": {
+     "title": 0.9766595297687679,
+     "event_kind": 0.9676805567638789,
+     "start": 0.9621102905040423,
+     "end": 0.9730654586033152,
+     "delivery_mode": 0.6390741799221052,
+     "registration_rule": 0.9768291573877429,
+     "eligibility": 0.38123581805269297,
+     "venue_name": 0.9657794427528762,
+     "building_name": 0.9835962500755179,
+     "organisation_name": 0.9592686697328602
+    },
+    "usage": {
+     "total_tokens": 1672,
+     "total_input_tokens": 1672,
+     "input_tokens_by_modality": [
+      {
+       "modality": "text",
+       "tokens": 1672
+      }
+     ],
+     "total_output_tokens": 0
+    },
+    "score": {
+     "filled": 10,
+     "passed": 8,
+     "shown": 8,
+     "unsupported_shown": 0,
+     "date_ok": true,
+     "time_ok": true
+    },
+    "tokens": 2543
+   },
+   "baseline": {
+    "record": {
+     "title": "Special Collections Crafting: Journal and Zine Making Workshop",
+     "event_kind": "workshop",
+     "occurrences": [
+      {
+       "start": "2026-12-09T12:00",
+       "end": "2026-12-09T13:30"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "unknown",
+     "registration_rule": "required",
+     "eligibility": "campus_community_only",
+     "summary": "A hands-on crafting workshop at NYU Special Collections where participants explore archival examples and learn book arts techniques to construct and sew a single-section journal and craft small-scale zines using provided collage materials.",
+     "venue_name": "Special Collections Classroom 251",
+     "building_name": "Bobst Library",
+     "street_address": null,
+     "organisation_name": "NYU Special Collections",
+     "needs": [
+      "make-craft",
+      "unwind",
+      "learn-skill"
+     ],
+     "affordances": [
+      "hands-on-making",
+      "provided-materials",
+      "Instructional",
+      "casual-vibe"
+     ]
+    },
+    "f": {
+     "title": "Special Collections Crafting: Journal and Zine Making Workshop",
+     "event_kind": "workshop",
+     "start": "2026-12-09T12:00",
+     "end": "2026-12-09T13:30",
+     "delivery_mode": "in_person",
+     "cost_type": null,
+     "registration_rule": "required",
+     "eligibility": "campus_community_only",
+     "venue_name": "Special Collections Classroom 251",
+     "building_name": "Bobst Library",
+     "street_address": null,
+     "organisation_name": "NYU Special Collections"
+    },
+    "rec": {
+     "title": "Special Collections Crafting: Journal and Zine Making Workshop",
+     "event_kind": "workshop",
+     "occurrences": [
+      {
+       "start": "2026-12-09T12:00",
+       "end": "2026-12-09T13:30"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "unknown",
+     "registration_rule": "required",
+     "eligibility": "campus_community_only",
+     "summary": "A hands-on crafting workshop at NYU Special Collections where participants explore archival examples and learn book arts techniques to construct and sew a single-section journal and craft small-scale zines using provided collage materials.",
+     "venue_name": "Special Collections Classroom 251",
+     "building_name": "Bobst Library",
+     "street_address": null,
+     "organisation_name": "NYU Special Collections",
+     "needs": [
+      "make-craft",
+      "unwind",
+      "learn-skill"
+     ],
+     "affordances": [
+      "hands-on-making",
+      "provided-materials",
+      "Instructional",
+      "casual-vibe"
+     ]
+    },
+    "checks": {
+     "title": 0.9766595297687679,
+     "event_kind": 0.9676805567638789,
+     "start": 0.9621102905040423,
+     "end": 0.9730654586033152,
+     "delivery_mode": 0.6390741799221052,
+     "registration_rule": 0.9768291573877429,
+     "eligibility": 0.38123581805269297,
+     "venue_name": 0.9657794427528762,
+     "building_name": 0.9835962500755179,
+     "organisation_name": 0.9592686697328602
+    },
+    "usage": {
+     "total_tokens": 1672,
+     "total_input_tokens": 1672,
+     "input_tokens_by_modality": [
+      {
+       "modality": "text",
+       "tokens": 1672
+      }
+     ],
+     "total_output_tokens": 0
+    },
+    "score": {
+     "filled": 10,
+     "passed": 8,
+     "shown": 10,
+     "unsupported_shown": 2,
+     "date_ok": true,
+     "time_ok": true
+    },
+    "tokens": 1310
+   }
+  },
+  {
+   "id": "nyu-16",
+   "school": "NYU",
+   "source_kind": "static_html",
+   "url": "https://steinhardt.nyu.edu/events/2026-12/nyu-brass-choir",
+   "truth": {
+    "date": "2026-12-09",
+    "time": "20:00-21:30"
+   },
+   "twin": {
+    "record": {
+     "title": "NYU Brass Choir – Fall Concert",
+     "event_kind": "performance_exhibit",
+     "occurrences": [
+      {
+       "start": "2026-12-09T20:00",
+       "end": "2026-12-09T21:30"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "required",
+     "eligibility": "public",
+     "summary": "Listen to an evening concert of historical and contemporary brass ensemble music performed by student musicians on trumpets, horns, trombones, and tuba.",
+     "venue_name": "Room 620",
+     "building_name": "Paulson Center",
+     "street_address": "181 Mercer Street (at Bleecker Street) NYC",
+     "organisation_name": "NYU Brass Choir",
+     "needs": [
+      "make_and_express",
+      "rest_and_recover"
+     ],
+     "affordances": [
+      "experiencing_art_and_performance"
+     ]
+    },
+    "f": {
+     "title": "NYU Brass Choir – Fall Concert",
+     "event_kind": "performance_exhibit",
+     "start": "2026-12-09T20:00",
+     "end": "2026-12-09T21:30",
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "required",
+     "eligibility": "public",
+     "venue_name": "Room 620",
+     "building_name": "Paulson Center",
+     "street_address": "181 Mercer Street (at Bleecker Street) NYC",
+     "organisation_name": "NYU Brass Choir"
+    },
+    "rec": {
+     "title": "NYU Brass Choir – Fall Concert",
+     "event_kind": "performance_exhibit",
+     "occurrences": [
+      {
+       "start": "2026-12-09T20:00",
+       "end": "2026-12-09T21:30"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "required",
+     "eligibility": "public",
+     "summary": "Listen to an evening concert of historical and contemporary brass ensemble music performed by student musicians on trumpets, horns, trombones, and tuba.",
+     "venue_name": "Room 620",
+     "building_name": "Paulson Center",
+     "street_address": "181 Mercer Street (at Bleecker Street) NYC",
+     "organisation_name": "NYU Brass Choir",
+     "needs": [
+      "make_and_express",
+      "rest_and_recover"
+     ],
+     "affordances": [
+      "experiencing_art_and_performance"
+     ]
+    },
+    "checks": {
+     "title": 0.9175292221566337,
+     "event_kind": 0.6071849756706885,
+     "start": 0.5933327001087813,
+     "end": 0.666675825079658,
+     "delivery_mode": 0.9633634306891924,
+     "cost_type": 0.986084623322119,
+     "registration_rule": 0.9744061213410936,
+     "eligibility": 0.8771754464554634,
+     "venue_name": 0.969409303434621,
+     "building_name": 0.9828349889407477,
+     "street_address": 0.9737795761953698,
+     "organisation_name": 0.7708992756304546
+    },
+    "usage": {
+     "total_tokens": 1420,
+     "total_input_tokens": 1420,
+     "input_tokens_by_modality": [
+      {
+       "modality": "text",
+       "tokens": 1420
+      }
+     ],
+     "total_output_tokens": 0
+    },
+    "score": {
+     "filled": 12,
+     "passed": 8,
+     "shown": 8,
+     "unsupported_shown": 0,
+     "date_ok": null,
+     "time_ok": null
+    },
+    "tokens": 2234
+   },
+   "baseline": {
+    "record": {
+     "title": "NYU Brass Choir",
+     "event_kind": "performance_exhibit",
+     "occurrences": [
+      {
+       "start": "2026-12-09T20:00",
+       "end": "2026-12-09T21:30"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "required",
+     "eligibility": "public",
+     "summary": "The NYU Brass Choir presents an evening of dynamic and diverse brass ensemble music featuring NYU's brass students performing historical works and contemporary compositions for brass octets and septets.",
+     "venue_name": "Room 620",
+     "building_name": "Paulson Center",
+     "street_address": "181 Mercer Street, New York, NY",
+     "organisation_name": "Department of Music and Performing Arts Professions, NYU Steinhardt",
+     "needs": [
+      "entertainment",
+      "inspiration"
+     ],
+     "affordances": [
+      "music_performance"
+     ]
+    },
+    "f": {
+     "title": "NYU Brass Choir",
+     "event_kind": "performance_exhibit",
+     "start": "2026-12-09T20:00",
+     "end": "2026-12-09T21:30",
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "required",
+     "eligibility": "public",
+     "venue_name": "Room 620",
+     "building_name": "Paulson Center",
+     "street_address": "181 Mercer Street, New York, NY",
+     "organisation_name": "Department of Music and Performing Arts Professions, NYU Steinhardt"
+    },
+    "rec": {
+     "title": "NYU Brass Choir",
+     "event_kind": "performance_exhibit",
+     "occurrences": [
+      {
+       "start": "2026-12-09T20:00",
+       "end": "2026-12-09T21:30"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "required",
+     "eligibility": "public",
+     "summary": "The NYU Brass Choir presents an evening of dynamic and diverse brass ensemble music featuring NYU's brass students performing historical works and contemporary compositions for brass octets and septets.",
+     "venue_name": "Room 620",
+     "building_name": "Paulson Center",
+     "street_address": "181 Mercer Street, New York, NY",
+     "organisation_name": "Department of Music and Performing Arts Professions, NYU Steinhardt",
+     "needs": [
+      "entertainment",
+      "inspiration"
+     ],
+     "affordances": [
+      "music_performance"
+     ]
+    },
+    "checks": {
+     "title": 0.9551481325848854,
+     "event_kind": 0.6071849756706885,
+     "start": 0.5933327001087813,
+     "end": 0.666675825079658,
+     "delivery_mode": 0.9633634306891924,
+     "cost_type": 0.986084623322119,
+     "registration_rule": 0.9744061213410936,
+     "eligibility": 0.8771754464554634,
+     "venue_name": 0.969409303434621,
+     "building_name": 0.9828349889407477,
+     "street_address": 0.6819767618631368,
+     "organisation_name": 0.482289889573585
+    },
+    "usage": {
+     "total_tokens": 1422,
+     "total_input_tokens": 1422,
+     "input_tokens_by_modality": [
+      {
+       "modality": "text",
+       "tokens": 1422
+      }
+     ],
+     "total_output_tokens": 0
+    },
+    "score": {
+     "filled": 12,
+     "passed": 7,
+     "shown": 12,
+     "unsupported_shown": 5,
+     "date_ok": true,
+     "time_ok": true
+    },
+    "tokens": 890
+   }
+  },
+  {
+   "id": "nyu-18",
+   "school": "NYU",
+   "source_kind": "static_html",
+   "url": "https://tisch.nyu.edu/dance/events/sadc-december-concert",
+   "truth": {
+    "date": "2026-12-10",
+    "time": "19:30 (also Dec 11 and 12)"
+   },
+   "twin": {
+    "record": {
+     "title": "Second Avenue Dance Company December Concert",
+     "event_kind": "performance_exhibit",
+     "occurrences": [
+      {
+       "start": "2026-12-10T19:30",
+       "end": "2026-12-10T22:00"
+      },
+      {
+       "start": "2026-12-11T19:30",
+       "end": "2026-12-11T22:00"
+      },
+      {
+       "start": "2026-12-12T19:30",
+       "end": "2026-12-12T22:00"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "unknown",
+     "registration_rule": "required",
+     "eligibility": "public",
+     "summary": "Watch a live dance concert performed by the Second Avenue Dance Company in the Jack Crystal Theater.",
+     "venue_name": "Jack Crystal Theater",
+     "building_name": null,
+     "street_address": null,
+     "organisation_name": "Second Avenue Dance Company",
+     "needs": [
+      "make_and_express"
+     ],
+     "affordances": [
+      "experiencing_art_and_performance"
+     ]
+    },
+    "f": {
+     "title": "Second Avenue Dance Company December Concert",
+     "event_kind": "performance_exhibit",
+     "start": "2026-12-10T19:30",
+     "end": "2026-12-10T22:00",
+     "delivery_mode": "in_person",
+     "cost_type": null,
+     "registration_rule": "required",
+     "eligibility": "public",
+     "venue_name": "Jack Crystal Theater",
+     "building_name": null,
+     "street_address": null,
+     "organisation_name": "Second Avenue Dance Company"
+    },
+    "rec": {
+     "title": "Second Avenue Dance Company December Concert",
+     "event_kind": "performance_exhibit",
+     "occurrences": [
+      {
+       "start": "2026-12-10T19:30",
+       "end": "2026-12-10T22:00"
+      },
+      {
+       "start": "2026-12-11T19:30",
+       "end": "2026-12-11T22:00"
+      },
+      {
+       "start": "2026-12-12T19:30",
+       "end": "2026-12-12T22:00"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "unknown",
+     "registration_rule": "required",
+     "eligibility": "public",
+     "summary": "Watch a live dance concert performed by the Second Avenue Dance Company in the Jack Crystal Theater.",
+     "venue_name": "Jack Crystal Theater",
+     "building_name": null,
+     "street_address": null,
+     "organisation_name": "Second Avenue Dance Company",
+     "needs": [
+      "make_and_express"
+     ],
+     "affordances": [
+      "experiencing_art_and_performance"
+     ]
+    },
+    "checks": {
+     "title": 0.9795806902503897,
+     "event_kind": 0.3700819693986673,
+     "start": 0.964563010959554,
+     "end": 0.7322250964377963,
+     "delivery_mode": 0.9817155945669541,
+     "registration_rule": 0.9729288231323816,
+     "eligibility": 0.8263442021236528,
+     "venue_name": 0.9768609220698876,
+     "organisation_name": 0.839756615161806
+    },
+    "usage": {
+     "total_tokens": 1211,
+     "total_input_tokens": 1211,
+     "input_tokens_by_modality": [
+      {
+       "modality": "text",
+       "tokens": 1211
+      }
+     ],
+     "total_output_tokens": 0
+    },
+    "score": {
+     "filled": 9,
+     "passed": 7,
+     "shown": 7,
+     "unsupported_shown": 0,
+     "date_ok": true,
+     "time_ok": true
+    },
+    "tokens": 2045
+   },
+   "baseline": {
+    "record": {
+     "title": "Second Avenue Dance Company December Concert",
+     "event_kind": "performance_exhibit",
+     "occurrences": [
+      {
+       "start": "2026-12-10T19:30",
+       "end": "2026-12-10T22:00"
+      },
+      {
+       "start": "2026-12-11T19:30",
+       "end": "2026-12-11T22:00"
+      },
+      {
+       "start": "2026-12-12T19:30",
+       "end": "2026-12-12T22:00"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "unknown",
+     "registration_rule": "required",
+     "eligibility": "public",
+     "summary": "A three-night dance concert by the Second Avenue Dance Company at the Jack Crystal Theater. RSVP is required for in-person attendance, with sign-up opening on November 30, 2026.",
+     "venue_name": "Jack Crystal Theater",
+     "building_name": null,
+     "street_address": null,
+     "organisation_name": "Second Avenue Dance Company / NYU Tisch Dance",
+     "needs": [
+      "have_fun",
+      "take_break",
+      "unwind",
+      "get_inspired",
+      "appreciate_beauty",
+      "experience_culture",
+      "explore_identity",
+      "connect_community",
+      "feel_welcome"
+     ],
+     "affordances": [
+      "watch_listen",
+      "art_music_dance",
+      "indoor_venue",
+      "evening_time",
+      "solo_friendly",
+      "access_note"
+     ]
+    },
+    "f": {
+     "title": "Second Avenue Dance Company December Concert",
+     "event_kind": "performance_exhibit",
+     "start": "2026-12-10T19:30",
+     "end": "2026-12-10T22:00",
+     "delivery_mode": "in_person",
+     "cost_type": null,
+     "registration_rule": "required",
+     "eligibility": "public",
+     "venue_name": "Jack Crystal Theater",
+     "building_name": null,
+     "street_address": null,
+     "organisation_name": "Second Avenue Dance Company / NYU Tisch Dance"
+    },
+    "rec": {
+     "title": "Second Avenue Dance Company December Concert",
+     "event_kind": "performance_exhibit",
+     "occurrences": [
+      {
+       "start": "2026-12-10T19:30",
+       "end": "2026-12-10T22:00"
+      },
+      {
+       "start": "2026-12-11T19:30",
+       "end": "2026-12-11T22:00"
+      },
+      {
+       "start": "2026-12-12T19:30",
+       "end": "2026-12-12T22:00"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "unknown",
+     "registration_rule": "required",
+     "eligibility": "public",
+     "summary": "A three-night dance concert by the Second Avenue Dance Company at the Jack Crystal Theater. RSVP is required for in-person attendance, with sign-up opening on November 30, 2026.",
+     "venue_name": "Jack Crystal Theater",
+     "building_name": null,
+     "street_address": null,
+     "organisation_name": "Second Avenue Dance Company / NYU Tisch Dance",
+     "needs": [
+      "have_fun",
+      "take_break",
+      "unwind",
+      "get_inspired",
+      "appreciate_beauty",
+      "experience_culture",
+      "explore_identity",
+      "connect_community",
+      "feel_welcome"
+     ],
+     "affordances": [
+      "watch_listen",
+      "art_music_dance",
+      "indoor_venue",
+      "evening_time",
+      "solo_friendly",
+      "access_note"
+     ]
+    },
+    "checks": {
+     "title": 0.9795806902503897,
+     "event_kind": 0.3700819693986673,
+     "start": 0.964563010959554,
+     "end": 0.7322250964377963,
+     "delivery_mode": 0.9817155945669541,
+     "registration_rule": 0.9729288231323816,
+     "eligibility": 0.8263442021236528,
+     "venue_name": 0.9768609220698876,
+     "organisation_name": 0.6723243505110916
+    },
+    "usage": {
+     "total_tokens": 1215,
+     "total_input_tokens": 1215,
+     "input_tokens_by_modality": [
+      {
+       "modality": "text",
+       "tokens": 1215
+      }
+     ],
+     "total_output_tokens": 0
+    },
+    "score": {
+     "filled": 9,
+     "passed": 6,
+     "shown": 9,
+     "unsupported_shown": 3,
+     "date_ok": true,
+     "time_ok": true
+    },
+    "tokens": 1057
+   }
+  },
+  {
+   "id": "col-02",
+   "school": "Columbia",
+   "source_kind": "json_feed",
+   "url": "https://events.columbia.edu/cal/event/eventView.do?b=de&calPath=%2Fpublic%2Fcals%2FMainCal&guid=CAL-00bbdb7c-a186b96c-01a1-87d5d5bc-00002204events%40columbia.edu&recurrenceId=",
+   "truth": {
+    "date": "2026-11-23",
+    "time": "18:30-19:30"
+   },
+   "twin": {
+    "record": {
+     "title": "The Columbia Colloquium: Wonder",
+     "event_kind": "talk_panel",
+     "occurrences": [
+      {
+       "start": "2026-11-23T18:30",
+       "end": "2026-11-23T19:30"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "unknown",
+     "registration_rule": "required",
+     "eligibility": "public",
+     "summary": "Attend an interdisciplinary panel discussion exploring wonder, curiosity, and discovery, followed by a brief reception with light refreshments.",
+     "venue_name": "Auditorium",
+     "building_name": "The Forum at Columbia University",
+     "street_address": "601 W. 125th St., New York, NY 10027",
+     "organisation_name": "University Programs and Events",
+     "needs": [
+      "explore_a_field"
+     ],
+     "affordances": [
+      "intellectual_inquiry",
+      "food_and_refueling"
+     ]
+    },
+    "f": {
+     "title": "The Columbia Colloquium: Wonder",
+     "event_kind": "talk_panel",
+     "start": "2026-11-23T18:30",
+     "end": "2026-11-23T19:30",
+     "delivery_mode": "in_person",
+     "cost_type": null,
+     "registration_rule": "required",
+     "eligibility": "public",
+     "venue_name": "Auditorium",
+     "building_name": "The Forum at Columbia University",
+     "street_address": "601 W. 125th St., New York, NY 10027",
+     "organisation_name": "University Programs and Events"
+    },
+    "rec": {
+     "title": "The Columbia Colloquium: Wonder",
+     "event_kind": "talk_panel",
+     "occurrences": [
+      {
+       "start": "2026-11-23T18:30",
+       "end": "2026-11-23T19:30"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "unknown",
+     "registration_rule": "required",
+     "eligibility": "public",
+     "summary": "Attend an interdisciplinary panel discussion exploring wonder, curiosity, and discovery, followed by a brief reception with light refreshments.",
+     "venue_name": "Auditorium",
+     "building_name": "The Forum at Columbia University",
+     "street_address": "601 W. 125th St., New York, NY 10027",
+     "organisation_name": "University Programs and Events",
+     "needs": [
+      "explore_a_field"
+     ],
+     "affordances": [
+      "intellectual_inquiry",
+      "food_and_refueling"
+     ]
+    },
+    "checks": {
+     "title": 0.9579856894605828,
+     "event_kind": 0.8967708656216844,
+     "start": 0.9808474393339229,
+     "end": 0.7616166124483661,
+     "delivery_mode": 0.9560981488721156,
+     "registration_rule": 0.9558587847765244,
+     "eligibility": 0.895727107795039,
+     "venue_name": 0.8885601868795471,
+     "building_name": 0.9681128005430552,
+     "street_address": 0.9298747889833431,
+     "organisation_name": 0.953960782729608
+    },
+    "usage": {
+     "total_tokens": 2220,
+     "total_input_tokens": 2220,
+     "input_tokens_by_modality": [
+      {
+       "modality": "text",
+       "tokens": 2220
+      }
+     ],
+     "total_output_tokens": 0
+    },
+    "score": {
+     "filled": 11,
+     "passed": 10,
+     "shown": 10,
+     "unsupported_shown": 0,
+     "date_ok": true,
+     "time_ok": true
+    },
+    "tokens": 2893
+   },
+   "baseline": {
+    "record": {
+     "title": "The Columbia Colloquium: Wonder",
+     "event_kind": "talk_panel",
+     "occurrences": [
+      {
+       "start": "2026-11-23T18:30",
+       "end": "2026-11-23T19:30"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "unknown",
+     "registration_rule": "required",
+     "eligibility": "public",
+     "summary": "An interdisciplinary conversation led by President Jennifer L. Mnookin and Columbia faculty exploring wonder, inspiration, curiosity, and the pursuit of knowledge and discovery, followed by a brief reception with light refreshments.",
+     "venue_name": "Auditorium",
+     "building_name": "The Forum at Columbia University",
+     "street_address": "601 W. 125th St., New York, NY 10027",
+     "organisation_name": "University Programs and Events",
+     "needs": [
+      "bring_water",
+      "check_in"
+     ],
+     "affordances": [
+      "free_food",
+      "indoor_seating",
+      "restrooms"
+     ]
+    },
+    "f": {
+     "title": "The Columbia Colloquium: Wonder",
+     "event_kind": "talk_panel",
+     "start": "2026-11-23T18:30",
+     "end": "2026-11-23T19:30",
+     "delivery_mode": "in_person",
+     "cost_type": null,
+     "registration_rule": "required",
+     "eligibility": "public",
+     "venue_name": "Auditorium",
+     "building_name": "The Forum at Columbia University",
+     "street_address": "601 W. 125th St., New York, NY 10027",
+     "organisation_name": "University Programs and Events"
+    },
+    "rec": {
+     "title": "The Columbia Colloquium: Wonder",
+     "event_kind": "talk_panel",
+     "occurrences": [
+      {
+       "start": "2026-11-23T18:30",
+       "end": "2026-11-23T19:30"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "unknown",
+     "registration_rule": "required",
+     "eligibility": "public",
+     "summary": "An interdisciplinary conversation led by President Jennifer L. Mnookin and Columbia faculty exploring wonder, inspiration, curiosity, and the pursuit of knowledge and discovery, followed by a brief reception with light refreshments.",
+     "venue_name": "Auditorium",
+     "building_name": "The Forum at Columbia University",
+     "street_address": "601 W. 125th St., New York, NY 10027",
+     "organisation_name": "University Programs and Events",
+     "needs": [
+      "bring_water",
+      "check_in"
+     ],
+     "affordances": [
+      "free_food",
+      "indoor_seating",
+      "restrooms"
+     ]
+    },
+    "checks": {
+     "title": 0.9579856894605828,
+     "event_kind": 0.8967708656216844,
+     "start": 0.9808474393339229,
+     "end": 0.7616166124483661,
+     "delivery_mode": 0.9560981488721156,
+     "registration_rule": 0.9558587847765244,
+     "eligibility": 0.895727107795039,
+     "venue_name": 0.8885601868795471,
+     "building_name": 0.9681128005430552,
+     "street_address": 0.9298747889833431,
+     "organisation_name": 0.953960782729608
+    },
+    "usage": {
+     "total_tokens": 2220,
+     "total_input_tokens": 2220,
+     "input_tokens_by_modality": [
+      {
+       "modality": "text",
+       "tokens": 2220
+      }
+     ],
+     "total_output_tokens": 0
+    },
+    "score": {
+     "filled": 11,
+     "passed": 10,
+     "shown": 11,
+     "unsupported_shown": 1,
+     "date_ok": true,
+     "time_ok": true
+    },
+    "tokens": 1784
+   }
+  },
+  {
+   "id": "col-04",
+   "school": "Columbia",
+   "source_kind": "json_feed",
+   "url": "https://events.columbia.edu/cal/event/eventView.do?b=de&calPath=%2Fpublic%2Fcals%2FMainCal&guid=CAL-00bbdb71-a1d42a0a-01a1-d5b6fbc7-00004114events%40columbia.edu&recurrenceId=",
+   "truth": {
+    "date": "2026-12-02",
+    "time": "17:00-18:00"
+   },
+   "twin": {
+    "record": {
+     "title": "Wholesome Book Time: Brrr! It's Winter in the Archives",
+     "event_kind": "social_study_break",
+     "occurrences": [
+      {
+       "start": "2026-12-02T17:00",
+       "end": "2026-12-02T18:00"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "unknown",
+     "registration_rule": "none",
+     "eligibility": "campus_community_only",
+     "summary": "Browse winter-themed archival materials with library staff in a relaxed setting; no advance reading or prior knowledge is required.",
+     "venue_name": "Rare Book & Manuscript Library (6th Floor East)",
+     "building_name": "Butler Library",
+     "street_address": "535 W. 114 St., New York, NY 10027",
+     "organisation_name": "Rare Book & Manuscript Library",
+     "needs": [
+      "rest_and_recover",
+      "explore_a_field"
+     ],
+     "affordances": [
+      "browsing_collections",
+      "mindfulness_and_decompression"
+     ]
+    },
+    "f": {
+     "title": "Wholesome Book Time: Brrr! It's Winter in the Archives",
+     "event_kind": "social_study_break",
+     "start": "2026-12-02T17:00",
+     "end": "2026-12-02T18:00",
+     "delivery_mode": "in_person",
+     "cost_type": null,
+     "registration_rule": "none",
+     "eligibility": "campus_community_only",
+     "venue_name": "Rare Book & Manuscript Library (6th Floor East)",
+     "building_name": "Butler Library",
+     "street_address": "535 W. 114 St., New York, NY 10027",
+     "organisation_name": "Rare Book & Manuscript Library"
+    },
+    "rec": {
+     "title": "Wholesome Book Time: Brrr! It's Winter in the Archives",
+     "event_kind": "social_study_break",
+     "occurrences": [
+      {
+       "start": "2026-12-02T17:00",
+       "end": "2026-12-02T18:00"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "unknown",
+     "registration_rule": "none",
+     "eligibility": "campus_community_only",
+     "summary": "Browse winter-themed archival materials with library staff in a relaxed setting; no advance reading or prior knowledge is required.",
+     "venue_name": "Rare Book & Manuscript Library (6th Floor East)",
+     "building_name": "Butler Library",
+     "street_address": "535 W. 114 St., New York, NY 10027",
+     "organisation_name": "Rare Book & Manuscript Library",
+     "needs": [
+      "rest_and_recover",
+      "explore_a_field"
+     ],
+     "affordances": [
+      "browsing_collections",
+      "mindfulness_and_decompression"
+     ]
+    },
+    "checks": {
+     "title": 0.9695594461236846,
+     "event_kind": 0.5483074697371753,
+     "start": 0.8181940874726105,
+     "end": 0.8006229542088253,
+     "delivery_mode": 0.9404932341199354,
+     "registration_rule": 0.07970277330960654,
+     "eligibility": 0.8650596787315504,
+     "venue_name": 0.9490172728114544,
+     "building_name": 0.9692262775463104,
+     "street_address": 0.9195617329979117,
+     "organisation_name": 0.8896343137217978
+    },
+    "usage": {
+     "total_tokens": 1888,
+     "total_input_tokens": 1888,
+     "input_tokens_by_modality": [
+      {
+       "modality": "text",
+       "tokens": 1888
+      }
+     ],
+     "total_output_tokens": 0
+    },
+    "score": {
+     "filled": 11,
+     "passed": 9,
+     "shown": 9,
+     "unsupported_shown": 0,
+     "date_ok": true,
+     "time_ok": true
+    },
+    "tokens": 2469
+   },
+   "baseline": {
+    "record": {
+     "title": "Wholesome Book Time: Brrr! It's Winter in the Archives",
+     "event_kind": "social_study_break",
+     "occurrences": [
+      {
+       "start": "2026-12-02T17:00",
+       "end": "2026-12-02T18:00"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "unknown",
+     "registration_rule": "none",
+     "eligibility": "campus_community_only",
+     "summary": "A winter-themed Wholesome Book Time hosted by staff at Columbia's Rare Book & Manuscript Library, with no advance reading or knowledge required.",
+     "venue_name": "Rare Book & Manuscript Library (6th Floor East)",
+     "building_name": "Butler Library",
+     "street_address": "535 W. 114 St., New York, NY 10027",
+     "organisation_name": "Rare Book & Manuscript Library",
+     "needs": [
+      "intellectual_stimulation",
+      "casual_social_connection",
+      "relaxation_stress_relief"
+     ],
+     "affordances": [
+      "hands_on_instruction",
+      "social_mingling",
+      "arts_culture_appreciation"
+     ]
+    },
+    "f": {
+     "title": "Wholesome Book Time: Brrr! It's Winter in the Archives",
+     "event_kind": "social_study_break",
+     "start": "2026-12-02T17:00",
+     "end": "2026-12-02T18:00",
+     "delivery_mode": "in_person",
+     "cost_type": null,
+     "registration_rule": "none",
+     "eligibility": "campus_community_only",
+     "venue_name": "Rare Book & Manuscript Library (6th Floor East)",
+     "building_name": "Butler Library",
+     "street_address": "535 W. 114 St., New York, NY 10027",
+     "organisation_name": "Rare Book & Manuscript Library"
+    },
+    "rec": {
+     "title": "Wholesome Book Time: Brrr! It's Winter in the Archives",
+     "event_kind": "social_study_break",
+     "occurrences": [
+      {
+       "start": "2026-12-02T17:00",
+       "end": "2026-12-02T18:00"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "unknown",
+     "registration_rule": "none",
+     "eligibility": "campus_community_only",
+     "summary": "A winter-themed Wholesome Book Time hosted by staff at Columbia's Rare Book & Manuscript Library, with no advance reading or knowledge required.",
+     "venue_name": "Rare Book & Manuscript Library (6th Floor East)",
+     "building_name": "Butler Library",
+     "street_address": "535 W. 114 St., New York, NY 10027",
+     "organisation_name": "Rare Book & Manuscript Library",
+     "needs": [
+      "intellectual_stimulation",
+      "casual_social_connection",
+      "relaxation_stress_relief"
+     ],
+     "affordances": [
+      "hands_on_instruction",
+      "social_mingling",
+      "arts_culture_appreciation"
+     ]
+    },
+    "checks": {
+     "title": 0.9695594461236846,
+     "event_kind": 0.5483074697371753,
+     "start": 0.8181940874726105,
+     "end": 0.8006229542088253,
+     "delivery_mode": 0.9404932341199354,
+     "registration_rule": 0.07970277330960654,
+     "eligibility": 0.8650596787315504,
+     "venue_name": 0.9490172728114544,
+     "building_name": 0.9692262775463104,
+     "street_address": 0.9195617329979117,
+     "organisation_name": 0.8896343137217978
+    },
+    "usage": {
+     "total_tokens": 1888,
+     "total_input_tokens": 1888,
+     "input_tokens_by_modality": [
+      {
+       "modality": "text",
+       "tokens": 1888
+      }
+     ],
+     "total_output_tokens": 0
+    },
+    "score": {
+     "filled": 11,
+     "passed": 9,
+     "shown": 11,
+     "unsupported_shown": 2,
+     "date_ok": true,
+     "time_ok": true
+    },
+    "tokens": 1498
+   }
+  },
+  {
+   "id": "col-06",
+   "school": "Columbia",
+   "source_kind": "json_feed",
+   "url": "https://events.columbia.edu/cal/event/eventView.do?b=de&calPath=%2Fpublic%2Fcals%2FMainCal&guid=CAL-00bbdb70-9f6f1ab9-019f-719b5a0f-00004304events%40columbia.edu&recurrenceId=",
+   "truth": {
+    "date": "2026-12-03",
+    "time": "11:00-11:45"
+   },
+   "twin": {
+    "record": {
+     "title": "Database Demo: See How Research Databases Work",
+     "event_kind": "workshop",
+     "occurrences": [
+      {
+       "start": "2026-12-03T11:00",
+       "end": "2026-12-03T11:45"
+      }
+     ],
+     "delivery_mode": "online",
+     "cost_type": "unknown",
+     "registration_rule": "required",
+     "eligibility": "campus_community_only",
+     "summary": "Learn to use research databases like EBSCO and Scopus, practice building search strings with boolean operators, and select key terms to find scholarly research.",
+     "venue_name": null,
+     "building_name": null,
+     "street_address": null,
+     "organisation_name": "Libraries - ScienceEngineering",
+     "needs": [
+      "build_a_skill",
+      "navigate_systems"
+     ],
+     "affordances": [
+      "hands_on_skill_practice"
+     ]
+    },
+    "f": {
+     "title": "Database Demo: See How Research Databases Work",
+     "event_kind": "workshop",
+     "start": "2026-12-03T11:00",
+     "end": "2026-12-03T11:45",
+     "delivery_mode": "online",
+     "cost_type": null,
+     "registration_rule": "required",
+     "eligibility": "campus_community_only",
+     "venue_name": null,
+     "building_name": null,
+     "street_address": null,
+     "organisation_name": "Libraries - ScienceEngineering"
+    },
+    "rec": {
+     "title": "Database Demo: See How Research Databases Work",
+     "event_kind": "workshop",
+     "occurrences": [
+      {
+       "start": "2026-12-03T11:00",
+       "end": "2026-12-03T11:45"
+      }
+     ],
+     "delivery_mode": "online",
+     "cost_type": "unknown",
+     "registration_rule": "required",
+     "eligibility": "campus_community_only",
+     "summary": "Learn to use research databases like EBSCO and Scopus, practice building search strings with boolean operators, and select key terms to find scholarly research.",
+     "venue_name": null,
+     "building_name": null,
+     "street_address": null,
+     "organisation_name": "Libraries - ScienceEngineering",
+     "needs": [
+      "build_a_skill",
+      "navigate_systems"
+     ],
+     "affordances": [
+      "hands_on_skill_practice"
+     ]
+    },
+    "checks": {
+     "title": 0.9698998746827641,
+     "event_kind": 0.9502194401646055,
+     "start": 0.8851815709043291,
+     "end": 0.820799966117866,
+     "delivery_mode": 0.9724506580874633,
+     "registration_rule": 0.5104531675625502,
+     "eligibility": 0.8831645322290205,
+     "organisation_name": 0.926127941315194
+    },
+    "usage": {
+     "total_tokens": 1644,
+     "total_input_tokens": 1644,
+     "input_tokens_by_modality": [
+      {
+       "modality": "text",
+       "tokens": 1644
+      }
+     ],
+     "total_output_tokens": 0
+    },
+    "score": {
+     "filled": 8,
+     "passed": 7,
+     "shown": 7,
+     "unsupported_shown": 0,
+     "date_ok": true,
+     "time_ok": true
+    },
+    "tokens": 2626
+   },
+   "baseline": {
+    "record": {
+     "title": "Database Demo: See How Research Databases Work",
+     "event_kind": "workshop",
+     "occurrences": [
+      {
+       "start": "2026-12-03T11:00",
+       "end": "2026-12-03T11:45"
+      }
+     ],
+     "delivery_mode": "online",
+     "cost_type": "unknown",
+     "registration_rule": "required",
+     "eligibility": "campus_community_only",
+     "summary": "An online workshop demonstrating how to use research databases like EBSCO and Scopus to find scholarly research, covering boolean operators, search strings, and key terms.",
+     "venue_name": null,
+     "building_name": null,
+     "street_address": null,
+     "organisation_name": "Libraries - ScienceEngineering",
+     "needs": [
+      "learn_practical_skill",
+      "advance_career_or_research",
+      "get_academic_or_career_help"
+     ],
+     "affordances": [
+      "hands_on_instruction",
+      "research_or_academic_talk",
+      "Expert_guidance_or_coaching"
+     ]
+    },
+    "f": {
+     "title": "Database Demo: See How Research Databases Work",
+     "event_kind": "workshop",
+     "start": "2026-12-03T11:00",
+     "end": "2026-12-03T11:45",
+     "delivery_mode": "online",
+     "cost_type": null,
+     "registration_rule": "required",
+     "eligibility": "campus_community_only",
+     "venue_name": null,
+     "building_name": null,
+     "street_address": null,
+     "organisation_name": "Libraries - ScienceEngineering"
+    },
+    "rec": {
+     "title": "Database Demo: See How Research Databases Work",
+     "event_kind": "workshop",
+     "occurrences": [
+      {
+       "start": "2026-12-03T11:00",
+       "end": "2026-12-03T11:45"
+      }
+     ],
+     "delivery_mode": "online",
+     "cost_type": "unknown",
+     "registration_rule": "required",
+     "eligibility": "campus_community_only",
+     "summary": "An online workshop demonstrating how to use research databases like EBSCO and Scopus to find scholarly research, covering boolean operators, search strings, and key terms.",
+     "venue_name": null,
+     "building_name": null,
+     "street_address": null,
+     "organisation_name": "Libraries - ScienceEngineering",
+     "needs": [
+      "learn_practical_skill",
+      "advance_career_or_research",
+      "get_academic_or_career_help"
+     ],
+     "affordances": [
+      "hands_on_instruction",
+      "research_or_academic_talk",
+      "Expert_guidance_or_coaching"
+     ]
+    },
+    "checks": {
+     "title": 0.9698998746827641,
+     "event_kind": 0.9502194401646055,
+     "start": 0.8851815709043291,
+     "end": 0.820799966117866,
+     "delivery_mode": 0.9724506580874633,
+     "registration_rule": 0.5104531675625502,
+     "eligibility": 0.8831645322290205,
+     "organisation_name": 0.926127941315194
+    },
+    "usage": {
+     "total_tokens": 1644,
+     "total_input_tokens": 1644,
+     "input_tokens_by_modality": [
+      {
+       "modality": "text",
+       "tokens": 1644
+      }
+     ],
+     "total_output_tokens": 0
+    },
+    "score": {
+     "filled": 8,
+     "passed": 7,
+     "shown": 8,
+     "unsupported_shown": 1,
+     "date_ok": true,
+     "time_ok": true
+    },
+    "tokens": 1485
+   }
+  }
+ ]
+}

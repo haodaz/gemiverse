@@ -1,0 +1,3394 @@
+{
+ "set": "design",
+ "at": "2026-11-21T16:47:21.037Z",
+ "threshold": 0.8,
+ "twin": {
+  "records": 15,
+  "fields_filled": 145,
+  "fields_passing_check": 118,
+  "fields_shown": 118,
+  "unsupported_fields_shown": 0,
+  "start_date_right": 11,
+  "start_date_wrong": 0,
+  "start_date_withheld": 4,
+  "start_time_right": 11,
+  "start_time_wrong": 0,
+  "tokens": 35493
+ },
+ "baseline": {
+  "records": 15,
+  "fields_filled": 159,
+  "fields_passing_check": 124,
+  "fields_shown": 159,
+  "unsupported_fields_shown": 35,
+  "start_date_right": 14,
+  "start_date_wrong": 1,
+  "start_date_withheld": 0,
+  "start_time_right": 15,
+  "start_time_wrong": 0,
+  "tokens": 19186
+ },
+ "errors": [],
+ "rows": [
+  {
+   "id": "nyu-01",
+   "school": "NYU",
+   "source_kind": "static_html",
+   "url": "https://tisch.nyu.edu/drama/events/tisch-drama-stage--the-house-of-bernarda-alba",
+   "truth": {
+    "date": "2026-11-21",
+    "time": "20:00-21:30"
+   },
+   "twin": {
+    "record": {
+     "title": "TDS: COLLABORATION: The House of Bernarda Alba",
+     "event_kind": "performance_exhibit",
+     "occurrences": [
+      {
+       "start": "2026-11-14T20:00",
+       "end": "2026-11-14T21:30"
+      },
+      {
+       "start": "2026-11-15T14:00",
+       "end": "2026-11-15T15:30"
+      },
+      {
+       "start": "2026-11-18T20:00",
+       "end": "2026-11-18T21:30"
+      },
+      {
+       "start": "2026-11-19T20:00",
+       "end": "2026-11-19T21:30"
+      },
+      {
+       "start": "2026-11-20T20:00",
+       "end": "2026-11-20T21:30"
+      },
+      {
+       "start": "2026-11-21T20:00",
+       "end": "2026-11-21T21:30"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "unknown",
+     "registration_rule": "ticketed",
+     "eligibility": "public",
+     "summary": "Watch a theatrical performance of a classic Spanish tragedy about five daughters navigating family confinement, desire, and power.",
+     "venue_name": null,
+     "building_name": null,
+     "street_address": null,
+     "organisation_name": "Tisch Drama Stage",
+     "needs": [
+      "make_and_express"
+     ],
+     "affordances": [
+      "experiencing_art_and_performance"
+     ]
+    },
+    "f": {
+     "title": "TDS: COLLABORATION: The House of Bernarda Alba",
+     "event_kind": "performance_exhibit",
+     "start": "2026-11-14T20:00",
+     "end": "2026-11-14T21:30",
+     "delivery_mode": "in_person",
+     "cost_type": null,
+     "registration_rule": "ticketed",
+     "eligibility": "public",
+     "venue_name": null,
+     "building_name": null,
+     "street_address": null,
+     "organisation_name": "Tisch Drama Stage"
+    },
+    "rec": {
+     "title": "TDS: COLLABORATION: The House of Bernarda Alba",
+     "event_kind": "performance_exhibit",
+     "occurrences": [
+      {
+       "start": "2026-11-14T20:00",
+       "end": "2026-11-14T21:30"
+      },
+      {
+       "start": "2026-11-15T14:00",
+       "end": "2026-11-15T15:30"
+      },
+      {
+       "start": "2026-11-18T20:00",
+       "end": "2026-11-18T21:30"
+      },
+      {
+       "start": "2026-11-19T20:00",
+       "end": "2026-11-19T21:30"
+      },
+      {
+       "start": "2026-11-20T20:00",
+       "end": "2026-11-20T21:30"
+      },
+      {
+       "start": "2026-11-21T20:00",
+       "end": "2026-11-21T21:30"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "unknown",
+     "registration_rule": "ticketed",
+     "eligibility": "public",
+     "summary": "Watch a theatrical performance of a classic Spanish tragedy about five daughters navigating family confinement, desire, and power.",
+     "venue_name": null,
+     "building_name": null,
+     "street_address": null,
+     "organisation_name": "Tisch Drama Stage",
+     "needs": [
+      "make_and_express"
+     ],
+     "affordances": [
+      "experiencing_art_and_performance"
+     ]
+    },
+    "checks": {
+     "title": 0.9644250693900467,
+     "event_kind": 0.6627349805090315,
+     "start": 0.9696659532319513,
+     "end": 0.9519598085842718,
+     "delivery_mode": 0.7573305626955799,
+     "registration_rule": 0.9411827439668322,
+     "eligibility": 0.8349247369190876,
+     "organisation_name": 0.4682843028086295
+    },
+    "usage": {
+     "total_tokens": 1357,
+     "total_input_tokens": 1357,
+     "input_tokens_by_modality": [
+      {
+       "modality": "text",
+       "tokens": 1357
+      }
+     ],
+     "total_output_tokens": 0
+    },
+    "score": {
+     "filled": 8,
+     "passed": 5,
+     "shown": 5,
+     "unsupported_shown": 0,
+     "date_ok": true,
+     "time_ok": true
+    },
+    "tokens": 2752
+   },
+   "baseline": {
+    "record": {
+     "title": "TDS: COLLABORATION: The House of Bernarda Alba",
+     "event_kind": "performance_exhibit",
+     "occurrences": [
+      {
+       "start": "2026-11-14T20:00",
+       "end": "2026-11-14T21:30"
+      },
+      {
+       "start": "2026-11-15T14:00",
+       "end": "2026-11-15T15:30"
+      },
+      {
+       "start": "2026-11-18T20:00",
+       "end": "2026-11-18T21:30"
+      },
+      {
+       "start": "2026-11-19T20:00",
+       "end": "2026-11-19T21:30"
+      },
+      {
+       "start": "2026-11-20T20:00",
+       "end": "2026-11-20T21:30"
+      },
+      {
+       "start": "2026-11-21T20:00",
+       "end": "2026-11-21T21:30"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "unknown",
+     "registration_rule": "ticketed",
+     "eligibility": "public",
+     "summary": "Tisch Drama Stage presents a production of Federico García Lorca's seminal play The House of Bernarda Alba, featuring a new translation by Caridad Svich and directed by Emily Mendelsohn. The play follows a family of five daughters in rural Spain locked into mourning for eight years after the death of their father.",
+     "venue_name": null,
+     "building_name": null,
+     "street_address": null,
+     "organisation_name": "NYU Tisch Drama",
+     "needs": [
+      "find_cultural_show",
+      "attend_public_program",
+      "explore_identity_culture"
+     ],
+     "affordances": [
+      "live_performance",
+      "in_person_attendance"
+     ]
+    },
+    "f": {
+     "title": "TDS: COLLABORATION: The House of Bernarda Alba",
+     "event_kind": "performance_exhibit",
+     "start": "2026-11-14T20:00",
+     "end": "2026-11-14T21:30",
+     "delivery_mode": "in_person",
+     "cost_type": null,
+     "registration_rule": "ticketed",
+     "eligibility": "public",
+     "venue_name": null,
+     "building_name": null,
+     "street_address": null,
+     "organisation_name": "NYU Tisch Drama"
+    },
+    "rec": {
+     "title": "TDS: COLLABORATION: The House of Bernarda Alba",
+     "event_kind": "performance_exhibit",
+     "occurrences": [
+      {
+       "start": "2026-11-14T20:00",
+       "end": "2026-11-14T21:30"
+      },
+      {
+       "start": "2026-11-15T14:00",
+       "end": "2026-11-15T15:30"
+      },
+      {
+       "start": "2026-11-18T20:00",
+       "end": "2026-11-18T21:30"
+      },
+      {
+       "start": "2026-11-19T20:00",
+       "end": "2026-11-19T21:30"
+      },
+      {
+       "start": "2026-11-20T20:00",
+       "end": "2026-11-20T21:30"
+      },
+      {
+       "start": "2026-11-21T20:00",
+       "end": "2026-11-21T21:30"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "unknown",
+     "registration_rule": "ticketed",
+     "eligibility": "public",
+     "summary": "Tisch Drama Stage presents a production of Federico García Lorca's seminal play The House of Bernarda Alba, featuring a new translation by Caridad Svich and directed by Emily Mendelsohn. The play follows a family of five daughters in rural Spain locked into mourning for eight years after the death of their father.",
+     "venue_name": null,
+     "building_name": null,
+     "street_address": null,
+     "organisation_name": "NYU Tisch Drama",
+     "needs": [
+      "find_cultural_show",
+      "attend_public_program",
+      "explore_identity_culture"
+     ],
+     "affordances": [
+      "live_performance",
+      "in_person_attendance"
+     ]
+    },
+    "checks": {
+     "title": 0.9644250693900467,
+     "event_kind": 0.6627349805090315,
+     "start": 0.9696659532319513,
+     "end": 0.9519598085842718,
+     "delivery_mode": 0.7573305626955799,
+     "registration_rule": 0.9411827439668322,
+     "eligibility": 0.8349247369190876,
+     "organisation_name": 0.4543372712635627
+    },
+    "usage": {
+     "total_tokens": 1357,
+     "total_input_tokens": 1357,
+     "input_tokens_by_modality": [
+      {
+       "modality": "text",
+       "tokens": 1357
+      }
+     ],
+     "total_output_tokens": 0
+    },
+    "score": {
+     "filled": 8,
+     "passed": 5,
+     "shown": 8,
+     "unsupported_shown": 3,
+     "date_ok": true,
+     "time_ok": true
+    },
+    "tokens": 1381
+   }
+  },
+  {
+   "id": "nyu-02",
+   "school": "NYU",
+   "source_kind": "static_html",
+   "url": "https://steinhardt.nyu.edu/events/2026-11/nevermind-noise",
+   "truth": {
+    "date": "2026-11-22",
+    "time": "15:00-16:30"
+   },
+   "twin": {
+    "record": {
+     "title": "Nevermind the Noise",
+     "event_kind": "performance_exhibit",
+     "occurrences": [
+      {
+       "start": null,
+       "end": null
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "required",
+     "eligibility": "public",
+     "summary": "Attend a live performance of new experimental concert music composed and performed by a collective of graduate composers.",
+     "venue_name": "Room 570",
+     "building_name": "Paulson Center",
+     "street_address": "181 Mercer Street",
+     "organisation_name": "Nevermind the Noise",
+     "needs": [
+      "make_and_express",
+      "find_my_people"
+     ],
+     "affordances": [
+      "experiencing_art_and_performance"
+     ]
+    },
+    "f": {
+     "title": "Nevermind the Noise",
+     "event_kind": "performance_exhibit",
+     "start": null,
+     "end": null,
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "required",
+     "eligibility": "public",
+     "venue_name": "Room 570",
+     "building_name": "Paulson Center",
+     "street_address": "181 Mercer Street",
+     "organisation_name": "Nevermind the Noise"
+    },
+    "rec": {
+     "title": "Nevermind the Noise",
+     "event_kind": "performance_exhibit",
+     "occurrences": [
+      {
+       "start": null,
+       "end": null
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "required",
+     "eligibility": "public",
+     "summary": "Attend a live performance of new experimental concert music composed and performed by a collective of graduate composers.",
+     "venue_name": "Room 570",
+     "building_name": "Paulson Center",
+     "street_address": "181 Mercer Street",
+     "organisation_name": "Nevermind the Noise",
+     "needs": [
+      "make_and_express",
+      "find_my_people"
+     ],
+     "affordances": [
+      "experiencing_art_and_performance"
+     ]
+    },
+    "checks": {
+     "title": 0.979128445355503,
+     "event_kind": 0.4135086831062124,
+     "delivery_mode": 0.9562576767949876,
+     "cost_type": 0.9892142012522708,
+     "registration_rule": 0.969886511515049,
+     "eligibility": 0.9047264506489963,
+     "venue_name": 0.9640431848868442,
+     "building_name": 0.9855037615797947,
+     "street_address": 0.9725108737067633,
+     "organisation_name": 0.5481160441085413
+    },
+    "usage": {
+     "total_tokens": 1225,
+     "total_input_tokens": 1225,
+     "input_tokens_by_modality": [
+      {
+       "modality": "text",
+       "tokens": 1225
+      }
+     ],
+     "total_output_tokens": 0
+    },
+    "score": {
+     "filled": 10,
+     "passed": 8,
+     "shown": 8,
+     "unsupported_shown": 0,
+     "date_ok": null,
+     "time_ok": null
+    },
+    "tokens": 2101
+   },
+   "baseline": {
+    "record": {
+     "title": "Nevermind the Noise",
+     "event_kind": "performance_exhibit",
+     "occurrences": [
+      {
+       "start": "2026-11-22T15:00",
+       "end": "2026-11-22T16:30"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "required",
+     "eligibility": "public",
+     "summary": "A performance of new experimental concert music by Nevermind the Noise, an NYU Steinhardt graduate composers collective.",
+     "venue_name": "Room 570",
+     "building_name": "Paulson Center",
+     "street_address": "181 Mercer Street",
+     "organisation_name": "NYU Steinhardt Music and Performing Arts Professions",
+     "needs": [
+      "have_fun",
+      "explore_passions",
+      "enjoy_holidays"
+     ],
+     "affordances": [
+      "arts_culture",
+      "free_entry",
+      "creative_making"
+     ]
+    },
+    "f": {
+     "title": "Nevermind the Noise",
+     "event_kind": "performance_exhibit",
+     "start": "2026-11-22T15:00",
+     "end": "2026-11-22T16:30",
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "required",
+     "eligibility": "public",
+     "venue_name": "Room 570",
+     "building_name": "Paulson Center",
+     "street_address": "181 Mercer Street",
+     "organisation_name": "NYU Steinhardt Music and Performing Arts Professions"
+    },
+    "rec": {
+     "title": "Nevermind the Noise",
+     "event_kind": "performance_exhibit",
+     "occurrences": [
+      {
+       "start": "2026-11-22T15:00",
+       "end": "2026-11-22T16:30"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "required",
+     "eligibility": "public",
+     "summary": "A performance of new experimental concert music by Nevermind the Noise, an NYU Steinhardt graduate composers collective.",
+     "venue_name": "Room 570",
+     "building_name": "Paulson Center",
+     "street_address": "181 Mercer Street",
+     "organisation_name": "NYU Steinhardt Music and Performing Arts Professions",
+     "needs": [
+      "have_fun",
+      "explore_passions",
+      "enjoy_holidays"
+     ],
+     "affordances": [
+      "arts_culture",
+      "free_entry",
+      "creative_making"
+     ]
+    },
+    "checks": {
+     "title": 0.979128445355503,
+     "event_kind": 0.4135086831062124,
+     "start": 0.6548469468811638,
+     "end": 0.6884649566662425,
+     "delivery_mode": 0.9562576767949876,
+     "cost_type": 0.9892142012522708,
+     "registration_rule": 0.969886511515049,
+     "eligibility": 0.9047264506489963,
+     "venue_name": 0.9640431848868442,
+     "building_name": 0.9855037615797947,
+     "street_address": 0.9725108737067633,
+     "organisation_name": 0.7023688127657441
+    },
+    "usage": {
+     "total_tokens": 1421,
+     "total_input_tokens": 1421,
+     "input_tokens_by_modality": [
+      {
+       "modality": "text",
+       "tokens": 1421
+      }
+     ],
+     "total_output_tokens": 0
+    },
+    "score": {
+     "filled": 12,
+     "passed": 8,
+     "shown": 12,
+     "unsupported_shown": 4,
+     "date_ok": true,
+     "time_ok": true
+    },
+    "tokens": 894
+   }
+  },
+  {
+   "id": "nyu-04",
+   "school": "NYU",
+   "source_kind": "static_html",
+   "url": "http://engineering.nyu.edu/events/2026/11/23/research-seminar-alessandro-rizzo",
+   "truth": {
+    "date": "2026-11-23",
+    "time": "13:00-14:00"
+   },
+   "twin": {
+    "record": {
+     "title": "Research Seminar: Alessandro Rizzo",
+     "event_kind": "talk_panel",
+     "occurrences": [
+      {
+       "start": "2026-11-23T13:00",
+       "end": "2026-11-23T14:00"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "unknown",
+     "registration_rule": "required",
+     "eligibility": "public",
+     "summary": "Attend a research seminar in urban informatics to hear about real-world challenges facing cities and urban environments around the world.",
+     "venue_name": "Room 1201",
+     "building_name": null,
+     "street_address": "370 Jay St, Brooklyn, NY 11201",
+     "organisation_name": "Center for Urban Science + Progress",
+     "needs": [
+      "explore_a_field"
+     ],
+     "affordances": [
+      "intellectual_inquiry"
+     ]
+    },
+    "f": {
+     "title": "Research Seminar: Alessandro Rizzo",
+     "event_kind": "talk_panel",
+     "start": "2026-11-23T13:00",
+     "end": "2026-11-23T14:00",
+     "delivery_mode": "in_person",
+     "cost_type": null,
+     "registration_rule": "required",
+     "eligibility": "public",
+     "venue_name": "Room 1201",
+     "building_name": null,
+     "street_address": "370 Jay St, Brooklyn, NY 11201",
+     "organisation_name": "Center for Urban Science + Progress"
+    },
+    "rec": {
+     "title": "Research Seminar: Alessandro Rizzo",
+     "event_kind": "talk_panel",
+     "occurrences": [
+      {
+       "start": "2026-11-23T13:00",
+       "end": "2026-11-23T14:00"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "unknown",
+     "registration_rule": "required",
+     "eligibility": "public",
+     "summary": "Attend a research seminar in urban informatics to hear about real-world challenges facing cities and urban environments around the world.",
+     "venue_name": "Room 1201",
+     "building_name": null,
+     "street_address": "370 Jay St, Brooklyn, NY 11201",
+     "organisation_name": "Center for Urban Science + Progress",
+     "needs": [
+      "explore_a_field"
+     ],
+     "affordances": [
+      "intellectual_inquiry"
+     ]
+    },
+    "checks": {
+     "title": 0.962540187454889,
+     "event_kind": 0.3050134614908551,
+     "start": 0.9840731866994183,
+     "end": 0.9782083702465172,
+     "delivery_mode": 0.961183214142934,
+     "registration_rule": 0.9617049450668198,
+     "eligibility": 0.9686013563750138,
+     "venue_name": 0.9697215777350926,
+     "street_address": 0.9569866545414493,
+     "organisation_name": 0.9766211628650698
+    },
+    "usage": {
+     "total_tokens": 1411,
+     "total_input_tokens": 1411,
+     "input_tokens_by_modality": [
+      {
+       "modality": "text",
+       "tokens": 1411
+      }
+     ],
+     "total_output_tokens": 0
+    },
+    "score": {
+     "filled": 10,
+     "passed": 9,
+     "shown": 9,
+     "unsupported_shown": 0,
+     "date_ok": true,
+     "time_ok": true
+    },
+    "tokens": 1995
+   },
+   "baseline": {
+    "record": {
+     "title": "Research Seminar: Alessandro Rizzo",
+     "event_kind": "talk_panel",
+     "occurrences": [
+      {
+       "start": "2026-11-23T13:00",
+       "end": "2026-11-23T14:00"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "unknown",
+     "registration_rule": "required",
+     "eligibility": "public",
+     "summary": "A research seminar featuring Alessandro Rizzo, professor in the Department of Electronics and Telecommunications at the Polytechnic University of Turin, hosted by the Center for Urban Science + Progress (CUSP) at NYU Tandon as part of the Urban Science Research Seminar Series.",
+     "venue_name": "Room 1201, 12th Floor",
+     "building_name": "370 Jay Street",
+     "street_address": "370 Jay St, Brooklyn, NY 11201",
+     "organisation_name": "Center for Urban Science + Progress (CUSP)",
+     "needs": [
+      "intellectual_stimulation",
+      "academic_career_growth",
+      "disciplinary_exploration"
+     ],
+     "affordances": [
+      "expert_lecture_panel",
+      "frontier_ideas",
+      "discussion_qa"
+     ]
+    },
+    "f": {
+     "title": "Research Seminar: Alessandro Rizzo",
+     "event_kind": "talk_panel",
+     "start": "2026-11-23T13:00",
+     "end": "2026-11-23T14:00",
+     "delivery_mode": "in_person",
+     "cost_type": null,
+     "registration_rule": "required",
+     "eligibility": "public",
+     "venue_name": "Room 1201, 12th Floor",
+     "building_name": "370 Jay Street",
+     "street_address": "370 Jay St, Brooklyn, NY 11201",
+     "organisation_name": "Center for Urban Science + Progress (CUSP)"
+    },
+    "rec": {
+     "title": "Research Seminar: Alessandro Rizzo",
+     "event_kind": "talk_panel",
+     "occurrences": [
+      {
+       "start": "2026-11-23T13:00",
+       "end": "2026-11-23T14:00"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "unknown",
+     "registration_rule": "required",
+     "eligibility": "public",
+     "summary": "A research seminar featuring Alessandro Rizzo, professor in the Department of Electronics and Telecommunications at the Polytechnic University of Turin, hosted by the Center for Urban Science + Progress (CUSP) at NYU Tandon as part of the Urban Science Research Seminar Series.",
+     "venue_name": "Room 1201, 12th Floor",
+     "building_name": "370 Jay Street",
+     "street_address": "370 Jay St, Brooklyn, NY 11201",
+     "organisation_name": "Center for Urban Science + Progress (CUSP)",
+     "needs": [
+      "intellectual_stimulation",
+      "academic_career_growth",
+      "disciplinary_exploration"
+     ],
+     "affordances": [
+      "expert_lecture_panel",
+      "frontier_ideas",
+      "discussion_qa"
+     ]
+    },
+    "checks": {
+     "title": 0.962540187454889,
+     "event_kind": 0.3050134614908551,
+     "start": 0.9840731866994183,
+     "end": 0.9782083702465172,
+     "delivery_mode": 0.961183214142934,
+     "registration_rule": 0.9617049450668198,
+     "eligibility": 0.9686013563750138,
+     "venue_name": 0.9577839134809912,
+     "building_name": 0.9699458074694729,
+     "street_address": 0.9569866545414493,
+     "organisation_name": 0.9450788637915802
+    },
+    "usage": {
+     "total_tokens": 1498,
+     "total_input_tokens": 1498,
+     "input_tokens_by_modality": [
+      {
+       "modality": "text",
+       "tokens": 1498
+      }
+     ],
+     "total_output_tokens": 0
+    },
+    "score": {
+     "filled": 11,
+     "passed": 10,
+     "shown": 11,
+     "unsupported_shown": 1,
+     "date_ok": true,
+     "time_ok": true
+    },
+    "tokens": 1088
+   }
+  },
+  {
+   "id": "nyu-05",
+   "school": "NYU",
+   "source_kind": "json_feed",
+   "url": "https://events.nyu.edu/event/412484-berkley-institute-event-money-in-politics",
+   "truth": {
+    "date": "2026-11-23",
+    "time": "16:00-17:30"
+   },
+   "twin": {
+    "record": {
+     "title": "Berkley Institute Event: Money in Politics",
+     "event_kind": "talk_panel",
+     "occurrences": [
+      {
+       "start": "2026-11-23T16:00",
+       "end": "2026-11-23T17:30"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "none",
+     "eligibility": "public",
+     "summary": "Attend a moderated panel discussion analyzing campaign finance, political corruption, and reform proposals while practicing constructive cross-ideological civic dialogue.",
+     "venue_name": null,
+     "building_name": null,
+     "street_address": "20 Cooper Square",
+     "organisation_name": "Berkley Institute for Civil Discourse and Civic Solutions",
+     "needs": [
+      "explore_a_field",
+      "contribute_beyond_self"
+     ],
+     "affordances": [
+      "intellectual_inquiry",
+      "civic_action_and_outreach"
+     ]
+    },
+    "f": {
+     "title": "Berkley Institute Event: Money in Politics",
+     "event_kind": "talk_panel",
+     "start": "2026-11-23T16:00",
+     "end": "2026-11-23T17:30",
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "none",
+     "eligibility": "public",
+     "venue_name": null,
+     "building_name": null,
+     "street_address": "20 Cooper Square",
+     "organisation_name": "Berkley Institute for Civil Discourse and Civic Solutions"
+    },
+    "rec": {
+     "title": "Berkley Institute Event: Money in Politics",
+     "event_kind": "talk_panel",
+     "occurrences": [
+      {
+       "start": "2026-11-23T16:00",
+       "end": "2026-11-23T17:30"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "none",
+     "eligibility": "public",
+     "summary": "Attend a moderated panel discussion analyzing campaign finance, political corruption, and reform proposals while practicing constructive cross-ideological civic dialogue.",
+     "venue_name": null,
+     "building_name": null,
+     "street_address": "20 Cooper Square",
+     "organisation_name": "Berkley Institute for Civil Discourse and Civic Solutions",
+     "needs": [
+      "explore_a_field",
+      "contribute_beyond_self"
+     ],
+     "affordances": [
+      "intellectual_inquiry",
+      "civic_action_and_outreach"
+     ]
+    },
+    "checks": {
+     "title": 0.9667478350846525,
+     "event_kind": 0.9505151467621166,
+     "start": 0.9511851502859731,
+     "end": 0.9494838588445706,
+     "delivery_mode": 0.8628259058482329,
+     "cost_type": 0.9718889937902241,
+     "registration_rule": 0.38479742373775444,
+     "eligibility": 0.9531844197980133,
+     "street_address": 0.9632613043369236,
+     "organisation_name": 0.9041460540978844
+    },
+    "usage": {
+     "total_tokens": 1609,
+     "total_input_tokens": 1609,
+     "input_tokens_by_modality": [
+      {
+       "modality": "text",
+       "tokens": 1609
+      }
+     ],
+     "total_output_tokens": 0
+    },
+    "score": {
+     "filled": 10,
+     "passed": 9,
+     "shown": 9,
+     "unsupported_shown": 0,
+     "date_ok": true,
+     "time_ok": true
+    },
+    "tokens": 2545
+   },
+   "baseline": {
+    "record": {
+     "title": "Berkley Institute Event: Money in Politics",
+     "event_kind": "talk_panel",
+     "occurrences": [
+      {
+       "start": "2026-11-23T16:00",
+       "end": "2026-11-23T17:30"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "none",
+     "eligibility": "public",
+     "summary": "A moderated cross-ideological panel discussion featuring experts from the Brennan Center for Justice and the Federal Election Commission examining campaign finance, political corruption, and reform.",
+     "venue_name": "20 Cooper Square",
+     "building_name": "20 Cooper Square",
+     "street_address": "20 Cooper Square",
+     "organisation_name": "Berkley Institute for Civil Discourse and Civic Solutions",
+     "needs": [
+      "intellectual",
+      "civic"
+     ],
+     "affordances": [
+      "talk_panel",
+      "expert_lecture",
+      "civic_reflection"
+     ]
+    },
+    "f": {
+     "title": "Berkley Institute Event: Money in Politics",
+     "event_kind": "talk_panel",
+     "start": "2026-11-23T16:00",
+     "end": "2026-11-23T17:30",
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "none",
+     "eligibility": "public",
+     "venue_name": "20 Cooper Square",
+     "building_name": "20 Cooper Square",
+     "street_address": "20 Cooper Square",
+     "organisation_name": "Berkley Institute for Civil Discourse and Civic Solutions"
+    },
+    "rec": {
+     "title": "Berkley Institute Event: Money in Politics",
+     "event_kind": "talk_panel",
+     "occurrences": [
+      {
+       "start": "2026-11-23T16:00",
+       "end": "2026-11-23T17:30"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "none",
+     "eligibility": "public",
+     "summary": "A moderated cross-ideological panel discussion featuring experts from the Brennan Center for Justice and the Federal Election Commission examining campaign finance, political corruption, and reform.",
+     "venue_name": "20 Cooper Square",
+     "building_name": "20 Cooper Square",
+     "street_address": "20 Cooper Square",
+     "organisation_name": "Berkley Institute for Civil Discourse and Civic Solutions",
+     "needs": [
+      "intellectual",
+      "civic"
+     ],
+     "affordances": [
+      "talk_panel",
+      "expert_lecture",
+      "civic_reflection"
+     ]
+    },
+    "checks": {
+     "title": 0.9667478350846525,
+     "event_kind": 0.9505151467621166,
+     "start": 0.9511851502859731,
+     "end": 0.9494838588445706,
+     "delivery_mode": 0.8628259058482329,
+     "cost_type": 0.9718889937902241,
+     "registration_rule": 0.38479742373775444,
+     "eligibility": 0.9531844197980133,
+     "venue_name": 0.9591471539310809,
+     "building_name": 0.9763206006504749,
+     "street_address": 0.9632613043369236,
+     "organisation_name": 0.9041460540978844
+    },
+    "usage": {
+     "total_tokens": 1763,
+     "total_input_tokens": 1763,
+     "input_tokens_by_modality": [
+      {
+       "modality": "text",
+       "tokens": 1763
+      }
+     ],
+     "total_output_tokens": 0
+    },
+    "score": {
+     "filled": 12,
+     "passed": 11,
+     "shown": 12,
+     "unsupported_shown": 1,
+     "date_ok": true,
+     "time_ok": true
+    },
+    "tokens": 1252
+   }
+  },
+  {
+   "id": "nyu-07",
+   "school": "NYU",
+   "source_kind": "static_html",
+   "url": "https://nyu.libcal.com/event/17975327",
+   "truth": {
+    "date": "2026-12-01",
+    "time": "12:30-13:00"
+   },
+   "twin": {
+    "record": {
+     "title": "30 Minute Lightning Lesson: From Search to Shelf (Call Numbers)",
+     "event_kind": "workshop",
+     "occurrences": [
+      {
+       "start": "2026-12-01T12:30",
+       "end": "2026-12-01T13:00"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "unknown",
+     "registration_rule": "required",
+     "eligibility": "campus_community_only",
+     "summary": "Learn how Library of Congress call numbers work through short interactive activities to find books and materials efficiently in the library stacks.",
+     "venue_name": "6th Floor, Rm. 619",
+     "building_name": "Bobst Library",
+     "street_address": null,
+     "organisation_name": "NYU Libraries",
+     "needs": [
+      "navigate_systems",
+      "build_a_skill"
+     ],
+     "affordances": [
+      "hands_on_skill_practice"
+     ]
+    },
+    "f": {
+     "title": "30 Minute Lightning Lesson: From Search to Shelf (Call Numbers)",
+     "event_kind": "workshop",
+     "start": "2026-12-01T12:30",
+     "end": "2026-12-01T13:00",
+     "delivery_mode": "in_person",
+     "cost_type": null,
+     "registration_rule": "required",
+     "eligibility": "campus_community_only",
+     "venue_name": "6th Floor, Rm. 619",
+     "building_name": "Bobst Library",
+     "street_address": null,
+     "organisation_name": "NYU Libraries"
+    },
+    "rec": {
+     "title": "30 Minute Lightning Lesson: From Search to Shelf (Call Numbers)",
+     "event_kind": "workshop",
+     "occurrences": [
+      {
+       "start": "2026-12-01T12:30",
+       "end": "2026-12-01T13:00"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "unknown",
+     "registration_rule": "required",
+     "eligibility": "campus_community_only",
+     "summary": "Learn how Library of Congress call numbers work through short interactive activities to find books and materials efficiently in the library stacks.",
+     "venue_name": "6th Floor, Rm. 619",
+     "building_name": "Bobst Library",
+     "street_address": null,
+     "organisation_name": "NYU Libraries",
+     "needs": [
+      "navigate_systems",
+      "build_a_skill"
+     ],
+     "affordances": [
+      "hands_on_skill_practice"
+     ]
+    },
+    "checks": {
+     "title": 0.9586610550561167,
+     "event_kind": 0.9480178118441385,
+     "start": 0.9367274109870295,
+     "end": 0.9457081886520969,
+     "delivery_mode": 0.5246899677054161,
+     "registration_rule": 0.9782901589265288,
+     "eligibility": 0.4566033717169132,
+     "venue_name": 0.9724323959633229,
+     "building_name": 0.9762751073500746,
+     "organisation_name": 0.8878446495081679
+    },
+    "usage": {
+     "total_tokens": 1674,
+     "total_input_tokens": 1674,
+     "input_tokens_by_modality": [
+      {
+       "modality": "text",
+       "tokens": 1674
+      }
+     ],
+     "total_output_tokens": 0
+    },
+    "score": {
+     "filled": 10,
+     "passed": 8,
+     "shown": 8,
+     "unsupported_shown": 0,
+     "date_ok": true,
+     "time_ok": true
+    },
+    "tokens": 2385
+   },
+   "baseline": {
+    "record": {
+     "title": "30 Minute Lightning Lesson: From Search to Shelf (Call Numbers)",
+     "event_kind": "workshop",
+     "occurrences": [
+      {
+       "start": "2026-12-01T12:30",
+       "end": "2026-12-01T13:00"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "unknown",
+     "registration_rule": "required",
+     "eligibility": "campus_community_only",
+     "summary": "This 30-minute interactive lesson teaches participants how library call numbers are organized and how to use the Library of Congress classification system to find books and materials on the shelves.",
+     "venue_name": "6th Floor, Rm. 619",
+     "building_name": "Bobst Library",
+     "street_address": null,
+     "organisation_name": "NYU Libraries",
+     "needs": [
+      "academic_basics",
+      "practical_Know_how"
+     ],
+     "affordances": [
+      "guided_instruction"
+     ]
+    },
+    "f": {
+     "title": "30 Minute Lightning Lesson: From Search to Shelf (Call Numbers)",
+     "event_kind": "workshop",
+     "start": "2026-12-01T12:30",
+     "end": "2026-12-01T13:00",
+     "delivery_mode": "in_person",
+     "cost_type": null,
+     "registration_rule": "required",
+     "eligibility": "campus_community_only",
+     "venue_name": "6th Floor, Rm. 619",
+     "building_name": "Bobst Library",
+     "street_address": null,
+     "organisation_name": "NYU Libraries"
+    },
+    "rec": {
+     "title": "30 Minute Lightning Lesson: From Search to Shelf (Call Numbers)",
+     "event_kind": "workshop",
+     "occurrences": [
+      {
+       "start": "2026-12-01T12:30",
+       "end": "2026-12-01T13:00"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "unknown",
+     "registration_rule": "required",
+     "eligibility": "campus_community_only",
+     "summary": "This 30-minute interactive lesson teaches participants how library call numbers are organized and how to use the Library of Congress classification system to find books and materials on the shelves.",
+     "venue_name": "6th Floor, Rm. 619",
+     "building_name": "Bobst Library",
+     "street_address": null,
+     "organisation_name": "NYU Libraries",
+     "needs": [
+      "academic_basics",
+      "practical_Know_how"
+     ],
+     "affordances": [
+      "guided_instruction"
+     ]
+    },
+    "checks": {
+     "title": 0.9586610550561167,
+     "event_kind": 0.9480178118441385,
+     "start": 0.9367274109870295,
+     "end": 0.9457081886520969,
+     "delivery_mode": 0.5246899677054161,
+     "registration_rule": 0.9782901589265288,
+     "eligibility": 0.4566033717169132,
+     "venue_name": 0.9724323959633229,
+     "building_name": 0.9762751073500746,
+     "organisation_name": 0.8878446495081679
+    },
+    "usage": {
+     "total_tokens": 1674,
+     "total_input_tokens": 1674,
+     "input_tokens_by_modality": [
+      {
+       "modality": "text",
+       "tokens": 1674
+      }
+     ],
+     "total_output_tokens": 0
+    },
+    "score": {
+     "filled": 10,
+     "passed": 8,
+     "shown": 10,
+     "unsupported_shown": 2,
+     "date_ok": true,
+     "time_ok": true
+    },
+    "tokens": 1291
+   }
+  },
+  {
+   "id": "nyu-09",
+   "school": "NYU",
+   "source_kind": "static_html",
+   "url": "https://nyu.libcal.com/event/18058755",
+   "truth": {
+    "date": "2026-12-01",
+    "time": "17:00-18:30"
+   },
+   "twin": {
+    "record": {
+     "title": "NYU CRACS Co-Lab Presents: \"Racial Exhaustion\" by Ralina Joseph",
+     "event_kind": "talk_panel",
+     "occurrences": [
+      {
+       "start": "2026-12-01T17:00",
+       "end": "2026-12-01T18:30"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "encouraged",
+     "eligibility": "public",
+     "summary": "Attend a free book talk and conversation exploring how to navigate racism in the wake of DEI.",
+     "venue_name": "IHDSC Seminar Room",
+     "building_name": null,
+     "street_address": "196 Mercer Street, 8th Floor, New York, NY 10012",
+     "organisation_name": "NYU CRACS Co-Lab",
+     "needs": [
+      "explore_a_field",
+      "contribute_beyond_self"
+     ],
+     "affordances": [
+      "intellectual_inquiry"
+     ]
+    },
+    "f": {
+     "title": "NYU CRACS Co-Lab Presents: \"Racial Exhaustion\" by Ralina Joseph",
+     "event_kind": "talk_panel",
+     "start": "2026-12-01T17:00",
+     "end": "2026-12-01T18:30",
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "encouraged",
+     "eligibility": "public",
+     "venue_name": "IHDSC Seminar Room",
+     "building_name": null,
+     "street_address": "196 Mercer Street, 8th Floor, New York, NY 10012",
+     "organisation_name": "NYU CRACS Co-Lab"
+    },
+    "rec": {
+     "title": "NYU CRACS Co-Lab Presents: \"Racial Exhaustion\" by Ralina Joseph",
+     "event_kind": "talk_panel",
+     "occurrences": [
+      {
+       "start": "2026-12-01T17:00",
+       "end": "2026-12-01T18:30"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "encouraged",
+     "eligibility": "public",
+     "summary": "Attend a free book talk and conversation exploring how to navigate racism in the wake of DEI.",
+     "venue_name": "IHDSC Seminar Room",
+     "building_name": null,
+     "street_address": "196 Mercer Street, 8th Floor, New York, NY 10012",
+     "organisation_name": "NYU CRACS Co-Lab",
+     "needs": [
+      "explore_a_field",
+      "contribute_beyond_self"
+     ],
+     "affordances": [
+      "intellectual_inquiry"
+     ]
+    },
+    "checks": {
+     "title": 0.9631785079083292,
+     "event_kind": 0.7289403162654823,
+     "start": 0.984333633862114,
+     "end": 0.9825927584762678,
+     "delivery_mode": 0.9220556550587007,
+     "cost_type": 0.9786054933001643,
+     "registration_rule": 0.7853097057622953,
+     "eligibility": 0.9536615167768611,
+     "venue_name": 0.9783624203149969,
+     "street_address": 0.98026290103812,
+     "organisation_name": 0.8625029559569152
+    },
+    "usage": {
+     "total_tokens": 1433,
+     "total_input_tokens": 1433,
+     "input_tokens_by_modality": [
+      {
+       "modality": "text",
+       "tokens": 1433
+      }
+     ],
+     "total_output_tokens": 0
+    },
+    "score": {
+     "filled": 11,
+     "passed": 9,
+     "shown": 9,
+     "unsupported_shown": 0,
+     "date_ok": true,
+     "time_ok": true
+    },
+    "tokens": 2074
+   },
+   "baseline": {
+    "record": {
+     "title": "NYU CRACS Co-Lab Presents: \"Racial Exhaustion\" by Ralina Joseph",
+     "event_kind": "talk_panel",
+     "occurrences": [
+      {
+       "start": "2026-12-01T17:00",
+       "end": "2026-12-01T18:30"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "encouraged",
+     "eligibility": "public",
+     "summary": "A book talk featuring UCLA Professor Ralina Joseph on her book 'Racial Exhaustion: How to Move Through Racism in the Wake of DEI', in conversation with NYU Steinhardt Associate Professor L'Heureux Lewis-McCoy.",
+     "venue_name": "IHDSC Seminar Room, 8th Floor",
+     "building_name": "Institute of Human Development and Social Change (IHDSC)",
+     "street_address": "196 Mercer Street, New York, NY 10012",
+     "organisation_name": "NYU's Critical Racial Anti Colonial Study Co-Lab (CRACS Co-Lab)",
+     "needs": [
+      "intellectual_depth",
+      "civic_understanding",
+      "identity_affirmation"
+     ],
+     "affordances": [
+      "expert_access",
+      "discussion_space",
+      "identity_shared_space"
+     ]
+    },
+    "f": {
+     "title": "NYU CRACS Co-Lab Presents: \"Racial Exhaustion\" by Ralina Joseph",
+     "event_kind": "talk_panel",
+     "start": "2026-12-01T17:00",
+     "end": "2026-12-01T18:30",
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "encouraged",
+     "eligibility": "public",
+     "venue_name": "IHDSC Seminar Room, 8th Floor",
+     "building_name": "Institute of Human Development and Social Change (IHDSC)",
+     "street_address": "196 Mercer Street, New York, NY 10012",
+     "organisation_name": "NYU's Critical Racial Anti Colonial Study Co-Lab (CRACS Co-Lab)"
+    },
+    "rec": {
+     "title": "NYU CRACS Co-Lab Presents: \"Racial Exhaustion\" by Ralina Joseph",
+     "event_kind": "talk_panel",
+     "occurrences": [
+      {
+       "start": "2026-12-01T17:00",
+       "end": "2026-12-01T18:30"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "encouraged",
+     "eligibility": "public",
+     "summary": "A book talk featuring UCLA Professor Ralina Joseph on her book 'Racial Exhaustion: How to Move Through Racism in the Wake of DEI', in conversation with NYU Steinhardt Associate Professor L'Heureux Lewis-McCoy.",
+     "venue_name": "IHDSC Seminar Room, 8th Floor",
+     "building_name": "Institute of Human Development and Social Change (IHDSC)",
+     "street_address": "196 Mercer Street, New York, NY 10012",
+     "organisation_name": "NYU's Critical Racial Anti Colonial Study Co-Lab (CRACS Co-Lab)",
+     "needs": [
+      "intellectual_depth",
+      "civic_understanding",
+      "identity_affirmation"
+     ],
+     "affordances": [
+      "expert_access",
+      "discussion_space",
+      "identity_shared_space"
+     ]
+    },
+    "checks": {
+     "title": 0.9631785079083292,
+     "event_kind": 0.7289403162654823,
+     "start": 0.984333633862114,
+     "end": 0.9825927584762678,
+     "delivery_mode": 0.9220556550587007,
+     "cost_type": 0.9786054933001643,
+     "registration_rule": 0.7853097057622953,
+     "eligibility": 0.9536615167768611,
+     "venue_name": 0.9237388906690195,
+     "building_name": 0.9622173262174697,
+     "street_address": 0.7311086874772392,
+     "organisation_name": 0.8947901605559238
+    },
+    "usage": {
+     "total_tokens": 1529,
+     "total_input_tokens": 1529,
+     "input_tokens_by_modality": [
+      {
+       "modality": "text",
+       "tokens": 1529
+      }
+     ],
+     "total_output_tokens": 0
+    },
+    "score": {
+     "filled": 12,
+     "passed": 9,
+     "shown": 12,
+     "unsupported_shown": 3,
+     "date_ok": true,
+     "time_ok": true
+    },
+    "tokens": 1020
+   }
+  },
+  {
+   "id": "nyu-10",
+   "school": "NYU",
+   "source_kind": "static_html",
+   "url": "https://nyu.libcal.com/event/17950942",
+   "truth": {
+    "date": "2026-12-02",
+    "time": "14:00-17:00"
+   },
+   "twin": {
+    "record": {
+     "title": "Finals Study Break",
+     "event_kind": "social_study_break",
+     "occurrences": [
+      {
+       "start": "2026-12-02T14:00",
+       "end": "2026-12-02T17:00"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "unknown",
+     "registration_rule": "required",
+     "eligibility": "campus_community_only",
+     "summary": "Students can take a break from finals with snacks, crafts, games, and music, while librarians are available to answer questions about citations, sources, and search strategies.",
+     "venue_name": "7th Floor, Rm. 743",
+     "building_name": "Bobst Library",
+     "street_address": null,
+     "organisation_name": "NYU Libraries",
+     "needs": [
+      "rest_and_recover",
+      "get_mentorship_and_feedback"
+     ],
+     "affordances": [
+      "mindfulness_and_decompression",
+      "food_and_refueling"
+     ]
+    },
+    "f": {
+     "title": "Finals Study Break",
+     "event_kind": "social_study_break",
+     "start": "2026-12-02T14:00",
+     "end": "2026-12-02T17:00",
+     "delivery_mode": "in_person",
+     "cost_type": null,
+     "registration_rule": "required",
+     "eligibility": "campus_community_only",
+     "venue_name": "7th Floor, Rm. 743",
+     "building_name": "Bobst Library",
+     "street_address": null,
+     "organisation_name": "NYU Libraries"
+    },
+    "rec": {
+     "title": "Finals Study Break",
+     "event_kind": "social_study_break",
+     "occurrences": [
+      {
+       "start": "2026-12-02T14:00",
+       "end": "2026-12-02T17:00"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "unknown",
+     "registration_rule": "required",
+     "eligibility": "campus_community_only",
+     "summary": "Students can take a break from finals with snacks, crafts, games, and music, while librarians are available to answer questions about citations, sources, and search strategies.",
+     "venue_name": "7th Floor, Rm. 743",
+     "building_name": "Bobst Library",
+     "street_address": null,
+     "organisation_name": "NYU Libraries",
+     "needs": [
+      "rest_and_recover",
+      "get_mentorship_and_feedback"
+     ],
+     "affordances": [
+      "mindfulness_and_decompression",
+      "food_and_refueling"
+     ]
+    },
+    "checks": {
+     "title": 0.9791570097817283,
+     "event_kind": 0.9352000801651915,
+     "start": 0.949740237751762,
+     "end": 0.977719891400565,
+     "delivery_mode": 0.5157501174415046,
+     "registration_rule": 0.9646513096876828,
+     "eligibility": 0.6379753291694721,
+     "venue_name": 0.938139199558704,
+     "building_name": 0.9857548869942933,
+     "organisation_name": 0.8507806897688294
+    },
+    "usage": {
+     "total_tokens": 1678,
+     "total_input_tokens": 1678,
+     "input_tokens_by_modality": [
+      {
+       "modality": "text",
+       "tokens": 1678
+      }
+     ],
+     "total_output_tokens": 0
+    },
+    "score": {
+     "filled": 10,
+     "passed": 8,
+     "shown": 8,
+     "unsupported_shown": 0,
+     "date_ok": true,
+     "time_ok": true
+    },
+    "tokens": 2564
+   },
+   "baseline": {
+    "record": {
+     "title": "Finals Study Break",
+     "event_kind": "social_study_break",
+     "occurrences": [
+      {
+       "start": "2026-12-02T14:00",
+       "end": "2026-12-02T17:00"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "required",
+     "eligibility": "campus_community_only",
+     "summary": "A semesterly study break at Bobst Library featuring food, beverages, crafts, games, music, and on-site librarians available to answer questions about citations, finding sources, and search strategies.",
+     "venue_name": "7th Floor, Rm. 743",
+     "building_name": "Bobst Library",
+     "street_address": null,
+     "organisation_name": "NYU Libraries",
+     "needs": [
+      "have_fun",
+      "de_stress",
+      "eat_well",
+      "learn_new_things",
+      "improve_academic_skills",
+      "meet_Change_makers"
+     ],
+     "affordances": [
+      "food",
+      "music",
+      "play_games",
+      "crafts",
+      "study_help"
+     ]
+    },
+    "f": {
+     "title": "Finals Study Break",
+     "event_kind": "social_study_break",
+     "start": "2026-12-02T14:00",
+     "end": "2026-12-02T17:00",
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "required",
+     "eligibility": "campus_community_only",
+     "venue_name": "7th Floor, Rm. 743",
+     "building_name": "Bobst Library",
+     "street_address": null,
+     "organisation_name": "NYU Libraries"
+    },
+    "rec": {
+     "title": "Finals Study Break",
+     "event_kind": "social_study_break",
+     "occurrences": [
+      {
+       "start": "2026-12-02T14:00",
+       "end": "2026-12-02T17:00"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "required",
+     "eligibility": "campus_community_only",
+     "summary": "A semesterly study break at Bobst Library featuring food, beverages, crafts, games, music, and on-site librarians available to answer questions about citations, finding sources, and search strategies.",
+     "venue_name": "7th Floor, Rm. 743",
+     "building_name": "Bobst Library",
+     "street_address": null,
+     "organisation_name": "NYU Libraries",
+     "needs": [
+      "have_fun",
+      "de_stress",
+      "eat_well",
+      "learn_new_things",
+      "improve_academic_skills",
+      "meet_Change_makers"
+     ],
+     "affordances": [
+      "food",
+      "music",
+      "play_games",
+      "crafts",
+      "study_help"
+     ]
+    },
+    "checks": {
+     "title": 0.9791570097817283,
+     "event_kind": 0.9352000801651915,
+     "start": 0.949740237751762,
+     "end": 0.977719891400565,
+     "delivery_mode": 0.5157501174415046,
+     "cost_type": 0.11124516222908491,
+     "registration_rule": 0.9646513096876828,
+     "eligibility": 0.6379753291694721,
+     "venue_name": 0.938139199558704,
+     "building_name": 0.9857548869942933,
+     "organisation_name": 0.8507806897688294
+    },
+    "usage": {
+     "total_tokens": 1751,
+     "total_input_tokens": 1751,
+     "input_tokens_by_modality": [
+      {
+       "modality": "text",
+       "tokens": 1751
+      }
+     ],
+     "total_output_tokens": 0
+    },
+    "score": {
+     "filled": 11,
+     "passed": 8,
+     "shown": 11,
+     "unsupported_shown": 3,
+     "date_ok": true,
+     "time_ok": true
+    },
+    "tokens": 1339
+   }
+  },
+  {
+   "id": "nyu-12",
+   "school": "NYU",
+   "source_kind": "static_html",
+   "url": "https://nyu.libcal.com/event/18010395",
+   "truth": {
+    "date": "2026-12-07",
+    "time": "16:00-18:00"
+   },
+   "twin": {
+    "record": {
+     "title": "Hack Dibner 2026 Final Showcase",
+     "event_kind": "competition_showcase",
+     "occurrences": [
+      {
+       "start": "2026-12-07T16:00",
+       "end": "2026-12-07T18:00"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "unknown",
+     "registration_rule": "required",
+     "eligibility": "campus_community_only",
+     "summary": "Watch student teams pitch technology ideas for improving library services to judges, vote for a fan favorite, and enjoy refreshments.",
+     "venue_name": "LC 400",
+     "building_name": "Bern Dibner Library",
+     "street_address": null,
+     "organisation_name": "Dibner Library",
+     "needs": [
+      "get_experience",
+      "fund_my_path"
+     ],
+     "affordances": [
+      "pitching_and_competing",
+      "food_and_refueling"
+     ]
+    },
+    "f": {
+     "title": "Hack Dibner 2026 Final Showcase",
+     "event_kind": "competition_showcase",
+     "start": "2026-12-07T16:00",
+     "end": "2026-12-07T18:00",
+     "delivery_mode": "in_person",
+     "cost_type": null,
+     "registration_rule": "required",
+     "eligibility": "campus_community_only",
+     "venue_name": "LC 400",
+     "building_name": "Bern Dibner Library",
+     "street_address": null,
+     "organisation_name": "Dibner Library"
+    },
+    "rec": {
+     "title": "Hack Dibner 2026 Final Showcase",
+     "event_kind": "competition_showcase",
+     "occurrences": [
+      {
+       "start": "2026-12-07T16:00",
+       "end": "2026-12-07T18:00"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "unknown",
+     "registration_rule": "required",
+     "eligibility": "campus_community_only",
+     "summary": "Watch student teams pitch technology ideas for improving library services to judges, vote for a fan favorite, and enjoy refreshments.",
+     "venue_name": "LC 400",
+     "building_name": "Bern Dibner Library",
+     "street_address": null,
+     "organisation_name": "Dibner Library",
+     "needs": [
+      "get_experience",
+      "fund_my_path"
+     ],
+     "affordances": [
+      "pitching_and_competing",
+      "food_and_refueling"
+     ]
+    },
+    "checks": {
+     "title": 0.9761682876937481,
+     "event_kind": 0.9450545834646975,
+     "start": 0.9819583758003639,
+     "end": 0.9513849634543841,
+     "delivery_mode": 0.6135579076826726,
+     "registration_rule": 0.9716183068575253,
+     "eligibility": 0.930796789499815,
+     "venue_name": 0.966503599619416,
+     "building_name": 0.9676983719946018,
+     "organisation_name": 0.8961665757433226
+    },
+    "usage": {
+     "total_tokens": 1489,
+     "total_input_tokens": 1489,
+     "input_tokens_by_modality": [
+      {
+       "modality": "text",
+       "tokens": 1489
+      }
+     ],
+     "total_output_tokens": 0
+    },
+    "score": {
+     "filled": 10,
+     "passed": 9,
+     "shown": 9,
+     "unsupported_shown": 0,
+     "date_ok": true,
+     "time_ok": true
+    },
+    "tokens": 2303
+   },
+   "baseline": {
+    "record": {
+     "title": "Hack Dibner 2026 Final Showcase",
+     "event_kind": "competition_showcase",
+     "occurrences": [
+      {
+       "start": "2026-12-07T16:00",
+       "end": "2026-12-07T18:00"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "unknown",
+     "registration_rule": "required",
+     "eligibility": "campus_community_only",
+     "summary": "Hack Dibner is an annual semester-long proof-of-concept competition hosted by Dibner Library where teams develop ideas to improve library services using technology. This final showcase features Shark Tank style presentations where teams have 5 minutes to pitch their ideas to a panel of judges for the chance to win cash prizes, while attendees can vote for the fan favorite and enjoy refreshments.",
+     "venue_name": "LC 400",
+     "building_name": "Bern Dibner Library",
+     "street_address": null,
+     "organisation_name": "NYU Libraries",
+     "needs": [
+      "campus_affiliation",
+      "prior_registration"
+     ],
+     "affordances": [
+      "free_food_or_drink",
+      "prizes_giveaways"
+     ]
+    },
+    "f": {
+     "title": "Hack Dibner 2026 Final Showcase",
+     "event_kind": "competition_showcase",
+     "start": "2026-12-07T16:00",
+     "end": "2026-12-07T18:00",
+     "delivery_mode": "in_person",
+     "cost_type": null,
+     "registration_rule": "required",
+     "eligibility": "campus_community_only",
+     "venue_name": "LC 400",
+     "building_name": "Bern Dibner Library",
+     "street_address": null,
+     "organisation_name": "NYU Libraries"
+    },
+    "rec": {
+     "title": "Hack Dibner 2026 Final Showcase",
+     "event_kind": "competition_showcase",
+     "occurrences": [
+      {
+       "start": "2026-12-07T16:00",
+       "end": "2026-12-07T18:00"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "unknown",
+     "registration_rule": "required",
+     "eligibility": "campus_community_only",
+     "summary": "Hack Dibner is an annual semester-long proof-of-concept competition hosted by Dibner Library where teams develop ideas to improve library services using technology. This final showcase features Shark Tank style presentations where teams have 5 minutes to pitch their ideas to a panel of judges for the chance to win cash prizes, while attendees can vote for the fan favorite and enjoy refreshments.",
+     "venue_name": "LC 400",
+     "building_name": "Bern Dibner Library",
+     "street_address": null,
+     "organisation_name": "NYU Libraries",
+     "needs": [
+      "campus_affiliation",
+      "prior_registration"
+     ],
+     "affordances": [
+      "free_food_or_drink",
+      "prizes_giveaways"
+     ]
+    },
+    "checks": {
+     "title": 0.9761682876937481,
+     "event_kind": 0.9450545834646975,
+     "start": 0.9819583758003639,
+     "end": 0.9513849634543841,
+     "delivery_mode": 0.6135579076826726,
+     "registration_rule": 0.9716183068575253,
+     "eligibility": 0.930796789499815,
+     "venue_name": 0.966503599619416,
+     "building_name": 0.9676983719946018,
+     "organisation_name": 0.8809040131760912
+    },
+    "usage": {
+     "total_tokens": 1489,
+     "total_input_tokens": 1489,
+     "input_tokens_by_modality": [
+      {
+       "modality": "text",
+       "tokens": 1489
+      }
+     ],
+     "total_output_tokens": 0
+    },
+    "score": {
+     "filled": 10,
+     "passed": 9,
+     "shown": 10,
+     "unsupported_shown": 1,
+     "date_ok": true,
+     "time_ok": true
+    },
+    "tokens": 1125
+   }
+  },
+  {
+   "id": "nyu-14",
+   "school": "NYU",
+   "source_kind": "static_html",
+   "url": "https://nyu.libcal.com/event/17316004",
+   "truth": {
+    "date": "2026-12-09",
+    "time": "17:00-18:00"
+   },
+   "twin": {
+    "record": {
+     "title": "Meditations on Earth",
+     "event_kind": "community_wellness",
+     "occurrences": [
+      {
+       "start": "2026-12-09T17:00",
+       "end": "2026-12-09T18:00"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "unknown",
+     "registration_rule": "encouraged",
+     "eligibility": "campus_community_only",
+     "summary": "Join a guided meditation session blending mindfulness with reflections on the environment, interconnectedness, and change, with cushions and chairs provided.",
+     "venue_name": "7th Floor, Rm. 745",
+     "building_name": "Bobst Library",
+     "street_address": null,
+     "organisation_name": "Office of Sustainability and NYU Libraries",
+     "needs": [
+      "rest_and_recover"
+     ],
+     "affordances": [
+      "mindfulness_and_decompression"
+     ]
+    },
+    "f": {
+     "title": "Meditations on Earth",
+     "event_kind": "community_wellness",
+     "start": "2026-12-09T17:00",
+     "end": "2026-12-09T18:00",
+     "delivery_mode": "in_person",
+     "cost_type": null,
+     "registration_rule": "encouraged",
+     "eligibility": "campus_community_only",
+     "venue_name": "7th Floor, Rm. 745",
+     "building_name": "Bobst Library",
+     "street_address": null,
+     "organisation_name": "Office of Sustainability and NYU Libraries"
+    },
+    "rec": {
+     "title": "Meditations on Earth",
+     "event_kind": "community_wellness",
+     "occurrences": [
+      {
+       "start": "2026-12-09T17:00",
+       "end": "2026-12-09T18:00"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "unknown",
+     "registration_rule": "encouraged",
+     "eligibility": "campus_community_only",
+     "summary": "Join a guided meditation session blending mindfulness with reflections on the environment, interconnectedness, and change, with cushions and chairs provided.",
+     "venue_name": "7th Floor, Rm. 745",
+     "building_name": "Bobst Library",
+     "street_address": null,
+     "organisation_name": "Office of Sustainability and NYU Libraries",
+     "needs": [
+      "rest_and_recover"
+     ],
+     "affordances": [
+      "mindfulness_and_decompression"
+     ]
+    },
+    "checks": {
+     "title": 0.9705571297898566,
+     "event_kind": 0.8175854936267336,
+     "start": 0.9597175934972119,
+     "end": 0.9571088102699173,
+     "delivery_mode": 0.99,
+     "registration_rule": 0.972885217397976,
+     "eligibility": 0.7932748074860728,
+     "venue_name": 0.9751838790205244,
+     "building_name": 0.9849120645055943,
+     "organisation_name": 0.5177099984421429
+    },
+    "usage": {
+     "total_tokens": 1356,
+     "total_input_tokens": 1356,
+     "input_tokens_by_modality": [
+      {
+       "modality": "text",
+       "tokens": 1356
+      }
+     ],
+     "total_output_tokens": 0
+    },
+    "score": {
+     "filled": 10,
+     "passed": 8,
+     "shown": 8,
+     "unsupported_shown": 0,
+     "date_ok": true,
+     "time_ok": true
+    },
+    "tokens": 1925
+   },
+   "baseline": {
+    "record": {
+     "title": "Meditations on Earth",
+     "event_kind": "community_wellness",
+     "occurrences": [
+      {
+       "start": "2026-12-09T17:00",
+       "end": "2026-12-09T18:00"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "unknown",
+     "registration_rule": "encouraged",
+     "eligibility": "campus_community_only",
+     "summary": "Guided meditations led by Bart van Melik weaving mindfulness with reflections on the environment and the connectedness of all things. Hosted by the Office of Sustainability and NYU Libraries, open to beginners and experienced practitioners.",
+     "venue_name": "7th Floor, Rm. 745",
+     "building_name": "Bobst Library",
+     "street_address": null,
+     "organisation_name": "Office of Sustainability and NYU Libraries",
+     "needs": [
+      "need_sustainability_environment",
+      "need_mental_health_mindfulness"
+     ],
+     "affordances": [
+      "aff_hands_on_instruction",
+      "aff_drop_in_access"
+     ]
+    },
+    "f": {
+     "title": "Meditations on Earth",
+     "event_kind": "community_wellness",
+     "start": "2026-12-09T17:00",
+     "end": "2026-12-09T18:00",
+     "delivery_mode": "in_person",
+     "cost_type": null,
+     "registration_rule": "encouraged",
+     "eligibility": "campus_community_only",
+     "venue_name": "7th Floor, Rm. 745",
+     "building_name": "Bobst Library",
+     "street_address": null,
+     "organisation_name": "Office of Sustainability and NYU Libraries"
+    },
+    "rec": {
+     "title": "Meditations on Earth",
+     "event_kind": "community_wellness",
+     "occurrences": [
+      {
+       "start": "2026-12-09T17:00",
+       "end": "2026-12-09T18:00"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "unknown",
+     "registration_rule": "encouraged",
+     "eligibility": "campus_community_only",
+     "summary": "Guided meditations led by Bart van Melik weaving mindfulness with reflections on the environment and the connectedness of all things. Hosted by the Office of Sustainability and NYU Libraries, open to beginners and experienced practitioners.",
+     "venue_name": "7th Floor, Rm. 745",
+     "building_name": "Bobst Library",
+     "street_address": null,
+     "organisation_name": "Office of Sustainability and NYU Libraries",
+     "needs": [
+      "need_sustainability_environment",
+      "need_mental_health_mindfulness"
+     ],
+     "affordances": [
+      "aff_hands_on_instruction",
+      "aff_drop_in_access"
+     ]
+    },
+    "checks": {
+     "title": 0.9705571297898566,
+     "event_kind": 0.8175854936267336,
+     "start": 0.9597175934972119,
+     "end": 0.9571088102699173,
+     "delivery_mode": 0.99,
+     "registration_rule": 0.972885217397976,
+     "eligibility": 0.7932748074860728,
+     "venue_name": 0.9751838790205244,
+     "building_name": 0.9849120645055943,
+     "organisation_name": 0.5177099984421429
+    },
+    "usage": {
+     "total_tokens": 1356,
+     "total_input_tokens": 1356,
+     "input_tokens_by_modality": [
+      {
+       "modality": "text",
+       "tokens": 1356
+      }
+     ],
+     "total_output_tokens": 0
+    },
+    "score": {
+     "filled": 10,
+     "passed": 8,
+     "shown": 10,
+     "unsupported_shown": 2,
+     "date_ok": true,
+     "time_ok": true
+    },
+    "tokens": 997
+   }
+  },
+  {
+   "id": "nyu-15",
+   "school": "NYU",
+   "source_kind": "json_feed",
+   "url": "https://events.nyu.edu/event/sasaki-luminaria-2026",
+   "truth": {
+    "date": "2026-12-09",
+    "time": "18:00"
+   },
+   "twin": {
+    "record": {
+     "title": "Sasaki Luminaria",
+     "event_kind": "performance_exhibit",
+     "occurrences": [
+      {
+       "start": "2026-12-09T18:00",
+       "end": null
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "none",
+     "eligibility": "public",
+     "summary": "Listen to live jazz music performed by a student trio in an illuminated outdoor garden.",
+     "venue_name": "Sasaki Garden",
+     "building_name": null,
+     "street_address": null,
+     "organisation_name": "Faculty Housing and Residential Services",
+     "needs": [
+      "rest_and_recover"
+     ],
+     "affordances": [
+      "experiencing_art_and_performance",
+      "mindfulness_and_decompression"
+     ]
+    },
+    "f": {
+     "title": "Sasaki Luminaria",
+     "event_kind": "performance_exhibit",
+     "start": "2026-12-09T18:00",
+     "end": null,
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "none",
+     "eligibility": "public",
+     "venue_name": "Sasaki Garden",
+     "building_name": null,
+     "street_address": null,
+     "organisation_name": "Faculty Housing and Residential Services"
+    },
+    "rec": {
+     "title": "Sasaki Luminaria",
+     "event_kind": "performance_exhibit",
+     "occurrences": [
+      {
+       "start": "2026-12-09T18:00",
+       "end": null
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "none",
+     "eligibility": "public",
+     "summary": "Listen to live jazz music performed by a student trio in an illuminated outdoor garden.",
+     "venue_name": "Sasaki Garden",
+     "building_name": null,
+     "street_address": null,
+     "organisation_name": "Faculty Housing and Residential Services",
+     "needs": [
+      "rest_and_recover"
+     ],
+     "affordances": [
+      "experiencing_art_and_performance",
+      "mindfulness_and_decompression"
+     ]
+    },
+    "checks": {
+     "title": 0.9853331023494195,
+     "event_kind": 0.584984411328584,
+     "start": 0.9366921426465308,
+     "delivery_mode": 0.9594152082457544,
+     "cost_type": 0.9816092887152684,
+     "registration_rule": 0.894878461759243,
+     "eligibility": 0.9638106634682905,
+     "venue_name": 0.9778587416660399,
+     "organisation_name": 0.8892242080345439
+    },
+    "usage": {
+     "total_tokens": 1356,
+     "total_input_tokens": 1356,
+     "input_tokens_by_modality": [
+      {
+       "modality": "text",
+       "tokens": 1356
+      }
+     ],
+     "total_output_tokens": 0
+    },
+    "score": {
+     "filled": 9,
+     "passed": 8,
+     "shown": 8,
+     "unsupported_shown": 0,
+     "date_ok": true,
+     "time_ok": true
+    },
+    "tokens": 2114
+   },
+   "baseline": {
+    "record": {
+     "title": "Sasaki Luminaria",
+     "event_kind": "performance_exhibit",
+     "occurrences": [
+      {
+       "start": "2026-12-09T18:00",
+       "end": null
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "none",
+     "eligibility": "public",
+     "summary": "Sasaki Luminaria is a free public outdoor event at Sasaki Garden featuring live music by the NYU Jazz Trio from Steinhardt Music and Performing Arts Professions.",
+     "venue_name": "Sasaki Garden",
+     "building_name": "Washington Square Village",
+     "street_address": "1-2 Washington Square Village on West 3rd Street, or 3-4 Washington Square Village on Bleecker Street",
+     "organisation_name": "Faculty Housing and Residential Services",
+     "needs": [
+      "live_performance_arts"
+     ],
+     "affordances": [
+      "arts_culture_consumption",
+      "outdoor_setting",
+      "no_advance_commitment"
+     ]
+    },
+    "f": {
+     "title": "Sasaki Luminaria",
+     "event_kind": "performance_exhibit",
+     "start": "2026-12-09T18:00",
+     "end": null,
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "none",
+     "eligibility": "public",
+     "venue_name": "Sasaki Garden",
+     "building_name": "Washington Square Village",
+     "street_address": "1-2 Washington Square Village on West 3rd Street, or 3-4 Washington Square Village on Bleecker Street",
+     "organisation_name": "Faculty Housing and Residential Services"
+    },
+    "rec": {
+     "title": "Sasaki Luminaria",
+     "event_kind": "performance_exhibit",
+     "occurrences": [
+      {
+       "start": "2026-12-09T18:00",
+       "end": null
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "none",
+     "eligibility": "public",
+     "summary": "Sasaki Luminaria is a free public outdoor event at Sasaki Garden featuring live music by the NYU Jazz Trio from Steinhardt Music and Performing Arts Professions.",
+     "venue_name": "Sasaki Garden",
+     "building_name": "Washington Square Village",
+     "street_address": "1-2 Washington Square Village on West 3rd Street, or 3-4 Washington Square Village on Bleecker Street",
+     "organisation_name": "Faculty Housing and Residential Services",
+     "needs": [
+      "live_performance_arts"
+     ],
+     "affordances": [
+      "arts_culture_consumption",
+      "outdoor_setting",
+      "no_advance_commitment"
+     ]
+    },
+    "checks": {
+     "title": 0.9853331023494195,
+     "event_kind": 0.584984411328584,
+     "start": 0.9366921426465308,
+     "delivery_mode": 0.9594152082457544,
+     "cost_type": 0.9816092887152684,
+     "registration_rule": 0.894878461759243,
+     "eligibility": 0.9638106634682905,
+     "venue_name": 0.9778587416660399,
+     "building_name": 0.8252711425138053,
+     "street_address": 0.9044375040735659,
+     "organisation_name": 0.8892242080345439
+    },
+    "usage": {
+     "total_tokens": 1530,
+     "total_input_tokens": 1530,
+     "input_tokens_by_modality": [
+      {
+       "modality": "text",
+       "tokens": 1530
+      }
+     ],
+     "total_output_tokens": 0
+    },
+    "score": {
+     "filled": 11,
+     "passed": 10,
+     "shown": 11,
+     "unsupported_shown": 1,
+     "date_ok": true,
+     "time_ok": true
+    },
+    "tokens": 1091
+   }
+  },
+  {
+   "id": "nyu-17",
+   "school": "NYU",
+   "source_kind": "static_html",
+   "url": "https://steinhardt.nyu.edu/events/2026-12/study-break-snacks",
+   "truth": {
+    "date": "2026-12-10",
+    "time": "15:00-17:00"
+   },
+   "twin": {
+    "record": {
+     "title": "Study Break Snacks",
+     "event_kind": "social_study_break",
+     "occurrences": [
+      {
+       "start": null,
+       "end": null
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "none",
+     "eligibility": "students_only",
+     "summary": "Drop by the lounge to grab free sweet and savory snacks, take a study break, and connect with fellow students.",
+     "venue_name": "First Floor Lounge",
+     "building_name": "Pless Hall",
+     "street_address": null,
+     "organisation_name": "NYU Steinhardt Office of Student Affairs",
+     "needs": [
+      "rest_and_recover",
+      "find_my_people"
+     ],
+     "affordances": [
+      "food_and_refueling",
+      "meeting_people"
+     ]
+    },
+    "f": {
+     "title": "Study Break Snacks",
+     "event_kind": "social_study_break",
+     "start": null,
+     "end": null,
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "none",
+     "eligibility": "students_only",
+     "venue_name": "First Floor Lounge",
+     "building_name": "Pless Hall",
+     "street_address": null,
+     "organisation_name": "NYU Steinhardt Office of Student Affairs"
+    },
+    "rec": {
+     "title": "Study Break Snacks",
+     "event_kind": "social_study_break",
+     "occurrences": [
+      {
+       "start": null,
+       "end": null
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "none",
+     "eligibility": "students_only",
+     "summary": "Drop by the lounge to grab free sweet and savory snacks, take a study break, and connect with fellow students.",
+     "venue_name": "First Floor Lounge",
+     "building_name": "Pless Hall",
+     "street_address": null,
+     "organisation_name": "NYU Steinhardt Office of Student Affairs",
+     "needs": [
+      "rest_and_recover",
+      "find_my_people"
+     ],
+     "affordances": [
+      "food_and_refueling",
+      "meeting_people"
+     ]
+    },
+    "checks": {
+     "title": 0.978957812624968,
+     "event_kind": 0.9272411274023659,
+     "delivery_mode": 0.965082248957971,
+     "cost_type": 0.9827839301626821,
+     "registration_rule": 0.9519459776734526,
+     "eligibility": 0.47582945694524775,
+     "venue_name": 0.9692531038954743,
+     "building_name": 0.9752028504060252,
+     "organisation_name": 0.9798278109597142
+    },
+    "usage": {
+     "total_tokens": 1028,
+     "total_input_tokens": 1028,
+     "input_tokens_by_modality": [
+      {
+       "modality": "text",
+       "tokens": 1028
+      }
+     ],
+     "total_output_tokens": 0
+    },
+    "score": {
+     "filled": 9,
+     "passed": 8,
+     "shown": 8,
+     "unsupported_shown": 0,
+     "date_ok": null,
+     "time_ok": null
+    },
+    "tokens": 1794
+   },
+   "baseline": {
+    "record": {
+     "title": "Study Break Snacks",
+     "event_kind": "social_study_break",
+     "occurrences": [
+      {
+       "start": "2026-12-10T15:00",
+       "end": "2026-12-10T17:00"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "none",
+     "eligibility": "students_only",
+     "summary": "The NYU Steinhardt Office of Student Affairs hosts a study break at Pless Hall, offering free sweet and savory snacks for students to recharge and connect while studying or preparing for exams.",
+     "venue_name": "First Floor Lounge",
+     "building_name": "Pless Hall",
+     "street_address": null,
+     "organisation_name": "NYU Steinhardt Office of Student Affairs",
+     "needs": [
+      "fun-stimulation",
+      "mental-emotional-health",
+      "social-connection"
+     ],
+     "affordances": [
+      "food",
+      "meet-make-friends"
+     ]
+    },
+    "f": {
+     "title": "Study Break Snacks",
+     "event_kind": "social_study_break",
+     "start": "2026-12-10T15:00",
+     "end": "2026-12-10T17:00",
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "none",
+     "eligibility": "students_only",
+     "venue_name": "First Floor Lounge",
+     "building_name": "Pless Hall",
+     "street_address": null,
+     "organisation_name": "NYU Steinhardt Office of Student Affairs"
+    },
+    "rec": {
+     "title": "Study Break Snacks",
+     "event_kind": "social_study_break",
+     "occurrences": [
+      {
+       "start": "2026-12-10T15:00",
+       "end": "2026-12-10T17:00"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "none",
+     "eligibility": "students_only",
+     "summary": "The NYU Steinhardt Office of Student Affairs hosts a study break at Pless Hall, offering free sweet and savory snacks for students to recharge and connect while studying or preparing for exams.",
+     "venue_name": "First Floor Lounge",
+     "building_name": "Pless Hall",
+     "street_address": null,
+     "organisation_name": "NYU Steinhardt Office of Student Affairs",
+     "needs": [
+      "fun-stimulation",
+      "mental-emotional-health",
+      "social-connection"
+     ],
+     "affordances": [
+      "food",
+      "meet-make-friends"
+     ]
+    },
+    "checks": {
+     "title": 0.978957812624968,
+     "event_kind": 0.9272411274023659,
+     "start": 0.7927650668023026,
+     "end": 0.6071593354969408,
+     "delivery_mode": 0.965082248957971,
+     "cost_type": 0.9827839301626821,
+     "registration_rule": 0.9519459776734526,
+     "eligibility": 0.47582945694524775,
+     "venue_name": 0.9692531038954743,
+     "building_name": 0.9752028504060252,
+     "organisation_name": 0.9798278109597142
+    },
+    "usage": {
+     "total_tokens": 1218,
+     "total_input_tokens": 1218,
+     "input_tokens_by_modality": [
+      {
+       "modality": "text",
+       "tokens": 1218
+      }
+     ],
+     "total_output_tokens": 0
+    },
+    "score": {
+     "filled": 11,
+     "passed": 8,
+     "shown": 11,
+     "unsupported_shown": 3,
+     "date_ok": true,
+     "time_ok": true
+    },
+    "tokens": 773
+   }
+  },
+  {
+   "id": "col-01",
+   "school": "Columbia",
+   "source_kind": "json_feed",
+   "url": "https://events.columbia.edu/cal/event/eventView.do?b=de&calPath=%2Fpublic%2Fcals%2FMainCal&guid=CAL-00bbdb7c-a1e3a224-01a1-e602a124-0000100eevents%40columbia.edu&recurrenceId=",
+   "truth": {
+    "date": "2026-11-21",
+    "time": "13:00-16:00"
+   },
+   "twin": {
+    "record": {
+     "title": "Saturday Science: Your Body in Motion",
+     "event_kind": "workshop",
+     "occurrences": [
+      {
+       "start": "2026-11-21T13:00",
+       "end": "2026-11-21T16:00"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "ticketed",
+     "eligibility": "k12_family_oriented",
+     "summary": "Explore the workings of the brain through hands-on activities, demonstrations, and scientific resources.",
+     "venue_name": "Ground Floor",
+     "building_name": "Jerome L. Greene Science Center",
+     "street_address": "605 West 129th Street, New York, NY 10027",
+     "organisation_name": "Zuckerman Institute",
+     "needs": [
+      "explore_a_field"
+     ],
+     "affordances": [
+      "hands_on_skill_practice",
+      "intellectual_inquiry"
+     ]
+    },
+    "f": {
+     "title": "Saturday Science: Your Body in Motion",
+     "event_kind": "workshop",
+     "start": "2026-11-21T13:00",
+     "end": "2026-11-21T16:00",
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "ticketed",
+     "eligibility": "k12_family_oriented",
+     "venue_name": "Ground Floor",
+     "building_name": "Jerome L. Greene Science Center",
+     "street_address": "605 West 129th Street, New York, NY 10027",
+     "organisation_name": "Zuckerman Institute"
+    },
+    "rec": {
+     "title": "Saturday Science: Your Body in Motion",
+     "event_kind": "workshop",
+     "occurrences": [
+      {
+       "start": "2026-11-21T13:00",
+       "end": "2026-11-21T16:00"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "ticketed",
+     "eligibility": "k12_family_oriented",
+     "summary": "Explore the workings of the brain through hands-on activities, demonstrations, and scientific resources.",
+     "venue_name": "Ground Floor",
+     "building_name": "Jerome L. Greene Science Center",
+     "street_address": "605 West 129th Street, New York, NY 10027",
+     "organisation_name": "Zuckerman Institute",
+     "needs": [
+      "explore_a_field"
+     ],
+     "affordances": [
+      "hands_on_skill_practice",
+      "intellectual_inquiry"
+     ]
+    },
+    "checks": {
+     "title": 0.9796530448015576,
+     "event_kind": 0.39016709464025956,
+     "start": 0.933526540560938,
+     "end": 0.5723950125256849,
+     "delivery_mode": 0.9241562852282824,
+     "cost_type": 0.974034854074112,
+     "registration_rule": 0.8965375254601955,
+     "eligibility": 0.8852662939617456,
+     "venue_name": 0.9501796099712764,
+     "building_name": 0.9735650387780778,
+     "street_address": 0.9436129560594199,
+     "organisation_name": 0.8445094233130347
+    },
+    "usage": {
+     "total_tokens": 2318,
+     "total_input_tokens": 2318,
+     "input_tokens_by_modality": [
+      {
+       "modality": "text",
+       "tokens": 2318
+      }
+     ],
+     "total_output_tokens": 0
+    },
+    "score": {
+     "filled": 12,
+     "passed": 10,
+     "shown": 10,
+     "unsupported_shown": 0,
+     "date_ok": true,
+     "time_ok": true
+    },
+    "tokens": 2841
+   },
+   "baseline": {
+    "record": {
+     "title": "Saturday Science: Your Body in Motion",
+     "event_kind": "workshop",
+     "occurrences": [
+      {
+       "start": "2026-11-21T13:00",
+       "end": "2026-11-21T16:00"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "encouraged",
+     "eligibility": "k12_family_oriented",
+     "summary": "A free monthly event for kids of all ages to explore how the brain works through hands-on neuroscience activities and demonstrations created by BioBus and Columbia University Neuroscience Outreach (CUNO).",
+     "venue_name": "Ground Floor",
+     "building_name": "Jerome L. Greene Science Center",
+     "street_address": "605 West 129th Street, New York, NY 10027",
+     "organisation_name": "Zuckerman Institute",
+     "needs": [
+      "intellectual",
+      "practical_skill",
+      "creative"
+     ],
+     "affordances": [
+      "hands_on_making",
+      "drop_in",
+      "beginner_friendly"
+     ]
+    },
+    "f": {
+     "title": "Saturday Science: Your Body in Motion",
+     "event_kind": "workshop",
+     "start": "2026-11-21T13:00",
+     "end": "2026-11-21T16:00",
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "encouraged",
+     "eligibility": "k12_family_oriented",
+     "venue_name": "Ground Floor",
+     "building_name": "Jerome L. Greene Science Center",
+     "street_address": "605 West 129th Street, New York, NY 10027",
+     "organisation_name": "Zuckerman Institute"
+    },
+    "rec": {
+     "title": "Saturday Science: Your Body in Motion",
+     "event_kind": "workshop",
+     "occurrences": [
+      {
+       "start": "2026-11-21T13:00",
+       "end": "2026-11-21T16:00"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "free",
+     "registration_rule": "encouraged",
+     "eligibility": "k12_family_oriented",
+     "summary": "A free monthly event for kids of all ages to explore how the brain works through hands-on neuroscience activities and demonstrations created by BioBus and Columbia University Neuroscience Outreach (CUNO).",
+     "venue_name": "Ground Floor",
+     "building_name": "Jerome L. Greene Science Center",
+     "street_address": "605 West 129th Street, New York, NY 10027",
+     "organisation_name": "Zuckerman Institute",
+     "needs": [
+      "intellectual",
+      "practical_skill",
+      "creative"
+     ],
+     "affordances": [
+      "hands_on_making",
+      "drop_in",
+      "beginner_friendly"
+     ]
+    },
+    "checks": {
+     "title": 0.9796530448015576,
+     "event_kind": 0.39016709464025956,
+     "start": 0.933526540560938,
+     "end": 0.5723950125256849,
+     "delivery_mode": 0.9241562852282824,
+     "cost_type": 0.974034854074112,
+     "registration_rule": 0.3519767860017329,
+     "eligibility": 0.8852662939617456,
+     "venue_name": 0.9501796099712764,
+     "building_name": 0.9735650387780778,
+     "street_address": 0.9436129560594199,
+     "organisation_name": 0.8445094233130347
+    },
+    "usage": {
+     "total_tokens": 2318,
+     "total_input_tokens": 2318,
+     "input_tokens_by_modality": [
+      {
+       "modality": "text",
+       "tokens": 2318
+      }
+     ],
+     "total_output_tokens": 0
+    },
+    "score": {
+     "filled": 12,
+     "passed": 9,
+     "shown": 12,
+     "unsupported_shown": 3,
+     "date_ok": true,
+     "time_ok": true
+    },
+    "tokens": 1829
+   }
+  },
+  {
+   "id": "col-03",
+   "school": "Columbia",
+   "source_kind": "json_feed",
+   "url": "https://events.columbia.edu/cal/event/eventView.do?b=de&calPath=%2Fpublic%2Fcals%2FMainCal&guid=CAL-00bbdb71-9ecf7a23-019e-d20815b7-00005922events%40columbia.edu&recurrenceId=",
+   "truth": {
+    "date": "2026-12-02",
+    "time": "14:00-15:00"
+   },
+   "twin": {
+    "record": {
+     "title": "Introduction to Zotero",
+     "event_kind": "workshop",
+     "occurrences": [
+      {
+       "start": "2026-12-02T14:00",
+       "end": "2026-12-02T15:00"
+      }
+     ],
+     "delivery_mode": "online",
+     "cost_type": "unknown",
+     "registration_rule": "required",
+     "eligibility": "campus_community_only",
+     "summary": "Learn to download, navigate, and use Zotero to collect, organize, and cite research sources in Word or Google Docs, with time for Q&A.",
+     "venue_name": null,
+     "building_name": null,
+     "street_address": null,
+     "organisation_name": "Columbia Libraries",
+     "needs": [
+      "build_a_skill",
+      "navigate_systems"
+     ],
+     "affordances": [
+      "hands_on_skill_practice"
+     ]
+    },
+    "f": {
+     "title": "Introduction to Zotero",
+     "event_kind": "workshop",
+     "start": "2026-12-02T14:00",
+     "end": "2026-12-02T15:00",
+     "delivery_mode": "online",
+     "cost_type": null,
+     "registration_rule": "required",
+     "eligibility": "campus_community_only",
+     "venue_name": null,
+     "building_name": null,
+     "street_address": null,
+     "organisation_name": "Columbia Libraries"
+    },
+    "rec": {
+     "title": "Introduction to Zotero",
+     "event_kind": "workshop",
+     "occurrences": [
+      {
+       "start": "2026-12-02T14:00",
+       "end": "2026-12-02T15:00"
+      }
+     ],
+     "delivery_mode": "online",
+     "cost_type": "unknown",
+     "registration_rule": "required",
+     "eligibility": "campus_community_only",
+     "summary": "Learn to download, navigate, and use Zotero to collect, organize, and cite research sources in Word or Google Docs, with time for Q&A.",
+     "venue_name": null,
+     "building_name": null,
+     "street_address": null,
+     "organisation_name": "Columbia Libraries",
+     "needs": [
+      "build_a_skill",
+      "navigate_systems"
+     ],
+     "affordances": [
+      "hands_on_skill_practice"
+     ]
+    },
+    "checks": {
+     "title": 0.9799130688080478,
+     "event_kind": 0.9639519782493865,
+     "start": 0.5738342520260057,
+     "end": 0.5457219672383549,
+     "delivery_mode": 0.9773664280005867,
+     "registration_rule": 0.5405835977094735,
+     "eligibility": 0.8109284877125973,
+     "organisation_name": 0.7854648980238126
+    },
+    "usage": {
+     "total_tokens": 2011,
+     "total_input_tokens": 2011,
+     "input_tokens_by_modality": [
+      {
+       "modality": "text",
+       "tokens": 2011
+      }
+     ],
+     "total_output_tokens": 0
+    },
+    "score": {
+     "filled": 8,
+     "passed": 4,
+     "shown": 4,
+     "unsupported_shown": 0,
+     "date_ok": null,
+     "time_ok": null
+    },
+    "tokens": 2875
+   },
+   "baseline": {
+    "record": {
+     "title": "Introduction to Zotero",
+     "event_kind": "workshop",
+     "occurrences": [
+      {
+       "start": "2026-12-02T14:00",
+       "end": "2026-12-02T15:00"
+      }
+     ],
+     "delivery_mode": "online",
+     "cost_type": "unknown",
+     "registration_rule": "required",
+     "eligibility": "campus_community_only",
+     "summary": "This one-hour online workshop introduces the Zotero bibliographic management program, demonstrating how to navigate the software interface and browser add-on to collect, organize, and cite sources in Word or Google documents.",
+     "venue_name": null,
+     "building_name": null,
+     "street_address": null,
+     "organisation_name": "Columbia Libraries - Digital Research and Scholarship",
+     "needs": [
+      "learn_new_skill",
+      "advance_academics_or_career"
+     ],
+     "affordances": [
+      "hands_on_instruction",
+      "expert_knowledge",
+      "qa_or_discussion",
+      "virtual_attendance",
+      "structured_program"
+     ]
+    },
+    "f": {
+     "title": "Introduction to Zotero",
+     "event_kind": "workshop",
+     "start": "2026-12-02T14:00",
+     "end": "2026-12-02T15:00",
+     "delivery_mode": "online",
+     "cost_type": null,
+     "registration_rule": "required",
+     "eligibility": "campus_community_only",
+     "venue_name": null,
+     "building_name": null,
+     "street_address": null,
+     "organisation_name": "Columbia Libraries - Digital Research and Scholarship"
+    },
+    "rec": {
+     "title": "Introduction to Zotero",
+     "event_kind": "workshop",
+     "occurrences": [
+      {
+       "start": "2026-12-02T14:00",
+       "end": "2026-12-02T15:00"
+      }
+     ],
+     "delivery_mode": "online",
+     "cost_type": "unknown",
+     "registration_rule": "required",
+     "eligibility": "campus_community_only",
+     "summary": "This one-hour online workshop introduces the Zotero bibliographic management program, demonstrating how to navigate the software interface and browser add-on to collect, organize, and cite sources in Word or Google documents.",
+     "venue_name": null,
+     "building_name": null,
+     "street_address": null,
+     "organisation_name": "Columbia Libraries - Digital Research and Scholarship",
+     "needs": [
+      "learn_new_skill",
+      "advance_academics_or_career"
+     ],
+     "affordances": [
+      "hands_on_instruction",
+      "expert_knowledge",
+      "qa_or_discussion",
+      "virtual_attendance",
+      "structured_program"
+     ]
+    },
+    "checks": {
+     "title": 0.9799130688080478,
+     "event_kind": 0.9639519782493865,
+     "start": 0.5738342520260057,
+     "end": 0.5457219672383549,
+     "delivery_mode": 0.9773664280005867,
+     "registration_rule": 0.5405835977094735,
+     "eligibility": 0.8109284877125973,
+     "organisation_name": 0.817569424595623
+    },
+    "usage": {
+     "total_tokens": 2016,
+     "total_input_tokens": 2016,
+     "input_tokens_by_modality": [
+      {
+       "modality": "text",
+       "tokens": 2016
+      }
+     ],
+     "total_output_tokens": 0
+    },
+    "score": {
+     "filled": 8,
+     "passed": 5,
+     "shown": 8,
+     "unsupported_shown": 3,
+     "date_ok": true,
+     "time_ok": true
+    },
+    "tokens": 1837
+   }
+  },
+  {
+   "id": "col-05",
+   "school": "Columbia",
+   "source_kind": "json_feed",
+   "url": "https://events.columbia.edu/cal/event/eventView.do?b=de&calPath=%2Fpublic%2Fcals%2FMainCal&guid=CAL-00bbdb71-a1c4b81f-01a1-c5d02cf8-00002492events%40columbia.edu&recurrenceId=",
+   "truth": {
+    "date": "2026-12-02",
+    "time": "18:30-20:30"
+   },
+   "twin": {
+    "record": {
+     "title": "\"City of Fortune\" -- A Book Talk with Mason B. Williams",
+     "event_kind": "talk_panel",
+     "occurrences": [
+      {
+       "start": "2026-12-02T18:30",
+       "end": "2026-12-02T20:30"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "unknown",
+     "registration_rule": "required",
+     "eligibility": "public",
+     "summary": "Attend a book talk and conversation examining New York City's postwar transformation and the history of urban inequality.",
+     "venue_name": "Lehman Suite, IAB Room 406",
+     "building_name": "International Affairs Building",
+     "street_address": "420 W. 118 St., New York, NY 10027",
+     "organisation_name": "Lehman Center for American History",
+     "needs": [
+      "explore_a_field",
+      "contribute_beyond_self"
+     ],
+     "affordances": [
+      "intellectual_inquiry"
+     ]
+    },
+    "f": {
+     "title": "\"City of Fortune\" -- A Book Talk with Mason B. Williams",
+     "event_kind": "talk_panel",
+     "start": "2026-12-02T18:30",
+     "end": "2026-12-02T20:30",
+     "delivery_mode": "in_person",
+     "cost_type": null,
+     "registration_rule": "required",
+     "eligibility": "public",
+     "venue_name": "Lehman Suite, IAB Room 406",
+     "building_name": "International Affairs Building",
+     "street_address": "420 W. 118 St., New York, NY 10027",
+     "organisation_name": "Lehman Center for American History"
+    },
+    "rec": {
+     "title": "\"City of Fortune\" -- A Book Talk with Mason B. Williams",
+     "event_kind": "talk_panel",
+     "occurrences": [
+      {
+       "start": "2026-12-02T18:30",
+       "end": "2026-12-02T20:30"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "unknown",
+     "registration_rule": "required",
+     "eligibility": "public",
+     "summary": "Attend a book talk and conversation examining New York City's postwar transformation and the history of urban inequality.",
+     "venue_name": "Lehman Suite, IAB Room 406",
+     "building_name": "International Affairs Building",
+     "street_address": "420 W. 118 St., New York, NY 10027",
+     "organisation_name": "Lehman Center for American History",
+     "needs": [
+      "explore_a_field",
+      "contribute_beyond_self"
+     ],
+     "affordances": [
+      "intellectual_inquiry"
+     ]
+    },
+    "checks": {
+     "title": 0.9575610307872323,
+     "event_kind": 0.7638916667747508,
+     "start": 0.9529467020809289,
+     "end": 0.5789118599602229,
+     "delivery_mode": 0.9408737890728652,
+     "registration_rule": 0.6049259909020274,
+     "eligibility": 0.9157441727192629,
+     "venue_name": 0.9572493474500222,
+     "building_name": 0.9683372716367795,
+     "street_address": 0.9161685829979735,
+     "organisation_name": 0.9506599916478591
+    },
+    "usage": {
+     "total_tokens": 2584,
+     "total_input_tokens": 2584,
+     "input_tokens_by_modality": [
+      {
+       "modality": "text",
+       "tokens": 2584
+      }
+     ],
+     "total_output_tokens": 0
+    },
+    "score": {
+     "filled": 11,
+     "passed": 8,
+     "shown": 8,
+     "unsupported_shown": 0,
+     "date_ok": true,
+     "time_ok": true
+    },
+    "tokens": 3174
+   },
+   "baseline": {
+    "record": {
+     "title": "\"City of Fortune\" -- A Book Talk with Mason B. Williams",
+     "event_kind": "talk_panel",
+     "occurrences": [
+      {
+       "start": "2026-12-02T18:30",
+       "end": "2026-12-02T20:30"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "unknown",
+     "registration_rule": "required",
+     "eligibility": "public",
+     "summary": "A book talk and conversation with Mason B. Williams on his new book, City of Fortune: Inequality and the Making of Contemporary New York, hosted by the Lehman Center for American History.",
+     "venue_name": "Lehman Suite, Room 406",
+     "building_name": "International Affairs Building",
+     "street_address": "420 W. 118 St., New York, NY 10027",
+     "organisation_name": "Lehman Center for American History",
+     "needs": [
+      "intellectual_depth",
+      "civic_understanding",
+      "casual_hangout"
+     ],
+     "affordances": [
+      "big_ideas",
+      "expert_access",
+      "public_debate",
+      "group_discussion"
+     ]
+    },
+    "f": {
+     "title": "\"City of Fortune\" -- A Book Talk with Mason B. Williams",
+     "event_kind": "talk_panel",
+     "start": "2026-12-02T18:30",
+     "end": "2026-12-02T20:30",
+     "delivery_mode": "in_person",
+     "cost_type": null,
+     "registration_rule": "required",
+     "eligibility": "public",
+     "venue_name": "Lehman Suite, Room 406",
+     "building_name": "International Affairs Building",
+     "street_address": "420 W. 118 St., New York, NY 10027",
+     "organisation_name": "Lehman Center for American History"
+    },
+    "rec": {
+     "title": "\"City of Fortune\" -- A Book Talk with Mason B. Williams",
+     "event_kind": "talk_panel",
+     "occurrences": [
+      {
+       "start": "2026-12-02T18:30",
+       "end": "2026-12-02T20:30"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "unknown",
+     "registration_rule": "required",
+     "eligibility": "public",
+     "summary": "A book talk and conversation with Mason B. Williams on his new book, City of Fortune: Inequality and the Making of Contemporary New York, hosted by the Lehman Center for American History.",
+     "venue_name": "Lehman Suite, Room 406",
+     "building_name": "International Affairs Building",
+     "street_address": "420 W. 118 St., New York, NY 10027",
+     "organisation_name": "Lehman Center for American History",
+     "needs": [
+      "intellectual_depth",
+      "civic_understanding",
+      "casual_hangout"
+     ],
+     "affordances": [
+      "big_ideas",
+      "expert_access",
+      "public_debate",
+      "group_discussion"
+     ]
+    },
+    "checks": {
+     "title": 0.9575610307872323,
+     "event_kind": 0.7638916667747508,
+     "start": 0.9529467020809289,
+     "end": 0.5789118599602229,
+     "delivery_mode": 0.9408737890728652,
+     "registration_rule": 0.6049259909020274,
+     "eligibility": 0.9157441727192629,
+     "venue_name": 0.7316623683216995,
+     "building_name": 0.9683372716367795,
+     "street_address": 0.9161685829979735,
+     "organisation_name": 0.9506599916478591
+    },
+    "usage": {
+     "total_tokens": 2582,
+     "total_input_tokens": 2582,
+     "input_tokens_by_modality": [
+      {
+       "modality": "text",
+       "tokens": 2582
+      }
+     ],
+     "total_output_tokens": 0
+    },
+    "score": {
+     "filled": 11,
+     "passed": 7,
+     "shown": 11,
+     "unsupported_shown": 4,
+     "date_ok": true,
+     "time_ok": true
+    },
+    "tokens": 2155
+   }
+  },
+  {
+   "id": "col-07",
+   "school": "Columbia",
+   "source_kind": "static_html",
+   "url": "https://www.cc-seas.columbia.edu/events/event/holiday-market-lee-c-bollinger-forum",
+   "truth": {
+    "date": "2026-12-03",
+    "time": "13:00-18:00 (also Dec 4, 10, 11)"
+   },
+   "twin": {
+    "record": {
+     "title": "Holiday Market at The Lee C. Bollinger Forum",
+     "event_kind": "market_fair",
+     "occurrences": [
+      {
+       "start": null,
+       "end": null
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "unknown",
+     "registration_rule": "none",
+     "eligibility": "public",
+     "summary": "Browse and shop for holiday gifts, festive treats, and seasonal items from local artisans, neighborhood small businesses, and vendors.",
+     "venue_name": null,
+     "building_name": "The Forum at Columbia University",
+     "street_address": "601 W. 125th St., New York, NY 10027",
+     "organisation_name": null,
+     "needs": [
+      "find_my_people",
+      "contribute_beyond_self"
+     ],
+     "affordances": [
+      "meeting_people",
+      "browsing_collections"
+     ]
+    },
+    "f": {
+     "title": "Holiday Market at The Lee C. Bollinger Forum",
+     "event_kind": "market_fair",
+     "start": null,
+     "end": null,
+     "delivery_mode": "in_person",
+     "cost_type": null,
+     "registration_rule": "none",
+     "eligibility": "public",
+     "venue_name": null,
+     "building_name": "The Forum at Columbia University",
+     "street_address": "601 W. 125th St., New York, NY 10027",
+     "organisation_name": null
+    },
+    "rec": {
+     "title": "Holiday Market at The Lee C. Bollinger Forum",
+     "event_kind": "market_fair",
+     "occurrences": [
+      {
+       "start": null,
+       "end": null
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "unknown",
+     "registration_rule": "none",
+     "eligibility": "public",
+     "summary": "Browse and shop for holiday gifts, festive treats, and seasonal items from local artisans, neighborhood small businesses, and vendors.",
+     "venue_name": null,
+     "building_name": "The Forum at Columbia University",
+     "street_address": "601 W. 125th St., New York, NY 10027",
+     "organisation_name": null,
+     "needs": [
+      "find_my_people",
+      "contribute_beyond_self"
+     ],
+     "affordances": [
+      "meeting_people",
+      "browsing_collections"
+     ]
+    },
+    "checks": {
+     "title": 0.9797786084760035,
+     "event_kind": 0.9399745425948179,
+     "delivery_mode": 0.9758978516247818,
+     "registration_rule": 0.8557040861352417,
+     "eligibility": 0.9719375834215589,
+     "building_name": 0.9775651654439794,
+     "street_address": 0.988866361242308
+    },
+    "usage": {
+     "total_tokens": 1000,
+     "total_input_tokens": 1000,
+     "input_tokens_by_modality": [
+      {
+       "modality": "text",
+       "tokens": 1000
+      }
+     ],
+     "total_output_tokens": 0
+    },
+    "score": {
+     "filled": 7,
+     "passed": 7,
+     "shown": 7,
+     "unsupported_shown": 0,
+     "date_ok": null,
+     "time_ok": null
+    },
+    "tokens": 2051
+   },
+   "baseline": {
+    "record": {
+     "title": "Holiday Market at The Lee C. Bollinger Forum",
+     "event_kind": "market_fair",
+     "occurrences": [
+      {
+       "start": "2024-12-03T13:00",
+       "end": "2024-12-03T18:00"
+      },
+      {
+       "start": "2024-12-04T13:00",
+       "end": "2024-12-04T18:00"
+      },
+      {
+       "start": "2024-12-10T13:00",
+       "end": "2024-12-10T18:00"
+      },
+      {
+       "start": "2024-12-11T13:00",
+       "end": "2024-12-11T18:00"
+      },
+      {
+       "start": "2024-12-17T13:00",
+       "end": "2024-12-17T18:00"
+      },
+      {
+       "start": "2024-12-18T13:00",
+       "end": "2024-12-18T18:00"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "unknown",
+     "registration_rule": "none",
+     "eligibility": "public",
+     "summary": "Shop for unique holiday gifts, festive treats, and seasonal treasures from local artisans and neighborhood small businesses at this annual holiday market.",
+     "venue_name": null,
+     "building_name": "The Forum at Columbia University",
+     "street_address": "601 W. 125th St., New York, NY 10027",
+     "organisation_name": "Columbia College and Columbia Engineering",
+     "needs": [
+      "celebrate_connect",
+      "unwind_rest",
+      "be_entertained"
+     ],
+     "affordances": [
+      "arts_craft",
+      "food_treat",
+      "social_mingle",
+      "family_friendly"
+     ]
+    },
+    "f": {
+     "title": "Holiday Market at The Lee C. Bollinger Forum",
+     "event_kind": "market_fair",
+     "start": "2024-12-03T13:00",
+     "end": "2024-12-03T18:00",
+     "delivery_mode": "in_person",
+     "cost_type": null,
+     "registration_rule": "none",
+     "eligibility": "public",
+     "venue_name": null,
+     "building_name": "The Forum at Columbia University",
+     "street_address": "601 W. 125th St., New York, NY 10027",
+     "organisation_name": "Columbia College and Columbia Engineering"
+    },
+    "rec": {
+     "title": "Holiday Market at The Lee C. Bollinger Forum",
+     "event_kind": "market_fair",
+     "occurrences": [
+      {
+       "start": "2024-12-03T13:00",
+       "end": "2024-12-03T18:00"
+      },
+      {
+       "start": "2024-12-04T13:00",
+       "end": "2024-12-04T18:00"
+      },
+      {
+       "start": "2024-12-10T13:00",
+       "end": "2024-12-10T18:00"
+      },
+      {
+       "start": "2024-12-11T13:00",
+       "end": "2024-12-11T18:00"
+      },
+      {
+       "start": "2024-12-17T13:00",
+       "end": "2024-12-17T18:00"
+      },
+      {
+       "start": "2024-12-18T13:00",
+       "end": "2024-12-18T18:00"
+      }
+     ],
+     "delivery_mode": "in_person",
+     "cost_type": "unknown",
+     "registration_rule": "none",
+     "eligibility": "public",
+     "summary": "Shop for unique holiday gifts, festive treats, and seasonal treasures from local artisans and neighborhood small businesses at this annual holiday market.",
+     "venue_name": null,
+     "building_name": "The Forum at Columbia University",
+     "street_address": "601 W. 125th St., New York, NY 10027",
+     "organisation_name": "Columbia College and Columbia Engineering",
+     "needs": [
+      "celebrate_connect",
+      "unwind_rest",
+      "be_entertained"
+     ],
+     "affordances": [
+      "arts_craft",
+      "food_treat",
+      "social_mingle",
+      "family_friendly"
+     ]
+    },
+    "checks": {
+     "title": 0.9797786084760035,
+     "event_kind": 0.9399745425948179,
+     "start": 0.9418508123442633,
+     "end": 0.7198271737637095,
+     "delivery_mode": 0.9758978516247818,
+     "registration_rule": 0.8557040861352417,
+     "eligibility": 0.9719375834215589,
+     "building_name": 0.9775651654439794,
+     "street_address": 0.988866361242308,
+     "organisation_name": 0.9465636401994566
+    },
+    "usage": {
+     "total_tokens": 1267,
+     "total_input_tokens": 1267,
+     "input_tokens_by_modality": [
+      {
+       "modality": "text",
+       "tokens": 1267
+      }
+     ],
+     "total_output_tokens": 0
+    },
+    "score": {
+     "filled": 10,
+     "passed": 9,
+     "shown": 10,
+     "unsupported_shown": 1,
+     "date_ok": false,
+     "time_ok": true
+    },
+    "tokens": 1114
+   }
+  }
+ ]
+}

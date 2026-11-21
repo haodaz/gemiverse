@@ -1,0 +1,26 @@
+{
+ "model": "gemini-4-neon",
+ "prompt": "Write a three.js ES module of small keepsakes and trophies that appear in a student's dorm room diorama when something real happened (they went to an event, learned a skill, met someone). Each is a factory (THREE, opts) -> THREE.Group, origin at its base, sized 0.08 to 0.3 m to sit on a shelf or desk.\n\nExports:\n- export const KEEPSAKES = { ticketStub, concertWristband, programBooklet, paperCrane, zine, pinBadge, enamelMug, toteOnHook, pottedSeedling, polaroid, medal, smallTrophy, chessPiece, paintPalette, circuitBoard, labFlask, microphone, filmClapper, danceShoes, basketball, soccerBall, runningBib, teaCup, snowGlobe, lantern, origamiStar, postcardStack, keyring, nameCardHolder, jarOfStars }.\n- opts = { primary, secondary, accent, variant: 0 | 1 | 2 }.\n- jarOfStars takes opts.count (0 to 30) and shows that many small glowing stars inside a glass jar; it is how the room shows saved stars.\n- nameCardHolder takes opts.count (0 to 8) and shows that many small cards.\n- export function recolor(group, palette).\n\nRules for the module:\n- It is a plain ES module. Do not import anything. Do not use any global: every function receives THREE (three.js r160 namespace) as its first argument and must pass it on to any helper it calls.\n- Units are metres. Y is up. Build only from three.js primitives and ExtrudeGeometry/LatheGeometry shapes you make yourself (bevelled extrudes and spheres for soft edges). No textures from files, no fonts, no text, no logos, no network, no document or window.\n- Style: a refined, cozy, stylised diorama, like a premium life-sim game. Soft rounded edges everywhere, believable proportions, small secondary details. MeshStandardMaterial with thoughtful roughness/metalness; castShadow and receiveShadow on meshes.\n- Every mesh that carries a themable colour must have userData.slot set (\"primary\", \"secondary\", \"accent\", \"wood\", \"metal\", \"fabric\", \"skin\", \"fur\", \"furAccent\").\n- Also export const CATALOG: an array of { id, name, kind, footprint: [w, d], placement: \"floor\" | \"wall\" | \"surface\" | \"worn\" | \"pet\", variants: number, note } with one entry per thing in the module, so a shop or wardrobe screen can list it.\n- Return only the code of the module in one ```js block.\n",
+ "usage": {
+  "total_tokens": 53729,
+  "total_input_tokens": 608,
+  "input_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 608
+   }
+  ],
+  "total_cached_tokens": 0,
+  "total_output_tokens": 44927,
+  "output_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 44927
+   }
+  ],
+  "total_tool_use_tokens": 0,
+  "total_thought_tokens": 8194
+ },
+ "ms": 360297,
+ "made_at": "2026-11-21T16:46:37.927Z"
+}

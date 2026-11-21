@@ -130,3 +130,23 @@ Entry format:
 - Where they disagreed: which source is most trusted (feed or the organiser's page). Kept as an open question for the exam.
 - Honest limit: Carbon's stage conditions need weeks of data (a 90-day acceptance rate). Today's build uses one plain condition per stage and shows Carbon's as the full rule.
 - Status: v2 is proposed, not locked. Elodie locks it.
+
+## 11:48 · Foundry 5, 6, 8: entities filled, every field checked, exam against a one-call baseline
+- Did: `scripts/foundry/05-fill.mjs`. For each page, Hydrogen fills one Event to the merged design (v2) and Decisions answers one yes/no question per field. A field enters the base only at 0.8 or above. The same pages go to Argon in one call with no rules and no check: that is the baseline, and everything it writes counts as shown. What passes is written to Supabase with one evidence row per field.
+- First run on the design set, and what it taught us: 46 of 148 fields were blocked, mostly event kind, in person or online, who may attend, and registration. The pages rarely state these in words; they are our own labels. Asking "does the page state this" was the wrong question for a label. Fix: two kinds of field. A stated fact must be on the page. A classification is checked as "is this the best fitting label" and stored marked as inferred. Tuned on the design set only; the exam set was not looked at.
+- Results (threshold 0.8):
+
+| | Design set (15 pages) | | Exam set (10 unseen pages) | |
+|---|---|---|---|---|
+| | Twin | Baseline | Twin | Baseline |
+| Fields written | 145 | 159 | 100 | 103 |
+| Fields shown to a student | 118 | 159 | 76 | 103 |
+| Shown without support on the page | 0 | 35 | 0 | 29 |
+| Start date right / wrong / withheld | 11 / 0 / 4 | 14 / 1 / 0 | 8 / 0 / 2 | 10 / 0 / 0 |
+| Tokens | 35k | 19k | 24k | 13k |
+
+- What the numbers mean, honestly: "0 unsupported" for the twin is by construction, since the gate is the same check. The real findings are (a) a single call shows about one unsupported field in four, (b) the twin never showed a wrong date, (c) the price is coverage: the twin withheld 6 of 25 start dates, all on pages that print no year, where the baseline guessed the year. The guess was right 5 times and wrong once (it wrote 2025 for a December 2026 market). "Unsupported" is not the same as "wrong": some baseline fields were true but not on the page.
+- A concrete invention by the baseline on the exam set: an end time of 22:00 for a dance concert whose page gives no end time.
+- The twin costs about 1.8 times the tokens of the baseline for extraction, plus the checks.
+- Base now holds 60 entities (25 events, plus places and organisations), 38 links, 245 evidence rows.
+- Not done: links between entities are only event to place and organiser to event; no duplicate merging yet; fit of the design itself was not scored separately.
