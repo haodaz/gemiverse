@@ -127,7 +127,7 @@ let view = VIEWS.room;
 function focusOn(name) { view = VIEWS[name] ?? VIEWS.room; tell("focus", VIEWS[name] ? name : "room"); }
 
 const SPOTS = [
-  { at: [0.7, -0.6], face: Math.PI, say: "writing in the diary", mood: "thinking", clip: "writeAtDesk" },
+  { at: [0.7, -0.6], face: Math.PI, say: "writing in the diary", mood: "thinking", clip: "writeAtDesk", seat: "chair" },   // sits ON the chair, wherever the chair stands
   { at: [1.5, -1.25], face: Math.PI, say: "picking a book from the shelf", mood: "awake", clip: "reachShelf" },
   { at: [1.2, -0.3], face: Math.PI, say: "looking out the window", mood: "awake", clip: "idle" },
   { at: [0.25, 0.5], face: 0, say: "stretching", mood: "happy", clip: "stretch" },
@@ -136,14 +136,16 @@ const SPOTS = [
   { at: [-1.3, 1.1], face: -Math.PI / 2, say: "about to head out", mood: "awake", clip: "idle" },
 ];
 let goal = null, waitUntil = 0;
+const FORCE_SPOT = new URLSearchParams(location.search).has("spot") ? +new URLSearchParams(location.search).get("spot") : null;   // for checking one activity
+const SEAT_LIFT = 0.28;   // seat top (0.50) minus the seated hip height of the doll at this scale
 function live(t, dt) {
   if (!who || arranging || away || held) return;
   if (!goal && t > waitUntil && mode === "waiting") { goal = { at: [0.3, -0.75], face: 0.5, say: `waiting for you with ${worldState.desk} thing${worldState.desk === 1 ? "" : "s"}`, mood: "happy", clip: "wave" }; doll?.play("walk"); }
-  if (!goal && t > waitUntil) { goal = SPOTS[Math.floor(Math.random() * SPOTS.length)]; document.getElementById("say").textContent = "…"; doll?.play("walk"); doll?.express("awake"); }
+  if (!goal && t > waitUntil) { goal = SPOTS[FORCE_SPOT ?? Math.floor(Math.random() * SPOTS.length)]; if (goal.seat && layout[goal.seat]) goal = { ...goal, at: [layout[goal.seat].p[0], layout[goal.seat].p[2]] }; document.getElementById("say").textContent = "…"; doll?.play("walk"); doll?.express("awake"); }
   if (goal) {
     const dx = goal.at[0] - who.position.x, dz = goal.at[1] - who.position.z, dist = Math.hypot(dx, dz);
-    if (dist < 0.03) { who.rotation.y = goal.face; doll?.express(goal.mood); doll?.play(goal.clip ?? "idle"); document.getElementById("say").textContent = goal.say; tell("doing", goal.say); waitUntil = t + 5 + Math.random() * 4; goal = null; }
-    else { const step = Math.min(dist, (doll?.walkSpeed("walk") ?? 0.5) * 1.12 * dt); who.position.x += dx / dist * step; who.position.z += dz / dist * step;   // speed matched to the walk cycle so the feet do not slide
+    if (dist < 0.03) { who.rotation.y = goal.face; who.position.y = goal.seat ? SEAT_LIFT : 0; doll?.express(goal.mood); doll?.play(goal.clip ?? "idle"); document.getElementById("say").textContent = goal.say; tell("doing", goal.say); waitUntil = t + 5 + Math.random() * 4; goal = null; }
+    else { who.position.y = 0; const step = Math.min(dist, (doll?.walkSpeed("walk") ?? 0.5) * 1.12 * dt); who.position.x += dx / dist * step; who.position.z += dz / dist * step;   // speed matched to the walk cycle so the feet do not slide
       let turn = Math.atan2(dx, dz) - who.rotation.y; turn = Math.atan2(Math.sin(turn), Math.cos(turn)); who.rotation.y += turn * Math.min(1, dt * 8); }
   }
 }
@@ -159,7 +161,7 @@ function headOnScreen() { const p = new THREE.Vector3(); who.getWorldPosition(p)
 renderer.domElement.addEventListener("click", (ev) => {
   if (!arranging && who && who.visible) {
     ray.setFromCamera(new THREE.Vector2(ev.clientX / innerWidth * 2 - 1, -(ev.clientY / innerHeight) * 2 + 1), camera);
-    if (ray.intersectObject(who, true).length) { held = true; goal = null; who.rotation.y = Math.atan2(camera.position.x - who.position.x, camera.position.z - who.position.z); doll?.express("happy"); doll?.play("wave"); tell("tapped", headOnScreen()); }
+    if (ray.intersectObject(who, true).length) { held = true; goal = null; who.position.y = 0; who.rotation.y = Math.atan2(camera.position.x - who.position.x, camera.position.z - who.position.z); doll?.express("happy"); doll?.play("wave"); tell("tapped", headOnScreen()); }
     else if (held) { held = false; tell("released"); }
     else { const hit = ray.intersectObjects([...Object.values(placed), ...(stateGroup ? stateGroup.children : [])], true)[0]; let o = hit?.object; while (o && !o.userData.item && !o.userData.focus) o = o.parent;
       const area = o?.userData.focus ?? ({ desk: "desk", diary: "desk", lamp: "desk", chair: "desk", corkboard: "board", wallArt: "board", shelf: "shelf", bed: "bed" })[o?.userData.item];

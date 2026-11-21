@@ -12,7 +12,7 @@ import { SPACE } from "@/lib/kernel/space";
 import type { GemiState } from "@/lib/kernel/types";
 import { AXES, blank, loadLog, replay, saveLog, type AxisId, type Beliefs, type LogEvent } from "@/lib/mind";
 import { t, loadLang, saveLang, type Lang } from "@/lib/i18n";
-import { LangSwitch } from "@/components/LangSwitch";
+import { Menu } from "@/components/Menu";
 import { Composer, type Sent } from "@/components/Composer";
 import { Chunky, GamePanel, Icon, IconButton, INK, RadialMenu } from "@/components/game";
 
@@ -63,7 +63,7 @@ export default function Room() {
       if (m.type === "ready" && school) { send("look", PRESETS[school].look); setTimeout(() => auto.current?.(), 600); }
       if (m.type === "layout" && school) { const it = String(m.value?.item ?? "something"); roomTouched.current = it; lastTouch.current = Date.now();
         setLog((l) => { const n = [...l, { id: Math.random().toString(36).slice(2, 10), at: new Date().toISOString(), type: "room" as const, by: "student" as const, what: `moved the ${it}`, item: it }]; saveLog(school, n); return n; }); }
-      if (m.type === "focus") { if (m.value === "desk") setPanel("desk"); else if (m.value === "board") setPanel("diary"); }
+      if (m.type === "focus") { if (m.value === "desk") setDeskView(true); else if (m.value === "room") setDeskView(false); }   // a click on the desk in 3D enters the desk view; panels open only from buttons
     };
     addEventListener("message", on); return () => removeEventListener("message", on);
   }, [school]);
@@ -202,7 +202,7 @@ export default function Room() {
       <div className="absolute left-5 top-4 flex items-center gap-3">
         <a href="/" className="text-lg font-bold tracking-tight">Gemiverse</a>
         <span className="rounded-full border-[3px] px-3 py-0.5 text-xs font-bold text-white" style={{ background: s.accent, borderColor: INK }}>{s.short}</span>
-        <LangSwitch lang={lang} onChange={(l) => { setLang(l); saveLang(l); }} />
+        <Menu lang={lang} onLang={(l) => { setLang(l); saveLang(l); }} />
       </div>
 
       <button onClick={() => openPanel(panel === "tools" ? null : "tools")} className="absolute right-5 top-4 flex items-center gap-4 rounded-full border-[3px] bg-[#fffaf0] px-4 py-1.5 text-left" style={{ borderColor: INK, boxShadow: `0 4px 0 ${INK}` }}>
