@@ -14,7 +14,7 @@ export const PLACE_NEEDS: Record<string, string[]> = {
 };
 export type TripInput = { school: string; place: string; care?: Record<string, number>; beliefs?: Record<string, { m: number; u: number }>; wants?: string[]; seen?: string[]; lang?: string; thinking?: "low" | "medium" | "high" };
 
-export async function takeTrip({ school, place, care = {}, beliefs = {}, wants = [], seen = [], lang = "en", thinking = "medium" }: TripInput) {
+export async function takeTrip({ school, place, care = {}, beliefs = {}, wants = [], seen = [], lang = "en", thinking = "low" }: TripInput) {
     const { entities, evidence } = await readBase(school === "columbia" ? "columbia" : "nyu");
     const passed: Record<string, number> = {}; for (const e of evidence) if (e.passed) passed[e.entity_id] = (passed[e.entity_id] ?? 0) + 1;
     const fits = (e: (typeof entities)[number]) => ((e.fields.needs as string[]) ?? []).some((n) => PLACE_NEEDS[place]?.includes(n));
