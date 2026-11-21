@@ -1,14 +1,17 @@
 import { createCipheriv, createHash, randomBytes } from "node:crypto";
 import { takeTrip } from "@/lib/server/trip";
+import { bumpServed } from "@/lib/server/base";
 import { starsFor } from "@/lib/server/gemini";
 
 // go_out: the Gemi visits one of the four places and decides what is worth bringing back (see lib/server/trip.ts).
 // The prediction is sealed before the student sees the cards (commit and reveal).
 export async function POST(req: Request) {
   try {
-    const t = await takeTrip(await req.json());
+    const input = await req.json();
+    const t = await takeTrip(input);
     const finds = t.finds;
     if (!finds.length) return Response.json({ finds: [], reason: t.reason, stars: 0 });
+    bumpServed(input.school === "columbia" ? "columbia" : "nyu", finds.map((f: any) => f.id)).catch(() => {});   // the flywheel: anonymous demand
     // Seal the prediction (commit and reveal). The browser gets the cards WITHOUT the numbers, plus a hash of the numbers and a
     // random nonce, plus the numbers encrypted with a key only the server has. After the student has chosen, the browser sends the
     // encrypted blob to /api/reveal, gets the numbers and the nonce back, and can recompute the hash itself.

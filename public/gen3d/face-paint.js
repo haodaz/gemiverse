@@ -12,7 +12,7 @@ function place(x, y, W, H) {
 
 function drawEye(g, W, H, cx, cy, side, o) {
   const p = place(cx, cy, W, H), u = H / Math.PI;                 // u: pixels per unit of arc
-  const w = 0.205 * u * p.sx, h = 0.275 * u;                      // half sizes: a tall eye
+  const w = 0.215 * u * p.sx, h = 0.25 * u;                       // half sizes
   g.save(); g.translate(p.px, p.py);
   if (o.closed === "squint") {                                     // > <
     g.strokeStyle = o.line; g.lineWidth = h * 0.16; g.lineCap = "round"; g.lineJoin = "round"; g.beginPath();
@@ -44,14 +44,17 @@ function drawEye(g, W, H, cx, cy, side, o) {
   g.fillStyle = "#fff"; g.beginPath(); g.ellipse(ix - w * 0.3, iy - h * 0.46, w * 0.27, h * 0.2, -0.3, 0, TAU); g.fill();    // big highlight, upper left on both eyes
   g.beginPath(); g.ellipse(ix + w * 0.34, iy + h * 0.36, w * 0.11, h * 0.08, 0, 0, TAU); g.fill();                          // small highlight, lower right
   g.restore();
-  // upper lid: one bold stroke along the flat top, heavier at the outer corner, with a short flick
+  // Upper lid: not an even arc. Thin at the inner corner, swelling to its heaviest over the outer third, ending in lash points.
   g.strokeStyle = o.line; g.fillStyle = o.line; g.lineCap = "round"; g.lineJoin = "round";
-  g.beginPath(); g.moveTo(-w * 1.04, -h * 0.2); g.bezierCurveTo(-w * 1.04, -h * 1.0, -w * 0.5, -h * 1.08, 0, -h * 1.08); g.bezierCurveTo(w * 0.5, -h * 1.08, w * 1.04, -h * 1.0, w * 1.04, -h * 0.2);
-  g.lineWidth = h * 0.13; g.stroke();
-  g.beginPath(); g.moveTo(side * w * 1.02, -h * 0.5); g.quadraticCurveTo(side * w * 1.25, -h * 0.55, side * w * 1.34, -h * 0.82); g.lineWidth = h * 0.11; g.stroke();
-  g.beginPath(); g.moveTo(side * w * 0.5, h * 0.99); g.quadraticCurveTo(side * w * 0.85, h * 0.9, side * w * 1.0, h * 0.5); g.lineWidth = h * 0.045; g.globalAlpha = 0.7; g.stroke(); g.globalAlpha = 1;   // a faint lower line at the outer corner only
-  if (o.lashes) { g.lineWidth = h * 0.06; for (const k of [0.55, 0.85]) { g.beginPath(); g.moveTo(side * w * k, -h * 0.9 * Math.sqrt(1 - k * k * 0.9)); g.lineTo(side * w * (k + 0.2), -h * (1.15 - k * 0.35)); g.stroke(); } }
-  g.restore();
+  const lid = (t) => { const xn = -1.04 + 2.08 * t, yy = -h * (0.22 + 0.86 * Math.pow(Math.max(0, 1 - Math.pow(Math.abs(xn) / 1.04, 2.6)), 1 / 2.6)); return [side * xn * w, yy]; };   // t: 0 inner corner, 1 outer corner
+  const N = 28; for (let i = 0; i < N; i++) { const t0 = i / N, t1 = (i + 1.3) / N, [x0, y0] = lid(t0), [x1, y1] = lid(Math.min(1, t1));
+    g.lineWidth = h * (0.035 + 0.17 * Math.pow(t0, 1.5) * (1 - 0.35 * Math.pow(t0, 6))); g.beginPath(); g.moveTo(x0, y0); g.lineTo(x1, y1); g.stroke(); }
+  const spike = (t, len, lift) => { const [x, y] = lid(t), [xb, yb] = lid(t - 0.09); g.beginPath(); g.moveTo(xb, yb - h * 0.02); g.lineTo(x + side * w * len, y - h * lift); g.lineTo(x, y + h * 0.1); g.closePath(); g.fill(); };
+  spike(0.99, 0.34, 0.22); spike(0.9, 0.26, 0.34); if (o.lashes) spike(0.8, 0.14, 0.3);
+  g.globalAlpha = 0.55; g.lineWidth = h * 0.035; g.beginPath(); g.moveTo(-side * w * 0.55, -h * 1.3); g.quadraticCurveTo(side * w * 0.2, -h * 1.42, side * w * 0.95, -h * 1.12); g.stroke(); g.globalAlpha = 1;   // crease above the lid
+  g.lineWidth = h * 0.045; g.beginPath(); g.moveTo(-w * 0.32, h * 1.01); g.quadraticCurveTo(0, h * 1.06, w * 0.32, h * 1.01); g.stroke();                                                   // short lower lid mark
+  g.beginPath(); g.moveTo(side * w * 0.45, h * 1.0); g.quadraticCurveTo(side * w * 0.9, h * 0.92, side * w * 1.02, h * 0.45); g.lineWidth = h * 0.04; g.globalAlpha = 0.65; g.stroke(); g.globalAlpha = 1;   // faint lower line, outer corner only
+  g.restore(); return;
 }
 
 export function paintFace(THREE, kit, look, expression = "awake") {
@@ -61,8 +64,8 @@ export function paintFace(THREE, kit, look, expression = "awake") {
     const soft = (x, y, rx, ry, colour, alpha) => { const p = place(x, y, W, H), R = Math.max(rx * u * p.sx, ry * u); const gr = g.createRadialGradient(p.px, p.py, 0, p.px, p.py, R);
       gr.addColorStop(0, colour); gr.addColorStop(1, "rgba(255,255,255,0)"); g.save(); g.globalAlpha = alpha; g.translate(p.px, p.py); g.scale((rx * p.sx) / Math.max(rx * p.sx, ry), ry / Math.max(rx * p.sx, ry)); g.translate(-p.px, -p.py);
       g.fillStyle = gr; g.fillRect(p.px - R, p.py - R, R * 2, R * 2); g.restore(); };
-    if (look.blush !== false) { soft(-0.5, -0.5, 0.2, 0.13, "#ff8fa3", 0.55); soft(0.5, -0.5, 0.2, 0.13, "#ff8fa3", 0.55); }
-    const EY = -0.3, EX = 0.37;
+    if (look.blush !== false) { soft(-0.52, -0.52, 0.19, 0.11, "#ff8fa3", 0.6); soft(0.52, -0.52, 0.19, 0.11, "#ff8fa3", 0.6); }
+    const EY = -0.2, EX = 0.45;   // the lower lid sits just above the nose line (Elodie), as on figure faceplates
     const E = { asleep: { closed: "sleep" }, blink: { closed: "sleep" }, happy: { closed: "happy" }, laugh: { closed: "happy" }, squint: { closed: "squint" }, thinking: { look: [0.9, -1] },
       surprised: { irisScale: 0.62 }, star: { shape: "star" }, heart: { shape: "heart" }, sad: { look: [0, 0.6] }, wink: {} }[expression] ?? {};
     for (const side of [-1, 1]) drawEye(g, W, H, EX * side, EY, side, { eye: look.eye ?? "#6b4a3a", line, lashes: look.lashes, look: [0, 0], ...E, ...(expression === "wink" && side > 0 ? { closed: "happy" } : {}) });
@@ -73,14 +76,17 @@ export function paintFace(THREE, kit, look, expression = "awake") {
       g.beginPath(); g.moveTo(a.px, a.py); g.quadraticCurveTo(m.px, m.py, b.px, b.py); g.stroke(); }
     g.globalAlpha = 1;
     // nose: a tiny warm dot
-    soft(0, -0.47, 0.022, 0.016, shade(look.skin, -0.3), 0.6);
+    soft(0, -0.50, 0.02, 0.014, shade(look.skin, -0.28), 0.5);
     // mouth
-    const mp = place(0, -0.63, W, H), mw = 0.06 * u; g.strokeStyle = look.lip ?? "#c9777a"; g.lineWidth = u * 0.018; g.lineCap = "round"; g.beginPath();
+    const mp = place(0, -0.645, W, H), mw = 0.055 * u; g.strokeStyle = look.lip ?? "#c9777a"; g.lineWidth = u * 0.018; g.lineCap = "round"; g.beginPath();
     if (expression === "surprised") { g.fillStyle = "#b85a66"; g.ellipse(mp.px, mp.py + mw * 0.2, mw * 0.4, mw * 0.55, 0, 0, TAU); g.fill(); }
     else if (expression === "sad") { g.moveTo(mp.px - mw * 0.8, mp.py + mw * 0.3); g.quadraticCurveTo(mp.px, mp.py - mw * 0.5, mp.px + mw * 0.8, mp.py + mw * 0.3); g.stroke(); }
-    else if (["happy", "laugh", "squint", "star", "heart"].includes(expression)) { g.fillStyle = "#b85a66"; g.moveTo(mp.px - mw, mp.py - mw * 0.2); g.quadraticCurveTo(mp.px, mp.py + mw * 1.3, mp.px + mw, mp.py - mw * 0.2); g.closePath(); g.fill(); }
+    else if (["happy", "laugh", "squint", "star", "heart"].includes(expression)) { g.fillStyle = "#b85a66"; g.moveTo(mp.px - mw, mp.py - mw * 0.2); g.quadraticCurveTo(mp.px, mp.py + mw * 1.5, mp.px + mw, mp.py - mw * 0.2); g.closePath(); g.fill();
+      g.fillStyle = "#ff9fae"; g.beginPath(); g.ellipse(mp.px, mp.py + mw * 0.42, mw * 0.45, mw * 0.22, 0, 0, TAU); g.fill();
+      g.fillStyle = "#fff"; g.beginPath(); g.moveTo(mp.px + mw * 0.35, mp.py - mw * 0.2); g.lineTo(mp.px + mw * 0.5, mp.py + mw * 0.15); g.lineTo(mp.px + mw * 0.65, mp.py - mw * 0.2); g.closePath(); g.fill(); }
     else if (expression === "unsure") { g.moveTo(mp.px - mw, mp.py); g.bezierCurveTo(mp.px - mw * 0.3, mp.py - mw * 0.5, mp.px + mw * 0.3, mp.py + mw * 0.5, mp.px + mw, mp.py); g.stroke(); }
     else if (expression === "thinking") { g.moveTo(mp.px - mw * 0.4, mp.py); g.lineTo(mp.px + mw * 0.4, mp.py); g.stroke(); }
+    else if (expression === "awake" || expression === "blink" || expression === "wink") { g.lineWidth = u * 0.015; g.moveTo(mp.px - mw * 0.9, mp.py - mw * 0.1); g.quadraticCurveTo(mp.px - mw * 0.45, mp.py + mw * 0.55, mp.px, mp.py - mw * 0.05); g.quadraticCurveTo(mp.px + mw * 0.45, mp.py + mw * 0.55, mp.px + mw * 0.9, mp.py - mw * 0.1); g.stroke(); }
     else { g.moveTo(mp.px - mw, mp.py - mw * 0.25); g.quadraticCurveTo(mp.px, mp.py + mw * 0.6, mp.px + mw, mp.py - mw * 0.25); g.stroke(); }
     if (look.freckles) { g.fillStyle = shade(look.skin, -0.35); g.globalAlpha = 0.6; for (let i = 0; i < 14; i++) { const p = place(-0.3 + (i % 7) * 0.1 + (i > 6 ? 0.03 : 0), -0.43 - (i > 6 ? 0.05 : 0) + ((i * 37) % 5) * 0.006, W, H); g.beginPath(); g.arc(p.px, p.py, u * 0.006, 0, TAU); g.fill(); } g.globalAlpha = 1; }
   });
@@ -123,7 +129,7 @@ export function applyFace(THREE, kit, headGroup, look) {
   if (!old) return null;
   headGroup.traverse((o) => { if (o.isMesh && (o === old || o.material.transparent || o.material.map)) o.visible = false; });
   const head = new THREE.Mesh(headGeometry(THREE), new THREE.MeshPhysicalMaterial({ color: "#ffffff", roughness: 0.62, sheen: 0.3, sheenRoughness: 0.6 }));
-  head.scale.set(0.172, 0.180, 0.166); head.position.set(0, 0.165, 0); head.userData.face = true; headGroup.add(head);
+  head.scale.set(0.184, 0.178, 0.170); head.position.set(0, 0.165, 0); head.userData.face = true; headGroup.add(head);
   headGroup.traverse((o) => { if (o.isMesh && o.visible && o !== head) { o.material = o.material.clone(); o.material.color = new THREE.Color(look.skin); o.material.map = null; } });   // ears and neck in the same skin
   const set = (name) => { head.material.map?.dispose?.(); head.material.map = paintFace(THREE, kit, look, name); head.material.needsUpdate = true; };
   let current = "awake", shut = false; set(current);
