@@ -38,6 +38,8 @@ export default function Room() {
   const [deskView, setDeskView] = useState(false);
   const [look, setLook] = useState<Record<string, any>>({});
   const [owned, setOwned] = useState<string[]>([]);
+  const [went, setWent] = useState<{ find: string; title: string; matched: boolean }[]>([]);
+  const guesses = useRef<Record<string, number>>({});
   const [wtab, setWtab] = useState("Hair");
   const [wish, setWish] = useState<{ id: string; cost: number; short?: boolean } | null>(null);
   const doNext = useRef<any>(null);
@@ -65,7 +67,7 @@ export default function Room() {
       if (m.type === "tapped") setTap(m.value);
       if (m.type === "released") setTap(null);
       if (m.type === "open") { if (m.value === "door") { setPanel(null); setDeskView(false); setCampus(true); } else if (m.value === "wardrobe") setPanel("wardrobe"); }
-      if (m.type === "ready" && school) { let saved = null; try { saved = JSON.parse(localStorage.getItem(`gemi.look.${school}`) ?? "null"); } catch {} send("look", saved ?? PRESETS[school].look); if (saved) setLook(saved); try { setOwned(JSON.parse(localStorage.getItem(`gemi.inv.${school}`) ?? "[]")); } catch {} setTimeout(() => auto.current?.(), 600); }
+      if (m.type === "ready" && school) { let saved = null; try { saved = JSON.parse(localStorage.getItem(`gemi.look.${school}`) ?? "null"); } catch {} send("look", saved ?? PRESETS[school].look); if (saved) setLook(saved); try { setOwned(JSON.parse(localStorage.getItem(`gemi.inv.${school}`) ?? "[]")); } catch {} try { setWent(JSON.parse(localStorage.getItem(`gemi.went.${school}`) ?? "[]")); guesses.current = JSON.parse(localStorage.getItem(`gemi.guess.${school}`) ?? "{}"); } catch {} setTimeout(() => auto.current?.(), 600); }
       if (m.type === "layout" && school) { const it = String(m.value?.item ?? "something"); roomTouched.current = it; lastTouch.current = Date.now();
         setLog((l) => { const n = [...l, { id: Math.random().toString(36).slice(2, 10), at: new Date().toISOString(), type: "room" as const, by: "student" as const, what: `moved the ${it}`, item: it }]; saveLog(school, n); return n; }); }
       if (m.type === "focus") { if (m.value === "desk") setDeskView(true); else if (m.value === "room") setDeskView(false); }   // a click on the desk in 3D enters the desk view; panels open only from buttons
@@ -80,7 +82,7 @@ export default function Room() {
   const choicesMade = log.filter((e) => e.type === "choice" && !e.undone).length, keptCount = log.filter((e) => e.type === "choice" && !e.undone && (e as any).action === "keep").length;
   const stageNow = (choicesMade >= 15 ? 3 : choicesMade >= 5 ? 2 : 1) as 1 | 2 | 3;
   // the room draws the state
-  useEffect(() => { send("world", { desk: pendingNow, pinned: keptCount, starsYou: state.purses.for_you, starsSelf: state.purses.for_itself, stage: stageNow }); }, [pendingNow, keptCount, state.purses.for_you, state.purses.for_itself, stageNow]);
+  useEffect(() => { send("world", { desk: pendingNow, pinned: keptCount, starsYou: state.purses.for_you, starsSelf: state.purses.for_itself, stage: stageNow, keepsakes: went.length, companions: went.filter((w) => w.matched).length }); }, [pendingNow, keptCount, state.purses.for_you, state.purses.for_itself, stageNow, went]);
   // Its own initiative: left alone with nothing waiting on the desk and enough Gem Stars, it decides to go out by itself.
   // It picks the place that serves what the student cares about most; this trip is paid from its own allowance.
   // Autonomy: the policy table in lib/kernel/autonomy.ts is evaluated every few seconds; whatever row matches decides what it does.
@@ -168,6 +170,7 @@ export default function Room() {
       // check the seal in the browser: hash what was revealed and compare with what was shown before choosing
       const bytes = new TextEncoder().encode(JSON.stringify({ predicted: r.predicted, nonce: r.nonce }));
       const hash = [...new Uint8Array(await crypto.subtle.digest("SHA-256", bytes))].map((b) => b.toString(16).padStart(2, "0")).join("");
+      guesses.current = { ...guesses.current, ...r.predicted }; try { localStorage.setItem(`gemi.guess.${school}`, JSON.stringify(guesses.current)); } catch {}
       setTrip((cur) => (cur && cur.seal === tr.seal ? { ...cur, revealed: { predicted: r.predicted, nonce: r.nonce, verified: hash === tr.seal } } : cur));
     } catch {}
   }
@@ -250,7 +253,7 @@ export default function Room() {
           footer={panel === "talk" ? <Composer lang={lang} accent={s.accent} busy={busy} onSend={onSend} /> : undefined}>
           {panel === "wardrobe" && (() => {
             // The wardrobe is an inventory, as in any dress-up game: tabs, a grid of things, what is worn, what is owned, what is not yet.
-            // Getting a new thing costs the Gemi its own Gem Stars; if it cannot afford it today it keeps the wish and saves.
+            // Clothes are free: appearance is the student's own. Things that mean something (keepsakes, companions, spaces) arrive from what really happened.
             const cur: Record<string, any> = { ...preset.look, ...look };
             const save = (k: string, v: any) => { try { localStorage.setItem(`gemi.${k}.${school}`, JSON.stringify(v)); } catch {} };
             const wear = (patch: Record<string, any>) => { const n = { ...cur, ...patch }; setLook(n); save("look", n); send("look", n); };
@@ -261,7 +264,7 @@ export default function Room() {
               Shoes: { key: "shoes", colorKey: "shoeColor", cost: 1, items: ["maryJanes", "sneakers", "boots", "loafers"] },
             };
             const START = ["bob", "longStraight", "shortCrop", "tee", "hoodie", "jeans", "trousers", "sneakers", preset.look.hairStyle, preset.look.top, preset.look.bottom, (preset.look as any).shoes ?? "sneakers"];
-            const has = (id: string) => START.includes(id) || owned.includes(id);
+            const has = (_id: string) => true;   // ruled 14:55 after Carbon's review: how you look is yours and free. No shop, no currency.
             const c = CATS[wtab], name = (o: string) => o.replace(/([A-Z])/g, " $1").toLowerCase();
             const ask = (id: string) => {
               if (state.purses.for_itself >= c.cost) { charge("make_item", c.cost, "for_itself"); const n = [...owned, id]; setOwned(n); save("inv", n); setWish(null); wear({ [c.key]: id });
@@ -392,6 +395,11 @@ export default function Room() {
                     {e.type === "said" && (<><div className="text-[11px] font-bold uppercase text-[#8a8296]">{tt("you_said")}</div>{e.needs.map((n) => <div key={n.id} className="mt-1"><span className="rounded-full px-2 py-0.5 text-[11px] font-semibold" style={{ background: s.soft, color: s.accent }}>{NEEDS[n.id]?.label ?? n.id}</span> <span className="text-[#5f576c]">“{n.quote}”</span></div>)}</>)}
                     {e.type === "choice" && (<>
                       <div><b>{tt(e.action === "keep" ? "kept" : "skipped")}</b> · {e.title}</div>
+                      {e.action === "keep" && !e.undone && (went.some((w) => w.find === e.find)
+                        ? <div className="mt-1 text-[12px] font-bold text-[#2f7a3d]">You went. A keepsake is on the desk{went.find((w) => w.find === e.find)?.matched ? "; it had guessed you would, so a companion moved in" : ""}.</div>
+                        : <button onClick={() => { const matched = (guesses.current[e.find] ?? 0) >= 0.5; const n = [...went, { find: e.find, title: e.title, matched }]; setWent(n); try { localStorage.setItem(`gemi.went.${school}`, JSON.stringify(n)); } catch {}
+                            append({ id: uid(), at: new Date().toISOString(), type: "room", by: "student", what: `went to "${e.title}"; a keepsake arrived${matched ? " and a companion moved in" : ""}`, item: e.find }); }}
+                            className="mt-1.5 rounded-full border-2 bg-[#dff3e6] px-3 py-0.5 text-[12px] font-bold" style={{ borderColor: INK }}>I went</button>)}
                       {e.evidence.map((ev, k) => (<div key={k} className="mt-2"><div className="text-[11px] text-[#5f576c]">{ev.why}</div>{moves[k] && <Axis id={ev.axis} b={moves[k].after} ghost={moves[k].before} />}</div>))}
                     </>)}
                     <div className="mt-2 text-right"><Chunky small color="#fffaf0" onClick={() => toggleUndo(e.id)}><Icon name="undo" size={14} />{tt(e.undone ? "redo" : "undo")}</Chunky></div>

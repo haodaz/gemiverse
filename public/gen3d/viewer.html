@@ -109,6 +109,12 @@ function jar(count, colour, x) {
   if (count) { const l = new THREE.PointLight(colour, 0.12 + 0.03 * count, 0.9); g.add(l); }
   g.position.set(x, 0.75 + 0.06, -1.78); g.userData.jar = true; return g;
 }
+// Things that arrive from the real world. A keepsake stands for one event the student really went to; a companion for one time
+// the Gemi's sealed guess matched something the student then really did. Neither can be bought.
+let extras = null, companions = [];
+import("./keepsakes.js").then((k) => import("./pets.js").then((pp) => { extras = { k, pp }; drawState(); })).catch(() => {});
+const KEEP_ORDER = ["ticketStub", "paperCrane", "pinBadge", "polaroid", "zine", "enamelMug", "programBooklet", "pottedSeedling", "concertWristband"];
+const PET_ORDER = ["cat", "rabbit", "fox", "hedgehog", "owl", "duck"], PET_AT = [[-0.55, 0, 1.15], [1.05, 0, 0.95], [-1.25, 0, 0.35]];
 function drawState() {
   if (stateGroup) world?.remove(stateGroup); if (!world) return; stateGroup = new THREE.Group(); world.add(stateGroup);
   const desk = layout.desk?.p ?? [0.7, 0, -1.65], dx = desk[0], dz = desk[2];
@@ -118,6 +124,16 @@ function drawState() {
   for (let i = 0; i < Math.min(12, worldState.pinned); i++) {   // kept finds, pinned to the corkboard
     const c = new THREE.Mesh(new THREE.BoxGeometry(0.004, 0.11, 0.085), new THREE.MeshStandardMaterial({ color: CARD_COLOURS[(i + 2) % 6], roughness: 0.8 })); c.position.set(board[0] + 0.03, board[1] + 0.13 - Math.floor(i / 4) * 0.13, board[2] - 0.27 + (i % 4) * 0.18); c.rotation.x = ((i * 37) % 9 - 4) * 0.02; c.userData.focus = "board"; stateGroup.add(c);
     const pin = new THREE.Mesh(new THREE.SphereGeometry(0.009, 12, 8), new THREE.MeshStandardMaterial({ color: "#e0556b", roughness: 0.3 })); pin.position.set(c.position.x + 0.006, c.position.y + 0.045, c.position.z); stateGroup.add(pin); }
+  companions = [];
+  if (extras) {
+    const sh = layout.shelf?.p ?? [1.6, 0, -1.8];
+    for (let i = 0; i < Math.min(9, worldState.keepsakes ?? 0); i++) try {   // one keepsake per event really attended: along the back of the desk, then on the shelf top
+      const g = extras.k.KEEPSAKES[KEEP_ORDER[i % KEEP_ORDER.length]](THREE, { variant: i % 3 }); g.userData.focus = "desk";
+      if (i < 4) g.position.set(dx - 0.42 + i * 0.17, 0.757, dz - 0.2); else g.position.set(sh[0] - 0.3 + (i - 4) * 0.14, new THREE.Box3().setFromObject(placed.shelf ?? world).max.y, sh[2]);
+      stateGroup.add(g); } catch {}
+    for (let i = 0; i < Math.min(3, worldState.companions ?? 0); i++) try {   // one companion per matched guess
+      const g = extras.pp.PETS[PET_ORDER[i % PET_ORDER.length]](THREE, { variant: 1 }); g.position.set(...PET_AT[i]); g.rotation.y = 0.6 - i * 0.9; g.scale.setScalar(1.25); stateGroup.add(g); companions.push(g); } catch {}
+  }
   const j1 = jar(worldState.starsYou, "#ffd24a", dx + 0.44), j2 = jar(worldState.starsSelf, "#b89cff", dx + 0.32); j1.position.z = dz - 0.13; j2.position.z = dz - 0.13; stateGroup.add(j1, j2);
   for (let i = 1; i < worldState.stage; i++) { const t = new THREE.Mesh(new THREE.ConeGeometry(0.03, 0.07, 5), new THREE.MeshStandardMaterial({ color: "#ffd24a", metalness: 0.6, roughness: 0.3, emissive: "#a87400", emissiveIntensity: 0.2 })); const sh = layout.shelf?.p ?? [1.6, 0, -1.8]; t.position.set(sh[0] - 0.22 + i * 0.12, 1.64, sh[2] + 0.02); stateGroup.add(t); }   // one small trophy per stage reached
 }
@@ -211,7 +227,7 @@ tell("ready");
 if (BARE) { scene.background = null; renderer.setClearColor(0x000000, 0); document.documentElement.style.background = document.body.style.background = "transparent"; }
 const clock = new THREE.Clock();
 let last = 0;
-renderer.setAnimationLoop(() => { const t = clock.getElapsedTime(), dt = Math.min(0.05, t - last); last = t; live(t, dt); if (doll) try { doll.update(t, dt); } catch {}
+renderer.setAnimationLoop(() => { const t = clock.getElapsedTime(), dt = Math.min(0.05, t - last); last = t; live(t, dt); if (extras) for (const c of companions) try { extras.pp.idle(c, t); } catch {} if (doll) try { doll.update(t, dt); } catch {}
   controls.target.lerp(new THREE.Vector3(...view.target), Math.min(1, dt * 4)); camera.zoom += (view.zoom - camera.zoom) * Math.min(1, dt * 4); camera.updateProjectionMatrix(); controls.update();
   stateGroup?.traverse((o) => { if (o.userData.spin) o.rotation.y += dt * o.userData.spin; }); if (BARE) renderer.render(scene, camera); else composer.render(); });
 </script>

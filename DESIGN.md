@@ -122,3 +122,13 @@ All code is written on 2026-11-21 after 10:30 ET, with an AI coding assistant. T
 | Raw pages, six universities, first run | 610 | 8.7% | 9.6% (lost) |
 | Raw pages after reading only visible text | 610 | 8.4% (4.3% with our reader) | 3.2% / 96.4% |
 Still wrong: 18 facts (12 online-or-not on recurring Penn and Duke events, cause unknown; 4 Duke rooms disputed; 2 others). Tokens per page: 2,334 against 955.
+
+## How things are acquired (ruled 14:55, Carbon's mix)
+No shop and no currency. Each kind of thing comes from who did the work, and stands for one measured thing.
+| Thing | How it arrives | What it stands for | Built |
+|---|---|---|---|
+| Hair, clothes, colours, build | Free in the wardrobe from the start | Nothing: appearance is the student's own | yes |
+| Keepsake | The student marks a kept find "I went" | One event really attended | yes (desk, then shelf top) |
+| Companion animal | A keepsake whose find the Gemi's sealed guess had predicted (0.5 or more) | One time it guessed you right and you really did it | yes (up to three) |
+| Extra space | Only from the Gemi's own saved Gem Stars | The days it chose not to spend | no |
+Risk Carbon named: marking "I went" dishonestly to collect. So there is no "x of 36" checklist; arrivals are not announced in advance.
