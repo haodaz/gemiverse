@@ -7,6 +7,8 @@ import { PRESETS } from "@/lib/demo";
 import { NEEDS } from "@/lib/needs";
 import { TOOLS } from "@/lib/kernel/tools";
 import { mayCall } from "@/lib/kernel/governance";
+import { decide as decideNow, POLICY } from "@/lib/kernel/autonomy";
+import { SPACE } from "@/lib/kernel/space";
 import type { GemiState } from "@/lib/kernel/types";
 import { AXES, blank, loadLog, replay, saveLog, type AxisId, type Beliefs, type LogEvent } from "@/lib/mind";
 import { t, loadLang, saveLang, type Lang } from "@/lib/i18n";
@@ -56,7 +58,8 @@ export default function Room() {
       if (m.type === "doing") setDoing(m.value);
       if (m.type === "tapped") setTap(m.value);
       if (m.type === "released") setTap(null);
-      if (m.type === "ready" && school) send("look", PRESETS[school].look);
+      if (m.type === "ready" && school) { send("look", PRESETS[school].look); setTimeout(() => auto.current?.(), 600); }
+      if (m.type === "focus") { if (m.value === "desk") setPanel("desk"); else if (m.value === "board") setPanel("diary"); }
     };
     addEventListener("message", on); return () => removeEventListener("message", on);
   }, [school]);
@@ -64,15 +67,17 @@ export default function Room() {
   useEffect(() => { const on = (e: KeyboardEvent) => { if (e.key === "Escape") { setCampus(false); setPanel(null); } }; addEventListener("keydown", on); return () => removeEventListener("keydown", on); }, []);
 
   const mind = useMemo(() => replay(log), [log]);
+  const pendingNow = trip ? trip.finds.filter((f) => !trip.choices[f.id]).length : 0;
+  const choicesMade = log.filter((e) => e.type === "choice" && !e.undone).length, keptCount = log.filter((e) => e.type === "choice" && !e.undone && (e as any).action === "keep").length;
+  const stageNow = (choicesMade >= 15 ? 3 : choicesMade >= 5 ? 2 : 1) as 1 | 2 | 3;
+  // the room draws the state
+  useEffect(() => { send("world", { desk: pendingNow, pinned: keptCount, starsYou: state.purses.for_you, starsSelf: state.purses.for_itself, stage: stageNow }); }, [pendingNow, keptCount, state.purses.for_you, state.purses.for_itself, stageNow]);
   // Its own initiative: left alone with nothing waiting on the desk and enough Gem Stars, it decides to go out by itself.
   // It picks the place that serves what the student cares about most; this trip is paid from its own allowance.
-  const auto = useRef<(() => void) | null>(null);
-  useEffect(() => {
-    if (!school || busy || campus || panel || tap || outAt) return;
-    if (trip && trip.finds.some((f) => !trip.choices[f.id])) return;
-    const id = setTimeout(() => auto.current?.(), 45000);
-    return () => clearTimeout(id);
-  }, [school, busy, campus, panel, tap, outAt, trip]);
+  // Autonomy: the policy table in lib/kernel/autonomy.ts is evaluated every few seconds; whatever row matches decides what it does.
+  const auto = useRef<(() => void) | null>(null), lastTouch = useRef(0), [now, setNow] = useState<ReturnType<typeof decideNow> | null>(null), diaryDone = useRef(false);
+  useEffect(() => { lastTouch.current = Date.now(); const touch = () => { lastTouch.current = Date.now(); }; addEventListener("pointerdown", touch); addEventListener("keydown", touch); return () => { removeEventListener("pointerdown", touch); removeEventListener("keydown", touch); }; }, []);
+  useEffect(() => { const id = setInterval(() => auto.current?.(), 5000); return () => clearInterval(id); }, []);
   const s = school ? SCHOOLS[school] : null, preset = school ? PRESETS[school] : null;
   const evidenceOf = useMemo(() => { const m: Record<string, Evidence[]> = {}; for (const e of base?.evidence ?? []) (m[e.entity_id] ??= []).push(e); return m; }, [base]);
   if (!s || !preset || !school) return null;
@@ -81,7 +86,7 @@ export default function Room() {
   const append = (e: LogEvent) => setLog((l) => { const n = [...l, e]; saveLog(school, n); return n; });
   const when = (f: Record<string, any>) => { const v = f.occurrences?.[0]?.start; return v ? new Date(v).toLocaleString(lang === "zh" ? "zh-CN" : lang === "es" ? "es" : "en-US", { weekday: "short", month: "short", day: "numeric", hour: "numeric", minute: "2-digit" }) : tt("date_unconfirmed"); };
   const releaseGemi = () => { setTap(null); send("release"); };
-  const openPanel = (p: Panel) => { setPanel(p); setCampus(false); releaseGemi(); };
+  const openPanel = (p: Panel) => { setPanel(p); setCampus(false); releaseGemi(); send("focus", p === "desk" ? "desk" : p === "diary" ? "board" : "room"); };
   const charge = (tool: string, stars: number, purse: "for_you" | "for_itself") => setState((st) => ({ ...st, purses: { ...st.purses, [purse]: st.purses[purse] - stars }, usedToday: { ...st.usedToday, [tool]: (st.usedToday[tool] ?? 0) + 1 } }));
 
   async function onSend(m: Sent) {
@@ -124,10 +129,15 @@ export default function Room() {
   }
 
   auto.current = () => {
-    if (!mayCall("go_out", state, "", "gemi").ok) return;
-    const top = Object.entries(mind.care).sort((a, b) => b[1] - a[1])[0]?.[0];
-    const place = top && ["find_my_people", "make_and_express"].includes(top) ? "clubs" : top && ["get_experience", "decide_a_direction", "fund_my_path"].includes(top) ? "career" : top === "rest_and_recover" ? "commons" : "library";
-    goOut(place, "gemi");
+    const d = decideNow({ pending: pendingNow, outNow: !!outAt, starsYou: state.purses.for_you, starsSelf: state.purses.for_itself, choices: choicesMade, widestHalo: Math.max(...AXES.map((a) => mind.beliefs[a.id].u)),
+      topCare: Math.max(0, ...Object.values(mind.care)), hour: new Date().getHours(), idleSeconds: (Date.now() - lastTouch.current) / 1000, diaryToday: diaryDone.current, paused: state.paused });
+    setNow(d); send("mode", d.state === "waiting" ? "waiting" : "free");
+    if (busy || campus || panel === "talk" || tap) return;                      // it never acts on its own while you are in the middle of something
+    if (d.rule === "go" && mayCall("go_out", state, "", "gemi").ok) {
+      const top = Object.entries(mind.care).sort((a, b) => b[1] - a[1])[0]?.[0];
+      goOut(top && ["find_my_people", "make_and_express"].includes(top) ? "clubs" : top && ["get_experience", "decide_a_direction", "fund_my_path"].includes(top) ? "career" : top === "rest_and_recover" ? "commons" : "library", "gemi");
+    } else if (d.rule === "diary" && mayCall("write_diary", state, "", "gemi").ok) { diaryDone.current = true; charge("write_diary", 1, "for_itself"); send("play", "writeAtDesk"); setDoing("writing in its diary, on its own star"); }
+    else if (d.rule === "tidy" && mayCall("decorate_room", state, "", "gemi").ok) { lastTouch.current = Date.now(); charge("decorate_room", 1, "for_itself"); send("palette", Math.floor(Math.random() * 3)); setDoing("changed its room, on its own star"); }
   };
   function choose(f: Find, action: "keep" | "skip") {
     if (!trip || trip.choices[f.id]) return;
@@ -190,7 +200,7 @@ export default function Room() {
         {(["for_you", "for_itself"] as const).map((p) => <div key={p} className="flex items-center gap-1 text-sm font-bold tabular-nums"><Icon name="star" size={20} />{state.purses[p]}<span className="text-[11px] font-normal text-[#8a8296]">{tt(p)}</span></div>)}
       </button>
 
-      {!tap && !campus && <div className="absolute bottom-5 left-5 rounded-full border-[3px] bg-[#fffaf0] px-4 py-1.5 text-sm" style={{ borderColor: INK, boxShadow: `0 4px 0 ${INK}` }}><span className="text-[#8a8296]">{tt("right_now")}: </span>{preset.gemiName} {tt("gemi_is")} {busy ? tt("thinking") : doing}</div>}
+      {!tap && !campus && <div className="absolute bottom-5 left-5 rounded-full border-[3px] bg-[#fffaf0] px-4 py-1.5 text-sm" style={{ borderColor: INK, boxShadow: `0 4px 0 ${INK}` }}><span className="text-[#8a8296]">{tt("right_now")}: </span>{preset.gemiName} {tt("gemi_is")} {busy ? tt("thinking") : doing}{now && now.rule !== "potter" ? <span className="ml-2 text-[11px] text-[#8a8296]">· {now.why}</span> : null}</div>}
 
       {tap && <RadialMenu x={tap.x} y={tap.y} items={[
         { icon: "talk", label: tt("tap_talk"), onClick: () => openPanel("talk") },
@@ -210,7 +220,7 @@ export default function Room() {
       </div>
 
       {panel && (
-        <GamePanel title={tt(titles[panel][0])} icon={titles[panel][1]} accent={s.accent} onClose={() => setPanel(null)} closeLabel={tt("close")}
+        <GamePanel title={tt(titles[panel][0])} icon={titles[panel][1]} accent={s.accent} onClose={() => { setPanel(null); send("focus", "room"); }} closeLabel={tt("close")}
           footer={panel === "talk" ? <Composer lang={lang} accent={s.accent} busy={busy} onSend={onSend} /> : undefined}>
           {panel === "talk" && (
             <div className="space-y-3">
@@ -342,6 +352,16 @@ export default function Room() {
                   </ul>
                 </div>
               ))}
+            </div>
+          )}
+          {panel === "tools" && (
+            <div className="mt-6">
+              <div className="text-xs font-bold uppercase tracking-wider text-[#8a8296]">On its own: what it does when you are away</div>
+              <ul className="mt-2 space-y-1.5">{POLICY.map((p) => (
+                <li key={p.id} className="rounded-xl border-2 bg-white px-3 py-2 text-xs" style={{ borderColor: now?.rule === p.id ? s.accent : "#d9d0c0", background: now?.rule === p.id ? s.soft : "#fff" }}>
+                  <b>When {p.when}</b>{p.then.method ? <span className="ml-1 text-[#8a8296]">→ {p.then.method}{p.then.stars ? `, ${p.then.stars} of its own` : ""}</span> : null}<br /><span className="text-[#5f576c]">{p.then.room}</span></li>))}</ul>
+              <div className="mt-5 text-xs font-bold uppercase tracking-wider text-[#8a8296]">What you see in the room, and what it means</div>
+              <ul className="mt-2 space-y-1">{SPACE.map((x) => (<li key={x.fact} className="flex justify-between gap-3 border-t border-[#eee6d6] py-1 text-xs"><span><b>{x.shows_as}</b><br /><span className="text-[#8a8296]">{x.fact}</span></span><span className="shrink-0" style={{ color: x.built ? "#2f7a3d" : "#b0a8ba" }}>{x.built ? "live" : "planned"}</span></li>))}</ul>
             </div>
           )}
           {panel === "outbox" && <p className="text-sm leading-relaxed text-[#5f576c]">{tt("outbox_empty")}</p>}

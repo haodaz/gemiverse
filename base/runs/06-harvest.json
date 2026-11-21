@@ -1,0 +1,144 @@
+{
+ "at": "2026-11-21T18:12:42.164Z",
+ "harvested": 130,
+ "entered": 106,
+ "rejected_title_check": 24,
+ "clubs": 36,
+ "events": 69,
+ "opportunities": 1,
+ "nyu": 76,
+ "columbia": 30,
+ "fields_checked": 226,
+ "fields_passed": 226,
+ "links": 2,
+ "tokens": {
+  "tag": 45508,
+  "check": 36753
+ },
+ "failures": [],
+ "sample": [
+  {
+   "id": "nyu:club:lambda-chi-alpha-all-university",
+   "type": "Organisation",
+   "school": "nyu",
+   "name": "Lambda Chi Alpha - All-University",
+   "fields": {
+    "summary": "Join a fraternity chapter to build brotherhood, engage in community service, and participate in Greek life activities.",
+    "needs": [
+     "find_my_people",
+     "contribute_beyond_self"
+    ],
+    "url": "https://engage.nyu.edu/organization/lambda-chi-alpha-all-university",
+    "source_kind": "json_feed",
+    "inferred": [
+     "needs"
+    ],
+    "categories": [
+     "Community Engagement & Service",
+     "Fraternity & Sorority Life"
+    ]
+   },
+   "tier": 1,
+   "ontology_version": "v2"
+  },
+  {
+   "id": "nyu:club:actuarial-society",
+   "type": "Organisation",
+   "school": "nyu",
+   "name": "Actuarial Society",
+   "fields": {
+    "summary": "Explore actuarial science and connect with peers interested in the field across the university.",
+    "needs": [
+     "explore_a_field",
+     "find_my_people"
+    ],
+    "url": "https://engage.nyu.edu/organization/actuarial-society",
+    "source_kind": "json_feed",
+    "inferred": [
+     "needs"
+    ],
+    "categories": []
+   },
+   "tier": 1,
+   "ontology_version": "v2"
+  },
+  {
+   "id": "nyu:club:society-for-human-resource-management",
+   "type": "Organisation",
+   "school": "nyu",
+   "name": "Society for Human Resource Management",
+   "fields": {
+    "summary": "Develop human resource management skills and explore professional development opportunities through a student chapter.",
+    "needs": [
+     "explore_a_field",
+     "get_experience"
+    ],
+    "url": "https://engage.nyu.edu/organization/society-for-human-resource-management",
+    "source_kind": "json_feed",
+    "inferred": [
+     "needs"
+    ],
+    "categories": [
+     "Professional Development",
+     "Science & Technology"
+    ]
+   },
+   "tier": 1,
+   "ontology_version": "v2"
+  },
+  {
+   "id": "nyu:club:korean-graduate-students-association-university",
+   "type": "Organisation",
+   "school": "nyu",
+   "name": "Korean Graduate Students Association - All-University",
+   "fields": {
+    "summary": "Connect with Korean graduate students, navigate university life, and explore New York City culture together.",
+    "needs": [
+     "find_my_people",
+     "navigate_systems"
+    ],
+    "url": "https://engage.nyu.edu/organization/korean-graduate-students-association-university",
+    "source_kind": "json_feed",
+    "inferred": [
+     "needs"
+    ],
+    "categories": [
+     "Academic",
+     "Culture & Identity-Based",
+     "Social"
+    ]
+   },
+   "tier": 1,
+   "ontology_version": "v2"
+  },
+  {
+   "id": "nyu:club:cssa-at-nyu-all-university",
+   "type": "Organisation",
+   "school": "nyu",
+   "name": "Chinese Students and Scholars Association at NYU - All-University",
+   "fields": {
+    "summary": "Join a large Chinese student organization for cultural performances, social events, and career services.",
+    "needs": [
+     "find_my_people",
+     "decide_a_direction"
+    ],
+    "url": "https://engage.nyu.edu/organization/cssa-at-nyu-all-university",
+    "source_kind": "json_feed",
+    "inferred": [
+     "needs"
+    ],
+    "categories": [
+     "Academic",
+     "Community Engagement & Service",
+     "Culture & Identity-Based",
+     "Media & Publication",
+     "Performance & Arts",
+     "Social",
+     "Sports & Games"
+    ]
+   },
+   "tier": 1,
+   "ontology_version": "v2"
+  }
+ ]
+}

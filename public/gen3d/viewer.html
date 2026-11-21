@@ -75,7 +75,7 @@ function build() {
     const make = items.ITEMS[name]; if (!make) continue;
     try { const g = make(THREE, { ...p, material: ["wood", "painted", "fabric"][vi % 3], variant: vi % 3 }); g.userData.item = name; placed[name] = g; place(name); world.add(g); } catch (e) { err(`${name}: ${e.message}`); }
   }
-  spawn(lookNow);
+  spawn(lookNow); drawState();
 }
 const HAIR = ["short", "bob", "longStraight", "curly", "ponytail", "afro", "braids", "buzz"], SKIN = ["#f6dcc6", "#f1cfb4", "#e8b796", "#d49a72", "#b9794f", "#a86f4c", "#8d5a3c", "#6b4226"], HAIRC = ["#1f1a1c", "#3b2a22", "#6b4a2f", "#c98b4a", "#a5482f", "#e58fb0", "#5b8fd6", "#c8ccd4"];
 // The Gemi is the jointed doll: generated body, clothes, hair and motion library, with the hand-painted face.
@@ -91,6 +91,40 @@ async function spawn(look) {
   doll = d; who = d.root; who.scale.setScalar(1.12); who.position.set(0.25, 0, 0.5); who.visible = !away && !arranging; world.add(who); d.express("happy");
 }
 // What it does when nobody is talking to it: a small loop of walking to a spot and staying there a while.
+
+// ---- The room shows the Gemi's state: nothing here is decoration ---------------------------------------------------------
+// desk cards = finds waiting for the student; pins on the corkboard = finds the student kept; two jars = its Gem Stars
+// (for you, for itself); a small trophy shelf item per growth stage. The page sends the numbers; the room only draws them.
+let stateGroup = null, worldState = { desk: 0, pinned: 0, starsYou: 6, starsSelf: 4, stage: 1 }, mode = "free";
+const CARD_COLOURS = ["#ffd9a8", "#c8b4f0", "#a8e0c0", "#a8d4ff", "#ff9fb5", "#ffe08a"];
+function starShape() { const sh = new THREE.Shape(); for (let k = 0; k < 10; k++) { const r = k % 2 ? 0.006 : 0.014, a = -Math.PI / 2 + (k * Math.PI) / 5; sh[k ? "lineTo" : "moveTo"](Math.cos(a) * r, Math.sin(a) * r); } sh.closePath(); return new THREE.ExtrudeGeometry(sh, { depth: 0.006, bevelEnabled: true, bevelSize: 0.002, bevelThickness: 0.002, bevelSegments: 2 }); }
+let STAR_GEO = null;
+function jar(count, colour, x) {
+  const g = new THREE.Group();
+  g.add(new THREE.Mesh(new THREE.CylinderGeometry(0.05, 0.045, 0.12, 32, 1, true), new THREE.MeshPhysicalMaterial({ color: "#ffffff", transparent: true, opacity: 0.28, roughness: 0.05, side: THREE.DoubleSide, clearcoat: 1 })));
+  const lid = new THREE.Mesh(new THREE.CylinderGeometry(0.053, 0.053, 0.014, 32), new THREE.MeshStandardMaterial({ color: "#c89462", roughness: 0.7 })); lid.position.y = 0.067; g.add(lid);
+  STAR_GEO ??= starShape(); const mat = new THREE.MeshStandardMaterial({ color: colour, emissive: colour, emissiveIntensity: 0.9, roughness: 0.4 });
+  for (let i = 0; i < count; i++) { const st = new THREE.Mesh(STAR_GEO, mat), a = i * 2.4, r = 0.012 + (i % 3) * 0.011; st.position.set(Math.cos(a) * r, -0.05 + i * 0.011 + (i % 2) * 0.004, Math.sin(a) * r); st.rotation.set(i * 0.7, i * 1.3, i); st.userData.spin = 0.4 + (i % 4) * 0.2; g.add(st); }
+  if (count) { const l = new THREE.PointLight(colour, 0.12 + 0.03 * count, 0.9); g.add(l); }
+  g.position.set(x, 0.75 + 0.06, -1.78); g.userData.jar = true; return g;
+}
+function drawState() {
+  if (stateGroup) world?.remove(stateGroup); if (!world) return; stateGroup = new THREE.Group(); world.add(stateGroup);
+  const desk = layout.desk?.p ?? [0.7, 0, -1.65], dx = desk[0], dz = desk[2];
+  for (let i = 0; i < Math.min(6, worldState.desk); i++) {   // finds waiting on the desk, fanned out
+    const c = new THREE.Mesh(new THREE.BoxGeometry(0.13, 0.004, 0.18), new THREE.MeshStandardMaterial({ color: CARD_COLOURS[i % 6], roughness: 0.8 })); c.position.set(dx - 0.36 + i * 0.1, 0.757 + i * 0.004, dz + 0.1 + (i % 2) * 0.03); c.rotation.y = (i - 1) * 0.22; c.castShadow = true; c.userData.focus = "desk"; stateGroup.add(c); }
+  const board = layout.corkboard?.p ?? [-1.97, 1.5, -0.7];
+  for (let i = 0; i < Math.min(12, worldState.pinned); i++) {   // kept finds, pinned to the corkboard
+    const c = new THREE.Mesh(new THREE.BoxGeometry(0.004, 0.11, 0.085), new THREE.MeshStandardMaterial({ color: CARD_COLOURS[(i + 2) % 6], roughness: 0.8 })); c.position.set(board[0] + 0.03, board[1] + 0.13 - Math.floor(i / 4) * 0.13, board[2] - 0.27 + (i % 4) * 0.18); c.rotation.x = ((i * 37) % 9 - 4) * 0.02; c.userData.focus = "board"; stateGroup.add(c);
+    const pin = new THREE.Mesh(new THREE.SphereGeometry(0.009, 12, 8), new THREE.MeshStandardMaterial({ color: "#e0556b", roughness: 0.3 })); pin.position.set(c.position.x + 0.006, c.position.y + 0.045, c.position.z); stateGroup.add(pin); }
+  const j1 = jar(worldState.starsYou, "#ffd24a", dx + 0.44), j2 = jar(worldState.starsSelf, "#b89cff", dx + 0.32); j1.position.z = dz - 0.13; j2.position.z = dz - 0.13; stateGroup.add(j1, j2);
+  for (let i = 1; i < worldState.stage; i++) { const t = new THREE.Mesh(new THREE.ConeGeometry(0.03, 0.07, 5), new THREE.MeshStandardMaterial({ color: "#ffd24a", metalness: 0.6, roughness: 0.3, emissive: "#a87400", emissiveIntensity: 0.2 })); const sh = layout.shelf?.p ?? [1.6, 0, -1.8]; t.position.set(sh[0] - 0.22 + i * 0.12, 1.64, sh[2] + 0.02); stateGroup.add(t); }   // one small trophy per stage reached
+}
+// ---- Looking closer: click the desk or the corkboard and the camera moves in; the page opens the matching panel -----------
+const VIEWS = { room: { target: [0, 1.0, 0], zoom: 1 }, desk: { target: [0.75, 0.82, -1.55], zoom: 2.7 }, board: { target: [-1.6, 1.45, -0.7], zoom: 2.3 }, shelf: { target: [1.55, 1.0, -1.6], zoom: 2.2 }, bed: { target: [-1.35, 0.5, -0.9], zoom: 1.8 } };
+let view = VIEWS.room;
+function focusOn(name) { view = VIEWS[name] ?? VIEWS.room; tell("focus", VIEWS[name] ? name : "room"); }
+
 const SPOTS = [
   { at: [0.7, -0.6], face: Math.PI, say: "writing in the diary", mood: "thinking", clip: "writeAtDesk" },
   { at: [1.5, -1.25], face: Math.PI, say: "picking a book from the shelf", mood: "awake", clip: "reachShelf" },
@@ -103,6 +137,7 @@ const SPOTS = [
 let goal = null, waitUntil = 0;
 function live(t, dt) {
   if (!who || arranging || away || held) return;
+  if (!goal && t > waitUntil && mode === "waiting") { goal = { at: [0.3, -0.75], face: 0.5, say: `waiting for you with ${worldState.desk} thing${worldState.desk === 1 ? "" : "s"}`, mood: "happy", clip: "wave" }; doll?.play("walk"); }
   if (!goal && t > waitUntil) { goal = SPOTS[Math.floor(Math.random() * SPOTS.length)]; document.getElementById("say").textContent = "…"; doll?.play("walk"); doll?.express("awake"); }
   if (goal) {
     const dx = goal.at[0] - who.position.x, dz = goal.at[1] - who.position.z, dist = Math.hypot(dx, dz);
@@ -125,6 +160,9 @@ renderer.domElement.addEventListener("click", (ev) => {
     ray.setFromCamera(new THREE.Vector2(ev.clientX / innerWidth * 2 - 1, -(ev.clientY / innerHeight) * 2 + 1), camera);
     if (ray.intersectObject(who, true).length) { held = true; goal = null; who.rotation.y = Math.atan2(camera.position.x - who.position.x, camera.position.z - who.position.z); doll?.express("happy"); doll?.play("wave"); tell("tapped", headOnScreen()); }
     else if (held) { held = false; tell("released"); }
+    else { const hit = ray.intersectObjects([...Object.values(placed), ...(stateGroup ? stateGroup.children : [])], true)[0]; let o = hit?.object; while (o && !o.userData.item && !o.userData.focus) o = o.parent;
+      const area = o?.userData.focus ?? ({ desk: "desk", diary: "desk", lamp: "desk", chair: "desk", corkboard: "board", wallArt: "board", shelf: "shelf", bed: "bed" })[o?.userData.item];
+      focusOn(area && view !== VIEWS[area] ? area : "room"); }
     return;
   }
   if (!arranging) return;
@@ -152,6 +190,9 @@ addEventListener("resize", () => { const a = innerWidth / innerHeight; camera.le
 addEventListener("message", (ev) => { const m = ev.data; if (!m || m.source !== "gemiverse") return;
   if (m.type === "away") { away = !!m.value; if (who) who.visible = !away && !arranging; }
   if (m.type === "release") { held = false; doll?.play("idle"); }
+  if (m.type === "world" && m.value) { worldState = { ...worldState, ...m.value }; drawState(); }
+  if (m.type === "mode") mode = m.value;
+  if (m.type === "focus") focusOn(m.value);
   if (m.type === "express" && m.value) doll?.express(m.value);
   if (m.type === "play" && m.value) doll?.play(m.value);
   if (m.type === "arrange") document.getElementById("arr").click();
@@ -161,5 +202,7 @@ const tell = (type, value) => { if (EMBED) parent.postMessage({ source: "gemiver
 tell("ready");
 const clock = new THREE.Clock();
 let last = 0;
-renderer.setAnimationLoop(() => { const t = clock.getElapsedTime(), dt = Math.min(0.05, t - last); last = t; live(t, dt); if (doll) try { doll.update(t, dt); } catch {} composer.render(); });
+renderer.setAnimationLoop(() => { const t = clock.getElapsedTime(), dt = Math.min(0.05, t - last); last = t; live(t, dt); if (doll) try { doll.update(t, dt); } catch {}
+  controls.target.lerp(new THREE.Vector3(...view.target), Math.min(1, dt * 4)); camera.zoom += (view.zoom - camera.zoom) * Math.min(1, dt * 4); camera.updateProjectionMatrix(); controls.update();
+  stateGroup?.traverse((o) => { if (o.userData.spin) o.rotation.y += dt * o.userData.spin; }); composer.render(); });
 </script>
