@@ -4,7 +4,7 @@
 
 Built by one person at the Gemini 4 NYC Hackathon, Saturday 2026-11-21. Track 1, 5 Sigma.
 
-- Live: https://gemiverse.vercel.app · one-minute film: [`public/film/gemiverse-1min.mp4`](public/film/gemiverse-1min.mp4) · method and results: `/deck` (English and Chinese) · back office: `/admin`
+- Live: https://gemiverse.vercel.app · one-minute film: https://youtu.be/uxwhj7j9LQQ (file: [`public/film/gemiverse-1min.mp4`](public/film/gemiverse-1min.mp4)) · method and results: `/deck` (English and Chinese) · back office: `/admin`
 - **All code in this repo was written today**, after 10:30 ET, with an AI coding assistant (Claude Code).
 - The idea began with Cocoverse, our mind-projection product for pets. The concepts (a projected companion with a room of its own, a portrait with uncertainty, a shared knowledge base) come from our earlier work. No earlier code is reused.
 - `DESIGN.md` is the living design doc. `DEVLOG.md` records every step, including the failures.
