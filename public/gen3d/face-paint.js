@@ -92,7 +92,7 @@ export function headGeometry(THREE) {
   for (let i = 0; i < p.count; i++) {
     let x = p.getX(i), y = p.getY(i), z = p.getZ(i);
     const front = Math.max(0, z), t = ss(-0.5, -1, y);
-    let wx = 1 + 0.07 * bump(y + 0.32, 0.38);                      // cheeks: the widest point
+    let wx = 1 + 0.035 * bump(y + 0.32, 0.38);                      // cheeks: the widest point
     wx *= 1 - 0.26 * Math.pow(t, 1.6);                              // a jaw that stays wide, then rounds into the chin
     let wz = 1 - 0.12 * Math.pow(t, 1.5);
     x *= wx;
@@ -105,7 +105,7 @@ export function headGeometry(THREE) {
     // A chin is a shape of its own: the underside of the jaw is nearly flat and the chin sits forward of the neck.
     // (Before this, the face funnelled from the nose straight into the neck.)
     if (z > 0) z += 0.07 * front * bump(Math.hypot(x * 0.8, y + 0.86), 0.2);                  // chin point, forward
-    if (y < -0.72) y = -0.72 - (-(y) - 0.72) * 0.5;                                            // flatten the underside of the jaw
+    if (y < -0.78) y = -0.78 - (-(y) - 0.78) * 0.6;                                            // flatten the underside of the jaw
     if (y < 0) y *= 0.95;
     p.setXYZ(i, x, y, z);
   }
@@ -119,7 +119,7 @@ export function applyFace(THREE, kit, headGroup, look) {
   if (!old) return null;
   headGroup.traverse((o) => { if (o.isMesh && (o === old || o.material.transparent || o.material.map)) o.visible = false; });
   const head = new THREE.Mesh(headGeometry(THREE), new THREE.MeshPhysicalMaterial({ color: "#ffffff", roughness: 0.62, sheen: 0.3, sheenRoughness: 0.6 }));
-  head.scale.set(0.192, 0.172, 0.172); head.position.set(0, 0.165, 0); head.userData.face = true; headGroup.add(head);
+  head.scale.set(0.172, 0.180, 0.166); head.position.set(0, 0.165, 0); head.userData.face = true; headGroup.add(head);
   headGroup.traverse((o) => { if (o.isMesh && o.visible && o !== head) { o.material = o.material.clone(); o.material.color = new THREE.Color(look.skin); o.material.map = null; } });   // ears and neck in the same skin
   const set = (name) => { head.material.map?.dispose?.(); head.material.map = paintFace(THREE, kit, look, name); head.material.needsUpdate = true; };
   let current = "awake", shut = false; set(current);
