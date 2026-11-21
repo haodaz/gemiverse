@@ -352,7 +352,8 @@ export default function Room() {
                 <div className="grid grid-cols-3 gap-2.5">{c.items.map((o) => { const own = has(o), on = cur[c.key] === o; return (
                   <button key={o} onClick={() => (own ? wear({ [c.key]: o }) : setWish({ id: o, cost: c.cost }))} className="relative flex aspect-square flex-col items-center justify-center rounded-2xl border-[3px] p-1 text-center transition hover:-translate-y-0.5"
                     style={{ borderColor: on ? "#7c4dce" : INK, background: on ? "#efe7ff" : own ? "#fffaf0" : "#ece7e0", boxShadow: on ? "0 0 0 3px #c8b4f0" : `0 3px 0 ${INK}33` }}>
-                    <span className="mb-1 h-7 w-7 rounded-full border-2" style={{ borderColor: INK, background: own ? (cur[c.colorKey ?? ""] ?? "#c8b4f0") : "#cfc8bf" }} />
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src={`/wardrobe/${c.key}-${o}.png`} alt="" className="h-[72%] w-full object-contain" onError={(e) => { (e.target as HTMLImageElement).style.visibility = "hidden"; }} />
                     <span className="text-[12px] font-bold leading-tight" style={{ color: own ? INK : "#8a8296" }}>{name(o)}</span>
                     {on && <span className="absolute -top-2 right-1 rounded-full bg-[#7c4dce] px-1.5 text-[10px] font-bold text-white">{tri("on", "穿着", "puesto")}</span>}
                     {!own && <span className="absolute right-1.5 top-1.5"><Icon name="lock" size={16} /></span>}

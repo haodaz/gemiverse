@@ -12,6 +12,8 @@ const only = process.argv.slice(2), want = (id) => !only.length || only.includes
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const browser = await puppeteer.launch({ executablePath: "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome", headless: "new", args: ["--use-angle=metal", "--enable-webgl", "--ignore-gpu-blocklist", "--window-size=1600,900"], defaultViewport: { width: 1600, height: 900, deviceScaleFactor: 1 } });
 const page = await browser.newPage();
+// The room is recorded at 1280x720 with 1.5x pixels: the same 1920x1080 picture, but everything in it half again as large.
+const big = () => page.setViewport({ width: 1280, height: 720, deviceScaleFactor: 1.5 }), wide = () => page.setViewport({ width: 1600, height: 900, deviceScaleFactor: 1 });
 const clean = () => page.addStyleTag({ content: "nextjs-portal,[data-nextjs-toast],#__next-build-watcher{display:none!important}" }).catch(() => {});
 const open = async (path, wait = 2500) => { await page.goto(O + path, { waitUntil: "networkidle2", timeout: 90000 }).catch(() => {}); await clean(); await sleep(wait); };
 // Capture `seconds` of the page as JPEG frames with their real timestamps; returns the frames.
@@ -31,10 +33,10 @@ const waitText = (t, ms = 120000) => page.waitForFunction((x) => document.body.i
 await page.goto(O + "/", { waitUntil: "domcontentloaded" });
 await page.evaluate(() => { for (const k of Object.keys(localStorage)) if (k.startsWith("gemi.")) localStorage.removeItem(k); localStorage.setItem("gemi.school", "nyu"); localStorage.setItem("gemi.lang", "en"); localStorage.setItem("gemi.me.nyu", JSON.stringify({ name: "Mochi", demo: true })); });
 
-if (want("s1")) { await open("/deck", 6000); await write("s1", [await shoot(dur.s1)], dur.s1); }
-if (want("s2")) { await open("/room", 7000); await write("s2", [await shoot(dur.s2)], dur.s2); }
+if (want("s1")) { await wide(); await open("/deck", 6000); await write("s1", [await shoot(dur.s1)], dur.s1); }
+if (want("s2")) { await big(); await open("/room", 7000); await write("s2", [await shoot(dur.s2)], dur.s2); }
 if (want("s3") || want("s4")) {
-  await open("/room", 6000); await click("Talk"); await sleep(900);
+  await big(); await open("/room", 6000); await click("Talk"); await sleep(900);
   const SAY = "帮我去图书馆看看有没有关于写论文的 workshop";
   await page.focus("input[placeholder]");
   const [a] = await Promise.all([shoot(3.0), (async () => { await sleep(300); await page.keyboard.type(SAY, { delay: 55 }); })()]);
@@ -45,10 +47,12 @@ if (want("s3") || want("s4")) {
     await page.evaluate(() => { const el = [...document.querySelectorAll("aside div")].find((d) => d.scrollHeight > d.clientHeight + 40); if (el) el.scrollTo({ top: 260, behavior: "smooth" }); });
     const c3 = await shoot(dur.s4 - 2.1); await write("s4", [c1, c2, c3], dur.s4); }
 }
-if (want("s5")) { await open("/deck?s=15", 2500); await write("s5", [await shoot(dur.s5)], dur.s5); }
-if (want("s6")) { await open("/deck?s=17", 2000); const a = await shoot(dur.s6 * 0.5); await open("/deck?s=20", 2000); const b = await shoot(dur.s6 * 0.5); await write("s6", [a, b], dur.s6); }
+if (want("s5")) { await wide(); await open("/deck?s=15", 2500); const a = await shoot(3.2);   // the whole slide first, then move in on the chart
+  await page.evaluate(() => { const m = document.querySelector("main"); m.style.transformOrigin = "6% 62%"; m.style.transition = "transform 0.9s ease"; m.style.transform = "scale(1.75)"; });
+  const b = await shoot(dur.s5 - 3.2); await write("s5", [a, b], dur.s5); }
+if (want("s6")) { await wide(); await open("/deck?s=17", 2000); const a = await shoot(dur.s6 * 0.5); await open("/deck?s=20", 2000); const b = await shoot(dur.s6 * 0.5); await write("s6", [a, b], dur.s6); }
 if (want("s7")) { await page.evaluate(() => localStorage.setItem("gemi.went.nyu", JSON.stringify([{ find: "demo-1", title: "an event", matched: true }, { find: "demo-2", title: "another", matched: true }])));
-  await open("/room", 7000); const a = await shoot(2.4); await page.evaluate(() => localStorage.removeItem("gemi.went.nyu"));
-  await open("/gen3d/spaces.html?auto=1.4&friends=pip,kai", 5000); const b = await shoot(dur.s7 - 2.4); await write("s7", [a, b], dur.s7); }
-if (want("s8")) { await open("/deck", 6000); const D = Math.max(dur.s8, 3.6); await write("s8", [await shoot(D)], D); }
+  await big(); await open("/room", 7000); const a = await shoot(2.4); await page.evaluate(() => localStorage.removeItem("gemi.went.nyu"));
+  await wide(); await open("/gen3d/spaces.html?auto=1.35&friends=pip,kai&space=readingRoom", 4200); const b = await shoot(dur.s7 - 2.4); await write("s7", [a, b], dur.s7); }
+if (want("s8")) { await wide(); await open("/deck", 6000); const D = Math.max(dur.s8, 3.6); await write("s8", [await shoot(D)], D); }
 await browser.close();

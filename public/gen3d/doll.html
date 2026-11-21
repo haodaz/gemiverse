@@ -22,9 +22,11 @@ const ground = new THREE.Mesh(new THREE.CircleGeometry(4, 64), new THREE.ShadowM
 const kit = makeKit(THREE), dolls = [];
 const q = new URLSearchParams(location.search), which = (q.get("looks") ?? "mochi,pip,wide").split(",");
 let x = -(which.length - 1) * 0.35;
-for (const name of which) { const d = await buildDoll(THREE, LOOKS[name] ?? LOOKS.mochi, kit, err); if (d) { d.root.position.x = x; scene.add(d.root); dolls.push(d); } x += 0.7; }
+const custom = q.get("look") ? JSON.parse(q.get("look")) : null;   // ?look={"hairStyle":"bun"} dresses the first doll, for wardrobe thumbnails
+for (const name of which) { const d = await buildDoll(THREE, custom ? { ...(LOOKS[name] ?? LOOKS.mochi), ...custom } : LOOKS[name] ?? LOOKS.mochi, kit, err); if (d) { d.root.position.x = x; scene.add(d.root); dolls.push(d); } x += 0.7; }
 const camera = new THREE.PerspectiveCamera(26, innerWidth / innerHeight, 0.05, 50); camera.position.set(...(q.get("cam") === "side" ? [3.3, 0.7, 0.001] : q.get("cam") === "front" ? [0, 0.62, 3.3] : q.get("cam") === "face" ? [0.25, 0.82, 1.25] : [1.4, 0.95, 2.9]));
-const controls = new OrbitControls(camera, renderer.domElement); controls.target.set(0, q.get("cam") === "face" ? 0.8 : 0.5, 0); controls.update();
+if (q.has("cy")) camera.position.set(+(q.get("cx") ?? 0.3), +q.get("cy"), +(q.get("cz") ?? 1.3));
+const controls = new OrbitControls(camera, renderer.domElement); controls.target.set(0, q.has("ty") ? +q.get("ty") : q.get("cam") === "face" ? 0.8 : 0.5, 0); controls.update();
 const ui = document.getElementById("ui");
 for (const clip of ["idle", "walk", "sitDown", "squat", "lieDown", "wave", "patHead", "think", "reachShelf", "writeAtDesk", "cheer", "stretch"]) { const b = document.createElement("button"); b.textContent = clip; b.onclick = () => dolls.forEach((d) => d.play?.(clip)); ui.appendChild(b); }
 for (const ex of ["awake", "happy", "wink", "squint", "surprised", "star", "heart", "sad", "unsure", "thinking", "asleep"]) { const b = document.createElement("button"); b.textContent = "face: " + ex; b.style.background = "#fff4e0"; b.onclick = () => dolls.forEach((d) => d.express?.(ex)); ui.appendChild(b); }

@@ -45,10 +45,10 @@ export default function Admin() {
                   <p className="mt-1 text-[13px]">{Math.round((t.fields_passed / t.fields) * 100)}% of fields are shown; the rest are withheld, not guessed.</p></div></div></>)}
           </Card>
           <Card title="The flywheel" note="A fact checked once is read many times.">
-            <svg viewBox="0 0 260 230" className="w-full"><defs><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 8 4 0 8z" fill={INK} /></marker></defs>
+            <svg viewBox="-28 0 316 230" className="w-full"><defs><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 8 4 0 8z" fill={INK} /></marker></defs>
               {[["A Gemi goes out", 130, 28], ["Checked field by field", 216, 112], ["Enters the shared base", 130, 200], ["Every Gemi reads it free", 44, 112]].map(([s, x, y], i) => (<g key={i}><rect x={(x as number) - 62} y={(y as number) - 17} width="124" height="34" rx="10" fill={["#c8b4f0", "#a8d4ff", "#a8e0c0", "#ffe08a"][i]} stroke={INK} strokeWidth="2" /><text x={x as number} y={(y as number) + 4} textAnchor="middle" fontSize="10.5" fontWeight="700" fill={INK}>{s}</text></g>))}
               {["M178 44 L206 90", "M206 134 L178 182", "M82 182 L56 134", "M56 90 L82 44"].map((d) => <path key={d} d={d} stroke={INK} strokeWidth="2" fill="none" markerEnd="url(#ar)" />)}
-              <text x="130" y="108" textAnchor="middle" fontSize="26" fontWeight="800" fill={PUR}>{served}</text><text x="130" y="124" textAnchor="middle" fontSize="9.5" fill="#6d6579">times a checked fact was served</text></svg>
+              <text x="130" y="108" textAnchor="middle" fontSize="26" fontWeight="800" fill={PUR}>{served}</text><text x="130" y="124" textAnchor="middle" fontSize="9" fill="#6d6579">checked facts served</text></svg>
             <p className="text-[13px] leading-snug">Checking one page costs about <b>{Math.round(TPP).toLocaleString()}</b> tokens. Those {served} reads would have cost about <b>{Math.round(served * TPP / 1000)}k</b> tokens if each Gemi had checked alone. A re-visit compares a fingerprint and costs 0 unless the page changed.</p>
             <a href="/foundry" className="mt-3 inline-block rounded-full border-2 bg-white px-4 py-1 text-sm font-bold" style={{ borderColor: INK }}>Every entity and its checks →</a>
           </Card>
