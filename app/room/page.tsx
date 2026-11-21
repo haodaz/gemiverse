@@ -200,7 +200,7 @@ export default function Room() {
         {(["for_you", "for_itself"] as const).map((p) => <div key={p} className="flex items-center gap-1 text-sm font-bold tabular-nums"><Icon name="star" size={20} />{state.purses[p]}<span className="text-[11px] font-normal text-[#8a8296]">{tt(p)}</span></div>)}
       </button>
 
-      {!tap && !campus && <div className="absolute bottom-5 left-5 rounded-full border-[3px] bg-[#fffaf0] px-4 py-1.5 text-sm" style={{ borderColor: INK, boxShadow: `0 4px 0 ${INK}` }}><span className="text-[#8a8296]">{tt("right_now")}: </span>{preset.gemiName} {tt("gemi_is")} {busy ? tt("thinking") : doing}{now && now.rule !== "potter" ? <span className="ml-2 text-[11px] text-[#8a8296]">· {now.why}</span> : null}</div>}
+      {!tap && !campus && <div className="absolute left-5 top-[4.6rem] max-w-[min(34rem,60vw)] rounded-2xl border-[3px] bg-[#fffaf0] px-4 py-1.5 text-sm" style={{ borderColor: INK, boxShadow: `0 4px 0 ${INK}` }}><span className="text-[#8a8296]">{tt("right_now")}: </span>{preset.gemiName} {tt("gemi_is")} {busy ? tt("thinking") : doing}{now && now.rule !== "potter" ? <span className="ml-2 text-[11px] text-[#8a8296]">· {now.why}</span> : null}</div>}
 
       {tap && <RadialMenu x={tap.x} y={tap.y} items={[
         { icon: "talk", label: tt("tap_talk"), onClick: () => openPanel("talk") },
