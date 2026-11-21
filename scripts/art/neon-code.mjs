@@ -1,13 +1,13 @@
 // Ask Gemini 4 Neon to write a three.js ES module to a fixed contract and save it. Run: node scripts/art/neon-code.mjs <name> <promptFile>
 import { readFileSync, writeFileSync } from "node:fs";
 const key = readFileSync(new URL("../../.env.local", import.meta.url), "utf8").match(/^GEMINI_API_KEY=(.+)$/m)[1].trim();
-const [name, promptFile] = process.argv.slice(2);
+const [name, promptFile, thinking = "medium"] = process.argv.slice(2);
 const prompt = readFileSync(promptFile, "utf8");
 const t0 = Date.now();
 const H = { "content-type": "application/json", "x-goog-api-key": key };
 const BASE = "https://generativelanguage.googleapis.com/v1beta/interactions";
 // background mode + polling, so a long generation cannot hit the five-minute request timeout
-let res = await fetch(BASE, { method: "POST", headers: H, body: JSON.stringify({ model: "gemini-4-neon", generation_config: { thinking_level: "medium" }, input: prompt, background: true }) });
+let res = await fetch(BASE, { method: "POST", headers: H, body: JSON.stringify({ model: "gemini-4-neon", generation_config: { thinking_level: thinking }, input: prompt, background: true }) });
 let json = await res.json();
 while (json.status && !["completed", "failed", "cancelled", "incomplete"].includes(json.status)) {
   await new Promise((r) => setTimeout(r, 5000));

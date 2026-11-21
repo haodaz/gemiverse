@@ -17,14 +17,19 @@ const err = (m) => (document.getElementById("err").textContent += m + "\n");
 window.addEventListener("error", (e) => err(e.message));
 const load = async (n) => { try { return await import(`./${n}.js`); } catch (e) { err(`${n}: ${e.message}`); return null; } };
 const [room, items, character] = await Promise.all(["room", "items", "character"].map(load));
+// Embedded in the room page: no test buttons, the school decides the window view and the starting palette.
+const Q = new URLSearchParams(location.search), EMBED = Q.has("embed"), SCHOOL = Q.get("school") === "columbia" ? "columbia" : "nyu";
+if (EMBED) document.getElementById("ui").style.display = "none";
+let windowView = null;
+try { windowView = await new THREE.TextureLoader().loadAsync(`/art/window-${SCHOOL}.svg`); windowView.colorSpace = THREE.SRGBColorSpace; } catch (e) { err("window view: " + e.message); }
 
 const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setPixelRatio(Math.min(devicePixelRatio, 2)); renderer.setSize(innerWidth, innerHeight);
 renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.outputColorSpace = THREE.SRGBColorSpace;
 document.body.appendChild(renderer.domElement);
-const scene = new THREE.Scene(); scene.background = new THREE.Color("#f3eef8");
-const d = 2.9, a = innerWidth / innerHeight;
+const scene = new THREE.Scene(); scene.background = new THREE.Color("#f6f2ee");
+const d = 3.3, a = innerWidth / innerHeight;
 const camera = new THREE.OrthographicCamera(-d * a, d * a, d, -d, 0.1, 100);
 camera.position.set(9, 8, 9); const controls = new OrbitControls(camera, renderer.domElement); controls.target.set(0, 1.0, 0); controls.update();
 scene.environment = new THREE.PMREMGenerator(renderer).fromScene(new RoomEnvironment(), 0.04).texture; scene.environmentIntensity = 0.55;
@@ -52,14 +57,14 @@ const DEFAULT_LAYOUT = {
 };
 let layout; try { layout = JSON.parse(localStorage.getItem("gemi.layout")) } catch {} layout ??= structuredClone(DEFAULT_LAYOUT);
 const saveLayout = () => { try { localStorage.setItem("gemi.layout", JSON.stringify(layout)) } catch {} };
-let pi = 0, vi = 0, world, who, placed = {}, arranging = false, picked = null, lookNow = null;
+let pi = SCHOOL === "columbia" ? 1 : 0, vi = 0, world, who, placed = {}, arranging = false, picked = null, lookNow = null;
 const grid = new THREE.GridHelper(4, 16, "#5b46e0", "#7c6cf0"); grid.position.y = 0.012; grid.visible = false; scene.add(grid);
 const marker = new THREE.BoxHelper(new THREE.Object3D(), "#7c6cf0"); marker.visible = false; scene.add(marker);
 function place(name) { const g = placed[name], L = layout[name]; g.position.set(...L.p); g.rotation.y = L.r * Math.PI / 2; }
 function build() {
   if (world) scene.remove(world); world = new THREE.Group(); scene.add(world); placed = {};
   const p = PALETTES[pi];
-  try { if (room) world.add(room.buildRoom(THREE, { wall: p.wall, trim: p.trim, floor: p.floor, floorStyle: ["planks", "herringbone", "carpet"][vi % 3], windowView: null })); } catch (e) { err("room: " + e.message); }
+  try { if (room) world.add(room.buildRoom(THREE, { wall: p.wall, trim: p.trim, floor: p.floor, floorStyle: ["planks", "herringbone", "carpet"][vi % 3], windowView })); } catch (e) { err("room: " + e.message); }
   if (items) for (const name of Object.keys(layout)) {
     const make = items.ITEMS[name]; if (!make) continue;
     try { const g = make(THREE, { ...p, material: ["wood", "painted", "fabric"][vi % 3], variant: vi % 3 }); g.userData.item = name; placed[name] = g; place(name); world.add(g); } catch (e) { err(`${name}: ${e.message}`); }
@@ -83,11 +88,11 @@ const SPOTS = [
 ];
 let goal = null, waitUntil = 0;
 function live(t, dt) {
-  if (!who || arranging) return;
+  if (!who || arranging || away) return;
   if (!goal && t > waitUntil) { goal = SPOTS[Math.floor(Math.random() * SPOTS.length)]; document.getElementById("say").textContent = "…"; }
   if (goal) {
     const dx = goal.at[0] - who.position.x, dz = goal.at[1] - who.position.z, dist = Math.hypot(dx, dz);
-    if (dist < 0.03) { who.rotation.y = goal.face; character.setExpression?.(who, goal.mood); document.getElementById("say").textContent = goal.say; waitUntil = t + 4 + Math.random() * 4; goal = null; }
+    if (dist < 0.03) { who.rotation.y = goal.face; character.setExpression?.(who, goal.mood); document.getElementById("say").textContent = goal.say; tell("doing", goal.say); waitUntil = t + 4 + Math.random() * 4; goal = null; }
     else { const step = Math.min(dist, 0.55 * dt); who.position.x += dx / dist * step; who.position.z += dz / dist * step; who.rotation.y = Math.atan2(dx, dz); who.position.y = Math.abs(Math.sin(t * 9)) * 0.025; }
   } else who.position.y = 0;
 }
@@ -121,6 +126,14 @@ document.getElementById("pal").onclick = () => { pi = (pi + 1) % PALETTES.length
 document.getElementById("var").onclick = () => { vi++; build(); };
 document.getElementById("look").onclick = () => spawn(null);
 addEventListener("resize", () => { const a = innerWidth / innerHeight; camera.left = -d * a; camera.right = d * a; camera.updateProjectionMatrix(); renderer.setSize(innerWidth, innerHeight); composer.setSize(innerWidth, innerHeight); });
+// The room page tells the room what the Gemi is doing; the room only shows it.
+let away = false;
+addEventListener("message", (ev) => { const m = ev.data; if (!m || m.source !== "gemiverse") return;
+  if (m.type === "away") { away = !!m.value; if (who) who.visible = !away && !arranging; }
+  if (m.type === "arrange") document.getElementById("arr").click();
+  if (m.type === "look" && m.value) spawn(m.value);
+  if (m.type === "palette") { pi = m.value % PALETTES.length; build(); } });
+const tell = (type, value) => { if (EMBED) parent.postMessage({ source: "gemiverse-room", type, value }, "*"); };
 const clock = new THREE.Clock();
 let last = 0;
 renderer.setAnimationLoop(() => { const t = clock.getElapsedTime(), dt = Math.min(0.05, t - last); last = t; live(t, dt); if (who && character?.idle) try { character.idle(who, t); } catch {} composer.render(); });

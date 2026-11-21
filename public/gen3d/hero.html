@@ -1,0 +1,32 @@
+<!doctype html>
+<meta charset="utf-8"><title>Gemiverse hero models</title>
+<style>html,body{margin:0;height:100%;background:#f3eef8;font:13px system-ui}#ui{position:fixed;left:10px;top:10px;display:flex;gap:6px;flex-wrap:wrap;z-index:2}a{border-radius:999px;padding:6px 12px;background:#fff;box-shadow:0 1px 4px #0002;text-decoration:none;color:#222}a.on{background:#7c4dce;color:#fff}#err{position:fixed;bottom:6px;left:8px;color:#b00;white-space:pre-wrap;max-width:70vw}</style>
+<div id="ui"></div><div id="err"></div>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}</script>
+<script type="module">
+import * as THREE from "three";
+import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+import { RoomEnvironment } from "three/addons/environments/RoomEnvironment.js";
+import { makeKit } from "./kit.js";
+const q = new URLSearchParams(location.search), names = (q.get("m") ?? "hero-cat,hero-easternDragon,hero-person").split(","), variant = +(q.get("v") ?? 0);
+const ui = document.getElementById("ui"); for (const v of [0, 1, 2]) { const a = document.createElement("a"); a.href = `?m=${names.join(",")}&v=${v}`; a.textContent = `variant ${v}`; if (v === variant) a.className = "on"; ui.appendChild(a); }
+const err = (m) => (document.getElementById("err").textContent += m + "\n"); window.addEventListener("error", (e) => err(e.message));
+const renderer = new THREE.WebGLRenderer({ antialias: true }); renderer.setPixelRatio(Math.min(devicePixelRatio, 2)); renderer.setSize(innerWidth, innerHeight);
+renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap; renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = 1.05; document.body.appendChild(renderer.domElement);
+const scene = new THREE.Scene(); scene.background = new THREE.Color("#f3eef8");
+scene.environment = new THREE.PMREMGenerator(renderer).fromScene(new RoomEnvironment(), 0.04).texture; scene.environmentIntensity = 0.7;
+const sun = new THREE.DirectionalLight("#fff1dd", 2.4); sun.position.set(3, 6, 4); sun.castShadow = true; sun.shadow.mapSize.set(2048, 2048); Object.assign(sun.shadow.camera, { left: -3, right: 3, top: 3, bottom: -3 }); sun.shadow.bias = -0.0004; sun.shadow.radius = 6; scene.add(sun);
+const rim = new THREE.DirectionalLight("#cfd8ff", 0.9); rim.position.set(-4, 3, -4); scene.add(rim);
+const ground = new THREE.Mesh(new THREE.CircleGeometry(6, 64), new THREE.ShadowMaterial({ opacity: 0.2 })); ground.rotation.x = -Math.PI / 2; ground.receiveShadow = true; scene.add(ground);
+const kit = makeKit(THREE);
+const LOOKS = [{ fur: "#f0b27a", furAccent: "#fff4e6", eye: "#3a7d5a", glow: "#ffe6a3", skin: "#e8b796", hairStyle: "bob", hairColor: "#3b2a22", top: "hoodie", topColor: "#b8a2e3", bottom: "trousers", bottomColor: "#4a5568", shoeColor: "#ffffff", glasses: "round", blush: true, accessory: "bell" },
+  { fur: "#8c8f99", furAccent: "#f2f2f2", eye: "#d8a03a", glow: "#ffb37a", skin: "#8d5a3c", hairStyle: "afro", hairColor: "#1d1a1a", top: "cardigan", topColor: "#8fc1e8", bottom: "skirt", bottomColor: "#2f3a55", shoeColor: "#f6c453", glasses: "none", blush: true, accessory: "bow" },
+  { fur: "#2b2b30", furAccent: "#ffffff", eye: "#6aa7e8", glow: "#a3d8ff", skin: "#f4d2bb", hairStyle: "ponytail", hairColor: "#c98b4a", top: "tee", topColor: "#7fb48a", bottom: "shorts", bottomColor: "#d9c08a", shoeColor: "#e98b6d", glasses: "square", blush: false, accessory: "none" }];
+const live = []; let x = -(names.length - 1) * 0.6;
+for (const n of names) { try { const m = await import(`./${n}.js`); const g = m.build(THREE, { ...LOOKS[variant], variant }, kit); g.position.x = x; g.traverse((o) => { if (o.isMesh) { o.castShadow = true; o.receiveShadow = true; } }); scene.add(g); live.push([m, g]);
+    let tris = 0; g.traverse((o) => { if (o.isMesh) tris += (o.geometry.index ? o.geometry.index.count : o.geometry.attributes.position.count) / 3; }); console.log(n, Math.round(tris), "triangles"); } catch (e) { err(`${n}: ${e.message}`); } x += 1.2; }
+const camera = new THREE.PerspectiveCamera(28, innerWidth / innerHeight, 0.1, 100); camera.position.set(2.2, 1.5, 3.6);
+const controls = new OrbitControls(camera, renderer.domElement); controls.target.set(0, 0.42, 0); controls.update();
+addEventListener("resize", () => { camera.aspect = innerWidth / innerHeight; camera.updateProjectionMatrix(); renderer.setSize(innerWidth, innerHeight); });
+const clock = new THREE.Clock(); renderer.setAnimationLoop(() => { const t = clock.getElapsedTime(); for (const [m, g] of live) try { m.idle?.(g, t); } catch {} renderer.render(scene, camera); });
+</script>

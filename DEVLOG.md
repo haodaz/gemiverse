@@ -150,3 +150,11 @@ Entry format:
 - The twin costs about 1.8 times the tokens of the baseline for extraction, plus the checks.
 - Base now holds 60 entities (25 events, plus places and organisations), 38 links, 245 evidence rows.
 - Not done: links between entities are only event to place and organiser to event; no duplicate merging yet; fit of the design itself was not scored separately.
+
+## 11:52 · The room page reads the real base
+- Did: `/room`. Left: the 3D room, embedded, with the school's window view behind the glass. Right: two purses of stars, and four tabs. Desk lists the events in the shared base for the chosen school, each with its needs and "n of m fields checked"; opening one shows every field with its check score, and fields that failed show as withheld. "What it can do" lists the 12 tools by mode with cost, purse, model, what each writes, and why a locked one is locked. Diary and "What left this room" are empty states for now.
+- How: `GET /api/base` reads Supabase on the server; the secret key never reaches the browser. The room tells the page what the Gemi is doing through a message; the page can tell the room to enter Arrange mode or change palette.
+- Check: opened at 1440 wide with NYU chosen. 18 events listed; "Nevermind the Noise" shows "date not confirmed" because its page prints no year and the date was withheld, which is the base behaving as designed. The line under the room read "Your Gemi is writing in the diary" while it stood at the desk.
+- Also: a gallery page (`/gen3d/gallery.html`) builds every piece of each Neon pack. Pets 12 of 12 and mythical creatures 16 of 16 build without errors.
+- Failed: Elodie's verdict on the first packs: they look like balls stuck together. Cause: one call was asked for 12 to 36 models at medium thinking and given no method. New approach under test: one model per call, high thinking, explicit sculpting rules (displaced dense meshes, tapered tubes along curves, bezier extrusions, painted textures, layered eyes).
+- Not yet: the desk shows the whole base, not what the Gemi chose to bring back; no birth, no plan, no keep or skip.

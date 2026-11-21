@@ -1,0 +1,26 @@
+{
+ "model": "gemini-4-neon",
+ "prompt": "Write a three.js ES module of two extra spaces a student's AI companion can earn after its single dorm room, in the same cutaway-diorama form: a floor plus two back walls, front walls absent. Each space is a function (THREE, opts) -> THREE.Group, 4 m by 4 m (x and z from -2 to 2), walls 2.7 m high on z = -2 and x = -2, built complete with its fixed architecture but without movable furniture.\n\nExports:\n- export const SPACES = { lab, readingRoom }:\n  lab: a personal science laboratory. A long lab bench with a dark resin top and a small sink fixed to the back wall, an overhead reagent shelf with glass bottles and flasks (transparent, softly coloured liquids), a fume hood with a sliding glass sash on the left wall, a wall-mounted periodic-style grid of blank coloured tiles (no letters), a round wall clock, an emergency eyewash sign as a plain green square, pale speckled vinyl floor with a coved skirting, a ceiling-hung strip light that glows. Clean, bright, a little magical.\n  readingRoom: a quiet library reading room. Floor-to-ceiling built-in bookshelves on both walls filled with books of varied heights and colours, a rolling ladder on a brass rail, a tall arched window in the back wall with a deep window seat and cushions, a long reading table fixed in the middle with two green-shaded brass banker's lamps that glow, parquet floor, a small card-catalogue cabinet with many tiny drawers.\n- opts = { wall, trim, floor, accent, time: \"day\" | \"dusk\" | \"night\" } (time changes emissive lights and a sky-coloured backdrop plane).\n- export const SLOTS: for each space, an object of named placements { position: [x, y, z], rotationY, footprint: [w, d], kind: \"floor\" | \"wall\" | \"surface\" }, at least six per space.\n- export function recolor(group, palette).\n\nRules for the module:\n- It is a plain ES module. Do not import anything. Do not use any global: every function receives THREE (three.js r160 namespace) as its first argument and must pass it on to any helper it calls.\n- Units are metres. Y is up. Build only from three.js primitives and ExtrudeGeometry/LatheGeometry shapes you make yourself (bevelled extrudes and spheres for soft edges). No textures from files, no fonts, no text, no logos, no network, no document or window.\n- Style: a refined, cozy, stylised diorama, like a premium life-sim game. Soft rounded edges everywhere, believable proportions, small secondary details. MeshStandardMaterial with thoughtful roughness/metalness; castShadow and receiveShadow on meshes.\n- Every mesh that carries a themable colour must have userData.slot set (\"primary\", \"secondary\", \"accent\", \"wood\", \"metal\", \"fabric\", \"skin\", \"fur\", \"furAccent\").\n- Also export const CATALOG: an array of { id, name, kind, footprint: [w, d], placement: \"floor\" | \"wall\" | \"surface\" | \"worn\" | \"pet\", variants: number, note } with one entry per thing in the module, so a shop or wardrobe screen can list it.\n- Return only the code of the module in one ```js block.\n",
+ "usage": {
+  "total_tokens": 37604,
+  "total_input_tokens": 771,
+  "input_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 771
+   }
+  ],
+  "total_cached_tokens": 0,
+  "total_output_tokens": 27010,
+  "output_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 27010
+   }
+  ],
+  "total_tool_use_tokens": 0,
+  "total_thought_tokens": 9823
+ },
+ "ms": 324648,
+ "made_at": "2026-11-21T16:49:51.795Z"
+}
