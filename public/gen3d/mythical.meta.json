@@ -1,0 +1,26 @@
+{
+ "model": "gemini-4-neon",
+ "prompt": "Write a three.js ES module of small mythical companion creatures for a cozy dorm room diorama. All are animals or beasts; none has a human face, torso or limbs.\n\nExports:\n- export const MYTHICAL = { westernDragon, easternDragon, unicorn, phoenix, pegasus, griffin, kirin, nineTailFox, jadeRabbit, moonMoth, kitsuneLantern, baku, kelpie, thunderbird, seaSerpent, jackalope } where each value is a function (THREE, opts) -> THREE.Group. Origin on the floor under the creature's centre, facing +z. Chibi proportions (big head, small body), cute and friendly, each instantly recognisable by silhouette:\n  westernDragon: four legs, bat wings, horns, thick tail, belly plates.\n  easternDragon: long serpentine body in a gentle S curve floating just above the floor, no wings, antlers, whiskers, mane, small clawed feet, a pearl.\n  unicorn: small horse, spiral horn, flowing mane and tail.\n  phoenix: long tail plumes, crest, glowing warm emissive feather tips.\n  pegasus: small horse with feathered wings.\n  griffin: eagle head and wings, lion body.\n  kirin: deer-like, scaled body, single branched horn, flame-shaped tufts.\n  nineTailFox: fox with nine fanned tails.\n  jadeRabbit: rabbit holding a small mortar, pale green glow.\n  moonMoth: large fluffy moth with crescent-patterned wings.\n  kitsuneLantern: small fox spirit curled around a paper lantern that glows.\n  baku: tapir-like dream eater with small tusks and a striped back.\n  kelpie: water horse with a wave-shaped mane and fin tail.\n  thunderbird: broad wings with zigzag feather edges.\n  seaSerpent: three arches of body rising from the floor as if from water, finned head.\n  jackalope: hare with small antlers.\n- Sizes 0.25 to 0.55 m.\n- opts = { fur, furAccent, eye, glow, variant: 0 | 1 | 2, accessory: \"none\" | \"bow\" | \"scarf\" | \"bell\" }. variant changes pose or markings (0 standing, 1 sitting, 2 curled or resting). Name child groups \"head\", \"body\", \"tail\" and, where present, \"wingL\", \"wingR\", \"horn\". Creatures that glow contain a THREE.PointLight child named \"glow\" (low intensity, colour from opts.glow) and emissive materials.\n- export function idle(group, t): gentle breathing, slow wing or tail motion, occasional blink, a soft pulse of the glow, given time in seconds.\n- export function recolor(group, palette).\n\nRules for the module:\n- It is a plain ES module. Do not import anything. Do not use any global: every function receives THREE (three.js r160 namespace) as its first argument and must pass it on to any helper it calls.\n- Units are metres. Y is up. Build only from three.js primitives and ExtrudeGeometry/LatheGeometry shapes you make yourself (bevelled extrudes and spheres for soft edges). No textures from files, no fonts, no text, no logos, no network, no document or window.\n- Style: a refined, cozy, stylised diorama, like a premium life-sim game. Soft rounded edges everywhere, believable proportions, small secondary details. MeshStandardMaterial with thoughtful roughness/metalness; castShadow and receiveShadow on meshes.\n- Every mesh that carries a themable colour must have userData.slot set (\"primary\", \"secondary\", \"accent\", \"wood\", \"metal\", \"fabric\", \"skin\", \"fur\", \"furAccent\").\n- Also export const CATALOG: an array of { id, name, kind, footprint: [w, d], placement: \"floor\" | \"wall\" | \"surface\" | \"worn\" | \"pet\", variants: number, note } with one entry per thing in the module, so a shop or wardrobe screen can list it.\n- Return only the code of the module in one ```js block.\n",
+ "usage": {
+  "total_tokens": 40354,
+  "total_input_tokens": 934,
+  "input_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 934
+   }
+  ],
+  "total_cached_tokens": 0,
+  "total_output_tokens": 32005,
+  "output_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 32005
+   }
+  ],
+  "total_tool_use_tokens": 0,
+  "total_thought_tokens": 7415
+ },
+ "ms": 297880,
+ "made_at": "2026-11-21T16:48:58.720Z"
+}

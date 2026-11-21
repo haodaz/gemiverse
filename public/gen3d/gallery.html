@@ -1,0 +1,39 @@
+<!doctype html>
+<meta charset="utf-8"><title>Gemiverse asset gallery</title>
+<style>html,body{margin:0;height:100%;background:#f3eef8;font:13px system-ui}#ui{position:fixed;left:10px;top:10px;display:flex;gap:6px;flex-wrap:wrap;z-index:2}a,button{border:0;border-radius:999px;padding:6px 12px;background:#fff;box-shadow:0 1px 4px #0002;cursor:pointer;text-decoration:none;color:#222}a.on{background:#7c4dce;color:#fff}#err{position:fixed;bottom:6px;left:8px;color:#b00;white-space:pre-wrap;max-width:60vw;max-height:40vh;overflow:auto}#lab{position:fixed;inset:0;pointer-events:none}#lab span{position:absolute;transform:translate(-50%,0);background:#fffc;border-radius:6px;padding:1px 5px;font-size:11px}</style>
+<div id="ui"></div><div id="lab"></div><div id="err"></div>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}</script>
+<script type="module">
+import * as THREE from "three";
+import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+import { RoomEnvironment } from "three/addons/environments/RoomEnvironment.js";
+const q = new URLSearchParams(location.search), pack = q.get("pack") ?? "pets", variant = +(q.get("v") ?? 0);
+const PACKS = { pets: ["PETS"], mythical: ["MYTHICAL"], wardrobe: ["HAIR", "TOPS", "BOTTOMS", "SHOES", "HEADWEAR", "FACE", "CARRY"], furniture2: ["ITEMS"], items: ["ITEMS"], keepsakes: ["KEEPSAKES"], spaces: ["SPACES"], spaces2: ["SPACES"] };
+const ui = document.getElementById("ui");
+for (const p of Object.keys(PACKS)) { const a = document.createElement("a"); a.href = `?pack=${p}&v=${variant}`; a.textContent = p; if (p === pack) a.className = "on"; ui.appendChild(a); }
+for (const v of [0, 1, 2]) { const a = document.createElement("a"); a.href = `?pack=${pack}&v=${v}`; a.textContent = `variant ${v}`; if (v === variant) a.className = "on"; ui.appendChild(a); }
+const err = (m) => (document.getElementById("err").textContent += m + "\n");
+window.addEventListener("error", (e) => err(e.message));
+const renderer = new THREE.WebGLRenderer({ antialias: true }); renderer.setPixelRatio(Math.min(devicePixelRatio, 2)); renderer.setSize(innerWidth, innerHeight);
+renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap; renderer.toneMapping = THREE.ACESFilmicToneMapping; document.body.appendChild(renderer.domElement);
+const scene = new THREE.Scene(); scene.background = new THREE.Color("#f3eef8");
+scene.environment = new THREE.PMREMGenerator(renderer).fromScene(new RoomEnvironment(), 0.04).texture; scene.environmentIntensity = 0.6;
+const sun = new THREE.DirectionalLight("#fff1dd", 2.2); sun.position.set(6, 12, 8); sun.castShadow = true; sun.shadow.mapSize.set(2048, 2048); Object.assign(sun.shadow.camera, { left: -14, right: 14, top: 14, bottom: -14 }); scene.add(sun);
+const ground = new THREE.Mesh(new THREE.PlaneGeometry(80, 80), new THREE.ShadowMaterial({ opacity: 0.18 })); ground.rotation.x = -Math.PI / 2; ground.receiveShadow = true; scene.add(ground);
+let mod; try { mod = await import(`./${pack}.js`); } catch (e) { err(`${pack}: ${e.message}`); }
+const P = { primary: "#b8a2e3", secondary: "#f7e7c6", accent: "#f2a7b8", wood: "#c89462", metal: "#d9c08a", fabric: "#b8a2e3", fur: "#f0b27a", furAccent: "#fff4e6", eye: "#2b2536", glow: "#ffd27a", color: "#5a3b2e", wall: "#f4ebe1", trim: "#ffffff", floor: "#d9a877", time: "day", count: 7, skin: "#e8b796" };
+const things = []; if (mod) for (const key of PACKS[pack]) for (const [name, make] of Object.entries(mod[key] ?? {})) things.push([key === PACKS[pack][0] && PACKS[pack].length === 1 ? name : `${key}.${name}`, make]);
+const isSpace = pack.startsWith("spaces"), step = isSpace ? 5.5 : pack === "wardrobe" ? 0.8 : pack === "keepsakes" ? 0.5 : pack === "pets" || pack === "mythical" ? 0.9 : 1.6, cols = Math.ceil(Math.sqrt(things.length * 1.8));
+const labels = [], live = []; let ok = 0;
+things.forEach(([name, make], i) => { const x = (i % cols - (cols - 1) / 2) * step, z = (Math.floor(i / cols)) * step * (isSpace ? 1 : 1.25);
+  try { const g = make(THREE, { ...P, variant }); g.position.set(x, 0, z); g.traverse((o) => { if (o.isMesh) { o.castShadow = true; } }); scene.add(g); ok++; live.push(g);
+    const b = new THREE.Box3().setFromObject(g); labels.push([name, new THREE.Vector3(x, 0, z + (isSpace ? 2.3 : step * 0.45)), b.isEmpty() ? " (empty)" : ""]); } catch (e) { err(`${name}: ${e.message}`); labels.push([name + " ✗", new THREE.Vector3(x, 0, z), ""]); } });
+document.title = `${pack}: ${ok}/${things.length} built`; window.__gallery = { pack, ok, total: things.length };
+const rows = Math.ceil(things.length / cols), span = Math.max(cols * step, rows * step * 1.25) * 0.30 + (isSpace ? 2.5 : 0.35), a = innerWidth / innerHeight;
+const camera = new THREE.OrthographicCamera(-span * a, span * a, span, -span, 0.1, 200); const cz = (rows - 1) * step * (isSpace ? 1 : 1.25) / 2;
+camera.position.set(14, 16, 14 + cz); const controls = new OrbitControls(camera, renderer.domElement); controls.target.set(0, isSpace ? 1 : 0.3, cz); controls.update();
+const lab = document.getElementById("lab"); const spans = labels.map(([t, , extra]) => { const s = document.createElement("span"); s.textContent = t + extra; lab.appendChild(s); return s; });
+const clock = new THREE.Clock();
+renderer.setAnimationLoop(() => { const t = clock.getElapsedTime(); if (mod?.idle) for (const g of live) try { mod.idle(g, t); } catch {}
+  labels.forEach(([, p], i) => { const v = p.clone().project(camera); spans[i].style.left = `${(v.x + 1) / 2 * innerWidth}px`; spans[i].style.top = `${(1 - v.y) / 2 * innerHeight}px`; }); renderer.render(scene, camera); });
+</script>
