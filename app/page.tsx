@@ -58,9 +58,9 @@ export default function Home() {
       {/* 3 · a day */}
       <section id="day" className="snap-start min-h-[calc(100vh-60px)] flex flex-col justify-center mx-auto max-w-6xl px-8 py-20">
         <Eyebrow>A day with your Gemi</Eyebrow>
-        <h2 className="mt-3 max-w-3xl text-5xl font-semibold leading-tight tracking-tight">Twenty seconds from you. The rest it does itself.</h2>
+        <h2 className="mt-3 max-w-3xl text-5xl font-semibold leading-tight tracking-tight">You live your day. It lives its own. You keep meeting.</h2>
         <div className="mt-10 grid grid-cols-4 gap-5">
-          {[["talk", "Morning", "You tell it something", "Typed or spoken, in any language. “I want to meet people who build things. Big mixers tire me.” Or you show it a poster."],
+          {[["talk", "Whenever", "You tell it something", "Typed or spoken, in any language. “I want to meet people who build things. Big mixers tire me.” Or you show it a poster."],
             ["campus", "Midday", "It goes out", "Library, clubs, commons, opportunities. It has only a few Gem Stars a day, so it goes where it knows least about what you care about."],
             ["desk", "Afternoon", "Three things on the desk", "Each with its source and what was checked. It has already sealed a guess of which you will keep."],
             ["diary", "Evening", "You decide. It writes it down", "Keep or skip. It shows whether it guessed right and what it learned about how you choose. You can undo any of it."]].map(([icon, when, t, d]) => (
