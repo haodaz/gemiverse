@@ -4,13 +4,13 @@ import proof from "@/lib/proof.json";
 // what it helps with, why to believe it, what we hold to, and three doors in. The judges' version, with the method, is /deck.
 const INK = "#2b2536", MUTE = "#6d6579", PUR = "#7c4dce";
 const Eyebrow = ({ children, light }: { children: React.ReactNode; light?: boolean }) => <p className="text-[13px] font-bold uppercase tracking-[0.22em]" style={{ color: light ? "#cdbff0" : "#8a8296" }}>{children}</p>;
-const Live = ({ src, title }: { src: string; title: string }) => <iframe src={src} title={title} loading="lazy" className="h-full w-full border-0 bg-transparent" />;
+const Live = ({ src, title }: { src: string; title: string }) => <iframe src={src} title={title} loading="lazy" className="pointer-events-none h-full w-full border-0 bg-transparent" />;
 const PG = proof.pages.overall as any;
 
 export default function Home() {
   return (
-    <main className="bg-[#faf8f5] text-[#2b2536]">
-      <header className="sticky top-0 z-20 border-b border-[#ebe6ee] bg-[#faf8f5]/90 backdrop-blur">
+    <main className="h-screen snap-y snap-proximity overflow-y-auto scroll-pt-[60px] bg-[#faf8f5] text-[#2b2536]" style={{ scrollBehavior: "smooth", overscrollBehavior: "contain" }}>
+      <header className="sticky top-0 z-20 border-b border-[#ebe6ee] bg-[#faf8f5]">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-8 py-3.5">
           <a href="/" className="text-xl font-semibold tracking-tight">Gemiverse</a>
           <nav className="flex items-center gap-7 text-[15px] text-[#5f576c]">
@@ -24,7 +24,7 @@ export default function Home() {
       {/* 1 · what it is: two stills drawn by Gemini's image model from a screenshot of the real room, moving slowly and fading into each other */}
       <style>{`@keyframes kb1{0%{opacity:1;transform:scale(1.02) translate(0,0)}42%{opacity:1}50%{opacity:0;transform:scale(1.14) translate(-1.5%,-1%)}92%{opacity:0}100%{opacity:1;transform:scale(1.02)}}
 @keyframes kb2{0%{opacity:0;transform:scale(1.12) translate(1%,0)}42%{opacity:0}50%{opacity:1}92%{opacity:1;transform:scale(1.02) translate(0,0)}100%{opacity:0}}`}</style>
-      <section className="relative h-[82vh] min-h-[560px] overflow-hidden bg-[#2b2536]">
+      <section className="snap-start relative h-[calc(100vh-60px)] min-h-[560px] overflow-hidden bg-[#2b2536]">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/art/film/touch-red.jpg" alt="A hand touches a laptop screen; inside, a small character in its room reaches back" className="absolute inset-0 h-full w-full object-cover" style={{ animation: "kb1 18s ease-in-out infinite" }} />
         {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -43,7 +43,7 @@ export default function Home() {
       </section>
 
       {/* 2 · three things to know, beside the real thing */}
-      <section className="border-b border-[#ebe6ee] bg-white">
+      <section className="snap-start min-h-[calc(100vh-60px)] flex flex-col justify-center border-b border-[#ebe6ee] bg-white">
         <div className="mx-auto grid max-w-6xl grid-cols-[1fr_1.1fr] items-center gap-10 px-8 py-14">
           <div className="space-y-8">
             {[["A Gemi", "It is yours alone", "Not an assistant waiting for orders. It has a small daily budget, plans its own day, and you can see what it did and why."],
@@ -56,7 +56,7 @@ export default function Home() {
       </section>
 
       {/* 3 · a day */}
-      <section id="day" className="mx-auto max-w-6xl scroll-mt-20 px-8 py-20">
+      <section id="day" className="snap-start min-h-[calc(100vh-60px)] flex flex-col justify-center mx-auto max-w-6xl px-8 py-20">
         <Eyebrow>A day with your Gemi</Eyebrow>
         <h2 className="mt-3 max-w-3xl text-5xl font-semibold leading-tight tracking-tight">Twenty seconds from you. The rest it does itself.</h2>
         <div className="mt-10 grid grid-cols-4 gap-5">
@@ -73,7 +73,7 @@ export default function Home() {
       </section>
 
       {/* 4 · the home it grows */}
-      <section id="home" className="scroll-mt-20 bg-[#2b2536] text-white">
+      <section id="home" className="snap-start min-h-[calc(100vh-60px)] flex flex-col justify-center bg-[#2b2536] text-white">
         <div className="mx-auto grid max-w-6xl grid-cols-[1fr_1.1fr] items-center gap-8 px-8 py-20">
           <div>
             <Eyebrow light>The home it grows</Eyebrow>
@@ -91,7 +91,7 @@ export default function Home() {
       </section>
 
       {/* 5 · what it helps with */}
-      <section className="mx-auto max-w-6xl px-8 py-20">
+      <section className="snap-start min-h-[calc(100vh-60px)] flex flex-col justify-center mx-auto max-w-6xl px-8 py-20">
         <Eyebrow>Four places on campus</Eyebrow>
         <h2 className="mt-3 max-w-3xl text-5xl font-semibold leading-tight tracking-tight">Where it goes depends on what you are looking for.</h2>
         <div className="mt-10 grid grid-cols-4 gap-5">
@@ -105,7 +105,7 @@ export default function Home() {
       </section>
 
       {/* 6 · why trust it */}
-      <section id="proof" className="scroll-mt-20 border-y border-[#ebe6ee] bg-white">
+      <section id="proof" className="snap-start min-h-[calc(100vh-60px)] flex flex-col justify-center border-y border-[#ebe6ee] bg-white">
         <div className="mx-auto max-w-6xl px-8 py-20">
           <Eyebrow>Why trust what it tells you</Eyebrow>
           <h2 className="mt-3 max-w-3xl text-5xl font-semibold leading-tight tracking-tight">We measured it on pages we did not pick.</h2>
@@ -120,7 +120,7 @@ export default function Home() {
       </section>
 
       {/* 7 · what we hold to */}
-      <section className="mx-auto max-w-6xl px-8 py-20">
+      <section className="snap-start min-h-[calc(100vh-60px)] flex flex-col justify-center mx-auto max-w-6xl px-8 py-20">
         <Eyebrow>What we hold to</Eyebrow>
         <div className="mt-6 grid grid-cols-2 gap-x-14 gap-y-9">
           {[["Shared facts, private understanding.", "Campus facts belong to everyone. What your Gemi learns about you never leaves your browser unless you say so."],
@@ -132,7 +132,7 @@ export default function Home() {
       </section>
 
       {/* 8 · three doors */}
-      <section className="bg-[#f1eafc]">
+      <section className="snap-start min-h-[calc(100vh-60px)] flex flex-col justify-center bg-[#f1eafc]">
         <div className="mx-auto max-w-6xl px-8 py-20">
           <Eyebrow>Start here</Eyebrow>
           <h2 className="mt-3 text-5xl font-semibold tracking-tight">What are you here to do?</h2>
@@ -147,7 +147,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="mx-auto max-w-6xl px-8 py-8 text-[13px] leading-relaxed text-[#8a8296]">
+      <footer className="snap-end mx-auto max-w-6xl px-8 py-8 text-[13px] leading-relaxed text-[#8a8296]">
         Built on 2026-11-21 at the Gemini 4 NYC Hackathon. Room, character, spaces, maps and icons were written as code or drawn by Gemini 4 Neon; no university logos are used.
         Peers in Gemi-to-Gemi introductions are simulated today.
       </footer>
