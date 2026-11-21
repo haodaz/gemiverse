@@ -1,98 +1,147 @@
-"use client";
+import proof from "@/lib/proof.json";
 
-import { useState } from "react";
-import { useRouter } from "next/navigation";
-import { SCHOOLS, saveSchool, type SchoolId } from "@/lib/schools";
+// The introduction. Written for a student who has never seen this, top to bottom: what it is, a day with it, the home it grows,
+// what it helps with, why to believe it, what we hold to, and three doors in. The judges' version, with the method, is /deck.
+const INK = "#2b2536", MUTE = "#6d6579", PUR = "#7c4dce";
+const Eyebrow = ({ children, light }: { children: React.ReactNode; light?: boolean }) => <p className="text-[13px] font-bold uppercase tracking-[0.22em]" style={{ color: light ? "#cdbff0" : "#8a8296" }}>{children}</p>;
+const Live = ({ src, title }: { src: string; title: string }) => <iframe src={src} title={title} loading="lazy" className="h-full w-full border-0 bg-transparent" />;
+const PG = proof.pages.overall as any;
 
-export default function ChooseSchool() {
-  const router = useRouter();
-  const [picked, setPicked] = useState<SchoolId | null>(null);
-
-  function go() {
-    if (!picked) return;
-    saveSchool(picked);
-    router.push("/room");
-  }
-
+export default function Home() {
   return (
-    <main className="min-h-screen bg-[#faf8f5] text-[#2b2536]">
-      <div className="mx-auto flex min-h-screen max-w-6xl flex-col px-10 py-10">
-        <header className="flex items-baseline justify-between">
-          <div className="text-xl font-semibold tracking-tight">Gemiverse</div>
-          <a href="/deck" className="text-sm text-[#8a8296] hover:text-[#2b2536]">How it works, with the numbers →</a>
-        </header>
-
-        {/* For students, in their words. The judges' story (baseline, test set, failures) lives in /deck. */}
-        <section className="mt-8 grid grid-cols-[1fr_1.1fr] items-center gap-8">
-          <div>
-            <h1 className="text-6xl font-semibold leading-[1.05] tracking-tight">Meet your Gemi.</h1>
-            <p className="mt-5 text-xl leading-relaxed text-[#5f576c]">A small you that lives on campus. While you are in class it goes out, reads the pages you have no time for, and comes back with three things worth your evening.</p>
-            <ul className="mt-6 space-y-3 text-lg">
-              {[["Tell it about you", "Twenty seconds, in any language. Or show it a poster."], ["It goes out", "It has a little to spend each day, so it picks carefully. If it could not check something, it will not tell you."], ["You decide", "Keep or skip. It learns how you choose, shows you what it learned, and you can undo any of it."], ["It grows a home", "Go to something for real and a keepsake arrives. Over the weeks it saves up and opens new rooms."]].map(([t, d], k) => (
-                <li key={t} className="flex gap-3"><span className="mt-0.5 grid h-7 w-7 shrink-0 place-items-center rounded-full bg-[#2b2536] text-sm font-bold text-white">{k + 1}</span><span><b>{t}.</b> <span className="text-[#5f576c]">{d}</span></span></li>))}
-            </ul>
-          </div>
-          <div className="grid grid-cols-2 gap-2" style={{ height: "52vh" }}>
-            <iframe src="/gen3d/viewer.html?embed=1&bare=1&school=nyu" title="A Gemi in its room" className="h-full w-full border-0 bg-transparent" />
-            <iframe src="/gen3d/spaces.html?embed=1&auto=3&friends=pip,kai" title="Rooms it can open later" className="h-full w-full border-0 bg-transparent" />
-          </div>
-        </section>
-
-        <section className="mt-10">
-          <p className="text-sm font-medium uppercase tracking-widest text-[#8a8296]">First</p>
-          <h2 className="mt-2 text-3xl font-semibold tracking-tight">Where does your Gemi live?</h2>
-        </section>
-
-        <section className="mt-5 grid grid-cols-2 gap-6">
-          {Object.values(SCHOOLS).map((s) => {
-            const on = picked === s.id;
-            return (
-              <button
-                key={s.id}
-                onClick={() => setPicked(s.id)}
-                aria-pressed={on}
-                className="group overflow-hidden rounded-3xl bg-white text-left shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
-                style={{ outline: on ? `3px solid ${s.accent}` : "1px solid #ebe6ee", outlineOffset: on ? 2 : 0 }}
-              >
-                <div className="relative h-64 w-full overflow-hidden" style={{ background: s.soft }}>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={s.view} alt={`An illustrated view of ${s.place}`} className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]" />
-                </div>
-                <div className="flex items-center justify-between px-6 py-5">
-                  <div>
-                    <div className="text-2xl font-semibold">{s.short}</div>
-                    <div className="mt-1 text-sm text-[#5f576c]">{s.place} · {s.line}</div>
-                  </div>
-                  <span
-                    className="grid h-8 w-8 shrink-0 place-items-center rounded-full text-white transition"
-                    style={{ background: on ? s.accent : "#e6e0ec" }}
-                    aria-hidden
-                  >
-                    ✓
-                  </span>
-                </div>
-              </button>
-            );
-          })}
-        </section>
-
-        <div className="mt-8 flex items-center justify-between">
-          <p className="text-sm text-[#8a8296]">More campuses opening soon.</p>
-          <button
-            onClick={go}
-            disabled={!picked}
-            className="rounded-full px-8 py-3 text-base font-medium text-white transition disabled:cursor-not-allowed disabled:opacity-40"
-            style={{ background: picked ? SCHOOLS[picked].accent : "#8a8296" }}
-          >
-            {picked ? `Move in at ${SCHOOLS[picked].short}` : "Choose a campus"}
-          </button>
+    <main className="bg-[#faf8f5] text-[#2b2536]">
+      <header className="sticky top-0 z-20 border-b border-[#ebe6ee] bg-[#faf8f5]/90 backdrop-blur">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-8 py-3.5">
+          <a href="/" className="text-xl font-semibold tracking-tight">Gemiverse</a>
+          <nav className="flex items-center gap-7 text-[15px] text-[#5f576c]">
+            <a href="#day" className="hover:text-[#2b2536]">A day</a><a href="#home" className="hover:text-[#2b2536]">Its home</a><a href="#proof" className="hover:text-[#2b2536]">Why trust it</a><a href="/deck" className="hover:text-[#2b2536]">How it works</a>
+            <a href="/admin" className="hover:text-[#2b2536]">Admin</a>
+            <a href="/start" className="rounded-full px-5 py-2 font-semibold text-white" style={{ background: PUR }}>Move in</a>
+          </nav>
         </div>
+      </header>
 
-        <footer className="mt-auto pt-10 text-xs leading-relaxed text-[#8a8296]">
-          Campus facts are shared by every Gemi. What yours learns about you stays in this browser.
-          Illustrations were drawn by Gemini 4 Neon; no university logos are used.
-        </footer>
-      </div>
+      {/* 1 · what it is */}
+      <section className="mx-auto grid max-w-6xl grid-cols-[1fr_1.15fr] items-center gap-6 px-8 pb-10 pt-14">
+        <div>
+          <Eyebrow>For college students · NYU and Columbia first</Eyebrow>
+          <h1 className="mt-4 text-[5.2rem] font-semibold leading-[0.98] tracking-tight">Meet your<br />Gemi.</h1>
+          <p className="mt-6 max-w-xl text-[22px] leading-relaxed" style={{ color: MUTE }}>A small you that lives on campus. While you are in class it goes out, reads the pages you have no time for, and comes back with three things worth your evening.</p>
+          <div className="mt-8 flex items-center gap-4">
+            <a href="/start" className="rounded-full px-8 py-3.5 text-lg font-semibold text-white" style={{ background: PUR, boxShadow: "0 6px 0 #5a35a0" }}>Move in</a>
+            <a href="#day" className="rounded-full border-2 px-7 py-3 text-lg font-semibold" style={{ borderColor: INK }}>See a day with it</a>
+          </div>
+          <p className="mt-5 text-sm" style={{ color: "#8a8296" }}>No sign-up. What it learns about you stays in your browser.</p>
+        </div>
+        <div className="h-[66vh]"><Live src="/gen3d/viewer.html?embed=1&bare=1&school=nyu" title="A Gemi in its room, live" /></div>
+      </section>
+
+      {/* 2 · three things to know */}
+      <section className="border-y border-[#ebe6ee] bg-white">
+        <div className="mx-auto grid max-w-6xl grid-cols-3 gap-10 px-8 py-14">
+          {[["A Gemi", "It is yours alone", "Not an assistant waiting for orders. It has a small daily budget, plans its own day, and you can see what it did and why."],
+            ["A Verse", "A campus it can read", "Events, clubs, libraries and openings from official pages, shared by every Gemi. What one has checked, all can read."],
+            ["One rule", "Miss rather than be wrong", "Every date, time and room it shows you was found on the source page. What it could not check, it does not show."]].map(([k, t, d]) => (
+            <div key={k}><Eyebrow>{k}</Eyebrow><h3 className="mt-2 text-2xl font-semibold">{t}</h3><p className="mt-2 text-[17px] leading-relaxed" style={{ color: MUTE }}>{d}</p></div>))}
+        </div>
+      </section>
+
+      {/* 3 · a day */}
+      <section id="day" className="mx-auto max-w-6xl scroll-mt-20 px-8 py-20">
+        <Eyebrow>A day with your Gemi</Eyebrow>
+        <h2 className="mt-3 max-w-3xl text-5xl font-semibold leading-tight tracking-tight">Twenty seconds from you. The rest it does itself.</h2>
+        <div className="mt-10 grid grid-cols-4 gap-5">
+          {[["talk", "Morning", "You tell it something", "Typed or spoken, in any language. “I want to meet people who build things. Big mixers tire me.” Or you show it a poster."],
+            ["campus", "Midday", "It goes out", "Library, clubs, commons, opportunities. It has only a few Gem Stars a day, so it goes where it knows least about what you care about."],
+            ["desk", "Afternoon", "Three things on the desk", "Each with its source and what was checked. It has already sealed a guess of which you will keep."],
+            ["diary", "Evening", "You decide. It writes it down", "Keep or skip. It shows whether it guessed right and what it learned about how you choose. You can undo any of it."]].map(([icon, when, t, d]) => (
+            <div key={t} className="rounded-2xl border-2 bg-white p-5" style={{ borderColor: INK, boxShadow: "0 5px 0 #2b253622" }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={`/icons/${icon}.svg`} alt="" className="h-12 w-12" />
+              <p className="mt-3 text-[12px] font-bold uppercase tracking-widest" style={{ color: PUR }}>{when}</p>
+              <h3 className="mt-1 text-xl font-semibold leading-snug">{t}</h3><p className="mt-2 text-[15px] leading-relaxed" style={{ color: MUTE }}>{d}</p></div>))}
+        </div>
+      </section>
+
+      {/* 4 · the home it grows */}
+      <section id="home" className="scroll-mt-20 bg-[#2b2536] text-white">
+        <div className="mx-auto grid max-w-6xl grid-cols-[1fr_1.1fr] items-center gap-8 px-8 py-20">
+          <div>
+            <Eyebrow light>The home it grows</Eyebrow>
+            <h2 className="mt-3 text-5xl font-semibold leading-tight tracking-tight">Nothing here is bought. Everything stands for something you did.</h2>
+            <ul className="mt-7 space-y-4 text-[18px] leading-relaxed text-[#e4def0]">
+              <li><b className="text-white">Clothes are free.</b> How it looks is yours to choose, from day one.</li>
+              <li><b className="text-white">A keepsake</b> appears when you really went to something it found.</li>
+              <li><b className="text-white">A companion moves in</b> when it had guessed you would go, and you did.</li>
+              <li><b className="text-white">New rooms open</b> only with Gem Stars it saved by not spending: a reading room, a loft, a rooftop for other Gemis to visit, a lab.</li>
+            </ul>
+            <p className="mt-6 text-[15px] text-[#b9aed3]">No streaks, no points, no shop. If you are doing well out there, it shows in here.</p>
+          </div>
+          <div className="h-[64vh] overflow-hidden rounded-3xl bg-[#f3eef8]"><Live src="/gen3d/spaces.html?embed=1&auto=3&friends=pip,kai" title="Rooms a Gemi can open, live" /></div>
+        </div>
+      </section>
+
+      {/* 5 · what it helps with */}
+      <section className="mx-auto max-w-6xl px-8 py-20">
+        <Eyebrow>Four places on campus</Eyebrow>
+        <h2 className="mt-3 max-w-3xl text-5xl font-semibold leading-tight tracking-tight">Where it goes depends on what you are looking for.</h2>
+        <div className="mt-10 grid grid-cols-4 gap-5">
+          {[["library", "Library", "Build a skill · explore a field", "Workshops, research help, study groups."], ["clubs", "Clubs", "Find your people · make things", "Meetings and events of student groups."],
+            ["commons", "Commons", "Meet people · rest", "Open socials, study breaks, things with food."], ["career", "Opportunities", "Get experience · decide a direction", "Openings, fairs and deadlines."]].map(([f, n, need, d]) => (
+            <div key={n} className="text-center">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={`/art/bld2-${f}.svg`} alt={`An illustrated ${n} building`} className="mx-auto h-48 w-full object-contain" />
+              <h3 className="mt-3 text-2xl font-semibold">{n}</h3><p className="mt-1 text-[14px] font-semibold" style={{ color: PUR }}>{need}</p><p className="mt-1 text-[15px]" style={{ color: MUTE }}>{d}</p></div>))}
+        </div>
+      </section>
+
+      {/* 6 · why trust it */}
+      <section id="proof" className="scroll-mt-20 border-y border-[#ebe6ee] bg-white">
+        <div className="mx-auto max-w-6xl px-8 py-20">
+          <Eyebrow>Why trust what it tells you</Eyebrow>
+          <h2 className="mt-3 max-w-3xl text-5xl font-semibold leading-tight tracking-tight">We measured it on pages we did not pick.</h2>
+          <div className="mt-10 grid grid-cols-3 gap-6">
+            {[["0 of 76", "made-up details shown", "On ten event pages it had never seen. A single AI call on the same pages showed 29 details the page did not contain."],
+              [`${(PG.system_v2.error_rate * 100).toFixed(1)}%`, "facts wrong", `On ${proof.pages.n} raw pages from six universities, against ${(PG.baseline.error_rate * 100).toFixed(1)}% for a single AI call. Our first try did worse than that; we kept the record.`],
+              ["166", "checked things on campus", "Events, clubs and places in the shared base today, each field with the sentence it came from."]].map(([v, l, d]) => (
+              <div key={l} className="rounded-2xl border-2 p-6" style={{ borderColor: INK }}><div className="text-6xl font-semibold tracking-tight" style={{ color: PUR }}>{v}</div><div className="mt-1 text-lg font-semibold">{l}</div><p className="mt-2 text-[15px] leading-relaxed" style={{ color: MUTE }}>{d}</p></div>))}
+          </div>
+          <p className="mt-6 text-[15px]" style={{ color: MUTE }}>It still gets things wrong, mostly events that are both in a room and online. The full method, the failures and what we changed are in <a href="/deck" className="font-semibold underline" style={{ color: INK }}>how it works</a>.</p>
+        </div>
+      </section>
+
+      {/* 7 · what we hold to */}
+      <section className="mx-auto max-w-6xl px-8 py-20">
+        <Eyebrow>What we hold to</Eyebrow>
+        <div className="mt-6 grid grid-cols-2 gap-x-14 gap-y-9">
+          {[["Shared facts, private understanding.", "Campus facts belong to everyone. What your Gemi learns about you never leaves your browser unless you say so."],
+            ["A small budget is the point.", "Your day has limited hours and attention. So does its day. It has to choose what matters, and so it brings back treasure, not a pile."],
+            ["You decide.", "It looks and asks. It never agrees to anything for you, and other AIs' words are material to it, not orders."],
+            ["Short visits. Real life counts.", "No streaks, no feed. We count what you did out there, not the minutes you spent in here."]].map(([t, d]) => (
+            <div key={t}><h3 className="text-3xl font-semibold leading-snug tracking-tight">{t}</h3><p className="mt-2 text-[18px] leading-relaxed" style={{ color: MUTE }}>{d}</p></div>))}
+        </div>
+      </section>
+
+      {/* 8 · three doors */}
+      <section className="bg-[#f1eafc]">
+        <div className="mx-auto max-w-6xl px-8 py-20">
+          <Eyebrow>Start here</Eyebrow>
+          <h2 className="mt-3 text-5xl font-semibold tracking-tight">What are you here to do?</h2>
+          <div className="mt-9 grid grid-cols-3 gap-6">
+            {[["/start", "I am a student", "Pick your campus, name your Gemi, tell it one thing. About a minute.", "Move in", PUR, "#fff"],
+              ["/deck", "I want to know how it works", "The task, the baseline, the test set, the failures, the mathematics and the layers. In English and Chinese.", "Open the deck", "#fff", INK],
+              ["/admin", "I run this", "The back office: the shared base and its flywheel, what each Gemini model did, the measured results, and days run at speed.", "Open admin", "#fff", INK]].map(([href, t, d, cta, bg, fg]) => (
+              <a key={href} href={href} className="flex flex-col rounded-3xl border-2 bg-white p-7 transition hover:-translate-y-1" style={{ borderColor: INK, boxShadow: "0 6px 0 #2b253633" }}>
+                <h3 className="text-2xl font-semibold">{t}</h3><p className="mt-2 flex-1 text-[16px] leading-relaxed" style={{ color: MUTE }}>{d}</p>
+                <span className="mt-5 inline-block self-start rounded-full border-2 px-6 py-2 text-base font-semibold" style={{ background: bg, color: fg, borderColor: INK }}>{cta} →</span></a>))}
+          </div>
+        </div>
+      </section>
+
+      <footer className="mx-auto max-w-6xl px-8 py-8 text-[13px] leading-relaxed text-[#8a8296]">
+        Built on 2026-11-21 at the Gemini 4 NYC Hackathon. Room, character, spaces, maps and icons were written as code or drawn by Gemini 4 Neon; no university logos are used.
+        Peers in Gemi-to-Gemi introductions are simulated today.
+      </footer>
     </main>
   );
 }

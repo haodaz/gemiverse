@@ -80,7 +80,7 @@ export default function Room() {
   const [wants, setWants] = useState<string[]>([]);
   const [state, setState] = useState<GemiState>({ stage: 1, purses: { for_you: 6, for_itself: 4 }, usedToday: {}, confirmed: [], paused: false });
 
-  useEffect(() => { const s = loadSchool(); if (!s) router.replace("/"); else { setSchool(s); setLog(loadLog(s)); } setLang(loadLang()); }, [router]);
+  useEffect(() => { const s = loadSchool(); if (!s) router.replace("/start"); else { setSchool(s); setLog(loadLog(s)); } setLang(loadLang()); }, [router]);
   useEffect(() => { if (school) fetch(`/api/base?school=${school}`).then((r) => r.json()).then(setBase).catch(() => setBase({ entities: [], evidence: [], error: "Could not reach the base." })); }, [school]);
   const send = (type: string, value?: unknown) => frame.current?.contentWindow?.postMessage({ source: "gemiverse", type, value }, "*");
   useEffect(() => {
