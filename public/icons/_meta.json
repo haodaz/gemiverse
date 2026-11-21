@@ -1,0 +1,27 @@
+{
+ "model": "gemini-4-neon",
+ "prompt": "Design one consistent set of 20 UI icons for a cozy life-sim game, as SVG.\n\nStyle, the same for every icon: chunky, friendly, slightly 3D sticker look. A rounded shape with a thick soft outline in dark plum (#3d3648, stroke-width 3, round joins and caps), flat fills in a warm pastel palette (cream #fff4e0, peach #ffc9a8, butter #ffe08a, mint #a8e0c0, sky #a8d4ff, lilac #c8b4f0, rose #ff9fb5), one lighter highlight shape and one darker shadow shape per object to give volume, and a small white glint. No text, no letters, no gradients that need ids shared between icons (each icon must be self-contained), no external references. Each icon: viewBox 0 0 64 64, the object centred with 6 units of padding, readable at 28 pixels.\n\nIcons (name: what it shows):\ntalk: two overlapping rounded speech bubbles, the front one with three small dots\ndesk: a small wooden desk seen at three-quarter view with a stack of cards and a lamp on it\ndiary: a closed notebook with an elastic band, a ribbon bookmark and a small star on the cover\ncampus: a folded map with a path and a location pin standing on it\narrange: an armchair with a curved move-arrow around it\nabilities: a four-point sparkle with two smaller sparkles, like a skill badge\noutbox: an open envelope with a small paper plane leaving it\nmic: a rounded studio microphone on a small stand\nattach: a photo card with a mountain and sun, with a plus badge at the corner\nstar: a plump five-point star with a highlight\nclose: a rounded X in a soft circle\nkeep: a heart inside a rounded bookmark shape\nskip: a curved arrow passing over a small card\nundo: a rounded arrow curling back counter-clockwise\nlock: a small rounded padlock, closed\nlibrary: an open book with a small lamp glow above it\nclubs: a pennant flag and a small guitar crossed\ncommons: two cups on a small round cafe table\ncareer: a compass with a rising arrow\nout: a small door standing open with light coming through\n\nReturn only a JSON object mapping each name to its complete <svg> string. No prose.",
+ "usage": {
+  "total_tokens": 25132,
+  "total_input_tokens": 543,
+  "input_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 543
+   }
+  ],
+  "total_cached_tokens": 0,
+  "total_output_tokens": 12400,
+  "output_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 12400
+   }
+  ],
+  "total_tool_use_tokens": 0,
+  "total_thought_tokens": 12189
+ },
+ "ms": 191051,
+ "made_at": "2026-11-21T17:11:51.614Z",
+ "saved": 20
+}

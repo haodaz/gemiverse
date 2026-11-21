@@ -7,12 +7,12 @@ export const SCHOOLS: Record<SchoolId, {
 }> = {
   nyu: {
     id: "nyu", name: "New York University", short: "NYU", place: "Greenwich Village",
-    accent: "#7c4dce", soft: "#f1eafc", view: "/art/window-nyu.svg", map: "/art/campus-nyu.svg",
+    accent: "#7c4dce", soft: "#f1eafc", view: "/art/window-nyu.svg", map: "/art/campus2-nyu.svg",
     line: "The arch, the fountain, and a city that never closes.",
   },
   columbia: {
     id: "columbia", name: "Columbia University", short: "Columbia", place: "Morningside Heights",
-    accent: "#3d8fd1", soft: "#e6f2fb", view: "/art/window-columbia.svg", map: "/art/campus-columbia.svg",
+    accent: "#3d8fd1", soft: "#e6f2fb", view: "/art/window-columbia.svg", map: "/art/campus2-columbia.svg",
     line: "The steps, the lawn, and the dome above them.",
   },
 };

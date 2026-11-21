@@ -1,0 +1,27 @@
+{
+ "model": "gemini-4-neon",
+ "prompt": "Draw an isometric campus map for a downtown New York university neighbourhood. In the centre (around 800,470) the landmark: a park square with a white marble triumphal arch and a round fountain, drawn with a little more care than the rest and touched with violet accent (banners, flower beds). Around it, low blocks of brownstone-shaped and brick-shaped buildings in the grey palette, a taller library block to the south, tree-lined streets as pale sand strips. True isometric projection throughout (2:1 dimetric: every ground line runs at 26.57 degrees left or right, verticals are vertical), like an isometric city-builder game map, seen from above at an angle so building walls and roofs are both visible. This is a BACKGROUND for interactive buildings, so it must be calm: a restrained palette of only soft warm greys and off-whites for buildings (walls two tones lighter and darker for the two visible sides, roofs lightest), ONE muted sage green for lawns and trees (two tones), pale sand for paths and plazas, and a single accent colour used sparingly on the landmark only. Low contrast, no black outlines, no bright reds or yellows, no cars, no people, no text. Buildings are simple clean isometric blocks with rows of small windows; trees are simple rounded isometric shapes with a soft shadow. Soft ambient shadows on the ground at one consistent angle. Generous open lawn and plaza space so it does not feel crowded. Leave FOUR clear empty building plots, each an isometric diamond of pale stone 240 wide and 120 tall with a slightly darker rim, centred exactly at (340,330), (1260,330), (340,650), (1260,650), with paths leading from each to the centre; draw nothing on them. viewBox 0 0 1600 900; fill the whole canvas edge to edge with ground (lawn), no sky.",
+ "usage": {
+  "total_tokens": 42138,
+  "total_input_tokens": 475,
+  "input_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 475
+   }
+  ],
+  "total_cached_tokens": 0,
+  "total_output_tokens": 24914,
+  "output_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 24914
+   }
+  ],
+  "total_tool_use_tokens": 0,
+  "total_thought_tokens": 16749,
+  "initial_input_tokens": 475
+ },
+ "ms": 280380,
+ "made_at": "2026-11-21T17:11:04.854Z"
+}

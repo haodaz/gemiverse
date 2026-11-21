@@ -1,0 +1,858 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <!-- Reusable rounded isometric trees (consistent down-right shadow, two-tone muted sage) -->
+    <g id="tree-m">
+      <ellipse cx="9" cy="3" rx="14" ry="7" fill="#5D6759" opacity="0.14"/>
+      <rect x="-2" y="-12" width="4" height="13" rx="1.5" fill="#A6A096"/>
+      <ellipse cx="0" cy="-19" rx="14" ry="12" fill="#92A589"/>
+      <ellipse cx="-3" cy="-22" rx="10" ry="8.5" fill="#AABBA2"/>
+    </g>
+    <g id="tree-s">
+      <ellipse cx="7" cy="2.5" rx="11" ry="5.5" fill="#5D6759" opacity="0.14"/>
+      <rect x="-1.5" y="-10" width="3" height="11" rx="1" fill="#A6A096"/>
+      <ellipse cx="0" cy="-15" rx="11" ry="9.5" fill="#92A589"/>
+      <ellipse cx="-2.5" cy="-17.5" rx="8" ry="6.5" fill="#AABBA2"/>
+    </g>
+    <g id="tree-l">
+      <ellipse cx="11" cy="4" rx="17" ry="8.5" fill="#5D6759" opacity="0.14"/>
+      <rect x="-2.5" y="-15" width="5" height="16" rx="2" fill="#A6A096"/>
+      <ellipse cx="0" cy="-24" rx="17" ry="14.5" fill="#92A589"/>
+      <ellipse cx="-4" cy="-27.5" rx="12.5" ry="10.5" fill="#AABBA2"/>
+    </g>
+  </defs>
+
+  <!-- 1. FULL-CANVAS GROUND (MUTED SAGE LAWN) -->
+  <rect x="0" y="0" width="1600" height="900" fill="#C9D3C3"/>
+
+  <!-- Subtle tonal lawn quadrants for gentle depth -->
+  <polygon points="800,280 1180,470 800,660 420,470" fill="#C1CEBA"/>
+
+  <!-- 2. ISOMETRIC STREET GRID (PALE SAND STRIPS, 2:1 DIMETRIC) -->
+  <g id="streets">
+    <!-- Outer secondary streets (pale sand) -->
+    <!-- Outer U-NW -->
+    <polygon points="1096,-182 1132,-164 -468,636 -504,618" fill="#E6E0D4"/>
+    <!-- Outer V-NE -->
+    <polygon points="504,-182 468,-164 2068,636 2104,618" fill="#E6E0D4"/>
+    <!-- Outer V-SW -->
+    <polygon points="-496,318 -532,336 1068,1136 1104,1118" fill="#E6E0D4"/>
+    <!-- Outer U-SE -->
+    <polygon points="2096,318 2132,336 532,1136 496,1118" fill="#E6E0D4"/>
+
+    <!-- Park perimeter sidewalks (slightly lighter sand) -->
+    <polygon points="1540,-160 1608,-126 -392,874 -460,840" fill="#ECE7DC"/>
+    <polygon points="1992,66 2060,100 60,1100 -8,1066" fill="#ECE7DC"/>
+    <polygon points="60,-160 -8,-126 1992,874 2060,840" fill="#ECE7DC"/>
+    <polygon points="-392,66 -460,100 1540,1100 1608,1066" fill="#ECE7DC"/>
+
+    <!-- Park perimeter main avenues -->
+    <!-- Street U-North (NW of park) -->
+    <polygon points="1548,-156 1600,-130 -400,870 -452,844" fill="#E3DDD0"/>
+    <!-- Street U-South (SE of park) -->
+    <polygon points="2000,70 2052,96 52,1096 0,1070" fill="#E3DDD0"/>
+    <!-- Street V-North (NE of park) -->
+    <polygon points="52,-156 0,-130 2000,870 2052,844" fill="#E3DDD0"/>
+    <!-- Street V-South (SW of park) -->
+    <polygon points="-400,70 -452,96 1548,1096 1600,1070" fill="#E3DDD0"/>
+
+    <!-- Subtle intersection paving accents -->
+    <polygon points="800,244 852,270 800,296 748,270" fill="#E8E2D6"/>
+    <polygon points="800,644 852,670 800,696 748,670" fill="#E8E2D6"/>
+    <polygon points="400,444 452,470 400,496 348,470" fill="#E8E2D6"/>
+    <polygon points="1200,444 1252,470 1200,496 1148,470" fill="#E8E2D6"/>
+  </g>
+
+  <!-- 3. CENTRAL PARK SQUARE PLAZAS, PATHS & CONNECTOR WALKWAYS -->
+  <g id="park-ground">
+    <!-- Park outer stone walkway -->
+    <polygon points="800,276 1188,470 800,664 412,470" fill="#EBE6DB"/>
+    <!-- Park inner lawn -->
+    <polygon points="800,292 1156,470 800,648 444,470" fill="#C2CFBB"/>
+
+    <!-- Direct connector paths from the 4 empty plots to the central park plaza -->
+    <!-- From P1 (340,330) SE edge to centre -->
+    <polygon points="414,353 694,493 666,507 386,367" fill="#ECE7DC"/>
+    <!-- From P2 (1260,330) SW edge to centre -->
+    <polygon points="1186,353 1214,367 934,507 906,493" fill="#ECE7DC"/>
+    <!-- From P3 (340,650) NE edge to centre -->
+    <polygon points="386,613 414,627 714,477 686,463" fill="#ECE7DC"/>
+    <!-- From P4 (1260,650) NW edge to centre -->
+    <polygon points="1214,613 1186,627 886,477 914,463" fill="#ECE7DC"/>
+
+    <!-- Park axial promenades (NW-SE and SW-NE) -->
+    <!-- Main NW-SE promenade through Arch and Fountain -->
+    <polygon points="622,369 998,557 978,567 602,379" fill="#EFEAE0"/>
+    <!-- Cross SW-NE promenade -->
+    <polygon points="978,369 998,379 622,567 602,557" fill="#EFEAE0"/>
+    <!-- North-South vertical-axis entrance path to Arch -->
+    <polygon points="782,285 818,285 818,415 782,415" fill="#EFEAE0" opacity="0"/>
+    <polygon points="800,284 824,296 800,308 776,296" fill="#EFEAE0"/>
+
+    <!-- Central elliptical plaza around Fountain & Arch -->
+    <ellipse cx="800" cy="470" rx="146" ry="73" fill="#DFD9CC"/>
+    <ellipse cx="800" cy="470" rx="140" ry="70" fill="#EFEAE0"/>
+    <!-- Inner subtle stone paving ring -->
+    <ellipse cx="800" cy="486" rx="76" ry="38" fill="none" stroke="#DDD6C9" stroke-width="2"/>
+
+    <!-- Four Violet Flower Beds in the Park Square (Landmark accent) -->
+    <!-- NW flower bed -->
+    <g>
+      <polygon points="688,418 726,437 704,448 666,429" fill="#DDD6C9"/>
+      <polygon points="688,421 721,437 704,445 671,429" fill="#927BAE"/>
+      <ellipse cx="696" cy="433" rx="12" ry="5" fill="#A590BF"/>
+      <circle cx="686" cy="430" r="2.2" fill="#B8A5D0"/>
+      <circle cx="705" cy="436" r="2.2" fill="#B8A5D0"/>
+      <circle cx="696" cy="432" r="2" fill="#7F679C"/>
+    </g>
+    <!-- NE flower bed -->
+    <g>
+      <polygon points="912,418 934,429 896,448 874,437" fill="#DDD6C9"/>
+      <polygon points="912,421 929,429 896,445 879,437" fill="#927BAE"/>
+      <ellipse cx="904" cy="433" rx="12" ry="5" fill="#A590BF"/>
+      <circle cx="914" cy="430" r="2.2" fill="#B8A5D0"/>
+      <circle cx="895" cy="436" r="2.2" fill="#B8A5D0"/>
+      <circle cx="904" cy="432" r="2" fill="#7F679C"/>
+    </g>
+    <!-- SW flower bed -->
+    <g>
+      <polygon points="704,514 726,525 688,544 666,533" fill="#DDD6C9"/>
+      <polygon points="704,517 721,525 688,541 671,533" fill="#927BAE"/>
+      <ellipse cx="696" cy="529" rx="12" ry="5" fill="#A590BF"/>
+      <circle cx="687" cy="532" r="2.2" fill="#B8A5D0"/>
+      <circle cx="706" cy="526" r="2.2" fill="#B8A5D0"/>
+      <circle cx="697" cy="530" r="2" fill="#7F679C"/>
+    </g>
+    <!-- SE flower bed -->
+    <g>
+      <polygon points="896,514 934,533 912,544 874,525" fill="#DDD6C9"/>
+      <polygon points="896,517 929,533 912,541 879,525" fill="#927BAE"/>
+      <ellipse cx="904" cy="529" rx="12" ry="5" fill="#A590BF"/>
+      <circle cx="913" cy="532" r="2.2" fill="#B8A5D0"/>
+      <circle cx="894" cy="526" r="2.2" fill="#B8A5D0"/>
+      <circle cx="903" cy="530" r="2" fill="#7F679C"/>
+    </g>
+  </g>
+
+  <!-- 4. FOUR CLEAR EMPTY BUILDING PLOTS (EXACT 240x120 DIAMONDS, NOTHING ON THEM) -->
+  <g id="empty-plots">
+    <!-- Plot 1: centred at (340, 330) -->
+    <g>
+      <polygon points="340,270 460,330 340,390 220,330" fill="#D1CBC0"/>
+      <polygon points="340,275 450,330 340,385 230,330" fill="#ECE7DD"/>
+      <polygon points="340,281 438,330 340,379 242,330" fill="none" stroke="#DFD9CD" stroke-width="1"/>
+    </g>
+    <!-- Plot 2: centred at (1260, 330) -->
+    <g>
+      <polygon points="1260,270 1380,330 1260,390 1140,330" fill="#D1CBC0"/>
+      <polygon points="1260,275 1370,330 1260,385 1150,330" fill="#ECE7DD"/>
+      <polygon points="1260,281 1358,330 1260,379 1162,330" fill="none" stroke="#DFD9CD" stroke-width="1"/>
+    </g>
+    <!-- Plot 3: centred at (340, 650) -->
+    <g>
+      <polygon points="340,590 460,650 340,710 220,650" fill="#D1CBC0"/>
+      <polygon points="340,595 450,650 340,705 230,650" fill="#ECE7DD"/>
+      <polygon points="340,601 438,650 340,699 242,650" fill="none" stroke="#DFD9CD" stroke-width="1"/>
+    </g>
+    <!-- Plot 4: centred at (1260, 650) -->
+    <g>
+      <polygon points="1260,590 1380,650 1260,710 1140,650" fill="#D1CBC0"/>
+      <polygon points="1260,595 1370,650 1260,705 1150,650" fill="#ECE7DD"/>
+      <polygon points="1260,601 1358,650 1260,699 1162,650" fill="none" stroke="#DFD9CD" stroke-width="1"/>
+    </g>
+  </g>
+
+  <!-- 5. BUILDINGS, TREES & CENTRAL LANDMARK (PAINTER'S ORDER: BACK TO FRONT) -->
+
+  <!-- === FAR NORTH HALL (u:-215..-160, v:-215..-160, h:46) === -->
+  <g id="bldg-far-north">
+    <polygon points="910,95 942,111 832,166 800,150" fill="#5D655A" opacity="0.13"/>
+    <!-- Left wall -->
+    <polygon points="690,49 800,104 800,150 690,95" fill="#DDD8CE"/>
+    <!-- Right wall -->
+    <polygon points="800,104 910,49 910,95 800,150" fill="#C7C1B7"/>
+    <!-- Roof -->
+    <polygon points="800,-6 910,49 800,104 690,49" fill="#F2EFE8"/>
+    <polygon points="800,3 892,49 800,95 708,49" fill="#E7E2D8"/>
+    <!-- Windows (left wall) -->
+    <g fill="#A8A399">
+      <polygon points="706,66 716,71 716,79 706,74"/>
+      <polygon points="726,76 736,81 736,89 726,84"/>
+      <polygon points="746,86 756,91 756,99 746,94"/>
+      <polygon points="766,96 776,101 776,109 766,104"/>
+      <polygon points="706,83 716,88 716,96 706,91"/>
+      <polygon points="726,93 736,98 736,106 726,101"/>
+      <polygon points="746,103 756,108 756,116 746,111"/>
+      <polygon points="766,113 776,118 776,126 766,121"/>
+    </g>
+    <!-- Windows (right wall) -->
+    <g fill="#9A958B">
+      <polygon points="816,105 826,100 826,108 816,113"/>
+      <polygon points="836,95 846,90 846,98 836,103"/>
+      <polygon points="856,85 866,80 866,88 856,93"/>
+      <polygon points="876,75 886,70 886,78 876,83"/>
+      <polygon points="816,122 826,117 826,125 816,130"/>
+      <polygon points="836,112 846,107 846,115 836,120"/>
+      <polygon points="856,102 866,97 866,105 856,110"/>
+      <polygon points="876,92 886,87 886,95 876,100"/>
+    </g>
+  </g>
+
+  <!-- === TOP-LEFT BROWNSTONES === -->
+  <g id="bldg-top-left-a">
+    <polygon points="560,70 588,84 488,134 460,120" fill="#5D655A" opacity="0.13"/>
+    <polygon points="390,45 460,80 460,120 390,85" fill="#DAD5CB"/>
+    <polygon points="460,80 560,30 560,70 460,120" fill="#C3BDB3"/>
+    <polygon points="490,-5 560,30 460,80 390,45" fill="#EFECE5"/>
+    <g fill="#A6A197">
+      <polygon points="404,60 412,64 412,72 404,68"/>
+      <polygon points="424,70 432,74 432,82 424,78"/>
+      <polygon points="444,80 452,84 452,92 444,88"/>
+      <polygon points="404,76 412,80 412,88 404,84"/>
+      <polygon points="424,86 432,90 432,98 424,94"/>
+      <polygon points="444,96 452,100 452,108 444,104"/>
+    </g>
+    <g fill="#989389">
+      <polygon points="474,80 482,76 482,84 474,88"/>
+      <polygon points="494,70 502,66 502,74 494,78"/>
+      <polygon points="514,60 522,56 522,64 514,68"/>
+      <polygon points="534,50 542,46 542,54 534,58"/>
+      <polygon points="474,96 482,92 482,100 474,104"/>
+      <polygon points="494,86 502,82 502,90 494,94"/>
+      <polygon points="514,76 522,72 522,80 514,84"/>
+      <polygon points="534,66 542,62 542,70 534,74"/>
+    </g>
+  </g>
+
+  <g id="bldg-top-left-b">
+    <polygon points="456,122 486,137 394,183 364,168" fill="#5D655A" opacity="0.13"/>
+    <polygon points="294,89 364,124 364,168 294,133" fill="#DFDAD0"/>
+    <polygon points="364,124 456,78 456,122 364,168" fill="#C9C3B9"/>
+    <polygon points="386,43 456,78 364,124 294,89" fill="#F3F0E9"/>
+    <g fill="#A8A399">
+      <polygon points="308,104 316,108 316,116 308,112"/>
+      <polygon points="328,114 336,118 336,126 328,122"/>
+      <polygon points="348,124 356,128 356,136 348,132"/>
+      <polygon points="308,121 316,125 316,133 308,129"/>
+      <polygon points="328,131 336,135 336,143 328,139"/>
+      <polygon points="348,141 356,145 356,153 348,149"/>
+    </g>
+    <g fill="#9A958B">
+      <polygon points="378,124 386,120 386,128 378,132"/>
+      <polygon points="398,114 406,110 406,118 398,122"/>
+      <polygon points="418,104 426,100 426,108 418,112"/>
+      <polygon points="436,95 444,91 444,99 436,103"/>
+      <polygon points="378,141 386,137 386,145 378,149"/>
+      <polygon points="398,131 406,127 406,135 398,139"/>
+      <polygon points="418,121 426,117 426,125 418,129"/>
+      <polygon points="436,112 444,108 444,116 436,120"/>
+    </g>
+  </g>
+
+  <!-- === TOP-RIGHT BROWNSTONES === -->
+  <g id="bldg-top-right-a">
+    <polygon points="1210,85 1238,99 1168,134 1140,120" fill="#5D655A" opacity="0.13"/>
+    <polygon points="1040,30 1140,80 1140,120 1040,70" fill="#DAD5CB"/>
+    <polygon points="1140,80 1210,45 1210,85 1140,120" fill="#C3BDB3"/>
+    <polygon points="1110,-5 1210,45 1140,80 1040,30" fill="#EFECE5"/>
+    <g fill="#A6A197">
+      <polygon points="1056,46 1064,50 1064,58 1056,54"/>
+      <polygon points="1076,56 1084,60 1084,68 1076,64"/>
+      <polygon points="1096,66 1104,70 1104,78 1096,74"/>
+      <polygon points="1116,76 1124,80 1124,88 1116,84"/>
+      <polygon points="1056,62 1064,66 1064,74 1056,70"/>
+      <polygon points="1076,72 1084,76 1084,84 1076,80"/>
+      <polygon points="1096,82 1104,86 1104,94 1096,90"/>
+      <polygon points="1116,92 1124,96 1124,104 1116,100"/>
+    </g>
+    <g fill="#989389">
+      <polygon points="1154,80 1162,76 1162,84 1154,88"/>
+      <polygon points="1174,70 1182,66 1182,74 1174,78"/>
+      <polygon points="1194,60 1202,56 1202,64 1194,68"/>
+      <polygon points="1154,96 1162,92 1162,100 1154,104"/>
+      <polygon points="1174,86 1182,82 1182,90 1174,94"/>
+      <polygon points="1194,76 1202,72 1202,80 1194,84"/>
+    </g>
+  </g>
+
+  <g id="bldg-top-right-b">
+    <polygon points="1306,133 1336,148 1266,183 1236,168" fill="#5D655A" opacity="0.13"/>
+    <polygon points="1144,78 1236,124 1236,168 1144,122" fill="#DFDAD0"/>
+    <polygon points="1236,124 1306,89 1306,133 1236,168" fill="#C9C3B9"/>
+    <polygon points="1214,43 1306,89 1236,124 1144,78" fill="#F3F0E9"/>
+    <g fill="#A8A399">
+      <polygon points="1158,93 1166,97 1166,105 1158,101"/>
+      <polygon points="1178,103 1186,107 1186,115 1178,111"/>
+      <polygon points="1198,113 1206,117 1206,125 1198,121"/>
+      <polygon points="1216,122 1224,126 1224,134 1216,130"/>
+      <polygon points="1158,110 1166,114 1166,122 1158,118"/>
+      <polygon points="1178,120 1186,124 1186,132 1178,128"/>
+      <polygon points="1198,130 1206,134 1206,142 1198,138"/>
+      <polygon points="1216,139 1224,143 1224,151 1216,147"/>
+    </g>
+    <g fill="#9A958B">
+      <polygon points="1250,124 1258,120 1258,128 1250,132"/>
+      <polygon points="1270,114 1278,110 1278,118 1270,122"/>
+      <polygon points="1290,104 1298,100 1298,108 1290,112"/>
+      <polygon points="1250,141 1258,137 1258,145 1250,149"/>
+      <polygon points="1270,131 1278,127 1278,135 1270,139"/>
+      <polygon points="1290,121 1298,117 1298,125 1290,129"/>
+    </g>
+  </g>
+
+  <!-- === FAR NW & FAR NE CORNER BLOCKS === -->
+  <g id="bldg-far-nw">
+    <polygon points="304,182 332,196 222,251 194,237" fill="#5D655A" opacity="0.13"/>
+    <polygon points="100,148 194,195 194,237 100,190" fill="#DCD7CD"/>
+    <polygon points="194,195 304,140 304,182 194,237" fill="#C6C0B6"/>
+    <polygon points="210,93 304,140 194,195 100,148" fill="#F0EDE6"/>
+    <g fill="#A6A197">
+      <polygon points="116,164 124,168 124,176 116,172"/>
+      <polygon points="136,174 144,178 144,186 136,182"/>
+      <polygon points="156,184 164,188 164,196 156,192"/>
+      <polygon points="176,194 184,198 184,206 176,202"/>
+      <polygon points="116,180 124,184 124,192 116,188"/>
+      <polygon points="136,190 144,194 144,202 136,198"/>
+      <polygon points="156,200 164,204 164,212 156,208"/>
+      <polygon points="176,210 184,214 184,222 176,218"/>
+    </g>
+    <g fill="#989389">
+      <polygon points="210,195 218,191 218,199 210,203"/>
+      <polygon points="230,185 238,181 238,189 230,193"/>
+      <polygon points="250,175 258,171 258,179 250,183"/>
+      <polygon points="270,165 278,161 278,169 270,173"/>
+      <polygon points="210,211 218,207 218,215 210,219"/>
+      <polygon points="230,201 238,197 238,205 230,209"/>
+      <polygon points="250,191 258,187 258,195 250,199"/>
+      <polygon points="270,181 278,177 278,185 270,189"/>
+    </g>
+  </g>
+
+  <g id="bldg-far-ne">
+    <polygon points="1500,190 1528,204 1434,251 1406,237" fill="#5D655A" opacity="0.13"/>
+    <polygon points="1296,140 1406,195 1406,237 1296,182" fill="#DCD7CD"/>
+    <polygon points="1406,195 1500,148 1500,190 1406,237" fill="#C6C0B6"/>
+    <polygon points="1390,93 1500,148 1406,195 1296,140" fill="#F0EDE6"/>
+    <g fill="#A6A197">
+      <polygon points="1312,156 1320,160 1320,168 1312,164"/>
+      <polygon points="1332,166 1340,170 1340,178 1332,174"/>
+      <polygon points="1352,176 1360,180 1360,188 1352,184"/>
+      <polygon points="1372,186 1380,190 1380,198 1372,194"/>
+      <polygon points="1312,172 1320,176 1320,184 1312,180"/>
+      <polygon points="1332,182 1340,186 1340,194 1332,190"/>
+      <polygon points="1352,192 1360,196 1360,204 1352,200"/>
+      <polygon points="1372,202 1380,206 1380,214 1372,210"/>
+    </g>
+    <g fill="#989389">
+      <polygon points="1420,196 1428,192 1428,200 1420,204"/>
+      <polygon points="1440,186 1448,182 1448,190 1440,194"/>
+      <polygon points="1460,176 1468,172 1468,180 1460,184"/>
+      <polygon points="1480,166 1488,162 1488,170 1480,174"/>
+      <polygon points="1420,212 1428,208 1428,216 1420,220"/>
+      <polygon points="1440,202 1448,198 1448,206 1440,210"/>
+      <polygon points="1460,192 1468,188 1468,196 1460,200"/>
+      <polygon points="1480,182 1488,178 1488,186 1480,190"/>
+    </g>
+  </g>
+
+  <!-- Trees in northern lawns & along outer streets -->
+  <use href="#tree-m" x="625" y="135"/>
+  <use href="#tree-s" x="665" y="158"/>
+  <use href="#tree-m" x="975" y="135"/>
+  <use href="#tree-s" x="935" y="158"/>
+  <use href="#tree-s" x="762" y="196"/>
+  <use href="#tree-s" x="838" y="196"/>
+  <use href="#tree-m" x="330" y="218"/>
+  <use href="#tree-m" x="1270" y="218"/>
+  <use href="#tree-s" x="108" y="268"/>
+  <use href="#tree-s" x="1492" y="268"/>
+
+  <!-- === WASHINGTON SQUARE NORTH-WEST ROW (3 ATTACHED BROWNSTONES) === -->
+  <g id="bldg-nw-row">
+    <!-- NW-1 -->
+    <polygon points="704,234 732,248 680,274 652,260" fill="#5D655A" opacity="0.13"/>
+    <polygon points="572,178 652,218 652,260 572,220" fill="#DDD8CE"/>
+    <polygon points="652,218 704,192 704,234 652,260" fill="#C7C1B7"/>
+    <polygon points="624,152 704,192 652,218 572,178" fill="#F2EFE8"/>
+    <g fill="#9A958B">
+      <polygon points="662,220 670,216 670,224 662,228"/>
+      <polygon points="678,212 686,208 686,216 678,220"/>
+      <polygon points="692,205 698,202 698,210 692,213"/>
+      <polygon points="662,236 670,232 670,240 662,244"/>
+      <polygon points="678,228 686,224 686,232 678,236"/>
+      <polygon points="692,221 698,218 698,226 692,229"/>
+    </g>
+    <!-- NW-2 (slightly taller middle brownstone) -->
+    <polygon points="650,261 680,276 628,302 598,287" fill="#5D655A" opacity="0.13"/>
+    <polygon points="518,201 598,241 598,287 518,247" fill="#D8D3C9"/>
+    <polygon points="598,241 650,215 650,261 598,287" fill="#C1BBB1"/>
+    <polygon points="570,175 650,215 598,241 518,201" fill="#EEEAE2"/>
+    <g fill="#959086">
+      <polygon points="608,243 616,239 616,247 608,251"/>
+      <polygon points="624,235 632,231 632,239 624,243"/>
+      <polygon points="638,228 644,225 644,233 638,236"/>
+      <polygon points="608,260 616,256 616,264 608,268"/>
+      <polygon points="624,252 632,248 632,256 624,260"/>
+      <polygon points="638,245 644,242 644,250 638,253"/>
+    </g>
+    <!-- NW-3 -->
+    <polygon points="596,288 624,302 572,328 544,314" fill="#5D655A" opacity="0.13"/>
+    <polygon points="464,234 544,274 544,314 464,274" fill="#DFDAD0"/>
+    <polygon points="544,274 596,248 596,288 544,314" fill="#C8C2B8"/>
+    <polygon points="516,208 596,248 544,274 464,234" fill="#F3F0E9"/>
+    <g fill="#A7A298">
+      <polygon points="478,249 486,253 486,261 478,257"/>
+      <polygon points="498,259 506,263 506,271 498,267"/>
+      <polygon points="518,269 526,273 526,281 518,277"/>
+      <polygon points="478,265 486,269 486,277 478,273"/>
+      <polygon points="498,275 506,279 506,287 498,283"/>
+      <polygon points="518,285 526,289 526,297 518,293"/>
+    </g>
+    <g fill="#9A958B">
+      <polygon points="554,276 562,272 562,280 554,284"/>
+      <polygon points="570,268 578,264 578,272 570,276"/>
+      <polygon points="584,261 590,258 590,266 584,269"/>
+      <polygon points="554,292 562,288 562,296 554,300"/>
+      <polygon points="570,284 578,280 578,288 570,292"/>
+      <polygon points="584,277 590,274 590,282 584,285"/>
+    </g>
+  </g>
+
+  <!-- === WASHINGTON SQUARE NORTH-EAST ROW (3 ATTACHED BROWNSTONES) === -->
+  <g id="bldg-ne-row">
+    <!-- NE-1 -->
+    <polygon points="1028,220 1056,234 976,274 948,260" fill="#5D655A" opacity="0.13"/>
+    <polygon points="896,192 948,218 948,260 896,234" fill="#DDD8CE"/>
+    <polygon points="948,218 1028,178 1028,220 948,260" fill="#C7C1B7"/>
+    <polygon points="976,152 1028,178 948,218 896,192" fill="#F2EFE8"/>
+    <g fill="#A7A298">
+      <polygon points="906,204 914,208 914,216 906,212"/>
+      <polygon points="922,212 930,216 930,224 922,220"/>
+      <polygon points="906,220 914,224 914,232 906,228"/>
+      <polygon points="922,228 930,232 930,240 922,236"/>
+    </g>
+    <!-- NE-2 -->
+    <polygon points="1082,247 1112,262 1032,302 1002,287" fill="#5D655A" opacity="0.13"/>
+    <polygon points="950,215 1002,241 1002,287 950,261" fill="#D8D3C9"/>
+    <polygon points="1002,241 1082,201 1082,247 1002,287" fill="#C1BBB1"/>
+    <polygon points="1030,175 1082,201 1002,241 950,215" fill="#EEEAE2"/>
+    <g fill="#A39E94">
+      <polygon points="960,227 968,231 968,239 960,235"/>
+      <polygon points="976,235 984,239 984,247 976,243"/>
+      <polygon points="960,244 968,248 968,256 960,252"/>
+      <polygon points="976,252 984,256 984,264 976,260"/>
+    </g>
+    <!-- NE-3 -->
+    <polygon points="1136,274 1164,288 1084,328 1056,314" fill="#5D655A" opacity="0.13"/>
+    <polygon points="1004,248 1056,274 1056,314 1004,288" fill="#DFDAD0"/>
+    <polygon points="1056,274 1136,234 1136,274 1056,314" fill="#C8C2B8"/>
+    <polygon points="1084,208 1136,234 1056,274 1004,248" fill="#F3F0E9"/>
+    <g fill="#A7A298">
+      <polygon points="1014,260 1022,264 1022,272 1014,268"/>
+      <polygon points="1030,268 1038,272 1038,280 1030,276"/>
+      <polygon points="1014,276 1022,280 1022,288 1014,284"/>
+      <polygon points="1030,284 1038,288 1038,296 1030,292"/>
+    </g>
+    <g fill="#9A958B">
+      <polygon points="1070,274 1078,270 1078,278 1070,282"/>
+      <polygon points="1090,264 1098,260 1098,268 1090,272"/>
+      <polygon points="1110,254 1118,250 1118,258 1110,262"/>
+      <polygon points="1070,290 1078,286 1078,294 1070,298"/>
+      <polygon points="1090,280 1098,276 1098,284 1090,288"/>
+      <polygon points="1110,270 1118,266 1118,274 1110,278"/>
+    </g>
+  </g>
+
+  <!-- Trees lining North perimeter streets & northern park lawn -->
+  <use href="#tree-m" x="716" y="328"/>
+  <use href="#tree-s" x="676" y="348"/>
+  <use href="#tree-m" x="636" y="368"/>
+  <use href="#tree-m" x="884" y="328"/>
+  <use href="#tree-s" x="924" y="348"/>
+  <use href="#tree-m" x="964" y="368"/>
+  <use href="#tree-l" x="752" y="342"/>
+  <use href="#tree-l" x="848" y="342"/>
+  <use href="#tree-m" x="556" y="408"/>
+  <use href="#tree-m" x="1044" y="408"/>
+
+  <!-- === CENTRAL LANDMARK: WHITE MARBLE TRIUMPHAL ARCH (AROUND 800, 398) === -->
+  <g id="landmark-arch">
+    <!-- Soft ground shadow cast down-right -->
+    <polygon points="824,418 844,408 886,429 866,439" fill="#5D655A" opacity="0.14"/>
+    <polygon points="779,396 804,408 824,418 800,406" fill="#5D655A" opacity="0.08"/>
+
+    <!-- Plinth step -->
+    <polygon points="756,386 826,421 848,410 778,375" fill="#E3DED4"/>
+
+    <!-- Inner archway back shadow & vaulted soffit (visible through arch) -->
+    <!-- Inner right-facing wall of left pier -->
+    <polygon points="779,395.5 799,385.5 799,361.5 779,371.5" fill="#CBC5B9"/>
+    <!-- Inner curved vault soffit -->
+    <path d="M 779,371.5 Q 792,354 805,384.5 L 823,375.5 Q 810,345 799,361.5 Z" fill="#C1BBB0"/>
+
+    <!-- Main Arch Front Facade (Left-facing, facing SW along +u) with arched opening cutout -->
+    <path d="M 760,386 L 760,334 L 824,366 L 824,418 L 805,408.5 L 805,384.5 Q 792,354 779,371.5 L 779,395.5 Z" fill="#F1EEE8"/>
+
+    <!-- Arch Right Side Wall (facing SE along -v) -->
+    <polygon points="824,366 844,356 844,408 824,418" fill="#DCD7CD"/>
+
+    <!-- Delicate pier base plinths & subtle arch voussoir molding -->
+    <polygon points="759,381 780,391.5 780,396 759,385.5" fill="#E4DFD5"/>
+    <polygon points="804,403.5 825,414 825,418.5 804,408" fill="#E4DFD5"/>
+    <path d="M 777,372 Q 792,350 807,385.5" fill="none" stroke="#DDD7CC" stroke-width="1.8"/>
+
+    <!-- Projecting Entablature & Cornice -->
+    <polygon points="757,334 826,368.5 826,362.5 757,328" fill="#E8E4DC"/>
+    <polygon points="826,368.5 847,358 847,352 826,362.5" fill="#D2CCC1"/>
+    <polygon points="778,317.5 847,352 826,362.5 757,328" fill="#F8F6F1"/>
+
+    <!-- Attic Parapet Story -->
+    <polygon points="761,328 823,359 823,347 761,316" fill="#F4F1EB"/>
+    <polygon points="823,359 843,349 843,337 823,347" fill="#DFDAD0"/>
+    <!-- Top Marble Roof Cap -->
+    <polygon points="781,306 843,337 823,347 761,316" fill="#FAF8F4"/>
+    <!-- Subtle recessed attic panel -->
+    <polygon points="773,326 811,345 811,351 773,332" fill="#E7E2D9"/>
+
+    <!-- Violet Accent Banners on Arch Piers (sparingly used landmark accent) -->
+    <g id="arch-banners">
+      <!-- Left pier violet banner -->
+      <polygon points="767,354 774,357.5 774,376.5 770.5,372.5 767,373" fill="#8A71A8"/>
+      <polygon points="767,354 774,357.5 774,359.5 767,356" fill="#6F578E"/>
+      <!-- Right pier violet banner -->
+      <polygon points="810,375.5 817,379 817,398 813.5,394 810,394.5" fill="#8A71A8"/>
+      <polygon points="810,375.5 817,379 817,381 810,377.5" fill="#6F578E"/>
+    </g>
+  </g>
+
+  <!-- === CENTRAL LANDMARK: ROUND MARBLE FOUNTAIN (AT 800, 488) === -->
+  <g id="landmark-fountain">
+    <!-- Soft ground shadow -->
+    <ellipse cx="810" cy="493" rx="50" ry="25" fill="#5D655A" opacity="0.13"/>
+    <!-- Outer stone basin vertical wall -->
+    <path d="M 752,487 A 48,24 0 0,0 848,487 L 848,493 A 48,24 0 0,1 752,493 Z" fill="#D9D3C8"/>
+    <!-- Top stone coping ring -->
+    <ellipse cx="800" cy="487" rx="48" ry="24" fill="#F2EFE8"/>
+    <!-- Inner basin wall -->
+    <ellipse cx="800" cy="487" rx="40" ry="20" fill="#DCD6CB"/>
+    <!-- Calm water surface -->
+    <ellipse cx="800" cy="489" rx="38" ry="18.5" fill="#C7D5D4"/>
+    <!-- Subtle concentric water ripples -->
+    <ellipse cx="800" cy="489" rx="26" ry="12.5" fill="none" stroke="#DAE5E4" stroke-width="1.2"/>
+    <ellipse cx="800" cy="489" rx="14" ry="6.5" fill="none" stroke="#E4ECEB" stroke-width="1"/>
+    <!-- Central marble pedestal & gentle water plume -->
+    <ellipse cx="800" cy="488" rx="9" ry="4.5" fill="#E3DED4"/>
+    <rect x="796" y="476" width="8" height="12" rx="2" fill="#EEEAE2"/>
+    <ellipse cx="800" cy="476" rx="11" ry="5.5" fill="#F6F4EE"/>
+    <ellipse cx="800" cy="475" rx="7" ry="3.5" fill="#D3E0DF"/>
+    <!-- Soft water spray -->
+    <path d="M 800,475 Q 796,464 792,473 M 800,475 Q 804,464 808,473 M 800,475 L 800,462" fill="none" stroke="#EEF3F2" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- === FAR WEST & FAR EAST BLOCKS === -->
+  <g id="bldg-far-west">
+    <!-- W-1 -->
+    <polygon points="236,468 266,483 190,521 160,506" fill="#5D655A" opacity="0.13"/>
+    <polygon points="80,422 160,462 160,506 80,466" fill="#DDD8CE"/>
+    <polygon points="160,462 236,424 236,468 160,506" fill="#C6C0B6"/>
+    <polygon points="156,384 236,424 160,462 80,422" fill="#F1EEE7"/>
+    <g fill="#A6A197">
+      <polygon points="96,438 104,442 104,450 96,446"/>
+      <polygon points="116,448 124,452 124,460 116,456"/>
+      <polygon points="136,458 144,462 144,470 136,466"/>
+      <polygon points="96,455 104,459 104,467 96,463"/>
+      <polygon points="116,465 124,469 124,477 116,473"/>
+      <polygon points="136,475 144,479 144,487 136,483"/>
+    </g>
+    <g fill="#989389">
+      <polygon points="174,463 182,459 182,467 174,471"/>
+      <polygon points="194,453 202,449 202,457 194,461"/>
+      <polygon points="214,443 222,439 222,447 214,451"/>
+      <polygon points="174,480 182,476 182,484 174,488"/>
+      <polygon points="194,470 202,466 202,474 194,478"/>
+      <polygon points="214,460 222,456 222,464 214,468"/>
+    </g>
+    <!-- W-2 -->
+    <polygon points="156,508 182,521 106,559 80,546" fill="#5D655A" opacity="0.13"/>
+    <polygon points="0,468 80,508 80,546 0,506" fill="#D8D3C9"/>
+    <polygon points="80,508 156,470 156,508 80,546" fill="#C1BBB1"/>
+    <polygon points="76,430 156,470 80,508 0,468" fill="#EEEAE2"/>
+    <g fill="#959086">
+      <polygon points="94,508 102,504 102,512 94,516"/>
+      <polygon points="114,498 122,494 122,502 114,506"/>
+      <polygon points="134,488 142,484 142,492 134,496"/>
+      <polygon points="94,523 102,519 102,527 94,531"/>
+      <polygon points="114,513 122,509 122,517 114,521"/>
+      <polygon points="134,503 142,499 142,507 134,511"/>
+    </g>
+  </g>
+
+  <g id="bldg-far-east">
+    <!-- E-1 -->
+    <polygon points="1520,466 1550,481 1470,521 1440,506" fill="#5D655A" opacity="0.13"/>
+    <polygon points="1364,424 1440,462 1440,506 1364,468" fill="#DDD8CE"/>
+    <polygon points="1440,462 1520,422 1520,466 1440,506" fill="#C6C0B6"/>
+    <polygon points="1444,384 1520,422 1440,462 1364,424" fill="#F1EEE7"/>
+    <g fill="#A6A197">
+      <polygon points="1378,439 1386,443 1386,451 1378,447"/>
+      <polygon points="1398,449 1406,453 1406,461 1398,457"/>
+      <polygon points="1418,459 1426,463 1426,471 1418,467"/>
+      <polygon points="1378,456 1386,460 1386,468 1378,464"/>
+      <polygon points="1398,466 1406,470 1406,478 1398,474"/>
+      <polygon points="1418,476 1426,480 1426,488 1418,484"/>
+    </g>
+    <g fill="#989389">
+      <polygon points="1454,463 1462,459 1462,467 1454,471"/>
+      <polygon points="1474,453 1482,449 1482,457 1474,461"/>
+      <polygon points="1494,443 1502,439 1502,447 1494,451"/>
+      <polygon points="1454,480 1462,476 1462,484 1454,488"/>
+      <polygon points="1474,470 1482,466 1482,474 1474,478"/>
+      <polygon points="1494,460 1502,456 1502,464 1494,468"/>
+    </g>
+    <!-- E-2 -->
+    <polygon points="1600,506 1626,519 1546,559 1520,546" fill="#5D655A" opacity="0.13"/>
+    <polygon points="1444,470 1520,508 1520,546 1444,508" fill="#D8D3C9"/>
+    <polygon points="1520,508 1600,468 1600,506 1520,546" fill="#C1BBB1"/>
+    <polygon points="1524,430 1600,468 1520,508 1444,470" fill="#EEEAE2"/>
+    <g fill="#A39E94">
+      <polygon points="1458,484 1466,488 1466,496 1458,492"/>
+      <polygon points="1478,494 1486,498 1486,506 1478,502"/>
+      <polygon points="1498,504 1506,508 1506,516 1498,512"/>
+      <polygon points="1458,499 1466,503 1466,511 1458,507"/>
+      <polygon points="1478,509 1486,513 1486,521 1478,517"/>
+      <polygon points="1498,519 1506,523 1506,531 1498,527"/>
+    </g>
+  </g>
+
+  <!-- Trees in lower park lawns & lining southern park streets -->
+  <use href="#tree-m" x="556" y="532"/>
+  <use href="#tree-s" x="598" y="554"/>
+  <use href="#tree-l" x="642" y="576"/>
+  <use href="#tree-m" x="1044" y="532"/>
+  <use href="#tree-s" x="1002" y="554"/>
+  <use href="#tree-l" x="958" y="576"/>
+  <use href="#tree-m" x="720" y="610"/>
+  <use href="#tree-m" x="880" y="610"/>
+  <use href="#tree-s" x="488" y="486"/>
+  <use href="#tree-s" x="1112" y="486"/>
+  <use href="#tree-m" x="252" y="544"/>
+  <use href="#tree-m" x="1348" y="544"/>
+
+  <!-- === SOUTH-WEST ACADEMIC BLOCK === -->
+  <g id="bldg-sw-academic">
+    <polygon points="700,704 736,722 644,768 608,750" fill="#5D655A" opacity="0.13"/>
+    <polygon points="508,646 608,696 608,750 508,700" fill="#DCD7CD"/>
+    <polygon points="608,696 700,650 700,704 608,750" fill="#C6C0B6"/>
+    <polygon points="600,600 700,650 608,696 508,646" fill="#F1EEE7"/>
+    <polygon points="600,609 684,651 608,689 524,647" fill="#E7E2D8"/>
+    <g fill="#A6A197">
+      <polygon points="522,660 530,664 530,672 522,668"/>
+      <polygon points="542,670 550,674 550,682 542,678"/>
+      <polygon points="562,680 570,684 570,692 562,688"/>
+      <polygon points="582,690 590,694 590,702 582,698"/>
+      <polygon points="522,677 530,681 530,689 522,685"/>
+      <polygon points="542,687 550,691 550,699 542,695"/>
+      <polygon points="562,697 570,701 570,709 562,705"/>
+      <polygon points="582,707 590,711 590,719 582,715"/>
+      <polygon points="522,694 530,698 530,706 522,702"/>
+      <polygon points="542,704 550,708 550,716 542,712"/>
+      <polygon points="562,714 570,718 570,726 562,722"/>
+      <polygon points="582,724 590,728 590,736 582,732"/>
+    </g>
+    <g fill="#989389">
+      <polygon points="622,696 630,692 630,700 622,704"/>
+      <polygon points="642,686 650,682 650,690 642,694"/>
+      <polygon points="662,676 670,672 670,680 662,684"/>
+      <polygon points="682,666 690,662 690,670 682,674"/>
+      <polygon points="622,713 630,709 630,717 622,721"/>
+      <polygon points="642,703 650,699 650,707 642,711"/>
+      <polygon points="662,693 670,689 670,697 662,701"/>
+      <polygon points="682,683 690,679 690,687 682,691"/>
+      <polygon points="622,730 630,726 630,734 622,738"/>
+      <polygon points="642,720 650,716 650,724 642,728"/>
+      <polygon points="662,710 670,706 670,714 662,718"/>
+      <polygon points="682,700 690,696 690,704 682,708"/>
+    </g>
+  </g>
+
+  <!-- === SOUTH-EAST ACADEMIC BLOCK === -->
+  <g id="bldg-se-academic">
+    <polygon points="1092,700 1128,718 1028,768 992,750" fill="#5D655A" opacity="0.13"/>
+    <polygon points="900,650 992,696 992,750 900,704" fill="#DCD7CD"/>
+    <polygon points="992,696 1092,646 1092,700 992,750" fill="#C6C0B6"/>
+    <polygon points="1000,600 1092,646 992,696 900,650" fill="#F1EEE7"/>
+    <polygon points="1000,609 1076,647 992,689 916,651" fill="#E7E2D8"/>
+    <g fill="#A6A197">
+      <polygon points="914,664 922,668 922,676 914,672"/>
+      <polygon points="934,674 942,678 942,686 934,682"/>
+      <polygon points="954,684 962,688 962,696 954,692"/>
+      <polygon points="972,693 980,697 980,705 972,701"/>
+      <polygon points="914,681 922,685 922,693 914,689"/>
+      <polygon points="934,691 942,695 942,703 934,699"/>
+      <polygon points="954,701 962,705 962,713 954,709"/>
+      <polygon points="972,710 980,714 980,722 972,718"/>
+      <polygon points="914,698 922,702 922,710 914,706"/>
+      <polygon points="934,708 942,712 942,720 934,716"/>
+      <polygon points="954,718 962,722 962,730 954,726"/>
+      <polygon points="972,727 980,731 980,739 972,735"/>
+    </g>
+    <g fill="#989389">
+      <polygon points="1006,696 1014,692 1014,700 1006,704"/>
+      <polygon points="1026,686 1034,682 1034,690 1026,694"/>
+      <polygon points="1046,676 1054,672 1054,680 1046,684"/>
+      <polygon points="1066,666 1074,662 1074,670 1066,674"/>
+      <polygon points="1006,713 1014,709 1014,717 1006,721"/>
+      <polygon points="1026,703 1034,699 1034,707 1026,711"/>
+      <polygon points="1046,693 1054,689 1054,697 1046,701"/>
+      <polygon points="1066,683 1074,679 1074,687 1066,691"/>
+      <polygon points="1006,730 1014,726 1014,734 1006,738"/>
+      <polygon points="1026,720 1034,716 1034,724 1026,728"/>
+      <polygon points="1046,710 1054,706 1054,714 1046,718"/>
+      <polygon points="1066,700 1074,696 1074,704 1066,708"/>
+    </g>
+  </g>
+
+  <!-- === FAR SW & FAR SE CORNER BLOCKS === -->
+  <g id="bldg-far-sw">
+    <polygon points="234,743 264,758 176,802 146,787" fill="#5D655A" opacity="0.13"/>
+    <polygon points="56,698 146,743 146,787 56,742" fill="#DAD5CB"/>
+    <polygon points="146,743 234,699 234,743 146,787" fill="#C4BEB4"/>
+    <polygon points="144,654 234,699 146,743 56,698" fill="#EFECE5"/>
+    <g fill="#A6A197">
+      <polygon points="72,714 80,718 80,726 72,722"/>
+      <polygon points="92,724 100,728 100,736 92,732"/>
+      <polygon points="112,734 120,738 120,746 112,742"/>
+      <polygon points="72,731 80,735 80,743 72,739"/>
+      <polygon points="92,741 100,745 100,753 92,749"/>
+      <polygon points="112,751 120,755 120,763 112,759"/>
+    </g>
+    <g fill="#989389">
+      <polygon points="160,743 168,739 168,747 160,751"/>
+      <polygon points="180,733 188,729 188,737 180,741"/>
+      <polygon points="200,723 208,719 208,727 200,731"/>
+      <polygon points="160,760 168,756 168,764 160,768"/>
+      <polygon points="180,750 188,746 188,754 180,758"/>
+      <polygon points="200,740 208,736 208,744 200,748"/>
+    </g>
+  </g>
+
+  <g id="bldg-far-se">
+    <polygon points="1544,742 1574,757 1484,802 1454,787" fill="#5D655A" opacity="0.13"/>
+    <polygon points="1366,699 1454,743 1454,787 1366,743" fill="#DAD5CB"/>
+    <polygon points="1454,743 1544,698 1544,742 1454,787" fill="#C4BEB4"/>
+    <polygon points="1456,654 1544,698 1454,743 1366,699" fill="#EFECE5"/>
+    <g fill="#A6A197">
+      <polygon points="1382,714 1390,718 1390,726 1382,722"/>
+      <polygon points="1402,724 1410,728 1410,736 1402,732"/>
+      <polygon points="1422,734 1430,738 1430,746 1422,742"/>
+      <polygon points="1382,731 1390,735 1390,743 1382,739"/>
+      <polygon points="1402,741 1410,745 1410,753 1402,749"/>
+      <polygon points="1422,751 1430,755 1430,763 1422,759"/>
+    </g>
+    <g fill="#989389">
+      <polygon points="1470,743 1478,739 1478,747 1470,751"/>
+      <polygon points="1490,733 1498,729 1498,737 1490,741"/>
+      <polygon points="1510,723 1518,719 1518,727 1510,731"/>
+      <polygon points="1470,760 1478,756 1478,764 1470,768"/>
+      <polygon points="1490,750 1498,746 1498,754 1490,758"/>
+      <polygon points="1510,740 1518,736 1518,744 1510,748"/>
+    </g>
+  </g>
+
+  <!-- === SOUTH TALLER LIBRARY BLOCK (BOBST-INSPIRED, h=98) === -->
+  <g id="bldg-south-library">
+    <!-- Long soft ground shadow cast down-right -->
+    <polygon points="924,820 990,853 866,915 800,882" fill="#5D655A" opacity="0.14"/>
+    <!-- Left-facing main facade -->
+    <polygon points="676,722 800,784 800,882 676,820" fill="#DAD4C9"/>
+    <!-- Right-facing main facade -->
+    <polygon points="800,784 924,722 924,820 800,882" fill="#C3BDB2"/>
+    <!-- Main Roof -->
+    <polygon points="800,660 924,722 800,784 676,722" fill="#F2EFE8"/>
+    <!-- Recessed roof deck -->
+    <polygon points="800,670 906,723 800,776 694,723" fill="#E6E1D7"/>
+    <!-- Rooftop penthouse -->
+    <polygon points="740,708 800,738 800,752 740,722" fill="#DFDAD0"/>
+    <polygon points="800,738 860,708 860,722 800,752" fill="#C9C3B9"/>
+    <polygon points="800,678 860,708 800,738 740,708" fill="#F5F2EC"/>
+
+    <!-- Library window grid: Left wall (5 rows x 5 cols) -->
+    <g fill="#A39E94">
+      <!-- Row 1 -->
+      <polygon points="692,739 704,745 704,754 692,748"/>
+      <polygon points="714,750 726,756 726,765 714,759"/>
+      <polygon points="736,761 748,767 748,776 736,770"/>
+      <polygon points="758,772 770,778 770,787 758,781"/>
+      <polygon points="780,783 792,789 792,798 780,792"/>
+      <!-- Row 2 -->
+      <polygon points="692,756 704,762 704,771 692,765"/>
+      <polygon points="714,767 726,773 726,782 714,776"/>
+      <polygon points="736,778 748,784 748,793 736,787"/>
+      <polygon points="758,789 770,795 770,804 758,798"/>
+      <polygon points="780,800 792,806 792,815 780,809"/>
+      <!-- Row 3 -->
+      <polygon points="692,773 704,779 704,788 692,782"/>
+      <polygon points="714,784 726,790 726,799 714,793"/>
+      <polygon points="736,795 748,801 748,810 736,804"/>
+      <polygon points="758,806 770,812 770,821 758,815"/>
+      <polygon points="780,817 792,823 792,832 780,826"/>
+      <!-- Row 4 -->
+      <polygon points="692,790 704,796 704,805 692,799"/>
+      <polygon points="714,801 726,807 726,816 714,810"/>
+      <polygon points="736,812 748,818 748,827 736,821"/>
+      <polygon points="758,823 770,829 770,838 758,832"/>
+      <polygon points="780,834 792,840 792,849 780,843"/>
+      <!-- Row 5 -->
+      <polygon points="692,807 704,813 704,822 692,816"/>
+      <polygon points="714,818 726,824 726,833 714,827"/>
+      <polygon points="736,829 748,835 748,844 736,838"/>
+      <polygon points="758,840 770,846 770,855 758,849"/>
+      <polygon points="780,851 792,857 792,866 780,860"/>
+    </g>
+
+    <!-- Library window grid: Right wall (5 rows x 5 cols) -->
+    <g fill="#948F85">
+      <!-- Row 1 -->
+      <polygon points="808,789 820,783 820,792 808,798"/>
+      <polygon points="830,778 842,772 842,781 830,787"/>
+      <polygon points="852,767 864,761 864,770 852,776"/>
+      <polygon points="874,756 886,750 886,759 874,765"/>
+      <polygon points="896,745 908,739 908,748 896,754"/>
+      <!-- Row 2 -->
+      <polygon points="808,806 820,800 820,809 808,815"/>
+      <polygon points="830,795 842,789 842,798 830,804"/>
+      <polygon points="852,784 864,778 864,787 852,793"/>
+      <polygon points="874,773 886,767 886,776 874,782"/>
+      <polygon points="896,762 908,756 908,765 896,771"/>
+      <!-- Row 3 -->
+      <polygon points="808,823 820,817 820,826 808,832"/>
+      <polygon points="830,812 842,806 842,815 830,821"/>
+      <polygon points="852,801 864,795 864,804 852,810"/>
+      <polygon points="874,790 886,784 886,793 874,799"/>
+      <polygon points="896,779 908,773 908,782 896,788"/>
+      <!-- Row 4 -->
+      <polygon points="808,840 820,834 820,843 808,849"/>
+      <polygon points="830,829 842,823 842,832 830,838"/>
+      <polygon points="852,818 864,812 864,821 852,827"/>
+      <polygon points="874,807 886,801 886,810 874,816"/>
+      <polygon points="896,796 908,790 908,799 896,805"/>
+      <!-- Row 5 -->
+      <polygon points="808,857 820,851 820,860 808,866"/>
+      <polygon points="830,846 842,840 842,849 830,855"/>
+      <polygon points="852,835 864,829 864,838 852,844"/>
+      <polygon points="874,824 886,818 886,827 874,833"/>
+      <polygon points="896,813 908,807 908,816 896,822"/>
+    </g>
+  </g>
+
+  <!-- Foreground & outer-street trees (keeping all 4 empty plots completely clear) -->
+  <use href="#tree-m" x="458" y="758"/>
+  <use href="#tree-s" x="502" y="782"/>
+  <use href="#tree-m" x="562" y="814"/>
+  <use href="#tree-m" x="1142" y="758"/>
+  <use href="#tree-s" x="1098" y="782"/>
+  <use href="#tree-m" x="1038" y="814"/>
+  <use href="#tree-s" x="342" y="782"/>
+  <use href="#tree-s" x="1258" y="782"/>
+  <use href="#tree-m" x="624" y="858"/>
+  <use href="#tree-m" x="976" y="858"/>
+</svg>

@@ -1,0 +1,27 @@
+{
+ "model": "gemini-4-neon",
+ "prompt": "Draw an isometric campus map for a classical uptown New York university. In the centre (around 800,450) the landmark: a domed neoclassical library with a colonnade and wide stone steps facing a long lawn with crossing paths, drawn with a little more care than the rest and touched with light blue accent (dome, banners). Around it, symmetrical classical buildings with pitched roofs in the grey palette, hedges, trees, an iron gate at the bottom edge. True isometric projection throughout (2:1 dimetric: every ground line runs at 26.57 degrees left or right, verticals are vertical), like an isometric city-builder game map, seen from above at an angle so building walls and roofs are both visible. This is a BACKGROUND for interactive buildings, so it must be calm: a restrained palette of only soft warm greys and off-whites for buildings (walls two tones lighter and darker for the two visible sides, roofs lightest), ONE muted sage green for lawns and trees (two tones), pale sand for paths and plazas, and a single accent colour used sparingly on the landmark only. Low contrast, no black outlines, no bright reds or yellows, no cars, no people, no text. Buildings are simple clean isometric blocks with rows of small windows; trees are simple rounded isometric shapes with a soft shadow. Soft ambient shadows on the ground at one consistent angle. Generous open lawn and plaza space so it does not feel crowded. Leave FOUR clear empty building plots, each an isometric diamond of pale stone 240 wide and 120 tall with a slightly darker rim, centred exactly at (340,330), (1260,330), (340,650), (1260,650), with paths leading from each to the centre; draw nothing on them. viewBox 0 0 1600 900; fill the whole canvas edge to edge with ground (lawn), no sky.",
+ "usage": {
+  "total_tokens": 35246,
+  "total_input_tokens": 470,
+  "input_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 470
+   }
+  ],
+  "total_cached_tokens": 0,
+  "total_output_tokens": 20955,
+  "output_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 20955
+   }
+  ],
+  "total_tool_use_tokens": 0,
+  "total_thought_tokens": 13821,
+  "initial_input_tokens": 470
+ },
+ "ms": 253756,
+ "made_at": "2026-11-21T17:10:38.230Z"
+}
