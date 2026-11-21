@@ -29,6 +29,22 @@ const BUILDINGS = [
 ] as const;
 const uid = () => Math.random().toString(36).slice(2, 10);
 
+// The room, then the spaces a Gemi can open later. [id, English, Chinese]
+const SPACE_LIST: [string, string, string][] = [["room", "My room", "我的小屋"], ["readingRoom", "Reading room", "阅览室"], ["loft", "Skylight loft", "天窗阁楼"], ["rooftop", "Rooftop", "屋顶"], ["lab", "Lab", "实验室"], ["greenhouse", "Greenhouse", "温室"], ["makerLab", "Maker lab", "创客间"], ["backyard", "Backyard", "后院"]];
+
+function Dialogue({ name, text, accent, onDone }: { name: string; text: string; accent: string; onDone: () => void }) {
+  const [n, setN] = useState(0);
+  useEffect(() => { const id = setInterval(() => setN((k) => (k >= text.length ? k : k + 1)), 28); return () => clearInterval(id); }, [text]);
+  useEffect(() => { if (n < text.length) return; const id = setTimeout(onDone, 6000); return () => clearTimeout(id); }, [n, text.length, onDone]);
+  return (
+    <button onClick={() => (n < text.length ? setN(text.length) : onDone())} className="absolute bottom-32 left-1/2 z-[6] w-[min(40rem,82vw)] -translate-x-1/2 text-left">
+      <span className="absolute -top-4 left-7 z-[1] -rotate-2 rounded-lg border-[3px] px-3.5 py-0.5 text-sm font-bold text-white" style={{ background: accent, borderColor: INK }}>{name}</span>
+      <span className="block rounded-xl border-[3px] bg-[#fffaf0] px-6 pb-5 pt-6 text-[17px] font-bold leading-relaxed" style={{ borderColor: INK, boxShadow: `0 6px 0 ${INK}33, 0 14px 30px #0002`, minHeight: "5.2rem" }}>
+        {text.slice(0, n)}<span className="invisible">{text.slice(n)}</span></span>
+      {n >= text.length && <span className="absolute bottom-1.5 left-1/2 -translate-x-1/2 animate-bounce text-sm" style={{ color: accent }}>▼</span>}
+    </button>);
+}
+
 export default function Room() {
   const router = useRouter();
   const frame = useRef<HTMLIFrameElement>(null), feedEnd = useRef<HTMLDivElement>(null), nextId = useRef(1);
@@ -36,6 +52,10 @@ export default function Room() {
   const [lang, setLang] = useState<Lang>("en");
   const [panel, setPanel] = useState<Panel>(null);
   const [deskView, setDeskView] = useState(false);
+  const [space, setSpace] = useState(0);   // 0 is the room; the others are spaces the Gemi opens with Gem Stars it saved
+  const [head, setHead] = useState<{ x: number; y: number } | null>(null);
+  const [spoke, setSpoke] = useState<{ text: string; until: number } | null>(null);
+  const lastWhy = useRef("");
   const [look, setLook] = useState<Record<string, any>>({});
   const [owned, setOwned] = useState<string[]>([]);
   const [went, setWent] = useState<{ find: string; title: string; matched: boolean }[]>([]);
@@ -64,6 +84,7 @@ export default function Room() {
     const on = (ev: MessageEvent) => {
       const m = ev.data; if (m?.source !== "gemiverse-room") return;
       if (m.type === "doing") setDoing(m.value);
+      if (m.type === "head") setHead(m.value);
       if (m.type === "tapped") setTap(m.value);
       if (m.type === "released") setTap(null);
       if (m.type === "open") { if (m.value === "door") { setPanel(null); setDeskView(false); setCampus(true); } else if (m.value === "wardrobe") setPanel("wardrobe"); }
@@ -148,6 +169,7 @@ export default function Room() {
   auto.current = () => {
     const d = decideNow({ pending: pendingNow, outNow: !!outAt, starsYou: state.purses.for_you, starsSelf: state.purses.for_itself, choices: choicesMade, widestHalo: Math.max(...AXES.map((a) => mind.beliefs[a.id].u)),
       topCare: Math.max(0, ...Object.values(mind.care)), hour: new Date().getHours(), idleSeconds: (Date.now() - lastTouch.current) / 1000, diaryToday: diaryDone.current, paused: state.paused, bank: 0, goalCost: 6, goalName: "a song", roomChangedByStudent: !!roomTouched.current });
+    if (d.rule !== "potter" && d.why !== lastWhy.current) { lastWhy.current = d.why; setSpoke({ text: d.why, until: 0 }); }
     setNow(d); send("mode", d.state === "waiting" ? "waiting" : "free");
     if (busy || campus || panel === "talk" || tap) return;                      // it never acts on its own while you are in the middle of something
     if (d.rule === "notice") { const it = roomTouched.current; roomTouched.current = null; send("express", "surprised"); send("play", "think"); setDoing(`noticed you moved the ${it}`); return; }
@@ -208,6 +230,14 @@ export default function Room() {
     <main className="relative h-screen overflow-hidden bg-[#f6f2ee] text-[#2b2536]">
       <iframe ref={frame} src={`/gen3d/viewer.html?embed=1&school=${s.id}`} title="Your Gemi's room" className="absolute inset-0 h-full w-full border-0" />
 
+      {space > 0 && <iframe key={SPACE_LIST[space][0]} src={`/gen3d/spaces.html?embed=1&space=${SPACE_LIST[space][0]}&me=${preset.gemiName.toLowerCase()}${space % 2 === 0 ? "&friends=pip,kai" : ""}`} title={SPACE_LIST[space][1]} className="absolute inset-0 h-full w-full border-0" style={{ background: "#e9e6e1" }} />}
+      {!campus && (
+        <div className="absolute left-1/2 top-4 z-[4] flex -translate-x-1/2 items-center gap-2 rounded-full border-[3px] bg-[#fffaf0] px-1.5 py-1" style={{ borderColor: INK, boxShadow: `0 4px 0 ${INK}` }}>
+          <button onClick={() => { setSpace((space + SPACE_LIST.length - 1) % SPACE_LIST.length); setPanel(null); setDeskView(false); }} aria-label="Previous space" className="grid h-7 w-7 place-items-center rounded-full text-lg font-bold hover:bg-[#f1ebf7]">‹</button>
+          <span className="min-w-[9.5rem] text-center text-sm font-bold">{SPACE_LIST[space][lang === "zh" ? 2 : 1]}{space > 0 && <span className="ml-1.5 text-[11px] font-normal text-[#8a8296]">{tri("preview", "预览", "vista previa")}</span>}</span>
+          <button onClick={() => { setSpace((space + 1) % SPACE_LIST.length); setPanel(null); setDeskView(false); }} aria-label="Next space" className="grid h-7 w-7 place-items-center rounded-full text-lg font-bold hover:bg-[#f1ebf7]">›</button>
+        </div>)}
+
       <div className="absolute left-5 top-4 flex items-center gap-3">
         <a href="/" className="text-lg font-bold tracking-tight">Gemiverse</a>
         <span className="rounded-full border-[3px] px-3 py-0.5 text-xs font-bold text-white" style={{ background: s.accent, borderColor: INK }}>{s.short}</span>
@@ -219,7 +249,7 @@ export default function Room() {
         {(["for_you", "for_itself"] as const).map((p) => <div key={p} className="flex items-center gap-1 text-sm font-bold tabular-nums"><Icon name="star" size={20} />{state.purses[p]}<span className="text-[11px] font-normal text-[#8a8296]">{tt(p)}</span></div>)}
       </button>
 
-      {!tap && !campus && <div className="absolute left-5 top-[4.6rem] max-w-[min(34rem,60vw)] rounded-2xl border-[3px] bg-[#fffaf0] px-4 py-1.5 text-sm" style={{ borderColor: INK, boxShadow: `0 4px 0 ${INK}` }}><span className="text-[#8a8296]">{tt("right_now")}: </span>{preset.gemiName} {tt("gemi_is")} {busy ? tt("thinking") : say(doing, lang)}{now && now.rule !== "potter" ? <span className="ml-2 text-[11px] text-[#8a8296]">· {say(now.why, lang)}</span> : null}</div>}
+      {!tap && !campus && <div className="absolute left-5 top-[4.6rem] max-w-[min(34rem,60vw)] rounded-2xl border-[3px] bg-[#fffaf0] px-4 py-1.5 text-sm" style={{ borderColor: INK, boxShadow: `0 4px 0 ${INK}` }}><span className="text-[#8a8296]">{tt("right_now")}: </span>{preset.gemiName} {tt("gemi_is")} {busy ? tt("thinking") : say(doing, lang)}</div>}
 
       {tap && <RadialMenu x={tap.x} y={tap.y} items={[
         { icon: "talk", label: tt("tap_talk"), onClick: () => openPanel("talk") },
@@ -238,6 +268,9 @@ export default function Room() {
         <IconButton icon="abilities" label={tt("btn_more")} active={panel === "tools"} accent={s.soft} onClick={() => openPanel(panel === "tools" ? null : "tools")} />
         <IconButton icon="outbox" label={tt("btn_outbox")} active={panel === "outbox"} accent={s.soft} onClick={() => openPanel(panel === "outbox" ? null : "outbox")} />
       </div>
+
+      {/* What the Gemi says on its own comes up as a dialogue card, as a character speaks in a game: name tag, typed line, tap to dismiss. */}
+      {spoke && !campus && !panel && !tap && <Dialogue key={spoke.text + lang} name={preset.gemiName} text={say(spoke.text, lang)} accent={s.accent} onDone={() => setSpoke(null)} />}
 
       {deskView && !panel && !campus && (
         <div className="absolute left-6 top-1/2 z-10 flex -translate-y-1/2 flex-col gap-3">

@@ -1,0 +1,52 @@
+<!doctype html>
+<meta charset="utf-8"><title>Gemiverse spaces</title>
+<style>html,body{margin:0;height:100%;background:#f3eef8;font:15px system-ui;overflow:hidden;color:#2b2536}
+#bar{position:fixed;left:50%;bottom:26px;transform:translateX(-50%);display:flex;align-items:center;gap:14px;z-index:2}
+#bar button{width:46px;height:46px;border-radius:50%;border:3px solid #3d3648;background:#fffaf0;font-size:22px;font-weight:700;cursor:pointer;box-shadow:0 4px 0 #3d3648}
+#name{min-width:16rem;text-align:center;border:3px solid #3d3648;border-radius:14px;background:#fffaf0;padding:8px 18px;box-shadow:0 4px 0 #3d364833}
+#name b{display:block;font-size:19px}#name span{font-size:12.5px;color:#6d6579}
+#err{position:fixed;top:6px;left:8px;color:#b00;font-size:11px;white-space:pre-wrap}.embed #bar{display:none}</style>
+<div id="bar"><button id="prev" aria-label="Previous space">‹</button><div id="name"><b></b><span></span></div><button id="next" aria-label="Next space">›</button></div><div id="err"></div>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}</script>
+<script type="module">
+// The spaces a Gemi can open with Gem Stars it saved, shown one at a time with the Gemi and any visiting Gemis inside.
+// ?space=loft picks one, ?friends=pip,kai adds visitors, ?auto=3 moves on every 3 seconds, ?embed hides the controls.
+import * as THREE from "three";
+import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+import { RoomEnvironment } from "three/addons/environments/RoomEnvironment.js";
+import { makeKit } from "./kit.js";
+import { buildDoll, LOOKS } from "./doll.js";
+import * as S1 from "./spaces.js";
+import * as S2 from "./spaces2.js";
+globalThis.THREE = THREE;
+const q = new URLSearchParams(location.search); if (q.has("embed")) document.body.className = "embed";
+const err = (m) => { if (!q.has("embed")) document.getElementById("err").textContent += m + "\n"; }; addEventListener("error", (e) => err(e.message));
+const COST = { readingRoom: 8, loft: 12, rooftop: 12, lab: 14, greenhouse: 10, makerLab: 14, backyard: 10, studyNook: 8 };
+const ALL = [...S2.CATALOG, ...S1.CATALOG].filter((c) => ({ ...S1.SPACES, ...S2.SPACES })[c.id]).map((c) => ({ ...c, make: ({ ...S1.SPACES, ...S2.SPACES })[c.id] }));
+const ORDER = ["readingRoom", "loft", "rooftop", "lab", "greenhouse", "makerLab", "backyard", "studyNook"]; ALL.sort((a, b) => ORDER.indexOf(a.id) - ORDER.indexOf(b.id));
+const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true }); renderer.setPixelRatio(Math.min(devicePixelRatio, 2)); renderer.setSize(innerWidth, innerHeight);
+renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap; renderer.toneMapping = THREE.ACESFilmicToneMapping; document.body.appendChild(renderer.domElement);
+const scene = new THREE.Scene(); if (!q.has("embed")) scene.background = new THREE.Color("#f3eef8");
+scene.environment = new THREE.PMREMGenerator(renderer).fromScene(new RoomEnvironment(), 0.04).texture; scene.environmentIntensity = 0.6;
+scene.add(new THREE.HemisphereLight("#ffffff", "#f1e3d6", 0.7));
+const sun = new THREE.DirectionalLight("#fff1dd", 2.2); sun.position.set(6, 12, 8); sun.castShadow = true; sun.shadow.mapSize.set(2048, 2048); Object.assign(sun.shadow.camera, { left: -7, right: 7, top: 7, bottom: -7 }); scene.add(sun);
+const ground = new THREE.Mesh(new THREE.PlaneGeometry(40, 40), new THREE.ShadowMaterial({ opacity: 0.16 })); ground.rotation.x = -Math.PI / 2; ground.receiveShadow = true; scene.add(ground);
+const a = () => innerWidth / innerHeight, span = 3.6; const camera = new THREE.OrthographicCamera(-span * a(), span * a(), span, -span, 0.1, 200); camera.position.set(12, 11, 12);
+const controls = new OrbitControls(camera, renderer.domElement); controls.target.set(0, 1.1, 0); controls.update();
+const P = { primary: "#b8a2e3", secondary: "#f7e7c6", accent: "#f2a7b8", wood: "#c89462", metal: "#d9c08a", fabric: "#b8a2e3", glow: "#ffd27a", wall: "#f4ebe1", trim: "#ffffff", floor: "#d9a877", time: "day", variant: 0 };
+const kit = makeKit(THREE), dolls = [];
+const names = [q.get("me") ?? "mochi", ...(q.get("friends") ?? "").split(",").filter(Boolean)];
+const SPOT = [[0.2, 0, 0.9], [-0.7, 0, 1.2], [1.0, 0, 1.3], [-0.2, 0, 1.7]], CLIPS = ["wave", "idle", "cheer", "think"];
+for (let i = 0; i < names.length; i++) { const d = await buildDoll(THREE, LOOKS[names[i]] ?? LOOKS.mochi, kit, err); if (!d) continue; d.root.scale.setScalar(1.12); d.root.position.set(...SPOT[i % 4]); d.root.rotation.y = i ? (i % 2 ? 0.9 : -0.7) : 0.5; scene.add(d.root); dolls.push(d); d.play?.(CLIPS[i % 4]); d.express?.("happy"); }
+if (dolls.length > 1) setInterval(() => dolls.forEach((d, i) => d.play?.(["wave", "idle", "think", "cheer", "idle"][(Math.floor(performance.now() / 3000) + i) % 5])), 3000);
+let cur = Math.max(0, ALL.findIndex((s) => s.id === q.get("space"))), group = null;
+function show(i) { cur = (i + ALL.length) % ALL.length; const s = ALL[cur]; if (group) scene.remove(group);
+  try { group = s.make(THREE, P); group.traverse((o) => { if (o.isMesh) { o.castShadow = true; o.receiveShadow = true; } }); scene.add(group); } catch (e) { err(`${s.id}: ${e.message}`); }
+  document.querySelector("#name b").textContent = s.name; document.querySelector("#name span").textContent = `opens for ${COST[s.id] ?? 12} Gem Stars the Gemi saved itself`; history.replaceState(null, "", `?${new URLSearchParams({ ...Object.fromEntries(q), space: s.id })}`); }
+document.getElementById("prev").onclick = () => show(cur - 1); document.getElementById("next").onclick = () => show(cur + 1);
+addEventListener("keydown", (e) => { if (e.key === "ArrowRight") show(cur + 1); if (e.key === "ArrowLeft") show(cur - 1); });
+show(cur); if (q.has("auto")) setInterval(() => show(cur + 1), (+q.get("auto") || 3) * 1000);
+addEventListener("resize", () => { camera.left = -span * a(); camera.right = span * a(); camera.updateProjectionMatrix(); renderer.setSize(innerWidth, innerHeight); });
+const clock = new THREE.Clock(); let last = 0;
+renderer.setAnimationLoop(() => { const t = clock.getElapsedTime(), dt = Math.min(0.05, t - last); last = t; for (const d of dolls) try { d.update(t, dt); } catch {} renderer.render(scene, camera); });
+</script>

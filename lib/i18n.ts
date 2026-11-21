@@ -94,7 +94,7 @@ const PLACE: Record<string, { zh: string; es: string }> = { library: { zh: "图�
 export function say(text: string | null | undefined, lang: Lang): string {
   if (!text || lang === "en") return text ?? "";
   if (SAY[text]) return SAY[text][lang];
-  let m = text.match(/^waiting for you with (\d+) things?$/); if (m) return lang === "zh" ? `带了 ${m[1]} 样东西等你` : `esperándote con ${m[1]} cosa${m[1] === "1" ? "" : "s"}`;
+  let m = text.match(/^waiting for you with (\d+) things?$/); if (m) return lang === "zh" ? `等你来看带回来的 ${m[1]} 样东西` : `esperándote con ${m[1]} cosa${m[1] === "1" ? "" : "s"}`;
   m = text.match(/^out at the (\w+), on its own$/); if (m) return lang === "zh" ? `自己去了${PLACE[m[1]]?.zh ?? m[1]}` : `en ${PLACE[m[1]]?.es ?? m[1]}, por su cuenta`;
   m = text.match(/^noticed you moved the (.+)$/); if (m) return lang === "zh" ? `发现你动了 ${m[1]}` : `notó que moviste: ${m[1]}`;
   return text;

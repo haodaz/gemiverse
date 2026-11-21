@@ -154,7 +154,7 @@ const SPOTS = [
 // An unseen box over the door in the left wall, so a click on the door can be told apart from a click on the wall.
 const doorSpot = new THREE.Mesh(new THREE.BoxGeometry(0.5, 2.1, 0.9), new THREE.MeshBasicMaterial({ transparent: true, opacity: 0, depthWrite: false }));
 doorSpot.userData.item = "door"; doorSpot.position.set(-2.4, 1.05, 1.31); scene.add(doorSpot);   // x is set from the room's real bounds at each click
-let goal = null, waitUntil = 0;
+let goal = null, waitUntil = 0, headTold = 0;   // the page is told where the head is on screen, so a speech bubble can follow it
 const FORCE_SPOT = new URLSearchParams(location.search).has("spot") ? +new URLSearchParams(location.search).get("spot") : null;   // for checking one activity
 const SEAT_LIFT = 0.28;   // seat top (0.50) minus the seated hip height of the doll at this scale
 function live(t, dt) {
@@ -227,7 +227,7 @@ tell("ready");
 if (BARE) { scene.background = null; renderer.setClearColor(0x000000, 0); document.documentElement.style.background = document.body.style.background = "transparent"; }
 const clock = new THREE.Clock();
 let last = 0;
-renderer.setAnimationLoop(() => { const t = clock.getElapsedTime(), dt = Math.min(0.05, t - last); last = t; live(t, dt); if (extras) for (const c of companions) try { extras.pp.idle(c, t); } catch {} if (doll) try { doll.update(t, dt); } catch {}
+renderer.setAnimationLoop(() => { const t = clock.getElapsedTime(), dt = Math.min(0.05, t - last); last = t; live(t, dt); if (who && t - headTold > 0.12) { headTold = t; tell("head", who.visible && !arranging ? headOnScreen() : null); } if (extras) for (const c of companions) try { extras.pp.idle(c, t); } catch {} if (doll) try { doll.update(t, dt); } catch {}
   controls.target.lerp(new THREE.Vector3(...view.target), Math.min(1, dt * 4)); camera.zoom += (view.zoom - camera.zoom) * Math.min(1, dt * 4); camera.updateProjectionMatrix(); controls.update();
   stateGroup?.traverse((o) => { if (o.userData.spin) o.rotation.y += dt * o.userData.spin; }); if (BARE) renderer.render(scene, camera); else composer.render(); });
 </script>
