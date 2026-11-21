@@ -2,18 +2,20 @@ import { tool } from "./tools";
 import type { GemiState, ToolSpec, Verdict } from "./types";
 
 // Every call passes here first. The rules live in code so a prompt cannot talk its way around them.
-export function mayCall(name: string, state: GemiState, target = ""): Verdict {
+// Who pays: Gem Stars are the Gemi's own daily allowance. They are spent only when the Gemi acts on its own initiative.
+// When the student asks for something directly, it is the student's request and costs the Gemi nothing; caps, stage and confirmation still apply.
+export function mayCall(name: string, state: GemiState, target = "", by: "gemi" | "student" = "gemi"): Verdict {
   const t = tool(name);
   if (!t) return { ok: false, reason: `"${name}" is not a registered tool.` };
   if (state.paused) return { ok: false, reason: "You paused your Gemi. Nothing runs until you resume it." };
   if (state.stage < t.minStage) return { ok: false, reason: `Unlocks at stage ${t.minStage}.`, needs: "stage" };
   if ((state.usedToday[name] ?? 0) >= t.dailyCap) return { ok: false, reason: `Daily limit reached (${t.dailyCap}).` };
-  if (state.purses[t.purse] < t.stars)
+  if (by === "gemi" && state.purses[t.purse] < t.stars)
     return { ok: false, reason: `Not enough stars in the "${t.purse.replace("_", " ")}" purse (needs ${t.stars}, has ${state.purses[t.purse]}).`, needs: "stars" };
   const key = target ? `${name}:${target}` : name;
   if (t.confirm === "always" && !state.confirmed.includes(`${key}#once`)) return { ok: false, reason: "This needs your yes each time.", needs: "confirm" };
   if (t.confirm === "first_time" && !state.confirmed.includes(key)) return { ok: false, reason: "This needs your yes the first time.", needs: "confirm" };
-  return { ok: true, charge: { purse: t.purse, stars: t.stars } };
+  return { ok: true, charge: { purse: t.purse, stars: by === "student" ? 0 : t.stars } };
 }
 
 // Static scan for anything a Gemi "makes". A made item is a three.js factory to the item contract and nothing else.

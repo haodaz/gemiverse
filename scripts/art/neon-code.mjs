@@ -14,7 +14,8 @@ while (json.status && !["completed", "failed", "cancelled", "incomplete"].includ
   res = await fetch(`${BASE}/${json.id}`, { headers: H }); if (res.ok) json = await res.json();
 }
 const text = (json.steps ?? []).filter((s) => s.type === "model_output").flatMap((s) => s.content ?? []).map((c) => c.text ?? "").join("");
-const code = (text.match(/```(?:js|javascript)?\s*([\s\S]*?)```/)?.[1] ?? text).trim();
+// take everything between the first fence and the last one: the code itself may contain template literals
+const code = text.replace(/^[\s\S]*?```(?:js|javascript)?\s*\n/, "").replace(/\n```[\s\S]*$/, "").trim();
 if (!code.includes("export")) { console.log("no module", name, res.status, JSON.stringify(json).slice(0, 300)); process.exit(1); }
 writeFileSync(new URL(`../../public/gen3d/${name}.js`, import.meta.url), code);
 writeFileSync(new URL(`../../public/gen3d/${name}.meta.json`, import.meta.url), JSON.stringify({ model: "gemini-4-neon", prompt, usage: json.usage, ms: Date.now() - t0, made_at: new Date().toISOString() }, null, 1));

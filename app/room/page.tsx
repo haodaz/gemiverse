@@ -18,8 +18,8 @@ type Entity = { id: string; name: string; fields: Record<string, any>; tier: num
 type Evidence = { entity_id: string; field: string; check_confidence: number | null; passed: boolean | null };
 type Panel = "talk" | "desk" | "diary" | "tools" | "outbox" | null;
 type Item = { id: number; who: "you" | "gemi"; text?: string; image?: string; heard?: any; saw?: any; cost?: string; error?: boolean };
-type Find = { id: string; title: string; fields: Record<string, any>; why: string; p_keep: number; evidence: { axis: AxisId; x: number; why: string }[]; checks: { field: string; confidence: number; passed: boolean }[] };
-type Trip = { place: string; reason: string; finds: Find[]; predicted: Record<string, number>; seal: string; contrast_axis?: string; tokens?: number; model?: string; choices: Record<string, "keep" | "skip"> };
+type Find = { id: string; title: string; fields: Record<string, any>; why: string; evidence: { axis: AxisId; x: number; why: string }[]; checks: { field: string; confidence: number; passed: boolean }[] };
+type Trip = { place: string; by: "gemi" | "student"; reason: string; finds: Find[]; seal: string; sealed: string; revealed?: { predicted: Record<string, number>; nonce: string; verified: boolean }; contrast_axis?: string; tokens?: number; model?: string; choices: Record<string, "keep" | "skip"> };
 
 const BUILDINGS = [
   { id: "library", art: "/art/bld-library.svg", x: 21.25, y: 36.7 }, { id: "clubs", art: "/art/bld-clubs.svg", x: 78.75, y: 36.7 },
@@ -78,13 +78,13 @@ export default function Room() {
     setPanel("talk"); setBusy(true);
     try {
       if (m.kind === "file") {
-        const verdict = mayCall("see_poster", state);
+        const verdict = mayCall("see_poster", state, "", "student");
         push({ who: "you", text: m.name, image: m.preview });
         if (!verdict.ok) { push({ who: "gemi", text: verdict.reason, error: true }); return; }
         const r = await fetch("/api/see", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ data: m.data, mime: m.mime, lang }) }).then((x) => x.json());
         if (r.error) { push({ who: "gemi", text: r.error, error: true }); return; }
         charge("see_poster", verdict.charge.stars, "for_you");
-        push({ who: "gemi", text: r.reply, saw: r, cost: `1 star ${tt("for_you")} · ${r.tokens} tokens · ${r.models.join(" + ")}` });
+        push({ who: "gemi", text: r.reply, saw: r, cost: `${r.tokens} tokens · ${r.models.join(" + ")}` });
       } else {
         if (m.kind === "text") push({ who: "you", text: m.text });
         const r = await fetch("/api/hear", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(m.kind === "voice" ? { audio: m.audio, mime: "audio/wav", lang } : { text: m.text, lang }) }).then((x) => x.json());
@@ -98,8 +98,8 @@ export default function Room() {
     finally { setBusy(false); }
   }
 
-  async function goOut(place: string) {
-    const verdict = mayCall("go_out", state);
+  async function goOut(place: string, by: "gemi" | "student" = "student") {
+    const verdict = mayCall("go_out", state, "", by);
     if (!verdict.ok) { setCampus(false); setPanel("talk"); push({ who: "gemi", text: verdict.reason, error: true }); return; }
     charge("go_out", verdict.charge.stars, "for_you");
     setOutAt(place); send("away", true); setBusy(true);
@@ -107,8 +107,8 @@ export default function Room() {
       const seen = log.filter((e) => e.type === "choice").map((e: any) => e.find);
       const r = await fetch("/api/go", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ school, place, care: mind.care, beliefs: mind.beliefs, wants, seen, lang }) }).then((x) => x.json());
       if (r.error || !r.finds?.length) { push({ who: "gemi", text: r.error ?? r.reason, error: !!r.error }); setPanel("talk"); return; }
-      append({ id: uid(), at: new Date().toISOString(), type: "trip", place, stars: verdict.charge.stars, found: r.finds.map((f: Find) => f.id), predicted: r.predicted, seal: r.seal, reason: r.reason });
-      setTrip({ ...r, choices: {} }); setPanel("desk");
+      append({ id: uid(), at: new Date().toISOString(), type: "trip", place, stars: verdict.charge.stars, found: r.finds.map((f: Find) => f.id), predicted: {}, seal: r.seal, reason: r.reason });
+      setTrip({ ...r, by, choices: {} }); setPanel("desk");
     } catch { push({ who: "gemi", text: "It could not finish the trip.", error: true }); setPanel("talk"); }
     finally { setBusy(false); setOutAt(null); setCampus(false); send("away", false); }
   }
@@ -116,7 +116,19 @@ export default function Room() {
   function choose(f: Find, action: "keep" | "skip") {
     if (!trip || trip.choices[f.id]) return;
     append({ id: uid(), at: new Date().toISOString(), type: "choice", find: f.id, title: f.title, action, shownWith: trip.finds.filter((x) => x.id !== f.id).map((x) => x.title), evidence: f.evidence });
-    setTrip({ ...trip, choices: { ...trip.choices, [f.id]: action } });
+    const next = { ...trip, choices: { ...trip.choices, [f.id]: action } };
+    setTrip(next);
+    if (next.finds.every((x) => next.choices[x.id])) reveal(next);
+  }
+  async function reveal(tr: Trip) {
+    try {
+      const r = await fetch("/api/reveal", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ sealed: tr.sealed }) }).then((x) => x.json());
+      if (r.error) return;
+      // check the seal in the browser: hash what was revealed and compare with what was shown before choosing
+      const bytes = new TextEncoder().encode(JSON.stringify({ predicted: r.predicted, nonce: r.nonce }));
+      const hash = [...new Uint8Array(await crypto.subtle.digest("SHA-256", bytes))].map((b) => b.toString(16).padStart(2, "0")).join("");
+      setTrip((cur) => (cur && cur.seal === tr.seal ? { ...cur, revealed: { predicted: r.predicted, nonce: r.nonce, verified: hash === tr.seal } } : cur));
+    } catch {}
   }
   const toggleUndo = (id: string) => setLog((l) => { const n = l.map((e) => (e.id === id ? { ...e, undone: !e.undone } : e)); saveLog(school, n); return n; });
 
@@ -126,8 +138,9 @@ export default function Room() {
     const before = replay(log.slice(0, i)).beliefs, after = replay([...log.slice(0, i), { ...e, undone: false }]).beliefs;
     return { e, moves: e.evidence.map((ev) => ({ axis: ev.axis, before: before[ev.axis], after: after[ev.axis] })) };
   }).filter((d) => d.e.type !== "trip").reverse();
-  const allChosen = trip && trip.finds.every((f) => trip.choices[f.id]);
-  const hits = trip ? trip.finds.filter((f) => trip.choices[f.id] && (f.p_keep >= 0.5) === (trip.choices[f.id] === "keep")).length : 0;
+  const allChosen = !!trip?.revealed;
+  const pk = (id: string) => trip?.revealed?.predicted[id] ?? 0.5;
+  const hits = trip ? trip.finds.filter((f) => trip.choices[f.id] && (pk(f.id) >= 0.5) === (trip.choices[f.id] === "keep")).length : 0;
   const pending = trip ? trip.finds.filter((f) => !trip.choices[f.id]).length : 0;
 
   const Axis = ({ id, b, ghost }: { id: AxisId; b: Beliefs[AxisId]; ghost?: Beliefs[AxisId] }) => {
@@ -220,7 +233,7 @@ export default function Room() {
                 <div>
                   <div className="text-xs font-bold uppercase tracking-wider text-[#8a8296]">{tt("brought_back")} · {tt(`b_${trip.place}`)}</div>
                   <p className="mt-2 rounded-2xl border-2 bg-white px-3.5 py-2.5 text-sm leading-relaxed" style={{ borderColor: INK }}>{trip.reason}</p>
-                  <div className="mt-2 flex items-center gap-2 text-[11px] text-[#8a8296]"><Icon name="lock" size={16} />{allChosen ? tt("reveal") : tt("sealed")} · <code>{trip.seal}</code></div>
+                  <div className="mt-2 flex items-center gap-2 text-[11px] text-[#8a8296]"><Icon name="lock" size={16} />{allChosen ? tt("reveal") : tt("sealed")} · <code>{trip.seal.slice(0, 12)}</code>{trip.revealed ? <b style={{ color: trip.revealed.verified ? "#2f7a3d" : "#b26a00" }}>{trip.revealed.verified ? "✓" : "✗"}</b> : null}</div>
                   <ul className="mt-3 space-y-3">
                     {trip.finds.map((f) => { const c = trip.choices[f.id], pass = f.checks.filter((x) => x.passed).length; return (
                       <li key={f.id} className="rounded-2xl border-[3px] bg-white px-4 py-3" style={{ borderColor: INK, boxShadow: `0 4px 0 ${INK}22`, opacity: c === "skip" ? 0.6 : 1 }}>
@@ -234,7 +247,7 @@ export default function Room() {
                         <div className="mt-3 flex items-center gap-2">
                           {!c ? (<><Chunky color="#a8e0c0" onClick={() => choose(f, "keep")}><Icon name="keep" size={18} />{tt("keep")}</Chunky><Chunky color="#fffaf0" onClick={() => choose(f, "skip")}><Icon name="skip" size={18} />{tt("skip")}</Chunky></>)
                             : <span className="text-xs font-bold" style={{ color: c === "keep" ? "#2f7a3d" : "#8a8296" }}>{tt(c === "keep" ? "kept" : "skipped")}</span>}
-                          {allChosen && <span className="ml-auto text-[11px] text-[#5f576c]">{Math.round(f.p_keep * 100)}% {tt("guessed")} · <b style={{ color: (f.p_keep >= 0.5) === (c === "keep") ? "#2f7a3d" : "#b26a00" }}>{tt((f.p_keep >= 0.5) === (c === "keep") ? "right" : "wrong")}</b></span>}
+                          {allChosen && <span className="ml-auto text-[11px] text-[#5f576c]">{Math.round(pk(f.id) * 100)}% {tt("guessed")} · <b style={{ color: (pk(f.id) >= 0.5) === (c === "keep") ? "#2f7a3d" : "#b26a00" }}>{tt((pk(f.id) >= 0.5) === (c === "keep") ? "right" : "wrong")}</b></span>}
                         </div>
                       </li>); })}
                   </ul>
@@ -333,7 +346,7 @@ export default function Room() {
               <div className="relative -mt-4 inline-flex items-center gap-2 rounded-full border-[3px] bg-[#fffaf0] py-1 pl-1 pr-4" style={{ borderColor: INK, boxShadow: `0 4px 0 ${INK}` }}>
                 <span className="grid h-9 w-9 place-items-center rounded-full border-2" style={{ borderColor: INK, background: s.soft }}><Icon name={b.id} size={22} /></span>
                 <span className="text-left"><span className="block text-sm font-bold leading-tight">{tt(`b_${b.id}`)}</span><span className="block text-[10px] text-[#8a8296]">{tt(`b_${b.id}_n`)}</span></span>
-                {!outAt && <span className="ml-1 flex items-center text-xs font-bold">3<Icon name="star" size={16} /></span>}
+                
               </div>
             </button>); })}
         </div>
