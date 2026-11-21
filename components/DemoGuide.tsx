@@ -7,9 +7,9 @@ const SAY = "帮我去图书馆看看有没有写论文的 workshop";
 // The story, told on the product alone (no slides): a problem a student has, meeting the Gemi, asking it, watching it check,
 // seeing it be honest about itself, an input nobody prepared, and the numbers in the back office. About 2:50 in all.
 const STEPS: { t: string; sec: number; go?: string; reset?: boolean; copy?: string; doZh: string[]; say: string[]; zh: string }[] = [
-  { t: "The problem", sec: 15, go: "/", reset: true, doZh: ["点「Go」回首页（会清空上次的演示数据，计时从这里开始）", "停在 banner，说完右边三句，再点黄色按钮 Meet your Gemi"],
-    say: ["A student has a thousand campus events and no time.", "An AI that reads them is easy. An AI that never tells her something false is not.", "This is Gemiverse. Every student gets a Gemi."],
-    zh: "一个学生面前有上千个校园活动，却没有时间。让 AI 去读不难；让 AI 绝不对她说错才难。这是 Gemiverse，每个学生有一个 Gemi。" },
+  { t: "Who I am, and why", sec: 22, go: "/", reset: true, doZh: ["点「Go」回首页（会清空上次的演示数据，计时从这里开始）", "看着评委说右边的话（这是你的自述，可以按自己的话改）", "说完点黄色按钮 Meet your Gemi"],
+    say: ["Hi, I am Elodie. I built Gemiverse alone, today.", "I make AI companions. My first one, Cocoverse, shows you the mind of your pet.", "Today I asked: what if a student had one, and it was never allowed to tell her something false?", "So I built three things: a base of checked campus facts, a mind that learns how you choose, and a room where you can see everything it does."],
+    zh: "大家好，我是 Elodie。Gemiverse 是我今天一个人做的。我做 AI 伙伴，第一个产品 Cocoverse 让你看到宠物的心智。今天我想问：如果学生也有一个，而且它绝不被允许对她说错呢？所以我做了三样东西：一个核对过的校园事实底座，一个学你怎么选的心智，一个能看见它所有行为的小屋。" },
   { t: "Meet it", sec: 20, go: "/start", doZh: ["点 Say hello", "名字打 Mochi → That is its name", "点「复制」，贴进文本框 → It heard you", "选 NYU → Move in at NYU"], copy: "I just started a PhD in education. I want to find people who build things for learners. Big mixers tire me.",
     say: ["It starts as a point of light. It exists because I came.", "I name it, tell it one thing about me, and choose where we live."],
     zh: "它一开始是一个光点，因为我来了才存在。我给它起名，告诉它一件事，选我们住在哪。" },
@@ -22,7 +22,7 @@ const STEPS: { t: string; sec: number; go?: string; reset?: boolean; copy?: stri
   { t: "Choose", sec: 35, doZh: ["第二、三张卡点 Skip，第一张点 Keep", "面板出现 Its guess, revealed 和 ✓，指一下猜对/猜错", "往上滚回第一张卡，指 Managed Agent 的结果：still on the page", "点底部 Diary，指它学到了什么"],
     say: ["Before I chose, it sealed a guess of what I would keep. My browser checks the hash.", "Sometimes it is wrong. It says so, and it learns how I choose.", "And the agent is back: these fields are still on the live page.", "The diary shows what it learned about me. I can undo any line."],
     zh: "我选之前它封存了一个预测，浏览器校验哈希。有时它猜错，它会直说，并从中学我怎么选。agent 也回来了：这些字段仍然在线上页面里。日记是它学到的关于我的事，每条都能撤回。" },
-  { t: "Your input", sec: 25, go: "/room", doZh: ["对评委说右边第一句，等他们给东西", "点 Talk → 输入框左边回形针 → 选海报照片；或直接打他们说的话", "指出哪些字段通过、哪些没显示"],
+  { t: "Your input", sec: 20, go: "/room", doZh: ["对评委说右边第一句，等他们给东西", "点 Talk → 输入框左边回形针 → 选海报照片；或直接打他们说的话", "指出哪些字段通过、哪些没显示"],
     say: ["Now something I did not prepare. Give me a poster, or one sentence about you.", "It reads it, checks each field against the picture, and tells me if the event is already in the shared base."],
     zh: "现在来一个我没准备的。给我一张海报，或者说一句关于你的话。它读出来，把每个字段对照图片核对，并告诉我这个活动是否已经在共享底座里。" },
   { t: "Proof", sec: 25, go: "/admin", doZh: ["指 Dashboard 第一排数字，再指柱状图里红色那根", "有时间再点左边 Data flywheel"],
