@@ -1,0 +1,615 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <!-- Sky & Sun Gradients -->
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff4db"/>
+      <stop offset="45%" stop-color="#dff2fa"/>
+      <stop offset="100%" stop-color="#c9e8f5"/>
+    </linearGradient>
+    <radialGradient id="sunGlow" cx="12%" cy="10%" r="48%">
+      <stop offset="0%" stop-color="#fff9d6" stop-opacity="0.95"/>
+      <stop offset="45%" stop-color="#ffeab8" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#ffeab8" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Lawn Gradients -->
+    <linearGradient id="lawnGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c8ebae"/>
+      <stop offset="55%" stop-color="#b2df98"/>
+      <stop offset="100%" stop-color="#9ad082"/>
+    </linearGradient>
+    <linearGradient id="walkwayGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbf1e4"/>
+      <stop offset="100%" stop-color="#ebd9c5"/>
+    </linearGradient>
+
+    <!-- Building Stone Gradients -->
+    <linearGradient id="stoneSun" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff8ee"/>
+      <stop offset="100%" stop-color="#f7e6d4"/>
+    </linearGradient>
+    <linearGradient id="stoneMid" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5e1cd"/>
+      <stop offset="100%" stop-color="#e5cbb6"/>
+    </linearGradient>
+    <linearGradient id="stoneShade" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#dec1b0"/>
+      <stop offset="100%" stop-color="#cca99a"/>
+    </linearGradient>
+    <linearGradient id="columnGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fffaf2"/>
+      <stop offset="55%" stop-color="#f6e5d4"/>
+      <stop offset="100%" stop-color="#dfc3b0"/>
+    </linearGradient>
+
+    <!-- Dome Gradient -->
+    <linearGradient id="domeGrad" x1="15%" y1="10%" x2="85%" y2="90%">
+      <stop offset="0%" stop-color="#bcebe2"/>
+      <stop offset="48%" stop-color="#8ecdc2"/>
+      <stop offset="100%" stop-color="#6baaa2"/>
+    </linearGradient>
+    <linearGradient id="drumGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fff5e8"/>
+      <stop offset="55%" stop-color="#f2decb"/>
+      <stop offset="100%" stop-color="#d8b9a7"/>
+    </linearGradient>
+
+    <!-- Bronze Statue Gradient -->
+    <linearGradient id="bronzeGrad" x1="15%" y1="10%" x2="85%" y2="90%">
+      <stop offset="0%" stop-color="#d4a07d"/>
+      <stop offset="45%" stop-color="#a67358"/>
+      <stop offset="100%" stop-color="#784f3d"/>
+    </linearGradient>
+
+    <!-- Sunbeam Gradient -->
+    <linearGradient id="beamGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fffbe0" stop-opacity="0.34"/>
+      <stop offset="100%" stop-color="#fffbe0" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Tree Foliage Gradients -->
+    <linearGradient id="leafLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c3eba9"/>
+      <stop offset="100%" stop-color="#92cf8b"/>
+    </linearGradient>
+    <linearGradient id="leafMid" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a8de95"/>
+      <stop offset="100%" stop-color="#7ec07f"/>
+    </linearGradient>
+
+    <!-- Reusable Small Coffee Cups -->
+    <g id="icedCoffee">
+      <ellipse cx="0" cy="6" rx="7" ry="3.2" fill="#9c8396" opacity="0.28"/>
+      <!-- Cup body -->
+      <path d="M-5.5 -6 L-4.2 5 C-4 6.2 4 6.2 4.2 5 L5.5 -6 Z" fill="#fff8f0" stroke="#6b555a" stroke-width="1.5" stroke-linejoin="round"/>
+      <!-- Iced coffee liquid -->
+      <path d="M-4.7 -1.5 L-4 4.5 C-3.8 5.4 3.8 5.4 4 4.5 L4.7 -1.5 Z" fill="#c98e6b"/>
+      <path d="M-4.5 -1.5 C-2 -0.5 2 -0.5 4.5 -1.5 L4.8 -4.5 L-4.8 -4.5 Z" fill="#f3dfc8"/>
+      <!-- Dome lid -->
+      <path d="M-6 -6 C-6 -10.5 6 -10.5 6 -6 Z" fill="#eef7fa" fill-opacity="0.85" stroke="#6b555a" stroke-width="1.4" stroke-linejoin="round"/>
+      <ellipse cx="0" cy="-6" rx="6" ry="1.8" fill="#ffffff" stroke="#6b555a" stroke-width="1.3"/>
+      <!-- Straw -->
+      <path d="M0 -8.5 L2.5 -14.5" stroke="#f28f8f" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <g id="hotCoffee">
+      <ellipse cx="0" cy="6" rx="6.5" ry="3" fill="#9c8396" opacity="0.28"/>
+      <!-- Cup body -->
+      <path d="M-5 -6 L-3.8 5 C-3.5 6 3.5 6 3.8 5 L5 -6 Z" fill="#fffaf4" stroke="#6b555a" stroke-width="1.5" stroke-linejoin="round"/>
+      <!-- Kraft sleeve -->
+      <path d="M-4.6 -2 L-4.1 2.8 L4.1 2.8 L4.6 -2 Z" fill="#e5b88c" stroke="#6b555a" stroke-width="1.2" stroke-linejoin="round"/>
+      <!-- Lid -->
+      <rect x="-5.8" y="-8.2" width="11.6" height="2.6" rx="1.2" fill="#f6ebe0" stroke="#6b555a" stroke-width="1.4"/>
+    </g>
+
+    <!-- Cute Flower Cluster -->
+    <g id="daisy">
+      <circle cx="-3" cy="0" r="2.2" fill="#fffdf7"/>
+      <circle cx="3" cy="0" r="2.2" fill="#fffdf7"/>
+      <circle cx="0" cy="-2.5" r="2.2" fill="#fffdf7"/>
+      <circle cx="0" cy="2.5" r="2.2" fill="#fffdf7"/>
+      <circle cx="0" cy="0" r="1.8" fill="#ffd166"/>
+    </g>
+    <g id="pinkFlower">
+      <circle cx="-2.6" cy="0" r="2" fill="#ffc4d0"/>
+      <circle cx="2.6" cy="0" r="2" fill="#ffc4d0"/>
+      <circle cx="0" cy="-2.2" r="2" fill="#ffc4d0"/>
+      <circle cx="0" cy="2.2" r="2" fill="#ffc4d0"/>
+      <circle cx="0" cy="0" r="1.5" fill="#fff2a6"/>
+    </g>
+  </defs>
+
+  <!-- 1. SKY & CLOUDS -->
+  <rect width="800" height="600" fill="url(#skyGrad)"/>
+  <rect width="800" height="600" fill="url(#sunGlow)"/>
+
+  <!-- Fluffy Pastel Clouds -->
+  <g opacity="0.92">
+    <path d="M40 95 C40 80 58 72 72 78 C80 62 108 60 120 74 C135 72 148 82 146 95 Z" fill="#ffffff"/>
+    <path d="M45 95 C45 90 142 90 144 95 C144 100 45 100 45 95 Z" fill="#f2eaf4"/>
+    <path d="M225 58 C225 46 240 40 252 46 C260 32 284 32 294 45 C308 43 320 51 318 58 Z" fill="#ffffff"/>
+    <path d="M645 88 C645 75 662 68 675 74 C685 58 712 58 724 72 C738 70 752 79 750 88 Z" fill="#ffffff"/>
+  </g>
+
+  <!-- 2. SUNNY LAWN & WALKWAY -->
+  <!-- Full isometric ground plane -->
+  <polygon points="0,240 250,160 800,370 800,600 0,600" fill="url(#lawnGrad)"/>
+  <!-- Sunlit rolling grass patches -->
+  <ellipse cx="145" cy="435" rx="140" ry="62" transform="rotate(24 145 435)" fill="#d4f2bc" opacity="0.55"/>
+  <ellipse cx="425" cy="545" rx="135" ry="52" transform="rotate(-18 425 545)" fill="#cbeeb2" opacity="0.45"/>
+  <ellipse cx="670" cy="490" rx="120" ry="48" transform="rotate(25 670 490)" fill="#a5d88b" opacity="0.5"/>
+
+  <!-- Stone Walkway leading from bottom of steps to lower-left -->
+  <path d="M254 389 L350 437 L186 600 L66 600 Z" fill="url(#walkwayGrad)" stroke="#d9c4b2" stroke-width="2"/>
+  <!-- Walkway paving lines -->
+  <g stroke="#e0cbb8" stroke-width="1.8" stroke-linecap="round">
+    <line x1="230" y1="416" x2="322" y2="462"/>
+    <line x1="202" y1="446" x2="294" y2="492"/>
+    <line x1="172" y1="478" x2="264" y2="524"/>
+    <line x1="140" y1="512" x2="232" y2="558"/>
+    <line x1="108" y1="546" x2="200" y2="592"/>
+    <line x1="274" y1="438" x2="246" y2="468"/>
+    <line x1="216" y1="500" x2="186" y2="532"/>
+  </g>
+
+  <!-- Soft shadow cast by building & steps onto the right lawn -->
+  <polygon points="482,503 610,375 730,385 620,535 510,535" fill="#7eb073" opacity="0.32"/>
+
+  <!-- 3. BACKGROUND TREES (Left & Far Right) -->
+  <!-- Far left tree -->
+  <g stroke="#6b555a" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round">
+    <ellipse cx="95" cy="272" rx="40" ry="18" fill="#82b878" stroke="none" opacity="0.42"/>
+    <path d="M88 268 L90 220 L102 220 L104 268 C100 272 92 272 88 268 Z" fill="#b88b76"/>
+    <path d="M52 204 C44 180 65 155 88 160 C98 142 128 144 136 164 C156 168 158 196 142 210 C138 225 114 232 96 226 C72 232 52 220 52 204 Z" fill="url(#leafLight)"/>
+    <path d="M64 180 C68 166 84 162 94 168" fill="none" stroke="#dbf5c4" stroke-width="3"/>
+  </g>
+  <!-- Mid-left tree behind wing -->
+  <g stroke="#6b555a" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M168 228 L170 185 L180 185 L182 228 Z" fill="#b88b76"/>
+    <path d="M138 175 C132 154 150 134 172 138 C182 122 210 124 218 144 C234 150 232 178 214 190 C206 202 184 206 168 200 C148 202 138 190 138 175 Z" fill="url(#leafMid)"/>
+  </g>
+
+  <!-- 4. NEOCLASSICAL DOMED BUILDING -->
+  <g id="building" stroke="#6b555a" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round">
+
+    <!-- Left Side Wing -->
+    <!-- Wing Front Wall -->
+    <polygon points="215,152 285,187 285,109 215,74" fill="url(#stoneMid)"/>
+    <!-- Wing Left Return Wall -->
+    <polygon points="180,170 215,152 215,74 180,92" fill="url(#stoneSun)"/>
+    <!-- Wing Roof -->
+    <polygon points="176,90 215,70 290,108 251,128" fill="#f2d6c4"/>
+    <!-- Wing Arched Windows -->
+    <path d="M232 142 L232 118 C232 110 246 116 246 125 L246 149 Z" fill="#a8c9d9" stroke="#6b555a" stroke-width="1.8"/>
+    <path d="M258 155 L258 131 C258 123 272 129 272 138 L272 162 Z" fill="#a8c9d9" stroke="#6b555a" stroke-width="1.8"/>
+
+    <!-- Right Side Wing -->
+    <!-- Wing Front Wall -->
+    <polygon points="585,337 675,382 675,302 585,257" fill="url(#stoneMid)"/>
+    <!-- Wing Right Side Wall -->
+    <polygon points="675,382 735,352 735,272 675,302" fill="url(#stoneShade)"/>
+    <!-- Wing Roof -->
+    <polygon points="585,257 645,227 738,272 675,302" fill="#f2d6c4"/>
+    <!-- Wing Cornice -->
+    <polyline points="585,266 675,311 735,281" fill="none" stroke="#fff6ea" stroke-width="2.5"/>
+    <!-- Wing Arched Windows -->
+    <path d="M604 328 L604 303 C604 295 619 301 619 310 L619 335 Z" fill="#a8c9d9" stroke="#6b555a" stroke-width="1.8"/>
+    <path d="M636 344 L636 319 C636 311 651 317 651 326 L651 351 Z" fill="#a8c9d9" stroke="#6b555a" stroke-width="1.8"/>
+
+    <!-- Main Central Hall Block (behind portico, under dome) -->
+    <!-- Main Block Roof Base -->
+    <polygon points="340,118 490,43 660,128 510,203" fill="#ebd3c3"/>
+    <!-- Main Block Right Side Wall -->
+    <polygon points="592,320 660,286 660,128 592,162" fill="url(#stoneShade)"/>
+
+    <!-- CYLINDRICAL DRUM & PASTEL VERDIGRIS DOME -->
+    <!-- Drum Base Shadow -->
+    <ellipse cx="525" cy="146" rx="82" ry="38" fill="#d9bdb0" stroke="#6b555a" stroke-width="2"/>
+    <!-- Drum Body -->
+    <path d="M447 142 L447 104 C447 124 603 124 603 104 L603 142 C603 162 447 162 447 142 Z" fill="url(#drumGrad)"/>
+    <!-- Drum Little Arched Windows -->
+    <g fill="#95bfd1" stroke="#6b555a" stroke-width="1.5">
+      <path d="M466 142 L466 125 C466 119 476 119 476 125 L476 142 Z"/>
+      <path d="M492 149 L492 131 C492 125 503 125 503 131 L503 149 Z"/>
+      <path d="M520 152 L520 133 C520 127 531 127 531 133 L531 152 Z"/>
+      <path d="M548 149 L548 131 C548 125 559 125 559 131 L559 149 Z"/>
+      <path d="M574 142 L574 125 C574 119 584 119 584 125 L584 142 Z"/>
+    </g>
+    <!-- Drum Top Cornice Ring -->
+    <ellipse cx="525" cy="104" rx="80" ry="34" fill="#fff4e6"/>
+    <ellipse cx="525" cy="101" rx="75" ry="30" fill="#e6ccbc" stroke="none"/>
+
+    <!-- Main Pastel Dome -->
+    <path d="M453 101 C453 38 597 38 597 101 C597 124 453 124 453 101 Z" fill="url(#domeGrad)"/>
+    <!-- Dome Ribs (gentle curved lines) -->
+    <g fill="none" stroke="#6b555a" stroke-width="1.4" opacity="0.45">
+      <path d="M525 50 C505 56 485 80 482 115"/>
+      <path d="M525 50 C518 65 516 90 516 120"/>
+      <path d="M525 50 C538 65 544 90 546 119"/>
+      <path d="M525 50 C552 60 568 82 572 113"/>
+    </g>
+    <!-- Dome Glossy Highlight -->
+    <path d="M472 95 C475 68 495 55 512 52" fill="none" stroke="#dcf7f0" stroke-width="4.5" opacity="0.75"/>
+
+    <!-- Cupola / Lantern on top of Dome -->
+    <ellipse cx="525" cy="51" rx="18" ry="7.5" fill="#fff5e8"/>
+    <path d="M512 50 L512 36 C512 40 538 40 538 36 L538 50 C538 55 512 55 512 50 Z" fill="#f7e6d4"/>
+    <path d="M510 36 C510 24 540 24 540 36 Z" fill="#8ecdc2"/>
+    <!-- Cute Gold Finial -->
+    <line x1="525" y1="26" x2="525" y2="14" stroke="#6b555a" stroke-width="2"/>
+    <circle cx="525" cy="14" r="3.5" fill="#f9d678"/>
+
+    <!-- PORTICO INTERIOR WALL & GRAND ENTRANCE -->
+    <!-- Recessed Portico Back Wall -->
+    <polygon points="285,187 595,342 595,250 285,95" fill="#d9bba9"/>
+    <!-- Grand Central Archway & Double Doors -->
+    <path d="M412 250 L412 204 C412 184 468 212 468 232 L468 278 Z" fill="#b0816a"/>
+    <line x1="440" y1="204" x2="440" y2="264" stroke="#6b555a" stroke-width="1.8"/>
+    <!-- Warm transom window above doors -->
+    <path d="M418 212 C418 197 462 219 462 234 Z" fill="#ffefc4"/>
+    <!-- Flanking Portico Tall Windows -->
+    <path d="M334 210 L334 176 C334 168 356 179 356 187 L356 221 Z" fill="#9fc2d4"/>
+    <path d="M524 305 L524 271 C524 263 546 274 546 282 L546 316 Z" fill="#9fc2d4"/>
+
+    <!-- Portico Top Landing Floor -->
+    <polygon points="250,195 285,178 615,343 610,375" fill="#fbf0e2"/>
+
+    <!-- 6 NEOCLASSICAL COLUMNS (Left to Right) -->
+    <!-- Column 1 (u = -74, base 294,205) -->
+    <g>
+      <polygon points="284,205 294,200 304,205 294,210" fill="#f7e6d4"/>
+      <rect x="287" y="130" width="14" height="74" rx="4" fill="url(#columnGrad)"/>
+      <rect x="283" y="125" width="22" height="7" rx="3" fill="#fff6ea"/>
+      <circle cx="285" cy="132" r="2.8" fill="#f5e1cd"/>
+      <circle cx="303" cy="132" r="2.8" fill="#f5e1cd"/>
+    </g>
+    <!-- Column 2 (u = -46, base 350,233) -->
+    <g>
+      <polygon points="340,233 350,228 360,233 350,238" fill="#f7e6d4"/>
+      <rect x="343" y="158" width="14" height="74" rx="4" fill="url(#columnGrad)"/>
+      <rect x="339" y="153" width="22" height="7" rx="3" fill="#fff6ea"/>
+      <circle cx="341" cy="160" r="2.8" fill="#f5e1cd"/>
+      <circle cx="359" cy="160" r="2.8" fill="#f5e1cd"/>
+    </g>
+    <!-- Column 3 (u = -18, base 406,261) -->
+    <g>
+      <polygon points="396,261 406,256 416,261 406,266" fill="#f7e6d4"/>
+      <rect x="399" y="186" width="14" height="74" rx="4" fill="url(#columnGrad)"/>
+      <rect x="395" y="181" width="22" height="7" rx="3" fill="#fff6ea"/>
+      <circle cx="397" cy="188" r="2.8" fill="#f5e1cd"/>
+      <circle cx="415" cy="188" r="2.8" fill="#f5e1cd"/>
+    </g>
+    <!-- Column 4 (u = +18, base 478,297) -->
+    <g>
+      <polygon points="468,297 478,292 488,297 478,302" fill="#f7e6d4"/>
+      <rect x="471" y="222" width="14" height="74" rx="4" fill="url(#columnGrad)"/>
+      <rect x="467" y="217" width="22" height="7" rx="3" fill="#fff6ea"/>
+      <circle cx="469" cy="224" r="2.8" fill="#f5e1cd"/>
+      <circle cx="487" cy="224" r="2.8" fill="#f5e1cd"/>
+    </g>
+    <!-- Column 5 (u = +46, base 534,325) -->
+    <g>
+      <polygon points="524,325 534,320 544,325 534,330" fill="#f7e6d4"/>
+      <rect x="527" y="250" width="14" height="74" rx="4" fill="url(#columnGrad)"/>
+      <rect x="523" y="245" width="22" height="7" rx="3" fill="#fff6ea"/>
+      <circle cx="525" cy="252" r="2.8" fill="#f5e1cd"/>
+      <circle cx="543" cy="252" r="2.8" fill="#f5e1cd"/>
+    </g>
+    <!-- Column 6 (u = +74, base 590,353) -->
+    <g>
+      <polygon points="580,353 590,348 600,353 590,358" fill="#f7e6d4"/>
+      <rect x="583" y="278" width="14" height="74" rx="4" fill="url(#columnGrad)"/>
+      <rect x="579" y="273" width="22" height="7" rx="3" fill="#fff6ea"/>
+      <circle cx="581" cy="280" r="2.8" fill="#f5e1cd"/>
+      <circle cx="599" cy="280" r="2.8" fill="#f5e1cd"/>
+    </g>
+
+    <!-- ENTABLATURE & TRIANGULAR PEDIMENT -->
+    <!-- Portico Roof Slope (top-right side) -->
+    <polygon points="442,148 486,126 654,256 610,278" fill="#f2d6c4"/>
+    <!-- Portico Roof Slope (top-left side) -->
+    <polygon points="274,110 318,88 486,126 442,148" fill="#fff6ea"/>
+    <!-- Entablature Architrave Front -->
+    <polygon points="276,126 608,292 608,274 276,108" fill="url(#stoneSun)"/>
+    <!-- Triangular Pediment Frame -->
+    <polygon points="270,110 442,148 614,282 608,274 276,108" fill="#fff6ea"/>
+    <!-- Pediment Tympanum (recessed triangle) -->
+    <polygon points="292,116 442,155 592,266" fill="#e5c8b7"/>
+    <!-- Cute decorative wreath/medallion in pediment -->
+    <ellipse cx="442" cy="186" rx="12" ry="9" transform="rotate(26 442 186)" fill="#f7e6d4" stroke="#6b555a" stroke-width="1.6"/>
+    <circle cx="442" cy="186" r="4" fill="#f6cf78" stroke="none"/>
+    <!-- Pediment Top Cornice Line -->
+    <polyline points="268,108 442,146 616,282" fill="none" stroke="#6b555a" stroke-width="2.4"/>
+  </g>
+
+  <!-- 5. WIDE STONE STEPS (8 Steps descending forward-left) -->
+  <g id="steps" stroke="#6b555a" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round">
+    <!-- Left Cheek Wall / Balustrade (behind left edge of steps) -->
+    <polygon points="250,195 122,323 122,337 250,209" fill="#e0c6b5"/>
+    <polygon points="234,187 250,195 122,323 106,315" fill="#fff5e8"/>
+    <polygon points="106,315 122,323 122,340 106,332" fill="#d9beae"/>
+
+    <!-- Step 1 (Top) -->
+    <polygon points="250,195 610,375 594,383 234,203" fill="#fcf2e6"/>
+    <polygon points="234,203 594,383 594,391 234,211" fill="#e4cbb9"/>
+    <!-- Step 2 -->
+    <polygon points="234,211 594,391 578,399 218,219" fill="#f9eee0"/>
+    <polygon points="218,219 578,399 578,407 218,227" fill="#e1c7b5"/>
+    <!-- Step 3 -->
+    <polygon points="218,227 578,407 562,415 202,235" fill="#fcf2e6"/>
+    <polygon points="202,235 562,415 562,423 202,243" fill="#e4cbb9"/>
+    <!-- Step 4 -->
+    <polygon points="202,243 562,423 546,431 186,251" fill="#f9eee0"/>
+    <polygon points="186,251 546,431 546,439 186,259" fill="#e1c7b5"/>
+    <!-- Step 5 -->
+    <polygon points="186,259 546,439 530,447 170,267" fill="#fcf2e6"/>
+    <polygon points="170,267 530,447 530,455 170,275" fill="#e4cbb9"/>
+    <!-- Step 6 -->
+    <polygon points="170,275 530,455 514,463 154,283" fill="#f9eee0"/>
+    <polygon points="154,283 514,463 514,471 154,291" fill="#e1c7b5"/>
+    <!-- Step 7 -->
+    <polygon points="154,291 514,471 498,479 138,299" fill="#fcf2e6"/>
+    <polygon points="138,299 498,479 498,487 138,307" fill="#e4cbb9"/>
+    <!-- Step 8 (Bottom) -->
+    <polygon points="138,307 498,487 482,495 122,315" fill="#f9eee0"/>
+    <polygon points="122,315 482,495 482,504 122,324" fill="#d9beae"/>
+
+    <!-- Subtle Stone Joint Lines on Steps -->
+    <g stroke="#d4baa9" stroke-width="1.2" opacity="0.65">
+      <line x1="310" y1="225" x2="294" y2="233"/>
+      <line x1="470" y1="305" x2="454" y2="313"/>
+      <line x1="278" y1="241" x2="262" y2="249"/>
+      <line x1="438" y1="321" x2="422" y2="329"/>
+      <line x1="246" y1="289" x2="230" y2="297"/>
+      <line x1="382" y1="373" x2="366" y2="381"/>
+      <line x1="220" y1="332" x2="204" y2="340"/>
+      <line x1="350" y1="413" x2="334" y2="421"/>
+    </g>
+
+    <!-- Right Cheek Wall / Balustrade (in front of right edge of steps) -->
+    <polygon points="610,375 628,384 500,512 482,503" fill="#fff5e8"/>
+    <polygon points="482,503 500,512 500,528 482,519" fill="#e4cbb9"/>
+    <polygon points="500,512 628,384 628,400 500,528" fill="#d1b5a5"/>
+
+    <!-- Cute Stone Finial Orbs at Bottom of Balustrades -->
+    <g>
+      <circle cx="114" cy="312" r="8" fill="#fff5e8"/>
+      <path d="M110 308 C112 306 115 306 117 308" fill="none" stroke="#ffffff" stroke-width="2"/>
+      <circle cx="491" cy="500" r="8" fill="#fff5e8"/>
+      <path d="M487 496 C489 494 492 494 494 496" fill="none" stroke="#ffffff" stroke-width="2"/>
+    </g>
+  </g>
+
+  <!-- 6. BRONZE SEATED STATUE IN THE MIDDLE OF THE STEPS -->
+  <g id="statue">
+    <!-- Cast Shadow of Pedestal & Statue across steps to the right -->
+    <polygon points="368,365 415,342 462,366 418,390" fill="#a68da3" opacity="0.3"/>
+
+    <!-- Stepped Stone Pedestal -->
+    <g stroke="#6b555a" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+      <!-- Lower Plinth Base -->
+      <polygon points="334,344 374,324 414,344 374,364" fill="#fbf0e2"/>
+      <polygon points="334,344 374,364 374,376 334,356" fill="#e8d0be"/>
+      <polygon points="374,364 414,344 414,356 374,376" fill="#d6baa8"/>
+
+      <!-- Main Pedestal Block -->
+      <polygon points="344,339 374,324 404,339 374,354" fill="#fff6ea"/>
+      <polygon points="344,339 374,354 374,322 344,307" fill="url(#stoneMid)"/>
+      <polygon points="374,354 404,339 404,307 374,322" fill="url(#stoneShade)"/>
+      <!-- Pedestal Top Cap -->
+      <polygon points="340,305 374,288 408,305 374,322" fill="#fff8ee"/>
+      <polygon points="340,305 374,322 374,327 340,310" fill="#e8d0be"/>
+      <polygon points="374,322 408,305 408,310 374,327" fill="#d6baa8"/>
+    </g>
+
+    <!-- Seated Bronze Figure (Alma Mater inspired, cute rounded style) -->
+    <g stroke="#593c31" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+      <!-- Classical Bronze Chair / Throne -->
+      <path d="M366 296 L366 266 C366 262 390 272 390 278 L390 306 Z" fill="#855a47"/>
+      <path d="M358 302 L382 314 L388 308 L364 296 Z" fill="#784f3d"/>
+      <!-- Flowing Bronze Robes & Seated Legs -->
+      <path d="M355 304 C353 292 362 284 374 286 C384 288 386 300 380 310 C372 315 358 311 355 304 Z" fill="url(#bronzeGrad)"/>
+      <!-- Fold highlights & patina touches -->
+      <path d="M361 296 C366 298 370 304 372 309" fill="none" stroke="#d9aa84" stroke-width="1.6"/>
+      <path d="M368 293 C372 296 376 302 377 308" fill="none" stroke="#85bfb0" stroke-width="1.4" opacity="0.7"/>
+      <!-- Torso / Draped Shawl -->
+      <path d="M365 288 C363 276 368 266 375 266 C383 266 386 277 383 289 Z" fill="url(#bronzeGrad)"/>
+      <!-- Extended Graceful Arms -->
+      <path d="M367 273 C360 276 355 282 352 284" fill="none" stroke="#9e6d53" stroke-width="5"/>
+      <path d="M367 273 C360 276 355 282 352 284" fill="none" stroke="#593c31" stroke-width="1.6"/>
+      <path d="M382 276 C388 282 390 288 386 294" fill="none" stroke="#9e6d53" stroke-width="5"/>
+      <path d="M382 276 C388 282 390 288 386 294" fill="none" stroke="#593c31" stroke-width="1.6"/>
+      <!-- Open Book on Lap -->
+      <polygon points="359,289 370,285 376,291 365,295" fill="#d9aa84" stroke="#593c31" stroke-width="1.4"/>
+      <!-- Head & Laurel Crown -->
+      <circle cx="375" cy="259" r="7.5" fill="url(#bronzeGrad)"/>
+      <path d="M368 256 C370 250 380 250 382 256" fill="none" stroke="#8ecdc2" stroke-width="2.4"/>
+      <!-- Subtle warm bronze highlight on head -->
+      <circle cx="372.5" cy="257" r="2" fill="#e3ba96" stroke="none"/>
+    </g>
+  </g>
+
+  <!-- 7. STUDENTS' BAGS, BOOKS & COFFEE CUPS ON THE STEPS -->
+  <g id="studentItems">
+
+    <!-- CLUSTER 1: Left-mid steps (Coral Backpack + Open Notebook + Iced Coffee) -->
+    <g transform="translate(254, 294)">
+      <!-- Shadow -->
+      <ellipse cx="2" cy="11" rx="14" ry="6" fill="#9c8396" opacity="0.28"/>
+      <!-- Coral Backpack -->
+      <g stroke="#6b555a" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round">
+        <!-- Top Handle -->
+        <path d="M-4 -10 C-4 -16 4 -16 4 -10" fill="none" stroke-width="2.2"/>
+        <!-- Main Bag -->
+        <rect x="-11" y="-10" width="22" height="22" rx="8" fill="#f59b90"/>
+        <!-- Front Pocket -->
+        <rect x="-8" y="0" width="16" height="10" rx="4" fill="#f9b5ab"/>
+        <line x1="-5" y1="3" x2="5" y2="3" stroke="#6b555a" stroke-width="1.4"/>
+        <!-- Cute Patch -->
+        <circle cx="5" cy="-4" r="2.2" fill="#ffe494" stroke-width="1.2"/>
+      </g>
+    </g>
+    <!-- Open Notebook next to Coral Backpack -->
+    <g transform="translate(228, 307)" stroke="#6b555a" stroke-width="1.5" stroke-linejoin="round">
+      <polygon points="-11,-2 0,-7 12,-1 1,4" fill="#fffdf7"/>
+      <polygon points="-11,-2 1,4 1,6 -11,0" fill="#a8d5e5"/>
+      <line x1="-5" y1="-4.5" x2="6" y2="1" stroke="#b5a8b0" stroke-width="1.1"/>
+      <line x1="-2" y1="-2" x2="4" y2="1" stroke="#f28f8f" stroke-width="1.2"/>
+    </g>
+    <!-- Iced Coffee near Coral Backpack -->
+    <use href="#icedCoffee" x="278" y="308"/>
+
+    <!-- CLUSTER 2: Lilac Backpack leaning by Statue Pedestal + Hot Coffee -->
+    <g transform="translate(324, 344)">
+      <ellipse cx="2" cy="10" rx="13" ry="5.5" fill="#9c8396" opacity="0.28"/>
+      <g stroke="#6b555a" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round">
+        <path d="M-3 -10 C-3 -15 4 -15 4 -10" fill="none" stroke-width="2"/>
+        <rect x="-10" y="-10" width="20" height="21" rx="7.5" fill="#c9b6e4"/>
+        <rect x="-7.5" y="0" width="15" height="9" rx="3.5" fill="#dfd2f2"/>
+        <line x1="-4" y1="3" x2="4" y2="3" stroke="#6b555a" stroke-width="1.3"/>
+      </g>
+    </g>
+    <use href="#hotCoffee" x="303" y="346"/>
+
+    <!-- CLUSTER 3: Right-upper steps (Mint Backpack + Hot Coffee) -->
+    <g transform="translate(508, 360)">
+      <ellipse cx="2" cy="11" rx="14" ry="6" fill="#9c8396" opacity="0.28"/>
+      <g stroke="#6b555a" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round">
+        <path d="M-4 -10 C-4 -16 4 -16 4 -10" fill="none" stroke-width="2.2"/>
+        <rect x="-11" y="-10" width="22" height="22" rx="8" fill="#8fd4c7"/>
+        <rect x="-8" y="0" width="16" height="10" rx="4" fill="#b4e6dc"/>
+        <line x1="-5" y1="3" x2="5" y2="3" stroke="#6b555a" stroke-width="1.4"/>
+      </g>
+    </g>
+    <use href="#hotCoffee" x="485" y="354"/>
+
+    <!-- CLUSTER 4: Right-lower steps (Butter-Yellow Tote Bag + Books + Two Coffee Cups) -->
+    <g transform="translate(442, 428)">
+      <ellipse cx="2" cy="11" rx="15" ry="6.5" fill="#9c8396" opacity="0.28"/>
+      <g stroke="#6b555a" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round">
+        <!-- Books peeking out -->
+        <polygon points="-7,-8 -2,-15 5,-13 1,-6" fill="#f59b90"/>
+        <polygon points="0,-7 6,-14 11,-11 6,-5" fill="#9fc9e3"/>
+        <!-- Tote Handles -->
+        <path d="M-6 -6 C-6 -16 6 -16 6 -6" fill="none" stroke="#e8bd5a" stroke-width="2.6"/>
+        <path d="M-6 -6 C-6 -16 6 -16 6 -6" fill="none" stroke="#6b555a" stroke-width="1.2"/>
+        <!-- Tote Body -->
+        <path d="M-12 -6 L12 -6 L10 10 C10 12 -10 12 -10 10 Z" fill="#fae084"/>
+        <!-- Little smiling/daisy emblem on tote -->
+        <circle cx="0" cy="2" r="3" fill="#fff8e0" stroke="none"/>
+      </g>
+    </g>
+    <use href="#icedCoffee" x="468" y="440"/>
+    <use href="#hotCoffee" x="484" y="432"/>
+
+    <!-- CLUSTER 5: Lower-left step (Sky-blue Messenger Bag + Iced Coffee) -->
+    <g transform="translate(194, 344)">
+      <ellipse cx="2" cy="9" rx="14" ry="5.5" fill="#9c8396" opacity="0.28"/>
+      <g stroke="#6b555a" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round">
+        <path d="M-11 -4 C-14 -12 12 -12 11 -4" fill="none" stroke-width="2"/>
+        <rect x="-12" y="-6" width="24" height="16" rx="5" fill="#9dcbe8"/>
+        <path d="M-12 -3 C-4 4 4 4 12 -3 L12 -6 L-12 -6 Z" fill="#b8ddf2"/>
+        <circle cx="0" cy="2" r="2" fill="#fff6e0"/>
+      </g>
+    </g>
+    <use href="#icedCoffee" x="218" y="355"/>
+  </g>
+
+  <!-- 8. FOREGROUND SOCIAL LAWN DETAILS, BUSHES & TREES -->
+
+  <!-- Cozy Picnic Blanket on Left Lawn -->
+  <g id="picnicBlanket">
+    <!-- Blanket Shadow -->
+    <polygon points="88,464 172,422 238,455 154,497" fill="#7eb073" opacity="0.32"/>
+    <!-- Blanket Base -->
+    <polygon points="84,460 168,418 234,451 150,493" fill="#fff2f2" stroke="#6b555a" stroke-width="2" stroke-linejoin="round"/>
+    <!-- Gingham Stripes -->
+    <g fill="#ffc4cc" opacity="0.65">
+      <polygon points="105,450 126,439 192,472 171,483"/>
+      <polygon points="147,429 168,418 234,451 213,462"/>
+      <polygon points="105,470 189,428 205,436 121,478"/>
+      <polygon points="135,485 219,443 234,451 150,493"/>
+    </g>
+    <!-- Open Textbook on Blanket -->
+    <g transform="translate(152, 456)" stroke="#6b555a" stroke-width="1.6" stroke-linejoin="round">
+      <polygon points="-14,-2 0,-9 14,-2 0,5" fill="#fffef9"/>
+      <line x1="0" y1="-9" x2="0" y2="5" stroke="#c9b8bf" stroke-width="1.4"/>
+    </g>
+    <!-- Coffee Cups & Pastel Cushion on Blanket -->
+    <use href="#icedCoffee" x="182" y="452"/>
+    <use href="#hotCoffee" x="128" y="460"/>
+    <ellipse cx="164" cy="438" rx="11" ry="6.5" fill="#ffe18c" stroke="#6b555a" stroke-width="1.6"/>
+  </g>
+
+  <!-- Second Social Spot on Lower-Right Lawn (Mint Striped Blanket + Frisbee + Bag) -->
+  <g id="rightSocialSpot">
+    <polygon points="315,546 392,508 456,540 379,578" fill="#e6f7f2" stroke="#6b555a" stroke-width="2" stroke-linejoin="round"/>
+    <polygon points="335,536 355,526 419,558 399,568" fill="#a8e0d3" opacity="0.7"/>
+    <polygon points="373,517 392,508 456,540 437,549" fill="#a8e0d3" opacity="0.7"/>
+    <!-- Peach Backpack on Right Blanket -->
+    <g transform="translate(385, 534)" stroke="#6b555a" stroke-width="1.8" stroke-linejoin="round">
+      <rect x="-10" y="-9" width="20" height="19" rx="7" fill="#f7b388"/>
+      <rect x="-7" y="0" width="14" height="8" rx="3.5" fill="#fcd0b1"/>
+    </g>
+    <use href="#icedCoffee" x="356" y="544"/>
+    <!-- Cute Pastel Frisbee on Grass -->
+    <ellipse cx="478" cy="560" rx="14" ry="7" fill="#ffdf7d" stroke="#6b555a" stroke-width="1.8"/>
+    <ellipse cx="478" cy="559" rx="8" ry="3.5" fill="#fff0b5" stroke="none"/>
+  </g>
+
+  <!-- Fluffy Bushes hugging Left & Right Balustrades -->
+  <g stroke="#6b555a" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+    <!-- Left Bush Cluster -->
+    <path d="M62 325 C56 306 76 292 94 298 C104 282 132 284 140 302 C154 304 156 324 144 334 C128 342 74 342 62 325 Z" fill="url(#leafLight)"/>
+    <use href="#pinkFlower" x="86" y="314"/>
+    <use href="#pinkFlower" x="122" y="308"/>
+    <use href="#daisy" x="104" y="324"/>
+
+    <!-- Right Bush Cluster -->
+    <path d="M525 516 C520 498 538 486 555 492 C566 476 594 478 602 496 C618 498 622 518 608 528 C590 536 538 534 525 516 Z" fill="url(#leafMid)"/>
+    <use href="#daisy" x="556" y="508"/>
+    <use href="#pinkFlower" x="584" y="502"/>
+    <use href="#daisy" x="572" y="520"/>
+  </g>
+
+  <!-- Right Framing Tree -->
+  <g stroke="#6b555a" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round">
+    <ellipse cx="732" cy="436" rx="44" ry="19" fill="#7cb372" stroke="none" opacity="0.4"/>
+    <path d="M724 432 L726 376 L738 376 L740 432 C736 436 728 436 724 432 Z" fill="#b88b76"/>
+    <path d="M684 358 C674 332 696 306 722 310 C734 290 766 292 776 314 C796 320 798 350 780 366 C774 382 748 390 728 384 C702 388 684 374 684 358 Z" fill="url(#leafLight)"/>
+    <path d="M698 332 C704 318 720 314 730 320" fill="none" stroke="#dcf5c6" stroke-width="3.2"/>
+  </g>
+
+  <!-- Scattered Wildflowers & Grass Tufts on Lawn -->
+  <g>
+    <use href="#daisy" x="62" y="408"/>
+    <use href="#pinkFlower" x="45" y="424"/>
+    <use href="#daisy" x="242" y="555"/>
+    <use href="#pinkFlower" x="262" y="570"/>
+    <use href="#daisy" x="520" y="568"/>
+    <use href="#pinkFlower" x="668" y="476"/>
+    <use href="#daisy" x="688" y="488"/>
+    <use href="#pinkFlower" x="72" y="530"/>
+
+    <!-- Cute rounded grass tufts -->
+    <g fill="none" stroke="#7cb372" stroke-width="2" stroke-linecap="round">
+      <path d="M40 486 Q43 476 48 486 M45 486 Q49 479 53 486"/>
+      <path d="M276 522 Q279 513 284 522 M282 522 Q286 516 290 522"/>
+      <path d="M634 452 Q637 443 642 452 M640 452 Q644 446 648 452"/>
+      <path d="M580 572 Q583 563 588 572 M586 572 Q590 566 594 572"/>
+    </g>
+  </g>
+
+  <!-- 9. SUNNY WARM LIGHT BEAMS & COZY SPARKLES -->
+  <g pointer-events="none">
+    <polygon points="0,0 190,0 520,600 280,600" fill="url(#beamGrad)"/>
+    <polygon points="230,0 350,0 740,600 590,600" fill="url(#beamGrad)" opacity="0.7"/>
+    <!-- Floating warm sunlit motes -->
+    <circle cx="195" cy="110" r="3" fill="#fffdf0" opacity="0.8"/>
+    <circle cx="318" cy="240" r="2.5" fill="#fffdf0" opacity="0.75"/>
+    <circle cx="425" cy="340" r="3" fill="#fffdf0" opacity="0.7"/>
+    <circle cx="240" cy="430" r="2.8" fill="#fffdf0" opacity="0.8"/>
+    <circle cx="515" cy="220" r="2.5" fill="#fffdf0" opacity="0.7"/>
+    <circle cx="145" cy="255" r="2.2" fill="#fffdf0" opacity="0.75"/>
+  </g>
+</svg>

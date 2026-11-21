@@ -1,0 +1,27 @@
+{
+ "model": "gemini-4-neon",
+ "prompt": "Draw the inside of a tall university library atrium: several floors of balconies with bookshelves around an open center, a patterned black, white and grey tile floor, reading tables with lamps, a few armchairs. Quiet, warm light. Soft pastel palette, rounded shapes, gentle shadows, isometric view, the feel of a cute life-sim game, same style as a cozy sticker illustration. viewBox 0 0 800 600.",
+ "usage": {
+  "total_tokens": 32808,
+  "total_input_tokens": 147,
+  "input_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 147
+   }
+  ],
+  "total_cached_tokens": 0,
+  "total_output_tokens": 21756,
+  "output_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 21756
+   }
+  ],
+  "total_tool_use_tokens": 0,
+  "total_thought_tokens": 10905,
+  "initial_input_tokens": 147
+ },
+ "ms": 262315,
+ "made_at": "2026-11-21T16:10:27.393Z"
+}

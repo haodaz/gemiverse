@@ -1,0 +1,752 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <!-- Sky & Atmosphere Gradients -->
+    <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D7ECFA"/>
+      <stop offset="48%" stop-color="#F3F2EA"/>
+      <stop offset="100%" stop-color="#FCE6D4"/>
+    </linearGradient>
+
+    <!-- Park Lawn & Plaza Gradients -->
+    <linearGradient id="lawnGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#CBE3B0"/>
+      <stop offset="55%" stop-color="#BCD99E"/>
+      <stop offset="100%" stop-color="#ACC98D"/>
+    </linearGradient>
+
+    <linearGradient id="plazaGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FAF3E8"/>
+      <stop offset="100%" stop-color="#EFE3D2"/>
+    </linearGradient>
+
+    <linearGradient id="waterGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8CD2EB"/>
+      <stop offset="55%" stop-color="#A8DFF2"/>
+      <stop offset="100%" stop-color="#76C2DE"/>
+    </linearGradient>
+
+    <radialGradient id="lampGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF7CC" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#FFE699" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#FFE699" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Marble Gradients -->
+    <linearGradient id="marbleFront" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFDF9"/>
+      <stop offset="100%" stop-color="#F2EAE0"/>
+    </linearGradient>
+    <linearGradient id="marbleSide" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#EAE0D4"/>
+      <stop offset="100%" stop-color="#DCD0C2"/>
+    </linearGradient>
+
+    <!-- Soft Shadow Filter -->
+    <filter id="islandShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="14" stdDeviation="12" flood-color="#8F736B" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <!-- ==================== SKY BACKGROUND ==================== -->
+  <rect width="800" height="600" fill="url(#skyGrad)"/>
+
+  <!-- Soft Pastel Clouds -->
+  <g fill="#FFFFFF" opacity="0.78">
+    <path d="M55,88 C55,75 68,67 80,71 C87,56 112,56 121,70 C134,68 145,78 144,90 C144,96 138,100 131,100 L66,100 C59,100 55,95 55,88 Z"/>
+    <path d="M625,74 C625,62 637,55 648,59 C656,45 680,46 688,59 C701,57 713,66 712,78 C712,84 706,88 699,88 L636,88 C629,88 625,82 625,74 Z"/>
+    <path d="M350,52 C350,43 360,37 370,40 C376,30 394,30 401,40 C411,39 419,46 419,55 C419,60 414,63 408,63 L359,63 C353,63 350,58 350,52 Z" opacity="0.65"/>
+  </g>
+
+  <!-- ==================== CITY BUILDINGS BEHIND ==================== -->
+  <g stroke="#7C6A6E" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- Far Left Lavender-Blue Building -->
+    <g transform="translate(88, 175)">
+      <polygon points="0,32 54,5 54,118 0,145" fill="#C7D7EE"/>
+      <polygon points="54,5 94,25 94,138 54,118" fill="#B2C5E0"/>
+      <polygon points="0,32 54,5 94,25 40,52" fill="#E3ECF8"/>
+      <!-- Rooftop parapet -->
+      <polygon points="10,30 52,9 82,24 40,45" fill="#D2E0F2"/>
+      <!-- Windows -->
+      <g fill="#FFF7DF" stroke-width="1.3">
+        <polygon points="10,48 22,42 22,58 10,64"/>
+        <polygon points="32,37 44,31 44,47 32,53"/>
+        <polygon points="10,74 22,68 22,84 10,90"/>
+        <polygon points="32,63 44,57 44,73 32,79"/>
+        <polygon points="10,100 22,94 22,110 10,116"/>
+        <polygon points="32,89 44,83 44,99 32,105"/>
+      </g>
+    </g>
+
+    <!-- Mid-Left Warm Peach Townhouse -->
+    <g transform="translate(154, 128)">
+      <polygon points="0,36 62,5 62,135 0,166" fill="#F9C9B3"/>
+      <polygon points="62,5 104,26 104,156 62,135" fill="#EBB49B"/>
+      <polygon points="0,36 62,5 104,26 42,57" fill="#FDE0D2"/>
+      <!-- Sloped Terracotta Roof Accent -->
+      <polygon points="-4,36 62,3 66,12 0,45" fill="#E4927B"/>
+      <!-- Windows with cute pastel awnings -->
+      <g fill="#FFF9E8" stroke-width="1.3">
+        <polygon points="12,56 26,49 26,67 12,74"/>
+        <polygon points="38,43 52,36 52,54 38,61"/>
+        <polygon points="12,86 26,79 26,97 12,104"/>
+        <polygon points="38,73 52,66 52,84 38,91"/>
+        <polygon points="12,116 26,109 26,127 12,134"/>
+        <polygon points="38,103 52,96 52,114 38,121"/>
+      </g>
+      <polygon points="10,55 28,46 31,52 13,61" fill="#E5887B" stroke-width="1.2"/>
+      <polygon points="36,42 54,33 57,39 39,48" fill="#E5887B" stroke-width="1.2"/>
+    </g>
+
+    <!-- Upper-Left Cream & Butter-Yellow Classic Building -->
+    <g transform="translate(230, 88)">
+      <polygon points="0,38 72,2 72,144 0,180" fill="#FBE8B6"/>
+      <polygon points="72,2 120,26 120,168 72,144" fill="#ECD49B"/>
+      <polygon points="0,38 72,2 120,26 48,62" fill="#FFF4D6"/>
+      <!-- Cute Dormer / Chimney -->
+      <polygon points="36,24 54,15 66,21 48,30" fill="#E5B78A"/>
+      <polygon points="36,24 48,30 48,42 36,36" fill="#D9A77A"/>
+      <polygon points="48,30 66,21 66,33 48,42" fill="#C99668"/>
+      <!-- Windows -->
+      <g fill="#FFFDF5" stroke-width="1.3">
+        <polygon points="12,60 26,53 26,72 12,79"/>
+        <polygon points="34,49 48,42 48,61 34,68"/>
+        <polygon points="55,38 66,33 66,52 55,57"/>
+        <polygon points="12,92 26,85 26,104 12,111"/>
+        <polygon points="34,81 48,74 48,93 34,100"/>
+        <polygon points="55,70 66,65 66,84 55,89"/>
+      </g>
+    </g>
+
+    <!-- Back-Center Tall Mint Building -->
+    <g transform="translate(328, 66)">
+      <polygon points="0,34 68,0 68,125 0,159" fill="#C7E6D5"/>
+      <polygon points="68,0 132,32 132,157 68,125" fill="#B1D5C1"/>
+      <polygon points="0,34 68,0 132,32 64,66" fill="#E2F4EA"/>
+      <!-- Roof detail -->
+      <polygon points="24,30 68,8 108,28 64,50" fill="#D0EBDC"/>
+      <!-- Left face windows -->
+      <g fill="#FFF9E8" stroke-width="1.3">
+        <polygon points="14,54 28,47 28,64 14,71"/>
+        <polygon points="42,40 56,33 56,50 42,57"/>
+        <polygon points="14,84 28,77 28,94 14,101"/>
+        <polygon points="42,70 56,63 56,80 42,87"/>
+      </g>
+      <!-- Right face windows -->
+      <g fill="#F8EED8" stroke-width="1.3">
+        <polygon points="82,36 96,43 96,60 82,53"/>
+        <polygon points="108,49 122,56 122,73 108,66"/>
+        <polygon points="82,66 96,73 96,90 82,83"/>
+        <polygon points="108,79 122,86 122,103 108,96"/>
+      </g>
+    </g>
+
+    <!-- Upper-Right Dusty Rose Townhouse -->
+    <g transform="translate(454, 94)">
+      <polygon points="0,28 48,4 48,142 0,166" fill="#F2C2CB"/>
+      <polygon points="48,4 118,39 118,177 48,142" fill="#E3AEB9"/>
+      <polygon points="0,28 48,4 118,39 70,63" fill="#FADCE2"/>
+      <!-- Windows on right face -->
+      <g fill="#FFF7E6" stroke-width="1.3">
+        <polygon points="58,34 72,41 72,58 58,51"/>
+        <polygon points="82,46 96,53 96,70 82,63"/>
+        <polygon points="58,66 72,73 72,90 58,83"/>
+        <polygon points="82,78 96,85 96,102 82,95"/>
+        <polygon points="58,98 72,105 72,122 58,115"/>
+        <polygon points="82,110 96,117 96,134 82,127"/>
+      </g>
+    </g>
+
+    <!-- Mid-Right Soft Cream & Sky-Blue Apartment -->
+    <g transform="translate(556, 134)">
+      <polygon points="0,26 42,5 42,135 0,156" fill="#F9EFE2"/>
+      <polygon points="42,5 106,37 106,167 42,135" fill="#EADCC9"/>
+      <polygon points="0,26 42,5 106,37 64,58" fill="#FFF9F0"/>
+      <!-- Blue-grey roof trim -->
+      <polygon points="42,2 110,36 104,44 36,10" fill="#9EB9D4"/>
+      <!-- Windows -->
+      <g fill="#FFF7E2" stroke-width="1.3">
+        <polygon points="52,36 66,43 66,60 52,53"/>
+        <polygon points="78,49 92,56 92,73 78,66"/>
+        <polygon points="52,68 66,75 66,92 52,85"/>
+        <polygon points="78,81 92,88 92,105 78,98"/>
+        <polygon points="52,100 66,107 66,124 52,117"/>
+        <polygon points="78,113 92,120 92,137 78,130"/>
+      </g>
+    </g>
+
+    <!-- Far-Right Soft Apricot Building -->
+    <g transform="translate(642, 184)">
+      <polygon points="0,24 38,5 38,118 0,137" fill="#FAD7B5"/>
+      <polygon points="38,5 88,30 88,143 38,118" fill="#EBC29B"/>
+      <polygon points="0,24 38,5 88,30 50,49" fill="#FEE8D2"/>
+      <g fill="#FFF9EA" stroke-width="1.3">
+        <polygon points="48,32 60,38 60,53 48,47"/>
+        <polygon points="68,42 80,48 80,63 68,57"/>
+        <polygon points="48,60 60,66 60,81 48,75"/>
+        <polygon points="68,70 80,76 80,91 68,85"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- ==================== ISOMETRIC PARK PLAZA BASE ==================== -->
+  <g filter="url(#islandShadow)">
+    <!-- Diorama Base Thickness (Left & Right Beveled Slab) -->
+    <path d="M54,321 L54,341 Q54,349 62,353 L390,517 Q400,522 410,517 L738,353 Q746,349 746,341 L746,321 Z"
+          fill="#D9C5B2" stroke="#7A686B" stroke-width="2" stroke-linejoin="round"/>
+    <!-- Left slab face shade -->
+    <path d="M54,321 L54,341 Q54,349 62,353 L396,520 L400,520 L400,494 L54,321 Z"
+          fill="#E5D5C5"/>
+    <!-- Right slab face shade -->
+    <path d="M400,494 L400,520 L404,520 L738,353 Q746,349 746,341 L746,321 L400,494 Z"
+          fill="#CBB5A0"/>
+
+    <!-- Top Park Surface Diamond (Rounded Isometric Corners) -->
+    <path d="M390,153 Q400,148 410,153 L738,317 Q748,322 738,327 L410,491 Q400,496 390,491 L62,327 Q52,322 62,317 Z"
+          fill="url(#lawnGrad)" stroke="#7A686B" stroke-width="2" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Subtle Grass Texture Patches -->
+  <g fill="#D7EBC0" opacity="0.55">
+    <ellipse cx="185" cy="312" rx="34" ry="17"/>
+    <ellipse cx="385" cy="205" rx="38" ry="18"/>
+    <ellipse cx="622" cy="316" rx="36" ry="17"/>
+    <ellipse cx="395" cy="452" rx="44" ry="20"/>
+  </g>
+
+  <!-- ==================== PAVED PATHWAYS & CENTRAL PLAZA ==================== -->
+  <g stroke="#B8A594" stroke-width="1.3" stroke-linejoin="round">
+    <!-- Main Diagonal Promenade (Upper-Left through Arch & Fountain to Lower-Right) -->
+    <polygon points="185,256 235,231 588,407 538,432" fill="url(#plazaGrad)"/>
+    <!-- Cross Promenade (Upper-Right through Fountain to Lower-Left) -->
+    <polygon points="518,214 568,239 272,387 222,362" fill="url(#plazaGrad)"/>
+    <!-- Cozy Nook Pad for Chess Table (Lower-Left) -->
+    <ellipse cx="236" cy="364" rx="54" ry="28" fill="#F5EBDC"/>
+    <!-- Cozy Pad for Busker Stage (Right) -->
+    <ellipse cx="576" cy="332" rx="68" ry="35" fill="#F5EBDC"/>
+    <!-- Central Circular Fountain Plaza -->
+    <ellipse cx="414" cy="334" rx="134" ry="69" fill="url(#plazaGrad)" stroke="#BCA896" stroke-width="1.8"/>
+    <!-- Inner Decorative Stone Ring -->
+    <ellipse cx="414" cy="334" rx="116" ry="60" fill="none" stroke="#DFD1BF" stroke-width="1.5" stroke-dasharray="10,7"/>
+    <ellipse cx="414" cy="334" rx="92" ry="48" fill="#EFE4D3" stroke="#D5C4B0" stroke-width="1.3"/>
+  </g>
+
+  <!-- Subtle Fallen Autumn Leaves Scattered on Grass & Paths -->
+  <g opacity="0.85">
+    <ellipse cx="176" cy="335" rx="4" ry="2.2" fill="#F0985C" transform="rotate(-18 176 335)"/>
+    <ellipse cx="192" cy="342" rx="3.5" ry="2" fill="#F5C95B" transform="rotate(15 192 342)"/>
+    <ellipse cx="164" cy="346" rx="3.5" ry="2" fill="#E67A6E" transform="rotate(-10 164 346)"/>
+    <ellipse cx="332" cy="224" rx="4" ry="2.2" fill="#F5C95B" transform="rotate(20 332 224)"/>
+    <ellipse cx="352" cy="236" rx="3.5" ry="2" fill="#F0985C" transform="rotate(-12 352 236)"/>
+    <ellipse cx="458" cy="238" rx="4" ry="2.2" fill="#E67A6E" transform="rotate(14 458 238)"/>
+    <ellipse cx="476" cy="245" rx="3.5" ry="2" fill="#F5C95B" transform="rotate(-22 476 245)"/>
+    <ellipse cx="628" cy="346" rx="4" ry="2.2" fill="#F0985C" transform="rotate(12 628 346)"/>
+    <ellipse cx="614" cy="355" rx="3.5" ry="2" fill="#E67A6E" transform="rotate(-15 614 355)"/>
+    <ellipse cx="348" cy="436" rx="4" ry="2.2" fill="#F5C95B" transform="rotate(18 348 436)"/>
+    <ellipse cx="366" cy="444" rx="3.5" ry="2" fill="#F0985C" transform="rotate(-14 366 444)"/>
+    <ellipse cx="486" cy="432" rx="4" ry="2.2" fill="#E67A6E" transform="rotate(10 486 432)"/>
+  </g>
+
+  <!-- ==================== BACK ROW AUTUMN TREES ==================== -->
+  <!-- Tree 1: Back-Center Golden Yellow -->
+  <g transform="translate(396, 198)">
+    <ellipse cx="0" cy="14" rx="26" ry="13" fill="#8D9E7A" opacity="0.38"/>
+    <path d="M-5,12 L-4,-14 L4,-14 L6,12 Q0,16 -5,12 Z" fill="#9E7660" stroke="#755A52" stroke-width="1.5"/>
+    <g stroke="#7A625B" stroke-width="1.6" stroke-linejoin="round">
+      <circle cx="-18" cy="-24" r="19" fill="#EBBF52"/>
+      <circle cx="17" cy="-22" r="18" fill="#E5B647"/>
+      <circle cx="0" cy="-38" r="24" fill="#F7D36C"/>
+      <circle cx="-9" cy="-27" r="17" fill="#FAE08C" stroke="none"/>
+      <circle cx="9" cy="-33" r="13" fill="#FDE8A6" stroke="none"/>
+    </g>
+  </g>
+
+  <!-- Tree 2: Upper-Right Coral Red -->
+  <g transform="translate(466, 212)">
+    <ellipse cx="0" cy="14" rx="24" ry="12" fill="#8D9E7A" opacity="0.38"/>
+    <path d="M-4.5,12 L-3.5,-12 L3.5,-12 L5,12 Q0,15 -4.5,12 Z" fill="#9E7660" stroke="#755A52" stroke-width="1.5"/>
+    <g stroke="#7A5D5E" stroke-width="1.6" stroke-linejoin="round">
+      <circle cx="-16" cy="-20" r="17" fill="#DF7269"/>
+      <circle cx="16" cy="-18" r="16" fill="#D6655C"/>
+      <circle cx="0" cy="-34" r="22" fill="#EC857A"/>
+      <circle cx="-7" cy="-26" r="14" fill="#F4A198" stroke="none"/>
+      <circle cx="7" cy="-34" r="11" fill="#F9B7AF" stroke="none"/>
+    </g>
+  </g>
+
+  <!-- Tree 3: Upper-Left Warm Apricot (Behind Arch) -->
+  <g transform="translate(212, 242)">
+    <ellipse cx="0" cy="14" rx="24" ry="12" fill="#8D9E7A" opacity="0.35"/>
+    <path d="M-4.5,12 L-3.5,-12 L3.5,-12 L5,12 Q0,15 -4.5,12 Z" fill="#9E7660" stroke="#755A52" stroke-width="1.5"/>
+    <g stroke="#7A6058" stroke-width="1.6" stroke-linejoin="round">
+      <circle cx="-16" cy="-20" r="17" fill="#E69253"/>
+      <circle cx="16" cy="-19" r="16" fill="#DD8546"/>
+      <circle cx="0" cy="-34" r="22" fill="#F4A667"/>
+      <circle cx="-8" cy="-26" r="14" fill="#F8BD88" stroke="none"/>
+      <circle cx="7" cy="-33" r="10" fill="#FCCFA4" stroke="none"/>
+    </g>
+  </g>
+
+  <!-- Tree 4: Far-Right Golden Tree (Behind Busker Stage) -->
+  <g transform="translate(612, 258)">
+    <ellipse cx="0" cy="14" rx="24" ry="12" fill="#8D9E7A" opacity="0.35"/>
+    <path d="M-4.5,12 L-3.5,-12 L3.5,-12 L5,12 Q0,15 -4.5,12 Z" fill="#9E7660" stroke="#755A52" stroke-width="1.5"/>
+    <g stroke="#7A625B" stroke-width="1.6" stroke-linejoin="round">
+      <circle cx="-15" cy="-20" r="16" fill="#EBBF52"/>
+      <circle cx="15" cy="-19" r="16" fill="#E2B243"/>
+      <circle cx="0" cy="-33" r="21" fill="#F7D36C"/>
+      <circle cx="-7" cy="-25" r="13" fill="#FBE396" stroke="none"/>
+    </g>
+  </g>
+
+  <!-- ==================== WHITE MARBLE TRIUMPHAL ARCH ==================== -->
+  <!-- Oriented facing down-right along the main promenade toward the fountain -->
+  <g transform="translate(290, 268)">
+    <!-- Soft Cast Shadow on Plaza -->
+    <polygon points="-38,16 32,-19 72,1 2,36" fill="#9A8B7E" opacity="0.22"/>
+
+    <!-- Back/Inner Depth of Archway (Under Vault) -->
+    <polygon points="-24,10 -44,0 -44,-56 -24,-46" fill="#DDD2C5" stroke="#7A6A6D" stroke-width="1.6" stroke-linejoin="round"/>
+    <!-- Inner Vault Ceiling -->
+    <path d="M-12,-42 C-12,-58 10,-69 10,-53 L-10,-63 C-10,-79 -32,-68 -32,-52 Z"
+          fill="#D5C8B9" stroke="#7A6A6D" stroke-width="1.4"/>
+    <!-- Inner Far Pier Wall visible through arch -->
+    <polygon points="-10,-12 10,-22 10,-55 -10,-45" fill="#E5DBD0" stroke="#7A6A6D" stroke-width="1.4"/>
+
+    <!-- Left Side Face of Arch (Depth facing upper-left/left) -->
+    <polygon points="-46,-1 -26,9 -26,-78 -46,-88" fill="url(#marbleSide)" stroke="#7A6A6D" stroke-width="1.7" stroke-linejoin="round"/>
+    <!-- Left Base Plinth -->
+    <polygon points="-50,1 -26,13 -26,2 -50,-10" fill="#DFD4C8" stroke="#7A6A6D" stroke-width="1.6" stroke-linejoin="round"/>
+
+    <!-- Front Facade of Triumphal Arch (Facing down-right) -->
+    <!-- Main Marble Body with Arched Opening Cutout -->
+    <path d="M-26,9 L-26,-78 L38,-110 L38,-23 L16,-12 L16,-48 C16,-64 -4,-54 -4,-38 L-4,-2 Z"
+          fill="url(#marbleFront)" stroke="#7A6A6D" stroke-width="1.7" stroke-linejoin="round"/>
+
+    <!-- Front Base Plinths (Left & Right Piers) -->
+    <polygon points="-29,12 -1,-2 -1,-11 -29,3" fill="#F5EDE3" stroke="#7A6A6D" stroke-width="1.6" stroke-linejoin="round"/>
+    <polygon points="14,-10 41,-24 41,-33 14,-19" fill="#F5EDE3" stroke="#7A6A6D" stroke-width="1.6" stroke-linejoin="round"/>
+
+    <!-- Decorative Fluted Pilasters on Front Face -->
+    <g stroke="#B8AA9E" stroke-width="1.2" fill="none">
+      <line x1="-18" y1="-2" x2="-18" y2="-60"/>
+      <line x1="-11" y1="-6" x2="-11" y2="-64"/>
+      <line x1="23" y1="-23" x2="23" y2="-81"/>
+      <line x1="30" y1="-27" x2="30" y2="-85"/>
+    </g>
+
+    <!-- Arch Moulding & Keystone -->
+    <path d="M-4,-38 C-4,-54 16,-64 16,-48" fill="none" stroke="#9D8E84" stroke-width="2.2"/>
+    <polygon points="3,-56 9,-59 10,-52 4,-49" fill="#FFFDF9" stroke="#7A6A6D" stroke-width="1.3"/>
+
+    <!-- Sculpted Frieze Band & Cornice -->
+    <polygon points="-50,-74 -26,-62 42,-96 42,-104 -26,-70 -50,-82" fill="#F7F0E6" stroke="#7A6A6D" stroke-width="1.6" stroke-linejoin="round"/>
+    <!-- Upper Attic Story -->
+    <polygon points="-44,-82 -24,-72 -24,-91 -44,-101" fill="#E3D9CC" stroke="#7A6A6D" stroke-width="1.6" stroke-linejoin="round"/>
+    <polygon points="-24,-72 36,-102 36,-121 -24,-91" fill="#FFFDF9" stroke="#7A6A6D" stroke-width="1.6" stroke-linejoin="round"/>
+    <!-- Attic Decorative Relief Panel -->
+    <polygon points="-14,-81 26,-101 26,-110 -14,-90" fill="#F3EAE0" stroke="#B7A99C" stroke-width="1.2"/>
+    <!-- Top Roof Slab -->
+    <polygon points="-48,-102 -24,-90 40,-122 16,-134" fill="#FFFFFF" stroke="#7A6A6D" stroke-width="1.7" stroke-linejoin="round"/>
+    <polygon points="-48,-102 -24,-90 -24,-85 -48,-97" fill="#E5DBD0" stroke="#7A6A6D" stroke-width="1.5"/>
+    <polygon points="-24,-90 40,-122 40,-117 -24,-85" fill="#F7EFE5" stroke="#7A6A6D" stroke-width="1.5"/>
+  </g>
+
+  <!-- ==================== UPPER-RIGHT BENCH & LAMP ==================== -->
+  <!-- Bench 1 (Upper-Right of Fountain) -->
+  <g transform="translate(494, 270)" stroke="#756160" stroke-width="1.4" stroke-linejoin="round">
+    <ellipse cx="0" cy="8" rx="22" ry="9" fill="#9A8B7E" opacity="0.22" stroke="none"/>
+    <!-- Legs -->
+    <line x1="-14" y1="0" x2="-14" y2="9"/>
+    <line x1="12" y1="13" x2="12" y2="22"/>
+    <line x1="-8" y1="-5" x2="-8" y2="4"/>
+    <line x1="18" y1="8" x2="18" y2="17"/>
+    <!-- Backrest -->
+    <polygon points="-12,-14 18,1 18,9 -12,-6" fill="#E4AA76"/>
+    <!-- Seat -->
+    <polygon points="-18,-3 12,12 18,9 -12,-6" fill="#F0BE8D"/>
+    <!-- Armrests -->
+    <path d="M-16,-2 L-16,-9 L-10,-12" fill="none" stroke-width="1.6"/>
+    <path d="M12,12 L12,5 L18,2" fill="none" stroke-width="1.6"/>
+  </g>
+
+  <!-- Cute Vintage Park Lamppost (Upper-Center-Right) -->
+  <g transform="translate(454, 250)">
+    <ellipse cx="0" cy="4" rx="7" ry="3.5" fill="#8C7E75" opacity="0.25"/>
+    <circle cx="0" cy="-48" r="17" fill="url(#lampGlow)"/>
+    <path d="M-3,3 L-1.5,-42 L1.5,-42 L3,3 Z" fill="#6F7D85" stroke="#5A6369" stroke-width="1.3"/>
+    <circle cx="0" cy="-48" r="6.5" fill="#FFF8D6" stroke="#7A6A6D" stroke-width="1.4"/>
+    <path d="M-5,-53 Q0,-59 5,-53 Z" fill="#6F7D85" stroke="#5A6369" stroke-width="1.2"/>
+  </g>
+
+  <!-- ==================== SMALL BUSKER STAGE (RIGHT SIDE) ==================== -->
+  <g transform="translate(572, 326)">
+    <!-- Soft Stage Shadow -->
+    <polygon points="-46,8 8,-19 56,5 2,32" fill="#9A8B7E" opacity="0.22"/>
+
+    <!-- Wooden Stage Platform -->
+    <g stroke="#7A5F57" stroke-width="1.6" stroke-linejoin="round">
+      <!-- Front-Left Vertical Edge -->
+      <polygon points="-42,2 4,25 4,35 -42,12" fill="#D59A6C"/>
+      <!-- Front-Right Vertical Edge -->
+      <polygon points="4,25 50,2 50,12 4,35" fill="#BF8357"/>
+      <!-- Stage Top Deck -->
+      <polygon points="-42,2 4,-21 50,2 4,25" fill="#EBB889"/>
+      <!-- Subtle Wood Planks -->
+      <g stroke="#C99265" stroke-width="1.1">
+        <line x1="-30" y1="8" x2="16" y2="-15"/>
+        <line x1="-18" y1="14" x2="28" y2="-9"/>
+        <line x1="-6" y1="20" x2="40" y2="-3"/>
+      </g>
+      <!-- Cute Little Front Step -->
+      <polygon points="-24,18 -8,26 -8,32 -24,24" fill="#D59A6C"/>
+      <polygon points="-8,26 0,22 0,28 -8,32" fill="#BF8357"/>
+      <polygon points="-24,18 -16,14 0,22 -8,26" fill="#F2C79B"/>
+    </g>
+
+    <!-- Back Posts & Pastel Fairy Lights / Bunting -->
+    <g stroke="#7A5F57" stroke-width="1.6" stroke-linecap="round">
+      <line x1="4" y1="-19" x2="4" y2="-66" stroke-width="3" stroke="#A67454"/>
+      <line x1="44" y1="1" x2="44" y2="-46" stroke-width="3" stroke="#A67454"/>
+      <!-- Bunting String -->
+      <path d="M4,-60 Q24,-42 44,-40" fill="none" stroke="#7A6A6D" stroke-width="1.4"/>
+      <!-- Cute Pastel Pennant Flags -->
+      <polygon points="10,-55 17,-51 12,-44" fill="#F49A92" stroke-width="1.1"/>
+      <polygon points="19,-49 26,-45 21,-38" fill="#F9DA78" stroke-width="1.1"/>
+      <polygon points="28,-44 35,-41 30,-34" fill="#9ED9C2" stroke-width="1.1"/>
+      <polygon points="36,-41 42,-39 38,-32" fill="#B5CCF0" stroke-width="1.1"/>
+    </g>
+
+    <!-- Small Cozy Amp & Potted Plant on Stage -->
+    <g transform="translate(26, -2)" stroke="#756160" stroke-width="1.3" stroke-linejoin="round">
+      <polygon points="-8,0 0,4 0,-8 -8,-12" fill="#8C838C"/>
+      <polygon points="0,4 8,0 8,-12 0,-8" fill="#766D76"/>
+      <polygon points="-8,-12 0,-16 8,-12 0,-8" fill="#A69DA6"/>
+      <circle cx="-4" cy="-5" r="2.2" fill="#5D555D"/>
+    </g>
+
+    <!-- Open Guitar Case with Coins on Front of Stage -->
+    <g transform="translate(-14, 12)" stroke="#756160" stroke-width="1.2">
+      <ellipse cx="0" cy="0" rx="8" ry="4.5" fill="#8E6358" transform="rotate(24)"/>
+      <ellipse cx="0" cy="0" rx="6" ry="3" fill="#D97B73" transform="rotate(24)"/>
+      <circle cx="-1" cy="0" r="1.4" fill="#F9D96B" stroke="none"/>
+      <circle cx="2" cy="1" r="1.3" fill="#F9D96B" stroke="none"/>
+      <circle cx="0" cy="-1.5" r="1.2" fill="#F9D96B" stroke="none"/>
+    </g>
+
+    <!-- Cute Chibi Busker Playing Guitar -->
+    <g transform="translate(6, 0)">
+      <ellipse cx="0" cy="4" rx="8" ry="4" fill="#B5855C" opacity="0.4"/>
+      <!-- Legs -->
+      <line x1="-2.5" y1="2" x2="-2.5" y2="-6" stroke="#667B94" stroke-width="3.2" stroke-linecap="round"/>
+      <line x1="2.5" y1="3" x2="2.5" y2="-5" stroke="#667B94" stroke-width="3.2" stroke-linecap="round"/>
+      <!-- Torso (Mint Sweater) -->
+      <path d="M-7,-6 C-7,-17 7,-17 7,-6 Z" fill="#9BD6C0" stroke="#705F63" stroke-width="1.4"/>
+      <!-- Head -->
+      <circle cx="0" cy="-22" r="7.5" fill="#FDE0C8" stroke="#705F63" stroke-width="1.4"/>
+      <!-- Cute Beret Hat -->
+      <path d="M-7.5,-24 C-8,-31 7,-32 8,-24 Z" fill="#E8847C" stroke="#705F63" stroke-width="1.3"/>
+      <!-- Eyes & Rosy Cheeks -->
+      <circle cx="-2.8" cy="-21.5" r="1" fill="#5D4D50"/>
+      <circle cx="1.8" cy="-20.5" r="1" fill="#5D4D50"/>
+      <circle cx="-4.5" cy="-19.5" r="1.5" fill="#F5A4A4" opacity="0.65"/>
+      <!-- Tiny Acoustic Guitar -->
+      <g transform="translate(-4, -9) rotate(-25)">
+        <ellipse cx="0" cy="0" rx="5.5" ry="3.8" fill="#E49F62" stroke="#755A50" stroke-width="1.2"/>
+        <circle cx="0.5" cy="0" r="1.3" fill="#755A50"/>
+        <line x1="5" y1="0" x2="12" y2="0" stroke="#755A50" stroke-width="2" stroke-linecap="round"/>
+      </g>
+    </g>
+
+    <!-- Floating Cute Music Notes -->
+    <g fill="#E6837A" stroke="#E6837A" stroke-width="1.2">
+      <circle cx="-14" cy="-34" r="2.2"/>
+      <path d="M-12,-34 L-12,-43 L-6,-41" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="18" cy="-36" r="2"/>
+      <path d="M20,-36 L20,-44 L25,-42" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+
+  <!-- ==================== LARGE ROUND FOUNTAIN (CENTERPIECE) ==================== -->
+  <g transform="translate(414, 334)">
+    <!-- Soft Ground Contact Shadow -->
+    <ellipse cx="4" cy="14" rx="79" ry="42" fill="#9A8B7E" opacity="0.24"/>
+
+    <!-- Outer Basin Lower Wall -->
+    <path d="M-74,0 A74,39 0 0,0 74,0 L74,14 A74,39 0 0,1 -74,14 Z"
+          fill="#E5DBD0" stroke="#7A6A6D" stroke-width="1.8" stroke-linejoin="round"/>
+    <!-- Subtle Warm Shadow on Right Side of Basin Wall -->
+    <path d="M0,39 A74,39 0 0,0 74,0 L74,14 A74,39 0 0,1 0,53 Z"
+          fill="#D7CABC"/>
+
+    <!-- Outer Basin Top Rim -->
+    <ellipse cx="0" cy="0" rx="74" ry="39" fill="#FAF4EC" stroke="#7A6A6D" stroke-width="1.8"/>
+    <!-- Inner Water Pool -->
+    <ellipse cx="0" cy="2" rx="62" ry="32" fill="url(#waterGrad)" stroke="#72A4BA" stroke-width="1.5"/>
+
+    <!-- Water Ripples & Shimmer Rings -->
+    <ellipse cx="0" cy="4" rx="48" ry="24" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity="0.55" stroke-dasharray="16,12"/>
+    <ellipse cx="0" cy="5" rx="30" ry="15" fill="none" stroke="#FFFFFF" stroke-width="1.6" opacity="0.7" stroke-dasharray="12,9"/>
+
+    <!-- Central Tiered Pedestal -->
+    <!-- Lower Pedestal Base -->
+    <path d="M-16,4 L-12,-22 L12,-22 L16,4 A16,8 0 0,1 -16,4 Z"
+          fill="#F4ECE2" stroke="#7A6A6D" stroke-width="1.6" stroke-linejoin="round"/>
+
+    <!-- Middle Fountain Bowl -->
+    <path d="M-30,-26 C-30,-12 30,-12 30,-26 Z" fill="#E6DCD1" stroke="#7A6A6D" stroke-width="1.6"/>
+    <ellipse cx="0" cy="-26" rx="30" ry="14" fill="#FAF4EC" stroke="#7A6A6D" stroke-width="1.6"/>
+    <ellipse cx="0" cy="-25" rx="23" ry="10" fill="#9BD9EE" stroke="#72A4BA" stroke-width="1.2"/>
+
+    <!-- Upper Pedestal Column & Finial Bowl -->
+    <path d="M-7,-24 L-5,-44 L5,-44 L7,-24 A7,3.5 0 0,1 -7,-24 Z"
+          fill="#F4ECE2" stroke="#7A6A6D" stroke-width="1.5"/>
+    <path d="M-15,-46 C-15,-38 15,-38 15,-46 Z" fill="#E6DCD1" stroke="#7A6A6D" stroke-width="1.5"/>
+    <ellipse cx="0" cy="-46" rx="15" ry="7" fill="#FAF4EC" stroke="#7A6A6D" stroke-width="1.5"/>
+    <ellipse cx="0" cy="-46" rx="10" ry="4.5" fill="#A5E0F3"/>
+    <!-- Cute Round Finial -->
+    <circle cx="0" cy="-52" r="4.5" fill="#FFFDF9" stroke="#7A6A6D" stroke-width="1.4"/>
+
+    <!-- Animated-Feeling Pastel Water Arcs & Splashes -->
+    <g fill="none" stroke="#FFFFFF" stroke-linecap="round">
+      <!-- Top Spout Arcs -->
+      <path d="M0,-55 Q-14,-66 -20,-28" stroke-width="2.4" opacity="0.88"/>
+      <path d="M0,-55 Q14,-66 20,-28" stroke-width="2.4" opacity="0.88"/>
+      <path d="M0,-55 Q-6,-68 -8,-25" stroke-width="2" opacity="0.8"/>
+      <path d="M0,-55 Q7,-68 9,-25" stroke-width="2" opacity="0.8"/>
+      <!-- Mid-Tier Overflow Arcs into Main Basin -->
+      <path d="M-26,-23 Q-42,-16 -46,6" stroke-width="2.2" opacity="0.82"/>
+      <path d="M26,-23 Q42,-16 46,6" stroke-width="2.2" opacity="0.82"/>
+      <path d="M-12,-17 Q-22,-10 -24,14" stroke-width="2" opacity="0.78"/>
+      <path d="M12,-17 Q22,-10 24,14" stroke-width="2" opacity="0.78"/>
+    </g>
+
+    <!-- Cute White Splash Dots -->
+    <g fill="#FFFFFF" opacity="0.9">
+      <circle cx="-46" cy="7" r="2.6"/>
+      <circle cx="46" cy="7" r="2.6"/>
+      <circle cx="-24" cy="15" r="2.4"/>
+      <circle cx="24" cy="15" r="2.4"/>
+      <circle cx="-39" cy="11" r="1.6"/>
+      <circle cx="38" cy="12" r="1.6"/>
+    </g>
+
+    <!-- Plump Cute Pigeon Perched on Fountain Rim -->
+    <g transform="translate(-52, 22)">
+      <ellipse cx="0" cy="0" rx="5" ry="3.5" fill="#C4CED6" stroke="#6E666B" stroke-width="1.2"/>
+      <circle cx="3.5" cy="-3.5" r="2.8" fill="#D5DEE6" stroke="#6E666B" stroke-width="1.2"/>
+      <polygon points="6,-3.5 8.5,-2.8 6,-2" fill="#F2B463"/>
+    </g>
+  </g>
+
+  <!-- ==================== CHESS TABLE NOOK (LOWER-LEFT) ==================== -->
+  <g transform="translate(238, 362)">
+    <!-- Soft Shadow -->
+    <ellipse cx="0" cy="12" rx="28" ry="14" fill="#9A8B7E" opacity="0.22"/>
+
+    <!-- Back Stool (Upper-Left) with Player 1 -->
+    <g transform="translate(-22, -10)">
+      <ellipse cx="0" cy="10" rx="8" ry="4.5" fill="#9A8B7E" opacity="0.22"/>
+      <path d="M-6,1 L-6,8 A6,3 0 0,0 6,8 L6,1 Z" fill="#D4C7B8" stroke="#756160" stroke-width="1.3"/>
+      <ellipse cx="0" cy="1" rx="7.5" ry="4" fill="#EFE4D6" stroke="#756160" stroke-width="1.3"/>
+      <!-- Player 1 (Warm Yellow Cardigan) -->
+      <path d="M-6,-1 C-6,-12 6,-12 6,-1 Z" fill="#F7D174" stroke="#705F63" stroke-width="1.3"/>
+      <circle cx="0" cy="-16" r="6.8" fill="#FDE0C8" stroke="#705F63" stroke-width="1.3"/>
+      <path d="M-6.8,-17 C-7,-24 7,-24 6.8,-17 C4,-19 -4,-19 -6.8,-17 Z" fill="#7D5C54" stroke="#624842" stroke-width="1.1"/>
+      <circle cx="2.2" cy="-15.5" r="0.9" fill="#5D4D50"/>
+    </g>
+
+    <!-- Isometric Chess Table -->
+    <g stroke="#756160" stroke-width="1.5" stroke-linejoin="round">
+      <!-- Pedestal Leg -->
+      <polygon points="-6,2 0,5 0,16 -6,13" fill="#D9CBB9"/>
+      <polygon points="0,5 6,2 6,13 0,16" fill="#C7B7A4"/>
+      <!-- Table Base -->
+      <polygon points="-12,13 0,19 12,13 0,7" fill="#E6D9C8"/>
+      <!-- Table Top Side Edges -->
+      <polygon points="-20,-2 0,8 0,13 -20,3" fill="#D99B66"/>
+      <polygon points="0,8 20,-2 20,3 0,13" fill="#C28452"/>
+      <!-- Table Top Surface -->
+      <polygon points="-20,-2 0,-12 20,-2 0,8" fill="#F7EFE2"/>
+    </g>
+
+    <!-- Isometric 4x4 Checkered Chessboard Squares -->
+    <g fill="#7C6A6E" opacity="0.82">
+      <polygon points="-14,-2 -9,-4.5 -4,-2 -9,0.5"/>
+      <polygon points="-4,-7 1,-9.5 6,-7 1,-4.5"/>
+      <polygon points="-4,3 1,0.5 6,3 1,5.5"/>
+      <polygon points="6,-2 11,-4.5 16,-2 11,0.5"/>
+      <polygon points="-9,0.5 -4,-2 1,0.5 -4,3"/>
+      <polygon points="1,-4.5 6,-7 11,-4.5 6,-2"/>
+    </g>
+
+    <!-- Tiny Cute Chess Pieces -->
+    <g stroke="#5C4D50" stroke-width="0.9">
+      <circle cx="-7" cy="-3.5" r="1.8" fill="#FFFDF9"/>
+      <circle cx="-2" cy="-6" r="1.8" fill="#FFFDF9"/>
+      <circle cx="5" cy="-1" r="1.8" fill="#6F5E62"/>
+      <circle cx="9" cy="-3" r="1.8" fill="#6F5E62"/>
+    </g>
+
+    <!-- Front Stool (Lower-Right) with Player 2 -->
+    <g transform="translate(22, 10)">
+      <ellipse cx="0" cy="10" rx="8" ry="4.5" fill="#9A8B7E" opacity="0.22"/>
+      <path d="M-6,1 L-6,8 A6,3 0 0,0 6,8 L6,1 Z" fill="#D4C7B8" stroke="#756160" stroke-width="1.3"/>
+      <ellipse cx="0" cy="1" rx="7.5" ry="4" fill="#EFE4D6" stroke="#756160" stroke-width="1.3"/>
+      <!-- Player 2 (Dusty Lavender Sweater) -->
+      <path d="M-6,-1 C-6,-12 6,-12 6,-1 Z" fill="#C4B5E3" stroke="#705F63" stroke-width="1.3"/>
+      <circle cx="0" cy="-16" r="6.8" fill="#F6D1B6" stroke="#705F63" stroke-width="1.3"/>
+      <path d="M-6.8,-17 C-7,-24 7,-24 6.8,-17 C4,-19 -4,-19 -6.8,-17 Z" fill="#5D4B4F" stroke="#4D3D40" stroke-width="1.1"/>
+      <circle cx="-2.2" cy="-15.5" r="0.9" fill="#5D4D50"/>
+    </g>
+  </g>
+
+  <!-- ==================== FRONT BENCHES & LIVELY VISITORS ==================== -->
+  <!-- Bench 2 (Lower-Left of Fountain, Facing Fountain) -->
+  <g transform="translate(324, 398)" stroke="#756160" stroke-width="1.4" stroke-linejoin="round">
+    <ellipse cx="0" cy="10" rx="22" ry="9" fill="#9A8B7E" opacity="0.22" stroke="none"/>
+    <!-- Legs -->
+    <line x1="-14" y1="2" x2="-14" y2="11"/>
+    <line x1="12" y1="15" x2="12" y2="24"/>
+    <line x1="-8" y1="-3" x2="-8" y2="6"/>
+    <line x1="18" y1="10" x2="18" y2="19"/>
+    <!-- Seat -->
+    <polygon points="-16,-2 14,13 8,16 -22,1" fill="#F0BE8D"/>
+    <!-- Backrest (Front-facing side of bench) -->
+    <polygon points="-22,1 8,16 8,23 -22,8" fill="#D99B66"/>
+    <!-- Armrests -->
+    <path d="M-16,-2 L-22,1 L-22,-5" fill="none" stroke-width="1.5"/>
+    <path d="M14,13 L8,16 L8,10" fill="none" stroke-width="1.5"/>
+  </g>
+
+  <!-- Bench 3 (Lower-Right of Fountain, with Visitor Sitting) -->
+  <g transform="translate(492, 400)">
+    <ellipse cx="0" cy="10" rx="22" ry="9" fill="#9A8B7E" opacity="0.22"/>
+    <g stroke="#756160" stroke-width="1.4" stroke-linejoin="round">
+      <line x1="-14" y1="13" x2="-14" y2="22"/>
+      <line x1="14" y1="-1" x2="14" y2="8"/>
+      <line x1="-8" y1="16" x2="-8" y2="25"/>
+      <line x1="20" y1="2" x2="20" y2="11"/>
+      <!-- Seat -->
+      <polygon points="-16,10 14,-5 20,-2 -10,13" fill="#F0BE8D"/>
+      <!-- Backrest -->
+      <polygon points="-10,13 20,-2 20,5 -10,20" fill="#D99B66"/>
+    </g>
+    <!-- Cute Visitor Sitting on Bench -->
+    <g transform="translate(2, 2)">
+      <path d="M-6,-2 C-6,-13 6,-13 6,-2 Z" fill="#F4A59C" stroke="#705F63" stroke-width="1.3"/>
+      <circle cx="0" cy="-17" r="6.8" fill="#FDE0C8" stroke="#705F63" stroke-width="1.3"/>
+      <path d="M-6.8,-18 C-7,-25 7,-25 6.8,-18 Z" fill="#B57554" stroke="#7A5240" stroke-width="1.1"/>
+    </g>
+  </g>
+
+  <!-- Strolling Visitor Watching the Busker (Between Fountain & Stage) -->
+  <g transform="translate(520, 354)">
+    <ellipse cx="0" cy="4" rx="7.5" ry="3.8" fill="#9A8B7E" opacity="0.24"/>
+    <line x1="-2.2" y1="2" x2="-2.2" y2="-6" stroke="#6B6573" stroke-width="3" stroke-linecap="round"/>
+    <line x1="2.2" y1="3" x2="2.2" y2="-5" stroke="#6B6573" stroke-width="3" stroke-linecap="round"/>
+    <path d="M-6.5,-5 C-6.5,-16 6.5,-16 6.5,-5 Z" fill="#98C1E8" stroke="#705F63" stroke-width="1.3"/>
+    <circle cx="0" cy="-21" r="7" fill="#FDE0C8" stroke="#705F63" stroke-width="1.3"/>
+    <path d="M-7,-22 C-7,-29 7,-29 7,-22 C4,-24 -4,-24 -7,-22 Z" fill="#6F564F" stroke="#5A453F" stroke-width="1.1"/>
+    <!-- Cute Little Dog Beside Visitor -->
+    <g transform="translate(-14, 5)">
+      <ellipse cx="0" cy="2" rx="5.5" ry="2.6" fill="#9A8B7E" opacity="0.22"/>
+      <ellipse cx="0" cy="-1.5" rx="5" ry="3.2" fill="#F2C894" stroke="#7A5E52" stroke-width="1.2"/>
+      <circle cx="4.2" cy="-4.2" r="3" fill="#F2C894" stroke="#7A5E52" stroke-width="1.2"/>
+      <circle cx="5.2" cy="-4.5" r="0.8" fill="#5D4D50"/>
+      <path d="M-4.5,-2.5 Q-7,-5 -5.5,-6" fill="none" stroke="#7A5E52" stroke-width="1.3" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- Visitor Walking Through Triumphal Arch Promenade -->
+  <g transform="translate(336, 304)">
+    <ellipse cx="0" cy="4" rx="7" ry="3.5" fill="#9A8B7E" opacity="0.24"/>
+    <line x1="-2" y1="2" x2="-2" y2="-6" stroke="#786A70" stroke-width="2.8" stroke-linecap="round"/>
+    <line x1="2" y1="3" x2="2" y2="-5" stroke="#786A70" stroke-width="2.8" stroke-linecap="round"/>
+    <path d="M-6,-5 C-6,-15 6,-15 6,-5 Z" fill="#F5C678" stroke="#705F63" stroke-width="1.3"/>
+    <circle cx="0" cy="-20" r="6.8" fill="#F6D1B6" stroke="#705F63" stroke-width="1.3"/>
+    <path d="M-6.8,-21 C-7,-28 7,-28 6.8,-21 Z" fill="#524347" stroke="#423539" stroke-width="1.1"/>
+    <circle cx="2" cy="-19.5" r="0.9" fill="#423539"/>
+  </g>
+
+  <!-- ==================== FOREGROUND & FRAMING AUTUMN TREES & SHRUBS ==================== -->
+  <!-- Far-Left Warm Orange Tree -->
+  <g transform="translate(148, 316)">
+    <ellipse cx="0" cy="14" rx="25" ry="12" fill="#8D9E7A" opacity="0.38"/>
+    <path d="M-5,12 L-4,-14 L4,-14 L5.5,12 Q0,15 -5,12 Z" fill="#9E7660" stroke="#755A52" stroke-width="1.5"/>
+    <g stroke="#7A6058" stroke-width="1.6" stroke-linejoin="round">
+      <circle cx="-17" cy="-22" r="18" fill="#E68E4E"/>
+      <circle cx="17" cy="-20" r="17" fill="#DC8142"/>
+      <circle cx="0" cy="-36" r="23" fill="#F5A665"/>
+      <circle cx="-8" cy="-28" r="15" fill="#F9BE8A" stroke="none"/>
+      <circle cx="8" cy="-35" r="11" fill="#FCD1A6" stroke="none"/>
+    </g>
+  </g>
+
+  <!-- Far-Right Coral-Red Autumn Tree -->
+  <g transform="translate(658, 316)">
+    <ellipse cx="0" cy="14" rx="24" ry="12" fill="#8D9E7A" opacity="0.38"/>
+    <path d="M-4.5,12 L-3.5,-13 L3.5,-13 L5,12 Q0,15 -4.5,12 Z" fill="#9E7660" stroke="#755A52" stroke-width="1.5"/>
+    <g stroke="#7A5D5E" stroke-width="1.6" stroke-linejoin="round">
+      <circle cx="-16" cy="-21" r="17" fill="#DF7269"/>
+      <circle cx="16" cy="-20" r="16" fill="#D4635A"/>
+      <circle cx="0" cy="-35" r="22" fill="#ED877C"/>
+      <circle cx="-7" cy="-27" r="14" fill="#F5A49B" stroke="none"/>
+    </g>
+  </g>
+
+  <!-- Lower-Left Smaller Golden Autumn Tree -->
+  <g transform="translate(274, 428)">
+    <ellipse cx="0" cy="10" rx="18" ry="9" fill="#8D9E7A" opacity="0.35"/>
+    <path d="M-3.5,9 L-2.8,-9 L2.8,-9 L3.8,9 Q0,11 -3.5,9 Z" fill="#9E7660" stroke="#755A52" stroke-width="1.4"/>
+    <g stroke="#7A625B" stroke-width="1.5" stroke-linejoin="round">
+      <circle cx="-12" cy="-15" r="13" fill="#EBBF52"/>
+      <circle cx="12" cy="-14" r="12" fill="#E2B243"/>
+      <circle cx="0" cy="-25" r="16" fill="#F7D36C"/>
+      <circle cx="-5" cy="-19" r="10" fill="#FCE59B" stroke="none"/>
+    </g>
+  </g>
+
+  <!-- Lower-Right Smaller Apricot Tree -->
+  <g transform="translate(558, 412)">
+    <ellipse cx="0" cy="10" rx="18" ry="9" fill="#8D9E7A" opacity="0.35"/>
+    <path d="M-3.5,9 L-2.8,-9 L2.8,-9 L3.8,9 Q0,11 -3.5,9 Z" fill="#9E7660" stroke="#755A52" stroke-width="1.4"/>
+    <g stroke="#7A6058" stroke-width="1.5" stroke-linejoin="round">
+      <circle cx="-12" cy="-15" r="13" fill="#E68E4E"/>
+      <circle cx="12" cy="-14" r="12" fill="#DC8142"/>
+      <circle cx="0" cy="-25" r="16" fill="#F5A665"/>
+      <circle cx="-5" cy="-19" r="10" fill="#FBC493" stroke="none"/>
+    </g>
+  </g>
+
+  <!-- Front Lamppost (Lower-Center-Left) -->
+  <g transform="translate(362, 434)">
+    <ellipse cx="0" cy="4" rx="7" ry="3.5" fill="#8C7E75" opacity="0.25"/>
+    <circle cx="0" cy="-48" r="17" fill="url(#lampGlow)"/>
+    <path d="M-3,3 L-1.5,-42 L1.5,-42 L3,3 Z" fill="#6F7D85" stroke="#5A6369" stroke-width="1.3"/>
+    <circle cx="0" cy="-48" r="6.5" fill="#FFF8D6" stroke="#7A6A6D" stroke-width="1.4"/>
+    <path d="M-5,-53 Q0,-59 5,-53 Z" fill="#6F7D85" stroke="#5A6369" stroke-width="1.2"/>
+  </g>
+
+  <!-- Cozy Pastel Flower Bushes along Front Edge -->
+  <g transform="translate(412, 464)" stroke="#687A62" stroke-width="1.4">
+    <ellipse cx="0" cy="6" rx="22" ry="9" fill="#8D9E7A" opacity="0.3" stroke="none"/>
+    <circle cx="-12" cy="0" r="9.5" fill="#9CC486"/>
+    <circle cx="12" cy="0" r="9" fill="#90BA7A"/>
+    <circle cx="0" cy="-4" r="11" fill="#ACD296"/>
+    <!-- Tiny Pastel Blossoms -->
+    <g stroke="none">
+      <circle cx="-10" cy="-2" r="2.2" fill="#FFF4C2"/>
+      <circle cx="2" cy="-6" r="2.4" fill="#FAD0D7"/>
+      <circle cx="11" cy="-1" r="2.2" fill="#FFF4C2"/>
+      <circle cx="-3" cy="1" r="2" fill="#FAD0D7"/>
+    </g>
+  </g>
+
+  <g transform="translate(188, 376)" stroke="#687A62" stroke-width="1.4">
+    <circle cx="-8" cy="0" r="8" fill="#9CC486"/>
+    <circle cx="7" cy="1" r="7.5" fill="#90BA7A"/>
+    <circle cx="0" cy="-4" r="9" fill="#ACD296"/>
+    <circle cx="-4" cy="-4" r="2" fill="#FFF4C2" stroke="none"/>
+    <circle cx="5" cy="-2" r="2" fill="#FAD0D7" stroke="none"/>
+  </g>
+</svg>

@@ -1,0 +1,688 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <!-- Soft Pastel Sky Background -->
+    <radialGradient id="bgGrad" cx="50%" cy="46%" r="60%">
+      <stop offset="0%" stop-color="#F6FBFF"/>
+      <stop offset="65%" stop-color="#E7F4FC"/>
+      <stop offset="100%" stop-color="#D9ECF8"/>
+    </radialGradient>
+
+    <!-- Soft Ground Grass -->
+    <linearGradient id="grassBase" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#CBEAB9"/>
+      <stop offset="100%" stop-color="#B3DC9F"/>
+    </linearGradient>
+    <linearGradient id="lawnGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B8E5A2"/>
+      <stop offset="100%" stop-color="#9BD389"/>
+    </linearGradient>
+
+    <!-- Brick Walk Gradient -->
+    <linearGradient id="brickWalk" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8A594"/>
+      <stop offset="100%" stop-color="#D98B7A"/>
+    </linearGradient>
+
+    <!-- Glass Student Hall Gradients (Light Blue Accent) -->
+    <linearGradient id="glassLit" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C8ECFF"/>
+      <stop offset="50%" stop-color="#9AD6FA"/>
+      <stop offset="100%" stop-color="#7EC4F2"/>
+    </linearGradient>
+    <linearGradient id="glassShade" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#97D0F5"/>
+      <stop offset="100%" stop-color="#6EB2E2"/>
+    </linearGradient>
+
+    <!-- Dome Gradient -->
+    <linearGradient id="domeGrad" x1="20%" y1="15%" x2="85%" y2="90%">
+      <stop offset="0%" stop-color="#E8F5FC"/>
+      <stop offset="45%" stop-color="#C5E0F0"/>
+      <stop offset="100%" stop-color="#9BC2DA"/>
+    </linearGradient>
+
+    <!-- Copper Roof Gradients -->
+    <linearGradient id="copperLit" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A7E0C4"/>
+      <stop offset="100%" stop-color="#85CCA9"/>
+    </linearGradient>
+    <linearGradient id="copperShade" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7EC4A3"/>
+      <stop offset="100%" stop-color="#65AE8D"/>
+    </linearGradient>
+
+    <!-- Reusable Cozy Trees -->
+    <g id="treeSage">
+      <ellipse cx="0" cy="4" rx="13" ry="6.5" fill="#7CA873" opacity="0.32"/>
+      <path d="M-2.5,2 L-2,-9 L2,-9 L2.5,2 Z" fill="#9E7963" stroke="#4D4657" stroke-width="1.6" stroke-linejoin="round"/>
+      <path d="M-12,-14 C-14,-22 -7,-29 0,-28 C7,-29 14,-22 12,-14 C15,-9 11,-3 5,-4 C2,-2 -2,-2 -5,-4 C-11,-3 -15,-9 -12,-14 Z" fill="#89C98A" stroke="#4D4657" stroke-width="1.8" stroke-linejoin="round"/>
+      <path d="M-6,-23 C-2,-26 5,-25 8,-19 C10,-15 8,-10 4,-9 C7,-13 6,-19 1,-21 C-2,-22 -5,-22 -6,-23 Z" fill="#AEE0A6" opacity="0.85"/>
+    </g>
+
+    <g id="treeMint">
+      <ellipse cx="0" cy="4" rx="12" ry="6" fill="#7CA873" opacity="0.3"/>
+      <path d="M-2.2,2 L-1.8,-8 L1.8,-8 L2.2,2 Z" fill="#9E7963" stroke="#4D4657" stroke-width="1.6" stroke-linejoin="round"/>
+      <circle cx="-6" cy="-12" r="7.5" fill="#7BC9B1" stroke="#4D4657" stroke-width="1.8"/>
+      <circle cx="6" cy="-12" r="7.5" fill="#7BC9B1" stroke="#4D4657" stroke-width="1.8"/>
+      <circle cx="0" cy="-19" r="9" fill="#8CD6BE" stroke="#4D4657" stroke-width="1.8"/>
+      <circle cx="0" cy="-14" r="8.5" fill="#8CD6BE"/>
+      <path d="M-4,-24 C1,-26 6,-22 6,-17 C3,-21 -1,-22 -4,-24 Z" fill="#B5EBD9"/>
+    </g>
+
+    <g id="treeSpring">
+      <ellipse cx="0" cy="4" rx="11" ry="5.5" fill="#7CA873" opacity="0.3"/>
+      <path d="M-2,2 L-1.6,-8 L1.6,-8 L2,2 Z" fill="#9E7963" stroke="#4D4657" stroke-width="1.6" stroke-linejoin="round"/>
+      <ellipse cx="0" cy="-16" rx="11.5" ry="11" fill="#B4DB86" stroke="#4D4657" stroke-width="1.8"/>
+      <path d="M-4,-23 C2,-25 8,-20 7,-13 C4,-18 -1,-20 -4,-23 Z" fill="#D2EEAA"/>
+    </g>
+
+    <g id="bushSmall">
+      <ellipse cx="0" cy="2" rx="8" ry="4" fill="#7CA873" opacity="0.28"/>
+      <path d="M-7,0 C-8,-5 -4,-8 0,-7 C4,-8 8,-5 7,0 C6,2 -6,2 -7,0 Z" fill="#8DD08E" stroke="#4D4657" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M-2,-5 C1,-6 4,-4 4,-2" fill="none" stroke="#B6E8B2" stroke-width="1.5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Reusable Lamp Post with Light Blue Accent Banner -->
+    <g id="lampPost">
+      <ellipse cx="0" cy="2" rx="3.5" ry="1.8" fill="#4D4657" opacity="0.2"/>
+      <line x1="0" y1="1" x2="0" y2="-16" stroke="#4D4657" stroke-width="1.8" stroke-linecap="round"/>
+      <polygon points="0,-13 6,-11 6,-6 0,-8" fill="#89CDF8" stroke="#4D4657" stroke-width="1.1" stroke-linejoin="round"/>
+      <circle cx="0" cy="-17.5" r="2.8" fill="#FFF7D6" stroke="#4D4657" stroke-width="1.4"/>
+    </g>
+
+    <!-- Reusable Cute Bench -->
+    <g id="benchSE">
+      <polygon points="-8,4 8,-4 10,-2 -6,6" fill="#4D4657" opacity="0.18"/>
+      <polygon points="-7,1 7,-6 7,-3 -7,4" fill="#90D0F7" stroke="#4D4657" stroke-width="1.2" stroke-linejoin="round"/>
+      <polygon points="-7,-3 7,-10 7,-7 -7,0" fill="#B5E3FF" stroke="#4D4657" stroke-width="1.2" stroke-linejoin="round"/>
+    </g>
+    <g id="benchSW">
+      <polygon points="-8,-4 8,4 6,6 -10,-2" fill="#4D4657" opacity="0.18"/>
+      <polygon points="-7,-6 7,1 7,4 -7,-3" fill="#7EC2EE" stroke="#4D4657" stroke-width="1.2" stroke-linejoin="round"/>
+      <polygon points="-7,-10 7,-3 7,0 -7,-7" fill="#A6DCFC" stroke="#4D4657" stroke-width="1.2" stroke-linejoin="round"/>
+    </g>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bgGrad)"/>
+
+  <!-- Subtle Cozy Background Clouds -->
+  <g fill="#FFFFFF" opacity="0.65">
+    <path d="M72,96 C72,85 83,78 94,81 C100,72 115,72 121,81 C131,80 140,87 139,96 Z"/>
+    <path d="M645,112 C645,103 655,96 665,99 C671,91 684,91 690,99 C699,98 707,104 706,112 Z"/>
+    <path d="M68,510 C68,502 76,496 85,498 C90,491 102,491 107,498 C115,498 122,503 121,510 Z"/>
+    <path d="M676,488 C676,480 684,475 692,477 C697,470 708,470 713,477 C721,477 727,482 726,488 Z"/>
+  </g>
+
+  <!-- ========================================================= -->
+  <!-- 1. STICKER ISLAND SHADOW, WHITE STICKER BORDER & 3D PLINTH -->
+  <!-- ========================================================= -->
+
+  <!-- Soft Drop Shadow under Island -->
+  <polygon points="400,170 758,349 400,546 42,349" fill="#B2D0E3" opacity="0.45"/>
+
+  <!-- White Sticker Backing Silhouette -->
+  <g stroke="#FFFFFF" stroke-width="16" stroke-linejoin="round" fill="#FFFFFF">
+    <polygon points="400,148 752,324 752,348 400,524 48,348 48,324"/>
+  </g>
+
+  <!-- 3D Plinth Sides -->
+  <!-- Left-Bottom Earth/Stone Rim -->
+  <polygon points="50,325 400,500 400,524 50,349" fill="#E3D5C3" stroke="#4D4657" stroke-width="2.2" stroke-linejoin="round"/>
+  <!-- Right-Bottom Earth/Stone Rim -->
+  <polygon points="400,500 750,325 750,349 400,524" fill="#F2E7D8" stroke="#4D4657" stroke-width="2.2" stroke-linejoin="round"/>
+  <!-- Subtle Turf Lip -->
+  <polygon points="50,325 400,500 400,507 50,332" fill="#9ECA8D" stroke="#4D4657" stroke-width="1.6" stroke-linejoin="round"/>
+  <polygon points="400,500 750,325 750,332 400,507" fill="#B5DFA4" stroke="#4D4657" stroke-width="1.6" stroke-linejoin="round"/>
+
+  <!-- Top Ground Diamond -->
+  <polygon points="400,150 750,325 400,500 50,325" fill="url(#grassBase)" stroke="#4D4657" stroke-width="2.2" stroke-linejoin="round"/>
+
+  <!-- Perimeter Cream Stone Sidewalk Border -->
+  <polygon points="400,162 726,325 400,488 74,325" fill="none" stroke="#F4ECE0" stroke-width="10" stroke-linejoin="round"/>
+  <polygon points="400,166 718,325 400,484 82,325" fill="url(#grassBase)" stroke="#D9CEBC" stroke-width="1.2" stroke-linejoin="round"/>
+
+  <!-- ========================================================= -->
+  <!-- 2. PAVED NORTH PLAZA, BRICK PATHS & CENTRAL LAWN          -->
+  <!-- ========================================================= -->
+
+  <!-- North Plaza Stone Paving (around Domed Library & Steps) -->
+  <polygon points="325,187.5 475,262.5 325,337.5 175,262.5" fill="#F4ECDF" stroke="#D5C8B5" stroke-width="1.4" stroke-linejoin="round"/>
+  <!-- Subtle Plaza Paving Grid -->
+  <g stroke="#E3D7C5" stroke-width="1" opacity="0.8">
+    <line x1="250" y1="225" x2="400" y2="300"/>
+    <line x1="287.5" y1="206.25" x2="437.5" y2="281.25"/>
+    <line x1="212.5" y1="243.75" x2="362.5" y2="318.75"/>
+    <line x1="250" y1="300" x2="400" y2="225"/>
+    <line x1="287.5" y1="318.75" x2="437.5" y2="243.75"/>
+  </g>
+
+  <!-- Main East-West Brick Walk (College Walk: u in [-12, 8], v in [-170, 170]) -->
+  <polygon points="558,234 578,244 238,414 218,404" fill="url(#brickWalk)" stroke="#BA7262" stroke-width="1.4" stroke-linejoin="round"/>
+  <!-- Brick Walk Cross Lines -->
+  <g stroke="#C97E6E" stroke-width="1" opacity="0.65">
+    <line x1="518" y1="254" x2="538" y2="264"/>
+    <line x1="478" y1="274" x2="498" y2="284"/>
+    <line x1="438" y1="294" x2="458" y2="304"/>
+    <line x1="398" y1="314" x2="418" y2="324"/>
+    <line x1="358" y1="334" x2="378" y2="344"/>
+    <line x1="318" y1="354" x2="338" y2="364"/>
+    <line x1="278" y1="374" x2="298" y2="384"/>
+  </g>
+
+  <!-- Brick Path Frame around Central Lawn (u in [8, 108], v in [-88, 88]) -->
+  <polygon points="496,285 596,335 420,423 320,373" fill="url(#brickWalk)" stroke="#BA7262" stroke-width="1.4" stroke-linejoin="round"/>
+
+  <!-- Central Lawn - East Panel (u in [18, 94], v in [-74, -14]) -->
+  <polygon points="492,297 568,335 508,365 432,327" fill="url(#lawnGrad)" stroke="#7BB56D" stroke-width="1.6" stroke-linejoin="round"/>
+  <!-- Lawn Mowing Stripes (East) -->
+  <g stroke="#B8E7A6" stroke-width="4" opacity="0.45">
+    <line x1="478" y1="306" x2="550" y2="342"/>
+    <line x1="460" y1="315" x2="532" y2="351"/>
+    <line x1="444" y1="323" x2="516" y2="359"/>
+  </g>
+
+  <!-- Central Lawn - West Panel (u in [18, 94], v in [14, 74]) -->
+  <polygon points="404,341 480,379 420,409 344,371" fill="url(#lawnGrad)" stroke="#7BB56D" stroke-width="1.6" stroke-linejoin="round"/>
+  <!-- Lawn Mowing Stripes (West) -->
+  <g stroke="#B8E7A6" stroke-width="4" opacity="0.45">
+    <line x1="390" y1="350" x2="462" y2="386"/>
+    <line x1="372" y1="359" x2="444" y2="395"/>
+    <line x1="356" y1="367" x2="428" y2="403"/>
+  </g>
+
+  <!-- Central Lawn Fountain / Light-Blue Sundial Plaza at (u=56, v=0) -> (456, 353) -->
+  <g transform="translate(456, 353)">
+    <ellipse cx="0" cy="0" rx="22" ry="11" fill="#F4ECDF" stroke="#BA7262" stroke-width="1.5"/>
+    <ellipse cx="0" cy="0" rx="15" ry="7.5" fill="#9BD7FA" stroke="#4D4657" stroke-width="1.5"/>
+    <ellipse cx="-2" cy="-1" rx="9" ry="4" fill="#CBEBFF"/>
+    <!-- Cute Fountain Pedestal & Splash -->
+    <ellipse cx="0" cy="-3" rx="5.5" ry="2.8" fill="#F8F0E3" stroke="#4D4657" stroke-width="1.3"/>
+    <path d="M0,-4 Q-4,-11 -7,-7 M0,-4 Q4,-11 7,-7 M0,-4 L0,-11" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round"/>
+    <circle cx="0" cy="-11.5" r="1.6" fill="#FFFFFF"/>
+  </g>
+
+  <!-- ========================================================= -->
+  <!-- 3. BACK PERIMETER TREES & IRON FENCE                      -->
+  <!-- ========================================================= -->
+  <use href="#treeSage" x="398" y="168"/>
+  <use href="#treeMint" x="454" y="188"/>
+  <use href="#treeSpring" x="342" y="188"/>
+  <use href="#treeSage" x="234" y="242"/>
+  <use href="#treeMint" x="180" y="268"/>
+
+  <!-- ========================================================= -->
+  <!-- 4. NORTH-EAST RED BRICK BUILDING WITH GREEN COPPER ROOF   -->
+  <!--    u in [-142, -88], v in [-152, -84], z = 0..34..52      -->
+  <!-- ========================================================= -->
+  <g id="buildingNE">
+    <!-- Ground Shadow -->
+    <polygon points="464,205 478,212 410,246 396,239" fill="#5D6B5E" opacity="0.18"/>
+    <!-- Shaded Left Wall (v = -84) -->
+    <polygon points="342,212 396,239 396,205 342,178" fill="#CA7063" stroke="#4D4657" stroke-width="1.8" stroke-linejoin="round"/>
+    <!-- Lit Front Wall (u = -88) -->
+    <polygon points="396,239 464,205 464,171 396,205" fill="#E68F7F" stroke="#4D4657" stroke-width="1.8" stroke-linejoin="round"/>
+    <!-- Cream Stone Base Trim -->
+    <polygon points="342,212 396,239 396,233 342,206" fill="#E3D5C3" stroke="#4D4657" stroke-width="1.3" stroke-linejoin="round"/>
+    <polygon points="396,239 464,205 464,199 396,233" fill="#F6EDE0" stroke="#4D4657" stroke-width="1.3" stroke-linejoin="round"/>
+    <!-- Cream Cornice -->
+    <polygon points="340,178 396,206 466,171 466,166 396,201 340,173" fill="#FFF7EB" stroke="#4D4657" stroke-width="1.4" stroke-linejoin="round"/>
+    <!-- Windows (Lit Face - 2 rows x 4) -->
+    <g fill="#B3E2FC" stroke="#FFF6EA" stroke-width="1.5" stroke-linejoin="round">
+      <polygon points="405,212 413,208 413,216 405,220"/>
+      <polygon points="421,204 429,200 429,208 421,212"/>
+      <polygon points="437,196 445,192 445,200 437,204"/>
+      <polygon points="451,189 459,185 459,193 451,197"/>
+      <polygon points="405,199 413,195 413,203 405,207"/>
+      <polygon points="421,191 429,187 429,195 421,199"/>
+      <polygon points="437,183 445,179 445,187 437,191"/>
+      <polygon points="451,176 459,172 459,180 451,184"/>
+    </g>
+    <!-- Windows (Shaded Face - 2 rows x 2) -->
+    <g fill="#8AC5EB" stroke="#EADBC8" stroke-width="1.4" stroke-linejoin="round">
+      <polygon points="354,193 362,197 362,205 354,201"/>
+      <polygon points="374,203 382,207 382,215 374,211"/>
+      <polygon points="354,206 362,210 362,218 354,214"/>
+      <polygon points="374,216 382,220 382,228 374,224"/>
+    </g>
+    <!-- Pitched Green Copper Roof -->
+    <!-- Back-Right & Front-Right Slopes -->
+    <polygon points="342,175 410,141 445,152 385,182" fill="url(#copperShade)" stroke="#4D4657" stroke-width="1.8" stroke-linejoin="round"/>
+    <polygon points="342,175 396,202 385,182" fill="#6BB392" stroke="#4D4657" stroke-width="1.8" stroke-linejoin="round"/>
+    <polygon points="396,202 464,168 445,152 385,182" fill="url(#copperLit)" stroke="#4D4657" stroke-width="1.8" stroke-linejoin="round"/>
+    <polygon points="464,168 410,141 445,152" fill="#92D6B5" stroke="#4D4657" stroke-width="1.8" stroke-linejoin="round"/>
+    <!-- Cute Dormers on Copper Roof -->
+    <polygon points="407,182 415,178 415,186 407,190" fill="#FFF7EB" stroke="#4D4657" stroke-width="1.3"/>
+    <polygon points="431,170 439,166 439,174 431,178" fill="#FFF7EB" stroke="#4D4657" stroke-width="1.3"/>
+  </g>
+
+  <!-- ========================================================= -->
+  <!-- 5. NORTH-WEST RED BRICK BUILDING WITH GREEN COPPER ROOF   -->
+  <!--    u in [-142, -88], v in [84, 152], z = 0..34..52        -->
+  <!-- ========================================================= -->
+  <g id="buildingNW">
+    <!-- Ground Shadow -->
+    <polygon points="228,323 242,330 174,364 160,357" fill="#5D6B5E" opacity="0.18"/>
+    <!-- Shaded Left Wall (v = 152) -->
+    <polygon points="106,330 160,357 160,323 106,296" fill="#CA7063" stroke="#4D4657" stroke-width="1.8" stroke-linejoin="round"/>
+    <!-- Lit Front Wall (u = -88) -->
+    <polygon points="160,357 228,323 228,289 160,323" fill="#E68F7F" stroke="#4D4657" stroke-width="1.8" stroke-linejoin="round"/>
+    <!-- Cream Stone Base Trim -->
+    <polygon points="106,330 160,357 160,351 106,324" fill="#E3D5C3" stroke="#4D4657" stroke-width="1.3" stroke-linejoin="round"/>
+    <polygon points="160,357 228,323 228,317 160,351" fill="#F6EDE0" stroke="#4D4657" stroke-width="1.3" stroke-linejoin="round"/>
+    <!-- Cream Cornice -->
+    <polygon points="104,296 160,324 230,289 230,284 160,319 104,291" fill="#FFF7EB" stroke="#4D4657" stroke-width="1.4" stroke-linejoin="round"/>
+    <!-- Arched Entrance on Lit Face -->
+    <path d="M188,343 L188,331 C188,327 198,322 198,326 L198,338 Z" fill="#6F5B66" stroke="#FFF6EA" stroke-width="1.8" stroke-linejoin="round"/>
+    <!-- Windows (Lit Face) -->
+    <g fill="#B3E2FC" stroke="#FFF6EA" stroke-width="1.5" stroke-linejoin="round">
+      <polygon points="169,330 177,326 177,334 169,338"/>
+      <polygon points="211,309 219,305 219,313 211,317"/>
+      <polygon points="169,317 177,313 177,321 169,325"/>
+      <polygon points="189,307 197,303 197,311 189,315"/>
+      <polygon points="211,296 219,292 219,300 211,304"/>
+    </g>
+    <!-- Windows (Shaded Face) -->
+    <g fill="#8AC5EB" stroke="#EADBC8" stroke-width="1.4" stroke-linejoin="round">
+      <polygon points="118,311 126,315 126,323 118,319"/>
+      <polygon points="138,321 146,325 146,333 138,329"/>
+      <polygon points="118,324 126,328 126,336 118,332"/>
+      <polygon points="138,334 146,338 146,346 138,342"/>
+    </g>
+    <!-- Pitched Green Copper Roof -->
+    <polygon points="106,293 174,259 209,270 149,300" fill="url(#copperShade)" stroke="#4D4657" stroke-width="1.8" stroke-linejoin="round"/>
+    <polygon points="106,293 160,320 149,300" fill="#6BB392" stroke="#4D4657" stroke-width="1.8" stroke-linejoin="round"/>
+    <polygon points="160,320 228,286 209,270 149,300" fill="url(#copperLit)" stroke="#4D4657" stroke-width="1.8" stroke-linejoin="round"/>
+    <polygon points="228,286 174,259 209,270" fill="#92D6B5" stroke="#4D4657" stroke-width="1.8" stroke-linejoin="round"/>
+    <!-- Cute Dormers -->
+    <polygon points="171,300 179,296 179,304 171,308" fill="#FFF7EB" stroke="#4D4657" stroke-width="1.3"/>
+    <polygon points="195,288 203,284 203,292 195,296" fill="#FFF7EB" stroke="#4D4657" stroke-width="1.3"/>
+  </g>
+
+  <!-- ========================================================= -->
+  <!-- 6. NORTH DOMED NEOCLASSICAL LIBRARY + WIDE STONE STEPS    -->
+  <!--    Main block: u in [-138, -78], v in [-52, 52], z=0..42  -->
+  <!-- ========================================================= -->
+  <g id="domedLibrary">
+    <!-- Ground Shadow -->
+    <polygon points="374,260 442,294 340,345 270,312" fill="#5D6B5E" opacity="0.14"/>
+
+    <!-- Main Limestone Block -->
+    <!-- Left-Shaded Wall (v = +52) -->
+    <polygon points="210,282 270,312 270,270 210,240" fill="#E3D4BE" stroke="#4D4657" stroke-width="1.9" stroke-linejoin="round"/>
+    <!-- Front-Lit Wall (u = -78) -->
+    <polygon points="270,312 374,260 374,218 270,270" fill="#F8EFE0" stroke="#4D4657" stroke-width="1.9" stroke-linejoin="round"/>
+    <!-- Roof Slab -->
+    <polygon points="314,188 374,218 270,270 210,240" fill="#FFFBF2" stroke="#4D4657" stroke-width="1.9" stroke-linejoin="round"/>
+
+    <!-- Side Classical Windows on Left-Shaded Wall -->
+    <g fill="#9ACCEE" stroke="#F4EAE0" stroke-width="1.3">
+      <polygon points="222,256 230,260 230,272 222,268"/>
+      <polygon points="238,264 246,268 246,280 238,276"/>
+      <polygon points="254,272 262,276 262,288 254,284"/>
+    </g>
+
+    <!-- Classical Wings Windows on Front-Lit Wall -->
+    <g fill="#B3E0FA" stroke="#E8D8C3" stroke-width="1.3">
+      <polygon points="278,278 286,274 286,286 278,290"/>
+      <polygon points="356,239 364,235 364,247 356,251"/>
+    </g>
+
+    <!-- Stepped Attic Base under Dome -->
+    <polygon points="300,198 340,218 284,246 244,226" fill="#F6EDE0" stroke="#4D4657" stroke-width="1.6" stroke-linejoin="round"/>
+    <polygon points="244,226 284,246 284,236 244,216" fill="#E0D0B9" stroke="#4D4657" stroke-width="1.6" stroke-linejoin="round"/>
+    <polygon points="284,246 340,218 340,208 284,236" fill="#F6EDE0" stroke="#4D4657" stroke-width="1.6" stroke-linejoin="round"/>
+    <polygon points="300,188 340,208 284,236 244,216" fill="#FFFBF2" stroke="#4D4657" stroke-width="1.6" stroke-linejoin="round"/>
+
+    <!-- Cylindrical Drum (centered at x=292, base y=214, top y=197) -->
+    <path d="M258,214 L258,197 A34,16 0 0,0 326,197 L326,214 A34,16 0 0,1 258,214 Z" fill="#F4EAD9" stroke="#4D4657" stroke-width="1.8" stroke-linejoin="round"/>
+    <!-- Drum Shading Left -->
+    <path d="M258,214 L258,197 A34,16 0 0,0 288,212 L288,229 A34,16 0 0,1 258,214 Z" fill="#DFD0BA" opacity="0.65"/>
+    <!-- Drum Clerestory Arched Windows (Light Blue) -->
+    <g fill="#9ED6F8" stroke="#4D4657" stroke-width="1.1">
+      <rect x="265" y="203" width="6" height="9" rx="3"/>
+      <rect x="276" y="207" width="6.5" height="9.5" rx="3.2"/>
+      <rect x="289" y="209" width="7" height="9.5" rx="3.5"/>
+      <rect x="302" y="207" width="6.5" height="9.5" rx="3.2"/>
+      <rect x="313" y="203" width="6" height="9" rx="3"/>
+    </g>
+
+    <!-- Grand Neoclassical Dome -->
+    <path d="M257,197 C257,164 275,153 292,153 C309,153 327,164 327,197 A35,16 0 0,1 257,197 Z" fill="url(#domeGrad)" stroke="#4D4657" stroke-width="2" stroke-linejoin="round"/>
+    <!-- Delicate Dome Ribs -->
+    <g fill="none" stroke="#85AEC9" stroke-width="1.2" opacity="0.7">
+      <path d="M292,153 C280,164 274,180 274,207"/>
+      <path d="M292,153 C292,168 292,186 292,212"/>
+      <path d="M292,153 C304,164 310,180 310,207"/>
+    </g>
+    <!-- Soft Dome Highlight -->
+    <path d="M300,159 C310,164 317,175 318,191" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.65"/>
+
+    <!-- Cute Cupola Lantern atop Dome -->
+    <path d="M285,154 L285,146 A7,3.5 0 0,0 299,146 L299,154 A7,3.5 0 0,1 285,154 Z" fill="#FFF8EC" stroke="#4D4657" stroke-width="1.5"/>
+    <path d="M284,146 C284,139 292,136 292,136 C292,136 300,139 300,146 A8,3.5 0 0,1 284,146 Z" fill="#8CCCF5" stroke="#4D4657" stroke-width="1.5"/>
+    <circle cx="292" cy="134.5" r="2" fill="#FFE699" stroke="#4D4657" stroke-width="1.2"/>
+
+    <!-- Front Classical Portico (u in [-78, -60], v in [-32, +32]) -->
+    <!-- Recessed Dark Portico Interior -->
+    <polygon points="300,295 362,264 362,232 300,263" fill="#BFAEA0" stroke="#4D4657" stroke-width="1.4"/>
+    <!-- Portico Side Left Wall -->
+    <polygon points="290,302 308,311 308,270 290,261" fill="#E3D4BE" stroke="#4D4657" stroke-width="1.6" stroke-linejoin="round"/>
+    <!-- Portico Columns (6 classical columns along front edge from (312,309) to (368,281)) -->
+    <g fill="#FFF9EE" stroke="#4D4657" stroke-width="1.4" stroke-linejoin="round">
+      <rect x="310" y="271" width="5.5" height="35" rx="2"/>
+      <rect x="321" y="265.5" width="5.5" height="35" rx="2"/>
+      <rect x="332" y="260" width="5.5" height="35" rx="2"/>
+      <rect x="343" y="254.5" width="5.5" height="35" rx="2"/>
+      <rect x="354" y="249" width="5.5" height="35" rx="2"/>
+      <rect x="365" y="243.5" width="5.5" height="35" rx="2"/>
+    </g>
+    <!-- Portico Roof & Pediment -->
+    <polygon points="290,261 354,229 372,238 308,270" fill="#FFFBF2" stroke="#4D4657" stroke-width="1.7" stroke-linejoin="round"/>
+    <!-- Entablature Beam -->
+    <polygon points="306,274 374,240 374,233 306,267" fill="#F8EFE0" stroke="#4D4657" stroke-width="1.7" stroke-linejoin="round"/>
+    <!-- Light-Blue Accent Frieze Strip -->
+    <line x1="310" y1="268" x2="370" y2="238" stroke="#8ACCF6" stroke-width="2.2" stroke-linecap="round"/>
+    <!-- Triangular Pediment -->
+    <polygon points="305,267 375,232 340,234" fill="#FFF9EE" stroke="#4D4657" stroke-width="1.8" stroke-linejoin="round"/>
+    <polygon points="315,260 365,235 340,238" fill="#DCEFF9" stroke="#C5B6A2" stroke-width="1"/>
+
+    <!-- WIDE STONE STEPS descending from Portico to Plaza -->
+    <!-- Top Terrace Landing -->
+    <polygon points="302,306 378,268 394,276 318,314" fill="#FFFBF2" stroke="#4D4657" stroke-width="1.5" stroke-linejoin="round"/>
+    <!-- Step 1 -->
+    <polygon points="318,314 394,276 394,280 318,318" fill="#E3D4BE" stroke="#4D4657" stroke-width="1.2"/>
+    <polygon points="318,318 394,280 403,284.5 327,322.5" fill="#F9F1E4" stroke="#4D4657" stroke-width="1.2"/>
+    <!-- Step 2 -->
+    <polygon points="327,322.5 403,284.5 403,288.5 327,326.5" fill="#E3D4BE" stroke="#4D4657" stroke-width="1.2"/>
+    <polygon points="327,326.5 403,288.5 412,293 336,331" fill="#F9F1E4" stroke="#4D4657" stroke-width="1.2"/>
+    <!-- Step 3 -->
+    <polygon points="336,331 412,293 412,297 336,335" fill="#E3D4BE" stroke="#4D4657" stroke-width="1.2"/>
+    <polygon points="336,335 412,297 421,301.5 345,339.5" fill="#F9F1E4" stroke="#4D4657" stroke-width="1.2"/>
+    <!-- Step 4 (Bottom wide landing) -->
+    <polygon points="345,339.5 421,301.5 421,305.5 345,343.5" fill="#DDD0BC" stroke="#4D4657" stroke-width="1.3"/>
+
+    <!-- Flanking Low Stone Balustrades on Steps -->
+    <!-- East Balustrade -->
+    <polygon points="376,267 423,290.5 423,298.5 376,275" fill="#E8DAC6" stroke="#4D4657" stroke-width="1.5" stroke-linejoin="round"/>
+    <polygon points="376,267 382,264 429,287.5 423,290.5" fill="#FFFBF2" stroke="#4D4657" stroke-width="1.4" stroke-linejoin="round"/>
+    <!-- West Balustrade -->
+    <polygon points="298,306 345,329.5 345,337.5 298,314" fill="#E3D4BE" stroke="#4D4657" stroke-width="1.5" stroke-linejoin="round"/>
+    <polygon points="298,306 304,303 351,326.5 345,329.5" fill="#FFFBF2" stroke="#4D4657" stroke-width="1.4" stroke-linejoin="round"/>
+
+    <!-- Cute Miniature Pedestal Statue on Center of Steps -->
+    <g transform="translate(366, 305)">
+      <polygon points="-5,0 0,-2.5 5,0 0,2.5" fill="#FFFBF2" stroke="#4D4657" stroke-width="1.1"/>
+      <rect x="-3.5" y="-5" width="7" height="5" fill="#E8DAC6" stroke="#4D4657" stroke-width="1.1"/>
+      <circle cx="0" cy="-9" r="3.2" fill="#89C9F5" stroke="#4D4657" stroke-width="1.2"/>
+    </g>
+  </g>
+
+  <!-- Trees flanking the North Plaza & College Walk -->
+  <use href="#treeSpring" x="488" y="232"/>
+  <use href="#treeSage" x="518" y="248"/>
+  <use href="#treeMint" x="268" y="346"/>
+  <use href="#treeSage" x="242" y="360"/>
+
+  <!-- ========================================================= -->
+  <!-- 7. EAST IRON GATES (Amsterdam Entrance, v = -166)         -->
+  <!-- ========================================================= -->
+  <g id="eastGates">
+    <!-- North Gate Pier -->
+    <polygon points="551,231 559,235 559,218 551,214" fill="#E3D4BE" stroke="#4D4657" stroke-width="1.4"/>
+    <polygon points="559,235 567,231 567,214 559,218" fill="#F8EFE0" stroke="#4D4657" stroke-width="1.4"/>
+    <polygon points="551,214 559,210 567,214 559,218" fill="#FFFBF2" stroke="#4D4657" stroke-width="1.4"/>
+    <circle cx="559" cy="210" r="3" fill="#B5E3FF" stroke="#4D4657" stroke-width="1.3"/>
+    <!-- Iron Archway -->
+    <path d="M559,220 C566,214 574,218 580,228" fill="none" stroke="#4D4657" stroke-width="2" stroke-linecap="round"/>
+    <!-- Open Iron Gate Leaves -->
+    <path d="M557,231 L550,235 L550,224 L557,220 Z" fill="none" stroke="#4D4657" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M578,242 L571,246 L571,235 L578,231 Z" fill="none" stroke="#4D4657" stroke-width="1.5" stroke-linejoin="round"/>
+    <!-- South Gate Pier -->
+    <polygon points="572,242 580,246 580,229 572,225" fill="#E3D4BE" stroke="#4D4657" stroke-width="1.4"/>
+    <polygon points="580,246 588,242 588,225 580,229" fill="#F8EFE0" stroke="#4D4657" stroke-width="1.4"/>
+    <polygon points="572,225 580,221 588,225 580,229" fill="#FFFBF2" stroke="#4D4657" stroke-width="1.4"/>
+    <circle cx="580" cy="221" r="3" fill="#B5E3FF" stroke="#4D4657" stroke-width="1.3"/>
+  </g>
+
+  <!-- ========================================================= -->
+  <!-- 8. EAST MID-CAMPUS RED BRICK HALL WITH GREEN COPPER ROOF  -->
+  <!--    u in [18, 86], v in [-152, -98], z = 0..36..54         -->
+  <!-- ========================================================= -->
+  <g id="buildingEast">
+    <!-- Ground Shadow -->
+    <polygon points="638,292 652,299 598,326 584,319" fill="#5D6B5E" opacity="0.18"/>
+    <!-- Shaded Left Wall (v = -98) -->
+    <polygon points="516,285 584,319 584,283 516,249" fill="#CA7063" stroke="#4D4657" stroke-width="1.8" stroke-linejoin="round"/>
+    <!-- Lit Front Wall (u = +86) -->
+    <polygon points="584,319 638,292 638,256 584,283" fill="#E68F7F" stroke="#4D4657" stroke-width="1.8" stroke-linejoin="round"/>
+    <!-- Cream Base Trim -->
+    <polygon points="516,285 584,319 584,313 516,279" fill="#E3D5C3" stroke="#4D4657" stroke-width="1.3" stroke-linejoin="round"/>
+    <polygon points="584,319 638,292 638,286 584,313" fill="#F6EDE0" stroke="#4D4657" stroke-width="1.3" stroke-linejoin="round"/>
+    <!-- Cream Cornice -->
+    <polygon points="514,249 584,284 640,256 640,251 584,279 514,244" fill="#FFF7EB" stroke="#4D4657" stroke-width="1.4" stroke-linejoin="round"/>
+    <!-- Windows on Shaded Long Wall (v = -98) -->
+    <g fill="#8AC5EB" stroke="#EADBC8" stroke-width="1.4" stroke-linejoin="round">
+      <polygon points="525,261 533,265 533,273 525,269"/>
+      <polygon points="541,269 549,273 549,281 541,277"/>
+      <polygon points="557,277 565,281 565,289 557,285"/>
+      <polygon points="571,284 579,288 579,296 571,292"/>
+      <polygon points="525,274 533,278 533,286 525,282"/>
+      <polygon points="541,282 549,286 549,294 541,290"/>
+      <polygon points="557,290 565,294 565,302 557,298"/>
+      <polygon points="571,297 579,301 579,309 571,305"/>
+    </g>
+    <!-- Windows on Lit Front Wall -->
+    <g fill="#B3E2FC" stroke="#FFF6EA" stroke-width="1.5" stroke-linejoin="round">
+      <polygon points="595,285 603,281 603,289 595,293"/>
+      <polygon points="616,274.5 624,270.5 624,278.5 616,282.5"/>
+      <polygon points="595,298 603,294 603,302 595,306"/>
+      <polygon points="616,287.5 624,283.5 624,291.5 616,295.5"/>
+    </g>
+    <!-- Hipped Green Copper Roof -->
+    <polygon points="516,246 570,219 560,239" fill="#82C9A8" stroke="#4D4657" stroke-width="1.8" stroke-linejoin="round"/>
+    <polygon points="516,246 584,280 604,261 560,239" fill="url(#copperShade)" stroke="#4D4657" stroke-width="1.8" stroke-linejoin="round"/>
+    <polygon points="584,280 638,253 604,261" fill="url(#copperLit)" stroke="#4D4657" stroke-width="1.8" stroke-linejoin="round"/>
+    <polygon points="638,253 570,219 560,239 604,261" fill="#9EDBBF" stroke="#4D4657" stroke-width="1.8" stroke-linejoin="round"/>
+    <!-- Cute Copper Roof Ridge & Mini Ventilator -->
+    <line x1="560" y1="239" x2="604" y2="261" stroke="#4D4657" stroke-width="1.8" stroke-linecap="round"/>
+    <polygon points="578,248 584,245 588,247 582,250" fill="#FFF7EB" stroke="#4D4657" stroke-width="1.2"/>
+  </g>
+
+  <!-- ========================================================= -->
+  <!-- 9. CENTRAL LAWN DETAILS: BENCHES, LAMPS, BUSHES           -->
+  <!-- ========================================================= -->
+  <use href="#lampPost" x="424" y="314"/>
+  <use href="#lampPost" x="352" y="350"/>
+  <use href="#lampPost" x="494" y="280"/>
+  <use href="#lampPost" x="518" y="370"/>
+  <use href="#lampPost" x="412" y="422"/>
+
+  <use href="#benchSE" x="466" y="302"/>
+  <use href="#benchSE" x="374" y="348"/>
+  <use href="#benchSW" x="488" y="376"/>
+  <use href="#benchSW" x="436" y="328"/>
+
+  <use href="#bushSmall" x="488" y="302"/>
+  <use href="#bushSmall" x="556" y="336"/>
+  <use href="#bushSmall" x="352" y="370"/>
+  <use href="#bushSmall" x="422" y="405"/>
+
+  <!-- ========================================================= -->
+  <!-- 10. WEST IRON GATES (Broadway Entrance, v = +166)         -->
+  <!-- ========================================================= -->
+  <g id="westGates">
+    <!-- Perimeter Iron Fence Segments -->
+    <path d="M180,384 L212,400 M238,414 L268,429" stroke="#4D4657" stroke-width="2" stroke-linecap="round"/>
+    <g stroke="#4D4657" stroke-width="1.3">
+      <line x1="188" y1="388" x2="188" y2="379"/>
+      <line x1="196" y1="392" x2="196" y2="383"/>
+      <line x1="204" y1="396" x2="204" y2="387"/>
+      <line x1="246" y1="418" x2="246" y2="409"/>
+      <line x1="254" y1="422" x2="254" y2="413"/>
+      <line x1="262" y1="426" x2="262" y2="417"/>
+    </g>
+    <!-- North Gate Pier -->
+    <polygon points="208,402 216,406 216,388 208,384" fill="#E3D4BE" stroke="#4D4657" stroke-width="1.5"/>
+    <polygon points="216,406 224,402 224,384 216,388" fill="#F8EFE0" stroke="#4D4657" stroke-width="1.5"/>
+    <polygon points="208,384 216,380 224,384 216,388" fill="#FFFBF2" stroke="#4D4657" stroke-width="1.5"/>
+    <circle cx="216" cy="379" r="3.4" fill="#B5E3FF" stroke="#4D4657" stroke-width="1.4"/>
+    <!-- Ornate Wrought-Iron Archway -->
+    <path d="M216,390 C224,382 234,388 240,400" fill="none" stroke="#4D4657" stroke-width="2.2" stroke-linecap="round"/>
+    <circle cx="228" cy="388" r="2.2" fill="#8CCDF7" stroke="#4D4657" stroke-width="1.2"/>
+    <!-- Open Iron Gate Leaves -->
+    <path d="M220,403 L228,399 L228,388 L220,392 Z" fill="none" stroke="#4D4657" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M242,414 L250,410 L250,399 L242,403 Z" fill="none" stroke="#4D4657" stroke-width="1.5" stroke-linejoin="round"/>
+    <!-- South Gate Pier -->
+    <polygon points="232,414 240,418 240,400 232,396" fill="#E3D4BE" stroke="#4D4657" stroke-width="1.5"/>
+    <polygon points="240,418 248,414 248,396 240,400" fill="#F8EFE0" stroke="#4D4657" stroke-width="1.5"/>
+    <polygon points="232,396 240,392 248,396 240,400" fill="#FFFBF2" stroke="#4D4657" stroke-width="1.5"/>
+    <circle cx="240" cy="391" r="3.4" fill="#B5E3FF" stroke="#4D4657" stroke-width="1.4"/>
+  </g>
+
+  <!-- ========================================================= -->
+  <!-- 11. WEST MID-CAMPUS: GLASS STUDENT HALL (Light Blue!)     -->
+  <!--     u in [20, 88], v in [98, 152], z = 0..38              -->
+  <!-- ========================================================= -->
+  <g id="glassStudentHall">
+    <!-- Ground Shadow -->
+    <polygon points="390,418 404,425 350,452 336,445" fill="#5D6B5E" opacity="0.18"/>
+    <!-- Shaded Left Wall (v = 152) - Light Blue Glass Curtain Wall -->
+    <polygon points="268,411 336,445 336,407 268,373" fill="url(#glassShade)" stroke="#4D4657" stroke-width="1.9" stroke-linejoin="round"/>
+    <!-- Lit Front Wall (u = +88) - Light Blue Glass Curtain Wall -->
+    <polygon points="336,445 390,418 390,380 336,407" fill="url(#glassLit)" stroke="#4D4657" stroke-width="1.9" stroke-linejoin="round"/>
+
+    <!-- Visible Cozy Interior Zig-Zag Ramps inside Glass Hall -->
+    <g stroke="#FFF6E8" stroke-width="2.6" stroke-linecap="round" opacity="0.78">
+      <line x1="274" y1="399" x2="328" y2="416"/>
+      <line x1="276" y1="386" x2="328" y2="429"/>
+      <line x1="342" y1="422" x2="384" y2="407"/>
+      <line x1="342" y1="409" x2="384" y2="394"/>
+    </g>
+
+    <!-- Bright Pastel Glass Reflections -->
+    <polygon points="346,439 362,431 372,390 356,398" fill="#FFFFFF" opacity="0.38"/>
+    <polygon points="374,425 381,421.5 386,383 379,386.5" fill="#FFFFFF" opacity="0.3"/>
+    <polygon points="282,418 294,424 300,389 288,383" fill="#FFFFFF" opacity="0.22"/>
+
+    <!-- Modern Architectural Mullions Grid -->
+    <g stroke="#F8FBFF" stroke-width="1.3" opacity="0.85">
+      <!-- Vertical Mullions (Left Face) -->
+      <line x1="285" y1="381.5" x2="285" y2="419.5"/>
+      <line x1="302" y1="390" x2="302" y2="428"/>
+      <line x1="319" y1="398.5" x2="319" y2="436.5"/>
+      <!-- Horizontal Mullions (Left Face) -->
+      <line x1="268" y1="386" x2="336" y2="420"/>
+      <line x1="268" y1="399" x2="336" y2="433"/>
+      <!-- Vertical Mullions (Lit Face) -->
+      <line x1="354" y1="398" x2="354" y2="436"/>
+      <line x1="372" y1="389" x2="372" y2="427"/>
+      <!-- Horizontal Mullions (Lit Face) -->
+      <line x1="336" y1="420" x2="390" y2="393"/>
+      <line x1="336" y1="433" x2="390" y2="406"/>
+    </g>
+
+    <!-- Warm Cream Architectural Corner Piers -->
+    <polygon points="268,411 275,414.5 275,376.5 268,373" fill="#E6D7C3" stroke="#4D4657" stroke-width="1.4"/>
+    <polygon points="329,441.5 336,445 336,407 329,403.5" fill="#E6D7C3" stroke="#4D4657" stroke-width="1.4"/>
+    <polygon points="336,445 343,441.5 343,403.5 336,407" fill="#F8EFE0" stroke="#4D4657" stroke-width="1.4"/>
+    <polygon points="383,421.5 390,418 390,380 383,383.5" fill="#F8EFE0" stroke="#4D4657" stroke-width="1.4"/>
+
+    <!-- Flat Modern Roof with Light-Blue Skylight Atrium -->
+    <polygon points="322,346 390,380 336,407 268,373" fill="#F5EFE6" stroke="#4D4657" stroke-width="1.9" stroke-linejoin="round"/>
+    <polygon points="322,354 374,380 336,399 284,373" fill="#A6DCFA" stroke="#4D4657" stroke-width="1.5" stroke-linejoin="round"/>
+    <line x1="303" y1="363.5" x2="355" y2="389.5" stroke="#FFFFFF" stroke-width="1.5" opacity="0.8"/>
+    <line x1="312" y1="387" x2="348" y2="369" stroke="#FFFFFF" stroke-width="1.5" opacity="0.8"/>
+  </g>
+
+  <!-- Trees around Mid-Campus & South Approaches -->
+  <use href="#treeSage" x="654" y="314"/>
+  <use href="#treeSpring" x="688" y="328"/>
+  <use href="#treeMint" x="150" y="374"/>
+  <use href="#treeSage" x="306" y="456"/>
+
+  <!-- ========================================================= -->
+  <!-- 12. SOUTH SIDE: LONG COLONNADED LIBRARY                   -->
+  <!--     u in [112, 156], v in [-94, +94], z = 0..42..56       -->
+  <!-- ========================================================= -->
+  <g id="colonnadedLibrary">
+    <!-- Ground Shadow -->
+    <polygon points="650,356 664,363 476,457 462,450" fill="#5D6B5E" opacity="0.18"/>
+
+    <!-- Wide Low Stone Terrace Plinth (z = 0..5) -->
+    <polygon points="414,430 462,454 462,449 414,425" fill="#DDD0BC" stroke="#4D4657" stroke-width="1.5" stroke-linejoin="round"/>
+    <polygon points="462,454 654,358 654,353 462,449" fill="#F5EBDC" stroke="#4D4657" stroke-width="1.5" stroke-linejoin="round"/>
+
+    <!-- Left-Shaded End Wall (v = +94) -->
+    <polygon points="418,425 462,447 462,405 418,383" fill="#E3D4BE" stroke="#4D4657" stroke-width="1.9" stroke-linejoin="round"/>
+    <!-- Arched Windows on Left End Wall -->
+    <g fill="#9ACCEE" stroke="#F4EAD9" stroke-width="1.3">
+      <rect x="427" y="397" width="7" height="16" rx="3.5" transform="skewY(26.5) translate(0,-212)"/>
+      <rect x="444" y="405.5" width="7" height="16" rx="3.5" transform="skewY(26.5) translate(0,-220.5)"/>
+    </g>
+
+    <!-- Long South-East Facade (u = +156, from (462,447) to (650,353)) -->
+    <!-- Base Wall -->
+    <polygon points="462,447 650,353 650,311 462,405" fill="#F8EFE0" stroke="#4D4657" stroke-width="1.9" stroke-linejoin="round"/>
+
+    <!-- Recessed Shaded Colonnade Loggia (from v = +76 to v = -76) -->
+    <polygon points="480,438 632,362 632,327 480,403" fill="#D4C3AE" stroke="#4D4657" stroke-width="1.5" stroke-linejoin="round"/>
+    <!-- Tall Recessed Library Windows inside Loggia -->
+    <g fill="#8AC7EE" opacity="0.9">
+      <polygon points="488,430 498,425 498,402 488,407"/>
+      <polygon points="506,421 516,416 516,393 506,398"/>
+      <polygon points="524,412 534,407 534,384 524,389"/>
+      <polygon points="542,403 552,398 552,375 542,380"/>
+      <polygon points="560,394 570,389 570,366 560,371"/>
+      <polygon points="578,385 588,380 588,357 578,362"/>
+      <polygon points="596,376 606,371 606,348 596,353"/>
+      <polygon points="614,367 624,362 624,339 614,344"/>
+    </g>
+
+    <!-- 10 Tall Classical Ionic Columns across the Long Loggia -->
+    <g fill="#FFF9EE" stroke="#4D4657" stroke-width="1.4" stroke-linejoin="round">
+      <rect x="481" y="401" width="5.5" height="36" rx="2"/>
+      <rect x="497" y="393" width="5.5" height="36" rx="2"/>
+      <rect x="513" y="385" width="5.5" height="36" rx="2"/>
+      <rect x="529" y="377" width="5.5" height="36" rx="2"/>
+      <rect x="545" y="369" width="5.5" height="36" rx="2"/>
+      <rect x="561" y="361" width="5.5" height="36" rx="2"/>
+      <rect x="577" y="353" width="5.5" height="36" rx="2"/>
+      <rect x="593" y="345" width="5.5" height="36" rx="2"/>
+      <rect x="609" y="337" width="5.5" height="36" rx="2"/>
+      <rect x="625" y="329" width="5.5" height="36" rx="2"/>
+    </g>
+
+    <!-- Corner Pavilion Windows (West & East ends of long facade) -->
+    <g fill="#B3E2FC" stroke="#4D4657" stroke-width="1.2" stroke-linejoin="round">
+      <polygon points="467,433 475,429 475,414 467,418"/>
+      <polygon points="637,348 645,344 645,329 637,333"/>
+    </g>
+
+    <!-- Grand Classical Entablature & Light-Blue Accent Frieze -->
+    <polygon points="460,407 652,311 652,304 460,400" fill="#FFF9EE" stroke="#4D4657" stroke-width="1.7" stroke-linejoin="round"/>
+    <line x1="466" y1="400.5" x2="646" y2="310.5" stroke="#8ACCF6" stroke-width="2.4" stroke-linecap="round"/>
+
+    <!-- Top Roof Deck -->
+    <polygon points="606,289 650,311 462,405 418,383" fill="#FFFBF2" stroke="#4D4657" stroke-width="1.9" stroke-linejoin="round"/>
+    <!-- Stepped Attic & Pastel Light-Blue/Green Skylight Monitor Roof -->
+    <polygon points="598,298 626,312 470,390 442,376" fill="#E3D4BE" stroke="#4D4657" stroke-width="1.5" stroke-linejoin="round"/>
+    <polygon points="442,376 470,390 470,382 442,368" fill="#D9C9B2" stroke="#4D4657" stroke-width="1.4" stroke-linejoin="round"/>
+    <polygon points="470,390 626,312 626,304 470,382" fill="#F5EBDC" stroke="#4D4657" stroke-width="1.4" stroke-linejoin="round"/>
+    <!-- Hipped Skylight Roof -->
+    <polygon points="442,368 470,382 480,368" fill="#7EC4E8" stroke="#4D4657" stroke-width="1.5" stroke-linejoin="round"/>
+    <polygon points="470,382 626,304 606,305 480,368" fill="#A8DCFA" stroke="#4D4657" stroke-width="1.5" stroke-linejoin="round"/>
+    <polygon points="626,304 598,290 606,305" fill="#92D0F4" stroke="#4D4657" stroke-width="1.5" stroke-linejoin="round"/>
+    <polygon points="598,290 442,368 480,368 606,305" fill="#C4E9FF" stroke="#4D4657" stroke-width="1.5" stroke-linejoin="round"/>
+  </g>
+
+  <!-- ========================================================= -->
+  <!-- 13. FOREGROUND TREES & COZY FINISHING ACCENTS             -->
+  <!-- ========================================================= -->
+  <use href="#treeMint" x="368" y="468"/>
+  <use href="#treeSpring" x="404" y="486"/>
+  <use href="#treeSage" x="444" y="474"/>
+  <use href="#treeMint" x="676" y="362"/>
+  <use href="#bushSmall" x="536" y="428"/>
+  <use href="#bushSmall" x="598" y="397"/>
+</svg>

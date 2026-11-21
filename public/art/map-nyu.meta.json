@@ -1,0 +1,27 @@
+{
+ "model": "gemini-4-neon",
+ "prompt": "Draw an isometric miniature campus map of a downtown New York City university neighborhood: a park with a white marble arch and a round fountain in the middle, a tall red sandstone library on the south side, a modern glass student center next to it, rows of brownstone and brick buildings, trees, paths, a few tiny street lamps. Accent color violet. Soft pastel palette, rounded shapes, gentle shadows, isometric view, the feel of a cute life-sim game, same style as a cozy sticker illustration. viewBox 0 0 800 600.",
+ "usage": {
+  "total_tokens": 31225,
+  "total_input_tokens": 173,
+  "input_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 173
+   }
+  ],
+  "total_cached_tokens": 0,
+  "total_output_tokens": 18724,
+  "output_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 18724
+   }
+  ],
+  "total_tool_use_tokens": 0,
+  "total_thought_tokens": 12328,
+  "initial_input_tokens": 173
+ },
+ "ms": 233025,
+ "made_at": "2026-11-21T16:09:58.101Z"
+}

@@ -1,0 +1,678 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <!-- Soft pastel backdrop -->
+    <radialGradient id="bg-grad" cx="50%" cy="46%" r="60%">
+      <stop offset="0%" stop-color="#FDFBFF"/>
+      <stop offset="100%" stop-color="#EFE8F7"/>
+    </radialGradient>
+
+    <!-- Sticker drop shadow -->
+    <filter id="sticker-shadow" x="-15%" y="-15%" width="130%" height="135%">
+      <feDropShadow dx="0" dy="14" stdDeviation="12" flood-color="#7B6296" flood-opacity="0.16"/>
+    </filter>
+
+    <!-- Soft lamp glow -->
+    <radialGradient id="lamp-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF7C8" stop-opacity="0.95"/>
+      <stop offset="55%" stop-color="#FFE699" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#FFE699" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Fountain water gradient -->
+    <radialGradient id="water-grad" cx="42%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#C8F0FA"/>
+      <stop offset="65%" stop-color="#96D6EB"/>
+      <stop offset="100%" stop-color="#7BC0DB"/>
+    </radialGradient>
+
+    <!-- Glass student center gradients -->
+    <linearGradient id="glass-lit" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#CBE8F7"/>
+      <stop offset="50%" stop-color="#A6D4EA"/>
+      <stop offset="100%" stop-color="#8EC3DF"/>
+    </linearGradient>
+    <linearGradient id="glass-shade" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9BC9E2"/>
+      <stop offset="100%" stop-color="#7AA9C8"/>
+    </linearGradient>
+
+    <!-- Red sandstone library gradients -->
+    <linearGradient id="sandstone-lit" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E69282"/>
+      <stop offset="100%" stop-color="#D77C6C"/>
+    </linearGradient>
+    <linearGradient id="sandstone-shade" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#CB7262"/>
+      <stop offset="100%" stop-color="#B96052"/>
+    </linearGradient>
+
+    <!-- Reusable fluffy mint tree -->
+    <g id="tree-mint">
+      <ellipse cx="0" cy="2" rx="11" ry="5.5" fill="#7FA67B" opacity="0.32"/>
+      <path d="M-2,1 L-2,-9 L2,-9 L2,1 Z" fill="#9E7B6A" stroke="#6E5D7A" stroke-width="1.1" stroke-linejoin="round"/>
+      <circle cx="-6" cy="-14" r="7.5" fill="#99CE94" stroke="#6E5D7A" stroke-width="1.2"/>
+      <circle cx="6" cy="-13" r="7" fill="#8CC287" stroke="#6E5D7A" stroke-width="1.2"/>
+      <circle cx="0" cy="-19" r="9" fill="#B2E0AC" stroke="#6E5D7A" stroke-width="1.2"/>
+      <path d="M-5,-23 A6,6 0 0,1 3,-25" fill="none" stroke="#DDF5D8" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <!-- Reusable fluffy sage tree -->
+    <g id="tree-sage">
+      <ellipse cx="0" cy="2" rx="10" ry="5" fill="#7FA67B" opacity="0.3"/>
+      <path d="M-1.8,1 L-1.8,-8 L1.8,-8 L1.8,1 Z" fill="#9E7B6A" stroke="#6E5D7A" stroke-width="1.1" stroke-linejoin="round"/>
+      <circle cx="-5" cy="-13" r="6.8" fill="#A6D6A2" stroke="#6E5D7A" stroke-width="1.2"/>
+      <circle cx="5.5" cy="-12.5" r="6.5" fill="#93C48F" stroke="#6E5D7A" stroke-width="1.2"/>
+      <circle cx="0" cy="-18" r="8.2" fill="#BEE6B8" stroke="#6E5D7A" stroke-width="1.2"/>
+      <path d="M-4,-21.5 A5,5 0 0,1 2.5,-23" fill="none" stroke="#E5F8E0" stroke-width="1.8" stroke-linecap="round"/>
+    </g>
+
+    <!-- Reusable violet blossom accent tree -->
+    <g id="tree-violet">
+      <ellipse cx="0" cy="2" rx="10.5" ry="5.2" fill="#7D6999" opacity="0.28"/>
+      <path d="M-1.8,1 L-1.8,-8.5 L1.8,-8.5 L1.8,1 Z" fill="#8E6E66" stroke="#6E5D7A" stroke-width="1.1" stroke-linejoin="round"/>
+      <circle cx="-5.5" cy="-13.5" r="7" fill="#C9A7F5" stroke="#6E5D7A" stroke-width="1.2"/>
+      <circle cx="5.5" cy="-13" r="6.8" fill="#B792EA" stroke="#6E5D7A" stroke-width="1.2"/>
+      <circle cx="0" cy="-18.5" r="8.5" fill="#DCC3FC" stroke="#6E5D7A" stroke-width="1.2"/>
+      <path d="M-4.5,-22 A5.5,5.5 0 0,1 3,-23.5" fill="none" stroke="#F4EAFF" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <!-- Reusable tiny street lamp with violet banner -->
+    <g id="street-lamp">
+      <ellipse cx="0" cy="1" rx="4" ry="2" fill="#6E5D7A" opacity="0.24"/>
+      <line x1="0" y1="0" x2="0" y2="-18" stroke="#645473" stroke-width="1.6" stroke-linecap="round"/>
+      <polygon points="0,-13 4.5,-11.5 4.5,-7 0,-8.5" fill="#9B72CF" stroke="#645473" stroke-width="0.7" stroke-linejoin="round"/>
+      <circle cx="0" cy="-19.5" r="7" fill="url(#lamp-glow)"/>
+      <circle cx="0" cy="-19.5" r="2.7" fill="#FFF7D6" stroke="#645473" stroke-width="1"/>
+    </g>
+
+    <!-- Reusable cozy bush -->
+    <g id="bush">
+      <ellipse cx="0" cy="1" rx="6.5" ry="3.2" fill="#7FA67B" opacity="0.28"/>
+      <circle cx="-3" cy="-2" r="4" fill="#9DD197" stroke="#6E5D7A" stroke-width="1"/>
+      <circle cx="3" cy="-1.5" r="3.6" fill="#8DC387" stroke="#6E5D7A" stroke-width="1"/>
+      <circle cx="0" cy="-4" r="4.2" fill="#B8E4B2" stroke="#6E5D7A" stroke-width="1"/>
+    </g>
+  </defs>
+
+  <!-- Soft pastel background -->
+  <rect width="800" height="600" fill="url(#bg-grad)"/>
+
+  <!-- Subtle cozy background sparkles -->
+  <g fill="#D7C4EB" opacity="0.55">
+    <circle cx="96" cy="148" r="3.5"/>
+    <circle cx="114" cy="134" r="2"/>
+    <circle cx="708" cy="158" r="3.5"/>
+    <circle cx="690" cy="142" r="2"/>
+    <circle cx="122" cy="482" r="3"/>
+    <circle cx="684" cy="474" r="3.5"/>
+    <path d="M68,210 Q72,210 72,206 Q72,210 76,210 Q72,210 72,214 Q72,210 68,210 Z"/>
+    <path d="M726,228 Q730,228 730,224 Q730,228 734,228 Q730,228 730,232 Q730,228 726,228 Z"/>
+  </g>
+
+  <!-- MAIN DIORAMA GROUP WITH COZY STICKER BORDER & SHADOW -->
+  <g filter="url(#sticker-shadow)">
+    <!-- White die-cut sticker halo behind the isometric slab -->
+    <path d="M400,132 L754,309 L754,346 L400,523 L46,346 L46,309 Z"
+          fill="#FFFFFF" stroke="#FFFFFF" stroke-width="16" stroke-linejoin="round"/>
+  </g>
+
+  <!-- ISOMETRIC BASE SLAB -->
+  <g stroke="#6E5D7A" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- Left-front (SW) slab edge -->
+    <polygon points="60,315 400,485 400,509 60,339" fill="#DDD3E6"/>
+    <!-- Right-front (SE) slab edge -->
+    <polygon points="400,485 740,315 740,339 400,509" fill="#C7BBD4"/>
+    <!-- Top sidewalk base plane -->
+    <polygon points="400,145 740,315 400,485 60,315" fill="#F2ECE4"/>
+  </g>
+
+  <!-- STREETS & CROSSWALKS -->
+  <g stroke-linejoin="round" stroke-linecap="round">
+    <!-- North street (Washington Sq N) -->
+    <polygon points="480,185 507,198 167,369 140,355" fill="#D5CDDF"/>
+    <!-- South street (Washington Sq S) -->
+    <polygon points="633,261 660,275 320,445 293,432" fill="#D5CDDF"/>
+    <!-- East street -->
+    <polygon points="346,172 319,185 659,355 687,342" fill="#D5CDDF"/>
+    <!-- West street -->
+    <polygon points="141,275 113,288 454,458 481,445" fill="#D5CDDF"/>
+    <!-- Fifth Ave stub north of Arch -->
+    <polygon points="247,222 213,238 293,278 327,261" fill="#D5CDDF"/>
+
+    <!-- Subtle street center dashed lines -->
+    <g stroke="#EAE4F2" stroke-width="1.6" stroke-dasharray="6,7" opacity="0.8">
+      <line x1="485" y1="196" x2="162" y2="358"/>
+      <line x1="638" y1="272" x2="315" y2="434"/>
+      <line x1="340" y1="184" x2="665" y2="346"/>
+      <line x1="135" y1="286" x2="460" y2="448"/>
+      <line x1="234" y1="232" x2="306" y2="268"/>
+    </g>
+
+    <!-- Cute crosswalk stripes -->
+    <g stroke="#F7F4FA" stroke-width="2.2">
+      <!-- North entrance crosswalk -->
+      <line x1="305" y1="264" x2="317" y2="270"/>
+      <line x1="299" y1="267" x2="311" y2="273"/>
+      <line x1="293" y1="270" x2="305" y2="276"/>
+      <!-- South entrance crosswalk -->
+      <line x1="471" y1="347" x2="483" y2="353"/>
+      <line x1="465" y1="350" x2="477" y2="356"/>
+      <line x1="459" y1="353" x2="471" y2="359"/>
+      <!-- East crosswalk -->
+      <line x1="496" y1="260" x2="484" y2="266"/>
+      <line x1="502" y1="263" x2="490" y2="269"/>
+      <!-- West crosswalk -->
+      <line x1="296" y1="360" x2="284" y2="366"/>
+      <line x1="302" y1="363" x2="290" y2="369"/>
+    </g>
+  </g>
+
+  <!-- THE PARK (GRASS, CURB, PATHS, PLAZA) -->
+  <g stroke-linejoin="round" stroke-linecap="round">
+    <!-- Park stone curb border -->
+    <polygon points="426,239 552,302 374,391 248,328" fill="#EFE7DC" stroke="#8E7F9B" stroke-width="1.3"/>
+    <!-- Park lush pastel grass -->
+    <polygon points="426,244 544,303 374,386 256,327" fill="#B8DFB0"/>
+
+    <!-- Soft sunlit lawn patches -->
+    <ellipse cx="422" cy="272" rx="28" ry="12" fill="#CBEAC4" opacity="0.7"/>
+    <ellipse cx="478" cy="310" rx="26" ry="12" fill="#CBEAC4" opacity="0.65"/>
+    <ellipse cx="322" cy="322" rx="25" ry="11" fill="#CBEAC4" opacity="0.65"/>
+    <ellipse cx="384" cy="356" rx="28" ry="12" fill="#CBEAC4" opacity="0.65"/>
+
+    <!-- Park Stone Paths -->
+    <g fill="#F3EADF" stroke="#D9CCB9" stroke-width="1">
+      <!-- Diagonal path NW to SE (Arch to South) -->
+      <polygon points="328,274 348,284 472,346 452,336"/>
+      <!-- Wider promenade around Arch and Fountain -->
+      <polygon points="325,278 349,266 475,329 451,341"/>
+      <!-- Cross path NE to SW -->
+      <polygon points="480,267 496,275 320,363 304,355"/>
+      <!-- Secondary corner paths -->
+      <polygon points="422,247 432,252 380,381 370,376" opacity="0.85"/>
+      <polygon points="268,322 278,317 532,305 522,310" opacity="0.85"/>
+    </g>
+
+    <!-- Central circular stone plaza around fountain -->
+    <ellipse cx="400" cy="315" rx="44" ry="22" fill="#F5EDE3" stroke="#D8C9B8" stroke-width="1.2"/>
+    <ellipse cx="400" cy="315" rx="34" ry="17" fill="#EFE5D8" stroke="#DFD2C3" stroke-width="0.9"/>
+  </g>
+
+  <!-- ========================================================= -->
+  <!-- DEPTH LAYER A: FAR NORTH-EAST & NORTH-EAST BROWNSTONES    -->
+  <!-- ========================================================= -->
+
+  <!-- 1. Far North-East Corner Academic Hall (u=-148..-94, v=-148..-116, h=66) -->
+  <g stroke="#6E5D7A" stroke-width="1.35" stroke-linejoin="round" stroke-linecap="round">
+    <!-- SW lit face -->
+    <polygon points="366,176 423,205 423,139 366,110" fill="#E39D8B"/>
+    <!-- SE shaded face -->
+    <polygon points="423,205 457,188 457,122 423,139" fill="#C98270"/>
+    <!-- Hipped pastel slate roof -->
+    <polygon points="366,110 423,139 457,122 400,94" fill="#9E90B0"/>
+    <polygon points="382,108 418,126 441,114 405,97" fill="#B2A5C4"/>
+    <!-- Windows on SW face -->
+    <g fill="#604E6E" stroke-width="0.9">
+      <rect x="375" y="126" width="6" height="9" rx="2" transform="skewY(26) translate(0,-190)"/>
+      <rect x="387" y="126" width="6" height="9" rx="2" transform="skewY(26) translate(0,-190)"/>
+      <rect x="399" y="126" width="6" height="9" rx="2" transform="skewY(26) translate(0,-190)"/>
+      <rect x="411" y="126" width="6" height="9" rx="2" transform="skewY(26) translate(0,-190)"/>
+      <rect x="375" y="142" width="6" height="9" rx="2" transform="skewY(26) translate(0,-190)"/>
+      <rect x="387" y="142" width="6" height="9" rx="2" transform="skewY(26) translate(0,-190)"/>
+      <rect x="399" y="142" width="6" height="9" rx="2" transform="skewY(26) translate(0,-190)" fill="#FFEBB8"/>
+      <rect x="411" y="142" width="6" height="9" rx="2" transform="skewY(26) translate(0,-190)"/>
+    </g>
+    <!-- Violet university banner on SE face -->
+    <polygon points="434,146 444,141 444,160 439,157 434,164" fill="#9B72CF" stroke-width="1"/>
+  </g>
+
+  <!-- 2. North-East Brownstone Row (3 houses facing the park) -->
+  <!-- House NE-1 (dusty rose brick, h=54) -->
+  <g stroke="#6E5D7A" stroke-width="1.35" stroke-linejoin="round" stroke-linecap="round">
+    <polygon points="311,204 367,233 367,179 311,150" fill="#E6A9A9"/>
+    <polygon points="367,233 387,223 387,169 367,179" fill="#CE8E8E"/>
+    <polygon points="311,150 367,179 387,169 331,140" fill="#B5A6C2"/>
+    <!-- Cornice -->
+    <polyline points="367,179 387,169" stroke="#F8F0EC" stroke-width="2.2"/>
+    <!-- Windows on park-facing SE facade -->
+    <polygon points="371,185 376,182.5 376,192.5 371,195" fill="#5D4B6B" stroke-width="0.9"/>
+    <polygon points="379,181 384,178.5 384,188.5 379,191" fill="#FFEBB8" stroke-width="0.9"/>
+    <polygon points="371,202 376,199.5 376,209.5 371,212" fill="#5D4B6B" stroke-width="0.9"/>
+    <polygon points="379,198 384,195.5 384,205.5 379,208" fill="#5D4B6B" stroke-width="0.9"/>
+    <!-- Cute violet stoop door -->
+    <polygon points="375,217 381,214 381,226 375,229" fill="#9B72CF" stroke-width="0.9"/>
+  </g>
+
+  <!-- House NE-2 (caramel brownstone, h=58) -->
+  <g stroke="#6E5D7A" stroke-width="1.35" stroke-linejoin="round" stroke-linecap="round">
+    <polygon points="291,214 347,243 347,185 291,156" fill="#DDB79A"/>
+    <polygon points="347,243 367,233 367,175 347,185" fill="#C49B7E"/>
+    <polygon points="291,156 347,185 367,175 311,146" fill="#A697B5"/>
+    <polyline points="347,185 367,175" stroke="#FAF2EB" stroke-width="2.2"/>
+    <!-- Tiny chimney -->
+    <polygon points="325,163 332,166.5 332,158 325,154.5" fill="#C49B7E" stroke-width="1"/>
+    <polygon points="332,166.5 337,164 337,155.5 332,158" fill="#A87E62" stroke-width="1"/>
+    <polygon points="325,154.5 332,158 337,155.5 330,152" fill="#E3C4AC" stroke-width="1"/>
+    <!-- Windows -->
+    <polygon points="351,192 356,189.5 356,199.5 351,202" fill="#FFEBB8" stroke-width="0.9"/>
+    <polygon points="359,188 364,185.5 364,195.5 359,198" fill="#5D4B6B" stroke-width="0.9"/>
+    <polygon points="351,209 356,206.5 356,216.5 351,219" fill="#5D4B6B" stroke-width="0.9"/>
+    <polygon points="359,205 364,202.5 364,212.5 359,215" fill="#5D4B6B" stroke-width="0.9"/>
+    <polygon points="355,227 361,224 361,236 355,239" fill="#8A62BE" stroke-width="0.9"/>
+  </g>
+
+  <!-- House NE-3 (warm terracotta brick, h=52) -->
+  <g stroke="#6E5D7A" stroke-width="1.35" stroke-linejoin="round" stroke-linecap="round">
+    <polygon points="271,224 327,253 327,201 271,172" fill="#E59A84"/>
+    <polygon points="327,253 347,243 347,191 327,201" fill="#CC806A"/>
+    <polygon points="271,172 327,201 347,191 291,162" fill="#B5A6C2"/>
+    <polyline points="327,201 347,191" stroke="#FAF2EB" stroke-width="2.2"/>
+    <!-- Side windows facing 5th Ave -->
+    <polygon points="282,190 288,193 288,202 282,199" fill="#5D4B6B" stroke-width="0.9"/>
+    <polygon points="296,197 302,200 302,209 296,206" fill="#FFEBB8" stroke-width="0.9"/>
+    <polygon points="310,204 316,207 316,216 310,213" fill="#5D4B6B" stroke-width="0.9"/>
+    <!-- Front windows -->
+    <polygon points="331,207 336,204.5 336,214.5 331,217" fill="#5D4B6B" stroke-width="0.9"/>
+    <polygon points="339,203 344,200.5 344,210.5 339,213" fill="#5D4B6B" stroke-width="0.9"/>
+    <polygon points="335,236 341,233 341,246 335,249" fill="#9B72CF" stroke-width="0.9"/>
+  </g>
+
+  <!-- 3. East Side Academic Building 1 (u=-56..-4, v=-148..-116, h=60) -->
+  <g stroke="#6E5D7A" stroke-width="1.35" stroke-linejoin="round" stroke-linecap="round">
+    <polygon points="463,225 518,252 518,192 463,165" fill="#EFE4D6"/>
+    <polygon points="518,252 551,235 551,175 518,192" fill="#D8CBB9"/>
+    <polygon points="463,165 518,192 551,175 497,148" fill="#B9ACC7"/>
+    <!-- Arched windows on park-facing SW wall -->
+    <g fill="#604E6E" stroke-width="0.9">
+      <polygon points="471,179 477,182 477,192 471,189"/>
+      <polygon points="484,185.5 490,188.5 490,198.5 484,195.5" fill="#FFEBB8"/>
+      <polygon points="497,192 503,195 503,205 497,202"/>
+      <polygon points="471,197 477,200 477,210 471,207"/>
+      <polygon points="484,203.5 490,206.5 490,216.5 484,213.5"/>
+      <polygon points="497,210 503,213 503,223 497,220"/>
+    </g>
+    <!-- Violet accent banner -->
+    <polygon points="508,200 514,203 514,220 511,217 508,217" fill="#9B72CF" stroke-width="0.9"/>
+  </g>
+
+  <!-- 4. East Side Academic Building 2 (u=+4..+56, v=-148..-116, h=54) -->
+  <g stroke="#6E5D7A" stroke-width="1.35" stroke-linejoin="round" stroke-linecap="round">
+    <polygon points="526,256 581,284 581,230 526,202" fill="#E39D8B"/>
+    <polygon points="581,284 614,267 614,213 581,230" fill="#CA8270"/>
+    <polygon points="526,202 581,230 614,213 560,185" fill="#A697B5"/>
+    <!-- Windows -->
+    <g fill="#604E6E" stroke-width="0.9">
+      <polygon points="535,216 541,219 541,228 535,225"/>
+      <polygon points="548,222.5 554,225.5 554,234.5 548,231.5"/>
+      <polygon points="561,229 567,232 567,241 561,238" fill="#FFEBB8"/>
+      <polygon points="535,233 541,236 541,245 535,242"/>
+      <polygon points="548,239.5 554,242.5 554,251.5 548,248.5"/>
+      <polygon points="561,246 567,249 567,258 561,255"/>
+    </g>
+  </g>
+
+  <!-- ========================================================= -->
+  <!-- DEPTH LAYER B: NORTH-WEST BROWNSTONES, NORTH TREES & ARCH -->
+  <!-- ========================================================= -->
+
+  <!-- 5. North-West Brownstone Row (3 houses facing the park) -->
+  <!-- House NW-1 (cream limestone, h=52) -->
+  <g stroke="#6E5D7A" stroke-width="1.35" stroke-linejoin="round" stroke-linecap="round">
+    <polygon points="198,260 255,289 255,237 198,208" fill="#EFE4D6"/>
+    <polygon points="255,289 275,279 275,227 255,237" fill="#D8CBB9"/>
+    <polygon points="198,208 255,237 275,227 218,198" fill="#B5A6C2"/>
+    <polyline points="255,237 275,227" stroke="#FFFFFF" stroke-width="2"/>
+    <polygon points="259,243 264,240.5 264,250.5 259,253" fill="#5D4B6B" stroke-width="0.9"/>
+    <polygon points="267,239 272,236.5 272,246.5 267,249" fill="#FFEBB8" stroke-width="0.9"/>
+    <polygon points="263,272 269,269 269,282 263,285" fill="#9B72CF" stroke-width="0.9"/>
+  </g>
+
+  <!-- House NW-2 (terracotta brick, h=58) -->
+  <g stroke="#6E5D7A" stroke-width="1.35" stroke-linejoin="round" stroke-linecap="round">
+    <polygon points="178,270 235,299 235,241 178,212" fill="#E39784"/>
+    <polygon points="235,299 255,289 255,231 235,241" fill="#C97D6A"/>
+    <polygon points="178,212 235,241 255,231 198,202" fill="#A293B2"/>
+    <polyline points="235,241 255,231" stroke="#FAF2EB" stroke-width="2"/>
+    <polygon points="239,248 244,245.5 244,255.5 239,258" fill="#5D4B6B" stroke-width="0.9"/>
+    <polygon points="247,244 252,241.5 252,251.5 247,254" fill="#5D4B6B" stroke-width="0.9"/>
+    <polygon points="239,265 244,262.5 244,272.5 239,275" fill="#FFEBB8" stroke-width="0.9"/>
+    <polygon points="247,261 252,258.5 252,268.5 247,271" fill="#5D4B6B" stroke-width="0.9"/>
+    <polygon points="243,282 249,279 249,292 243,295" fill="#8A62BE" stroke-width="0.9"/>
+  </g>
+
+  <!-- House NW-3 (caramel brownstone, h=50) -->
+  <g stroke="#6E5D7A" stroke-width="1.35" stroke-linejoin="round" stroke-linecap="round">
+    <polygon points="158,280 215,309 215,259 158,230" fill="#DDB79A"/>
+    <polygon points="215,309 235,299 235,249 215,259" fill="#C49B7E"/>
+    <polygon points="158,230 215,259 235,249 178,220" fill="#B5A6C2"/>
+    <polyline points="215,259 235,249" stroke="#FAF2EB" stroke-width="2"/>
+    <!-- Side windows -->
+    <polygon points="170,247 176,250 176,259 170,256" fill="#5D4B6B" stroke-width="0.9"/>
+    <polygon points="184,254 190,257 190,266 184,263" fill="#FFEBB8" stroke-width="0.9"/>
+    <polygon points="198,261 204,264 204,273 198,270" fill="#5D4B6B" stroke-width="0.9"/>
+    <!-- Front windows -->
+    <polygon points="219,265 224,262.5 224,272.5 219,275" fill="#5D4B6B" stroke-width="0.9"/>
+    <polygon points="227,261 232,258.5 232,268.5 227,271" fill="#5D4B6B" stroke-width="0.9"/>
+    <polygon points="223,292 229,289 229,302 223,305" fill="#9B72CF" stroke-width="0.9"/>
+  </g>
+
+  <!-- 6. Park North-East Trees & Lamp (behind Arch/Fountain) -->
+  <use href="#tree-mint" x="424" y="256"/>
+  <use href="#tree-violet" x="454" y="272"/>
+  <use href="#tree-sage" x="400" y="268"/>
+  <use href="#bush" x="438" y="266"/>
+  <use href="#street-lamp" x="386" y="280"/>
+
+  <!-- 7. WHITE MARBLE ARCH (Washington Square Arch, u=-56..-42, v=-19..+19) -->
+  <g stroke="#6E5D7A" stroke-width="1.35" stroke-linejoin="round" stroke-linecap="round">
+    <!-- Ground shadow -->
+    <polygon points="321,297 336,305 379,284 364,276" fill="#968AA3" opacity="0.25" stroke="none"/>
+
+    <!-- Back-inner left pier visible through arch opening -->
+    <polygon points="348,297 338,292 338,274 348,279" fill="#CFC6D1"/>
+    <!-- Archway inner tunnel vault shadow -->
+    <path d="M348,279 Q356,266 364,271 L356,267 Q346,262 338,274 Z" fill="#B9AFBF"/>
+
+    <!-- Main front face (SE-facing, with rounded semicircular arch cutout) -->
+    <path d="M336,303 L336,255 L376,235 L376,283 L364,289 L364,272 C364,264 348,272 348,280 L348,297 Z"
+          fill="#FAF6F0"/>
+
+    <!-- Side face (SW-facing, slightly shaded warm marble) -->
+    <polygon points="321,296 336,303 336,255 321,248" fill="#E6DFD6"/>
+
+    <!-- Top attic parapet / roof -->
+    <polygon points="321,248 336,255 376,235 361,228" fill="#FFFFFF"/>
+
+    <!-- Stepped cornice molding -->
+    <polygon points="319,254 336,262 378,241 378,237 336,258 319,250" fill="#F2ECE4" stroke-width="1.1"/>
+
+    <!-- Subtle frieze band & carved medallion dots -->
+    <line x1="336" y1="265" x2="376" y2="245" stroke="#D7CEC4" stroke-width="1.2"/>
+    <circle cx="342" cy="272" r="1.6" fill="#E6DFD6" stroke="#A699B0" stroke-width="0.8"/>
+    <circle cx="370" cy="258" r="1.6" fill="#E6DFD6" stroke="#A699B0" stroke-width="0.8"/>
+
+    <!-- Base plinth accents -->
+    <polygon points="335,303 349,296 349,292 335,299" fill="#EAE3DA" stroke-width="1"/>
+    <polygon points="363,289 377,282 377,278 363,285" fill="#EAE3DA" stroke-width="1"/>
+  </g>
+
+  <!-- 8. SE Corner Pocket Hall (u=+90..+144, v=-148..-116, h=48) -->
+  <g stroke="#6E5D7A" stroke-width="1.35" stroke-linejoin="round" stroke-linecap="round">
+    <polygon points="616,301 673,330 673,282 616,253" fill="#EFE4D6"/>
+    <polygon points="673,330 707,313 707,265 673,282" fill="#D8CBB9"/>
+    <polygon points="616,253 673,282 707,265 650,237" fill="#B5A6C2"/>
+    <!-- Windows -->
+    <polygon points="626,267 632,270 632,279 626,276" fill="#5D4B6B" stroke-width="0.9"/>
+    <polygon points="640,274 646,277 646,286 640,283" fill="#FFEBB8" stroke-width="0.9"/>
+    <polygon points="654,281 660,284 660,293 654,290" fill="#5D4B6B" stroke-width="0.9"/>
+    <!-- Cute violet awning -->
+    <polygon points="622,292 652,307 647,313 617,298" fill="#9B72CF" stroke-width="1"/>
+  </g>
+
+  <!-- ========================================================= -->
+  <!-- DEPTH LAYER C: PARK TREES, FOUNTAIN & FAR NW CAFE         -->
+  <!-- ========================================================= -->
+
+  <!-- Park East & North-West Trees (around the lawns, clear of fountain) -->
+  <use href="#tree-sage" x="498" y="298"/>
+  <use href="#tree-mint" x="520" y="308"/>
+  <use href="#tree-mint" x="302" y="306"/>
+  <use href="#tree-violet" x="278" y="324"/>
+  <use href="#bush" x="478" y="302"/>
+  <use href="#bush" x="318" y="314"/>
+
+  <!-- Cute wooden park benches around the central plaza -->
+  <g stroke="#6E5D7A" stroke-width="1" stroke-linejoin="round">
+    <!-- Bench NE of fountain -->
+    <polygon points="434,295 445,300.5 443,303 432,297.5" fill="#C99E7C"/>
+    <polygon points="435,291 446,296.5 445,300 434,294.5" fill="#DEB695"/>
+    <!-- Bench NW of fountain -->
+    <polygon points="354,302 365,296.5 367,299 356,304.5" fill="#C99E7C"/>
+    <polygon points="353,298 364,292.5 365,296 354,301.5" fill="#DEB695"/>
+  </g>
+
+  <!-- 10. ROUND FOUNTAIN (Center of the Park, 400, 315) -->
+  <g stroke="#6E5D7A" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round">
+    <!-- Soft shadow around basin -->
+    <ellipse cx="400" cy="318" rx="28" ry="14" fill="#9B8EA8" opacity="0.22" stroke="none"/>
+    <!-- Outer cylindrical stone wall -->
+    <path d="M374,313 L374,318 A26,13 0 0,0 426,318 L426,313 Z" fill="#E3DBD1"/>
+    <!-- Top stone rim -->
+    <ellipse cx="400" cy="313" rx="26" ry="13" fill="#FAF6F0"/>
+    <!-- Water basin -->
+    <ellipse cx="400" cy="313" rx="21" ry="10.2" fill="url(#water-grad)" stroke="#88B5C9" stroke-width="1"/>
+    <!-- Gentle concentric water ripples -->
+    <ellipse cx="400" cy="313" rx="14" ry="6.5" fill="none" stroke="#E4F8FF" stroke-width="1.1" opacity="0.85"/>
+    <ellipse cx="400" cy="313" rx="7" ry="3.2" fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0.9"/>
+    <!-- Center fountain nozzle & playful pastel water jet -->
+    <ellipse cx="400" cy="312" rx="3.5" ry="1.8" fill="#EAE2D8" stroke-width="0.9"/>
+    <path d="M400,312 L400,295" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M400,296 Q392,294 389,304" fill="none" stroke="#DCF5FF" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M400,296 Q408,294 411,304" fill="none" stroke="#DCF5FF" stroke-width="1.5" stroke-linecap="round"/>
+    <circle cx="400" cy="293" r="2.2" fill="#FFFFFF" stroke="none"/>
+    <circle cx="394" cy="298" r="1.2" fill="#FFFFFF" stroke="none"/>
+    <circle cx="406" cy="298" r="1.2" fill="#FFFFFF" stroke="none"/>
+  </g>
+
+  <!-- 12. Far NW Corner Cafe / Bookstore (u=-148..-94, v=+116..+148, h=46) -->
+  <g stroke="#6E5D7A" stroke-width="1.35" stroke-linejoin="round" stroke-linecap="round">
+    <polygon points="89,315 146,343 146,297 89,269" fill="#E6A69B"/>
+    <polygon points="146,343 179,327 179,281 146,297" fill="#CE8B80"/>
+    <polygon points="89,269 146,297 179,281 123,252" fill="#B5A6C2"/>
+    <!-- Cozy glowing shop windows -->
+    <polygon points="151,316 173,305 173,322 151,333" fill="#FFF0C4" stroke-width="1"/>
+    <!-- Violet & cream striped awning -->
+    <polygon points="146,307 179,291 184,297 151,313" fill="#9B72CF" stroke-width="1"/>
+    <polygon points="154,303 161,299.5 166,305.5 159,309" fill="#F8F3FC" stroke="none"/>
+    <polygon points="168,296 175,292.5 180,298.5 173,302" fill="#F8F3FC" stroke="none"/>
+    <!-- Upper windows -->
+    <polygon points="102,284 108,287 108,296 102,293" fill="#5D4B6B" stroke-width="0.9"/>
+    <polygon points="118,292 124,295 124,304 118,301" fill="#FFEBB8" stroke-width="0.9"/>
+    <polygon points="134,300 140,303 140,312 134,309" fill="#5D4B6B" stroke-width="0.9"/>
+  </g>
+
+  <!-- Park South-East & South-West Trees + Street Lamps -->
+  <use href="#tree-mint" x="458" y="330"/>
+  <use href="#tree-sage" x="434" y="348"/>
+  <use href="#tree-violet" x="342" y="352"/>
+  <use href="#tree-mint" x="376" y="370"/>
+  <use href="#tree-sage" x="312" y="340"/>
+  <use href="#bush" x="358" y="366"/>
+  <use href="#street-lamp" x="424" y="336"/>
+  <use href="#street-lamp" x="366" y="346"/>
+  <use href="#street-lamp" x="492" y="328"/>
+
+  <!-- ========================================================= -->
+  <!-- DEPTH LAYER D: TALL RED SANDSTONE LIBRARY, WEST ROW,      -->
+  <!--                AND MODERN GLASS STUDENT CENTER            -->
+  <!-- ========================================================= -->
+
+  <!-- 15. TALL RED SANDSTONE LIBRARY (South Side, u=+90..+146, v=-78..-14, h=102) -->
+  <g stroke="#6E5D7A" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round">
+    <!-- Subtle ground shadow -->
+    <polygon points="509,356 568,386 638,352 579,322" fill="#7D698A" opacity="0.2" stroke="none"/>
+    <!-- SW lit face -->
+    <polygon points="509,355 568,384 568,282 509,253" fill="url(#sandstone-lit)"/>
+    <!-- SE shaded face -->
+    <polygon points="568,384 635,351 635,249 568,282" fill="url(#sandstone-shade)"/>
+    <!-- Roof terrace -->
+    <polygon points="509,253 568,282 635,249 576,219" fill="#EEA79A"/>
+    <!-- Recessed rooftop skylight & violet garden accent -->
+    <polygon points="526,253 568,274 618,249 576,228" fill="#DF8E7F" stroke-width="1"/>
+    <polygon points="544,251 568,263 598,248 574,236" fill="#C9E5F4" stroke-width="1"/>
+    <circle cx="536" cy="252" r="3" fill="#B2E0AC" stroke-width="0.8"/>
+    <circle cx="606" cy="249" r="3" fill="#C9A7F5" stroke-width="0.8"/>
+
+    <!-- Architectural horizontal sandstone bands -->
+    <polyline points="509,264 568,293 635,260" fill="none" stroke="#F4BCAE" stroke-width="1.6"/>
+    <polyline points="509,336 568,365 635,332" fill="none" stroke="#F4BCAE" stroke-width="1.5"/>
+
+    <!-- Geometric grid of windows on SW lit face (4 cols x 4 rows) -->
+    <g fill="#594666" stroke="#6E5D7A" stroke-width="0.8">
+      <!-- Row 1 -->
+      <polygon points="516,271 524,275 524,284 516,280"/>
+      <polygon points="529,277.5 537,281.5 537,290.5 529,286.5" fill="#FFEAB5"/>
+      <polygon points="542,284 550,288 550,297 542,293"/>
+      <polygon points="555,290.5 563,294.5 563,303.5 555,299.5"/>
+      <!-- Row 2 -->
+      <polygon points="516,287 524,291 524,300 516,296"/>
+      <polygon points="529,293.5 537,297.5 537,306.5 529,302.5"/>
+      <polygon points="542,300 550,304 550,313 542,309" fill="#FFEAB5"/>
+      <polygon points="555,306.5 563,310.5 563,319.5 555,315.5"/>
+      <!-- Row 3 -->
+      <polygon points="516,303 524,307 524,316 516,312" fill="#FFEAB5"/>
+      <polygon points="529,309.5 537,313.5 537,322.5 529,318.5"/>
+      <polygon points="542,316 550,320 550,329 542,325"/>
+      <polygon points="555,322.5 563,326.5 563,335.5 555,331.5"/>
+      <!-- Row 4 -->
+      <polygon points="516,319 524,323 524,332 516,328"/>
+      <polygon points="529,325.5 537,329.5 537,338.5 529,334.5"/>
+      <polygon points="542,332 550,336 550,345 542,341"/>
+      <polygon points="555,338.5 563,342.5 563,351.5 555,347.5" fill="#FFEAB5"/>
+    </g>
+
+    <!-- Geometric grid of windows on SE shaded face (4 cols x 4 rows) -->
+    <g fill="#4E3D5C" stroke="#6E5D7A" stroke-width="0.8">
+      <!-- Row 1 -->
+      <polygon points="574,294 583,289.5 583,298.5 574,303"/>
+      <polygon points="589,286.5 598,282 598,291 589,295.5"/>
+      <polygon points="604,279 613,274.5 613,283.5 604,288" fill="#F5D99D"/>
+      <polygon points="619,271.5 628,267 628,276 619,280.5"/>
+      <!-- Row 2 -->
+      <polygon points="574,310 583,305.5 583,314.5 574,319"/>
+      <polygon points="589,302.5 598,298 598,307 589,311.5" fill="#F5D99D"/>
+      <polygon points="604,295 613,290.5 613,299.5 604,304"/>
+      <polygon points="619,287.5 628,283 628,292 619,296.5"/>
+      <!-- Row 3 -->
+      <polygon points="574,326 583,321.5 583,330.5 574,335"/>
+      <polygon points="589,318.5 598,314 598,323 589,327.5"/>
+      <polygon points="604,311 613,306.5 613,315.5 604,320"/>
+      <polygon points="619,303.5 628,299 628,308 619,312.5"/>
+      <!-- Row 4 -->
+      <polygon points="574,342 583,337.5 583,346.5 574,351"/>
+      <polygon points="589,334.5 598,330 598,339 589,343.5"/>
+      <polygon points="604,327 613,322.5 613,331.5 604,336"/>
+      <polygon points="619,319.5 628,315 628,324 619,328.5"/>
+    </g>
+
+    <!-- Ground floor colonnade & violet entrance accent -->
+    <polygon points="525,363 552,376 552,361 525,348" fill="#594666" stroke-width="1"/>
+    <line x1="534" y1="352.5" x2="534" y2="367.5" stroke="#E69282" stroke-width="2.2"/>
+    <line x1="543" y1="357" x2="543" y2="372" stroke="#E69282" stroke-width="2.2"/>
+    <polygon points="512,334 520,338 520,354 516,350 512,351" fill="#9B72CF" stroke-width="0.9"/>
+  </g>
+
+  <!-- 16. West Side Brownstone Row (3 houses, v=+116..+148) -->
+  <!-- House W-1 (terracotta, h=44) -->
+  <g stroke="#6E5D7A" stroke-width="1.35" stroke-linejoin="round" stroke-linecap="round">
+    <polygon points="188,364 224,382 224,338 188,320" fill="#E59B86"/>
+    <polygon points="224,382 257,365 257,321 224,338" fill="#CC816C"/>
+    <polygon points="188,320 224,338 257,321 221,304" fill="#B5A6C2"/>
+    <polygon points="196,333 202,336 202,345 196,342" fill="#5D4B6B" stroke-width="0.9"/>
+    <polygon points="209,339.5 215,342.5 215,351.5 209,348.5" fill="#FFEBB8" stroke-width="0.9"/>
+    <polygon points="196,350 202,353 202,362 196,359" fill="#5D4B6B" stroke-width="0.9"/>
+    <polygon points="209,356.5 215,359.5 215,368.5 209,365.5" fill="#5D4B6B" stroke-width="0.9"/>
+  </g>
+
+  <!-- House W-2 (caramel brownstone, h=48) -->
+  <g stroke="#6E5D7A" stroke-width="1.35" stroke-linejoin="round" stroke-linecap="round">
+    <polygon points="224,382 259,400 259,352 224,334" fill="#DDB79A"/>
+    <polygon points="259,400 293,383 293,335 259,352" fill="#C49B7E"/>
+    <polygon points="224,334 259,352 293,335 257,317" fill="#A697B5"/>
+    <polygon points="232,348 238,351 238,360 232,357" fill="#FFEBB8" stroke-width="0.9"/>
+    <polygon points="245,354.5 251,357.5 251,366.5 245,363.5" fill="#5D4B6B" stroke-width="0.9"/>
+    <polygon points="232,366 238,369 238,378 232,375" fill="#5D4B6B" stroke-width="0.9"/>
+    <polygon points="245,372.5 251,375.5 251,384.5 245,381.5" fill="#5D4B6B" stroke-width="0.9"/>
+  </g>
+
+  <!-- House W-3 (dusty rose brick, h=42) -->
+  <g stroke="#6E5D7A" stroke-width="1.35" stroke-linejoin="round" stroke-linecap="round">
+    <polygon points="259,400 295,418 295,376 259,358" fill="#E6A9A9"/>
+    <polygon points="295,418 329,401 329,359 295,376" fill="#CE8E8E"/>
+    <polygon points="259,358 295,376 329,359 293,341" fill="#B5A6C2"/>
+    <polygon points="267,372 273,375 273,384 267,381" fill="#5D4B6B" stroke-width="0.9"/>
+    <polygon points="280,378.5 286,381.5 286,390.5 280,387.5" fill="#FFEBB8" stroke-width="0.9"/>
+    <polygon points="304,388 313,383.5 313,399 304,403.5" fill="#9B72CF" stroke-width="0.9"/>
+  </g>
+
+  <!-- 17. MODERN GLASS STUDENT CENTER (South Side, next to Library, u=+90..+144, v=+4..+68) -->
+  <g stroke="#6E5D7A" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round">
+    <!-- Subtle ground shadow -->
+    <polygon points="423,399 480,428 550,394 493,365" fill="#7D698A" opacity="0.2" stroke="none"/>
+
+    <!-- Main Glass Volume (h=64) -->
+    <!-- SW lit glass curtain wall -->
+    <polygon points="423,398 480,426 480,362 423,334" fill="url(#glass-lit)"/>
+    <!-- SE shaded glass curtain wall -->
+    <polygon points="480,426 547,393 547,329 480,362" fill="url(#glass-shade)"/>
+
+    <!-- Glossy diagonal reflection streaks on glass -->
+    <g fill="#FFFFFF" opacity="0.32" stroke="none">
+      <polygon points="432,338 446,345 430,401 423,398"/>
+      <polygon points="456,350 464,354 448,410 440,406"/>
+      <polygon points="494,355 508,348 492,420 480,426"/>
+      <polygon points="522,341 530,337 514,409 506,413"/>
+    </g>
+
+    <!-- Crisp pastel cream-white structural mullions -->
+    <g stroke="#F6F2FA" stroke-width="1.3">
+      <!-- Horizontal floor plates -->
+      <polyline points="423,350 480,378 547,345" fill="none"/>
+      <polyline points="423,366 480,394 547,361" fill="none"/>
+      <polyline points="423,382 480,410 547,377" fill="none"/>
+      <!-- Vertical mullions SW -->
+      <line x1="437" y1="341" x2="437" y2="405"/>
+      <line x1="451" y1="348" x2="451" y2="412"/>
+      <line x1="466" y1="355" x2="466" y2="419"/>
+      <!-- Vertical mullions SE -->
+      <line x1="497" y1="354" x2="497" y2="418"/>
+      <line x1="514" y1="345" x2="514" y2="409"/>
+      <line x1="531" y1="337" x2="531" y2="401"/>
+    </g>
+
+    <!-- Main Roof Deck -->
+    <polygon points="423,334 480,362 547,329 490,300" fill="#F2ECF7"/>
+    <!-- Tiny green rooftop garden strips -->
+    <polygon points="432,334 446,341 460,334 446,327" fill="#B6E0AE" stroke-width="0.9"/>
+
+    <!-- Upper Stepped Glass Pavilion (h=+18) -->
+    <polygon points="442,326 480,345 480,326 442,307" fill="url(#glass-lit)"/>
+    <polygon points="480,345 524,323 524,304 480,326" fill="url(#glass-shade)"/>
+    <!-- Pavilion Roof -->
+    <polygon points="442,307 480,326 524,304 486,285" fill="#FAF7FC"/>
+    <!-- Violet modern roof pergola accent -->
+    <polygon points="458,308 480,319 508,305 486,294" fill="#B794F4" stroke-width="1"/>
+    <line x1="466" y1="304" x2="488" y2="315" stroke="#FAF7FC" stroke-width="1.2"/>
+    <line x1="474" y1="300" x2="496" y2="311" stroke="#FAF7FC" stroke-width="1.2"/>
+
+    <!-- Violet entrance canopy & glowing lobby -->
+    <polygon points="440,390 466,403 466,419 440,406" fill="#FFEBB8" stroke-width="1"/>
+    <polygon points="436,388 470,405 464,411 430,394" fill="#9B72CF" stroke-width="1.1"/>
+  </g>
+
+  <!-- ========================================================= -->
+  <!-- DEPTH LAYER E: SW CORNER TOWNHOUSE & FOREGROUND DETAILS   -->
+  <!-- ========================================================= -->
+
+  <!-- 19. SW Corner Townhouse (u=+90..+134, v=+116..+148, h=44) -->
+  <g stroke="#6E5D7A" stroke-width="1.35" stroke-linejoin="round" stroke-linecap="round">
+    <polygon points="339,440 385,463 385,419 339,396" fill="#EFE4D6"/>
+    <polygon points="385,463 419,446 419,402 385,419" fill="#D8CBB9"/>
+    <polygon points="339,396 385,419 419,402 373,379" fill="#B5A6C2"/>
+    <!-- Windows -->
+    <polygon points="348,410 354,413 354,422 348,419" fill="#5D4B6B" stroke-width="0.9"/>
+    <polygon points="362,417 368,420 368,429 362,426" fill="#FFEBB8" stroke-width="0.9"/>
+    <polygon points="374,423 380,426 380,435 374,432" fill="#5D4B6B" stroke-width="0.9"/>
+    <!-- Violet awning on SE entrance -->
+    <polygon points="390,434 414,422 419,428 395,440" fill="#9B72CF" stroke-width="1"/>
+    <polygon points="394,439 412,430 412,447 394,456" fill="#FFF0C4" stroke-width="0.9"/>
+  </g>
+
+  <!-- Foreground Trees & Street Lamps -->
+  <use href="#tree-violet" x="646" y="346"/>
+  <use href="#tree-mint" x="500" y="424"/>
+  <use href="#tree-sage" x="326" y="426"/>
+  <use href="#street-lamp" x="562" y="394"/>
+  <use href="#street-lamp" x="424" y="446"/>
+  <use href="#street-lamp" x="254" y="316"/>
+</svg>

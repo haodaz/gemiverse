@@ -1,0 +1,508 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <!-- Soft pastel canvas background -->
+    <radialGradient id="bgGlow" cx="50%" cy="48%" r="60%">
+      <stop offset="0%" stop-color="#FFFDF9"/>
+      <stop offset="100%" stop-color="#F6ECE4"/>
+    </radialGradient>
+
+    <!-- Sticker drop shadow -->
+    <filter id="stickerShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#C9B2A6" flood-opacity="0.35"/>
+    </filter>
+
+    <!-- Soft element shadow -->
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+
+    <!-- Pastel sky gradient for windows -->
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#BEE4F7"/>
+      <stop offset="65%" stop-color="#DFF2FB"/>
+      <stop offset="100%" stop-color="#FCE7DD"/>
+    </linearGradient>
+
+    <!-- Sunbeam gradient -->
+    <linearGradient id="sunbeamGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF7D4" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#FFF7D4" stop-opacity="0.0"/>
+    </linearGradient>
+
+    <!-- Floor gradient -->
+    <linearGradient id="floorGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBF0E2"/>
+      <stop offset="100%" stop-color="#F2DFCA"/>
+    </linearGradient>
+
+    <!-- Wall gradients -->
+    <linearGradient id="leftWallGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F4F7F2"/>
+      <stop offset="100%" stop-color="#E7EFE6"/>
+    </linearGradient>
+    <linearGradient id="rightWallGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FDF4EA"/>
+      <stop offset="100%" stop-color="#F6E6D6"/>
+    </linearGradient>
+
+    <!-- Glass railing gradient -->
+    <linearGradient id="glassGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#D4EFF8" stop-opacity="0.58"/>
+      <stop offset="100%" stop-color="#B9E1F0" stop-opacity="0.35"/>
+    </linearGradient>
+
+    <!-- Clip paths for windows -->
+    <clipPath id="win1Clip">
+      <path d="M 142,356 L 142,238 Q 142,226 154,220 L 206,194 Q 218,188 218,200 L 218,318 Z"/>
+    </clipPath>
+    <clipPath id="win2Clip">
+      <path d="M 232,311 L 232,193 Q 232,181 244,175 L 296,149 Q 308,143 308,155 L 308,273 Z"/>
+    </clipPath>
+    <clipPath id="win3Clip">
+      <path d="M 326,200 L 326,144 Q 326,133 337,127 L 375,108 Q 386,103 386,114 L 386,170 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Cozy pastel backdrop -->
+  <rect width="800" height="600" fill="url(#bgGlow)"/>
+
+  <!-- Subtle decorative pastel dots in background -->
+  <g opacity="0.55">
+    <circle cx="72" cy="140" r="5" fill="#F5C6D2"/>
+    <circle cx="95" cy="112" r="3" fill="#BFE4D3"/>
+    <circle cx="725" cy="130" r="6" fill="#FCE1A6"/>
+    <circle cx="748" cy="162" r="3.5" fill="#D5C4F0"/>
+    <circle cx="68" cy="485" r="4.5" fill="#C2E2F5"/>
+    <circle cx="730" cy="495" r="5" fill="#F5C6D2"/>
+  </g>
+
+  <!-- DIE-CUT STICKER BORDER & SHADOW -->
+  <g filter="url(#stickerShadow)">
+    <polygon points="400,46 694,193 694,415 400,562 106,415 106,193"
+             fill="#FFFFFF" stroke="#FFFFFF" stroke-width="26" stroke-linejoin="round"/>
+  </g>
+
+  <!-- MAIN ISOMETRIC LOBBY ILLUSTRATION -->
+  <g stroke="#6D5865" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- 1. ROOM BASE SLAB & FLOOR -->
+    <!-- Left slab edge -->
+    <polygon points="106,393 400,540 400,562 106,415" fill="#E3CEBC"/>
+    <!-- Right slab edge -->
+    <polygon points="400,540 694,393 694,415 400,562" fill="#D2B9A5"/>
+    <!-- Main Floor Surface -->
+    <polygon points="400,260 680,400 400,540 120,400" fill="url(#floorGrad)"/>
+
+    <!-- Subtle isometric floor tile lines -->
+    <g stroke="#E5CFB9" stroke-width="1.3" opacity="0.75">
+      <!-- Lines parallel to back-right wall -->
+      <line x1="360" y1="280" x2="640" y2="420"/>
+      <line x1="320" y1="300" x2="600" y2="440"/>
+      <line x1="280" y1="320" x2="560" y2="460"/>
+      <line x1="240" y1="340" x2="520" y2="480"/>
+      <line x1="200" y1="360" x2="480" y2="500"/>
+      <line x1="160" y1="380" x2="440" y2="520"/>
+      <!-- Lines parallel to back-left wall -->
+      <line x1="440" y1="280" x2="160" y2="420"/>
+      <line x1="480" y1="300" x2="200" y2="440"/>
+      <line x1="520" y1="320" x2="240" y2="460"/>
+      <line x1="560" y1="340" x2="280" y2="480"/>
+      <line x1="600" y1="360" x2="320" y2="500"/>
+      <line x1="640" y1="380" x2="360" y2="520"/>
+    </g>
+
+    <!-- Warm sunlight patches from big windows -->
+    <g stroke="none">
+      <polygon points="142,389 218,351 325,405 249,443" fill="url(#sunbeamGrad)"/>
+      <polygon points="232,344 308,306 415,360 339,398" fill="url(#sunbeamGrad)"/>
+    </g>
+
+    <!-- 2. BACK WALLS & THICKNESS -->
+    <!-- Back-Left Wall (Windows wall) -->
+    <polygon points="120,200 400,60 400,260 120,400" fill="url(#leftWallGrad)"/>
+    <!-- Back-Right Wall (Staircase & Notice wall) -->
+    <polygon points="400,60 680,200 680,400 400,260" fill="url(#rightWallGrad)"/>
+
+    <!-- Baseboards -->
+    <polygon points="120,390 400,250 400,260 120,400" fill="#FFFDF9" stroke-width="1.6"/>
+    <polygon points="400,250 680,390 680,400 400,260" fill="#F5E6D6" stroke-width="1.6"/>
+
+    <!-- Wall Outer Thickness (Top & Sides) -->
+    <!-- Left wall top cap -->
+    <polygon points="106,193 400,46 400,60 120,200" fill="#FAF6F2"/>
+    <!-- Right wall top cap -->
+    <polygon points="400,46 694,193 680,200 400,60" fill="#F2E6DC"/>
+    <!-- Left wall outer front edge -->
+    <polygon points="106,193 120,200 120,400 106,393" fill="#E3D7CE"/>
+    <!-- Right wall outer front edge -->
+    <polygon points="680,200 694,193 694,393 680,400" fill="#DAC9BD"/>
+
+    <!-- 3. BIG MODERN WINDOWS (BACK-LEFT WALL) -->
+    <!-- Window 1 -->
+    <g>
+      <!-- Outer recessed frame -->
+      <path d="M 142,356 L 142,238 Q 142,226 154,220 L 206,194 Q 218,188 218,200 L 218,318 Z" fill="url(#skyGrad)"/>
+      <!-- Sky details clipped inside Window 1 -->
+      <g clip-path="url(#win1Clip)" stroke="none">
+        <!-- Fluffy clouds -->
+        <ellipse cx="164" cy="248" rx="18" ry="10" fill="#FFFFFF" opacity="0.88"/>
+        <ellipse cx="180" cy="245" rx="14" ry="8" fill="#FFFFFF" opacity="0.88"/>
+        <ellipse cx="204" cy="222" rx="15" ry="7" fill="#FFFFFF" opacity="0.82"/>
+        <!-- Soft pastel treetops outside -->
+        <circle cx="155" cy="342" r="24" fill="#B5DFC4"/>
+        <circle cx="184" cy="330" r="26" fill="#C7E8D0"/>
+        <circle cx="212" cy="316" r="22" fill="#A9D6BA"/>
+      </g>
+      <!-- Window 1 Sill & Mullions -->
+      <path d="M 142,356 L 218,318" stroke="#FFFBF7" stroke-width="6"/>
+      <line x1="180" y1="207" x2="180" y2="337" stroke="#FFFBF7" stroke-width="4.5"/>
+      <line x1="180" y1="207" x2="180" y2="337" stroke="#6D5865" stroke-width="1.6"/>
+      <line x1="142" y1="296" x2="218" y2="258" stroke="#FFFBF7" stroke-width="4.5"/>
+      <line x1="142" y1="296" x2="218" y2="258" stroke="#6D5865" stroke-width="1.6"/>
+      <!-- Clean outer frame outline -->
+      <path d="M 142,356 L 142,238 Q 142,226 154,220 L 206,194 Q 218,188 218,200 L 218,318 Z"
+            fill="none" stroke="#6D5865" stroke-width="2.4"/>
+      <!-- Window sill ledge -->
+      <polygon points="138,358 222,316 226,321 142,363" fill="#FFFDF9" stroke-width="1.8"/>
+    </g>
+
+    <!-- Window 2 -->
+    <g>
+      <path d="M 232,311 L 232,193 Q 232,181 244,175 L 296,149 Q 308,143 308,155 L 308,273 Z" fill="url(#skyGrad)"/>
+      <g clip-path="url(#win2Clip)" stroke="none">
+        <ellipse cx="256" cy="204" rx="19" ry="9" fill="#FFFFFF" opacity="0.88"/>
+        <ellipse cx="276" cy="198" rx="13" ry="7" fill="#FFFFFF" opacity="0.85"/>
+        <ellipse cx="294" cy="176" rx="16" ry="8" fill="#FFFFFF" opacity="0.8"/>
+        <!-- Soft distant trees -->
+        <circle cx="246" cy="296" r="24" fill="#C4E6CE"/>
+        <circle cx="276" cy="282" r="28" fill="#B2DCC1"/>
+        <circle cx="304" cy="270" r="22" fill="#C8E9D2"/>
+      </g>
+      <line x1="270" y1="162" x2="270" y2="292" stroke="#FFFBF7" stroke-width="4.5"/>
+      <line x1="270" y1="162" x2="270" y2="292" stroke="#6D5865" stroke-width="1.6"/>
+      <line x1="232" y1="251" x2="308" y2="213" stroke="#FFFBF7" stroke-width="4.5"/>
+      <line x1="232" y1="251" x2="308" y2="213" stroke="#6D5865" stroke-width="1.6"/>
+      <path d="M 232,311 L 232,193 Q 232,181 244,175 L 296,149 Q 308,143 308,155 L 308,273 Z"
+            fill="none" stroke="#6D5865" stroke-width="2.4"/>
+      <polygon points="228,313 312,271 316,276 232,318" fill="#FFFDF9" stroke-width="1.8"/>
+    </g>
+
+    <!-- Window 3 (Mezzanine Upper Window) -->
+    <g>
+      <path d="M 326,200 L 326,144 Q 326,133 337,127 L 375,108 Q 386,103 386,114 L 386,170 Z" fill="url(#skyGrad)"/>
+      <g clip-path="url(#win3Clip)" stroke="none">
+        <ellipse cx="352" cy="148" rx="16" ry="8" fill="#FFFFFF" opacity="0.88"/>
+        <ellipse cx="372" cy="142" rx="12" ry="6" fill="#FFFFFF" opacity="0.82"/>
+      </g>
+      <line x1="356" y1="118" x2="356" y2="185" stroke="#FFFBF7" stroke-width="4"/>
+      <line x1="356" y1="118" x2="356" y2="185" stroke="#6D5865" stroke-width="1.5"/>
+      <path d="M 326,200 L 326,144 Q 326,133 337,127 L 375,108 Q 386,103 386,114 L 386,170 Z"
+            fill="none" stroke="#6D5865" stroke-width="2.2"/>
+      <polygon points="323,202 389,169 392,173 326,206" fill="#FFFDF9" stroke-width="1.6"/>
+    </g>
+
+    <!-- 4. NOTICE WALL WITH BLANK COLORFUL FLYERS (BACK-RIGHT WALL) -->
+    <g>
+      <!-- Subtle drop shadow behind notice board -->
+      <polygon points="546,216 660,273 660,363 546,306" fill="#DECBB9" stroke="none"/>
+      <!-- Wooden outer frame -->
+      <polygon points="544,212 658,269 658,359 544,302" fill="#E7BC96"/>
+      <!-- Inner cork / linen board surface -->
+      <polygon points="550,221 652,272 652,350 550,299" fill="#F5E3CC" stroke-width="1.8"/>
+
+      <!-- Colorful Blank Flyers (strictly blank, pastel palette, with cute pushpins) -->
+      <!-- Flyer 1: Pastel Pink -->
+      <polygon points="556,232 574,241 574,264 556,255" fill="#FBC6D2" stroke-width="1.5"/>
+      <circle cx="565" cy="240" r="2.3" fill="#E97D96" stroke-width="1.1"/>
+
+      <!-- Flyer 2: Butter Yellow -->
+      <polygon points="579,243 599,253 599,274 579,264" fill="#FDE7A2" stroke-width="1.5"/>
+      <circle cx="589" cy="251" r="2.3" fill="#E5A855" stroke-width="1.1"/>
+
+      <!-- Flyer 3: Mint Green (slightly overlapping) -->
+      <polygon points="604,256 623,266 623,290 604,280" fill="#C2ECD8" stroke-width="1.5"/>
+      <circle cx="613.5" cy="264" r="2.3" fill="#6BB896" stroke-width="1.1"/>
+
+      <!-- Flyer 4: Soft Lavender -->
+      <polygon points="628,268 646,277 646,300 628,291" fill="#DCCBF5" stroke-width="1.5"/>
+      <circle cx="637" cy="276" r="2.3" fill="#9A80C9" stroke-width="1.1"/>
+
+      <!-- Flyer 5: Sky Blue (lower left) -->
+      <polygon points="557,264 576,274 576,298 557,288" fill="#C0E3F8" stroke-width="1.5"/>
+      <circle cx="566.5" cy="272" r="2.3" fill="#6AA8D4" stroke-width="1.1"/>
+
+      <!-- Flyer 6: Peach (middle, slightly tilted) -->
+      <polygon points="581,277 598,284 596,306 579,299" fill="#FDD5B8" stroke-width="1.5"/>
+      <circle cx="589" cy="283" r="2.3" fill="#E3906A" stroke-width="1.1"/>
+
+      <!-- Flyer 7: Cream White (overlapping) -->
+      <polygon points="596,289 614,298 614,321 596,312" fill="#FFFDF8" stroke-width="1.5"/>
+      <circle cx="605" cy="296" r="2.3" fill="#E97D96" stroke-width="1.1"/>
+
+      <!-- Flyer 8: Soft Pink Square Note -->
+      <polygon points="618,296 632,303 632,319 618,312" fill="#F9C6D6" stroke-width="1.5"/>
+      <circle cx="625" cy="302" r="2" fill="#6BB896" stroke-width="1.1"/>
+
+      <!-- Flyer 9: Mint Tall Flyer (lower right) -->
+      <polygon points="633,307 648,315 648,339 633,331" fill="#C7EEDB" stroke-width="1.5"/>
+      <circle cx="640.5" cy="314" r="2.3" fill="#E5A855" stroke-width="1.1"/>
+
+      <!-- Flyer 10: Yellow Sticky Note -->
+      <polygon points="577,301 591,308 591,322 577,315" fill="#FCE8A4" stroke-width="1.4"/>
+      <circle cx="584" cy="307" r="1.9" fill="#6AA8D4" stroke-width="1"/>
+
+      <!-- Flyer 11: Lavender Note -->
+      <polygon points="615,318 629,325 629,339 615,332" fill="#DFD1F7" stroke-width="1.4"/>
+      <circle cx="622" cy="324" r="1.9" fill="#E3906A" stroke-width="1"/>
+    </g>
+
+    <!-- Cozy Wooden Bench below Notice Wall -->
+    <g>
+      <!-- Bench shadow -->
+      <polygon points="552,366 612,396 594,405 534,375" fill="#D9C3B0" stroke="none" opacity="0.6"/>
+      <!-- Bench legs -->
+      <line x1="556" y1="358" x2="556" y2="374" stroke="#6D5865" stroke-width="3.5"/>
+      <line x1="598" y1="379" x2="598" y2="395" stroke="#6D5865" stroke-width="3.5"/>
+      <line x1="544" y1="364" x2="544" y2="380" stroke="#6D5865" stroke-width="3.5"/>
+      <line x1="586" y1="385" x2="586" y2="401" stroke="#6D5865" stroke-width="3.5"/>
+      <!-- Bench seat -->
+      <polygon points="552,348 604,374 590,381 538,355" fill="#F0CCA7"/>
+      <polygon points="538,355 590,381 590,388 538,362" fill="#DFAF84"/>
+      <polygon points="590,381 604,374 604,381 590,388" fill="#CCA078"/>
+      <!-- Cute pastel cushion on bench -->
+      <path d="M 555,346 L 583,360 Q 587,362 583,365 L 575,369 Q 571,371 567,369 L 547,359 Q 543,357 547,354 Z"
+            fill="#F9CAD6" stroke-width="1.8"/>
+    </g>
+
+    <!-- Tall Potted Plant at Right Corner -->
+    <g>
+      <ellipse cx="634" cy="400" rx="16" ry="8" fill="#D9C3B0" stroke="none" opacity="0.6"/>
+      <!-- Terracotta pastel pot -->
+      <path d="M 622,374 L 646,374 L 642,398 Q 634,403 626,398 Z" fill="#F0B59A"/>
+      <ellipse cx="634" cy="374" rx="12" ry="5.5" fill="#D99B7F"/>
+      <!-- Rounded leaves -->
+      <path d="M 634,373 Q 620,350 618,334 Q 630,342 634,373 Z" fill="#9FD3B1"/>
+      <path d="M 634,373 Q 646,348 652,332 Q 638,342 634,373 Z" fill="#B5E1C4"/>
+      <path d="M 634,373 Q 632,340 636,322 Q 642,342 634,373 Z" fill="#89C49E"/>
+      <path d="M 634,373 Q 618,362 612,352 Q 624,354 634,373 Z" fill="#B5E1C4"/>
+      <path d="M 634,373 Q 650,362 656,350 Q 644,354 634,373 Z" fill="#9FD3B1"/>
+    </g>
+
+    <!-- 5. MEZZANINE LANDING & WIDE STAIRCASE -->
+    <!-- Soft shadow under mezzanine & stairs -->
+    <polygon points="320,300 400,260 524,322 444,362" fill="#DFCBB8" stroke="none" opacity="0.65"/>
+
+    <!-- Under-stair architectural side wall -->
+    <polygon points="364,250 444,350 444,362 364,322" fill="#F3E5D8"/>
+
+    <!-- Mezzanine support column -->
+    <rect x="359" y="256" width="10" height="66" rx="4" fill="#FFFDF9"/>
+
+    <!-- Mezzanine Landing Surface -->
+    <polygon points="400,188 444,210 364,250 320,228" fill="#F7E4CE"/>
+    <!-- Mezzanine Front Fascia -->
+    <polygon points="320,228 364,250 364,262 320,240" fill="#E8CEB2"/>
+
+    <!-- Tiny Potted Plant on Mezzanine Corner -->
+    <g>
+      <ellipse cx="396" cy="204" rx="9" ry="4.5" fill="#DFC7B0" stroke="none"/>
+      <path d="M 389,190 L 403,190 L 401,203 Q 396,206 391,203 Z" fill="#F7C7D2" stroke-width="1.8"/>
+      <ellipse cx="396" cy="190" rx="7" ry="3.2" fill="#E3A5B5" stroke-width="1.6"/>
+      <circle cx="391" cy="182" r="7" fill="#9FD3B1" stroke-width="1.8"/>
+      <circle cx="401" cy="181" r="7.5" fill="#B6E2C5" stroke-width="1.8"/>
+      <circle cx="396" cy="174" r="6.5" fill="#8CC5A0" stroke-width="1.8"/>
+    </g>
+
+    <!-- Wide Staircase Steps (6 risers, 5 treads descending from mezzanine to lobby floor) -->
+    <!-- Riser 0 (from mezzanine) -->
+    <polygon points="444,210 364,250 364,262 444,222" fill="#E6C9AC"/>
+    <!-- Step 1 Tread & Riser -->
+    <polygon points="444,222 460,230 380,270 364,262" fill="#F9E8D4"/>
+    <polygon points="460,230 380,270 380,282 460,242" fill="#E6C9AC"/>
+    <!-- Step 2 Tread & Riser -->
+    <polygon points="460,242 476,250 396,290 380,282" fill="#F9E8D4"/>
+    <polygon points="476,250 396,290 396,302 476,262" fill="#E6C9AC"/>
+    <!-- Step 3 Tread & Riser -->
+    <polygon points="476,262 492,270 412,310 396,302" fill="#F9E8D4"/>
+    <polygon points="492,270 412,310 412,322 492,282" fill="#E6C9AC"/>
+    <!-- Step 4 Tread & Riser -->
+    <polygon points="492,282 508,290 428,330 412,322" fill="#F9E8D4"/>
+    <polygon points="508,290 428,330 428,342 508,302" fill="#E6C9AC"/>
+    <!-- Step 5 Tread & Bottom Riser -->
+    <polygon points="508,302 524,310 444,350 428,342" fill="#F9E8D4"/>
+    <polygon points="524,310 444,350 444,362 524,322" fill="#E6C9AC"/>
+
+    <!-- Modern Glass & Warm-Wood Handrail (Mezzanine + Staircase) -->
+    <g>
+      <!-- Mezzanine glass panel -->
+      <polygon points="322,202 362,222 362,248 322,228" fill="url(#glassGrad)" stroke="#92BAC7" stroke-width="1.6"/>
+      <!-- Staircase glass panel -->
+      <polygon points="366,224 442,320 442,348 366,252" fill="url(#glassGrad)" stroke="#92BAC7" stroke-width="1.6"/>
+      <!-- Subtle glass shine lines -->
+      <line x1="392" y1="264" x2="404" y2="292" stroke="#FFFFFF" stroke-width="2.2" opacity="0.65"/>
+      <line x1="402" y1="276" x2="410" y2="295" stroke="#FFFFFF" stroke-width="1.5" opacity="0.55"/>
+
+      <!-- Wooden vertical posts -->
+      <line x1="322" y1="199" x2="322" y2="229" stroke="#D9A97E" stroke-width="5"/>
+      <line x1="322" y1="199" x2="322" y2="229" stroke="#6D5865" stroke-width="2"/>
+      <line x1="364" y1="220" x2="364" y2="251" stroke="#D9A97E" stroke-width="5"/>
+      <line x1="364" y1="220" x2="364" y2="251" stroke="#6D5865" stroke-width="2"/>
+      <line x1="444" y1="320" x2="444" y2="352" stroke="#D9A97E" stroke-width="5"/>
+      <line x1="444" y1="320" x2="444" y2="352" stroke="#6D5865" stroke-width="2"/>
+
+      <!-- Continuous warm wood handrail top -->
+      <polyline points="322,199 364,220 444,320" fill="none" stroke="#E5B68C" stroke-width="6"/>
+      <polyline points="322,199 364,220 444,320" fill="none" stroke="#6D5865" stroke-width="2.2"/>
+    </g>
+
+    <!-- 6. COZY LOBBY RUG & LEFT-CORNER PLANT -->
+    <!-- Soft pastel isometric rug in open walkway -->
+    <g>
+      <path d="M 412,390 L 502,435 Q 512,440 502,445 L 442,475 Q 432,480 422,475 L 332,430 Q 322,425 332,420 L 392,390 Q 402,385 412,390 Z"
+            fill="#FCE8D5" stroke="#E2C3AA" stroke-width="2"/>
+      <path d="M 412,398 L 490,437 Q 496,440 490,443 L 442,467 Q 436,470 430,467 L 352,428 Q 346,425 352,422 L 400,398 Q 406,395 412,398 Z"
+            fill="none" stroke="#F4C7D2" stroke-width="2" stroke-dasharray="6 5"/>
+    </g>
+
+    <!-- Cozy Potted Plant in Sunlit Left Corner -->
+    <g>
+      <ellipse cx="148" cy="400" rx="16" ry="8" fill="#D9C3B0" stroke="none" opacity="0.6"/>
+      <path d="M 136,374 L 160,374 L 156,398 Q 148,403 140,398 Z" fill="#FFFDF9"/>
+      <ellipse cx="148" cy="374" rx="12" ry="5.5" fill="#E3D2C3"/>
+      <!-- Cute rounded monstera/fiddle leaves -->
+      <circle cx="137" cy="360" r="11" fill="#A5D8B7"/>
+      <circle cx="158" cy="358" r="11.5" fill="#BCE5C9"/>
+      <circle cx="148" cy="347" r="12" fill="#92CCA7"/>
+      <circle cx="144" cy="364" r="9" fill="#C4EAD0"/>
+      <circle cx="154" cy="366" r="8.5" fill="#A5D8B7"/>
+    </g>
+
+    <!-- 7. ROW OF 3 CLUB TABLES WITH BLANK BANNERS & BLANK POSTER BOARDS -->
+
+    <!-- CLUB TABLE 1 (Leftmost — Soft Mint) -->
+    <g id="club-table-1">
+      <!-- Ground shadow -->
+      <polygon points="204,380 268,412 236,428 172,396" fill="#D5BFB0" stroke="none" opacity="0.55"/>
+
+      <!-- Tablecloth Front-Left Drape -->
+      <polygon points="172,366 236,398 236,426 172,394" fill="#A7DAC3"/>
+      <!-- Tablecloth Front-Right Side Drape -->
+      <polygon points="236,398 268,382 268,410 236,426" fill="#92C9B0"/>
+      <!-- Tablecloth Top Surface -->
+      <polygon points="204,350 268,382 236,398 172,366" fill="#C6EDD9"/>
+
+      <!-- BLANK BANNER on front of Table 1 -->
+      <polygon points="181,375 227,398 227,417 181,394" fill="#8BBFA7" stroke="none" opacity="0.5" transform="translate(0,2)"/>
+      <polygon points="181,375 227,398 227,417 181,394" fill="#FFFDF9" stroke-width="2"/>
+      <!-- Tiny pastel corner clips -->
+      <circle cx="184" cy="378" r="2" fill="#F4A7BA" stroke-width="1.2"/>
+      <circle cx="224" cy="398" r="2" fill="#F4A7BA" stroke-width="1.2"/>
+
+      <!-- BLANK TRI-FOLD POSTER BOARD on Table 1 -->
+      <!-- Left wing -->
+      <polygon points="196,363 206,356 206,326 196,333" fill="#F2ECE4" stroke-width="2"/>
+      <!-- Center panel (blank!) -->
+      <polygon points="206,356 240,373 240,343 206,326" fill="#FFFDF9" stroke-width="2"/>
+      <!-- Right wing -->
+      <polygon points="240,373 245,382 245,352 240,343" fill="#EBE3DA" stroke-width="2"/>
+
+      <!-- Tiny cozy props on Table 1 (no text) -->
+      <!-- Stack of blank yellow pamphlets -->
+      <polygon points="192,368 204,374 198,377 186,371" fill="#FDE7A2" stroke-width="1.4"/>
+      <polygon points="192,365 204,371 198,374 186,368" fill="#FEF0BE" stroke-width="1.4"/>
+      <!-- Tiny succulent pot -->
+      <path d="M 218,376 L 226,376 L 225,383 Q 222,385 219,383 Z" fill="#F2B9A1" stroke-width="1.4"/>
+      <circle cx="222" cy="374" r="4" fill="#9BD1AE" stroke-width="1.4"/>
+    </g>
+
+    <!-- CLUB TABLE 2 (Middle — Soft Blush Pink) -->
+    <g id="club-table-2">
+      <!-- Ground shadow -->
+      <polygon points="288,422 352,454 320,470 256,438" fill="#D5BFB0" stroke="none" opacity="0.55"/>
+
+      <!-- Tablecloth Front-Left Drape -->
+      <polygon points="256,408 320,440 320,468 256,436" fill="#F2B4C4"/>
+      <!-- Tablecloth Front-Right Side Drape -->
+      <polygon points="320,440 352,424 352,452 320,468" fill="#E19EB0"/>
+      <!-- Tablecloth Top Surface -->
+      <polygon points="288,392 352,424 320,440 256,408" fill="#FBD3DD"/>
+
+      <!-- BLANK BANNER on front of Table 2 -->
+      <polygon points="265,417 311,440 311,459 265,436" fill="#D48FA2" stroke="none" opacity="0.45" transform="translate(0,2)"/>
+      <polygon points="265,417 311,440 311,459 265,436" fill="#FFFDF9" stroke-width="2"/>
+      <!-- Tiny pastel corner clips -->
+      <circle cx="268" cy="420" r="2" fill="#8CCCA9" stroke-width="1.2"/>
+      <circle cx="308" cy="440" r="2" fill="#8CCCA9" stroke-width="1.2"/>
+
+      <!-- BLANK TRI-FOLD POSTER BOARD on Table 2 -->
+      <!-- Left wing -->
+      <polygon points="280,405 290,398 290,368 280,375" fill="#F2ECE4" stroke-width="2"/>
+      <!-- Center panel (blank!) -->
+      <polygon points="290,398 324,415 324,385 290,368" fill="#FFFDF9" stroke-width="2"/>
+      <!-- Right wing -->
+      <polygon points="324,415 329,424 329,394 324,385" fill="#EBE3DA" stroke-width="2"/>
+
+      <!-- Tiny cozy props on Table 2 -->
+      <!-- Cute pastel candy bowl -->
+      <path d="M 276,412 Q 282,419 288,412 Z" fill="#C4E6F8" stroke-width="1.4"/>
+      <circle cx="280" cy="411" r="2.2" fill="#FDE49C" stroke-width="1"/>
+      <circle cx="284" cy="411" r="2.2" fill="#F9B8C9" stroke-width="1"/>
+      <!-- Pencil cup -->
+      <rect x="303" y="416" width="7" height="9" rx="2" fill="#FCE7A2" stroke-width="1.4"/>
+      <line x1="305" y1="416" x2="303" y2="410" stroke="#E97D96" stroke-width="1.6"/>
+      <line x1="308" y1="416" x2="310" y2="411" stroke="#6AA8D4" stroke-width="1.6"/>
+    </g>
+
+    <!-- CLUB TABLE 3 (Rightmost — Soft Lavender) -->
+    <g id="club-table-3">
+      <!-- Ground shadow -->
+      <polygon points="372,464 436,496 404,512 340,480" fill="#D5BFB0" stroke="none" opacity="0.55"/>
+
+      <!-- Tablecloth Front-Left Drape -->
+      <polygon points="340,450 404,482 404,510 340,478" fill="#C5B4EA"/>
+      <!-- Tablecloth Front-Right Side Drape -->
+      <polygon points="404,482 436,466 436,494 404,510" fill="#B19DDD"/>
+      <!-- Tablecloth Top Surface -->
+      <polygon points="372,434 436,466 404,482 340,450" fill="#DFD4F8"/>
+
+      <!-- BLANK BANNER on front of Table 3 -->
+      <polygon points="349,459 395,482 395,501 349,478" fill="#9E8AC9" stroke="none" opacity="0.45" transform="translate(0,2)"/>
+      <polygon points="349,459 395,482 395,501 349,478" fill="#FFFDF9" stroke-width="2"/>
+      <!-- Tiny pastel corner clips -->
+      <circle cx="352" cy="462" r="2" fill="#F5C97B" stroke-width="1.2"/>
+      <circle cx="392" cy="482" r="2" fill="#F5C97B" stroke-width="1.2"/>
+
+      <!-- BLANK TRI-FOLD POSTER BOARD on Table 3 -->
+      <!-- Left wing -->
+      <polygon points="364,447 374,440 374,410 364,417" fill="#F2ECE4" stroke-width="2"/>
+      <!-- Center panel (blank!) -->
+      <polygon points="374,440 408,457 408,427 374,410" fill="#FFFDF9" stroke-width="2"/>
+      <!-- Right wing -->
+      <polygon points="408,457 413,466 413,436 408,427" fill="#EBE3DA" stroke-width="2"/>
+
+      <!-- Tiny cozy props on Table 3 -->
+      <!-- Stack of blank mint flyers -->
+      <polygon points="362,452 374,458 368,461 356,455" fill="#BFEAD6" stroke-width="1.4"/>
+      <polygon points="362,449 374,455 368,458 356,452" fill="#D5F4E5" stroke-width="1.4"/>
+      <!-- Cute blank clipboard -->
+      <polygon points="384,462 394,467 388,471 378,466" fill="#E8C29C" stroke-width="1.4"/>
+      <polygon points="385,463 392,466.5 387.5,469.5 380.5,466" fill="#FFFDF9" stroke-width="1"/>
+    </g>
+
+    <!-- 8. MODERN HANGING PENDANT LAMPS -->
+    <g>
+      <!-- Lamp 1 (Left-Center) -->
+      <line x1="295" y1="98" x2="295" y2="146" stroke="#6D5865" stroke-width="2"/>
+      <ellipse cx="295" cy="162" rx="16" ry="7" fill="#FFF4C8" stroke="none" opacity="0.7" filter="url(#softGlow)"/>
+      <path d="M 278,160 Q 278,144 295,144 Q 312,144 312,160 Z" fill="#FDE4A6"/>
+      <ellipse cx="295" cy="160" rx="17" ry="5" fill="#FFF9E6"/>
+
+      <!-- Lamp 2 (Right-Center) -->
+      <line x1="515" y1="104" x2="515" y2="162" stroke="#6D5865" stroke-width="2"/>
+      <ellipse cx="515" cy="178" rx="16" ry="7" fill="#FFF4C8" stroke="none" opacity="0.7" filter="url(#softGlow)"/>
+      <path d="M 498,176 Q 498,160 515,160 Q 532,160 532,176 Z" fill="#F9CAD6"/>
+      <ellipse cx="515" cy="176" rx="17" ry="5" fill="#FFF9E6"/>
+    </g>
+
+  </g>
+</svg>

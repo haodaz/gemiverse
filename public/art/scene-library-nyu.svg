@@ -1,0 +1,836 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <!-- Soft pastel backdrop gradient -->
+    <radialGradient id="bg-grad" cx="50%" cy="42%" r="65%">
+      <stop offset="0%" stop-color="#fff8ee"/>
+      <stop offset="65%" stop-color="#f8ecdc"/>
+      <stop offset="100%" stop-color="#f0dec9"/>
+    </radialGradient>
+
+    <!-- Warm lamp glow -->
+    <radialGradient id="lamp-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff7cc" stop-opacity="0.9"/>
+      <stop offset="45%" stop-color="#ffe08c" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#ffd275" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Chandelier ambient glow -->
+    <radialGradient id="chandelier-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff8d6" stop-opacity="0.75"/>
+      <stop offset="50%" stop-color="#ffe399" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#ffd275" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Warm diagonal sunbeam -->
+    <linearGradient id="sunbeam-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff6cf" stop-opacity="0.42"/>
+      <stop offset="55%" stop-color="#ffebb3" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#ffe5a3" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Clerestory window warm sky -->
+    <linearGradient id="window-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff9df"/>
+      <stop offset="100%" stop-color="#fde3b0"/>
+    </linearGradient>
+
+    <!-- Sticker soft drop shadow -->
+    <filter id="sticker-shadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#8c6d5a" flood-opacity="0.18"/>
+    </filter>
+
+    <!-- Reusable isometric floor tile (32x16 half-diagonals) -->
+    <polygon id="tile" points="0,0 -32,16 0,32 32,16"/>
+
+    <!-- Reusable Left Wall Bookcase Variant A (origin at top-right-back base corner u=0,v=0,z=0; spans du=2, dv=0.45, dz=62) -->
+    <g id="bookcase-left-a">
+      <!-- Shadow under bookcase -->
+      <polygon points="0,0 16,8 -48,40 -64,32" fill="#5c4641" opacity="0.12"/>
+      <!-- Back/Recess interior -->
+      <polygon points="14,7 -50,39 -50,-21 14,-53" fill="#9c7353"/>
+      <!-- Shelf 1 (bottom) books -->
+      <g stroke="#5c4641" stroke-width="1.1" stroke-linejoin="round">
+        <polygon points="10,5 4,8 4,-6 10,-9" fill="#e69fa5"/>
+        <polygon points="4,8 -2,11 -2,-4 4,-7" fill="#9cc2a8"/>
+        <polygon points="-2,11 -9,14.5 -9,-2 -2,-5.5" fill="#f2d388"/>
+        <polygon points="-9,14.5 -15,17.5 -15,2 -9,-1" fill="#9fb3dc"/>
+        <polygon points="-15,17.5 -21,20.5 -21,6 -15,3" fill="#df9679"/>
+        <polygon points="-21,20.5 -27,23.5 -27,8 -21,5" fill="#f2e8d5"/>
+        <polygon points="-27,23.5 -34,27 -34,12 -27,8.5" fill="#bda8d9"/>
+        <polygon points="-34,27 -40,30 -40,16 -34,13" fill="#a4c5ad"/>
+        <polygon points="-40,30 -47,33.5 -47,19 -40,15.5" fill="#e8b49a"/>
+      </g>
+      <!-- Shelf plank 1 -->
+      <polygon points="14,-11 -50,21 -50,17 14,-15" fill="#d9b084" stroke="#5c4641" stroke-width="1.2" stroke-linejoin="round"/>
+      <!-- Shelf 2 (middle) books -->
+      <g stroke="#5c4641" stroke-width="1.1" stroke-linejoin="round">
+        <polygon points="10,-13 3,-9.5 3,-24 10,-27.5" fill="#9fb3dc"/>
+        <polygon points="3,-9.5 -3,-6.5 -3,-22 3,-25" fill="#f2e8d5"/>
+        <polygon points="-3,-6.5 -10,-3 -10,-17 -3,-20.5" fill="#e69fa5"/>
+        <polygon points="-10,-3 -16,0 -16,-15 -10,-18" fill="#a4c5ad"/>
+        <polygon points="-16,0 -23,3.5 -23,-10 -16,-13.5" fill="#f2d388"/>
+        <polygon points="-23,3.5 -30,7 -30,-7 -23,-10.5" fill="#bda8d9"/>
+        <polygon points="-30,7 -36,10 -36,-5 -30,-8" fill="#df9679"/>
+        <polygon points="-36,10 -46,15 -46,2 -36,-3" fill="#9cc2a8"/>
+      </g>
+      <!-- Shelf plank 2 -->
+      <polygon points="14,-31 -50,1 -50,-3 14,-35" fill="#d9b084" stroke="#5c4641" stroke-width="1.2" stroke-linejoin="round"/>
+      <!-- Shelf 3 (top) books -->
+      <g stroke="#5c4641" stroke-width="1.1" stroke-linejoin="round">
+        <polygon points="10,-33 3,-29.5 3,-44 10,-47.5" fill="#f2d388"/>
+        <polygon points="3,-29.5 -4,-26 -4,-41 3,-44.5" fill="#bda8d9"/>
+        <polygon points="-4,-26 -10,-23 -10,-37 -4,-40" fill="#e69fa5"/>
+        <polygon points="-10,-23 -17,-19.5 -17,-34 -10,-37.5" fill="#9cc2a8"/>
+        <polygon points="-17,-19.5 -24,-16 -24,-30 -17,-33.5" fill="#f2e8d5"/>
+        <polygon points="-24,-16 -31,-12.5 -31,-26 -24,-29.5" fill="#9fb3dc"/>
+        <polygon points="-31,-12.5 -38,-9 -38,-22 -31,-25.5" fill="#df9679"/>
+        <polygon points="-38,-9 -46,-5 -46,-19 -38,-23" fill="#e69fa5"/>
+      </g>
+      <!-- Outer wooden frame -->
+      <!-- Top cap -->
+      <polygon points="0,-62 14,-55 -50,-23 -64,-30" fill="#e6c49c" stroke="#5c4641" stroke-width="1.5" stroke-linejoin="round"/>
+      <!-- Left end-cap (visible side) -->
+      <polygon points="-64,-30 -50,-23 -50,39 -64,32" fill="#ba8c62" stroke="#5c4641" stroke-width="1.5" stroke-linejoin="round"/>
+      <!-- Front frame rails -->
+      <polygon points="14,-55 14,-50 -50,-18 -50,-23" fill="#d9b084" stroke="#5c4641" stroke-width="1.4" stroke-linejoin="round"/>
+      <polygon points="14,3 14,7 -50,39 -50,35" fill="#d9b084" stroke="#5c4641" stroke-width="1.4" stroke-linejoin="round"/>
+      <polygon points="14,-55 10,-53 10,9 14,7" fill="#d9b084" stroke="#5c4641" stroke-width="1.4" stroke-linejoin="round"/>
+      <polygon points="-46,-25 -50,-23 -50,39 -46,37" fill="#d9b084" stroke="#5c4641" stroke-width="1.4" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Reusable Left Wall Bookcase Variant B -->
+    <g id="bookcase-left-b">
+      <polygon points="0,0 16,8 -48,40 -64,32" fill="#5c4641" opacity="0.12"/>
+      <polygon points="14,7 -50,39 -50,-21 14,-53" fill="#9c7353"/>
+      <!-- Shelf 1 -->
+      <g stroke="#5c4641" stroke-width="1.1" stroke-linejoin="round">
+        <polygon points="10,5 3,8.5 3,-6 10,-9.5" fill="#9fb3dc"/>
+        <polygon points="3,8.5 -4,12 -4,-2 3,-5.5" fill="#f2d388"/>
+        <polygon points="-4,12 -11,15.5 -11,0 -4,-3.5" fill="#e69fa5"/>
+        <polygon points="-11,15.5 -18,19 -18,5 -11,1.5" fill="#f2e8d5"/>
+        <polygon points="-18,19 -26,23 -26,8 -18,4" fill="#9cc2a8"/>
+        <polygon points="-26,23 -33,26.5 -33,12 -26,8.5" fill="#df9679"/>
+        <polygon points="-33,26.5 -40,30 -40,16 -33,12.5" fill="#bda8d9"/>
+        <polygon points="-40,30 -47,33.5 -47,19 -40,15.5" fill="#9fb3dc"/>
+      </g>
+      <polygon points="14,-11 -50,21 -50,17 14,-15" fill="#d9b084" stroke="#5c4641" stroke-width="1.2" stroke-linejoin="round"/>
+      <!-- Shelf 2 -->
+      <g stroke="#5c4641" stroke-width="1.1" stroke-linejoin="round">
+        <polygon points="10,-13 2,-9 2,-24 10,-28" fill="#df9679"/>
+        <polygon points="2,-9 -5,-5.5 -5,-19 2,-22.5" fill="#a4c5ad"/>
+        <polygon points="-5,-5.5 -12,-2 -12,-17 -5,-20.5" fill="#bda8d9"/>
+        <polygon points="-12,-2 -19,1.5 -19,-12 -12,-15.5" fill="#f2d388"/>
+        <polygon points="-19,1.5 -27,5.5 -27,-9 -19,-13" fill="#e69fa5"/>
+        <polygon points="-27,5.5 -34,9 -34,-4 -27,-7.5" fill="#9fb3dc"/>
+        <polygon points="-34,9 -41,12.5 -41,-2 -34,-5.5" fill="#f2e8d5"/>
+        <polygon points="-41,12.5 -47,15.5 -47,2 -41,-1" fill="#df9679"/>
+      </g>
+      <polygon points="14,-31 -50,1 -50,-3 14,-35" fill="#d9b084" stroke="#5c4641" stroke-width="1.2" stroke-linejoin="round"/>
+      <!-- Shelf 3 -->
+      <g stroke="#5c4641" stroke-width="1.1" stroke-linejoin="round">
+        <polygon points="10,-33 3,-29.5 3,-44 10,-47.5" fill="#9cc2a8"/>
+        <polygon points="3,-29.5 -4,-26 -4,-40 3,-43.5" fill="#e69fa5"/>
+        <polygon points="-4,-26 -11,-22.5 -11,-37 -4,-40.5" fill="#f2e8d5"/>
+        <polygon points="-11,-22.5 -18,-19 -18,-33 -11,-36.5" fill="#9fb3dc"/>
+        <polygon points="-18,-19 -25,-15.5 -25,-30 -18,-33.5" fill="#df9679"/>
+        <polygon points="-25,-15.5 -32,-12 -32,-26 -25,-29.5" fill="#f2d388"/>
+        <polygon points="-32,-12 -39,-8.5 -39,-23 -32,-26.5" fill="#bda8d9"/>
+        <polygon points="-39,-8.5 -46,-5 -46,-19 -39,-22.5" fill="#a4c5ad"/>
+      </g>
+      <polygon points="0,-62 14,-55 -50,-23 -64,-30" fill="#e6c49c" stroke="#5c4641" stroke-width="1.5" stroke-linejoin="round"/>
+      <polygon points="-64,-30 -50,-23 -50,39 -64,32" fill="#ba8c62" stroke="#5c4641" stroke-width="1.5" stroke-linejoin="round"/>
+      <polygon points="14,-55 14,-50 -50,-18 -50,-23" fill="#d9b084" stroke="#5c4641" stroke-width="1.4" stroke-linejoin="round"/>
+      <polygon points="14,3 14,7 -50,39 -50,35" fill="#d9b084" stroke="#5c4641" stroke-width="1.4" stroke-linejoin="round"/>
+      <polygon points="14,-55 10,-53 10,9 14,7" fill="#d9b084" stroke="#5c4641" stroke-width="1.4" stroke-linejoin="round"/>
+      <polygon points="-46,-25 -50,-23 -50,39 -46,37" fill="#d9b084" stroke="#5c4641" stroke-width="1.4" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Reusable Right Wall Bookcase Variant A (mirror of left-a horizontally) -->
+    <g id="bookcase-right-a" transform="scale(-1,1)">
+      <use href="#bookcase-left-a"/>
+    </g>
+    <!-- Reusable Right Wall Bookcase Variant B -->
+    <g id="bookcase-right-b" transform="scale(-1,1)">
+      <use href="#bookcase-left-b"/>
+    </g>
+
+    <!-- Cute Wall Sconce -->
+    <g id="sconce">
+      <circle cx="0" cy="0" r="16" fill="url(#lamp-glow)"/>
+      <path d="M-4,4 L4,4 L3,8 L-3,8 Z" fill="#c99e63" stroke="#5c4641" stroke-width="1.2" stroke-linejoin="round"/>
+      <circle cx="0" cy="0" r="5" fill="#fff4c4" stroke="#5c4641" stroke-width="1.3"/>
+    </g>
+
+    <!-- Reusable Banker's Reading Lamp -->
+    <g id="banker-lamp">
+      <circle cx="0" cy="-12" r="24" fill="url(#lamp-glow)"/>
+      <ellipse cx="0" cy="0" rx="5.5" ry="3" fill="#d4a659" stroke="#5c4641" stroke-width="1.3"/>
+      <line x1="0" y1="0" x2="0" y2="-11" stroke="#5c4641" stroke-width="2.2" stroke-linecap="round"/>
+      <line x1="0" y1="0" x2="0" y2="-11" stroke="#e3b868" stroke-width="1.1" stroke-linecap="round"/>
+      <path d="M-8,-10 C-8,-16 8,-16 8,-10 Z" fill="#8dbb9b" stroke="#5c4641" stroke-width="1.4" stroke-linejoin="round"/>
+      <ellipse cx="0" cy="-9.5" rx="6" ry="2" fill="#fff3b5"/>
+    </g>
+
+    <!-- Cute Wooden Chair facing down-right (+v) -->
+    <g id="chair-dr">
+      <ellipse cx="0" cy="4" rx="13" ry="6.5" fill="#5c4641" opacity="0.14"/>
+      <!-- Legs -->
+      <line x1="-8" y1="-2" x2="-8" y2="6" stroke="#5c4641" stroke-width="2.4" stroke-linecap="round"/>
+      <line x1="8" y1="-2" x2="8" y2="6" stroke="#5c4641" stroke-width="2.4" stroke-linecap="round"/>
+      <line x1="0" y1="2" x2="0" y2="10" stroke="#5c4641" stroke-width="2.4" stroke-linecap="round"/>
+      <!-- Seat -->
+      <polygon points="0,-10 -11,-4.5 0,1 11,-4.5" fill="#d9ae82" stroke="#5c4641" stroke-width="1.5" stroke-linejoin="round"/>
+      <polygon points="0,-8.5 -8.5,-4.2 0,0 8.5,-4.2" fill="#e8b8b8" stroke="#5c4641" stroke-width="1"/>
+      <!-- Backrest (on upper-left edge) -->
+      <path d="M-11,-4.5 L-11,-20 C-11,-23 0,-27 0,-25 L0,-10 Z" fill="#c9996b" stroke="#5c4641" stroke-width="1.5" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Cute Wooden Chair facing up-left (-v) -->
+    <g id="chair-ul">
+      <ellipse cx="0" cy="4" rx="13" ry="6.5" fill="#5c4641" opacity="0.14"/>
+      <line x1="-8" y1="-2" x2="-8" y2="6" stroke="#5c4641" stroke-width="2.4" stroke-linecap="round"/>
+      <line x1="8" y1="-2" x2="8" y2="6" stroke="#5c4641" stroke-width="2.4" stroke-linecap="round"/>
+      <line x1="0" y1="2" x2="0" y2="10" stroke="#5c4641" stroke-width="2.4" stroke-linecap="round"/>
+      <!-- Seat -->
+      <polygon points="0,-10 -11,-4.5 0,1 11,-4.5" fill="#d9ae82" stroke="#5c4641" stroke-width="1.5" stroke-linejoin="round"/>
+      <polygon points="0,-8.5 -8.5,-4.2 0,0 8.5,-4.2" fill="#e8b8b8" stroke="#5c4641" stroke-width="1"/>
+      <!-- Backrest (on lower-right edge) -->
+      <path d="M11,-4.5 L11,-20 C11,-22 0,-17 0,-15 L0,1 Z" fill="#ba8a5e" stroke="#5c4641" stroke-width="1.5" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Cute Wooden Chair facing down-left (+u) -->
+    <g id="chair-dl" transform="scale(-1,1)">
+      <use href="#chair-dr"/>
+    </g>
+
+    <!-- Cute Wooden Chair facing up-right (-u) -->
+    <g id="chair-ur" transform="scale(-1,1)">
+      <use href="#chair-ul"/>
+    </g>
+  </defs>
+
+  <!-- 1. SOFT PASTEL BACKDROP -->
+  <rect width="800" height="600" fill="url(#bg-grad)"/>
+
+  <!-- Subtle cozy ambient sparkles in background -->
+  <g fill="#ffffff" opacity="0.55">
+    <circle cx="92" cy="110" r="3.5"/>
+    <circle cx="715" cy="145" r="4"/>
+    <circle cx="84" cy="485" r="3"/>
+    <circle cx="722" cy="470" r="3.5"/>
+    <circle cx="215" cy="68" r="2.5"/>
+    <circle cx="605" cy="76" r="2.5"/>
+  </g>
+
+  <!-- 2. STICKER DIE-CUT SILHOUETTE WITH SOFT SHADOW -->
+  <g filter="url(#sticker-shadow)">
+    <polygon points="400,26 668,160 668,440 400,576 132,440 132,160"
+             fill="#ffffff" stroke="#ffffff" stroke-width="18" stroke-linejoin="round"/>
+  </g>
+
+  <!-- 3. DIORAMA BASE SLAB & BACK WALLS -->
+  <g id="room-structure">
+    <!-- Left Wall interior (u=0..8, v=0, z=0..264) -->
+    <polygon points="400,304 144,432 144,168 400,40" fill="#f7ebd8" stroke="#5c4641" stroke-width="1.6" stroke-linejoin="round"/>
+    <!-- Right Wall interior (u=0, v=0..8, z=0..264) -->
+    <polygon points="400,304 656,432 656,168 400,40" fill="#ecdac2" stroke="#5c4641" stroke-width="1.6" stroke-linejoin="round"/>
+
+    <!-- Subtle vertical pilaster accents on walls -->
+    <g stroke="#e0c9ab" stroke-width="2" opacity="0.7">
+      <line x1="304" y1="88" x2="304" y2="352"/>
+      <line x1="224" y1="128" x2="224" y2="392"/>
+      <line x1="496" y1="88" x2="496" y2="352"/>
+      <line x1="576" y1="128" x2="576" y2="392"/>
+    </g>
+
+    <!-- Floor base slab thickness -->
+    <polygon points="144,432 400,560 400,576 144,448" fill="#d9be9e" stroke="#5c4641" stroke-width="1.8" stroke-linejoin="round"/>
+    <polygon points="656,432 400,560 400,576 656,448" fill="#c2a382" stroke="#5c4641" stroke-width="1.8" stroke-linejoin="round"/>
+  </g>
+
+  <!-- 4. PATTERNED BLACK, WHITE, AND GREY TILE FLOOR (8x8 Isometric Grid) -->
+  <g id="tile-floor" stroke="#dfd9ce" stroke-width="0.9" stroke-linejoin="round">
+    <!-- Base floor fill -->
+    <polygon points="400,304 144,432 400,560 656,432" fill="#f7f4ec"/>
+
+    <!-- Row u=0 (outer back-right border: dove grey & charcoal) -->
+    <use href="#tile" x="400" y="304" fill="#4f5261"/>
+    <use href="#tile" x="432" y="320" fill="#c7cbd6"/>
+    <use href="#tile" x="464" y="336" fill="#c7cbd6"/>
+    <use href="#tile" x="496" y="352" fill="#c7cbd6"/>
+    <use href="#tile" x="528" y="368" fill="#c7cbd6"/>
+    <use href="#tile" x="560" y="384" fill="#c7cbd6"/>
+    <use href="#tile" x="592" y="400" fill="#c7cbd6"/>
+    <use href="#tile" x="624" y="416" fill="#4f5261"/>
+
+    <!-- Row u=1 -->
+    <use href="#tile" x="368" y="320" fill="#c7cbd6"/>
+    <use href="#tile" x="400" y="336" fill="#f7f4ec"/>
+    <use href="#tile" x="432" y="352" fill="#4f5261"/>
+    <use href="#tile" x="464" y="368" fill="#f7f4ec"/>
+    <use href="#tile" x="496" y="384" fill="#4f5261"/>
+    <use href="#tile" x="528" y="400" fill="#f7f4ec"/>
+    <use href="#tile" x="560" y="416" fill="#4f5261"/>
+    <use href="#tile" x="592" y="432" fill="#c7cbd6"/>
+
+    <!-- Row u=2 -->
+    <use href="#tile" x="336" y="336" fill="#c7cbd6"/>
+    <use href="#tile" x="368" y="352" fill="#4f5261"/>
+    <use href="#tile" x="400" y="368" fill="#f7f4ec"/>
+    <use href="#tile" x="432" y="384" fill="#4f5261"/>
+    <use href="#tile" x="464" y="400" fill="#f7f4ec"/>
+    <use href="#tile" x="496" y="416" fill="#4f5261"/>
+    <use href="#tile" x="528" y="432" fill="#f7f4ec"/>
+    <use href="#tile" x="560" y="448" fill="#c7cbd6"/>
+
+    <!-- Row u=3 -->
+    <use href="#tile" x="304" y="352" fill="#c7cbd6"/>
+    <use href="#tile" x="336" y="368" fill="#f7f4ec"/>
+    <use href="#tile" x="368" y="384" fill="#4f5261"/>
+    <use href="#tile" x="400" y="400" fill="#d5d8e0"/>
+    <use href="#tile" x="432" y="416" fill="#4f5261"/>
+    <use href="#tile" x="464" y="432" fill="#f7f4ec"/>
+    <use href="#tile" x="496" y="448" fill="#4f5261"/>
+    <use href="#tile" x="528" y="464" fill="#c7cbd6"/>
+
+    <!-- Row u=4 -->
+    <use href="#tile" x="272" y="368" fill="#c7cbd6"/>
+    <use href="#tile" x="304" y="384" fill="#4f5261"/>
+    <use href="#tile" x="336" y="400" fill="#f7f4ec"/>
+    <use href="#tile" x="368" y="416" fill="#4f5261"/>
+    <use href="#tile" x="400" y="432" fill="#d5d8e0"/>
+    <use href="#tile" x="432" y="448" fill="#4f5261"/>
+    <use href="#tile" x="464" y="464" fill="#f7f4ec"/>
+    <use href="#tile" x="496" y="480" fill="#c7cbd6"/>
+
+    <!-- Row u=5 -->
+    <use href="#tile" x="240" y="384" fill="#c7cbd6"/>
+    <use href="#tile" x="272" y="400" fill="#f7f4ec"/>
+    <use href="#tile" x="304" y="416" fill="#4f5261"/>
+    <use href="#tile" x="336" y="432" fill="#f7f4ec"/>
+    <use href="#tile" x="368" y="448" fill="#4f5261"/>
+    <use href="#tile" x="400" y="464" fill="#f7f4ec"/>
+    <use href="#tile" x="432" y="480" fill="#4f5261"/>
+    <use href="#tile" x="464" y="496" fill="#c7cbd6"/>
+
+    <!-- Row u=6 -->
+    <use href="#tile" x="208" y="400" fill="#c7cbd6"/>
+    <use href="#tile" x="240" y="416" fill="#4f5261"/>
+    <use href="#tile" x="272" y="432" fill="#f7f4ec"/>
+    <use href="#tile" x="304" y="448" fill="#4f5261"/>
+    <use href="#tile" x="336" y="464" fill="#f7f4ec"/>
+    <use href="#tile" x="368" y="480" fill="#4f5261"/>
+    <use href="#tile" x="400" y="496" fill="#f7f4ec"/>
+    <use href="#tile" x="432" y="512" fill="#c7cbd6"/>
+
+    <!-- Row u=7 (outer front-left border) -->
+    <use href="#tile" x="176" y="416" fill="#4f5261"/>
+    <use href="#tile" x="208" y="432" fill="#c7cbd6"/>
+    <use href="#tile" x="240" y="448" fill="#c7cbd6"/>
+    <use href="#tile" x="272" y="464" fill="#c7cbd6"/>
+    <use href="#tile" x="304" y="480" fill="#c7cbd6"/>
+    <use href="#tile" x="336" y="496" fill="#c7cbd6"/>
+    <use href="#tile" x="368" y="512" fill="#c7cbd6"/>
+    <use href="#tile" x="400" y="528" fill="#4f5261"/>
+
+    <!-- Decorative small diamond inlays along front-left and front-right grey border -->
+    <g fill="#4f5261" stroke="none" opacity="0.65">
+      <polygon points="208,442 200,446 208,450 216,446"/>
+      <polygon points="240,458 232,462 240,466 248,462"/>
+      <polygon points="272,474 264,478 272,482 280,478"/>
+      <polygon points="304,490 296,494 304,498 312,494"/>
+      <polygon points="336,506 328,510 336,514 344,510"/>
+      <polygon points="368,522 360,526 368,530 376,526"/>
+
+      <polygon points="432,522 424,526 432,530 440,526"/>
+      <polygon points="464,506 456,510 464,514 472,510"/>
+      <polygon points="496,490 488,494 496,498 504,494"/>
+      <polygon points="528,474 520,478 528,482 536,478"/>
+      <polygon points="560,458 552,462 560,466 568,462"/>
+      <polygon points="592,442 584,446 592,450 600,446"/>
+    </g>
+
+    <!-- Soft ambient shadow cast by balconies onto ground floor -->
+    <polygon points="400,304 144,432 192,456 400,352 608,456 656,432" fill="#5c4641" stroke="none" opacity="0.11"/>
+
+    <!-- Crisp floor perimeter outline -->
+    <polygon points="400,304 144,432 400,560 656,432" fill="none" stroke="#5c4641" stroke-width="1.8" stroke-linejoin="round"/>
+  </g>
+
+  <!-- 5. GROUND FLOOR BOOKSHELVES & DETAILS (z = 0..74) -->
+  <g id="ground-bookshelves">
+    <!-- Left Wall Bookcases (u = 0.6, 3.0, 5.4) -->
+    <use href="#bookcase-left-a" x="380.8" y="313.6"/>
+    <use href="#bookcase-left-b" x="304" y="352"/>
+    <use href="#bookcase-left-a" x="227.2" y="390.4"/>
+
+    <!-- Right Wall Bookcases (v = 0.6, 3.0, 5.4) -->
+    <use href="#bookcase-right-b" x="419.2" y="313.6"/>
+    <use href="#bookcase-right-a" x="496" y="352"/>
+    <use href="#bookcase-right-b" x="572.8" y="390.4"/>
+
+    <!-- Cute wooden rolling ladder leaning on middle-left bookcase -->
+    <g stroke="#5c4641" stroke-width="2" stroke-linecap="round">
+      <line x1="276" y1="316" x2="292" y2="378"/>
+      <line x1="286" y1="311" x2="302" y2="373"/>
+      <line x1="278" y1="326" x2="288" y2="321"/>
+      <line x1="281" y1="337" x2="291" y2="332"/>
+      <line x1="284" y1="348" x2="294" y2="343"/>
+      <line x1="287" y1="359" x2="297" y2="354"/>
+      <line x1="290" y1="370" x2="300" y2="365"/>
+    </g>
+
+    <!-- Warm sconces between ground bookcases -->
+    <use href="#sconce" x="311" y="314"/>
+    <use href="#sconce" x="234" y="352"/>
+    <use href="#sconce" x="489" y="314"/>
+    <use href="#sconce" x="566" y="352"/>
+  </g>
+
+  <!-- 6. BALCONY 2 (Floor at z = 80, Slab z = 72..80, Railing z = 80..103) -->
+  <g id="balcony-2">
+    <!-- Underside wooden corbels/brackets -->
+    <g fill="#ba8c62" stroke="#5c4641" stroke-width="1.3" stroke-linejoin="round">
+      <path d="M350,305 L350,317 Q342,314 342,309 Z"/>
+      <path d="M294,333 L294,345 Q286,342 286,337 Z"/>
+      <path d="M238,361 L238,373 Q230,370 230,365 Z"/>
+      <path d="M450,305 L450,317 Q458,314 458,309 Z"/>
+      <path d="M506,333 L506,345 Q514,342 514,337 Z"/>
+      <path d="M562,361 L562,373 Q570,370 570,365 Z"/>
+    </g>
+
+    <!-- Balcony 2 Slab Front Edges -->
+    <polygon points="400,272 192,376 192,385 400,281" fill="#c99b6e" stroke="#5c4641" stroke-width="1.5" stroke-linejoin="round"/>
+    <polygon points="400,272 608,376 608,385 400,281" fill="#b38458" stroke="#5c4641" stroke-width="1.5" stroke-linejoin="round"/>
+    <!-- Cutaway end caps -->
+    <polygon points="144,352 192,376 192,385 144,361" fill="#d9b084" stroke="#5c4641" stroke-width="1.5" stroke-linejoin="round"/>
+    <polygon points="656,352 608,376 608,385 656,361" fill="#c29467" stroke="#5c4641" stroke-width="1.5" stroke-linejoin="round"/>
+
+    <!-- Balcony 2 Floor Deck -->
+    <polygon points="400,224 144,352 192,376 400,272 608,376 656,352" fill="#e6c8a4" stroke="#5c4641" stroke-width="1.5" stroke-linejoin="round"/>
+
+    <!-- Balcony 2 Bookshelves -->
+    <use href="#bookcase-left-b" x="380.8" y="233.6"/>
+    <use href="#bookcase-left-a" x="304" y="272"/>
+    <use href="#bookcase-left-b" x="227.2" y="310.4"/>
+
+    <use href="#bookcase-right-a" x="419.2" y="233.6"/>
+    <use href="#bookcase-right-b" x="496" y="272"/>
+    <use href="#bookcase-right-a" x="572.8" y="310.4"/>
+
+    <!-- Wall sconces on Balcony 2 -->
+    <use href="#sconce" x="311" y="234"/>
+    <use href="#sconce" x="234" y="272"/>
+    <use href="#sconce" x="489" y="234"/>
+    <use href="#sconce" x="566" y="272"/>
+
+    <!-- Balcony 2 Railings -->
+    <!-- Balusters Left -->
+    <g stroke="#5c4641" stroke-width="2" stroke-linecap="round">
+      <line x1="384" y1="280" x2="384" y2="257"/>
+      <line x1="368" y1="288" x2="368" y2="265"/>
+      <line x1="352" y1="296" x2="352" y2="273"/>
+      <line x1="336" y1="304" x2="336" y2="281"/>
+      <line x1="320" y1="312" x2="320" y2="289"/>
+      <line x1="304" y1="320" x2="304" y2="297"/>
+      <line x1="288" y1="328" x2="288" y2="305"/>
+      <line x1="272" y1="336" x2="272" y2="313"/>
+      <line x1="256" y1="344" x2="256" y2="321"/>
+      <line x1="240" y1="352" x2="240" y2="329"/>
+      <line x1="224" y1="360" x2="224" y2="337"/>
+      <line x1="208" y1="368" x2="208" y2="345"/>
+      <!-- Balusters Right -->
+      <line x1="416" y1="280" x2="416" y2="257"/>
+      <line x1="432" y1="288" x2="432" y2="265"/>
+      <line x1="448" y1="296" x2="448" y2="273"/>
+      <line x1="464" y1="304" x2="464" y2="281"/>
+      <line x1="480" y1="312" x2="480" y2="289"/>
+      <line x1="496" y1="320" x2="496" y2="297"/>
+      <line x1="512" y1="328" x2="512" y2="305"/>
+      <line x1="528" y1="336" x2="528" y2="313"/>
+      <line x1="544" y1="344" x2="544" y2="321"/>
+      <line x1="560" y1="352" x2="560" y2="329"/>
+      <line x1="576" y1="360" x2="576" y2="337"/>
+      <line x1="592" y1="368" x2="592" y2="345"/>
+    </g>
+    <!-- Top Handrails -->
+    <path d="M192,353 L400,249 L608,353" fill="none" stroke="#5c4641" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M192,353 L400,249 L608,353" fill="none" stroke="#dfb98d" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Corner Posts & Brass Finials -->
+    <g stroke="#5c4641" stroke-width="1.5" stroke-linejoin="round">
+      <rect x="397" y="246" width="6" height="27" rx="2" fill="#d1a475"/>
+      <circle cx="400" cy="244" r="3.5" fill="#f0cb78"/>
+      <rect x="189" y="350" width="6" height="27" rx="2" fill="#d1a475"/>
+      <circle cx="192" cy="348" r="3.5" fill="#f0cb78"/>
+      <rect x="605" y="350" width="6" height="27" rx="2" fill="#c49567"/>
+      <circle cx="608" cy="348" r="3.5" fill="#f0cb78"/>
+    </g>
+
+    <!-- Cute trailing plant draping over Right Balcony 2 railing -->
+    <g stroke="#5c4641" stroke-width="1.3" stroke-linejoin="round">
+      <ellipse cx="526" cy="316" rx="7" ry="4" fill="#df9679"/>
+      <path d="M519,316 L521,325 C523,327 529,327 531,325 L533,316 Z" fill="#df9679"/>
+      <circle cx="523" cy="314" r="4.5" fill="#8dbb9b"/>
+      <circle cx="529" cy="313" r="4.5" fill="#9cc9a9"/>
+      <circle cx="520" cy="321" r="4" fill="#8dbb9b"/>
+      <circle cx="517" cy="328" r="3.5" fill="#a4d1b0"/>
+      <circle cx="524" cy="332" r="3.5" fill="#8dbb9b"/>
+      <circle cx="521" cy="339" r="3" fill="#9cc9a9"/>
+    </g>
+  </g>
+
+  <!-- 7. BALCONY 3 (Floor at z = 154, Slab z = 146..154, Railing z = 154..177) -->
+  <g id="balcony-3">
+    <!-- Underside wooden corbels -->
+    <g fill="#ba8c62" stroke="#5c4641" stroke-width="1.3" stroke-linejoin="round">
+      <path d="M350,231 L350,243 Q342,240 342,235 Z"/>
+      <path d="M294,259 L294,271 Q286,268 286,263 Z"/>
+      <path d="M238,287 L238,299 Q230,296 230,291 Z"/>
+      <path d="M450,231 L450,243 Q458,240 458,235 Z"/>
+      <path d="M506,259 L506,271 Q514,268 514,263 Z"/>
+      <path d="M562,287 L562,299 Q570,296 570,291 Z"/>
+    </g>
+
+    <!-- Balcony 3 Slab Front Edges -->
+    <polygon points="400,198 192,302 192,311 400,207" fill="#c99b6e" stroke="#5c4641" stroke-width="1.5" stroke-linejoin="round"/>
+    <polygon points="400,198 608,302 608,311 400,207" fill="#b38458" stroke="#5c4641" stroke-width="1.5" stroke-linejoin="round"/>
+    <!-- Cutaway end caps -->
+    <polygon points="144,278 192,302 192,311 144,287" fill="#d9b084" stroke="#5c4641" stroke-width="1.5" stroke-linejoin="round"/>
+    <polygon points="656,278 608,302 608,311 656,287" fill="#c29467" stroke="#5c4641" stroke-width="1.5" stroke-linejoin="round"/>
+
+    <!-- Balcony 3 Floor Deck -->
+    <polygon points="400,150 144,278 192,302 400,198 608,302 656,278" fill="#e6c8a4" stroke="#5c4641" stroke-width="1.5" stroke-linejoin="round"/>
+
+    <!-- Balcony 3 Bookshelves -->
+    <use href="#bookcase-left-a" x="380.8" y="159.6"/>
+    <use href="#bookcase-left-b" x="304" y="198"/>
+    <use href="#bookcase-left-a" x="227.2" y="236.4"/>
+
+    <use href="#bookcase-right-b" x="419.2" y="159.6"/>
+    <use href="#bookcase-right-a" x="496" y="198"/>
+    <use href="#bookcase-right-b" x="572.8" y="236.4"/>
+
+    <!-- Wall sconces on Balcony 3 -->
+    <use href="#sconce" x="311" y="160"/>
+    <use href="#sconce" x="234" y="198"/>
+    <use href="#sconce" x="489" y="160"/>
+    <use href="#sconce" x="566" y="198"/>
+
+    <!-- Balcony 3 Railings -->
+    <g stroke="#5c4641" stroke-width="2" stroke-linecap="round">
+      <line x1="384" y1="206" x2="384" y2="183"/>
+      <line x1="368" y1="214" x2="368" y2="191"/>
+      <line x1="352" y1="222" x2="352" y2="199"/>
+      <line x1="336" y1="230" x2="336" y2="207"/>
+      <line x1="320" y1="238" x2="320" y2="215"/>
+      <line x1="304" y1="246" x2="304" y2="223"/>
+      <line x1="288" y1="254" x2="288" y2="231"/>
+      <line x1="272" y1="262" x2="272" y2="239"/>
+      <line x1="256" y1="270" x2="256" y2="247"/>
+      <line x1="240" y1="278" x2="240" y2="255"/>
+      <line x1="224" y1="286" x2="224" y2="263"/>
+      <line x1="208" y1="294" x2="208" y2="271"/>
+
+      <line x1="416" y1="206" x2="416" y2="183"/>
+      <line x1="432" y1="214" x2="432" y2="191"/>
+      <line x1="448" y1="222" x2="448" y2="199"/>
+      <line x1="464" y1="230" x2="464" y2="207"/>
+      <line x1="480" y1="238" x2="480" y2="215"/>
+      <line x1="496" y1="246" x2="496" y2="223"/>
+      <line x1="512" y1="254" x2="512" y2="231"/>
+      <line x1="528" y1="262" x2="528" y2="239"/>
+      <line x1="544" y1="270" x2="544" y2="247"/>
+      <line x1="560" y1="278" x2="560" y2="255"/>
+      <line x1="576" y1="286" x2="576" y2="263"/>
+      <line x1="592" y1="294" x2="592" y2="271"/>
+    </g>
+    <path d="M192,279 L400,175 L608,279" fill="none" stroke="#5c4641" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M192,279 L400,175 L608,279" fill="none" stroke="#dfb98d" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <g stroke="#5c4641" stroke-width="1.5" stroke-linejoin="round">
+      <rect x="397" y="172" width="6" height="27" rx="2" fill="#d1a475"/>
+      <circle cx="400" cy="170" r="3.5" fill="#f0cb78"/>
+      <rect x="189" y="276" width="6" height="27" rx="2" fill="#d1a475"/>
+      <circle cx="192" cy="274" r="3.5" fill="#f0cb78"/>
+      <rect x="605" y="276" width="6" height="27" rx="2" fill="#c49567"/>
+      <circle cx="608" cy="274" r="3.5" fill="#f0cb78"/>
+    </g>
+
+    <!-- Cute trailing plant on Left Balcony 3 -->
+    <g stroke="#5c4641" stroke-width="1.3" stroke-linejoin="round">
+      <ellipse cx="264" cy="242" rx="7" ry="4" fill="#df9679"/>
+      <circle cx="261" cy="240" r="4.5" fill="#8dbb9b"/>
+      <circle cx="267" cy="239" r="4.5" fill="#9cc9a9"/>
+      <circle cx="269" cy="247" r="4" fill="#8dbb9b"/>
+      <circle cx="273" cy="254" r="3.5" fill="#a4d1b0"/>
+      <circle cx="268" cy="259" r="3" fill="#8dbb9b"/>
+    </g>
+  </g>
+
+  <!-- 8. UPPER CLERESTORY ARCHED WINDOWS & CUTAWAY WALL CORNICE -->
+  <g id="clerestory-and-cornice">
+    <!-- Left Wall Arched Clerestory Windows -->
+    <g stroke="#5c4641" stroke-width="1.5" stroke-linejoin="round">
+      <!-- Window L1 -->
+      <path d="M368,94 L324,116 L324,96 Q346,72 368,74 Z" fill="url(#window-grad)"/>
+      <line x1="346" y1="80" x2="346" y2="105" stroke="#c99b6e" stroke-width="1.6"/>
+      <!-- Window L2 -->
+      <path d="M292,132 L248,154 L248,134 Q270,110 292,112 Z" fill="url(#window-grad)"/>
+      <line x1="270" y1="118" x2="270" y2="143" stroke="#c99b6e" stroke-width="1.6"/>
+      <!-- Window L3 -->
+      <path d="M216,170 L172,192 L172,172 Q194,148 216,150 Z" fill="url(#window-grad)"/>
+      <line x1="194" y1="156" x2="194" y2="181" stroke="#c99b6e" stroke-width="1.6"/>
+    </g>
+
+    <!-- Right Wall Arched Clerestory Windows -->
+    <g stroke="#5c4641" stroke-width="1.5" stroke-linejoin="round">
+      <!-- Window R1 -->
+      <path d="M432,94 L476,116 L476,96 Q454,72 432,74 Z" fill="url(#window-grad)"/>
+      <line x1="454" y1="80" x2="454" y2="105" stroke="#c99b6e" stroke-width="1.6"/>
+      <!-- Window R2 -->
+      <path d="M508,132 L552,154 L552,134 Q530,110 508,112 Z" fill="url(#window-grad)"/>
+      <line x1="530" y1="118" x2="530" y2="143" stroke="#c99b6e" stroke-width="1.6"/>
+      <!-- Window R3 -->
+      <path d="M584,170 L628,192 L628,172 Q606,148 584,150 Z" fill="url(#window-grad)"/>
+      <line x1="606" y1="156" x2="606" y2="181" stroke="#c99b6e" stroke-width="1.6"/>
+    </g>
+
+    <!-- Cutaway Wall Thicknesses & Top Cornice -->
+    <!-- Left cutaway wall edge -->
+    <polygon points="132,162 144,168 144,448 132,442" fill="#e6d3bc" stroke="#5c4641" stroke-width="1.8" stroke-linejoin="round"/>
+    <!-- Right cutaway wall edge -->
+    <polygon points="668,162 656,168 656,448 668,442" fill="#d4be9f" stroke="#5c4641" stroke-width="1.8" stroke-linejoin="round"/>
+    <!-- Top roof/wall thickness rim -->
+    <polygon points="400,28 668,162 656,168 400,40 144,168 132,162" fill="#fbf3e6" stroke="#5c4641" stroke-width="1.8" stroke-linejoin="round"/>
+  </g>
+
+  <!-- 9. ATRIUM FLOOR FURNITURE (Reading Tables with Lamps, Armchairs, Plants) -->
+
+  <!-- 9A. READING TABLE A (Upper-Center-Left, u=2.5..4.5, v=2.2..3.4) -->
+  <g id="reading-table-a">
+    <!-- Back chairs (u=3.0, v=2.0 -> 368,384; u=4.1, v=2.0 -> 333,402) -->
+    <use href="#chair-dr" x="368" y="378"/>
+    <use href="#chair-dr" x="330" y="397"/>
+
+    <!-- Table shadow -->
+    <polygon points="390,382 320,417 360,437 430,402" fill="#5c4641" opacity="0.14"/>
+
+    <!-- Table Legs -->
+    <g stroke="#5c4641" stroke-width="3.2" stroke-linecap="round">
+      <line x1="388" y1="364" x2="388" y2="384"/>
+      <line x1="326" y1="395" x2="326" y2="416"/>
+      <line x1="422" y1="381" x2="422" y2="402"/>
+      <line x1="360" y1="412" x2="360" y2="434"/>
+    </g>
+    <g stroke="#c29263" stroke-width="1.5" stroke-linecap="round">
+      <line x1="388" y1="364" x2="388" y2="383"/>
+      <line x1="326" y1="395" x2="326" y2="415"/>
+      <line x1="422" y1="381" x2="422" y2="401"/>
+      <line x1="360" y1="412" x2="360" y2="433"/>
+    </g>
+
+    <!-- Table Apron / Edge -->
+    <polygon points="322,395 360,414 360,420 322,401" fill="#c9996b" stroke="#5c4641" stroke-width="1.5" stroke-linejoin="round"/>
+    <polygon points="426,381 360,414 360,420 426,387" fill="#b38458" stroke="#5c4641" stroke-width="1.5" stroke-linejoin="round"/>
+
+    <!-- Table Top -->
+    <polygon points="388,362 322,395 360,414 426,381" fill="#e6c49c" stroke="#5c4641" stroke-width="1.6" stroke-linejoin="round"/>
+
+    <!-- Items on Table A: Open books & 2 glowing banker's lamps -->
+    <!-- Open book 1 -->
+    <polygon points="374,380 364,385 372,389 382,384" fill="#fffaf0" stroke="#5c4641" stroke-width="1.1" stroke-linejoin="round"/>
+    <line x1="369" y1="382.5" x2="377" y2="386.5" stroke="#d4c6b4" stroke-width="1"/>
+    <!-- Small book stack -->
+    <polygon points="348,395 340,399 346,402 354,398" fill="#e69fa5" stroke="#5c4641" stroke-width="1.1" stroke-linejoin="round"/>
+    <polygon points="348,392 340,396 346,399 354,395" fill="#9fb3dc" stroke="#5c4641" stroke-width="1.1" stroke-linejoin="round"/>
+    <!-- Two Banker's Lamps -->
+    <use href="#banker-lamp" x="394" y="378"/>
+    <use href="#banker-lamp" x="358" y="396"/>
+
+    <!-- Front chairs -->
+    <use href="#chair-ul" x="406" y="400"/>
+    <use href="#chair-ul" x="370" y="418"/>
+  </g>
+
+  <!-- 9B. READING TABLE B (Center-Right, u=2.4..3.6, v=4.7..6.7) -->
+  <g id="reading-table-b">
+    <!-- Back chairs -->
+    <use href="#chair-dl" x="498" y="408"/>
+    <use href="#chair-dl" x="536" y="427"/>
+
+    <!-- Table shadow -->
+    <polygon points="476,412 546,447 506,467 436,432" fill="#5c4641" opacity="0.14"/>
+
+    <!-- Table Legs -->
+    <g stroke="#5c4641" stroke-width="3.2" stroke-linecap="round">
+      <line x1="478" y1="394" x2="478" y2="414"/>
+      <line x1="540" y1="425" x2="540" y2="446"/>
+      <line x1="444" y1="411" x2="444" y2="432"/>
+      <line x1="506" y1="442" x2="506" y2="464"/>
+    </g>
+    <g stroke="#c29263" stroke-width="1.5" stroke-linecap="round">
+      <line x1="478" y1="394" x2="478" y2="413"/>
+      <line x1="540" y1="425" x2="540" y2="445"/>
+      <line x1="444" y1="411" x2="444" y2="431"/>
+      <line x1="506" y1="442" x2="506" y2="463"/>
+    </g>
+
+    <!-- Table Apron -->
+    <polygon points="440,411 506,444 506,450 440,417" fill="#c9996b" stroke="#5c4641" stroke-width="1.5" stroke-linejoin="round"/>
+    <polygon points="544,425 506,444 506,450 544,431" fill="#b38458" stroke="#5c4641" stroke-width="1.5" stroke-linejoin="round"/>
+
+    <!-- Table Top -->
+    <polygon points="478,392 544,425 506,444 440,411" fill="#e6c49c" stroke="#5c4641" stroke-width="1.6" stroke-linejoin="round"/>
+
+    <!-- Items on Table B -->
+    <polygon points="484,412 494,417 486,421 476,416" fill="#fffaf0" stroke="#5c4641" stroke-width="1.1" stroke-linejoin="round"/>
+    <polygon points="512,424 520,428 514,431 506,427" fill="#f2d388" stroke="#5c4641" stroke-width="1.1" stroke-linejoin="round"/>
+    <!-- Two Banker's Lamps -->
+    <use href="#banker-lamp" x="472" y="408"/>
+    <use href="#banker-lamp" x="508" y="426"/>
+
+    <!-- Front chairs -->
+    <use href="#chair-ur" x="462" y="432"/>
+    <use href="#chair-ur" x="498" y="450"/>
+  </g>
+
+  <!-- 9C. COZY ARMCHAIR READING NOOK (Front-Left, u=5.2..7.0, v=2.0..4.0) -->
+  <g id="armchair-nook-left">
+    <!-- Small soft pastel oval rug -->
+    <ellipse cx="304" cy="456" rx="54" ry="27" fill="#f5e1c8" stroke="#d9bc9c" stroke-width="1.8"/>
+    <ellipse cx="304" cy="456" rx="46" ry="22" fill="none" stroke="#e8ccb0" stroke-width="1.2" stroke-dasharray="4 3"/>
+
+    <!-- Armchair 1: Plump Dusty Rose Armchair (facing down-right) -->
+    <g transform="translate(274, 444)">
+      <ellipse cx="0" cy="11" rx="22" ry="11" fill="#5c4641" opacity="0.16"/>
+      <!-- Wooden feet -->
+      <line x1="-13" y1="8" x2="-13" y2="15" stroke="#5c4641" stroke-width="3" stroke-linecap="round"/>
+      <line x1="13" y1="8" x2="13" y2="15" stroke="#5c4641" stroke-width="3" stroke-linecap="round"/>
+      <line x1="0" y1="13" x2="0" y2="20" stroke="#5c4641" stroke-width="3" stroke-linecap="round"/>
+      <!-- Backrest -->
+      <path d="M-19,2 L-19,-18 C-19,-26 -6,-30 2,-26 L12,-21 C16,-19 16,-12 16,-6 Z"
+            fill="#df9ba1" stroke="#5c4641" stroke-width="1.6" stroke-linejoin="round"/>
+      <!-- Left Arm -->
+      <path d="M-20,2 C-22,-6 -14,-10 -8,-7 L4,-1 C8,1 8,8 4,11 L-14,9 Z"
+            fill="#e8adb2" stroke="#5c4641" stroke-width="1.6" stroke-linejoin="round"/>
+      <!-- Seat Cushion -->
+      <path d="M-10,2 L4,-5 L19,2 L5,10 Z" fill="#f0bec2" stroke="#5c4641" stroke-width="1.5" stroke-linejoin="round"/>
+      <!-- Base front -->
+      <path d="M-14,7 L5,16 L20,8 L20,2 L5,10 L-14,1 Z" fill="#d48c92" stroke="#5c4641" stroke-width="1.5" stroke-linejoin="round"/>
+      <!-- Right Arm -->
+      <path d="M5,-4 C11,-7 20,-3 20,4 L20,10 L10,14 L5,8 Z"
+            fill="#e6a6ac" stroke="#5c4641" stroke-width="1.6" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Small Round Wooden Side Table -->
+    <g transform="translate(310, 460)">
+      <ellipse cx="0" cy="8" rx="13" ry="6.5" fill="#5c4641" opacity="0.15"/>
+      <line x1="-6" y1="-2" x2="-8" y2="8" stroke="#5c4641" stroke-width="2.4" stroke-linecap="round"/>
+      <line x1="6" y1="-2" x2="8" y2="8" stroke="#5c4641" stroke-width="2.4" stroke-linecap="round"/>
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#5c4641" stroke-width="2.4" stroke-linecap="round"/>
+      <ellipse cx="0" cy="-4" rx="14" ry="7.5" fill="#e6c49c" stroke="#5c4641" stroke-width="1.5"/>
+      <!-- Tiny teacup & book -->
+      <ellipse cx="-4" cy="-5" rx="3.2" ry="2" fill="#fffaf0" stroke="#5c4641" stroke-width="1"/>
+      <polygon points="2,-5 8,-2 5,0 -1,-3" fill="#9cc2a8" stroke="#5c4641" stroke-width="1" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Armchair 2: Plump Sage Green Armchair (facing up-left) -->
+    <g transform="translate(342, 474)">
+      <ellipse cx="0" cy="11" rx="22" ry="11" fill="#5c4641" opacity="0.16"/>
+      <line x1="-13" y1="8" x2="-13" y2="15" stroke="#5c4641" stroke-width="3" stroke-linecap="round"/>
+      <line x1="13" y1="8" x2="13" y2="15" stroke="#5c4641" stroke-width="3" stroke-linecap="round"/>
+      <line x1="0" y1="13" x2="0" y2="20" stroke="#5c4641" stroke-width="3" stroke-linecap="round"/>
+      <!-- Seat Cushion -->
+      <path d="M-18,2 L-4,-6 L14,2 L0,10 Z" fill="#b7d6be" stroke="#5c4641" stroke-width="1.5" stroke-linejoin="round"/>
+      <!-- Left Arm -->
+      <path d="M-20,0 C-20,-7 -12,-10 -6,-7 L-6,4 L-16,9 Z" fill="#a4c5ad" stroke="#5c4641" stroke-width="1.6" stroke-linejoin="round"/>
+      <!-- Backrest (on front-right side since facing up-left) -->
+      <path d="M18,4 L18,-14 C18,-20 8,-20 2,-16 L-10,-8 C-14,-6 -14,2 -14,8 L2,16 L18,8 Z"
+            fill="#98bc9f" stroke="#5c4641" stroke-width="1.6" stroke-linejoin="round"/>
+      <!-- Cushion highlight -->
+      <path d="M-12,-4 C-6,-8 4,-12 12,-12" fill="none" stroke="#c3e0ca" stroke-width="2" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- 9D. COZY ARMCHAIR & FLOOR LAMP (Front-Right, u=5.5..6.8, v=5.2..6.6) -->
+  <g id="armchair-nook-right">
+    <!-- Cute potted plant -->
+    <g transform="translate(466, 478)">
+      <ellipse cx="0" cy="8" rx="11" ry="5.5" fill="#5c4641" opacity="0.15"/>
+      <path d="M-8,-4 L8,-4 L6,7 C4,9 -4,9 -6,7 Z" fill="#df9679" stroke="#5c4641" stroke-width="1.5" stroke-linejoin="round"/>
+      <ellipse cx="0" cy="-4" rx="8" ry="3.5" fill="#c77d60" stroke="#5c4641" stroke-width="1.4"/>
+      <!-- Rounded leaves -->
+      <g fill="#8dbb9b" stroke="#5c4641" stroke-width="1.4" stroke-linejoin="round">
+        <path d="M0,-4 C-10,-12 -14,-22 -4,-22 C2,-22 2,-12 0,-4 Z"/>
+        <path d="M0,-4 C10,-12 15,-20 6,-23 C0,-25 -2,-14 0,-4 Z" fill="#9cc9a9"/>
+        <path d="M0,-5 C-4,-18 4,-29 8,-24 C12,-19 4,-11 0,-5 Z" fill="#7fae8d"/>
+      </g>
+    </g>
+
+    <!-- Warm Butter-Peach Armchair (facing up-left) -->
+    <g transform="translate(420, 496)">
+      <ellipse cx="0" cy="11" rx="22" ry="11" fill="#5c4641" opacity="0.16"/>
+      <line x1="-13" y1="8" x2="-13" y2="15" stroke="#5c4641" stroke-width="3" stroke-linecap="round"/>
+      <line x1="13" y1="8" x2="13" y2="15" stroke="#5c4641" stroke-width="3" stroke-linecap="round"/>
+      <line x1="0" y1="13" x2="0" y2="20" stroke="#5c4641" stroke-width="3" stroke-linecap="round"/>
+      <!-- Seat Cushion -->
+      <path d="M-18,2 L-4,-6 L14,2 L0,10 Z" fill="#f7d6a8" stroke="#5c4641" stroke-width="1.5" stroke-linejoin="round"/>
+      <!-- Backrest -->
+      <path d="M18,4 L18,-14 C18,-20 8,-20 2,-16 L-10,-8 C-14,-6 -14,2 -14,8 L2,16 L18,8 Z"
+            fill="#ecc189" stroke="#5c4641" stroke-width="1.6" stroke-linejoin="round"/>
+      <path d="M-12,-4 C-6,-8 4,-12 12,-12" fill="none" stroke="#fae2bf" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <!-- Slender Brass Floor Lamp with Warm Glow -->
+    <g transform="translate(450, 502)">
+      <circle cx="0" cy="-42" r="34" fill="url(#lamp-glow)"/>
+      <ellipse cx="0" cy="4" rx="9" ry="4.5" fill="#d9ad62" stroke="#5c4641" stroke-width="1.5"/>
+      <line x1="0" y1="3" x2="0" y2="-38" stroke="#5c4641" stroke-width="3" stroke-linecap="round"/>
+      <line x1="0" y1="3" x2="0" y2="-38" stroke="#e8c174" stroke-width="1.4" stroke-linecap="round"/>
+      <!-- Lampshade -->
+      <path d="M-11,-34 L-7,-48 L7,-48 L11,-34 Z" fill="#fff3c9" stroke="#5c4641" stroke-width="1.5" stroke-linejoin="round"/>
+      <ellipse cx="0" cy="-34" rx="11" ry="3.5" fill="#ffe69e" stroke="#5c4641" stroke-width="1.2"/>
+    </g>
+  </g>
+
+  <!-- 10. HANGING ATRIUM CHANDELIER (Floating in the Tall Open Center) -->
+  <g id="atrium-chandelier">
+    <!-- Warm halo -->
+    <circle cx="400" cy="196" r="68" fill="url(#chandelier-glow)"/>
+    <!-- Brass suspension rod from top of atrium -->
+    <line x1="400" y1="40" x2="400" y2="188" stroke="#5c4641" stroke-width="2.6"/>
+    <line x1="400" y1="40" x2="400" y2="188" stroke="#e6be73" stroke-width="1.2"/>
+    <!-- Chandelier ring & arms -->
+    <ellipse cx="400" cy="194" rx="28" ry="12" fill="none" stroke="#5c4641" stroke-width="3.2"/>
+    <ellipse cx="400" cy="194" rx="28" ry="12" fill="none" stroke="#e6be73" stroke-width="1.6"/>
+    <line x1="372" y1="194" x2="428" y2="194" stroke="#5c4641" stroke-width="1.6"/>
+    <circle cx="400" cy="188" r="4.5" fill="#e6be73" stroke="#5c4641" stroke-width="1.4"/>
+    <!-- 5 Glowing Glass Globes -->
+    <g stroke="#5c4641" stroke-width="1.4">
+      <circle cx="374" cy="190" r="6.5" fill="#fff7d1"/>
+      <circle cx="426" cy="190" r="6.5" fill="#fff7d1"/>
+      <circle cx="386" cy="201" r="6.5" fill="#fff7d1"/>
+      <circle cx="414" cy="201" r="6.5" fill="#fff7d1"/>
+      <circle cx="400" cy="205" r="7" fill="#fffbe6"/>
+    </g>
+  </g>
+
+  <!-- 11. QUIET WARM SUNBEAMS & COZY LIGHT DUST MOTES -->
+  <g id="warm-light-overlay" pointer-events="none">
+    <!-- Soft diagonal afternoon sunbeams from upper-left clerestory windows -->
+    <polygon points="324,116 368,94 565,442 460,492" fill="url(#sunbeam-grad)"/>
+    <polygon points="248,154 292,132 458,472 365,512" fill="url(#sunbeam-grad)"/>
+    <polygon points="172,192 216,170 345,455 268,488" fill="url(#sunbeam-grad)"/>
+
+    <!-- Tiny floating golden dust motes in the warm sunbeams -->
+    <g fill="#fff8d6" opacity="0.75">
+      <circle cx="348" cy="235" r="2"/>
+      <circle cx="385" cy="278" r="1.6"/>
+      <circle cx="422" cy="312" r="2.2"/>
+      <circle cx="366" cy="336" r="1.8"/>
+      <circle cx="448" cy="358" r="1.6"/>
+      <circle cx="315" cy="295" r="1.8"/>
+      <circle cx="294" cy="348" r="1.5"/>
+      <circle cx="408" cy="252" r="1.5"/>
+    </g>
+  </g>
+</svg>

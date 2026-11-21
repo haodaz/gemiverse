@@ -1,0 +1,27 @@
+{
+ "model": "gemini-4-neon",
+ "prompt": "Draw an isometric miniature campus map of a classical uptown New York City university: a central lawn with brick paths, a domed neoclassical library with wide stone steps on the north side, a long colonnaded library on the south side, a glass student hall, red brick buildings with green copper roofs, iron gates, trees. Accent color light blue. Soft pastel palette, rounded shapes, gentle shadows, isometric view, the feel of a cute life-sim game, same style as a cozy sticker illustration. viewBox 0 0 800 600.",
+ "usage": {
+  "total_tokens": 29523,
+  "total_input_tokens": 172,
+  "input_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 172
+   }
+  ],
+  "total_cached_tokens": 0,
+  "total_output_tokens": 19998,
+  "output_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 19998
+   }
+  ],
+  "total_tool_use_tokens": 0,
+  "total_thought_tokens": 9353,
+  "initial_input_tokens": 172
+ },
+ "ms": 228275,
+ "made_at": "2026-11-21T16:09:53.352Z"
+}

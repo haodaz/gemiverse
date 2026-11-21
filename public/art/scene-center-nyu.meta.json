@@ -1,0 +1,27 @@
+{
+ "model": "gemini-4-neon",
+ "prompt": "Draw the inside of a modern student center lobby: a row of club tables with blank banners and blank poster boards, a notice wall with blank colorful flyers, a wide staircase, big windows. Soft pastel palette, rounded shapes, gentle shadows, isometric view, the feel of a cute life-sim game, same style as a cozy sticker illustration. viewBox 0 0 800 600.",
+ "usage": {
+  "total_tokens": 23852,
+  "total_input_tokens": 140,
+  "input_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 140
+   }
+  ],
+  "total_cached_tokens": 0,
+  "total_output_tokens": 12681,
+  "output_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 12681
+   }
+  ],
+  "total_tool_use_tokens": 0,
+  "total_thought_tokens": 11031,
+  "initial_input_tokens": 140
+ },
+ "ms": 184344,
+ "made_at": "2026-11-21T16:09:09.421Z"
+}

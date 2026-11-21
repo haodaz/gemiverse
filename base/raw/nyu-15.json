@@ -6,7 +6,9 @@
  "fetched_at": "2026-11-21T16:01:47.815Z",
  "http_status": 200,
  "error": "",
- "usable": false,
- "quote_found": false,
- "text": "Sasaki Luminaria / NYU Calendar \n Events Calendar\n Search Events\n Apply Reset \n About the Events Calendar \n Events Calendar Tutorial \n Report issue or provide feedback \n Feed Builder \n-->\n Create Feed From Current Filters \n-->\n Search Filters Calendar \n Copyright 2024, NYU WWW. All rights\n reserved.\n 345 Park Avenue, San Jose, CA\n 95110-2704, USA\n -->"
+ "usable": true,
+ "quote_found": true,
+ "text": "id: 401367\ngid: 26\ngroup_title: Faculty Housing and Residential Services\ntitle: Sasaki Luminaria\nurl: https://events.nyu.edu/event/sasaki-luminaria-2026\ndate: December 9\ndate_time: 6:00pm\ndate_utc: 2026-12-09 23:00:00\ndate_iso: 2026-12-09T18:00:00-05:00\ndate_ts: 1796857200\ntz_offset: -18000\ntimezone: America/New_York\nrepeats_start: 2026-12-09 23:00:00\nsummary: \n Enjoy live music by the NYU Jazz Trio in a luminous setting featuring Sean Wilson (trumpet), Yesung Kwon (guitar), Aidan Taylor (bass) from Steinhardt Music and Performing Arts Professions.\n \ndescription: \n Sasaki Luminaria is a free event presented by NYU Faculty Housing Happenings and is open to the public. Event is rain or shine. Dress for the weather.\n \n \n Directions:\n \n \n Enter Sasaki Garden via 1-2 Washington Square Village on West 3rd Street, or 3-4 Washington Square Village on Bleecker Street, both between Mercer Street and LaGuardia Place in Greenwich Village\n \n \n Subway: West 4th Street (A/C/E/B/D/F/M), Broadway-Lafayette/Bleecker Street (B/D/F/M/6)\n \n \n Connect with us @nyufacultyhousing and tag #SasakiLuminaria\n \n \n Photo Credit: Tracey Friedman\n \nlocation: Sasaki Garden\nlocation_title: Sasaki Garden\nlocation_latitude: 40.728115\nlocation_longitude: -73.996917\nlocation_id: 10342\nthumbnail: https://events.nyu.edu/live/image/gid/26/width/448/height/336/crop/1/src_region/0,0,1200,900/146476_03_Sasaki_Luminaria_2026_Newsletter_1200x900.png\nevent_types: [\" Open to the Public\"]\nthumbnail:html: \n \n \n \n \n",
+ "source_kind": "json_feed",
+ "feed": "events.nyu.edu LiveWhale JSON"
 }

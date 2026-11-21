@@ -5,9 +5,10 @@
   "school": "NYU",
   "status": 200,
   "chars": 2249,
-  "quoteFound": false,
-  "usable": false,
-  "title": "TDS: COLLABORATION: The House of Bernarda Alba"
+  "quoteFound": true,
+  "usable": true,
+  "title": "TDS: COLLABORATION: The House of Bernarda Alba",
+  "source_kind": "static_html"
  },
  {
   "id": "nyu-02",
@@ -17,7 +18,8 @@
   "chars": 1797,
   "quoteFound": true,
   "usable": true,
-  "title": "Nevermind the Noise"
+  "title": "Nevermind the Noise",
+  "source_kind": "static_html"
  },
  {
   "id": "nyu-03",
@@ -27,7 +29,8 @@
   "chars": 1719,
   "quoteFound": true,
   "usable": true,
-  "title": "Composers Collective (Fall Concert)"
+  "title": "Composers Collective (Fall Concert)",
+  "source_kind": "static_html"
  },
  {
   "id": "nyu-04",
@@ -37,17 +40,19 @@
   "chars": 1877,
   "quoteFound": true,
   "usable": true,
-  "title": "Research Seminar: Alessandro Rizzo"
+  "title": "Research Seminar: Alessandro Rizzo",
+  "source_kind": "static_html"
  },
  {
   "id": "nyu-05",
   "set": "design",
   "school": "NYU",
   "status": 200,
-  "chars": 379,
-  "quoteFound": false,
-  "usable": false,
-  "title": "Berkley Institute Event: Money in Politics"
+  "chars": 2185,
+  "quoteFound": true,
+  "usable": true,
+  "title": "Berkley Institute Event: Money in Politics",
+  "source_kind": "json_feed"
  },
  {
   "id": "nyu-06",
@@ -57,7 +62,8 @@
   "chars": 3389,
   "quoteFound": true,
   "usable": true,
-  "title": "A Beginner's Crash Course in APA Style [RESCHEDULE"
+  "title": "A Beginner's Crash Course in APA Style [RESCHEDULE",
+  "source_kind": "static_html"
  },
  {
   "id": "nyu-07",
@@ -67,7 +73,8 @@
   "chars": 3094,
   "quoteFound": true,
   "usable": true,
-  "title": "30 Minute Lightning Lesson: From Search to Shelf ("
+  "title": "30 Minute Lightning Lesson: From Search to Shelf (",
+  "source_kind": "static_html"
  },
  {
   "id": "nyu-08",
@@ -77,7 +84,8 @@
   "chars": 3244,
   "quoteFound": true,
   "usable": true,
-  "title": "Mindfulness Moment at Bobst"
+  "title": "Mindfulness Moment at Bobst",
+  "source_kind": "static_html"
  },
  {
   "id": "nyu-09",
@@ -87,7 +95,8 @@
   "chars": 1619,
   "quoteFound": true,
   "usable": true,
-  "title": "NYU CRACS Co-Lab Presents: \"Racial Exhaustion\" by "
+  "title": "NYU CRACS Co-Lab Presents: \"Racial Exhaustion\" by ",
+  "source_kind": "static_html"
  },
  {
   "id": "nyu-10",
@@ -97,7 +106,8 @@
   "chars": 3029,
   "quoteFound": true,
   "usable": true,
-  "title": "Finals Study Break"
+  "title": "Finals Study Break",
+  "source_kind": "static_html"
  },
  {
   "id": "nyu-11",
@@ -107,7 +117,8 @@
   "chars": 2474,
   "quoteFound": true,
   "usable": true,
-  "title": "Prompt Clinic: From Bad Prompts to Better Results"
+  "title": "Prompt Clinic: From Bad Prompts to Better Results",
+  "source_kind": "static_html"
  },
  {
   "id": "nyu-12",
@@ -117,7 +128,8 @@
   "chars": 2352,
   "quoteFound": true,
   "usable": true,
-  "title": "Hack Dibner 2026 Final Showcase"
+  "title": "Hack Dibner 2026 Final Showcase",
+  "source_kind": "static_html"
  },
  {
   "id": "nyu-13",
@@ -127,7 +139,8 @@
   "chars": 3038,
   "quoteFound": true,
   "usable": true,
-  "title": "Special Collections Crafting: Journal and Zine Mak"
+  "title": "Special Collections Crafting: Journal and Zine Mak",
+  "source_kind": "static_html"
  },
  {
   "id": "nyu-14",
@@ -137,17 +150,19 @@
   "chars": 1966,
   "quoteFound": true,
   "usable": true,
-  "title": "Meditations on Earth"
+  "title": "Meditations on Earth",
+  "source_kind": "static_html"
  },
  {
   "id": "nyu-15",
   "set": "design",
   "school": "NYU",
   "status": 200,
-  "chars": 353,
-  "quoteFound": false,
-  "usable": false,
-  "title": "Sasaki Luminaria"
+  "chars": 1490,
+  "quoteFound": true,
+  "usable": true,
+  "title": "Sasaki Luminaria",
+  "source_kind": "json_feed"
  },
  {
   "id": "nyu-16",
@@ -157,7 +172,8 @@
   "chars": 1685,
   "quoteFound": true,
   "usable": true,
-  "title": "NYU Brass Choir"
+  "title": "NYU Brass Choir",
+  "source_kind": "static_html"
  },
  {
   "id": "nyu-17",
@@ -167,7 +183,8 @@
   "chars": 1107,
   "quoteFound": true,
   "usable": true,
-  "title": "Study Break Snacks"
+  "title": "Study Break Snacks",
+  "source_kind": "static_html"
  },
  {
   "id": "nyu-18",
@@ -177,67 +194,74 @@
   "chars": 1614,
   "quoteFound": true,
   "usable": true,
-  "title": "Second Avenue Dance Company December Concert"
+  "title": "Second Avenue Dance Company December Concert",
+  "source_kind": "static_html"
  },
  {
   "id": "col-01",
   "set": "design",
   "school": "Columbia",
   "status": 403,
-  "chars": 0,
-  "quoteFound": false,
-  "usable": false,
-  "title": "Saturday Science: Your Body in Motion"
+  "chars": 3359,
+  "quoteFound": true,
+  "usable": true,
+  "title": "Saturday Science: Your Body in Motion",
+  "source_kind": "json_feed"
  },
  {
   "id": "col-02",
   "set": "exam",
   "school": "Columbia",
   "status": 403,
-  "chars": 0,
-  "quoteFound": false,
-  "usable": false,
-  "title": "The Columbia Colloquium: Wonder"
+  "chars": 3838,
+  "quoteFound": true,
+  "usable": true,
+  "title": "The Columbia Colloquium: Wonder",
+  "source_kind": "json_feed"
  },
  {
   "id": "col-03",
   "set": "design",
   "school": "Columbia",
   "status": 403,
-  "chars": 0,
-  "quoteFound": false,
-  "usable": false,
-  "title": "Introduction to Zotero"
+  "chars": 3830,
+  "quoteFound": true,
+  "usable": true,
+  "title": "Introduction to Zotero",
+  "source_kind": "json_feed"
  },
  {
   "id": "col-04",
   "set": "exam",
   "school": "Columbia",
   "status": 403,
-  "chars": 0,
-  "quoteFound": false,
-  "usable": false,
-  "title": "Wholesome Book Time: Brrr! It's Winter in the Arch"
+  "chars": 2272,
+  "quoteFound": true,
+  "usable": true,
+  "title": "Wholesome Book Time: Brrr! It's Winter in the Arch",
+  "source_kind": "json_feed"
  },
  {
   "id": "col-05",
   "set": "design",
   "school": "Columbia",
   "status": 403,
-  "chars": 0,
-  "quoteFound": false,
-  "usable": false,
-  "title": "\"City of Fortune\" -- A Book Talk with Mason B. Wil"
+  "chars": 4412,
+  "quoteFound": true,
+  "usable": true,
+  "title": "\"City of Fortune\" -- A Book Talk with Mason B. Wil",
+  "source_kind": "json_feed"
  },
  {
   "id": "col-06",
   "set": "exam",
   "school": "Columbia",
   "status": 403,
-  "chars": 0,
-  "quoteFound": false,
-  "usable": false,
-  "title": "Database Demo: See How Research Databases Work"
+  "chars": 2449,
+  "quoteFound": true,
+  "usable": true,
+  "title": "Database Demo: See How Research Databases Work",
+  "source_kind": "json_feed"
  },
  {
   "id": "col-07",
@@ -247,6 +271,7 @@
   "chars": 1249,
   "quoteFound": true,
   "usable": true,
-  "title": "Holiday Market at The Lee C. Bollinger Forum"
+  "title": "Holiday Market at The Lee C. Bollinger Forum",
+  "source_kind": "static_html"
  }
 ]

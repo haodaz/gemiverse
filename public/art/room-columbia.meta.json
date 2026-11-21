@@ -1,0 +1,27 @@
+{
+ "model": "gemini-4-neon",
+ "prompt": "Draw a cozy isometric cutaway dorm room for a college student's AI twin: wooden floor, two walls, a desk with a lamp, a standing mirror, a bed with a light blue blanket, a window with city light, a small rug, a door, a bookshelf. Soft pastel palette, rounded shapes, gentle shadows, isometric view, the feel of a cute life-sim game, same style as a cozy sticker illustration. viewBox 0 0 800 600.",
+ "usage": {
+  "total_tokens": 23838,
+  "total_input_tokens": 158,
+  "input_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 158
+   }
+  ],
+  "total_cached_tokens": 0,
+  "total_output_tokens": 14754,
+  "output_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 14754
+   }
+  ],
+  "total_tool_use_tokens": 0,
+  "total_thought_tokens": 8926,
+  "initial_input_tokens": 158
+ },
+ "ms": 188177,
+ "made_at": "2026-11-21T16:09:13.253Z"
+}
