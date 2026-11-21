@@ -7,6 +7,8 @@
 <script type="module">
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+import { offered } from "./hidden.js";
+import { makeKit } from "./kit.js";
 import { RoomEnvironment } from "three/addons/environments/RoomEnvironment.js";
 import { EffectComposer } from "three/addons/postprocessing/EffectComposer.js";
 import { RenderPass } from "three/addons/postprocessing/RenderPass.js";
@@ -16,7 +18,9 @@ window.THREE = THREE; // some generated helpers read THREE from the page
 const err = (m) => (document.getElementById("err").textContent += m + "\n");
 window.addEventListener("error", (e) => err(e.message));
 const load = async (n) => { try { return await import(`./${n}.js`); } catch (e) { err(`${n}: ${e.message}`); return null; } };
-const [room, items, character] = await Promise.all(["room", "items", "character"].map(load));
+const CHAR = new URLSearchParams(location.search).get("char") ?? "hero-person";
+const [room, items, character] = await Promise.all(["room", "items", CHAR].map(load));
+const kit = makeKit(THREE);
 // Embedded in the room page: no test buttons, the school decides the window view and the starting palette.
 const Q = new URLSearchParams(location.search), EMBED = Q.has("embed"), SCHOOL = Q.get("school") === "columbia" ? "columbia" : "nyu";
 if (EMBED) document.getElementById("ui").style.display = "none";
@@ -57,6 +61,7 @@ const DEFAULT_LAYOUT = {
 };
 let layout; try { layout = JSON.parse(localStorage.getItem("gemi.layout")) } catch {} layout ??= structuredClone(DEFAULT_LAYOUT);
 const saveLayout = () => { try { localStorage.setItem("gemi.layout", JSON.stringify(layout)) } catch {} };
+let away = false, held = false;
 let pi = SCHOOL === "columbia" ? 1 : 0, vi = 0, world, who, placed = {}, arranging = false, picked = null, lookNow = null;
 const grid = new THREE.GridHelper(4, 16, "#5b46e0", "#7c6cf0"); grid.position.y = 0.012; grid.visible = false; scene.add(grid);
 const marker = new THREE.BoxHelper(new THREE.Object3D(), "#7c6cf0"); marker.visible = false; scene.add(marker);
@@ -71,12 +76,16 @@ function build() {
   }
   spawn(lookNow);
 }
+const HAIR = ["short", "bob", "longStraight", "curly", "ponytail", "afro", "braids", "buzz"], SKIN = ["#f6dcc6", "#f1cfb4", "#e8b796", "#d49a72", "#b9794f", "#a86f4c", "#8d5a3c", "#6b4226"], HAIRC = ["#1f1a1c", "#3b2a22", "#6b4a2f", "#c98b4a", "#a5482f", "#e58fb0", "#5b8fd6", "#c8ccd4"];
 function spawn(look) {
   if (!character) return; if (who) world.remove(who);
-  const P = character.PARTS, r = (a) => a[Math.floor(Math.random() * a.length)];
-  lookNow = look ?? { skin: r(P.skin), hairStyle: r(P.hairStyles), hairColor: r(P.hairColors), eyes: r(P.eyes), top: r(P.tops), bottom: r(P.bottoms), bottomColor: "#4a5568", shoeColor: "#ffffff", headwear: r(P.headwear), glasses: r(P.glasses), blush: true };
-  try { who = character.buildCharacter(THREE, { ...lookNow, topColor: PALETTES[pi].primary });
-    who.scale.setScalar(1.25); who.position.set(0.25, 0, 0.5); world.add(who); character.setExpression?.(who, "happy"); } catch (e) { err("character: " + e.message); }
+  const r = (a) => a[Math.floor(Math.random() * a.length)];
+  lookNow = look ?? { skin: r(SKIN), hairStyle: r(HAIR), hairColor: r(HAIRC), eye: "#3b2a22", top: r(["hoodie", "tee", "shirt", "cardigan"]), bottom: r(["trousers", "shorts", "skirt"]), bottomColor: "#4a5568", shoeColor: "#ffffff", glasses: r(["none", "none", "round", "square"]), blush: true, bodyWidth: 1 };
+  try { who = character.build(THREE, { eye: "#3b2a22", ...lookNow, topColor: lookNow.topColor ?? PALETTES[pi].primary }, kit);
+    const w = lookNow.bodyWidth ?? 1;                              // body width: applied to the body, not the head
+    for (const n of ["torso", "armL", "armR", "legL", "legR"]) { const part = who.getObjectByName(n); if (part) { part.scale.x *= w; part.scale.z *= w; } }
+    who.traverse((o) => { if (o.isMesh) { o.castShadow = true; o.receiveShadow = true; } });
+    who.scale.setScalar(1.15); who.position.set(0.25, 0, 0.5); who.visible = !away && !arranging; world.add(who); character.setExpression?.(who, "happy"); } catch (e) { err("character: " + e.message); }
 }
 // What it does when nobody is talking to it: a small loop of walking to a spot and staying there a while.
 const SPOTS = [
@@ -88,7 +97,7 @@ const SPOTS = [
 ];
 let goal = null, waitUntil = 0;
 function live(t, dt) {
-  if (!who || arranging || away) return;
+  if (!who || arranging || away || held) return;
   if (!goal && t > waitUntil) { goal = SPOTS[Math.floor(Math.random() * SPOTS.length)]; document.getElementById("say").textContent = "…"; }
   if (goal) {
     const dx = goal.at[0] - who.position.x, dz = goal.at[1] - who.position.z, dist = Math.hypot(dx, dz);
@@ -104,7 +113,14 @@ function fits(name, p, r) {
   b.expandByScalar(-0.03);
   return !Object.keys(placed).some((o) => o !== name && layout[o].kind === "floor" && layout[name].kind === "floor" && b.intersectsBox(boxOf(o, layout[o].p, layout[o].r)));
 }
+function headOnScreen() { const p = new THREE.Vector3(); who.getWorldPosition(p); p.y += 1.45; p.project(camera); return { x: (p.x + 1) / 2 * innerWidth, y: (1 - p.y) / 2 * innerHeight }; }
 renderer.domElement.addEventListener("click", (ev) => {
+  if (!arranging && who && who.visible) {
+    ray.setFromCamera(new THREE.Vector2(ev.clientX / innerWidth * 2 - 1, -(ev.clientY / innerHeight) * 2 + 1), camera);
+    if (ray.intersectObject(who, true).length) { held = true; goal = null; who.rotation.y = Math.atan2(camera.position.x - who.position.x, camera.position.z - who.position.z); character.setExpression?.(who, "happy"); tell("tapped", headOnScreen()); }
+    else if (held) { held = false; tell("released"); }
+    return;
+  }
   if (!arranging) return;
   ray.setFromCamera(new THREE.Vector2(ev.clientX / innerWidth * 2 - 1, -(ev.clientY / innerHeight) * 2 + 1), camera);
   const hit = ray.intersectObjects(Object.values(placed), true)[0];
@@ -127,13 +143,14 @@ document.getElementById("var").onclick = () => { vi++; build(); };
 document.getElementById("look").onclick = () => spawn(null);
 addEventListener("resize", () => { const a = innerWidth / innerHeight; camera.left = -d * a; camera.right = d * a; camera.updateProjectionMatrix(); renderer.setSize(innerWidth, innerHeight); composer.setSize(innerWidth, innerHeight); });
 // The room page tells the room what the Gemi is doing; the room only shows it.
-let away = false;
 addEventListener("message", (ev) => { const m = ev.data; if (!m || m.source !== "gemiverse") return;
   if (m.type === "away") { away = !!m.value; if (who) who.visible = !away && !arranging; }
+  if (m.type === "release") held = false;
   if (m.type === "arrange") document.getElementById("arr").click();
   if (m.type === "look" && m.value) spawn(m.value);
   if (m.type === "palette") { pi = m.value % PALETTES.length; build(); } });
 const tell = (type, value) => { if (EMBED) parent.postMessage({ source: "gemiverse-room", type, value }, "*"); };
+tell("ready");
 const clock = new THREE.Clock();
 let last = 0;
 renderer.setAnimationLoop(() => { const t = clock.getElapsedTime(), dt = Math.min(0.05, t - last); last = t; live(t, dt); if (who && character?.idle) try { character.idle(who, t); } catch {} composer.render(); });
