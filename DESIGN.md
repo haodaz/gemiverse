@@ -132,3 +132,6 @@ No shop and no currency. Each kind of thing comes from who did the work, and sta
 | Companion animal | A keepsake whose find the Gemi's sealed guess had predicted (0.5 or more) | One time it guessed you right and you really did it | yes (up to three) |
 | Extra space | Only from the Gemi's own saved Gem Stars | The days it chose not to spend | no |
 Risk Carbon named: marking "I went" dishonestly to collect. So there is no "x of 36" checklist; arrivals are not announced in advance.
+
+## State at submission (16:20)
+Works end to end on a laptop: meet (`/start`), talk with Decisions routing, trips with a per-field gate, live re-check by the Managed Agent, keep or skip with a sealed guess, diary with undo, autonomy on its own stars, wardrobe, keepsakes and companions, spaces preview, admin console, days at speed, Gemi to Gemi with simulated peers. The base holds 467 checked entities. What is not done is listed at the end of the README.
