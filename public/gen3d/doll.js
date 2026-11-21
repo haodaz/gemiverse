@@ -14,13 +14,15 @@ export const LOOKS = {
 };
 
 import { applyFace } from "./face-paint.js";
+import { applyFace5 } from "./face-paint5.js";
 
 export async function buildDoll(THREE, look, kit, report = console.warn) {
-  globalThis.THREE ??= THREE;   // some generated helpers read THREE from the page although the brief said not to
+  globalThis.THREE ??= THREE;
+  const V5 = !new URLSearchParams(globalThis.location?.search ?? "").has("v4");   // version 5: head shape and hair made by Neon from reference images; ?v4 shows the earlier head   // some generated helpers read THREE from the page although the brief said not to
   const load = async (n) => { try { return await import(`./doll-${n}.js`); } catch (e) { report(`doll-${n}: ${e.message}`); return null; } };
   // newer versions of a module win when they exist (face2 over face, hair2 over hair)
   const first = async (...names) => { for (const n of names) { try { return await import(`./doll-${n}.js`); } catch {} } report(`doll-${names.at(-1)}: not available`); return null; };
-  const [body, face, hair, tops, bottoms, shoes, motion] = await Promise.all([load("body"), first("face2", "face"), first("hair4", "hair3", "hair2", "hair"), first("tops"), first("bottoms"), first("shoes"), first("motion")]);
+  const [body, face, hair, tops, bottoms, shoes, motion] = await Promise.all([load("body"), first("face2", "face"), first(...(V5 ? ["hair5"] : []), "hair4", "hair3", "hair2", "hair"), first("tops"), first("bottoms"), first("shoes"), first("motion")]);
   let headMod = null; for (const n of ["doll-head4", "doll-head"]) { try { headMod = await import(`./${n}.js`); break; } catch {} }   // third version: head and face as one module, made after Neon was shown a render
   if (!body) return null;
   let root; try { root = body.buildBody(THREE, look, kit); } catch (e) { report("body: " + e.message); return null; }
@@ -30,9 +32,15 @@ export async function buildDoll(THREE, look, kit, report = console.warn) {
   for (const n of ["handL", "handR"]) root.getObjectByName(n)?.scale.multiplyScalar(1.7);
   head?.traverse((o) => { if (o.isMesh && o.material && o.userData.slot === "skin") { o.material = o.material.clone(); o.material.map = null; o.material.color = new THREE.Color(look.skin); o.material.needsUpdate = true; } });
   let faceGroup = null, hairGroup = null, painted = null;
-  if (headMod && head) try { for (const c of [...head.children]) c.visible = false; faceGroup = headMod.buildHead(THREE, look, kit); head.add(faceGroup); painted = applyFace(THREE, kit, faceGroup, look); } catch (e) { report("head: " + e.message); headMod = null; for (const c of head.children) c.visible = true; }
-  if (!headMod && face && head) try { faceGroup = face.buildFace(THREE, look, kit); head.add(faceGroup); } catch (e) { report("face: " + e.message); }
-  if (hair && head) try { hairGroup = hair.buildHair(THREE, look, kit); head.add(hairGroup); } catch (e) { report("hair: " + e.message); }
+  let shape5 = null; if (new URLSearchParams(globalThis.location?.search ?? "").has("head5")) { try { shape5 = await import("./doll-headshape5.js"); } catch {} }   // the generated head has a hard ridge under the eyes (Elodie: "the face is not right"); kept behind ?head5, the hand-made head stays in use
+  if (shape5 && head) try { for (const c of [...head.children]) c.visible = false; faceGroup = shape5.buildHeadShape(THREE, { skin: look.skin }); const H5 = 0.31; faceGroup.scale.setScalar(H5); faceGroup.position.set(0, 0.012, -0.01); head.add(faceGroup);
+      const neck = faceGroup.getObjectByName("neck"); if (neck) neck.visible = false;   // the body has its own neck
+      painted = applyFace5(THREE, kit, faceGroup, look, shape5.PROFILE); headMod = null; } catch (e) { report("head5: " + e.message); shape5 = null; for (const c of head.children) c.visible = true; }
+  if (!shape5 && headMod && head) try { for (const c of [...head.children]) c.visible = false; faceGroup = headMod.buildHead(THREE, look, kit); head.add(faceGroup); painted = applyFace(THREE, kit, faceGroup, look); } catch (e) { report("head: " + e.message); headMod = null; for (const c of head.children) c.visible = true; }
+  if (!shape5 && !headMod && face && head) try { faceGroup = face.buildFace(THREE, look, kit); head.add(faceGroup); } catch (e) { report("face: " + e.message); }
+  // the version-5 hair names its styles differently
+  const hairLook = hair?.STYLES ? { ...look, hairStyle: ({ shortLayered: "tousled", buzz: "shortCrop", ponytail: "highPonytail" })[look.hairStyle] ?? (hair.STYLES.includes(look.hairStyle) ? look.hairStyle : "bob"), fringe: ({ full: "blunt" })[look.fringe] ?? look.fringe } : look;
+  if (hair && head) try { hairGroup = hair.buildHair(THREE, hairLook, kit); head.add(hairGroup); } catch (e) { report("hair: " + e.message); }
   for (const [mod, fn] of [[tops, "wearTop"], [bottoms, "wearBottom"], [shoes, "wearShoes"]]) if (mod?.[fn]) try { mod[fn](THREE, root, look, kit); } catch (e) { report(`${fn}: ${e.message}`); }
   // A ball joint under a sleeve, trouser leg, sock or boot is cloth-coloured and slightly larger, so no skin ball shows through.
   const long = !["shorts", "pleatedSkirt"].includes(look.bottom), sleeves = look.top !== "tee";
