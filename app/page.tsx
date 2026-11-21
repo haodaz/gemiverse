@@ -44,7 +44,7 @@ export default function Home() {
 
       {/* 2 · three things to know, beside the real thing */}
       <section className="snap-start min-h-[calc(100vh-60px)] flex flex-col justify-center border-b border-[#ebe6ee] bg-white">
-        <div className="mx-auto grid max-w-6xl grid-cols-[1fr_1.1fr] items-center gap-10 px-8 py-14">
+        <div className="mx-auto grid w-full max-w-6xl grid-cols-[1fr_1.1fr] items-center gap-10 px-8 py-14">
           <div className="space-y-8">
             {[["A Gemi", "It is yours alone", "Not an assistant waiting for orders. It has a small daily budget, plans its own day, and you can see what it did and why."],
               ["A Verse", "A campus it can read", "Events, clubs, libraries and openings from official pages, shared by every Gemi. What one has checked, all can read."],
@@ -74,7 +74,7 @@ export default function Home() {
 
       {/* 4 · the home it grows */}
       <section id="home" className="snap-start min-h-[calc(100vh-60px)] flex flex-col justify-center bg-[#2b2536] text-white">
-        <div className="mx-auto grid max-w-6xl grid-cols-[1fr_1.1fr] items-center gap-8 px-8 py-20">
+        <div className="mx-auto grid w-full max-w-6xl grid-cols-[1fr_1.1fr] items-center gap-8 px-8 py-20">
           <div>
             <Eyebrow light>The home it grows</Eyebrow>
             <h2 className="mt-3 text-5xl font-semibold leading-tight tracking-tight">Nothing here is bought. Everything stands for something you did.</h2>
@@ -106,7 +106,7 @@ export default function Home() {
 
       {/* 6 · why trust it */}
       <section id="proof" className="snap-start min-h-[calc(100vh-60px)] flex flex-col justify-center border-y border-[#ebe6ee] bg-white">
-        <div className="mx-auto max-w-6xl px-8 py-20">
+        <div className="mx-auto w-full max-w-6xl px-8 py-20">
           <Eyebrow>Why trust what it tells you</Eyebrow>
           <h2 className="mt-3 max-w-3xl text-5xl font-semibold leading-tight tracking-tight">We measured it on pages we did not pick.</h2>
           <div className="mt-10 grid grid-cols-3 gap-6">
@@ -133,7 +133,7 @@ export default function Home() {
 
       {/* 8 · three doors */}
       <section className="snap-start min-h-[calc(100vh-60px)] flex flex-col justify-center bg-[#f1eafc]">
-        <div className="mx-auto max-w-6xl px-8 py-20">
+        <div className="mx-auto w-full max-w-6xl px-8 py-20">
           <Eyebrow>Start here</Eyebrow>
           <h2 className="mt-3 text-5xl font-semibold tracking-tight">What are you here to do?</h2>
           <div className="mt-9 grid grid-cols-3 gap-6">
