@@ -37,6 +37,9 @@ export default function Room() {
   const [panel, setPanel] = useState<Panel>(null);
   const [deskView, setDeskView] = useState(false);
   const [look, setLook] = useState<Record<string, any>>({});
+  const [owned, setOwned] = useState<string[]>([]);
+  const [wtab, setWtab] = useState("Hair");
+  const [wish, setWish] = useState<{ id: string; cost: number; short?: boolean } | null>(null);
   const doNext = useRef<any>(null);
   const [campus, setCampus] = useState(false);
   const [outAt, setOutAt] = useState<string | null>(null);
@@ -62,7 +65,7 @@ export default function Room() {
       if (m.type === "tapped") setTap(m.value);
       if (m.type === "released") setTap(null);
       if (m.type === "open") { if (m.value === "door") { setPanel(null); setDeskView(false); setCampus(true); } else if (m.value === "wardrobe") setPanel("wardrobe"); }
-      if (m.type === "ready" && school) { let saved = null; try { saved = JSON.parse(localStorage.getItem(`gemi.look.${school}`) ?? "null"); } catch {} send("look", saved ?? PRESETS[school].look); if (saved) setLook(saved); setTimeout(() => auto.current?.(), 600); }
+      if (m.type === "ready" && school) { let saved = null; try { saved = JSON.parse(localStorage.getItem(`gemi.look.${school}`) ?? "null"); } catch {} send("look", saved ?? PRESETS[school].look); if (saved) setLook(saved); try { setOwned(JSON.parse(localStorage.getItem(`gemi.inv.${school}`) ?? "[]")); } catch {} setTimeout(() => auto.current?.(), 600); }
       if (m.type === "layout" && school) { const it = String(m.value?.item ?? "something"); roomTouched.current = it; lastTouch.current = Date.now();
         setLog((l) => { const n = [...l, { id: Math.random().toString(36).slice(2, 10), at: new Date().toISOString(), type: "room" as const, by: "student" as const, what: `moved the ${it}`, item: it }]; saveLog(school, n); return n; }); }
       if (m.type === "focus") { if (m.value === "desk") setDeskView(true); else if (m.value === "room") setDeskView(false); }   // a click on the desk in 3D enters the desk view; panels open only from buttons
@@ -246,19 +249,45 @@ export default function Room() {
         <GamePanel title={tt(titles[panel][0])} icon={titles[panel][1]} accent={s.accent} onClose={() => { setPanel(null); send("focus", deskView ? "desk" : "room"); }} closeLabel={tt("close")}
           footer={panel === "talk" ? <Composer lang={lang} accent={s.accent} busy={busy} onSend={onSend} /> : undefined}>
           {panel === "wardrobe" && (() => {
+            // The wardrobe is an inventory, as in any dress-up game: tabs, a grid of things, what is worn, what is owned, what is not yet.
+            // Getting a new thing costs the Gemi its own Gem Stars; if it cannot afford it today it keeps the wish and saves.
             const cur: Record<string, any> = { ...preset.look, ...look };
-            const wear = (patch: Record<string, any>) => { const n = { ...cur, ...patch }; setLook(n); try { localStorage.setItem(`gemi.look.${school}`, JSON.stringify(n)); } catch {} send("look", n); append({ id: uid(), at: new Date().toISOString(), type: "room", what: `changed its look: ${Object.keys(patch).join(", ")}`, by: "student" } as any); };
-            const row = (title: string, key: string, opts: string[]) => (<div key={key}><div className="mb-1 mt-3 text-[11px] font-bold uppercase tracking-wider text-[#8a8296]">{title}</div>
-              <div className="flex flex-wrap gap-1.5">{opts.map((o) => <button key={o} onClick={() => wear({ [key]: o })} className="rounded-full border-2 px-2.5 py-0.5 text-[13px]" style={{ borderColor: INK, background: cur[key] === o ? INK : "#fff", color: cur[key] === o ? "#fff" : INK }}>{o.replace(/([A-Z])/g, " $1").toLowerCase()}</button>)}</div></div>);
-            const dots = (title: string, key: string, cols: string[]) => (<div key={key}><div className="mb-1 mt-3 text-[11px] font-bold uppercase tracking-wider text-[#8a8296]">{title}</div>
-              <div className="flex flex-wrap gap-2">{cols.map((c) => <button key={c} onClick={() => wear({ [key]: c })} aria-label={c} className="h-7 w-7 rounded-full border-[3px]" style={{ background: c, borderColor: cur[key] === c ? "#7c4dce" : INK, boxShadow: cur[key] === c ? "0 0 0 2px #fff, 0 0 0 4px #7c4dce" : undefined }} />)}</div></div>);
-            const COL = ["#b8a2e3", "#8fc1e8", "#f2a7b8", "#ffe08a", "#a8e0c0", "#ffffff", "#3d3648", "#5b7bb5", "#d9534f", "#7fb48a"];
+            const save = (k: string, v: any) => { try { localStorage.setItem(`gemi.${k}.${school}`, JSON.stringify(v)); } catch {} };
+            const wear = (patch: Record<string, any>) => { const n = { ...cur, ...patch }; setLook(n); save("look", n); send("look", n); };
+            const CATS: Record<string, { key: string; colorKey?: string; cost: number; items: string[] }> = {
+              Hair: { key: "hairStyle", colorKey: "hairColor", cost: 2, items: ["bob", "longStraight", "longWavy", "twinTails", "sidePonytail", "highPonytail", "bun", "shortCrop", "sidePart", "tousled", "curtainBangs", "pixie", "curlyMedium"] },
+              Tops: { key: "top", colorKey: "topColor", cost: 2, items: ["cardigan", "hoodie", "sweater", "shirt", "tee", "blazer"] },
+              Bottoms: { key: "bottom", colorKey: "bottomColor", cost: 2, items: ["pleatedSkirt", "trousers", "jeans", "shorts", "longSkirt"] },
+              Shoes: { key: "shoes", colorKey: "shoeColor", cost: 1, items: ["maryJanes", "sneakers", "boots", "loafers"] },
+            };
+            const START = ["bob", "longStraight", "shortCrop", "tee", "hoodie", "jeans", "trousers", "sneakers", preset.look.hairStyle, preset.look.top, preset.look.bottom, (preset.look as any).shoes ?? "sneakers"];
+            const has = (id: string) => START.includes(id) || owned.includes(id);
+            const c = CATS[wtab], name = (o: string) => o.replace(/([A-Z])/g, " $1").toLowerCase();
+            const ask = (id: string) => {
+              if (state.purses.for_itself >= c.cost) { charge("make_item", c.cost, "for_itself"); const n = [...owned, id]; setOwned(n); save("inv", n); setWish(null); wear({ [c.key]: id });
+                append({ id: uid(), at: new Date().toISOString(), type: "room", by: "gemi", what: `got ${name(id)} for ${c.cost} of its own Gem Stars, because you asked`, item: id }); }
+              else setWish({ id, cost: c.cost, short: true });
+            };
+            const PAL = wtab === "Hair" ? ["#2a2226", "#2a1d18", "#6b4a2f", "#c9a063", "#a8482f", "#f2a7b8", "#8fc1e8", "#d8d4dc"] : ["#b8a2e3", "#8fc1e8", "#f2a7b8", "#ffe08a", "#a8e0c0", "#ffffff", "#3d3648", "#5b7bb5", "#d9534f", "#7fb48a"];
             return (<div>
-              {row("Hair", "hairStyle", ["bob", "longStraight", "longWavy", "twinTails", "sidePonytail", "highPonytail", "bun", "shortCrop", "sidePart", "tousled", "curtainBangs", "pixie", "curlyMedium"])}
-              {dots("Hair colour", "hairColor", ["#2a2226", "#2a1d18", "#6b4a2f", "#c9a063", "#a8482f", "#f2a7b8", "#8fc1e8", "#d8d4dc"])}
-              {row("Top", "top", ["cardigan", "hoodie", "sweater", "shirt", "tee", "blazer"])}{dots("Top colour", "topColor", COL)}
-              {row("Bottom", "bottom", ["pleatedSkirt", "trousers", "jeans", "shorts", "longSkirt"])}{dots("Bottom colour", "bottomColor", COL)}
-              {row("Shoes", "shoes", ["maryJanes", "sneakers", "boots", "loafers"])}
+              <div className="flex gap-1.5">{Object.keys(CATS).map((t) => <button key={t} onClick={() => { setWtab(t); setWish(null); }} className="flex-1 rounded-t-2xl border-[3px] border-b-0 px-2 py-1.5 text-sm font-bold" style={{ borderColor: INK, background: wtab === t ? "#fff" : s.soft, opacity: wtab === t ? 1 : 0.75 }}>{t}</button>)}</div>
+              <div className="rounded-b-2xl border-[3px] bg-white p-3" style={{ borderColor: INK }}>
+                <div className="grid grid-cols-3 gap-2.5">{c.items.map((o) => { const own = has(o), on = cur[c.key] === o; return (
+                  <button key={o} onClick={() => (own ? wear({ [c.key]: o }) : setWish({ id: o, cost: c.cost }))} className="relative flex aspect-square flex-col items-center justify-center rounded-2xl border-[3px] p-1 text-center transition hover:-translate-y-0.5"
+                    style={{ borderColor: on ? "#7c4dce" : INK, background: on ? "#efe7ff" : own ? "#fffaf0" : "#ece7e0", boxShadow: on ? "0 0 0 3px #c8b4f0" : `0 3px 0 ${INK}33` }}>
+                    <span className="mb-1 h-7 w-7 rounded-full border-2" style={{ borderColor: INK, background: own ? (cur[c.colorKey ?? ""] ?? "#c8b4f0") : "#cfc8bf" }} />
+                    <span className="text-[12px] font-bold leading-tight" style={{ color: own ? INK : "#8a8296" }}>{name(o)}</span>
+                    {on && <span className="absolute -top-2 right-1 rounded-full bg-[#7c4dce] px-1.5 text-[10px] font-bold text-white">on</span>}
+                    {!own && <span className="absolute right-1.5 top-1.5"><Icon name="lock" size={16} /></span>}
+                    {!own && <span className="mt-0.5 flex items-center gap-0.5 text-[10.5px] font-bold text-[#8a8296]"><Icon name="star" size={11} />{c.cost}</span>}
+                  </button>); })}</div>
+                {wish && (<div className="mt-3 rounded-2xl border-2 border-dashed px-3 py-2 text-[13px] leading-snug" style={{ borderColor: INK, background: "#fff8dc" }}>
+                  {wish.short ? <span><b>{preset.gemiName}</b> has {state.purses.for_itself} of its own Gem Stars today and this takes {wish.cost}. It will keep the wish and save for it.</span>
+                    : <div className="flex items-center justify-between gap-2"><span>Ask <b>{preset.gemiName}</b> to get <b>{name(wish.id)}</b>? It spends {wish.cost} of its own Gem Stars.</span>
+                      <button onClick={() => ask(wish.id)} className="shrink-0 rounded-full border-[3px] bg-[#ffe08a] px-3 py-1 text-sm font-bold" style={{ borderColor: INK, boxShadow: `0 3px 0 ${INK}` }}>Ask</button></div>}</div>)}
+                {c.colorKey && (<><div className="mb-1.5 mt-3 text-[11px] font-bold uppercase tracking-wider text-[#8a8296]">Colour</div>
+                  <div className="flex flex-wrap gap-2">{PAL.map((col) => <button key={col} onClick={() => wear({ [c.colorKey!]: col })} aria-label={col} className="h-7 w-7 rounded-full border-[3px]" style={{ background: col, borderColor: cur[c.colorKey!] === col ? "#7c4dce" : INK, boxShadow: cur[c.colorKey!] === col ? "0 0 0 2px #fff, 0 0 0 4px #7c4dce" : undefined }} />)}</div></>)}
+              </div>
               <div className="mb-1 mt-3 text-[11px] font-bold uppercase tracking-wider text-[#8a8296]">Build</div>
               <input type="range" min="0.9" max="1.3" step="0.02" value={cur.bodyWidth ?? 1} onChange={(e) => wear({ bodyWidth: +e.target.value })} className="w-full" aria-label="Body width" />
             </div>); })()}

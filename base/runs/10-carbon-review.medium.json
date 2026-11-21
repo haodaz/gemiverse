@@ -1,0 +1,42 @@
+{
+ "at": "2026-11-21T19:52:40.498Z",
+ "model": "gemini-4-carbon",
+ "thinking": "medium",
+ "seconds": 106,
+ "tokens": 15314,
+ "prompt_chars": 27559,
+ "review": {
+  "top3": [
+   {
+    "title": "Kill 'cause unknown' on the 12 Penn/Duke recurring-event errors",
+    "what": "Inspect the 12 recurring Penn and Duke online-vs-in-person failures in the 122-page benchmark, update the Hydrogen extractor and Decisions prompt to withhold location mode when recurring series templates mix virtual and room metadata, and re-run `pages`.",
+    "why": "In Track 5 Sigma, having '12 online-or-not... cause unknown' account for two-thirds of our 18 errors while only beating `baseline_visible` by 1.03 percentage points (3.24% vs 4.27%) at 2.45x the token cost will get torn apart by judges.",
+    "how_to_measure": "Error rate on `pages.overall` drops from 3.24% (18 wrong) to ~1.2% (<=7 wrong), cutting `baseline_visible` errors by more than two-thirds with zero 'cause unknown' items in `/deck`.",
+    "cost_today": "small"
+   },
+   {
+    "title": "Fill the empty Proof table for the 7-axis learner and sealed predictions",
+    "what": "Build a fast offline replay script over 15 synthetic student personas choosing keep/skip across 5 days on our 166 checked entities, measuring `seal_prediction` accuracy and `kept finds per star` against an uncalibrated baseline, and fix the doc's contradiction between 'seven axes' (3b) and 'nine axes' (4).",
+    "why": "Section 8 has dashes (`–`) for three of four proof claims and `exam` is `null` in the JSON results, meaning our entire private-learning half (Kalman halos, sealed predictions, token efficiency) currently has zero empirical evidence.",
+    "how_to_measure": "Section 8 and `/deck` report concrete numbers showing sealed-prediction hit rate and kept-finds-per-star rising from Day 1 to Day 5 as axis uncertainty shrinks.",
+    "cost_today": "medium"
+   },
+   {
+    "title": "Fix dead tools, hardcoded song-making, and free LLM calls in `lib/kernel/`",
+    "what": "In `autonomy.ts` and `tools.ts`: add a rule that triggers `plan_day` to set `goalName`/`goalCost`, make `make` dispatch to `s.goalName` instead of hardcoding `write_song` (6 stars), move `save` above `diary` when a goal is active, and account for the real token cost of `check_claim` and `seal_prediction` instead of marking Carbon and Decisions calls as `stars: 0`.",
+    "why": "Right now `plan_day` is unreachable dead code, the Gemi can never save 12 stars for `open_space` because `diary` drains stars first and `make` only writes songs, and claiming Gem Stars represent real compute fails code inspection when 210 daily Carbon/Decisions calls cost 0 stars.",
+    "how_to_measure": "A deterministic 7-day simulation over `decide(s)` invokes `plan_day`, banks stars across days without leaking them, unlocks a 12-star `open_space`, and logs zero unbudgeted autonomous model calls.",
+    "cost_today": "small"
+   }
+  ],
+  "acquisition": {
+   "recommend": "Named mix: Free Wardrobe + Witnessed Souvenirs + Autonomous Spaces & Companions",
+   "rule": "All wardrobe parts (hair, clothes, colours) are free in a dressing drawer from birth with zero tasks and zero stars. There is no shop and no currency; instead, when a student marks a kept find as attended or verifies a campus photo via `see_poster`, one keepsake or furniture piece deterministically mapped from that entity's category unlocks in their placement tray. Placing that object sets `roomChangedByStudent = true`, triggering the `notice` rule so the Gemi walks over and records the real-world event in its diary. The six extra spaces belong exclusively to the Gemi's `for_itself` purse via `open_space` after banking unspent daily stars. One of the 36 companion animals moves into the room automatically whenever a sealed positive prediction matches a find the student actually attended, capped at one companion per campus need.",
+   "why": "Pure A breaks our budget rule by letting the student spend the Gemi's autonomous purse, pure B ignores real-world student action, and pure C's task-to-shop points loop recreates extrinsic engagement bait that violates Fang 2025. Splitting acquisition by agency—free self-presentation, direct event-to-souvenir materialization without currency, Gemi-saved spaces, and mutual-calibration companions—puts every pre-generated asset to work while keeping both sides co-shaping the room.",
+   "what_each_object_stands_for": "Wardrobe choices are pure avatar presentation (exempt from state, like base furniture); each keepsake or unlocked furniture piece stands 1-to-1 for a specific attended real-world event (clicking it opens that event and date); each extra room stands for N days of autonomous star restraint by the Gemi; each animal companion stands for one verified alignment milestone where the Gemi's sealed prediction matched real-world attendance on a specific campus need.",
+   "risk": "Students may click 'attended' dishonestly or upload random photos just to farm keepsakes and animals, turning real-world readout into completionist collecting if we expose a visible 'X/36 collected' checklist instead of letting arrivals be unannounced."
+  },
+  "weakest_claim": "Claiming that our multi-model Foundry + Decisions architecture is what drove the 6-university error drop from 8.4% to 3.2%: a judge reading `MEASURED RESULTS` will see we lost on Run 1 (9.6% vs 8.7%), and that merely stripping hidden DOM text for a single Argon call (`baseline_visible`) already gets 4.27% error at 40% of our token cost, meaning our entire Hydrogen + Decisions pipeline saved just 6 errors across 610 facts for 168,000 extra tokens. Say instead: 'Clean visible-text parsing solves half the errors for cheap (8.4% to 4.3%), and any honest agent should do that first; our per-field verifier pays 2.4x tokens specifically to attack the remaining tail—eliminating 100% of unsupported claims on the unseen exam set (29 to 0) and cutting hard edge-page errors by another 29% (20 to 14) via calibrated abstention.'",
+  "one_thing_to_cut": "Cut peer-to-peer AI networking (`ask_agent`, `meet_gemi`, club agents, pairwise name cards, and the Section 1 claim that 'Twins and club agents talk to each other directly and form a network') plus live `write_song` / `make_item` generation: none of the P2P UI is built (`built: false` in `space.ts`, locked behind Stages 3-4), we have no live club agents in a single-player demo, we already have 36 animals, 6 spaces, and furniture pre-generated, and pitching an unbuilt social protocol distracts judges from our proven 5-Sigma core (verified campus extraction + calibrated 3-find retrieval)."
+ }
+}
