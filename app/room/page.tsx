@@ -441,7 +441,7 @@ export default function Room() {
                         {i.saw.same && <div className="mt-1 rounded-lg bg-[#e8eefc] px-2 py-1 font-semibold text-[#3a4f9a]">{tt("same_base")} “{i.saw.same.name}” ({Math.round(i.saw.same.confidence * 100)}%)</div>}
                       </div>
                     )}
-                    {i.cost && <div className="mt-1.5 text-[10px] text-[#a79fb1]">{tt("cost")}: {i.cost}</div>}
+                    {/* token cost per message is not shown to students; totals are in the back office */}
                   </div>
                 </div>
               ))}
