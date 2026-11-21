@@ -28,6 +28,9 @@ export async function buildDoll(THREE, look, kit, report = console.warn) {
   let root; try { root = body.buildBody(THREE, look, kit); } catch (e) { report("body: " + e.message); return null; }
   const head = root.getObjectByName("head");
   if (head) head.position.y -= 0.012;   // a shorter neck (Elodie): the head sits lower on the shoulders
+  // Chibi proportion, tried at 16:00 against the Gemi in the generated stills: a larger head on the same body. ?cute=1.25 or look.headScale.
+  const cute = +(new URLSearchParams(globalThis.location?.search ?? "").get("cute") ?? look.headScale ?? 1);
+  if (head && cute !== 1) { head.scale.setScalar(cute); head.position.y += (cute - 1) * +(new URLSearchParams(globalThis.location?.search ?? "").get("lift") ?? 0.1); }
   // Hand corrections after Elodie's review: hands were sculpted too small, and the head carried a dark painted gradient.
   for (const n of ["handL", "handR"]) root.getObjectByName(n)?.scale.multiplyScalar(1.7);
   head?.traverse((o) => { if (o.isMesh && o.material && o.userData.slot === "skin") { o.material = o.material.clone(); o.material.map = null; o.material.color = new THREE.Color(look.skin); o.material.needsUpdate = true; } });

@@ -249,3 +249,7 @@ Entry format:
 - **Gap 3, fixed**: the Managed Agent is wired (`/api/agent`, button "Look again, live" on each find). It fetches the source page itself in a Google-hosted sandbox; the Decisions API then judges each stored field against its report. Two runs: 30 s and 22 s, 19k and 28k tokens, 8 of 8 fields still on the page. Record in `base/runs/11-agent-trip.json`.
 - **Found while doing it**: a concept card for the video showed a room number I had made up. Replaced with the real checked fields of that event.
 - **Still open against the guide**: other prompts still ask Hydrogen for JSON in text rather than structured outputs; daily trips do not browse live.
+
+## 16:00 · A try at the character's proportions, not shipped
+- **What**: compared our doll with the Gemi in the generated stills (larger head, smaller body). Tried scaling the head 1.25 and 1.4 times, with and without a shorter body, behind `?cute=`.
+- **Result**: worse. The neck shows, the fringe no longer sits on the face, and the hair does not scale with the head. Left off by default. The real fix is a head, hair and face built to one proportion, which is more than a parameter.
