@@ -102,3 +102,23 @@ A small daily allowance of real tokens. Two purses: for the student (going out, 
 
 ## 10. What was built today, and what was not
 All code is written on 2026-11-21 after 10:30 ET, with an AI coding assistant. The concepts (a campus twin, a portrait with uncertainty, a shared knowledge base) come from our earlier work; no earlier code is reused.
+
+## Why the Gemi has a small budget (ruled by Elodie, 14:15)
+- A limited token budget is the projection of a real day: a person's time, energy and attention are finite too.
+- Only under a limit does the important question appear: what is worth doing today, and how to allocate.
+- Not every user owns unlimited compute. We judge efficiency (what a token bought), never volume.
+- The standard is "find treasure, do not pile up junk": three checked finds, not a thousand events.
+- The Gemi may choose not to spend and save across days for one larger thing.
+
+## Two narratives (ruled 14:20)
+- `/deck` is for judges: task, baseline, test set, failures, the mathematics and the layers.
+- The first screen is for students: a different story, in their words, with none of the above. To be rewritten once values and definitions are settled.
+
+## Proof, measured 14:14
+| Test | Facts | Baseline (one Argon call) | Ours |
+|---|---|---|---|
+| Exam set, 10 unseen pages: unsupported fields shown | 103 / 76 | 29 | 0 |
+| NYU listings: error rate / coverage | 210 | 1.0% / 99.0% | 0.5% / 96.9% |
+| Raw pages, six universities, first run | 610 | 8.7% | 9.6% (lost) |
+| Raw pages after reading only visible text | 610 | 8.4% (4.3% with our reader) | 3.2% / 96.4% |
+Still wrong: 18 facts (12 online-or-not on recurring Penn and Duke events, cause unknown; 4 Duke rooms disputed; 2 others). Tokens per page: 2,334 against 955.

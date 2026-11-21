@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T19:09:53.020Z",
+ "at": "2026-11-21T19:14:42.758Z",
  "pages": 122,
  "facts": 610,
  "schools": {
@@ -13,89 +13,116 @@
  "edge_pages": 91,
  "overall": {
   "baseline": {
-   "right": 512,
-   "wrong": 49,
+   "right": 511,
+   "wrong": 47,
    "withheld": 2,
+   "correctly_blank": 50,
+   "shown": 558,
+   "error_rate": 0.0842,
+   "coverage": 0.9125
+  },
+  "system_v1": {
+   "right": 501,
+   "wrong": 53,
+   "withheld": 3,
+   "correctly_blank": 53,
+   "shown": 554,
+   "error_rate": 0.0957,
+   "coverage": 0.8995
+  },
+  "baseline_visible": {
+   "right": 538,
+   "wrong": 24,
+   "withheld": 1,
    "correctly_blank": 47,
-   "shown": 561,
-   "error_rate": 0.0873,
-   "coverage": 0.9094
+   "shown": 562,
+   "error_rate": 0.0427,
+   "coverage": 0.9556
   },
-  "ungated": {
-   "right": 499,
-   "wrong": 53,
-   "withheld": 5,
+  "system_v2": {
+   "right": 537,
+   "wrong": 18,
+   "withheld": 2,
    "correctly_blank": 53,
-   "shown": 552,
-   "error_rate": 0.096,
-   "coverage": 0.8959
-  },
-  "system": {
-   "right": 499,
-   "wrong": 53,
-   "withheld": 5,
-   "correctly_blank": 53,
-   "shown": 552,
-   "error_rate": 0.096,
-   "coverage": 0.8959
+   "shown": 555,
+   "error_rate": 0.0324,
+   "coverage": 0.9641
   }
  },
  "unseen_schools_only": {
   "baseline": {
-   "right": 478,
-   "wrong": 49,
+   "right": 477,
+   "wrong": 47,
    "withheld": 2,
+   "correctly_blank": 49,
+   "shown": 524,
+   "error_rate": 0.0897,
+   "coverage": 0.9068
+  },
+  "system_v1": {
+   "right": 473,
+   "wrong": 47,
+   "withheld": 3,
+   "correctly_blank": 52,
+   "shown": 520,
+   "error_rate": 0.0904,
+   "coverage": 0.9044
+  },
+  "baseline_visible": {
+   "right": 504,
+   "wrong": 24,
+   "withheld": 1,
    "correctly_blank": 46,
-   "shown": 527,
-   "error_rate": 0.093,
-   "coverage": 0.9036
+   "shown": 528,
+   "error_rate": 0.0455,
+   "coverage": 0.9527
   },
-  "ungated": {
-   "right": 471,
-   "wrong": 47,
-   "withheld": 5,
+  "system_v2": {
+   "right": 503,
+   "wrong": 18,
+   "withheld": 2,
    "correctly_blank": 52,
-   "shown": 518,
-   "error_rate": 0.0907,
-   "coverage": 0.9006
-  },
-  "system": {
-   "right": 471,
-   "wrong": 47,
-   "withheld": 5,
-   "correctly_blank": 52,
-   "shown": 518,
-   "error_rate": 0.0907,
-   "coverage": 0.9006
+   "shown": 521,
+   "error_rate": 0.0345,
+   "coverage": 0.9618
   }
  },
  "edge_cases_only": {
   "baseline": {
    "right": 373,
-   "wrong": 33,
+   "wrong": 30,
    "withheld": 2,
+   "correctly_blank": 50,
+   "shown": 403,
+   "error_rate": 0.0744,
+   "coverage": 0.921
+  },
+  "system_v1": {
+   "right": 371,
+   "wrong": 28,
+   "withheld": 3,
+   "correctly_blank": 53,
+   "shown": 399,
+   "error_rate": 0.0702,
+   "coverage": 0.9229
+  },
+  "baseline_visible": {
+   "right": 387,
+   "wrong": 20,
+   "withheld": 1,
    "correctly_blank": 47,
-   "shown": 406,
-   "error_rate": 0.0813,
-   "coverage": 0.9142
+   "shown": 407,
+   "error_rate": 0.0491,
+   "coverage": 0.9485
   },
-  "ungated": {
-   "right": 369,
-   "wrong": 28,
-   "withheld": 5,
+  "system_v2": {
+   "right": 386,
+   "wrong": 14,
+   "withheld": 2,
    "correctly_blank": 53,
-   "shown": 397,
-   "error_rate": 0.0705,
-   "coverage": 0.9179
-  },
-  "system": {
-   "right": 369,
-   "wrong": 28,
-   "withheld": 5,
-   "correctly_blank": 53,
-   "shown": 397,
-   "error_rate": 0.0705,
-   "coverage": 0.9179
+   "shown": 400,
+   "error_rate": 0.035,
+   "coverage": 0.9602
   }
  },
  "by_field": {
@@ -106,13 +133,19 @@
     "withheld": 0,
     "correctly_blank": 0
    },
-   "ungated": {
+   "system_v1": {
     "right": 122,
     "wrong": 0,
     "withheld": 0,
     "correctly_blank": 0
    },
-   "system": {
+   "baseline_visible": {
+    "right": 122,
+    "wrong": 0,
+    "withheld": 0,
+    "correctly_blank": 0
+   },
+   "system_v2": {
     "right": 122,
     "wrong": 0,
     "withheld": 0,
@@ -126,13 +159,19 @@
     "withheld": 0,
     "correctly_blank": 0
    },
-   "ungated": {
+   "system_v1": {
     "right": 122,
     "wrong": 0,
     "withheld": 0,
     "correctly_blank": 0
    },
-   "system": {
+   "baseline_visible": {
+    "right": 122,
+    "wrong": 0,
+    "withheld": 0,
+    "correctly_blank": 0
+   },
+   "system_v2": {
     "right": 122,
     "wrong": 0,
     "withheld": 0,
@@ -146,13 +185,19 @@
     "withheld": 0,
     "correctly_blank": 0
    },
-   "ungated": {
+   "system_v1": {
     "right": 122,
     "wrong": 0,
     "withheld": 0,
     "correctly_blank": 0
    },
-   "system": {
+   "baseline_visible": {
+    "right": 122,
+    "wrong": 0,
+    "withheld": 0,
+    "correctly_blank": 0
+   },
+   "system_v2": {
     "right": 122,
     "wrong": 0,
     "withheld": 0,
@@ -162,47 +207,60 @@
   "place": {
    "baseline": {
     "right": 61,
-    "wrong": 12,
+    "wrong": 9,
     "withheld": 2,
-    "correctly_blank": 47
+    "correctly_blank": 50
    },
-   "ungated": {
-    "right": 58,
+   "system_v1": {
+    "right": 60,
     "wrong": 6,
-    "withheld": 5,
+    "withheld": 3,
     "correctly_blank": 53
    },
-   "system": {
-    "right": 58,
+   "baseline_visible": {
+    "right": 62,
+    "wrong": 12,
+    "withheld": 1,
+    "correctly_blank": 47
+   },
+   "system_v2": {
+    "right": 61,
     "wrong": 6,
-    "withheld": 5,
+    "withheld": 2,
     "correctly_blank": 53
    }
   },
   "online": {
    "baseline": {
-    "right": 85,
-    "wrong": 37,
+    "right": 84,
+    "wrong": 38,
     "withheld": 0,
     "correctly_blank": 0
    },
-   "ungated": {
+   "system_v1": {
     "right": 75,
     "wrong": 47,
     "withheld": 0,
     "correctly_blank": 0
    },
-   "system": {
-    "right": 75,
-    "wrong": 47,
+   "baseline_visible": {
+    "right": 110,
+    "wrong": 12,
+    "withheld": 0,
+    "correctly_blank": 0
+   },
+   "system_v2": {
+    "right": 110,
+    "wrong": 12,
     "withheld": 0,
     "correctly_blank": 0
    }
   }
  },
  "tokens": {
-  "baseline": 116541,
-  "system": 293607
+  "baseline": 116488,
+  "system_v1": 293457,
+  "system_v2": 284710
  },
  "errors": [],
  "wrong": {
@@ -438,6 +496,19 @@
     "url": "https://libcal.library.upenn.edu/event/17344218"
    },
    {
+    "id": "penn-15791235",
+    "school": "Penn",
+    "edge": [
+     "online",
+     "no location",
+     "recurring"
+    ],
+    "field": "place",
+    "shown": "Online",
+    "truth": null,
+    "url": "https://libcal.library.upenn.edu/event/15791235"
+   },
+   {
     "id": "penn-17427158",
     "school": "Penn",
     "edge": [
@@ -498,19 +569,6 @@
     "shown": true,
     "truth": false,
     "url": "https://libcal.library.upenn.edu/event/17427159"
-   },
-   {
-    "id": "penn-17974657",
-    "school": "Penn",
-    "edge": [
-     "online",
-     "no location",
-     "recurring"
-    ],
-    "field": "place",
-    "shown": "Online",
-    "truth": null,
-    "url": "https://libcal.library.upenn.edu/event/17974657"
    },
    {
     "id": "yale-18061528",
@@ -525,29 +583,16 @@
     "url": "https://schedule.yale.edu/event/18061528"
    },
    {
-    "id": "yale-18061057",
+    "id": "yale-18054683",
     "school": "Yale",
     "edge": [
      "online",
      "no location"
     ],
     "field": "place",
-    "shown": "Medical School",
+    "shown": "Zoom",
     "truth": null,
-    "url": "https://schedule.yale.edu/event/18061057"
-   },
-   {
-    "id": "yale-17448627",
-    "school": "Yale",
-    "edge": [
-     "online",
-     "no location",
-     "recurring"
-    ],
-    "field": "place",
-    "shown": "Medical School",
-    "truth": null,
-    "url": "https://schedule.yale.edu/event/17448627"
+    "url": "https://schedule.yale.edu/event/18054683"
    },
    {
     "id": "yale-18061171",
@@ -557,31 +602,6 @@
     "shown": true,
     "truth": false,
     "url": "https://schedule.yale.edu/event/18061171"
-   },
-   {
-    "id": "yale-17476049",
-    "school": "Yale",
-    "edge": [
-     "online",
-     "no location",
-     "recurring"
-    ],
-    "field": "place",
-    "shown": "Medical School",
-    "truth": null,
-    "url": "https://schedule.yale.edu/event/17476049"
-   },
-   {
-    "id": "yale-17844505",
-    "school": "Yale",
-    "edge": [
-     "online",
-     "no location"
-    ],
-    "field": "place",
-    "shown": "Medical School",
-    "truth": null,
-    "url": "https://schedule.yale.edu/event/17844505"
    },
    {
     "id": "duke-17407923",
@@ -664,6 +684,15 @@
     "url": "https://duke.libcal.com/event/17408002"
    },
    {
+    "id": "duke-17677226",
+    "school": "Duke",
+    "edge": [],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://duke.libcal.com/event/17677226"
+   },
+   {
     "id": "duke-17413576",
     "school": "Duke",
     "edge": [
@@ -724,7 +753,7 @@
     "url": "https://duke.libcal.com/event/17743566"
    }
   ],
-  "ungated": [
+  "system_v1": [
    {
     "id": "nyu-17899797",
     "school": "NYU",
@@ -1259,110 +1288,7 @@
     "url": "https://duke.libcal.com/event/17743566"
    }
   ],
-  "system": [
-   {
-    "id": "nyu-17899797",
-    "school": "NYU",
-    "edge": [],
-    "field": "online",
-    "shown": true,
-    "truth": false,
-    "url": "https://nyu.libcal.com/event/17899797"
-   },
-   {
-    "id": "nyu-17899909",
-    "school": "NYU",
-    "edge": [],
-    "field": "online",
-    "shown": true,
-    "truth": false,
-    "url": "https://nyu.libcal.com/event/17899909"
-   },
-   {
-    "id": "nyu-17533953",
-    "school": "NYU",
-    "edge": [],
-    "field": "online",
-    "shown": true,
-    "truth": false,
-    "url": "https://nyu.libcal.com/event/17533953"
-   },
-   {
-    "id": "nyu-17316019",
-    "school": "NYU",
-    "edge": [],
-    "field": "online",
-    "shown": true,
-    "truth": false,
-    "url": "https://nyu.libcal.com/event/17316019"
-   },
-   {
-    "id": "nyu-17316001",
-    "school": "NYU",
-    "edge": [],
-    "field": "online",
-    "shown": true,
-    "truth": false,
-    "url": "https://nyu.libcal.com/event/17316001"
-   },
-   {
-    "id": "nyu-17765592",
-    "school": "NYU",
-    "edge": [],
-    "field": "online",
-    "shown": true,
-    "truth": false,
-    "url": "https://nyu.libcal.com/event/17765592"
-   },
-   {
-    "id": "princeton-17874868",
-    "school": "Princeton",
-    "edge": [],
-    "field": "online",
-    "shown": true,
-    "truth": false,
-    "url": "https://libcal.princeton.edu/event/17874868"
-   },
-   {
-    "id": "princeton-17249913",
-    "school": "Princeton",
-    "edge": [
-     "recurring"
-    ],
-    "field": "online",
-    "shown": true,
-    "truth": false,
-    "url": "https://libcal.princeton.edu/event/17249913"
-   },
-   {
-    "id": "princeton-17875543",
-    "school": "Princeton",
-    "edge": [],
-    "field": "online",
-    "shown": true,
-    "truth": false,
-    "url": "https://libcal.princeton.edu/event/17875543"
-   },
-   {
-    "id": "princeton-17249908",
-    "school": "Princeton",
-    "edge": [
-     "recurring"
-    ],
-    "field": "online",
-    "shown": true,
-    "truth": false,
-    "url": "https://libcal.princeton.edu/event/17249908"
-   },
-   {
-    "id": "princeton-17410534",
-    "school": "Princeton",
-    "edge": [],
-    "field": "online",
-    "shown": true,
-    "truth": false,
-    "url": "https://libcal.princeton.edu/event/17410534"
-   },
+  "baseline_visible": [
    {
     "id": "princeton-17356230",
     "school": "Princeton",
@@ -1373,70 +1299,6 @@
     "shown": "Firestone Library",
     "truth": null,
     "url": "https://libcal.princeton.edu/event/17356230"
-   },
-   {
-    "id": "princeton-17249911",
-    "school": "Princeton",
-    "edge": [
-     "recurring"
-    ],
-    "field": "online",
-    "shown": true,
-    "truth": false,
-    "url": "https://libcal.princeton.edu/event/17249911"
-   },
-   {
-    "id": "princeton-17249910",
-    "school": "Princeton",
-    "edge": [
-     "recurring"
-    ],
-    "field": "online",
-    "shown": true,
-    "truth": false,
-    "url": "https://libcal.princeton.edu/event/17249910"
-   },
-   {
-    "id": "princeton-17963998",
-    "school": "Princeton",
-    "edge": [],
-    "field": "online",
-    "shown": true,
-    "truth": false,
-    "url": "https://libcal.princeton.edu/event/17963998"
-   },
-   {
-    "id": "princeton-17249912",
-    "school": "Princeton",
-    "edge": [
-     "recurring"
-    ],
-    "field": "online",
-    "shown": true,
-    "truth": false,
-    "url": "https://libcal.princeton.edu/event/17249912"
-   },
-   {
-    "id": "princeton-17746415",
-    "school": "Princeton",
-    "edge": [
-     "no location"
-    ],
-    "field": "online",
-    "shown": true,
-    "truth": false,
-    "url": "https://libcal.princeton.edu/event/17746415"
-   },
-   {
-    "id": "princeton-17384491",
-    "school": "Princeton",
-    "edge": [
-     "recurring"
-    ],
-    "field": "online",
-    "shown": true,
-    "truth": false,
-    "url": "https://libcal.princeton.edu/event/17384491"
    },
    {
     "id": "penn-17394668",
@@ -1461,17 +1323,6 @@
     "url": "https://libcal.library.upenn.edu/event/17340127"
    },
    {
-    "id": "penn-17427160",
-    "school": "Penn",
-    "edge": [
-     "recurring"
-    ],
-    "field": "online",
-    "shown": true,
-    "truth": false,
-    "url": "https://libcal.library.upenn.edu/event/17427160"
-   },
-   {
     "id": "penn-17340124",
     "school": "Penn",
     "edge": [
@@ -1481,35 +1332,6 @@
     "shown": true,
     "truth": false,
     "url": "https://libcal.library.upenn.edu/event/17340124"
-   },
-   {
-    "id": "penn-17514200",
-    "school": "Penn",
-    "edge": [],
-    "field": "online",
-    "shown": true,
-    "truth": false,
-    "url": "https://libcal.library.upenn.edu/event/17514200"
-   },
-   {
-    "id": "penn-18004320",
-    "school": "Penn",
-    "edge": [],
-    "field": "online",
-    "shown": true,
-    "truth": false,
-    "url": "https://libcal.library.upenn.edu/event/18004320"
-   },
-   {
-    "id": "penn-17344217",
-    "school": "Penn",
-    "edge": [
-     "recurring"
-    ],
-    "field": "online",
-    "shown": true,
-    "truth": false,
-    "url": "https://libcal.library.upenn.edu/event/17344217"
    },
    {
     "id": "penn-17427495",
@@ -1534,26 +1356,30 @@
     "url": "https://libcal.library.upenn.edu/event/17427496"
    },
    {
-    "id": "penn-17344218",
+    "id": "penn-17974718",
     "school": "Penn",
     "edge": [
+     "online",
+     "no location",
      "recurring"
     ],
-    "field": "online",
-    "shown": true,
-    "truth": false,
-    "url": "https://libcal.library.upenn.edu/event/17344218"
+    "field": "place",
+    "shown": "Online",
+    "truth": null,
+    "url": "https://libcal.library.upenn.edu/event/17974718"
    },
    {
-    "id": "penn-17427158",
+    "id": "penn-15791235",
     "school": "Penn",
     "edge": [
+     "online",
+     "no location",
      "recurring"
     ],
-    "field": "online",
-    "shown": true,
-    "truth": false,
-    "url": "https://libcal.library.upenn.edu/event/17427158"
+    "field": "place",
+    "shown": "Zoom",
+    "truth": null,
+    "url": "https://libcal.library.upenn.edu/event/15791235"
    },
    {
     "id": "penn-17340169",
@@ -1567,82 +1393,54 @@
     "url": "https://libcal.library.upenn.edu/event/17340169"
    },
    {
-    "id": "penn-17414068",
-    "school": "Penn",
-    "edge": [],
-    "field": "online",
-    "shown": true,
-    "truth": false,
-    "url": "https://libcal.library.upenn.edu/event/17414068"
-   },
-   {
-    "id": "penn-17480934",
-    "school": "Penn",
-    "edge": [],
-    "field": "online",
-    "shown": true,
-    "truth": false,
-    "url": "https://libcal.library.upenn.edu/event/17480934"
-   },
-   {
-    "id": "penn-17317188",
-    "school": "Penn",
-    "edge": [
-     "recurring"
-    ],
-    "field": "online",
-    "shown": true,
-    "truth": false,
-    "url": "https://libcal.library.upenn.edu/event/17317188"
-   },
-   {
-    "id": "penn-17427159",
-    "school": "Penn",
-    "edge": [
-     "recurring"
-    ],
-    "field": "online",
-    "shown": true,
-    "truth": false,
-    "url": "https://libcal.library.upenn.edu/event/17427159"
-   },
-   {
-    "id": "yale-17881844",
+    "id": "yale-18061479",
     "school": "Yale",
     "edge": [
+     "online",
+     "no location"
+    ],
+    "field": "place",
+    "shown": "Medical School",
+    "truth": null,
+    "url": "https://schedule.yale.edu/event/18061479"
+   },
+   {
+    "id": "yale-17448626",
+    "school": "Yale",
+    "edge": [
+     "online",
+     "no location",
      "recurring"
     ],
-    "field": "online",
-    "shown": true,
-    "truth": false,
-    "url": "https://schedule.yale.edu/event/17881844"
+    "field": "place",
+    "shown": "Medical School",
+    "truth": null,
+    "url": "https://schedule.yale.edu/event/17448626"
    },
    {
-    "id": "yale-18061171",
+    "id": "yale-18061249",
     "school": "Yale",
-    "edge": [],
-    "field": "online",
-    "shown": true,
-    "truth": false,
-    "url": "https://schedule.yale.edu/event/18061171"
+    "edge": [
+     "online",
+     "no location"
+    ],
+    "field": "place",
+    "shown": "Medical School",
+    "truth": null,
+    "url": "https://schedule.yale.edu/event/18061249"
    },
    {
-    "id": "yale-18013506",
+    "id": "yale-17676449",
     "school": "Yale",
-    "edge": [],
-    "field": "online",
-    "shown": true,
-    "truth": false,
-    "url": "https://schedule.yale.edu/event/18013506"
-   },
-   {
-    "id": "yale-18061358",
-    "school": "Yale",
-    "edge": [],
-    "field": "online",
-    "shown": true,
-    "truth": false,
-    "url": "https://schedule.yale.edu/event/18061358"
+    "edge": [
+     "online",
+     "no location",
+     "recurring"
+    ],
+    "field": "place",
+    "shown": "Medical School",
+    "truth": null,
+    "url": "https://schedule.yale.edu/event/17676449"
    },
    {
     "id": "duke-17407923",
@@ -1671,17 +1469,8 @@
     "school": "Duke",
     "edge": [],
     "field": "place",
-    "shown": "Service Desk, 1st Floor Perkins Library",
+    "shown": "Service Desk, 1st Floor Perkins Library, West Campus",
     "truth": "Other (see event description)",
-    "url": "https://duke.libcal.com/event/18035796"
-   },
-   {
-    "id": "duke-18035796",
-    "school": "Duke",
-    "edge": [],
-    "field": "online",
-    "shown": true,
-    "truth": false,
     "url": "https://duke.libcal.com/event/18035796"
    },
    {
@@ -1689,17 +1478,8 @@
     "school": "Duke",
     "edge": [],
     "field": "place",
-    "shown": "Service Desk, 1st Floor Perkins Library",
+    "shown": "Service Desk, 1st Floor Perkins Library, West Campus",
     "truth": "Other (see event description)",
-    "url": "https://duke.libcal.com/event/18035792"
-   },
-   {
-    "id": "duke-18035792",
-    "school": "Duke",
-    "edge": [],
-    "field": "online",
-    "shown": true,
-    "truth": false,
     "url": "https://duke.libcal.com/event/18035792"
    },
    {
@@ -1723,15 +1503,6 @@
     "shown": true,
     "truth": false,
     "url": "https://duke.libcal.com/event/17408002"
-   },
-   {
-    "id": "duke-17677226",
-    "school": "Duke",
-    "edge": [],
-    "field": "online",
-    "shown": true,
-    "truth": false,
-    "url": "https://duke.libcal.com/event/17677226"
    },
    {
     "id": "duke-17413576",
@@ -1765,12 +1536,195 @@
     "url": "https://duke.libcal.com/event/18035777"
    },
    {
-    "id": "duke-18035777",
+    "id": "duke-17408001",
     "school": "Duke",
-    "edge": [],
+    "edge": [
+     "recurring"
+    ],
     "field": "online",
     "shown": true,
     "truth": false,
+    "url": "https://duke.libcal.com/event/17408001"
+   },
+   {
+    "id": "duke-17743566",
+    "school": "Duke",
+    "edge": [],
+    "field": "place",
+    "shown": "Gillespie East Asia Reading Room, Bostock Library",
+    "truth": "Other (see event description)",
+    "url": "https://duke.libcal.com/event/17743566"
+   }
+  ],
+  "system_v2": [
+   {
+    "id": "princeton-17356230",
+    "school": "Princeton",
+    "edge": [
+     "no location"
+    ],
+    "field": "place",
+    "shown": "Firestone Library",
+    "truth": null,
+    "url": "https://libcal.princeton.edu/event/17356230"
+   },
+   {
+    "id": "penn-17394668",
+    "school": "Penn",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/17394668"
+   },
+   {
+    "id": "penn-17340127",
+    "school": "Penn",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/17340127"
+   },
+   {
+    "id": "penn-17340124",
+    "school": "Penn",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/17340124"
+   },
+   {
+    "id": "penn-17427495",
+    "school": "Penn",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/17427495"
+   },
+   {
+    "id": "penn-17427496",
+    "school": "Penn",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/17427496"
+   },
+   {
+    "id": "penn-17340169",
+    "school": "Penn",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://libcal.library.upenn.edu/event/17340169"
+   },
+   {
+    "id": "duke-17407923",
+    "school": "Duke",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://duke.libcal.com/event/17407923"
+   },
+   {
+    "id": "duke-17407925",
+    "school": "Duke",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://duke.libcal.com/event/17407925"
+   },
+   {
+    "id": "duke-18035796",
+    "school": "Duke",
+    "edge": [],
+    "field": "place",
+    "shown": "Service Desk, 1st Floor Perkins Library",
+    "truth": "Other (see event description)",
+    "url": "https://duke.libcal.com/event/18035796"
+   },
+   {
+    "id": "duke-18035792",
+    "school": "Duke",
+    "edge": [],
+    "field": "place",
+    "shown": "Service Desk, 1st Floor Perkins Library",
+    "truth": "Other (see event description)",
+    "url": "https://duke.libcal.com/event/18035792"
+   },
+   {
+    "id": "duke-17407924",
+    "school": "Duke",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://duke.libcal.com/event/17407924"
+   },
+   {
+    "id": "duke-17408002",
+    "school": "Duke",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://duke.libcal.com/event/17408002"
+   },
+   {
+    "id": "duke-17413576",
+    "school": "Duke",
+    "edge": [
+     "recurring"
+    ],
+    "field": "place",
+    "shown": "Music Library Seminar Rom (East Campus)",
+    "truth": "Other (see event description)",
+    "url": "https://duke.libcal.com/event/17413576"
+   },
+   {
+    "id": "duke-17413576",
+    "school": "Duke",
+    "edge": [
+     "recurring"
+    ],
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "url": "https://duke.libcal.com/event/17413576"
+   },
+   {
+    "id": "duke-18035777",
+    "school": "Duke",
+    "edge": [],
+    "field": "place",
+    "shown": "Service Desk, 1st Floor Perkins Library",
+    "truth": "Other (see event description)",
     "url": "https://duke.libcal.com/event/18035777"
    },
    {
@@ -1812,10 +1766,14 @@
     "place": null,
     "online": true
    },
-   "chars": 4206,
+   "chars": {
+    "raw": 4202,
+    "visible": 4081
+   },
    "tokens": {
     "baseline": 1186,
-    "system": 2745
+    "system_v1": 2795,
+    "system_v2": 2770
    },
    "baseline": {
     "date": "2026-12-01",
@@ -1824,25 +1782,26 @@
     "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-01",
     "start": "15:00",
     "end": "16:00",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-01",
     "start": "15:00",
     "end": "16:00",
     "place": null,
     "online": true
    },
-   "gate": {
-    "date": 0.984,
-    "start": 0.983,
-    "end": 0.983,
-    "online": 0.99
+   "system_v2": {
+    "date": "2026-12-01",
+    "start": "15:00",
+    "end": "16:00",
+    "place": null,
+    "online": true
    }
   },
   {
@@ -1858,10 +1817,14 @@
     "place": "Bobst Library, 7th Floor, Rm. 745",
     "online": false
    },
-   "chars": 4034,
+   "chars": {
+    "raw": 4030,
+    "visible": 3909
+   },
    "tokens": {
     "baseline": 1211,
-    "system": 3058
+    "system_v1": 3101,
+    "system_v2": 2881
    },
    "baseline": {
     "date": "2027-01-14",
@@ -1870,26 +1833,26 @@
     "place": "Bobst Library, 7th Floor, Rm. 745",
     "online": false
    },
-   "system": {
+   "system_v1": {
     "date": "2027-01-14",
     "start": "10:00",
     "end": "15:00",
     "place": "Bobst Library, 7th Floor, Rm. 745",
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2027-01-14",
     "start": "10:00",
     "end": "15:00",
     "place": "Bobst Library, 7th Floor, Rm. 745",
-    "online": true
+    "online": false
    },
-   "gate": {
-    "date": 0.973,
-    "start": 0.979,
-    "end": 0.973,
-    "place": 0.959,
-    "online": 0.594
+   "system_v2": {
+    "date": "2027-01-14",
+    "start": "10:00",
+    "end": "15:00",
+    "place": "Bobst Library, 7th Floor, Rm. 745",
+    "online": false
    }
   },
   {
@@ -1905,10 +1868,14 @@
     "place": "Bobst Library, 7th Floor, Rm. 743",
     "online": false
    },
-   "chars": 4058,
+   "chars": {
+    "raw": 4054,
+    "visible": 3933
+   },
    "tokens": {
     "baseline": 1233,
-    "system": 3099
+    "system_v1": 3155,
+    "system_v2": 2945
    },
    "baseline": {
     "date": "2027-01-14",
@@ -1917,26 +1884,26 @@
     "place": "Bobst Library, 7th Floor, Rm. 743",
     "online": false
    },
-   "system": {
+   "system_v1": {
     "date": "2027-01-14",
     "start": "10:00",
     "end": "15:00",
     "place": "Bobst Library, 7th Floor, Rm. 743",
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2027-01-14",
     "start": "10:00",
     "end": "15:00",
     "place": "Bobst Library, 7th Floor, Rm. 743",
-    "online": true
+    "online": false
    },
-   "gate": {
-    "date": 0.979,
-    "start": 0.976,
-    "end": 0.968,
-    "place": 0.977,
-    "online": 0.613
+   "system_v2": {
+    "date": "2027-01-14",
+    "start": "10:00",
+    "end": "15:00",
+    "place": "Bobst Library, 7th Floor, Rm. 743",
+    "online": false
    }
   },
   {
@@ -1952,10 +1919,14 @@
     "place": "Bobst Library, 7th Floor, Rm. 745",
     "online": false
    },
-   "chars": 3557,
+   "chars": {
+    "raw": 3553,
+    "visible": 3432
+   },
    "tokens": {
     "baseline": 1084,
-    "system": 2776
+    "system_v1": 2778,
+    "system_v2": 2545
    },
    "baseline": {
     "date": "2026-12-15",
@@ -1964,26 +1935,26 @@
     "place": "Bobst Library, 7th Floor, Rm. 745",
     "online": false
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-15",
     "start": "15:00",
     "end": "15:30",
     "place": "Bobst Library, 7th Floor, Rm. 745",
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-15",
     "start": "15:00",
     "end": "15:30",
     "place": "Bobst Library, 7th Floor, Rm. 745",
-    "online": true
+    "online": false
    },
-   "gate": {
-    "date": 0.987,
-    "start": 0.987,
-    "end": 0.986,
-    "place": 0.974,
-    "online": 0.774
+   "system_v2": {
+    "date": "2026-12-15",
+    "start": "15:00",
+    "end": "15:30",
+    "place": "Bobst Library, 7th Floor, Rm. 745",
+    "online": false
    }
   },
   {
@@ -1999,10 +1970,14 @@
     "place": "Bobst Library, 7th Floor, Rm. 745",
     "online": false
    },
-   "chars": 3426,
+   "chars": {
+    "raw": 3422,
+    "visible": 3301
+   },
    "tokens": {
     "baseline": 1058,
-    "system": 2682
+    "system_v1": 2814,
+    "system_v2": 2478
    },
    "baseline": {
     "date": "2026-12-16",
@@ -2011,26 +1986,26 @@
     "place": "Bobst Library, 7th Floor, Rm. 745",
     "online": false
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-16",
     "start": "17:00",
     "end": "18:00",
     "place": "Bobst Library, 7th Floor, Rm. 745",
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-16",
     "start": "17:00",
     "end": "18:00",
     "place": "Bobst Library, 7th Floor, Rm. 745",
-    "online": true
+    "online": false
    },
-   "gate": {
-    "date": 0.983,
-    "start": 0.99,
-    "end": 0.99,
-    "place": 0.978,
-    "online": 0.696
+   "system_v2": {
+    "date": "2026-12-16",
+    "start": "17:00",
+    "end": "18:00",
+    "place": "Bobst Library, 7th Floor, Rm. 745",
+    "online": false
    }
   },
   {
@@ -2046,10 +2021,14 @@
     "place": "Bobst Library, 7th Floor, Rm. 745",
     "online": false
    },
-   "chars": 3425,
+   "chars": {
+    "raw": 3421,
+    "visible": 3300
+   },
    "tokens": {
     "baseline": 1057,
-    "system": 2665
+    "system_v1": 2657,
+    "system_v2": 2550
    },
    "baseline": {
     "date": "2026-12-02",
@@ -2058,26 +2037,26 @@
     "place": "Bobst Library, 7th Floor, Rm. 745",
     "online": false
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-02",
     "start": "17:00",
     "end": "18:00",
     "place": "Bobst Library, 7th Floor, Rm. 745",
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-02",
     "start": "17:00",
     "end": "18:00",
     "place": "Bobst Library, 7th Floor, Rm. 745",
-    "online": true
+    "online": false
    },
-   "gate": {
-    "date": 0.964,
-    "start": 0.99,
-    "end": 0.984,
-    "place": 0.98,
-    "online": 0.737
+   "system_v2": {
+    "date": "2026-12-02",
+    "start": "17:00",
+    "end": "18:00",
+    "place": "Bobst Library, 7th Floor, Rm. 745",
+    "online": false
    }
   },
   {
@@ -2093,10 +2072,14 @@
     "place": "Dibner Library, LC 433",
     "online": false
    },
-   "chars": 3069,
+   "chars": {
+    "raw": 3065,
+    "visible": 2944
+   },
    "tokens": {
     "baseline": 1000,
-    "system": 2714
+    "system_v1": 2656,
+    "system_v2": 2366
    },
    "baseline": {
     "date": "2026-12-16",
@@ -2105,26 +2088,26 @@
     "place": "Dibner Library, LC 433",
     "online": false
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-16",
     "start": "16:00",
     "end": "17:00",
     "place": "Dibner Library, LC 433",
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-16",
     "start": "16:00",
     "end": "17:00",
     "place": "Dibner Library, LC 433",
-    "online": true
+    "online": false
    },
-   "gate": {
-    "date": 0.976,
-    "start": 0.99,
-    "end": 0.99,
-    "place": 0.989,
-    "online": 0.553
+   "system_v2": {
+    "date": "2026-12-16",
+    "start": "16:00",
+    "end": "17:00",
+    "place": "Dibner Library, LC 433",
+    "online": false
    }
   },
   {
@@ -2140,10 +2123,14 @@
     "place": "Special Collections Large Classroom - C Floor",
     "online": false
    },
-   "chars": 3529,
+   "chars": {
+    "raw": 3525,
+    "visible": 3404
+   },
    "tokens": {
-    "baseline": 1010,
-    "system": 2589
+    "baseline": 993,
+    "system_v1": 2576,
+    "system_v2": 2366
    },
    "baseline": {
     "date": "2026-12-09",
@@ -2152,26 +2139,26 @@
     "place": "Special Collections Large Classroom - C Floor",
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-09",
     "start": "13:30",
     "end": "18:00",
     "place": "Special Collections Large Classroom - C Floor",
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-09",
     "start": "13:30",
     "end": "18:00",
     "place": "Special Collections Large Classroom - C Floor",
-    "online": true
+    "online": false
    },
-   "gate": {
-    "date": 0.987,
-    "start": 0.978,
-    "end": 0.98,
-    "place": 0.963,
-    "online": 0.922
+   "system_v2": {
+    "date": "2026-12-09",
+    "start": "13:30",
+    "end": "18:00",
+    "place": "Special Collections Large Classroom - C Floor",
+    "online": false
    }
   },
   {
@@ -2187,10 +2174,14 @@
     "place": "Commons Library Curiosity Studio",
     "online": false
    },
-   "chars": 1749,
+   "chars": {
+    "raw": 1749,
+    "visible": 1749
+   },
    "tokens": {
     "baseline": 599,
-    "system": 1602
+    "system_v1": 1673,
+    "system_v2": 1662
    },
    "baseline": {
     "date": "2026-12-10",
@@ -2199,26 +2190,26 @@
     "place": "Commons Library Curiosity Studio",
     "online": false
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-10",
     "start": "13:00",
     "end": "14:00",
     "place": "Commons Library Curiosity Studio",
     "online": false
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-10",
     "start": "13:00",
     "end": "14:00",
     "place": "Commons Library Curiosity Studio",
     "online": false
    },
-   "gate": {
-    "date": 0.981,
-    "start": 0.976,
-    "end": 0.985,
-    "place": 0.969,
-    "online": 0.054
+   "system_v2": {
+    "date": "2026-12-10",
+    "start": "13:00",
+    "end": "14:00",
+    "place": "Commons Library Curiosity Studio",
+    "online": false
    }
   },
   {
@@ -2234,38 +2225,42 @@
     "place": "Firestone Lobby",
     "online": false
    },
-   "chars": 1465,
+   "chars": {
+    "raw": 1465,
+    "visible": 1465
+   },
    "tokens": {
-    "baseline": 525,
-    "system": 1535
+    "baseline": 528,
+    "system_v1": 1523,
+    "system_v2": 1540
    },
    "baseline": {
     "date": "2026-12-17",
     "start": "14:00",
     "end": "16:00",
-    "place": "Firestone Lobby",
+    "place": "Firestone Lobby, Firestone Library",
     "online": false
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-17",
     "start": "14:00",
     "end": "16:00",
     "place": "Firestone Lobby",
     "online": false
    },
-   "ungated": {
+   "baseline_visible": {
+    "date": "2026-12-17",
+    "start": "14:00",
+    "end": "16:00",
+    "place": "Firestone Lobby, Firestone Library",
+    "online": false
+   },
+   "system_v2": {
     "date": "2026-12-17",
     "start": "14:00",
     "end": "16:00",
     "place": "Firestone Lobby",
     "online": false
-   },
-   "gate": {
-    "date": 0.975,
-    "start": 0.981,
-    "end": 0.986,
-    "place": 0.983,
-    "online": 0.039
    }
   },
   {
@@ -2283,10 +2278,14 @@
     "place": "Firestone Lobby",
     "online": false
    },
-   "chars": 1984,
+   "chars": {
+    "raw": 1980,
+    "visible": 1859
+   },
    "tokens": {
     "baseline": 662,
-    "system": 1910
+    "system_v1": 1921,
+    "system_v2": 1800
    },
    "baseline": {
     "date": "2027-05-21",
@@ -2295,26 +2294,26 @@
     "place": "Firestone Lobby",
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2027-05-21",
     "start": "09:30",
     "end": "10:25",
     "place": "Firestone Lobby",
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
+    "date": "2027-05-21",
+    "start": "09:30",
+    "end": "10:25",
+    "place": "Firestone Library, Firestone Lobby",
+    "online": false
+   },
+   "system_v2": {
     "date": "2027-05-21",
     "start": "09:30",
     "end": "10:25",
     "place": "Firestone Lobby",
-    "online": true
-   },
-   "gate": {
-    "date": 0.989,
-    "start": 0.985,
-    "end": 0.99,
-    "place": 0.939,
-    "online": 0.936
+    "online": false
    }
   },
   {
@@ -2330,10 +2329,14 @@
     "place": "Special Collections Large Classroom - C Floor",
     "online": false
    },
-   "chars": 4531,
+   "chars": {
+    "raw": 4527,
+    "visible": 4406
+   },
    "tokens": {
     "baseline": 1191,
-    "system": 2896
+    "system_v1": 2908,
+    "system_v2": 2829
    },
    "baseline": {
     "date": "2026-12-09",
@@ -2342,26 +2345,26 @@
     "place": "Special Collections Large Classroom - C Floor",
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-09",
     "start": "16:00",
     "end": "18:00",
     "place": "Special Collections Large Classroom - C Floor",
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-09",
     "start": "16:00",
     "end": "18:00",
     "place": "Special Collections Large Classroom - C Floor",
-    "online": true
+    "online": false
    },
-   "gate": {
-    "date": 0.99,
-    "start": 0.986,
-    "end": 0.99,
-    "place": 0.976,
-    "online": 0.969
+   "system_v2": {
+    "date": "2026-12-09",
+    "start": "16:00",
+    "end": "18:00",
+    "place": "Special Collections Large Classroom - C Floor",
+    "online": false
    }
   },
   {
@@ -2377,38 +2380,42 @@
     "place": "Milberg Gallery",
     "online": false
    },
-   "chars": 2117,
+   "chars": {
+    "raw": 2117,
+    "visible": 2117
+   },
    "tokens": {
-    "baseline": 700,
-    "system": 1908
+    "baseline": 697,
+    "system_v1": 1808,
+    "system_v2": 1977
    },
    "baseline": {
+    "date": "2026-11-24",
+    "start": "12:30",
+    "end": "13:00",
+    "place": "Milberg Gallery",
+    "online": false
+   },
+   "system_v1": {
+    "date": "2026-11-24",
+    "start": "12:30",
+    "end": "13:00",
+    "place": "Milberg Gallery",
+    "online": false
+   },
+   "baseline_visible": {
     "date": "2026-11-24",
     "start": "12:30",
     "end": "13:00",
     "place": "Milberg Gallery, Firestone Library",
     "online": false
    },
-   "system": {
+   "system_v2": {
     "date": "2026-11-24",
     "start": "12:30",
     "end": "13:00",
     "place": "Milberg Gallery",
     "online": false
-   },
-   "ungated": {
-    "date": "2026-11-24",
-    "start": "12:30",
-    "end": "13:00",
-    "place": "Milberg Gallery",
-    "online": false
-   },
-   "gate": {
-    "date": 0.99,
-    "start": 0.985,
-    "end": 0.982,
-    "place": 0.979,
-    "online": 0.04
    }
   },
   {
@@ -2426,38 +2433,42 @@
     "place": "Firestone Lobby",
     "online": false
    },
-   "chars": 2136,
+   "chars": {
+    "raw": 2132,
+    "visible": 1883
+   },
    "tokens": {
-    "baseline": 737,
-    "system": 2160
+    "baseline": 740,
+    "system_v1": 2057,
+    "system_v2": 1810
    },
    "baseline": {
     "date": "2026-12-18",
     "start": "09:30",
     "end": "10:25",
-    "place": "Firestone Lobby",
+    "place": "Firestone Lobby, Firestone Library",
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-18",
     "start": "09:30",
     "end": "10:25",
     "place": "Firestone Lobby",
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-18",
     "start": "09:30",
     "end": "10:25",
     "place": "Firestone Lobby",
-    "online": true
+    "online": false
    },
-   "gate": {
-    "date": 0.892,
-    "start": 0.99,
-    "end": 0.99,
-    "place": 0.961,
-    "online": 0.939
+   "system_v2": {
+    "date": "2026-12-18",
+    "start": "09:30",
+    "end": "10:25",
+    "place": "Firestone Lobby",
+    "online": false
    }
   },
   {
@@ -2473,10 +2484,14 @@
     "place": "Commons Library Curiosity Studio",
     "online": false
    },
-   "chars": 2944,
+   "chars": {
+    "raw": 2940,
+    "visible": 2819
+   },
    "tokens": {
     "baseline": 885,
-    "system": 2406
+    "system_v1": 2381,
+    "system_v2": 2206
    },
    "baseline": {
     "date": "2026-12-02",
@@ -2485,26 +2500,26 @@
     "place": "Commons Library Curiosity Studio",
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-02",
     "start": "17:00",
     "end": "18:00",
     "place": "Commons Library Curiosity Studio",
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-02",
     "start": "17:00",
     "end": "18:00",
     "place": "Commons Library Curiosity Studio",
-    "online": true
+    "online": false
    },
-   "gate": {
-    "date": 0.985,
-    "start": 0.983,
-    "end": 0.989,
-    "place": 0.972,
-    "online": 0.958
+   "system_v2": {
+    "date": "2026-12-02",
+    "start": "17:00",
+    "end": "18:00",
+    "place": "Commons Library Curiosity Studio",
+    "online": false
    }
   },
   {
@@ -2520,38 +2535,42 @@
     "place": "Firestone Lobby",
     "online": false
    },
-   "chars": 1360,
+   "chars": {
+    "raw": 1360,
+    "visible": 1360
+   },
    "tokens": {
-    "baseline": 523,
-    "system": 1534
+    "baseline": 535,
+    "system_v1": 1517,
+    "system_v2": 1523
    },
    "baseline": {
+    "date": "2026-12-07",
+    "start": "13:00",
+    "end": "14:00",
+    "place": "Firestone Lobby, Firestone Library",
+    "online": false
+   },
+   "system_v1": {
+    "date": "2026-12-07",
+    "start": "13:00",
+    "end": "14:00",
+    "place": "Firestone Lobby",
+    "online": false
+   },
+   "baseline_visible": {
     "date": "2026-12-07",
     "start": "13:00",
     "end": "14:00",
     "place": "Firestone Library, Firestone Lobby",
     "online": false
    },
-   "system": {
+   "system_v2": {
     "date": "2026-12-07",
     "start": "13:00",
     "end": "14:00",
     "place": "Firestone Lobby",
     "online": false
-   },
-   "ungated": {
-    "date": "2026-12-07",
-    "start": "13:00",
-    "end": "14:00",
-    "place": "Firestone Lobby",
-    "online": false
-   },
-   "gate": {
-    "date": 0.985,
-    "start": 0.976,
-    "end": 0.982,
-    "place": 0.972,
-    "online": 0.041
    }
   },
   {
@@ -2569,10 +2588,14 @@
     "place": null,
     "online": false
    },
-   "chars": 2007,
+   "chars": {
+    "raw": 2007,
+    "visible": 2007
+   },
    "tokens": {
     "baseline": 662,
-    "system": 1814
+    "system_v1": 1812,
+    "system_v2": 1817
    },
    "baseline": {
     "date": "2026-12-02",
@@ -2581,26 +2604,26 @@
     "place": "Firestone Library",
     "online": false
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-02",
     "start": "10:30",
     "end": "12:00",
     "place": "Firestone Library",
     "online": false
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-02",
     "start": "10:30",
     "end": "12:00",
     "place": "Firestone Library",
     "online": false
    },
-   "gate": {
-    "date": 0.978,
-    "start": 0.979,
-    "end": 0.967,
-    "place": 0.969,
-    "online": 0.041
+   "system_v2": {
+    "date": "2026-12-02",
+    "start": "10:30",
+    "end": "12:00",
+    "place": "Firestone Library",
+    "online": false
    }
   },
   {
@@ -2618,10 +2641,14 @@
     "place": "Firestone Lobby",
     "online": false
    },
-   "chars": 2053,
+   "chars": {
+    "raw": 2049,
+    "visible": 1880
+   },
    "tokens": {
     "baseline": 695,
-    "system": 2039
+    "system_v1": 2013,
+    "system_v2": 1781
    },
    "baseline": {
     "date": "2027-03-19",
@@ -2630,26 +2657,26 @@
     "place": "Firestone Lobby",
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2027-03-19",
     "start": "09:30",
     "end": "10:25",
     "place": "Firestone Lobby",
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2027-03-19",
     "start": "09:30",
     "end": "10:25",
     "place": "Firestone Lobby",
-    "online": true
+    "online": false
    },
-   "gate": {
-    "date": 0.965,
-    "start": 0.99,
-    "end": 0.99,
-    "place": 0.961,
-    "online": 0.95
+   "system_v2": {
+    "date": "2027-03-19",
+    "start": "09:30",
+    "end": "10:25",
+    "place": "Firestone Lobby",
+    "online": false
    }
   },
   {
@@ -2667,38 +2694,42 @@
     "place": "Firestone Lobby",
     "online": false
    },
-   "chars": 2081,
+   "chars": {
+    "raw": 2077,
+    "visible": 1883
+   },
    "tokens": {
-    "baseline": 712,
-    "system": 2058
+    "baseline": 709,
+    "system_v1": 1958,
+    "system_v2": 1811
    },
    "baseline": {
     "date": "2027-02-19",
     "start": "09:30",
     "end": "10:25",
-    "place": "Firestone Lobby, Firestone Library",
+    "place": "Firestone Lobby",
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2027-02-19",
     "start": "09:30",
     "end": "10:25",
     "place": "Firestone Lobby",
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2027-02-19",
     "start": "09:30",
     "end": "10:25",
     "place": "Firestone Lobby",
-    "online": true
+    "online": false
    },
-   "gate": {
-    "date": 0.924,
-    "start": 0.986,
-    "end": 0.99,
-    "place": 0.967,
-    "online": 0.948
+   "system_v2": {
+    "date": "2027-02-19",
+    "start": "09:30",
+    "end": "10:25",
+    "place": "Firestone Lobby",
+    "online": false
    }
   },
   {
@@ -2716,10 +2747,14 @@
     "place": "Commons Library Classroom (D112)",
     "online": true
    },
-   "chars": 2398,
+   "chars": {
+    "raw": 2394,
+    "visible": 2273
+   },
    "tokens": {
     "baseline": 748,
-    "system": 2059
+    "system_v1": 2057,
+    "system_v2": 1954
    },
    "baseline": {
     "date": "2026-12-02",
@@ -2728,26 +2763,26 @@
     "place": "Commons Library Classroom (D112)",
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-02",
     "start": "15:00",
     "end": "16:00",
     "place": "Commons Library Classroom (D112)",
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-02",
     "start": "15:00",
     "end": "16:00",
     "place": "Commons Library Classroom (D112)",
     "online": true
    },
-   "gate": {
-    "date": 0.976,
-    "start": 0.99,
-    "end": 0.987,
-    "place": 0.985,
-    "online": 0.987
+   "system_v2": {
+    "date": "2026-12-02",
+    "start": "15:00",
+    "end": "16:00",
+    "place": "Commons Library Classroom (D112)",
+    "online": true
    }
   },
   {
@@ -2763,10 +2798,14 @@
     "place": "Commons Library Curiosity Studio",
     "online": false
    },
-   "chars": 4112,
+   "chars": {
+    "raw": 4108,
+    "visible": 3987
+   },
    "tokens": {
     "baseline": 1114,
-    "system": 2760
+    "system_v1": 2768,
+    "system_v2": 2713
    },
    "baseline": {
     "date": "2026-12-03",
@@ -2775,26 +2814,26 @@
     "place": "Commons Library Curiosity Studio",
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-03",
     "start": "17:00",
     "end": "18:30",
     "place": "Commons Library Curiosity Studio",
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-03",
     "start": "17:00",
     "end": "18:30",
     "place": "Commons Library Curiosity Studio",
-    "online": true
+    "online": false
    },
-   "gate": {
-    "date": 0.987,
-    "start": 0.988,
-    "end": 0.988,
-    "place": 0.976,
-    "online": 0.969
+   "system_v2": {
+    "date": "2026-12-03",
+    "start": "17:00",
+    "end": "18:30",
+    "place": "Commons Library Curiosity Studio",
+    "online": false
    }
   },
   {
@@ -2812,38 +2851,42 @@
     "place": "Firestone Lobby",
     "online": false
    },
-   "chars": 2028,
+   "chars": {
+    "raw": 2024,
+    "visible": 1880
+   },
    "tokens": {
-    "baseline": 701,
-    "system": 1905
+    "baseline": 681,
+    "system_v1": 1949,
+    "system_v2": 1717
    },
    "baseline": {
     "date": "2027-04-16",
     "start": "09:30",
     "end": "10:25",
+    "place": "Firestone Lobby",
+    "online": true
+   },
+   "system_v1": {
+    "date": "2027-04-16",
+    "start": "09:30",
+    "end": "10:25",
+    "place": "Firestone Lobby",
+    "online": true
+   },
+   "baseline_visible": {
+    "date": "2027-04-16",
+    "start": "09:30",
+    "end": "10:25",
     "place": "Firestone Lobby, Firestone Library",
-    "online": true
+    "online": false
    },
-   "system": {
+   "system_v2": {
     "date": "2027-04-16",
     "start": "09:30",
     "end": "10:25",
     "place": "Firestone Lobby",
-    "online": true
-   },
-   "ungated": {
-    "date": "2027-04-16",
-    "start": "09:30",
-    "end": "10:25",
-    "place": "Firestone Lobby",
-    "online": true
-   },
-   "gate": {
-    "date": 0.973,
-    "start": 0.99,
-    "end": 0.99,
-    "place": 0.974,
-    "online": 0.941
+    "online": false
    }
   },
   {
@@ -2861,10 +2904,14 @@
     "place": "Center for Modern Aging (formerly PSRC), 101 Poor Farm Road, Princeton, NJ 08540",
     "online": true
    },
-   "chars": 4689,
+   "chars": {
+    "raw": 4685,
+    "visible": 4494
+   },
    "tokens": {
     "baseline": 1240,
-    "system": 3117
+    "system_v1": 3083,
+    "system_v2": 2986
    },
    "baseline": {
     "date": "2026-12-03",
@@ -2873,26 +2920,26 @@
     "place": "Center for Modern Aging (formerly PSRC), 101 Poor Farm Road, Princeton, NJ 08540",
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-03",
     "start": "16:00",
     "end": "17:00",
     "place": "Center for Modern Aging (formerly PSRC), 101 Poor Farm Road, Princeton, NJ 08540",
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-03",
     "start": "16:00",
     "end": "17:00",
     "place": "Center for Modern Aging (formerly PSRC), 101 Poor Farm Road, Princeton, NJ 08540",
     "online": true
    },
-   "gate": {
-    "date": 0.984,
-    "start": 0.99,
-    "end": 0.983,
-    "place": 0.972,
-    "online": 0.985
+   "system_v2": {
+    "date": "2026-12-03",
+    "start": "16:00",
+    "end": "17:00",
+    "place": "Center for Modern Aging (formerly PSRC), 101 Poor Farm Road, Princeton, NJ 08540",
+    "online": true
    }
   },
   {
@@ -2910,10 +2957,14 @@
     "place": null,
     "online": false
    },
-   "chars": 1150,
+   "chars": {
+    "raw": 1146,
+    "visible": 1025
+   },
    "tokens": {
-    "baseline": 473,
-    "system": 1334
+    "baseline": 468,
+    "system_v1": 1350,
+    "system_v2": 1305
    },
    "baseline": {
     "date": "2027-01-12",
@@ -2922,25 +2973,26 @@
     "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2027-01-12",
     "start": "13:00",
     "end": "15:00",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2027-01-12",
     "start": "13:00",
     "end": "15:00",
     "place": null,
-    "online": true
+    "online": false
    },
-   "gate": {
-    "date": 0.974,
-    "start": 0.983,
-    "end": 0.99,
-    "online": 0.99
+   "system_v2": {
+    "date": "2027-01-12",
+    "start": "13:00",
+    "end": "15:00",
+    "place": null,
+    "online": false
    }
   },
   {
@@ -2958,10 +3010,14 @@
     "place": "Commons Library Curiosity Studio",
     "online": false
    },
-   "chars": 1700,
+   "chars": {
+    "raw": 1696,
+    "visible": 1575
+   },
    "tokens": {
     "baseline": 599,
-    "system": 1720
+    "system_v1": 1719,
+    "system_v2": 1563
    },
    "baseline": {
     "date": "2026-11-29",
@@ -2970,26 +3026,26 @@
     "place": "Commons Library Curiosity Studio",
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-11-29",
     "start": "14:00",
     "end": "16:00",
     "place": "Commons Library Curiosity Studio",
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-11-29",
     "start": "14:00",
     "end": "16:00",
     "place": "Commons Library Curiosity Studio",
-    "online": true
+    "online": false
    },
-   "gate": {
-    "date": 0.988,
-    "start": 0.99,
-    "end": 0.989,
-    "place": 0.959,
-    "online": 0.936
+   "system_v2": {
+    "date": "2026-11-29",
+    "start": "14:00",
+    "end": "16:00",
+    "place": "Commons Library Curiosity Studio",
+    "online": false
    }
   },
   {
@@ -3005,10 +3061,14 @@
     "place": "Milberg Gallery",
     "online": false
    },
-   "chars": 2114,
+   "chars": {
+    "raw": 2114,
+    "visible": 2114
+   },
    "tokens": {
-    "baseline": 698,
-    "system": 1837
+    "baseline": 715,
+    "system_v1": 1899,
+    "system_v2": 1846
    },
    "baseline": {
     "date": "2026-12-06",
@@ -3017,26 +3077,26 @@
     "place": "Milberg Gallery, Firestone Library",
     "online": false
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-06",
     "start": "13:00",
     "end": "13:45",
     "place": "Milberg Gallery",
     "online": false
    },
-   "ungated": {
+   "baseline_visible": {
+    "date": "2026-12-06",
+    "start": "13:00",
+    "end": "13:45",
+    "place": "Milberg Gallery, Firestone Library",
+    "online": false
+   },
+   "system_v2": {
     "date": "2026-12-06",
     "start": "13:00",
     "end": "13:45",
     "place": "Milberg Gallery",
     "online": false
-   },
-   "gate": {
-    "date": 0.989,
-    "start": 0.986,
-    "end": 0.99,
-    "place": 0.978,
-    "online": 0.026
    }
   },
   {
@@ -3052,10 +3112,14 @@
     "place": "Milberg Gallery",
     "online": false
    },
-   "chars": 2116,
+   "chars": {
+    "raw": 2116,
+    "visible": 2116
+   },
    "tokens": {
     "baseline": 698,
-    "system": 1907
+    "system_v1": 1824,
+    "system_v2": 1833
    },
    "baseline": {
     "date": "2026-12-05",
@@ -3064,26 +3128,26 @@
     "place": "Milberg Gallery, Firestone Library",
     "online": false
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-05",
     "start": "13:00",
     "end": "13:45",
     "place": "Milberg Gallery",
     "online": false
    },
-   "ungated": {
+   "baseline_visible": {
+    "date": "2026-12-05",
+    "start": "13:00",
+    "end": "13:45",
+    "place": "Milberg Gallery, Firestone Library",
+    "online": false
+   },
+   "system_v2": {
     "date": "2026-12-05",
     "start": "13:00",
     "end": "13:45",
     "place": "Milberg Gallery",
     "online": false
-   },
-   "gate": {
-    "date": 0.99,
-    "start": 0.989,
-    "end": 0.99,
-    "place": 0.985,
-    "online": 0.034
    }
   },
   {
@@ -3101,10 +3165,14 @@
     "place": "Research Data and Digital Scholarship Exchange",
     "online": false
    },
-   "chars": 2051,
+   "chars": {
+    "raw": 2051,
+    "visible": 2051
+   },
    "tokens": {
     "baseline": 700,
-    "system": 2005
+    "system_v1": 1907,
+    "system_v2": 1928
    },
    "baseline": {
     "date": "2027-01-08",
@@ -3113,26 +3181,26 @@
     "place": "Research Data and Digital Scholarship Exchange, Van Pelt-Dietrich Library Center",
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2027-01-08",
     "start": "10:00",
     "end": "11:00",
     "place": "Research Data and Digital Scholarship Exchange",
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
+    "date": "2027-01-08",
+    "start": "10:00",
+    "end": "11:00",
+    "place": "Research Data and Digital Scholarship Exchange, Van Pelt-Dietrich Library Center",
+    "online": true
+   },
+   "system_v2": {
     "date": "2027-01-08",
     "start": "10:00",
     "end": "11:00",
     "place": "Research Data and Digital Scholarship Exchange",
     "online": true
-   },
-   "gate": {
-    "date": 0.963,
-    "start": 0.99,
-    "end": 0.99,
-    "place": 0.968,
-    "online": 0.791
    }
   },
   {
@@ -3150,10 +3218,14 @@
     "place": "Research Data and Digital Scholarship Exchange",
     "online": false
    },
-   "chars": 1637,
+   "chars": {
+    "raw": 1637,
+    "visible": 1637
+   },
    "tokens": {
     "baseline": 575,
-    "system": 1665
+    "system_v1": 1632,
+    "system_v2": 1656
    },
    "baseline": {
     "date": "2026-12-14",
@@ -3162,26 +3234,26 @@
     "place": "Research Data and Digital Scholarship Exchange, Van Pelt-Dietrich Library Center",
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-14",
     "start": "09:00",
     "end": "10:00",
     "place": "Research Data and Digital Scholarship Exchange",
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
+    "date": "2026-12-14",
+    "start": "09:00",
+    "end": "10:00",
+    "place": "Research Data and Digital Scholarship Exchange, Van Pelt-Dietrich Library Center",
+    "online": true
+   },
+   "system_v2": {
     "date": "2026-12-14",
     "start": "09:00",
     "end": "10:00",
     "place": "Research Data and Digital Scholarship Exchange",
     "online": true
-   },
-   "gate": {
-    "date": 0.988,
-    "start": 0.986,
-    "end": 0.987,
-    "place": 0.971,
-    "online": 0.962
    }
   },
   {
@@ -3199,10 +3271,14 @@
     "place": "RDDSx nook",
     "online": false
    },
-   "chars": 1880,
+   "chars": {
+    "raw": 1880,
+    "visible": 1880
+   },
    "tokens": {
     "baseline": 659,
-    "system": 1820
+    "system_v1": 1827,
+    "system_v2": 1836
    },
    "baseline": {
     "date": "2026-11-23",
@@ -3211,26 +3287,26 @@
     "place": "Van Pelt-Dietrich Library Center, RDDSx nook",
     "online": false
    },
-   "system": {
+   "system_v1": {
     "date": "2026-11-23",
     "start": "12:00",
     "end": "17:00",
     "place": "RDDSx nook",
     "online": false
    },
-   "ungated": {
+   "baseline_visible": {
+    "date": "2026-11-23",
+    "start": "12:00",
+    "end": "17:00",
+    "place": "Van Pelt-Dietrich Library Center, RDDSx nook",
+    "online": false
+   },
+   "system_v2": {
     "date": "2026-11-23",
     "start": "12:00",
     "end": "17:00",
     "place": "RDDSx nook",
     "online": false
-   },
-   "gate": {
-    "date": 0.979,
-    "start": 0.99,
-    "end": 0.99,
-    "place": 0.971,
-    "online": 0.031
    }
   },
   {
@@ -3250,10 +3326,14 @@
     "place": null,
     "online": true
    },
-   "chars": 1848,
+   "chars": {
+    "raw": 1844,
+    "visible": 1723
+   },
    "tokens": {
     "baseline": 761,
-    "system": 1940
+    "system_v1": 1886,
+    "system_v2": 1815
    },
    "baseline": {
     "date": "2027-01-13",
@@ -3262,25 +3342,26 @@
     "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2027-01-13",
     "start": "13:00",
     "end": "13:30",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2027-01-13",
     "start": "13:00",
     "end": "13:30",
     "place": null,
     "online": true
    },
-   "gate": {
-    "date": 0.982,
-    "start": 0.989,
-    "end": 0.99,
-    "online": 0.984
+   "system_v2": {
+    "date": "2027-01-13",
+    "start": "13:00",
+    "end": "13:30",
+    "place": null,
+    "online": true
    }
   },
   {
@@ -3298,10 +3379,14 @@
     "place": "Research Data and Digital Scholarship Exchange",
     "online": false
    },
-   "chars": 1428,
+   "chars": {
+    "raw": 1428,
+    "visible": 1428
+   },
    "tokens": {
     "baseline": 548,
-    "system": 1597
+    "system_v1": 1597,
+    "system_v2": 1683
    },
    "baseline": {
     "date": "2026-12-07",
@@ -3310,26 +3395,26 @@
     "place": "Research Data and Digital Scholarship Exchange, Van Pelt-Dietrich Library Center",
     "online": false
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-07",
     "start": "14:00",
     "end": "15:00",
     "place": "Research Data and Digital Scholarship Exchange",
     "online": false
    },
-   "ungated": {
+   "baseline_visible": {
+    "date": "2026-12-07",
+    "start": "14:00",
+    "end": "15:00",
+    "place": "Research Data and Digital Scholarship Exchange, Van Pelt-Dietrich Library Center",
+    "online": false
+   },
+   "system_v2": {
     "date": "2026-12-07",
     "start": "14:00",
     "end": "15:00",
     "place": "Research Data and Digital Scholarship Exchange",
     "online": false
-   },
-   "gate": {
-    "date": 0.987,
-    "start": 0.988,
-    "end": 0.99,
-    "place": 0.964,
-    "online": 0.023
    }
   },
   {
@@ -3347,10 +3432,14 @@
     "place": "Research Data and Digital Scholarship Exchange",
     "online": false
    },
-   "chars": 1316,
+   "chars": {
+    "raw": 1312,
+    "visible": 1191
+   },
    "tokens": {
     "baseline": 543,
-    "system": 1747
+    "system_v1": 1899,
+    "system_v2": 1435
    },
    "baseline": {
     "date": "2026-12-09",
@@ -3359,25 +3448,26 @@
     "place": "Research Data and Digital Scholarship Exchange, Van Pelt-Dietrich Library Center",
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-09",
     "start": "16:00",
     "end": "17:00",
-    "place": null,
+    "place": "Research Data and Digital Scholarship Exchange",
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-09",
     "start": "16:00",
     "end": "17:00",
-    "place": null,
-    "online": true
+    "place": "Research Data and Digital Scholarship Exchange, Van Pelt-Dietrich Library Center",
+    "online": false
    },
-   "gate": {
-    "date": 0.988,
-    "start": 0.99,
-    "end": 0.99,
-    "online": 0.976
+   "system_v2": {
+    "date": "2026-12-09",
+    "start": "16:00",
+    "end": "17:00",
+    "place": "Research Data and Digital Scholarship Exchange",
+    "online": false
    }
   },
   {
@@ -3395,38 +3485,42 @@
     "place": "RDDSx nook",
     "online": false
    },
-   "chars": 1797,
+   "chars": {
+    "raw": 1797,
+    "visible": 1797
+   },
    "tokens": {
-    "baseline": 629,
-    "system": 1750
+    "baseline": 646,
+    "system_v1": 1824,
+    "system_v2": 1742
    },
    "baseline": {
     "date": "2026-12-02",
     "start": "10:00",
     "end": "15:00",
-    "place": "Van Pelt-Dietrich Library Center, RDDSx nook",
+    "place": "RDDSx nook, Van Pelt-Dietrich Library Center",
     "online": false
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-02",
     "start": "10:00",
     "end": "15:00",
     "place": "RDDSx nook",
     "online": false
    },
-   "ungated": {
+   "baseline_visible": {
+    "date": "2026-12-02",
+    "start": "10:00",
+    "end": "15:00",
+    "place": "RDDSx nook, Van Pelt-Dietrich Library Center",
+    "online": false
+   },
+   "system_v2": {
     "date": "2026-12-02",
     "start": "10:00",
     "end": "15:00",
     "place": "RDDSx nook",
     "online": false
-   },
-   "gate": {
-    "date": 0.988,
-    "start": 0.99,
-    "end": 0.99,
-    "place": 0.979,
-    "online": 0.028
    }
   },
   {
@@ -3444,10 +3538,14 @@
     "place": "Research Data and Digital Scholarship Exchange",
     "online": false
    },
-   "chars": 1736,
+   "chars": {
+    "raw": 1736,
+    "visible": 1736
+   },
    "tokens": {
-    "baseline": 637,
-    "system": 1741
+    "baseline": 620,
+    "system_v1": 1785,
+    "system_v2": 1770
    },
    "baseline": {
     "date": "2026-11-23",
@@ -3456,26 +3554,26 @@
     "place": "Research Data and Digital Scholarship Exchange, Van Pelt-Dietrich Library Center",
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-11-23",
     "start": "09:00",
     "end": "10:00",
     "place": "Research Data and Digital Scholarship Exchange",
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
+    "date": "2026-11-23",
+    "start": "09:00",
+    "end": "10:00",
+    "place": "Research Data and Digital Scholarship Exchange, Van Pelt-Dietrich Library Center",
+    "online": true
+   },
+   "system_v2": {
     "date": "2026-11-23",
     "start": "09:00",
     "end": "10:00",
     "place": "Research Data and Digital Scholarship Exchange",
     "online": true
-   },
-   "gate": {
-    "date": 0.985,
-    "start": 0.99,
-    "end": 0.982,
-    "place": 0.971,
-    "online": 0.961
    }
   },
   {
@@ -3491,10 +3589,14 @@
     "place": "Kislak Center Class of 1978 Orrery Pavilion, 6th Floor",
     "online": false
    },
-   "chars": 3145,
+   "chars": {
+    "raw": 3141,
+    "visible": 3020
+   },
    "tokens": {
     "baseline": 1831,
-    "system": 4148
+    "system_v1": 4247,
+    "system_v2": 4124
    },
    "baseline": {
     "date": "2026-12-01",
@@ -3503,26 +3605,26 @@
     "place": "Kislak Center Class of 1978 Orrery Pavilion, 6th Floor, Van Pelt-Dietrich Library Center",
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-01",
     "start": "17:30",
     "end": "19:30",
     "place": "Kislak Center Class of 1978 Orrery Pavilion, 6th Floor",
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
+    "date": "2026-12-01",
+    "start": "17:30",
+    "end": "19:30",
+    "place": "Kislak Center Class of 1978 Orrery Pavilion, 6th Floor, Van Pelt-Dietrich Library Center",
+    "online": false
+   },
+   "system_v2": {
     "date": "2026-12-01",
     "start": "17:30",
     "end": "19:30",
     "place": "Kislak Center Class of 1978 Orrery Pavilion, 6th Floor",
-    "online": true
-   },
-   "gate": {
-    "date": 0.99,
-    "start": 0.976,
-    "end": 0.976,
-    "place": 0.962,
-    "online": 0.973
+    "online": false
    }
   },
   {
@@ -3538,38 +3640,42 @@
     "place": "Fairchild Classroom (Vet) Hill 234",
     "online": false
    },
-   "chars": 1608,
+   "chars": {
+    "raw": 1605,
+    "visible": 1484
+   },
    "tokens": {
-    "baseline": 616,
-    "system": 1806
+    "baseline": 617,
+    "system_v1": 1774,
+    "system_v2": 1694
    },
    "baseline": {
     "date": "2026-12-16",
     "start": "12:00",
     "end": "13:00",
-    "place": "Fairchild Classroom (Vet) Hill 234",
+    "place": "Fairchild Classroom (Vet) Hill 234, Veterinary Library",
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-16",
     "start": "12:00",
     "end": "13:00",
     "place": "Fairchild Classroom (Vet) Hill 234",
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-16",
     "start": "12:00",
     "end": "13:00",
     "place": "Fairchild Classroom (Vet) Hill 234",
-    "online": true
+    "online": false
    },
-   "gate": {
-    "date": 0.99,
-    "start": 0.985,
-    "end": 0.99,
-    "place": 0.986,
-    "online": 0.846
+   "system_v2": {
+    "date": "2026-12-16",
+    "start": "12:00",
+    "end": "13:00",
+    "place": "Fairchild Classroom (Vet) Hill 234",
+    "online": false
    }
   },
   {
@@ -3587,38 +3693,42 @@
     "place": "RDDSx nook",
     "online": false
    },
-   "chars": 2662,
+   "chars": {
+    "raw": 2659,
+    "visible": 2538
+   },
    "tokens": {
-    "baseline": 781,
-    "system": 2168
+    "baseline": 779,
+    "system_v1": 2092,
+    "system_v2": 2032
    },
    "baseline": {
     "date": "2026-12-01",
     "start": "13:00",
     "end": "15:00",
-    "place": "Van Pelt-Dietrich Library Center, RDDSx nook",
+    "place": "RDDSx nook, Van Pelt-Dietrich Library Center",
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-01",
     "start": "13:00",
     "end": "15:00",
     "place": "RDDSx nook",
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
+    "date": "2026-12-01",
+    "start": "13:00",
+    "end": "15:00",
+    "place": "RDDSx nook, Van Pelt-Dietrich Library Center",
+    "online": false
+   },
+   "system_v2": {
     "date": "2026-12-01",
     "start": "13:00",
     "end": "15:00",
     "place": "RDDSx nook",
-    "online": true
-   },
-   "gate": {
-    "date": 0.985,
-    "start": 0.985,
-    "end": 0.99,
-    "place": 0.967,
-    "online": 0.97
+    "online": false
    }
   },
   {
@@ -3636,10 +3746,14 @@
     "place": "Online",
     "online": false
    },
-   "chars": 1356,
+   "chars": {
+    "raw": 1353,
+    "visible": 1232
+   },
    "tokens": {
-    "baseline": 564,
-    "system": 1617
+    "baseline": 562,
+    "system_v1": 1521,
+    "system_v2": 1479
    },
    "baseline": {
     "date": "2026-11-30",
@@ -3648,25 +3762,26 @@
     "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-11-30",
     "start": "11:00",
     "end": "12:00",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
+    "date": "2026-11-30",
+    "start": "11:00",
+    "end": "12:00",
+    "place": "Online",
+    "online": true
+   },
+   "system_v2": {
     "date": "2026-11-30",
     "start": "11:00",
     "end": "12:00",
     "place": null,
     "online": true
-   },
-   "gate": {
-    "date": 0.988,
-    "start": 0.988,
-    "end": 0.987,
-    "online": 0.989
    }
   },
   {
@@ -3686,10 +3801,14 @@
     "place": null,
     "online": true
    },
-   "chars": 1485,
+   "chars": {
+    "raw": 1482,
+    "visible": 1361
+   },
    "tokens": {
-    "baseline": 592,
-    "system": 1547
+    "baseline": 590,
+    "system_v1": 1611,
+    "system_v2": 1546
    },
    "baseline": {
     "date": "2026-12-09",
@@ -3698,25 +3817,26 @@
     "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-09",
     "start": "12:30",
     "end": "13:00",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-09",
     "start": "12:30",
     "end": "13:00",
     "place": null,
     "online": true
    },
-   "gate": {
-    "date": 0.99,
-    "start": 0.987,
-    "end": 0.99,
-    "online": 0.99
+   "system_v2": {
+    "date": "2026-12-09",
+    "start": "12:30",
+    "end": "13:00",
+    "place": null,
+    "online": true
    }
   },
   {
@@ -3734,10 +3854,14 @@
     "place": "Online",
     "online": false
    },
-   "chars": 1328,
+   "chars": {
+    "raw": 1325,
+    "visible": 1204
+   },
    "tokens": {
-    "baseline": 550,
-    "system": 1531
+    "baseline": 548,
+    "system_v1": 1508,
+    "system_v2": 1489
    },
    "baseline": {
     "date": "2026-12-07",
@@ -3746,25 +3870,26 @@
     "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-07",
     "start": "11:00",
     "end": "12:00",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-07",
     "start": "11:00",
     "end": "12:00",
     "place": null,
     "online": true
    },
-   "gate": {
-    "date": 0.986,
-    "start": 0.988,
-    "end": 0.99,
-    "online": 0.98
+   "system_v2": {
+    "date": "2026-12-07",
+    "start": "11:00",
+    "end": "12:00",
+    "place": null,
+    "online": true
    }
   },
   {
@@ -3783,10 +3908,14 @@
     "place": null,
     "online": true
    },
-   "chars": 2118,
+   "chars": {
+    "raw": 2115,
+    "visible": 1994
+   },
    "tokens": {
-    "baseline": 716,
-    "system": 1848
+    "baseline": 731,
+    "system_v1": 1834,
+    "system_v2": 1857
    },
    "baseline": {
     "date": "2026-12-03",
@@ -3795,25 +3924,26 @@
     "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-03",
     "start": "12:00",
     "end": "12:30",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-03",
     "start": "12:00",
     "end": "12:30",
     "place": null,
     "online": true
    },
-   "gate": {
-    "date": 0.977,
-    "start": 0.98,
-    "end": 0.967,
-    "online": 0.986
+   "system_v2": {
+    "date": "2026-12-03",
+    "start": "12:00",
+    "end": "12:30",
+    "place": null,
+    "online": true
    }
   },
   {
@@ -3833,10 +3963,14 @@
     "place": null,
     "online": true
    },
-   "chars": 1546,
+   "chars": {
+    "raw": 1543,
+    "visible": 1422
+   },
    "tokens": {
-    "baseline": 619,
-    "system": 1603
+    "baseline": 617,
+    "system_v1": 1669,
+    "system_v2": 1615
    },
    "baseline": {
     "date": "2026-11-25",
@@ -3845,25 +3979,26 @@
     "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-11-25",
     "start": "12:30",
     "end": "13:00",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-11-25",
     "start": "12:30",
     "end": "13:00",
     "place": null,
     "online": true
    },
-   "gate": {
-    "date": 0.99,
-    "start": 0.986,
-    "end": 0.99,
-    "online": 0.99
+   "system_v2": {
+    "date": "2026-11-25",
+    "start": "12:30",
+    "end": "13:00",
+    "place": null,
+    "online": true
    }
   },
   {
@@ -3881,10 +4016,14 @@
     "place": "RDDSx nook",
     "online": false
    },
-   "chars": 2618,
+   "chars": {
+    "raw": 2615,
+    "visible": 2494
+   },
    "tokens": {
-    "baseline": 764,
-    "system": 2165
+    "baseline": 762,
+    "system_v1": 2090,
+    "system_v2": 1963
    },
    "baseline": {
     "date": "2026-12-08",
@@ -3893,26 +4032,26 @@
     "place": "RDDSx nook, Van Pelt-Dietrich Library Center",
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-08",
     "start": "13:00",
     "end": "15:00",
     "place": "RDDSx nook",
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
+    "date": "2026-12-08",
+    "start": "13:00",
+    "end": "15:00",
+    "place": "RDDSx nook, Van Pelt-Dietrich Library Center",
+    "online": false
+   },
+   "system_v2": {
     "date": "2026-12-08",
     "start": "13:00",
     "end": "15:00",
     "place": "RDDSx nook",
-    "online": true
-   },
-   "gate": {
-    "date": 0.974,
-    "start": 0.982,
-    "end": 0.987,
-    "place": 0.981,
-    "online": 0.98
+    "online": false
    }
   },
   {
@@ -3932,10 +4071,14 @@
     "place": null,
     "online": true
    },
-   "chars": 1856,
+   "chars": {
+    "raw": 1853,
+    "visible": 1732
+   },
    "tokens": {
-    "baseline": 772,
-    "system": 1908
+    "baseline": 770,
+    "system_v1": 1967,
+    "system_v2": 1907
    },
    "baseline": {
     "date": "2027-01-13",
@@ -3944,25 +4087,26 @@
     "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2027-01-13",
     "start": "12:30",
     "end": "13:00",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
+    "date": "2027-01-13",
+    "start": "12:30",
+    "end": "13:00",
+    "place": "Online",
+    "online": true
+   },
+   "system_v2": {
     "date": "2027-01-13",
     "start": "12:30",
     "end": "13:00",
     "place": null,
     "online": true
-   },
-   "gate": {
-    "date": 0.99,
-    "start": 0.989,
-    "end": 0.99,
-    "online": 0.99
    }
   },
   {
@@ -3982,37 +4126,42 @@
     "place": null,
     "online": true
    },
-   "chars": 1452,
+   "chars": {
+    "raw": 1449,
+    "visible": 1328
+   },
    "tokens": {
-    "baseline": 576,
-    "system": 1507
+    "baseline": 580,
+    "system_v1": 1576,
+    "system_v2": 1450
    },
    "baseline": {
     "date": "2026-12-16",
     "start": "14:30",
     "end": "15:00",
-    "place": null,
+    "place": "Online",
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-16",
     "start": "14:30",
     "end": "15:00",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
+    "date": "2026-12-16",
+    "start": "14:30",
+    "end": "15:00",
+    "place": "Zoom",
+    "online": true
+   },
+   "system_v2": {
     "date": "2026-12-16",
     "start": "14:30",
     "end": "15:00",
     "place": null,
     "online": true
-   },
-   "gate": {
-    "date": 0.99,
-    "start": 0.99,
-    "end": 0.983,
-    "online": 0.98
    }
   },
   {
@@ -4030,10 +4179,14 @@
     "place": "Research Data and Digital Scholarship Exchange",
     "online": false
    },
-   "chars": 1392,
+   "chars": {
+    "raw": 1389,
+    "visible": 1268
+   },
    "tokens": {
-    "baseline": 576,
-    "system": 1862
+    "baseline": 574,
+    "system_v1": 1807,
+    "system_v2": 1521
    },
    "baseline": {
     "date": "2026-11-25",
@@ -4042,25 +4195,26 @@
     "place": "Research Data and Digital Scholarship Exchange, Van Pelt-Dietrich Library Center",
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-11-25",
     "start": "16:00",
     "end": "17:00",
-    "place": null,
+    "place": "Research Data and Digital Scholarship Exchange",
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-11-25",
     "start": "16:00",
     "end": "17:00",
-    "place": null,
-    "online": true
+    "place": "Research Data and Digital Scholarship Exchange, Van Pelt-Dietrich Library Center",
+    "online": false
    },
-   "gate": {
-    "date": 0.99,
-    "start": 0.983,
-    "end": 0.989,
-    "online": 0.978
+   "system_v2": {
+    "date": "2026-11-25",
+    "start": "16:00",
+    "end": "17:00",
+    "place": "Research Data and Digital Scholarship Exchange",
+    "online": false
    }
   },
   {
@@ -4078,10 +4232,14 @@
     "place": "Research Data and Digital Scholarship Exchange",
     "online": false
    },
-   "chars": 1681,
+   "chars": {
+    "raw": 1681,
+    "visible": 1681
+   },
    "tokens": {
     "baseline": 591,
-    "system": 1684
+    "system_v1": 1698,
+    "system_v2": 1691
    },
    "baseline": {
     "date": "2026-12-08",
@@ -4090,26 +4248,26 @@
     "place": "Research Data and Digital Scholarship Exchange, Van Pelt-Dietrich Library Center",
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-08",
     "start": "14:00",
     "end": "15:00",
     "place": "Research Data and Digital Scholarship Exchange",
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
+    "date": "2026-12-08",
+    "start": "14:00",
+    "end": "15:00",
+    "place": "Research Data and Digital Scholarship Exchange, Van Pelt-Dietrich Library Center",
+    "online": true
+   },
+   "system_v2": {
     "date": "2026-12-08",
     "start": "14:00",
     "end": "15:00",
     "place": "Research Data and Digital Scholarship Exchange",
     "online": true
-   },
-   "gate": {
-    "date": 0.986,
-    "start": 0.99,
-    "end": 0.99,
-    "place": 0.956,
-    "online": 0.963
    }
   },
   {
@@ -4125,38 +4283,42 @@
     "place": "Fisher B Level Seminar Room",
     "online": false
    },
-   "chars": 1981,
+   "chars": {
+    "raw": 1978,
+    "visible": 1857
+   },
    "tokens": {
-    "baseline": 725,
-    "system": 2011
+    "baseline": 701,
+    "system_v1": 1981,
+    "system_v2": 1794
    },
    "baseline": {
     "date": "2026-12-03",
     "start": "10:00",
     "end": "12:00",
-    "place": "Fisher Fine Arts Library, Fisher B Level Seminar Room",
+    "place": "Fisher B Level Seminar Room",
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-03",
     "start": "10:00",
     "end": "12:00",
     "place": "Fisher B Level Seminar Room",
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
+    "date": "2026-12-03",
+    "start": "10:00",
+    "end": "12:00",
+    "place": "Fisher B Level Seminar Room, Fisher Fine Arts Library",
+    "online": false
+   },
+   "system_v2": {
     "date": "2026-12-03",
     "start": "10:00",
     "end": "12:00",
     "place": "Fisher B Level Seminar Room",
-    "online": true
-   },
-   "gate": {
-    "date": 0.988,
-    "start": 0.985,
-    "end": 0.988,
-    "place": 0.968,
-    "online": 0.712
+    "online": false
    }
   },
   {
@@ -4172,10 +4334,14 @@
     "place": "Common Press",
     "online": false
    },
-   "chars": 3153,
+   "chars": {
+    "raw": 3150,
+    "visible": 3029
+   },
    "tokens": {
-    "baseline": 889,
-    "system": 2385
+    "baseline": 904,
+    "system_v1": 2392,
+    "system_v2": 2170
    },
    "baseline": {
     "date": "2026-11-24",
@@ -4184,26 +4350,26 @@
     "place": "Common Press, Fisher Fine Arts Library",
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-11-24",
     "start": "14:00",
     "end": "16:00",
     "place": "Common Press",
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
+    "date": "2026-11-24",
+    "start": "14:00",
+    "end": "16:00",
+    "place": "Common Press, Fisher Fine Arts Library",
+    "online": false
+   },
+   "system_v2": {
     "date": "2026-11-24",
     "start": "14:00",
     "end": "16:00",
     "place": "Common Press",
-    "online": true
-   },
-   "gate": {
-    "date": 0.985,
-    "start": 0.976,
-    "end": 0.99,
-    "place": 0.979,
-    "online": 0.955
+    "online": false
    }
   },
   {
@@ -4221,38 +4387,42 @@
     "place": "Yablon Financial Resources Lab, room 244",
     "online": false
    },
-   "chars": 1998,
+   "chars": {
+    "raw": 1995,
+    "visible": 1874
+   },
    "tokens": {
-    "baseline": 792,
-    "system": 2157
+    "baseline": 791,
+    "system_v1": 2159,
+    "system_v2": 2025
    },
    "baseline": {
     "date": "2026-12-02",
     "start": "15:30",
     "end": "16:30",
+    "place": "Lippincott Library, Yablon Financial Resources Lab, room 244",
+    "online": true
+   },
+   "system_v1": {
+    "date": "2026-12-02",
+    "start": "15:30",
+    "end": "16:30",
+    "place": "Yablon Financial Resources Lab, room 244",
+    "online": true
+   },
+   "baseline_visible": {
+    "date": "2026-12-02",
+    "start": "15:30",
+    "end": "16:30",
     "place": "Yablon Financial Resources Lab, room 244, Lippincott Library",
-    "online": true
+    "online": false
    },
-   "system": {
+   "system_v2": {
     "date": "2026-12-02",
     "start": "15:30",
     "end": "16:30",
     "place": "Yablon Financial Resources Lab, room 244",
-    "online": true
-   },
-   "ungated": {
-    "date": "2026-12-02",
-    "start": "15:30",
-    "end": "16:30",
-    "place": "Yablon Financial Resources Lab, room 244",
-    "online": true
-   },
-   "gate": {
-    "date": 0.965,
-    "start": 0.99,
-    "end": 0.99,
-    "place": 0.972,
-    "online": 0.968
+    "online": false
    }
   },
   {
@@ -4270,38 +4440,42 @@
     "place": "RDDSx nook",
     "online": false
    },
-   "chars": 1823,
+   "chars": {
+    "raw": 1823,
+    "visible": 1823
+   },
    "tokens": {
     "baseline": 630,
-    "system": 1765
+    "system_v1": 1807,
+    "system_v2": 1782
    },
    "baseline": {
+    "date": "2026-12-02",
+    "start": "15:00",
+    "end": "17:00",
+    "place": "Van Pelt-Dietrich Library Center, RDDSx nook",
+    "online": false
+   },
+   "system_v1": {
+    "date": "2026-12-02",
+    "start": "15:00",
+    "end": "17:00",
+    "place": "RDDSx nook",
+    "online": false
+   },
+   "baseline_visible": {
     "date": "2026-12-02",
     "start": "15:00",
     "end": "17:00",
     "place": "RDDSx nook, Van Pelt-Dietrich Library Center",
     "online": false
    },
-   "system": {
+   "system_v2": {
     "date": "2026-12-02",
     "start": "15:00",
     "end": "17:00",
     "place": "RDDSx nook",
     "online": false
-   },
-   "ungated": {
-    "date": "2026-12-02",
-    "start": "15:00",
-    "end": "17:00",
-    "place": "RDDSx nook",
-    "online": false
-   },
-   "gate": {
-    "date": 0.981,
-    "start": 0.989,
-    "end": 0.987,
-    "place": 0.981,
-    "online": 0.032
    }
   },
   {
@@ -4319,37 +4493,42 @@
     "place": "Research Data and Digital Scholarship Exchange",
     "online": false
    },
-   "chars": 1361,
+   "chars": {
+    "raw": 1358,
+    "visible": 1237
+   },
    "tokens": {
-    "baseline": 554,
-    "system": 1710
+    "baseline": 560,
+    "system_v1": 1678,
+    "system_v2": 1534
    },
    "baseline": {
     "date": "2026-12-02",
     "start": "16:00",
     "end": "17:00",
+    "place": "Research Data and Digital Scholarship Exchange, Van Pelt-Dietrich Library Center",
+    "online": true
+   },
+   "system_v1": {
+    "date": "2026-12-02",
+    "start": "16:00",
+    "end": "17:00",
+    "place": null,
+    "online": true
+   },
+   "baseline_visible": {
+    "date": "2026-12-02",
+    "start": "16:00",
+    "end": "17:00",
+    "place": "Research Data and Digital Scholarship Exchange, Van Pelt-Dietrich Library Center",
+    "online": false
+   },
+   "system_v2": {
+    "date": "2026-12-02",
+    "start": "16:00",
+    "end": "17:00",
     "place": "Research Data and Digital Scholarship Exchange",
-    "online": true
-   },
-   "system": {
-    "date": "2026-12-02",
-    "start": "16:00",
-    "end": "17:00",
-    "place": null,
-    "online": true
-   },
-   "ungated": {
-    "date": "2026-12-02",
-    "start": "16:00",
-    "end": "17:00",
-    "place": null,
-    "online": true
-   },
-   "gate": {
-    "date": 0.97,
-    "start": 0.988,
-    "end": 0.99,
-    "online": 0.981
+    "online": false
    }
   },
   {
@@ -4369,10 +4548,14 @@
     "place": null,
     "online": true
    },
-   "chars": 1480,
+   "chars": {
+    "raw": 1477,
+    "visible": 1356
+   },
    "tokens": {
-    "baseline": 587,
-    "system": 1535
+    "baseline": 585,
+    "system_v1": 1592,
+    "system_v2": 1648
    },
    "baseline": {
     "date": "2026-12-09",
@@ -4381,25 +4564,26 @@
     "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-09",
     "start": "12:00",
     "end": "12:30",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-09",
     "start": "12:00",
     "end": "12:30",
     "place": null,
     "online": true
    },
-   "gate": {
-    "date": 0.978,
-    "start": 0.974,
-    "end": 0.982,
-    "online": 0.986
+   "system_v2": {
+    "date": "2026-12-09",
+    "start": "12:00",
+    "end": "12:30",
+    "place": null,
+    "online": true
    }
   },
   {
@@ -4419,10 +4603,14 @@
     "place": null,
     "online": true
    },
-   "chars": 1541,
+   "chars": {
+    "raw": 1538,
+    "visible": 1417
+   },
    "tokens": {
-    "baseline": 614,
-    "system": 1582
+    "baseline": 612,
+    "system_v1": 1655,
+    "system_v2": 1596
    },
    "baseline": {
     "date": "2026-11-25",
@@ -4431,25 +4619,26 @@
     "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-11-25",
     "start": "12:00",
     "end": "12:30",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-11-25",
     "start": "12:00",
     "end": "12:30",
     "place": null,
     "online": true
    },
-   "gate": {
-    "date": 0.99,
-    "start": 0.985,
-    "end": 0.99,
-    "online": 0.985
+   "system_v2": {
+    "date": "2026-11-25",
+    "start": "12:00",
+    "end": "12:30",
+    "place": null,
+    "online": true
    }
   },
   {
@@ -4469,10 +4658,14 @@
     "place": null,
     "online": true
    },
-   "chars": 1399,
+   "chars": {
+    "raw": 1396,
+    "visible": 1275
+   },
    "tokens": {
-    "baseline": 552,
-    "system": 1522
+    "baseline": 550,
+    "system_v1": 1476,
+    "system_v2": 1396
    },
    "baseline": {
     "date": "2026-12-23",
@@ -4481,25 +4674,26 @@
     "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-23",
     "start": "13:00",
     "end": "13:30",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-23",
     "start": "13:00",
     "end": "13:30",
     "place": null,
     "online": true
    },
-   "gate": {
-    "date": 0.989,
-    "start": 0.985,
-    "end": 0.99,
-    "online": 0.99
+   "system_v2": {
+    "date": "2026-12-23",
+    "start": "13:00",
+    "end": "13:30",
+    "place": null,
+    "online": true
    }
   },
   {
@@ -4519,37 +4713,42 @@
     "place": null,
     "online": true
    },
-   "chars": 1851,
+   "chars": {
+    "raw": 1848,
+    "visible": 1727
+   },
    "tokens": {
-    "baseline": 768,
-    "system": 1893
+    "baseline": 765,
+    "system_v1": 1899,
+    "system_v2": 1834
    },
    "baseline": {
     "date": "2027-01-13",
     "start": "12:00",
     "end": "12:30",
-    "place": "Online",
+    "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2027-01-13",
     "start": "12:00",
     "end": "12:30",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2027-01-13",
     "start": "12:00",
     "end": "12:30",
     "place": null,
     "online": true
    },
-   "gate": {
-    "date": 0.984,
-    "start": 0.977,
-    "end": 0.99,
-    "online": 0.99
+   "system_v2": {
+    "date": "2027-01-13",
+    "start": "12:00",
+    "end": "12:30",
+    "place": null,
+    "online": true
    }
   },
   {
@@ -4568,10 +4767,14 @@
     "place": null,
     "online": true
    },
-   "chars": 7164,
+   "chars": {
+    "raw": 7161,
+    "visible": 7040
+   },
    "tokens": {
-    "baseline": 1797,
-    "system": 4093
+    "baseline": 1795,
+    "system_v1": 4045,
+    "system_v2": 3998
    },
    "baseline": {
     "date": "2026-12-17",
@@ -4580,25 +4783,26 @@
     "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-17",
     "start": "16:00",
     "end": "18:00",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
+    "date": "2026-12-17",
+    "start": "16:00",
+    "end": "18:00",
+    "place": "Medical School",
+    "online": true
+   },
+   "system_v2": {
     "date": "2026-12-17",
     "start": "16:00",
     "end": "18:00",
     "place": null,
     "online": true
-   },
-   "gate": {
-    "date": 0.983,
-    "start": 0.987,
-    "end": 0.975,
-    "online": 0.99
    }
   },
   {
@@ -4616,10 +4820,14 @@
     "place": "SHM L 111, Cushing/Whitney Medical Library, 333 Cedar Street",
     "online": false
    },
-   "chars": 6188,
+   "chars": {
+    "raw": 6185,
+    "visible": 6064
+   },
    "tokens": {
-    "baseline": 1703,
-    "system": 4075
+    "baseline": 1701,
+    "system_v1": 4163,
+    "system_v2": 3803
    },
    "baseline": {
     "date": "2026-12-04",
@@ -4628,26 +4836,26 @@
     "place": "SHM L 111, Cushing/Whitney Medical Library, 333 Cedar Street",
     "online": false
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-04",
     "start": "10:00",
     "end": "12:00",
     "place": "SHM L 111, Cushing/Whitney Medical Library, 333 Cedar Street",
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-04",
     "start": "10:00",
     "end": "12:00",
     "place": "SHM L 111, Cushing/Whitney Medical Library, 333 Cedar Street",
-    "online": true
+    "online": false
    },
-   "gate": {
-    "date": 0.971,
-    "start": 0.987,
-    "end": 0.972,
-    "place": 0.971,
-    "online": 0.833
+   "system_v2": {
+    "date": "2026-12-04",
+    "start": "10:00",
+    "end": "12:00",
+    "place": "SHM L 111, Cushing/Whitney Medical Library, 333 Cedar Street",
+    "online": false
    }
   },
   {
@@ -4666,10 +4874,14 @@
     "place": null,
     "online": true
    },
-   "chars": 4797,
+   "chars": {
+    "raw": 4794,
+    "visible": 4673
+   },
    "tokens": {
-    "baseline": 1346,
-    "system": 3136
+    "baseline": 1344,
+    "system_v1": 3112,
+    "system_v2": 3093
    },
    "baseline": {
     "date": "2026-12-20",
@@ -4678,25 +4890,26 @@
     "place": "Medical School",
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-20",
     "start": "13:00",
     "end": "14:00",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-20",
     "start": "13:00",
     "end": "14:00",
     "place": null,
     "online": true
    },
-   "gate": {
-    "date": 0.978,
-    "start": 0.979,
-    "end": 0.988,
-    "online": 0.987
+   "system_v2": {
+    "date": "2026-12-20",
+    "start": "13:00",
+    "end": "14:00",
+    "place": null,
+    "online": true
    }
   },
   {
@@ -4715,10 +4928,14 @@
     "place": null,
     "online": true
    },
-   "chars": 4799,
+   "chars": {
+    "raw": 4796,
+    "visible": 4675
+   },
    "tokens": {
-    "baseline": 1343,
-    "system": 3101
+    "baseline": 1341,
+    "system_v1": 3149,
+    "system_v2": 3100
    },
    "baseline": {
     "date": "2026-12-09",
@@ -4727,25 +4944,26 @@
     "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-09",
     "start": "17:00",
     "end": "18:00",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-09",
     "start": "17:00",
     "end": "18:00",
     "place": null,
     "online": true
    },
-   "gate": {
-    "date": 0.973,
-    "start": 0.975,
-    "end": 0.986,
-    "online": 0.984
+   "system_v2": {
+    "date": "2026-12-09",
+    "start": "17:00",
+    "end": "18:00",
+    "place": null,
+    "online": true
    }
   },
   {
@@ -4764,10 +4982,14 @@
     "place": null,
     "online": true
    },
-   "chars": 4125,
+   "chars": {
+    "raw": 4122,
+    "visible": 4001
+   },
    "tokens": {
-    "baseline": 1183,
-    "system": 2756
+    "baseline": 1181,
+    "system_v1": 2716,
+    "system_v2": 2658
    },
    "baseline": {
     "date": "2026-12-03",
@@ -4776,25 +4998,26 @@
     "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-03",
     "start": "19:30",
     "end": "20:00",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-03",
     "start": "19:30",
     "end": "20:00",
     "place": null,
     "online": true
    },
-   "gate": {
-    "date": 0.976,
-    "start": 0.977,
-    "end": 0.971,
-    "online": 0.99
+   "system_v2": {
+    "date": "2026-12-03",
+    "start": "19:30",
+    "end": "20:00",
+    "place": null,
+    "online": true
    }
   },
   {
@@ -4813,10 +5036,14 @@
     "place": null,
     "online": true
    },
-   "chars": 4797,
+   "chars": {
+    "raw": 4794,
+    "visible": 4673
+   },
    "tokens": {
-    "baseline": 1344,
-    "system": 3150
+    "baseline": 1342,
+    "system_v1": 3112,
+    "system_v2": 3013
    },
    "baseline": {
     "date": "2026-11-30",
@@ -4825,25 +5052,26 @@
     "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-11-30",
     "start": "15:00",
     "end": "16:00",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-11-30",
     "start": "15:00",
     "end": "16:00",
     "place": null,
     "online": true
    },
-   "gate": {
-    "date": 0.971,
-    "start": 0.964,
-    "end": 0.978,
-    "online": 0.982
+   "system_v2": {
+    "date": "2026-11-30",
+    "start": "15:00",
+    "end": "16:00",
+    "place": null,
+    "online": true
    }
   },
   {
@@ -4863,10 +5091,14 @@
     "place": null,
     "online": true
    },
-   "chars": 3616,
+   "chars": {
+    "raw": 3616,
+    "visible": 3560
+   },
    "tokens": {
     "baseline": 1094,
-    "system": 2643
+    "system_v1": 2535,
+    "system_v2": 2675
    },
    "baseline": {
     "date": "2026-12-04",
@@ -4875,25 +5107,26 @@
     "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-04",
     "start": "15:00",
     "end": "16:00",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
+    "date": "2026-12-04",
+    "start": "15:00",
+    "end": "16:00",
+    "place": "Medical School",
+    "online": true
+   },
+   "system_v2": {
     "date": "2026-12-04",
     "start": "15:00",
     "end": "16:00",
     "place": null,
     "online": true
-   },
-   "gate": {
-    "date": 0.966,
-    "start": 0.985,
-    "end": 0.99,
-    "online": 0.987
    }
   },
   {
@@ -4912,10 +5145,14 @@
     "place": null,
     "online": true
    },
-   "chars": 4796,
+   "chars": {
+    "raw": 4793,
+    "visible": 4672
+   },
    "tokens": {
-    "baseline": 1343,
-    "system": 3137
+    "baseline": 1341,
+    "system_v1": 3114,
+    "system_v2": 3058
    },
    "baseline": {
     "date": "2026-12-07",
@@ -4924,25 +5161,26 @@
     "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-07",
     "start": "13:00",
     "end": "14:00",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-07",
     "start": "13:00",
     "end": "14:00",
     "place": null,
     "online": true
    },
-   "gate": {
-    "date": 0.972,
-    "start": 0.981,
-    "end": 0.973,
-    "online": 0.989
+   "system_v2": {
+    "date": "2026-12-07",
+    "start": "13:00",
+    "end": "14:00",
+    "place": null,
+    "online": true
    }
   },
   {
@@ -4961,10 +5199,14 @@
     "place": null,
     "online": true
    },
-   "chars": 6214,
+   "chars": {
+    "raw": 6211,
+    "visible": 6090
+   },
    "tokens": {
-    "baseline": 1565,
-    "system": 3603
+    "baseline": 1563,
+    "system_v1": 3586,
+    "system_v2": 3526
    },
    "baseline": {
     "date": "2026-12-20",
@@ -4973,25 +5215,26 @@
     "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-20",
     "start": "15:00",
     "end": "15:45",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-20",
     "start": "15:00",
     "end": "15:45",
     "place": null,
     "online": true
    },
-   "gate": {
-    "date": 0.972,
-    "start": 0.977,
-    "end": 0.983,
-    "online": 0.981
+   "system_v2": {
+    "date": "2026-12-20",
+    "start": "15:00",
+    "end": "15:45",
+    "place": null,
+    "online": true
    }
   },
   {
@@ -5007,38 +5250,42 @@
     "place": "Haas Arts Library",
     "online": false
    },
-   "chars": 3538,
+   "chars": {
+    "raw": 3538,
+    "visible": 3538
+   },
    "tokens": {
-    "baseline": 1064,
-    "system": 2613
+    "baseline": 1061,
+    "system_v1": 2621,
+    "system_v2": 2526
    },
    "baseline": {
     "date": "2026-12-14",
     "start": "11:00",
     "end": "12:30",
-    "place": "Haas Arts Library, Central Campus",
+    "place": "Haas Arts Library",
     "online": false
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-14",
     "start": "11:00",
     "end": "12:30",
     "place": "Haas Arts Library",
     "online": false
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-14",
     "start": "11:00",
     "end": "12:30",
     "place": "Haas Arts Library",
     "online": false
    },
-   "gate": {
-    "date": 0.975,
-    "start": 0.986,
-    "end": 0.987,
-    "place": 0.975,
-    "online": 0.019
+   "system_v2": {
+    "date": "2026-12-14",
+    "start": "11:00",
+    "end": "12:30",
+    "place": "Haas Arts Library",
+    "online": false
    }
   },
   {
@@ -5057,37 +5304,42 @@
     "place": null,
     "online": true
    },
-   "chars": 4653,
+   "chars": {
+    "raw": 4650,
+    "visible": 4529
+   },
    "tokens": {
-    "baseline": 1353,
-    "system": 3234
+    "baseline": 1349,
+    "system_v1": 3108,
+    "system_v2": 3079
    },
    "baseline": {
     "date": "2026-12-14",
     "start": "12:15",
     "end": "12:45",
-    "place": "Medical School",
+    "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-14",
     "start": "12:15",
     "end": "12:45",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-14",
     "start": "12:15",
     "end": "12:45",
     "place": null,
     "online": true
    },
-   "gate": {
-    "date": 0.968,
-    "start": 0.967,
-    "end": 0.962,
-    "online": 0.96
+   "system_v2": {
+    "date": "2026-12-14",
+    "start": "12:15",
+    "end": "12:45",
+    "place": null,
+    "online": true
    }
   },
   {
@@ -5106,10 +5358,14 @@
     "place": null,
     "online": true
    },
-   "chars": 4311,
+   "chars": {
+    "raw": 4308,
+    "visible": 4187
+   },
    "tokens": {
-    "baseline": 1264,
-    "system": 2927
+    "baseline": 1262,
+    "system_v1": 3004,
+    "system_v2": 2942
    },
    "baseline": {
     "date": "2026-12-07",
@@ -5118,25 +5374,26 @@
     "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-07",
     "start": "10:00",
     "end": "10:45",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-07",
     "start": "10:00",
     "end": "10:45",
     "place": null,
     "online": true
    },
-   "gate": {
-    "date": 0.965,
-    "start": 0.984,
-    "end": 0.969,
-    "online": 0.988
+   "system_v2": {
+    "date": "2026-12-07",
+    "start": "10:00",
+    "end": "10:45",
+    "place": null,
+    "online": true
    }
   },
   {
@@ -5155,37 +5412,42 @@
     "place": null,
     "online": true
    },
-   "chars": 5518,
+   "chars": {
+    "raw": 5515,
+    "visible": 5394
+   },
    "tokens": {
-    "baseline": 1508,
-    "system": 3490
+    "baseline": 1507,
+    "system_v1": 3442,
+    "system_v2": 3401
    },
    "baseline": {
     "date": "2026-12-03",
     "start": "12:00",
     "end": "14:00",
-    "place": null,
+    "place": "Zoom",
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-03",
     "start": "12:00",
     "end": "14:00",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-03",
     "start": "12:00",
     "end": "14:00",
     "place": null,
     "online": true
    },
-   "gate": {
-    "date": 0.984,
-    "start": 0.98,
-    "end": 0.977,
-    "online": 0.983
+   "system_v2": {
+    "date": "2026-12-03",
+    "start": "12:00",
+    "end": "14:00",
+    "place": null,
+    "online": true
    }
   },
   {
@@ -5205,37 +5467,42 @@
     "place": null,
     "online": true
    },
-   "chars": 3589,
+   "chars": {
+    "raw": 3589,
+    "visible": 3561
+   },
    "tokens": {
-    "baseline": 1083,
-    "system": 2656
+    "baseline": 1081,
+    "system_v1": 2700,
+    "system_v2": 2581
    },
    "baseline": {
     "date": "2026-12-11",
     "start": "15:00",
     "end": "16:00",
-    "place": "Medical School",
+    "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-11",
     "start": "15:00",
     "end": "16:00",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-11",
     "start": "15:00",
     "end": "16:00",
     "place": null,
     "online": true
    },
-   "gate": {
-    "date": 0.951,
-    "start": 0.978,
-    "end": 0.982,
-    "online": 0.988
+   "system_v2": {
+    "date": "2026-12-11",
+    "start": "15:00",
+    "end": "16:00",
+    "place": null,
+    "online": true
    }
   },
   {
@@ -5254,10 +5521,14 @@
     "place": null,
     "online": true
    },
-   "chars": 5516,
+   "chars": {
+    "raw": 5513,
+    "visible": 5392
+   },
    "tokens": {
-    "baseline": 1508,
-    "system": 3479
+    "baseline": 1506,
+    "system_v1": 3464,
+    "system_v2": 3383
    },
    "baseline": {
     "date": "2026-12-21",
@@ -5266,25 +5537,26 @@
     "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-21",
     "start": "18:00",
     "end": "20:00",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-21",
     "start": "18:00",
     "end": "20:00",
     "place": null,
     "online": true
    },
-   "gate": {
-    "date": 0.988,
-    "start": 0.979,
-    "end": 0.977,
-    "online": 0.982
+   "system_v2": {
+    "date": "2026-12-21",
+    "start": "18:00",
+    "end": "20:00",
+    "place": null,
+    "online": true
    }
   },
   {
@@ -5300,10 +5572,14 @@
     "place": "SHM L 111, Cushing/Whitney Medical Library, 333 Cedar Street",
     "online": false
    },
-   "chars": 6342,
+   "chars": {
+    "raw": 6339,
+    "visible": 6218
+   },
    "tokens": {
-    "baseline": 1782,
-    "system": 4173
+    "baseline": 1763,
+    "system_v1": 4121,
+    "system_v2": 4034
    },
    "baseline": {
     "date": "2026-12-14",
@@ -5312,26 +5588,26 @@
     "place": "SHM L 111, Cushing/Whitney Medical Library, 333 Cedar Street",
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-14",
     "start": "10:00",
     "end": "12:00",
     "place": "SHM L 111, Cushing/Whitney Medical Library, 333 Cedar Street",
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-14",
     "start": "10:00",
     "end": "12:00",
     "place": "SHM L 111, Cushing/Whitney Medical Library, 333 Cedar Street",
-    "online": true
+    "online": false
    },
-   "gate": {
-    "date": 0.976,
-    "start": 0.988,
-    "end": 0.981,
-    "place": 0.979,
-    "online": 0.894
+   "system_v2": {
+    "date": "2026-12-14",
+    "start": "10:00",
+    "end": "12:00",
+    "place": "SHM L 111, Cushing/Whitney Medical Library, 333 Cedar Street",
+    "online": false
    }
   },
   {
@@ -5350,10 +5626,14 @@
     "place": null,
     "online": true
    },
-   "chars": 6036,
+   "chars": {
+    "raw": 6033,
+    "visible": 5912
+   },
    "tokens": {
-    "baseline": 1578,
-    "system": 3532
+    "baseline": 1576,
+    "system_v1": 3649,
+    "system_v2": 3513
    },
    "baseline": {
     "date": "2026-12-16",
@@ -5362,25 +5642,26 @@
     "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-16",
     "start": "13:00",
     "end": "14:00",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
+    "date": "2026-12-16",
+    "start": "13:00",
+    "end": "14:00",
+    "place": "Medical School",
+    "online": true
+   },
+   "system_v2": {
     "date": "2026-12-16",
     "start": "13:00",
     "end": "14:00",
     "place": null,
     "online": true
-   },
-   "gate": {
-    "date": 0.971,
-    "start": 0.978,
-    "end": 0.983,
-    "online": 0.987
    }
   },
   {
@@ -5400,10 +5681,14 @@
     "place": null,
     "online": true
    },
-   "chars": 3885,
+   "chars": {
+    "raw": 3885,
+    "visible": 3885
+   },
    "tokens": {
     "baseline": 1150,
-    "system": 2735
+    "system_v1": 2673,
+    "system_v2": 2781
    },
    "baseline": {
     "date": "2026-12-17",
@@ -5412,25 +5697,26 @@
     "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-17",
     "start": "12:00",
     "end": "13:00",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
+    "date": "2026-12-17",
+    "start": "12:00",
+    "end": "13:00",
+    "place": "Medical School",
+    "online": true
+   },
+   "system_v2": {
     "date": "2026-12-17",
     "start": "12:00",
     "end": "13:00",
     "place": null,
     "online": true
-   },
-   "gate": {
-    "date": 0.98,
-    "start": 0.971,
-    "end": 0.975,
-    "online": 0.99
    }
   },
   {
@@ -5449,10 +5735,14 @@
     "place": null,
     "online": true
    },
-   "chars": 4798,
+   "chars": {
+    "raw": 4795,
+    "visible": 4674
+   },
    "tokens": {
-    "baseline": 1344,
-    "system": 3128
+    "baseline": 1342,
+    "system_v1": 3140,
+    "system_v2": 3125
    },
    "baseline": {
     "date": "2026-12-15",
@@ -5461,25 +5751,26 @@
     "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-15",
     "start": "17:00",
     "end": "18:00",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-15",
     "start": "17:00",
     "end": "18:00",
     "place": null,
     "online": true
    },
-   "gate": {
-    "date": 0.971,
-    "start": 0.974,
-    "end": 0.985,
-    "online": 0.97
+   "system_v2": {
+    "date": "2026-12-15",
+    "start": "17:00",
+    "end": "18:00",
+    "place": null,
+    "online": true
    }
   },
   {
@@ -5495,38 +5786,42 @@
     "place": "Haas Arts Library",
     "online": false
    },
-   "chars": 3757,
+   "chars": {
+    "raw": 3754,
+    "visible": 3633
+   },
    "tokens": {
-    "baseline": 1114,
-    "system": 2831
+    "baseline": 1109,
+    "system_v1": 2962,
+    "system_v2": 2575
    },
    "baseline": {
     "date": "2026-12-15",
     "start": "12:00",
     "end": "13:00",
-    "place": "Haas Arts Library, Central Campus",
+    "place": "Haas Arts Library",
     "online": false
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-15",
     "start": "12:00",
     "end": "13:00",
     "place": "Haas Arts Library",
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-15",
     "start": "12:00",
     "end": "13:00",
     "place": "Haas Arts Library",
-    "online": true
+    "online": false
    },
-   "gate": {
-    "date": 0.967,
-    "start": 0.977,
-    "end": 0.98,
-    "place": 0.965,
-    "online": 0.734
+   "system_v2": {
+    "date": "2026-12-15",
+    "start": "12:00",
+    "end": "13:00",
+    "place": "Haas Arts Library",
+    "online": false
    }
   },
   {
@@ -5545,10 +5840,14 @@
     "place": null,
     "online": true
    },
-   "chars": 5382,
+   "chars": {
+    "raw": 5379,
+    "visible": 5258
+   },
    "tokens": {
-    "baseline": 1443,
-    "system": 3326
+    "baseline": 1441,
+    "system_v1": 3343,
+    "system_v2": 3286
    },
    "baseline": {
     "date": "2026-12-10",
@@ -5557,25 +5856,26 @@
     "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-10",
     "start": "14:00",
     "end": "15:00",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-10",
     "start": "14:00",
     "end": "15:00",
     "place": null,
     "online": true
    },
-   "gate": {
-    "date": 0.989,
-    "start": 0.983,
-    "end": 0.974,
-    "online": 0.99
+   "system_v2": {
+    "date": "2026-12-10",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
    }
   },
   {
@@ -5595,37 +5895,42 @@
     "place": null,
     "online": true
    },
-   "chars": 4588,
+   "chars": {
+    "raw": 4585,
+    "visible": 4434
+   },
    "tokens": {
-    "baseline": 1331,
-    "system": 3125
+    "baseline": 1327,
+    "system_v1": 3130,
+    "system_v2": 3037
    },
    "baseline": {
     "date": "2026-12-10",
     "start": "12:00",
     "end": "13:00",
-    "place": "Medical School",
+    "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-10",
     "start": "12:00",
     "end": "13:00",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-10",
     "start": "12:00",
     "end": "13:00",
     "place": null,
     "online": true
    },
-   "gate": {
-    "date": 0.947,
-    "start": 0.97,
-    "end": 0.977,
-    "online": 0.985
+   "system_v2": {
+    "date": "2026-12-10",
+    "start": "12:00",
+    "end": "13:00",
+    "place": null,
+    "online": true
    }
   },
   {
@@ -5645,10 +5950,14 @@
     "place": null,
     "online": true
    },
-   "chars": 3543,
+   "chars": {
+    "raw": 3543,
+    "visible": 3543
+   },
    "tokens": {
-    "baseline": 1079,
-    "system": 2565
+    "baseline": 1062,
+    "system_v1": 2488,
+    "system_v2": 2555
    },
    "baseline": {
     "date": "2026-12-18",
@@ -5657,25 +5966,26 @@
     "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-18",
     "start": "15:00",
     "end": "16:00",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-18",
     "start": "15:00",
     "end": "16:00",
     "place": null,
     "online": true
    },
-   "gate": {
-    "date": 0.989,
-    "start": 0.99,
-    "end": 0.983,
-    "online": 0.99
+   "system_v2": {
+    "date": "2026-12-18",
+    "start": "15:00",
+    "end": "16:00",
+    "place": null,
+    "online": true
    }
   },
   {
@@ -5694,37 +6004,42 @@
     "place": null,
     "online": true
    },
-   "chars": 5624,
+   "chars": {
+    "raw": 5621,
+    "visible": 5500
+   },
    "tokens": {
-    "baseline": 1502,
-    "system": 3462
+    "baseline": 1498,
+    "system_v1": 3446,
+    "system_v2": 3393
    },
    "baseline": {
     "date": "2026-11-23",
     "start": "13:00",
     "end": "14:00",
-    "place": "Medical School",
+    "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-11-23",
     "start": "13:00",
     "end": "14:00",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-11-23",
     "start": "13:00",
     "end": "14:00",
     "place": null,
     "online": true
    },
-   "gate": {
-    "date": 0.964,
-    "start": 0.974,
-    "end": 0.987,
-    "online": 0.983
+   "system_v2": {
+    "date": "2026-11-23",
+    "start": "13:00",
+    "end": "14:00",
+    "place": null,
+    "online": true
    }
   },
   {
@@ -5740,10 +6055,14 @@
     "place": "SHM L 111, Cushing/Whitney Medical Library, 333 Cedar Street",
     "online": false
    },
-   "chars": 6002,
+   "chars": {
+    "raw": 5999,
+    "visible": 5878
+   },
    "tokens": {
-    "baseline": 1585,
-    "system": 3742
+    "baseline": 1600,
+    "system_v1": 3775,
+    "system_v2": 3653
    },
    "baseline": {
     "date": "2026-12-17",
@@ -5752,26 +6071,26 @@
     "place": "SHM L 111, Cushing/Whitney Medical Library, 333 Cedar Street",
     "online": false
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-17",
     "start": "10:00",
     "end": "12:00",
     "place": "SHM L 111, Cushing/Whitney Medical Library, 333 Cedar Street",
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-17",
     "start": "10:00",
     "end": "12:00",
     "place": "SHM L 111, Cushing/Whitney Medical Library, 333 Cedar Street",
-    "online": true
+    "online": false
    },
-   "gate": {
-    "date": 0.97,
-    "start": 0.99,
-    "end": 0.985,
-    "place": 0.971,
-    "online": 0.918
+   "system_v2": {
+    "date": "2026-12-17",
+    "start": "10:00",
+    "end": "12:00",
+    "place": "SHM L 111, Cushing/Whitney Medical Library, 333 Cedar Street",
+    "online": false
    }
   },
   {
@@ -5790,10 +6109,14 @@
     "place": null,
     "online": true
    },
-   "chars": 4543,
+   "chars": {
+    "raw": 4543,
+    "visible": 4543
+   },
    "tokens": {
     "baseline": 1188,
-    "system": 2731
+    "system_v1": 2804,
+    "system_v2": 2786
    },
    "baseline": {
     "date": "2026-12-10",
@@ -5802,25 +6125,26 @@
     "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-10",
     "start": "14:00",
     "end": "15:00",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-10",
     "start": "14:00",
     "end": "15:00",
     "place": null,
     "online": true
    },
-   "gate": {
-    "date": 0.981,
-    "start": 0.976,
-    "end": 0.977,
-    "online": 0.983
+   "system_v2": {
+    "date": "2026-12-10",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
    }
   },
   {
@@ -5839,10 +6163,14 @@
     "place": null,
     "online": true
    },
-   "chars": 3542,
+   "chars": {
+    "raw": 3539,
+    "visible": 3418
+   },
    "tokens": {
-    "baseline": 998,
-    "system": 2345
+    "baseline": 996,
+    "system_v1": 2413,
+    "system_v2": 2311
    },
    "baseline": {
     "date": "2026-12-02",
@@ -5851,25 +6179,26 @@
     "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-02",
     "start": "13:00",
     "end": "14:00",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-02",
     "start": "13:00",
     "end": "14:00",
     "place": null,
     "online": true
    },
-   "gate": {
-    "date": 0.981,
-    "start": 0.978,
-    "end": 0.985,
-    "online": 0.989
+   "system_v2": {
+    "date": "2026-12-02",
+    "start": "13:00",
+    "end": "14:00",
+    "place": null,
+    "online": true
    }
   },
   {
@@ -5888,10 +6217,14 @@
     "place": null,
     "online": true
    },
-   "chars": 2555,
+   "chars": {
+    "raw": 2555,
+    "visible": 2555
+   },
    "tokens": {
     "baseline": 791,
-    "system": 1972
+    "system_v1": 2058,
+    "system_v2": 1980
    },
    "baseline": {
     "date": "2026-11-24",
@@ -5900,25 +6233,26 @@
     "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-11-24",
     "start": "16:00",
     "end": "18:00",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-11-24",
     "start": "16:00",
     "end": "18:00",
     "place": null,
     "online": true
    },
-   "gate": {
-    "date": 0.99,
-    "start": 0.984,
-    "end": 0.99,
-    "online": 0.983
+   "system_v2": {
+    "date": "2026-11-24",
+    "start": "16:00",
+    "end": "18:00",
+    "place": null,
+    "online": true
    }
   },
   {
@@ -5937,10 +6271,14 @@
     "place": null,
     "online": true
    },
-   "chars": 3727,
+   "chars": {
+    "raw": 3724,
+    "visible": 3603
+   },
    "tokens": {
-    "baseline": 1082,
-    "system": 2529
+    "baseline": 1080,
+    "system_v1": 2615,
+    "system_v2": 2562
    },
    "baseline": {
     "date": "2027-03-31",
@@ -5949,25 +6287,26 @@
     "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2027-03-31",
     "start": "14:00",
     "end": "15:00",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2027-03-31",
     "start": "14:00",
     "end": "15:00",
     "place": null,
     "online": true
    },
-   "gate": {
-    "date": 0.982,
-    "start": 0.974,
-    "end": 0.99,
-    "online": 0.984
+   "system_v2": {
+    "date": "2027-03-31",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
    }
   },
   {
@@ -5986,10 +6325,14 @@
     "place": null,
     "online": true
    },
-   "chars": 3727,
+   "chars": {
+    "raw": 3724,
+    "visible": 3603
+   },
    "tokens": {
-    "baseline": 1083,
-    "system": 2604
+    "baseline": 1081,
+    "system_v1": 2637,
+    "system_v2": 2633
    },
    "baseline": {
     "date": "2027-03-10",
@@ -5998,25 +6341,26 @@
     "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2027-03-10",
     "start": "15:30",
     "end": "17:00",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2027-03-10",
     "start": "15:30",
     "end": "17:00",
     "place": null,
     "online": true
    },
-   "gate": {
-    "date": 0.978,
-    "start": 0.981,
-    "end": 0.989,
-    "online": 0.983
+   "system_v2": {
+    "date": "2027-03-10",
+    "start": "15:30",
+    "end": "17:00",
+    "place": null,
+    "online": true
    }
   },
   {
@@ -6035,10 +6379,14 @@
     "place": null,
     "online": true
    },
-   "chars": 3316,
+   "chars": {
+    "raw": 3313,
+    "visible": 3192
+   },
    "tokens": {
-    "baseline": 1002,
-    "system": 2468
+    "baseline": 1000,
+    "system_v1": 2420,
+    "system_v2": 2398
    },
    "baseline": {
     "date": "2027-02-23",
@@ -6047,25 +6395,26 @@
     "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2027-02-23",
     "start": "14:00",
     "end": "15:00",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2027-02-23",
     "start": "14:00",
     "end": "15:00",
     "place": null,
     "online": true
    },
-   "gate": {
-    "date": 0.981,
-    "start": 0.983,
-    "end": 0.984,
-    "online": 0.989
+   "system_v2": {
+    "date": "2027-02-23",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
    }
   },
   {
@@ -6084,10 +6433,14 @@
     "place": null,
     "online": true
    },
-   "chars": 3352,
+   "chars": {
+    "raw": 3349,
+    "visible": 3228
+   },
    "tokens": {
-    "baseline": 1007,
-    "system": 2427
+    "baseline": 1005,
+    "system_v1": 2424,
+    "system_v2": 2315
    },
    "baseline": {
     "date": "2027-03-02",
@@ -6096,25 +6449,26 @@
     "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2027-03-02",
     "start": "14:00",
     "end": "15:00",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2027-03-02",
     "start": "14:00",
     "end": "15:00",
     "place": null,
     "online": true
    },
-   "gate": {
-    "date": 0.986,
-    "start": 0.984,
-    "end": 0.985,
-    "online": 0.983
+   "system_v2": {
+    "date": "2027-03-02",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
    }
   },
   {
@@ -6133,10 +6487,14 @@
     "place": null,
     "online": true
    },
-   "chars": 3512,
+   "chars": {
+    "raw": 3509,
+    "visible": 3388
+   },
    "tokens": {
-    "baseline": 1026,
-    "system": 2401
+    "baseline": 1024,
+    "system_v1": 2459,
+    "system_v2": 2430
    },
    "baseline": {
     "date": "2026-11-23",
@@ -6145,25 +6503,26 @@
     "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-11-23",
     "start": "12:00",
     "end": "13:00",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-11-23",
     "start": "12:00",
     "end": "13:00",
     "place": null,
     "online": true
    },
-   "gate": {
-    "date": 0.986,
-    "start": 0.968,
-    "end": 0.971,
-    "online": 0.981
+   "system_v2": {
+    "date": "2026-11-23",
+    "start": "12:00",
+    "end": "13:00",
+    "place": null,
+    "online": true
    }
   },
   {
@@ -6181,10 +6540,14 @@
     "place": "Alexander Library Digital Humanities Lab, Rm. 406-407",
     "online": true
    },
-   "chars": 3474,
+   "chars": {
+    "raw": 3471,
+    "visible": 3350
+   },
    "tokens": {
-    "baseline": 1023,
-    "system": 2614
+    "baseline": 1021,
+    "system_v1": 2597,
+    "system_v2": 2543
    },
    "baseline": {
     "date": "2026-12-02",
@@ -6193,26 +6556,26 @@
     "place": "Alexander Library Digital Humanities Lab, Rm. 406-407",
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-02",
     "start": "10:00",
     "end": "11:30",
     "place": "Alexander Library Digital Humanities Lab, Rm. 406-407",
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-02",
     "start": "10:00",
     "end": "11:30",
     "place": "Alexander Library Digital Humanities Lab, Rm. 406-407",
     "online": true
    },
-   "gate": {
-    "date": 0.985,
-    "start": 0.99,
-    "end": 0.989,
-    "place": 0.973,
-    "online": 0.972
+   "system_v2": {
+    "date": "2026-12-02",
+    "start": "10:00",
+    "end": "11:30",
+    "place": "Alexander Library Digital Humanities Lab, Rm. 406-407",
+    "online": true
    }
   },
   {
@@ -6231,10 +6594,14 @@
     "place": null,
     "online": true
    },
-   "chars": 3302,
+   "chars": {
+    "raw": 3303,
+    "visible": 3182
+   },
    "tokens": {
-    "baseline": 1000,
-    "system": 2428
+    "baseline": 998,
+    "system_v1": 2432,
+    "system_v2": 2404
    },
    "baseline": {
     "date": "2027-02-17",
@@ -6243,25 +6610,26 @@
     "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2027-02-17",
     "start": "15:30",
     "end": "17:00",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2027-02-17",
     "start": "15:30",
     "end": "17:00",
     "place": null,
     "online": true
    },
-   "gate": {
-    "date": 0.983,
-    "start": 0.983,
-    "end": 0.988,
-    "online": 0.986
+   "system_v2": {
+    "date": "2027-02-17",
+    "start": "15:30",
+    "end": "17:00",
+    "place": null,
+    "online": true
    }
   },
   {
@@ -6280,10 +6648,14 @@
     "place": null,
     "online": true
    },
-   "chars": 4994,
+   "chars": {
+    "raw": 4994,
+    "visible": 4994
+   },
    "tokens": {
-    "baseline": 1369,
-    "system": 3088
+    "baseline": 1386,
+    "system_v1": 3155,
+    "system_v2": 3099
    },
    "baseline": {
     "date": "2026-12-15",
@@ -6292,25 +6664,26 @@
     "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-15",
     "start": "14:00",
     "end": "15:00",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-15",
     "start": "14:00",
     "end": "15:00",
     "place": null,
     "online": true
    },
-   "gate": {
-    "date": 0.984,
-    "start": 0.99,
-    "end": 0.99,
-    "online": 0.989
+   "system_v2": {
+    "date": "2026-12-15",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
    }
   },
   {
@@ -6326,10 +6699,14 @@
     "place": "Library of Science and Medicine (LSM)",
     "online": false
    },
-   "chars": 2371,
+   "chars": {
+    "raw": 2371,
+    "visible": 2371
+   },
    "tokens": {
     "baseline": 764,
-    "system": 2016
+    "system_v1": 2042,
+    "system_v2": 1950
    },
    "baseline": {
     "date": "2026-12-14",
@@ -6338,26 +6715,26 @@
     "place": "Library of Science and Medicine (LSM)",
     "online": false
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-14",
     "start": "13:00",
     "end": "15:00",
     "place": "Library of Science and Medicine (LSM)",
     "online": false
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-14",
     "start": "13:00",
     "end": "15:00",
     "place": "Library of Science and Medicine (LSM)",
     "online": false
    },
-   "gate": {
-    "date": 0.99,
-    "start": 0.98,
-    "end": 0.981,
-    "place": 0.961,
-    "online": 0.012
+   "system_v2": {
+    "date": "2026-12-14",
+    "start": "13:00",
+    "end": "15:00",
+    "place": "Library of Science and Medicine (LSM)",
+    "online": false
    }
   },
   {
@@ -6376,10 +6753,14 @@
     "place": null,
     "online": true
    },
-   "chars": 2774,
+   "chars": {
+    "raw": 2775,
+    "visible": 2654
+   },
    "tokens": {
-    "baseline": 858,
-    "system": 2229
+    "baseline": 856,
+    "system_v1": 2117,
+    "system_v2": 2084
    },
    "baseline": {
     "date": "2026-12-04",
@@ -6388,25 +6769,26 @@
     "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-04",
     "start": "16:00",
     "end": "17:00",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-04",
     "start": "16:00",
     "end": "17:00",
     "place": null,
     "online": true
    },
-   "gate": {
-    "date": 0.984,
-    "start": 0.98,
-    "end": 0.99,
-    "online": 0.989
+   "system_v2": {
+    "date": "2026-12-04",
+    "start": "16:00",
+    "end": "17:00",
+    "place": null,
+    "online": true
    }
   },
   {
@@ -6425,10 +6807,14 @@
     "place": null,
     "online": true
    },
-   "chars": 3357,
+   "chars": {
+    "raw": 3358,
+    "visible": 3237
+   },
    "tokens": {
-    "baseline": 1008,
-    "system": 2420
+    "baseline": 1006,
+    "system_v1": 2420,
+    "system_v2": 2366
    },
    "baseline": {
     "date": "2027-02-03",
@@ -6437,25 +6823,26 @@
     "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2027-02-03",
     "start": "15:30",
     "end": "17:00",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2027-02-03",
     "start": "15:30",
     "end": "17:00",
     "place": null,
     "online": true
    },
-   "gate": {
-    "date": 0.988,
-    "start": 0.983,
-    "end": 0.99,
-    "online": 0.99
+   "system_v2": {
+    "date": "2027-02-03",
+    "start": "15:30",
+    "end": "17:00",
+    "place": null,
+    "online": true
    }
   },
   {
@@ -6474,10 +6861,14 @@
     "place": null,
     "online": true
    },
-   "chars": 3291,
+   "chars": {
+    "raw": 3292,
+    "visible": 3171
+   },
    "tokens": {
-    "baseline": 1006,
-    "system": 2375
+    "baseline": 1004,
+    "system_v1": 2418,
+    "system_v2": 2384
    },
    "baseline": {
     "date": "2027-03-30",
@@ -6486,25 +6877,26 @@
     "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2027-03-30",
     "start": "14:00",
     "end": "15:00",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2027-03-30",
     "start": "14:00",
     "end": "15:00",
     "place": null,
     "online": true
    },
-   "gate": {
-    "date": 0.985,
-    "start": 0.985,
-    "end": 0.99,
-    "online": 0.986
+   "system_v2": {
+    "date": "2027-03-30",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
    }
   },
   {
@@ -6523,10 +6915,14 @@
     "place": null,
     "online": true
    },
-   "chars": 3223,
+   "chars": {
+    "raw": 3222,
+    "visible": 3101
+   },
    "tokens": {
     "baseline": 980,
-    "system": 2393
+    "system_v1": 2367,
+    "system_v2": 2348
    },
    "baseline": {
     "date": "2027-02-16",
@@ -6535,25 +6931,26 @@
     "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2027-02-16",
     "start": "14:00",
     "end": "15:00",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2027-02-16",
     "start": "14:00",
     "end": "15:00",
     "place": null,
     "online": true
    },
-   "gate": {
-    "date": 0.99,
-    "start": 0.99,
-    "end": 0.981,
-    "online": 0.987
+   "system_v2": {
+    "date": "2027-02-16",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
    }
   },
   {
@@ -6572,10 +6969,14 @@
     "place": null,
     "online": true
    },
-   "chars": 3875,
+   "chars": {
+    "raw": 3874,
+    "visible": 3753
+   },
    "tokens": {
     "baseline": 1097,
-    "system": 2609
+    "system_v1": 2552,
+    "system_v2": 2590
    },
    "baseline": {
     "date": "2027-03-03",
@@ -6584,25 +6985,26 @@
     "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2027-03-03",
     "start": "15:30",
     "end": "17:00",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2027-03-03",
     "start": "15:30",
     "end": "17:00",
     "place": null,
     "online": true
    },
-   "gate": {
-    "date": 0.986,
-    "start": 0.99,
-    "end": 0.974,
-    "online": 0.979
+   "system_v2": {
+    "date": "2027-03-03",
+    "start": "15:30",
+    "end": "17:00",
+    "place": null,
+    "online": true
    }
   },
   {
@@ -6621,10 +7023,14 @@
     "place": null,
     "online": true
    },
-   "chars": 5586,
+   "chars": {
+    "raw": 5586,
+    "visible": 5586
+   },
    "tokens": {
     "baseline": 1440,
-    "system": 3244
+    "system_v1": 3225,
+    "system_v2": 3325
    },
    "baseline": {
     "date": "2026-12-08",
@@ -6633,25 +7039,26 @@
     "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-08",
     "start": "14:00",
     "end": "15:00",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-08",
     "start": "14:00",
     "end": "15:00",
     "place": null,
     "online": true
    },
-   "gate": {
-    "date": 0.983,
-    "start": 0.99,
-    "end": 0.99,
-    "online": 0.99
+   "system_v2": {
+    "date": "2026-12-08",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
    }
   },
   {
@@ -6670,10 +7077,14 @@
     "place": null,
     "online": true
    },
-   "chars": 3876,
+   "chars": {
+    "raw": 3875,
+    "visible": 3754
+   },
    "tokens": {
     "baseline": 1097,
-    "system": 2600
+    "system_v1": 2583,
+    "system_v2": 2508
    },
    "baseline": {
     "date": "2027-03-24",
@@ -6682,25 +7093,26 @@
     "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2027-03-24",
     "start": "14:00",
     "end": "15:00",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2027-03-24",
     "start": "14:00",
     "end": "15:00",
     "place": null,
     "online": true
    },
-   "gate": {
-    "date": 0.967,
-    "start": 0.986,
-    "end": 0.983,
-    "online": 0.986
+   "system_v2": {
+    "date": "2027-03-24",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
    }
   },
   {
@@ -6719,10 +7131,14 @@
     "place": null,
     "online": true
    },
-   "chars": 3299,
+   "chars": {
+    "raw": 3298,
+    "visible": 3177
+   },
    "tokens": {
     "baseline": 997,
-    "system": 2423
+    "system_v1": 2414,
+    "system_v2": 2359
    },
    "baseline": {
     "date": "2027-03-23",
@@ -6731,25 +7147,26 @@
     "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2027-03-23",
     "start": "14:00",
     "end": "15:00",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2027-03-23",
     "start": "14:00",
     "end": "15:00",
     "place": null,
     "online": true
    },
-   "gate": {
-    "date": 0.98,
-    "start": 0.983,
-    "end": 0.99,
-    "online": 0.986
+   "system_v2": {
+    "date": "2027-03-23",
+    "start": "14:00",
+    "end": "15:00",
+    "place": null,
+    "online": true
    }
   },
   {
@@ -6767,10 +7184,14 @@
     "place": "Bostock 121 (Murthy Digital Studio)",
     "online": false
    },
-   "chars": 2493,
+   "chars": {
+    "raw": 2493,
+    "visible": 2437
+   },
    "tokens": {
     "baseline": 856,
-    "system": 2333
+    "system_v1": 2336,
+    "system_v2": 2294
    },
    "baseline": {
     "date": "2026-11-24",
@@ -6779,26 +7200,26 @@
     "place": "Bostock 121 (Murthy Digital Studio)",
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-11-24",
     "start": "14:00",
     "end": "17:00",
     "place": "Bostock 121 (Murthy Digital Studio)",
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-11-24",
     "start": "14:00",
     "end": "17:00",
     "place": "Bostock 121 (Murthy Digital Studio)",
     "online": true
    },
-   "gate": {
-    "date": 0.965,
-    "start": 0.974,
-    "end": 0.973,
-    "place": 0.967,
-    "online": 0.977
+   "system_v2": {
+    "date": "2026-11-24",
+    "start": "14:00",
+    "end": "17:00",
+    "place": "Bostock 121 (Murthy Digital Studio)",
+    "online": true
    }
   },
   {
@@ -6816,10 +7237,14 @@
     "place": "Mary Duke Biddle Room (Rubenstein Library)",
     "online": false
    },
-   "chars": 2395,
+   "chars": {
+    "raw": 2395,
+    "visible": 2272
+   },
    "tokens": {
     "baseline": 831,
-    "system": 2113
+    "system_v1": 2149,
+    "system_v2": 1944
    },
    "baseline": {
     "date": "2026-12-04",
@@ -6828,26 +7253,26 @@
     "place": "Mary Duke Biddle Room (Rubenstein Library)",
     "online": false
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-04",
     "start": "12:15",
     "end": "12:45",
     "place": "Mary Duke Biddle Room (Rubenstein Library)",
     "online": false
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-04",
     "start": "12:15",
     "end": "12:45",
     "place": "Mary Duke Biddle Room (Rubenstein Library)",
     "online": false
    },
-   "gate": {
-    "date": 0.961,
-    "start": 0.981,
-    "end": 0.968,
-    "place": 0.972,
-    "online": 0.031
+   "system_v2": {
+    "date": "2026-12-04",
+    "start": "12:15",
+    "end": "12:45",
+    "place": "Mary Duke Biddle Room (Rubenstein Library)",
+    "online": false
    }
   },
   {
@@ -6865,10 +7290,14 @@
     "place": "Bostock 121 (Murthy Digital Studio)",
     "online": false
    },
-   "chars": 2417,
+   "chars": {
+    "raw": 2417,
+    "visible": 2417
+   },
    "tokens": {
     "baseline": 824,
-    "system": 2196
+    "system_v1": 2193,
+    "system_v2": 2287
    },
    "baseline": {
     "date": "2026-12-08",
@@ -6877,26 +7306,26 @@
     "place": "Bostock 121 (Murthy Digital Studio)",
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-08",
     "start": "14:00",
     "end": "17:00",
     "place": "Bostock 121 (Murthy Digital Studio)",
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-08",
     "start": "14:00",
     "end": "17:00",
     "place": "Bostock 121 (Murthy Digital Studio)",
     "online": true
    },
-   "gate": {
-    "date": 0.985,
-    "start": 0.977,
-    "end": 0.964,
-    "place": 0.988,
-    "online": 0.96
+   "system_v2": {
+    "date": "2026-12-08",
+    "start": "14:00",
+    "end": "17:00",
+    "place": "Bostock 121 (Murthy Digital Studio)",
+    "online": true
    }
   },
   {
@@ -6912,10 +7341,14 @@
     "place": "Other (see event description)",
     "online": false
    },
-   "chars": 2533,
+   "chars": {
+    "raw": 2532,
+    "visible": 2411
+   },
    "tokens": {
     "baseline": 852,
-    "system": 2352
+    "system_v1": 2387,
+    "system_v2": 2258
    },
    "baseline": {
     "date": "2027-01-15",
@@ -6924,26 +7357,26 @@
     "place": "Service Desk, 1st Floor Perkins Library",
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2027-01-15",
     "start": "11:00",
     "end": "12:00",
     "place": "Service Desk, 1st Floor Perkins Library",
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
+    "date": "2027-01-15",
+    "start": "11:00",
+    "end": "12:00",
+    "place": "Service Desk, 1st Floor Perkins Library, West Campus",
+    "online": false
+   },
+   "system_v2": {
     "date": "2027-01-15",
     "start": "11:00",
     "end": "12:00",
     "place": "Service Desk, 1st Floor Perkins Library",
-    "online": true
-   },
-   "gate": {
-    "date": 0.864,
-    "start": 0.968,
-    "end": 0.961,
-    "place": 0.887,
-    "online": 0.908
+    "online": false
    }
   },
   {
@@ -6961,10 +7394,14 @@
     "place": "Mary Duke Biddle Room (Rubenstein Library)",
     "online": false
    },
-   "chars": 2368,
+   "chars": {
+    "raw": 2368,
+    "visible": 2271
+   },
    "tokens": {
     "baseline": 818,
-    "system": 2166
+    "system_v1": 2066,
+    "system_v2": 1936
    },
    "baseline": {
     "date": "2027-01-01",
@@ -6973,26 +7410,26 @@
     "place": "Mary Duke Biddle Room (Rubenstein Library)",
     "online": false
    },
-   "system": {
+   "system_v1": {
     "date": "2027-01-01",
     "start": "12:15",
     "end": "12:45",
     "place": "Mary Duke Biddle Room (Rubenstein Library)",
     "online": false
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2027-01-01",
     "start": "12:15",
     "end": "12:45",
     "place": "Mary Duke Biddle Room (Rubenstein Library)",
     "online": false
    },
-   "gate": {
-    "date": 0.96,
-    "start": 0.968,
-    "end": 0.962,
-    "place": 0.973,
-    "online": 0.03
+   "system_v2": {
+    "date": "2027-01-01",
+    "start": "12:15",
+    "end": "12:45",
+    "place": "Mary Duke Biddle Room (Rubenstein Library)",
+    "online": false
    }
   },
   {
@@ -7011,10 +7448,14 @@
     "place": null,
     "online": true
    },
-   "chars": 4634,
+   "chars": {
+    "raw": 4633,
+    "visible": 4512
+   },
    "tokens": {
     "baseline": 1254,
-    "system": 2962
+    "system_v1": 2913,
+    "system_v2": 3003
    },
    "baseline": {
     "date": "2027-02-12",
@@ -7023,25 +7464,26 @@
     "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2027-02-12",
     "start": "10:00",
     "end": "11:30",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2027-02-12",
     "start": "10:00",
     "end": "11:30",
     "place": null,
     "online": true
    },
-   "gate": {
-    "date": 0.971,
-    "start": 0.974,
-    "end": 0.974,
-    "online": 0.975
+   "system_v2": {
+    "date": "2027-02-12",
+    "start": "10:00",
+    "end": "11:30",
+    "place": null,
+    "online": true
    }
   },
   {
@@ -7057,10 +7499,14 @@
     "place": "Other (see event description)",
     "online": false
    },
-   "chars": 2533,
+   "chars": {
+    "raw": 2532,
+    "visible": 2411
+   },
    "tokens": {
-    "baseline": 868,
-    "system": 2367
+    "baseline": 851,
+    "system_v1": 2266,
+    "system_v2": 2213
    },
    "baseline": {
     "date": "2027-01-12",
@@ -7069,26 +7515,26 @@
     "place": "Service Desk, 1st Floor Perkins Library",
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2027-01-12",
     "start": "12:00",
     "end": "13:00",
     "place": "Service Desk, 1st Floor Perkins Library",
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
+    "date": "2027-01-12",
+    "start": "12:00",
+    "end": "13:00",
+    "place": "Service Desk, 1st Floor Perkins Library, West Campus",
+    "online": false
+   },
+   "system_v2": {
     "date": "2027-01-12",
     "start": "12:00",
     "end": "13:00",
     "place": "Service Desk, 1st Floor Perkins Library",
-    "online": true
-   },
-   "gate": {
-    "date": 0.866,
-    "start": 0.979,
-    "end": 0.965,
-    "place": 0.888,
-    "online": 0.918
+    "online": false
    }
   },
   {
@@ -7106,10 +7552,14 @@
     "place": "Bostock 121 (Murthy Digital Studio)",
     "online": false
    },
-   "chars": 2247,
+   "chars": {
+    "raw": 2247,
+    "visible": 2219
+   },
    "tokens": {
     "baseline": 770,
-    "system": 2046
+    "system_v1": 1955,
+    "system_v2": 2017
    },
    "baseline": {
     "date": "2026-12-04",
@@ -7118,26 +7568,26 @@
     "place": "Bostock 121 (Murthy Digital Studio)",
     "online": false
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-04",
     "start": "14:30",
     "end": "17:30",
     "place": "Bostock 121 (Murthy Digital Studio)",
     "online": false
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-04",
     "start": "14:30",
     "end": "17:30",
     "place": "Bostock 121 (Murthy Digital Studio)",
     "online": false
    },
-   "gate": {
-    "date": 0.952,
-    "start": 0.984,
-    "end": 0.97,
-    "place": 0.978,
-    "online": 0.026
+   "system_v2": {
+    "date": "2026-12-04",
+    "start": "14:30",
+    "end": "17:30",
+    "place": "Bostock 121 (Murthy Digital Studio)",
+    "online": false
    }
   },
   {
@@ -7156,10 +7606,14 @@
     "place": null,
     "online": true
    },
-   "chars": 2321,
+   "chars": {
+    "raw": 2321,
+    "visible": 2321
+   },
    "tokens": {
     "baseline": 747,
-    "system": 1974
+    "system_v1": 1978,
+    "system_v2": 1982
    },
    "baseline": {
     "date": "2026-12-15",
@@ -7168,25 +7622,26 @@
     "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-15",
     "start": "10:00",
     "end": "12:00",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-15",
     "start": "10:00",
     "end": "12:00",
     "place": null,
     "online": true
    },
-   "gate": {
-    "date": 0.967,
-    "start": 0.979,
-    "end": 0.982,
-    "online": 0.981
+   "system_v2": {
+    "date": "2026-12-15",
+    "start": "10:00",
+    "end": "12:00",
+    "place": null,
+    "online": true
    }
   },
   {
@@ -7204,38 +7659,42 @@
     "place": "Bostock 121 (Murthy Digital Studio)",
     "online": false
    },
-   "chars": 2464,
+   "chars": {
+    "raw": 2464,
+    "visible": 2436
+   },
    "tokens": {
-    "baseline": 842,
-    "system": 2331
+    "baseline": 862,
+    "system_v1": 2274,
+    "system_v2": 2232
    },
    "baseline": {
     "date": "2026-12-01",
     "start": "14:00",
     "end": "17:00",
-    "place": "Bostock 121 (Murthy Digital Studio)",
+    "place": "Bostock 121 (Murthy Digital Studio), West Campus",
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-01",
     "start": "14:00",
     "end": "17:00",
     "place": "Bostock 121 (Murthy Digital Studio)",
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-01",
     "start": "14:00",
     "end": "17:00",
     "place": "Bostock 121 (Murthy Digital Studio)",
     "online": true
    },
-   "gate": {
-    "date": 0.914,
-    "start": 0.976,
-    "end": 0.96,
-    "place": 0.98,
-    "online": 0.966
+   "system_v2": {
+    "date": "2026-12-01",
+    "start": "14:00",
+    "end": "17:00",
+    "place": "Bostock 121 (Murthy Digital Studio)",
+    "online": true
    }
   },
   {
@@ -7253,10 +7712,14 @@
     "place": "Bostock 121 (Murthy Digital Studio)",
     "online": false
    },
-   "chars": 2420,
+   "chars": {
+    "raw": 2420,
+    "visible": 2420
+   },
    "tokens": {
     "baseline": 826,
-    "system": 2204
+    "system_v1": 2186,
+    "system_v2": 2194
    },
    "baseline": {
     "date": "2026-12-10",
@@ -7265,26 +7728,26 @@
     "place": "Bostock 121 (Murthy Digital Studio)",
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-10",
     "start": "10:00",
     "end": "13:00",
     "place": "Bostock 121 (Murthy Digital Studio)",
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-10",
     "start": "10:00",
     "end": "13:00",
     "place": "Bostock 121 (Murthy Digital Studio)",
     "online": true
    },
-   "gate": {
-    "date": 0.98,
-    "start": 0.984,
-    "end": 0.981,
-    "place": 0.98,
-    "online": 0.963
+   "system_v2": {
+    "date": "2026-12-10",
+    "start": "10:00",
+    "end": "13:00",
+    "place": "Bostock 121 (Murthy Digital Studio)",
+    "online": true
    }
   },
   {
@@ -7300,38 +7763,42 @@
     "place": "Alumni Memorial Conference Room, Langford 152 (Duke Divinity School)",
     "online": false
    },
-   "chars": 4142,
+   "chars": {
+    "raw": 4141,
+    "visible": 4020
+   },
    "tokens": {
     "baseline": 1161,
-    "system": 2879
+    "system_v1": 2898,
+    "system_v2": 2775
    },
    "baseline": {
     "date": "2026-12-08",
     "start": "12:00",
     "end": "13:30",
     "place": "Alumni Memorial Conference Room, Langford 152 (Duke Divinity School)",
+    "online": true
+   },
+   "system_v1": {
+    "date": "2026-12-08",
+    "start": "12:00",
+    "end": "13:30",
+    "place": "Alumni Memorial Conference Room, Langford 152 (Duke Divinity School)",
+    "online": true
+   },
+   "baseline_visible": {
+    "date": "2026-12-08",
+    "start": "12:00",
+    "end": "13:30",
+    "place": "Alumni Memorial Conference Room, Langford 152 (Duke Divinity School)",
     "online": false
    },
-   "system": {
+   "system_v2": {
     "date": "2026-12-08",
     "start": "12:00",
     "end": "13:30",
     "place": "Alumni Memorial Conference Room, Langford 152 (Duke Divinity School)",
-    "online": true
-   },
-   "ungated": {
-    "date": "2026-12-08",
-    "start": "12:00",
-    "end": "13:30",
-    "place": "Alumni Memorial Conference Room, Langford 152 (Duke Divinity School)",
-    "online": true
-   },
-   "gate": {
-    "date": 0.981,
-    "start": 0.976,
-    "end": 0.981,
-    "place": 0.963,
-    "online": 0.944
+    "online": false
    }
   },
   {
@@ -7349,10 +7816,14 @@
     "place": "Other (see event description)",
     "online": false
    },
-   "chars": 3301,
+   "chars": {
+    "raw": 3300,
+    "visible": 3179
+   },
    "tokens": {
-    "baseline": 1017,
-    "system": 2585
+    "baseline": 1034,
+    "system_v1": 2594,
+    "system_v2": 2484
    },
    "baseline": {
     "date": "2026-12-16",
@@ -7361,26 +7832,26 @@
     "place": "Music Library Seminar Rom (East Campus)",
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-16",
     "start": "12:00",
     "end": "13:00",
     "place": "Music Library Seminar Rom (East Campus)",
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-16",
     "start": "12:00",
     "end": "13:00",
     "place": "Music Library Seminar Rom (East Campus)",
     "online": true
    },
-   "gate": {
-    "date": 0.99,
-    "start": 0.979,
-    "end": 0.988,
-    "place": 0.966,
-    "online": 0.99
+   "system_v2": {
+    "date": "2026-12-16",
+    "start": "12:00",
+    "end": "13:00",
+    "place": "Music Library Seminar Rom (East Campus)",
+    "online": true
    }
   },
   {
@@ -7396,10 +7867,14 @@
     "place": "Other (see event description)",
     "online": false
    },
-   "chars": 2532,
+   "chars": {
+    "raw": 2531,
+    "visible": 2410
+   },
    "tokens": {
     "baseline": 851,
-    "system": 2287
+    "system_v1": 2272,
+    "system_v2": 2221
    },
    "baseline": {
     "date": "2027-01-08",
@@ -7408,26 +7883,26 @@
     "place": "Service Desk, 1st Floor Perkins Library",
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2027-01-08",
     "start": "11:00",
     "end": "12:00",
     "place": "Service Desk, 1st Floor Perkins Library",
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2027-01-08",
     "start": "11:00",
     "end": "12:00",
     "place": "Service Desk, 1st Floor Perkins Library",
-    "online": true
+    "online": false
    },
-   "gate": {
-    "date": 0.907,
-    "start": 0.965,
-    "end": 0.964,
-    "place": 0.937,
-    "online": 0.85
+   "system_v2": {
+    "date": "2027-01-08",
+    "start": "11:00",
+    "end": "12:00",
+    "place": "Service Desk, 1st Floor Perkins Library",
+    "online": false
    }
   },
   {
@@ -7445,10 +7920,14 @@
     "place": "Mary Duke Biddle Room (Rubenstein Library)",
     "online": false
    },
-   "chars": 2291,
+   "chars": {
+    "raw": 2291,
+    "visible": 2269
+   },
    "tokens": {
     "baseline": 779,
-    "system": 2090
+    "system_v1": 2072,
+    "system_v2": 2011
    },
    "baseline": {
     "date": "2027-04-02",
@@ -7457,26 +7936,26 @@
     "place": "Mary Duke Biddle Room (Rubenstein Library)",
     "online": false
    },
-   "system": {
+   "system_v1": {
     "date": "2027-04-02",
     "start": "12:15",
     "end": "12:45",
     "place": "Mary Duke Biddle Room (Rubenstein Library)",
     "online": false
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2027-04-02",
     "start": "12:15",
     "end": "12:45",
     "place": "Mary Duke Biddle Room (Rubenstein Library)",
     "online": false
    },
-   "gate": {
-    "date": 0.952,
-    "start": 0.966,
-    "end": 0.983,
-    "place": 0.98,
-    "online": 0.033
+   "system_v2": {
+    "date": "2027-04-02",
+    "start": "12:15",
+    "end": "12:45",
+    "place": "Mary Duke Biddle Room (Rubenstein Library)",
+    "online": false
    }
   },
   {
@@ -7494,10 +7973,14 @@
     "place": "Bostock 121 (Murthy Digital Studio)",
     "online": false
    },
-   "chars": 2201,
+   "chars": {
+    "raw": 2201,
+    "visible": 2201
+   },
    "tokens": {
-    "baseline": 757,
-    "system": 1989
+    "baseline": 752,
+    "system_v1": 2018,
+    "system_v2": 2021
    },
    "baseline": {
     "date": "2026-12-11",
@@ -7506,26 +7989,26 @@
     "place": "Bostock 121 (Murthy Digital Studio)",
     "online": false
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-11",
     "start": "14:30",
     "end": "17:30",
     "place": "Bostock 121 (Murthy Digital Studio)",
     "online": false
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-11",
     "start": "14:30",
     "end": "17:30",
     "place": "Bostock 121 (Murthy Digital Studio)",
     "online": false
    },
-   "gate": {
-    "date": 0.983,
-    "start": 0.979,
-    "end": 0.99,
-    "place": 0.974,
-    "online": 0.042
+   "system_v2": {
+    "date": "2026-12-11",
+    "start": "14:30",
+    "end": "17:30",
+    "place": "Bostock 121 (Murthy Digital Studio)",
+    "online": false
    }
   },
   {
@@ -7543,10 +8026,14 @@
     "place": "Bostock 121 (Murthy Digital Studio)",
     "online": false
    },
-   "chars": 2468,
+   "chars": {
+    "raw": 2468,
+    "visible": 2438
+   },
    "tokens": {
-    "baseline": 844,
-    "system": 2208
+    "baseline": 856,
+    "system_v1": 2199,
+    "system_v2": 2279
    },
    "baseline": {
     "date": "2026-12-03",
@@ -7555,26 +8042,26 @@
     "place": "Bostock 121 (Murthy Digital Studio)",
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-03",
     "start": "10:00",
     "end": "13:00",
     "place": "Bostock 121 (Murthy Digital Studio)",
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-03",
     "start": "10:00",
     "end": "13:00",
     "place": "Bostock 121 (Murthy Digital Studio)",
     "online": true
    },
-   "gate": {
-    "date": 0.945,
-    "start": 0.976,
-    "end": 0.965,
-    "place": 0.973,
-    "online": 0.94
+   "system_v2": {
+    "date": "2026-12-03",
+    "start": "10:00",
+    "end": "13:00",
+    "place": "Bostock 121 (Murthy Digital Studio)",
+    "online": true
    }
   },
   {
@@ -7590,10 +8077,14 @@
     "place": "Other (see event description)",
     "online": false
    },
-   "chars": 2467,
+   "chars": {
+    "raw": 2467,
+    "visible": 2467
+   },
    "tokens": {
     "baseline": 775,
-    "system": 2067
+    "system_v1": 2035,
+    "system_v2": 2035
    },
    "baseline": {
     "date": "2026-12-02",
@@ -7602,26 +8093,26 @@
     "place": "Gillespie East Asia Reading Room, Bostock Library",
     "online": false
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-02",
     "start": "15:00",
     "end": "16:30",
     "place": "Gillespie East Asia Reading Room, Bostock Library",
     "online": false
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-02",
     "start": "15:00",
     "end": "16:30",
     "place": "Gillespie East Asia Reading Room, Bostock Library",
     "online": false
    },
-   "gate": {
-    "date": 0.976,
-    "start": 0.971,
-    "end": 0.961,
-    "place": 0.958,
-    "online": 0.041
+   "system_v2": {
+    "date": "2026-12-02",
+    "start": "15:00",
+    "end": "16:30",
+    "place": "Gillespie East Asia Reading Room, Bostock Library",
+    "online": false
    }
   },
   {
@@ -7640,10 +8131,14 @@
     "place": null,
     "online": true
    },
-   "chars": 3431,
+   "chars": {
+    "raw": 3430,
+    "visible": 3309
+   },
    "tokens": {
     "baseline": 971,
-    "system": 2365
+    "system_v1": 2363,
+    "system_v2": 2365
    },
    "baseline": {
     "date": "2026-12-11",
@@ -7652,25 +8147,26 @@
     "place": null,
     "online": true
    },
-   "system": {
+   "system_v1": {
     "date": "2026-12-11",
     "start": "12:00",
     "end": "13:00",
     "place": null,
     "online": true
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2026-12-11",
     "start": "12:00",
     "end": "13:00",
     "place": null,
     "online": true
    },
-   "gate": {
-    "date": 0.986,
-    "start": 0.981,
-    "end": 0.977,
-    "online": 0.984
+   "system_v2": {
+    "date": "2026-12-11",
+    "start": "12:00",
+    "end": "13:00",
+    "place": null,
+    "online": true
    }
   },
   {
@@ -7686,10 +8182,14 @@
     "place": "Lilly Library",
     "online": false
    },
-   "chars": 3454,
+   "chars": {
+    "raw": 3454,
+    "visible": 3454
+   },
    "tokens": {
-    "baseline": 964,
-    "system": 2417
+    "baseline": 981,
+    "system_v1": 2411,
+    "system_v2": 2410
    },
    "baseline": {
     "date": "2027-01-12",
@@ -7698,26 +8198,26 @@
     "place": "Lilly Library",
     "online": false
    },
-   "system": {
+   "system_v1": {
     "date": "2027-01-12",
     "start": "17:00",
     "end": "19:00",
     "place": "Lilly Library",
     "online": false
    },
-   "ungated": {
+   "baseline_visible": {
     "date": "2027-01-12",
     "start": "17:00",
     "end": "19:00",
     "place": "Lilly Library",
     "online": false
    },
-   "gate": {
-    "date": 0.984,
-    "start": 0.969,
-    "end": 0.976,
-    "place": 0.972,
-    "online": 0.017
+   "system_v2": {
+    "date": "2027-01-12",
+    "start": "17:00",
+    "end": "19:00",
+    "place": "Lilly Library",
+    "online": false
    }
   }
  ]

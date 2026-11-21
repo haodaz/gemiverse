@@ -1,0 +1,628 @@
+{
+ "at": "2026-11-21T19:14:42.758Z",
+ "listings": {
+  "n": 70,
+  "facts": 210,
+  "overall": {
+   "baseline": {
+    "right": 193,
+    "wrong": 2,
+    "withheld": 0,
+    "shown": 195,
+    "error_rate": 0.0103,
+    "coverage": 0.9897
+   },
+   "v1": {
+    "right": 106,
+    "wrong": 1,
+    "withheld": 87,
+    "shown": 107,
+    "error_rate": 0.0093,
+    "coverage": 0.5464
+   },
+   "v2": {
+    "right": 172,
+    "wrong": 1,
+    "withheld": 21,
+    "shown": 173,
+    "error_rate": 0.0058,
+    "coverage": 0.8866
+   },
+   "v3": {
+    "right": 188,
+    "wrong": 1,
+    "withheld": 5,
+    "shown": 189,
+    "error_rate": 0.0053,
+    "coverage": 0.9691
+   }
+  },
+  "tokens": {
+   "baseline": 22432,
+   "system": 74019
+  }
+ },
+ "pages": {
+  "n": 122,
+  "facts": 610,
+  "schools": {
+   "NYU": 7,
+   "Princeton": 20,
+   "Penn": 30,
+   "Yale": 25,
+   "Rutgers": 20,
+   "Duke": 20
+  },
+  "edge_pages": 91,
+  "overall": {
+   "baseline": {
+    "right": 511,
+    "wrong": 47,
+    "withheld": 2,
+    "shown": 558,
+    "error_rate": 0.0842,
+    "coverage": 0.9125
+   },
+   "system_v1": {
+    "right": 501,
+    "wrong": 53,
+    "withheld": 3,
+    "shown": 554,
+    "error_rate": 0.0957,
+    "coverage": 0.8995
+   },
+   "baseline_visible": {
+    "right": 538,
+    "wrong": 24,
+    "withheld": 1,
+    "shown": 562,
+    "error_rate": 0.0427,
+    "coverage": 0.9556
+   },
+   "system_v2": {
+    "right": 537,
+    "wrong": 18,
+    "withheld": 2,
+    "shown": 555,
+    "error_rate": 0.0324,
+    "coverage": 0.9641
+   }
+  },
+  "unseen": {
+   "baseline": {
+    "right": 477,
+    "wrong": 47,
+    "withheld": 2,
+    "shown": 524,
+    "error_rate": 0.0897,
+    "coverage": 0.9068
+   },
+   "system_v1": {
+    "right": 473,
+    "wrong": 47,
+    "withheld": 3,
+    "shown": 520,
+    "error_rate": 0.0904,
+    "coverage": 0.9044
+   },
+   "baseline_visible": {
+    "right": 504,
+    "wrong": 24,
+    "withheld": 1,
+    "shown": 528,
+    "error_rate": 0.0455,
+    "coverage": 0.9527
+   },
+   "system_v2": {
+    "right": 503,
+    "wrong": 18,
+    "withheld": 2,
+    "shown": 521,
+    "error_rate": 0.0345,
+    "coverage": 0.9618
+   }
+  },
+  "edge": {
+   "baseline": {
+    "right": 373,
+    "wrong": 30,
+    "withheld": 2,
+    "shown": 403,
+    "error_rate": 0.0744,
+    "coverage": 0.921
+   },
+   "system_v1": {
+    "right": 371,
+    "wrong": 28,
+    "withheld": 3,
+    "shown": 399,
+    "error_rate": 0.0702,
+    "coverage": 0.9229
+   },
+   "baseline_visible": {
+    "right": 387,
+    "wrong": 20,
+    "withheld": 1,
+    "shown": 407,
+    "error_rate": 0.0491,
+    "coverage": 0.9485
+   },
+   "system_v2": {
+    "right": 386,
+    "wrong": 14,
+    "withheld": 2,
+    "shown": 400,
+    "error_rate": 0.035,
+    "coverage": 0.9602
+   }
+  },
+  "by_field": {
+   "date": {
+    "baseline": {
+     "right": 122,
+     "wrong": 0,
+     "withheld": 0,
+     "correctly_blank": 0
+    },
+    "system_v1": {
+     "right": 122,
+     "wrong": 0,
+     "withheld": 0,
+     "correctly_blank": 0
+    },
+    "baseline_visible": {
+     "right": 122,
+     "wrong": 0,
+     "withheld": 0,
+     "correctly_blank": 0
+    },
+    "system_v2": {
+     "right": 122,
+     "wrong": 0,
+     "withheld": 0,
+     "correctly_blank": 0
+    }
+   },
+   "start": {
+    "baseline": {
+     "right": 122,
+     "wrong": 0,
+     "withheld": 0,
+     "correctly_blank": 0
+    },
+    "system_v1": {
+     "right": 122,
+     "wrong": 0,
+     "withheld": 0,
+     "correctly_blank": 0
+    },
+    "baseline_visible": {
+     "right": 122,
+     "wrong": 0,
+     "withheld": 0,
+     "correctly_blank": 0
+    },
+    "system_v2": {
+     "right": 122,
+     "wrong": 0,
+     "withheld": 0,
+     "correctly_blank": 0
+    }
+   },
+   "end": {
+    "baseline": {
+     "right": 122,
+     "wrong": 0,
+     "withheld": 0,
+     "correctly_blank": 0
+    },
+    "system_v1": {
+     "right": 122,
+     "wrong": 0,
+     "withheld": 0,
+     "correctly_blank": 0
+    },
+    "baseline_visible": {
+     "right": 122,
+     "wrong": 0,
+     "withheld": 0,
+     "correctly_blank": 0
+    },
+    "system_v2": {
+     "right": 122,
+     "wrong": 0,
+     "withheld": 0,
+     "correctly_blank": 0
+    }
+   },
+   "place": {
+    "baseline": {
+     "right": 61,
+     "wrong": 9,
+     "withheld": 2,
+     "correctly_blank": 50
+    },
+    "system_v1": {
+     "right": 60,
+     "wrong": 6,
+     "withheld": 3,
+     "correctly_blank": 53
+    },
+    "baseline_visible": {
+     "right": 62,
+     "wrong": 12,
+     "withheld": 1,
+     "correctly_blank": 47
+    },
+    "system_v2": {
+     "right": 61,
+     "wrong": 6,
+     "withheld": 2,
+     "correctly_blank": 53
+    }
+   },
+   "online": {
+    "baseline": {
+     "right": 84,
+     "wrong": 38,
+     "withheld": 0,
+     "correctly_blank": 0
+    },
+    "system_v1": {
+     "right": 75,
+     "wrong": 47,
+     "withheld": 0,
+     "correctly_blank": 0
+    },
+    "baseline_visible": {
+     "right": 110,
+     "wrong": 12,
+     "withheld": 0,
+     "correctly_blank": 0
+    },
+    "system_v2": {
+     "right": 110,
+     "wrong": 12,
+     "withheld": 0,
+     "correctly_blank": 0
+    }
+   }
+  },
+  "tokens": {
+   "baseline": 116488,
+   "system_v1": 293457,
+   "system_v2": 284710
+  },
+  "still_wrong": [
+   {
+    "school": "Princeton",
+    "field": "place",
+    "shown": "Firestone Library",
+    "truth": null,
+    "edge": [
+     "no location"
+    ],
+    "url": "https://libcal.princeton.edu/event/17356230"
+   },
+   {
+    "school": "Penn",
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "edge": [
+     "recurring"
+    ],
+    "url": "https://libcal.library.upenn.edu/event/17394668"
+   },
+   {
+    "school": "Penn",
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "edge": [
+     "recurring"
+    ],
+    "url": "https://libcal.library.upenn.edu/event/17340127"
+   },
+   {
+    "school": "Penn",
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "edge": [
+     "recurring"
+    ],
+    "url": "https://libcal.library.upenn.edu/event/17340124"
+   },
+   {
+    "school": "Penn",
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "edge": [
+     "recurring"
+    ],
+    "url": "https://libcal.library.upenn.edu/event/17427495"
+   },
+   {
+    "school": "Penn",
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "edge": [
+     "recurring"
+    ],
+    "url": "https://libcal.library.upenn.edu/event/17427496"
+   },
+   {
+    "school": "Penn",
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "edge": [
+     "recurring"
+    ],
+    "url": "https://libcal.library.upenn.edu/event/17340169"
+   },
+   {
+    "school": "Duke",
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "edge": [
+     "recurring"
+    ],
+    "url": "https://duke.libcal.com/event/17407923"
+   },
+   {
+    "school": "Duke",
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "edge": [
+     "recurring"
+    ],
+    "url": "https://duke.libcal.com/event/17407925"
+   },
+   {
+    "school": "Duke",
+    "field": "place",
+    "shown": "Service Desk, 1st Floor Perkins Library",
+    "truth": "Other (see event description)",
+    "edge": [],
+    "url": "https://duke.libcal.com/event/18035796"
+   },
+   {
+    "school": "Duke",
+    "field": "place",
+    "shown": "Service Desk, 1st Floor Perkins Library",
+    "truth": "Other (see event description)",
+    "edge": [],
+    "url": "https://duke.libcal.com/event/18035792"
+   },
+   {
+    "school": "Duke",
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "edge": [
+     "recurring"
+    ],
+    "url": "https://duke.libcal.com/event/17407924"
+   },
+   {
+    "school": "Duke",
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "edge": [
+     "recurring"
+    ],
+    "url": "https://duke.libcal.com/event/17408002"
+   },
+   {
+    "school": "Duke",
+    "field": "place",
+    "shown": "Music Library Seminar Rom (East Campus)",
+    "truth": "Other (see event description)",
+    "edge": [
+     "recurring"
+    ],
+    "url": "https://duke.libcal.com/event/17413576"
+   },
+   {
+    "school": "Duke",
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "edge": [
+     "recurring"
+    ],
+    "url": "https://duke.libcal.com/event/17413576"
+   },
+   {
+    "school": "Duke",
+    "field": "place",
+    "shown": "Service Desk, 1st Floor Perkins Library",
+    "truth": "Other (see event description)",
+    "edge": [],
+    "url": "https://duke.libcal.com/event/18035777"
+   },
+   {
+    "school": "Duke",
+    "field": "online",
+    "shown": true,
+    "truth": false,
+    "edge": [
+     "recurring"
+    ],
+    "url": "https://duke.libcal.com/event/17408001"
+   },
+   {
+    "school": "Duke",
+    "field": "place",
+    "shown": "Gillespie East Asia Reading Room, Bostock Library",
+    "truth": "Other (see event description)",
+    "edge": [],
+    "url": "https://duke.libcal.com/event/17743566"
+   }
+  ]
+ },
+ "pagesRun1": {
+  "overall": {
+   "baseline": {
+    "right": 512,
+    "wrong": 49,
+    "withheld": 2,
+    "shown": 561,
+    "error_rate": 0.0873,
+    "coverage": 0.9094
+   },
+   "ungated": {
+    "right": 499,
+    "wrong": 53,
+    "withheld": 5,
+    "shown": 552,
+    "error_rate": 0.096,
+    "coverage": 0.8959
+   },
+   "system": {
+    "right": 499,
+    "wrong": 53,
+    "withheld": 5,
+    "shown": 552,
+    "error_rate": 0.096,
+    "coverage": 0.8959
+   }
+  }
+ },
+ "exam": null,
+ "improvements": [
+  {
+   "id": "sources-blocked",
+   "area": "reading pages",
+   "saw": "The big university calendars answer scripts with a challenge page or an empty shell.",
+   "before": "16 of 25 seed pages gave usable text",
+   "how": "Take the same event from the site's own public JSON feed; mark it one source tier lower than a static page.",
+   "after": "25 of 25 usable (17 static pages, 8 feed records)",
+   "evidence": "scripts/foundry/01-fetch.mjs, 01b-feeds.mjs"
+  },
+  {
+   "id": "feed-cap",
+   "area": "reading pages",
+   "saw": "Columbia's feed proxy silently returns at most 100 records per call; events in December were missing.",
+   "before": "100 records",
+   "how": "Ask in three date windows.",
+   "after": "293 records",
+   "evidence": "scripts/foundry/01b-feeds.mjs"
+  },
+  {
+   "id": "long-call-timeout",
+   "area": "model calls",
+   "saw": "Carbon at high thinking takes longer than five minutes; the request died with no result.",
+   "before": "0 designs returned",
+   "how": "Run the interaction in background mode and poll its id every five seconds.",
+   "after": "4 designs returned (5 to 20 minutes each)",
+   "evidence": "scripts/foundry/lib.mjs"
+  },
+  {
+   "id": "labels-vs-facts",
+   "area": "the gate",
+   "saw": "The gate asked 'does the page state this' for our own labels (event kind, in person or online, who may attend). Pages rarely state those in words, so correct labels were blocked.",
+   "before": "102 of 148 fields passed on the design set",
+   "how": "Two kinds of field. A stated fact must be on the page. A classification is checked as 'is this the best fitting label' and stored marked as inferred.",
+   "after": "118 of 145 fields passed; still 0 unsupported shown",
+   "evidence": "base/runs/05-fill-design.json"
+  },
+  {
+   "id": "year-never-printed",
+   "area": "the gate",
+   "saw": "Listings print 'November 23' with no year. Our rule 'never guess a year' withheld almost every date.",
+   "before": "dates right on 2 of 70 listings; coverage 54.6%; 1 wrong",
+   "how": "The year is resolved by a rule in code, not by a model: the first such date on or after the day the page was read.",
+   "after": "dates right on 68 of 70; coverage 88.7%; 1 wrong",
+   "evidence": "base/runs/07-eval.json (v1 to v2)"
+  },
+  {
+   "id": "gate-asked-in-24h",
+   "area": "the gate",
+   "saw": "16 correct start times were withheld. We asked the Decisions API 'does it start at 15:00' while the page prints '3:00pm'.",
+   "before": "coverage 88.7%",
+   "how": "Ask the gate in the form the page prints, with the 24-hour value alongside.",
+   "after": "coverage 96.9%; error rate 0.5% against the baseline's 1.0%",
+   "evidence": "base/runs/07-eval.json (v2 to v3)"
+  },
+  {
+   "id": "place-scoring",
+   "area": "the measurement",
+   "saw": "Our scorer marked 'Kimmel Center, room GC 269' wrong against 'Kimmel Center for University Life'.",
+   "before": "2 wrong",
+   "how": "Places match when they share at least half of their distinctive words. Applied to every system alike.",
+   "after": "1 wrong",
+   "evidence": "scripts/foundry/07-eval.mjs"
+  },
+  {
+   "id": "hidden-text",
+   "area": "reading pages",
+   "saw": "On raw pages both the baseline and our system called in-person events online. Every registration form on these pages carries a line 'Please note this is an online event' that the page hides with display:none. A person never sees it; our text reader did, and the gate confirmed it because the words are there.",
+   "before": "online or not: 47 wrong of 122 (baseline 37). The gate changed nothing.",
+   "how": "Read the page as a person sees it: drop elements the page itself hides before taking the text.",
+   "after": "online or not: 12 wrong of 122 (from 47). Overall error rate on 610 facts from six universities: 9.6% to 3.2%; the single-call baseline given the same visible text: 4.3%. The reader gives most of the gain to both; the pipeline's own margin is on places (6 wrong against 12).",
+   "evidence": "base/runs/08-eval-pages.run1.json, 08-eval-pages.json"
+  },
+  {
+   "id": "duplicate-entry",
+   "area": "the base",
+   "saw": "A poster for an event already in the base entered as a second entity.",
+   "before": "1 duplicate",
+   "how": "Before entry the Decisions API judges whether it is the same event as each candidate that shares a title word.",
+   "after": "0 duplicates; recognised as the same event at 0.86",
+   "evidence": "app/api/see/route.ts"
+  },
+  {
+   "id": "seal-not-checkable",
+   "area": "the sealed guess",
+   "saw": "Our own review found the 'sealed' prediction travelled to the browser with the cards and its hash could not be recomputed.",
+   "before": "not verifiable",
+   "how": "Commit and reveal: cards go out without numbers, with a hash and the numbers encrypted; after the last choice the browser gets numbers and nonce and recomputes the hash.",
+   "after": "verified in the browser (tick shown)",
+   "evidence": "app/api/go/route.ts, app/api/reveal/route.ts"
+  },
+  {
+   "id": "output-cut-off",
+   "area": "generated 3D",
+   "saw": "One clothes module of about 3,000 lines was cut off at the output limit and did not parse.",
+   "before": "0 garments",
+   "how": "Three smaller modules to one shared skeleton spec: tops, bottoms, shoes and socks.",
+   "after": "3 modules load; 6 tops, 5 bottoms, 4 shoes",
+   "evidence": "scripts/art/prompts/doll/"
+  },
+  {
+   "id": "model-cannot-see",
+   "area": "generated 3D",
+   "saw": "Three generated faces in a row came out uncanny. A model that writes 3D code never sees the result.",
+   "before": "3 faces rejected",
+   "how": "Send the model a screenshot of its own render with a written critique; give shapes as numeric profiles; and for the face itself, paint it by hand.",
+   "after": "hair accepted after the second review; face hand-painted, 12 expressions",
+   "evidence": "scripts/art/neon-review.mjs, public/gen3d/face-paint.js"
+  },
+  {
+   "id": "dark-face",
+   "area": "generated 3D",
+   "saw": "Every head looked dirty below the eyes. We blamed the paint, then the chin, then the hair's shadow.",
+   "before": "misdiagnosed three times",
+   "how": "Removed the hair to isolate it: the viewer had only top light, so the underside of any round form reflected the dark floor. Added a hemisphere light and a front fill.",
+   "after": "clean face",
+   "evidence": "public/gen3d/doll.html"
+  },
+  {
+   "id": "truth-field-vague",
+   "area": "the measurement",
+   "saw": "Four of our six remaining place errors are Duke pages where the feed's own location field says 'Other (see event description)' and we read the real room from the description.",
+   "before": "counted as 4 wrong",
+   "how": "Not changed: the scoring rule was fixed before the run. Listed here as disputed.",
+   "after": "still counted as wrong; 12 'online' errors on recurring Penn and Duke pages remain unexplained",
+   "evidence": "base/runs/08-eval-pages.json (wrong.system_v2)"
+  }
+ ]
+}
