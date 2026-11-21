@@ -1,0 +1,21 @@
+{
+ "model": "lyria-3-clip-preview",
+ "prompt": "A warm autumn-in-the-city instrumental: jazzy brushed drums, upright bass, vibraphone and a muted trumpet melody. Relaxed and a little nostalgic, loopable. No vocals.",
+ "usage": {
+  "total_tokens": 362,
+  "total_input_tokens": 42,
+  "input_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 42
+   }
+  ],
+  "total_cached_tokens": 0,
+  "total_output_tokens": 320,
+  "total_tool_use_tokens": 0,
+  "total_thought_tokens": 0,
+  "initial_input_tokens": 42
+ },
+ "ms": 14638,
+ "made_at": "2026-11-21T17:40:39.507Z"
+}

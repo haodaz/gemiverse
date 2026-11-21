@@ -1,0 +1,21 @@
+{
+ "model": "lyria-3-clip-preview",
+ "prompt": "A short happy instrumental cue for finding something good: marimba and bells rise in a small fanfare, then settle into a gentle groove. Warm and proud, not loud. No vocals.",
+ "usage": {
+  "total_tokens": 338,
+  "total_input_tokens": 38,
+  "input_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 38
+   }
+  ],
+  "total_cached_tokens": 0,
+  "total_output_tokens": 300,
+  "total_tool_use_tokens": 0,
+  "total_thought_tokens": 0,
+  "initial_input_tokens": 38
+ },
+ "ms": 17603,
+ "made_at": "2026-11-21T17:40:42.472Z"
+}

@@ -1,0 +1,26 @@
+{
+ "model": "gemini-4-neon",
+ "prompt": "Write a three.js ES module: export function build(THREE, opts, kit) -> THREE.Group, a university CAREER AND OPPORTUNITIES CENTER as a miniature building for a campus map. Footprint about 7 wide (x) by 6 deep (z), centred on the origin, on a paved base 8 by 7 and 0.15 high; height about 6. A smart contemporary building of brick, warm wood slats and glass with a royal-blue standing-seam roof and a welcoming entrance canopy on the +z side, a roof emblem shaped as a compass with a rising arrow, an outdoor notice kiosk with blank cards, a ground-floor window showing an interview room with two chairs and a table, a flagpole with a plain pennant, benches and planters. opts = { accent } (roof colour, default royal blue). Also export const ENTRANCE = [x, y, z] and export function setHighlight(group, on) (brighter windows, a glowing emblem, soft emissive tint on the roof; the building does not move).\n\nSTYLE (the same as the dorm-room diorama the player already knows): a refined, cozy, stylised 3D miniature like a premium life-sim game. Smooth, rounded forms (bevelled boxes, lathe shapes, extruded bezier shapes with bevels; no raw sharp boxes), believable architecture, small secondary details, warm colours. MeshStandardMaterial with thoughtful roughness; castShadow and receiveShadow on meshes. Windows are inset panes with frames; lit windows use a warm emissive colour. Paint brick, stone, roof tiles, wood and paving as textures in code with kit.canvasTexture(width, height, (ctx, w, h) => {...}) (it returns a THREE.CanvasTexture; set wrap and repeat yourself). No text, no letters, no logos.\n\nRULES: a plain ES module; no imports; no globals: THREE and kit arrive as arguments and are passed on to helpers. No document, window, fetch or storage. Units: 1 unit = about 3 metres of campus, Y up. Keep the triangle count moderate (under about 40,000) by reusing geometries and materials and by using InstancedMesh for repeated things such as windows, trees and lamp posts. Keep the module under 1,200 lines. Return only the code in one ```js block.\n",
+ "usage": {
+  "total_tokens": 41019,
+  "total_input_tokens": 524,
+  "input_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 524
+   }
+  ],
+  "total_cached_tokens": 0,
+  "total_output_tokens": 27204,
+  "output_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 27204
+   }
+  ],
+  "total_tool_use_tokens": 0,
+  "total_thought_tokens": 13291
+ },
+ "ms": 317692,
+ "made_at": "2026-11-21T17:39:58.046Z"
+}

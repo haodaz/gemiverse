@@ -15,14 +15,16 @@ renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadow
 const scene = new THREE.Scene(); scene.background = new THREE.Color("#f3eef8");
 scene.environment = new THREE.PMREMGenerator(renderer).fromScene(new RoomEnvironment(), 0.04).texture; scene.environmentIntensity = 0.75;
 const sun = new THREE.DirectionalLight("#fff1dd", 2.2); sun.position.set(2.5, 5, 4); sun.castShadow = true; sun.shadow.mapSize.set(2048, 2048); Object.assign(sun.shadow.camera, { left: -2, right: 2, top: 2.5, bottom: -0.5 }); sun.shadow.bias = -0.0004; scene.add(sun);
+// fill light from the front and from below: without it the underside of every round form (a chin, a cheek) reflects the dark floor of the environment
+scene.add(new THREE.HemisphereLight("#ffffff", "#f1e3d6", 1.1)); const fill = new THREE.DirectionalLight("#fff4ea", 0.9); fill.position.set(0, 0.2, 4); scene.add(fill);
 const rim = new THREE.DirectionalLight("#cfd8ff", 0.8); rim.position.set(-3, 3, -4); scene.add(rim);
 const ground = new THREE.Mesh(new THREE.CircleGeometry(4, 64), new THREE.ShadowMaterial({ opacity: 0.2 })); ground.rotation.x = -Math.PI / 2; ground.receiveShadow = true; scene.add(ground);
 const kit = makeKit(THREE), dolls = [];
 const q = new URLSearchParams(location.search), which = (q.get("looks") ?? "mochi,kai,pip").split(",");
 let x = -(which.length - 1) * 0.35;
 for (const name of which) { const d = await buildDoll(THREE, LOOKS[name] ?? LOOKS.mochi, kit, err); if (d) { d.root.position.x = x; scene.add(d.root); dolls.push(d); } x += 0.7; }
-const camera = new THREE.PerspectiveCamera(26, innerWidth / innerHeight, 0.05, 50); camera.position.set(1.4, 0.95, 2.9);
-const controls = new OrbitControls(camera, renderer.domElement); controls.target.set(0, 0.5, 0); controls.update();
+const camera = new THREE.PerspectiveCamera(26, innerWidth / innerHeight, 0.05, 50); camera.position.set(...(q.get("cam") === "front" ? [0, 0.62, 3.3] : q.get("cam") === "face" ? [0.25, 0.82, 1.25] : [1.4, 0.95, 2.9]));
+const controls = new OrbitControls(camera, renderer.domElement); controls.target.set(0, q.get("cam") === "face" ? 0.8 : 0.5, 0); controls.update();
 const ui = document.getElementById("ui");
 for (const clip of ["idle", "walk", "sitDown", "squat", "lieDown", "wave", "patHead", "think", "reachShelf", "writeAtDesk", "cheer", "stretch"]) { const b = document.createElement("button"); b.textContent = clip; b.onclick = () => dolls.forEach((d) => d.play?.(clip)); ui.appendChild(b); }
 addEventListener("resize", () => { camera.aspect = innerWidth / innerHeight; camera.updateProjectionMatrix(); renderer.setSize(innerWidth, innerHeight); });

@@ -1,0 +1,21 @@
+{
+ "model": "lyria-3-clip-preview",
+ "prompt": "A cheerful walking-around-campus instrumental in the style of a cozy life-sim game: bouncy acoustic guitar, pizzicato strings, claps, a whistled melody. Light and friendly, loopable. No vocals.",
+ "usage": {
+  "total_tokens": 358,
+  "total_input_tokens": 46,
+  "input_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 46
+   }
+  ],
+  "total_cached_tokens": 0,
+  "total_output_tokens": 312,
+  "total_tool_use_tokens": 0,
+  "total_thought_tokens": 0,
+  "initial_input_tokens": 46
+ },
+ "ms": 16641,
+ "made_at": "2026-11-21T17:40:41.510Z"
+}

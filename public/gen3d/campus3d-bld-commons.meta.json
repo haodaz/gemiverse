@@ -1,0 +1,26 @@
+{
+ "model": "gemini-4-neon",
+ "prompt": "Write a three.js ES module: export function build(THREE, opts, kit) -> THREE.Group, a university STUDENT COMMONS and dining hall, the place to meet people, as a miniature building for a campus map. Footprint about 7 wide (x) by 6 deep (z), centred on the origin, on a paved base 8 by 7 and 0.15 high; height about 5.5. A warm brick hall with a slate pitched roof, two chimneys and a small cupola, large arched windows showing long tables inside, yellow striped awnings, a terrace on the +z side with four round tables, chairs and yellow umbrellas, string lights on poles, a coffee cart, planters with flowers. opts = { accent } (umbrella and awning colour, default sunny yellow). Also export const ENTRANCE = [x, y, z] and export function setHighlight(group, on) (brighter windows and string lights, soft emissive tint on awnings; the building does not move).\n\nSTYLE (the same as the dorm-room diorama the player already knows): a refined, cozy, stylised 3D miniature like a premium life-sim game. Smooth, rounded forms (bevelled boxes, lathe shapes, extruded bezier shapes with bevels; no raw sharp boxes), believable architecture, small secondary details, warm colours. MeshStandardMaterial with thoughtful roughness; castShadow and receiveShadow on meshes. Windows are inset panes with frames; lit windows use a warm emissive colour. Paint brick, stone, roof tiles, wood and paving as textures in code with kit.canvasTexture(width, height, (ctx, w, h) => {...}) (it returns a THREE.CanvasTexture; set wrap and repeat yourself). No text, no letters, no logos.\n\nRULES: a plain ES module; no imports; no globals: THREE and kit arrive as arguments and are passed on to helpers. No document, window, fetch or storage. Units: 1 unit = about 3 metres of campus, Y up. Keep the triangle count moderate (under about 40,000) by reusing geometries and materials and by using InstancedMesh for repeated things such as windows, trees and lamp posts. Keep the module under 1,200 lines. Return only the code in one ```js block.\n",
+ "usage": {
+  "total_tokens": 41107,
+  "total_input_tokens": 515,
+  "input_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 515
+   }
+  ],
+  "total_cached_tokens": 0,
+  "total_output_tokens": 25847,
+  "output_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 25847
+   }
+  ],
+  "total_tool_use_tokens": 0,
+  "total_thought_tokens": 14745
+ },
+ "ms": 302249,
+ "made_at": "2026-11-21T17:39:42.603Z"
+}

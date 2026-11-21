@@ -1,0 +1,10 @@
+The attached image is a render of our doll with the hair module whose source is below. The user says the style is now right (soft, clay-like locks) but there are too few locks: you can count them, and real hair is not like that. Either add more, or make the few cover enough AREA and VOLUME.
+
+Revise the module. Keep every export, the options, the head fit, the material and the clay style. Change:
+1. Coverage: the cap must be a full, thick hair mass (scale 1.10 to 1.12 at the crown and back, with a rounded outer silhouette), so that even with zero locks the head looks fully haired from every angle.
+2. Count and layering: at least 26 to 34 locks for medium and long styles and 18 to 24 for short ones, in three layers (under layer at the nape and behind the ears, a middle layer around the sides and back, a top layer radiating from a crown whorl), each layer overlapping the one below like roof tiles with no gaps and no scalp visible between locks from the front, sides, back or top.
+3. Width variety: mix broad locks (0.08 to 0.11 wide) that carry the mass with a few narrower ones (0.035 to 0.05) laid on top for detail; avoid equal spacing and equal length; vary the tip heights by up to 20 percent.
+4. Fringe: 6 to 9 overlapping locks that together cover the whole forehead down to 0.195 above the pivot with a soft serrated edge, the outer ones blending into the side hair so there is no bare temple.
+5. Back view: long styles form a continuous curtain; short styles have a clean nape with small upturned tips.
+6. Keep the small antenna curl. Keep hair off the eyes and outside the shoulders.
+Stay under 1,000 lines. Return only the complete revised module in one ```js block.

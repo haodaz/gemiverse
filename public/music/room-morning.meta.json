@@ -1,0 +1,21 @@
+{
+ "model": "lyria-3-clip-preview",
+ "prompt": "A bright, gentle morning instrumental for a cozy student room: ukulele, soft glockenspiel, light hand percussion, warm upright bass. Curious and fresh, loopable. No vocals.",
+ "usage": {
+  "total_tokens": 312,
+  "total_input_tokens": 39,
+  "input_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 39
+   }
+  ],
+  "total_cached_tokens": 0,
+  "total_output_tokens": 273,
+  "total_tool_use_tokens": 0,
+  "total_thought_tokens": 0,
+  "initial_input_tokens": 39
+ },
+ "ms": 17295,
+ "made_at": "2026-11-21T17:40:42.164Z"
+}

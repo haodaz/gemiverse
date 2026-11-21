@@ -2,7 +2,7 @@
 // The motion module is optional: if it is present the doll uses it, otherwise it only breathes.
 export const LOOKS = {
   mochi: { skin: "#f3d3bd", bodyWidth: 1, bodyHeight: 1, eye: "#4a2f24", eyeShape: "almond", brow: "soft", browColor: "#2a2022", lip: "#d98a8a", blush: true, freckles: false, lashes: true,
-    hairStyle: "longStraight", hairColor: "#1f1a1c", highlight: "#4a3a3f", fringe: "full", top: "cardigan", topColor: "#b8a2e3", bottom: "pleatedSkirt", bottomColor: "#3d3648", shoes: "maryJanes", shoeColor: "#2b2230", socks: "knee", sockColor: "#ffffff", accent: "#f2a7b8" },
+    hairStyle: "bob", hairColor: "#2a2226", highlight: "#6a5a60", fringe: "full", top: "cardigan", topColor: "#b8a2e3", bottom: "pleatedSkirt", bottomColor: "#3d3648", shoes: "maryJanes", shoeColor: "#2b2230", socks: "knee", sockColor: "#ffffff", accent: "#f2a7b8" },
   pip: { skin: "#a86f4c", bodyWidth: 1.05, bodyHeight: 1.04, eye: "#2f1d14", eyeShape: "round", brow: "straight", browColor: "#1d1512", lip: "#9a5a4a", blush: true, freckles: true, lashes: false,
     hairStyle: "curlyMedium", hairColor: "#2a1d18", highlight: "#5a4034", fringe: "none", top: "hoodie", topColor: "#8fc1e8", bottom: "jeans", bottomColor: "#4a5f8a", shoes: "sneakers", shoeColor: "#f6c453", socks: "ankle", sockColor: "#ffffff", accent: "#f6c453" },
   kai: { skin: "#eac7a8", bodyWidth: 1.08, bodyHeight: 1.05, eye: "#3b2a22", eyeShape: "almond", brow: "straight", browColor: "#1f1a1c", lip: "#c98a80", blush: false, freckles: false, lashes: false,
@@ -13,21 +13,23 @@ export const LOOKS = {
     hairStyle: "bob", hairColor: "#8a5a34", highlight: "#c08a55", fringe: "sideSwept", top: "sweater", topColor: "#7fb48a", bottom: "trousers", bottomColor: "#d9c08a", shoes: "boots", shoeColor: "#6b4a2f", socks: "none", sockColor: "#ffffff", accent: "#e98b6d" },
 };
 
+import { applyFace } from "./face-paint.js";
+
 export async function buildDoll(THREE, look, kit, report = console.warn) {
   globalThis.THREE ??= THREE;   // some generated helpers read THREE from the page although the brief said not to
   const load = async (n) => { try { return await import(`./doll-${n}.js`); } catch (e) { report(`doll-${n}: ${e.message}`); return null; } };
   // newer versions of a module win when they exist (face2 over face, hair2 over hair)
   const first = async (...names) => { for (const n of names) { try { return await import(`./doll-${n}.js`); } catch {} } report(`doll-${names.at(-1)}: not available`); return null; };
-  const [body, face, hair, tops, bottoms, shoes, motion] = await Promise.all([load("body"), first("face2", "face"), first("hair2", "hair"), first("tops"), first("bottoms"), first("shoes"), first("motion")]);
-  let headMod = null; try { headMod = await import("./doll-head.js"); } catch {}   // third version: head and face as one module, made after Neon was shown a render
+  const [body, face, hair, tops, bottoms, shoes, motion] = await Promise.all([load("body"), first("face2", "face"), first("hair3", "hair2", "hair"), first("tops"), first("bottoms"), first("shoes"), first("motion")]);
+  let headMod = null; for (const n of ["doll-head4", "doll-head"]) { try { headMod = await import(`./${n}.js`); break; } catch {} }   // third version: head and face as one module, made after Neon was shown a render
   if (!body) return null;
   let root; try { root = body.buildBody(THREE, look, kit); } catch (e) { report("body: " + e.message); return null; }
   const head = root.getObjectByName("head");
   // Hand corrections after Elodie's review: hands were sculpted too small, and the head carried a dark painted gradient.
   for (const n of ["handL", "handR"]) root.getObjectByName(n)?.scale.multiplyScalar(1.7);
   head?.traverse((o) => { if (o.isMesh && o.material && o.userData.slot === "skin") { o.material = o.material.clone(); o.material.map = null; o.material.color = new THREE.Color(look.skin); o.material.needsUpdate = true; } });
-  let faceGroup = null, hairGroup = null;
-  if (headMod && head) try { for (const c of [...head.children]) c.visible = false; faceGroup = headMod.buildHead(THREE, look, kit); head.add(faceGroup); } catch (e) { report("head: " + e.message); headMod = null; for (const c of head.children) c.visible = true; }
+  let faceGroup = null, hairGroup = null, painted = null;
+  if (headMod && head) try { for (const c of [...head.children]) c.visible = false; faceGroup = headMod.buildHead(THREE, look, kit); head.add(faceGroup); painted = applyFace(THREE, kit, faceGroup, look); } catch (e) { report("head: " + e.message); headMod = null; for (const c of head.children) c.visible = true; }
   if (!headMod && face && head) try { faceGroup = face.buildFace(THREE, look, kit); head.add(faceGroup); } catch (e) { report("face: " + e.message); }
   if (hair && head) try { hairGroup = hair.buildHair(THREE, look, kit); head.add(hairGroup); } catch (e) { report("hair: " + e.message); }
   for (const [mod, fn] of [[tops, "wearTop"], [bottoms, "wearBottom"], [shoes, "wearShoes"]]) if (mod?.[fn]) try { mod[fn](THREE, root, look, kit); } catch (e) { report(`${fn}: ${e.message}`); }
@@ -39,15 +41,19 @@ export async function buildDoll(THREE, look, kit, report = console.warn) {
     if (child.isMesh && child.userData.dollBody !== false && /Sphere/.test(child.geometry?.type ?? "") && child.position.length() < 0.02) {
       child.material = new THREE.MeshPhysicalMaterial({ color: colour, roughness: 0.9, sheen: 0.4 }); child.scale.multiplyScalar(1.22); }
   root.traverse((o) => { if (o.isMesh) { o.castShadow = true; o.receiveShadow = true; } });
+  // The "dark lower face" in every earlier version was the hair's shadow falling on the face. A face must not be shadowed by its own fringe.
+  faceGroup?.traverse((o) => { if (o.isMesh) o.receiveShadow = false; });
+  if (new URLSearchParams(globalThis.location?.search ?? "").has("nohairshadow")) hairGroup?.traverse((o) => { if (o.isMesh) o.castShadow = false; });
+  if (new URLSearchParams(globalThis.location?.search ?? "").has("nohair")) { if (hairGroup) hairGroup.visible = false; }
   let animator = null; if (motion?.createAnimator) try { animator = motion.createAnimator(root); animator.play("idle"); } catch (e) { report("motion: " + e.message); }
   return {
     root, look,
     play: (clip, opts) => { try { animator?.play(clip, opts); } catch (e) { report(`clip ${clip}: ${e.message}`); } },
-    express: (name) => { try { (headMod ?? face)?.setExpression?.(faceGroup, name); } catch {} },
+    express: (name) => { try { painted ? painted.express(name) : (headMod ?? face)?.setExpression?.(faceGroup, name); } catch {} },
     walkSpeed: (clip) => motion?.walkSpeed?.(clip) ?? 0.5,
     update(t, dt) {
       if (animator) animator.update(dt); else if (body.pose) body.pose(root, "stand", t);
-      if (faceGroup) (headMod ?? face)?.blink?.(faceGroup, t);
+      if (painted) painted.blink(t); else if (faceGroup) (headMod ?? face)?.blink?.(faceGroup, t);
       if (hairGroup && hair?.sway) hair.sway(hairGroup, t, 1);
     },
   };

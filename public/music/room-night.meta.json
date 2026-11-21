@@ -1,0 +1,21 @@
+{
+ "model": "lyria-3-clip-preview",
+ "prompt": "A quiet late-night instrumental for studying: slow lo-fi beat, mellow electric piano, soft tape hiss, distant rain. Calm and focused, loopable. No vocals.",
+ "usage": {
+  "total_tokens": 336,
+  "total_input_tokens": 37,
+  "input_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 37
+   }
+  ],
+  "total_cached_tokens": 0,
+  "total_output_tokens": 299,
+  "total_tool_use_tokens": 0,
+  "total_thought_tokens": 0,
+  "initial_input_tokens": 37
+ },
+ "ms": 17668,
+ "made_at": "2026-11-21T17:40:42.537Z"
+}
