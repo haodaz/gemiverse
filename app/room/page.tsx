@@ -52,6 +52,9 @@ export default function Room() {
   const [lang, setLang] = useState<Lang>("en");
   const [panel, setPanel] = useState<Panel>(null);
   const [deskView, setDeskView] = useState(false);
+  // The first minute in the room: the Gemi shows its Gem Star jars filling for today, says what they are for, then shows the room.
+  const [tour, setTour] = useState<number | null>(null), [poured, setPoured] = useState(0);
+  const firstWords = useRef<string | null>(null);
   const [live, setLive] = useState<Record<string, any>>({});
   // First visit: there is no account system. Who you are to your Gemi lives in this browser only (gemi.me.<school>).
   const [me, setMe] = useState<{ name: string; demo?: boolean } | null | undefined>(undefined);
@@ -94,7 +97,7 @@ export default function Room() {
       if (m.type === "open") { if (m.value === "door") { setPanel(null); setDeskView(false); setCampus(true); } else if (m.value === "wardrobe") setPanel("wardrobe"); }
       if (m.type === "ready" && school) { let saved = null; try { saved = JSON.parse(localStorage.getItem(`gemi.look.${school}`) ?? "null"); } catch {} send("look", saved ?? PRESETS[school].look); if (saved) setLook(saved); try { setOwned(JSON.parse(localStorage.getItem(`gemi.inv.${school}`) ?? "[]")); } catch {} try { setMe(JSON.parse(localStorage.getItem(`gemi.me.${school}`) ?? "null")); } catch { setMe(null); }
         // What the student told the point of light on the start page is the first thing the Gemi hears in its room.
-        try { const first = localStorage.getItem(`gemi.about.${school}`); if (first) { localStorage.removeItem(`gemi.about.${school}`); setTimeout(() => { setPanel("talk"); onSend({ kind: "text", text: first }); }, 2500); } } catch {} try { setWent(JSON.parse(localStorage.getItem(`gemi.went.${school}`) ?? "[]")); guesses.current = JSON.parse(localStorage.getItem(`gemi.guess.${school}`) ?? "{}"); } catch {} setTimeout(() => auto.current?.(), 600); }
+        try { const first = localStorage.getItem(`gemi.about.${school}`); if (first) { localStorage.removeItem(`gemi.about.${school}`); firstWords.current = first; } if (localStorage.getItem(`gemi.me.${school}`) && !localStorage.getItem(`gemi.toured.${school}`)) setTimeout(() => setTour(0), 1800); else if (firstWords.current) { const w = firstWords.current; firstWords.current = null; setTimeout(() => { setPanel("talk"); onSend({ kind: "text", text: w }); }, 2500); } } catch {} try { setWent(JSON.parse(localStorage.getItem(`gemi.went.${school}`) ?? "[]")); guesses.current = JSON.parse(localStorage.getItem(`gemi.guess.${school}`) ?? "{}"); } catch {} setTimeout(() => auto.current?.(), 600); }
       if (m.type === "layout" && school) { const it = String(m.value?.item ?? "something"); roomTouched.current = it; lastTouch.current = Date.now();
         setLog((l) => { const n = [...l, { id: Math.random().toString(36).slice(2, 10), at: new Date().toISOString(), type: "room" as const, by: "student" as const, what: `moved the ${it}`, item: it }]; saveLog(school, n); return n; }); }
       if (m.type === "focus") { if (m.value === "desk") setDeskView(true); else if (m.value === "room") setDeskView(false); }   // a click on the desk in 3D enters the desk view; panels open only from buttons
@@ -109,7 +112,7 @@ export default function Room() {
   const choicesMade = log.filter((e) => e.type === "choice" && !e.undone).length, keptCount = log.filter((e) => e.type === "choice" && !e.undone && (e as any).action === "keep").length;
   const stageNow = (choicesMade >= 15 ? 3 : choicesMade >= 5 ? 2 : 1) as 1 | 2 | 3;
   // the room draws the state
-  useEffect(() => { send("world", { desk: pendingNow, pinned: keptCount, starsYou: state.purses.for_you, starsSelf: state.purses.for_itself, stage: stageNow, keepsakes: went.length, companions: went.filter((w) => w.matched).length }); }, [pendingNow, keptCount, state.purses.for_you, state.purses.for_itself, stageNow, went]);
+  useEffect(() => { send("world", { desk: pendingNow, pinned: keptCount, starsYou: tour === 0 ? Math.min(state.purses.for_you, poured) : state.purses.for_you, starsSelf: tour === 0 ? Math.max(0, Math.min(state.purses.for_itself, poured - state.purses.for_you)) : state.purses.for_itself, stage: stageNow, keepsakes: went.length, companions: went.filter((w) => w.matched).length }); }, [pendingNow, keptCount, state.purses.for_you, state.purses.for_itself, stageNow, went, tour, poured]);
   // Its own initiative: left alone with nothing waiting on the desk and enough Gem Stars, it decides to go out by itself.
   // It picks the place that serves what the student cares about most; this trip is paid from its own allowance.
   // Autonomy: the policy table in lib/kernel/autonomy.ts is evaluated every few seconds; whatever row matches decides what it does.
@@ -118,6 +121,8 @@ export default function Room() {
   useEffect(() => { const id = setInterval(() => auto.current?.(), 5000); return () => clearInterval(id); }, []);
   const s = school ? SCHOOLS[school] : null, preset = school ? { ...PRESETS[school], gemiName: me?.name || PRESETS[school].gemiName } : null;
   const evidenceOf = useMemo(() => { const m: Record<string, Evidence[]> = {}; for (const e of base?.evidence ?? []) (m[e.entity_id] ??= []).push(e); return m; }, [base]);
+  useEffect(() => { if (tour === null) return; send("focus", ["jars", "jars", "desk", "board", "door"][tour] ?? "room"); setPanel(null); setDeskView(false);
+    if (tour !== 0) return; setPoured(0); let n = 0; const id = setInterval(() => { n += 1; setPoured(n); if (n >= 12) clearInterval(id); }, 320); return () => clearInterval(id); }, [tour]);   // eslint-disable-line react-hooks/exhaustive-deps
   if (!s || !preset || !school) return null;
   const tt = (k: string) => t(k, lang);
   const tri = (en: string, zh: string, es: string) => (lang === "zh" ? zh : lang === "es" ? es : en);
@@ -283,7 +288,7 @@ export default function Room() {
       </div>
 
       {me === null && (() => {
-        const begin = (m: { name: string; demo?: boolean }) => { try { localStorage.setItem(`gemi.me.${school}`, JSON.stringify(m)); } catch {} setMe(m); };
+        const begin = (m: { name: string; demo?: boolean }) => { try { localStorage.setItem(`gemi.me.${school}`, JSON.stringify(m)); } catch {} setMe(m); if (!m.demo) setTimeout(() => setTour(0), 600); };
         const finish = () => { const name = draft.name.trim() || PRESETS[school!].gemiName; begin({ name }); if (draft.about.trim()) { setPanel("talk"); setTimeout(() => onSend({ kind: "text", text: draft.about.trim() }), 400); } };
         const btn = "rounded-full border-[3px] px-6 py-2 text-base font-bold";
         return (
@@ -312,8 +317,31 @@ export default function Room() {
             </div>
           </div>); })()}
 
+      {tour !== null && preset && (() => {
+        const T: { view: string; big: string; lines: string[]; chips?: string[] }[] = [
+          { view: "jars", big: tri(`These are Gem Stars. They are ${preset.gemiName}'s.`, `这是 Gem Star，是给 ${preset.gemiName} 的。`, `Estas son Gem Stars. Son de ${preset.gemiName}.`), lines: [tri(`Every day it gets ${state.purses.for_you} to spend for you and ${state.purses.for_itself} for itself. They are real tokens, and tomorrow it gets the same again.`, `每天它会拿到 ${state.purses.for_you} 颗为你花、${state.purses.for_itself} 颗为它自己花。这是真实的 token，明天还是这么多。`, `Cada día recibe ${state.purses.for_you} para ti y ${state.purses.for_itself} para sí. Son tokens reales.`), tri("It decides for itself how to spend them. What you ask for is free.", "怎么花，它自己决定。你让它做的事不花星星。", "Decide por sí mismo cómo gastarlas. Lo que pides es gratis.")] },
+          { view: "jars", big: tri("With them it can", "它可以用星星做这些事", "Con ellas puede"), lines: [tri("And more, for you to find.", "还有更多，等你发现。", "Y más, por descubrir.")], chips: [tri("go out and look for you", "出门替你找", "salir a buscar"), tri("check a fact at its source", "回到出处核对一件事", "comprobar un dato"), tri("write its diary", "写日记", "escribir su diario"), tri("change its room", "布置自己的房间", "cambiar su cuarto"), tri("write a song", "写一首歌", "escribir una canción"), tri("save for days for something bigger", "攒几天做一件大事", "ahorrar para algo grande")] },
+          { view: "desk", big: tri("“This is my desk.”", "「这是我的书桌。」", "«Este es mi escritorio.»"), lines: [tri("What I bring back for you lands here, each thing with its source. And this is my diary: what I learn about how you choose. You can undo any line.", "我带回来给你的东西放在这里，每样都带出处。这是我的日记：我学到的你是怎么选的。每一条你都能撤回。", "Lo que te traigo llega aquí, con su fuente. Y este es mi diario: puedes deshacer cualquier línea.")] },
+          { view: "board", big: tri("“What you keep, I pin up here.”", "「你留下的，我钉在这块板上。」", "«Lo que guardas, lo cuelgo aquí.»"), lines: [tri("Go to one of them for real, and a keepsake will turn up in the room.", "真的去了其中一个，屋里就会多一件纪念品。", "Si vas de verdad, aparecerá un recuerdo.")] },
+          { view: "door", big: tri("“And that door goes out to campus.”", "「那扇门通往校园。」", "«Y esa puerta da al campus.»"), lines: [tri("I go to the library, the clubs, the commons. I come back only with what I have checked. There are a lot of good things out there.", "我会去图书馆、社团、交流广场逛，只带回核对过的东西。外面有很多好东西。", "Voy a la biblioteca, los clubes, el comedor. Solo vuelvo con lo comprobado.")] },
+        ];
+        const k = tour, x = T[k], last = k === T.length - 1;
+        const end = () => { try { localStorage.setItem(`gemi.toured.${school}`, "1"); } catch {} setTour(null); send("focus", "room"); const w = firstWords.current; firstWords.current = null; if (w) setTimeout(() => { setPanel("talk"); onSend({ kind: "text", text: w }); }, 900); };
+        return (
+          <div className="absolute inset-x-0 bottom-28 z-30 flex justify-center px-6">
+            <div className="relative w-[min(46rem,92vw)] rounded-xl border-[3px] bg-[#fffaf0] px-7 pb-5 pt-6" style={{ borderColor: INK, boxShadow: `0 6px 0 ${INK}33, 0 14px 30px #0003` }}>
+              <span className="absolute -top-4 left-7 -rotate-2 rounded-lg border-[3px] px-3.5 py-0.5 text-sm font-bold text-white" style={{ background: s!.accent, borderColor: INK }}>{preset.gemiName}</span>
+              <p className="text-[1.7rem] font-bold leading-tight">{x.big}</p>
+              {x.chips && <div className="mt-3 flex flex-wrap gap-2">{x.chips.map((c) => <span key={c} className="flex items-center gap-1.5 rounded-full border-2 bg-white px-3 py-1 text-[15px] font-bold" style={{ borderColor: INK }}><Icon name="star" size={16} />{c}</span>)}</div>}
+              {x.lines.map((l) => <p key={l} className="mt-2 text-[17px] leading-snug text-[#3d3648]">{l}</p>)}
+              <div className="mt-4 flex items-center justify-between"><button onClick={end} className="text-sm text-[#8a8296] underline">{tri("Skip the tour", "跳过", "Saltar")}</button>
+                <div className="flex items-center gap-3"><span className="text-xs tabular-nums text-[#8a8296]">{k + 1} / {T.length}</span>
+                  <button onClick={() => (last ? end() : setTour(k + 1))} className="rounded-full border-[3px] bg-[#ffe08a] px-6 py-1.5 text-base font-bold" style={{ borderColor: INK, boxShadow: `0 4px 0 ${INK}` }}>{last ? tri("Start", "开始", "Empezar") : tri("Next", "下一步", "Siguiente")}</button></div></div>
+            </div>
+          </div>); })()}
+
       {/* What the Gemi says on its own comes up as a dialogue card, as a character speaks in a game: name tag, typed line, tap to dismiss. */}
-      {spoke && !campus && !panel && !tap && <Dialogue key={spoke.text + lang} name={preset.gemiName} text={say(spoke.text, lang)} accent={s.accent} onDone={() => setSpoke(null)} />}
+      {spoke && tour === null && !campus && !panel && !tap && <Dialogue key={spoke.text + lang} name={preset.gemiName} text={say(spoke.text, lang)} accent={s.accent} onDone={() => setSpoke(null)} />}
 
       {deskView && !panel && !campus && (
         <div className="absolute left-6 top-1/2 z-10 flex -translate-y-1/2 flex-col gap-3">

@@ -138,7 +138,7 @@ function drawState() {
   for (let i = 1; i < worldState.stage; i++) { const t = new THREE.Mesh(new THREE.ConeGeometry(0.03, 0.07, 5), new THREE.MeshStandardMaterial({ color: "#ffd24a", metalness: 0.6, roughness: 0.3, emissive: "#a87400", emissiveIntensity: 0.2 })); const sh = layout.shelf?.p ?? [1.6, 0, -1.8]; t.position.set(sh[0] - 0.22 + i * 0.12, 1.64, sh[2] + 0.02); stateGroup.add(t); }   // one small trophy per stage reached
 }
 // ---- Looking closer: click the desk or the corkboard and the camera moves in; the page opens the matching panel -----------
-const VIEWS = { room: { target: [0, 1.0, 0], zoom: 1 }, desk: { target: [0.75, 0.82, -1.55], zoom: 2.7 }, board: { target: [-1.6, 1.45, -0.7], zoom: 2.3 }, shelf: { target: [1.55, 1.0, -1.6], zoom: 2.2 }, bed: { target: [-1.35, 0.5, -0.9], zoom: 1.8 } };
+const VIEWS = { jars: { target: [1.08, 0.84, -1.78], zoom: 6.2 }, door: { target: [-1.7, 1.0, 1.1], zoom: 1.7 }, room: { target: [0, 1.0, 0], zoom: 1 }, desk: { target: [0.75, 0.82, -1.55], zoom: 2.7 }, board: { target: [-1.6, 1.45, -0.7], zoom: 2.3 }, shelf: { target: [1.55, 1.0, -1.6], zoom: 2.2 }, bed: { target: [-1.35, 0.5, -0.9], zoom: 1.8 } };
 let view = VIEWS.room;
 function focusOn(name) { view = VIEWS[name] ?? VIEWS.room; tell("focus", VIEWS[name] ? name : "room"); }
 
