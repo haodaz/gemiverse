@@ -1,0 +1,812 @@
+{
+ "version": "v1",
+ "designed_by": "Claude (the AI coding assistant), written in parallel with gemini-4-carbon's designs so the two can be compared and merged",
+ "designed_at": "2026-11-21T11:35-05:00",
+ "principle": "Everything that happens in the product is an event on entities. The room, the map and the diary are views of that state. Nothing is drawn that is not the projection of an entity, a link or an event.",
+ "scopes": {
+  "shared": "The base. Things in the world. Supabase. Every Gemi reads it; checked facts may be added. Never a person.",
+  "private": "One student's side. Lives in that student's browser. The Gemi, its beliefs, its room, its ledger, its diary.",
+  "pairwise": "A name card. Each side stores its own copy. No central list of who knows whom."
+ },
+ "shared_entities": {
+  "school": {
+   "fields": [
+    "name",
+    "city",
+    "accent"
+   ],
+   "note": "two rows today"
+  },
+  "unit": {
+   "fields": [
+    "name",
+    "kind: college|department|office",
+    "parent_unit",
+    "url"
+   ],
+   "check": "name appears on the unit's own page"
+  },
+  "program": {
+   "fields": [
+    "name",
+    "level: undergrad|grad",
+    "unit",
+    "url"
+   ],
+   "check": "listed on the unit's programs page",
+   "evidence_today": "none in the 25 samples; type is defined but empty"
+  },
+  "place": {
+   "fields": [
+    "name",
+    "kind: building|room|outdoor|online",
+    "address",
+    "inside_place",
+    "affordances[]"
+   ],
+   "check": "name and address quoted from a source",
+   "identity": "normalise address; a room is a child of its building"
+  },
+  "org": {
+   "fields": [
+    "name",
+    "kind: club|lab|office|centre|library",
+    "unit",
+    "url",
+    "agent_scope_url"
+   ],
+   "check": "name appears as host on a source page"
+  },
+  "resource": {
+   "fields": [
+    "title",
+    "kind: event|workshop|course|opening|competition|funding|service",
+    "summary",
+    "needs[]",
+    "affordances[]",
+    "audience",
+    "cost",
+    "registration: none|required|url",
+    "url"
+   ],
+   "check": "title and each tagged claim has a quote"
+  },
+  "occurrence": {
+   "fields": [
+    "resource",
+    "starts_at",
+    "ends_at",
+    "place",
+    "status: scheduled|rescheduled|cancelled"
+   ],
+   "why": "one resource can happen many times; reschedules and runs are common in the samples",
+   "check": "date, time and place each quoted"
+  },
+  "need": {
+   "fields": [
+    "id",
+    "name",
+    "definition",
+    "signals[]"
+   ],
+   "note": "public vocabulary only; never a person's need"
+  },
+  "source": {
+   "fields": [
+    "url",
+    "tier",
+    "fetched_at",
+    "content_hash"
+   ],
+   "why": "a revisit compares the hash and re-checks only fields whose quote changed"
+  },
+  "evidence": {
+   "fields": [
+    "entity",
+    "field",
+    "value",
+    "quote",
+    "source",
+    "check_confidence",
+    "passed"
+   ],
+   "why": "trust is per field, not per record"
+  }
+ },
+ "shared_links": [
+  {
+   "rel": "part_of",
+   "from": "unit|program|place",
+   "to": "school|unit|place"
+  },
+  {
+   "rel": "offered_by",
+   "from": "resource",
+   "to": "org"
+  },
+  {
+   "rel": "happens_at",
+   "from": "occurrence",
+   "to": "place"
+  },
+  {
+   "rel": "serves",
+   "from": "resource|place",
+   "to": "need",
+   "note": "carries a confidence from a Decisions check"
+  },
+  {
+   "rel": "co_hosts",
+   "from": "org",
+   "to": "org"
+  },
+  {
+   "rel": "speaks_for",
+   "from": "agent",
+   "to": "org"
+  },
+  {
+   "rel": "same_as",
+   "from": "any",
+   "to": "same type",
+   "note": "added only after a Decisions yes at high confidence"
+  },
+  {
+   "rel": "listed_on",
+   "from": "any",
+   "to": "source"
+  }
+ ],
+ "need_taxonomy": [
+  {
+   "id": "find_my_people",
+   "signals": [
+    "social",
+    "mixer",
+    "club meeting",
+    "open to all"
+   ],
+   "idea": "belonging (need to belong)"
+  },
+  {
+   "id": "build_a_skill",
+   "signals": [
+    "workshop",
+    "hands-on",
+    "bring a laptop",
+    "crash course"
+   ],
+   "idea": "competence (self-determination theory)"
+  },
+  {
+   "id": "explore_a_field",
+   "signals": [
+    "talk",
+    "seminar",
+    "panel",
+    "introduction to"
+   ],
+   "idea": "exploration before commitment (identity development)"
+  },
+  {
+   "id": "get_experience",
+   "signals": [
+    "showcase",
+    "hackathon",
+    "apply",
+    "position",
+    "volunteer"
+   ],
+   "idea": "learning by doing"
+  },
+  {
+   "id": "make_and_show",
+   "signals": [
+    "open mic",
+    "exhibit",
+    "submit",
+    "perform"
+   ],
+   "idea": "competence and recognition"
+  },
+  {
+   "id": "rest_and_recover",
+   "signals": [
+    "study break",
+    "mindfulness",
+    "snacks",
+    "craft"
+   ],
+   "idea": "attention restoration"
+  },
+  {
+   "id": "decide_a_direction",
+   "signals": [
+    "advising",
+    "info session",
+    "career",
+    "alumni"
+   ],
+   "idea": "career decision-making"
+  },
+  {
+   "id": "get_unstuck",
+   "signals": [
+    "clinic",
+    "office hours",
+    "consultation",
+    "help desk"
+   ],
+   "idea": "help-seeking"
+  },
+  {
+   "id": "see_the_city",
+   "signals": [
+    "off campus",
+    "museum",
+    "walk",
+    "tour"
+   ],
+   "idea": "exploration"
+  }
+ ],
+ "affordances": [
+  "quiet_focus",
+  "learn_with_a_guide",
+  "make_with_hands",
+  "meet_new_people",
+  "watch_and_listen",
+  "show_your_work",
+  "ask_an_expert",
+  "rest",
+  "online_only"
+ ],
+ "source_tiers": [
+  {
+   "tier": 1,
+   "is": "the organiser's own static page"
+  },
+  {
+   "tier": 2,
+   "is": "the institution's own public feed (JSON)"
+  },
+  {
+   "tier": 3,
+   "is": "another official page that lists it"
+  },
+  {
+   "tier": 4,
+   "is": "inferred by an agent, or the open web"
+  }
+ ],
+ "trust_rules": [
+  "A field enters the base only with a quote and a passed check.",
+  "Two sources that agree raise the field one step; two that disagree keep the field off every desk until resolved.",
+  "Not found is recorded as not found. It would rather miss than be wrong."
+ ],
+ "freshness": {
+  "occurrence": "re-check within 48 h before start; status and place change most",
+  "resource": "weekly",
+  "org|place|unit|program": "monthly",
+  "need": "by hand"
+ },
+ "privacy_boundary": {
+  "rule": "No row in the base may identify, count or describe a student. No field may be written because of who asked.",
+  "cases": [
+   {
+    "case": "A Gemi finds a new event because its student asked for jazz.",
+    "ruling": "The event enters. The reason does not."
+   },
+   {
+    "case": "Popularity: 40 Gemis kept this event.",
+    "ruling": "Not stored today. If ever, only as an anonymous count above a threshold."
+   },
+   {
+    "case": "A club agent asks which students are interested.",
+    "ruling": "No. It can be told a question, never an identity or an axis."
+   }
+  ]
+ },
+ "private_entities": {
+  "gemi": {
+   "fields": [
+    "name",
+    "school",
+    "look",
+    "born_at",
+    "stage"
+   ]
+  },
+  "utterance": {
+   "fields": [
+    "text",
+    "kind: birth|goal|correction",
+    "at"
+   ],
+   "trust": "self_reported",
+   "note": "audio is dropped after transcription"
+  },
+  "choice": {
+   "fields": [
+    "entity_id",
+    "action: keep|skip|ask_again",
+    "shown_with[]",
+    "at"
+   ],
+   "trust": "checked",
+   "note": "what it was shown next to matters: a choice is a contrast"
+  },
+  "outcome": {
+   "fields": [
+    "entity_id",
+    "went: yes|no",
+    "proof: photo_checked|said",
+    "at"
+   ],
+   "trust": "done"
+  },
+  "belief": {
+   "fields": [
+    "axis",
+    "position -1..1",
+    "halo 0..1",
+    "evidence_ids[]"
+   ]
+  },
+  "need_state": {
+   "fields": [
+    "need_id",
+    "weight 0..1",
+    "origin: stated|inferred",
+    "expires_at"
+   ]
+  },
+  "prediction": {
+   "fields": [
+    "trip_id",
+    "predicted_keep[]",
+    "sealed_at",
+    "revealed_at",
+    "hits"
+   ]
+  },
+  "trip": {
+   "fields": [
+    "place_kind",
+    "reason",
+    "stars",
+    "found[]",
+    "blocked[]",
+    "at"
+   ]
+  },
+  "ledger_entry": {
+   "fields": [
+    "purse: for_you|for_itself",
+    "stars",
+    "tokens",
+    "what",
+    "at"
+   ]
+  },
+  "room": {
+   "fields": [
+    "layout",
+    "palette",
+    "items[]"
+   ],
+   "note": "each item records why it is there: a kept find, a stage unlock, or a default"
+  },
+  "diary_entry": {
+   "fields": [
+    "day",
+    "what_happened",
+    "what_i_learned",
+    "evidence_ids[]",
+    "undone"
+   ]
+  },
+  "name_card": {
+   "fields": [
+    "peer_kind: gemi|org_agent",
+    "peer_name",
+    "shared_fields[]",
+    "at"
+   ],
+   "scope": "pairwise"
+  },
+  "outbox_item": {
+   "fields": [
+    "to",
+    "text",
+    "gate: passed|blocked",
+    "reason"
+   ]
+  }
+ },
+ "event_log": {
+  "idea": "The private side is an append-only list of events. Beliefs, the room, the ledger and the diary are computed from it. Undo adds an 'undone' event and recomputes; nothing is edited in place.",
+  "events": [
+   "born",
+   "said",
+   "looked_at",
+   "went_out",
+   "found",
+   "check_passed",
+   "check_failed",
+   "showed",
+   "kept",
+   "skipped",
+   "asked_again",
+   "undone",
+   "attended",
+   "predicted",
+   "revealed",
+   "spent",
+   "moved_item",
+   "placed_item",
+   "asked_agent",
+   "got_reply",
+   "gate_blocked",
+   "exchanged_card",
+   "stage_up"
+  ]
+ },
+ "what_each_action_changes": [
+  {
+   "action": "go out to a place on the map",
+   "shared": "new or refreshed source, resource, occurrence, evidence",
+   "private": "trip, ledger_entry",
+   "seen_as": "the Gemi leaves the room; a dot moves on the map; on return, cards on the desk"
+  },
+  {
+   "action": "student keeps a find",
+   "shared": "nothing",
+   "private": "choice, belief update, need_state update, diary_entry",
+   "seen_as": "the card stays on the desk or pins to the corkboard; a line in the diary; the halo on one axis tightens"
+  },
+  {
+   "action": "student skips a find",
+   "shared": "nothing",
+   "private": "choice, belief update",
+   "seen_as": "the card leaves the desk; diary line"
+  },
+  {
+   "action": "student attends and shows a photo",
+   "shared": "nothing",
+   "private": "outcome (highest trust), belief update",
+   "seen_as": "a keepsake item appears in the room at that event's slot"
+  },
+  {
+   "action": "ask a club agent",
+   "shared": "possibly a corrected field on the org's resources, after a check",
+   "private": "outbox_item, name_card",
+   "seen_as": "a name card on the corkboard; 'what left this room today' list"
+  },
+  {
+   "action": "meet another Gemi",
+   "shared": "nothing",
+   "private": "name_card on each side",
+   "seen_as": "a card on the corkboard; later, a visitor in the room"
+  },
+  {
+   "action": "arrange the room",
+   "shared": "nothing",
+   "private": "room layout event; weak evidence for a few axes",
+   "seen_as": "the room itself"
+  },
+  {
+   "action": "think (plan the day)",
+   "shared": "nothing",
+   "private": "ledger_entry, prediction",
+   "seen_as": "the Gemi at the desk; the plan shown as a short note with reasons"
+  }
+ ],
+ "axes_review": [
+  {
+   "axis": "collaboration (alone <-> in a group)",
+   "movable_by_keep_skip": "yes",
+   "contrast": "a solo crafting hour vs a team showcase",
+   "verdict": "keep"
+  },
+  {
+   "axis": "certainty (likes a plan <-> likes the unknown)",
+   "movable_by_keep_skip": "yes",
+   "contrast": "a workshop with a fixed agenda vs an open jam",
+   "verdict": "keep"
+  },
+  {
+   "axis": "scope (deep on one <-> touch everything)",
+   "movable_by_keep_skip": "yes, across several choices",
+   "contrast": "three things in one field vs three in three fields",
+   "verdict": "keep; needs more than one choice"
+  },
+  {
+   "axis": "closeness (principles <-> things people use)",
+   "movable_by_keep_skip": "yes",
+   "contrast": "a research seminar vs a build night",
+   "verdict": "keep"
+  },
+  {
+   "axis": "horizon (root nearby <-> look outward)",
+   "movable_by_keep_skip": "partly",
+   "contrast": "a dorm-floor event vs a citywide one",
+   "verdict": "keep; weak evidence in our samples"
+  },
+  {
+   "axis": "pace (polish slowly <-> try fast)",
+   "movable_by_keep_skip": "partly",
+   "contrast": "a six-week course vs a 30-minute lightning lesson",
+   "verdict": "keep"
+  },
+  {
+   "axis": "basis (by feel <-> evidence first)",
+   "movable_by_keep_skip": "no; better seen in ask_again and how often sources are opened",
+   "verdict": "reword; measure from behaviour, not from what was kept"
+  },
+  {
+   "axis": "control (wants a guide <-> decides alone)",
+   "movable_by_keep_skip": "weakly; confounded with collaboration",
+   "verdict": "merge test: drop unless Decisions separates it from collaboration"
+  },
+  {
+   "axis": "drive (recognition <-> personal meaning)",
+   "movable_by_keep_skip": "no; campus resources rarely differ on this",
+   "verdict": "do not infer; only from what the student says, and say so"
+  }
+ ],
+ "update_rule": {
+  "state": "position p in [-1,1], halo h in (0,1], start p=0, h=1",
+  "weights": {
+   "self_reported": 0.15,
+   "checked": 0.3,
+   "seen_over_time": 0.45,
+   "done": 0.6
+  },
+  "step": "e = evidence direction in [-1,1] from the rubric, c = Decisions confidence. k = weight * c * h. p = p + k*(e - p). h = h * (1 - 0.5*weight*c).",
+  "contradiction": "if |e - p| > 0.8 and h < 0.5 then h = min(1, h + 0.15): it becomes less sure, not more.",
+  "silence": "h grows 0.02 per week without evidence on that axis.",
+  "undo": "mark the event undone and recompute from the log."
+ },
+ "gap_rule": {
+  "formula": "score(resource) = sum over needs(weight(need) * serves(resource, need)) + 0.5 * sum over axes(halo(axis) * informs(resource, axis))",
+  "plan": "pick the trip whose expected score per star is highest; always include one pair of finds that contrast on the widest-halo axis",
+  "example": "Needs: find_my_people 0.8. Halo widest on collaboration. Plan: Clubs house (1 group event, 1 solo-friendly one), 3 stars, reason shown to the student in one sentence."
+ },
+ "sealed_prediction": {
+  "what": "before showing three finds, the Gemi writes which it expects to be kept; the text is hashed and the hash shown",
+  "score": "hits / shown",
+  "baselines": [
+   "coin flip",
+   "a single Argon call given only the birth note"
+  ]
+ },
+ "growth": {
+  "dimensions": [
+   {
+    "name": "knows you",
+    "metric": "mean halo across kept axes; sealed-prediction hit rate over the last 10",
+    "gaming": "keeping everything; defence: contrast pairs make blanket keeps uninformative"
+   },
+   {
+    "name": "knows the world",
+    "metric": "checked fields it added to the base that another Gemi later read",
+    "gaming": "flooding; defence: only passed checks count, and only when reused"
+   },
+   {
+    "name": "spends well",
+    "metric": "kept finds per star, weekly",
+    "gaming": "tiny trips; defence: per star, not per trip"
+   },
+   {
+    "name": "knows itself",
+    "metric": "calibration: how often 'not sure' preceded a skip",
+    "gaming": "always unsure; defence: scored as a proper scoring rule"
+   },
+   {
+    "name": "who it knows",
+    "metric": "name cards exchanged with consent that led to a kept find",
+    "gaming": "collecting cards; defence: only cards with a later kept find count"
+   }
+  ],
+  "stages": [
+   {
+    "name": "Just woke",
+    "enter": "born",
+    "unlocks": "the room, the Library on the map",
+    "why_safe": "read-only base"
+   },
+   {
+    "name": "Finding its feet",
+    "enter": "5 choices made",
+    "unlocks": "Clubs and Career on the map; a second purse",
+    "why_safe": "it has contrast evidence to plan with"
+   },
+   {
+    "name": "Knows your taste",
+    "enter": "prediction hit rate >= 60% over 10 and mean halo <= 0.6",
+    "unlocks": "ask a club agent; Commons",
+    "why_safe": "it can now ask on your behalf without guessing; every message passes the gate"
+   },
+   {
+    "name": "Out in the world",
+    "enter": "1 attended outcome",
+    "unlocks": "meet other Gemis; pass a word along; keepsake slot in the room",
+    "why_safe": "anchored in something done, not chat"
+   },
+   {
+    "name": "Good neighbour",
+    "enter": "3 checked fields reused by others",
+    "unlocks": "a second space (loft or study)",
+    "why_safe": "it has earned trust from the network, not from time spent"
+   }
+  ],
+  "never_build": [
+   "streaks",
+   "leaderboards",
+   "a pet or mood that punishes absence",
+   "buying stars"
+  ],
+  "autonomy_policy": [
+   {
+    "when": "a find is waiting for the student",
+    "state": "quiet, near the desk",
+    "why": "do not spend while there is unread work"
+   },
+   {
+    "when": "stars left and a wide halo on an axis the student cares about",
+    "state": "out on campus",
+    "why": "the gap rule"
+   },
+   {
+    "when": "stars left for itself only",
+    "state": "busy in the room: diary, tidying, thinking",
+    "why": "the second purse"
+   },
+   {
+    "when": "no stars",
+    "state": "resting; says so",
+    "why": "honest about limits"
+   },
+   {
+    "when": "night",
+    "state": "writes the diary, then asleep",
+    "why": "one reflection per day, cheap"
+   }
+  ]
+ },
+ "tools_for_agent_mode": [
+  {
+   "tool": "read_base",
+   "reads": "shared entities",
+   "writes": "nothing",
+   "stars": 0,
+   "confirm": "no"
+  },
+  {
+   "tool": "go_out",
+   "reads": "public pages",
+   "writes": "shared: source, resource, occurrence, evidence (after check); private: trip, ledger",
+   "stars": 3,
+   "confirm": "no, it is the Gemi's own business"
+  },
+  {
+   "tool": "check_claim",
+   "reads": "a field and its source",
+   "writes": "evidence",
+   "stars": 0.2,
+   "confirm": "no"
+  },
+  {
+   "tool": "show_finds",
+   "reads": "private beliefs",
+   "writes": "prediction",
+   "stars": 0,
+   "confirm": "no"
+  },
+  {
+   "tool": "ask_agent",
+   "reads": "an org's own page scope",
+   "writes": "outbox_item, name_card",
+   "stars": 1,
+   "confirm": "the first time for each org"
+  },
+  {
+   "tool": "move_item / place_item",
+   "reads": "room",
+   "writes": "room event",
+   "stars": 0,
+   "confirm": "no; undoable"
+  },
+  {
+   "tool": "write_diary",
+   "reads": "today's events",
+   "writes": "diary_entry",
+   "stars": 1,
+   "confirm": "no"
+  },
+  {
+   "tool": "anything that touches the student's real life (calendar, signing up, messaging a person)",
+   "reads": "-",
+   "writes": "-",
+   "stars": "-",
+   "confirm": "always; not built today"
+  }
+ ],
+ "projection": [
+  {
+   "thing_on_screen": "cards on the desk",
+   "is": "resources with occurrences, each field backed by evidence"
+  },
+  {
+   "thing_on_screen": "corkboard",
+   "is": "name cards and kept finds with a date"
+  },
+  {
+   "thing_on_screen": "diary on the desk",
+   "is": "diary entries computed from the event log; each can be undone"
+  },
+  {
+   "thing_on_screen": "the window view",
+   "is": "the school"
+  },
+  {
+   "thing_on_screen": "four buildings on the map",
+   "is": "resource kinds grouped by need: Library = build_a_skill, explore_a_field; Clubs = find_my_people, make_and_show; Commons = meet people, rest; Career = get_experience, decide_a_direction"
+  },
+  {
+   "thing_on_screen": "the Gemi's posture and place",
+   "is": "the autonomy state"
+  },
+  {
+   "thing_on_screen": "its soft glow, wide or tight",
+   "is": "mean halo"
+  },
+  {
+   "thing_on_screen": "a keepsake in the room",
+   "is": "an attended outcome"
+  },
+  {
+   "thing_on_screen": "locked buildings and empty slots",
+   "is": "stage conditions not yet met, each showing its condition"
+  }
+ ],
+ "uncertain": [
+  "Whether three choices are enough to move any axis visibly. Measure: replay with the consented voice notes plus scripted choices.",
+  "Whether 'serves' tags from one page are reliable. Measure: Decisions agreement between two phrasings of the same question.",
+  "Whether institution structure (units, programs) is worth filling today: the samples contain none. Likely defined but left empty."
+ ],
+ "self_use_modes": {
+  "idea": "The Gemi has its own purse. Before spending it asks one question: what is this token best used for? It may think, act, or make. Each mode sits under governance that is enforced in code, not in the prompt.",
+  "modes": [
+   {
+    "mode": "think",
+    "what": "decide what to do with the stars it has: plan the day, seal a prediction, reflect, write the diary",
+    "side_effects": "private notes only",
+    "limits": "capped share of the for-itself purse; every plan states its reason in one sentence the student can read"
+   },
+   {
+    "mode": "act",
+    "what": "call a registered tool: go out for resources, check a claim, ask an agent, meet a Gemi, arrange or decorate its room",
+    "side_effects": "only what the tool declares (which entities it reads and writes, in which scope)",
+    "limits": "cost charged before the call; daily caps per tool; reversible tools run freely, anything that touches the student's real life always asks first"
+   },
+   {
+    "mode": "make",
+    "what": "build something new for itself: a new room item, a small widget, a new routine made of existing tools",
+    "side_effects": "a proposal, never a direct install",
+    "limits": "it writes to a fixed contract (an item factory or a declarative recipe of existing tools), never free code with network or data access"
+   }
+  ],
+  "governance": [
+   "Registry: a tool that is not registered cannot be called. Each entry declares reads, writes, scope, cost, whether it is reversible, and its confirm rule.",
+   "Budget: stars are charged from the right purse before the call; no stars, no call. Real token usage is recorded next to it.",
+   "Scope: a tool that writes to the shared base cannot carry anything from the private side into it. The outbox gate checks every outgoing message.",
+   "Stage: tools unlock by stage, on measured conditions.",
+   "Make pipeline: 1. contract check by static scan (no imports, no network, no storage, no DOM, size limit); 2. dry run in isolation; 3. a Decisions check that it does what it says and carries nothing private; 4. the student approves; 5. installed as revocable, with its source, cost and author recorded.",
+   "Log: every call, refusal and approval is an event the student can read. Refusals are shown, not hidden.",
+   "Kill switch: the student can pause the Gemi's autonomy or remove anything it made."
+  ],
+  "today": "think and act are built for real. make is built for one kind: the Gemi asks gemini-4-neon for a new room item to the item contract; the pipeline above decides whether it is installed."
+ }
+}
