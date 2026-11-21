@@ -233,3 +233,11 @@ Entry format:
 - **Its weakest claim for us**: that the pipeline produced the drop from 8.4% to 3.2%. Reading visible text alone gets 4.3% for 40% of the tokens. Say that first; the verifier pays 2.4 times the tokens for the tail: unsupported fields 29 to 0, edge-page errors 20 to 14.
 - **On acquisition** it recommends no shop and no currency: wardrobe free; a keepsake appears when a kept find is actually attended; extra spaces come only from the Gemi's own saved stars; a companion animal arrives when a sealed guess matched something the student really went to.
 - **Built**: clicking the door opens the campus map; the wardrobe is an inventory with tabs and tiles (worn, owned, locked) where a locked piece is asked for and paid by the Gemi's own stars, which Carbon argues against; menu with language, music switch and track picker.
+
+## 15:20 · Spaces, acquisition, first visit, the cause of the 12 errors, the video pipeline
+- **Acquisition (Carbon's rule)**: clothes free; "I went" on a kept find gives a keepsake; a companion moves in when its sealed guess had matched. Checked by planting one record and seeing the cat in the room, then removing the record.
+- **Spaces**: eight generated spaces are viewable (`/gen3d/spaces.html`) and switchable from the room; each has a purpose, resources and things the Gemi does there in `lib/kernel/space.ts`. Functions are designed, not built; the card says so.
+- **The 12 online-or-not errors**: read all 12 pages. 9 say both a room and Zoom, 2 are titled "online via zoom" while the calendar field says in person, 1 is a real error. The yes-or-no field was the wrong question. Not rescored.
+- **Room**: dialogue card for what the Gemi says on its own; one language at a time; menu; wardrobe as an inventory; door opens the map; the Gemi sits on the chair; first-visit setup in three steps. There is no account system: everything about the student is in the browser.
+- **Failures of mine**: twice a comment I appended swallowed the rest of a line and broke a 3D page for a minute. Now every 3D page is syntax-checked before commit.
+- **Video**: `scripts/video/` records each segment from the running app in headless Chrome (about 15 frames a second), voices the narration, and assembles. Waiting for models is not captured.
