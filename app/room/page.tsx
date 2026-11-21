@@ -8,7 +8,7 @@ import { NEEDS } from "@/lib/needs";
 import { TOOLS } from "@/lib/kernel/tools";
 import { mayCall } from "@/lib/kernel/governance";
 import { decide as decideNow, POLICY } from "@/lib/kernel/autonomy";
-import { SPACE } from "@/lib/kernel/space";
+import { SPACES, SPACE } from "@/lib/kernel/space";
 import type { GemiState } from "@/lib/kernel/types";
 import { AXES, blank, loadLog, replay, saveLog, type AxisId, type Beliefs, type LogEvent } from "@/lib/mind";
 import { t, loadLang, saveLang, type Lang, say } from "@/lib/i18n";
@@ -231,6 +231,13 @@ export default function Room() {
       <iframe ref={frame} src={`/gen3d/viewer.html?embed=1&school=${s.id}`} title="Your Gemi's room" className="absolute inset-0 h-full w-full border-0" />
 
       {space > 0 && <iframe key={SPACE_LIST[space][0]} src={`/gen3d/spaces.html?embed=1&space=${SPACE_LIST[space][0]}&me=${preset.gemiName.toLowerCase()}${space % 2 === 0 ? "&friends=pip,kai" : ""}`} title={SPACE_LIST[space][1]} className="absolute inset-0 h-full w-full border-0" style={{ background: "#e9e6e1" }} />}
+      {space > 0 && (() => { const sp = SPACES.find((x) => x.id === SPACE_LIST[space][0]); if (!sp) return null; const z = lang === "zh"; return (
+        <div className="absolute left-6 top-24 z-[4] w-[21rem] rounded-xl border-[3px] bg-[#fffaf0] px-4 py-3" style={{ borderColor: INK, boxShadow: `0 5px 0 ${INK}33` }}>
+          <div className="text-[11px] font-bold uppercase tracking-wider text-[#8a8296]">{z ? "这个空间用来" : "This space is for"}</div>
+          <div className="text-lg font-bold leading-tight">{z ? sp.for_zh : sp.for_}</div>
+          <ul className="mt-2 space-y-1.5">{sp.does.map(([en, zh]) => <li key={en} className="flex gap-2 text-[13.5px] leading-snug"><span className="mt-1.5 h-2 w-2 shrink-0 rounded-full" style={{ background: s.accent }} />{z ? zh : en}</li>)}</ul>
+          <div className="mt-2.5 flex items-center gap-1.5 border-t-2 border-dashed pt-2 text-[12px] text-[#6d6579]" style={{ borderColor: "#e6dfd0" }}><Icon name="star" size={14} />{z ? `它自己攒够 ${sp.cost} 颗 Gem Star 才会打开 · 功能在设计中` : `Opens when it has saved ${sp.cost} Gem Stars of its own · functions are designed, not built`}</div>
+        </div>); })()}
       {!campus && (
         <div className="absolute left-1/2 top-4 z-[4] flex -translate-x-1/2 items-center gap-2 rounded-full border-[3px] bg-[#fffaf0] px-1.5 py-1" style={{ borderColor: INK, boxShadow: `0 4px 0 ${INK}` }}>
           <button onClick={() => { setSpace((space + SPACE_LIST.length - 1) % SPACE_LIST.length); setPanel(null); setDeskView(false); }} aria-label="Previous space" className="grid h-7 w-7 place-items-center rounded-full text-lg font-bold hover:bg-[#f1ebf7]">‹</button>

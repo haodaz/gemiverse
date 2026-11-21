@@ -36,7 +36,7 @@ const controls = new OrbitControls(camera, renderer.domElement); controls.target
 const P = { primary: "#b8a2e3", secondary: "#f7e7c6", accent: "#f2a7b8", wood: "#c89462", metal: "#d9c08a", fabric: "#b8a2e3", glow: "#ffd27a", wall: "#f4ebe1", trim: "#ffffff", floor: "#d9a877", time: "day", variant: 0 };
 const kit = makeKit(THREE), dolls = [];
 const names = [q.get("me") ?? "mochi", ...(q.get("friends") ?? "").split(",").filter(Boolean)];
-const SPOT = [[0.2, 0, 0.9], [-0.7, 0, 1.2], [1.0, 0, 1.3], [-0.2, 0, 1.7]], CLIPS = ["wave", "idle", "cheer", "think"];
+const SPOT = [[-0.15, 0, 1.55], [-1.0, 0, 1.45], [0.7, 0, 1.6], [-1.6, 0, 0.9]]   // along the open front edge of the floor, clear of the furniture in the middle, CLIPS = ["wave", "idle", "cheer", "think"];
 for (let i = 0; i < names.length; i++) { const d = await buildDoll(THREE, LOOKS[names[i]] ?? LOOKS.mochi, kit, err); if (!d) continue; d.root.scale.setScalar(1.12); d.root.position.set(...SPOT[i % 4]); d.root.rotation.y = i ? (i % 2 ? 0.9 : -0.7) : 0.5; scene.add(d.root); dolls.push(d); d.play?.(CLIPS[i % 4]); d.express?.("happy"); }
 if (dolls.length > 1) setInterval(() => dolls.forEach((d, i) => d.play?.(["wave", "idle", "think", "cheer", "idle"][(Math.floor(performance.now() / 3000) + i) % 5])), 3000);
 let cur = Math.max(0, ALL.findIndex((s) => s.id === q.get("space"))), group = null;
