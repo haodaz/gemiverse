@@ -28,7 +28,7 @@ const controls = new OrbitControls(camera, renderer.domElement); controls.target
 const ui = document.getElementById("ui");
 for (const clip of ["idle", "walk", "sitDown", "squat", "lieDown", "wave", "patHead", "think", "reachShelf", "writeAtDesk", "cheer", "stretch"]) { const b = document.createElement("button"); b.textContent = clip; b.onclick = () => dolls.forEach((d) => d.play?.(clip)); ui.appendChild(b); }
 for (const ex of ["awake", "happy", "wink", "squint", "surprised", "star", "heart", "sad", "unsure", "thinking", "asleep"]) { const b = document.createElement("button"); b.textContent = "face: " + ex; b.style.background = "#fff4e0"; b.onclick = () => dolls.forEach((d) => d.express?.(ex)); ui.appendChild(b); }
-if (q.has("embed")) { ui.style.display = "none"; document.getElementById("err").style.display = "none"; scene.background = null; renderer.setClearColor(0x000000, 0);
+if (q.has("embed")) { document.documentElement.style.background = document.body.style.background = "transparent"; ui.style.display = "none"; document.getElementById("err").style.display = "none"; scene.background = null; renderer.setClearColor(0x000000, 0);
   const SHOW = (q.get("show") ?? "wave,idle,walk,think,stretch,cheer,idle").split(","), FACES = ["happy", "awake", "star", "wink", "thinking", "awake"]; let k = 0;
   const next = () => { dolls.forEach((d) => { d.play?.(SHOW[k % SHOW.length]); d.express?.(FACES[k % FACES.length]); }); k++; }; next(); setInterval(next, 3200); }
 addEventListener("resize", () => { camera.aspect = innerWidth / innerHeight; camera.updateProjectionMatrix(); renderer.setSize(innerWidth, innerHeight); });

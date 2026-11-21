@@ -12,7 +12,7 @@ const Eyebrow = ({ children }: { children: ReactNode }) => <p className="text-sm
 const H = ({ children }: { children: ReactNode }) => <h1 className="mt-3 text-[2.9rem] font-bold leading-[1.08] tracking-tight">{children}</h1>;
 const P = ({ children }: { children: ReactNode }) => <p className="mt-4 text-xl leading-relaxed text-[#4a4356]">{children}</p>;
 const Li = ({ children }: { children: ReactNode }) => <li className="flex gap-3 py-1.5 text-lg leading-snug"><span className="mt-2 h-2.5 w-2.5 shrink-0 rounded-full" style={{ background: "#7c4dce" }} /><span>{children}</span></li>;
-const Cell = ({ children, head, w }: { children: ReactNode; head?: boolean; w?: string }) => <td className={`border-t-2 px-3 py-2 align-top ${head ? "text-xs font-bold uppercase tracking-wider text-[#8a8296]" : "text-[15px] leading-snug"}`} style={{ borderColor: "#e6dfd0", width: w }}>{children}</td>;
+const Cell = ({ children, head, w }: { children: ReactNode; head?: boolean; w?: string }) => <td className={`border-t-2 px-4 py-3.5 align-top ${head ? "text-xs font-bold uppercase tracking-wider text-[#8a8296]" : "text-[19px] leading-snug"}`} style={{ borderColor: "#e6dfd0", width: w }}>{children}</td>;
 
 export default function Deck() {
   const [i, setI] = useState(0);
