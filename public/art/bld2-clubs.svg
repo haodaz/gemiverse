@@ -1,0 +1,1006 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" width="480" height="480">
+  <defs>
+    <filter id="softShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feGaussianBlur stdDeviation="5.5"/>
+    </filter>
+    <filter id="smallShadow" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+    <clipPath id="plazaClip">
+      <polygon points="240,226 448,330 240,434 32,330"/>
+    </clipPath>
+    <clipPath id="lobbySWClip">
+      <polygon points="176,256 252,294 252,370 176,332"/>
+    </clipPath>
+    <clipPath id="lobbySEClip">
+      <polygon points="252,294 318,261 318,337 252,370"/>
+    </clipPath>
+    <clipPath id="noticeClip">
+      <polygon points="148,263 194,286 194,308 148,285"/>
+    </clipPath>
+    <linearGradient id="glassLitGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8BD0E2"/>
+      <stop offset="52%" stop-color="#6BB5CA"/>
+      <stop offset="100%" stop-color="#5BA2B8"/>
+    </linearGradient>
+    <linearGradient id="glassShadeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#5A9CB0"/>
+      <stop offset="55%" stop-color="#458196"/>
+      <stop offset="100%" stop-color="#3B6F82"/>
+    </linearGradient>
+    <linearGradient id="warmInteriorLit" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FAD994" stop-opacity="0.42"/>
+      <stop offset="50%" stop-color="#F2C06B" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#F6CE82" stop-opacity="0.52"/>
+    </linearGradient>
+    <linearGradient id="warmInteriorShade" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#DFB26A" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#D49E52" stop-opacity="0.42"/>
+    </linearGradient>
+    <linearGradient id="skylightGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#BCE9F5"/>
+      <stop offset="55%" stop-color="#87CBE0"/>
+      <stop offset="100%" stop-color="#68AEC4"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ==================== LAYER 0: BASE SHADOW & PAVED ISOMETRIC PLAZA ==================== -->
+  <g id="plaza-base">
+    <!-- Soft outer drop shadow under paved base -->
+    <polygon points="246,236 458,342 246,448 36,342" fill="#232D3B" opacity="0.22" filter="url(#softShadow)"/>
+
+    <!-- Plaza Curb Edges (z = 0 to -6) -->
+    <polygon points="32,330 240,434 240,440 32,336" fill="#C4B9A7"/>
+    <polygon points="240,434 448,330 448,336 240,440" fill="#9A8F7E"/>
+
+    <!-- Plaza Top Surface (z = 0) -->
+    <polygon points="240,226 448,330 240,434 32,330" fill="#E3DACB"/>
+
+    <!-- Warm campus promenade & plaza paving accents -->
+    <g clip-path="url(#plazaClip)">
+      <!-- Subtle outer border band -->
+      <polygon points="240,234 434,331 240,428 46,331" fill="none" stroke="#CFC4B2" stroke-width="1.5"/>
+
+      <!-- Terracotta-beige entrance promenade leading to lobby steps -->
+      <polygon points="190,347 242,373 176,406 124,380" fill="#D5BE9F"/>
+      <!-- Cross walkway linking club booths, entrance, and stage -->
+      <polygon points="62,315 262,415 284,404 84,304" fill="#D9CEBC" opacity="0.65"/>
+      <!-- Circular-in-iso plaza medallion in front of entrance -->
+      <ellipse cx="196" cy="382" rx="22" ry="11" fill="#CBB18E" opacity="0.55"/>
+      <ellipse cx="196" cy="382" rx="14" ry="7" fill="#DEC8AA" opacity="0.7"/>
+
+      <!-- Crisp isometric paving grid lines -->
+      <g stroke="#C8BDA9" stroke-width="0.8" opacity="0.55">
+        <line x1="210" y1="241" x2="418" y2="345"/>
+        <line x1="180" y1="256" x2="388" y2="360"/>
+        <line x1="150" y1="271" x2="358" y2="375"/>
+        <line x1="120" y1="286" x2="328" y2="390"/>
+        <line x1="90" y1="301" x2="298" y2="405"/>
+        <line x1="60" y1="316" x2="268" y2="420"/>
+        <line x1="270" y1="241" x2="62" y2="345"/>
+        <line x1="300" y1="256" x2="92" y2="360"/>
+        <line x1="330" y1="271" x2="122" y2="375"/>
+        <line x1="360" y1="286" x2="152" y2="390"/>
+        <line x1="390" y1="301" x2="182" y2="405"/>
+        <line x1="420" y1="316" x2="212" y2="420"/>
+      </g>
+
+      <!-- Cast Building Shadows on Plaza (consistent angle: right & slightly down-right) -->
+      <g fill="#2A3444" opacity="0.18">
+        <!-- Main brick & right wing cast shadow -->
+        <polygon points="332,352 396,320 448,334 398,370 330,378"/>
+        <!-- Glass lobby cast shadow -->
+        <polygon points="252,378 318,345 362,360 296,392"/>
+        <!-- Entrance canopy & steps shadow -->
+        <polygon points="184,358 228,380 250,372 206,350"/>
+        <!-- Stage cast shadow -->
+        <polygon points="290,403 332,382 350,388 308,409"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- ==================== LAYER 1: BACK-RIGHT CORNER PLANTER TREE ==================== -->
+  <g id="back-right-greenery">
+    <!-- Planter box (u: 76..94, v: -84..-66, z: 0..8) -->
+    <polygon points="400,326 418,335 400,344 382,335" fill="#9A8F7E" opacity="0.25"/>
+    <polygon points="382,327 400,336 400,344 382,335" fill="#D4C9B8"/>
+    <polygon points="400,336 418,327 418,335 400,344" fill="#ADA18F"/>
+    <polygon points="400,318 418,327 400,336 382,327" fill="#E8DFD0"/>
+    <polygon points="400,321 413,327.5 400,334 387,327.5" fill="#6E543E"/>
+    <!-- Stylized campus tree -->
+    <polygon points="398,327 402,327 402,311 398,311" fill="#7D583F"/>
+    <ellipse cx="400" cy="306" rx="14" ry="11" fill="#3D7531"/>
+    <ellipse cx="397" cy="302" rx="13" ry="10" fill="#559641"/>
+    <ellipse cx="395" cy="297" rx="9" ry="7" fill="#73B857"/>
+  </g>
+
+  <!-- ==================== LAYER 2: RIGHT-BACK BRICK WING (2 STORIES) ==================== -->
+  <g id="right-brick-wing">
+    <!-- Shaded SE Wall (u = 68, v = -88..-24, z = 0..94) -->
+    <polygon points="332,258 396,226 396,320 332,352" fill="#944430"/>
+    <!-- Subtle horizontal brick courses on SE face -->
+    <g stroke="#803725" stroke-width="1" opacity="0.45">
+      <line x1="332" y1="270" x2="396" y2="238"/>
+      <line x1="332" y1="282" x2="396" y2="250"/>
+      <line x1="332" y1="294" x2="396" y2="262"/>
+      <line x1="332" y1="314" x2="396" y2="282"/>
+      <line x1="332" y1="326" x2="396" y2="294"/>
+      <line x1="332" y1="338" x2="396" y2="306"/>
+    </g>
+    <!-- Limestone plinth, stringcourse & cornice on SE face -->
+    <polygon points="332,340 396,308 396,320 332,352" fill="#B2A796"/>
+    <polygon points="332,304 396,272 396,276 332,308" fill="#B5AA99"/>
+    <polygon points="332,258 396,226 396,232 332,264" fill="#B5AA99"/>
+
+    <!-- Lit SW Wall (v = -24, u = 8..68, z = 0..94) -->
+    <polygon points="272,228 332,258 332,352 272,322" fill="#C9684B"/>
+    <polygon points="272,310 332,340 332,352 272,322" fill="#DCD2C2"/>
+    <polygon points="272,274 332,304 332,308 272,278" fill="#DCD2C2"/>
+    <polygon points="272,228 332,258 332,264 272,234" fill="#DCD2C2"/>
+    <!-- Visible SW strip window near right corner (u = 56..64) -->
+    <polygon points="320,264 328,268 328,292 320,288" fill="#36414D"/>
+    <polygon points="321.5,266 326.5,268.5 326.5,290 321.5,287.5" fill="#6CAEC2"/>
+    <polygon points="320,304 328,308 328,332 320,328" fill="#36414D"/>
+    <polygon points="321.5,306 326.5,308.5 326.5,330 321.5,327.5" fill="#6CAEC2"/>
+
+    <!-- 2x3 Recessed Windows on Shaded SE Face (u = 68) -->
+    <!-- Bay 1 (v = -44..-30) -->
+    <g>
+      <!-- Upper -->
+      <polygon points="338,264 352,257 352,285 338,292" fill="#2A333D"/>
+      <polygon points="340,265.5 350.5,260.2 350.5,283.5 340,288.8" fill="#46798C"/>
+      <polygon points="340,265.5 350.5,260.2 350.5,270 340,275.3" fill="#639EB3" opacity="0.45"/>
+      <line x1="345.2" y1="262.8" x2="345.2" y2="286.2" stroke="#2A333D" stroke-width="1.2"/>
+      <polygon points="337,291.5 353,283.5 353,286 337,294" fill="#B5AA99"/>
+      <!-- Lower -->
+      <polygon points="338,308 352,301 352,329 338,336" fill="#2A333D"/>
+      <polygon points="340,309.5 350.5,304.2 350.5,327.5 340,332.8" fill="#46798C"/>
+      <polygon points="340,318 350.5,312.7 350.5,327.5 340,332.8" fill="#D4A662" opacity="0.28"/>
+      <line x1="345.2" y1="306.8" x2="345.2" y2="330.2" stroke="#2A333D" stroke-width="1.2"/>
+      <polygon points="337,335.5 353,327.5 353,330 337,338" fill="#B5AA99"/>
+    </g>
+    <!-- Bay 2 (v = -62..-48) -->
+    <g transform="translate(18,-9)">
+      <polygon points="338,264 352,257 352,285 338,292" fill="#2A333D"/>
+      <polygon points="340,265.5 350.5,260.2 350.5,283.5 340,288.8" fill="#46798C"/>
+      <polygon points="340,265.5 350.5,260.2 350.5,270 340,275.3" fill="#639EB3" opacity="0.45"/>
+      <line x1="345.2" y1="262.8" x2="345.2" y2="286.2" stroke="#2A333D" stroke-width="1.2"/>
+      <polygon points="337,291.5 353,283.5 353,286 337,294" fill="#B5AA99"/>
+      <polygon points="338,308 352,301 352,329 338,336" fill="#2A333D"/>
+      <polygon points="340,309.5 350.5,304.2 350.5,327.5 340,332.8" fill="#46798C"/>
+      <line x1="345.2" y1="306.8" x2="345.2" y2="330.2" stroke="#2A333D" stroke-width="1.2"/>
+      <polygon points="337,335.5 353,327.5 353,330 337,338" fill="#B5AA99"/>
+    </g>
+    <!-- Bay 3 (v = -80..-66) -->
+    <g transform="translate(36,-18)">
+      <polygon points="338,264 352,257 352,285 338,292" fill="#2A333D"/>
+      <polygon points="340,265.5 350.5,260.2 350.5,283.5 340,288.8" fill="#46798C"/>
+      <polygon points="340,272 350.5,266.7 350.5,283.5 340,288.8" fill="#D4A662" opacity="0.26"/>
+      <line x1="345.2" y1="262.8" x2="345.2" y2="286.2" stroke="#2A333D" stroke-width="1.2"/>
+      <polygon points="337,291.5 353,283.5 353,286 337,294" fill="#B5AA99"/>
+      <polygon points="338,308 352,301 352,329 338,336" fill="#2A333D"/>
+      <polygon points="340,309.5 350.5,304.2 350.5,327.5 340,332.8" fill="#46798C"/>
+      <line x1="345.2" y1="306.8" x2="345.2" y2="330.2" stroke="#2A333D" stroke-width="1.2"/>
+      <polygon points="337,335.5 353,327.5 353,330 337,338" fill="#B5AA99"/>
+    </g>
+
+    <!-- Right Wing Parapet & Roof (z = 94..100) -->
+    <!-- Outer parapet sides -->
+    <polygon points="272,222 332,252 332,258 272,228" fill="#C9684B"/>
+    <polygon points="332,252 396,220 396,226 332,258" fill="#944430"/>
+    <!-- Coral accent edge stripe along wing roof -->
+    <polygon points="272,222 332,252 332,254.5 272,224.5" fill="#EE4F3D"/>
+    <polygon points="332,252 396,220 396,222.5 332,254.5" fill="#C23527"/>
+    <!-- Parapet coping top -->
+    <polygon points="336,190 396,220 332,252 272,222" fill="#EFE7DA"/>
+    <!-- Recessed roof deck -->
+    <polygon points="336,194 388,220 332,248 280,222" fill="#6F7984"/>
+    <!-- Inner parapet walls -->
+    <polygon points="336,194 388,220 388,224 336,198" fill="#B9B0A1"/>
+    <polygon points="336,194 280,222 280,226 336,198" fill="#968D80"/>
+
+    <!-- Rooftop Green Planter Strip on Right Wing -->
+    <polygon points="354,207 378,219 366,225 342,213" fill="#5CA047"/>
+    <polygon points="352,209 374,220 366,224 344,213" fill="#77BE5C"/>
+    <!-- Rooftop Glass Lantern Skylight on Right Wing -->
+    <polygon points="326,210 356,225 336,235 306,220" fill="#4C5661"/>
+    <polygon points="306,214 336,229 336,235 306,220" fill="#D54233"/>
+    <polygon points="336,229 356,219 356,225 336,235" fill="#A82F23"/>
+    <polygon points="326,204 356,219 336,229 306,214" fill="url(#skylightGrad)"/>
+    <line x1="316" y1="209" x2="346" y2="224" stroke="#4C5661" stroke-width="1"/>
+    <line x1="336" y1="209" x2="316" y2="219" stroke="#4C5661" stroke-width="1"/>
+    <line x1="346" y1="214" x2="326" y2="224" stroke="#4C5661" stroke-width="1"/>
+  </g>
+
+  <!-- ==================== LAYER 3: MAIN 3-STORY BRICK BLOCK ==================== -->
+  <g id="main-brick-building">
+    <!-- Lit SW Brick Facade (v = 16, u = -88..8, z = 0..134) -->
+    <polygon points="136,160 232,208 232,342 136,294" fill="#C9684B"/>
+    <!-- Subtle horizontal brick bands on SW face -->
+    <g stroke="#B8593D" stroke-width="1" opacity="0.45">
+      <line x1="136" y1="176" x2="232" y2="224"/>
+      <line x1="136" y1="190" x2="232" y2="238"/>
+      <line x1="136" y1="218" x2="232" y2="266"/>
+      <line x1="136" y1="232" x2="232" y2="280"/>
+      <line x1="136" y1="262" x2="232" y2="310"/>
+      <line x1="136" y1="276" x2="232" y2="324"/>
+    </g>
+    <!-- Vertical Brick Pilasters for architectural rhythm -->
+    <g fill="#D47457" opacity="0.55">
+      <polygon points="136,165 142,168 142,292 136,289"/>
+      <polygon points="160,177 166,180 166,304 160,301"/>
+      <polygon points="184,189 190,192 190,316 184,313"/>
+      <polygon points="208,201 214,204 214,328 208,325"/>
+    </g>
+    <!-- Limestone Plinth, Belt Courses & Cornice on SW Face -->
+    <polygon points="136,284 232,332 232,342 136,294" fill="#DCD2C2"/>
+    <polygon points="136,246 232,294 232,298 136,250" fill="#DCD2C2"/>
+    <polygon points="136,204 232,252 232,256 136,208" fill="#DCD2C2"/>
+    <polygon points="136,160 232,208 232,214 136,166" fill="#E3DACB"/>
+
+    <!-- Shaded SE Brick Facade (u = 8, v = -88..16, z = 0..134) -->
+    <polygon points="232,208 336,156 336,290 232,342" fill="#944430"/>
+    <!-- Subtle horizontal brick courses on SE face -->
+    <g stroke="#7D3624" stroke-width="1" opacity="0.45">
+      <line x1="232" y1="224" x2="336" y2="172"/>
+      <line x1="232" y1="238" x2="336" y2="186"/>
+      <line x1="232" y1="266" x2="336" y2="214"/>
+      <line x1="232" y1="280" x2="336" y2="228"/>
+    </g>
+    <!-- Limestone Belt Courses & Cornice on SE Face -->
+    <polygon points="232,252 336,200 336,204 232,256" fill="#B5AA99"/>
+    <polygon points="232,208 336,156 336,162 232,214" fill="#B5AA99"/>
+
+    <!-- UPPER FLOOR WINDOWS ON LIT SW FACE (2nd & 3rd floor, 4 bays) -->
+    <!-- 3rd Floor Bay 1 (u = -80..-66, z = 97..123) -->
+    <g id="sw-windows">
+      <!-- Row 3 (Top Floor) -->
+      <g>
+        <polygon points="144,175 158,182 158,208 144,201" fill="#343E4A"/>
+        <polygon points="145.5,177 156.5,182.5 156.5,206 145.5,200.5" fill="#72B7CC"/>
+        <polygon points="145.5,177 156.5,182.5 156.5,191 145.5,185.5" fill="#B0E0EE" opacity="0.5"/>
+        <polygon points="145.5,193 156.5,198.5 156.5,206 145.5,200.5" fill="#F2C97D" opacity="0.35"/>
+        <line x1="151" y1="179.5" x2="151" y2="203.5" stroke="#343E4A" stroke-width="1.3"/>
+        <line x1="145" y1="191" x2="157" y2="197" stroke="#343E4A" stroke-width="1.1"/>
+        <polygon points="143,200.5 159,208.5 159,211 143,203" fill="#E3DACB"/>
+        <polygon points="143,172.5 159,180.5 159,183 143,175" fill="#DCD2C2"/>
+      </g>
+      <g transform="translate(24,12)">
+        <polygon points="144,175 158,182 158,208 144,201" fill="#343E4A"/>
+        <polygon points="145.5,177 156.5,182.5 156.5,206 145.5,200.5" fill="#72B7CC"/>
+        <polygon points="145.5,177 156.5,182.5 156.5,191 145.5,185.5" fill="#B0E0EE" opacity="0.5"/>
+        <line x1="151" y1="179.5" x2="151" y2="203.5" stroke="#343E4A" stroke-width="1.3"/>
+        <line x1="145" y1="191" x2="157" y2="197" stroke="#343E4A" stroke-width="1.1"/>
+        <polygon points="143,200.5 159,208.5 159,211 143,203" fill="#E3DACB"/>
+        <polygon points="143,172.5 159,180.5 159,183 143,175" fill="#DCD2C2"/>
+      </g>
+      <g transform="translate(48,24)">
+        <polygon points="144,175 158,182 158,208 144,201" fill="#343E4A"/>
+        <polygon points="145.5,177 156.5,182.5 156.5,206 145.5,200.5" fill="#72B7CC"/>
+        <polygon points="145.5,191 156.5,196.5 156.5,206 145.5,200.5" fill="#F2C97D" opacity="0.4"/>
+        <line x1="151" y1="179.5" x2="151" y2="203.5" stroke="#343E4A" stroke-width="1.3"/>
+        <line x1="145" y1="191" x2="157" y2="197" stroke="#343E4A" stroke-width="1.1"/>
+        <polygon points="143,200.5 159,208.5 159,211 143,203" fill="#E3DACB"/>
+        <polygon points="143,172.5 159,180.5 159,183 143,175" fill="#DCD2C2"/>
+      </g>
+      <g transform="translate(72,36)">
+        <polygon points="144,175 158,182 158,208 144,201" fill="#343E4A"/>
+        <polygon points="145.5,177 156.5,182.5 156.5,206 145.5,200.5" fill="#72B7CC"/>
+        <polygon points="145.5,177 156.5,182.5 156.5,191 145.5,185.5" fill="#B0E0EE" opacity="0.5"/>
+        <line x1="151" y1="179.5" x2="151" y2="203.5" stroke="#343E4A" stroke-width="1.3"/>
+        <line x1="145" y1="191" x2="157" y2="197" stroke="#343E4A" stroke-width="1.1"/>
+        <polygon points="143,200.5 159,208.5 159,211 143,203" fill="#E3DACB"/>
+        <polygon points="143,172.5 159,180.5 159,183 143,175" fill="#DCD2C2"/>
+      </g>
+
+      <!-- Row 2 (Middle Floor, 3 visible bays left of lobby) -->
+      <g transform="translate(0,42)">
+        <polygon points="144,175 158,182 158,208 144,201" fill="#343E4A"/>
+        <polygon points="145.5,177 156.5,182.5 156.5,206 145.5,200.5" fill="#72B7CC"/>
+        <polygon points="145.5,190 156.5,195.5 156.5,206 145.5,200.5" fill="#F2C97D" opacity="0.4"/>
+        <line x1="151" y1="179.5" x2="151" y2="203.5" stroke="#343E4A" stroke-width="1.3"/>
+        <line x1="145" y1="191" x2="157" y2="197" stroke="#343E4A" stroke-width="1.1"/>
+        <polygon points="143,200.5 159,208.5 159,211 143,203" fill="#E3DACB"/>
+        <polygon points="143,172.5 159,180.5 159,183 143,175" fill="#DCD2C2"/>
+      </g>
+      <g transform="translate(24,54)">
+        <polygon points="144,175 158,182 158,208 144,201" fill="#343E4A"/>
+        <polygon points="145.5,177 156.5,182.5 156.5,206 145.5,200.5" fill="#72B7CC"/>
+        <polygon points="145.5,177 156.5,182.5 156.5,191 145.5,185.5" fill="#B0E0EE" opacity="0.5"/>
+        <line x1="151" y1="179.5" x2="151" y2="203.5" stroke="#343E4A" stroke-width="1.3"/>
+        <line x1="145" y1="191" x2="157" y2="197" stroke="#343E4A" stroke-width="1.1"/>
+        <polygon points="143,200.5 159,208.5 159,211 143,203" fill="#E3DACB"/>
+        <polygon points="143,172.5 159,180.5 159,183 143,175" fill="#DCD2C2"/>
+      </g>
+      <g transform="translate(48,66)">
+        <polygon points="144,175 158,182 158,208 144,201" fill="#343E4A"/>
+        <polygon points="145.5,177 156.5,182.5 156.5,206 145.5,200.5" fill="#72B7CC"/>
+        <polygon points="145.5,177 156.5,182.5 156.5,191 145.5,185.5" fill="#B0E0EE" opacity="0.5"/>
+        <line x1="151" y1="179.5" x2="151" y2="203.5" stroke="#343E4A" stroke-width="1.3"/>
+        <polygon points="143,200.5 159,208.5 159,211 143,203" fill="#E3DACB"/>
+        <polygon points="143,172.5 159,180.5 159,183 143,175" fill="#DCD2C2"/>
+      </g>
+    </g>
+
+    <!-- 3RD FLOOR WINDOWS ON SHADED SE FACE (4 bays) -->
+    <g id="se-upper-windows">
+      <g>
+        <polygon points="240,213 255,205.5 255,232 240,239.5" fill="#27303A"/>
+        <polygon points="241.5,214.5 253.5,208.5 253.5,230.5 241.5,236.5" fill="#46798C"/>
+        <polygon points="241.5,214.5 253.5,208.5 253.5,217.5 241.5,223.5" fill="#6AA8BD" opacity="0.4"/>
+        <line x1="247.5" y1="211.5" x2="247.5" y2="233.5" stroke="#27303A" stroke-width="1.2"/>
+        <polygon points="239,239 256,230.5 256,233 239,241.5" fill="#B5AA99"/>
+      </g>
+      <g transform="translate(24,-12)">
+        <polygon points="240,213 255,205.5 255,232 240,239.5" fill="#27303A"/>
+        <polygon points="241.5,214.5 253.5,208.5 253.5,230.5 241.5,236.5" fill="#46798C"/>
+        <polygon points="241.5,223 253.5,217 253.5,230.5 241.5,236.5" fill="#D4A662" opacity="0.32"/>
+        <line x1="247.5" y1="211.5" x2="247.5" y2="233.5" stroke="#27303A" stroke-width="1.2"/>
+        <polygon points="239,239 256,230.5 256,233 239,241.5" fill="#B5AA99"/>
+      </g>
+      <g transform="translate(48,-24)">
+        <polygon points="240,213 255,205.5 255,232 240,239.5" fill="#27303A"/>
+        <polygon points="241.5,214.5 253.5,208.5 253.5,230.5 241.5,236.5" fill="#46798C"/>
+        <polygon points="241.5,214.5 253.5,208.5 253.5,217.5 241.5,223.5" fill="#6AA8BD" opacity="0.4"/>
+        <line x1="247.5" y1="211.5" x2="247.5" y2="233.5" stroke="#27303A" stroke-width="1.2"/>
+        <polygon points="239,239 256,230.5 256,233 239,241.5" fill="#B5AA99"/>
+      </g>
+      <g transform="translate(72,-36)">
+        <polygon points="240,213 255,205.5 255,232 240,239.5" fill="#27303A"/>
+        <polygon points="241.5,214.5 253.5,208.5 253.5,230.5 241.5,236.5" fill="#46798C"/>
+        <line x1="247.5" y1="211.5" x2="247.5" y2="233.5" stroke="#27303A" stroke-width="1.2"/>
+        <polygon points="239,239 256,230.5 256,233 239,241.5" fill="#B5AA99"/>
+      </g>
+    </g>
+
+    <!-- ==================== NOTICE WALL OF BLANK COLOURFUL FLYERS ==================== -->
+    <g id="notice-wall">
+      <!-- Cast shadow of notice wall hood -->
+      <polygon points="144,262 198,289 198,295 144,268" fill="#632B1D" opacity="0.35"/>
+      <!-- Dark metal bulletin board outer frame (u = -78..-28, v = 16, z = 13..39) -->
+      <polygon points="146,260 196,285 196,311 146,286" fill="#343D48"/>
+      <!-- Warm corkboard interior -->
+      <polygon points="148,263 194,286 194,308 148,285" fill="#C99E6E"/>
+      <!-- Subtle corkboard wood divider -->
+      <line x1="171" y1="274.5" x2="171" y2="296.5" stroke="#9E764C" stroke-width="1"/>
+
+      <!-- Patchwork of vibrant blank colourful flyers (no text/letters!) -->
+      <g clip-path="url(#noticeClip)">
+        <!-- Top row of flyers -->
+        <polygon points="150,266 156,269 156,277 150,274" fill="#FF6B57"/>
+        <polygon points="157,269.5 164,273 164,280 157,276.5" fill="#FFD15C"/>
+        <polygon points="163,273.5 169,276.5 169,283.5 163,280.5" fill="#FFF5E4"/>
+        <polygon points="172.5,277 179.5,280.5 179.5,288.5 172.5,285" fill="#64C4E8"/>
+        <polygon points="180.5,281 186.5,284 186.5,291 180.5,288" fill="#6FD49E"/>
+        <polygon points="187.5,284.5 192.5,287 192.5,295 187.5,292.5" fill="#FF6B57"/>
+        <!-- Middle & overlapping flyers -->
+        <polygon points="151,275.5 158,279 158,286.5 151,283" fill="#B598E8"/>
+        <polygon points="156.5,279 162.5,282 162.5,289.5 156.5,286.5" fill="#6FD49E"/>
+        <polygon points="163.5,282.5 169.5,285.5 169.5,293 163.5,290" fill="#FF9E75"/>
+        <polygon points="172,286 178,289 178,296 172,293" fill="#FFD15C"/>
+        <polygon points="177.5,289.5 184.5,293 184.5,300 177.5,296.5" fill="#FFF5E4"/>
+        <polygon points="185,293 192,296.5 192,304 185,300.5" fill="#64C4E8"/>
+        <!-- Bottom row & small accent cards -->
+        <polygon points="150,282 155,284.5 155,288.5 150,286" fill="#FFD15C"/>
+        <polygon points="159.5,286.5 165.5,289.5 165.5,294.5 159.5,291.5" fill="#FF6B57"/>
+        <polygon points="173,293.5 178,296 178,300 173,297.5" fill="#B598E8"/>
+        <polygon points="180,297 185,299.5 185,303.5 180,301" fill="#FF9E75"/>
+        <!-- Tiny decorative colour bands (pure graphic blocks, no letters) -->
+        <polygon points="151,268 155,270 155,272 151,270" fill="#FFF5E4" opacity="0.7"/>
+        <polygon points="173.5,279 178.5,281.5 178.5,283.5 173.5,281" fill="#2E5F78" opacity="0.45"/>
+        <polygon points="178.5,291.5 183.5,294 183.5,296 178.5,293.5" fill="#EE4F3D" opacity="0.65"/>
+        <!-- Tiny pushpin dots -->
+        <circle cx="153" cy="268.2" r="0.8" fill="#FFFFFF"/>
+        <circle cx="160.5" cy="272" r="0.8" fill="#C23527"/>
+        <circle cx="176" cy="279.5" r="0.8" fill="#FFFFFF"/>
+        <circle cx="183.5" cy="283.2" r="0.8" fill="#FFD15C"/>
+        <circle cx="190" cy="286.5" r="0.8" fill="#FFFFFF"/>
+      </g>
+      <!-- Bottom metal rail ledge -->
+      <polygon points="145,285.5 197,311.5 197,313.5 145,287.5" fill="#525D6B"/>
+      <!-- Sleek Coral-Red Weather Hood over Notice Wall -->
+      <polygon points="144,255 198,282 190,288 136,261" fill="#FF6B57"/>
+      <polygon points="136,261 190,288 190,290.5 136,263.5" fill="#EE4F3D"/>
+      <polygon points="190,288 198,282 198,284.5 190,290.5" fill="#C23527"/>
+    </g>
+
+    <!-- MAIN BUILDING ROOF & ARCHITECTURAL DETAILS (z = 134..156) -->
+    <!-- Outer parapet brick -->
+    <polygon points="136,154 232,202 232,208 136,160" fill="#C9684B"/>
+    <polygon points="232,202 336,150 336,156 232,208" fill="#944430"/>
+    <!-- Limestone parapet coping top (z = 140) -->
+    <polygon points="240,102 336,150 232,202 136,154" fill="#EFE7DA"/>
+    <!-- Recessed Roof Membrane (z = 134) -->
+    <polygon points="240,106 328,150 232,198 144,154" fill="#67717C"/>
+    <!-- Inner Parapet Walls -->
+    <polygon points="240,106 328,150 328,155 240,111" fill="#B9B0A1"/>
+    <polygon points="240,106 144,154 144,159 240,111" fill="#958C7E"/>
+
+    <!-- Rooftop Stairwell Penthouse (back-left) -->
+    <g id="rooftop-penthouse">
+      <!-- Cast shadow -->
+      <polygon points="266,133 288,139 264,151 242,145" fill="#3E464F" opacity="0.45"/>
+      <!-- Lit SW face -->
+      <polygon points="212,115 242,130 242,150 212,135" fill="#DCD2C2"/>
+      <!-- Shaded SE face -->
+      <polygon points="242,130 266,118 266,138 242,150" fill="#B2A796"/>
+      <!-- Louver vents on penthouse -->
+      <polygon points="218,124 234,132 234,141 218,133" fill="#6E7882"/>
+      <line x1="219" y1="127" x2="233" y2="134" stroke="#4D565F" stroke-width="1"/>
+      <line x1="219" y1="130" x2="233" y2="137" stroke="#4D565F" stroke-width="1"/>
+      <!-- Roof cap -->
+      <polygon points="236,103 266,118 242,130 212,115" fill="#EFE7DA"/>
+      <polygon points="236,105.5 261,118 242,127.5 217,115" fill="#58626E"/>
+    </g>
+
+    <!-- Rooftop Modern Clerestory Skylight with Coral Accent Trim -->
+    <g id="rooftop-skylight">
+      <polygon points="262,152 296,135 314,144 280,161" fill="#46505A" opacity="0.4"/>
+      <!-- Lit SW glass face -->
+      <polygon points="236,139 266,154 266,166 236,151" fill="#77BDD1"/>
+      <line x1="246" y1="144" x2="246" y2="156" stroke="#3E4854" stroke-width="1.2"/>
+      <line x1="256" y1="149" x2="256" y2="161" stroke="#3E4854" stroke-width="1.2"/>
+      <!-- Shaded SE end -->
+      <polygon points="266,154 294,140 294,152 266,166" fill="#C23527"/>
+      <!-- Sloped Coral/Glass Monitor Roof -->
+      <polygon points="264,125 294,140 266,154 236,139" fill="#FF6B57"/>
+      <polygon points="264,128 289,140.5 266,152 241,139.5" fill="url(#skylightGrad)"/>
+      <line x1="252" y1="134" x2="277" y2="146.5" stroke="#465361" stroke-width="1"/>
+      <line x1="264" y1="128" x2="266" y2="152" stroke="#465361" stroke-width="1"/>
+    </g>
+
+    <!-- Rooftop HVAC Units -->
+    <g id="rooftop-hvac">
+      <!-- Unit 1 -->
+      <polygon points="184,146 202,155 202,165 184,156" fill="#C4CBD2"/>
+      <polygon points="202,155 218,147 218,157 202,165" fill="#98A2AC"/>
+      <polygon points="200,138 218,147 202,155 184,146" fill="#DEE3E8"/>
+      <ellipse cx="201" cy="146.5" rx="6.5" ry="3.3" fill="#4E5863"/>
+      <!-- Unit 2 -->
+      <g transform="translate(-20,11)">
+        <polygon points="184,146 200,154 200,163 184,155" fill="#C4CBD2"/>
+        <polygon points="200,154 214,147 214,156 200,163" fill="#98A2AC"/>
+        <polygon points="198,139 214,147 200,154 184,146" fill="#DEE3E8"/>
+        <ellipse cx="199" cy="146.5" rx="5.5" ry="2.8" fill="#4E5863"/>
+      </g>
+    </g>
+
+    <!-- Rooftop Solar Panels -->
+    <g id="solar-panels">
+      <polygon points="206,164 226,174 238,168 218,158" fill="#2E4C6E"/>
+      <line x1="212" y1="167" x2="224" y2="161" stroke="#6E94B8" stroke-width="0.8"/>
+      <line x1="219" y1="170.5" x2="231" y2="164.5" stroke="#6E94B8" stroke-width="0.8"/>
+      <line x1="212" y1="161" x2="232" y2="171" stroke="#6E94B8" stroke-width="0.8"/>
+      <polygon points="222,175 242,185 254,179 234,169" fill="#2E4C6E"/>
+      <line x1="228" y1="178" x2="240" y2="172" stroke="#6E94B8" stroke-width="0.8"/>
+      <line x1="235" y1="181.5" x2="247" y2="175.5" stroke="#6E94B8" stroke-width="0.8"/>
+      <line x1="228" y1="172" x2="248" y2="182" stroke="#6E94B8" stroke-width="0.8"/>
+    </g>
+  </g>
+
+  <!-- ==================== LAYER 4: DOUBLE-HEIGHT GLASS LOBBY ATRIUM ==================== -->
+  <g id="glass-lobby">
+    <!-- Raised Limestone Plinth Base (z = 0..8) -->
+    <polygon points="176,332 252,370 252,378 176,340" fill="#DCD2C2"/>
+    <polygon points="252,370 318,337 318,345 252,378" fill="#B2A796"/>
+
+    <!-- LIT SW DOUBLE-HEIGHT GLASS CURTAIN WALL (v = 42, u = -22..54, z = 8..84) -->
+    <polygon points="176,256 252,294 252,370 176,332" fill="url(#glassLitGrad)"/>
+    <!-- Visible Warm Interior Architecture Inside Double-Height Lobby (SW side) -->
+    <g clip-path="url(#lobbySWClip)">
+      <!-- Warm sunlit atrium interior ambience -->
+      <polygon points="176,256 252,294 252,370 176,332" fill="url(#warmInteriorLit)"/>
+      <!-- Warm wood acoustic ceiling soffit visible at top -->
+      <polygon points="176,256 252,294 252,303 176,265" fill="#B57B48" opacity="0.55"/>
+      <!-- Interior mezzanine 2nd-floor balcony slab (z = 44..49) -->
+      <polygon points="176,292 252,330 252,336 176,298" fill="#E3D7C3" opacity="0.82"/>
+      <polygon points="176,297 252,335 252,339 176,301" fill="#A67449" opacity="0.65"/>
+      <!-- Mezzanine glass railing highlight -->
+      <line x1="176" y1="286" x2="252" y2="324" stroke="#FFFFFF" stroke-width="1" opacity="0.5"/>
+      <!-- Interior diagonal feature staircase rising to mezzanine -->
+      <polygon points="184,330 210,308 216,311 190,333" fill="#C98952" opacity="0.65"/>
+      <!-- Slender interior white columns -->
+      <line x1="194" y1="265" x2="194" y2="341" stroke="#F0E6D6" stroke-width="2" opacity="0.45"/>
+      <line x1="234" y1="285" x2="234" y2="361" stroke="#F0E6D6" stroke-width="2" opacity="0.45"/>
+      <!-- Hanging warm globe pendant lights inside double-height space -->
+      <g opacity="0.85">
+        <line x1="192" y1="264" x2="192" y2="277" stroke="#52463A" stroke-width="0.7"/>
+        <circle cx="192" cy="278.5" r="2.6" fill="#FFF3C4"/>
+        <line x1="214" y1="275" x2="214" y2="288" stroke="#52463A" stroke-width="0.7"/>
+        <circle cx="214" cy="289.5" r="2.6" fill="#FFF3C4"/>
+        <line x1="236" y1="286" x2="236" y2="299" stroke="#52463A" stroke-width="0.7"/>
+        <circle cx="236" cy="300.5" r="2.6" fill="#FFF3C4"/>
+      </g>
+      <!-- Warm welcoming entrance glow behind double glass doors -->
+      <polygon points="200,318 232,334 232,360 200,344" fill="#FFE09E" opacity="0.52"/>
+      <!-- Crisp diagonal specular sky reflection bands on glass -->
+      <polygon points="182,256 196,263 176,304 176,282" fill="#DDF7FF" opacity="0.32"/>
+      <polygon points="212,272 224,278 196,342 186,337" fill="#DDF7FF" opacity="0.24"/>
+      <polygon points="238,286 246,290 226,356 219,352" fill="#DDF7FF" opacity="0.20"/>
+    </g>
+
+    <!-- SHADED SE DOUBLE-HEIGHT GLASS CURTAIN WALL (u = 54, v = -24..42, z = 8..84) -->
+    <polygon points="252,294 318,261 318,337 252,370" fill="url(#glassShadeGrad)"/>
+    <g clip-path="url(#lobbySEClip)">
+      <polygon points="252,294 318,261 318,337 252,370" fill="url(#warmInteriorShade)"/>
+      <!-- Mezzanine slab continuing around SE glass side -->
+      <polygon points="252,330 318,297 318,303 252,336" fill="#C4B6A1" opacity="0.75"/>
+      <polygon points="252,335 318,302 318,306 252,339" fill="#8A5E3B" opacity="0.55"/>
+      <!-- Hanging pendant lights inside SE side -->
+      <circle cx="272" cy="299" r="2.3" fill="#FFE8A8" opacity="0.72"/>
+      <circle cx="296" cy="287" r="2.3" fill="#FFE8A8" opacity="0.72"/>
+      <!-- Cool diagonal glass reflection -->
+      <polygon points="262,288 274,282 254,344 252,326" fill="#A8E2F2" opacity="0.22"/>
+      <polygon points="292,273 304,267 282,348 272,353" fill="#A8E2F2" opacity="0.18"/>
+    </g>
+
+    <!-- ARCHITECTURAL DARK-CHARCOAL CURTAIN WALL MULLIONS -->
+    <!-- SW Mullions (lit charcoal #35404D) -->
+    <g stroke="#35404D" stroke-width="1.8" fill="none">
+      <!-- Verticals -->
+      <line x1="176" y1="256" x2="176" y2="332"/>
+      <line x1="191.2" y1="263.6" x2="191.2" y2="339.6"/>
+      <line x1="206.4" y1="271.2" x2="206.4" y2="347.2"/>
+      <line x1="221.6" y1="278.8" x2="221.6" y2="354.8"/>
+      <line x1="236.8" y1="286.4" x2="236.8" y2="362.4"/>
+      <line x1="252" y1="294" x2="252" y2="370"/>
+      <!-- Horizontals -->
+      <line x1="176" y1="276" x2="252" y2="314"/>
+      <line x1="176" y1="294" x2="252" y2="332"/>
+      <line x1="176" y1="306" x2="252" y2="344"/>
+      <line x1="176" y1="332" x2="252" y2="370"/>
+    </g>
+    <!-- SE Mullions (shaded charcoal #242C36) -->
+    <g stroke="#242C36" stroke-width="1.8" fill="none">
+      <line x1="252" y1="294" x2="252" y2="370"/>
+      <line x1="268.5" y1="285.8" x2="268.5" y2="361.8"/>
+      <line x1="285" y1="277.5" x2="285" y2="353.5"/>
+      <line x1="301.5" y1="269.3" x2="301.5" y2="345.3"/>
+      <line x1="318" y1="261" x2="318" y2="337"/>
+      <line x1="252" y1="314" x2="318" y2="281"/>
+      <line x1="252" y1="332" x2="318" y2="299"/>
+      <line x1="252" y1="344" x2="318" y2="311"/>
+      <line x1="252" y1="370" x2="318" y2="337"/>
+    </g>
+
+    <!-- Main Entrance Double Glass Doors (u = 2..34, v = 42, z = 8..32) -->
+    <g id="main-doors">
+      <polygon points="200,320 232,336 232,360 200,344" fill="#2A333E"/>
+      <polygon points="202,322 215,328.5 215,350.5 202,344" fill="#F7D488" opacity="0.65"/>
+      <polygon points="217,329.5 230,336 230,358 217,351.5" fill="#F7D488" opacity="0.65"/>
+      <!-- Door specular highlights & silver push handles -->
+      <line x1="213" y1="337" x2="213" y2="343" stroke="#FFFFFF" stroke-width="1.3"/>
+      <line x1="219" y1="340" x2="219" y2="346" stroke="#FFFFFF" stroke-width="1.3"/>
+    </g>
+
+    <!-- LOBBY CANTILEVERED ROOF & SIGNATURE CORAL-RED FASCIA (z = 84..91) -->
+    <!-- Soft shadow directly beneath roof overhang on glass -->
+    <polygon points="176,256 252,294 252,299 176,261" fill="#1F2E38" opacity="0.32"/>
+    <polygon points="252,294 318,261 318,266 252,299" fill="#162129" opacity="0.35"/>
+    <!-- Bright Coral-Red Architectural Fascia Band -->
+    <polygon points="170,250 252,291 252,298 170,257" fill="#EE4F3D"/>
+    <polygon points="252,291 322,256 322,263 252,298" fill="#C23527"/>
+    <!-- Crisp white/limestone cap trim -->
+    <polygon points="170,248.5 252,289.5 252,291.5 170,250.5" fill="#EFE7DA"/>
+    <polygon points="252,289.5 322,254.5 322,256.5 252,291.5" fill="#D4C9B8"/>
+    <!-- Lobby Roof Top Surface -->
+    <polygon points="240,213.5 322,254.5 252,289.5 170,248.5" fill="#EFE7DA"/>
+    <polygon points="240,217.5 314,254.5 252,285.5 178,248.5" fill="#707B87"/>
+
+    <!-- Lobby Atrium Glazed Pyramid Skylight -->
+    <g id="lobby-skylight">
+      <!-- Skylight curb -->
+      <polygon points="248,229 294,252 252,273 206,250" fill="#46515E"/>
+      <!-- 4 glass pyramid facets meeting at peak (250, 236) -->
+      <polygon points="248,229 294,252 250,236" fill="#9EDAF0"/>
+      <polygon points="248,229 206,250 250,236" fill="#C9F0FC"/>
+      <polygon points="206,250 252,273 250,236" fill="#82CAE0"/>
+      <polygon points="252,273 294,252 250,236" fill="#5FA3BA"/>
+      <!-- Skylight mullion ribs -->
+      <g stroke="#3F4B57" stroke-width="1">
+        <line x1="250" y1="236" x2="206" y2="250"/>
+        <line x1="250" y1="236" x2="252" y2="273"/>
+        <line x1="250" y1="236" x2="294" y2="252"/>
+        <line x1="250" y1="236" x2="229" y2="261.5"/>
+        <line x1="250" y1="236" x2="273" y2="262.5"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- ==================== LAYER 5: ENTRANCE STEPS, CORAL CANOPY, BIKE & GUITAR CASE ==================== -->
+  <g id="entrance-area">
+    <!-- Left Brick Cheek Wall & Planter (u = -6..-2, v = 42..56) -->
+    <polygon points="178,348 182,350 182,358 178,356" fill="#C9684B"/>
+    <polygon points="182,350 196,343 196,351 182,358" fill="#944430"/>
+    <polygon points="192,341 196,343 182,350 178,348" fill="#EFE7DA"/>
+
+    <!-- Wide Limestone Entrance Steps (3 crisp risers, u = -2..38, v = 42..56) -->
+    <!-- Top Landing (z = 8) -->
+    <polygon points="196,342 236,362 232,364 192,344" fill="#EFE7DA"/>
+    <polygon points="192,344 232,364 232,366.8 192,346.8" fill="#C7BCAE"/>
+    <!-- Step 1 (z = 5.2) -->
+    <polygon points="192,346.8 232,366.8 228.5,368.5 188.5,348.5" fill="#EAE1D3"/>
+    <polygon points="188.5,348.5 228.5,368.5 228.5,371.3 188.5,351.3" fill="#C2B7A7"/>
+    <!-- Step 2 (z = 2.6) -->
+    <polygon points="188.5,351.3 228.5,371.3 225,373 185,353" fill="#E5DCCD"/>
+    <polygon points="185,353 225,373 225,375.6 185,355.6" fill="#BDB1A1"/>
+    <!-- Bottom Step Edge -->
+    <polygon points="185,355.6 225,375.6 222,377.1 182,357.1" fill="#DED4C4"/>
+
+    <!-- Right Brick Cheek Wall & Planter (u = 38..42, v = 42..56) -->
+    <polygon points="222,370 226,372 226,380 222,378" fill="#C9684B"/>
+    <polygon points="226,372 240,365 240,373 226,380" fill="#944430"/>
+    <polygon points="236,363 240,365 226,372 222,370" fill="#EFE7DA"/>
+    <!-- Small green bush in right entrance planter -->
+    <ellipse cx="235" cy="364" rx="5.5" ry="3.8" fill="#4E8E3C"/>
+    <ellipse cx="234" cy="362.5" rx="3.8" ry="2.6" fill="#70B556"/>
+
+    <!-- Guitar Case Leaning Against Pier Beside the Main Door (u = -4, v = 44) -->
+    <g id="guitar-case">
+      <!-- Soft shadow -->
+      <ellipse cx="195" cy="346" rx="5" ry="2.2" fill="#2A3444" opacity="0.28"/>
+      <!-- Hard-shell contoured acoustic guitar case leaning right-to-left against lobby wall -->
+      <path d="M191.5,345.5 C189,344.5 188.5,341.5 189.5,339 C190.2,337.2 191.5,336.5 191.5,335 C191.5,333.5 190.8,332 192,330.2 C193.2,328.4 195.2,328.5 196.2,330 C197.2,331.5 196.6,333.5 196.5,335 C196.4,336.5 197.5,337.5 197.8,339.5 C198.1,342 196.8,345 194.5,346 Z" fill="#593524"/>
+      <path d="M190.8,345 C188.6,344 188.2,341.2 189.1,338.8 C189.8,337 191,336.3 191,334.8 C191,333.3 190.4,331.8 191.5,330 C192.6,328.3 194.4,328.6 195.2,330 C196,331.5 195.5,333.5 195.4,335 C195.3,336.5 196.3,337.5 196.6,339.5 C196.9,341.8 195.6,344.6 193.6,345.4 Z" fill="#784B35"/>
+      <!-- Guitar case neck extension -->
+      <polygon points="192.2,329.8 194.4,329.8 194.8,323.5 192.5,323.5" fill="#6E4430"/>
+      <!-- Brass latches & side handle -->
+      <rect x="195.2" y="335.5" width="1.2" height="1.2" fill="#E8C25A"/>
+      <rect x="195.8" y="340.5" width="1.2" height="1.2" fill="#E8C25A"/>
+      <path d="M196.6,337 C198,337.2 198,339.5 196.6,339.8" fill="none" stroke="#3D2418" stroke-width="0.9"/>
+    </g>
+
+    <!-- Bicycle Leaning Beside the Entrance Steps (u = -20..-6, v = 46..54) -->
+    <g id="bicycle">
+      <!-- Sleek metal U-shaped campus bike rack -->
+      <path d="M167,345 L167,336 C167,334 173,337 173,339 L173,348" fill="none" stroke="#6E7885" stroke-width="1.6"/>
+      <!-- Bike soft shadow on paving -->
+      <ellipse cx="174" cy="350" rx="10" ry="3.5" fill="#2A3444" opacity="0.22"/>
+      <!-- Rear wheel (elliptical in isometric) -->
+      <ellipse cx="167.5" cy="345" rx="3.8" ry="5.5" transform="rotate(-12 167.5 345)" fill="none" stroke="#2F3640" stroke-width="1.7"/>
+      <ellipse cx="167.5" cy="345" rx="2.6" ry="4.1" transform="rotate(-12 167.5 345)" fill="none" stroke="#B6C0CC" stroke-width="0.6"/>
+      <!-- Front wheel -->
+      <ellipse cx="179.5" cy="350.5" rx="3.8" ry="5.5" transform="rotate(-12 179.5 350.5)" fill="none" stroke="#2F3640" stroke-width="1.7"/>
+      <ellipse cx="179.5" cy="350.5" rx="2.6" ry="4.1" transform="rotate(-12 179.5 350.5)" fill="none" stroke="#B6C0CC" stroke-width="0.6"/>
+      <!-- Vibrant teal-blue bicycle diamond frame -->
+      <g stroke="#2EA8A8" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" fill="none">
+        <polyline points="167.5,345 171.5,340 177.8,342.5 173,347.8 167.5,345"/>
+        <line x1="171.5" y1="340" x2="173" y2="347.8"/>
+        <line x1="177.2" y1="339.5" x2="179.5" y2="350.5"/>
+      </g>
+      <!-- Seat & curved handlebars -->
+      <line x1="170.2" y1="338.8" x2="173" y2="339.8" stroke="#3B2D26" stroke-width="1.8" stroke-linecap="round"/>
+      <path d="M175.5,338.8 L177.5,339.5 L179.6,338.6" fill="none" stroke="#363E47" stroke-width="1.3" stroke-linecap="round"/>
+    </g>
+
+    <!-- CANTILEVERED CORAL-RED MAIN ENTRANCE CANOPY (u = -4..40, v = 42..58, z = 35..39) -->
+    <g id="entrance-canopy">
+      <!-- Shadow cast on glass facade below canopy -->
+      <polygon points="194,316 238,338 238,345 194,323" fill="#1D2B36" opacity="0.28"/>
+      <!-- Slim dark-steel diagonal tie-rods supporting canopy -->
+      <line x1="184" y1="320" x2="196" y2="296" stroke="#36404D" stroke-width="1.2"/>
+      <line x1="220" y1="338" x2="234" y2="314" stroke="#36404D" stroke-width="1.2"/>
+      <!-- Warm shaded canopy underside with recessed downlights -->
+      <polygon points="178,322 222,344 238,336 194,314" fill="#A32C20"/>
+      <ellipse cx="198" cy="325" rx="2.4" ry="1.2" fill="#FFF3C7" opacity="0.9"/>
+      <ellipse cx="210" cy="331" rx="2.4" ry="1.2" fill="#FFF3C7" opacity="0.9"/>
+      <ellipse cx="222" cy="337" rx="2.4" ry="1.2" fill="#FFF3C7" opacity="0.9"/>
+      <!-- Canopy Top Surface (Bright Coral Red) -->
+      <polygon points="194,310 238,332 222,340 178,318" fill="#FF6B57"/>
+      <!-- Subtle standing-seam ribs on coral canopy top -->
+      <g stroke="#F05643" stroke-width="0.9" opacity="0.7">
+        <line x1="202.8" y1="314.4" x2="186.8" y2="322.4"/>
+        <line x1="211.6" y1="318.8" x2="195.6" y2="326.8"/>
+        <line x1="220.4" y1="323.2" x2="204.4" y2="331.2"/>
+        <line x1="229.2" y1="327.6" x2="213.2" y2="335.6"/>
+      </g>
+      <!-- Canopy Lit SW Front Edge -->
+      <polygon points="178,318 222,340 222,344 178,322" fill="#EE4F3D"/>
+      <!-- Crisp white trim pinstripe on front fascia -->
+      <line x1="178" y1="321" x2="222" y2="343" stroke="#FFF4F0" stroke-width="0.9" opacity="0.85"/>
+      <!-- Canopy Shaded SE Edge -->
+      <polygon points="222,340 238,332 238,336 222,344" fill="#C23527"/>
+    </g>
+  </g>
+
+  <!-- ==================== LAYER 6: LEFT CORNER LANDSCAPE PLANTER ==================== -->
+  <g id="left-greenery">
+    <polygon points="94,296 112,305 94,314 76,305" fill="#2A3444" opacity="0.16"/>
+    <!-- Low stone planter -->
+    <polygon points="78,298 94,306 94,312 78,304" fill="#D9CEBD"/>
+    <polygon points="94,306 110,298 110,304 94,312" fill="#B0A493"/>
+    <polygon points="94,290 110,298 94,306 78,298" fill="#EFE7DA"/>
+    <polygon points="94,292.5 105,298 94,303.5 83,298" fill="#6E543E"/>
+    <!-- Lush isometric shrubs -->
+    <ellipse cx="90" cy="295" rx="8" ry="5.5" fill="#3D7531"/>
+    <ellipse cx="98" cy="296" rx="7.5" ry="5" fill="#4C8A3C"/>
+    <ellipse cx="93" cy="291.5" rx="7.5" ry="5.5" fill="#5CA047"/>
+    <ellipse cx="92" cy="288.5" rx="4.8" ry="3.4" fill="#7AC25E"/>
+  </g>
+
+  <!-- ==================== LAYER 7: ROW OF 3 CLUB TABLES UNDER CORAL-RED CANOPIES ==================== -->
+  <g id="club-booths">
+    <!-- BOOTH 1 (Leftmost: u = -88..-66, v = 62..82) -->
+    <g id="club-booth-1">
+      <!-- Cast ground shadow -->
+      <polygon points="75,328 97,339 124,331 102,320" fill="#2A3444" opacity="0.20"/>
+      <!-- Back aluminum legs -->
+      <line x1="90" y1="317" x2="90" y2="298" stroke="#AEB7C2" stroke-width="1.4"/>
+      <line x1="112" y1="328" x2="112" y2="309" stroke="#98A2AD" stroke-width="1.4"/>
+      <!-- Small folding chair behind table -->
+      <polygon points="91,316 96,318.5 96,324 91,321.5" fill="#55606E"/>
+      <!-- Club Table draped in Deep Navy Cloth -->
+      <polygon points="78,318 94,326 94,334 78,326" fill="#3B557A"/>
+      <polygon points="94,326 105,320.5 105,328.5 94,334" fill="#293D59"/>
+      <polygon points="89,312.5 105,320.5 94,326 78,318" fill="#51719E"/>
+      <!-- Club Tabletop Props: Yellow trifold board + flyer stack -->
+      <polygon points="85,314 95,319 95,312.5 85,307.5" fill="#FFD15C"/>
+      <polygon points="95,319 99,317 99,310.5 95,312.5" fill="#E6B33E"/>
+      <polygon points="83,318.5 86,320 88.5,318.8 85.5,317.3" fill="#FFF5E4"/>
+      <polygon points="89,321.5 92,323 94.5,321.8 91.5,320.3" fill="#FF6B57"/>
+      <!-- Front aluminum legs -->
+      <line x1="70" y1="327" x2="70" y2="308" stroke="#D5DCE3" stroke-width="1.5"/>
+      <line x1="92" y1="338" x2="92" y2="319" stroke="#C5CDD6" stroke-width="1.5"/>
+      <!-- Coral-Red Pop-Up Canopy Roof -->
+      <!-- Valance skirt -->
+      <polygon points="70,307 92,318 92,321 70,310" fill="#EE4F3D"/>
+      <polygon points="92,318 112,308 112,311 92,321" fill="#C23527"/>
+      <line x1="70" y1="310" x2="92" y2="321" stroke="#FFF4F0" stroke-width="0.9"/>
+      <line x1="92" y1="321" x2="112" y2="311" stroke="#E8D8D2" stroke-width="0.9"/>
+      <!-- Pyramid roof slopes (peak at 91, 293.5) -->
+      <polygon points="70,307 90,297 91,293.5" fill="#FF8573"/>
+      <polygon points="90,297 112,308 91,293.5" fill="#F05946"/>
+      <polygon points="70,307 92,318 91,293.5" fill="#FF6B57"/>
+      <polygon points="92,318 112,308 91,293.5" fill="#D63F2E"/>
+      <!-- Crisp subtle hip ridge highlight -->
+      <line x1="91" y1="293.5" x2="92" y2="318" stroke="#FF8F7D" stroke-width="0.7" opacity="0.6"/>
+    </g>
+
+    <!-- BOOTH 2 (Middle: translated +28, +14) -->
+    <g id="club-booth-2" transform="translate(28,14)">
+      <polygon points="75,328 97,339 124,331 102,320" fill="#2A3444" opacity="0.20"/>
+      <line x1="90" y1="317" x2="90" y2="298" stroke="#AEB7C2" stroke-width="1.4"/>
+      <line x1="112" y1="328" x2="112" y2="309" stroke="#98A2AD" stroke-width="1.4"/>
+      <!-- Club Table draped in Campus Teal Cloth -->
+      <polygon points="78,318 94,326 94,334 78,326" fill="#328787"/>
+      <polygon points="94,326 105,320.5 105,328.5 94,334" fill="#226363"/>
+      <polygon points="89,312.5 105,320.5 94,326 78,318" fill="#46A6A6"/>
+      <!-- Tabletop Props: Cream/Coral display stand + small box & flyers -->
+      <polygon points="86,314.5 96,319.5 96,313 86,308" fill="#FFF4E3"/>
+      <polygon points="88,313.5 94,316.5 94,314 88,311" fill="#FF6B57"/>
+      <polygon points="96,319.5 100,317.5 100,311 96,313" fill="#DECDB8"/>
+      <polygon points="84,319 88,321 90,320 86,318" fill="#FFD15C"/>
+      <circle cx="94" cy="321" r="1.8" fill="#5EA84A"/>
+      <line x1="70" y1="327" x2="70" y2="308" stroke="#D5DCE3" stroke-width="1.5"/>
+      <line x1="92" y1="338" x2="92" y2="319" stroke="#C5CDD6" stroke-width="1.5"/>
+      <!-- Coral-Red Canopy Roof -->
+      <polygon points="70,307 92,318 92,321 70,310" fill="#EE4F3D"/>
+      <polygon points="92,318 112,308 112,311 92,321" fill="#C23527"/>
+      <line x1="70" y1="310" x2="92" y2="321" stroke="#FFF4F0" stroke-width="0.9"/>
+      <line x1="92" y1="321" x2="112" y2="311" stroke="#E8D8D2" stroke-width="0.9"/>
+      <polygon points="70,307 90,297 91,293.5" fill="#FF8573"/>
+      <polygon points="90,297 112,308 91,293.5" fill="#F05946"/>
+      <polygon points="70,307 92,318 91,293.5" fill="#FF6B57"/>
+      <polygon points="92,318 112,308 91,293.5" fill="#D63F2E"/>
+      <line x1="91" y1="293.5" x2="92" y2="318" stroke="#FF8F7D" stroke-width="0.7" opacity="0.6"/>
+    </g>
+
+    <!-- BOOTH 3 (Rightmost: translated +56, +28) -->
+    <g id="club-booth-3" transform="translate(56,28)">
+      <polygon points="75,328 97,339 124,331 102,320" fill="#2A3444" opacity="0.20"/>
+      <line x1="90" y1="317" x2="90" y2="298" stroke="#AEB7C2" stroke-width="1.4"/>
+      <line x1="112" y1="328" x2="112" y2="309" stroke="#98A2AD" stroke-width="1.4"/>
+      <!-- Club Table draped in Warm Mustard Gold Cloth -->
+      <polygon points="78,318 94,326 94,334 78,326" fill="#D99B38"/>
+      <polygon points="94,326 105,320.5 105,328.5 94,334" fill="#B07A22"/>
+      <polygon points="89,312.5 105,320.5 94,326 78,318" fill="#EDB452"/>
+      <!-- Tabletop Props: Sky-blue trifold board + open laptop + flyers -->
+      <polygon points="86,314.5 95,319 95,312.5 86,308" fill="#64C4E8"/>
+      <polygon points="95,319 99,317 99,310.5 95,312.5" fill="#46A1C4"/>
+      <polygon points="83,318 87,320 89,319 85,317" fill="#45505C"/>
+      <polygon points="90,321.5 93,323 95.5,321.8 92.5,320.3" fill="#B598E8"/>
+      <line x1="70" y1="327" x2="70" y2="308" stroke="#D5DCE3" stroke-width="1.5"/>
+      <line x1="92" y1="338" x2="92" y2="319" stroke="#C5CDD6" stroke-width="1.5"/>
+      <!-- Coral-Red Canopy Roof -->
+      <polygon points="70,307 92,318 92,321 70,310" fill="#EE4F3D"/>
+      <polygon points="92,318 112,308 112,311 92,321" fill="#C23527"/>
+      <line x1="70" y1="310" x2="92" y2="321" stroke="#FFF4F0" stroke-width="0.9"/>
+      <line x1="92" y1="321" x2="112" y2="311" stroke="#E8D8D2" stroke-width="0.9"/>
+      <polygon points="70,307 90,297 91,293.5" fill="#FF8573"/>
+      <polygon points="90,297 112,308 91,293.5" fill="#F05946"/>
+      <polygon points="70,307 92,318 91,293.5" fill="#FF6B57"/>
+      <polygon points="92,318 112,308 91,293.5" fill="#D63F2E"/>
+      <line x1="91" y1="293.5" x2="92" y2="318" stroke="#FF8F7D" stroke-width="0.7" opacity="0.6"/>
+    </g>
+  </g>
+
+  <!-- ==================== LAYER 8: SMALL OUTDOOR STAGE WITH SPEAKERS ==================== -->
+  <g id="outdoor-stage">
+    <!-- Small wooden side steps on front-left of stage (u = 58..64, v = 32..44) -->
+    <polygon points="256,374 268,368 268,372 256,378" fill="#9E7044"/>
+    <polygon points="252,376 264,370 268,372 256,378" fill="#BD8D5E"/>
+    <polygon points="252,376 256,378 256,383 252,381" fill="#3B4450"/>
+    <polygon points="249,380 261,374 265,376 253,382" fill="#B58456"/>
+    <polygon points="249,380 253,382 253,385.5 249,383.5" fill="#323A45"/>
+
+    <!-- Stage Platform Base Skirt (z = 0..10) -->
+    <polygon points="256,376 290,393 290,403 256,386" fill="#3A434F"/>
+    <polygon points="290,393 332,372 332,382 290,403" fill="#272E38"/>
+    <!-- Subtle coral stage edge trim -->
+    <polygon points="256,376 290,393 290,395 256,378" fill="#EE4F3D"/>
+    <polygon points="290,393 332,372 332,374 290,395" fill="#C23527"/>
+
+    <!-- Stage Timber Deck Top (z = 10) -->
+    <polygon points="298,355 332,372 290,393 256,376" fill="#BF8E5E"/>
+    <!-- Crisp wood plank lines -->
+    <g stroke="#A37447" stroke-width="0.9" opacity="0.65">
+      <line x1="292" y1="358" x2="326" y2="375"/>
+      <line x1="286" y1="361" x2="320" y2="378"/>
+      <line x1="280" y1="364" x2="314" y2="381"/>
+      <line x1="274" y1="367" x2="308" y2="384"/>
+      <line x1="268" y1="370" x2="302" y2="387"/>
+      <line x1="262" y1="373" x2="296" y2="390"/>
+    </g>
+
+    <!-- Backdrop Lighting Truss Frame (along back edge v = 8, z = 10..42) -->
+    <g id="stage-truss">
+      <!-- Left vertical truss column -->
+      <line x1="297" y1="357" x2="297" y2="325" stroke="#4D5763" stroke-width="1.6"/>
+      <line x1="300" y1="358.5" x2="300" y2="326.5" stroke="#363E47" stroke-width="1.6"/>
+      <g stroke="#5D6875" stroke-width="0.9">
+        <line x1="297" y1="354" x2="300" y2="349"/>
+        <line x1="297" y1="346" x2="300" y2="341"/>
+        <line x1="297" y1="338" x2="300" y2="333"/>
+        <line x1="297" y1="330" x2="300" y2="326"/>
+      </g>
+      <!-- Right vertical truss column -->
+      <line x1="326" y1="371.5" x2="326" y2="339.5" stroke="#4D5763" stroke-width="1.6"/>
+      <line x1="329" y1="373" x2="329" y2="341" stroke="#363E47" stroke-width="1.6"/>
+      <g stroke="#5D6875" stroke-width="0.9">
+        <line x1="326" y1="368" x2="329" y2="363"/>
+        <line x1="326" y1="360" x2="329" y2="355"/>
+        <line x1="326" y1="352" x2="329" y2="347"/>
+        <line x1="326" y1="344" x2="329" y2="340"/>
+      </g>
+      <!-- Suspended Blank Coral & Gold Stage Banner -->
+      <polygon points="301,334 325,346 325,363 301,351" fill="#EE4F3D"/>
+      <polygon points="301,344 325,356 325,363 301,351" fill="#FFD15C"/>
+      <polygon points="301,334 313,340 301,346" fill="#FF7B69"/>
+      <!-- Top horizontal truss bar -->
+      <line x1="297" y1="325" x2="329" y2="341" stroke="#3A434F" stroke-width="2.2"/>
+      <line x1="297" y1="328" x2="329" y2="344" stroke="#576370" stroke-width="1.3"/>
+      <!-- 4 Mini Stage Spotlights mounted on top truss -->
+      <circle cx="303" cy="331.5" r="1.8" fill="#2A313A"/>
+      <circle cx="303" cy="332" r="1" fill="#FFE699"/>
+      <circle cx="310" cy="335" r="1.8" fill="#2A313A"/>
+      <circle cx="310" cy="335.5" r="1" fill="#FFE699"/>
+      <circle cx="317" cy="338.5" r="1.8" fill="#2A313A"/>
+      <circle cx="317" cy="339" r="1" fill="#FFE699"/>
+      <circle cx="323.5" cy="341.8" r="1.8" fill="#2A313A"/>
+      <circle cx="323.5" cy="342.3" r="1" fill="#FFE699"/>
+    </g>
+
+    <!-- Stage Props: Acoustic Guitar Amp, Floor Monitor Wedges & Microphone Stand -->
+    <!-- Small stage amp near back-left -->
+    <polygon points="292,361 298,364 298,370 292,367" fill="#323942"/>
+    <polygon points="298,364 303,361.5 303,367.5 298,370" fill="#22282F"/>
+    <polygon points="297,358.5 303,361.5 298,364 292,361" fill="#47505C"/>
+    <!-- Floor Monitor Wedges -->
+    <polygon points="274,376 280,379 282,377 276,374" fill="#2F3640"/>
+    <polygon points="282,380 288,383 290,381 284,378" fill="#2F3640"/>
+    <!-- Center Microphone Stand -->
+    <ellipse cx="288" cy="376" rx="3" ry="1.4" fill="#262C33"/>
+    <line x1="288" y1="376" x2="288" y2="362" stroke="#363F4A" stroke-width="1.2"/>
+    <line x1="285" y1="364" x2="291.5" y2="360.5" stroke="#363F4A" stroke-width="1"/>
+    <circle cx="284.5" cy="364.3" r="1.3" fill="#B8C2CC"/>
+
+    <!-- PAIR OF PA SPEAKERS FLANKING THE STAGE -->
+    <!-- Left PA Speaker -->
+    <g id="speaker-left">
+      <polygon points="262,377 270,381 279,378 271,374" fill="#6E4E2E" opacity="0.32"/>
+      <!-- Lit SW Speaker Face (with woofer & tweeter cones) -->
+      <polygon points="259,358 268,362.5 268,380.5 259,376" fill="#323943"/>
+      <polygon points="260.2,359.8 266.8,363.1 266.8,378.5 260.2,375.2" fill="#232830"/>
+      <!-- Large bottom woofer cone -->
+      <ellipse cx="263.5" cy="372" rx="2.6" ry="3.3" transform="rotate(-24 263.5 372)" fill="#3F4854" stroke="#5A6573" stroke-width="0.6"/>
+      <ellipse cx="263.5" cy="372" rx="1.1" ry="1.4" fill="#181C21"/>
+      <!-- Top tweeter cone -->
+      <ellipse cx="263.5" cy="364.8" rx="1.7" ry="2.1" transform="rotate(-24 263.5 364.8)" fill="#3F4854" stroke="#5A6573" stroke-width="0.5"/>
+      <!-- Shaded SE Side -->
+      <polygon points="268,362.5 275,359 275,377 268,380.5" fill="#21262E"/>
+      <!-- Top -->
+      <polygon points="266,354.5 275,359 268,362.5 259,358" fill="#4A5360"/>
+    </g>
+
+    <!-- Right PA Speaker -->
+    <g id="speaker-right" transform="translate(23,11.5)">
+      <polygon points="262,377 270,381 279,378 271,374" fill="#6E4E2E" opacity="0.32"/>
+      <polygon points="259,358 268,362.5 268,380.5 259,376" fill="#323943"/>
+      <polygon points="260.2,359.8 266.8,363.1 266.8,378.5 260.2,375.2" fill="#232830"/>
+      <ellipse cx="263.5" cy="372" rx="2.6" ry="3.3" transform="rotate(-24 263.5 372)" fill="#3F4854" stroke="#5A6573" stroke-width="0.6"/>
+      <ellipse cx="263.5" cy="372" rx="1.1" ry="1.4" fill="#181C21"/>
+      <ellipse cx="263.5" cy="364.8" rx="1.7" ry="2.1" transform="rotate(-24 263.5 364.8)" fill="#3F4854" stroke="#5A6573" stroke-width="0.5"/>
+      <polygon points="268,362.5 275,359 275,377 268,380.5" fill="#21262E"/>
+      <polygon points="266,354.5 275,359 268,362.5 259,358" fill="#4A5360"/>
+    </g>
+  </g>
+
+  <!-- ==================== LAYER 9: FRONT PLAZA BENCHES & FRONT-RIGHT TREE ==================== -->
+  <g id="plaza-furniture">
+    <!-- Campus Wooden-Slat Bench 1 (facing the outdoor stage) -->
+    <g id="bench-1">
+      <polygon points="212,399 229,407.5 236,404.5 219,396" fill="#2A3444" opacity="0.18"/>
+      <!-- Concrete bench legs -->
+      <polygon points="214,394 217,395.5 217,400.5 214,399" fill="#BEB3A2"/>
+      <polygon points="225,399.5 228,401 228,406 225,404.5" fill="#BEB3A2"/>
+      <!-- Warm wood seat slats -->
+      <polygon points="216,392 231,399.5 227,401.5 212,394" fill="#C98F5B"/>
+      <polygon points="212,394 227,401.5 227,403 212,395.5" fill="#A67144"/>
+      <polygon points="227,401.5 231,399.5 231,401 227,403" fill="#8A5C35"/>
+    </g>
+
+    <!-- Campus Bench 2 -->
+    <g id="bench-2" transform="translate(24,12)">
+      <polygon points="212,399 229,407.5 236,404.5 219,396" fill="#2A3444" opacity="0.18"/>
+      <polygon points="214,394 217,395.5 217,400.5 214,399" fill="#BEB3A2"/>
+      <polygon points="225,399.5 228,401 228,406 225,404.5" fill="#BEB3A2"/>
+      <polygon points="216,392 231,399.5 227,401.5 212,394" fill="#C98F5B"/>
+      <polygon points="212,394 227,401.5 227,403 212,395.5" fill="#A67144"/>
+      <polygon points="227,401.5 231,399.5 231,401 227,403" fill="#8A5C35"/>
+    </g>
+
+    <!-- Front-Right Corner Planter & Stylized Campus Tree -->
+    <g id="front-right-tree" transform="translate(-122,74)">
+      <polygon points="400,326 416,334 400,342 384,334" fill="#2A3444" opacity="0.18"/>
+      <polygon points="384,327 398,334 398,340 384,333" fill="#D4C9B8"/>
+      <polygon points="398,334 412,327 412,333 398,340" fill="#ADA18F"/>
+      <polygon points="398,320 412,327 398,334 384,327" fill="#EFE7DA"/>
+      <polygon points="398,322.5 408,327 398,331.5 388,327" fill="#6E543E"/>
+      <polygon points="396.5,327 399.5,327 399.5,313 396.5,313" fill="#7D583F"/>
+      <ellipse cx="398" cy="309" rx="12" ry="9" fill="#3D7531"/>
+      <ellipse cx="395.5" cy="305.5" rx="11" ry="8.5" fill="#559641"/>
+      <ellipse cx="394" cy="301.5" rx="7.5" ry="5.5" fill="#73B857"/>
+    </g>
+  </g>
+
+  <!-- ==================== LAYER 10: FESTIVE PENNANT STRINGS ==================== -->
+  <g id="pennant-strings">
+    <!-- Left plaza pennant pole (at u = -94, v = 58, z = 0..40) -->
+    <line x1="88" y1="312" x2="88" y2="272" stroke="#45505C" stroke-width="1.8" stroke-linecap="round"/>
+    <circle cx="88" cy="272" r="1.7" fill="#EE4F3D"/>
+
+    <!-- STRING 1: Left plaza pole (88,272) arcing cleanly to Coral Entrance Canopy left corner (178,318) -->
+    <path d="M88,272 Q132,306 178,318" fill="none" stroke="#4B5561" stroke-width="0.9"/>
+    <g id="flags-string-1">
+      <polygon points="94,276.5 101,281.5 96,285.5" fill="#FF6B57"/>
+      <polygon points="103,283 110,287.5 105,292" fill="#FFD15C"/>
+      <polygon points="112,289 119,293.5 114,298" fill="#5CC4E6"/>
+      <polygon points="121,294.5 129,298.5 124,303.5" fill="#FFF4E3"/>
+      <polygon points="131,299.5 139,303.2 134,308.5" fill="#6FD49E"/>
+      <polygon points="141,304.2 149,307.6 144,313" fill="#FF6B57"/>
+      <polygon points="151,308.5 159,311.5 154.5,317" fill="#FFD15C"/>
+      <polygon points="161,312.3 169,315 164.5,320.5" fill="#B598E8"/>
+    </g>
+
+    <!-- STRING 2: Coral Entrance Canopy right corner (222,340) arcing across walkway to Stage Left Truss (297,325) -->
+    <path d="M222,340 Q261,346 297,325" fill="none" stroke="#4B5561" stroke-width="0.9"/>
+    <g id="flags-string-2">
+      <polygon points="227,340.8 234.5,341.8 230.5,347.8" fill="#FFD15C"/>
+      <polygon points="237,341.9 244.5,342.4 240.8,348.5" fill="#FF6B57"/>
+      <polygon points="247,342.4 254.5,342.4 251,348.5" fill="#5CC4E6"/>
+      <polygon points="257,342.1 264.5,341.4 261.2,347.8" fill="#FFF4E3"/>
+      <polygon points="267,340.8 274.2,339.4 271.5,346" fill="#6FD49E"/>
+      <polygon points="276.5,338.6 283.5,336.4 281.5,343.2" fill="#FF6B57"/>
+      <polygon points="285.8,335.4 292.5,332.2 291,339.2" fill="#FFD15C"/>
+    </g>
+
+    <!-- STRING 3: Across Stage Truss front (297,325) to (329,341) -->
+    <path d="M297,325 Q313,337 329,341" fill="none" stroke="#4B5561" stroke-width="0.8"/>
+    <g id="flags-string-3">
+      <polygon points="300,327.3 305.5,330.8 302,334.5" fill="#5CC4E6"/>
+      <polygon points="307,331.6 312.5,334.6 309,338.8" fill="#FFD15C"/>
+      <polygon points="314,335.2 319.5,337.6 316.2,342" fill="#FFF4E3"/>
+      <polygon points="321,338.2 326.5,340.1 323.5,344.5" fill="#FF6B57"/>
+    </g>
+  </g>
+</svg>

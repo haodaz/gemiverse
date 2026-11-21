@@ -63,6 +63,15 @@ export default function Room() {
   useEffect(() => { feedEnd.current?.scrollIntoView({ behavior: "smooth" }); }, [feed, panel]);
 
   const mind = useMemo(() => replay(log), [log]);
+  // Its own initiative: left alone with nothing waiting on the desk and enough Gem Stars, it decides to go out by itself.
+  // It picks the place that serves what the student cares about most; this trip is paid from its own allowance.
+  const auto = useRef<(() => void) | null>(null);
+  useEffect(() => {
+    if (!school || busy || campus || panel || tap || outAt) return;
+    if (trip && trip.finds.some((f) => !trip.choices[f.id])) return;
+    const id = setTimeout(() => auto.current?.(), 45000);
+    return () => clearTimeout(id);
+  }, [school, busy, campus, panel, tap, outAt, trip]);
   const s = school ? SCHOOLS[school] : null, preset = school ? PRESETS[school] : null;
   const evidenceOf = useMemo(() => { const m: Record<string, Evidence[]> = {}; for (const e of base?.evidence ?? []) (m[e.entity_id] ??= []).push(e); return m; }, [base]);
   if (!s || !preset || !school) return null;
@@ -102,17 +111,23 @@ export default function Room() {
     const verdict = mayCall("go_out", state, "", by);
     if (!verdict.ok) { setCampus(false); setPanel("talk"); push({ who: "gemi", text: verdict.reason, error: true }); return; }
     charge("go_out", verdict.charge.stars, "for_you");
-    setOutAt(place); send("away", true); setBusy(true);
+    setOutAt(place); send("away", true); setBusy(true); if (by === "gemi") setDoing(`out at the ${place}, on its own`);
     try {
       const seen = log.filter((e) => e.type === "choice").map((e: any) => e.find);
       const r = await fetch("/api/go", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ school, place, care: mind.care, beliefs: mind.beliefs, wants, seen, lang }) }).then((x) => x.json());
       if (r.error || !r.finds?.length) { push({ who: "gemi", text: r.error ?? r.reason, error: !!r.error }); setPanel("talk"); return; }
       append({ id: uid(), at: new Date().toISOString(), type: "trip", place, stars: verdict.charge.stars, found: r.finds.map((f: Find) => f.id), predicted: {}, seal: r.seal, reason: r.reason });
-      setTrip({ ...r, by, choices: {} }); setPanel("desk");
+      setTrip({ ...r, by, choices: {} }); if (by === "student") setPanel("desk");
     } catch { push({ who: "gemi", text: "It could not finish the trip.", error: true }); setPanel("talk"); }
     finally { setBusy(false); setOutAt(null); setCampus(false); send("away", false); }
   }
 
+  auto.current = () => {
+    if (!mayCall("go_out", state, "", "gemi").ok) return;
+    const top = Object.entries(mind.care).sort((a, b) => b[1] - a[1])[0]?.[0];
+    const place = top && ["find_my_people", "make_and_express"].includes(top) ? "clubs" : top && ["get_experience", "decide_a_direction", "fund_my_path"].includes(top) ? "career" : top === "rest_and_recover" ? "commons" : "library";
+    goOut(place, "gemi");
+  };
   function choose(f: Find, action: "keep" | "skip") {
     if (!trip || trip.choices[f.id]) return;
     append({ id: uid(), at: new Date().toISOString(), type: "choice", find: f.id, title: f.title, action, shownWith: trip.finds.filter((x) => x.id !== f.id).map((x) => x.title), evidence: f.evidence });
@@ -231,7 +246,7 @@ export default function Room() {
               {!trip && <p className="text-sm leading-relaxed text-[#5f576c]">{tt("no_finds")}</p>}
               {trip && (
                 <div>
-                  <div className="text-xs font-bold uppercase tracking-wider text-[#8a8296]">{tt("brought_back")} · {tt(`b_${trip.place}`)}</div>
+                  <div className="text-xs font-bold uppercase tracking-wider text-[#8a8296]">{tt("brought_back")} · {tt(`b_${trip.place}`)} · {tt(trip.by === "gemi" ? "its_idea" : "your_idea")}</div>
                   <p className="mt-2 rounded-2xl border-2 bg-white px-3.5 py-2.5 text-sm leading-relaxed" style={{ borderColor: INK }}>{trip.reason}</p>
                   <div className="mt-2 flex items-center gap-2 text-[11px] text-[#8a8296]"><Icon name="lock" size={16} />{allChosen ? tt("reveal") : tt("sealed")} · <code>{trip.seal.slice(0, 12)}</code>{trip.revealed ? <b style={{ color: trip.revealed.verified ? "#2f7a3d" : "#b26a00" }}>{trip.revealed.verified ? "✓" : "✗"}</b> : null}</div>
                   <ul className="mt-3 space-y-3">

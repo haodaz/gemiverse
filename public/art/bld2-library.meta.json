@@ -1,0 +1,27 @@
+{
+ "model": "gemini-4-neon",
+ "thinking": "high",
+ "prompt": "Draw a university LIBRARY: a stately three-storey stone and brick building with tall arched reading-room windows through which bookshelves and green lamps can be seen, a columned entrance with wide steps, a small clock or lantern cupola, a book-drop box, bicycles parked at a rack, a banner with an open-book symbol. Accent roof colour: deep teal. One isometric building as a large game-map object on a transparent background, viewBox 0 0 480 480, the building's footprint centred near (240,330) on a small paved isometric base, soft ground shadow. It must look like a real university building, recognisable to a student at a glance, with careful architecture: brick or stone walls with rows of windows, a clear main entrance with steps, roof details. Richer colour and more detail than ordinary background buildings, with a bright accent roof or awning so it reads as a place you can enter. True isometric projection throughout (2:1 dimetric: ground lines at 26.57 degrees, verticals vertical), the look of a polished isometric city-builder game. Flat vector shading with three tones per surface (lit side, shaded side, roof), crisp edges, soft ground shadows at one consistent angle, no black outlines.",
+ "usage": {
+  "total_tokens": 59239,
+  "total_input_tokens": 326,
+  "input_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 326
+   }
+  ],
+  "total_cached_tokens": 0,
+  "total_output_tokens": 34735,
+  "output_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 34735
+   }
+  ],
+  "total_tool_use_tokens": 0,
+  "total_thought_tokens": 24178
+ },
+ "ms": 417036,
+ "made_at": "2026-11-21T17:21:14.078Z"
+}

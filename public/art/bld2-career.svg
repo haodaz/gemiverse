@@ -1,0 +1,737 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" width="480" height="480">
+  <defs>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3.2" />
+    </filter>
+    <filter id="subtleShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feGaussianBlur stdDeviation="1.6" />
+    </filter>
+    <clipPath id="interviewClip">
+      <rect x="-19" y="-13" width="38" height="26" />
+    </clipPath>
+    <clipPath id="atriumUpperClip">
+      <rect x="-27" y="-29" width="54" height="58" />
+    </clipPath>
+    <clipPath id="atriumLowerClip">
+      <rect x="-27" y="-18" width="54" height="36" />
+    </clipPath>
+    <clipPath id="kioskClip">
+      <rect x="-12" y="-8" width="24" height="16" />
+    </clipPath>
+    <clipPath id="gableGlassClip">
+      <polygon points="0,-24 -30,-2 30,-2" />
+    </clipPath>
+  </defs>
+
+  <!-- ==================== 1. BASE TILE GROUND SHADOW ==================== -->
+  <polygon points="242,240 446,341 262,438 56,335" fill="#1A2942" opacity="0.16" filter="url(#softShadow)" />
+
+  <!-- ==================== 2. PAVED ISOMETRIC BASE SLAB ==================== -->
+  <g id="paved-base">
+    <!-- Base curb lit left side (v=92, u:-102..102, z:0..-7) -->
+    <polygon points="46,325 250,427 250,434 46,332" fill="#CFC7B9" />
+    <!-- Base curb shaded right side (u=102, v:-92..92, z:0..-7) -->
+    <polygon points="250,427 434,335 434,342 250,434" fill="#A99F91" />
+    <!-- Base top surface (z=0) -->
+    <polygon points="230,233 434,335 250,427 46,325" fill="#E6E0D5" />
+
+    <!-- Subtle isometric paving pattern on plaza (projected on z=0 plane) -->
+    <g transform="matrix(1, 0.5, -1, 0.5, 240, 330)">
+      <!-- Subtle outer border band -->
+      <polygon points="-98,-88 98,-88 98,88 -98,88" fill="none" stroke="#D7CFC2" stroke-width="1.2" />
+      <!-- Alternating warm plaza paving bands -->
+      <rect x="-96" y="42" width="192" height="14" fill="#DDD6C9" />
+      <rect x="-96" y="70" width="192" height="14" fill="#DDD6C9" />
+      <rect x="46" y="-86" width="50" height="172" fill="#DFD9CC" />
+      <rect x="-96" y="-86" width="22" height="172" fill="#DFD9CC" />
+      <!-- Main entry stone walkway leading to steps -->
+      <rect x="-2" y="52" width="38" height="39" fill="#F2EEE6" />
+      <rect x="-4" y="52" width="2" height="39" fill="#CFC7B8" />
+      <rect x="36" y="52" width="2" height="39" fill="#CFC7B8" />
+      <!-- Walkway stone joints -->
+      <line x1="-2" y1="62" x2="36" y2="62" stroke="#DCD5C8" stroke-width="1" />
+      <line x1="-2" y1="72" x2="36" y2="72" stroke="#DCD5C8" stroke-width="1" />
+      <line x1="-2" y1="82" x2="36" y2="82" stroke="#DCD5C8" stroke-width="1" />
+      <line x1="17" y1="52" x2="17" y2="62" stroke="#DCD5C8" stroke-width="1" />
+      <line x1="9" y1="62" x2="9" y2="72" stroke="#DCD5C8" stroke-width="1" />
+      <line x1="25" y1="62" x2="25" y2="72" stroke="#DCD5C8" stroke-width="1" />
+      <line x1="17" y1="72" x2="17" y2="82" stroke="#DCD5C8" stroke-width="1" />
+      <!-- Subtle plaza grid lines -->
+      <line x1="-96" y1="56" x2="-4" y2="56" stroke="#D1C9BA" stroke-width="0.7" />
+      <line x1="38" y1="56" x2="96" y2="56" stroke="#D1C9BA" stroke-width="0.7" />
+      <line x1="-56" y1="36" x2="-56" y2="88" stroke="#D1C9BA" stroke-width="0.7" />
+      <line x1="64" y1="-86" x2="64" y2="88" stroke="#D1C9BA" stroke-width="0.7" />
+      <!-- Landscaped right planter bed recess -->
+      <rect x="64" y="-66" width="24" height="54" fill="#6F5947" />
+      <rect x="63" y="-67" width="26" height="56" fill="none" stroke="#C8BFAF" stroke-width="1.6" />
+      <!-- Landscaped left planter bed recess -->
+      <rect x="-92" y="16" width="14" height="32" fill="#6F5947" />
+      <rect x="-93" y="15" width="16" height="34" fill="none" stroke="#C8BFAF" stroke-width="1.5" />
+    </g>
+  </g>
+
+  <!-- ==================== 3. BUILDING GROUND SHADOW (consistent right-cast) ==================== -->
+  <g id="building-ground-shadow" filter="url(#subtleShadow)">
+    <!-- Main Block A cast shadow onto right plaza -->
+    <polygon points="352,318 416,322 362,363 274,357" fill="#1C2B45" opacity="0.21" />
+    <!-- Entrance canopy & landing cast shadow to right -->
+    <polygon points="274,357 308,358 272,380 240,374" fill="#1C2B45" opacity="0.17" />
+    <!-- Soft ambient contact shadow along front-left plinth -->
+    <polygon points="132,312 190,341 186,344 128,315" fill="#1C2B45" opacity="0.13" />
+  </g>
+
+  <!-- ==================== 4. RIGHT-SIDE LANDSCAPING (behind right facade edge) ==================== -->
+  <g id="right-landscaping">
+    <!-- Small ornamental campus tree in right planter (u=76, v=-52, z=0) -> (368, 342) -->
+    <ellipse cx="378" cy="342" rx="14" ry="7" fill="#1C2B45" opacity="0.18" />
+    <!-- Trunk -->
+    <polygon points="366,342 370,342 370,322 366,322" fill="#7D5A3C" />
+    <polygon points="368,342 370,342 370,322 368,322" fill="#5E412A" />
+    <!-- Multi-tone faceted foliage crown -->
+    <circle cx="368" cy="312" r="14" fill="#467A36" />
+    <circle cx="364" cy="309" r="11" fill="#5D9646" />
+    <circle cx="362" cy="305" r="7" fill="#74AE5B" />
+    <circle cx="374" cy="316" r="8" fill="#3B682E" />
+    <!-- Low sculpted shrubs along right planter -->
+    <ellipse cx="357" cy="350" rx="10" ry="5" fill="#1C2B45" opacity="0.16" />
+    <ellipse cx="352" cy="347" rx="9" ry="7" fill="#447635" />
+    <ellipse cx="350" cy="345" rx="7" ry="5" fill="#609948" />
+    <ellipse cx="348" cy="343" rx="4" ry="3" fill="#78B360" />
+
+    <ellipse cx="344" cy="357" rx="9" ry="4.5" fill="#1C2B45" opacity="0.16" />
+    <ellipse cx="340" cy="354" rx="8" ry="6" fill="#447635" />
+    <ellipse cx="338" cy="352" rx="6" ry="4.5" fill="#5E9847" />
+  </g>
+
+  <!-- ==================== 5. BLOCK A — MAIN BRICK & GLASS WING ==================== -->
+  <g id="block-a">
+    <!-- 5A. Front-Right Shaded Brick Facade (u=44, v:-68..10, z:0..116) -->
+    <!-- Limestone plinth -->
+    <polygon points="274,357 352,318 352,308 274,347" fill="#B5ACA0" />
+    <polygon points="274,347 352,308 352,306 274,345" fill="#C7BEB1" />
+    <!-- Main shaded brick wall -->
+    <polygon points="274,345 352,306 352,206 274,245" fill="#9E4C34" />
+    <!-- Limestone cornice band -->
+    <polygon points="274,245 352,206 352,202 274,241" fill="#BDB4A7" />
+
+    <!-- Right facade projected details (matrix for u=44 face, center at u=44, v=-29, z=60 -> X=313, Y=277.5) -->
+    <g transform="matrix(1, -0.5, 0, 1, 313, 277.5)">
+      <!-- Subtle horizontal brick courses -->
+      <line x1="-38" y1="-48" x2="38" y2="-48" stroke="#8C412B" stroke-width="0.9" />
+      <line x1="-38" y1="-34" x2="38" y2="-34" stroke="#8C412B" stroke-width="0.9" />
+      <line x1="-38" y1="-16" x2="38" y2="-16" stroke="#8C412B" stroke-width="0.9" />
+      <line x1="-38" y1="0" x2="38" y2="0" stroke="#8C412B" stroke-width="0.9" />
+      <line x1="-38" y1="18" x2="38" y2="18" stroke="#8C412B" stroke-width="0.9" />
+      <line x1="-38" y1="34" x2="38" y2="34" stroke="#8C412B" stroke-width="0.9" />
+      <line x1="-38" y1="48" x2="38" y2="48" stroke="#8C412B" stroke-width="0.9" />
+
+      <!-- Brick architectural pilasters dividing 3 window bays -->
+      <rect x="-39" y="-52" width="4" height="104" fill="#AE563C" />
+      <rect x="-14" y="-52" width="4" height="104" fill="#AE563C" />
+      <rect x="10" y="-52" width="4" height="104" fill="#AE563C" />
+      <rect x="35" y="-52" width="4" height="104" fill="#AE563C" />
+
+      <!-- Horizontal limestone string course between ground & 2nd floor -->
+      <rect x="-39" y="13" width="78" height="3" fill="#BDB4A7" />
+
+      <!-- Bay 1 (leftmost on right wall: x=-33..-16) -->
+      <!-- Warm shaded cedar spandrel panel between 2nd & 3rd floor -->
+      <rect x="-33" y="-23" width="17" height="12" fill="#A87039" />
+      <line x1="-33" y1="-20" x2="-16" y2="-20" stroke="#8C5B2B" stroke-width="0.9" />
+      <line x1="-33" y1="-17" x2="-16" y2="-17" stroke="#8C5B2B" stroke-width="0.9" />
+      <line x1="-33" y1="-14" x2="-16" y2="-14" stroke="#8C5B2B" stroke-width="0.9" />
+      <!-- 3rd floor window -->
+      <rect x="-33" y="-44" width="17" height="21" fill="#2D3846" />
+      <rect x="-31.5" y="-42.5" width="6.5" height="18" fill="#5D8BA8" />
+      <rect x="-24" y="-42.5" width="6.5" height="18" fill="#6B9AB8" />
+      <polygon points="-31.5,-42.5 -26,-42.5 -31.5,-32" fill="#89B6D1" opacity="0.55" />
+      <rect x="-34" y="-23.5" width="19" height="2" fill="#C4BBB0" />
+      <!-- 2nd floor window -->
+      <rect x="-33" y="-11" width="17" height="21" fill="#2D3846" />
+      <rect x="-31.5" y="-9.5" width="6.5" height="18" fill="#5E8CA8" />
+      <rect x="-24" y="-9.5" width="6.5" height="18" fill="#6F9CB8" />
+      <rect x="-31.5" y="1" width="14" height="7.5" fill="#D4B580" opacity="0.28" />
+      <rect x="-34" y="9.5" width="19" height="2" fill="#C4BBB0" />
+      <!-- Ground floor window -->
+      <rect x="-33" y="21" width="17" height="25" fill="#2D3846" />
+      <rect x="-31.5" y="22.5" width="14" height="22" fill="#5A839E" />
+      <rect x="-31.5" y="29" width="14" height="15.5" fill="#E3C184" opacity="0.38" />
+      <rect x="-25" y="22.5" width="1.2" height="22" fill="#2D3846" />
+      <rect x="-34" y="45.5" width="19" height="2" fill="#C4BBB0" />
+
+      <!-- Bay 2 (center: x=-8..8) -->
+      <rect x="-8" y="-23" width="16" height="12" fill="#A87039" />
+      <line x1="-8" y1="-20" x2="8" y2="-20" stroke="#8C5B2B" stroke-width="0.9" />
+      <line x1="-8" y1="-17" x2="8" y2="-17" stroke="#8C5B2B" stroke-width="0.9" />
+      <line x1="-8" y1="-14" x2="8" y2="-14" stroke="#8C5B2B" stroke-width="0.9" />
+      <!-- 3rd floor window -->
+      <rect x="-8" y="-44" width="16" height="21" fill="#2D3846" />
+      <rect x="-6.5" y="-42.5" width="6" height="18" fill="#5D8BA8" />
+      <rect x="0.5" y="-42.5" width="6" height="18" fill="#6C9BB8" />
+      <polygon points="0.5,-42.5 6.5,-42.5 0.5,-30" fill="#8BB7D4" opacity="0.5" />
+      <rect x="-9" y="-23.5" width="18" height="2" fill="#C4BBB0" />
+      <!-- 2nd floor window -->
+      <rect x="-8" y="-11" width="16" height="21" fill="#2D3846" />
+      <rect x="-6.5" y="-9.5" width="6" height="18" fill="#6390AD" />
+      <rect x="0.5" y="-9.5" width="6" height="18" fill="#5986A3" />
+      <rect x="-9" y="9.5" width="18" height="2" fill="#C4BBB0" />
+      <!-- Ground floor window with warm timber louver accent -->
+      <rect x="-8" y="21" width="16" height="25" fill="#2D3846" />
+      <rect x="-6.5" y="22.5" width="13" height="22" fill="#5A839E" />
+      <rect x="-6.5" y="30" width="13" height="14.5" fill="#E6C78A" opacity="0.42" />
+      <rect x="-0.5" y="22.5" width="1.2" height="22" fill="#2D3846" />
+      <rect x="-9" y="45.5" width="18" height="2" fill="#C4BBB0" />
+
+      <!-- Bay 3 (rightmost: x=16..33) -->
+      <rect x="16" y="-23" width="17" height="12" fill="#A87039" />
+      <line x1="16" y1="-20" x2="33" y2="-20" stroke="#8C5B2B" stroke-width="0.9" />
+      <line x1="16" y1="-17" x2="33" y2="-17" stroke="#8C5B2B" stroke-width="0.9" />
+      <line x1="16" y1="-14" x2="33" y2="-14" stroke="#8C5B2B" stroke-width="0.9" />
+      <!-- 3rd floor window -->
+      <rect x="16" y="-44" width="17" height="21" fill="#2D3846" />
+      <rect x="17.5" y="-42.5" width="6.5" height="18" fill="#5D8BA8" />
+      <rect x="25" y="-42.5" width="6.5" height="18" fill="#6A99B5" />
+      <rect x="15" y="-23.5" width="19" height="2" fill="#C4BBB0" />
+      <!-- 2nd floor window -->
+      <rect x="16" y="-11" width="17" height="21" fill="#2D3846" />
+      <rect x="17.5" y="-9.5" width="6.5" height="18" fill="#5D8BA8" />
+      <rect x="25" y="-9.5" width="6.5" height="18" fill="#6A99B5" />
+      <rect x="17.5" y="0" width="14" height="8.5" fill="#DFBE85" opacity="0.3" />
+      <rect x="15" y="9.5" width="19" height="2" fill="#C4BBB0" />
+      <!-- Ground floor window -->
+      <rect x="16" y="21" width="17" height="25" fill="#2D3846" />
+      <rect x="17.5" y="22.5" width="14" height="22" fill="#59829C" />
+      <rect x="17.5" y="31" width="14" height="13.5" fill="#E3C184" opacity="0.35" />
+      <rect x="24" y="22.5" width="1.2" height="22" fill="#2D3846" />
+      <rect x="15" y="45.5" width="19" height="2" fill="#C4BBB0" />
+    </g>
+
+    <!-- 5B. Shaded Gable Wall & Triangular Glass Clerestory (u=44, z=116..146) -->
+    <!-- Gable triangle fill (wood-and-brick gable beneath roof) -->
+    <polygon points="274,241 352,202 313,191" fill="#9E4C34" />
+    <!-- Projected triangular clerestory glass inside gable (center u=44, v=-29, z=116 -> X=313, Y=221.5) -->
+    <g transform="matrix(1, -0.5, 0, 1, 313, 221.5)">
+      <polygon points="0,-27 -33,-1 33,-1" fill="#2B3644" />
+      <g clip-path="url(#gableGlassClip)">
+        <polygon points="0,-25 -30,-2 30,-2" fill="#6392B0" />
+        <polygon points="-30,-2 -8,-25 4,-25 -14,-2" fill="#8BB9D6" opacity="0.55" />
+        <!-- Warm interior rafters visible behind clerestory -->
+        <rect x="-30" y="-8" width="60" height="6" fill="#D9B173" opacity="0.28" />
+        <!-- Vertical bronze mullions -->
+        <rect x="-15" y="-25" width="1.5" height="24" fill="#2B3644" />
+        <rect x="-1" y="-25" width="2" height="24" fill="#2B3644" />
+        <rect x="14" y="-25" width="1.5" height="24" fill="#2B3644" />
+      </g>
+      <rect x="-34" y="-2" width="68" height="2.2" fill="#C4BBB0" />
+    </g>
+
+    <!-- 5C. Front-Left Glass Atrium Curtain Wall (u:-14..44, v=10, z:6..116) -->
+    <!-- Lit brick flanking edges & top cornice of Block A's front-left face -->
+    <polygon points="216,328 274,357 274,241 216,212" fill="#C86A4B" />
+    <polygon points="216,216 274,245 274,241 216,212" fill="#DCD4C7" />
+    <!-- Limestone base plinth -->
+    <polygon points="216,328 274,357 274,347 216,318" fill="#D8D0C2" />
+
+    <!-- Atrium Upper Curtain Wall (projected on v=10, center u=15, z=80 -> X=245, Y=262.5) -->
+    <g transform="matrix(1, 0.5, 0, 1, 245, 262.5)">
+      <!-- Dark bronze outer frame -->
+      <rect x="-28" y="-30" width="56" height="60" fill="#374352" />
+      <g clip-path="url(#atriumUpperClip)">
+        <!-- Lit sky-blue glazing -->
+        <rect x="-27" y="-29" width="54" height="58" fill="#86B9D8" />
+        <!-- Visible interior warm ceiling & 3rd floor gallery slab behind glass -->
+        <rect x="-27" y="-29" width="54" height="6" fill="#C99254" opacity="0.52" />
+        <rect x="-27" y="-3" width="54" height="5" fill="#D8CBB8" opacity="0.85" />
+        <rect x="-27" y="2" width="54" height="3" fill="#B57F47" opacity="0.6" />
+        <!-- Warm ambient interior glow inside atrium -->
+        <rect x="-27" y="5" width="54" height="24" fill="#F2D29B" opacity="0.32" />
+        <rect x="-27" y="-23" width="54" height="20" fill="#F2D29B" opacity="0.22" />
+        <!-- Diagonal glass specular reflections -->
+        <polygon points="-24,-29 -10,-29 -27,12 -27,-8" fill="#D9F0FC" opacity="0.45" />
+        <polygon points="4,-29 14,-29 -8,29 -18,29" fill="#D9F0FC" opacity="0.32" />
+        <polygon points="20,-29 27,-29 14,29 8,29" fill="#E6F5FD" opacity="0.25" />
+        <!-- Warm timber structural vertical mullions -->
+        <rect x="-10" y="-29" width="2.2" height="58" fill="#C98D50" />
+        <rect x="8" y="-29" width="2.2" height="58" fill="#C98D50" />
+        <!-- Crisp dark bronze horizontal transoms -->
+        <rect x="-27" y="-14" width="54" height="1.4" fill="#374352" />
+        <rect x="-27" y="-3" width="54" height="1.6" fill="#374352" />
+        <rect x="-27" y="14" width="54" height="1.4" fill="#374352" />
+      </g>
+    </g>
+
+    <!-- Atrium Lower Entrance Glazing & Double Glass Doors (u=15, v=10, z=24 -> X=245, Y=318.5) -->
+    <g transform="matrix(1, 0.5, 0, 1, 245, 318.5)">
+      <rect x="-28" y="-19" width="56" height="38" fill="#374352" />
+      <g clip-path="url(#atriumLowerClip)">
+        <!-- Warm inviting interior reception lobby glow -->
+        <rect x="-27" y="-18" width="54" height="36" fill="#F2D7A4" />
+        <!-- Interior shaded upper soffit & warm back counter silhouette -->
+        <rect x="-27" y="-18" width="54" height="8" fill="#C7965B" opacity="0.55" />
+        <rect x="-18" y="6" width="36" height="12" fill="#D6A96E" opacity="0.55" />
+        <!-- Cool glass tint over lobby -->
+        <rect x="-27" y="-18" width="54" height="36" fill="#7EB4D4" opacity="0.34" />
+        <!-- Diagonal glass glare -->
+        <polygon points="-22,-18 -12,-18 -25,18 -27,18" fill="#FFFFFF" opacity="0.28" />
+        <polygon points="8,-18 16,-18 2,18 -6,18" fill="#FFFFFF" opacity="0.22" />
+        <!-- Double entrance doors frame (center x=-13..13) -->
+        <rect x="-14" y="-10" width="28" height="28" fill="none" stroke="#374352" stroke-width="2" />
+        <line x1="0" y1="-10" x2="0" y2="18" stroke="#374352" stroke-width="1.6" />
+        <!-- Horizontal transom above doors -->
+        <rect x="-27" y="-11" width="54" height="1.8" fill="#374352" />
+        <!-- Brushed silver door handles / push bars -->
+        <rect x="-3.5" y="1" width="1.6" height="7" fill="#E8EEF5" />
+        <rect x="2" y="1" width="1.6" height="7" fill="#E8EEF5" />
+      </g>
+    </g>
+
+    <!-- 5D. Block A Royal-Blue Standing-Seam Pitched Roof -->
+    <!-- Back-right roof slope (visible above ridge) -->
+    <polygon points="194,131 314,191 354,199 234,139" fill="#1F45A8" />
+    <!-- Eave fascia underside on right gable overhang -->
+    <polygon points="314,191 354,199 354,203 314,195" fill="#16327D" />
+    <polygon points="314,191 274,239 274,243 314,195" fill="#1B3D96" />
+    <!-- Main lit front-left royal-blue roof slope -->
+    <polygon points="194,131 314,191 274,239 154,179" fill="#2E60D6" />
+    <!-- Subtle sunlit upper band on royal-blue roof -->
+    <polygon points="194,131 314,191 304,203 184,143" fill="#3B6EE3" />
+    <!-- Standing-seam metal roof ribs running cleanly down the royal-blue slope -->
+    <g stroke="#4E80F2" stroke-width="1.1" opacity="0.72">
+      <line x1="206" y1="137" x2="166" y2="185" />
+      <line x1="218" y1="143" x2="178" y2="191" />
+      <line x1="230" y1="149" x2="190" y2="197" />
+      <line x1="242" y1="155" x2="202" y2="203" />
+      <line x1="254" y1="161" x2="214" y2="209" />
+      <line x1="266" y1="167" x2="226" y2="215" />
+      <line x1="278" y1="173" x2="238" y2="221" />
+      <line x1="290" y1="179" x2="250" y2="227" />
+      <line x1="302" y1="185" x2="262" y2="233" />
+    </g>
+    <!-- Darker shadow side of standing seams for crisp architectural texture -->
+    <g stroke="#1E47B0" stroke-width="0.8" opacity="0.6">
+      <line x1="207.2" y1="137.6" x2="167.2" y2="185.6" />
+      <line x1="219.2" y1="143.6" x2="179.2" y2="191.6" />
+      <line x1="231.2" y1="149.6" x2="191.2" y2="197.6" />
+      <line x1="243.2" y1="155.6" x2="203.2" y2="203.6" />
+      <line x1="255.2" y1="161.6" x2="215.2" y2="209.6" />
+      <line x1="267.2" y1="167.6" x2="227.2" y2="215.6" />
+      <line x1="279.2" y1="173.6" x2="239.2" y2="221.6" />
+      <line x1="291.2" y1="179.6" x2="251.2" y2="227.6" />
+      <line x1="303.2" y1="185.6" x2="263.2" y2="233.6" />
+    </g>
+    <!-- Flush architectural skylight panel on royal-blue roof -->
+    <polygon points="244,166 280,184 264,203 228,185" fill="#2348A8" />
+    <polygon points="245,168 278,184.5 264,201 231,184.5" fill="#89BFE0" />
+    <polygon points="245,168 261,176 247,192.5 231,184.5" fill="#B5DDF4" opacity="0.65" />
+    <line x1="256" y1="173.5" x2="242" y2="190" stroke="#2B498C" stroke-width="1.2" />
+    <line x1="267" y1="179" x2="253" y2="195.5" stroke="#2B498C" stroke-width="1.2" />
+    <!-- Crisp ridge cap & front eave trim -->
+    <polygon points="194,129.5 314,189.5 314,192.5 194,132.5" fill="#598CF7" />
+    <polygon points="154,179 274,239 274,243 154,183" fill="#224CB8" />
+  </g>
+
+  <!-- ==================== 6. BLOCK B — FRONT-LEFT FEATURE WING (EMBLEM + INTERVIEW ROOM) ==================== -->
+  <g id="block-b">
+    <!-- 6A. Block B Shaded Right Return Wall (u=-14, v:10..36, z:0..102) -->
+    <polygon points="190,341 216,328 216,226 190,239" fill="#9E4C34" />
+    <!-- Limestone plinth & upper trim -->
+    <polygon points="190,341 216,328 216,318 190,331" fill="#B5ACA0" />
+    <polygon points="190,242 216,229 216,226 190,239" fill="#1F45A8" />
+    <!-- Tall vertical architectural window on shaded return wall above canopy -->
+    <g transform="matrix(1, -0.5, 0, 1, 203, 259.5)">
+      <rect x="-5" y="-17" width="10" height="30" fill="#2D3846" />
+      <rect x="-3.8" y="-15.8" width="7.6" height="27.6" fill="#5D8AA8" />
+      <rect x="-3.8" y="-2" width="7.6" height="1.2" fill="#2D3846" />
+      <rect x="-5.5" y="12.5" width="11" height="1.8" fill="#C4BBB0" />
+    </g>
+
+    <!-- 6B. Block B Lit Front-Left Brick Wall (u:-72..-14, v=36, z:0..102) -->
+    <!-- Limestone plinth -->
+    <polygon points="132,312 190,341 190,331 132,302" fill="#D9D1C3" />
+    <polygon points="132,302 190,331 190,329 132,300" fill="#EAE3D7" />
+    <!-- Lit warm university brick wall -->
+    <polygon points="132,300 190,329 190,239 132,210" fill="#C86A4B" />
+    <!-- Royal-blue metal parapet fascia band at roofline -->
+    <polygon points="132,210 190,239 190,243 132,214" fill="#2E60D6" />
+    <!-- Limestone architectural horizontal trim below upper feature panel -->
+    <polygon points="132,262 190,291 190,288 132,259" fill="#E3DCD0" />
+
+    <!-- Subtle brick course lines on lit Block B facade (u=-43, v=36, z=52 -> X=161, Y=274.5) -->
+    <g transform="matrix(1, 0.5, 0, 1, 161, 274.5)">
+      <line x1="-29" y1="-44" x2="29" y2="-44" stroke="#B55B3E" stroke-width="0.8" />
+      <line x1="-29" y1="-32" x2="29" y2="-32" stroke="#B55B3E" stroke-width="0.8" />
+      <line x1="-29" y1="-20" x2="29" y2="-20" stroke="#B55B3E" stroke-width="0.8" />
+      <line x1="-29" y1="-8" x2="29" y2="-8" stroke="#B55B3E" stroke-width="0.8" />
+      <line x1="-29" y1="6" x2="29" y2="6" stroke="#B55B3E" stroke-width="0.8" />
+      <line x1="-29" y1="18" x2="29" y2="18" stroke="#B55B3E" stroke-width="0.8" />
+      <line x1="-29" y1="30" x2="29" y2="30" stroke="#B55B3E" stroke-width="0.8" />
+      <line x1="-29" y1="42" x2="29" y2="42" stroke="#B55B3E" stroke-width="0.8" />
+      <!-- Subtle corner stone quoins -->
+      <rect x="-29" y="-48" width="2.5" height="90" fill="#D67C5E" />
+      <rect x="26.5" y="-48" width="2.5" height="90" fill="#B85C40" />
+    </g>
+
+    <!-- 6C. UPPER FEATURE PANEL: WARM CEDAR SLATS + COMPASS-AND-ARROW EMBLEM -->
+    <!-- Projected on v=36, center u=-43, z=73 -> X=161, Y=253.5 -->
+    <g id="compass-emblem-wall" transform="matrix(1, 0.5, 0, 1, 161, 253.5)">
+      <!-- Pale limestone surround frame -->
+      <rect x="-22" y="-19" width="44" height="38" fill="#E6DFD3" />
+      <!-- Warm cedar wood-slat feature background -->
+      <rect x="-20" y="-17" width="40" height="34" fill="#D49859" />
+      <!-- Vertical cedar wood slats -->
+      <g stroke="#B4783D" stroke-width="1.1">
+        <line x1="-16" y1="-17" x2="-16" y2="17" />
+        <line x1="-12" y1="-17" x2="-12" y2="17" />
+        <line x1="-8" y1="-17" x2="-8" y2="17" />
+        <line x1="-4" y1="-17" x2="-4" y2="17" />
+        <line x1="0" y1="-17" x2="0" y2="17" />
+        <line x1="4" y1="-17" x2="4" y2="17" />
+        <line x1="8" y1="-17" x2="8" y2="17" />
+        <line x1="12" y1="-17" x2="12" y2="17" />
+        <line x1="16" y1="-17" x2="16" y2="17" />
+      </g>
+      <!-- Subtle recessed top shadow under frame -->
+      <rect x="-20" y="-17" width="40" height="2.2" fill="#8C5928" opacity="0.32" />
+
+      <!-- COMPASS-AND-ARROW EMBLEM (raised architectural relief, zero letters) -->
+      <!-- Drop shadow of emblem on wood slats -->
+      <g transform="translate(1.4, 1.4)" opacity="0.32">
+        <circle cx="0" cy="0" r="13.2" fill="#4D2E12" />
+        <polygon points="-12,12 10,-10 5,-11 14,-14 11,-5 10,-10" fill="#4D2E12" />
+      </g>
+      <!-- Outer cream-gold compass bezel -->
+      <circle cx="0" cy="0" r="13.2" fill="#F2D791" />
+      <!-- Inner royal-blue compass medallion -->
+      <circle cx="0" cy="0" r="10.4" fill="#2450BD" />
+      <!-- Subtle upper-left highlight crescent inside medallion -->
+      <path d="M -8.5,-4 A 9.5,9.5 0 0,1 5,-8 L 2,-5 A 6.5,6.5 0 0,0 -5.5,-2 Z" fill="#4173EB" opacity="0.7" />
+      <!-- Intercardinal compass tick marks -->
+      <line x1="-6.8" y1="-6.8" x2="-4.6" y2="-4.6" stroke="#F2D791" stroke-width="1.1" />
+      <line x1="6.8" y1="6.8" x2="4.6" y2="4.6" stroke="#F2D791" stroke-width="1.1" />
+      <!-- 4-point compass star (lit & shaded halves) -->
+      <polygon points="0,-9.5 2.4,-2.4 0,0" fill="#FCF7EA" />
+      <polygon points="0,-9.5 -2.4,-2.4 0,0" fill="#DEC282" />
+      <polygon points="0,9.5 -2.4,2.4 0,0" fill="#FCF7EA" />
+      <polygon points="0,9.5 2.4,2.4 0,0" fill="#DEC282" />
+      <polygon points="9.5,0 2.4,2.4 0,0" fill="#DEC282" />
+      <polygon points="9.5,0 2.4,-2.4 0,0" fill="#FCF7EA" />
+      <polygon points="-9.5,0 -2.4,-2.4 0,0" fill="#FCF7EA" />
+      <polygon points="-9.5,0 -2.4,2.4 0,0" fill="#DEC282" />
+      <!-- Bold Career-Direction Arrow sweeping upward-right across the compass -->
+      <line x1="-11.5" y1="11.5" x2="11" y2="-11" stroke="#FFF6DB" stroke-width="2.6" stroke-linecap="round" />
+      <polygon points="14.5,-14.5 5.8,-11.8 9.2,-9.2 11.8,-5.8" fill="#FFF6DB" />
+      <!-- Center compass pin -->
+      <circle cx="0" cy="0" r="2.1" fill="#1C409C" />
+      <circle cx="-0.4" cy="-0.4" r="0.9" fill="#FFF6DB" />
+    </g>
+
+    <!-- 6D. GROUND FLOOR: SMALL INTERVIEW-ROOM WINDOW WITH TWO CHAIRS -->
+    <!-- Projected on v=36, center u=-43, z=27.5 -> X=161, Y=299 -->
+    <g id="interview-room-window" transform="matrix(1, 0.5, 0, 1, 161, 299)">
+      <!-- Outer bronze & timber architectural window surround -->
+      <rect x="-21" y="-15" width="42" height="30" fill="#374352" />
+      <rect x="-20" y="-14" width="40" height="28" fill="#C98D50" />
+      <rect x="-19" y="-13" width="38" height="26" fill="#374352" />
+
+      <!-- Interior of the interview room visible through glass -->
+      <g clip-path="url(#interviewClip)">
+        <!-- Warm sunlit cream interior wall -->
+        <rect x="-19" y="-13" width="38" height="19.5" fill="#F5E3C2" />
+        <!-- Subtle interior accent panel on back wall -->
+        <rect x="-9" y="-9.5" width="18" height="10" fill="#E8D2A9" />
+        <rect x="-8" y="-8.5" width="16" height="8" fill="#EFE0C2" />
+        <!-- Warm oak interior floor -->
+        <rect x="-19" y="6.5" width="38" height="6.5" fill="#C9995E" />
+        <!-- Baseboard trim -->
+        <rect x="-19" y="5.5" width="38" height="1.2" fill="#DFC59A" />
+        <!-- Soft shadows on floor beneath chairs & table -->
+        <ellipse cx="-10" cy="10.2" rx="5.5" ry="1.6" fill="#9E7340" opacity="0.5" />
+        <ellipse cx="10" cy="10.2" rx="5.5" ry="1.6" fill="#9E7340" opacity="0.5" />
+        <ellipse cx="0" cy="10.6" rx="4.5" ry="1.4" fill="#9E7340" opacity="0.45" />
+
+        <!-- LEFT INTERVIEW CHAIR (angled facing right) -->
+        <!-- Wooden legs -->
+        <line x1="-13" y1="6" x2="-13.6" y2="10.4" stroke="#7A4F28" stroke-width="1.2" />
+        <line x1="-7.2" y1="6" x2="-6.8" y2="10.4" stroke="#7A4F28" stroke-width="1.2" />
+        <!-- Chair seat & backrest in royal blue -->
+        <path d="M -14.2,-2.5 Q -14.5,-4 -12.6,-4 L -10.8,-4 L -10.2,3.5 L -6.2,3.5 Q -5.2,3.5 -5.2,4.8 L -5.2,6.5 L -13.8,6.5 Z" fill="#2B5AC7" />
+        <!-- Chair highlight edge & side arm -->
+        <path d="M -14,-2.5 L -12.4,-3.8 L -11,-3.8 L -10.4,3.5 L -6.2,3.5 L -6.2,4.6 L -11.5,4.6 Z" fill="#4B7CF0" />
+        <rect x="-13.8" y="4.8" width="8.6" height="1.8" fill="#1D4199" />
+
+        <!-- RIGHT INTERVIEW CHAIR (angled facing left) -->
+        <!-- Wooden legs -->
+        <line x1="13" y1="6" x2="13.6" y2="10.4" stroke="#7A4F28" stroke-width="1.2" />
+        <line x1="7.2" y1="6" x2="6.8" y2="10.4" stroke="#7A4F28" stroke-width="1.2" />
+        <!-- Chair seat & backrest in royal blue -->
+        <path d="M 14.2,-2.5 Q 14.5,-4 12.6,-4 L 10.8,-4 L 10.2,3.5 L 6.2,3.5 Q 5.2,3.5 5.2,4.8 L 5.2,6.5 L 13.8,6.5 Z" fill="#244FB5" />
+        <!-- Chair highlight edge -->
+        <path d="M 14,-2.5 L 12.4,-3.8 L 11,-3.8 L 10.4,3.5 L 6.2,3.5 L 6.2,4.6 L 11.5,4.6 Z" fill="#3F70E3" />
+        <rect x="5.2" y="4.8" width="8.6" height="1.8" fill="#1A3A8A" />
+
+        <!-- SMALL ROUND INTERVIEW TABLE between the two chairs -->
+        <rect x="-0.7" y="4" width="1.4" height="6.4" fill="#465261" />
+        <ellipse cx="0" cy="10.4" rx="2.6" ry="0.9" fill="#465261" />
+        <rect x="-4.5" y="2.8" width="9" height="1.8" rx="0.8" fill="#D9A768" />
+        <rect x="-4.5" y="2.6" width="9" height="0.8" rx="0.4" fill="#F0C892" />
+
+        <!-- Subtle warm pendant lamp hanging from ceiling -->
+        <line x1="0" y1="-13" x2="0" y2="-8.5" stroke="#596473" stroke-width="0.7" />
+        <path d="M -2.6,-7 Q 0,-9.5 2.6,-7 Z" fill="#3D4A59" />
+        <ellipse cx="0" cy="-6.8" rx="2.2" ry="0.7" fill="#FFF2CC" />
+
+        <!-- Translucent blue glass overlay & diagonal specular reflection -->
+        <rect x="-19" y="-13" width="38" height="26" fill="#88BFE0" opacity="0.22" />
+        <polygon points="-16,-13 -8,-13 -19,8 -19,-4" fill="#FFFFFF" opacity="0.26" />
+        <polygon points="8,-13 13,-13 1,13 -4,13" fill="#FFFFFF" opacity="0.18" />
+      </g>
+
+      <!-- Protruding limestone window sill -->
+      <rect x="-22.5" y="14.5" width="45" height="2.8" fill="#E8E1D5" />
+      <rect x="-22.5" y="16.5" width="45" height="1" fill="#C9C0B2" />
+    </g>
+
+    <!-- 6E. Block B Flat Terrace Roof with Royal-Blue Parapet & Rooftop Details (z=102) -->
+    <!-- Outer royal-blue coping top (u:-72..-14, v:10..36, z=102) -->
+    <polygon points="158,197 216,226 190,239 132,210" fill="#386CE0" />
+    <!-- Recessed light architectural gravel/membrane roof deck -->
+    <polygon points="159,200 212,226.5 189,238 136,211.5" fill="#CFC9BE" />
+    <!-- Inner parapet lip shadow -->
+    <polygon points="159,200 212,226.5 212,228.5 159,202" fill="#B5AFA3" />
+    <polygon points="159,200 136,211.5 136,213.5 159,202" fill="#9E978B" />
+
+    <!-- Raised Glass Skylight Lantern on Block B roof (u:-60..-32, v:16..30, z:102..111) -->
+    <!-- Skylight soft roof shadow -->
+    <polygon points="174,225 190,224 196,218 188,217" fill="#7D786E" opacity="0.32" />
+    <!-- Skylight lit left curb -->
+    <polygon points="150,213 178,227 178,222 150,208" fill="#3D4A5A" />
+    <!-- Skylight shaded right curb -->
+    <polygon points="178,227 192,220 192,215 178,222" fill="#2A3440" />
+    <!-- Skylight pitched glass top -->
+    <polygon points="164,201 192,215 178,222 150,208" fill="#8CC2E2" />
+    <polygon points="164,201 178,208 164,215 150,208" fill="#B7DEF5" opacity="0.65" />
+    <line x1="173" y1="205.5" x2="159" y2="212.5" stroke="#374454" stroke-width="1" />
+    <line x1="183" y1="210.5" x2="169" y2="217.5" stroke="#374454" stroke-width="1" />
+
+    <!-- Sleek Rooftop HVAC / Louver Mechanical Unit on Block B (u:-27..-18, v:17..26, z:102..109) -->
+    <polygon points="187,223 196,227.5 196,220.5 187,216" fill="#C7C1B7" />
+    <polygon points="196,227.5 205,223 205,216 196,220.5" fill="#9E988E" />
+    <polygon points="196,211.5 205,216 196,220.5 187,216" fill="#DDD8CE" />
+    <!-- Tiny louvered vents on HVAC -->
+    <line x1="189" y1="218.5" x2="194" y2="221" stroke="#8C867C" stroke-width="0.9" />
+    <line x1="189" y1="221" x2="194" y2="223.5" stroke="#8C867C" stroke-width="0.9" />
+  </g>
+
+  <!-- ==================== 7. ENTRANCE STEPS, LANDING & WELCOMING CANOPY ==================== -->
+  <g id="main-entrance">
+    <!-- 7A. Raised Limestone Entry Landing (u:-14..44, v:10..44, z:0..6) -->
+    <!-- Landing lit front edge -->
+    <polygon points="182,345 240,374 240,368 182,339" fill="#D6CEC0" />
+    <!-- Landing shaded right edge -->
+    <polygon points="240,374 274,357 274,351 240,368" fill="#B3AA9C" />
+    <!-- Landing top surface -->
+    <polygon points="216,322 274,351 240,368 182,339" fill="#ECE7DE" />
+    <!-- Subtle shadow cast by canopy across landing -->
+    <polygon points="216,322 274,351 240,368 182,339" fill="#23334F" opacity="0.1" />
+
+    <!-- 7B. Three Wide Welcoming Entrance Steps (u:-2..34, v:44..56, z:6..0) -->
+    <!-- Step 2 (v:44..48, z:4) -->
+    <polygon points="190,347 226,365 222,367 186,349" fill="#F0ECE4" />
+    <polygon points="186,349 222,367 222,369 186,351" fill="#D5CDC0" />
+    <polygon points="222,367 226,365 226,367 222,369" fill="#B2A99B" />
+    <!-- Step 1 (v:48..52, z:2) -->
+    <polygon points="186,351 222,369 218,371 182,353" fill="#EAE4DA" />
+    <polygon points="182,353 218,371 218,373 182,355" fill="#CFC7B9" />
+    <polygon points="218,371 222,369 222,371 218,373" fill="#ACA395" />
+    <!-- Bottom step tread (v:52..56, z:0) -->
+    <polygon points="182,355 218,373 214,375 178,357" fill="#E3DDD2" />
+    <polygon points="178,357 214,375 214,376.5 178,358.5" fill="#C4BCB0" />
+
+    <!-- Flanking Low Stone Planters beside Entrance Steps -->
+    <!-- Left flanking planter (u:-14..-2, v:44..52, z:0..7) -->
+    <polygon points="174,349 186,355 186,348 174,342" fill="#D8D0C2" />
+    <polygon points="186,355 194,351 194,344 186,348" fill="#B2A99B" />
+    <polygon points="182,338 194,344 186,348 174,342" fill="#EAE4DA" />
+    <ellipse cx="184" cy="342" rx="6" ry="4.5" fill="#467A36" />
+    <ellipse cx="182" cy="340.5" rx="4.2" ry="3.2" fill="#639C4B" />
+    <!-- Right flanking planter (u:34..44, v:44..52, z:0..7) -->
+    <polygon points="222,373 232,378 232,371 222,366" fill="#D8D0C2" />
+    <polygon points="232,378 240,374 240,367 232,371" fill="#B2A99B" />
+    <polygon points="230,362 240,367 232,371 222,366" fill="#EAE4DA" />
+    <ellipse cx="231" cy="366" rx="5.5" ry="4" fill="#467A36" />
+    <ellipse cx="229.5" cy="364.5" rx="3.8" ry="2.8" fill="#639C4B" />
+
+    <!-- 7C. Canopy Support Columns (warm cedar-clad steel posts on landing) -->
+    <!-- Left column at u=-6, v=40, z:6..48 -> (194, 341) to (194, 299) -->
+    <polygon points="192,341 194,342 194,298 192,297" fill="#C98E52" />
+    <polygon points="194,342 196,341 196,297 194,298" fill="#9E6A37" />
+    <!-- Right column at u=38, v=40, z:6..48 -> (238, 363) to (238, 321) -->
+    <polygon points="236,363 238,364 238,320 236,319" fill="#C98E52" />
+    <polygon points="238,364 240,363 240,319 238,320" fill="#9E6A37" />
+
+    <!-- 7D. Welcoming Cantilevered Royal-Blue & Cedar Entrance Canopy -->
+    <!-- Canopy drop shadow on atrium wall below eaves -->
+    <polygon points="216,287 274,316 274,323 216,294" fill="#1C2B45" opacity="0.22" />
+    <!-- Lower cedar wood soffit-trim fascia (front-left & front-right) -->
+    <polygon points="182,296 240,325 240,328.5 182,299.5" fill="#D49859" />
+    <polygon points="240,325 274,312 274,315.5 240,328.5" fill="#A67038" />
+    <!-- Upper royal-blue canopy fascia (front-left & front-right) -->
+    <polygon points="182,293 240,322 240,325 182,296" fill="#2755C4" />
+    <polygon points="240,322 274,309 274,312 240,325" fill="#1C409C" />
+    <!-- Bright royal-blue canopy top roof surface (gently tilted up toward front) -->
+    <polygon points="216,280 274,309 240,322 182,293" fill="#3467DE" />
+    <!-- Standing-seam architectural ribs on canopy top -->
+    <g stroke="#5587F5" stroke-width="0.9" opacity="0.72">
+      <line x1="226" y1="285" x2="192" y2="298" />
+      <line x1="236" y1="290" x2="202" y2="303" />
+      <line x1="246" y1="295" x2="212" y2="308" />
+      <line x1="256" y1="300" x2="222" y2="313" />
+      <line x1="266" y1="305" x2="232" y2="318" />
+    </g>
+    <!-- Crisp sunlit leading edge highlight on canopy -->
+    <line x1="182" y1="293" x2="240" y2="322" stroke="#6E9CFA" stroke-width="1.2" />
+  </g>
+
+  <!-- ==================== 8. FOREGROUND LEFT LANDSCAPING & CAMPUS BENCH ==================== -->
+  <g id="left-plaza-details">
+    <!-- Shrubs in left planter bed (u:-85, v:24..42 -> X:120..135, Y:298..308) -->
+    <ellipse cx="132" cy="306" rx="10" ry="5" fill="#1C2B45" opacity="0.16" />
+    <ellipse cx="126" cy="302" rx="9" ry="7" fill="#467A36" />
+    <ellipse cx="124" cy="300" rx="6.5" ry="5" fill="#609948" />
+    <ellipse cx="122" cy="298" rx="4" ry="3" fill="#78B360" />
+
+    <ellipse cx="120" cy="312" rx="8" ry="4" fill="#1C2B45" opacity="0.15" />
+    <ellipse cx="115" cy="309" rx="7.5" ry="6" fill="#417232" />
+    <ellipse cx="113" cy="307" rx="5.5" ry="4" fill="#5C9445" />
+
+    <!-- Sleek Modern Wood-and-Steel Campus Bench (u:-50..-30, v:68..74 -> center X=129, Y=345) -->
+    <!-- Bench soft shadow -->
+    <polygon points="122,342 142,352 148,351 128,341" fill="#1C2B45" opacity="0.18" />
+    <!-- Bench steel legs -->
+    <polygon points="121,342 123,343 123,339 121,338" fill="#3D4957" />
+    <polygon points="137,350 139,351 139,347 137,346" fill="#3D4957" />
+    <!-- Bench warm wood seat slats -->
+    <polygon points="124,335 144,345 138,348 118,338" fill="#D69C5E" />
+    <polygon points="118,338 138,348 138,350 118,340" fill="#B87E43" />
+    <polygon points="138,348 144,345 144,347 138,350" fill="#94622F" />
+    <line x1="121" y1="336.5" x2="141" y2="346.5" stroke="#B0773D" stroke-width="0.8" />
+  </g>
+
+  <!-- ==================== 9. FLAGPOLE WITH PLAIN ROYAL-BLUE PENNANT ==================== -->
+  <g id="flagpole">
+    <!-- Ground shadow of pedestal & long pole stretching rightward -->
+    <polygon points="88,321 152,315 153,317 90,324" fill="#1C2B45" opacity="0.18" />
+    <polygon points="94,319 102,319 96,323 88,323" fill="#1C2B45" opacity="0.2" />
+
+    <!-- Square limestone pedestal base (u:-94..-82, v:58..70, z:0..6 -> center u=-88, v=64 -> X=88, Y=318) -->
+    <!-- Lit left face -->
+    <polygon points="76,318 88,324 88,318 76,312" fill="#D8D0C2" />
+    <!-- Shaded right face -->
+    <polygon points="88,324 100,318 100,312 88,318" fill="#B2A99B" />
+    <!-- Top face -->
+    <polygon points="88,306 100,312 88,318 76,312" fill="#ECE6DC" />
+    <!-- Collar ring -->
+    <ellipse cx="88" cy="312" rx="3" ry="1.6" fill="#7D8896" />
+
+    <!-- Tapered brushed-silver flagpole (z:6..126 -> Y:312..192) -->
+    <polygon points="86.6,312 88,312 88,192 87.2,192" fill="#E3E9F0" />
+    <polygon points="88,312 89.4,312 88.8,192 88,192" fill="#9AA5B4" />
+    <!-- Gold spherical finial at top -->
+    <circle cx="88" cy="190.5" r="2.4" fill="#E6BE63" />
+    <circle cx="87.2" cy="189.8" r="0.9" fill="#FFF2C2" />
+
+    <!-- PLAIN PENNANT (clean royal blue triangular banner fluttering in breeze, zero text/emblem) -->
+    <!-- Base fluttering silhouette -->
+    <path d="M 88.8,195 C 99,193.5 109,200 124,203.5 C 109,208 99,211.5 88.8,214 Z" fill="#2A5CD1" />
+    <!-- Sunlit upper wave fold -->
+    <path d="M 88.8,195 C 97,194 103,197 109,199.5 L 106,208.5 C 99,210 94,212 88.8,214 Z" fill="#3D70E8" />
+    <!-- Shaded breeze crease fold -->
+    <path d="M 103,197.2 C 108,199 111,200.5 114,201.5 L 111.5,207.2 C 108,208.2 104.5,209.2 101.5,209.8 Z" fill="#1E45A6" />
+    <!-- Crisp sunlit highlight along top edge of pennant -->
+    <path d="M 88.8,195 C 99,193.5 109,200 124,203.5" fill="none" stroke="#6192FC" stroke-width="0.9" />
+  </g>
+
+  <!-- ==================== 10. OUTDOOR NOTICE KIOSK WITH BLANK CARDS ==================== -->
+  <g id="notice-kiosk">
+    <!-- Soft ground shadow cast rightward -->
+    <polygon points="244,383 272,396 296,390 270,378" fill="#1C2B45" opacity="0.2" />
+
+    <!-- Kiosk support posts (dark bronze steel) -->
+    <!-- Left post (u=57, v=51, z:0..32 -> X=246, Y=384..352) -->
+    <polygon points="244.5,384 246,384.8 246,352 244.5,351.2" fill="#465363" />
+    <polygon points="246,384.8 247.5,384 247.5,351.2 246,352" fill="#2E3845" />
+    <!-- Right post (u=79, v=51, z:0..32 -> X=268, Y=395..363) -->
+    <polygon points="266.5,395 268,395.8 268,363 266.5,362.2" fill="#465363" />
+    <polygon points="268,395.8 269.5,395 269.5,362.2 268,363" fill="#2E3845" />
+    <!-- Small stone post base pads -->
+    <polygon points="246,382.5 249,384 246,385.5 243,384" fill="#CFC7B9" />
+    <polygon points="268,393.5 271,395 268,396.5 265,395" fill="#CFC7B9" />
+
+    <!-- Display Case Shaded Right Side (u=82, v:48..54, z:10..30) -->
+    <polygon points="268,388 274,385 274,365 268,368" fill="#9E6B38" />
+    <!-- Display Case Lit Front-Left Face (u:54..82, v=54, z:10..30 -> center X=254, Y=371) -->
+    <g transform="matrix(1, 0.5, 0, 1, 254, 371)">
+      <!-- Warm timber outer display frame -->
+      <rect x="-14" y="-10" width="28" height="20" fill="#D49859" />
+      <rect x="-13" y="-9" width="26" height="18" fill="#3B4757" />
+      <!-- Corkboard interior & neat BLANK CARDS (zero text/letters) -->
+      <g clip-path="url(#kioskClip)">
+        <rect x="-12" y="-8" width="24" height="16" fill="#C79B69" />
+        <!-- Subtle top shadow inside glass case -->
+        <rect x="-12" y="-8" width="24" height="1.5" fill="#8C653B" opacity="0.4" />
+
+        <!-- Top row of 4 blank cards -->
+        <!-- Card 1: warm cream -->
+        <rect x="-10.3" y="-6.1" width="4.6" height="5.6" fill="#997043" opacity="0.4" />
+        <rect x="-10.6" y="-6.4" width="4.6" height="5.6" fill="#FAF5EB" />
+        <circle cx="-8.3" cy="-5.6" r="0.45" fill="#D65A47" />
+        <!-- Card 2: accent royal blue -->
+        <rect x="-4.7" y="-6.1" width="4.8" height="5" fill="#997043" opacity="0.4" />
+        <rect x="-5" y="-6.4" width="4.8" height="5" fill="#4C7CEB" />
+        <circle cx="-2.6" cy="-5.6" r="0.45" fill="#FAF5EB" />
+        <!-- Card 3: warm amber -->
+        <rect x="1.1" y="-6.1" width="4.4" height="6" fill="#997043" opacity="0.4" />
+        <rect x="0.8" y="-6.4" width="4.4" height="6" fill="#F2CE74" />
+        <circle cx="3" cy="-5.6" r="0.45" fill="#2A55BF" />
+        <!-- Card 4: crisp white -->
+        <rect x="6.5" y="-6.1" width="4.4" height="5.2" fill="#997043" opacity="0.4" />
+        <rect x="6.2" y="-6.4" width="4.4" height="5.2" fill="#FFFFFF" />
+        <circle cx="8.4" cy="-5.6" r="0.45" fill="#5D9646" />
+
+        <!-- Bottom row of 4 blank cards -->
+        <!-- Card 5: soft sky blue -->
+        <rect x="-10.3" y="0.6" width="5" height="5.6" fill="#997043" opacity="0.4" />
+        <rect x="-10.6" y="0.3" width="5" height="5.6" fill="#B5D8F2" />
+        <circle cx="-8.1" cy="1.1" r="0.45" fill="#2A55BF" />
+        <!-- Card 6: crisp white -->
+        <rect x="-4.3" y="0.9" width="4.6" height="5.2" fill="#997043" opacity="0.4" />
+        <rect x="-4.6" y="0.6" width="4.6" height="5.2" fill="#FFFFFF" />
+        <circle cx="-2.3" cy="1.4" r="0.45" fill="#E39A4B" />
+        <!-- Card 7: soft terracotta-coral -->
+        <rect x="1.3" y="1.1" width="4.6" height="5" fill="#997043" opacity="0.4" />
+        <rect x="1" y="0.8" width="4.6" height="5" fill="#F0A58B" />
+        <circle cx="3.3" cy="1.6" r="0.45" fill="#FAF5EB" />
+        <!-- Card 8: pale mint-cream -->
+        <rect x="6.9" y="0.4" width="4" height="5.6" fill="#997043" opacity="0.4" />
+        <rect x="6.6" y="0.1" width="4" height="5.6" fill="#F7F1E1" />
+        <circle cx="8.6" cy="0.9" r="0.45" fill="#2A55BF" />
+
+        <!-- Subtle glass cover reflection sheen -->
+        <polygon points="-11,-8 -5,-8 -12,5 -12,-3" fill="#FFFFFF" opacity="0.22" />
+        <polygon points="4,-8 8,-8 0,8 -4,8" fill="#FFFFFF" opacity="0.14" />
+      </g>
+    </g>
+
+    <!-- Kiosk Mini Royal-Blue Pitched Canopy Roof (matching main building) -->
+    <!-- Shaded right gable under eaves -->
+    <polygon points="274,361 280,365 268,371" fill="#1C409C" />
+    <!-- Lit front-left royal-blue roof slope -->
+    <polygon points="240,344 274,361 268,371 234,354" fill="#3265DB" />
+    <!-- Subtle sunlit ridge highlight -->
+    <polygon points="240,343 274,360 274,362 240,345" fill="#598CF7" />
+    <!-- Front eave thickness -->
+    <polygon points="234,354 268,371 268,373 234,356" fill="#214BB5" />
+    <!-- Right eave trim -->
+    <polygon points="268,371 274,361 275.5,361.8 269.5,371.8" fill="#1A3B8F" />
+  </g>
+</svg>
