@@ -20,6 +20,9 @@ for (const s of P) for (const p of s.parts) { if (REUSE) break; const out = `${W
     const ff = spawn(FF, ["-loglevel", "error", "-y", "-f", "image2pipe", "-framerate", String(FPS), "-i", "-", "-vf", ["hook", "card", "end"].includes(p.scene) ? fade(N / FPS) : "null", ...ENC, out], { stdio: ["pipe", "inherit", "inherit"] });
     for (let i = 0; i < N; i++) { await page.evaluate((id, t, T, lang) => window.seek(id, t, T, lang), p.scene, i / FPS, D, lang); if (i === 0) await new Promise((r) => setTimeout(r, 700)); const buf = await page.screenshot({ type: "jpeg", quality: 90 }); await new Promise((r) => (ff.stdin.write(buf) ? r() : ff.stdin.once("drain", r))); }
     await new Promise((r) => { ff.on("close", r); ff.stdin.end(); }); continue; }
+  if (p.kind === "morph") {   // the photographed world dissolves into the drawn one (or back): two clips, a slow cross-dissolve in the middle
+    const [x, y] = p.morph.split(">"), X = 1.4, D1 = D * 0.45 + X / 2, D2 = D - D1 + X, prep = (d) => `setpts=${Math.min(1.9, Math.max(1, d / 5)).toFixed(3)}*PTS,tpad=stop_mode=clone:stop_duration=90,fps=30,scale=1920:1080:force_original_aspect_ratio=increase:flags=lanczos,crop=1920:1080,setsar=1,trim=duration=${d.toFixed(3)},setpts=PTS-STARTPTS`;
+    run(["-i", `${B}art/v-${x}.mp4`, "-i", `${B}art/v-${y}.mp4`, "-filter_complex", `[0:v]${prep(D1)}[a];[1:v]${prep(D2)}[b];[a][b]xfade=transition=fade:duration=${X}:offset=${(D1 - X).toFixed(3)},${fade(D)}`, "-t", D.toFixed(3), ...ENC, out]); continue; }
   if (p.kind === "zoom") {   // rest on the clip's last picture and move in on the part being talked about
     const png = `${W}${p.key}.png`, N = Math.round(D * 30), [fx, fy, z] = p.at ?? [0.9, 0.5, 1.8]; run(["-sseof", "-0.3", "-i", `${B}clips-${lang}/${p.zoom}.mp4`, "-frames:v", "1", png]);
     run(["-loop", "1", "-i", png, "-vf", `scale=3840:2160:flags=lanczos,zoompan=z='1+${(z - 1).toFixed(2)}*min(1,on/${Math.round(N * 0.45)})':x='(iw-iw/zoom)*${fx}':y='(ih-ih/zoom)*${fy}':d=${N}:s=1920x1080:fps=30,setsar=1`, "-t", D.toFixed(3), ...ENC, out]); continue; }
@@ -27,7 +30,7 @@ for (const s of P) for (const p of s.parts) { if (REUSE) break; const out = `${W
   if (!fs.existsSync(src)) { missing.push(src.split("/").slice(-2).join("/")); run(["-f", "lavfi", "-i", `color=c=${CREAM}:s=1920x1080:r=30`, "-t", D.toFixed(3), ...ENC, out]); continue; }
   // a drawn clip is 5 s long: play it slower (at most 1.9 times) so it fills its line, then rest on its last picture
   const slow = p.kind === "story" ? Math.min(1.9, Math.max(1, D / 5)) : 1;
-  run(["-i", src, "-vf", `setpts=${slow.toFixed(3)}*PTS,tpad=stop_mode=clone:stop_duration=90,fps=30,scale=1920:1080:flags=lanczos,setsar=1,${fade(D)}`, "-t", D.toFixed(3), ...ENC, out]); }
+  run(["-i", src, "-vf", `setpts=${slow.toFixed(3)}*PTS,tpad=stop_mode=clone:stop_duration=90,fps=30,scale=1920:1080:force_original_aspect_ratio=increase:flags=lanczos,crop=1920:1080,setsar=1,${fade(D)}`, "-t", D.toFixed(3), ...ENC, out]); }
 await browser.close();
 if (!REUSE) fs.writeFileSync(`${W}list.txt`, list.join("\n")); if (!REUSE) run(["-f", "concat", "-safe", "0", "-i", `${W}list.txt`, "-c", "copy", `${W}video.mp4`]);
 const voiced = P.filter((s) => s.voice && fs.existsSync(`${B}tts2-${lang}/${s.id}.wav`)), ins = voiced.flatMap((s) => ["-i", `${B}tts2-${lang}/${s.id}.wav`]), music = `${B}../../../public/music/campus-walk.mp3`;

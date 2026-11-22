@@ -146,5 +146,42 @@
   ],
   "prompt": "Sunset in a city park with a white stone arch in the distance and autumn trees. MIA sits on a bench with her laptop closed on her lap, relaxed and smiling. The GEMI sits beside her on the bench, about the size of a cat, legs dangling. Both look up at the golden sky.",
   "motion": "leaves drift down, the little companion swings its legs and leans slightly toward her, she smiles."
+ },
+ {
+  "id": "r1",
+  "photo": true,
+  "who": [],
+  "prompt": "(photograph, kept as it is)",
+  "motion": "the young woman walks slowly forward along the campus path and glances at the small figure floating beside her shoulder, which bobs gently; autumn leaves drift down; people in the background keep walking."
+ },
+ {
+  "id": "r2",
+  "photo": true,
+  "who": [],
+  "prompt": "(photograph, kept as it is)",
+  "motion": "her fingertip gently touches the small figure on the laptop screen; the small figure on the screen looks up and waves; warm light flickers softly."
+ },
+ {
+  "id": "r3",
+  "photo": true,
+  "who": [],
+  "prompt": "(photograph, kept as it is)",
+  "motion": "the young woman smiles and looks from the laptop up toward the camera side; on the laptop screen the small figure in the room waves; leaves drift in the park behind her."
+ },
+ {
+  "id": "o19",
+  "who": [
+   "gemi"
+  ],
+  "prompt": "Only the GEMI is in this picture. Inside the GEMI's tiny cosy room: a bed, a small desk with a glass jar of stars, a cork board, a round-topped door. The GEMI pushes a little wooden chair across the floor. Everything it has touched carries a small soft golden glow mark, like a trace: the moved chair, one card on the desk, the jar, the door handle. Faint dotted golden footprints on the floor show where it walked.",
+  "motion": "the little companion pushes the chair a little further, the dotted golden footprints appear behind it one by one, the glow marks on the things it touched pulse softly."
+ },
+ {
+  "id": "o20",
+  "who": [
+   "gemi"
+  ],
+  "prompt": "Only the GEMI is in this picture. The GEMI stands in the middle of its tiny room with its eyes closed and one hand cupped behind its ear, listening. Floating gently toward it from all sides, like leaves on a breeze: a blank speech bubble, a small blank poster, a sheet of paper with a green check mark, and two small cards, one with a tiny heart and one turned face down. A soft lilac halo ring glows around the GEMI.",
+  "motion": "the floating speech bubble, poster, paper and cards drift slowly toward the little companion, the lilac halo ring around it breathes in and out, it tilts its head, listening."
  }
 ]
