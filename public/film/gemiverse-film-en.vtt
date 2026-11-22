@@ -1,0 +1,545 @@
+WEBVTT
+
+00:00:18.050 --> 00:00:25.228
+This is Mia, a first-year student. Her day goes like this: classes, homework
+
+00:00:25.278 --> 00:00:31.600
+a part-time job. What is left that is truly hers is an hour or two.
+
+00:00:32.750 --> 00:00:39.136
+On the same day, hundreds of things happen on her campus. Talks, clubs
+
+00:00:39.186 --> 00:00:43.550
+exhibitions, sign-ups. She cannot read them all.
+
+00:00:44.700 --> 00:00:49.464
+So she asks an AI. The AI never runs out of answers
+
+00:00:49.514 --> 00:00:54.750
+and every one sounds sure. But some of them, it made up.
+
+00:00:58.500 --> 00:01:03.355
+We wanted to try the opposite. What if her AI were like her
+
+00:01:03.405 --> 00:01:09.507
+with only a little to spend each day, and a source for every word it says?
+
+00:01:09.557 --> 00:01:12.250
+Would it be more useful that way?
+
+00:01:13.400 --> 00:01:17.762
+That gives three hypotheses to test with numbers. One:
+
+00:01:17.812 --> 00:01:20.458
+only under a limit does it choose
+
+00:01:20.508 --> 00:01:26.177
+and three checked finds are worth more than a list of a thousand. Two:
+
+00:01:26.227 --> 00:01:30.671
+if every field is checked against the page it came from
+
+00:01:30.721 --> 00:01:34.919
+fewer are wrong than when you ask an AI once. Three:
+
+00:01:34.969 --> 00:01:40.311
+if it seals a guess before you choose and scores itself afterwards
+
+00:01:40.361 --> 00:01:45.050
+it is learning how you choose, not putting a label on you.
+
+00:01:46.200 --> 00:01:51.004
+To answer these, what we built is not a product but an engine
+
+00:01:51.054 --> 00:01:54.425
+called Gemiverse. It has four parts. Space:
+
+00:01:54.475 --> 00:01:58.245
+a place an AI can understand and change. Growth:
+
+00:01:58.295 --> 00:02:03.576
+the AI is not made in one go; it grows as evidence arrives. Budget:
+
+00:02:03.626 --> 00:02:08.827
+its thinking is drawn out by limited resources and planning. Base:
+
+00:02:08.877 --> 00:02:15.034
+its trust comes from Pingfang VisionSquare's data and knowledge infrastructure
+
+00:02:15.084 --> 00:02:18.535
+not from roaming the internet without limit.
+
+00:02:18.585 --> 00:02:23.150
+The campus story that follows is this engine's first form.
+
+00:02:26.900 --> 00:02:32.288
+On Mia's first visit there is only a point of light. She names it Mochi
+
+00:02:32.338 --> 00:02:36.500
+tells it one thing about herself, and picks her school.
+
+00:02:37.650 --> 00:02:43.862
+Mochi gets a room. It is an AI that lives on her campus. It is not her.
+
+00:02:43.912 --> 00:02:47.214
+Campus facts are shared by every Gemi.
+
+00:02:47.264 --> 00:02:51.800
+What it learns about Mia stays in Mia's own browser.
+
+00:02:52.950 --> 00:02:57.980
+Why give it a room? Because an AI is not made in one go. It grows
+
+00:02:58.030 --> 00:03:02.512
+little by little, inside a space. For it to have behaviour
+
+00:03:02.562 --> 00:03:07.826
+it first needs a space it can change: a room, a desk, a jar, a door.
+
+00:03:07.876 --> 00:03:12.671
+Everything it does leaves a trace you can see, count and undo.
+
+00:03:12.721 --> 00:03:16.344
+So the room is not decoration. It is a readout:
+
+00:03:16.394 --> 00:03:19.861
+cards fanned on the desk are waiting for Mia;
+
+00:03:19.911 --> 00:03:23.299
+cards pinned to the board are what she kept;
+
+00:03:23.349 --> 00:03:27.050
+the stars in the jar are what it has left today.
+
+00:03:28.200 --> 00:03:31.041
+It understands this space, and it acts in it.
+
+00:03:31.091 --> 00:03:34.639
+It knows what each thing in the room is, where it stands
+
+00:03:34.689 --> 00:03:38.944
+and who moved it last. If Mia moves a chair, it walks over to look.
+
+00:03:38.994 --> 00:03:41.000
+And it rearranges things itself.
+
+00:03:42.150 --> 00:03:47.415
+Why is the engine three-dimensional? Because in a 3D space, position
+
+00:03:47.465 --> 00:03:51.010
+direction and distance are explicit parameters
+
+00:03:51.060 --> 00:03:54.449
+so the AI understands the space more easily.
+
+00:03:54.499 --> 00:03:59.529
+And a 3D body lets it plan its movements and interactions better:
+
+00:03:59.579 --> 00:04:04.765
+where to walk, where to sit, what to reach for. That is the engine.
+
+00:04:04.815 --> 00:04:11.643
+An application built on it can choose by what the setting needs and what it really costs
+
+00:04:11.693 --> 00:04:14.300
+and a lighter picture is fine too.
+
+00:04:15.450 --> 00:04:21.570
+It also needs a world it can sense: what Mia says, a poster she shows it
+
+00:04:21.620 --> 00:04:27.569
+checked pages from her real campus, what she keeps and what she skips.
+
+00:04:27.619 --> 00:04:33.053
+Its first idea of her comes from the one thing she just told it.
+
+00:04:33.103 --> 00:04:39.052
+So that idea is not a verdict. It is a number with a width: a position
+
+00:04:39.102 --> 00:04:45.650
+with a wide halo around it. Words alone can never shrink the halo below half.
+
+00:04:49.400 --> 00:04:56.607
+Mochi gets ten Gem Stars a day. A star is not a point. It is real compute:
+
+00:04:56.657 --> 00:04:59.353
+about fifteen hundred tokens
+
+00:04:59.403 --> 00:05:04.649
+roughly a thousand words read or written by the model.
+
+00:05:04.699 --> 00:05:09.650
+Six of the ten are spent for Mia. Four are its own.
+
+00:05:10.800 --> 00:05:18.035
+Everything has a price. Going out to look: three stars. Planning the day:
+
+00:05:18.085 --> 00:05:22.427
+two. Its diary: one. Changing its room: one.
+
+00:05:22.477 --> 00:05:26.518
+But what Mia asks it to do costs no stars
+
+00:05:26.568 --> 00:05:30.410
+and reading the shared base costs none.
+
+00:05:30.460 --> 00:05:35.600
+Stars only pay for what it decides to do on its own.
+
+00:05:36.750 --> 00:05:41.593
+A song costs six, more than one day's stars.
+
+00:05:41.643 --> 00:05:49.600
+So Mochi goes without for a few days, saves up, and only then writes it.
+
+00:05:50.750 --> 00:05:55.655
+When nobody tells it what to do, it lives by one table of rules
+
+00:05:55.705 --> 00:06:01.082
+read from the top, first match wins. If finds are waiting on the desk
+
+00:06:01.132 --> 00:06:05.486
+it stops spending and waits for her. At night it sleeps.
+
+00:06:05.536 --> 00:06:10.756
+If she has been away a while and it is still unsure how she chooses
+
+00:06:10.806 --> 00:06:14.924
+it goes out on its own stars. When the stars are gone
+
+00:06:14.974 --> 00:06:19.250
+it rests until tomorrow. For every step it can say why.
+
+00:06:20.400 --> 00:06:25.644
+Why so little? Because a limited budget is the shape of a real day.
+
+00:06:25.694 --> 00:06:30.938
+Only under a limit does it have to plan: what is worth doing today.
+
+00:06:30.988 --> 00:06:35.995
+An AI's thinking is drawn out by exactly this: limited resources
+
+00:06:36.045 --> 00:06:42.000
+and planning. We never count how much it did. We count what one star bought.
+
+00:06:45.750 --> 00:06:49.501
+Its first trip: where to? It has a rule.
+
+00:06:49.551 --> 00:06:54.443
+On the thing Mia cares about most and it knows least
+
+00:06:54.493 --> 00:07:00.049
+it brings back one thing from each end. Whichever she keeps
+
+00:07:00.099 --> 00:07:01.950
+it learns something.
+
+00:07:03.100 --> 00:07:08.492
+Mia says she wants a workshop on writing a thesis. Mochi goes out.
+
+00:07:08.542 --> 00:07:14.675
+At the library it reads an event page into a card: title, date, time, place
+
+00:07:14.725 --> 00:07:15.500
+organiser.
+
+00:07:16.650 --> 00:07:21.022
+Then each field goes back to the page with one question:
+
+00:07:21.072 --> 00:07:25.522
+does the page really say this? This step writes no prose.
+
+00:07:25.572 --> 00:07:28.680
+It answers yes or no, with a confidence.
+
+00:07:28.730 --> 00:07:32.944
+Only when both are high enough does Mia see the field.
+
+00:07:32.994 --> 00:07:38.550
+Otherwise it stays blank. If the page prints no year, she gets no date.
+
+00:07:39.700 --> 00:07:42.718
+She can also send it back on the spot:
+
+00:07:42.768 --> 00:07:47.159
+a managed agent fetches the page again inside a sandbox
+
+00:07:47.209 --> 00:07:50.147
+and every field is checked once more.
+
+00:07:50.197 --> 00:07:53.700
+What lands on the desk is just three things.
+
+00:07:57.450 --> 00:08:03.372
+Why can it be trusted? Not because it can roam the internet without limit.
+
+00:08:03.422 --> 00:08:08.778
+The opposite: everything it says rests on a checked knowledge base.
+
+00:08:08.828 --> 00:08:15.557
+That base is supported by Pingfang VisionSquare's data and knowledge infrastructure:
+
+00:08:15.607 --> 00:08:20.641
+every campus fact carries its source, is checked field by field
+
+00:08:20.691 --> 00:08:22.900
+and is shared by every Gemi.
+
+00:08:24.050 --> 00:08:28.834
+A hypothesis needs numbers. The baseline is simple: the same page
+
+00:08:28.884 --> 00:08:32.478
+one call to an AI. We did not pick the test pages
+
+00:08:32.528 --> 00:08:35.899
+and the answer key is the calendars' own data.
+
+00:08:35.949 --> 00:08:41.477
+Ten event pages it had never seen: one call gave a hundred and three fields
+
+00:08:41.527 --> 00:08:46.088
+and twenty-nine had no support on the page, about one in four.
+
+00:08:46.138 --> 00:08:51.518
+Mochi gave seventy-six, none without support. It said twenty-seven fewer.
+
+00:08:51.568 --> 00:08:53.600
+It would rather say nothing.
+
+00:08:54.750 --> 00:09:00.144
+Then we lost. On a hundred and twenty-two raw pages from six universities
+
+00:09:00.194 --> 00:09:04.842
+the first run gave eight point seven percent wrong for one call
+
+00:09:04.892 --> 00:09:10.585
+and nine point six for us. Worse than doing nothing. We looked at the errors:
+
+00:09:10.635 --> 00:09:14.090
+the pages carry text that never shows on screen
+
+00:09:14.140 --> 00:09:16.700
+and the model was reading that too.
+
+00:09:17.850 --> 00:09:22.716
+We changed it to read only what a person can see, and measured again.
+
+00:09:22.766 --> 00:09:27.276
+One call: eight point four percent wrong. Ours: three point two.
+
+00:09:27.326 --> 00:09:31.979
+To be fair we gave the baseline the same reader: four point three.
+
+00:09:32.029 --> 00:09:37.465
+So most of the gap is the reading, and the gate takes it the rest of the way.
+
+00:09:37.515 --> 00:09:41.669
+It also costs more: over twenty-three hundred tokens a page
+
+00:09:41.719 --> 00:09:43.450
+against under a thousand.
+
+00:09:47.200 --> 00:09:51.748
+Before the three things go on the desk, Mochi seals a guess:
+
+00:09:51.798 --> 00:09:55.042
+which ones will she keep. The seal is real.
+
+00:09:55.092 --> 00:10:00.023
+It hands over a fingerprint first and reveals the text afterwards
+
+00:10:00.073 --> 00:10:03.931
+and Mia's own browser checks one against the other.
+
+00:10:03.981 --> 00:10:06.000
+It cannot change its guess.
+
+00:10:07.150 --> 00:10:13.353
+Mia keeps one and skips two. Each choice moves a point on an axis a little
+
+00:10:13.403 --> 00:10:15.888
+and shrinks the halo a little.
+
+00:10:15.938 --> 00:10:19.944
+What she chooses weighs more than what she says.
+
+00:10:19.994 --> 00:10:24.592
+But if a choice lands outside the halo, the halo grows:
+
+00:10:24.642 --> 00:10:30.169
+a surprise makes it less sure, not more. And when it guesses wrong
+
+00:10:30.219 --> 00:10:32.450
+that goes in its diary too.
+
+00:10:33.600 --> 00:10:37.113
+Every choice moves a point on an axis a little.
+
+00:10:37.163 --> 00:10:42.494
+The axes describe how she chooses in a situation. Neither end is better
+
+00:10:42.544 --> 00:10:44.844
+and none is a personality type.
+
+00:10:44.894 --> 00:10:50.605
+Every position opens to the choices behind it, and she can undo any of them.
+
+00:10:50.655 --> 00:10:54.850
+It goes by what she did, not by what it supposes she is.
+
+00:10:56.000 --> 00:11:00.346
+On Thursday afternoon, Mia really goes to that workshop.
+
+00:11:00.396 --> 00:11:05.369
+To Mochi this is the heaviest evidence of all: not what she said
+
+00:11:05.419 --> 00:11:08.431
+not what she clicked, but what she did.
+
+00:11:08.481 --> 00:11:13.454
+Everything she really went to leaves a keepsake on Mochi's desk.
+
+00:11:13.504 --> 00:11:17.850
+What happens outside the screen is the reason it exists.
+
+00:11:21.600 --> 00:11:26.784
+With the room, the budget and the rules fixed, one thing can be swapped:
+
+00:11:26.834 --> 00:11:31.872
+the mind. We let three different models each be the Gemi for five days
+
+00:11:31.922 --> 00:11:36.596
+facing the same simulated student, with the same ten stars a day.
+
+00:11:36.646 --> 00:11:39.795
+All three used every trip they were allowed.
+
+00:11:39.845 --> 00:11:42.411
+All three decided to save for a song
+
+00:11:42.461 --> 00:11:46.627
+and two of them skipped their diary for two days to do it.
+
+00:11:46.677 --> 00:11:52.951
+The compute they used in five days ranged from forty-five to sixty-one thousand tokens.
+
+00:11:53.001 --> 00:11:57.603
+And of thirty sealed guesses, they got thirteen to sixteen right
+
+00:11:57.653 --> 00:12:03.200
+a coin toss: in this one simulation, the third hypothesis does not stand yet.
+
+00:12:03.250 --> 00:12:06.762
+That is the room's other use: an observation box.
+
+00:12:06.812 --> 00:12:11.850
+Put different models into the same days, and watch how each one lives.
+
+00:12:15.600 --> 00:12:21.049
+Today, students at ninety schools can choose a home for their Gemi.
+
+00:12:21.099 --> 00:12:25.481
+Seventy-three already have checked campus information.
+
+00:12:25.531 --> 00:12:28.272
+Eighty-two have a map of their own
+
+00:12:28.322 --> 00:12:32.950
+and every landmark on it was checked against public text.
+
+00:12:34.100 --> 00:12:39.770
+The room Mia sees is only the top layer. It grew from the bottom up:
+
+00:12:39.820 --> 00:12:45.995
+public pages, a checked base, the gate, a mind with width, action by rules
+
+00:12:46.045 --> 00:12:51.716
+and the room on top. The two bottom layers are shared by every Gemi.
+
+00:12:51.766 --> 00:12:56.090
+Checking a page costs more than twice a single call.
+
+00:12:56.140 --> 00:13:01.390
+But once one Gemi has checked it, every Gemi reads it for free.
+
+00:13:01.440 --> 00:13:05.260
+From the third student who reads the same page
+
+00:13:05.310 --> 00:13:09.550
+the checked fact is cheaper than the unchecked one.
+
+00:13:10.700 --> 00:13:16.933
+At the other end, the cost has a ceiling: ten stars per student per day
+
+00:13:16.983 --> 00:13:20.650
+fifteen thousand tokens, known in advance.
+
+00:13:21.800 --> 00:13:26.368
+Gemis also get to know each other. They exchange name cards
+
+00:13:26.418 --> 00:13:31.299
+and every sentence passes a privacy gate before it leaves. Next
+
+00:13:31.349 --> 00:13:37.013
+clubs and schools can have AIs of their own. Together they form a network
+
+00:13:37.063 --> 00:13:40.300
+and the deciding is always done by people.
+
+00:13:41.450 --> 00:13:44.881
+This road is not the one the big labs are on.
+
+00:13:44.931 --> 00:13:49.831
+Their direction is unlimited compute: bigger models, more tokens
+
+00:13:49.881 --> 00:13:55.555
+roaming the internet without limit. This engine runs on limited resources:
+
+00:13:55.605 --> 00:13:58.572
+a space, a budget, and its own planning
+
+00:13:58.622 --> 00:14:04.218
+so that thinking is drawn out rather than piled up. The thinking is ahead
+
+00:14:04.268 --> 00:14:10.019
+but thinking can be copied. What cannot be copied is the oil in the engine:
+
+00:14:10.069 --> 00:14:14.506
+Pingfang VisionSquare's data and knowledge infrastructure.
+
+00:14:14.556 --> 00:14:19.997
+Every fact with its source, checked field by field, shared by every AI.
+
+00:14:20.047 --> 00:14:22.550
+That is the part nobody else has.
+
+00:14:23.700 --> 00:14:26.279
+Who pays? There are three paths:
+
+00:14:26.329 --> 00:14:30.879
+students who want a few more stars a day for their Gemi;
+
+00:14:30.929 --> 00:14:34.904
+clubs and schools that want to be found by Gemis;
+
+00:14:34.954 --> 00:14:42.050
+and model makers who want to put their own model into this room and watch how it lives.
+
+00:14:43.200 --> 00:14:49.363
+The same method already has an application: AI ME, on Pingfang Campus.
+
+00:14:49.413 --> 00:14:54.421
+The same things again: one AI, one room, one real campus.
+
+00:14:54.471 --> 00:14:59.480
+For its own setting and cost, it chose a lighter picture.
+
+00:14:59.530 --> 00:15:04.450
+Gemiverse is the engine. AI ME is one application of it.
+
+00:15:05.600 --> 00:15:11.229
+You live your day. It lives its own. You keep meeting. Gemiverse:
+
+00:15:11.279 --> 00:15:13.500
+build a universe together.
+
