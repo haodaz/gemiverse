@@ -1,0 +1,107 @@
+{
+ "at": "2026-11-22T18:11:43.704Z",
+ "model": "gemini-4-carbon",
+ "thinking": "high",
+ "seconds": 247,
+ "tokens": 24321,
+ "parsed": {
+  "verdict": "The design sketches a modular boundary on paper while leaving its runtime guarantees broken: state replay is split across two incompatible event logs, candidate axis coordinates have no non-LLM origin, the verification gate fails open onto substring matching when retries fail, and campus, 3D, and strong-model assumptions remain embedded in autonomy, codegen, and storage.",
+  "c1_holes": [
+   {
+    "where": "Section 1 & 6 (Mind / fill / choose / replay)",
+    "problem": "Belief updates in replay() require candidate choices to carry continuous axis coordinates (evidence: { axis, x in [-1, 1] }), and choose requires positioning candidates along pack-specific psychological axes (like 'figure out principles' vs 'make things people use'), yet neither BasePort nor any of the five ModelPort jobs specifies who computes { axis, x }; abstract axis floats have no 'exact quote' on a web page for fill to extract, and ordinary small models produce uncalibrated, collapsed scores that corrupt the Kalman update.",
+    "fix": "Remove free-form float axis scoring from model prompts; have fill extract only discrete, verifiable factual flags defined in WorldPack (e.g., team_size, has_deadline, open_ended) and compute { axis, x } deterministically in code via a pack-supplied rubric table."
+   },
+   {
+    "where": "Section 5 (check) & Section 6 (gate)",
+    "problem": "The gate relies on check returning calibrated probabilities (yes >= 0.8, confidence >= 0.5) over untrusted public_web text, and Section 5 mandates 'one repair attempt, then the floor' where check's floor returns 1.0 / 1.0 on an exact quote match; ordinary models are poorly calibrated on numeric confidence, vulnerable to prompt injection from scraped pages, and if an ordinary fill pairs a real substring on the page with the wrong field (e.g., registration close time as event start time) and check fails JSON validation twice, falling back to check's floor rubber-stamps the false fact at 1.0 / 1.0 into the shared base.",
+    "fix": "Change check's output schema from raw floats to discrete entailment labels ('entailed' | 'contradicted' | 'unrelated_quote') mapped to fixed weights in code, isolate source text inside data delimiters, and make check fail closed (0 / 0) on error whenever gating unvetted fill output."
+   },
+   {
+    "where": "lib/kernel/governance.ts (scanMadeCode), types.ts (Mode = 'make'), and autonomy.ts (POLICY: make / tidy / diary)",
+    "problem": "Section 5 claims 3D authoring is a build-time tool outside the core, yet kernel types, scanMadeCode (requiring raw Three.js 'export function build(THREE, opts)'), and autonomy policy rows ('write_song' for 6 stars, 'decorate_room', 'write_diary') remain runtime engine features that sit completely outside the five ModelPort jobs, have no floor, silently require a frontier coding/creative model, and rely on a regex denylist trivially bypassed via bracket notation or constructor chains.",
+    "fix": "Delete scanMadeCode and arbitrary JS/audio synthesis from engine/core; restrict runtime 'make' and 'decorate_room' tools to selecting and parameterizing pre-authored pack prefabs, palettes, and slot layouts validated against a strict JSON schema."
+   },
+   {
+    "where": "Section 3 (trip.ts / agentVisit) vs Section 5 (fill)",
+    "problem": "Current discovery relies on Gemini agentic browsing (agentVisit) to find pages, navigate links, strip DOM chrome, and split multi-item listing pages; narrowing fill to 'one page's visible text -> one record' hides the strong-model work of crawling and entity segmentation, so feeding raw directory or calendar pages to an ordinary model will merge multiple entities into one record, blow small context windows, or extract only the first item repeatedly.",
+    "fix": "Move URL discovery and multi-entity DOM/feed splitting into deterministic source adapters (RSS, iCal, sitemap, CSS block selectors) ahead of ModelPort so fill only receives pre-segmented single-entity text chunks capped at <= 1,500 tokens."
+   },
+   {
+    "where": "Section 5 (hear) & Invariant 5 (self_reported tier)",
+    "problem": "hear accepts 'words (or a picture)' and enforces 'an exact quote found in the input' per need, which breaks immediately on ordinary text-only models and makes exact-quote validation impossible on pixel inputs even with a VLM; meanwhile, mind.ts defines self_reported halo floors (NOISE 2.5 / FLOOR 0.55) tested by Invariant 5, but hear only extracts NeedIds and replay() never calls step() on 'said' events, leaving conversational axis inference either dead code or silently dependent on nuanced psychological reading.",
+    "fix": "Restrict core hear to UTF-8 text (pushing OCR/image captioning to an optional app-level preprocessor) and either drop self_reported belief steps from the spec or limit them to explicit pack-defined stance phrases with verbatim substring verification."
+   }
+  ],
+  "floors": [
+   {
+    "job": "hear",
+    "is_floor_real": false,
+    "why": "Plain keyword matching against need terms fails on pictures, misfires on negations ('I do not want group projects' positively matches 'group'), and yields an empty care map whenever a user uses everyday synonyms, starving choose on cold start.",
+    "better_floor": "Tokenize and stem text with a negation-window filter (suppressing matches within 4 tokens of 'not/no/never/avoid/without'), reject non-text inputs explicitly, and add direct need-toggle events to SpaceProtocol so zero-model users can express care by interacting with objects in the room."
+   },
+   {
+    "job": "fill",
+    "is_floor_real": false,
+    "why": "Defining the floor as 'none: serve only what is already in the base' passes Invariant 8 ('when the base has them') by shifting model dependence out of band; a new deployment or second app starting with an empty base and no model produces zero records forever.",
+    "better_floor": "Provide a rule-based structured extractor in the floor adapter that parses JSON-LD/Schema.org, OpenGraph tags, iCal/RSS entries, and pack-supplied label/regex selectors into candidate records with exact character offsets."
+   },
+   {
+    "job": "check",
+    "is_floor_real": false,
+    "why": "Exact or normalized quote matching only proves a substring appears somewhere on the source page, not that it belongs to the extracted field or entity (a footer year or sibling listing passes at 1.0 / 1.0), turning ModelPort's 'repair once, then floor' rule into a gate-bypass vulnerability.",
+    "better_floor": "Return 0 / 0 whenever check falls back from a model error on unvetted fill output; permit non-model approval only when the quote was extracted from a whitelisted structured field (JSON-LD/iCal) or sits within a bounded character window of the pack's canonical field label."
+   },
+   {
+    "job": "choose",
+    "is_floor_real": false,
+    "why": "The specified floor ('on the widest cared-for axis, one from each end, plus the best need match') cannot be implemented from WorldPack as written: care is keyed by NeedId while beliefs are keyed by AxisId with no mapping between them, day-one ties across all axes (u = 1.0) always pick AXES[0], already-seen items are not filtered out, and no formula produces the required keep-probabilities for seal().",
+    "better_floor": "Filter out kept, skipped, and currently pending desk IDs, rank axes purely by uncertainty u with deterministic seeded tie-breaking from log length, pick extremes on that axis plus highest unserved need overlap (or max axis spread when care is empty), and compute predicted keep-probability as (1 - Math.abs(x - belief.m) / 2)."
+   },
+   {
+    "job": "say",
+    "is_floor_real": true,
+    "why": "Template interpolation over engine-decided facts works with zero model, though WorldPack currently types say as an untyped Record<string, string> where missing template keys or unescaped placeholders will silently emit broken strings at runtime.",
+    "better_floor": "Type say against a closed FactPayload discriminated union validated when loading WorldPack (rejecting any pack missing a template or slot variable), and default low-budget autonomous state updates to the template floor even when a model is attached."
+   }
+  ],
+  "missing_contracts": [
+   {
+    "name": "Unified Event Log, Deterministic Clock, and Non-Refundable Undo Ledger",
+    "why": "types.ts defines GemiEvent/GemiState (purses, caps, stages) while mind.ts defines an unrelated LogEvent union whose replay() only computes { beliefs, care }; to satisfy Invariants 1-3, replay(pack, log, nowIso) needs one unified event union, injected timestamps/day-boundary events (no Date.now() inside reducers), and a split undo rule so undoing an event reverts beliefs/desk/room state without refunding already-spent stars or dailyCaps (which would allow infinite free model calls via call-then-undo)."
+   },
+   {
+    "name": "BaseEntity Schema, Provenance, and C2 Write/Privacy Boundary",
+    "why": "BasePort leaves entity, query, and evidence untyped and assumes browser code can both read without leaking identity (Invariant 7) and call propose(entity, evidence); a browser client holding write access to a shared Supabase base lets any user spoof gate results, while passing fine-grained belief/care queries to read() fingerprints the user unless queries are restricted to coarse pack scopes and propose() re-runs gate server-side."
+   },
+   {
+    "name": "JSON-Serializable Policy AST and Generic Situation State",
+    "why": "autonomy.ts types PolicyRow.test as an arbitrary TypeScript closure over hardcoded campus fields (diaryToday, outNow, roomChangedByStudent, write_song); WorldPack needs a declarative, serializable predicate grammar over pack-declared state counters and a load-time validator ensuring every referenced tool, purse, and readout state exists."
+   },
+   {
+    "name": "Async Turn Runner, Star Reservation, and Token-Overrun Settlement",
+    "why": "mayCall is synchronous while ModelPort and BasePort are async network boundaries and WorldPack introduces tokensPerStar (1,500); without an explicit lifecycle contract (intent_reserved -> completed | failed | expired), a tab closed mid-trip leaves outNow stuck true forever on replay, concurrent ticks double-spend purses before completion, and actual token usage on retries is never reconciled against pre-charged stars."
+   },
+   {
+    "name": "Async StorePort with Multi-Tab Optimistic Concurrency and Quota Compaction",
+    "why": "StorePort.load(): Event[] and append(e): void are synchronous wrappers around localStorage (whose 5MB quota will fill quickly with source quotes and room events, currently failing silently via empty catch {} in mind.ts) and will lose events across two open browser tabs; StorePort must be Promise-based (IndexedDB-ready) with sequence numbers for conflict rejection, explicit quota errors, and checkpoint compaction."
+   }
+  ],
+  "ordinary_model_test": {
+   "definition": "An open-weights, non-reasoning instruction-tuned text model with <= 8B active parameters at 4-bit quantization (e.g., Qwen2.5-7B-Instruct or Llama-3.1-8B-Instruct Q4_K_M), evaluated at temperature 0 using plain text completions plus the engine's JSON validator and single-retry loop (no provider-proprietary grammar-constrained decoding APIs), <= 4,096 context length, and <= 1,500 input tokens per job.",
+   "tasks": [
+    "hear: 100 short user messages covering explicit needs, colloquial paraphrases, negated preferences ('anything except competitive hackathons'), multi-need inputs, and zero-need small talk.",
+    "fill: 100 pre-segmented single-entity web text blocks containing noisy navigation remnants, missing optional fields, and competing dates/locations.",
+    "check: 200 (field, value, quote, source) verification pairs comprising 80 true entailments, 80 adversarial substring traps (real verbatim quote from the page attached to the wrong field or wrong entity), and 40 prompt-injected source texts attempting to force yes=1.0.",
+    "choose & say: 50 five-day headless replay trajectories over a 40-item seeded base testing candidate ID validity, axis uncertainty reduction, sealed keep-probability calibration, and zero-hallucination rendering in say."
+   ],
+   "pass": ">= 95% schema, ID, and verbatim-quote validity within the 1-retry cap (<= 5% fallback to floor); check false-positive rate <= 2% on wrong-field substring traps and 0% on prompt-injected pages with >= 80% recall on true fields; hear macro-F1 >= 0.75 with <= 5% false positives on negated needs; fill end-to-end gated yield >= 70% of present fields with < 2% misattributed values surviving gate; choose beating random selection and >= matching the choose floor on day-5 mean halo reduction and Brier score (< 0.25), with 0 unchecked factual claims added by say."
+  },
+  "order": "M0 through M5 is in the wrong order because deferring the headless runner and ordinary-model testing to M4 lets M2 quietly tune ModelPort and gate behavior around Gemini, while locking Space Protocol v1 in M3 before drafting AI ME in M5 bakes 3D campus assumptions into WorldPack and renderer messages. Unify GemiEvent and LogEvent and draft AI ME's WorldPack alongside packs/campus before M1, then pull M4's headless runner and 8B ordinary-model benchmark directly into M2 ahead of M3's space protocol work.",
+  "top3": [
+   "Unify GemiEvent and LogEvent into one typed event log with injected clock/day-rollover events and non-refundable star accounting so replay(pack, log, now) actually computes the full State deterministically before writing M0 golden tests.",
+   "Eliminate ungrounded LLM floats and runtime codegen: replace free-form axis evidence with deterministic trait-to-axis rubrics in WorldPack, make check categorical and fail-closed (never falling back to substring approval on fill errors), and strip scanMadeCode/Three.js generation out of engine/core.",
+   "Write AI ME's complete WorldPack on paper alongside packs/campus now to purge closures and campus fields from PolicyRow/Situation/SpaceFact, while making StorePort async and splitting BasePort into coarse privacy-preserving browser reads vs server-gated writes."
+  ]
+ }
+}
