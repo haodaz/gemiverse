@@ -34,7 +34,7 @@ test("3. undo never refunds: stars and the day's use stay spent", () => {
 
 test("3b. what the person asks for is never charged; what it does unasked is charged before the call", () => {
   const s = replay(campus, [day("d1"), intent("c1", "go_out", "person", "for_you", 3), intent("c2", "go_out", "self", "for_you", 3)]);
-  assert.equal(s.purses.for_you, 3); assert.deepEqual(s.used, { go_out: 2 }); assert.deepEqual(s.open.map((c) => c.stars), [0, 3]);
+  assert.equal(s.purses.for_you, 3); assert.deepEqual(s.used, { go_out: 2 }); assert.deepEqual(s.open.map((c) => c.stars), [0, 3]);   // "free when asked" is the campus pack's choice (budget.asked); budget.test.ts shows the other choices
 });
 
 test("a call has a life: a failure releases the stars, an open call expires with the day", () => {

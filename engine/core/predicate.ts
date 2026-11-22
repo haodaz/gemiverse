@@ -22,15 +22,22 @@ const names = (p: Predicate | Term, out: string[] = []): string[] => {
 
 // A pack is checked once, when it is loaded. A pack that does not pass is not run.
 export function validatePack(pack: WorldPack): string[] {
-  const bad: string[] = [], tools = new Set(pack.tools.map((t) => t.name)), purses = new Set(Object.keys(pack.purses)), counters = new Set(pack.counters);
+  const bad: string[] = [], tools = new Set(pack.tools.map((t) => t.name)), purses = new Set(Object.keys(pack.budget.purses)), counters = new Set(pack.counters);
   if (!pack.policy.length || !("always" in pack.policy[pack.policy.length - 1].when)) bad.push("the policy must end with a row that always holds");
   for (const r of pack.policy) { for (const n of names(r.when)) if (!counters.has(n)) bad.push(`policy "${r.id}" reads "${n}", which is not a declared counter`);
-    if (r.then.tool && !tools.has(r.then.tool) && !pack.goals.some((g) => g.id === r.then.tool)) bad.push(`policy "${r.id}" uses the unknown tool "${r.then.tool}"`);
+    if (r.then.tool && !tools.has(r.then.tool) && !pack.budget.goals.some((g) => g.id === r.then.tool)) bad.push(`policy "${r.id}" uses the unknown tool "${r.then.tool}"`);
     if (r.then.purse && !purses.has(r.then.purse)) bad.push(`policy "${r.id}" charges the unknown purse "${r.then.purse}"`); }
   if (new Set(pack.policy.map((r) => r.id)).size !== pack.policy.length) bad.push("policy ids must be unique");
   for (const t of pack.tools) { if (t.purse && !purses.has(t.purse)) bad.push(`tool "${t.name}" charges the unknown purse "${t.purse}"`); if (t.stars < 0 || t.cap <= 0) bad.push(`tool "${t.name}" needs a price of zero or more and a cap above zero`); }
-  for (const [id, p] of Object.entries(pack.purses)) { if (p.carry === "reservoir" && !pack.reservoir) bad.push(`purse "${id}" returns to a reservoir the pack does not have`); if (p.daily < 0) bad.push(`purse "${id}" has a negative daily amount`); }
-  if (pack.goalBank && !pack.reservoir) bad.push("goalBank needs a reservoir for savings to return to");
+  const B = pack.budget;
+  for (const [id, p] of Object.entries(B.purses)) { if (p.carry === "reservoir" && !B.reservoir) bad.push(`purse "${id}" returns to a reservoir the pack does not have`); if (p.daily < 0 || (p.spendCap ?? 0) < 0) bad.push(`purse "${id}" has a negative amount`); }
+  if (B.goalBank && !B.reservoir) bad.push("goalBank needs a reservoir for savings to return to");
+  if (!(B.tokensPerStar > 0)) bad.push("a star must be worth some tokens");
+  if (!["fixed", "metered"].includes(B.settle)) bad.push("settle must be \"fixed\" or \"metered\"");
+  if (!["free", "price"].includes(B.asked.charge)) bad.push("asked.charge must be \"free\" or \"price\"");
+  if (B.asked.purse && !purses.has(B.asked.purse)) bad.push(`what the person asks for is charged to the unknown purse "${B.asked.purse}"`);
+  for (const w of B.earn) { if (w.to !== "reservoir" && !purses.has(w.to)) bad.push(`earning "${w.id}" pays into the unknown purse "${w.to}"`); if (w.to === "reservoir" && !B.reservoir) bad.push(`earning "${w.id}" pays into a reservoir the pack does not have`); if (!(w.stars > 0)) bad.push(`earning "${w.id}" must give at least one star`); }
+  if (new Set(B.earn.map((w) => w.id)).size !== B.earn.length) bad.push("ways of earning need distinct ids");
   if (new Set(pack.readout.map((r) => r.fact)).size !== pack.readout.length) bad.push("each fact may be shown by one thing only");
   for (const t of Object.values(pack.tiers)) if (t.noise <= 0 || t.floor < 0 || t.floor > 1) bad.push("a tier needs noise above zero and a floor between 0 and 1");
   if (pack.gate.yes <= 0 || pack.gate.yes > 1 || pack.gate.confidence < 0 || pack.gate.confidence > 1) bad.push("gate thresholds must be between 0 and 1");

@@ -15,9 +15,9 @@ test("both packs load: no function, no unknown name, a policy that always ends",
   for (const p of [campus, aime]) { assert.deepEqual(validatePack(p), [], p.id); assert.deepEqual(JSON.parse(JSON.stringify(p)), p, p.id + " is plain data"); }
 });
 test("a broken pack does not load, and says why", () => {
-  const bad: WorldPack = { ...aime, reservoir: undefined, policy: [{ id: "x", when: { cmp: ["mood", ">", 1] }, then: { state: "s", tool: "fly", purse: "gold", stars: 1 } }] };
+  const bad: WorldPack = { ...aime, budget: { ...aime.budget, reservoir: undefined }, policy: [{ id: "x", when: { cmp: ["mood", ">", 1] }, then: { state: "s", tool: "fly", purse: "gold", stars: 1 } }] };
   const why = validatePack(bad).join(" | ");
-  for (const part of ["must end with a row that always holds", "\"mood\", which is not a declared counter", "unknown tool \"fly\"", "unknown purse \"gold\"", "returns to a reservoir", "goalBank needs a reservoir"]) assert.ok(why.includes(part), part + " :: " + why);
+  for (const part of ["must end with a row that always holds", "\"mood\", which is not a declared counter", "unknown tool \"fly\"", "unknown purse \"gold\"", "returns to a reservoir", "goalBank needs a reservoir", "pays into a reservoir the pack does not have"]) assert.ok(why.includes(part), part + " :: " + why);
 });
 
 test("AI ME's jar: 70 to start, 10 drawn a day, what is left goes back", () => {
@@ -27,7 +27,7 @@ test("AI ME's jar: 70 to start, 10 drawn a day, what is left goes back", () => {
 test("AI ME saving for a big move: unspent stars go to savings, the move is paid from savings first, the rest returns to the jar", () => {
   const log = [day("d1"), ev({ type: "goal", goal: "theme" }), day("d2"), day("d3")];                       // two days without spending
   const s = replay(aime, log); assert.equal(s.savings, 20); assert.equal(s.purses.self, 10); assert.equal(s.reservoir, 40);
-  const cost = aime.goals.find((g) => g.id === "theme")!.stars;
+  const cost = aime.budget.goals.find((g) => g.id === "theme")!.stars;
   assert.equal(decide(aime, { paused: false, hasGoal: true, bank: s.savings, self: s.purses.self, goalCost: cost, roll: 0.9 }).id, "big");   // 20 + (10 - 1) >= 25
   assert.equal(decide(aime, { paused: false, hasGoal: true, bank: 10, self: 10, goalCost: cost, roll: 0.9 }).id, "save");                     // 10 + 9 < 25
   const done = replay(aime, [...log, ...spend("big", "theme", cost), ev({ type: "goal", goal: null })]);
@@ -38,10 +38,10 @@ test("AI ME's day by a roll of the dice, and a pause that stops it", () => {
   assert.equal(c(0.1), "set_goal"); assert.equal(c(0.5), "custom"); assert.equal(c(0.9), "rest"); assert.equal(c(0.1, { paused: true }), "paused");
 });
 test("AI ME's jar runs dry, and a top-up refills it", () => {
-  const small: WorldPack = { ...aime, reservoir: { seed: 14 } };
+  const small: WorldPack = { ...aime, budget: { ...aime.budget, reservoir: { seed: 14 } } };
   const s = replay(small, [day("d1"), ...spend("a", "customize", 10), day("d2"), ...spend("b", "customize", 4), day("d3")]);
   assert.equal(s.purses.self, 0); assert.equal(s.reservoir, 0);                                              // 14 -> 10 spent, 4 drawn and spent, nothing left to draw
-  const t = replay(small, [day("d1"), ...spend("a", "customize", 10), day("d2"), ...spend("b", "customize", 4), ev({ type: "topup", stars: 10, cost: 10 }), day("d3")]);
+  const t = replay(small, [day("d1"), ...spend("a", "customize", 10), day("d2"), ...spend("b", "customize", 4), ev({ type: "earn", source: "carbon_pack" }), day("d3")]);
   assert.equal(t.purses.self, 10); assert.equal(t.reservoir, 0);
 });
 test("one engine, two budgets: the campus Gemi's two purses are granted, AI ME's one purse is drawn from a jar", () => {

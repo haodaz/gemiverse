@@ -9,40 +9,56 @@ import type { WorldPack, Event, State } from "./types";
 //  - A call has a life. `intent` reserves the stars; `result` settles them, or releases them if the call failed.
 //    A call still open when the next day starts is expired and released: a tab closed mid-trip must not leave it "out" forever.
 export function replay(pack: WorldPack, log: Event[]): State {
-  const zero = () => Object.fromEntries(Object.keys(pack.purses).map((p) => [p, 0]));
-  const s: State = { day: null, days: 0, beliefs: blank(pack), care: {}, purses: zero(), reservoir: pack.reservoir?.seed ?? 0, savings: 0, goal: null, spent: zero(),
-    used: {}, tokens: 0, desk: [], kept: [], skipped: [], went: [], open: [], expired: [] };
-  const release = (c: State["open"][number]) => { s.purses[c.purse] += c.stars - c.fromSavings; s.savings += c.fromSavings; };
+  const B = pack.budget, zero = () => Object.fromEntries(Object.keys(B.purses).map((p) => [p, 0]));
+  const s: State = { day: null, days: 0, beliefs: blank(pack), care: {}, purses: zero(), reservoir: B.reservoir?.seed ?? 0, savings: 0, goal: null, spent: zero(),
+    used: {}, spentToday: zero(), earnedToday: {}, tokens: 0, desk: [], kept: [], skipped: [], went: [], open: [], expired: [] };
+  const fill = (n: number) => { s.reservoir = B.reservoir?.cap === undefined ? s.reservoir + n : Math.min(B.reservoir.cap, s.reservoir + n); };
+  const release = (c: State["open"][number]) => { s.purses[c.purse] += c.stars - c.fromSavings; s.savings += c.fromSavings; s.spentToday[c.purse] -= c.stars; };
+  // take up to n stars from a purse (and, for a goal, from savings first), never past the purse's cap for the day
+  const take = (purse: string, n: number, big: boolean) => { const room = B.purses[purse]?.spendCap === undefined ? n : Math.max(0, B.purses[purse].spendCap! - (s.spentToday[purse] ?? 0)); n = Math.min(n, room);
+    const fromSavings = big ? Math.min(n, s.savings) : 0, fromPurse = Math.min(n - fromSavings, s.purses[purse] ?? 0);
+    s.savings -= fromSavings; s.purses[purse] = (s.purses[purse] ?? 0) - fromPurse; s.spentToday[purse] = (s.spentToday[purse] ?? 0) + fromSavings + fromPurse; return { stars: fromSavings + fromPurse, fromSavings }; };
   for (const e of log) {
     // money and time first: these ignore `undone`
     if (e.type === "day") {
       for (const c of s.open) { release(c); s.expired.push(c.call); }                     // release what never finished
       s.open = [];
-      if (s.day !== null) for (const [p, spec] of Object.entries(pack.purses)) {          // where yesterday's unspent stars go
-        const left = s.purses[p], to = pack.goalBank && s.goal ? "savings" : spec.carry;
-        if (to === "savings") s.savings += left; else if (to === "reservoir") s.reservoir += left;
+      if (s.day !== null) for (const [p, spec] of Object.entries(B.purses)) {             // where yesterday's unspent stars go
+        const left = s.purses[p], to = B.goalBank && s.goal ? "savings" : spec.carry;
+        if (to === "savings") s.savings += left; else if (to === "reservoir") fill(left);
       }
-      s.day = e.date; s.days += 1; s.used = {};
-      for (const [p, spec] of Object.entries(pack.purses)) {                               // today's stars: granted, or drawn from the jar
-        const take = pack.reservoir ? Math.min(spec.daily, s.reservoir) : spec.daily; if (pack.reservoir) s.reservoir -= take; s.purses[p] = take;
+      s.day = e.date; s.days += 1; s.used = {}; s.spentToday = zero(); s.earnedToday = {};
+      for (const [p, spec] of Object.entries(B.purses)) {                                  // today's stars: granted, or drawn from the jar
+        const got = B.reservoir ? Math.min(spec.daily, s.reservoir) : spec.daily; if (B.reservoir) s.reservoir -= got; s.purses[p] = got;
       }
       continue;
     }
-    if (e.type === "topup") { s.reservoir += e.stars; continue; }
-    if (e.type === "goal") { s.goal = e.goal; if (e.goal === null && pack.goalBank) { s.reservoir += s.savings; s.savings = 0; } continue; }
+    if (e.type === "earn") {
+      const way = B.earn.find((w) => w.id === e.source); if (!way) continue;              // not one of the pack's ways of earning: nothing comes in
+      const had = s.earnedToday[way.id] ?? 0, times = Math.max(0, Math.min(e.times ?? 1, way.perDay === undefined ? Infinity : way.perDay - had));
+      s.earnedToday[way.id] = had + times; if (way.to === "reservoir") fill(way.stars * times); else s.purses[way.to] = (s.purses[way.to] ?? 0) + way.stars * times;
+      continue;
+    }
+    if (e.type === "goal") { s.goal = e.goal; if (e.goal === null && B.goalBank) { fill(s.savings); s.savings = 0; } continue; }
     if (e.type === "intent") {
       s.used[e.tool] = (s.used[e.tool] ?? 0) + 1;
-      const stars = e.by === "self" ? e.stars : 0;                                        // what the person asks for is never charged
-      const big = pack.goals.some((g) => g.id === e.tool);                                // something bigger than a day is paid from savings first
-      const fromSavings = big ? Math.min(stars, s.savings) : 0, fromPurse = Math.min(stars - fromSavings, s.purses[e.purse] ?? 0);
-      s.savings -= fromSavings; s.purses[e.purse] = (s.purses[e.purse] ?? 0) - fromPurse;
-      s.open.push({ call: e.call, tool: e.tool, purse: e.purse, stars: fromSavings + fromPurse, fromSavings, by: e.by });
+      const spec = pack.tools.find((x) => x.name === e.tool), rule = spec?.asked ?? B.asked.charge;
+      const charged = e.by === "self" || rule === "price", purse = e.by === "person" && B.asked.purse ? B.asked.purse : e.purse;   // whether what the person asks for goes through the ledger is the pack's choice
+      const got = charged ? take(purse, e.stars, B.goals.some((g) => g.id === e.tool)) : { stars: 0, fromSavings: 0 };
+      s.open.push({ call: e.call, tool: e.tool, purse, ...got, by: e.by, charged });
       continue;
     }
     if (e.type === "result") {
       const i = s.open.findIndex((c) => c.call === e.call); if (i < 0) continue;          // unknown or already expired
       const [c] = s.open.splice(i, 1);
-      if (e.ok) { s.spent[c.purse] = (s.spent[c.purse] ?? 0) + c.stars; s.tokens += e.tokens ?? 0; } else release(c);
+      if (!e.ok) { release(c); continue; }
+      s.tokens += e.tokens ?? 0;
+      if (c.charged && B.settle === "metered" && e.tokens !== undefined) {                 // settle at what it really used
+        const real = Math.ceil(e.tokens / B.tokensPerStar);
+        if (real > c.stars) c.stars += take(c.purse, real - c.stars, false).stars;
+        else if (real < c.stars) { const back = c.stars - real; s.purses[c.purse] += back; s.spentToday[c.purse] -= back; c.stars = real; }
+      }
+      s.spent[c.purse] = (s.spent[c.purse] ?? 0) + c.stars;
       continue;
     }
     // what was learned: an undone event contributes nothing here

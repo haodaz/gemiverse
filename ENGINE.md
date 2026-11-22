@@ -237,6 +237,27 @@ Three rules these contracts encode:
   never by what it believes about its person. `propose` goes to a server that runs the gate again itself; a client cannot
   assert that something was checked.
 
+### 6a. The budget is the application's to set
+
+The engine fixes no budget rule. Everything below is a field of `pack.budget`, validated when the pack loads, and the same
+replay runs all of it (`engine/test/budget.test.ts` runs one product's rules after another):
+
+| A product decides | Field | Examples that are tested |
+|---|---|---|
+| what a star is worth | `tokensPerStar` | 1,500, 2,000, 10,000 |
+| whether a call costs its listed price or what it really used | `settle: "fixed" \| "metered"` | 7,000 tokens settled as 5 stars; 1,000 tokens gives 2 stars back; never below empty |
+| which purses exist, how many stars each gets a day | `purses` | two purses (for the person, for itself); one purse; no split at all |
+| the most a purse may spend in a day | `purses[].spendCap` | 20 in the purse, 5 a day |
+| where unspent stars go | `purses[].carry`, `goalBank` | lost; saved; back into a jar; saved only while it has a goal |
+| whether stars are granted or drawn from a jar, and the jar's lid | `reservoir` | a jar of 70; a jar that holds at most 20 |
+| how stars are earned | `earn[]` (into a purse or the jar, with a cap a day, and what the person gives for it) | once a day for saying how the day was; up to three a day for looking at finds; a streak bonus; a pack bought with the product's own currency |
+| whether what the person asks for goes through the ledger | `asked.charge`, `asked.purse`, and `tools[].asked` for one tool | free (the campus Gemi); charged at the listed price; charged to a named purse; charged except one tool |
+| what things cost and how often | `tools[].stars`, `tools[].cap`, `goals[]` | as before |
+
+What stays the engine's, under any configuration: stars are reserved before a call and settled after it; a failed call gives
+them back; an open call expires with the day; **undo never refunds**; a way of earning the pack does not list gives nothing.
+"What the person asks for is never charged" was an engine rule until 22 Nov; it is now the campus pack's choice.
+
 ### 6b. Outside data and tools come in through MCP, by configuration
 
 The engine hard-wires no base. An application lists its connections in a config file (`gemiverse.config.example.json`);
@@ -351,7 +372,7 @@ reading of its code. The campus pack still imports the app's own lists, and the 
 
 1. Replay is deterministic: the same log gives the same state, on any machine.
 2. Undo is replay without the event; nothing else is ever mutated.
-3. What the person asks for is never charged; what the AI does unasked always is, before the call.
+3. Stars are reserved before a call and settled after it, by the pack's rules; whether what the person asks for is charged is the pack's choice. Undo never refunds.
 4. An unregistered tool cannot run; a cap, a stage or a missing confirmation refuses in code.
 5. Words move an axis only through a pack's stance phrases, and never bring a halo below the "said" floor; a choice outside the halo widens it.
 6. A field below the gate's thresholds is never shown, and is recorded as withheld.

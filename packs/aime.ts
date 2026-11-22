@@ -14,10 +14,12 @@ export const aime: WorldPack = {
   axes: [],
   tiers: { self_reported: { noise: 2.5, floor: 0.55 }, checked: { noise: 1.0, floor: 0.10 }, seen_over_time: { noise: 0.45, floor: 0.10 }, actually_done: { noise: 0.22, floor: 0.10 } },
   surprise: 0.15, skipWeight: 0.5, care: { said: 0.5, max: 1 },
-  purses: { self: { daily: 10, carry: "reservoir" } },
-  reservoir: { seed: 70, topUp: { stars: 10, cost: 10, unit: "carbon credit" } },
-  goalBank: true, tokensPerStar: 2000,
-  goals: [{ id: "make", stars: 20 }, { id: "theme", stars: 25 }, { id: "gift", stars: 30 }],
+  budget: { tokensPerStar: 2000, settle: "fixed",
+    purses: { self: { daily: 10, carry: "reservoir" } },
+    reservoir: { seed: 70 },
+    goalBank: true, asked: { charge: "free" },
+    earn: [{ id: "carbon_pack", to: "reservoir", stars: 10, cost: { amount: 10, unit: "carbon credit" } }],
+    goals: [{ id: "make", stars: 20 }, { id: "theme", stars: 25 }, { id: "gift", stars: 30 }] },
   tools: [
     { name: "go_out", purse: null, stars: 0, cap: 3, stage: 1, confirm: "never", does: "Walk the campus for you and bring things back." },
     { name: "write_diary", purse: "self", stars: 1, cap: 1, stage: 1, confirm: "never", does: "Write today's diary when something happened." },
@@ -37,5 +39,6 @@ export const aime: WorldPack = {
     { fact: "what it changed in its room", shows_as: "the changed thing, with a way to put it back", where: "the room" },
     { fact: "things it brought back", shows_as: "items in the basket by its door, each with where it was found", where: "the basket" },
   ],
+  needs: [], fields: [],
   gate: { yes: 0.8, confidence: 0.5 },
 };
