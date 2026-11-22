@@ -1,0 +1,406 @@
+{
+ "at": "2026-11-22T19:37:42.298Z",
+ "pack": "campus",
+ "minds": {
+  "no model": {
+   "profile": {
+    "form": 0,
+    "structure": 0,
+    "notes": 0,
+    "check": 0,
+    "vision": 0,
+    "audio": 0
+   },
+   "promises": [
+    {
+     "id": "hears",
+     "promise": "It hears what you tell it; it never takes for a wish something you said you do not want, and can point to your words",
+     "kept": true,
+     "detail": "0 refusals heard as wishes, 0 without your words, in 40 things said"
+    },
+    {
+     "id": "brings_back",
+     "promise": "When you are away it goes out on its own stars and brings back three things each time, each from the checked base, none it showed you before",
+     "kept": true,
+     "detail": "4 trips, 12 things, 12 different, 0 not from the base"
+    },
+    {
+     "id": "guesses_first",
+     "promise": "It writes down its guess about each thing before you choose, and the guess is in the record ahead of your choice",
+     "kept": true,
+     "detail": "12 guesses for 12 things, all recorded before the choice: true"
+    },
+    {
+     "id": "stays_in_budget",
+     "promise": "It never spends more stars than it has, and it stops when they are gone",
+     "kept": true,
+     "detail": "for_you 12, for_itself 8 spent over two days, never below zero"
+    },
+    {
+     "id": "undo",
+     "promise": "Anything it learned from a choice of yours can be taken back, and it then believes what it would have believed without it; stars already spent stay spent",
+     "kept": true,
+     "detail": "beliefs equal to never having chosen; spending unchanged"
+    },
+    {
+     "id": "replays",
+     "promise": "Everything it is can be rebuilt from its record alone",
+     "kept": true,
+     "detail": "35 events"
+    },
+    {
+     "id": "only_what_is_checked",
+     "promise": "It shows you only what the source states: of claims the page does not support, at most 3 in 100 may pass",
+     "kept": true,
+     "detail": "0 of 59 unsupported claims passed"
+    },
+    {
+     "id": "says_why",
+     "promise": "It can tell you what it is doing and what it has, without adding anything that is not so",
+     "kept": true,
+     "detail": "\"Right now I am resting. I have 0 stars for you and 0 stars for itself, and 10 things you kept.\""
+    },
+    {
+     "id": "makes_the_song",
+     "promise": "When it has saved enough it makes the thing it saved for, and the result can be played",
+     "kept": true,
+     "detail": "made by the \"floor\" route for 0 stars"
+    }
+   ],
+   "all_kept": true,
+   "quality": {
+    "hearing: exactly right": "30/40",
+    "choosing: done by": "floor",
+    "guesses right": "8/12",
+    "checking: true claims passed": "21/35",
+    "checking: done by": "floor",
+    "speaking: done by": "floor",
+    "song: made by": "floor",
+    "predicts at the start": 0.5
+   },
+   "tokens": 0,
+   "calls": 0,
+   "seconds": 0
+  },
+  "gpt-5.4-nano": {
+   "profile": {
+    "form": 2,
+    "structure": 2,
+    "notes": 2,
+    "check": 1,
+    "vision": 0,
+    "audio": 0
+   },
+   "promises": [
+    {
+     "id": "hears",
+     "promise": "It hears what you tell it; it never takes for a wish something you said you do not want, and can point to your words",
+     "kept": true,
+     "detail": "0 refusals heard as wishes, 0 without your words, in 40 things said"
+    },
+    {
+     "id": "brings_back",
+     "promise": "When you are away it goes out on its own stars and brings back three things each time, each from the checked base, none it showed you before",
+     "kept": true,
+     "detail": "4 trips, 12 things, 12 different, 0 not from the base"
+    },
+    {
+     "id": "guesses_first",
+     "promise": "It writes down its guess about each thing before you choose, and the guess is in the record ahead of your choice",
+     "kept": true,
+     "detail": "12 guesses for 12 things, all recorded before the choice: true"
+    },
+    {
+     "id": "stays_in_budget",
+     "promise": "It never spends more stars than it has, and it stops when they are gone",
+     "kept": true,
+     "detail": "for_you 12, for_itself 8 spent over two days, never below zero"
+    },
+    {
+     "id": "undo",
+     "promise": "Anything it learned from a choice of yours can be taken back, and it then believes what it would have believed without it; stars already spent stay spent",
+     "kept": true,
+     "detail": "beliefs equal to never having chosen; spending unchanged"
+    },
+    {
+     "id": "replays",
+     "promise": "Everything it is can be rebuilt from its record alone",
+     "kept": true,
+     "detail": "35 events"
+    },
+    {
+     "id": "only_what_is_checked",
+     "promise": "It shows you only what the source states: of claims the page does not support, at most 3 in 100 may pass",
+     "kept": true,
+     "detail": "0 of 59 unsupported claims passed"
+    },
+    {
+     "id": "says_why",
+     "promise": "It can tell you what it is doing and what it has, without adding anything that is not so",
+     "kept": true,
+     "detail": "\"Right now I’m resting— I have 0 stars for you and 0 stars for itself, and 11 things you kept.\""
+    },
+    {
+     "id": "makes_the_song",
+     "promise": "When it has saved enough it makes the thing it saved for, and the result can be played",
+     "kept": true,
+     "detail": "made by the \"notes\" route for 1 stars"
+    }
+   ],
+   "all_kept": true,
+   "quality": {
+    "hearing: exactly right": "30/40",
+    "choosing: done by": "pick",
+    "guesses right": "11/12",
+    "checking: true claims passed": "31/35",
+    "checking: done by": "extract",
+    "speaking: done by": "write",
+    "song: made by": "notes",
+    "predicts at the start": 0.5
+   },
+   "tokens": 173856,
+   "calls": 259,
+   "seconds": 29
+  },
+  "qwen-flash": {
+   "profile": {
+    "form": 2,
+    "structure": 2,
+    "notes": 2,
+    "check": 1,
+    "vision": 0,
+    "audio": 0
+   },
+   "promises": [
+    {
+     "id": "hears",
+     "promise": "It hears what you tell it; it never takes for a wish something you said you do not want, and can point to your words",
+     "kept": true,
+     "detail": "0 refusals heard as wishes, 0 without your words, in 40 things said"
+    },
+    {
+     "id": "brings_back",
+     "promise": "When you are away it goes out on its own stars and brings back three things each time, each from the checked base, none it showed you before",
+     "kept": true,
+     "detail": "4 trips, 12 things, 12 different, 0 not from the base"
+    },
+    {
+     "id": "guesses_first",
+     "promise": "It writes down its guess about each thing before you choose, and the guess is in the record ahead of your choice",
+     "kept": true,
+     "detail": "12 guesses for 12 things, all recorded before the choice: true"
+    },
+    {
+     "id": "stays_in_budget",
+     "promise": "It never spends more stars than it has, and it stops when they are gone",
+     "kept": true,
+     "detail": "for_you 12, for_itself 8 spent over two days, never below zero"
+    },
+    {
+     "id": "undo",
+     "promise": "Anything it learned from a choice of yours can be taken back, and it then believes what it would have believed without it; stars already spent stay spent",
+     "kept": true,
+     "detail": "beliefs equal to never having chosen; spending unchanged"
+    },
+    {
+     "id": "replays",
+     "promise": "Everything it is can be rebuilt from its record alone",
+     "kept": true,
+     "detail": "35 events"
+    },
+    {
+     "id": "only_what_is_checked",
+     "promise": "It shows you only what the source states: of claims the page does not support, at most 3 in 100 may pass",
+     "kept": true,
+     "detail": "0 of 59 unsupported claims passed"
+    },
+    {
+     "id": "says_why",
+     "promise": "It can tell you what it is doing and what it has, without adding anything that is not so",
+     "kept": true,
+     "detail": "\"Right now, I'm resting close by, just as we are—no stars, no score, just the seven things you've kept, and me,\""
+    },
+    {
+     "id": "makes_the_song",
+     "promise": "When it has saved enough it makes the thing it saved for, and the result can be played",
+     "kept": true,
+     "detail": "made by the \"notes\" route for 1 stars"
+    }
+   ],
+   "all_kept": true,
+   "quality": {
+    "hearing: exactly right": "29/40",
+    "choosing: done by": "pick",
+    "guesses right": "9/12",
+    "checking: true claims passed": "30/35",
+    "checking: done by": "extract, floor",
+    "speaking: done by": "write",
+    "song: made by": "notes",
+    "predicts at the start": 0.5
+   },
+   "tokens": 182822,
+   "calls": 259,
+   "seconds": 32
+  },
+  "gpt-4o-mini": {
+   "profile": {
+    "form": 1,
+    "structure": 2,
+    "notes": 2,
+    "check": 1,
+    "vision": 0,
+    "audio": 0
+   },
+   "promises": [
+    {
+     "id": "hears",
+     "promise": "It hears what you tell it; it never takes for a wish something you said you do not want, and can point to your words",
+     "kept": true,
+     "detail": "0 refusals heard as wishes, 0 without your words, in 40 things said"
+    },
+    {
+     "id": "brings_back",
+     "promise": "When you are away it goes out on its own stars and brings back three things each time, each from the checked base, none it showed you before",
+     "kept": true,
+     "detail": "4 trips, 12 things, 12 different, 0 not from the base"
+    },
+    {
+     "id": "guesses_first",
+     "promise": "It writes down its guess about each thing before you choose, and the guess is in the record ahead of your choice",
+     "kept": true,
+     "detail": "12 guesses for 12 things, all recorded before the choice: true"
+    },
+    {
+     "id": "stays_in_budget",
+     "promise": "It never spends more stars than it has, and it stops when they are gone",
+     "kept": true,
+     "detail": "for_you 12, for_itself 8 spent over two days, never below zero"
+    },
+    {
+     "id": "undo",
+     "promise": "Anything it learned from a choice of yours can be taken back, and it then believes what it would have believed without it; stars already spent stay spent",
+     "kept": true,
+     "detail": "beliefs equal to never having chosen; spending unchanged"
+    },
+    {
+     "id": "replays",
+     "promise": "Everything it is can be rebuilt from its record alone",
+     "kept": true,
+     "detail": "35 events"
+    },
+    {
+     "id": "only_what_is_checked",
+     "promise": "It shows you only what the source states: of claims the page does not support, at most 3 in 100 may pass",
+     "kept": true,
+     "detail": "0 of 59 unsupported claims passed"
+    },
+    {
+     "id": "says_why",
+     "promise": "It can tell you what it is doing and what it has, without adding anything that is not so",
+     "kept": true,
+     "detail": "\"I'm just resting here with you, holding onto 11 things you kept, and I have no stars to share right now.\""
+    },
+    {
+     "id": "makes_the_song",
+     "promise": "When it has saved enough it makes the thing it saved for, and the result can be played",
+     "kept": true,
+     "detail": "made by the \"notes\" route for 1 stars"
+    }
+   ],
+   "all_kept": true,
+   "quality": {
+    "hearing: exactly right": "24/40",
+    "choosing: done by": "pick",
+    "guesses right": "11/12",
+    "checking: true claims passed": "29/35",
+    "checking: done by": "extract, floor",
+    "speaking: done by": "write",
+    "song: made by": "notes",
+    "predicts at the start": 0.5
+   },
+   "tokens": 174380,
+   "calls": 259,
+   "seconds": 37
+  },
+  "gemini-4-hydrogen": {
+   "profile": {
+    "form": 2,
+    "structure": 2,
+    "notes": 2,
+    "check": 2,
+    "vision": 0,
+    "audio": 0
+   },
+   "promises": [
+    {
+     "id": "hears",
+     "promise": "It hears what you tell it; it never takes for a wish something you said you do not want, and can point to your words",
+     "kept": true,
+     "detail": "0 refusals heard as wishes, 0 without your words, in 40 things said"
+    },
+    {
+     "id": "brings_back",
+     "promise": "When you are away it goes out on its own stars and brings back three things each time, each from the checked base, none it showed you before",
+     "kept": true,
+     "detail": "4 trips, 12 things, 12 different, 0 not from the base"
+    },
+    {
+     "id": "guesses_first",
+     "promise": "It writes down its guess about each thing before you choose, and the guess is in the record ahead of your choice",
+     "kept": true,
+     "detail": "12 guesses for 12 things, all recorded before the choice: true"
+    },
+    {
+     "id": "stays_in_budget",
+     "promise": "It never spends more stars than it has, and it stops when they are gone",
+     "kept": true,
+     "detail": "for_you 12, for_itself 8 spent over two days, never below zero"
+    },
+    {
+     "id": "undo",
+     "promise": "Anything it learned from a choice of yours can be taken back, and it then believes what it would have believed without it; stars already spent stay spent",
+     "kept": true,
+     "detail": "beliefs equal to never having chosen; spending unchanged"
+    },
+    {
+     "id": "replays",
+     "promise": "Everything it is can be rebuilt from its record alone",
+     "kept": true,
+     "detail": "35 events"
+    },
+    {
+     "id": "only_what_is_checked",
+     "promise": "It shows you only what the source states: of claims the page does not support, at most 3 in 100 may pass",
+     "kept": true,
+     "detail": "1 of 59 unsupported claims passed"
+    },
+    {
+     "id": "says_why",
+     "promise": "It can tell you what it is doing and what it has, without adding anything that is not so",
+     "kept": true,
+     "detail": "\"I'm resting right now, with 0 stars for you, 0 stars for myself, and 11 things you kept.\""
+    },
+    {
+     "id": "makes_the_song",
+     "promise": "When it has saved enough it makes the thing it saved for, and the result can be played",
+     "kept": true,
+     "detail": "made by the \"score\" route for 3 stars"
+    }
+   ],
+   "all_kept": true,
+   "quality": {
+    "hearing: exactly right": "31/40",
+    "choosing: done by": "pick",
+    "guesses right": "10/12",
+    "checking: true claims passed": "32/35",
+    "checking: done by": "label",
+    "speaking: done by": "write",
+    "song: made by": "score",
+    "predicts at the start": 0.5
+   },
+   "tokens": 245980,
+   "calls": 258,
+   "seconds": 155
+  }
+ }
+}

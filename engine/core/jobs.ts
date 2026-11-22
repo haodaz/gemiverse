@@ -101,8 +101,25 @@ Reply with JSON only: {"needs": [{"id": one of the ids above, "quote": the exact
 ${text.slice(0, 1500)}
 SAID>>>`),
       accept: (raw) => { const j = parse(raw); if (!j || !Array.isArray(j.needs)) return null; const ids = new Set(needs.map((n) => n.id)), said = norm(text), out: Heard = [];
-        for (const n of j.needs) { if (!n || !ids.has(n.id) || typeof n.quote !== "string" || !n.quote.trim()) return null; if (!said.includes(norm(n.quote))) return null; if (!out.some((o) => o.id === n.id)) out.push({ id: n.id, quote: n.quote }); }   // an id not on the list, or a quote that was never said, voids the answer
+        for (const n of j.needs) { if (!n || !ids.has(n.id) || typeof n.quote !== "string" || !n.quote.trim()) return null; if (!said.includes(norm(n.quote))) return null;   // an id not on the list, or a quote that was never said, voids the answer
+          const at = said.indexOf(norm(n.quote)), around = said.slice(0, at).trim().split(" ").slice(-4).join(" ") + " " + norm(n.quote);
+          if (NEGATION.test(around)) continue;                                              // the words it quotes are a refusal ("no more ...", "I don't need ..."): not a need, whatever the model says
+          if (!out.some((o) => o.id === n.id)) out.push({ id: n.id, quote: n.quote }); }
         return out; } },
     { id: "floor", needs: {}, stars: 0, run: async () => null, accept: () => floorHear(text, needs) },
+  ] };
+}
+
+// ---------- say: put into words a fact the engine has already decided
+// The model never decides what is true here; it may only rephrase. Its sentence is refused if it is empty, too long, or
+// carries a number that is not in the facts. The plainest route is the pack's own sentence.
+export function sayTask(plain: string, facts: Record<string, string | number>): Task<string> {
+  const allowed = new Set((plain + " " + Object.values(facts).join(" ")).match(/\d+/g) ?? []);
+  return { id: "say", routes: [
+    { id: "write", needs: { form: 1 }, stars: 0, run: (ask) => ask!(`Say this in one short, warm sentence, in the first person, as a small companion talking to the person it lives with. Do not add any fact, name or number that is not here.
+What to say: ${plain}
+Reply with JSON only: {"text": "..."}`),
+      accept: (raw) => { const t = parse(raw)?.text; if (typeof t !== "string" || t.trim().length < 3 || t.length > 240) return null; return (t.match(/\d+/g) ?? []).every((n) => allowed.has(n)) ? t.trim() : null; } },
+    { id: "floor", needs: {}, stars: 0, run: async () => null, accept: () => plain },
   ] };
 }

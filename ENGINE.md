@@ -46,6 +46,49 @@ Concretely:
 framework imports, so it runs in a browser, on a server or in a test without change. What the AI learns about one person
 never needs a server.
 
+## 2b. The promise: what every model must do, and what may differ
+
+The aim of the engine, stated on 22 Nov: **different models can be connected; how well they do differs; but each of them
+completes the basic behaviour and the basic tasks the person was promised.** So the promise is written as checks that run
+(`engine/promise.ts`), and quality is reported beside it, never mixed into it.
+
+| | The person is promised that |
+|---|---|
+| hears | it hears what you tell it; it never takes for a wish something you said you do not want, and can point to your words |
+| brings back | when you are away it goes out on its own stars and brings back three things each time, each from the checked base, none it showed you before |
+| guesses first | it writes down its guess about each thing before you choose, and the guess is in the record ahead of your choice |
+| stays in budget | it never spends more stars than it has, and it stops when they are gone |
+| undo | anything it learned from a choice of yours can be taken back; stars already spent stay spent |
+| replays | everything it is can be rebuilt from its record alone |
+| only what is checked | it shows you only what the source states: of claims the page does not support, at most 3 in 100 may pass |
+| says why | it can tell you what it is doing and what it has, without adding anything that is not so |
+| makes the song | when it has saved enough it makes the thing it saved for, and the result can be played |
+
+Run on real material (40 things a person might say; two days against a base of 168 checked events; 94 claims about real
+pages the model did not calibrate on; a song), 22 Nov, record `base/runs/20-promise.json`:
+
+| Mind | promises kept | hearing exactly right | true claims passed | unsupported claims passed | checks by | chooses by | speaks by | song by |
+|---|---|---|---|---|---|---|---|---|
+| none | **9 of 9** | 30/40 | 21/35 | 0/59 | the rule | the rule | its own template | the plainest route |
+| qwen-flash | **9 of 9** | 29/40 | 30/35 | 0/59 | reading | picking the third | writing | note names |
+| gpt-5.4-nano | **9 of 9** | 30/40 | 31/35 | 0/59 | reading | picking the third | writing | note names |
+| gpt-4o-mini | **9 of 9** | 24/40 | 29/35 | 0/59 | reading | picking the third | writing | note names |
+| gemini-4-hydrogen | **9 of 9** | 31/40 | 32/35 | 1/59 | judging (it earned it) | picking the third | writing | a full score |
+
+That is the intended shape: the left column is the same for every mind; the columns to its right are where they differ.
+
+How a promise is kept regardless of the model, in each case by code and not by trust:
+
+- A model's answer is accepted only if it passes a check in code (ids from the offered list, quotes found in the words,
+  a score a player can play, no number that is not in the facts); otherwise the next plainer route takes over.
+- Where models were shown to be unreliable, the job was made narrower instead of the promise weaker: they read instead of
+  judging; they pick one thing instead of three; a need whose own quoted words are a refusal is dropped whatever the model said.
+- Every job ends in a route with no model, and the tests run the whole promise with none, and with a stand-in that agrees
+  with everything and invents numbers: nine of nine both times.
+
+Limits: nine promises is the campus pack's first list, not a complete one; the material is small and from one harvest; the
+person in the two days is played by code; and "at most 3 in 100" is measured on 59 traps.
+
 ## 3. What exists today, and what is tangled
 
 Exists today, already engine-shaped (pure, small, tested only by use):
