@@ -8,7 +8,7 @@ import type { Event } from "../core/types";
 
 let k = 0; const ev = (e: any): Event => ({ id: `e${++k}`, at: `t${k}`, ...e });
 const day = (date: string) => ev({ type: "day", date });
-const intent = (call: string, tool: string, by: "self" | "person", purse: "for_you" | "for_itself", stars: number) => ev({ type: "intent", call, tool, by, purse, stars });
+const intent = (call: string, tool: string, by: "self" | "person", purse: string, stars: number) => ev({ type: "intent", call, tool, by, purse, stars });
 const result = (call: string, ok = true, tokens = 0) => ev({ type: "result", call, ok, tokens });
 const choice = (find: string, action: "keep" | "skip", axis = "collaboration", x = -0.7) => ev({ type: "choice", find, action, evidence: [{ axis, x }] });
 
@@ -49,7 +49,7 @@ test("saving: what it does not spend on itself carries over; a bigger thing is p
   const twoQuietDays = [day("d1"), intent("p1", "plan_day", "self", "for_itself", 2), result("p1"), day("d2"), intent("p2", "plan_day", "self", "for_itself", 2), result("p2"), day("d3")];
   const s = replay(campus, twoQuietDays); assert.equal(s.savings, 4); assert.deepEqual(s.purses, { for_you: 6, for_itself: 4 });   // for_you does not carry over
   const song = replay(campus, [...twoQuietDays, intent("s", "write_song", "self", "for_itself", 6), result("s")]);
-  assert.equal(song.purses.for_itself, 0); assert.equal(song.savings, 2); assert.equal(song.spent.for_itself, 10);
+  assert.equal(song.savings, 0); assert.equal(song.purses.for_itself, 2); assert.equal(song.spent.for_itself, 10);   // savings first, then today's stars
 });
 
 test("5. words alone stop at the 'said' floor; a choice outside the halo widens it", () => {
@@ -60,5 +60,5 @@ test("5. words alone stop at the 'said' floor; a choice outside the halo widens 
 
 test("today's gap, recorded: what is said raises a care and does not move any axis", () => {
   const s = replay(campus, [day("d1"), ev({ type: "said", text: "big crowds wear me out", needs: [{ id: "rest_and_recover", quote: "wear me out" }] })]);
-  assert.deepEqual(s.care, { rest_and_recover: 0.5 }); for (const a of campus.axes) assert.deepEqual(s.beliefs[a], { m: 0, u: 1 });
+  assert.deepEqual(s.care, { rest_and_recover: 0.5 }); for (const a of campus.axes) assert.deepEqual(s.beliefs[a.id], { m: 0, u: 1 });
 });

@@ -5,6 +5,7 @@ import assert from "node:assert/strict";
 import { step as appStep, replay as appReplay, AXES } from "../../lib/mind";
 import { mayCall } from "../../lib/kernel/governance";
 import { decide, POLICY } from "../../lib/kernel/autonomy";
+import { decide as decideData, validatePack } from "../core/predicate";
 import { TOOLS } from "../../lib/kernel/tools";
 import { step } from "../core/mind";
 import { replay, fromLegacy } from "../core/replay";
@@ -12,7 +13,7 @@ import { campus } from "../../packs/campus";
 
 const near = (a: number, b: number) => assert.ok(Math.abs(a - b) < 1e-12, `${a} != ${b}`);
 
-test("the pack's axes are the app's axes", () => assert.deepEqual(campus.axes, AXES.map((a) => a.id)));
+test("the pack's axes are the app's axes", () => assert.deepEqual(campus.axes.map((a) => a.id), AXES.map((a) => a.id)));
 
 test("the engine's belief step is the app's, over a grid", () => {
   let n = 0;
@@ -33,7 +34,7 @@ const legacy: any[] = [
 ];
 test("a browser log from the app replays to the same beliefs and cares in the engine", () => {
   const a = appReplay(legacy), b = replay(campus, fromLegacy(legacy));
-  for (const ax of campus.axes) { near(a.beliefs[ax as keyof typeof a.beliefs].m, b.beliefs[ax].m); near(a.beliefs[ax as keyof typeof a.beliefs].u, b.beliefs[ax].u); }
+  for (const { id: ax } of campus.axes) { near(a.beliefs[ax as keyof typeof a.beliefs].m, b.beliefs[ax].m); near(a.beliefs[ax as keyof typeof a.beliefs].u, b.beliefs[ax].u); }
   assert.deepEqual(a.care, b.care); assert.deepEqual(b.care, { find_my_people: 1, make_and_express: 0.5 });
   assert.deepEqual(b.kept, ["e1"]); assert.deepEqual(b.skipped, ["e2"]); assert.deepEqual(b.desk, ["e3"]);   // the undone choice puts its card back on the desk
 });
@@ -80,4 +81,19 @@ test("autonomy: the policy table, first match wins", () => {
   assert.equal(rule({ choices: 6, widestHalo: 0.3, diaryToday: true, idleSeconds: 200 }), "tidy");
   assert.equal(rule({ starsYou: 0, starsSelf: 0, diaryToday: true }), "rest");
   assert.equal(decide(sit({ idleSeconds: 60 }) as any).stars, 3);
+});
+
+test("the policy as data decides exactly as the app's policy as code, on 20,000 situations", () => {
+  let h = 12345; const rnd = () => { h = (Math.imul(h, 1664525) + 1013904223) >>> 0; return h / 4294967296; }, pick = <T,>(a: T[]) => a[Math.floor(rnd() * a.length)];
+  const seen = new Set<string>();
+  for (let i = 0; i < 20000; i++) {
+    const s = { pending: pick([0, 0, 1, 3]), outNow: rnd() < 0.08, starsYou: pick([0, 2, 3, 6]), starsSelf: pick([0, 1, 2, 4]), choices: pick([0, 1, 4, 5, 9]), widestHalo: pick([0.2, 0.49, 0.5, 0.9, 1]), topCare: rnd(),
+      hour: Math.floor(rnd() * 24), idleSeconds: pick([0, 44, 45, 59, 60, 119, 120, 300]), diaryToday: rnd() < 0.5, paused: rnd() < 0.05, bank: pick([0, 2, 4, 6]), goalCost: 6, goalName: pick([null, null, "write_song"]), roomChangedByStudent: rnd() < 0.1 };
+    const a = decide(s as any), { goalName, ...rest } = s, b = decideData(campus, { ...rest, hasGoal: !!goalName });
+    assert.equal(b.id, a.rule); assert.equal(b.then.state, a.state); assert.equal(b.then.tool, a.method); assert.equal(b.then.purse, a.purse); assert.equal(b.then.stars, a.stars); seen.add(a.rule);
+  }
+  assert.equal(seen.size, 12, "every row should have been reached: " + [...seen].join(" "));
+});
+test("the campus pack is valid, and its tools are the app's registry without model names", () => {
+  assert.deepEqual(validatePack(campus), []); assert.equal(campus.tools.length, TOOLS.length); assert.ok(!JSON.stringify(campus.tools).includes("gemini"));
 });

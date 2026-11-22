@@ -235,6 +235,33 @@ Where the running app differs from this design today (found while writing the te
 4. **Undo and stars.** The app has no intent/result pair, so there is nothing yet that a refund could be tested against;
    the rule "undo never refunds" exists only in the engine.
 
+### M1 · done (22 Nov)
+
+Built: one `WorldPack` type (`engine/core/types.ts`), a small data grammar for "when" with its evaluator and a pack
+validator (`engine/core/predicate.ts`), and two packs: `packs/campus.ts` and `packs/aime.ts`. 24 tests.
+
+- **A pack is data.** Both packs survive being written to text and read back; neither holds a function. The campus policy,
+  rewritten as data, decides exactly as the app's policy code on 20,000 generated situations, reaching all 12 rows.
+- **A pack that is wrong does not load**: an undeclared counter, an unknown tool or purse, a policy that does not end in a
+  row that always holds, a purse returning to a jar that is not there.
+- **AI ME's pack is on paper.** AI ME does not run on this engine. Its numbers were read from its own rules (another
+  repository, its version 33) and its budget was worked by hand into tests: a jar of 70, 10 drawn a day, unspent stars back
+  to the jar or into savings while it has a goal, a big move paid from savings first, a top-up, a jar run dry.
+
+What writing the second pack changed in the core (each of these was a campus assumption):
+
+| Campus assumed | AI ME has | The core now has |
+|---|---|---|
+| two purses, by name | one purse | purses declared by the pack |
+| stars granted every day | a jar that is drawn from and topped up | an optional reservoir, a `topup` event |
+| its own unspent stars always become savings | unspent stars return to the jar, except while saving for a goal | `carry` per purse, `goalBank`, a `goal` event |
+| one bigger thing (a song) | three big moves | `goals` in the pack, paid from savings first |
+| the model plans the day | a repeatable roll of the dice plans the day | policy rows over declared counters; a roll is just a counter |
+| seven axes | no axes: remembered facts the person accepts or rejects | `axes` may be empty. **A mind made of facts rather than axes is not designed yet** |
+
+Not done in M1 and stated plainly: AI ME's side has not confirmed its pack; the caps and the readout rows in it are my
+reading of its code. The campus pack still imports the app's own lists, and the app does not yet import the pack: that is M2.
+
 ## 8. Invariants (the tests of M0 and after)
 
 1. Replay is deterministic: the same log gives the same state, on any machine.
