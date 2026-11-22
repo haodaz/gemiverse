@@ -212,6 +212,29 @@ engine/test/        invariants and golden tests; the mind-swap harness
 The headless runner and the ordinary-model test come before the space protocol on purpose: otherwise the model port and the
 gate get tuned around Gemini, and the protocol gets shaped by the 3D campus room alone.
 
+### M0 · done (22 Nov)
+
+Built: `engine/core/` (`types.ts`, `mind.ts`, `replay.ts`), `packs/campus.ts`, and 15 tests (`npm test`, Node's own test
+runner, no new dependency). The app itself is not changed and does not import the engine yet.
+
+- **Golden tests** hold the engine to the app as it runs: the belief step agrees with `lib/mind.ts` on a grid of 1,000
+  cases; a browser log in the app's own format replays to the same beliefs and cares; `mayCall` and the 12-row policy
+  table are pinned on the cases that matter (not charged when asked, the cap, the stage, confirmation, first match wins).
+- **The one log** has its rules tested: deterministic replay, undo as a mark, undo without refund, charge only when acting
+  unasked, a failed call released, an open call expired by the next day, savings carried over, the "said" floor, a surprise widening the halo.
+
+Where the running app differs from this design today (found while writing the tests, not yet changed):
+
+1. **The app's log holds no money.** Stars, the day's use of each tool, confirmations and the pause switch live in a
+   separate piece of React state, not in the log; `lib/mind.ts replay` returns only beliefs and cares. So "everything is
+   recomputed from the log" is true of the mind and not yet of the budget. The engine's replay computes both.
+2. **The app reads the clock where it needs it** (ten places in the room page and the kernel). There is no "day" event, so
+   a day turning over is decided by whichever code looks at the time. The engine takes the day only from the log.
+3. **What is said does not move an axis.** The update rule has a "said" tier with a floor of 0.55, and the deck's curve is
+   drawn from it, but replay applies words only to cares. A test records this as today's behaviour.
+4. **Undo and stars.** The app has no intent/result pair, so there is nothing yet that a refund could be tested against;
+   the rule "undo never refunds" exists only in the engine.
+
 ## 8. Invariants (the tests of M0 and after)
 
 1. Replay is deterministic: the same log gives the same state, on any machine.
