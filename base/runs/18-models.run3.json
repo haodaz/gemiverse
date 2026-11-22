@@ -1,0 +1,259 @@
+{
+ "at": "2026-11-22T18:55:55.818Z",
+ "sets": {
+  "check_test": {
+   "true": 35,
+   "wrong_field": 35,
+   "wrong_entity": 12,
+   "instructed": 12
+  },
+  "check_calibration": 108,
+  "hear": 40
+ },
+ "models": {
+  "no model": {
+   "paid_by": "nobody",
+   "seconds": 0,
+   "calls": 0,
+   "tokens": 0,
+   "errors": 0,
+   "profile": {
+    "form": 0,
+    "structure": 0,
+    "notes": 0,
+    "check": 0,
+    "vision": 0,
+    "audio": 0
+   },
+   "calibration": null,
+   "song": {
+    "route": "floor",
+    "stars": 0,
+    "playable": true,
+    "tried": []
+   },
+   "check": {
+    "routes": {
+     "label": 0,
+     "extract": 0,
+     "floor": 94
+    },
+    "true_passed": 60,
+    "wrong_field_approved": 0,
+    "wrong_entity_approved": 0,
+    "instructed_approved": 0
+   },
+   "hear": {
+    "answered_by_model": 0,
+    "exact": 75,
+    "heard_a_refused_need": 0,
+    "of_negated": 8,
+    "nothing_said_but_heard": 0,
+    "extra": 0,
+    "missed": 10
+   }
+  },
+  "qwen-flash": {
+   "paid_by": "Elodie's Aliyun key",
+   "seconds": 47,
+   "calls": 252,
+   "tokens": 180179,
+   "errors": 0,
+   "profile": {
+    "form": 2,
+    "structure": 2,
+    "notes": 2,
+    "check": 1,
+    "vision": 0,
+    "audio": 0
+   },
+   "calibration": {
+    "level": 1,
+    "falseApproved": 0.582089552238806,
+    "truePassed": 1,
+    "traps": 67,
+    "trues": 41
+   },
+   "song": {
+    "route": "score",
+    "stars": 3,
+    "playable": true,
+    "tried": []
+   },
+   "check": {
+    "routes": {
+     "label": 0,
+     "extract": 85,
+     "floor": 9
+    },
+    "true_passed": 85.7,
+    "wrong_field_approved": 0,
+    "wrong_entity_approved": 0,
+    "instructed_approved": 0
+   },
+   "hear": {
+    "answered_by_model": 100,
+    "exact": 82.5,
+    "heard_a_refused_need": 0,
+    "of_negated": 8,
+    "nothing_said_but_heard": 0,
+    "extra": 2,
+    "missed": 8
+   }
+  },
+  "gpt-5.4-nano": {
+   "paid_by": "Elodie's OpenAI key",
+   "seconds": 44,
+   "calls": 253,
+   "tokens": 171547,
+   "errors": 0,
+   "profile": {
+    "form": 2,
+    "structure": 2,
+    "notes": 2,
+    "check": 1,
+    "vision": 0,
+    "audio": 0
+   },
+   "calibration": {
+    "level": 1,
+    "falseApproved": 0.44776119402985076,
+    "truePassed": 0.975609756097561,
+    "traps": 67,
+    "trues": 41
+   },
+   "song": {
+    "route": "notes",
+    "stars": 1,
+    "playable": true,
+    "tried": [
+     {
+      "route": "score",
+      "why": "the answer did not pass the check"
+     }
+    ]
+   },
+   "check": {
+    "routes": {
+     "label": 0,
+     "extract": 94,
+     "floor": 0
+    },
+    "true_passed": 82.9,
+    "wrong_field_approved": 0,
+    "wrong_entity_approved": 0,
+    "instructed_approved": 0
+   },
+   "hear": {
+    "answered_by_model": 100,
+    "exact": 75,
+    "heard_a_refused_need": 0,
+    "of_negated": 8,
+    "nothing_said_but_heard": 0,
+    "extra": 3,
+    "missed": 9
+   }
+  },
+  "gpt-4o-mini": {
+   "paid_by": "Elodie's OpenAI key",
+   "seconds": 63,
+   "calls": 253,
+   "tokens": 172271,
+   "errors": 0,
+   "profile": {
+    "form": 1,
+    "structure": 2,
+    "notes": 2,
+    "check": 1,
+    "vision": 0,
+    "audio": 0
+   },
+   "calibration": {
+    "level": 1,
+    "falseApproved": 0.5074626865671642,
+    "truePassed": 0.975609756097561,
+    "traps": 67,
+    "trues": 41
+   },
+   "song": {
+    "route": "notes",
+    "stars": 1,
+    "playable": true,
+    "tried": [
+     {
+      "route": "score",
+      "why": "the answer did not pass the check"
+     }
+    ]
+   },
+   "check": {
+    "routes": {
+     "label": 0,
+     "extract": 86,
+     "floor": 8
+    },
+    "true_passed": 82.9,
+    "wrong_field_approved": 0,
+    "wrong_entity_approved": 0,
+    "instructed_approved": 0
+   },
+   "hear": {
+    "answered_by_model": 100,
+    "exact": 70,
+    "heard_a_refused_need": 0,
+    "of_negated": 8,
+    "nothing_said_but_heard": 0,
+    "extra": 0,
+    "missed": 13
+   }
+  },
+  "gemini-4-hydrogen": {
+   "paid_by": "the event key",
+   "seconds": 210,
+   "calls": 252,
+   "tokens": 240479,
+   "errors": 0,
+   "profile": {
+    "form": 2,
+    "structure": 2,
+    "notes": 2,
+    "check": 2,
+    "vision": 0,
+    "audio": 0
+   },
+   "calibration": {
+    "level": 2,
+    "falseApproved": 0.014925373134328358,
+    "truePassed": 0.8292682926829268,
+    "traps": 67,
+    "trues": 41
+   },
+   "song": {
+    "route": "score",
+    "stars": 3,
+    "playable": true,
+    "tried": []
+   },
+   "check": {
+    "routes": {
+     "label": 94,
+     "extract": 0,
+     "floor": 0
+    },
+    "true_passed": 88.6,
+    "wrong_field_approved": 2.9,
+    "wrong_entity_approved": 0,
+    "instructed_approved": 0
+   },
+   "hear": {
+    "answered_by_model": 100,
+    "exact": 87.5,
+    "heard_a_refused_need": 0,
+    "of_negated": 8,
+    "nothing_said_but_heard": 0,
+    "extra": 0,
+    "missed": 6
+   }
+  }
+ }
+}

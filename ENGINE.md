@@ -300,8 +300,9 @@ engine/test/        invariants and golden tests; the mind-swap harness
 | M0 | One event log, the clock as an event, intent and result, undo without refund; golden tests on today's behaviour | **done** |
 | M1 | Two packs as data against one type; a policy grammar; a pack validator | **done** (the second pack is on paper) |
 | M2 | Capability probes, routes, the song as the first task with four routes; MCP connections by config with a pre-use check | **done**, on stand-in models and stand-in servers |
-| M3 | One `gate` that fails closed; the five jobs as tasks with routes; flags and a rubric instead of model-written numbers; a headless day runner on the core only | next |
-| M4 | The ordinary-model test (section 9) on a real open model, on the floor and on Gemini, the same days | |
+| M3 | `check` and `hear` as tasks with routes and strict floors; the right to judge earned by calibration; adapters for real models | **done**, measured on real models (above) |
+| M3b | `fill` and `choose` as tasks; flags and a rubric instead of model-written numbers; a headless day runner on the core only | next |
+| M4 | The same on an open model of 8 billion parameters or less, when one can be reached; the fuller sets of section 9 | first runs done on cheap hosted models |
 | M5 | `readout` computed in the core; the space protocol written and versioned against a 3D and a 2D renderer; a small synthesiser page that plays a score | |
 | M6 | The campus app runs on the core: its stars and its day come from the log | |
 
@@ -333,6 +334,58 @@ Where the running app differs from this design today (found while writing the te
    drawn from it, but replay applies words only to cares. A test records this as today's behaviour.
 4. **Undo and stars.** The app has no intent/result pair, so there is nothing yet that a refund could be tested against;
    the rule "undo never refunds" exists only in the engine.
+
+### First runs on real models (22 Nov) · the gate was changed twice by what they showed
+
+Runner: `engine/bench/run.ts`. Material with answers known by construction, from the 25 real event pages fetched on 21 Nov:
+claims that are true, real strings from the page claimed for the **wrong field**, another event's title (**wrong entity**),
+and pages that **instruct** the checker to approve. Hearing: 40 hand-written messages. Models: none, qwen-flash (Aliyun),
+gpt-5.4-nano and gpt-4o-mini (OpenAI), gemini-4-hydrogen. No open model of 8 billion parameters or less was reachable, so
+"ordinary" is stood in for by the cheapest hosted models. Records: `base/runs/18-models.run1.json`, `.run2.json`, `.run3.json`.
+
+**Run 1: every model judges the claim itself** (76 true, 76 wrong field, 25 wrong entity, 25 instructed)
+
+| Model | true passed | wrong field approved | wrong entity approved | obeyed the page |
+|---|---|---|---|---|
+| none (the floor) | 57.9% | 0% | 0% | 0% |
+| qwen-flash | 100% | **69.7%** | 0% | **100%** |
+| gpt-5.4-nano | 94.7% | **71.1%** | 0% | 0% |
+| gpt-4o-mini | 98.7% | **82.9%** | 0% | 4% |
+| gemini-4-hydrogen | 86.8% | 2.6% | 0% | 0% |
+
+A cheap model cannot be the checker. Asked "does the page say the venue is X", it says yes whenever X is on the page.
+
+**Run 2: a model must pass six trap questions to judge; otherwise it only reads.** "Reads" is the `extract` route: the model
+is never shown the claim; it is asked what the page says for that field, with the exact words, and code compares.
+qwen-flash and gpt-4o-mini failed the six questions, read instead, and dropped to 2.6% and 1.3% wrong-field approvals with
+88.2% and 86.8% of true claims passed. **gpt-5.4-nano got all six right, was allowed to judge, and still approved 68.4%.**
+A short quiz does not show what a model does on real material.
+
+**Run 3: the right to judge alone must be earned on the application's own traps.** The pages were split in two; one half
+calibrates (41 true, 67 traps; at most 3% of traps approved, at least 70% of true passed), the other half tests
+(35 true, 35 wrong field, 12 wrong entity, 12 instructed). No page is in both.
+
+| Model | calibration: traps approved | so it | true passed | wrong field approved | wrong entity | obeyed the page |
+|---|---|---|---|---|---|---|
+| none (the floor) | - | uses the rule | 60.0% | 0% | 0% | 0% |
+| qwen-flash | 58% | reads | 85.7% | 0% | 0% | 0% |
+| gpt-5.4-nano | 45% | reads | 82.9% | 0% | 0% | 0% |
+| gpt-4o-mini | 51% | reads | 82.9% | 0% | 0% | 0% |
+| gemini-4-hydrogen | 1% | judges | 88.6% | 2.9% (1 of 35) | 0% | 0% |
+
+What this establishes, and its limits: with the reading route, three cheap models gate real pages with no trap approved
+in this test and 83 to 86% of true claims passed, against 60% with no model. The test half is small (94 cases from 12 or 13
+pages of five universities, one field family), all from the same harvest as the labels; it is a first measurement, not a guarantee.
+
+Also measured in the same runs:
+
+- **The song**: the strong model wrote a full playable score; the cheap ones failed the score check or were not offered it and
+  wrote note names instead (in run 3 qwen-flash's full score passed). Every result was playable. The routing did on real
+  models what it did on the stand-ins.
+- **Hearing** (40 messages, exact set of needs): the floor 75%; qwen-flash 82.5 to 87.5%; gpt-5.4-nano 72.5 to 77.5%;
+  gpt-4o-mini 65 to 75%; hydrogen 87.5%. A need the person refused was heard once in three runs (gpt-5.4-nano, run 1), never
+  by the floor. The floor is level with or better than two of the cheap models here, so for hearing a cheap model buys little yet.
+- **Cost**: about 170 to 240 thousand tokens per model per run.
 
 ### M2 · done (22 Nov)
 

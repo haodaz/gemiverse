@@ -1,0 +1,204 @@
+{
+ "at": "2026-11-22T18:42:19.297Z",
+ "sets": {
+  "check": {
+   "true": 76,
+   "wrong_field": 76,
+   "wrong_entity": 25,
+   "instructed": 25
+  },
+  "hear": 40
+ },
+ "models": {
+  "no model": {
+   "paid_by": "nobody",
+   "seconds": 0,
+   "calls": 0,
+   "tokens": 0,
+   "errors": 0,
+   "profile": {
+    "form": 0,
+    "structure": 0,
+    "notes": 0,
+    "vision": 0,
+    "audio": 0
+   },
+   "song": {
+    "route": "floor",
+    "stars": 0,
+    "playable": true,
+    "tried": []
+   },
+   "check": {
+    "answered_by_model": 0,
+    "true_passed": 57.9,
+    "wrong_field_approved": 0,
+    "wrong_entity_approved": 0,
+    "instructed_approved": 0
+   },
+   "hear": {
+    "answered_by_model": 0,
+    "exact": 75,
+    "heard_a_refused_need": 0,
+    "of_negated": 8,
+    "nothing_said_but_heard": 0,
+    "extra": 0,
+    "missed": 10
+   }
+  },
+  "qwen-flash": {
+   "paid_by": "Elodie's Aliyun key",
+   "seconds": 41,
+   "calls": 247,
+   "tokens": 182474,
+   "errors": 0,
+   "profile": {
+    "form": 2,
+    "structure": 2,
+    "notes": 2,
+    "vision": 0,
+    "audio": 0
+   },
+   "song": {
+    "route": "notes",
+    "stars": 1,
+    "playable": true,
+    "tried": [
+     {
+      "route": "score",
+      "why": "the answer did not pass the check"
+     }
+    ]
+   },
+   "check": {
+    "answered_by_model": 100,
+    "true_passed": 100,
+    "wrong_field_approved": 69.7,
+    "wrong_entity_approved": 0,
+    "instructed_approved": 100
+   },
+   "hear": {
+    "answered_by_model": 100,
+    "exact": 87.5,
+    "heard_a_refused_need": 0,
+    "of_negated": 8,
+    "nothing_said_but_heard": 0,
+    "extra": 2,
+    "missed": 6
+   }
+  },
+  "gpt-5.4-nano": {
+   "paid_by": "Elodie's OpenAI key",
+   "seconds": 51,
+   "calls": 246,
+   "tokens": 173447,
+   "errors": 0,
+   "profile": {
+    "form": 2,
+    "structure": 1,
+    "notes": 2,
+    "vision": 0,
+    "audio": 0
+   },
+   "song": {
+    "route": "notes",
+    "stars": 1,
+    "playable": true,
+    "tried": []
+   },
+   "check": {
+    "answered_by_model": 100,
+    "true_passed": 94.7,
+    "wrong_field_approved": 71.1,
+    "wrong_entity_approved": 0,
+    "instructed_approved": 0
+   },
+   "hear": {
+    "answered_by_model": 100,
+    "exact": 72.5,
+    "heard_a_refused_need": 1,
+    "of_negated": 8,
+    "nothing_said_but_heard": 0,
+    "extra": 4,
+    "missed": 10
+   }
+  },
+  "gpt-4o-mini": {
+   "paid_by": "Elodie's OpenAI key",
+   "seconds": 47,
+   "calls": 247,
+   "tokens": 174106,
+   "errors": 0,
+   "profile": {
+    "form": 1,
+    "structure": 2,
+    "notes": 2,
+    "vision": 0,
+    "audio": 0
+   },
+   "song": {
+    "route": "notes",
+    "stars": 1,
+    "playable": true,
+    "tried": [
+     {
+      "route": "score",
+      "why": "the answer did not pass the check"
+     }
+    ]
+   },
+   "check": {
+    "answered_by_model": 100,
+    "true_passed": 98.7,
+    "wrong_field_approved": 82.9,
+    "wrong_entity_approved": 0,
+    "instructed_approved": 4
+   },
+   "hear": {
+    "answered_by_model": 100,
+    "exact": 65,
+    "heard_a_refused_need": 0,
+    "of_negated": 8,
+    "nothing_said_but_heard": 0,
+    "extra": 0,
+    "missed": 15
+   }
+  },
+  "gemini-4-hydrogen": {
+   "paid_by": "the event key",
+   "seconds": 193,
+   "calls": 246,
+   "tokens": 237962,
+   "errors": 0,
+   "profile": {
+    "form": 2,
+    "structure": 2,
+    "notes": 2,
+    "vision": 0,
+    "audio": 0
+   },
+   "song": {
+    "route": "score",
+    "stars": 3,
+    "playable": true,
+    "tried": []
+   },
+   "check": {
+    "answered_by_model": 100,
+    "true_passed": 86.8,
+    "wrong_field_approved": 2.6,
+    "wrong_entity_approved": 0,
+    "instructed_approved": 0
+   },
+   "hear": {
+    "answered_by_model": 100,
+    "exact": 87.5,
+    "heard_a_refused_need": 0,
+    "of_negated": 8,
+    "nothing_said_but_heard": 0,
+    "extra": 0,
+    "missed": 6
+   }
+  }
+ }
+}

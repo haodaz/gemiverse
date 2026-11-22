@@ -163,6 +163,42 @@
     "extra": 0,
     "missed": 15
    }
+  },
+  "gemini-4-hydrogen": {
+   "paid_by": "the event key",
+   "seconds": 193,
+   "calls": 246,
+   "tokens": 237962,
+   "errors": 0,
+   "profile": {
+    "form": 2,
+    "structure": 2,
+    "notes": 2,
+    "vision": 0,
+    "audio": 0
+   },
+   "song": {
+    "route": "score",
+    "stars": 3,
+    "playable": true,
+    "tried": []
+   },
+   "check": {
+    "answered_by_model": 100,
+    "true_passed": 86.8,
+    "wrong_field_approved": 2.6,
+    "wrong_entity_approved": 0,
+    "instructed_approved": 0
+   },
+   "hear": {
+    "answered_by_model": 100,
+    "exact": 87.5,
+    "heard_a_refused_need": 0,
+    "of_negated": 8,
+    "nothing_said_but_heard": 0,
+    "extra": 0,
+    "missed": 6
+   }
   }
  }
 }

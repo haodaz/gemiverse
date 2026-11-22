@@ -12,8 +12,8 @@ const ordinary: Ask = async (p) => p.includes('"colour"') ? 'Sure! Here you go: 
 const poor: Ask = async () => "I am not able to help with that.";
 
 test("probes judge a model by what it does", async () => {
-  assert.deepEqual(await probe(strong), { form: 2, structure: 2, notes: 2, vision: 0, audio: 0 });
-  assert.deepEqual(await probe(ordinary), { form: 1, structure: 1, notes: 1, vision: 0, audio: 0 });   // valid JSON inside chatter; two bars of four right; notes inside a sentence
+  assert.deepEqual(await probe(strong), { form: 2, structure: 2, notes: 2, check: 0, vision: 0, audio: 0 });
+  assert.deepEqual(await probe(ordinary), { form: 1, structure: 1, notes: 1, check: 0, vision: 0, audio: 0 });   // valid JSON inside chatter; two bars of four right; notes inside a sentence
   assert.deepEqual(await probe(poor), NOTHING);
   assert.equal((await probe(strong, { audio: 1 })).audio, 1);                                           // what a text probe cannot see is declared by the adapter
   assert.deepEqual(await probe(async () => { throw new Error("offline"); }), NOTHING);
@@ -40,7 +40,7 @@ test("the same song task, carried out by a strong model, an ordinary one, a poor
 });
 
 test("a route that fails hands over, and the record says why", async () => {
-  const task = songTask(SOUNDS, "x"), overrated = { form: 2, structure: 2, notes: 2, vision: 0, audio: 0 } as const;   // declared strong, behaves ordinary
+  const task = songTask(SOUNDS, "x"), overrated = { form: 2, structure: 2, notes: 2, check: 0, vision: 0, audio: 0 } as const;   // declared strong, behaves ordinary
   const r = await carryOut(task, ordinary, overrated, 10, "s"); assert.equal(r.by, "notes"); assert.deepEqual(r.tried, [{ route: "score", why: "the answer did not pass the check" }]);
   const off = await carryOut(task, async () => { throw new Error("timeout"); }, overrated, 10, "s"); assert.equal(off.by, "floor"); assert.equal(off.tried.length, 2); assert.equal(off.tried[0].why, "timeout");
 });

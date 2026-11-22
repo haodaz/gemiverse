@@ -2,11 +2,12 @@
 // A model is anything that turns a prompt into text: `(prompt) => Promise<string>`. Other abilities (reading pictures,
 // returning audio) are declared by its adapter, because a text probe cannot see them.
 export type Ask = (prompt: string) => Promise<string>;
-export type Skill = "form" | "structure" | "notes" | "vision" | "audio";
+export type Skill = "form" | "structure" | "notes" | "check" | "vision" | "audio";
 // 0 = cannot, 1 = can, 2 = does it well. "form": fills a small form as valid JSON. "structure": keeps a longer nested
-// structure consistent (counts, sums). "notes": writes a line of note names that parses. "vision", "audio": declared.
+// structure consistent (counts, sums). "notes": writes a line of note names that parses. "check": can be trusted to judge a
+// claim against a source on its own (probed with traps, in jobs.ts). "vision", "audio": declared.
 export type Profile = Record<Skill, 0 | 1 | 2> & { probedAt?: string };
-export const NOTHING: Profile = { form: 0, structure: 0, notes: 0, vision: 0, audio: 0 };
+export const NOTHING: Profile = { form: 0, structure: 0, notes: 0, check: 0, vision: 0, audio: 0 };
 
 const json = (t: string): any => { const a = t.indexOf("{"), b = t.lastIndexOf("}"); if (a < 0 || b <= a) return null; try { return JSON.parse(t.slice(a, b + 1)); } catch { return null; } };
 export const NOTE = /\b([A-G][#b]?)([2-6])\b/g;
