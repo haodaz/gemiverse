@@ -1,0 +1,104 @@
+{
+ "school": "ufl",
+ "name": "University of Florida",
+ "at": "2026-11-22T00:18:48.483Z",
+ "source": "https://en.wikipedia.org/wiki/University%20of%20Florida",
+ "character": "The 2,000-acre campus includes a 650-acre historic district and Lake Alice on its western portion.",
+ "map": "/art/map/ufl.jpg",
+ "landmarks": [
+  {
+   "name": "Century Tower",
+   "name_en": "Century Tower",
+   "kind": "tower",
+   "quote": "Century Tower, a 157-foot-tall (48 m) carillon tower in the center of the historic district.",
+   "look": "A tall 157-foot carillon tower.",
+   "check": 0.9785132221507137,
+   "confidence": 0.9785132221507137,
+   "passed": true,
+   "x": 0.76,
+   "y": 0.45
+  },
+  {
+   "name": "Steve Spurrier-Florida Field at Ben Hill Griffin Stadium",
+   "name_en": "Steve Spurrier-Florida Field at Ben Hill Griffin Stadium",
+   "kind": "stadium",
+   "quote": "Steve Spurrier-Florida Field at Ben Hill Griffin Stadium",
+   "look": "A large university athletic stadium.",
+   "check": 0.9759542567691012,
+   "confidence": 0.9759542567691012,
+   "passed": true,
+   "x": 0.6,
+   "y": 0.19
+  },
+  {
+   "name": "Lake Alice",
+   "name_en": "Lake Alice",
+   "kind": "lake",
+   "quote": "next to Lake Alice on the western portion of campus.",
+   "look": "A lake on the western portion of campus.",
+   "check": 0.9805957645269919,
+   "confidence": 0.9805957645269919,
+   "passed": true,
+   "x": 0.18,
+   "y": 0.78
+  },
+  {
+   "name": "Smathers Library",
+   "name_en": "Smathers Library",
+   "kind": "library",
+   "quote": "Other notable facilities include the Health Science Center, Steve Spurrier-Florida Field at Ben Hill Griffin Stadium, Smathers Library",
+   "look": "A large university library building.",
+   "check": 0.9669904722783745,
+   "confidence": 0.9669904722783745,
+   "passed": true,
+   "x": 0.54,
+   "y": 0.74
+  },
+  {
+   "name": "Samuel P. Harn Museum of Art",
+   "name_en": "Samuel P. Harn Museum of Art",
+   "kind": "museum",
+   "quote": "The Samuel P. Harn Museum of Art, established in 1990, is also at the University of Florida",
+   "look": "A large university art museum with a pavilion.",
+   "check": 0.9729967494658286,
+   "confidence": 0.9729967494658286,
+   "passed": true,
+   "x": 0.27,
+   "y": 0.17
+  },
+  {
+   "name": "Florida Museum of Natural History",
+   "name_en": "Florida Museum of Natural History",
+   "kind": "museum",
+   "quote": "The Florida Museum of Natural History, established in 1891, is one of the country's oldest natural history museums",
+   "look": "A natural history museum building.",
+   "check": 0.9122586392873451,
+   "confidence": 0.9122586392873451,
+   "passed": true,
+   "x": 0.17,
+   "y": 0.39
+  },
+  {
+   "name": "Library West",
+   "name_en": "Library West",
+   "kind": "library",
+   "quote": "In 2006, Library West went through a $30 million renovation that doubled capacity.",
+   "look": "A renovated university library building.",
+   "check": 0.9781544944707837,
+   "confidence": 0.9781544944707837,
+   "passed": true
+  },
+  {
+   "name": "Norman Hall",
+   "name_en": "Norman Hall",
+   "kind": "hall",
+   "quote": "and Norman Hall (formerly the P.K. Yonge Laboratory School), are also listed on the historic register.",
+   "look": "A historic university hall building.",
+   "check": 0.9709555625921512,
+   "confidence": 0.9709555625921512,
+   "passed": true
+  }
+ ],
+ "tokens": 9826,
+ "seconds": 51
+}

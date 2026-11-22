@@ -1,0 +1,271 @@
+{
+ "school": "pku",
+ "name": "北京大学",
+ "at": "2026-11-22T00:10:15.153Z",
+ "seconds": 21,
+ "tokens": 20613,
+ "entities": [
+  {
+   "id": "pku-8a83b1307b",
+   "type": "Event",
+   "school": "pku",
+   "name": "中国伊斯兰手抄本研究与伊斯兰手稿学",
+   "tier": 1,
+   "fields": {
+    "url": "https://resource.pku.edu.cn/index.php?r=lecturevideo%2Fview&id=35215",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2018-09-17T15:45",
+    "summary": "虎隆研究员主讲关于中国伊斯兰手抄本研究与伊斯兰手稿学的讲座。",
+    "event_kind": "lecture",
+    "venue_name": null,
+    "organisation_name": "外国语学院",
+    "speaker": "虎 隆 研究员",
+    "occurrences": [
+     {
+      "start": "2018-09-17T15:45",
+      "end": "2018-09-17T15:45"
+     }
+    ]
+   }
+  },
+  {
+   "id": "pku-818782ee7e",
+   "type": "Event",
+   "school": "pku",
+   "name": "上古汉语的声调问题",
+   "tier": 1,
+   "fields": {
+    "url": "https://resource.pku.edu.cn/index.php?r=lecturevideo%2Fview&id=35511",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2018-09-17T15:48",
+    "summary": "唐作藩先生主讲的上古汉语声调问题讲座视频。",
+    "event_kind": "lecture",
+    "venue_name": null,
+    "organisation_name": "中国语言文学系",
+    "speaker": "唐作藩先生",
+    "occurrences": [
+     {
+      "start": "2018-09-17T15:48",
+      "end": "2018-09-17T15:48"
+     }
+    ]
+   }
+  },
+  {
+   "id": "pku-0c2cbed89b",
+   "type": "Event",
+   "school": "pku",
+   "name": "The Garden of Earthly Delights: A Triptych",
+   "tier": 1,
+   "fields": {
+    "url": "https://resource.pku.edu.cn/index.php?r=lecturevideo%2Fview&id=34635",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2018-09-17T15:43",
+    "summary": "关于博斯画作《人间乐园》及文艺复兴时期欧洲历史的英语讲座。",
+    "event_kind": "lecture",
+    "venue_name": null,
+    "organisation_name": "学生社团",
+    "speaker": "Diego Loukota",
+    "occurrences": [
+     {
+      "start": "2018-09-17T15:43",
+      "end": "2018-09-17T15:43"
+     }
+    ]
+   }
+  },
+  {
+   "id": "pku-7217db70eb",
+   "type": "Event",
+   "school": "pku",
+   "name": "General Education in American Higher Education",
+   "tier": 1,
+   "fields": {
+    "url": "https://resource.pku.edu.cn/index.php?r=lecturevideo%2Fview&id=36443",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2018-09-17T15:51",
+    "summary": "Dr. Craig K. Pepin主讲的关于美国高等教育通识教育的讲座视频。",
+    "event_kind": "lecture",
+    "venue_name": null,
+    "organisation_name": "历史学系",
+    "speaker": "Dr. Craig K. Pepin",
+    "occurrences": [
+     {
+      "start": "2018-09-17T15:51",
+      "end": "2018-09-17T15:51"
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "pku-8a83b1307b",
+   "field": "title",
+   "quote": "中国伊斯兰手抄本研究与伊斯兰手稿学",
+   "url": "https://resource.pku.edu.cn/index.php?r=lecturevideo%2Fview&id=35215",
+   "check_confidence": 0.9707488609115241,
+   "passed": true
+  },
+  {
+   "entity_id": "pku-8a83b1307b",
+   "field": "date",
+   "quote": "开始时间： 2018-09-17 15:45:45 结束时间： 2018-09-17 15:45:45",
+   "url": "https://resource.pku.edu.cn/index.php?r=lecturevideo%2Fview&id=35215",
+   "check_confidence": 0.9583652597913633,
+   "passed": true
+  },
+  {
+   "entity_id": "pku-8a83b1307b",
+   "field": "start_time",
+   "quote": "15:45",
+   "url": "https://resource.pku.edu.cn/index.php?r=lecturevideo%2Fview&id=35215",
+   "check_confidence": 0.9703510356075478,
+   "passed": true
+  },
+  {
+   "entity_id": "pku-8a83b1307b",
+   "field": "organisation_name",
+   "quote": "外国语学院",
+   "url": "https://resource.pku.edu.cn/index.php?r=lecturevideo%2Fview&id=35215",
+   "check_confidence": 0.960931263923955,
+   "passed": true
+  },
+  {
+   "entity_id": "pku-8a83b1307b",
+   "field": "speaker",
+   "quote": "虎 隆 研究员",
+   "url": "https://resource.pku.edu.cn/index.php?r=lecturevideo%2Fview&id=35215",
+   "check_confidence": 0.9773727940083446,
+   "passed": true
+  },
+  {
+   "entity_id": "pku-818782ee7e",
+   "field": "title",
+   "quote": "上古汉语的声调问题",
+   "url": "https://resource.pku.edu.cn/index.php?r=lecturevideo%2Fview&id=35511",
+   "check_confidence": 0.9781307799189188,
+   "passed": true
+  },
+  {
+   "entity_id": "pku-818782ee7e",
+   "field": "date",
+   "quote": "开始时间： 2018-09-17 15:48:48 结束时间： 2018-09-17 15:48:48",
+   "url": "https://resource.pku.edu.cn/index.php?r=lecturevideo%2Fview&id=35511",
+   "check_confidence": 0.9484136924177254,
+   "passed": true
+  },
+  {
+   "entity_id": "pku-818782ee7e",
+   "field": "start_time",
+   "quote": "15:48",
+   "url": "https://resource.pku.edu.cn/index.php?r=lecturevideo%2Fview&id=35511",
+   "check_confidence": 0.9641978391509937,
+   "passed": true
+  },
+  {
+   "entity_id": "pku-818782ee7e",
+   "field": "organisation_name",
+   "quote": "中国语言文学系",
+   "url": "https://resource.pku.edu.cn/index.php?r=lecturevideo%2Fview&id=35511",
+   "check_confidence": 0.9618248637017212,
+   "passed": true
+  },
+  {
+   "entity_id": "pku-818782ee7e",
+   "field": "speaker",
+   "quote": "唐作藩先生",
+   "url": "https://resource.pku.edu.cn/index.php?r=lecturevideo%2Fview&id=35511",
+   "check_confidence": 0.9693137319004668,
+   "passed": true
+  },
+  {
+   "entity_id": "pku-0c2cbed89b",
+   "field": "title",
+   "quote": "The Garden of Earthly Delights: A Triptych",
+   "url": "https://resource.pku.edu.cn/index.php?r=lecturevideo%2Fview&id=34635",
+   "check_confidence": 0.9790772178041555,
+   "passed": true
+  },
+  {
+   "entity_id": "pku-0c2cbed89b",
+   "field": "date",
+   "quote": "开始时间： 2018-09-17 15:43:49 结束时间： 2018-09-17 15:43:49",
+   "url": "https://resource.pku.edu.cn/index.php?r=lecturevideo%2Fview&id=34635",
+   "check_confidence": 0.9691189017436216,
+   "passed": true
+  },
+  {
+   "entity_id": "pku-0c2cbed89b",
+   "field": "start_time",
+   "quote": "15:43",
+   "url": "https://resource.pku.edu.cn/index.php?r=lecturevideo%2Fview&id=34635",
+   "check_confidence": 0.9759649552329753,
+   "passed": true
+  },
+  {
+   "entity_id": "pku-0c2cbed89b",
+   "field": "organisation_name",
+   "quote": "学生社团",
+   "url": "https://resource.pku.edu.cn/index.php?r=lecturevideo%2Fview&id=34635",
+   "check_confidence": 0.9054704671710161,
+   "passed": true
+  },
+  {
+   "entity_id": "pku-0c2cbed89b",
+   "field": "speaker",
+   "quote": "Diego Loukota",
+   "url": "https://resource.pku.edu.cn/index.php?r=lecturevideo%2Fview&id=34635",
+   "check_confidence": 0.9727770574175503,
+   "passed": true
+  },
+  {
+   "entity_id": "pku-7217db70eb",
+   "field": "title",
+   "quote": "General Education in American Higher Education",
+   "url": "https://resource.pku.edu.cn/index.php?r=lecturevideo%2Fview&id=36443",
+   "check_confidence": 0.9791162042294472,
+   "passed": true
+  },
+  {
+   "entity_id": "pku-7217db70eb",
+   "field": "date",
+   "quote": "开始时间： 2018-09-17 15:51:54 结束时间： 2018-09-17 15:51:54",
+   "url": "https://resource.pku.edu.cn/index.php?r=lecturevideo%2Fview&id=36443",
+   "check_confidence": 0.9430339919957873,
+   "passed": true
+  },
+  {
+   "entity_id": "pku-7217db70eb",
+   "field": "start_time",
+   "quote": "15:51",
+   "url": "https://resource.pku.edu.cn/index.php?r=lecturevideo%2Fview&id=36443",
+   "check_confidence": 0.9621623627824103,
+   "passed": true
+  },
+  {
+   "entity_id": "pku-7217db70eb",
+   "field": "organisation_name",
+   "quote": "历史学系",
+   "url": "https://resource.pku.edu.cn/index.php?r=lecturevideo%2Fview&id=36443",
+   "check_confidence": 0.9464701171981897,
+   "passed": true
+  },
+  {
+   "entity_id": "pku-7217db70eb",
+   "field": "speaker",
+   "quote": "Dr. Craig K. Pepin",
+   "url": "https://resource.pku.edu.cn/index.php?r=lecturevideo%2Fview&id=36443",
+   "check_confidence": 0.9831018964579036,
+   "passed": true
+  }
+ ]
+}

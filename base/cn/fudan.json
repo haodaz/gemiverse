@@ -1,0 +1,287 @@
+{
+ "school": "fudan",
+ "name": "复旦大学",
+ "at": "2026-11-22T00:10:33.482Z",
+ "seconds": 39,
+ "tokens": 74636,
+ "entities": [
+  {
+   "id": "fudan-63e3763ec2",
+   "type": "Event",
+   "school": "fudan",
+   "name": "谱一曲草原生命长诗，话剧《青青的阿万仓》即将上演",
+   "tier": 1,
+   "fields": {
+    "url": "https://news.fudan.edu.cn/2026/1118/c40a151231/page.htm",
+    "needs": [
+     "rest_and_recover",
+     "contribute_beyond_self"
+    ],
+    "start": null,
+    "summary": "以校友王万青事迹为原型的话剧《青青的阿万仓》将在复旦大学上海医学院上演。",
+    "event_kind": "activity",
+    "venue_name": "复旦大学上海医学院",
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "fudan-7d018fe18f",
+   "type": "Event",
+   "school": "fudan",
+   "name": "超350家优质单位齐聚，欢迎积极参与复旦大学2027届毕业生秋季专场招聘会",
+   "tier": 1,
+   "fields": {
+    "url": "https://news.fudan.edu.cn/2026/1029/c45a150828/page.htm",
+    "needs": [
+     "decide_a_direction",
+     "get_mentorship_and_feedback"
+    ],
+    "start": "2026-10-30T13:00",
+    "summary": "复旦大学2027届毕业生秋季专场招聘会，超350家优质单位参会，现场设有简历门诊咨询台。",
+    "event_kind": "activity",
+    "venue_name": "复旦大学南区正大体育馆",
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-10-30T13:00",
+      "end": "2026-10-30T16:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "fudan-e0ee202cba",
+   "type": "Event",
+   "school": "fudan",
+   "name": "预约抢票！中国上海国际艺术节来复旦了",
+   "tier": 1,
+   "fields": {
+    "url": "https://news.fudan.edu.cn/2026/1020/c45a150730/page.htm",
+    "needs": [
+     "rest_and_recover",
+     "make_and_express"
+    ],
+    "start": "2026-10-23",
+    "summary": "第二十五届中国上海国际艺术节十场精品项目走进复旦四校区，含演出、集市及工作坊。",
+    "event_kind": "activity",
+    "venue_name": "复旦大学的四个校区",
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-10-23",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "fudan-72cae52738",
+   "type": "Event",
+   "school": "fudan",
+   "name": "封存千年的唐乐如何复原？这场“丝路之乐”给你答案",
+   "tier": 1,
+   "fields": {
+    "url": "https://news.fudan.edu.cn/2026/1014/c45a150643/page.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": null,
+    "summary": "复旦大学发布的关于“丝路之乐”唐乐复原活动的通知。",
+    "event_kind": "activity",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "fudan-dd19ffbbd9",
+   "type": "Event",
+   "school": "fudan",
+   "name": "亲爱的老师，您的节日专属福利已送达",
+   "tier": 1,
+   "fields": {
+    "url": "https://news.fudan.edu.cn/2026/0909/c45a150315/page.htm",
+    "needs": [
+     "rest_and_recover",
+     "build_a_skill"
+    ],
+    "start": null,
+    "summary": "复旦大学为庆祝教师节，推出健康医疗、餐饮、手作、兴趣班及AI培训等教职工福利活动。",
+    "event_kind": "activity",
+    "venue_name": null,
+    "organisation_name": "党委宣传部、党委教师工作部、教师教学发展中心、总务处、校工会等",
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "fudan-6a4bc4d7ee",
+   "type": "Event",
+   "school": "fudan",
+   "name": "明月映中秋，山海共相逢！纪录电影《明月照他乡》定档9月24日",
+   "tier": 1,
+   "fields": {
+    "url": "https://news.fudan.edu.cn/2026/0907/c45a150300/page.htm",
+    "needs": [
+     "explore_a_field",
+     "rest_and_recover"
+    ],
+    "start": "2026-09-24",
+    "summary": "纪录电影《明月照他乡》定档2026年9月24日全国公映，讲述外籍留学生在华追梦故事。",
+    "event_kind": "other",
+    "venue_name": "全国院线",
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-09-24",
+      "end": null
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "fudan-63e3763ec2",
+   "field": "title",
+   "quote": "谱一曲草原生命长诗，话剧《青青的阿万仓》即将上演",
+   "url": "https://news.fudan.edu.cn/2026/1118/c40a151231/page.htm",
+   "check_confidence": 0.9663555665940395,
+   "passed": true
+  },
+  {
+   "entity_id": "fudan-63e3763ec2",
+   "field": "date",
+   "quote": "11 月 24 日 19:00",
+   "url": "https://news.fudan.edu.cn/2026/1118/c40a151231/page.htm",
+   "check_confidence": 0.6404406800141764,
+   "passed": false
+  },
+  {
+   "entity_id": "fudan-63e3763ec2",
+   "field": "start_time",
+   "quote": "19:00",
+   "url": "https://news.fudan.edu.cn/2026/1118/c40a151231/page.htm",
+   "check_confidence": 0.9623926038483069,
+   "passed": true
+  },
+  {
+   "entity_id": "fudan-63e3763ec2",
+   "field": "venue_name",
+   "quote": "复旦大学上海医学院",
+   "url": "https://news.fudan.edu.cn/2026/1118/c40a151231/page.htm",
+   "check_confidence": 0.9692000515099602,
+   "passed": true
+  },
+  {
+   "entity_id": "fudan-7d018fe18f",
+   "field": "title",
+   "quote": "超350家优质单位齐聚，欢迎积极参与复旦大学2027届毕业生秋季专场招聘会",
+   "url": "https://news.fudan.edu.cn/2026/1029/c45a150828/page.htm",
+   "check_confidence": 0.97764355828984,
+   "passed": true
+  },
+  {
+   "entity_id": "fudan-7d018fe18f",
+   "field": "date",
+   "quote": "2026年10月30日（周五）13:00—16:30",
+   "url": "https://news.fudan.edu.cn/2026/1029/c45a150828/page.htm",
+   "check_confidence": 0.9790369386993626,
+   "passed": true
+  },
+  {
+   "entity_id": "fudan-7d018fe18f",
+   "field": "start_time",
+   "quote": "13:00",
+   "url": "https://news.fudan.edu.cn/2026/1029/c45a150828/page.htm",
+   "check_confidence": 0.9652512979052158,
+   "passed": true
+  },
+  {
+   "entity_id": "fudan-7d018fe18f",
+   "field": "venue_name",
+   "quote": "复旦大学南区正大体育馆",
+   "url": "https://news.fudan.edu.cn/2026/1029/c45a150828/page.htm",
+   "check_confidence": 0.9765850060558561,
+   "passed": true
+  },
+  {
+   "entity_id": "fudan-e0ee202cba",
+   "field": "title",
+   "quote": "预约抢票！中国上海国际艺术节来复旦了",
+   "url": "https://news.fudan.edu.cn/2026/1020/c45a150730/page.htm",
+   "check_confidence": 0.9791013733838668,
+   "passed": true
+  },
+  {
+   "entity_id": "fudan-e0ee202cba",
+   "field": "date",
+   "quote": "活动于 10月23日 起开幕",
+   "url": "https://news.fudan.edu.cn/2026/1020/c45a150730/page.htm",
+   "check_confidence": 0.9179209186642395,
+   "passed": true
+  },
+  {
+   "entity_id": "fudan-e0ee202cba",
+   "field": "venue_name",
+   "quote": "复旦大学的四个校区",
+   "url": "https://news.fudan.edu.cn/2026/1020/c45a150730/page.htm",
+   "check_confidence": 0.969915462071422,
+   "passed": true
+  },
+  {
+   "entity_id": "fudan-72cae52738",
+   "field": "title",
+   "quote": "封存千年的唐乐如何复原？这场“丝路之乐”给你答案",
+   "url": "https://news.fudan.edu.cn/2026/1014/c45a150643/page.htm",
+   "check_confidence": 0.9494681432595329,
+   "passed": true
+  },
+  {
+   "entity_id": "fudan-dd19ffbbd9",
+   "field": "title",
+   "quote": "亲爱的老师，您的节日专属福利已送达",
+   "url": "https://news.fudan.edu.cn/2026/0909/c45a150315/page.htm",
+   "check_confidence": 0.9658042153908312,
+   "passed": true
+  },
+  {
+   "entity_id": "fudan-dd19ffbbd9",
+   "field": "organisation_name",
+   "quote": "党委宣传部、党委教师工作部、教师教学发展中心、总务处、校工会等",
+   "url": "https://news.fudan.edu.cn/2026/0909/c45a150315/page.htm",
+   "check_confidence": 0.9600025515292826,
+   "passed": true
+  },
+  {
+   "entity_id": "fudan-6a4bc4d7ee",
+   "field": "title",
+   "quote": "明月映中秋，山海共相逢！纪录电影《明月照他乡》定档9月24日",
+   "url": "https://news.fudan.edu.cn/2026/0907/c45a150300/page.htm",
+   "check_confidence": 0.9662326303719471,
+   "passed": true
+  },
+  {
+   "entity_id": "fudan-6a4bc4d7ee",
+   "field": "date",
+   "quote": "2026年9月24日",
+   "url": "https://news.fudan.edu.cn/2026/0907/c45a150300/page.htm",
+   "check_confidence": 0.9661516818438891,
+   "passed": true
+  },
+  {
+   "entity_id": "fudan-6a4bc4d7ee",
+   "field": "venue_name",
+   "quote": "全国院线",
+   "url": "https://news.fudan.edu.cn/2026/0907/c45a150300/page.htm",
+   "check_confidence": 0.9699561499972738,
+   "passed": true
+  }
+ ]
+}

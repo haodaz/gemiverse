@@ -1,0 +1,104 @@
+{
+ "school": "cqu",
+ "name": "重庆大学",
+ "at": "2026-11-22T00:17:28.336Z",
+ "source": "https://zh.wikipedia.org/wiki/%E9%87%8D%E5%BA%86%E5%A4%A7%E5%AD%A6",
+ "character": "Located by the Jialing River, the main campus features an artificial lake alongside traditional Chinese-style Republican-era buildings, Soviet-style neoclassical halls, and a 27-story modern teaching building.",
+ "map": "/art/map/cqu.jpg",
+ "landmarks": [
+  {
+   "name": "民主湖",
+   "name_en": "Minzhu Lake",
+   "kind": "lake",
+   "quote": "民主湖——位于重庆大学A校区的人工湖",
+   "look": "An artificial campus lake with a memorial stone and lecture hall nearby.",
+   "check": 0.972170773916538,
+   "confidence": 0.972170773916538,
+   "passed": true,
+   "x": 0.56,
+   "y": 0.56
+  },
+  {
+   "name": "大校门",
+   "name_en": "Main Gate",
+   "kind": "gate",
+   "quote": "中央大学大礼堂、大校门、老图书馆楼入选“20世纪建筑遗产名录”",
+   "look": "A historic early-20th-century university gate.",
+   "check": 0.9453035156867128,
+   "confidence": 0.9453035156867128,
+   "passed": true,
+   "x": 0.21,
+   "y": 0.25
+  },
+  {
+   "name": "老图书馆楼",
+   "name_en": "Old Library Building",
+   "kind": "library",
+   "quote": "大校门、老图书馆楼入选“20世纪建筑遗产名录”和“优秀近代建筑名录”。",
+   "look": "A historic early-20th-century brick-and-tile library building.",
+   "check": 0.9113006229614464,
+   "confidence": 0.9113006229614464,
+   "passed": true,
+   "x": 0.85,
+   "y": 0.72
+  },
+  {
+   "name": "原理学院楼（第一教学楼）",
+   "name_en": "Former Science College Building (First Teaching Building)",
+   "kind": "hall",
+   "quote": "原理学院楼（第一教学楼）——建于1932年，由重庆大学创办人之一沈懋德设计，为砖木混合结构。",
+   "look": "A 1932 brick-and-wood building with traditional upturned eaves and red pillars.",
+   "check": 0.960563013937341,
+   "confidence": 0.960563013937341,
+   "passed": true,
+   "x": 0.53,
+   "y": 0.19
+  },
+  {
+   "name": "原工学院楼（第二教学楼）",
+   "name_en": "Former Engineering College Building (Second Teaching Building)",
+   "kind": "hall",
+   "quote": "原工学院楼（第二教学楼）——建于1935年，由留法学者刁泰干设计",
+   "look": "A 1935 Republican-era academic hall with a bombing memorial monument nearby.",
+   "check": 0.9800557085734266,
+   "confidence": 0.9800557085734266,
+   "passed": true,
+   "x": 0.36,
+   "y": 0.7
+  },
+  {
+   "name": "中央大学大礼堂",
+   "name_en": "Central University Auditorium",
+   "kind": "hall",
+   "quote": "中央大学大礼堂、大校门、老图书馆楼入选“20世纪建筑遗产名录”",
+   "look": "A historic 20th-century university auditorium.",
+   "check": 0.7099936365937995,
+   "confidence": 0.7099936365937995,
+   "passed": false
+  },
+  {
+   "name": "寅初亭",
+   "name_en": "Yinchu Pavilion",
+   "kind": "other",
+   "quote": "寅初亭——为纪念曾任重庆大学商学院院长的马寅初先生而建。",
+   "look": "A traditional Chinese memorial pavilion.",
+   "check": 0.9565292478848119,
+   "confidence": 0.9565292478848119,
+   "passed": true,
+   "x": 0.76,
+   "y": 0.23
+  },
+  {
+   "name": "主教学楼",
+   "name_en": "Main Teaching Building",
+   "kind": "hall",
+   "quote": "主教学楼——建于2005年，楼高27层，地下3层，是重大本部A区最现代化的建筑",
+   "look": "A modern 27-story high-rise academic building.",
+   "check": 0.9620594583170864,
+   "confidence": 0.9620594583170864,
+   "passed": true
+  }
+ ],
+ "tokens": 17346,
+ "seconds": 33
+}

@@ -1,0 +1,569 @@
+{
+ "school": "zju",
+ "name": "浙江大学",
+ "at": "2026-11-22T00:10:54.805Z",
+ "seconds": 35,
+ "tokens": 58421,
+ "entities": [
+  {
+   "id": "zju-a3adba89f4",
+   "type": "Event",
+   "school": "zju",
+   "name": "中国工程院工程科技学术研讨会暨中国人工智能2.0十年创新论坛举行",
+   "tier": 1,
+   "fields": {
+    "url": "http://www.news.zju.edu.cn/2026/1110/c24344a3225039/page.htm",
+    "needs": [
+     "explore_a_field",
+     "find_my_people"
+    ],
+    "start": null,
+    "summary": "11月7日，中国工程院工程科技学术研讨会暨中国人工智能2.0十年创新论坛在杭州举行。",
+    "event_kind": "lecture",
+    "venue_name": "杭州",
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "zju-447a028668",
+   "type": "Event",
+   "school": "zju",
+   "name": "面向前沿交叉！浙大成立新中心",
+   "tier": 1,
+   "fields": {
+    "url": "https://mp.weixin.qq.com/s/NBQBAs38gdmGnEOAWeaHFw",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": null,
+    "summary": "数字物理前沿交叉论坛暨浙大数字物理交叉研究中心成立仪式在紫金港校区举行。",
+    "event_kind": "other",
+    "venue_name": "紫金港校区",
+    "organisation_name": "浙江大学",
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "zju-e87ed2201a",
+   "type": "Event",
+   "school": "zju",
+   "name": "第六届中国国家制度研究论坛暨法治与改革论坛（2026）",
+   "tier": 1,
+   "fields": {
+    "url": "http://www.news.zju.edu.cn/2026/1110/c24344a3225031/page.htm",
+    "needs": [
+     "explore_a_field",
+     "find_my_people"
+    ],
+    "start": "2026-11-07",
+    "summary": "第六届中国国家制度研究论坛暨法治与改革论坛在浙大举行，研讨数字法治与现代化。",
+    "event_kind": "lecture",
+    "venue_name": "浙江大学紫金港校区求是大讲堂",
+    "organisation_name": "浙江大学",
+    "speaker": "张文显、徐显明、李林、王利明、季卫东、孙笑侠、姚建龙",
+    "occurrences": [
+     {
+      "start": "2026-11-07",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "zju-0609abccea",
+   "type": "Event",
+   "school": "zju",
+   "name": "2026文学伦理学批评理论与实践论坛",
+   "tier": 1,
+   "fields": {
+    "url": "http://www.news.zju.edu.cn/2026/1111/c777a3226332/page.htm",
+    "needs": [
+     "explore_a_field",
+     "find_my_people"
+    ],
+    "start": "2026-11-06",
+    "summary": "2026文学伦理学批评理论与实践论坛在浙江大学举办，来自全球50余所高校学者参与研讨。",
+    "event_kind": "other",
+    "venue_name": "浙江大学",
+    "organisation_name": "浙江大学世界文学跨学科研究中心联合《文学跨学科研究》（AHCI）《世界文学研究论坛》（ESCI）编辑部",
+    "speaker": "聂珍钊、杨革新、彼得·哈伊杜（Péter Hajdu）、苏晖、范方俊、王卓、桑德罗·荣格（Sandro Jung）、尚必武",
+    "occurrences": [
+     {
+      "start": "2026-11-06",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "zju-753194e2d5",
+   "type": "Event",
+   "school": "zju",
+   "name": "第十二届“科教发展季谈会”暨“新技术新产品新场景大规模应用示范”主题研讨会举办",
+   "tier": 1,
+   "fields": {
+    "url": "https://mp.weixin.qq.com/s/l_yyuMYCqYu1EQlFQHRqXg",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": null,
+    "summary": "国务院研究室与浙江大学在京联合举办第十二届科教发展季谈会暨主题研讨会。",
+    "event_kind": "other",
+    "venue_name": "京",
+    "organisation_name": "国务院研究室和浙江大学",
+    "speaker": "彭寿、郭仁忠、余青松、李冠宇、田奇、魏江、单国洪等",
+    "occurrences": []
+   }
+  },
+  {
+   "id": "zju-f4dfcba6cb",
+   "type": "Event",
+   "school": "zju",
+   "name": "心理与行为科学系系友苏亮亮专题报告暨“灵猫”四足机器人捐赠仪式顺利举行",
+   "tier": 1,
+   "fields": {
+    "url": "http://www.news.zju.edu.cn/2026/1109/c777a3225389/page.htm",
+    "needs": [
+     "explore_a_field",
+     "decide_a_direction"
+    ],
+    "start": "2026-11-06",
+    "summary": "心理与行为科学系系友苏亮亮向学校捐赠灵猫四足机器人，并作AI时代心理学与产业实践专题报告。",
+    "event_kind": "lecture",
+    "venue_name": "紫金港校区海纳苑",
+    "organisation_name": "心理与行为科学系",
+    "speaker": "苏亮亮",
+    "occurrences": [
+     {
+      "start": "2026-11-06",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "zju-26f5588b8d",
+   "type": "Event",
+   "school": "zju",
+   "name": "2026浙江大学高等教育论坛举办",
+   "tier": 1,
+   "fields": {
+    "url": "http://www.jyb.cn/rmtxwwyyq/jyxx1306/202611/t20261112_2111541344.html",
+    "needs": [
+     "explore_a_field",
+     "find_my_people"
+    ],
+    "start": null,
+    "summary": "浙江大学主办2026高等教育论坛，专家学者围绕教育强国与高校转型等议题展开研讨。",
+    "event_kind": "lecture",
+    "venue_name": "浙江杭州紫金港校区",
+    "organisation_name": "浙江大学",
+    "speaker": "韩蔚",
+    "occurrences": []
+   }
+  },
+  {
+   "id": "zju-0f8e09fc11",
+   "type": "Event",
+   "school": "zju",
+   "name": "校长马琰铭开讲专题报告会寄语新生",
+   "tier": 1,
+   "fields": {
+    "url": "http://www.news.zju.edu.cn/2026/0909/c774a3200328/page.htm",
+    "needs": [
+     "navigate_systems",
+     "decide_a_direction"
+    ],
+    "start": "2026-08-30",
+    "summary": "校长马琰铭院士在浙江大学2026级本科新生专题报告会上作专题报告。",
+    "event_kind": "lecture",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": "马琰铭",
+    "occurrences": [
+     {
+      "start": "2026-08-30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "zju-421d52b4e1",
+   "type": "Event",
+   "school": "zju",
+   "name": "校党委书记任少波开讲新生第一课",
+   "tier": 1,
+   "fields": {
+    "url": "http://www.news.zju.edu.cn/2026/0909/c774a3200334/page.htm",
+    "needs": [
+     "navigate_systems",
+     "decide_a_direction"
+    ],
+    "start": "2026-08-27",
+    "summary": "校党委书记任少波向2026级新生讲授“传承浙大精神 勇担使命责任”开学第一课。",
+    "event_kind": "lecture",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": "任少波",
+    "occurrences": [
+     {
+      "start": "2026-08-27",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "zju-daf50529ba",
+   "type": "Event",
+   "school": "zju",
+   "name": "浙江大学2026年运动会举行",
+   "tier": 1,
+   "fields": {
+    "url": "http://www.news.zju.edu.cn/2026/1103/c23267a3222119/page.htm",
+    "needs": [
+     "find_my_people",
+     "rest_and_recover"
+    ],
+    "start": null,
+    "summary": "浙江大学2026年运动会举行的新闻图片报道。",
+    "event_kind": "competition",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "zju-f2c29e31b3",
+   "type": "Event",
+   "school": "zju",
+   "name": "浙江大学首届“星火杯”校园赛车文化嘉年华",
+   "tier": 1,
+   "fields": {
+    "url": "http://www.news.zju.edu.cn/2026/1013/c23267a3214246/page.htm",
+    "needs": [
+     "find_my_people",
+     "rest_and_recover"
+    ],
+    "start": null,
+    "summary": "浙江大学首届“星火杯”校园赛车文化嘉年华的新闻图片报道。",
+    "event_kind": "activity",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "zju-a3adba89f4",
+   "field": "title",
+   "quote": "中国工程院工程科技学术研讨会暨中国人工智能2.0十年创新论坛举行",
+   "url": "http://www.news.zju.edu.cn/2026/1110/c24344a3225039/page.htm",
+   "check_confidence": 0.9664599635357949,
+   "passed": true
+  },
+  {
+   "entity_id": "zju-a3adba89f4",
+   "field": "date",
+   "quote": "11月7日",
+   "url": "http://www.news.zju.edu.cn/2026/1110/c24344a3225039/page.htm",
+   "check_confidence": 0.7338763608363067,
+   "passed": false
+  },
+  {
+   "entity_id": "zju-a3adba89f4",
+   "field": "venue_name",
+   "quote": "杭州",
+   "url": "http://www.news.zju.edu.cn/2026/1110/c24344a3225039/page.htm",
+   "check_confidence": 0.9799814749951025,
+   "passed": true
+  },
+  {
+   "entity_id": "zju-a3adba89f4",
+   "field": "speaker",
+   "quote": "潘云鹤、陈杰、高文、郑庆华、郑南宁、陈纯、陈军、郑志明",
+   "url": "http://www.news.zju.edu.cn/2026/1110/c24344a3225039/page.htm",
+   "check_confidence": 0.4777645693121579,
+   "passed": false
+  },
+  {
+   "entity_id": "zju-447a028668",
+   "field": "title",
+   "quote": "面向前沿交叉！浙大成立新中心",
+   "url": "https://mp.weixin.qq.com/s/NBQBAs38gdmGnEOAWeaHFw",
+   "check_confidence": 0.9519404461174156,
+   "passed": true
+  },
+  {
+   "entity_id": "zju-447a028668",
+   "field": "venue_name",
+   "quote": "紫金港校区",
+   "url": "https://mp.weixin.qq.com/s/NBQBAs38gdmGnEOAWeaHFw",
+   "check_confidence": 0.9718673394724922,
+   "passed": true
+  },
+  {
+   "entity_id": "zju-447a028668",
+   "field": "organisation_name",
+   "quote": "浙江大学",
+   "url": "https://mp.weixin.qq.com/s/NBQBAs38gdmGnEOAWeaHFw",
+   "check_confidence": 0.9779174646348151,
+   "passed": true
+  },
+  {
+   "entity_id": "zju-e87ed2201a",
+   "field": "title",
+   "quote": "第六届中国国家制度研究论坛暨法治与改革论坛（2026）",
+   "url": "http://www.news.zju.edu.cn/2026/1110/c24344a3225031/page.htm",
+   "check_confidence": 0.9577064646874909,
+   "passed": true
+  },
+  {
+   "entity_id": "zju-e87ed2201a",
+   "field": "date",
+   "quote": "11月7日",
+   "url": "http://www.news.zju.edu.cn/2026/1110/c24344a3225031/page.htm",
+   "check_confidence": 0.889010685002291,
+   "passed": true
+  },
+  {
+   "entity_id": "zju-e87ed2201a",
+   "field": "venue_name",
+   "quote": "浙江大学紫金港校区求是大讲堂",
+   "url": "http://www.news.zju.edu.cn/2026/1110/c24344a3225031/page.htm",
+   "check_confidence": 0.9769681508835396,
+   "passed": true
+  },
+  {
+   "entity_id": "zju-e87ed2201a",
+   "field": "organisation_name",
+   "quote": "浙江大学",
+   "url": "http://www.news.zju.edu.cn/2026/1110/c24344a3225031/page.htm",
+   "check_confidence": 0.9705493010936584,
+   "passed": true
+  },
+  {
+   "entity_id": "zju-e87ed2201a",
+   "field": "speaker",
+   "quote": "张文显、徐显明、李林、王利明、季卫东、孙笑侠、姚建龙",
+   "url": "http://www.news.zju.edu.cn/2026/1110/c24344a3225031/page.htm",
+   "check_confidence": 0.825168062001567,
+   "passed": true
+  },
+  {
+   "entity_id": "zju-0609abccea",
+   "field": "title",
+   "quote": "2026文学伦理学批评理论与实践论坛",
+   "url": "http://www.news.zju.edu.cn/2026/1111/c777a3226332/page.htm",
+   "check_confidence": 0.9648417266601773,
+   "passed": true
+  },
+  {
+   "entity_id": "zju-0609abccea",
+   "field": "date",
+   "quote": "11月6日",
+   "url": "http://www.news.zju.edu.cn/2026/1111/c777a3226332/page.htm",
+   "check_confidence": 0.8868443896228074,
+   "passed": true
+  },
+  {
+   "entity_id": "zju-0609abccea",
+   "field": "venue_name",
+   "quote": "浙江大学",
+   "url": "http://www.news.zju.edu.cn/2026/1111/c777a3226332/page.htm",
+   "check_confidence": 0.9568217893382112,
+   "passed": true
+  },
+  {
+   "entity_id": "zju-0609abccea",
+   "field": "organisation_name",
+   "quote": "浙江大学世界文学跨学科研究中心联合《文学跨学科研究》（AHCI）《世界文学研究论坛》（ESCI）编辑部",
+   "url": "http://www.news.zju.edu.cn/2026/1111/c777a3226332/page.htm",
+   "check_confidence": 0.9605330773000164,
+   "passed": true
+  },
+  {
+   "entity_id": "zju-0609abccea",
+   "field": "speaker",
+   "quote": "聂珍钊、杨革新、彼得·哈伊杜（Péter Hajdu）、苏晖、范方俊、王卓、桑德罗·荣格（Sandro Jung）、尚必武",
+   "url": "http://www.news.zju.edu.cn/2026/1111/c777a3226332/page.htm",
+   "check_confidence": 0.9485543747470705,
+   "passed": true
+  },
+  {
+   "entity_id": "zju-753194e2d5",
+   "field": "title",
+   "quote": "第十二届“科教发展季谈会”暨“新技术新产品新场景大规模应用示范”主题研讨会举办",
+   "url": "https://mp.weixin.qq.com/s/l_yyuMYCqYu1EQlFQHRqXg",
+   "check_confidence": 0.9673950092098104,
+   "passed": true
+  },
+  {
+   "entity_id": "zju-753194e2d5",
+   "field": "venue_name",
+   "quote": "在京",
+   "url": "https://mp.weixin.qq.com/s/l_yyuMYCqYu1EQlFQHRqXg",
+   "check_confidence": 0.970811394283518,
+   "passed": true
+  },
+  {
+   "entity_id": "zju-753194e2d5",
+   "field": "organisation_name",
+   "quote": "国务院研究室和浙江大学",
+   "url": "https://mp.weixin.qq.com/s/l_yyuMYCqYu1EQlFQHRqXg",
+   "check_confidence": 0.9822555249325683,
+   "passed": true
+  },
+  {
+   "entity_id": "zju-753194e2d5",
+   "field": "speaker",
+   "quote": "彭寿、郭仁忠、余青松、李冠宇、田奇、魏江、单国洪等",
+   "url": "https://mp.weixin.qq.com/s/l_yyuMYCqYu1EQlFQHRqXg",
+   "check_confidence": 0.9042791811510499,
+   "passed": true
+  },
+  {
+   "entity_id": "zju-f4dfcba6cb",
+   "field": "title",
+   "quote": "心理与行为科学系系友苏亮亮专题报告暨“灵猫”四足机器人捐赠仪式顺利举行",
+   "url": "http://www.news.zju.edu.cn/2026/1109/c777a3225389/page.htm",
+   "check_confidence": 0.9791925098651458,
+   "passed": true
+  },
+  {
+   "entity_id": "zju-f4dfcba6cb",
+   "field": "date",
+   "quote": "11月6日上午",
+   "url": "http://www.news.zju.edu.cn/2026/1109/c777a3225389/page.htm",
+   "check_confidence": 0.8434676504686195,
+   "passed": true
+  },
+  {
+   "entity_id": "zju-f4dfcba6cb",
+   "field": "venue_name",
+   "quote": "紫金港校区海纳苑",
+   "url": "http://www.news.zju.edu.cn/2026/1109/c777a3225389/page.htm",
+   "check_confidence": 0.9709630885001642,
+   "passed": true
+  },
+  {
+   "entity_id": "zju-f4dfcba6cb",
+   "field": "organisation_name",
+   "quote": "心理与行为科学系",
+   "url": "http://www.news.zju.edu.cn/2026/1109/c777a3225389/page.htm",
+   "check_confidence": 0.9046440398649821,
+   "passed": true
+  },
+  {
+   "entity_id": "zju-f4dfcba6cb",
+   "field": "speaker",
+   "quote": "苏亮亮",
+   "url": "http://www.news.zju.edu.cn/2026/1109/c777a3225389/page.htm",
+   "check_confidence": 0.9802032303159006,
+   "passed": true
+  },
+  {
+   "entity_id": "zju-26f5588b8d",
+   "field": "title",
+   "quote": "2026浙江大学高等教育论坛举办",
+   "url": "http://www.jyb.cn/rmtxwwyyq/jyxx1306/202611/t20261112_2111541344.html",
+   "check_confidence": 0.9555955272591798,
+   "passed": true
+  },
+  {
+   "entity_id": "zju-26f5588b8d",
+   "field": "venue_name",
+   "quote": "浙江杭州紫金港校区",
+   "url": "http://www.jyb.cn/rmtxwwyyq/jyxx1306/202611/t20261112_2111541344.html",
+   "check_confidence": 0.9648466402837441,
+   "passed": true
+  },
+  {
+   "entity_id": "zju-26f5588b8d",
+   "field": "organisation_name",
+   "quote": "浙江大学",
+   "url": "http://www.jyb.cn/rmtxwwyyq/jyxx1306/202611/t20261112_2111541344.html",
+   "check_confidence": 0.9619179259881372,
+   "passed": true
+  },
+  {
+   "entity_id": "zju-26f5588b8d",
+   "field": "speaker",
+   "quote": "韩蔚",
+   "url": "http://www.jyb.cn/rmtxwwyyq/jyxx1306/202611/t20261112_2111541344.html",
+   "check_confidence": 0.963238499495434,
+   "passed": true
+  },
+  {
+   "entity_id": "zju-0f8e09fc11",
+   "field": "title",
+   "quote": "校长马琰铭开讲专题报告会寄语新生",
+   "url": "http://www.news.zju.edu.cn/2026/0909/c774a3200328/page.htm",
+   "check_confidence": 0.9643766993646239,
+   "passed": true
+  },
+  {
+   "entity_id": "zju-0f8e09fc11",
+   "field": "date",
+   "quote": "8月30日下午",
+   "url": "http://www.news.zju.edu.cn/2026/0909/c774a3200328/page.htm",
+   "check_confidence": 0.9426683785200839,
+   "passed": true
+  },
+  {
+   "entity_id": "zju-0f8e09fc11",
+   "field": "speaker",
+   "quote": "马琰铭",
+   "url": "http://www.news.zju.edu.cn/2026/0909/c774a3200328/page.htm",
+   "check_confidence": 0.9727024776459305,
+   "passed": true
+  },
+  {
+   "entity_id": "zju-421d52b4e1",
+   "field": "title",
+   "quote": "校党委书记任少波开讲新生第一课",
+   "url": "http://www.news.zju.edu.cn/2026/0909/c774a3200334/page.htm",
+   "check_confidence": 0.9589923462742139,
+   "passed": true
+  },
+  {
+   "entity_id": "zju-421d52b4e1",
+   "field": "date",
+   "quote": "8月27日下午",
+   "url": "http://www.news.zju.edu.cn/2026/0909/c774a3200334/page.htm",
+   "check_confidence": 0.9109264926843222,
+   "passed": true
+  },
+  {
+   "entity_id": "zju-421d52b4e1",
+   "field": "speaker",
+   "quote": "任少波",
+   "url": "http://www.news.zju.edu.cn/2026/0909/c774a3200334/page.htm",
+   "check_confidence": 0.9749080164327999,
+   "passed": true
+  },
+  {
+   "entity_id": "zju-daf50529ba",
+   "field": "title",
+   "quote": "浙江大学2026年运动会举行",
+   "url": "http://www.news.zju.edu.cn/2026/1103/c23267a3222119/page.htm",
+   "check_confidence": 0.9637892645856458,
+   "passed": true
+  },
+  {
+   "entity_id": "zju-f2c29e31b3",
+   "field": "title",
+   "quote": "浙江大学首届“星火杯”校园赛车文化嘉年华",
+   "url": "http://www.news.zju.edu.cn/2026/1013/c23267a3214246/page.htm",
+   "check_confidence": 0.9627910404535361,
+   "passed": true
+  }
+ ]
+}

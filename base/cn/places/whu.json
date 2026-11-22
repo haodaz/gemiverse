@@ -1,0 +1,102 @@
+{
+ "school": "whu",
+ "name": "武汉大学",
+ "at": "2026-11-22T00:16:55.042Z",
+ "source": "https://zh.wikipedia.org/wiki/%E6%AD%A6%E6%B1%89%E5%A4%A7%E5%AD%A6",
+ "character": "The campus sits along Luojia Hill and the shores of East Lake and Fruit Lake.",
+ "map": "/art/map/whu.jpg",
+ "landmarks": [
+  {
+   "name": "珞珈山",
+   "name_en": "Luojia Hill",
+   "kind": "hill",
+   "quote": "学校坐拥珞珈山东湖南岸风景区一线",
+   "look": "A scenic hill rising beside the lakefront campus.",
+   "check": 0.9753184560581395,
+   "confidence": 0.9753184560581395,
+   "passed": true,
+   "x": 0.22,
+   "y": 0.2
+  },
+  {
+   "name": "东湖",
+   "name_en": "East Lake",
+   "kind": "lake",
+   "quote": "学校坐拥珞珈山东湖南岸风景区一线",
+   "look": "A broad lake bordering the campus shoreline.",
+   "check": 0.343264937654085,
+   "confidence": 0.6567350623459149,
+   "passed": false
+  },
+  {
+   "name": "校门牌坊",
+   "name_en": "Main Gate Archway",
+   "kind": "gate",
+   "quote": "现在的校门牌坊是第四代建筑，于2013年9月8日落成。",
+   "look": "A traditional Chinese ceremonial archway on the campus axis.",
+   "check": 0.9244785957134433,
+   "confidence": 0.9244785957134433,
+   "passed": true,
+   "x": 0.48,
+   "y": 0.79
+  },
+  {
+   "name": "老图书馆",
+   "name_en": "Old Library",
+   "kind": "library",
+   "quote": "由武汉大学标志性建筑物——老图书馆线条造型",
+   "look": "A landmark historic university library building.",
+   "check": 0.9418375481278447,
+   "confidence": 0.9418375481278447,
+   "passed": true,
+   "x": 0.49,
+   "y": 0.39
+  },
+  {
+   "name": "武汉大学校史馆",
+   "name_en": "Wuhan University History Museum",
+   "kind": "museum",
+   "quote": "在武汉大学校史馆（老图书馆）相应展厅内可听到作为背景音乐的两首校歌。",
+   "look": "Exhibition halls inside the historic Old Library building.",
+   "check": 0.882050610189843,
+   "confidence": 0.882050610189843,
+   "passed": true,
+   "x": 0.6,
+   "y": 0.49
+  },
+  {
+   "name": "万林艺术博物馆",
+   "name_en": "Wanlin Art Museum",
+   "kind": "museum",
+   "quote": "馆藏设施：中国高等教育文献保障系统华中地区中心、图书馆，标本馆，档案馆，中国典型培养物保藏中心，万林艺术博物馆。",
+   "look": "A plain university art museum building.",
+   "check": 0.9433083594999384,
+   "confidence": 0.9433083594999384,
+   "passed": true,
+   "x": 0.79,
+   "y": 0.73
+  },
+  {
+   "name": "水果湖",
+   "name_en": "Fruit Lake",
+   "kind": "lake",
+   "quote": "武汉大学位于武汉市区重要地段，珞珈山麓，东湖西南岸，水果湖畔。",
+   "look": "A lake bordering the edge of the campus.",
+   "check": 0.3150220163053556,
+   "confidence": 0.6849779836946444,
+   "passed": false
+  },
+  {
+   "name": "双湖桥",
+   "name_en": "Shuanghu Bridge",
+   "kind": "bridge",
+   "quote": "向南经过武大国际学术交流中心（弘毅大酒店）、双湖桥后，来到位于东湖南岸、珞珈山北麓的工学部",
+   "look": "A plain bridge connecting campus areas across the water.",
+   "check": 0.3892894451915811,
+   "confidence": 0.6107105548084188,
+   "passed": false
+  }
+ ],
+ "tokens": 22822,
+ "seconds": 64
+}

@@ -1,0 +1,892 @@
+{
+ "school": "nwpu",
+ "name": "西北工业大学",
+ "at": "2026-11-22T00:18:36.957Z",
+ "seconds": 33,
+ "tokens": 73592,
+ "entities": [
+  {
+   "id": "nwpu-066729baa0",
+   "type": "Event",
+   "school": "nwpu",
+   "name": "【大思政课】王清理研究员“总师思政课”",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.nwpu.edu.cn/info/1039/128768.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-20T14:00",
+    "summary": "王清理研究员主讲“总师思政课”，主题为“我眼里的AI应用”。",
+    "event_kind": "lecture",
+    "venue_name": "长安校区教西D-301",
+    "organisation_name": "党委宣传部、航天学院",
+    "speaker": "王清理",
+    "occurrences": [
+     {
+      "start": "2026-11-20T14:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "nwpu-a0d5a4e34b",
+   "type": "Event",
+   "school": "nwpu",
+   "name": "【学术报告】翱翔灵犀学术殿堂——刘冬生教授报告会",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.nwpu.edu.cn/info/1039/128668.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-20T14:00",
+    "summary": "西北工业大学举办刘冬生教授学术报告会，主题为生命智能中的高分子效应。",
+    "event_kind": "lecture",
+    "venue_name": "化学与化工学院院楼258会议室",
+    "organisation_name": "党委学生工作部",
+    "speaker": "刘冬生",
+    "occurrences": [
+     {
+      "start": "2026-11-20T14:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "nwpu-0e6cc1205c",
+   "type": "Event",
+   "school": "nwpu",
+   "name": "【大思政课】翱翔名家讲堂——“长空砺剑 逐梦苍穹”系列报告会",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.nwpu.edu.cn/info/1039/128678.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-19T14:00",
+    "summary": "西北工业大学举办“长空砺剑 逐梦苍穹”系列报告会，由张景亭、刘济美主讲。",
+    "event_kind": "lecture",
+    "venue_name": "长安校区图书馆一楼报告厅、长安校区图书馆九楼云上书阁",
+    "organisation_name": "党委学生工作部、出版社、图书馆",
+    "speaker": "张景亭、刘济美",
+    "occurrences": [
+     {
+      "start": "2026-11-19T14:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "nwpu-dd8b84a940",
+   "type": "Event",
+   "school": "nwpu",
+   "name": "【大思政课】史小锋研究员“总师思政课”暨中国船舶集团总师进校园活动",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.nwpu.edu.cn/info/1039/128568.htm",
+    "needs": [
+     "explore_a_field",
+     "decide_a_direction"
+    ],
+    "start": "2026-11-13T14:00",
+    "summary": "史小锋研究员主讲总师思政课暨中国船舶集团总师进校园报告会。",
+    "event_kind": "lecture",
+    "venue_name": "长安校区教西D-106",
+    "organisation_name": "党委宣传部、航天学院",
+    "speaker": "史小锋",
+    "occurrences": [
+     {
+      "start": "2026-11-13T14:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "nwpu-b01bcb256f",
+   "type": "Event",
+   "school": "nwpu",
+   "name": "【学术报告】翱翔灵犀学术殿堂——唐小虎教授报告会",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.nwpu.edu.cn/info/1039/128418.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-06T08:30",
+    "summary": "西南交通大学唐小虎教授将作题为《浅谈数学在信息中的应用》的学术报告。",
+    "event_kind": "lecture",
+    "venue_name": "海天苑大楼E108",
+    "organisation_name": "党委学生工作部",
+    "speaker": "唐小虎",
+    "occurrences": [
+     {
+      "start": "2026-11-06T08:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "nwpu-aa9d777376",
+   "type": "Event",
+   "school": "nwpu",
+   "name": "【学术报告】翱翔名家讲堂暨总师思政课——龙乐豪总师报告会",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.nwpu.edu.cn/info/1039/128498.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-05T15:30",
+    "summary": "西北工业大学举办龙乐豪总师报告会，主题为中国火箭与航天。",
+    "event_kind": "lecture",
+    "venue_name": "长安校区教西D-103",
+    "organisation_name": "党委学生工作部",
+    "speaker": "龙乐豪",
+    "occurrences": [
+     {
+      "start": "2026-11-05T15:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "nwpu-20a97ca318",
+   "type": "Event",
+   "school": "nwpu",
+   "name": "【学术报告】翱翔灵犀学术殿堂——姜晓萍教授报告会",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.nwpu.edu.cn/info/1039/128278.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-02T10:30",
+    "summary": "姜晓萍教授将围绕“迈进公共管理学科共同体”在长安校区作学术报告。",
+    "event_kind": "lecture",
+    "venue_name": "长安校区公共政策与管理学院楼104报告厅",
+    "organisation_name": "党委学生工作部",
+    "speaker": "姜晓萍",
+    "occurrences": [
+     {
+      "start": "2026-11-02T10:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "nwpu-a827cda007",
+   "type": "Event",
+   "school": "nwpu",
+   "name": "【学术报告】翱翔榜样力量——折生阳报告会",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.nwpu.edu.cn/info/1039/128288.htm",
+    "needs": [
+     "explore_a_field",
+     "decide_a_direction"
+    ],
+    "start": "2026-10-29T15:00",
+    "summary": "折生阳主讲“科技创新与使命担当”报告会，于10月29日在友谊校区举行。",
+    "event_kind": "lecture",
+    "venue_name": "友谊校区国五会议室",
+    "organisation_name": "党委学生工作部",
+    "speaker": "折生阳",
+    "occurrences": [
+     {
+      "start": "2026-10-29T15:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "nwpu-c70909dfab",
+   "type": "Event",
+   "school": "nwpu",
+   "name": "【学术报告】翱翔灵犀学术殿堂——宗耀研究员报告会",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.nwpu.edu.cn/info/1039/128178.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-10-29T14:30",
+    "summary": "宗耀研究员主讲高功率微波技术发展现状与展望学术报告。",
+    "event_kind": "lecture",
+    "venue_name": "长安校区教学东楼A座410报告厅",
+    "organisation_name": "党委学生工作部",
+    "speaker": "宗耀",
+    "occurrences": [
+     {
+      "start": "2026-10-29T14:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "nwpu-a1a00fe122",
+   "type": "Event",
+   "school": "nwpu",
+   "name": "【学术报告】翱翔名家讲堂——亚运会冠军杨柳静报告会",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.nwpu.edu.cn/info/1039/127908.htm",
+    "needs": [
+     "explore_a_field",
+     "decide_a_direction"
+    ],
+    "start": "2026-10-24T10:30",
+    "summary": "亚运会冠军杨柳静作题为“步履不停 筑梦向前”的报告。",
+    "event_kind": "lecture",
+    "venue_name": "长安校区教学东楼A座2楼报告厅(外国语学院报告厅)",
+    "organisation_name": "体育部 党委学生工作部",
+    "speaker": "杨柳静",
+    "occurrences": [
+     {
+      "start": "2026-10-24T10:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "nwpu-1145446580",
+   "type": "Event",
+   "school": "nwpu",
+   "name": "【学术报告】​翱翔名家讲堂——毛鑫研究员报告会",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.nwpu.edu.cn/info/1039/127918.htm",
+    "needs": [
+     "explore_a_field",
+     "decide_a_direction"
+    ],
+    "start": "2026-10-18T09:30",
+    "summary": "党委学生工作部主办，毛鑫研究员主讲“从家国使命到青春选择”报告会。",
+    "event_kind": "lecture",
+    "venue_name": "长安校区马克思主义学院报告厅",
+    "organisation_name": "党委学生工作部",
+    "speaker": "毛鑫",
+    "occurrences": [
+     {
+      "start": "2026-10-18T09:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "nwpu-06a75cf2ae",
+   "type": "Event",
+   "school": "nwpu",
+   "name": "【学术报告】翱翔榜样力量——李学思报告会",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.nwpu.edu.cn/info/1039/127928.htm",
+    "needs": [
+     "explore_a_field",
+     "decide_a_direction"
+    ],
+    "start": "2026-10-17T11:00",
+    "summary": "西北工业大学举办李学思报告会，主题为传承航天精神，共筑强国梦想。",
+    "event_kind": "lecture",
+    "venue_name": "长安校区启翔楼401会议室",
+    "organisation_name": "党委学生工作部",
+    "speaker": "李学思",
+    "occurrences": [
+     {
+      "start": "2026-10-17T11:00",
+      "end": null
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "nwpu-066729baa0",
+   "field": "title",
+   "quote": "【大思政课】王清理研究员“总师思政课”",
+   "url": "https://www.nwpu.edu.cn/info/1039/128768.htm",
+   "check_confidence": 0.9691740395336594,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-066729baa0",
+   "field": "date",
+   "quote": "2026年11月20日（星期五）14:00",
+   "url": "https://www.nwpu.edu.cn/info/1039/128768.htm",
+   "check_confidence": 0.9719875727794537,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-066729baa0",
+   "field": "start_time",
+   "quote": "14:00",
+   "url": "https://www.nwpu.edu.cn/info/1039/128768.htm",
+   "check_confidence": 0.982165447487647,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-066729baa0",
+   "field": "venue_name",
+   "quote": "长安校区教西D-301",
+   "url": "https://www.nwpu.edu.cn/info/1039/128768.htm",
+   "check_confidence": 0.9649795583033004,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-066729baa0",
+   "field": "organisation_name",
+   "quote": "党委宣传部、航天学院",
+   "url": "https://www.nwpu.edu.cn/info/1039/128768.htm",
+   "check_confidence": 0.9768240067635655,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-066729baa0",
+   "field": "speaker",
+   "quote": "王清理",
+   "url": "https://www.nwpu.edu.cn/info/1039/128768.htm",
+   "check_confidence": 0.9835725637459197,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-a0d5a4e34b",
+   "field": "title",
+   "quote": "【学术报告】翱翔灵犀学术殿堂——刘冬生教授报告会",
+   "url": "https://www.nwpu.edu.cn/info/1039/128668.htm",
+   "check_confidence": 0.9572837944652594,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-a0d5a4e34b",
+   "field": "date",
+   "quote": "2026年11月20日（星期五）14：00",
+   "url": "https://www.nwpu.edu.cn/info/1039/128668.htm",
+   "check_confidence": 0.9719586589869026,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-a0d5a4e34b",
+   "field": "start_time",
+   "quote": "14:00",
+   "url": "https://www.nwpu.edu.cn/info/1039/128668.htm",
+   "check_confidence": 0.9635492359492488,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-a0d5a4e34b",
+   "field": "venue_name",
+   "quote": "化学与化工学院院楼258会议室",
+   "url": "https://www.nwpu.edu.cn/info/1039/128668.htm",
+   "check_confidence": 0.959080258099448,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-a0d5a4e34b",
+   "field": "organisation_name",
+   "quote": "党委学生工作部",
+   "url": "https://www.nwpu.edu.cn/info/1039/128668.htm",
+   "check_confidence": 0.9618074578597665,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-a0d5a4e34b",
+   "field": "speaker",
+   "quote": "刘冬生",
+   "url": "https://www.nwpu.edu.cn/info/1039/128668.htm",
+   "check_confidence": 0.9762518652652165,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-0e6cc1205c",
+   "field": "title",
+   "quote": "【大思政课】翱翔名家讲堂——“长空砺剑 逐梦苍穹”系列报告会",
+   "url": "https://www.nwpu.edu.cn/info/1039/128678.htm",
+   "check_confidence": 0.9685193288099047,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-0e6cc1205c",
+   "field": "date",
+   "quote": "2026年11月19日（星期四）14:00",
+   "url": "https://www.nwpu.edu.cn/info/1039/128678.htm",
+   "check_confidence": 0.9592942257330812,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-0e6cc1205c",
+   "field": "start_time",
+   "quote": "14:00",
+   "url": "https://www.nwpu.edu.cn/info/1039/128678.htm",
+   "check_confidence": 0.9608102846343095,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-0e6cc1205c",
+   "field": "venue_name",
+   "quote": "长安校区图书馆一楼报告厅；长安校区图书馆九楼云上书阁",
+   "url": "https://www.nwpu.edu.cn/info/1039/128678.htm",
+   "check_confidence": 0.9597685014969303,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-0e6cc1205c",
+   "field": "organisation_name",
+   "quote": "党委学生工作部、出版社、图书馆",
+   "url": "https://www.nwpu.edu.cn/info/1039/128678.htm",
+   "check_confidence": 0.9772575279007365,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-0e6cc1205c",
+   "field": "speaker",
+   "quote": "张景亭、刘济美",
+   "url": "https://www.nwpu.edu.cn/info/1039/128678.htm",
+   "check_confidence": 0.9487039268306818,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-dd8b84a940",
+   "field": "title",
+   "quote": "【大思政课】史小锋研究员“总师思政课”暨中国船舶集团总师进校园活动",
+   "url": "https://www.nwpu.edu.cn/info/1039/128568.htm",
+   "check_confidence": 0.9735349052749228,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-dd8b84a940",
+   "field": "date",
+   "quote": "2026年11月13日（星期五）14:00",
+   "url": "https://www.nwpu.edu.cn/info/1039/128568.htm",
+   "check_confidence": 0.9695888509504818,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-dd8b84a940",
+   "field": "start_time",
+   "quote": "14:00",
+   "url": "https://www.nwpu.edu.cn/info/1039/128568.htm",
+   "check_confidence": 0.9692282820933616,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-dd8b84a940",
+   "field": "venue_name",
+   "quote": "长安校区教西D-106",
+   "url": "https://www.nwpu.edu.cn/info/1039/128568.htm",
+   "check_confidence": 0.964447677773702,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-dd8b84a940",
+   "field": "organisation_name",
+   "quote": "党委宣传部、航天学院",
+   "url": "https://www.nwpu.edu.cn/info/1039/128568.htm",
+   "check_confidence": 0.9602274712469335,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-dd8b84a940",
+   "field": "speaker",
+   "quote": "史小锋",
+   "url": "https://www.nwpu.edu.cn/info/1039/128568.htm",
+   "check_confidence": 0.9726809171488975,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-b01bcb256f",
+   "field": "title",
+   "quote": "【学术报告】翱翔灵犀学术殿堂——唐小虎教授报告会",
+   "url": "https://www.nwpu.edu.cn/info/1039/128418.htm",
+   "check_confidence": 0.9730374226448977,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-b01bcb256f",
+   "field": "date",
+   "quote": "2026年11月6日（星期五）8:30",
+   "url": "https://www.nwpu.edu.cn/info/1039/128418.htm",
+   "check_confidence": 0.9648724507522355,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-b01bcb256f",
+   "field": "start_time",
+   "quote": "08:30",
+   "url": "https://www.nwpu.edu.cn/info/1039/128418.htm",
+   "check_confidence": 0.986110665388641,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-b01bcb256f",
+   "field": "venue_name",
+   "quote": "海天苑大楼E108",
+   "url": "https://www.nwpu.edu.cn/info/1039/128418.htm",
+   "check_confidence": 0.958832184947188,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-b01bcb256f",
+   "field": "organisation_name",
+   "quote": "党委学生工作部",
+   "url": "https://www.nwpu.edu.cn/info/1039/128418.htm",
+   "check_confidence": 0.9831405425006997,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-b01bcb256f",
+   "field": "speaker",
+   "quote": "唐小虎",
+   "url": "https://www.nwpu.edu.cn/info/1039/128418.htm",
+   "check_confidence": 0.9800849627963578,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-aa9d777376",
+   "field": "title",
+   "quote": "【学术报告】翱翔名家讲堂暨总师思政课——龙乐豪总师报告会",
+   "url": "https://www.nwpu.edu.cn/info/1039/128498.htm",
+   "check_confidence": 0.9790969953734291,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-aa9d777376",
+   "field": "date",
+   "quote": "2026年11月5日（星期四）15:30",
+   "url": "https://www.nwpu.edu.cn/info/1039/128498.htm",
+   "check_confidence": 0.9697374192302701,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-aa9d777376",
+   "field": "start_time",
+   "quote": "15:30",
+   "url": "https://www.nwpu.edu.cn/info/1039/128498.htm",
+   "check_confidence": 0.9693090372421168,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-aa9d777376",
+   "field": "venue_name",
+   "quote": "长安校区教西D-103",
+   "url": "https://www.nwpu.edu.cn/info/1039/128498.htm",
+   "check_confidence": 0.9839258651868205,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-aa9d777376",
+   "field": "organisation_name",
+   "quote": "党委学生工作部",
+   "url": "https://www.nwpu.edu.cn/info/1039/128498.htm",
+   "check_confidence": 0.9790050291056687,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-aa9d777376",
+   "field": "speaker",
+   "quote": "龙乐豪",
+   "url": "https://www.nwpu.edu.cn/info/1039/128498.htm",
+   "check_confidence": 0.9725797822126406,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-20a97ca318",
+   "field": "title",
+   "quote": "【学术报告】翱翔灵犀学术殿堂——姜晓萍教授报告会",
+   "url": "https://www.nwpu.edu.cn/info/1039/128278.htm",
+   "check_confidence": 0.9779621578289689,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-20a97ca318",
+   "field": "date",
+   "quote": "2026年11月2日（星期一）10:30",
+   "url": "https://www.nwpu.edu.cn/info/1039/128278.htm",
+   "check_confidence": 0.9813887779109389,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-20a97ca318",
+   "field": "start_time",
+   "quote": "10:30",
+   "url": "https://www.nwpu.edu.cn/info/1039/128278.htm",
+   "check_confidence": 0.9894693652086468,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-20a97ca318",
+   "field": "venue_name",
+   "quote": "长安校区公共政策与管理学院楼104报告厅",
+   "url": "https://www.nwpu.edu.cn/info/1039/128278.htm",
+   "check_confidence": 0.9686275751854104,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-20a97ca318",
+   "field": "organisation_name",
+   "quote": "党委学生工作部",
+   "url": "https://www.nwpu.edu.cn/info/1039/128278.htm",
+   "check_confidence": 0.9862859146708479,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-20a97ca318",
+   "field": "speaker",
+   "quote": "姜晓萍",
+   "url": "https://www.nwpu.edu.cn/info/1039/128278.htm",
+   "check_confidence": 0.9646470024846167,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-a827cda007",
+   "field": "title",
+   "quote": "【学术报告】翱翔榜样力量——折生阳报告会",
+   "url": "https://www.nwpu.edu.cn/info/1039/128288.htm",
+   "check_confidence": 0.9665967047545883,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-a827cda007",
+   "field": "date",
+   "quote": "2026年10月29日（星期四）15:00",
+   "url": "https://www.nwpu.edu.cn/info/1039/128288.htm",
+   "check_confidence": 0.9483760599794374,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-a827cda007",
+   "field": "start_time",
+   "quote": "15:00",
+   "url": "https://www.nwpu.edu.cn/info/1039/128288.htm",
+   "check_confidence": 0.9709355613122458,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-a827cda007",
+   "field": "venue_name",
+   "quote": "友谊校区国五会议室",
+   "url": "https://www.nwpu.edu.cn/info/1039/128288.htm",
+   "check_confidence": 0.9668486242228477,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-a827cda007",
+   "field": "organisation_name",
+   "quote": "党委学生工作部",
+   "url": "https://www.nwpu.edu.cn/info/1039/128288.htm",
+   "check_confidence": 0.9761127587967916,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-a827cda007",
+   "field": "speaker",
+   "quote": "折生阳",
+   "url": "https://www.nwpu.edu.cn/info/1039/128288.htm",
+   "check_confidence": 0.9706599379955779,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-c70909dfab",
+   "field": "title",
+   "quote": "【学术报告】翱翔灵犀学术殿堂——宗耀研究员报告会",
+   "url": "https://www.nwpu.edu.cn/info/1039/128178.htm",
+   "check_confidence": 0.9523922067676288,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-c70909dfab",
+   "field": "date",
+   "quote": "2026年10月29日（星期四）14:30",
+   "url": "https://www.nwpu.edu.cn/info/1039/128178.htm",
+   "check_confidence": 0.9713343794653848,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-c70909dfab",
+   "field": "start_time",
+   "quote": "14:30",
+   "url": "https://www.nwpu.edu.cn/info/1039/128178.htm",
+   "check_confidence": 0.9781590550235318,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-c70909dfab",
+   "field": "venue_name",
+   "quote": "长安校区教学东楼A座410报告厅",
+   "url": "https://www.nwpu.edu.cn/info/1039/128178.htm",
+   "check_confidence": 0.9653730335828551,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-c70909dfab",
+   "field": "organisation_name",
+   "quote": "党委学生工作部",
+   "url": "https://www.nwpu.edu.cn/info/1039/128178.htm",
+   "check_confidence": 0.9809706640690469,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-c70909dfab",
+   "field": "speaker",
+   "quote": "宗耀",
+   "url": "https://www.nwpu.edu.cn/info/1039/128178.htm",
+   "check_confidence": 0.9701790170167561,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-a1a00fe122",
+   "field": "title",
+   "quote": "【学术报告】翱翔名家讲堂——亚运会冠军杨柳静报告会",
+   "url": "https://www.nwpu.edu.cn/info/1039/127908.htm",
+   "check_confidence": 0.9665457940014851,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-a1a00fe122",
+   "field": "date",
+   "quote": "2026年10月24日（星期六）10:30",
+   "url": "https://www.nwpu.edu.cn/info/1039/127908.htm",
+   "check_confidence": 0.9733063722136006,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-a1a00fe122",
+   "field": "start_time",
+   "quote": "10:30",
+   "url": "https://www.nwpu.edu.cn/info/1039/127908.htm",
+   "check_confidence": 0.9776545445127435,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-a1a00fe122",
+   "field": "venue_name",
+   "quote": "长安校区教学东楼A座2楼报告厅(外国语学院报告厅)",
+   "url": "https://www.nwpu.edu.cn/info/1039/127908.htm",
+   "check_confidence": 0.9678082527213537,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-a1a00fe122",
+   "field": "organisation_name",
+   "quote": "体育部 党委学生工作部",
+   "url": "https://www.nwpu.edu.cn/info/1039/127908.htm",
+   "check_confidence": 0.9681757805354684,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-a1a00fe122",
+   "field": "speaker",
+   "quote": "杨柳静",
+   "url": "https://www.nwpu.edu.cn/info/1039/127908.htm",
+   "check_confidence": 0.9794102692519769,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-1145446580",
+   "field": "title",
+   "quote": "【学术报告】​翱翔名家讲堂——毛鑫研究员报告会",
+   "url": "https://www.nwpu.edu.cn/info/1039/127918.htm",
+   "check_confidence": 0.9708415919315933,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-1145446580",
+   "field": "date",
+   "quote": "2026年10月18日（星期日）9:30",
+   "url": "https://www.nwpu.edu.cn/info/1039/127918.htm",
+   "check_confidence": 0.9692064589418191,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-1145446580",
+   "field": "start_time",
+   "quote": "09:30",
+   "url": "https://www.nwpu.edu.cn/info/1039/127918.htm",
+   "check_confidence": 0.9718118995427407,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-1145446580",
+   "field": "venue_name",
+   "quote": "长安校区马克思主义学院报告厅",
+   "url": "https://www.nwpu.edu.cn/info/1039/127918.htm",
+   "check_confidence": 0.9694623697847783,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-1145446580",
+   "field": "organisation_name",
+   "quote": "党委学生工作部",
+   "url": "https://www.nwpu.edu.cn/info/1039/127918.htm",
+   "check_confidence": 0.9727633397923453,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-1145446580",
+   "field": "speaker",
+   "quote": "毛鑫",
+   "url": "https://www.nwpu.edu.cn/info/1039/127918.htm",
+   "check_confidence": 0.980475383257031,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-06a75cf2ae",
+   "field": "title",
+   "quote": "【学术报告】翱翔榜样力量——李学思报告会",
+   "url": "https://www.nwpu.edu.cn/info/1039/127928.htm",
+   "check_confidence": 0.9778402505124767,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-06a75cf2ae",
+   "field": "date",
+   "quote": "2026年10月17日（星期六）11:00",
+   "url": "https://www.nwpu.edu.cn/info/1039/127928.htm",
+   "check_confidence": 0.9726351704503473,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-06a75cf2ae",
+   "field": "start_time",
+   "quote": "11:00",
+   "url": "https://www.nwpu.edu.cn/info/1039/127928.htm",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-06a75cf2ae",
+   "field": "venue_name",
+   "quote": "长安校区启翔楼401会议室",
+   "url": "https://www.nwpu.edu.cn/info/1039/127928.htm",
+   "check_confidence": 0.970572457115196,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-06a75cf2ae",
+   "field": "organisation_name",
+   "quote": "党委学生工作部",
+   "url": "https://www.nwpu.edu.cn/info/1039/127928.htm",
+   "check_confidence": 0.9796576702187029,
+   "passed": true
+  },
+  {
+   "entity_id": "nwpu-06a75cf2ae",
+   "field": "speaker",
+   "quote": "李学思",
+   "url": "https://www.nwpu.edu.cn/info/1039/127928.htm",
+   "check_confidence": 0.978892312286279,
+   "passed": true
+  }
+ ]
+}

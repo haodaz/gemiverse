@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students.  Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Administration Building, a hall: Plain historic administration building.; (2) Mathematics and Physics Building, a hall: Plain historic academic hall.; (3) Chemistry Building, a hall: Plain historic academic hall.; (4) Former Sichuan University Women's Hall, a hall: Plain historic residential hall.; (5) Liberal Arts and Science Library, a library: Plain university library building.; (6) Wangjiang Campus East Zone Stadium, a stadium: Plain university sports stadium.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 15,
+ "tokens": 1744,
+ "at": "2026-11-22T00:17:21.201Z"
+}

@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. The main campus features neo-Gothic limestone and gray Hokie Stone buildings, green spaces including a duck pond and old-growth forest, and a central oval Drillfield. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Drillfield, a other: A large oval grassy field encircled by a street.; (2) Upper Quad, a quad: A campus quadrangle with cadet barracks and older buildings.; (3) Newman Library, a library: A large neo-Gothic limestone library building.; (4) Torgersen Bridge, a bridge: An enclosed bridge spanning across a main campus road.; (5) Hahn Horticulture Garden, a garden: A landscaped green garden space with plants and pathways.; (6) Virginia Tech Duck Pond, a lake: A campus pond surrounded by green space.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 17,
+ "tokens": 2092,
+ "at": "2026-11-22T00:20:44.107Z"
+}

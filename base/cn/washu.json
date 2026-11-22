@@ -1,0 +1,773 @@
+{
+ "school": "washu",
+ "name": "Washington University in St. Louis",
+ "at": "2026-11-22T00:19:25.753Z",
+ "seconds": 37,
+ "tokens": 99980,
+ "entities": [
+  {
+   "id": "washu-a2365f29c2",
+   "type": "Event",
+   "school": "washu",
+   "name": "One Health Day Forest Park Clean Up",
+   "tier": 1,
+   "fields": {
+    "url": "https://happenings.washu.edu/event/forest-park-clean-up",
+    "needs": [
+     "contribute_beyond_self",
+     "find_my_people"
+    ],
+    "start": "2026-11-21T09:00",
+    "summary": "Join the WashU community for a Forest Park cleanup celebrating One Health Day, picking up litter with supplies, coffee, and donuts provided.",
+    "event_kind": "activity",
+    "venue_name": "Forest Park, Picnic Pavillion 5",
+    "organisation_name": "Bursky Public Health's SPHERE initative, the Saint Louis Zoo and Living Earth Collaborative",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21T09:00",
+      "end": "2026-11-21T12:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "washu-d9b9758131",
+   "type": "Event",
+   "school": "washu",
+   "name": "'Academic Freedom,' Criminalization and the University",
+   "tier": 1,
+   "fields": {
+    "url": "https://happenings.washu.edu/event/academic-freedom-criminalization-and-the-university",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-12-03T16:00",
+    "summary": "A Sawyer Seminar lecture by Dylan Rodr guez examining academic freedom, political repression, and Black studies in higher education.",
+    "event_kind": "lecture",
+    "venue_name": "Clark-Fox Forum, Hillman Hall, St. Louis, MO",
+    "organisation_name": "WashU Department of African and African American Studies and the Center for the Humanities",
+    "speaker": "Dylan Rodr guez",
+    "occurrences": [
+     {
+      "start": "2026-12-03T16:00",
+      "end": "2026-12-03T17:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "washu-c0fae533f4",
+   "type": "Event",
+   "school": "washu",
+   "name": "Issues in Aging: Mental Health - An Overlooked Vital Sign in Perioperative Care",
+   "tier": 1,
+   "fields": {
+    "url": "https://happenings.washu.edu/event/issues-in-aging-mental-health-an-overlooked-vital-sign-in-perioperative-care",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-23T12:00",
+    "summary": "A virtual seminar by Dr. Joanna Abraham on mental health as an overlooked vital sign in perioperative care.",
+    "event_kind": "lecture",
+    "venue_name": "Virtual Event",
+    "organisation_name": "Public Health",
+    "speaker": "Dr. Joanna Abraham",
+    "occurrences": [
+     {
+      "start": "2026-11-23T12:00",
+      "end": "2026-11-23T13:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "washu-9b2961a518",
+   "type": "Event",
+   "school": "washu",
+   "name": "Documenting for Democracy: 60 Years of Kartemquin Films",
+   "tier": 1,
+   "fields": {
+    "url": "https://happenings.washu.edu/event/documenting-for-democracy-60-years-of-kartemquin-films",
+    "needs": [
+     "explore_a_field",
+     "make_and_express"
+    ],
+    "start": "2026-11-21",
+    "summary": "An exhibition at Olin Library reflecting on the 60-year history and impact of independent documentary production house Kartemquin Films.",
+    "event_kind": "exhibition",
+    "venue_name": "Olin Library, Ginkgo Reading Room",
+    "organisation_name": "University Libraries",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "washu-d8e1ca0f1e",
+   "type": "Event",
+   "school": "washu",
+   "name": "A is for Abecedaria",
+   "tier": 1,
+   "fields": {
+    "url": "https://happenings.washu.edu/event/a-is-for-abecedaria",
+    "needs": [
+     "explore_a_field",
+     "make_and_express"
+    ],
+    "start": "2026-11-21",
+    "summary": "An exhibition at Olin Library featuring an abecedaria about miniature books and their physical aspects.",
+    "event_kind": "exhibition",
+    "venue_name": "Olin Library, Mini Books Case",
+    "organisation_name": "University Libraries",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "washu-9653d00229",
+   "type": "Event",
+   "school": "washu",
+   "name": "For the Love of the Game",
+   "tier": 1,
+   "fields": {
+    "url": "https://happenings.washu.edu/event/for-the-love-of-the-game",
+    "needs": [
+     "explore_a_field",
+     "rest_and_recover"
+    ],
+    "start": "2026-11-21",
+    "summary": "An exhibition at John M. Olin Library showcasing a personal collection of board games curated by Danielle Creech.",
+    "event_kind": "exhibition",
+    "venue_name": "John M. Olin Library",
+    "organisation_name": "University Libraries",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "washu-7532249c58",
+   "type": "Event",
+   "school": "washu",
+   "name": "John Max Wulfing’s Passport to the Past",
+   "tier": 1,
+   "fields": {
+    "url": "https://happenings.washu.edu/event/john-max-wulfings-passport-to-the-past",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-21",
+    "summary": "An exhibition at Olin Library highlighting John Max Wulfing's travels and collected artifacts from around the world.",
+    "event_kind": "exhibition",
+    "venue_name": "Olin Library, Level 1, Newman Tower of Collections and Exploration",
+    "organisation_name": "University Libraries",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "washu-4232917cd7",
+   "type": "Event",
+   "school": "washu",
+   "name": "Look/Read: Illustration as Media History from 1850-1950",
+   "tier": 1,
+   "fields": {
+    "url": "https://happenings.washu.edu/event/lookread-illustration-as-media-history-from-1850-1950",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-21",
+    "summary": "An exhibition examining the evolution of illustration and popular print from 1850 to 1950 through printed matter and original artwork.",
+    "event_kind": "exhibition",
+    "venue_name": "Olin Library, Level 1, Thomas Gallery",
+    "organisation_name": "University Libraries",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "washu-810c27c795",
+   "type": "Event",
+   "school": "washu",
+   "name": "The Revolution Will Not Be Taught",
+   "tier": 1,
+   "fields": {
+    "url": "https://happenings.washu.edu/event/revolution-will-not-be-taught",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-21",
+    "summary": "An exhibition at Olin Library featuring four examples of 20th- and 21st-century student activism at WashU.",
+    "event_kind": "exhibition",
+    "venue_name": "Olin Library, Julian Edison Department of Special Collections Reading Room",
+    "organisation_name": "University Libraries",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "washu-c7818afe81",
+   "type": "Event",
+   "school": "washu",
+   "name": "'There’s an Ad for That! Medical Advertising—Context and Consequences' exhibit",
+   "tier": 1,
+   "fields": {
+    "url": "https://happenings.washu.edu/event/glaser-gallery-exhibition-4666",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-22T08:00",
+    "summary": "An exhibition at Bernard Becker Medical Library exploring the history of medical advertising, its effects on patients and providers, and its consequences.",
+    "event_kind": "exhibition",
+    "venue_name": "Bernard Becker Medical Library, Glaser Gallery, 7th floor",
+    "organisation_name": "Bernard Becker Medical Library",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-22T08:00",
+      "end": "2026-11-22T18:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "washu-33a84fac45",
+   "type": "Event",
+   "school": "washu",
+   "name": "Carolina Caycedo: Growing Deep Roots",
+   "tier": 1,
+   "fields": {
+    "url": "https://happenings.washu.edu/event/carolina-caycedo-growing-deep-roots",
+    "needs": [
+     "explore_a_field",
+     "make_and_express"
+    ],
+    "start": "2026-11-22T11:00",
+    "summary": "A solo exhibition by artist Carolina Caycedo exploring nature, environmental justice, and human-plant reciprocity through sculpture, drawing, printmaking, and video.",
+    "event_kind": "exhibition",
+    "venue_name": "Mildred Lane Kemper Art Museum",
+    "organisation_name": "Mildred Lane Kemper Art Museum",
+    "speaker": "Carolina Caycedo",
+    "occurrences": [
+     {
+      "start": "2026-11-22T11:00",
+      "end": "2026-11-22T17:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "washu-b8e2467e88",
+   "type": "Event",
+   "school": "washu",
+   "name": "Buenos Aires Modern, 1935–1950",
+   "tier": 1,
+   "fields": {
+    "url": "https://happenings.washu.edu/event/buenos-aires-modern-19351950",
+    "needs": [
+     "explore_a_field",
+     "make_and_express"
+    ],
+    "start": "2026-11-22T11:00",
+    "summary": "An exhibition at the Mildred Lane Kemper Art Museum exploring modernism in Buenos Aires through the art of Grete Stern, Horacio Coppola, and their circle.",
+    "event_kind": "exhibition",
+    "venue_name": "Mildred Lane Kemper Art Museum",
+    "organisation_name": "Mildred Lane Kemper Art Museum",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-22T11:00",
+      "end": "2026-11-22T17:00"
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "washu-a2365f29c2",
+   "field": "title",
+   "quote": "One Health Day Forest Park Clean Up",
+   "url": "https://happenings.washu.edu/event/forest-park-clean-up",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-a2365f29c2",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026 9 AM to 12 PM",
+   "url": "https://happenings.washu.edu/event/forest-park-clean-up",
+   "check_confidence": 0.9750919857572622,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-a2365f29c2",
+   "field": "start_time",
+   "quote": "09:00",
+   "url": "https://happenings.washu.edu/event/forest-park-clean-up",
+   "check_confidence": 0.9694892845471423,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-a2365f29c2",
+   "field": "venue_name",
+   "quote": "Forest Park, Picnic Pavillion 5",
+   "url": "https://happenings.washu.edu/event/forest-park-clean-up",
+   "check_confidence": 0.9708123705863371,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-a2365f29c2",
+   "field": "organisation_name",
+   "quote": "Bursky Public Health's SPHERE initative, the Saint Louis Zoo and Living Earth Collaborative",
+   "url": "https://happenings.washu.edu/event/forest-park-clean-up",
+   "check_confidence": 0.8640014719166815,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-d9b9758131",
+   "field": "title",
+   "quote": "'Academic Freedom,' Criminalization and the University",
+   "url": "https://happenings.washu.edu/event/academic-freedom-criminalization-and-the-university",
+   "check_confidence": 0.9834856288906783,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-d9b9758131",
+   "field": "date",
+   "quote": "Thursday, December 3, 2026 4 PM to 5 PM",
+   "url": "https://happenings.washu.edu/event/academic-freedom-criminalization-and-the-university",
+   "check_confidence": 0.9819648412687638,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-d9b9758131",
+   "field": "start_time",
+   "quote": "16:00",
+   "url": "https://happenings.washu.edu/event/academic-freedom-criminalization-and-the-university",
+   "check_confidence": 0.9731082759383226,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-d9b9758131",
+   "field": "venue_name",
+   "quote": "Clark-Fox Forum",
+   "url": "https://happenings.washu.edu/event/academic-freedom-criminalization-and-the-university",
+   "check_confidence": 0.927641036425661,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-d9b9758131",
+   "field": "organisation_name",
+   "quote": "WashU Department of African and African American Studies and the Center for the Humanities",
+   "url": "https://happenings.washu.edu/event/academic-freedom-criminalization-and-the-university",
+   "check_confidence": 0.9492603810659149,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-d9b9758131",
+   "field": "speaker",
+   "quote": "Dylan Rodr guez",
+   "url": "https://happenings.washu.edu/event/academic-freedom-criminalization-and-the-university",
+   "check_confidence": 0.9874038465078805,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-c0fae533f4",
+   "field": "title",
+   "quote": "Issues in Aging: Mental Health - An Overlooked Vital Sign in Perioperative Care",
+   "url": "https://happenings.washu.edu/event/issues-in-aging-mental-health-an-overlooked-vital-sign-in-perioperative-care",
+   "check_confidence": 0.9656597219861738,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-c0fae533f4",
+   "field": "date",
+   "quote": "Monday, November 23, 2026 12 PM to 1 PM",
+   "url": "https://happenings.washu.edu/event/issues-in-aging-mental-health-an-overlooked-vital-sign-in-perioperative-care",
+   "check_confidence": 0.9670472006327457,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-c0fae533f4",
+   "field": "start_time",
+   "quote": "12:00",
+   "url": "https://happenings.washu.edu/event/issues-in-aging-mental-health-an-overlooked-vital-sign-in-perioperative-care",
+   "check_confidence": 0.9663992624710109,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-c0fae533f4",
+   "field": "venue_name",
+   "quote": "Virtual Event",
+   "url": "https://happenings.washu.edu/event/issues-in-aging-mental-health-an-overlooked-vital-sign-in-perioperative-care",
+   "check_confidence": 0.9647518419770856,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-c0fae533f4",
+   "field": "organisation_name",
+   "quote": "Public Health",
+   "url": "https://happenings.washu.edu/event/issues-in-aging-mental-health-an-overlooked-vital-sign-in-perioperative-care",
+   "check_confidence": 0.958173065925483,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-c0fae533f4",
+   "field": "speaker",
+   "quote": "Dr. Joanna Abraham",
+   "url": "https://happenings.washu.edu/event/issues-in-aging-mental-health-an-overlooked-vital-sign-in-perioperative-care",
+   "check_confidence": 0.9785994878499075,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-9b2961a518",
+   "field": "title",
+   "quote": "Documenting for Democracy: 60 Years of Kartemquin Films",
+   "url": "https://happenings.washu.edu/event/documenting-for-democracy-60-years-of-kartemquin-films",
+   "check_confidence": 0.9742268618798265,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-9b2961a518",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026",
+   "url": "https://happenings.washu.edu/event/documenting-for-democracy-60-years-of-kartemquin-films",
+   "check_confidence": 0.9673846762067652,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-9b2961a518",
+   "field": "venue_name",
+   "quote": "Olin Library, Ginkgo Reading Room",
+   "url": "https://happenings.washu.edu/event/documenting-for-democracy-60-years-of-kartemquin-films",
+   "check_confidence": 0.9852813640249122,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-9b2961a518",
+   "field": "organisation_name",
+   "quote": "University Libraries",
+   "url": "https://happenings.washu.edu/event/documenting-for-democracy-60-years-of-kartemquin-films",
+   "check_confidence": 0.9745747854458122,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-d8e1ca0f1e",
+   "field": "title",
+   "quote": "A is for Abecedaria",
+   "url": "https://happenings.washu.edu/event/a-is-for-abecedaria",
+   "check_confidence": 0.9834740097879144,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-d8e1ca0f1e",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026",
+   "url": "https://happenings.washu.edu/event/a-is-for-abecedaria",
+   "check_confidence": 0.9634936405784692,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-d8e1ca0f1e",
+   "field": "venue_name",
+   "quote": "Olin Library, Mini Books Case",
+   "url": "https://happenings.washu.edu/event/a-is-for-abecedaria",
+   "check_confidence": 0.9632273951211723,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-d8e1ca0f1e",
+   "field": "organisation_name",
+   "quote": "University Libraries",
+   "url": "https://happenings.washu.edu/event/a-is-for-abecedaria",
+   "check_confidence": 0.9707818173308629,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-9653d00229",
+   "field": "title",
+   "quote": "For the Love of the Game",
+   "url": "https://happenings.washu.edu/event/for-the-love-of-the-game",
+   "check_confidence": 0.9775213416702458,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-9653d00229",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026",
+   "url": "https://happenings.washu.edu/event/for-the-love-of-the-game",
+   "check_confidence": 0.9697878505735272,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-9653d00229",
+   "field": "venue_name",
+   "quote": "John M. Olin Library",
+   "url": "https://happenings.washu.edu/event/for-the-love-of-the-game",
+   "check_confidence": 0.9727567993401826,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-9653d00229",
+   "field": "organisation_name",
+   "quote": "University Libraries",
+   "url": "https://happenings.washu.edu/event/for-the-love-of-the-game",
+   "check_confidence": 0.9729310491045394,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-7532249c58",
+   "field": "title",
+   "quote": "John Max Wulfing’s Passport to the Past",
+   "url": "https://happenings.washu.edu/event/john-max-wulfings-passport-to-the-past",
+   "check_confidence": 0.9610612830432973,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-7532249c58",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026",
+   "url": "https://happenings.washu.edu/event/john-max-wulfings-passport-to-the-past",
+   "check_confidence": 0.9682722462159493,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-7532249c58",
+   "field": "venue_name",
+   "quote": "Olin Library, Level 1, Newman Tower of Collections and Exploration",
+   "url": "https://happenings.washu.edu/event/john-max-wulfings-passport-to-the-past",
+   "check_confidence": 0.969436183821758,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-7532249c58",
+   "field": "organisation_name",
+   "quote": "University Libraries",
+   "url": "https://happenings.washu.edu/event/john-max-wulfings-passport-to-the-past",
+   "check_confidence": 0.9580680043942642,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-4232917cd7",
+   "field": "title",
+   "quote": "Look/Read: Illustration as Media History from 1850-1950",
+   "url": "https://happenings.washu.edu/event/lookread-illustration-as-media-history-from-1850-1950",
+   "check_confidence": 0.9701365308422011,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-4232917cd7",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026",
+   "url": "https://happenings.washu.edu/event/lookread-illustration-as-media-history-from-1850-1950",
+   "check_confidence": 0.9511643606317074,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-4232917cd7",
+   "field": "venue_name",
+   "quote": "Olin Library, Level 1, Thomas Gallery",
+   "url": "https://happenings.washu.edu/event/lookread-illustration-as-media-history-from-1850-1950",
+   "check_confidence": 0.9520613414070046,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-4232917cd7",
+   "field": "organisation_name",
+   "quote": "University Libraries",
+   "url": "https://happenings.washu.edu/event/lookread-illustration-as-media-history-from-1850-1950",
+   "check_confidence": 0.9721043886566888,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-810c27c795",
+   "field": "title",
+   "quote": "The Revolution Will Not Be Taught",
+   "url": "https://happenings.washu.edu/event/revolution-will-not-be-taught",
+   "check_confidence": 0.9777043468718783,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-810c27c795",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026",
+   "url": "https://happenings.washu.edu/event/revolution-will-not-be-taught",
+   "check_confidence": 0.9733569076395574,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-810c27c795",
+   "field": "venue_name",
+   "quote": "Olin Library, Julian Edison Department of Special Collections Reading Room",
+   "url": "https://happenings.washu.edu/event/revolution-will-not-be-taught",
+   "check_confidence": 0.9683709325157558,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-810c27c795",
+   "field": "organisation_name",
+   "quote": "University Libraries",
+   "url": "https://happenings.washu.edu/event/revolution-will-not-be-taught",
+   "check_confidence": 0.9808837171096544,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-c7818afe81",
+   "field": "title",
+   "quote": "'There’s an Ad for That! Medical Advertising—Context and Consequences' exhibit",
+   "url": "https://happenings.washu.edu/event/glaser-gallery-exhibition-4666",
+   "check_confidence": 0.952254164323819,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-c7818afe81",
+   "field": "date",
+   "quote": "Sunday, November 22, 2026 8 AM to 6 PM",
+   "url": "https://happenings.washu.edu/event/glaser-gallery-exhibition-4666",
+   "check_confidence": 0.9677597504198509,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-c7818afe81",
+   "field": "start_time",
+   "quote": "08:00",
+   "url": "https://happenings.washu.edu/event/glaser-gallery-exhibition-4666",
+   "check_confidence": 0.9807750707075502,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-c7818afe81",
+   "field": "venue_name",
+   "quote": "Bernard Becker Medical Library, Glaser Gallery, 7th floor",
+   "url": "https://happenings.washu.edu/event/glaser-gallery-exhibition-4666",
+   "check_confidence": 0.9642042738462889,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-c7818afe81",
+   "field": "organisation_name",
+   "quote": "Bernard Becker Medical Library",
+   "url": "https://happenings.washu.edu/event/glaser-gallery-exhibition-4666",
+   "check_confidence": 0.9605622353251018,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-33a84fac45",
+   "field": "title",
+   "quote": "Carolina Caycedo: Growing Deep Roots",
+   "url": "https://happenings.washu.edu/event/carolina-caycedo-growing-deep-roots",
+   "check_confidence": 0.9768429099782356,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-33a84fac45",
+   "field": "date",
+   "quote": "Sunday, November 22, 2026 11 AM to 5 PM",
+   "url": "https://happenings.washu.edu/event/carolina-caycedo-growing-deep-roots",
+   "check_confidence": 0.9760574129879209,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-33a84fac45",
+   "field": "start_time",
+   "quote": "11:00",
+   "url": "https://happenings.washu.edu/event/carolina-caycedo-growing-deep-roots",
+   "check_confidence": 0.9642280299683149,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-33a84fac45",
+   "field": "venue_name",
+   "quote": "Mildred Lane Kemper Art Museum",
+   "url": "https://happenings.washu.edu/event/carolina-caycedo-growing-deep-roots",
+   "check_confidence": 0.9638798441044812,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-33a84fac45",
+   "field": "organisation_name",
+   "quote": "Mildred Lane Kemper Art Museum",
+   "url": "https://happenings.washu.edu/event/carolina-caycedo-growing-deep-roots",
+   "check_confidence": 0.9710042792887826,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-33a84fac45",
+   "field": "speaker",
+   "quote": "Carolina Caycedo",
+   "url": "https://happenings.washu.edu/event/carolina-caycedo-growing-deep-roots",
+   "check_confidence": 0.8072161443375668,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-b8e2467e88",
+   "field": "title",
+   "quote": "Buenos Aires Modern, 1935–1950",
+   "url": "https://happenings.washu.edu/event/buenos-aires-modern-19351950",
+   "check_confidence": 0.986810536993868,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-b8e2467e88",
+   "field": "date",
+   "quote": "Sunday, November 22, 2026 11 AM to 5 PM",
+   "url": "https://happenings.washu.edu/event/buenos-aires-modern-19351950",
+   "check_confidence": 0.974140677800403,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-b8e2467e88",
+   "field": "start_time",
+   "quote": "11:00",
+   "url": "https://happenings.washu.edu/event/buenos-aires-modern-19351950",
+   "check_confidence": 0.9742544550754684,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-b8e2467e88",
+   "field": "venue_name",
+   "quote": "Mildred Lane Kemper Art Museum",
+   "url": "https://happenings.washu.edu/event/buenos-aires-modern-19351950",
+   "check_confidence": 0.9770850139660411,
+   "passed": true
+  },
+  {
+   "entity_id": "washu-b8e2467e88",
+   "field": "organisation_name",
+   "quote": "Mildred Lane Kemper Art Museum",
+   "url": "https://happenings.washu.edu/event/buenos-aires-modern-19351950",
+   "check_confidence": 0.9698519707111398,
+   "passed": true
+  }
+ ]
+}

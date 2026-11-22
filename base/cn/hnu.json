@@ -1,0 +1,84 @@
+{
+ "school": "hnu",
+ "name": "湖南大学",
+ "at": "2026-11-22T00:16:42.314Z",
+ "seconds": 23,
+ "tokens": 24335,
+ "entities": [
+  {
+   "id": "hnu-54a46a9381",
+   "type": "Event",
+   "school": "hnu",
+   "name": "袁钧瑛：发现细胞死亡的秘密 | 岳麓讲坛 | 创新与创业 | 总第1132期",
+   "tier": 1,
+   "fields": {
+    "url": "https://mp.weixin.qq.com/s/7KMXPhgZSVQPzsJkv2VqZA",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-05T19:00",
+    "summary": "中国科学院外籍院士袁钧瑛教授主讲岳麓讲坛，探讨细胞死亡的分子调控机制。",
+    "event_kind": "lecture",
+    "venue_name": "综合楼108报告厅",
+    "organisation_name": "湖南大学教务处",
+    "speaker": "袁钧瑛 教授",
+    "occurrences": [
+     {
+      "start": "2026-11-05T19:00",
+      "end": "2026-11-05T21:00"
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "hnu-54a46a9381",
+   "field": "title",
+   "quote": "袁钧瑛：发现细胞死亡的秘密 | 岳麓讲坛 | 创新与创业 | 总第1132期",
+   "url": "https://mp.weixin.qq.com/s/7KMXPhgZSVQPzsJkv2VqZA",
+   "check_confidence": 0.9681681177633653,
+   "passed": true
+  },
+  {
+   "entity_id": "hnu-54a46a9381",
+   "field": "date",
+   "quote": "2026年11月5日 19:00—21:00",
+   "url": "https://mp.weixin.qq.com/s/7KMXPhgZSVQPzsJkv2VqZA",
+   "check_confidence": 0.944607377745245,
+   "passed": true
+  },
+  {
+   "entity_id": "hnu-54a46a9381",
+   "field": "start_time",
+   "quote": "19:00",
+   "url": "https://mp.weixin.qq.com/s/7KMXPhgZSVQPzsJkv2VqZA",
+   "check_confidence": 0.983087209929351,
+   "passed": true
+  },
+  {
+   "entity_id": "hnu-54a46a9381",
+   "field": "venue_name",
+   "quote": "综合楼108报告厅",
+   "url": "https://mp.weixin.qq.com/s/7KMXPhgZSVQPzsJkv2VqZA",
+   "check_confidence": 0.9731740133732478,
+   "passed": true
+  },
+  {
+   "entity_id": "hnu-54a46a9381",
+   "field": "organisation_name",
+   "quote": "湖南大学教务处",
+   "url": "https://mp.weixin.qq.com/s/7KMXPhgZSVQPzsJkv2VqZA",
+   "check_confidence": 0.9672273837328912,
+   "passed": true
+  },
+  {
+   "entity_id": "hnu-54a46a9381",
+   "field": "speaker",
+   "quote": "袁钧瑛 教授",
+   "url": "https://mp.weixin.qq.com/s/7KMXPhgZSVQPzsJkv2VqZA",
+   "check_confidence": 0.978741385452827,
+   "passed": true
+  }
+ ]
+}

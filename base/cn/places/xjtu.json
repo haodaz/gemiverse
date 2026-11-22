@@ -1,0 +1,104 @@
+{
+ "school": "xjtu",
+ "name": "西安交通大学",
+ "at": "2026-11-22T00:12:13.429Z",
+ "source": "https://zh.wikipedia.org/wiki/%E8%A5%BF%E5%AE%89%E4%BA%A4%E9%80%9A%E5%A4%A7%E5%AD%A6",
+ "character": "The square-shaped main campus features symmetrical Sino-Soviet style gray-brick buildings with red-tile roofs, ivy-covered facades, and avenues lined with tall plane trees and flower gardens.",
+ "map": "/art/map/xjtu.jpg",
+ "landmarks": [
+  {
+   "name": "钱学森图书馆",
+   "name_en": "Qian Xuesen Library",
+   "kind": "library",
+   "quote": "1995年，图书馆经钱学森本人同意及中宣部批准改名钱学森图书馆",
+   "look": "Three-story Sino-Soviet north wing connected to a 13-story pyramid-shaped south wing.",
+   "check": 0.9679534668290507,
+   "confidence": 0.9679534668290507,
+   "passed": true,
+   "x": 0.72,
+   "y": 0.33
+  },
+  {
+   "name": "老教学主楼群",
+   "name_en": "Old Main Teaching Buildings",
+   "kind": "hall",
+   "quote": "老教学主楼群修建于1956年到1958年...以中心大楼为主体",
+   "look": "Symmetrical Sino-Soviet gray-brick buildings with red-tile gable roofs and ivy.",
+   "check": 0.9588390663338726,
+   "confidence": 0.9588390663338726,
+   "passed": true,
+   "x": 0.29,
+   "y": 0.38
+  },
+  {
+   "name": "新教学主楼群",
+   "name_en": "New Main Teaching Buildings",
+   "kind": "hall",
+   "quote": "教学主楼群是校园南北中轴线上最后建设的项目...由A至E五座组成",
+   "look": "Five-building complex with low lecture halls and a tall central office tower.",
+   "check": 0.9824043928883339,
+   "confidence": 0.9824043928883339,
+   "passed": true,
+   "x": 0.5,
+   "y": 0.72
+  },
+  {
+   "name": "北门",
+   "name_en": "North Gate",
+   "kind": "gate",
+   "quote": "北校门、中心教学楼和图书馆等重要建筑均沿南北中轴线布置",
+   "look": "Main campus gate positioned along the north-south central axis.",
+   "check": 0.97357379952663,
+   "confidence": 0.97357379952663,
+   "passed": true,
+   "x": 0.5,
+   "y": 0.14
+  },
+  {
+   "name": "腾飞塔",
+   "name_en": "Tengfei Tower",
+   "kind": "tower",
+   "quote": "腾飞塔",
+   "look": "Plain campus tower landmark.",
+   "check": 0.9765525953838725,
+   "confidence": 0.9765525953838725,
+   "passed": true,
+   "x": 0.86,
+   "y": 0.64
+  },
+  {
+   "name": "四大发明广场",
+   "name_en": "Four Great Inventions Square",
+   "kind": "quad",
+   "quote": "四大发明广场",
+   "look": "Plain campus plaza.",
+   "check": 0.9702688354222445,
+   "confidence": 0.9702688354222445,
+   "passed": true,
+   "x": 0.19,
+   "y": 0.77
+  },
+  {
+   "name": "东花园",
+   "name_en": "East Garden",
+   "kind": "garden",
+   "quote": "校园内东西花园大面积的牡丹、芍药、月季、樱花等不同品种的花卉不同时间竞相开放",
+   "look": "Campus garden filled with peonies, roses, and cherry blossoms.",
+   "check": 0.9799715517521783,
+   "confidence": 0.9799715517521783,
+   "passed": true
+  },
+  {
+   "name": "西花园",
+   "name_en": "West Garden",
+   "kind": "garden",
+   "quote": "校园内东西花园大面积的牡丹、芍药、月季、樱花等不同品种的花卉不同时间竞相开放",
+   "look": "Campus garden filled with peonies, roses, and cherry blossoms.",
+   "check": 0.9803696042976829,
+   "confidence": 0.9803696042976829,
+   "passed": true
+  }
+ ],
+ "tokens": 16241,
+ "seconds": 31
+}

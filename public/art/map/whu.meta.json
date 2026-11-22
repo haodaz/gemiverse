@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. The campus sits along Luojia Hill and the shores of East Lake and Fruit Lake. Draw exactly these 5 features, well spread across the picture with space between them, each clearly recognisable: (1) Luojia Hill, a hill: A scenic hill rising beside the lakefront campus.; (2) Main Gate Archway, a gate: A traditional Chinese ceremonial archway on the campus axis.; (3) Old Library, a library: A landmark historic university library building.; (4) Wuhan University History Museum, a museum: Exhibition halls inside the historic Old Library building.; (5) Wanlin Art Museum, a museum: A plain university art museum building.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 16,
+ "tokens": 2118,
+ "at": "2026-11-22T00:16:50.290Z"
+}

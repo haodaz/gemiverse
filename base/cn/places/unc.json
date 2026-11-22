@@ -1,0 +1,104 @@
+{
+ "school": "unc",
+ "name": "University of North Carolina at Chapel Hill",
+ "at": "2026-11-22T00:18:50.907Z",
+ "source": "https://en.wikipedia.org/wiki/University%20of%20North%20Carolina%20at%20Chapel%20Hill",
+ "character": "The 760-acre campus features expansive lawns, shrub beds, historic quadrangles, neoclassical architecture, and notable trees such as the Davie Poplar.",
+ "map": "/art/map/unc.jpg",
+ "landmarks": [
+  {
+   "name": "Old Well",
+   "name_en": "Old Well",
+   "kind": "other",
+   "quote": "A symbol of the university is the Old Well, a small neoclassical rotunda",
+   "look": "Small white neoclassical rotunda with columns on a grassy quad.",
+   "check": 0.9822145804389757,
+   "confidence": 0.9822145804389757,
+   "passed": true,
+   "x": 0.206,
+   "y": 0.495
+  },
+  {
+   "name": "McCorkle Place",
+   "name_en": "McCorkle Place",
+   "kind": "quad",
+   "quote": "This is named McCorkle Place after Samuel Eusebius McCorkle",
+   "look": "Grassy quadrangle with trees, flanked by historic buildings.",
+   "check": 0.9899162810991344,
+   "confidence": 0.9899162810991344,
+   "passed": true,
+   "x": 0.26,
+   "y": 0.26
+  },
+  {
+   "name": "Polk Place",
+   "name_en": "Polk Place",
+   "kind": "quad",
+   "quote": "A second quadrangle, Polk Place, was built in the 1920s",
+   "look": "Open grassy quadrangle bordered by academic buildings.",
+   "check": 0.99,
+   "confidence": 0.99,
+   "passed": true,
+   "x": 0.5,
+   "y": 0.52
+  },
+  {
+   "name": "Morehead–Patterson bell tower",
+   "name_en": "Morehead–Patterson Bell Tower",
+   "kind": "tower",
+   "quote": "The Morehead–Patterson bell tower, south of the Wilson Library",
+   "look": "Tall bell tower surrounded by a hedge and landscaped grounds.",
+   "check": 0.9839781832857494,
+   "confidence": 0.9839781832857494,
+   "passed": true,
+   "x": 0.825,
+   "y": 0.23
+  },
+  {
+   "name": "Wilson Library",
+   "name_en": "Wilson Library",
+   "kind": "library",
+   "quote": "The Wilson Library is at the south end of Polk Place.",
+   "look": "Large, stately library building at the end of a quad.",
+   "check": 0.9895322250963081,
+   "confidence": 0.9895322250963081,
+   "passed": true,
+   "x": 0.785,
+   "y": 0.69
+  },
+  {
+   "name": "Old East",
+   "name_en": "Old East",
+   "kind": "hall",
+   "quote": "including the Old East building (built 1793–1795)",
+   "look": "Historic, plain rectangular brick hall.",
+   "check": 0.9890788552260885,
+   "confidence": 0.9890788552260885,
+   "passed": true,
+   "x": 0.205,
+   "y": 0.785
+  },
+  {
+   "name": "Kenan Memorial Stadium",
+   "name_en": "Kenan Memorial Stadium",
+   "kind": "stadium",
+   "quote": "The middle part of the campus includes Fetzer Field and Woollen Gymnasium along with the Student Recreation Center, Kenan Memorial Stadium",
+   "look": "Large open-air athletic stadium.",
+   "check": 0.9864465014889217,
+   "confidence": 0.9864465014889217,
+   "passed": true
+  },
+  {
+   "name": "Playmakers Theatre",
+   "name_en": "Playmakers Theatre",
+   "kind": "other",
+   "quote": "The historic Playmakers Theatre is located on Cameron Avenue",
+   "look": "Historic east-facing theater building.",
+   "check": 0.9769978577092433,
+   "confidence": 0.9769978577092433,
+   "passed": true
+  }
+ ],
+ "tokens": 10093,
+ "seconds": 55
+}

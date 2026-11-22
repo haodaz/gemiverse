@@ -1,0 +1,811 @@
+{
+ "school": "ecnu",
+ "name": "华东师范大学",
+ "at": "2026-11-22T00:15:42.622Z",
+ "seconds": 47,
+ "tokens": 87634,
+ "entities": [
+  {
+   "id": "ecnu-93f1766e0a",
+   "type": "Event",
+   "school": "ecnu",
+   "name": "素材、作者与文本——漫谈《山水》",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.ecnu.edu.cn/info/1034/73745.htm",
+    "needs": [
+     "explore_a_field",
+     "make_and_express"
+    ],
+    "start": "2026-11-24T18:00",
+    "summary": "作家路内围绕长篇小说《山水》的创作，探讨素材选择、作家主体性与文本审美。",
+    "event_kind": "lecture",
+    "venue_name": "闵行校区人文楼4330会议室",
+    "organisation_name": "中国语言文学系",
+    "speaker": "路内",
+    "occurrences": [
+     {
+      "start": "2026-11-24T18:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "ecnu-5dca3ab0aa",
+   "type": "Event",
+   "school": "ecnu",
+   "name": "2026年急救培训系列活动通知（十九）",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.ecnu.edu.cn/info/1183/73776.htm",
+    "needs": [
+     "build_a_skill"
+    ],
+    "start": "2026-11-25T13:15",
+    "summary": "学校红十字会联合普陀区红十字会面向全校师生举办第19期急救培训。",
+    "event_kind": "workshop",
+    "venue_name": "普陀校医院一楼 急救教育实践基地",
+    "organisation_name": "学校红十字会联合普陀区红十字会",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-25T13:15",
+      "end": "2026-11-25T16:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ecnu-155542b406",
+   "type": "Event",
+   "school": "ecnu",
+   "name": "关于开展第二届“青春筑梦·强国有我——讲好身边的教育故事”AIGC创意短视频征集的通知",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.ecnu.edu.cn/info/1183/73793.htm",
+    "needs": [
+     "make_and_express",
+     "build_a_skill"
+    ],
+    "start": null,
+    "summary": "华东师大面向全校师生征集AIGC创意短视频，讲述身边教育故事，12月20日截止。",
+    "event_kind": "competition",
+    "venue_name": null,
+    "organisation_name": "华东师范大学党委宣传部、华东师范大学党委学生工作部",
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "ecnu-1656b40715",
+   "type": "Event",
+   "school": "ecnu",
+   "name": "关于举办《“廉心润桃李 笃行育师魂”华东师范大学廉洁文化作品展》的通知",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.ecnu.edu.cn/info/1183/73758.htm",
+    "needs": [
+     "explore_a_field",
+     "make_and_express"
+    ],
+    "start": "2026-11-18T09:00",
+    "summary": "华东师范大学在闵行校区举办廉洁文化作品展，展示获奖及优秀作品。",
+    "event_kind": "exhibition",
+    "venue_name": "闵行校区大零号湾文化艺术中心附楼一楼大厅",
+    "organisation_name": "纪委办公室、党委宣传部",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-18T09:00",
+      "end": "2026-11-18T16:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ecnu-52943cf41e",
+   "type": "Event",
+   "school": "ecnu",
+   "name": "新时代新征程的课程改革：方向与重点",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.ecnu.edu.cn/info/1034/73743.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-20T20:30",
+    "summary": "吴刚平教授主讲新时代新征程课程改革的方向与重点。",
+    "event_kind": "lecture",
+    "venue_name": "普陀校区逸夫楼一楼报告厅",
+    "organisation_name": "教育学部",
+    "speaker": "吴刚平",
+    "occurrences": [
+     {
+      "start": "2026-11-20T20:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "ecnu-a89af485b8",
+   "type": "Event",
+   "school": "ecnu",
+   "name": "关于组织参加2026年高校 “礼敬中华优秀传统文化”宣传教育活动的通知",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.ecnu.edu.cn/info/1183/73675.htm",
+    "needs": [
+     "make_and_express",
+     "contribute_beyond_self"
+    ],
+    "start": null,
+    "summary": "华东师大组织师生参加2026年高校“礼敬中华优秀传统文化”宣传教育活动。",
+    "event_kind": "activity",
+    "venue_name": null,
+    "organisation_name": "华东师范大学党委宣传部、华东师范大学党委学生工作部",
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "ecnu-7c70778e81",
+   "type": "Event",
+   "school": "ecnu",
+   "name": "为什么（仍然）难以理解黑箱模型？可解释人工智能与实验者回归问题",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.ecnu.edu.cn/info/1034/73741.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-20T14:00",
+    "summary": "姚思羽主讲可解释人工智能与实验者回归问题，探讨黑箱模型的评估与信任。",
+    "event_kind": "lecture",
+    "venue_name": "哲学系5305室",
+    "organisation_name": "哲学系、人文与社会科学研究院",
+    "speaker": "姚思羽",
+    "occurrences": [
+     {
+      "start": "2026-11-20T14:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "ecnu-e603fc5b54",
+   "type": "Event",
+   "school": "ecnu",
+   "name": "中国民族歌剧的历史发展与艺术特征",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.ecnu.edu.cn/info/1034/73740.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-20T13:30",
+    "summary": "李诗原主讲中国民族歌剧的历史发展与艺术特征。",
+    "event_kind": "lecture",
+    "venue_name": "闵行校区音乐学院350室",
+    "organisation_name": "音乐学院、人文与社会科学研究院",
+    "speaker": "李诗原",
+    "occurrences": [
+     {
+      "start": "2026-11-20T13:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "ecnu-79ebcee52d",
+   "type": "Event",
+   "school": "ecnu",
+   "name": "《巴黎评论》与文学创意写作",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.ecnu.edu.cn/info/1034/73742.htm",
+    "needs": [
+     "explore_a_field",
+     "make_and_express"
+    ],
+    "start": "2026-11-20T19:00",
+    "summary": "《巴黎评论》副主编Dennis Zhou与作家王安忆对谈文学创意写作。",
+    "event_kind": "lecture",
+    "venue_name": "闵行校区大学生活动中心C区报告厅",
+    "organisation_name": "中国语言文学系",
+    "speaker": "Dennis Zhou",
+    "occurrences": [
+     {
+      "start": "2026-11-20T19:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "ecnu-3ff515911e",
+   "type": "Event",
+   "school": "ecnu",
+   "name": "出版单位电商直播售书研究分享",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.ecnu.edu.cn/info/1034/73739.htm",
+    "needs": [
+     "explore_a_field",
+     "build_a_skill"
+    ],
+    "start": "2026-11-20T13:30",
+    "summary": "蒋艳平分享出版单位电商直播售书研究，探讨直播生态、运营范式与营销体系。",
+    "event_kind": "lecture",
+    "venue_name": "传播学院212报告厅",
+    "organisation_name": "传播学院",
+    "speaker": "蒋艳平",
+    "occurrences": [
+     {
+      "start": "2026-11-20T13:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "ecnu-3b8a07c324",
+   "type": "Event",
+   "school": "ecnu",
+   "name": "颜色感知的时间组织",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.ecnu.edu.cn/info/1034/73737.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-20T10:00",
+    "summary": "上海体育大学教授陈静主讲关于颜色感知时间组织的学术讲座。",
+    "event_kind": "lecture",
+    "venue_name": "普陀校区俊秀楼223报告厅",
+    "organisation_name": "心理与认知科学学院",
+    "speaker": "陈静",
+    "occurrences": [
+     {
+      "start": "2026-11-20T10:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "ecnu-3a3a105fb0",
+   "type": "Event",
+   "school": "ecnu",
+   "name": "11月20日 马明辉：皮尔士的存在图系统（逻辑与规范系列讲座第27讲）",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.ecnu.edu.cn/info/1034/73738.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-20T10:00",
+    "summary": "中山大学马明辉教授主讲皮尔士的存在图系统及其哲学后果。",
+    "event_kind": "lecture",
+    "venue_name": "冯契学术成就陈列室",
+    "organisation_name": "哲学系",
+    "speaker": "马明辉",
+    "occurrences": [
+     {
+      "start": "2026-11-20T10:00",
+      "end": null
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "ecnu-93f1766e0a",
+   "field": "title",
+   "quote": "素材、作者与文本——漫谈《山水》",
+   "url": "https://www.ecnu.edu.cn/info/1034/73745.htm",
+   "check_confidence": 0.9739935606780137,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-93f1766e0a",
+   "field": "date",
+   "quote": "2026-11-24 18:00:00",
+   "url": "https://www.ecnu.edu.cn/info/1034/73745.htm",
+   "check_confidence": 0.9682762219603406,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-93f1766e0a",
+   "field": "start_time",
+   "quote": "18:00",
+   "url": "https://www.ecnu.edu.cn/info/1034/73745.htm",
+   "check_confidence": 0.9835444398014314,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-93f1766e0a",
+   "field": "venue_name",
+   "quote": "闵行校区人文楼4330会议室",
+   "url": "https://www.ecnu.edu.cn/info/1034/73745.htm",
+   "check_confidence": 0.9554655944512762,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-93f1766e0a",
+   "field": "organisation_name",
+   "quote": "中国语言文学系",
+   "url": "https://www.ecnu.edu.cn/info/1034/73745.htm",
+   "check_confidence": 0.9678532688688036,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-93f1766e0a",
+   "field": "speaker",
+   "quote": "路内",
+   "url": "https://www.ecnu.edu.cn/info/1034/73745.htm",
+   "check_confidence": 0.9861134776926953,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-5dca3ab0aa",
+   "field": "title",
+   "quote": "2026年急救培训系列活动通知（十九）",
+   "url": "https://www.ecnu.edu.cn/info/1183/73776.htm",
+   "check_confidence": 0.9669946103129848,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-5dca3ab0aa",
+   "field": "date",
+   "quote": "2026年1 1 月 25 日（ 星期三） 13:15-16:30",
+   "url": "https://www.ecnu.edu.cn/info/1183/73776.htm",
+   "check_confidence": 0.9630990711499592,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-5dca3ab0aa",
+   "field": "start_time",
+   "quote": "13:15",
+   "url": "https://www.ecnu.edu.cn/info/1183/73776.htm",
+   "check_confidence": 0.9651124711716077,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-5dca3ab0aa",
+   "field": "venue_name",
+   "quote": "普陀校医院一楼 急救教育实践基地",
+   "url": "https://www.ecnu.edu.cn/info/1183/73776.htm",
+   "check_confidence": 0.9753862335329174,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-5dca3ab0aa",
+   "field": "organisation_name",
+   "quote": "学校红十字会联合普陀区红十字会",
+   "url": "https://www.ecnu.edu.cn/info/1183/73776.htm",
+   "check_confidence": 0.9768039290940554,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-155542b406",
+   "field": "title",
+   "quote": "关于开展第二届“青春筑梦·强国有我——讲好身边的教育故事”AIGC创意短视频征集的通知",
+   "url": "https://www.ecnu.edu.cn/info/1183/73793.htm",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-155542b406",
+   "field": "date",
+   "quote": "截止时间为 12 月 20 日",
+   "url": "https://www.ecnu.edu.cn/info/1183/73793.htm",
+   "check_confidence": 0.7075552870849185,
+   "passed": false
+  },
+  {
+   "entity_id": "ecnu-155542b406",
+   "field": "organisation_name",
+   "quote": "华东师范大学党委宣传部、华东师范大学党委学生工作部",
+   "url": "https://www.ecnu.edu.cn/info/1183/73793.htm",
+   "check_confidence": 0.9808963479632034,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-1656b40715",
+   "field": "title",
+   "quote": "关于举办《“廉心润桃李 笃行育师魂”华东师范大学廉洁文化作品展》的通知",
+   "url": "https://www.ecnu.edu.cn/info/1183/73758.htm",
+   "check_confidence": 0.971515281563451,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-1656b40715",
+   "field": "date",
+   "quote": "2026年11月18日至12月18日，工作日9：00-16：30",
+   "url": "https://www.ecnu.edu.cn/info/1183/73758.htm",
+   "check_confidence": 0.9757315997939042,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-1656b40715",
+   "field": "start_time",
+   "quote": "09:00",
+   "url": "https://www.ecnu.edu.cn/info/1183/73758.htm",
+   "check_confidence": 0.9788573519665379,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-1656b40715",
+   "field": "venue_name",
+   "quote": "闵行校区大零号湾文化艺术中心附楼一楼大厅",
+   "url": "https://www.ecnu.edu.cn/info/1183/73758.htm",
+   "check_confidence": 0.9643616159415661,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-1656b40715",
+   "field": "organisation_name",
+   "quote": "纪委办公室、党委宣传部",
+   "url": "https://www.ecnu.edu.cn/info/1183/73758.htm",
+   "check_confidence": 0.9732000816948131,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-52943cf41e",
+   "field": "title",
+   "quote": "新时代新征程的课程改革：方向与重点",
+   "url": "https://www.ecnu.edu.cn/info/1034/73743.htm",
+   "check_confidence": 0.9663351797934677,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-52943cf41e",
+   "field": "date",
+   "quote": "2026-11-20 20:30:00",
+   "url": "https://www.ecnu.edu.cn/info/1034/73743.htm",
+   "check_confidence": 0.9546432149792253,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-52943cf41e",
+   "field": "start_time",
+   "quote": "20:30",
+   "url": "https://www.ecnu.edu.cn/info/1034/73743.htm",
+   "check_confidence": 0.9711609726180873,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-52943cf41e",
+   "field": "venue_name",
+   "quote": "普陀校区逸夫楼一楼报告厅",
+   "url": "https://www.ecnu.edu.cn/info/1034/73743.htm",
+   "check_confidence": 0.9580383994824218,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-52943cf41e",
+   "field": "organisation_name",
+   "quote": "教育学部",
+   "url": "https://www.ecnu.edu.cn/info/1034/73743.htm",
+   "check_confidence": 0.9788054125927198,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-52943cf41e",
+   "field": "speaker",
+   "quote": "吴刚平",
+   "url": "https://www.ecnu.edu.cn/info/1034/73743.htm",
+   "check_confidence": 0.962214918541835,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-a89af485b8",
+   "field": "title",
+   "quote": "关于组织参加2026年高校 “礼敬中华优秀传统文化”宣传教育活动的通知",
+   "url": "https://www.ecnu.edu.cn/info/1183/73675.htm",
+   "check_confidence": 0.9794689061693295,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-a89af485b8",
+   "field": "organisation_name",
+   "quote": "华东师范大学党委宣传部、华东师范大学党委学生工作部",
+   "url": "https://www.ecnu.edu.cn/info/1183/73675.htm",
+   "check_confidence": 0.9743343223079254,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-7c70778e81",
+   "field": "title",
+   "quote": "为什么（仍然）难以理解黑箱模型？可解释人工智能与实验者回归问题",
+   "url": "https://www.ecnu.edu.cn/info/1034/73741.htm",
+   "check_confidence": 0.9714087341524745,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-7c70778e81",
+   "field": "date",
+   "quote": "2026-11-20 14:00:00",
+   "url": "https://www.ecnu.edu.cn/info/1034/73741.htm",
+   "check_confidence": 0.9691783033611332,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-7c70778e81",
+   "field": "start_time",
+   "quote": "14:00",
+   "url": "https://www.ecnu.edu.cn/info/1034/73741.htm",
+   "check_confidence": 0.9797472297862895,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-7c70778e81",
+   "field": "venue_name",
+   "quote": "哲学系5305室",
+   "url": "https://www.ecnu.edu.cn/info/1034/73741.htm",
+   "check_confidence": 0.9477826005572995,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-7c70778e81",
+   "field": "organisation_name",
+   "quote": "哲学系、人文与社会科学研究院",
+   "url": "https://www.ecnu.edu.cn/info/1034/73741.htm",
+   "check_confidence": 0.9568953961329993,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-7c70778e81",
+   "field": "speaker",
+   "quote": "姚思羽",
+   "url": "https://www.ecnu.edu.cn/info/1034/73741.htm",
+   "check_confidence": 0.9742951038199065,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-e603fc5b54",
+   "field": "title",
+   "quote": "中国民族歌剧的历史发展与艺术特征",
+   "url": "https://www.ecnu.edu.cn/info/1034/73740.htm",
+   "check_confidence": 0.9733313431873684,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-e603fc5b54",
+   "field": "date",
+   "quote": "2026-11-20 13:30:00",
+   "url": "https://www.ecnu.edu.cn/info/1034/73740.htm",
+   "check_confidence": 0.9728166486686519,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-e603fc5b54",
+   "field": "start_time",
+   "quote": "13:30",
+   "url": "https://www.ecnu.edu.cn/info/1034/73740.htm",
+   "check_confidence": 0.989112124390634,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-e603fc5b54",
+   "field": "venue_name",
+   "quote": "闵行校区音乐学院350室",
+   "url": "https://www.ecnu.edu.cn/info/1034/73740.htm",
+   "check_confidence": 0.9618429849537699,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-e603fc5b54",
+   "field": "organisation_name",
+   "quote": "音乐学院、人文与社会科学研究院",
+   "url": "https://www.ecnu.edu.cn/info/1034/73740.htm",
+   "check_confidence": 0.9667031193351997,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-e603fc5b54",
+   "field": "speaker",
+   "quote": "李诗原",
+   "url": "https://www.ecnu.edu.cn/info/1034/73740.htm",
+   "check_confidence": 0.9699539672189718,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-79ebcee52d",
+   "field": "title",
+   "quote": "《巴黎评论》与文学创意写作",
+   "url": "https://www.ecnu.edu.cn/info/1034/73742.htm",
+   "check_confidence": 0.982123407086789,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-79ebcee52d",
+   "field": "date",
+   "quote": "2026-11-20 19:00:00",
+   "url": "https://www.ecnu.edu.cn/info/1034/73742.htm",
+   "check_confidence": 0.95991875457836,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-79ebcee52d",
+   "field": "start_time",
+   "quote": "19:00",
+   "url": "https://www.ecnu.edu.cn/info/1034/73742.htm",
+   "check_confidence": 0.96381853691564,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-79ebcee52d",
+   "field": "venue_name",
+   "quote": "闵行校区大学生活动中心C区报告厅",
+   "url": "https://www.ecnu.edu.cn/info/1034/73742.htm",
+   "check_confidence": 0.9622247169358319,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-79ebcee52d",
+   "field": "organisation_name",
+   "quote": "中国语言文学系",
+   "url": "https://www.ecnu.edu.cn/info/1034/73742.htm",
+   "check_confidence": 0.9804403710220849,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-79ebcee52d",
+   "field": "speaker",
+   "quote": "Dennis Zhou",
+   "url": "https://www.ecnu.edu.cn/info/1034/73742.htm",
+   "check_confidence": 0.9668604826477323,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-3ff515911e",
+   "field": "title",
+   "quote": "出版单位电商直播售书研究分享",
+   "url": "https://www.ecnu.edu.cn/info/1034/73739.htm",
+   "check_confidence": 0.9738543274878618,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-3ff515911e",
+   "field": "date",
+   "quote": "2026-11-20 13:30:00",
+   "url": "https://www.ecnu.edu.cn/info/1034/73739.htm",
+   "check_confidence": 0.9848690864931727,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-3ff515911e",
+   "field": "start_time",
+   "quote": "13:30",
+   "url": "https://www.ecnu.edu.cn/info/1034/73739.htm",
+   "check_confidence": 0.9799412621701541,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-3ff515911e",
+   "field": "venue_name",
+   "quote": "传播学院212报告厅",
+   "url": "https://www.ecnu.edu.cn/info/1034/73739.htm",
+   "check_confidence": 0.9845479410725607,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-3ff515911e",
+   "field": "organisation_name",
+   "quote": "传播学院",
+   "url": "https://www.ecnu.edu.cn/info/1034/73739.htm",
+   "check_confidence": 0.9813742360083805,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-3ff515911e",
+   "field": "speaker",
+   "quote": "蒋艳平",
+   "url": "https://www.ecnu.edu.cn/info/1034/73739.htm",
+   "check_confidence": 0.9795310976643756,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-3b8a07c324",
+   "field": "title",
+   "quote": "颜色感知的时间组织",
+   "url": "https://www.ecnu.edu.cn/info/1034/73737.htm",
+   "check_confidence": 0.9677699438089638,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-3b8a07c324",
+   "field": "date",
+   "quote": "2026-11-20 10:00:00",
+   "url": "https://www.ecnu.edu.cn/info/1034/73737.htm",
+   "check_confidence": 0.9564892022904393,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-3b8a07c324",
+   "field": "start_time",
+   "quote": "10:00",
+   "url": "https://www.ecnu.edu.cn/info/1034/73737.htm",
+   "check_confidence": 0.9652768684262518,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-3b8a07c324",
+   "field": "venue_name",
+   "quote": "普陀校区俊秀楼223报告厅",
+   "url": "https://www.ecnu.edu.cn/info/1034/73737.htm",
+   "check_confidence": 0.9695824166449468,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-3b8a07c324",
+   "field": "organisation_name",
+   "quote": "心理与认知科学学院",
+   "url": "https://www.ecnu.edu.cn/info/1034/73737.htm",
+   "check_confidence": 0.977811721934562,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-3b8a07c324",
+   "field": "speaker",
+   "quote": "陈静",
+   "url": "https://www.ecnu.edu.cn/info/1034/73737.htm",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-3a3a105fb0",
+   "field": "title",
+   "quote": "11月20日 马明辉：皮尔士的存在图系统（逻辑与规范系列讲座第27讲）",
+   "url": "https://www.ecnu.edu.cn/info/1034/73738.htm",
+   "check_confidence": 0.9674864285862015,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-3a3a105fb0",
+   "field": "date",
+   "quote": "2026-11-20 10:00:00",
+   "url": "https://www.ecnu.edu.cn/info/1034/73738.htm",
+   "check_confidence": 0.9671996634758776,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-3a3a105fb0",
+   "field": "start_time",
+   "quote": "10:00",
+   "url": "https://www.ecnu.edu.cn/info/1034/73738.htm",
+   "check_confidence": 0.9748219310939839,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-3a3a105fb0",
+   "field": "venue_name",
+   "quote": "冯契学术成就陈列室",
+   "url": "https://www.ecnu.edu.cn/info/1034/73738.htm",
+   "check_confidence": 0.9624617097829086,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-3a3a105fb0",
+   "field": "organisation_name",
+   "quote": "哲学系",
+   "url": "https://www.ecnu.edu.cn/info/1034/73738.htm",
+   "check_confidence": 0.9712184926347381,
+   "passed": true
+  },
+  {
+   "entity_id": "ecnu-3a3a105fb0",
+   "field": "speaker",
+   "quote": "马明辉",
+   "url": "https://www.ecnu.edu.cn/info/1034/73738.htm",
+   "check_confidence": 0.9686420413828888,
+   "passed": true
+  }
+ ]
+}

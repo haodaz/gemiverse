@@ -1,0 +1,70 @@
+{
+ "school": "bc",
+ "name": "Boston College",
+ "at": "2026-11-22T00:19:43.658Z",
+ "source": "https://en.wikipedia.org/wiki/Boston%20College",
+ "character": "The main campus sits atop a hill overlooking the Chestnut Hill Reservoir and features over 120 collegiate Gothic buildings with towers reaching into the sky.",
+ "map": "/art/map/bc.jpg",
+ "landmarks": [
+  {
+   "name": "St. Ignatius Gate",
+   "name_en": "St. Ignatius Gate",
+   "kind": "gate",
+   "quote": "The campus is accessible via the Boston College station, situated at St. Ignatius Gate.",
+   "look": "A campus gate next to a transit station.",
+   "check": 0.9606966151490977,
+   "confidence": 0.9606966151490977,
+   "passed": true,
+   "x": 0.22,
+   "y": 0.51
+  },
+  {
+   "name": "St. Mary's Hall",
+   "name_en": "St. Mary's Hall",
+   "kind": "hall",
+   "quote": "The chapel for the university is located in St. Mary's Hall, the Jesuit residential facility.",
+   "look": "A residential hall containing a university chapel.",
+   "check": 0.97915648134324,
+   "confidence": 0.97915648134324,
+   "passed": true,
+   "x": 0.84,
+   "y": 0.35
+  },
+  {
+   "name": "Gonzaga Hall",
+   "name_en": "Gonzaga Hall",
+   "kind": "hall",
+   "quote": "St. Joseph's Chapel in the Basement of Gonzaga Hall on Upper Campus",
+   "look": "A campus hall with a chapel in its basement.",
+   "check": 0.9785807646816415,
+   "confidence": 0.9785807646816415,
+   "passed": true,
+   "x": 0.6,
+   "y": 0.56
+  },
+  {
+   "name": "Cushing Hall",
+   "name_en": "Cushing Hall",
+   "kind": "hall",
+   "quote": "and St. Catherine of Sienna Chapel in Cushing Hall.",
+   "look": "A campus hall containing a chapel.",
+   "check": 0.9676795995916182,
+   "confidence": 0.9676795995916182,
+   "passed": true,
+   "x": 0.85,
+   "y": 0.71
+  },
+  {
+   "name": "Chestnut Hill Reservoir",
+   "name_en": "Chestnut Hill Reservoir",
+   "kind": "lake",
+   "quote": "features over 120 buildings set atop a hill overlooking the Chestnut Hill Reservoir.",
+   "look": "A large body of water below the hilltop campus.",
+   "check": 0.07451476427906331,
+   "confidence": 0.9254852357209367,
+   "passed": false
+  }
+ ],
+ "tokens": 7079,
+ "seconds": 28
+}

@@ -1,0 +1,84 @@
+{
+ "school": "seu",
+ "name": "东南大学",
+ "at": "2026-11-22T00:15:56.579Z",
+ "source": "https://zh.wikipedia.org/wiki/%E4%B8%9C%E5%8D%97%E5%A4%A7%E5%AD%A6",
+ "character": "A green, open, symmetrically laid-out campus blending Chinese and Western styles, featuring six-story white-walled buildings with pitched roofs, concentric ring roads, and a lake.",
+ "map": "/art/map/seu.jpg",
+ "landmarks": [
+  {
+   "name": "李文正图书馆",
+   "name_en": "Li Wenzheng Library",
+   "kind": "library",
+   "quote": "两条轴线交汇于校园中心的李文正图书馆。",
+   "look": "Five-story neoclassical library on raised base with gray-white granite facade and wide colonnade.",
+   "check": 0.9693048433527214,
+   "confidence": 0.9693048433527214,
+   "passed": true,
+   "x": 0.5,
+   "y": 0.3
+  },
+  {
+   "name": "九龙湖",
+   "name_en": "Jiulong Lake",
+   "kind": "lake",
+   "quote": "九龙湖水被从校园西北角引入校区，并在校园内形成主要的景观空间。",
+   "look": "Lake entering from the northwest corner, forming the main water landscape.",
+   "check": 0.9779310235019637,
+   "confidence": 0.9779310235019637,
+   "passed": true,
+   "x": 0.14,
+   "y": 0.16
+  },
+  {
+   "name": "九曲桥",
+   "name_en": "Nine-Bend Bridge",
+   "kind": "bridge",
+   "quote": "但在西北角被九龙湖截断，并以九曲桥连接",
+   "look": "Zigzag bridge spanning the lake along the innermost circular campus road.",
+   "check": 0.8965134900350511,
+   "confidence": 0.8965134900350511,
+   "passed": true,
+   "x": 0.41,
+   "y": 0.55
+  },
+  {
+   "name": "大学生活动中心-焦廷标馆",
+   "name_en": "Student Activity Center - Jiao Tingbiao Hall",
+   "kind": "hall",
+   "quote": "大学生活动中心-焦廷标馆综合体由史晓川设计",
+   "look": "Asymmetric complex with six-story block, round hall, cabin-shaped auditorium, and red walls.",
+   "check": 0.9666874084280501,
+   "confidence": 0.9666874084280501,
+   "passed": true,
+   "x": 0.48,
+   "y": 0.8
+  },
+  {
+   "name": "体育馆",
+   "name_en": "Gymnasium",
+   "kind": "stadium",
+   "quote": "九龙湖校区体育馆位于校园东门，为东西轴线最重要的门户景观。",
+   "look": "Circular bowl-shaped stadium with vertical lines and four indoor training halls.",
+   "check": 0.962385535996628,
+   "confidence": 0.962385535996628,
+   "passed": true,
+   "x": 0.79,
+   "y": 0.66
+  },
+  {
+   "name": "东门",
+   "name_en": "East Gate",
+   "kind": "gate",
+   "quote": "九龙湖校区体育馆位于校园东门",
+   "look": "Campus east gate along the east-west axis.",
+   "check": 0.9572009716694313,
+   "confidence": 0.9572009716694313,
+   "passed": true,
+   "x": 0.9,
+   "y": 0.34
+  }
+ ],
+ "tokens": 18670,
+ "seconds": 33
+}

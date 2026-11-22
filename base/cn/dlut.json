@@ -1,0 +1,729 @@
+{
+ "school": "dlut",
+ "name": "大连理工大学",
+ "at": "2026-11-22T00:14:55.764Z",
+ "seconds": 34,
+ "tokens": 56248,
+ "entities": [
+  {
+   "id": "dlut-35db58cf60",
+   "type": "Event",
+   "school": "dlut",
+   "name": "Are we ready for clinical proteomics?",
+   "tier": 1,
+   "fields": {
+    "url": "http://huodong.dlut.edu.cn/info/1192/17563.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2025-05-07T09:00",
+    "summary": "张会教授主讲临床蛋白质组学在疾病诊断与肿瘤研究中的应用。",
+    "event_kind": "lecture",
+    "venue_name": "化工楼",
+    "organisation_name": null,
+    "speaker": "张会",
+    "occurrences": [
+     {
+      "start": "2025-05-07T09:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "dlut-fe03066ded",
+   "type": "Event",
+   "school": "dlut",
+   "name": "地球大龟裂——基于热力学的地球演化探索 ——印度洋三联点洋中脊裂谷科学考察汇报",
+   "tier": 1,
+   "fields": {
+    "url": "http://huodong.dlut.edu.cn/info/1192/17564.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-05-08T15:30",
+    "summary": "唐春安教授主讲“地球大龟裂”学术报告，基于热力学探讨地球演化与洋中脊裂谷形成机制。",
+    "event_kind": "lecture",
+    "venue_name": "伯川图书馆报告厅",
+    "organisation_name": null,
+    "speaker": "唐春安",
+    "occurrences": [
+     {
+      "start": "2026-05-08T15:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "dlut-c44b55076b",
+   "type": "Event",
+   "school": "dlut",
+   "name": "复杂社会系统中的动力学涌现行为研究",
+   "tier": 1,
+   "fields": {
+    "url": "http://huodong.dlut.edu.cn/info/1192/17553.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2025-04-28T13:30",
+    "summary": "王鑫副教授将介绍复杂社会系统中的动力学涌现行为研究进展及前沿趋势。",
+    "event_kind": "lecture",
+    "venue_name": "数学科学学院大楼114教室",
+    "organisation_name": null,
+    "speaker": "王鑫",
+    "occurrences": [
+     {
+      "start": "2025-04-28T13:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "dlut-4b6a12b097",
+   "type": "Event",
+   "school": "dlut",
+   "name": "新时期远海装备技术发展与自主创新",
+   "tier": 1,
+   "fields": {
+    "url": "http://huodong.dlut.edu.cn/info/1192/17543.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2025-03-22T15:00",
+    "summary": "汤明刚研究员主讲新时期远海装备技术发展与我国自主创新研究工作。",
+    "event_kind": "lecture",
+    "venue_name": "海宇楼（1号实验楼）602会议室",
+    "organisation_name": null,
+    "speaker": "汤明刚",
+    "occurrences": [
+     {
+      "start": "2025-03-22T15:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "dlut-a671d51c6c",
+   "type": "Event",
+   "school": "dlut",
+   "name": "机器学习的知识-数据模型开发",
+   "tier": 1,
+   "fields": {
+    "url": "http://huodong.dlut.edu.cn/info/1192/17533.htm",
+    "needs": [
+     "explore_a_field",
+     "get_mentorship_and_feedback"
+    ],
+    "start": "2025-03-05T14:30",
+    "summary": "Witold Pedrycz教授作关于机器学习知识与数据模型开发的学术报告。",
+    "event_kind": "lecture",
+    "venue_name": "海山楼B1103",
+    "organisation_name": null,
+    "speaker": "Witold Pedrycz",
+    "occurrences": [
+     {
+      "start": "2025-03-05T14:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "dlut-712c71d763",
+   "type": "Event",
+   "school": "dlut",
+   "name": "多复变值分布与复时滞微分方程",
+   "tier": 1,
+   "fields": {
+    "url": "http://huodong.dlut.edu.cn/info/1192/17493.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2024-12-12T15:40",
+    "summary": "曹廷彬教授主讲多复变值分布与复时滞微分方程线上学术讲座。",
+    "event_kind": "lecture",
+    "venue_name": "线上腾讯会议",
+    "organisation_name": null,
+    "speaker": "曹廷彬",
+    "occurrences": [
+     {
+      "start": "2024-12-12T15:40",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "dlut-cb4be7bb25",
+   "type": "Event",
+   "school": "dlut",
+   "name": "DeepSeek:从入门到精通",
+   "tier": 1,
+   "fields": {
+    "url": "http://huodong.dlut.edu.cn/info/1192/17523.htm",
+    "needs": [
+     "build_a_skill",
+     "explore_a_field"
+    ],
+    "start": "2025-02-28T15:30",
+    "summary": "聚焦DeepSeek等AI技术的多场景应用，探讨人机协同思维以提升学习科研效能。",
+    "event_kind": "lecture",
+    "venue_name": "学生文化中心剧场",
+    "organisation_name": null,
+    "speaker": "余梦珑",
+    "occurrences": [
+     {
+      "start": "2025-02-28T15:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "dlut-f20658954b",
+   "type": "Event",
+   "school": "dlut",
+   "name": "三维图像分析软件Avizo在材料和地质的应用",
+   "tier": 1,
+   "fields": {
+    "url": "http://huodong.dlut.edu.cn/info/1192/17453.htm",
+    "needs": [
+     "build_a_skill",
+     "explore_a_field"
+    ],
+    "start": "2024-11-22T09:30",
+    "summary": "介绍三维图像分析软件Avizo在材料和地质领域的基本功能培训与上机操作。",
+    "event_kind": "workshop",
+    "venue_name": "海映楼 B223",
+    "organisation_name": null,
+    "speaker": "何沛霖",
+    "occurrences": [
+     {
+      "start": "2024-11-22T09:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "dlut-3e2fa8a830",
+   "type": "Event",
+   "school": "dlut",
+   "name": "《人工智能驱动机器人革命和制造范式变革》",
+   "tier": 1,
+   "fields": {
+    "url": "http://huodong.dlut.edu.cn/info/1192/17443.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2024-11-16T13:30",
+    "summary": "于海斌院士将作关于人工智能驱动机器人革命和制造范式变革的学术报告。",
+    "event_kind": "lecture",
+    "venue_name": "学生文化中心A座百川报告厅",
+    "organisation_name": null,
+    "speaker": "于海斌",
+    "occurrences": [
+     {
+      "start": "2024-11-16T13:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "dlut-fb860b062a",
+   "type": "Event",
+   "school": "dlut",
+   "name": "黎曼zeta函数和表示论介绍",
+   "tier": 1,
+   "fields": {
+    "url": "http://huodong.dlut.edu.cn/info/1192/17463.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2024-12-09T15:30",
+    "summary": "孙斌勇院士主讲，介绍黎曼zeta函数与表示论之间的自然联系及其推广。",
+    "event_kind": "lecture",
+    "venue_name": "图书馆报告厅",
+    "organisation_name": null,
+    "speaker": "孙斌勇",
+    "occurrences": [
+     {
+      "start": "2024-12-09T15:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "dlut-718dd15b2b",
+   "type": "Event",
+   "school": "dlut",
+   "name": "A noncompact Schauder ﬁxed point theorem in random",
+   "tier": 1,
+   "fields": {
+    "url": "http://huodong.dlut.edu.cn/info/1192/17413.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2024-11-13T16:00",
+    "summary": "郭铁信教授线上作随机赋范模中非紧Schauder不动点定理的学术报告。",
+    "event_kind": "lecture",
+    "venue_name": "腾讯会议（线上）",
+    "organisation_name": null,
+    "speaker": "郭铁信",
+    "occurrences": [
+     {
+      "start": "2024-11-13T16:00",
+      "end": null
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "dlut-35db58cf60",
+   "field": "title",
+   "quote": "Are we ready for clinical proteomics?",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17563.htm",
+   "check_confidence": 0.978318169527108,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-35db58cf60",
+   "field": "date",
+   "quote": "2025-05-07 09:00:00",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17563.htm",
+   "check_confidence": 0.9521891885925429,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-35db58cf60",
+   "field": "start_time",
+   "quote": "09:00",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17563.htm",
+   "check_confidence": 0.981863982883911,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-35db58cf60",
+   "field": "venue_name",
+   "quote": "化工楼",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17563.htm",
+   "check_confidence": 0.9779166371140667,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-35db58cf60",
+   "field": "speaker",
+   "quote": "张会",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17563.htm",
+   "check_confidence": 0.980840487416707,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-fe03066ded",
+   "field": "title",
+   "quote": "地球大龟裂——基于热力学的地球演化探索 ——印度洋三联点洋中脊裂谷科学考察汇报",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17564.htm",
+   "check_confidence": 0.9711328823767948,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-fe03066ded",
+   "field": "date",
+   "quote": "开始时间： 2026-05-08 15:30",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17564.htm",
+   "check_confidence": 0.970195608602281,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-fe03066ded",
+   "field": "start_time",
+   "quote": "15:30",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17564.htm",
+   "check_confidence": 0.9580867533796031,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-fe03066ded",
+   "field": "venue_name",
+   "quote": "活动地点： 伯川图书馆报告厅",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17564.htm",
+   "check_confidence": 0.9804488146645506,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-fe03066ded",
+   "field": "speaker",
+   "quote": "唐春安",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17564.htm",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-c44b55076b",
+   "field": "title",
+   "quote": "复杂社会系统中的动力学涌现行为研究",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17553.htm",
+   "check_confidence": 0.9690203784017796,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-c44b55076b",
+   "field": "date",
+   "quote": "开始时间： 2025-04-28 13:30:00",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17553.htm",
+   "check_confidence": 0.9692237583434881,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-c44b55076b",
+   "field": "start_time",
+   "quote": "13:30",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17553.htm",
+   "check_confidence": 0.9803214722365018,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-c44b55076b",
+   "field": "venue_name",
+   "quote": "活动地点： 数学科学学院大楼114教室",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17553.htm",
+   "check_confidence": 0.9794506390705623,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-c44b55076b",
+   "field": "speaker",
+   "quote": "王鑫",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17553.htm",
+   "check_confidence": 0.975588845587785,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-4b6a12b097",
+   "field": "title",
+   "quote": "新时期远海装备技术发展与自主创新",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17543.htm",
+   "check_confidence": 0.9664870516745941,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-4b6a12b097",
+   "field": "date",
+   "quote": "2025-03-22 15:00:00",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17543.htm",
+   "check_confidence": 0.9749838151270663,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-4b6a12b097",
+   "field": "start_time",
+   "quote": "15:00",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17543.htm",
+   "check_confidence": 0.9805568929617443,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-4b6a12b097",
+   "field": "venue_name",
+   "quote": "海宇楼（1号实验楼）602会议室",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17543.htm",
+   "check_confidence": 0.9792979366646228,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-4b6a12b097",
+   "field": "speaker",
+   "quote": "汤明刚",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17543.htm",
+   "check_confidence": 0.9808872868157372,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-a671d51c6c",
+   "field": "title",
+   "quote": "机器学习的知识-数据模型开发",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17533.htm",
+   "check_confidence": 0.975391368603342,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-a671d51c6c",
+   "field": "date",
+   "quote": "开始时间： 2025-03-05 14:30:00",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17533.htm",
+   "check_confidence": 0.9545863036318957,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-a671d51c6c",
+   "field": "start_time",
+   "quote": "14:30",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17533.htm",
+   "check_confidence": 0.9636905525618235,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-a671d51c6c",
+   "field": "venue_name",
+   "quote": "海山楼B1103",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17533.htm",
+   "check_confidence": 0.9697756976435882,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-a671d51c6c",
+   "field": "speaker",
+   "quote": "Witold Pedrycz",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17533.htm",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-712c71d763",
+   "field": "title",
+   "quote": "多复变值分布与复时滞微分方程",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17493.htm",
+   "check_confidence": 0.96922518149733,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-712c71d763",
+   "field": "date",
+   "quote": "开始时间： 2024-12-12 15:40:00",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17493.htm",
+   "check_confidence": 0.9654081267553934,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-712c71d763",
+   "field": "start_time",
+   "quote": "15:40",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17493.htm",
+   "check_confidence": 0.9852361928738615,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-712c71d763",
+   "field": "venue_name",
+   "quote": "活动地点： 线上腾讯会议",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17493.htm",
+   "check_confidence": 0.9744878175272118,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-712c71d763",
+   "field": "speaker",
+   "quote": "曹廷彬",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17493.htm",
+   "check_confidence": 0.9889423576776367,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-cb4be7bb25",
+   "field": "title",
+   "quote": "DeepSeek:从入门到精通",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17523.htm",
+   "check_confidence": 0.970796927289933,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-cb4be7bb25",
+   "field": "date",
+   "quote": "开始时间： 2025-02-28 15:30:00",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17523.htm",
+   "check_confidence": 0.9642524544630618,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-cb4be7bb25",
+   "field": "start_time",
+   "quote": "15:30",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17523.htm",
+   "check_confidence": 0.9607345017524517,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-cb4be7bb25",
+   "field": "venue_name",
+   "quote": "活动地点： 学生文化中心剧场",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17523.htm",
+   "check_confidence": 0.9712565242718145,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-cb4be7bb25",
+   "field": "speaker",
+   "quote": "余梦珑",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17523.htm",
+   "check_confidence": 0.9767828070195248,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-f20658954b",
+   "field": "title",
+   "quote": "三维图像分析软件Avizo在材料和地质的应用",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17453.htm",
+   "check_confidence": 0.9801100704152305,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-f20658954b",
+   "field": "date",
+   "quote": "开始时间： 2024-11-22 09:30:00",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17453.htm",
+   "check_confidence": 0.9619350842025202,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-f20658954b",
+   "field": "start_time",
+   "quote": "09:30",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17453.htm",
+   "check_confidence": 0.9757551441705077,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-f20658954b",
+   "field": "venue_name",
+   "quote": "活动地点： 海映楼 B223",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17453.htm",
+   "check_confidence": 0.9641197907538668,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-f20658954b",
+   "field": "speaker",
+   "quote": "何沛霖",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17453.htm",
+   "check_confidence": 0.9777984418882032,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-3e2fa8a830",
+   "field": "title",
+   "quote": "《人工智能驱动机器人革命和制造范式变革》",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17443.htm",
+   "check_confidence": 0.9763870273285348,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-3e2fa8a830",
+   "field": "date",
+   "quote": "开始时间： 2024-11-16 13:30:00",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17443.htm",
+   "check_confidence": 0.966686643370221,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-3e2fa8a830",
+   "field": "start_time",
+   "quote": "13:30",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17443.htm",
+   "check_confidence": 0.9721382186998931,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-3e2fa8a830",
+   "field": "venue_name",
+   "quote": "活动地点： 学生文化中心A座百川报告厅",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17443.htm",
+   "check_confidence": 0.9836556411734806,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-3e2fa8a830",
+   "field": "speaker",
+   "quote": "于海斌",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17443.htm",
+   "check_confidence": 0.9848175356765781,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-fb860b062a",
+   "field": "title",
+   "quote": "黎曼zeta函数和表示论介绍",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17463.htm",
+   "check_confidence": 0.9684146136160755,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-fb860b062a",
+   "field": "date",
+   "quote": "开始时间： 2024-12-09 15:30:00",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17463.htm",
+   "check_confidence": 0.9696159316038738,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-fb860b062a",
+   "field": "start_time",
+   "quote": "15:30",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17463.htm",
+   "check_confidence": 0.9755247317774118,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-fb860b062a",
+   "field": "venue_name",
+   "quote": "活动地点： 图书馆报告厅",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17463.htm",
+   "check_confidence": 0.9758529050622046,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-fb860b062a",
+   "field": "speaker",
+   "quote": "孙斌勇",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17463.htm",
+   "check_confidence": 0.9899162511290928,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-718dd15b2b",
+   "field": "title",
+   "quote": "A noncompact Schauder ﬁxed point theorem in random",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17413.htm",
+   "check_confidence": 0.961017583255242,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-718dd15b2b",
+   "field": "date",
+   "quote": "开始时间： 2024-11-13 16:00:00",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17413.htm",
+   "check_confidence": 0.9843672813579568,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-718dd15b2b",
+   "field": "start_time",
+   "quote": "16:00",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17413.htm",
+   "check_confidence": 0.9777898333994265,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-718dd15b2b",
+   "field": "venue_name",
+   "quote": "活动地点： 腾讯会议（线上）",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17413.htm",
+   "check_confidence": 0.9702968573710812,
+   "passed": true
+  },
+  {
+   "entity_id": "dlut-718dd15b2b",
+   "field": "speaker",
+   "quote": "郭铁信",
+   "url": "http://huodong.dlut.edu.cn/info/1192/17413.htm",
+   "check_confidence": 0.9740996918924918,
+   "passed": true
+  }
+ ]
+}

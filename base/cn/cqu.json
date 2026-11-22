@@ -1,0 +1,840 @@
+{
+ "school": "cqu",
+ "name": "重庆大学",
+ "at": "2026-11-22T00:18:34.364Z",
+ "seconds": 43,
+ "tokens": 72210,
+ "entities": [
+  {
+   "id": "cqu-292e93517d",
+   "type": "Event",
+   "school": "cqu",
+   "name": "荷兰莱顿大学Arnold Tukker教授学术讲座",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.cqu.edu.cn/info/5101/69911.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-23T10:00",
+    "summary": "荷兰莱顿大学Arnold Tukker教授主讲产业生态学与可持续发展的方法、应用与全球挑战。",
+    "event_kind": "lecture",
+    "venue_name": "沙坪坝校区B校园经管学院104室",
+    "organisation_name": null,
+    "speaker": "Arnold Tukker 教授",
+    "occurrences": [
+     {
+      "start": "2026-11-23T10:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "cqu-8f46751096",
+   "type": "Event",
+   "school": "cqu",
+   "name": "大连理工大学胡祥培教授学术讲座",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.cqu.edu.cn/info/5101/69901.htm",
+    "needs": [
+     "explore_a_field",
+     "build_a_skill"
+    ],
+    "start": "2026-11-23T10:30",
+    "summary": "胡祥培教授主讲基于大语言模型的运筹优化智能建模方法，介绍LM4OR-OPT框架。",
+    "event_kind": "lecture",
+    "venue_name": "沙坪坝校区B校园经管学院101报告厅",
+    "organisation_name": null,
+    "speaker": "胡祥培 教授",
+    "occurrences": [
+     {
+      "start": "2026-11-23T10:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "cqu-0423d75a90",
+   "type": "Event",
+   "school": "cqu",
+   "name": "重庆大学弘深医学论坛-第二十期",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.cqu.edu.cn/info/5101/69921.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-18T14:30",
+    "summary": "重庆大学医学院主办弘深医学论坛，薛愿超研究员主讲RNA互作组学新技术及应用。",
+    "event_kind": "lecture",
+    "venue_name": "沙坪坝校区C校园 5101学术报告厅",
+    "organisation_name": "重庆大学医学院",
+    "speaker": "薛愿超 研究员",
+    "occurrences": [
+     {
+      "start": "2026-11-18T14:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "cqu-3640ccb6f9",
+   "type": "Event",
+   "school": "cqu",
+   "name": "中国人民大学陈卫东教授学术讲座",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.cqu.edu.cn/info/5101/69791.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-12T19:00",
+    "summary": "中国人民大学陈卫东教授将主讲刑事诉讼法第四次修正中的相关问题。",
+    "event_kind": "lecture",
+    "venue_name": "沙坪坝校区B校园法学院210学术报告厅",
+    "organisation_name": null,
+    "speaker": "陈卫东",
+    "occurrences": [
+     {
+      "start": "2026-11-12T19:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "cqu-9aee7b690f",
+   "type": "Event",
+   "school": "cqu",
+   "name": "北京大学车浩教授学术讲座",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.cqu.edu.cn/info/5101/69671.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-07T14:30",
+    "summary": "北京大学车浩教授将主讲学术讲座，重庆大学法学院主办。",
+    "event_kind": "lecture",
+    "venue_name": "沙坪坝校区B校园二综314模拟法庭",
+    "organisation_name": "重庆大学法学院",
+    "speaker": "车浩 教授",
+    "occurrences": [
+     {
+      "start": "2026-11-07T14:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "cqu-e6409badfa",
+   "type": "Event",
+   "school": "cqu",
+   "name": "天津大学刘霜教授学术讲座",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.cqu.edu.cn/info/5101/69681.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-08T19:00",
+    "summary": "天津大学刘霜教授主讲关于脑机接口刑事风险的预判与应对的学术讲座。",
+    "event_kind": "lecture",
+    "venue_name": "沙坪坝校区B校园法学楼210报告厅",
+    "organisation_name": "重庆大学法学院",
+    "speaker": "刘霜 教授",
+    "occurrences": [
+     {
+      "start": "2026-11-08T19:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "cqu-fbe693b04c",
+   "type": "Event",
+   "school": "cqu",
+   "name": "“民主湖大讲堂”（第一期）:万物皆可量子—量子计算、人人有责",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.cqu.edu.cn/info/5101/69521.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-10-28T14:30",
+    "summary": "俞大鹏院士主讲量子计算与量子信息产业现状及科学仪器自主研发。",
+    "event_kind": "lecture",
+    "venue_name": "沙坪坝校区A校园民主湖报告厅",
+    "organisation_name": "材料科学与工程学院",
+    "speaker": "俞大鹏 院士",
+    "occurrences": [
+     {
+      "start": "2026-10-28T14:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "cqu-7b43bb473f",
+   "type": "Event",
+   "school": "cqu",
+   "name": "重庆大学弘深医学论坛-第十九期",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.cqu.edu.cn/info/5101/69241.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-10-17T15:30",
+    "summary": "重庆大学医学院主办弘深医学论坛第十九期，何明亮教授主讲抗病毒与胰腺癌先天免疫恢复。",
+    "event_kind": "lecture",
+    "venue_name": "沙坪坝校区C校园 第一教学楼609",
+    "organisation_name": "重庆大学医学院",
+    "speaker": "何明亮 教授",
+    "occurrences": [
+     {
+      "start": "2026-10-17T15:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "cqu-f4e17086e9",
+   "type": "Event",
+   "school": "cqu",
+   "name": "重庆市社科界第九届学术年活动之“私法三人谈”第十八期",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.cqu.edu.cn/info/5101/69261.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-10-15T19:00",
+    "summary": "中南财经政法大学徐强胜教授主讲“民法典时代为什么需要商法？”的学术讲座。",
+    "event_kind": "lecture",
+    "venue_name": "法学院210学术报告厅",
+    "organisation_name": null,
+    "speaker": "徐强胜",
+    "occurrences": [
+     {
+      "start": "2026-10-15T19:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "cqu-77623eeef5",
+   "type": "Event",
+   "school": "cqu",
+   "name": "中国电子科技集团有限公司陆军院士学术报告",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.cqu.edu.cn/info/5101/69211.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-10-13T16:00",
+    "summary": "陆军院士主讲现代量子科技体系和产业体系建设的学术报告。",
+    "event_kind": "lecture",
+    "venue_name": "科学城校区虎溪校园 图书馆1F-7",
+    "organisation_name": "校学术委员会办公室、物理学院、前沿院量子材料与器件研究中心",
+    "speaker": "陆军院士",
+    "occurrences": [
+     {
+      "start": "2026-10-13T16:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "cqu-25ce862d5a",
+   "type": "Event",
+   "school": "cqu",
+   "name": "中科院物理所李明教授学术讲座",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.cqu.edu.cn/info/5101/69081.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-09-29T10:00",
+    "summary": "中科院物理所李明教授将在重庆大学作题为《生命小系统的物理生物学》的学术讲座。",
+    "event_kind": "lecture",
+    "venue_name": "科学城校区虎溪校园图书馆1F-9",
+    "organisation_name": null,
+    "speaker": "李明",
+    "occurrences": [
+     {
+      "start": "2026-09-29T10:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "cqu-194b73ee04",
+   "type": "Event",
+   "school": "cqu",
+   "name": "浙江大学吴志岩教授学术讲座",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.cqu.edu.cn/info/5101/68901.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-09-23T10:00",
+    "summary": "浙江大学吴志岩教授主讲环境规制如何通过制度信号推动企业绿色出口。",
+    "event_kind": "lecture",
+    "venue_name": "沙坪坝校区B校园经管学院104室",
+    "organisation_name": null,
+    "speaker": "吴志岩 教授",
+    "occurrences": [
+     {
+      "start": "2026-09-23T10:00",
+      "end": null
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "cqu-292e93517d",
+   "field": "title",
+   "quote": "荷兰莱顿大学Arnold Tukker教授学术讲座",
+   "url": "https://www.cqu.edu.cn/info/5101/69911.htm",
+   "check_confidence": 0.9747246152643643,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-292e93517d",
+   "field": "date",
+   "quote": "2026年11月23日 10时00分",
+   "url": "https://www.cqu.edu.cn/info/5101/69911.htm",
+   "check_confidence": 0.9747239582449164,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-292e93517d",
+   "field": "start_time",
+   "quote": "10:00",
+   "url": "https://www.cqu.edu.cn/info/5101/69911.htm",
+   "check_confidence": 0.9779854388207514,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-292e93517d",
+   "field": "venue_name",
+   "quote": "沙坪坝校区B校园经管学院104室",
+   "url": "https://www.cqu.edu.cn/info/5101/69911.htm",
+   "check_confidence": 0.9748879721779888,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-292e93517d",
+   "field": "speaker",
+   "quote": "Arnold Tukker 教授",
+   "url": "https://www.cqu.edu.cn/info/5101/69911.htm",
+   "check_confidence": 0.9688529107110307,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-8f46751096",
+   "field": "title",
+   "quote": "大连理工大学胡祥培教授学术讲座",
+   "url": "https://www.cqu.edu.cn/info/5101/69901.htm",
+   "check_confidence": 0.9711032460000953,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-8f46751096",
+   "field": "date",
+   "quote": "2026年11月23日 10时30分",
+   "url": "https://www.cqu.edu.cn/info/5101/69901.htm",
+   "check_confidence": 0.9811828348233298,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-8f46751096",
+   "field": "start_time",
+   "quote": "10:30",
+   "url": "https://www.cqu.edu.cn/info/5101/69901.htm",
+   "check_confidence": 0.9800323981470391,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-8f46751096",
+   "field": "venue_name",
+   "quote": "沙坪坝校区B校园经管学院101报告厅",
+   "url": "https://www.cqu.edu.cn/info/5101/69901.htm",
+   "check_confidence": 0.9668409803093329,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-8f46751096",
+   "field": "speaker",
+   "quote": "胡祥培 教授",
+   "url": "https://www.cqu.edu.cn/info/5101/69901.htm",
+   "check_confidence": 0.9783855950612509,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-0423d75a90",
+   "field": "title",
+   "quote": "重庆大学弘深医学论坛-第二十期",
+   "url": "https://www.cqu.edu.cn/info/5101/69921.htm",
+   "check_confidence": 0.9756514564246401,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-0423d75a90",
+   "field": "date",
+   "quote": "2026年11月18日 14时30分",
+   "url": "https://www.cqu.edu.cn/info/5101/69921.htm",
+   "check_confidence": 0.9841065346173374,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-0423d75a90",
+   "field": "start_time",
+   "quote": "14:30",
+   "url": "https://www.cqu.edu.cn/info/5101/69921.htm",
+   "check_confidence": 0.9761333973163164,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-0423d75a90",
+   "field": "venue_name",
+   "quote": "沙坪坝校区C校园 5101学术报告厅",
+   "url": "https://www.cqu.edu.cn/info/5101/69921.htm",
+   "check_confidence": 0.9660812955756308,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-0423d75a90",
+   "field": "organisation_name",
+   "quote": "重庆大学医学院",
+   "url": "https://www.cqu.edu.cn/info/5101/69921.htm",
+   "check_confidence": 0.97732216627627,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-0423d75a90",
+   "field": "speaker",
+   "quote": "薛愿超 研究员",
+   "url": "https://www.cqu.edu.cn/info/5101/69921.htm",
+   "check_confidence": 0.9774395302972528,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-3640ccb6f9",
+   "field": "title",
+   "quote": "中国人民大学陈卫东教授学术讲座",
+   "url": "https://www.cqu.edu.cn/info/5101/69791.htm",
+   "check_confidence": 0.9731423479734634,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-3640ccb6f9",
+   "field": "date",
+   "quote": "2026年11月12日 19时00分",
+   "url": "https://www.cqu.edu.cn/info/5101/69791.htm",
+   "check_confidence": 0.9677096922597791,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-3640ccb6f9",
+   "field": "start_time",
+   "quote": "19:00",
+   "url": "https://www.cqu.edu.cn/info/5101/69791.htm",
+   "check_confidence": 0.9846390815002849,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-3640ccb6f9",
+   "field": "venue_name",
+   "quote": "沙坪坝校区B校园法学院210学术报告厅",
+   "url": "https://www.cqu.edu.cn/info/5101/69791.htm",
+   "check_confidence": 0.9546462710702367,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-3640ccb6f9",
+   "field": "speaker",
+   "quote": "陈卫东",
+   "url": "https://www.cqu.edu.cn/info/5101/69791.htm",
+   "check_confidence": 0.9734490263592014,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-9aee7b690f",
+   "field": "title",
+   "quote": "北京大学车浩教授学术讲座",
+   "url": "https://www.cqu.edu.cn/info/5101/69671.htm",
+   "check_confidence": 0.9804608726132119,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-9aee7b690f",
+   "field": "date",
+   "quote": "时间 : 2026年11月07日 14时30分",
+   "url": "https://www.cqu.edu.cn/info/5101/69671.htm",
+   "check_confidence": 0.9664196083325749,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-9aee7b690f",
+   "field": "start_time",
+   "quote": "14:30",
+   "url": "https://www.cqu.edu.cn/info/5101/69671.htm",
+   "check_confidence": 0.9602571089078781,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-9aee7b690f",
+   "field": "venue_name",
+   "quote": "地点 : 沙坪坝校区B校园二综314模拟法庭",
+   "url": "https://www.cqu.edu.cn/info/5101/69671.htm",
+   "check_confidence": 0.9582530515142266,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-9aee7b690f",
+   "field": "organisation_name",
+   "quote": "重庆大学法学院",
+   "url": "https://www.cqu.edu.cn/info/5101/69671.htm",
+   "check_confidence": 0.9751931101615051,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-9aee7b690f",
+   "field": "speaker",
+   "quote": "车浩 教授",
+   "url": "https://www.cqu.edu.cn/info/5101/69671.htm",
+   "check_confidence": 0.9739172792203418,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-e6409badfa",
+   "field": "title",
+   "quote": "天津大学刘霜教授学术讲座",
+   "url": "https://www.cqu.edu.cn/info/5101/69681.htm",
+   "check_confidence": 0.9757022762270876,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-e6409badfa",
+   "field": "date",
+   "quote": "2026年11月08日 19时00分",
+   "url": "https://www.cqu.edu.cn/info/5101/69681.htm",
+   "check_confidence": 0.981161832786745,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-e6409badfa",
+   "field": "start_time",
+   "quote": "19:00",
+   "url": "https://www.cqu.edu.cn/info/5101/69681.htm",
+   "check_confidence": 0.9767027044568893,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-e6409badfa",
+   "field": "venue_name",
+   "quote": "沙坪坝校区B校园法学楼210报告厅",
+   "url": "https://www.cqu.edu.cn/info/5101/69681.htm",
+   "check_confidence": 0.968924206302873,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-e6409badfa",
+   "field": "organisation_name",
+   "quote": "重庆大学法学院",
+   "url": "https://www.cqu.edu.cn/info/5101/69681.htm",
+   "check_confidence": 0.9808168228499959,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-e6409badfa",
+   "field": "speaker",
+   "quote": "刘霜 教授",
+   "url": "https://www.cqu.edu.cn/info/5101/69681.htm",
+   "check_confidence": 0.9660219226367109,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-fbe693b04c",
+   "field": "title",
+   "quote": "“民主湖大讲堂”（第一期）:万物皆可量子—量子计算、人人有责",
+   "url": "https://www.cqu.edu.cn/info/5101/69521.htm",
+   "check_confidence": 0.9664762222447837,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-fbe693b04c",
+   "field": "date",
+   "quote": "2026年10月28日 14时30分",
+   "url": "https://www.cqu.edu.cn/info/5101/69521.htm",
+   "check_confidence": 0.971555539306108,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-fbe693b04c",
+   "field": "start_time",
+   "quote": "14:30",
+   "url": "https://www.cqu.edu.cn/info/5101/69521.htm",
+   "check_confidence": 0.9825884769695251,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-fbe693b04c",
+   "field": "venue_name",
+   "quote": "沙坪坝校区A校园民主湖报告厅",
+   "url": "https://www.cqu.edu.cn/info/5101/69521.htm",
+   "check_confidence": 0.9621932069143779,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-fbe693b04c",
+   "field": "organisation_name",
+   "quote": "材料科学与工程学院",
+   "url": "https://www.cqu.edu.cn/info/5101/69521.htm",
+   "check_confidence": 0.8078545669177865,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-fbe693b04c",
+   "field": "speaker",
+   "quote": "俞大鹏 院士",
+   "url": "https://www.cqu.edu.cn/info/5101/69521.htm",
+   "check_confidence": 0.9698109308582394,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-7b43bb473f",
+   "field": "title",
+   "quote": "重庆大学弘深医学论坛-第十九期",
+   "url": "https://www.cqu.edu.cn/info/5101/69241.htm",
+   "check_confidence": 0.9817060979502369,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-7b43bb473f",
+   "field": "date",
+   "quote": "时间 : 2026年10月17日 15时30分",
+   "url": "https://www.cqu.edu.cn/info/5101/69241.htm",
+   "check_confidence": 0.9695508059963467,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-7b43bb473f",
+   "field": "start_time",
+   "quote": "15:30",
+   "url": "https://www.cqu.edu.cn/info/5101/69241.htm",
+   "check_confidence": 0.9657270859060153,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-7b43bb473f",
+   "field": "venue_name",
+   "quote": "地点 : 沙坪坝校区C校园 第一教学楼609",
+   "url": "https://www.cqu.edu.cn/info/5101/69241.htm",
+   "check_confidence": 0.9552475792380847,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-7b43bb473f",
+   "field": "organisation_name",
+   "quote": "重庆大学医学院",
+   "url": "https://www.cqu.edu.cn/info/5101/69241.htm",
+   "check_confidence": 0.9770069689137999,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-7b43bb473f",
+   "field": "speaker",
+   "quote": "何明亮 教授",
+   "url": "https://www.cqu.edu.cn/info/5101/69241.htm",
+   "check_confidence": 0.9751246848477416,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-f4e17086e9",
+   "field": "title",
+   "quote": "重庆市社科界第九届学术年活动之“私法三人谈”第十八期",
+   "url": "https://www.cqu.edu.cn/info/5101/69261.htm",
+   "check_confidence": 0.9596931166423153,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-f4e17086e9",
+   "field": "date",
+   "quote": "时间 : 2026年10月15日 19时00分",
+   "url": "https://www.cqu.edu.cn/info/5101/69261.htm",
+   "check_confidence": 0.9676910220782659,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-f4e17086e9",
+   "field": "start_time",
+   "quote": "19:00",
+   "url": "https://www.cqu.edu.cn/info/5101/69261.htm",
+   "check_confidence": 0.9883758930743393,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-f4e17086e9",
+   "field": "venue_name",
+   "quote": "地点 : 法学院210学术报告厅",
+   "url": "https://www.cqu.edu.cn/info/5101/69261.htm",
+   "check_confidence": 0.968674682307262,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-f4e17086e9",
+   "field": "speaker",
+   "quote": "徐强胜",
+   "url": "https://www.cqu.edu.cn/info/5101/69261.htm",
+   "check_confidence": 0.9823476508839114,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-77623eeef5",
+   "field": "title",
+   "quote": "中国电子科技集团有限公司陆军院士学术报告",
+   "url": "https://www.cqu.edu.cn/info/5101/69211.htm",
+   "check_confidence": 0.9673685819290988,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-77623eeef5",
+   "field": "date",
+   "quote": "2026年10月13日 16时00分",
+   "url": "https://www.cqu.edu.cn/info/5101/69211.htm",
+   "check_confidence": 0.9667015570923315,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-77623eeef5",
+   "field": "start_time",
+   "quote": "16:00",
+   "url": "https://www.cqu.edu.cn/info/5101/69211.htm",
+   "check_confidence": 0.9782325213106484,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-77623eeef5",
+   "field": "venue_name",
+   "quote": "科学城校区虎溪校园 图书馆1F-7",
+   "url": "https://www.cqu.edu.cn/info/5101/69211.htm",
+   "check_confidence": 0.9624690981878888,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-77623eeef5",
+   "field": "organisation_name",
+   "quote": "校学术委员会办公室、物理学院、前沿院量子材料与器件研究中心",
+   "url": "https://www.cqu.edu.cn/info/5101/69211.htm",
+   "check_confidence": 0.9619522087325035,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-77623eeef5",
+   "field": "speaker",
+   "quote": "陆军院士",
+   "url": "https://www.cqu.edu.cn/info/5101/69211.htm",
+   "check_confidence": 0.9733170545265015,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-25ce862d5a",
+   "field": "title",
+   "quote": "中科院物理所李明教授学术讲座",
+   "url": "https://www.cqu.edu.cn/info/5101/69081.htm",
+   "check_confidence": 0.9620868400354199,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-25ce862d5a",
+   "field": "date",
+   "quote": "2026年09月29日 10时00分",
+   "url": "https://www.cqu.edu.cn/info/5101/69081.htm",
+   "check_confidence": 0.9602873456049147,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-25ce862d5a",
+   "field": "start_time",
+   "quote": "10:00",
+   "url": "https://www.cqu.edu.cn/info/5101/69081.htm",
+   "check_confidence": 0.9630365915689917,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-25ce862d5a",
+   "field": "venue_name",
+   "quote": "科学城校区虎溪校园图书馆1F-9",
+   "url": "https://www.cqu.edu.cn/info/5101/69081.htm",
+   "check_confidence": 0.9726856790029725,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-25ce862d5a",
+   "field": "speaker",
+   "quote": "李明",
+   "url": "https://www.cqu.edu.cn/info/5101/69081.htm",
+   "check_confidence": 0.9769908261147121,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-194b73ee04",
+   "field": "title",
+   "quote": "浙江大学吴志岩教授学术讲座",
+   "url": "https://www.cqu.edu.cn/info/5101/68901.htm",
+   "check_confidence": 0.9689681863708757,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-194b73ee04",
+   "field": "date",
+   "quote": "2026年09月23日 10时00分",
+   "url": "https://www.cqu.edu.cn/info/5101/68901.htm",
+   "check_confidence": 0.9830959815759562,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-194b73ee04",
+   "field": "start_time",
+   "quote": "10:00",
+   "url": "https://www.cqu.edu.cn/info/5101/68901.htm",
+   "check_confidence": 0.9796348569645122,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-194b73ee04",
+   "field": "venue_name",
+   "quote": "沙坪坝校区B校园经管学院104室",
+   "url": "https://www.cqu.edu.cn/info/5101/68901.htm",
+   "check_confidence": 0.9703075193429489,
+   "passed": true
+  },
+  {
+   "entity_id": "cqu-194b73ee04",
+   "field": "speaker",
+   "quote": "吴志岩 教授",
+   "url": "https://www.cqu.edu.cn/info/5101/68901.htm",
+   "check_confidence": 0.9769195330321591,
+   "passed": true
+  }
+ ]
+}

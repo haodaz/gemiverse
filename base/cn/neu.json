@@ -1,0 +1,281 @@
+{
+ "school": "neu",
+ "name": "东北大学",
+ "at": "2026-11-22T00:14:55.810Z",
+ "seconds": 29,
+ "tokens": 44679,
+ "entities": [
+  {
+   "id": "neu-9038064de9",
+   "type": "Event",
+   "school": "neu",
+   "name": "【活动预告】辽宁高校心理阳光大讲堂（第二十六期）——在逆境中寻找力量",
+   "tier": 1,
+   "fields": {
+    "url": "https://neunews.neu.edu.cn/info/1781/985771.htm",
+    "needs": [
+     "rest_and_recover",
+     "build_a_skill"
+    ],
+    "start": "2026-10-13T19:00",
+    "summary": "清华大学阎博将主讲《在逆境中寻找力量》线上心理讲座。",
+    "event_kind": "lecture",
+    "venue_name": "线上扫码观看",
+    "organisation_name": null,
+    "speaker": "阎博 清华大学",
+    "occurrences": [
+     {
+      "start": "2026-10-13T19:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "neu-6bf8757c98",
+   "type": "Event",
+   "school": "neu",
+   "name": "【活动预告】心理健康教育实务培训第十一讲——大学生心理危机典型案例分析与应对",
+   "tier": 1,
+   "fields": {
+    "url": "https://neunews.neu.edu.cn/info/1781/989011.htm",
+    "needs": [
+     "build_a_skill"
+    ],
+    "start": "2026-11-18T14:30",
+    "summary": "马建青博士主讲心理健康教育实务培训第十一讲，分析应对大学生心理危机典型案例。",
+    "event_kind": "lecture",
+    "venue_name": "东北大学南湖校区图书馆报告厅",
+    "organisation_name": null,
+    "speaker": "马建青 博士",
+    "occurrences": [
+     {
+      "start": "2026-11-18T14:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "neu-f150d29f9e",
+   "type": "Event",
+   "school": "neu",
+   "name": "【活动预告】辽宁高校心理阳光大讲堂（第二十七期）——大学美好生活，从好好说话开始",
+   "tier": 1,
+   "fields": {
+    "url": "https://neunews.neu.edu.cn/info/1781/989001.htm",
+    "needs": [
+     "build_a_skill",
+     "rest_and_recover"
+    ],
+    "start": "2026-11-18T19:00",
+    "summary": "马建青博士主讲的心理健康主题讲座，探讨如何在大学生活中好好说话。",
+    "event_kind": "lecture",
+    "venue_name": "线上：扫码观看 线下：东北大学南湖校区科学馆201（建龙报告厅）",
+    "organisation_name": null,
+    "speaker": "马建青 博士",
+    "occurrences": [
+     {
+      "start": "2026-11-18T19:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "neu-5b6980d6f6",
+   "type": "Event",
+   "school": "neu",
+   "name": "数学内外",
+   "tier": 1,
+   "fields": {
+    "url": "https://neunews.neu.edu.cn/info/1781/985671.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-10-13T08:30",
+    "summary": "中国科学院院士田刚将在主楼822作题为“数学内外”的讲座。",
+    "event_kind": "lecture",
+    "venue_name": "主楼822",
+    "organisation_name": null,
+    "speaker": "中国科学院院士 田刚",
+    "occurrences": [
+     {
+      "start": "2026-10-13T08:30",
+      "end": "2026-10-13T09:30"
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "neu-9038064de9",
+   "field": "title",
+   "quote": "【活动预告】辽宁高校心理阳光大讲堂（第二十六期）——在逆境中寻找力量",
+   "url": "https://neunews.neu.edu.cn/info/1781/985771.htm",
+   "check_confidence": 0.9735704257956385,
+   "passed": true
+  },
+  {
+   "entity_id": "neu-9038064de9",
+   "field": "date",
+   "quote": "2026年10月13日19:00",
+   "url": "https://neunews.neu.edu.cn/info/1781/985771.htm",
+   "check_confidence": 0.973127045639753,
+   "passed": true
+  },
+  {
+   "entity_id": "neu-9038064de9",
+   "field": "start_time",
+   "quote": "19:00",
+   "url": "https://neunews.neu.edu.cn/info/1781/985771.htm",
+   "check_confidence": 0.9710281726078455,
+   "passed": true
+  },
+  {
+   "entity_id": "neu-9038064de9",
+   "field": "venue_name",
+   "quote": "线上扫码观看",
+   "url": "https://neunews.neu.edu.cn/info/1781/985771.htm",
+   "check_confidence": 0.9647397952140756,
+   "passed": true
+  },
+  {
+   "entity_id": "neu-9038064de9",
+   "field": "organisation_name",
+   "quote": "学生指导服务中心",
+   "url": "https://neunews.neu.edu.cn/info/1781/985771.htm",
+   "check_confidence": 0.7964512670872325,
+   "passed": false
+  },
+  {
+   "entity_id": "neu-9038064de9",
+   "field": "speaker",
+   "quote": "阎博 清华大学",
+   "url": "https://neunews.neu.edu.cn/info/1781/985771.htm",
+   "check_confidence": 0.9703845920113421,
+   "passed": true
+  },
+  {
+   "entity_id": "neu-6bf8757c98",
+   "field": "title",
+   "quote": "【活动预告】心理健康教育实务培训第十一讲——大学生心理危机典型案例分析与应对",
+   "url": "https://neunews.neu.edu.cn/info/1781/989011.htm",
+   "check_confidence": 0.9713074057746472,
+   "passed": true
+  },
+  {
+   "entity_id": "neu-6bf8757c98",
+   "field": "date",
+   "quote": "2026年11月18日 14:30",
+   "url": "https://neunews.neu.edu.cn/info/1781/989011.htm",
+   "check_confidence": 0.9822817884269702,
+   "passed": true
+  },
+  {
+   "entity_id": "neu-6bf8757c98",
+   "field": "start_time",
+   "quote": "14:30",
+   "url": "https://neunews.neu.edu.cn/info/1781/989011.htm",
+   "check_confidence": 0.9749887024552483,
+   "passed": true
+  },
+  {
+   "entity_id": "neu-6bf8757c98",
+   "field": "venue_name",
+   "quote": "东北大学南湖校区图书馆报告厅",
+   "url": "https://neunews.neu.edu.cn/info/1781/989011.htm",
+   "check_confidence": 0.967506860681244,
+   "passed": true
+  },
+  {
+   "entity_id": "neu-6bf8757c98",
+   "field": "speaker",
+   "quote": "马建青 博士",
+   "url": "https://neunews.neu.edu.cn/info/1781/989011.htm",
+   "check_confidence": 0.976969643847242,
+   "passed": true
+  },
+  {
+   "entity_id": "neu-f150d29f9e",
+   "field": "title",
+   "quote": "【活动预告】辽宁高校心理阳光大讲堂（第二十七期）——大学美好生活，从好好说话开始",
+   "url": "https://neunews.neu.edu.cn/info/1781/989001.htm",
+   "check_confidence": 0.9750721411932016,
+   "passed": true
+  },
+  {
+   "entity_id": "neu-f150d29f9e",
+   "field": "date",
+   "quote": "2026年11月18日 19:00",
+   "url": "https://neunews.neu.edu.cn/info/1781/989001.htm",
+   "check_confidence": 0.9800390266964328,
+   "passed": true
+  },
+  {
+   "entity_id": "neu-f150d29f9e",
+   "field": "start_time",
+   "quote": "19:00",
+   "url": "https://neunews.neu.edu.cn/info/1781/989001.htm",
+   "check_confidence": 0.9814531481001932,
+   "passed": true
+  },
+  {
+   "entity_id": "neu-f150d29f9e",
+   "field": "venue_name",
+   "quote": "线上：扫码观看 线下：东北大学南湖校区科学馆201（建龙报告厅）",
+   "url": "https://neunews.neu.edu.cn/info/1781/989001.htm",
+   "check_confidence": 0.9675822631399413,
+   "passed": true
+  },
+  {
+   "entity_id": "neu-f150d29f9e",
+   "field": "speaker",
+   "quote": "马建青 博士",
+   "url": "https://neunews.neu.edu.cn/info/1781/989001.htm",
+   "check_confidence": 0.9814884830678628,
+   "passed": true
+  },
+  {
+   "entity_id": "neu-5b6980d6f6",
+   "field": "title",
+   "quote": "数学内外",
+   "url": "https://neunews.neu.edu.cn/info/1781/985671.htm",
+   "check_confidence": 0.9851451976043447,
+   "passed": true
+  },
+  {
+   "entity_id": "neu-5b6980d6f6",
+   "field": "date",
+   "quote": "2026年10月13日 8:30—9:30",
+   "url": "https://neunews.neu.edu.cn/info/1781/985671.htm",
+   "check_confidence": 0.9785337183962569,
+   "passed": true
+  },
+  {
+   "entity_id": "neu-5b6980d6f6",
+   "field": "start_time",
+   "quote": "08:30",
+   "url": "https://neunews.neu.edu.cn/info/1781/985671.htm",
+   "check_confidence": 0.9615555902916092,
+   "passed": true
+  },
+  {
+   "entity_id": "neu-5b6980d6f6",
+   "field": "venue_name",
+   "quote": "主楼822",
+   "url": "https://neunews.neu.edu.cn/info/1781/985671.htm",
+   "check_confidence": 0.9802820664474564,
+   "passed": true
+  },
+  {
+   "entity_id": "neu-5b6980d6f6",
+   "field": "speaker",
+   "quote": "中国科学院院士 田刚",
+   "url": "https://neunews.neu.edu.cn/info/1781/985671.htm",
+   "check_confidence": 0.99,
+   "passed": true
+  }
+ ]
+}

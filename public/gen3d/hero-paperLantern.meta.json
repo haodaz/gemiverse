@@ -1,0 +1,26 @@
+{
+ "model": "gemini-4-neon",
+ "prompt": "Write a three.js ES module that builds a hanging round paper lantern with thin ribs, a top and bottom ring, a tassel, and a warm glow inside. Made for a cozy dorm-room diorama.\nopts = { paper: \"#ffe9c9\", accent: \"#d9534f\", glow: \"#ffd27a\" }.\n\nCRAFT REQUIREMENTS (this is the point of the task; a model that looks like spheres stuck together is a failure):\n- Sculpt, do not assemble. Build each main form (head, body, muzzle, limbs) as ONE continuous surface: start from a dense IcosahedronGeometry or SphereGeometry (at least 48 x 32 segments) and displace its vertices with your own shaping function (squash, taper, bulge for cheeks, pinch for neck, flatten the underside), then call computeVertexNormals(). Where two forms meet (head to body, limb to body), overlap them deeply and shape the transition so there is no visible ball-to-ball seam.\n- Limbs, tails, necks, horns, whiskers, straps: TubeGeometry along a CatmullRomCurve3 with a radius that tapers along the length (write a small tapered-tube helper that builds the geometry ring by ring). Never a chain of spheres or cylinders.\n- Thin shaped parts (ears, wings, fins, feathers, leaves, cloth, plates): ExtrudeGeometry from a THREE.Shape drawn with bezierCurveTo, with a bevel, then bent by displacing vertices so it is curved, not flat.\n- Rotational parts (pots, lamps, cups, horns, bottles): LatheGeometry from a carefully drawn profile of at least 16 points.\n- Surface detail painted in code: make CanvasTexture maps with the supplied `document`-free helper below for stripes, spots, gradients (darker back, lighter belly), fur flecks, wood grain, fabric weave, blush. Use them as map and, where it helps, as bumpMap. Set texture.colorSpace = THREE.SRGBColorSpace for colour maps.\n- Faces carry the charm: large eyes built from three layers (dark glossy eye with clearcoat, a coloured iris ring, one or two small white highlight dots placed up and to one side), a small shaped nose, a curved mouth line made from a thin tube, soft inner-ear colour, subtle blush discs. Eyes sit on the surface, slightly inset, never floating.\n- Materials: MeshPhysicalMaterial. Fur and fabric: roughness 0.85 to 1, sheen 0.6 to 1 with a lighter sheenColor. Eyes, beaks, claws, horns: low roughness with clearcoat. Glowing parts: emissive with emissiveIntensity around 1.5.\n- Proportions: chibi but designed. A clear silhouette from a three-quarter view, a gentle pose with asymmetry (a tilted head, one raised paw, a curled tail), weight resting on the ground.\n- Budget: you may use up to about 60,000 triangles in total. Reuse geometries and materials where sensible.\n\nHELPER you may call (it is passed in as the third argument `kit`; do not define your own canvas):\n- kit.canvasTexture(width, height, (ctx, w, h) => { ...draw with the 2D canvas API... }) returns a THREE.CanvasTexture.\n- kit.noise(x, y) returns smooth value noise in [0, 1].\n\nMODULE RULES:\n- A plain ES module. No imports. No globals: THREE and kit arrive as arguments and must be passed to any helper you write. No document, window, fetch, storage.\n- Units are metres, Y up, origin on the floor under the centre, facing +z.\n- Every mesh with a themable colour has userData.slot (\"fur\", \"furAccent\", \"skin\", \"primary\", \"secondary\", \"accent\", \"eye\", \"glow\"); if you bake a colour into a texture, redraw the texture from opts instead.\n- Name child groups for animation: \"head\", \"body\", \"tail\", and where present \"earL\", \"earR\", \"wingL\", \"wingR\", \"armL\", \"armR\", \"legL\", \"legR\", \"horn\".\n- Exports: export function build(THREE, opts, kit) -> THREE.Group; export function idle(group, t) (breathing, small head sway, ear or tail motion, a blink every few seconds by scaling the eye groups on y); export const META = { id, name, kind, footprint: [w, d], variants, note }.\n- Return only the code of the module in one ```js block.\n",
+ "usage": {
+  "total_tokens": 29778,
+  "total_input_tokens": 1014,
+  "input_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 1014
+   }
+  ],
+  "total_cached_tokens": 0,
+  "total_output_tokens": 20190,
+  "output_tokens_by_modality": [
+   {
+    "modality": "text",
+    "tokens": 20190
+   }
+  ],
+  "total_tool_use_tokens": 0,
+  "total_thought_tokens": 8574
+ },
+ "ms": 241552,
+ "made_at": "2026-11-21T23:44:04.864Z"
+}

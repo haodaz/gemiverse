@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. The core campus forms a rough circle centered on Aldrich Park, featuring an urban forest of 30,000 trees, hilly terrain, and coastal sage scrub. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Aldrich Park, a other: Circular central park filled with diverse trees and pathways.; (2) Ring Mall, a other: Circular pedestrian walkway lined with campus buildings.; (3) Langson Library, a library: Plain university library building.; (4) Engineering Tower, a tower: Campus tower near a thick pedestrian bridge.; (5) Gateway Study Center, a other: Large original campus building across from the library.; (6) UCI Student Center, a other: Plain student center building.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 17,
+ "tokens": 2284,
+ "at": "2026-11-22T00:18:54.814Z"
+}

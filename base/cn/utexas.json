@@ -1,0 +1,720 @@
+{
+ "school": "utexas",
+ "name": "University of Texas at Austin",
+ "at": "2026-11-22T00:20:30.592Z",
+ "seconds": 33,
+ "tokens": 77334,
+ "entities": [
+  {
+   "id": "utexas-062bcfab5b",
+   "type": "Event",
+   "school": "utexas",
+   "name": "Adraint Bereal: As It Appears",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.utexas.edu/event/adraint-bereal-as-it-appears-6538",
+    "needs": [
+     "explore_a_field",
+     "make_and_express"
+    ],
+    "start": "2026-11-21",
+    "summary": "An exhibition by artist Adraint Bereal expanding on The Black Yearbook with archival images, photographs, essays, and interviews.",
+    "event_kind": "exhibition",
+    "venue_name": "Visual Arts Center, Art Building (ART)",
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "utexas-6fa37247c9",
+   "type": "Event",
+   "school": "utexas",
+   "name": "Fieldwork Projects: Constructed Realities: A Slice of Time-Art Through Student Visions",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.utexas.edu/event/fieldwork-projects-constructed-realities-a-slice-of-time-art-through-student-visions-1654",
+    "needs": [
+     "explore_a_field",
+     "make_and_express"
+    ],
+    "start": "2026-11-21",
+    "summary": "An exhibition showcasing a non-linear archive of moving-image work from the Digital Time-Art curriculum and Transmedia field.",
+    "event_kind": "exhibition",
+    "venue_name": "Visual Arts Center, Art Building (ART)",
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "utexas-86fd92b5b4",
+   "type": "Event",
+   "school": "utexas",
+   "name": "How to Grow the Cowpea: Survival Strategies from the U.S. South",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.utexas.edu/event/how-to-grow-the-cowpea-survival-strategies-from-the-ussouth-4729",
+    "needs": [
+     "explore_a_field",
+     "make_and_express"
+    ],
+    "start": "2026-11-21",
+    "summary": "A group exhibition at UT Austin exploring environmental stewardship amid the climate crisis, presented by VAC and Planet Texas 2050.",
+    "event_kind": "exhibition",
+    "venue_name": "Visual Arts Center, Art Building (ART)",
+    "organisation_name": "VAC and Planet Texas 2050 (PT2050)",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "utexas-6b767e5453",
+   "type": "Event",
+   "school": "utexas",
+   "name": "Revolutions and Constitutions: Nation-Building in the Americas after 1776",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.utexas.edu/event/revolutions-and-constitutions-nation-building-in-the-americas-after-1776",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-21",
+    "summary": "An exhibition exploring how 1776 ideals influenced Latin American independence movements and constitutions, featuring rare documents, maps, and student research.",
+    "event_kind": "exhibition",
+    "venue_name": "Benson Latin American Collection, Ann Hartness Reading Room (SRH 1.106)",
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "utexas-ca277fbb69",
+   "type": "Event",
+   "school": "utexas",
+   "name": "Hullabaloo Hooray: The History of Texas Spirit",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.utexas.edu/event/hullabaloo-hooray-the-history-of-texas-spirit",
+    "needs": [
+     "find_my_people"
+    ],
+    "start": "2026-11-23T09:00",
+    "summary": "An exhibit at the H.J. Lutcher Stark Center celebrating the history of UT Cheer, Pom, Hook 'Em, and the Texas Spirit Squad.",
+    "event_kind": "exhibition",
+    "venue_name": "H.J. Lutcher Stark Center for Physical Culture Sports, NEZ 5.700",
+    "organisation_name": "The H.J. Lutcher Stark Center",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-23T09:00",
+      "end": "2026-11-23T17:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "utexas-0b8917a809",
+   "type": "Event",
+   "school": "utexas",
+   "name": "Comics and Zines: Staff Picks from the Benson Collection",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.utexas.edu/event/comics-and-zines-staff-picks-from-the-benson-collection",
+    "needs": [
+     "explore_a_field",
+     "make_and_express"
+    ],
+    "start": "2026-11-22T09:00",
+    "summary": "An exhibition at the Benson Latin American Collection exploring Latin American and U.S. Latinx visual culture through comics and handcrafted zines.",
+    "event_kind": "exhibition",
+    "venue_name": "Nettie Lee Benson Latin American Collection, Second Floor Gallery Space",
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-22T09:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "utexas-f8ca9469ff",
+   "type": "Event",
+   "school": "utexas",
+   "name": "Writing Research Rodeo",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.utexas.edu/event/writing-research-rodeo",
+    "needs": [
+     "build_a_skill",
+     "get_mentorship_and_feedback"
+    ],
+    "start": "2026-11-29T18:00",
+    "summary": "The University Writing Center hosts a Sunday night writing retreat for undergraduates to write independently or consult with experts.",
+    "event_kind": "activity",
+    "venue_name": "Perry-Castañeda Library (PCL), PCL 2.330",
+    "organisation_name": "University Writing Center",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-29T18:00",
+      "end": "2026-11-29T21:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "utexas-f5a8c9cced",
+   "type": "Event",
+   "school": "utexas",
+   "name": "UTES - Consecutive Record-Breaking Years for Corporate Clean Energy Deals",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.utexas.edu/event/utes-consecutive-record-breaking-years-for-corporate-clean-energy-deals",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-12-01T12:30",
+    "summary": "Rich Powell, CEO of the Clean Energy Buyers Association, discusses the state and future of corporate clean energy procurement in this virtual event.",
+    "event_kind": "lecture",
+    "venue_name": "Virtual Event",
+    "organisation_name": "Energy Institute",
+    "speaker": "Rich Powell",
+    "occurrences": [
+     {
+      "start": "2026-12-01T12:30",
+      "end": "2026-12-01T13:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "utexas-0365f1f2a5",
+   "type": "Event",
+   "school": "utexas",
+   "name": "Fundamentals of AI for Teaching and Learning: Using AI Tools to Manage Canvas Content",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.utexas.edu/event/fundamentals-of-ai-for-teaching-and-learning-using-ai-tools-to-manage-canvas-content",
+    "needs": [
+     "build_a_skill",
+     "navigate_systems"
+    ],
+    "start": "2026-12-02T12:00",
+    "summary": "A virtual workshop exploring how generative AI tools and browser extensions can help instructors manage Canvas course content and understand UT Austin data guidance.",
+    "event_kind": "workshop",
+    "venue_name": "Virtual Event",
+    "organisation_name": "Office of Academic Technology, Office of the Executive Vice President and Provost",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-02T12:00",
+      "end": "2026-12-02T13:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "utexas-eb81e9856f",
+   "type": "Event",
+   "school": "utexas",
+   "name": "JapanLab Expo Fall 2026",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.utexas.edu/event/japanlab-expo-fall-2026",
+    "needs": [
+     "explore_a_field",
+     "make_and_express"
+    ],
+    "start": "2026-12-02T12:00",
+    "summary": "An expo showcasing undergraduate students' educational video games and Digital Humanities projects exploring Japanese history, culture, and language.",
+    "event_kind": "exhibition",
+    "venue_name": "Peter O Donnell Jr. Building, (POB), Vislab, 2.404a",
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-02T12:00",
+      "end": "2026-12-02T14:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "utexas-2350363c45",
+   "type": "Event",
+   "school": "utexas",
+   "name": "AI Research: AI for Generating Research Code",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.utexas.edu/event/ai-research-ai-for-generating-research-code",
+    "needs": [
+     "build_a_skill",
+     "explore_a_field"
+    ],
+    "start": "2026-12-02T13:00",
+    "summary": "A virtual workshop on using AI tools to generate research code, covering their strengths, limitations, and live demonstrations.",
+    "event_kind": "workshop",
+    "venue_name": "Online",
+    "organisation_name": "University of Texas Libraries",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-02T13:00",
+      "end": "2026-12-02T14:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "utexas-ad51507f48",
+   "type": "Event",
+   "school": "utexas",
+   "name": "Experimental Seeing: Russell Lee’s Pedagogical Legacy",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.utexas.edu/event/experimental-seeing-russell-lees-pedagogical-legacy-2240",
+    "needs": [
+     "explore_a_field",
+     "make_and_express"
+    ],
+    "start": "2026-11-21",
+    "summary": "An exhibition at the Visual Arts Center surveying works by 25 MFA graduates to reflect on Russell Lee's legacy in photography.",
+    "event_kind": "exhibition",
+    "venue_name": "Visual Arts Center, Art Building (ART), 2301 San Jacinto Blvd, Austin TX 78712",
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21",
+      "end": null
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "utexas-062bcfab5b",
+   "field": "title",
+   "quote": "Adraint Bereal: As It Appears",
+   "url": "https://calendar.utexas.edu/event/adraint-bereal-as-it-appears-6538",
+   "check_confidence": 0.9788885990541197,
+   "passed": true
+  },
+  {
+   "entity_id": "utexas-062bcfab5b",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026",
+   "url": "https://calendar.utexas.edu/event/adraint-bereal-as-it-appears-6538",
+   "check_confidence": 0.9516335094091251,
+   "passed": true
+  },
+  {
+   "entity_id": "utexas-062bcfab5b",
+   "field": "venue_name",
+   "quote": "Visual Arts Center, Art Building (ART)",
+   "url": "https://calendar.utexas.edu/event/adraint-bereal-as-it-appears-6538",
+   "check_confidence": 0.9879470028981727,
+   "passed": true
+  },
+  {
+   "entity_id": "utexas-6fa37247c9",
+   "field": "title",
+   "quote": "Fieldwork Projects: Constructed Realities: A Slice of Time-Art Through Student Visions",
+   "url": "https://calendar.utexas.edu/event/fieldwork-projects-constructed-realities-a-slice-of-time-art-through-student-visions-1654",
+   "check_confidence": 0.97662123149305,
+   "passed": true
+  },
+  {
+   "entity_id": "utexas-6fa37247c9",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026",
+   "url": "https://calendar.utexas.edu/event/fieldwork-projects-constructed-realities-a-slice-of-time-art-through-student-visions-1654",
+   "check_confidence": 0.9821724191066127,
+   "passed": true
+  },
+  {
+   "entity_id": "utexas-6fa37247c9",
+   "field": "venue_name",
+   "quote": "Visual Arts Center, Art Building (ART)",
+   "url": "https://calendar.utexas.edu/event/fieldwork-projects-constructed-realities-a-slice-of-time-art-through-student-visions-1654",
+   "check_confidence": 0.963020457263324,
+   "passed": true
+  },
+  {
+   "entity_id": "utexas-86fd92b5b4",
+   "field": "title",
+   "quote": "How to Grow the Cowpea: Survival Strategies from the U.S. South",
+   "url": "https://calendar.utexas.edu/event/how-to-grow-the-cowpea-survival-strategies-from-the-ussouth-4729",
+   "check_confidence": 0.976759643324329,
+   "passed": true
+  },
+  {
+   "entity_id": "utexas-86fd92b5b4",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026",
+   "url": "https://calendar.utexas.edu/event/how-to-grow-the-cowpea-survival-strategies-from-the-ussouth-4729",
+   "check_confidence": 0.9758430487929123,
+   "passed": true
+  },
+  {
+   "entity_id": "utexas-86fd92b5b4",
+   "field": "venue_name",
+   "quote": "Visual Arts Center, Art Building (ART)",
+   "url": "https://calendar.utexas.edu/event/how-to-grow-the-cowpea-survival-strategies-from-the-ussouth-4729",
+   "check_confidence": 0.9724691012584413,
+   "passed": true
+  },
+  {
+   "entity_id": "utexas-86fd92b5b4",
+   "field": "organisation_name",
+   "quote": "VAC and Planet Texas 2050 (PT2050)",
+   "url": "https://calendar.utexas.edu/event/how-to-grow-the-cowpea-survival-strategies-from-the-ussouth-4729",
+   "check_confidence": 0.9324451586588952,
+   "passed": true
+  },
+  {
+   "entity_id": "utexas-6b767e5453",
+   "field": "title",
+   "quote": "Revolutions and Constitutions: Nation-Building in the Americas after 1776",
+   "url": "https://calendar.utexas.edu/event/revolutions-and-constitutions-nation-building-in-the-americas-after-1776",
+   "check_confidence": 0.9808056959129735,
+   "passed": true
+  },
+  {
+   "entity_id": "utexas-6b767e5453",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026",
+   "url": "https://calendar.utexas.edu/event/revolutions-and-constitutions-nation-building-in-the-americas-after-1776",
+   "check_confidence": 0.9819712612680497,
+   "passed": true
+  },
+  {
+   "entity_id": "utexas-6b767e5453",
+   "field": "venue_name",
+   "quote": "Benson Latin American Collection, Ann Hartness Reading Room (SRH 1.106)",
+   "url": "https://calendar.utexas.edu/event/revolutions-and-constitutions-nation-building-in-the-americas-after-1776",
+   "check_confidence": 0.9746567985997115,
+   "passed": true
+  },
+  {
+   "entity_id": "utexas-ca277fbb69",
+   "field": "title",
+   "quote": "Hullabaloo Hooray: The History of Texas Spirit",
+   "url": "https://calendar.utexas.edu/event/hullabaloo-hooray-the-history-of-texas-spirit",
+   "check_confidence": 0.9728335951909136,
+   "passed": true
+  },
+  {
+   "entity_id": "utexas-ca277fbb69",
+   "field": "date",
+   "quote": "Monday, November 23, 2026 9:00am to 5:00pm CST",
+   "url": "https://calendar.utexas.edu/event/hullabaloo-hooray-the-history-of-texas-spirit",
+   "check_confidence": 0.9755789890603049,
+   "passed": true
+  },
+  {
+   "entity_id": "utexas-ca277fbb69",
+   "field": "start_time",
+   "quote": "09:00",
+   "url": "https://calendar.utexas.edu/event/hullabaloo-hooray-the-history-of-texas-spirit",
+   "check_confidence": 0.9627100873947322,
+   "passed": true
+  },
+  {
+   "entity_id": "utexas-ca277fbb69",
+   "field": "venue_name",
+   "quote": "H.J. Lutcher Stark Center for Physical Culture Sports, NEZ 5.700",
+   "url": "https://calendar.utexas.edu/event/hullabaloo-hooray-the-history-of-texas-spirit",
+   "check_confidence": 0.9596138109168899,
+   "passed": true
+  },
+  {
+   "entity_id": "utexas-ca277fbb69",
+   "field": "organisation_name",
+   "quote": "The H.J. Lutcher Stark Center",
+   "url": "https://calendar.utexas.edu/event/hullabaloo-hooray-the-history-of-texas-spirit",
+   "check_confidence": 0.9443698458364411,
+   "passed": true
+  },
+  {
+   "entity_id": "utexas-0b8917a809",
+   "field": "title",
+   "quote": "Comics and Zines: Staff Picks from the Benson Collection",
+   "url": "https://calendar.utexas.edu/event/comics-and-zines-staff-picks-from-the-benson-collection",
+   "check_confidence": 0.968712621286114,
+   "passed": true
+  },
+  {
+   "entity_id": "utexas-0b8917a809",
+   "field": "date",
+   "quote": "Sunday, November 22, 2026 9:00am CST",
+   "url": "https://calendar.utexas.edu/event/comics-and-zines-staff-picks-from-the-benson-collection",
+   "check_confidence": 0.9805537232489928,
+   "passed": true
+  },
+  {
+   "entity_id": "utexas-0b8917a809",
+   "field": "start_time",
+   "quote": "09:00",
+   "url": "https://calendar.utexas.edu/event/comics-and-zines-staff-picks-from-the-benson-collection",
+   "check_confidence": 0.976561505215915,
+   "passed": true
+  },
+  {
+   "entity_id": "utexas-0b8917a809",
+   "field": "venue_name",
+   "quote": "Nettie Lee Benson Latin American Collection, Second Floor Gallery Space",
+   "url": "https://calendar.utexas.edu/event/comics-and-zines-staff-picks-from-the-benson-collection",
+   "check_confidence": 0.9746542995997246,
+   "passed": true
+  },
+  {
+   "entity_id": "utexas-f8ca9469ff",
+   "field": "title",
+   "quote": "Writing Research Rodeo",
+   "url": "https://calendar.utexas.edu/event/writing-research-rodeo",
+   "check_confidence": 0.9816198408394868,
+   "passed": true
+  },
+  {
+   "entity_id": "utexas-f8ca9469ff",
+   "field": "date",
+   "quote": "Sunday, November 29, 2026 6:00pm to 9:00pm CST",
+   "url": "https://calendar.utexas.edu/event/writing-research-rodeo",
+   "check_confidence": 0.9854763587611798,
+   "passed": true
+  },
+  {
+   "entity_id": "utexas-f8ca9469ff",
+   "field": "start_time",
+   "quote": "18:00",
+   "url": "https://calendar.utexas.edu/event/writing-research-rodeo",
+   "check_confidence": 0.9669842899184194,
+   "passed": true
+  },
+  {
+   "entity_id": "utexas-f8ca9469ff",
+   "field": "venue_name",
+   "quote": "Perry-Castañeda Library (PCL), PCL 2.330",
+   "url": "https://calendar.utexas.edu/event/writing-research-rodeo",
+   "check_confidence": 0.957274443062682,
+   "passed": true
+  },
+  {
+   "entity_id": "utexas-f8ca9469ff",
+   "field": "organisation_name",
+   "quote": "University Writing Center",
+   "url": "https://calendar.utexas.edu/event/writing-research-rodeo",
+   "check_confidence": 0.9737519783835771,
+   "passed": true
+  },
+  {
+   "entity_id": "utexas-f5a8c9cced",
+   "field": "title",
+   "quote": "UTES - Consecutive Record-Breaking Years for Corporate Clean Energy Deals",
+   "url": "https://calendar.utexas.edu/event/utes-consecutive-record-breaking-years-for-corporate-clean-energy-deals",
+   "check_confidence": 0.9666274388303628,
+   "passed": true
+  },
+  {
+   "entity_id": "utexas-f5a8c9cced",
+   "field": "date",
+   "quote": "Tuesday, December 1, 2026 12:30pm to 1:30pm CST",
+   "url": "https://calendar.utexas.edu/event/utes-consecutive-record-breaking-years-for-corporate-clean-energy-deals",
+   "check_confidence": 0.9709784135588718,
+   "passed": true
+  },
+  {
+   "entity_id": "utexas-f5a8c9cced",
+   "field": "start_time",
+   "quote": "12:30",
+   "url": "https://calendar.utexas.edu/event/utes-consecutive-record-breaking-years-for-corporate-clean-energy-deals",
+   "check_confidence": 0.9735304703600939,
+   "passed": true
+  },
+  {
+   "entity_id": "utexas-f5a8c9cced",
+   "field": "venue_name",
+   "quote": "Virtual Event",
+   "url": "https://calendar.utexas.edu/event/utes-consecutive-record-breaking-years-for-corporate-clean-energy-deals",
+   "check_confidence": 0.9656616691142139,
+   "passed": true
+  },
+  {
+   "entity_id": "utexas-f5a8c9cced",
+   "field": "organisation_name",
+   "quote": "Energy Institute",
+   "url": "https://calendar.utexas.edu/event/utes-consecutive-record-breaking-years-for-corporate-clean-energy-deals",
+   "check_confidence": 0.9404334901150034,
+   "passed": true
+  },
+  {
+   "entity_id": "utexas-f5a8c9cced",
+   "field": "speaker",
+   "quote": "Rich Powell",
+   "url": "https://calendar.utexas.edu/event/utes-consecutive-record-breaking-years-for-corporate-clean-energy-deals",
+   "check_confidence": 0.9858766801295745,
+   "passed": true
+  },
+  {
+   "entity_id": "utexas-0365f1f2a5",
+   "field": "title",
+   "quote": "Fundamentals of AI for Teaching and Learning: Using AI Tools to Manage Canvas Content",
+   "url": "https://calendar.utexas.edu/event/fundamentals-of-ai-for-teaching-and-learning-using-ai-tools-to-manage-canvas-content",
+   "check_confidence": 0.9729525107102727,
+   "passed": true
+  },
+  {
+   "entity_id": "utexas-0365f1f2a5",
+   "field": "date",
+   "quote": "Wednesday, December 2, 2026 12:00pm to 1:30pm CST",
+   "url": "https://calendar.utexas.edu/event/fundamentals-of-ai-for-teaching-and-learning-using-ai-tools-to-manage-canvas-content",
+   "check_confidence": 0.9748781703615633,
+   "passed": true
+  },
+  {
+   "entity_id": "utexas-0365f1f2a5",
+   "field": "start_time",
+   "quote": "12:00",
+   "url": "https://calendar.utexas.edu/event/fundamentals-of-ai-for-teaching-and-learning-using-ai-tools-to-manage-canvas-content",
+   "check_confidence": 0.973538797799294,
+   "passed": true
+  },
+  {
+   "entity_id": "utexas-0365f1f2a5",
+   "field": "venue_name",
+   "quote": "Virtual Event",
+   "url": "https://calendar.utexas.edu/event/fundamentals-of-ai-for-teaching-and-learning-using-ai-tools-to-manage-canvas-content",
+   "check_confidence": 0.9811807650800063,
+   "passed": true
+  },
+  {
+   "entity_id": "utexas-0365f1f2a5",
+   "field": "organisation_name",
+   "quote": "Office of Academic Technology, Office of the Executive Vice President and Provost",
+   "url": "https://calendar.utexas.edu/event/fundamentals-of-ai-for-teaching-and-learning-using-ai-tools-to-manage-canvas-content",
+   "check_confidence": 0.9448819560033098,
+   "passed": true
+  },
+  {
+   "entity_id": "utexas-eb81e9856f",
+   "field": "title",
+   "quote": "JapanLab Expo Fall 2026",
+   "url": "https://calendar.utexas.edu/event/japanlab-expo-fall-2026",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "utexas-eb81e9856f",
+   "field": "date",
+   "quote": "Wednesday, December 2, 2026 12:00pm to 2:00pm CST",
+   "url": "https://calendar.utexas.edu/event/japanlab-expo-fall-2026",
+   "check_confidence": 0.9709928484778604,
+   "passed": true
+  },
+  {
+   "entity_id": "utexas-eb81e9856f",
+   "field": "start_time",
+   "quote": "12:00",
+   "url": "https://calendar.utexas.edu/event/japanlab-expo-fall-2026",
+   "check_confidence": 0.9752931251589773,
+   "passed": true
+  },
+  {
+   "entity_id": "utexas-eb81e9856f",
+   "field": "venue_name",
+   "quote": "Peter O Donnell Jr. Building, (POB), Vislab, 2.404a",
+   "url": "https://calendar.utexas.edu/event/japanlab-expo-fall-2026",
+   "check_confidence": 0.9725148130963156,
+   "passed": true
+  },
+  {
+   "entity_id": "utexas-2350363c45",
+   "field": "title",
+   "quote": "AI Research: AI for Generating Research Code",
+   "url": "https://calendar.utexas.edu/event/ai-research-ai-for-generating-research-code",
+   "check_confidence": 0.9814458707466062,
+   "passed": true
+  },
+  {
+   "entity_id": "utexas-2350363c45",
+   "field": "date",
+   "quote": "Wednesday, December 2, 2026 1:00pm to 2:00pm CST",
+   "url": "https://calendar.utexas.edu/event/ai-research-ai-for-generating-research-code",
+   "check_confidence": 0.9725322299659621,
+   "passed": true
+  },
+  {
+   "entity_id": "utexas-2350363c45",
+   "field": "start_time",
+   "quote": "13:00",
+   "url": "https://calendar.utexas.edu/event/ai-research-ai-for-generating-research-code",
+   "check_confidence": 0.9870600469238144,
+   "passed": true
+  },
+  {
+   "entity_id": "utexas-2350363c45",
+   "field": "venue_name",
+   "quote": "Location: Online",
+   "url": "https://calendar.utexas.edu/event/ai-research-ai-for-generating-research-code",
+   "check_confidence": 0.9659452808483749,
+   "passed": true
+  },
+  {
+   "entity_id": "utexas-2350363c45",
+   "field": "organisation_name",
+   "quote": "University of Texas Libraries",
+   "url": "https://calendar.utexas.edu/event/ai-research-ai-for-generating-research-code",
+   "check_confidence": 0.9772671170499317,
+   "passed": true
+  },
+  {
+   "entity_id": "utexas-ad51507f48",
+   "field": "title",
+   "quote": "Experimental Seeing: Russell Lee’s Pedagogical Legacy",
+   "url": "https://calendar.utexas.edu/event/experimental-seeing-russell-lees-pedagogical-legacy-2240",
+   "check_confidence": 0.9753814117409038,
+   "passed": true
+  },
+  {
+   "entity_id": "utexas-ad51507f48",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026",
+   "url": "https://calendar.utexas.edu/event/experimental-seeing-russell-lees-pedagogical-legacy-2240",
+   "check_confidence": 0.9780634777642901,
+   "passed": true
+  },
+  {
+   "entity_id": "utexas-ad51507f48",
+   "field": "venue_name",
+   "quote": "Visual Arts Center, Art Building (ART)",
+   "url": "https://calendar.utexas.edu/event/experimental-seeing-russell-lees-pedagogical-legacy-2240",
+   "check_confidence": 0.9483374522197632,
+   "passed": true
+  }
+ ]
+}

@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. The 760-acre campus features expansive lawns, shrub beds, historic quadrangles, neoclassical architecture, and notable trees such as the Davie Poplar. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Old Well, a other: Small white neoclassical rotunda with columns on a grassy quad.; (2) McCorkle Place, a quad: Grassy quadrangle with trees, flanked by historic buildings.; (3) Polk Place, a quad: Open grassy quadrangle bordered by academic buildings.; (4) Morehead–Patterson Bell Tower, a tower: Tall bell tower surrounded by a hedge and landscaped grounds.; (5) Wilson Library, a library: Large, stately library building at the end of a quad.; (6) Old East, a hall: Historic, plain rectangular brick hall.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 15,
+ "tokens": 2030,
+ "at": "2026-11-22T00:18:46.945Z"
+}

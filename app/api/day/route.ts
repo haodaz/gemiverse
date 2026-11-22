@@ -15,7 +15,7 @@ const DAILY = { for_you: 6, for_itself: 4 };
 
 export async function POST(req: Request) {
   try {
-    const { school = "nyu", day = 1, log = [], lang = "en", bank = 0 } = (await req.json()) as { school: "nyu" | "columbia"; day: number; log: LogEvent[]; lang: string; bank: number };
+    const { school = "nyu", day = 1, log = [], lang = "en", bank = 0 } = (await req.json()) as { school: string; day: number; log: LogEvent[]; lang: string; bank: number };
     const SONG = 6;
     const preset = PRESETS[school], events: LogEvent[] = [], steps: any[] = [], when = () => new Date().toISOString();
     let tokens = 0; const purse = { ...DAILY };

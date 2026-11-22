@@ -1,0 +1,104 @@
+{
+ "school": "cornell",
+ "name": "Cornell University",
+ "at": "2026-11-22T00:13:43.914Z",
+ "source": "https://en.wikipedia.org/wiki/Cornell%20University",
+ "character": "Set on East Hill overlooking Cayuga Lake and bordered by two gorges, the campus features an irregular layout blending ornate pre-war Collegiate Gothic, Victorian, and Neoclassical buildings with modernist structures.",
+ "map": "/art/map/cornell.jpg",
+ "landmarks": [
+  {
+   "name": "East Hill",
+   "name_en": "East Hill",
+   "kind": "hill",
+   "quote": "located in Ithaca, New York, on East Hill, offering views",
+   "look": "Elevated hill overlooking a city and lake.",
+   "check": 0.9828144358979068,
+   "confidence": 0.9828144358979068,
+   "passed": true,
+   "x": 0.2,
+   "y": 0.6
+  },
+  {
+   "name": "Cayuga Lake",
+   "name_en": "Cayuga Lake",
+   "kind": "lake",
+   "quote": "offering views of the city and Cayuga Lake",
+   "look": "Large expanse of water visible from the hillside campus.",
+   "check": 0.2583910865930392,
+   "confidence": 0.7416089134069608,
+   "passed": false
+  },
+  {
+   "name": "Morrill Hall",
+   "name_en": "Morrill Hall",
+   "kind": "hall",
+   "quote": "Morrill Hall has also been designated a National Historic Landmark.",
+   "look": "Historic pre-war academic hall in an ornate traditional style.",
+   "check": 0.9849086327143451,
+   "confidence": 0.9849086327143451,
+   "passed": true,
+   "x": 0.29,
+   "y": 0.35
+  },
+  {
+   "name": "Barton Hall",
+   "name_en": "Barton Hall",
+   "kind": "hall",
+   "quote": "a concert held at Barton Hall by Dead & Company",
+   "look": "Large campus hall suitable for hosting concerts.",
+   "check": 0.9500965627173591,
+   "confidence": 0.9500965627173591,
+   "passed": true,
+   "x": 0.48,
+   "y": 0.38
+  },
+  {
+   "name": "Bailey Hall",
+   "name_en": "Bailey Hall",
+   "kind": "hall",
+   "quote": "Andrew Dickson White House, Bailey Hall, Caldwell Hall",
+   "look": "Historic campus hall, plain.",
+   "check": 0.9853486743680252,
+   "confidence": 0.9853486743680252,
+   "passed": true,
+   "x": 0.65,
+   "y": 0.5
+  },
+  {
+   "name": "Cornell Botanic Gardens",
+   "name_en": "Cornell Botanic Gardens",
+   "kind": "garden",
+   "quote": "Cornell owns the 2,800 acres (1,100 ha) Cornell Botanic Gardens",
+   "look": "Expansive cultivated gardens, arboretum trees, and natural areas.",
+   "check": 0.918380360574581,
+   "confidence": 0.918380360574581,
+   "passed": true,
+   "x": 0.82,
+   "y": 0.32
+  },
+  {
+   "name": "Fall Creek Gorge",
+   "name_en": "Fall Creek Gorge",
+   "kind": "other",
+   "quote": "bordered by two gorges, Fall Creek Gorge and Cascadilla Gorge.",
+   "look": "Deep natural gorge with water bordering the campus.",
+   "check": 0.9642288482106307,
+   "confidence": 0.9642288482106307,
+   "passed": true,
+   "x": 0.78,
+   "y": 0.85
+  },
+  {
+   "name": "Cascadilla Gorge",
+   "name_en": "Cascadilla Gorge",
+   "kind": "other",
+   "quote": "bordered by two gorges, Fall Creek Gorge and Cascadilla Gorge.",
+   "look": "Deep natural gorge with water bordering the campus.",
+   "check": 0.9697546287070674,
+   "confidence": 0.9697546287070674,
+   "passed": true
+  }
+ ],
+ "tokens": 10151,
+ "seconds": 32
+}

@@ -1,0 +1,104 @@
+{
+ "school": "tufts",
+ "name": "Tufts University",
+ "at": "2026-11-22T00:19:55.022Z",
+ "source": "https://en.wikipedia.org/wiki/Tufts%20University",
+ "character": "The main campus sits on Walnut Hill with Uphill and Downhill sections, featuring a wrought-iron fence, 19th-century Italianate and modern buildings, and Boston skyline views.",
+ "map": "/art/map/tufts.jpg",
+ "landmarks": [
+  {
+   "name": "Walnut Hill",
+   "name_en": "Walnut Hill",
+   "kind": "hill",
+   "quote": "Tufts' main campus is located on Walnut Hill in Medford and Somerville",
+   "look": "A prominent hill overlooking the Boston skyline.",
+   "check": 0.9869393998741219,
+   "confidence": 0.9869393998741219,
+   "passed": true,
+   "x": 0.55,
+   "y": 0.18
+  },
+  {
+   "name": "Ballou Hall",
+   "name_en": "Ballou Hall",
+   "kind": "hall",
+   "quote": "Ballou Hall was constructed from 1852 to 1854 and was designed in the Italianate style",
+   "look": "A 19th-century Italianate-style academic hall.",
+   "check": 0.9838787351314269,
+   "confidence": 0.9838787351314269,
+   "passed": true,
+   "x": 0.24,
+   "y": 0.2
+  },
+  {
+   "name": "Tisch Library",
+   "name_en": "Tisch Library",
+   "kind": "library",
+   "quote": "particularly the patio on the Tisch Library roof.",
+   "look": "A library building with a rooftop patio.",
+   "check": 0.9743524294820959,
+   "confidence": 0.9743524294820959,
+   "passed": true,
+   "x": 0.75,
+   "y": 0.48
+  },
+  {
+   "name": "academic quad",
+   "name_en": "Academic Quad",
+   "kind": "quad",
+   "quote": "The academic quad contains the earliest buildings",
+   "look": "A grassy quad surrounded by historic 19th-century buildings and a wrought-iron fence.",
+   "check": 0.9816404337338446,
+   "confidence": 0.9816404337338446,
+   "passed": true,
+   "x": 0.38,
+   "y": 0.48
+  },
+  {
+   "name": "residential \"Rez\" quad",
+   "name_en": "Residential \"Rez\" Quad",
+   "kind": "quad",
+   "quote": "comprises the academic and the residential \"Rez\" quad (built on the former reservoir site)",
+   "look": "A modern residential quad enclosed by a wrought-iron fence.",
+   "check": 0.9778431078683422,
+   "confidence": 0.9778431078683422,
+   "passed": true,
+   "x": 0.58,
+   "y": 0.75
+  },
+  {
+   "name": "Carmichael Hall",
+   "name_en": "Carmichael Hall",
+   "kind": "hall",
+   "quote": "The most notable building is Carmichael Hall (1954), designed by Arland A. Dirlam.",
+   "look": "A mid-20th-century modern campus hall.",
+   "check": 0.9743536517053372,
+   "confidence": 0.9743536517053372,
+   "passed": true,
+   "x": 0.15,
+   "y": 0.7
+  },
+  {
+   "name": "Packard Hall",
+   "name_en": "Packard Hall",
+   "kind": "hall",
+   "quote": "Other notable buildings include: Packard Hall (1856), East Hall (1860), West Hall (1871)",
+   "look": "A plain 19th-century academic hall.",
+   "check": 0.975988759883497,
+   "confidence": 0.975988759883497,
+   "passed": true
+  },
+  {
+   "name": "Eaton Hall",
+   "name_en": "Eaton Hall",
+   "kind": "hall",
+   "quote": "Goddard Hall (1883), Barnum Hall (1884), and Eaton Hall (1908).",
+   "look": "An early 20th-century academic hall.",
+   "check": 0.981939944123414,
+   "confidence": 0.981939944123414,
+   "passed": true
+  }
+ ],
+ "tokens": 9855,
+ "seconds": 30
+}

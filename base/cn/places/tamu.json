@@ -1,0 +1,104 @@
+{
+ "school": "tamu",
+ "name": "Texas A&M University",
+ "at": "2026-11-22T00:20:50.745Z",
+ "source": "https://en.wikipedia.org/wiki/Texas%20A%26M%20University",
+ "character": null,
+ "map": "/art/map/tamu.jpg",
+ "landmarks": [
+  {
+   "name": "Kyle Field",
+   "name_en": "Kyle Field",
+   "kind": "other",
+   "quote": "Notable buildings on the main campus include Kyle Field",
+   "look": "Plain notable campus building or sports field.",
+   "check": 0.9835273977166864,
+   "confidence": 0.9835273977166864,
+   "passed": true,
+   "x": 0.23,
+   "y": 0.27
+  },
+  {
+   "name": "Sterling C. Evans Library",
+   "name_en": "Sterling C. Evans Library",
+   "kind": "library",
+   "quote": "Sterling C. Evans Library",
+   "look": "Plain campus library building.",
+   "check": 0.9657092571579838,
+   "confidence": 0.9657092571579838,
+   "passed": true,
+   "x": 0.79,
+   "y": 0.21
+  },
+  {
+   "name": "Rudder Tower",
+   "name_en": "Rudder Tower",
+   "kind": "tower",
+   "quote": "Rudder Tower",
+   "look": "Plain tall campus tower.",
+   "check": 0.9799144326025072,
+   "confidence": 0.9799144326025072,
+   "passed": true,
+   "x": 0.56,
+   "y": 0.28
+  },
+  {
+   "name": "Albritton Bell Tower",
+   "name_en": "Albritton Bell Tower",
+   "kind": "tower",
+   "quote": "Albritton Bell Tower",
+   "look": "Plain tall bell tower.",
+   "check": 0.9707139170131145,
+   "confidence": 0.9707139170131145,
+   "passed": true,
+   "x": 0.46,
+   "y": 0.69
+  },
+  {
+   "name": "Harrington Hall",
+   "name_en": "Harrington Hall",
+   "kind": "hall",
+   "quote": "Harrington Hall",
+   "look": "Plain campus hall building.",
+   "check": 0.9723849176308376,
+   "confidence": 0.9723849176308376,
+   "passed": true,
+   "x": 0.21,
+   "y": 0.72
+  },
+  {
+   "name": "George H. W. Bush Presidential Library and Museum",
+   "name_en": "George H. W. Bush Presidential Library and Museum",
+   "kind": "museum",
+   "quote": "includes the George H. W. Bush Presidential Library and Museum.",
+   "look": "Plain library and museum building.",
+   "check": 0.9700026415396962,
+   "confidence": 0.9700026415396962,
+   "passed": true,
+   "x": 0.79,
+   "y": 0.71
+  },
+  {
+   "name": "Memorial Student Center",
+   "name_en": "Memorial Student Center",
+   "kind": "other",
+   "quote": "the Memorial Student Center",
+   "look": "Plain campus student center building.",
+   "check": 0.9783433670736355,
+   "confidence": 0.9783433670736355,
+   "passed": true
+  },
+  {
+   "name": "Bonfire Memorial",
+   "name_en": "Bonfire Memorial",
+   "kind": "other",
+   "quote": "and the Bonfire Memorial.",
+   "look": "Plain campus memorial structure.",
+   "check": 0.9697543820667097,
+   "confidence": 0.9697543820667097,
+   "passed": true
+  }
+ ],
+ "tokens": 10211,
+ "seconds": 29
+}

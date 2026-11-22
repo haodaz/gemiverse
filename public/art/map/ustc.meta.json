@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. The campus features roads lined with cherry and scholar trees, 1970s dormitory buildings, a historic waterside auditorium, and a tall 1997 library. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Waterside Auditorium, a hall: Historic auditorium hall, plain style; (2) West Campus Library, a library: Tall 1997 library building, plain style; (3) Yuquan North Road, a other: Main road lined with blooming cherry trees; (4) Old North Gate, a gate: Campus gate, plain style; (5) Sipailou, a other: Four 1970s dormitory buildings grouped together; (6) Angel Road, a other: Road lined with Chinese scholar trees. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 16,
+ "tokens": 2124,
+ "at": "2026-11-22T00:11:43.816Z"
+}

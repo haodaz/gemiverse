@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. The large Minhang campus sits near the Huangpu River, divided by an expressway, with Siyuan Lake beside the southern teaching buildings. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Siyuan Lake, a lake: Plain lake beside three teaching buildings.; (2) Jingjing Hall, a hall: Plain functional campus hall.; (3) Cheng Ji Art Museum, a museum: Plain modern art museum building.; (4) New Library, a library: Plain central library building.; (5) South Stadium, a stadium: Plain outdoor campus stadium.; (6) Guangming Stadium, a stadium: Plain outdoor campus stadium.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 18,
+ "tokens": 2290,
+ "at": "2026-11-22T00:11:40.635Z"
+}

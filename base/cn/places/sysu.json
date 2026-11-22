@@ -1,0 +1,104 @@
+{
+ "school": "sysu",
+ "name": "中山大学",
+ "at": "2026-11-22T00:16:54.942Z",
+ "source": "https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%A6",
+ "character": "The main campus, Kangleyuan, features many Western classical buildings, including Qing-era halls, alongside squares, pavilions, and trees.",
+ "map": "/art/map/sysu.jpg",
+ "landmarks": [
+  {
+   "name": "马丁堂",
+   "name_en": "Martin Hall",
+   "kind": "hall",
+   "quote": "其中最著名的应属建于清代的马丁堂",
+   "look": "Western classical Qing-era building with 'AD1905' stone and chimneys removed.",
+   "check": 0.9813947638677829,
+   "confidence": 0.9813947638677829,
+   "passed": true,
+   "x": 0.2,
+   "y": 0.24
+  },
+  {
+   "name": "格兰堂",
+   "name_en": "Grant Hall",
+   "kind": "hall",
+   "quote": "格兰堂：即大钟楼，现学校就业指导中心、本科招生办、校友会、教学评估中心等行政部门办公所在地",
+   "look": "Western classical clock tower hall with damaged stone pillars and added floor.",
+   "check": 0.9738951220589466,
+   "confidence": 0.9738951220589466,
+   "passed": true,
+   "x": 0.85,
+   "y": 0.28
+  },
+  {
+   "name": "怀士堂",
+   "name_en": "Swasey Hall",
+   "kind": "hall",
+   "quote": "怀士堂：小礼堂",
+   "look": "Western classical small auditorium with diamond patterns on the exterior facade.",
+   "check": 0.9760169043003836,
+   "confidence": 0.9760169043003836,
+   "passed": true,
+   "x": 0.16,
+   "y": 0.67
+  },
+  {
+   "name": "永芳堂",
+   "name_en": "Yongfang Hall",
+   "kind": "hall",
+   "quote": "永芳堂：首层是图书馆、阅览室，二楼是办公室，三楼是孙中山纪念馆",
+   "look": "Symmetrical square-outside, round-inside building with two wings and sixty outdoor steps.",
+   "check": 0.99,
+   "confidence": 0.99,
+   "passed": true,
+   "x": 0.56,
+   "y": 0.5
+  },
+  {
+   "name": "十八先贤铜像广场",
+   "name_en": "Square of Eighteen Pioneers' Bronze Statues",
+   "kind": "quad",
+   "quote": "十八先贤铜像广场：位于永芳堂前，由姚美良捐资100万元兴建",
+   "look": "Plaza in front of Yongfang Hall lined with eighteen bronze statues.",
+   "check": 0.97666892514407,
+   "confidence": 0.97666892514407,
+   "passed": true,
+   "x": 0.43,
+   "y": 0.8
+  },
+  {
+   "name": "惺亭",
+   "name_en": "Xingting Pavilion",
+   "kind": "other",
+   "quote": "惺亭：东对图书馆，西对乙丑进士坊，南迎孙中山雕像",
+   "look": "Traditional pavilion with a calligraphy plaque, facing the library and statue.",
+   "check": 0.9839775084616625,
+   "confidence": 0.9839775084616625,
+   "passed": true,
+   "x": 0.72,
+   "y": 0.78
+  },
+  {
+   "name": "乙丑进士坊",
+   "name_en": "Yichou Jinshi Archway",
+   "kind": "gate",
+   "quote": "乙丑进士坊：原是中华中路四牌楼的其中一座，原位于格兰堂西侧",
+   "look": "Restored historic stone archway over 370 years old, west of Grant Hall.",
+   "check": 0.9500067850488472,
+   "confidence": 0.9500067850488472,
+   "passed": true
+  },
+  {
+   "name": "新图书馆",
+   "name_en": "New Library",
+   "kind": "library",
+   "quote": "中山大学新图书馆东北角的树丛里",
+   "look": "University library building with trees at its northeast corner.",
+   "check": 0.9653424217582789,
+   "confidence": 0.9653424217582789,
+   "passed": true
+  }
+ ],
+ "tokens": 18609,
+ "seconds": 44
+}

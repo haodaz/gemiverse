@@ -1,0 +1,60 @@
+{
+ "school": "cau",
+ "name": "中国农业大学",
+ "at": "2026-11-22T00:15:23.748Z",
+ "source": "https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E5%86%9C%E4%B8%9A%E5%A4%A7%E5%AD%A6",
+ "character": null,
+ "map": "/art/map/cau.jpg",
+ "landmarks": [
+  {
+   "name": "中国农业大学体育馆",
+   "name_en": "China Agricultural University Gymnasium",
+   "kind": "stadium",
+   "quote": "中国农业大学体育馆位于中国农业大学东校区校内，为北京2008年奥运会摔跤比赛馆",
+   "look": "Large indoor sports stadium with tiered seating for thousands of spectators.",
+   "check": 0.95220696233436,
+   "confidence": 0.95220696233436,
+   "passed": true,
+   "x": 0.57,
+   "y": 0.25
+  },
+  {
+   "name": "中国农业大学图书馆",
+   "name_en": "China Agricultural University Library",
+   "kind": "library",
+   "quote": "目前的中国农业大学图书馆，是由图书馆东馆（原北京农业工程大学图书馆）和图书馆西馆（原北京农业大学图书馆）组成",
+   "look": "Plain university library building with reading rooms and book stacks.",
+   "check": 0.9561267808862487,
+   "confidence": 0.9561267808862487,
+   "passed": true,
+   "x": 0.33,
+   "y": 0.69
+  },
+  {
+   "name": "图书馆东馆",
+   "name_en": "East Library",
+   "kind": "library",
+   "quote": "是由图书馆东馆（原北京农业工程大学图书馆）和图书馆西馆（原北京农业大学图书馆）组成",
+   "look": "Plain university library building on the east campus.",
+   "check": 0.9307674054110124,
+   "confidence": 0.9307674054110124,
+   "passed": true,
+   "x": 0.85,
+   "y": 0.46
+  },
+  {
+   "name": "图书馆西馆",
+   "name_en": "West Library",
+   "kind": "library",
+   "quote": "是由图书馆东馆（原北京农业工程大学图书馆）和图书馆西馆（原北京农业大学图书馆）组成",
+   "look": "Plain university library building on the west campus.",
+   "check": 0.9482725177854318,
+   "confidence": 0.9482725177854318,
+   "passed": true,
+   "x": 0.17,
+   "y": 0.4
+  }
+ ],
+ "tokens": 8870,
+ "seconds": 30
+}

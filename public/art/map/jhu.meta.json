@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. Most buildings on the Homewood campus are modeled after Federal architecture, with no structure taller than Gilman Hall. Draw exactly these 5 features, well spread across the picture with space between them, each clearly recognisable: (1) Gilman Hall, a hall: Flagship academic hall, tallest building on campus, Federal-style architecture.; (2) Milton S. Eisenhower Library, a library: Six-story library with only two stories above ground, shorter than Gilman Hall.; (3) Homewood House, a other: Historic house in classic Federal architecture style.; (4) Brody Learning Commons, a library: Four-story library expansion attached to the main library.; (5) Hutzler Reading Room, a other: Reading room located inside Gilman Hall.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 16,
+ "tokens": 2099,
+ "at": "2026-11-22T00:13:31.135Z"
+}

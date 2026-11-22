@@ -1,0 +1,283 @@
+{
+ "school": "csu",
+ "name": "中南大学",
+ "at": "2026-11-22T00:17:16.500Z",
+ "seconds": 34,
+ "tokens": 56249,
+ "entities": [
+  {
+   "id": "csu-519b5e2050",
+   "type": "Event",
+   "school": "csu",
+   "name": "中南大学“麓山”教师学术交叉论坛",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.csu.edu.cn/info/1596/109350.htm",
+    "needs": [
+     "explore_a_field",
+     "find_my_people"
+    ],
+    "start": null,
+    "summary": "中南大学“麓山”教师学术交叉论坛信息页，未包含具体时间、地点或议程详情。",
+    "event_kind": "lecture",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "csu-6d86c0bad0",
+   "type": "Event",
+   "school": "csu",
+   "name": "中南大学名师名家学术论坛——AI + SCIENCE挑战与机遇",
+   "tier": 1,
+   "fields": {
+    "url": "https://rsc.csu.edu.cn/info/1143/1987.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": null,
+    "summary": "中南大学名师名家学术论坛，主题为AI + SCIENCE挑战与机遇。",
+    "event_kind": "lecture",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "csu-1bab8cda00",
+   "type": "Event",
+   "school": "csu",
+   "name": "遇上你是我的缘！中南教职工这场联谊太暖啦！",
+   "tier": 1,
+   "fields": {
+    "url": "https://gonghui.csu.edu.cn/info/1040/10835.htm",
+    "needs": [
+     "find_my_people",
+     "rest_and_recover"
+    ],
+    "start": null,
+    "summary": "中南大学校工会举办单身教职工交友联谊活动，开展趣味游戏、音乐会及烧烤聚餐。",
+    "event_kind": "activity",
+    "venue_name": "酉园星空营地",
+    "organisation_name": "校工会",
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "csu-cd0810c542",
+   "type": "Event",
+   "school": "csu",
+   "name": "中南大学举办“童心逐光 筑梦中南”教职工亲子游园会",
+   "tier": 1,
+   "fields": {
+    "url": "https://gonghui.csu.edu.cn/info/1040/10839.htm",
+    "needs": [
+     "rest_and_recover",
+     "find_my_people"
+    ],
+    "start": null,
+    "summary": "中南大学举办教职工亲子游园会，设非遗手作、理化实验、亲子闯关等体验项目。",
+    "event_kind": "activity",
+    "venue_name": "潇湘校区体育场副场",
+    "organisation_name": "校工会、校团委、后勤保障部、附属学校管理中心",
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "csu-27403c67ec",
+   "type": "Event",
+   "school": "csu",
+   "name": "叶强教授：人工智能时代的管理研究与管理教育",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.csu.edu.cn/info/1596/108138.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": null,
+    "summary": "叶强教授主讲关于人工智能时代管理研究与管理教育的学术讲座。",
+    "event_kind": "lecture",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": "叶强教授",
+    "occurrences": []
+   }
+  },
+  {
+   "id": "csu-3aad7a1515",
+   "type": "Event",
+   "school": "csu",
+   "name": "数韵中南 名师讲堂：刘一峰教授学术报告",
+   "tier": 1,
+   "fields": {
+    "url": "https://math.csu.edu.cn/info/1736/13798.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": null,
+    "summary": "中南大学数学与统计学院发布的刘一峰教授学术报告预告。",
+    "event_kind": "lecture",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": "刘一峰教授",
+    "occurrences": []
+   }
+  },
+  {
+   "id": "csu-d68a37e9d5",
+   "type": "Event",
+   "school": "csu",
+   "name": "关于举办全民国家安全教育日系列活动暨中南大学第十八届大学生安全文化节的通知",
+   "tier": 1,
+   "fields": {
+    "url": "https://xgw.csu.edu.cn/info/1004/16129.htm",
+    "needs": [
+     "build_a_skill",
+     "contribute_beyond_self"
+    ],
+    "start": null,
+    "summary": "中南大学将于2026年3至4月举办全民国家安全教育日系列活动暨第十八届大学生安全文化节。",
+    "event_kind": "activity",
+    "venue_name": null,
+    "organisation_name": "主办：中共中南大学委员会、属地党委部门；承办：中南大学学生工作部（处）、中南大学保卫部（处）、中南大学团委、中南大学资源与安全工程学院及属地有关部门",
+    "speaker": null,
+    "occurrences": []
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "csu-519b5e2050",
+   "field": "title",
+   "quote": "中南大学“麓山”教师学术交叉论坛",
+   "url": "https://www.csu.edu.cn/info/1596/109350.htm",
+   "check_confidence": 0.9236086222354029,
+   "passed": true
+  },
+  {
+   "entity_id": "csu-6d86c0bad0",
+   "field": "title",
+   "quote": "中南大学名师名家学术论坛——AI + SCIENCE挑战与机遇",
+   "url": "https://rsc.csu.edu.cn/info/1143/1987.htm",
+   "check_confidence": 0.959684109301031,
+   "passed": true
+  },
+  {
+   "entity_id": "csu-1bab8cda00",
+   "field": "title",
+   "quote": "遇上你是我的缘！中南教职工这场联谊太暖啦！",
+   "url": "https://gonghui.csu.edu.cn/info/1040/10835.htm",
+   "check_confidence": 0.9533261788513937,
+   "passed": true
+  },
+  {
+   "entity_id": "csu-1bab8cda00",
+   "field": "date",
+   "quote": "10月24日下午",
+   "url": "https://gonghui.csu.edu.cn/info/1040/10835.htm",
+   "check_confidence": 0.4875911413460949,
+   "passed": false
+  },
+  {
+   "entity_id": "csu-1bab8cda00",
+   "field": "venue_name",
+   "quote": "酉园星空营地",
+   "url": "https://gonghui.csu.edu.cn/info/1040/10835.htm",
+   "check_confidence": 0.9745198594584655,
+   "passed": true
+  },
+  {
+   "entity_id": "csu-1bab8cda00",
+   "field": "organisation_name",
+   "quote": "校工会",
+   "url": "https://gonghui.csu.edu.cn/info/1040/10835.htm",
+   "check_confidence": 0.9805307219962203,
+   "passed": true
+  },
+  {
+   "entity_id": "csu-cd0810c542",
+   "field": "title",
+   "quote": "中南大学举办“童心逐光 筑梦中南”教职工亲子游园会",
+   "url": "https://gonghui.csu.edu.cn/info/1040/10839.htm",
+   "check_confidence": 0.9543346430925979,
+   "passed": true
+  },
+  {
+   "entity_id": "csu-cd0810c542",
+   "field": "date",
+   "quote": "6月7日上午",
+   "url": "https://gonghui.csu.edu.cn/info/1040/10839.htm",
+   "check_confidence": 0.694923566444975,
+   "passed": false
+  },
+  {
+   "entity_id": "csu-cd0810c542",
+   "field": "venue_name",
+   "quote": "潇湘校区体育场副场",
+   "url": "https://gonghui.csu.edu.cn/info/1040/10839.htm",
+   "check_confidence": 0.9575164358629545,
+   "passed": true
+  },
+  {
+   "entity_id": "csu-cd0810c542",
+   "field": "organisation_name",
+   "quote": "校工会、校团委、后勤保障部、附属学校管理中心",
+   "url": "https://gonghui.csu.edu.cn/info/1040/10839.htm",
+   "check_confidence": 0.9676760718554963,
+   "passed": true
+  },
+  {
+   "entity_id": "csu-27403c67ec",
+   "field": "title",
+   "quote": "叶强教授：人工智能时代的管理研究与管理教育",
+   "url": "https://www.csu.edu.cn/info/1596/108138.htm",
+   "check_confidence": 0.9404041743253944,
+   "passed": true
+  },
+  {
+   "entity_id": "csu-27403c67ec",
+   "field": "speaker",
+   "quote": "叶强教授",
+   "url": "https://www.csu.edu.cn/info/1596/108138.htm",
+   "check_confidence": 0.9470840095407491,
+   "passed": true
+  },
+  {
+   "entity_id": "csu-3aad7a1515",
+   "field": "title",
+   "quote": "数韵中南 名师讲堂：刘一峰教授学术报告",
+   "url": "https://math.csu.edu.cn/info/1736/13798.htm",
+   "check_confidence": 0.971831190308033,
+   "passed": true
+  },
+  {
+   "entity_id": "csu-3aad7a1515",
+   "field": "speaker",
+   "quote": "刘一峰教授",
+   "url": "https://math.csu.edu.cn/info/1736/13798.htm",
+   "check_confidence": 0.9672330246120454,
+   "passed": true
+  },
+  {
+   "entity_id": "csu-d68a37e9d5",
+   "field": "title",
+   "quote": "关于举办全民国家安全教育日系列活动暨中南大学第十八届大学生安全文化节的通知",
+   "url": "https://xgw.csu.edu.cn/info/1004/16129.htm",
+   "check_confidence": 0.9658745889126149,
+   "passed": true
+  },
+  {
+   "entity_id": "csu-d68a37e9d5",
+   "field": "organisation_name",
+   "quote": "主办：中共中南大学委员会、属地党委部门；承办：中南大学学生工作部（处）、中南大学保卫部（处）、中南大学团委、中南大学资源与安全工程学院及属地有关部门",
+   "url": "https://xgw.csu.edu.cn/info/1004/16129.htm",
+   "check_confidence": 0.9719143332234667,
+   "passed": true
+  }
+ ]
+}

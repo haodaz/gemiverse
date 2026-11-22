@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. Located in Midtown Atlanta, the campus mixes tall buildings with greenery and over 15,000 trees covering nearly 30 percent of the grounds. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Tech Tower, a tower: Administrative tower building on Central Campus.; (2) Bobby Dodd Stadium, a stadium: Large football stadium on East Campus.; (3) Kessler Campanile, a tower: Tall slender tower next to greenspace.; (4) Brittain Dining Hall, a hall: Medieval-church-style hall with carved columns and stained glass windows.; (5) Freshman Hill, a hill: Steep, ascending road incline between East and Central Campus.; (6) Tech Green, a quad: Open campus greenspace next to the library.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 16,
+ "tokens": 1957,
+ "at": "2026-11-22T00:19:37.002Z"
+}

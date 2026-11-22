@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. The low-lying central campus features Beaux-Arts Classical and Victorian Second-Empire buildings, two branches of Strawberry Creek, and wooded areas including the Eucalyptus Grove. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Sather Tower, a tower: Tall Beaux-Arts Classical clock tower inspired by St Mark's Campanile.; (2) Sather Gate, a gate: Beaux-Arts Classical campus gate.; (3) Doe Memorial Library, a library: Beaux-Arts Classical library building.; (4) California Memorial Stadium, a stadium: Large campus football stadium.; (5) South Hall, a hall: Victorian Second-Empire-style university hall.; (6) Hearst Greek Theatre, a other: Beaux-Arts Classical open-air theatre.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 16,
+ "tokens": 2182,
+ "at": "2026-11-22T00:14:09.503Z"
+}

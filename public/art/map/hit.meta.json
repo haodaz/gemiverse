@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. The main campus features neoclassical-style architecture such as the three-story Administration Building with dormer windows, pillar reliefs, a front colonnade, and flanking lawns. Draw exactly these 3 features, well spread across the picture with space between them, each clearly recognisable: (1) Administration Building, a hall: Three-story neoclassical building with semi-basement, dormer-windowed attic, pillar reliefs, and front colonnade.; (2) Civil Engineering Building, a hall: Plain campus hall building.; (3) Front Colonnade Lawns, a other: Flat green lawns flanking the front colonnade of the Administration Building.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 15,
+ "tokens": 1837,
+ "at": "2026-11-22T00:11:41.850Z"
+}

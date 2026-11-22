@@ -1,0 +1,36 @@
+{
+ "school": "csu",
+ "name": "中南大学",
+ "at": "2026-11-22T00:16:50.721Z",
+ "source": "https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%8D%97%E5%A4%A7%E5%AD%A6",
+ "character": "Located at the foot of Mount Yuelu, the main campus features mostly simple, antique red-brick Soviet-style buildings.",
+ "map": "/art/map/csu.jpg",
+ "landmarks": [
+  {
+   "name": "民主楼",
+   "name_en": "Minzhu Building",
+   "kind": "hall",
+   "quote": "清华大学抗战南迁时留下的“民主楼”、“和平楼”等校舍",
+   "look": "Simple, antique red-brick Soviet-style academic building.",
+   "check": 0.9606980387547154,
+   "confidence": 0.9606980387547154,
+   "passed": true,
+   "x": 0.59,
+   "y": 0.27
+  },
+  {
+   "name": "和平楼",
+   "name_en": "Heping Building",
+   "kind": "hall",
+   "quote": "清华大学抗战南迁时留下的“民主楼”、“和平楼”等校舍",
+   "look": "Simple, antique red-brick Soviet-style academic building.",
+   "check": 0.9512632611796467,
+   "confidence": 0.9512632611796467,
+   "passed": true,
+   "x": 0.75,
+   "y": 0.67
+  }
+ ],
+ "tokens": 17390,
+ "seconds": 51
+}

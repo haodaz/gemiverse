@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. The campus features four main north-to-south quads, historic buildings, Boneyard Creek, and a solar calendar with an obelisk and copper fountains. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Main Quadrangle, a quad: Large open quadrangle surrounded by liberal arts and sciences buildings.; (2) Beckman Quadrangle, a quad: Engineering quad with research buildings, an obelisk, and copper fountains.; (3) John Bardeen Quadrangle, a quad: Central engineering quadrangle with a creek flowing through it.; (4) South Quadrangle, a quad: Open quadrangle surrounded by agricultural and environmental science buildings.; (5) Main Library, a library: Historic university library building.; (6) Grainger Engineering Library, a library: Plain engineering library building.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 15,
+ "tokens": 1983,
+ "at": "2026-11-22T00:19:19.959Z"
+}

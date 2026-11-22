@@ -1,0 +1,377 @@
+{
+ "school": "tju",
+ "name": "天津大学",
+ "at": "2026-11-22T00:14:43.853Z",
+ "seconds": 27,
+ "tokens": 57158,
+ "entities": [
+  {
+   "id": "tju-a1708a1091",
+   "type": "Event",
+   "school": "tju",
+   "name": "脑机接口：从基础科学到神经康复的突破",
+   "tier": 1,
+   "fields": {
+    "url": "https://mp.weixin.qq.com/s/UK4WH-dI7bnml4R0JkOM8w",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-03T14:30",
+    "summary": "米格尔·尼科莱利斯教授将作脑机接口从基础科学到神经康复突破的学术讲座。",
+    "event_kind": "lecture",
+    "venue_name": "卫津路校区科学图书馆二层",
+    "organisation_name": "共青团天津大学委员会 天津大学医学部 天津大学青年文化促进会 脑机交互与人机共融海河实验室",
+    "speaker": "米格尔·尼科莱利斯(Miguel Nicolelis)教授",
+    "occurrences": [
+     {
+      "start": "2026-11-03T14:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "tju-fa2e794b19",
+   "type": "Event",
+   "school": "tju",
+   "name": "算力自主之路——国产算力技术全景分享",
+   "tier": 1,
+   "fields": {
+    "url": "https://mp.weixin.qq.com/s/RalxXigf6UG13XEIXutbqg",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-10-27T15:30",
+    "summary": "李斌将分享国产算力技术突破、产业生态与未来方向。",
+    "event_kind": "lecture",
+    "venue_name": "天津大学北洋园校区 郑东图书馆南馆报告厅",
+    "organisation_name": "共青团天津大学委员会、天津大学人工智能学院、天津大学青年文化促进会",
+    "speaker": "李斌",
+    "occurrences": [
+     {
+      "start": "2026-10-27T15:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "tju-a88f5d86d6",
+   "type": "Event",
+   "school": "tju",
+   "name": "北洋大讲堂预告（卫津路校区）| 2026天津学生戏剧展演名家进校园",
+   "tier": 1,
+   "fields": {
+    "url": "https://mp.weixin.qq.com/s/MZFMymZqBzq0GcM9Rjvx1Q",
+    "needs": [
+     "explore_a_field",
+     "make_and_express"
+    ],
+    "start": "2026-11-17T15:20",
+    "summary": "景小勇将在天津大学卫津路校区主讲新时代国有文艺院团创作思考。",
+    "event_kind": "lecture",
+    "venue_name": "天津大学（卫津路校区）大学生活动中心",
+    "organisation_name": "中共天津市委宣传部、天津市文化和旅游局、天津市教育委员会、共青团天津市委员会、天津海河传媒中心、天津市文学艺术界联合会、天津北方演艺集团",
+    "speaker": "景小勇",
+    "occurrences": [
+     {
+      "start": "2026-11-17T15:20",
+      "end": "2026-11-17T17:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "tju-2dff7f0ecd",
+   "type": "Event",
+   "school": "tju",
+   "name": "碳能体系解码，能源发展重构",
+   "tier": 1,
+   "fields": {
+    "url": "https://mp.weixin.qq.com/s/EQpI-gCYJew7uICM8U_1HQ",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-10-22T15:00",
+    "summary": "何鸣元院士主讲绿色碳科学与碳能体系分子转化及能源发展重构的学术讲座。",
+    "event_kind": "lecture",
+    "venue_name": "北洋园校区1895行政楼A102报告厅",
+    "organisation_name": "共青团天津大学委员会 天津大学化工学院 天津大学青年文化促进会",
+    "speaker": "何鸣元",
+    "occurrences": [
+     {
+      "start": "2026-10-22T15:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "tju-10969b09af",
+   "type": "Event",
+   "school": "tju",
+   "name": "AI赋能减污降碳与零碳未来",
+   "tier": 1,
+   "fields": {
+    "url": "https://mp.weixin.qq.com/s/9SVEm2SMMTEqgXjH08zqMA",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-10-14T15:25",
+    "summary": "李俊华院士主讲AI赋能减污降碳与零碳未来的技术路径与战略思考。",
+    "event_kind": "lecture",
+    "venue_name": "天津大学北洋园校区59教B115",
+    "organisation_name": "共青团天津大学委员会、天津大学环境科学与工程学院、天津大学青年文化促进会",
+    "speaker": "李俊华",
+    "occurrences": [
+     {
+      "start": "2026-10-14T15:25",
+      "end": null
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "tju-a1708a1091",
+   "field": "title",
+   "quote": "脑机接口：从基础科学到神经康复的突破",
+   "url": "https://mp.weixin.qq.com/s/UK4WH-dI7bnml4R0JkOM8w",
+   "check_confidence": 0.980871503558631,
+   "passed": true
+  },
+  {
+   "entity_id": "tju-a1708a1091",
+   "field": "date",
+   "quote": "2026年11月3日（星期二）14:30",
+   "url": "https://mp.weixin.qq.com/s/UK4WH-dI7bnml4R0JkOM8w",
+   "check_confidence": 0.9805341120105886,
+   "passed": true
+  },
+  {
+   "entity_id": "tju-a1708a1091",
+   "field": "start_time",
+   "quote": "14:30",
+   "url": "https://mp.weixin.qq.com/s/UK4WH-dI7bnml4R0JkOM8w",
+   "check_confidence": 0.9763231998887563,
+   "passed": true
+  },
+  {
+   "entity_id": "tju-a1708a1091",
+   "field": "venue_name",
+   "quote": "卫津路校区科学图书馆二层",
+   "url": "https://mp.weixin.qq.com/s/UK4WH-dI7bnml4R0JkOM8w",
+   "check_confidence": 0.982048336770162,
+   "passed": true
+  },
+  {
+   "entity_id": "tju-a1708a1091",
+   "field": "organisation_name",
+   "quote": "共青团天津大学委员会 天津大学医学部 天津大学青年文化促进会 脑机交互与人机共融海河实验室",
+   "url": "https://mp.weixin.qq.com/s/UK4WH-dI7bnml4R0JkOM8w",
+   "check_confidence": 0.9731039679835167,
+   "passed": true
+  },
+  {
+   "entity_id": "tju-a1708a1091",
+   "field": "speaker",
+   "quote": "米格尔·尼科莱利斯(Miguel Nicolelis)教授",
+   "url": "https://mp.weixin.qq.com/s/UK4WH-dI7bnml4R0JkOM8w",
+   "check_confidence": 0.9809323159887218,
+   "passed": true
+  },
+  {
+   "entity_id": "tju-fa2e794b19",
+   "field": "title",
+   "quote": "算力自主之路——国产算力技术全景分享",
+   "url": "https://mp.weixin.qq.com/s/RalxXigf6UG13XEIXutbqg",
+   "check_confidence": 0.9741666853895793,
+   "passed": true
+  },
+  {
+   "entity_id": "tju-fa2e794b19",
+   "field": "date",
+   "quote": "2026年10月27日（星期二）15:30",
+   "url": "https://mp.weixin.qq.com/s/RalxXigf6UG13XEIXutbqg",
+   "check_confidence": 0.9744715073205313,
+   "passed": true
+  },
+  {
+   "entity_id": "tju-fa2e794b19",
+   "field": "start_time",
+   "quote": "15:30",
+   "url": "https://mp.weixin.qq.com/s/RalxXigf6UG13XEIXutbqg",
+   "check_confidence": 0.9649255963466288,
+   "passed": true
+  },
+  {
+   "entity_id": "tju-fa2e794b19",
+   "field": "venue_name",
+   "quote": "天津大学北洋园校区 郑东图书馆南馆报告厅",
+   "url": "https://mp.weixin.qq.com/s/RalxXigf6UG13XEIXutbqg",
+   "check_confidence": 0.9777562339546267,
+   "passed": true
+  },
+  {
+   "entity_id": "tju-fa2e794b19",
+   "field": "organisation_name",
+   "quote": "共青团天津大学委员会、天津大学人工智能学院、天津大学青年文化促进会",
+   "url": "https://mp.weixin.qq.com/s/RalxXigf6UG13XEIXutbqg",
+   "check_confidence": 0.9821198815672691,
+   "passed": true
+  },
+  {
+   "entity_id": "tju-fa2e794b19",
+   "field": "speaker",
+   "quote": "李斌",
+   "url": "https://mp.weixin.qq.com/s/RalxXigf6UG13XEIXutbqg",
+   "check_confidence": 0.97332098804631,
+   "passed": true
+  },
+  {
+   "entity_id": "tju-a88f5d86d6",
+   "field": "title",
+   "quote": "北洋大讲堂预告（卫津路校区）| 2026天津学生戏剧展演名家进校园",
+   "url": "https://mp.weixin.qq.com/s/MZFMymZqBzq0GcM9Rjvx1Q",
+   "check_confidence": 0.9728006989003642,
+   "passed": true
+  },
+  {
+   "entity_id": "tju-a88f5d86d6",
+   "field": "date",
+   "quote": "2026年11月17日（星期二）15:20-17:00",
+   "url": "https://mp.weixin.qq.com/s/MZFMymZqBzq0GcM9Rjvx1Q",
+   "check_confidence": 0.9766302235000343,
+   "passed": true
+  },
+  {
+   "entity_id": "tju-a88f5d86d6",
+   "field": "start_time",
+   "quote": "15:20",
+   "url": "https://mp.weixin.qq.com/s/MZFMymZqBzq0GcM9Rjvx1Q",
+   "check_confidence": 0.9795288055014375,
+   "passed": true
+  },
+  {
+   "entity_id": "tju-a88f5d86d6",
+   "field": "venue_name",
+   "quote": "天津大学（卫津路校区）大学生活动中心",
+   "url": "https://mp.weixin.qq.com/s/MZFMymZqBzq0GcM9Rjvx1Q",
+   "check_confidence": 0.9788050972628514,
+   "passed": true
+  },
+  {
+   "entity_id": "tju-a88f5d86d6",
+   "field": "organisation_name",
+   "quote": "中共天津市委宣传部、天津市文化和旅游局、天津市教育委员会、共青团天津市委员会、天津海河传媒中心、天津市文学艺术界联合会、天津北方演艺集团",
+   "url": "https://mp.weixin.qq.com/s/MZFMymZqBzq0GcM9Rjvx1Q",
+   "check_confidence": 0.9667099526025632,
+   "passed": true
+  },
+  {
+   "entity_id": "tju-a88f5d86d6",
+   "field": "speaker",
+   "quote": "景小勇",
+   "url": "https://mp.weixin.qq.com/s/MZFMymZqBzq0GcM9Rjvx1Q",
+   "check_confidence": 0.9840959080721391,
+   "passed": true
+  },
+  {
+   "entity_id": "tju-2dff7f0ecd",
+   "field": "title",
+   "quote": "碳能体系解码，能源发展重构",
+   "url": "https://mp.weixin.qq.com/s/EQpI-gCYJew7uICM8U_1HQ",
+   "check_confidence": 0.971735065747186,
+   "passed": true
+  },
+  {
+   "entity_id": "tju-2dff7f0ecd",
+   "field": "date",
+   "quote": "2026年1 0月22日 星期四 15:00",
+   "url": "https://mp.weixin.qq.com/s/EQpI-gCYJew7uICM8U_1HQ",
+   "check_confidence": 0.9303484692216203,
+   "passed": true
+  },
+  {
+   "entity_id": "tju-2dff7f0ecd",
+   "field": "start_time",
+   "quote": "15:00",
+   "url": "https://mp.weixin.qq.com/s/EQpI-gCYJew7uICM8U_1HQ",
+   "check_confidence": 0.9792083118937033,
+   "passed": true
+  },
+  {
+   "entity_id": "tju-2dff7f0ecd",
+   "field": "venue_name",
+   "quote": "北洋园校区1895行政楼A102报告厅",
+   "url": "https://mp.weixin.qq.com/s/EQpI-gCYJew7uICM8U_1HQ",
+   "check_confidence": 0.9719502675692745,
+   "passed": true
+  },
+  {
+   "entity_id": "tju-2dff7f0ecd",
+   "field": "organisation_name",
+   "quote": "共青团天津大学委员会 天津大学化工学院 天津大学青年文化促进会",
+   "url": "https://mp.weixin.qq.com/s/EQpI-gCYJew7uICM8U_1HQ",
+   "check_confidence": 0.964613766098693,
+   "passed": true
+  },
+  {
+   "entity_id": "tju-2dff7f0ecd",
+   "field": "speaker",
+   "quote": "何鸣元",
+   "url": "https://mp.weixin.qq.com/s/EQpI-gCYJew7uICM8U_1HQ",
+   "check_confidence": 0.9738753796776584,
+   "passed": true
+  },
+  {
+   "entity_id": "tju-10969b09af",
+   "field": "title",
+   "quote": "AI赋能减污降碳与零碳未来",
+   "url": "https://mp.weixin.qq.com/s/9SVEm2SMMTEqgXjH08zqMA",
+   "check_confidence": 0.969992340857009,
+   "passed": true
+  },
+  {
+   "entity_id": "tju-10969b09af",
+   "field": "date",
+   "quote": "2026年10月14日 （星期三） 15：25",
+   "url": "https://mp.weixin.qq.com/s/9SVEm2SMMTEqgXjH08zqMA",
+   "check_confidence": 0.9555085109680864,
+   "passed": true
+  },
+  {
+   "entity_id": "tju-10969b09af",
+   "field": "start_time",
+   "quote": "15:25",
+   "url": "https://mp.weixin.qq.com/s/9SVEm2SMMTEqgXjH08zqMA",
+   "check_confidence": 0.9703308334651346,
+   "passed": true
+  },
+  {
+   "entity_id": "tju-10969b09af",
+   "field": "venue_name",
+   "quote": "天津大学北洋园校区59教B115",
+   "url": "https://mp.weixin.qq.com/s/9SVEm2SMMTEqgXjH08zqMA",
+   "check_confidence": 0.972811012520541,
+   "passed": true
+  },
+  {
+   "entity_id": "tju-10969b09af",
+   "field": "organisation_name",
+   "quote": "共青团天津大学委员会、天津大学环境科学与工程学院、天津大学青年文化促进会",
+   "url": "https://mp.weixin.qq.com/s/9SVEm2SMMTEqgXjH08zqMA",
+   "check_confidence": 0.9802332335234681,
+   "passed": true
+  },
+  {
+   "entity_id": "tju-10969b09af",
+   "field": "speaker",
+   "quote": "李俊华",
+   "url": "https://mp.weixin.qq.com/s/9SVEm2SMMTEqgXjH08zqMA",
+   "check_confidence": 0.9702176466740424,
+   "passed": true
+  }
+ ]
+}

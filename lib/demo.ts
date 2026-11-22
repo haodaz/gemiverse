@@ -10,19 +10,11 @@ export type Look = {
 // the Gemi's beliefs move toward it. A real student has no such field.
 export type Preset = { truth: Record<string, number>; id: string; school: SchoolId; gemiName: string; level: "undergraduate" | "doctoral"; field: string; year: string; look: Look; birthNote: string };
 
-export const PRESETS: Record<SchoolId, Preset> = {
-  nyu: {
-    truth: { pace: -0.4, scope: -0.5, arena: 0.6, closeness: 0.7, horizon: -0.2, structure: 0.3, collaboration: -0.5 },
-    id: "nyu-phd-education", school: "nyu", gemiName: "Mochi", level: "doctoral", field: "Education", year: "first-year PhD student",
-    look: { skin: "#f1cfb4", hairStyle: "bob", hairColor: "#2a2226", eyes: "round", top: "cardigan", topColor: "#b8a2e3",
-      bottom: "pleatedSkirt", bottomColor: "#3d3648", shoeColor: "#ffffff", headwear: "none", glasses: "round", blush: true },
-    birthNote: "I just started a PhD in education. I want to find people who build things for learners, not only write about them. I get tired at big mixers; small rooms are better. I should also figure out how the library actually works here.",
-  },
-  columbia: {
-    truth: { pace: 0.8, scope: 0.7, arena: -0.4, closeness: 0.6, horizon: 0.3, structure: 0.6, collaboration: 0.7 },
-    id: "columbia-undergrad", school: "columbia", gemiName: "Pip", level: "undergraduate", field: "undecided, leaning computer science and music", year: "sophomore",
-    look: { skin: "#a86f4c", hairStyle: "curlyMedium", hairColor: "#2a1d18", eyes: "smile", top: "hoodie", topColor: "#8fc1e8",
-      bottom: "trousers", bottomColor: "#4a5568", shoeColor: "#f6c453", headwear: "headphones", glasses: "none", blush: true },
-    birthNote: "I'm a sophomore and I still haven't picked a major. I like making beats and I like code. I want to try a lot of things fast and see what sticks, and I'd love a crew to make stuff with.",
-  },
-};
+const LOOK: Look = { skin: "#f1cfb4", hairStyle: "bob", hairColor: "#2a2226", eyes: "round", top: "cardigan", topColor: "#b8a2e3", bottom: "pleatedSkirt", bottomColor: "#3d3648", shoeColor: "#ffffff", headwear: "none", glasses: "round", blush: true };
+// One starting Gemi for whichever school is chosen. `truth` is only for simulated students in test runs.
+import more from "./schools-more.json";
+const CN_MORE = (more as { id: string; group: string }[]).filter((m) => m.group === "cn985").map((m) => m.id);
+const CN_IDS = ["tsinghua", "pku", "fudan", "sjtu", "zju", "nju", "ustc", "hit", "xjtu"];
+const make = (id: string): Preset => { const cn = CN_IDS.includes(id) || CN_MORE.includes(id), k = id.length; return { truth: { pace: k % 2 ? 0.6 : -0.4, scope: k % 3 ? 0.5 : -0.5, arena: 0.4, closeness: 0.6, horizon: -0.2, structure: 0.3, collaboration: k % 2 ? 0.6 : -0.4 }, id: `${id}-student`, school: id, gemiName: cn ? "团子" : "Mochi", level: "undergraduate", field: cn ? "未定专业" : "undecided", year: cn ? "大二学生" : "sophomore", look: LOOK,
+  birthNote: cn ? "我大二，还没想好以后做什么。想找一些能动手做东西的人，也想听听不同方向的讲座。人太多的场合我会累。" : "I'm a sophomore and I haven't picked a direction. I want to find people who make things, and hear talks from different fields. Big crowds tire me." }; };
+export const PRESETS: Record<SchoolId, Preset> = new Proxy({} as Record<SchoolId, Preset>, { get: (_t, id) => (typeof id === "string" ? make(id) : undefined) });

@@ -1,0 +1,808 @@
+{
+ "school": "nwafu",
+ "name": "西北农林科技大学",
+ "at": "2026-11-22T00:18:42.821Z",
+ "seconds": 36,
+ "tokens": 74197,
+ "entities": [
+  {
+   "id": "nwafu-5d1d67e248",
+   "type": "Event",
+   "school": "nwafu",
+   "name": "关于举办“2026年西北农林生命青年学者论坛（二十）”的通知",
+   "tier": 1,
+   "fields": {
+    "url": "https://life.nwafu.edu.cn/xzhd/58abc9793880410897b0fe635a9aa65a.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-15T14:00",
+    "summary": "杨世辉教授将作关于微生物菌株重编程优化及产业化应用的学术报告。",
+    "event_kind": "lecture",
+    "venue_name": "理科楼E602",
+    "organisation_name": "生命科学学院",
+    "speaker": "杨世辉",
+    "occurrences": [
+     {
+      "start": "2026-11-15T14:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "nwafu-3871a074a7",
+   "type": "Event",
+   "school": "nwafu",
+   "name": "关于举办“2026年作物抗病论坛”的通知",
+   "tier": 1,
+   "fields": {
+    "url": "https://nxy.nwafu.edu.cn/xzjl2/fd5bae30ab384c238ebdb6dd63434f1c.htm",
+    "needs": [
+     "explore_a_field",
+     "find_my_people"
+    ],
+    "start": "2026-11-15",
+    "summary": "西北农林科技大学农学院将于2026年11月15日举办2026年作物抗病论坛。",
+    "event_kind": "lecture",
+    "venue_name": "西北农林科技大学南校区交流中心104会议室",
+    "organisation_name": "农学院",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-15",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "nwafu-558ff4b0d2",
+   "type": "Event",
+   "school": "nwafu",
+   "name": "关于举办“2026年西北农林生命青年学者论坛（十九）”的通知",
+   "tier": 1,
+   "fields": {
+    "url": "https://life.nwafu.edu.cn/xzhd/6a6f0bbe2813423ca8c169dcc56fedfa.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-15T09:00",
+    "summary": "浙江大学郑绍建教授将作题为“追寻根系离子响应与感知的秘密”的学术报告。",
+    "event_kind": "lecture",
+    "venue_name": "理科楼E602",
+    "organisation_name": "生命科学学院",
+    "speaker": "郑绍建",
+    "occurrences": [
+     {
+      "start": "2026-11-15T09:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "nwafu-9a24847c54",
+   "type": "Event",
+   "school": "nwafu",
+   "name": "关于举办“生物钟和植物免疫的互作—从模式植物到作物”学术报告的通知",
+   "tier": 1,
+   "fields": {
+    "url": "https://life.nwafu.edu.cn/xzhd/622167d2b7c14d1591c304bb30ffbb89.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-13T16:00",
+    "summary": "王伟研究员将作关于生物钟和植物免疫互作的学术报告。",
+    "event_kind": "lecture",
+    "venue_name": "北校区N8T08",
+    "organisation_name": "生命科学学院",
+    "speaker": "王伟 研究员",
+    "occurrences": [
+     {
+      "start": "2026-11-13T16:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "nwafu-12b6276901",
+   "type": "Event",
+   "school": "nwafu",
+   "name": "关于举办第一届旱区作物病害绿色防控国际研讨会的通知",
+   "tier": 1,
+   "fields": {
+    "url": "https://ppc.nwafu.edu.cn/xzbg/623fea6ef040445aaa28d4865661d84d.htm",
+    "needs": [
+     "explore_a_field",
+     "find_my_people"
+    ],
+    "start": "2026-11-09",
+    "summary": "西北农林科技大学举办第一届旱区作物病害绿色防控国际研讨会，探讨作物病害绿色防控。",
+    "event_kind": "lecture",
+    "venue_name": "西北农林科技大学南校区交流中心104会议室",
+    "organisation_name": "西北农林科技大学植物保护学院、作物抗逆与高效生产全国重点实验室、陕西省植物保护学会",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-09",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "nwafu-85f90a5c37",
+   "type": "Event",
+   "school": "nwafu",
+   "name": "关于举办2026年植保论坛系列学术报告会（二十二）的通知",
+   "tier": 1,
+   "fields": {
+    "url": "https://ppc.nwafu.edu.cn/xzbg/818910fdc9bf4136a1cf504817528db4.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-11T14:30",
+    "summary": "植保学院举办学术报告会，白明和刘星月分别作昆虫多样性与演化主题报告。",
+    "event_kind": "lecture",
+    "venue_name": "植保学院616会议室",
+    "organisation_name": "植物保护学院",
+    "speaker": "白明研究员、刘星月教授",
+    "occurrences": [
+     {
+      "start": "2026-11-11T14:30",
+      "end": "2026-11-11T18:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "nwafu-e56cbcca5f",
+   "type": "Event",
+   "school": "nwafu",
+   "name": "从硝酸盐感知到植物生长：探索硝酸盐信号传导的新成员(2026年生命科学研究进展系列讲座之十五)",
+   "tier": 1,
+   "fields": {
+    "url": "https://life.nwafu.edu.cn/xzhd/dc3f8cf838fc437d8e09ccf098e30ad8.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-11T16:00",
+    "summary": "西北农林科技大学生命科学学院举办硝酸盐信号传导学术报告，由刘坤祥教授主讲。",
+    "event_kind": "lecture",
+    "venue_name": "北校区N8T08",
+    "organisation_name": "生命科学学院",
+    "speaker": "刘坤祥",
+    "occurrences": [
+     {
+      "start": "2026-11-11T16:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "nwafu-99a5268917",
+   "type": "Event",
+   "school": "nwafu",
+   "name": "关于举办2026年植保论坛系列学术报告会（二十一）的通知",
+   "tier": 1,
+   "fields": {
+    "url": "https://ppc.nwafu.edu.cn/xzbg/6a4b679942d84dd4856dfe4071ed8d56.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-05T14:30",
+    "summary": "植物保护学院举办2026年植保论坛系列学术报告会，邀请五位教授作植保领域学术报告。",
+    "event_kind": "lecture",
+    "venue_name": "交流中心208会议室",
+    "organisation_name": "植物保护学院",
+    "speaker": "周雪平教授（中国农业科学院）、侯有明教授（福建农林大学）、陆永跃教授（华南农业大学）、刘俊教授（中国农业大学）、吴益东教授（南京农业大学）",
+    "occurrences": [
+     {
+      "start": "2026-11-05T14:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "nwafu-41a0b11d33",
+   "type": "Event",
+   "school": "nwafu",
+   "name": "绝对定量微生物组与生物合成进化加速器",
+   "tier": 1,
+   "fields": {
+    "url": "https://zhxy.nwafu.edu.cn/xzdt/686c8a5ab2834f34895914fef51fdaba.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": null,
+    "summary": "束文圣教授将作题为“绝对定量微生物组与生物合成进化加速器”的学术报告。",
+    "event_kind": "lecture",
+    "venue_name": "资源环境学院报告厅",
+    "organisation_name": "资源环境学院",
+    "speaker": "束文圣",
+    "occurrences": []
+   }
+  },
+  {
+   "id": "nwafu-1c26a7e837",
+   "type": "Event",
+   "school": "nwafu",
+   "name": "关于举办“流感病毒的反向遗传系统及其在基础研究中的应用”学术报告的通知",
+   "tier": 1,
+   "fields": {
+    "url": "https://life.nwafu.edu.cn/xzhd/e767d78924ab420a80a50dad380115c3.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-06T16:00",
+    "summary": "陈红英教授主讲流感病毒反向遗传系统及其基础研究应用的学术报告。",
+    "event_kind": "lecture",
+    "venue_name": "北校区N8T08",
+    "organisation_name": "生命科学学院",
+    "speaker": "陈红英 教授",
+    "occurrences": [
+     {
+      "start": "2026-11-06T16:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "nwafu-29c79c9725",
+   "type": "Event",
+   "school": "nwafu",
+   "name": "皮肤干细胞的系统性调控 (2026年生命科学研究进展系列讲座之十三)",
+   "tier": 1,
+   "fields": {
+    "url": "https://life.nwafu.edu.cn/xzhd/dbb1ca5b844a48e592782f5e1acd58ab.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-04T16:00",
+    "summary": "西湖大学张兵研究员主讲皮肤干细胞的系统性调控学术报告。",
+    "event_kind": "lecture",
+    "venue_name": "北校区N8T08",
+    "organisation_name": "生命科学学院",
+    "speaker": "张兵 研究员",
+    "occurrences": [
+     {
+      "start": "2026-11-04T16:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "nwafu-1ade132abf",
+   "type": "Event",
+   "school": "nwafu",
+   "name": "中国畜牧兽医学会动物营养学分会第九届青年学者学术研讨会通知",
+   "tier": 1,
+   "fields": {
+    "url": "https://dkxy.nwafu.edu.cn/tzgg/8f74927eccec43e6839a6725bec13255.htm",
+    "needs": [
+     "explore_a_field",
+     "find_my_people"
+    ],
+    "start": null,
+    "summary": "中国畜牧兽医学会动物营养学分会第九届青年学者学术研讨会的通知。",
+    "event_kind": "activity",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "nwafu-5d1d67e248",
+   "field": "title",
+   "quote": "关于举办“2026年西北农林生命青年学者论坛（二十）”的通知",
+   "url": "https://life.nwafu.edu.cn/xzhd/58abc9793880410897b0fe635a9aa65a.htm",
+   "check_confidence": 0.9813492903615034,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-5d1d67e248",
+   "field": "date",
+   "quote": "2026年11月15日（星期日）下午14：00",
+   "url": "https://life.nwafu.edu.cn/xzhd/58abc9793880410897b0fe635a9aa65a.htm",
+   "check_confidence": 0.9743020986839431,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-5d1d67e248",
+   "field": "start_time",
+   "quote": "14:00",
+   "url": "https://life.nwafu.edu.cn/xzhd/58abc9793880410897b0fe635a9aa65a.htm",
+   "check_confidence": 0.9694784429153535,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-5d1d67e248",
+   "field": "venue_name",
+   "quote": "理科楼E602",
+   "url": "https://life.nwafu.edu.cn/xzhd/58abc9793880410897b0fe635a9aa65a.htm",
+   "check_confidence": 0.9674747034985705,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-5d1d67e248",
+   "field": "organisation_name",
+   "quote": "生命科学学院",
+   "url": "https://life.nwafu.edu.cn/xzhd/58abc9793880410897b0fe635a9aa65a.htm",
+   "check_confidence": 0.9595735820200194,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-5d1d67e248",
+   "field": "speaker",
+   "quote": "杨世辉",
+   "url": "https://life.nwafu.edu.cn/xzhd/58abc9793880410897b0fe635a9aa65a.htm",
+   "check_confidence": 0.9871984286002583,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-3871a074a7",
+   "field": "title",
+   "quote": "关于举办“2026年作物抗病论坛”的通知",
+   "url": "https://nxy.nwafu.edu.cn/xzjl2/fd5bae30ab384c238ebdb6dd63434f1c.htm",
+   "check_confidence": 0.9643753331956669,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-3871a074a7",
+   "field": "date",
+   "quote": "2026年11月15日",
+   "url": "https://nxy.nwafu.edu.cn/xzjl2/fd5bae30ab384c238ebdb6dd63434f1c.htm",
+   "check_confidence": 0.9837852432924491,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-3871a074a7",
+   "field": "venue_name",
+   "quote": "西北农林科技大学南校区交流中心104会议室",
+   "url": "https://nxy.nwafu.edu.cn/xzjl2/fd5bae30ab384c238ebdb6dd63434f1c.htm",
+   "check_confidence": 0.9642480059008538,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-3871a074a7",
+   "field": "organisation_name",
+   "quote": "农学院",
+   "url": "https://nxy.nwafu.edu.cn/xzjl2/fd5bae30ab384c238ebdb6dd63434f1c.htm",
+   "check_confidence": 0.9461511605496946,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-558ff4b0d2",
+   "field": "title",
+   "quote": "关于举办“2026年西北农林生命青年学者论坛（十九）”的通知",
+   "url": "https://life.nwafu.edu.cn/xzhd/6a6f0bbe2813423ca8c169dcc56fedfa.htm",
+   "check_confidence": 0.9760979892066859,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-558ff4b0d2",
+   "field": "date",
+   "quote": "2026年11月15日（星期日）上午9：00",
+   "url": "https://life.nwafu.edu.cn/xzhd/6a6f0bbe2813423ca8c169dcc56fedfa.htm",
+   "check_confidence": 0.9642112746979553,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-558ff4b0d2",
+   "field": "start_time",
+   "quote": "09:00",
+   "url": "https://life.nwafu.edu.cn/xzhd/6a6f0bbe2813423ca8c169dcc56fedfa.htm",
+   "check_confidence": 0.977988053889767,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-558ff4b0d2",
+   "field": "venue_name",
+   "quote": "理科楼E602",
+   "url": "https://life.nwafu.edu.cn/xzhd/6a6f0bbe2813423ca8c169dcc56fedfa.htm",
+   "check_confidence": 0.9591925004315238,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-558ff4b0d2",
+   "field": "organisation_name",
+   "quote": "生命科学学院",
+   "url": "https://life.nwafu.edu.cn/xzhd/6a6f0bbe2813423ca8c169dcc56fedfa.htm",
+   "check_confidence": 0.9459656469189633,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-558ff4b0d2",
+   "field": "speaker",
+   "quote": "郑绍建",
+   "url": "https://life.nwafu.edu.cn/xzhd/6a6f0bbe2813423ca8c169dcc56fedfa.htm",
+   "check_confidence": 0.9797479251893806,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-9a24847c54",
+   "field": "title",
+   "quote": "关于举办“生物钟和植物免疫的互作—从模式植物到作物”学术报告的通知",
+   "url": "https://life.nwafu.edu.cn/xzhd/622167d2b7c14d1591c304bb30ffbb89.htm",
+   "check_confidence": 0.9731414210848462,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-9a24847c54",
+   "field": "date",
+   "quote": "2026年11月13日（星期五）16：00",
+   "url": "https://life.nwafu.edu.cn/xzhd/622167d2b7c14d1591c304bb30ffbb89.htm",
+   "check_confidence": 0.979405545027926,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-9a24847c54",
+   "field": "start_time",
+   "quote": "16:00",
+   "url": "https://life.nwafu.edu.cn/xzhd/622167d2b7c14d1591c304bb30ffbb89.htm",
+   "check_confidence": 0.9690952685740929,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-9a24847c54",
+   "field": "venue_name",
+   "quote": "北校区N8T08",
+   "url": "https://life.nwafu.edu.cn/xzhd/622167d2b7c14d1591c304bb30ffbb89.htm",
+   "check_confidence": 0.9724127942527035,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-9a24847c54",
+   "field": "organisation_name",
+   "quote": "生命科学学院",
+   "url": "https://life.nwafu.edu.cn/xzhd/622167d2b7c14d1591c304bb30ffbb89.htm",
+   "check_confidence": 0.956198530878208,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-9a24847c54",
+   "field": "speaker",
+   "quote": "王伟 研究员",
+   "url": "https://life.nwafu.edu.cn/xzhd/622167d2b7c14d1591c304bb30ffbb89.htm",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-12b6276901",
+   "field": "title",
+   "quote": "关于举办第一届旱区作物病害绿色防控国际研讨会的通知",
+   "url": "https://ppc.nwafu.edu.cn/xzbg/623fea6ef040445aaa28d4865661d84d.htm",
+   "check_confidence": 0.9806009784537675,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-12b6276901",
+   "field": "date",
+   "quote": "2026年11月9日",
+   "url": "https://ppc.nwafu.edu.cn/xzbg/623fea6ef040445aaa28d4865661d84d.htm",
+   "check_confidence": 0.9830008242948,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-12b6276901",
+   "field": "venue_name",
+   "quote": "西北农林科技大学南校区交流中心104会议室",
+   "url": "https://ppc.nwafu.edu.cn/xzbg/623fea6ef040445aaa28d4865661d84d.htm",
+   "check_confidence": 0.9743638265075819,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-12b6276901",
+   "field": "organisation_name",
+   "quote": "西北农林科技大学植物保护学院、作物抗逆与高效生产全国重点实验室、陕西省植物保护学会",
+   "url": "https://ppc.nwafu.edu.cn/xzbg/623fea6ef040445aaa28d4865661d84d.htm",
+   "check_confidence": 0.9609928823850263,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-85f90a5c37",
+   "field": "title",
+   "quote": "关于举办2026年植保论坛系列学术报告会（二十二）的通知",
+   "url": "https://ppc.nwafu.edu.cn/xzbg/818910fdc9bf4136a1cf504817528db4.htm",
+   "check_confidence": 0.9788784808446721,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-85f90a5c37",
+   "field": "date",
+   "quote": "时间： 2026年11月11日下午14:30-18:00",
+   "url": "https://ppc.nwafu.edu.cn/xzbg/818910fdc9bf4136a1cf504817528db4.htm",
+   "check_confidence": 0.9855362438790476,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-85f90a5c37",
+   "field": "start_time",
+   "quote": "14:30",
+   "url": "https://ppc.nwafu.edu.cn/xzbg/818910fdc9bf4136a1cf504817528db4.htm",
+   "check_confidence": 0.9673153989077499,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-85f90a5c37",
+   "field": "venue_name",
+   "quote": "地点： 植保学院616会议室",
+   "url": "https://ppc.nwafu.edu.cn/xzbg/818910fdc9bf4136a1cf504817528db4.htm",
+   "check_confidence": 0.9697288057893027,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-85f90a5c37",
+   "field": "organisation_name",
+   "quote": "植物保护学院",
+   "url": "https://ppc.nwafu.edu.cn/xzbg/818910fdc9bf4136a1cf504817528db4.htm",
+   "check_confidence": 0.9775125971691679,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-85f90a5c37",
+   "field": "speaker",
+   "quote": "白明研究员、刘星月教授",
+   "url": "https://ppc.nwafu.edu.cn/xzbg/818910fdc9bf4136a1cf504817528db4.htm",
+   "check_confidence": 0.9648226687253935,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-e56cbcca5f",
+   "field": "title",
+   "quote": "从硝酸盐感知到植物生长：探索硝酸盐信号传导的新成员(2026年生命科学研究进展系列讲座之十五)",
+   "url": "https://life.nwafu.edu.cn/xzhd/dc3f8cf838fc437d8e09ccf098e30ad8.htm",
+   "check_confidence": 0.9646910298280373,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-e56cbcca5f",
+   "field": "date",
+   "quote": "2026年11月11日（星期三）16：00",
+   "url": "https://life.nwafu.edu.cn/xzhd/dc3f8cf838fc437d8e09ccf098e30ad8.htm",
+   "check_confidence": 0.9636059415985517,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-e56cbcca5f",
+   "field": "start_time",
+   "quote": "16:00",
+   "url": "https://life.nwafu.edu.cn/xzhd/dc3f8cf838fc437d8e09ccf098e30ad8.htm",
+   "check_confidence": 0.9758011326800424,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-e56cbcca5f",
+   "field": "venue_name",
+   "quote": "北校区N8T08",
+   "url": "https://life.nwafu.edu.cn/xzhd/dc3f8cf838fc437d8e09ccf098e30ad8.htm",
+   "check_confidence": 0.9618520017172395,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-e56cbcca5f",
+   "field": "organisation_name",
+   "quote": "生命科学学院",
+   "url": "https://life.nwafu.edu.cn/xzhd/dc3f8cf838fc437d8e09ccf098e30ad8.htm",
+   "check_confidence": 0.9536948253692447,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-e56cbcca5f",
+   "field": "speaker",
+   "quote": "刘坤祥",
+   "url": "https://life.nwafu.edu.cn/xzhd/dc3f8cf838fc437d8e09ccf098e30ad8.htm",
+   "check_confidence": 0.9770114839294963,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-99a5268917",
+   "field": "title",
+   "quote": "关于举办2026年植保论坛系列学术报告会（二十一）的通知",
+   "url": "https://ppc.nwafu.edu.cn/xzbg/6a4b679942d84dd4856dfe4071ed8d56.htm",
+   "check_confidence": 0.9831603684896687,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-99a5268917",
+   "field": "date",
+   "quote": "2026年11月5日下午14:30",
+   "url": "https://ppc.nwafu.edu.cn/xzbg/6a4b679942d84dd4856dfe4071ed8d56.htm",
+   "check_confidence": 0.9733905972304654,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-99a5268917",
+   "field": "start_time",
+   "quote": "14:30",
+   "url": "https://ppc.nwafu.edu.cn/xzbg/6a4b679942d84dd4856dfe4071ed8d56.htm",
+   "check_confidence": 0.9752243583869947,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-99a5268917",
+   "field": "venue_name",
+   "quote": "交流中心208会议室",
+   "url": "https://ppc.nwafu.edu.cn/xzbg/6a4b679942d84dd4856dfe4071ed8d56.htm",
+   "check_confidence": 0.9511265945316637,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-99a5268917",
+   "field": "organisation_name",
+   "quote": "植物保护学院",
+   "url": "https://ppc.nwafu.edu.cn/xzbg/6a4b679942d84dd4856dfe4071ed8d56.htm",
+   "check_confidence": 0.9511888205216386,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-99a5268917",
+   "field": "speaker",
+   "quote": "周雪平教授（中国农业科学院）、侯有明教授（福建农林大学）、陆永跃教授（华南农业大学）、刘俊教授（中国农业大学）、吴益东教授（南京农业大学）",
+   "url": "https://ppc.nwafu.edu.cn/xzbg/6a4b679942d84dd4856dfe4071ed8d56.htm",
+   "check_confidence": 0.9402478879356665,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-41a0b11d33",
+   "field": "title",
+   "quote": "绝对定量微生物组与生物合成进化加速器",
+   "url": "https://zhxy.nwafu.edu.cn/xzdt/686c8a5ab2834f34895914fef51fdaba.htm",
+   "check_confidence": 0.9738059754846483,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-41a0b11d33",
+   "field": "date",
+   "quote": "11 月 13 日 9:00",
+   "url": "https://zhxy.nwafu.edu.cn/xzdt/686c8a5ab2834f34895914fef51fdaba.htm",
+   "check_confidence": 0.7828816554082791,
+   "passed": false
+  },
+  {
+   "entity_id": "nwafu-41a0b11d33",
+   "field": "start_time",
+   "quote": "09:00",
+   "url": "https://zhxy.nwafu.edu.cn/xzdt/686c8a5ab2834f34895914fef51fdaba.htm",
+   "check_confidence": 0.971212261465962,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-41a0b11d33",
+   "field": "venue_name",
+   "quote": "资源环境学院报告厅",
+   "url": "https://zhxy.nwafu.edu.cn/xzdt/686c8a5ab2834f34895914fef51fdaba.htm",
+   "check_confidence": 0.9619977290796922,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-41a0b11d33",
+   "field": "organisation_name",
+   "quote": "资源环境学院",
+   "url": "https://zhxy.nwafu.edu.cn/xzdt/686c8a5ab2834f34895914fef51fdaba.htm",
+   "check_confidence": 0.9665153997583499,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-41a0b11d33",
+   "field": "speaker",
+   "quote": "束文圣",
+   "url": "https://zhxy.nwafu.edu.cn/xzdt/686c8a5ab2834f34895914fef51fdaba.htm",
+   "check_confidence": 0.9794575854250376,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-1c26a7e837",
+   "field": "title",
+   "quote": "关于举办“流感病毒的反向遗传系统及其在基础研究中的应用”学术报告的通知",
+   "url": "https://life.nwafu.edu.cn/xzhd/e767d78924ab420a80a50dad380115c3.htm",
+   "check_confidence": 0.9822168238520581,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-1c26a7e837",
+   "field": "date",
+   "quote": "2026年11月6日（星期五）16：00",
+   "url": "https://life.nwafu.edu.cn/xzhd/e767d78924ab420a80a50dad380115c3.htm",
+   "check_confidence": 0.9699375240570943,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-1c26a7e837",
+   "field": "start_time",
+   "quote": "16:00",
+   "url": "https://life.nwafu.edu.cn/xzhd/e767d78924ab420a80a50dad380115c3.htm",
+   "check_confidence": 0.9777226029950544,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-1c26a7e837",
+   "field": "venue_name",
+   "quote": "北校区N8T08",
+   "url": "https://life.nwafu.edu.cn/xzhd/e767d78924ab420a80a50dad380115c3.htm",
+   "check_confidence": 0.9718948758119852,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-1c26a7e837",
+   "field": "organisation_name",
+   "quote": "生命科学学院",
+   "url": "https://life.nwafu.edu.cn/xzhd/e767d78924ab420a80a50dad380115c3.htm",
+   "check_confidence": 0.9643480930933445,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-1c26a7e837",
+   "field": "speaker",
+   "quote": "陈红英 教授",
+   "url": "https://life.nwafu.edu.cn/xzhd/e767d78924ab420a80a50dad380115c3.htm",
+   "check_confidence": 0.9759815912796836,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-29c79c9725",
+   "field": "title",
+   "quote": "皮肤干细胞的系统性调控 (2026年生命科学研究进展系列讲座之十三)",
+   "url": "https://life.nwafu.edu.cn/xzhd/dbb1ca5b844a48e592782f5e1acd58ab.htm",
+   "check_confidence": 0.9652389492281487,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-29c79c9725",
+   "field": "date",
+   "quote": "2026年11月4日（星期三）16：00",
+   "url": "https://life.nwafu.edu.cn/xzhd/dbb1ca5b844a48e592782f5e1acd58ab.htm",
+   "check_confidence": 0.9788662364078676,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-29c79c9725",
+   "field": "start_time",
+   "quote": "16:00",
+   "url": "https://life.nwafu.edu.cn/xzhd/dbb1ca5b844a48e592782f5e1acd58ab.htm",
+   "check_confidence": 0.9839425750485181,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-29c79c9725",
+   "field": "venue_name",
+   "quote": "北校区N8T08",
+   "url": "https://life.nwafu.edu.cn/xzhd/dbb1ca5b844a48e592782f5e1acd58ab.htm",
+   "check_confidence": 0.9726272597450917,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-29c79c9725",
+   "field": "organisation_name",
+   "quote": "生命科学学院",
+   "url": "https://life.nwafu.edu.cn/xzhd/dbb1ca5b844a48e592782f5e1acd58ab.htm",
+   "check_confidence": 0.9659629174966724,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-29c79c9725",
+   "field": "speaker",
+   "quote": "张兵 研究员",
+   "url": "https://life.nwafu.edu.cn/xzhd/dbb1ca5b844a48e592782f5e1acd58ab.htm",
+   "check_confidence": 0.9799048859934124,
+   "passed": true
+  },
+  {
+   "entity_id": "nwafu-1ade132abf",
+   "field": "title",
+   "quote": "中国畜牧兽医学会动物营养学分会第九届青年学者学术研讨会通知",
+   "url": "https://dkxy.nwafu.edu.cn/tzgg/8f74927eccec43e6839a6725bec13255.htm",
+   "check_confidence": 0.9674215466500918,
+   "passed": true
+  }
+ ]
+}

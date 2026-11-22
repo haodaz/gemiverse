@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. The main campus sits on Walnut Hill with Uphill and Downhill sections, featuring a wrought-iron fence, 19th-century Italianate and modern buildings, and Boston skyline views. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Walnut Hill, a hill: A prominent hill overlooking the Boston skyline.; (2) Ballou Hall, a hall: A 19th-century Italianate-style academic hall.; (3) Tisch Library, a library: A library building with a rooftop patio.; (4) Academic Quad, a quad: A grassy quad surrounded by historic 19th-century buildings and a wrought-iron fence.; (5) Residential \"Rez\" Quad, a quad: A modern residential quad enclosed by a wrought-iron fence.; (6) Carmichael Hall, a hall: A mid-20th-century modern campus hall.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 19,
+ "tokens": 2169,
+ "at": "2026-11-22T00:19:51.235Z"
+}

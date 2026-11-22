@@ -1,0 +1,799 @@
+{
+ "school": "unc",
+ "name": "University of North Carolina at Chapel Hill",
+ "at": "2026-11-22T00:19:37.691Z",
+ "seconds": 26,
+ "tokens": 77341,
+ "entities": [
+  {
+   "id": "unc-8fca6b4a63",
+   "type": "Event",
+   "school": "unc",
+   "name": "Holiday Carolina Blood Drive",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.unc.edu/event/holiday-carolina-blood-drive-7101",
+    "needs": [
+     "contribute_beyond_self"
+    ],
+    "start": "2026-12-03T07:30",
+    "summary": "Donate blood with the UNC Employee Forum and the American Red Cross at the 28th annual Holiday Carolina Blood Drive.",
+    "event_kind": "activity",
+    "venue_name": "Fetzer Hall, Fetzer Gym A and B",
+    "organisation_name": "UNC Employee Forum and the American Red Cross",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-03T07:30",
+      "end": "2026-12-03T14:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "unc-89f08c0bf1",
+   "type": "Event",
+   "school": "unc",
+   "name": "Jupiter Ball: A Cosmic Playground",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.unc.edu/event/jupiter-ball-a-cosmic-playground",
+    "needs": [
+     "find_my_people",
+     "contribute_beyond_self"
+    ],
+    "start": "2026-11-21T18:00",
+    "summary": "Morehead Planetarium and Science Center hosts Jupiter Ball, an evening of celebration and philanthropy supporting scholarships, grants, and accessible admission.",
+    "event_kind": "activity",
+    "venue_name": "Morehead Planetarium and Science Center, 222 E. Franklin Street, Chapel Hill, NC",
+    "organisation_name": "Morehead Planetarium and Science Center",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21T18:00",
+      "end": "2026-11-21T23:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "unc-262567e587",
+   "type": "Event",
+   "school": "unc",
+   "name": "UNC Guitar Ensemble",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.unc.edu/event/unc-guitar-ensemble-7519",
+    "needs": [
+     "make_and_express",
+     "rest_and_recover"
+    ],
+    "start": "2026-11-22T17:30",
+    "summary": "The UNC Guitar Ensemble, directed by Billy Stewart, will perform at Person Hall on November 22, 2026.",
+    "event_kind": "other",
+    "venue_name": "Person Hall, 181 E. Cameron Ave. Chapel Hill, NC 27514",
+    "organisation_name": "College of Arts and Sciences",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-22T17:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "unc-81a64d1a95",
+   "type": "Event",
+   "school": "unc",
+   "name": "Week of Balance: Therapy dog",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.unc.edu/event/week-of-balance-pet-therapy-181",
+    "needs": [
+     "rest_and_recover"
+    ],
+    "start": "2026-12-03T14:00",
+    "summary": "University Library hosts a therapy dog session at Health Sciences Library to help students relax during Week of Balance.",
+    "event_kind": "activity",
+    "venue_name": "Health Sciences Library",
+    "organisation_name": "University Library",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-03T14:00",
+      "end": "2026-12-03T16:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "unc-9c4a6d808c",
+   "type": "Event",
+   "school": "unc",
+   "name": "Tour: A Closer Look at the Collection",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.unc.edu/event/tour-a-closer-look-at-the-collection-4737",
+    "needs": [
+     "explore_a_field",
+     "rest_and_recover"
+    ],
+    "start": "2026-11-21T13:00",
+    "summary": "Ackland educators lead a free 30-minute conversational tour of selected artworks on view at the Ackland Art Museum.",
+    "event_kind": "exhibition",
+    "venue_name": "Ackland Art Museum, 101 S Columbia Street, Chapel Hill, NC",
+    "organisation_name": "Ackland Art Museum",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21T13:00",
+      "end": "2026-11-21T13:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "unc-6ca05900a9",
+   "type": "Event",
+   "school": "unc",
+   "name": "John and June Allcott Gallery: taylor barnes, Weight of Light",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.unc.edu/event/john-and-june-allcott-gallery-taylor-barnes-weight-of-light",
+    "needs": [
+     "explore_a_field",
+     "make_and_express"
+    ],
+    "start": "2026-11-23T08:00",
+    "summary": "An exhibition of seven works by multidisciplinary artist taylor barnes exploring material, perception, and transformation at the John and June Allcott Gallery.",
+    "event_kind": "exhibition",
+    "venue_name": "Hanes Art Center, John and June Allcott Gallery",
+    "organisation_name": "College of Arts and Sciences",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-23T08:00",
+      "end": "2026-11-23T17:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "unc-029b52e24a",
+   "type": "Event",
+   "school": "unc",
+   "name": "Bridging Care and Community: A World AIDS Day Panel",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.unc.edu/event/bridging-care-and-community-a-world-aids-day-panel",
+    "needs": [
+     "explore_a_field",
+     "find_my_people"
+    ],
+    "start": "2026-12-01T11:00",
+    "summary": "An inaugural World AIDS Day panel discussion at UNC featuring panelists with various infectious disease backgrounds and expertise.",
+    "event_kind": "lecture",
+    "venue_name": "Medical Biomolecular Research Building (MBRB), 1st Floor Lobby, 111 Mason Farm Road, Chapel Hill, NC 27514",
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-01T11:00",
+      "end": "2026-12-01T14:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "unc-4a300753ed",
+   "type": "Event",
+   "school": "unc",
+   "name": "Digitize Your Expert Knowledge",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.unc.edu/event/digitize-your-expert-knowledge",
+    "needs": [
+     "build_a_skill",
+     "explore_a_field"
+    ],
+    "start": "2026-12-01T17:00",
+    "summary": "A workshop on turning organizational expertise into accessible, digitized skills using artificial intelligence before workforce retirements create knowledge gaps.",
+    "event_kind": "workshop",
+    "venue_name": "Innovate Carolina Junction, 136 E Rosemary St. Suite 100 Chapel Hill, NC 27514",
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-01T17:00",
+      "end": "2026-12-01T18:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "unc-59cf8d67d4",
+   "type": "Event",
+   "school": "unc",
+   "name": "“Learning from Electric Lady,” presented by John Storyk, Award Winning Studio Designer",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.unc.edu/event/learning-from-electric-lady-presented-by-john-storyk-award-winning-studio-designer",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-12-01T17:30",
+    "summary": "Architect and acoustician John Storyk presents his career in studio design, including Electric Lady Studios and future industry directions.",
+    "event_kind": "lecture",
+    "venue_name": "Hill Hall, Moeser Auditorium",
+    "organisation_name": "College of Arts and Sciences",
+    "speaker": "John Storyk",
+    "occurrences": [
+     {
+      "start": "2026-12-01T17:30",
+      "end": "2026-12-01T19:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "unc-d02c7cd175",
+   "type": "Event",
+   "school": "unc",
+   "name": "From Pizza to Plant Leaves: The Mathematics of Thin Materials | Carolina Science Café",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.unc.edu/event/from-pizza-to-plant-leaves-the-mathematics-of-thin-materials-carolina-science-cafe",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-12-01T18:00",
+    "summary": "Dr. Thomas Chandler will discuss how applied mathematics and geometry explain the mechanics of thin elastic materials.",
+    "event_kind": "lecture",
+    "venue_name": "Haw River Tap Table, 300 East Main Street, Unit C Carrboro, NC 27510",
+    "organisation_name": "Morehead Planetarium",
+    "speaker": "Dr. Thomas Chandler",
+    "occurrences": [
+     {
+      "start": "2026-12-01T18:00",
+      "end": "2026-12-01T19:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "unc-86347951ef",
+   "type": "Event",
+   "school": "unc",
+   "name": "Digital Accessibility Pop-Up Labs",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.unc.edu/event/digital-accessibility-pop-up-labs",
+    "needs": [
+     "build_a_skill",
+     "get_mentorship_and_feedback"
+    ],
+    "start": "2026-12-15T11:00",
+    "summary": "A drop-in workspace where UNC faculty and staff can work on digital accessibility with support from consultants.",
+    "event_kind": "workshop",
+    "venue_name": "Carolina Union, 2502",
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-15T11:00",
+      "end": "2026-12-15T13:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "unc-776151ab6f",
+   "type": "Event",
+   "school": "unc",
+   "name": "Masterclass with Paul Sánchez, piano",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.unc.edu/event/masterclass-with-paul-sanchez-piano",
+    "needs": [
+     "build_a_skill",
+     "get_mentorship_and_feedback"
+    ],
+    "start": "2026-12-02T18:00",
+    "summary": "A piano masterclass featuring Paul Sánchez and UNC Piano students at Hill Hall, Moeser Auditorium.",
+    "event_kind": "workshop",
+    "venue_name": "Hill Hall, Moeser Auditorium",
+    "organisation_name": "College of Arts and Sciences",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-02T18:00",
+      "end": null
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "unc-8fca6b4a63",
+   "field": "title",
+   "quote": "Holiday Carolina Blood Drive",
+   "url": "https://calendar.unc.edu/event/holiday-carolina-blood-drive-7101",
+   "check_confidence": 0.9840470072422031,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-8fca6b4a63",
+   "field": "date",
+   "quote": "Thursday, December 3, 2026 7:30am to 2:30pm EST",
+   "url": "https://calendar.unc.edu/event/holiday-carolina-blood-drive-7101",
+   "check_confidence": 0.9815628498101862,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-8fca6b4a63",
+   "field": "start_time",
+   "quote": "07:30",
+   "url": "https://calendar.unc.edu/event/holiday-carolina-blood-drive-7101",
+   "check_confidence": 0.9807062941264595,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-8fca6b4a63",
+   "field": "venue_name",
+   "quote": "Fetzer Hall, Fetzer Gym A and B",
+   "url": "https://calendar.unc.edu/event/holiday-carolina-blood-drive-7101",
+   "check_confidence": 0.9645008006743916,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-8fca6b4a63",
+   "field": "organisation_name",
+   "quote": "UNC Employee Forum and the American Red Cross",
+   "url": "https://calendar.unc.edu/event/holiday-carolina-blood-drive-7101",
+   "check_confidence": 0.9456577023726104,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-89f08c0bf1",
+   "field": "title",
+   "quote": "Jupiter Ball: A Cosmic Playground",
+   "url": "https://calendar.unc.edu/event/jupiter-ball-a-cosmic-playground",
+   "check_confidence": 0.9744236996715275,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-89f08c0bf1",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026 6:00pm to 11:30pm EST",
+   "url": "https://calendar.unc.edu/event/jupiter-ball-a-cosmic-playground",
+   "check_confidence": 0.9851844657462017,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-89f08c0bf1",
+   "field": "start_time",
+   "quote": "18:00",
+   "url": "https://calendar.unc.edu/event/jupiter-ball-a-cosmic-playground",
+   "check_confidence": 0.967457720522422,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-89f08c0bf1",
+   "field": "venue_name",
+   "quote": "Morehead Planetarium and Science Center",
+   "url": "https://calendar.unc.edu/event/jupiter-ball-a-cosmic-playground",
+   "check_confidence": 0.9595558423117593,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-89f08c0bf1",
+   "field": "organisation_name",
+   "quote": "Morehead Planetarium and Science Center",
+   "url": "https://calendar.unc.edu/event/jupiter-ball-a-cosmic-playground",
+   "check_confidence": 0.9751958352705182,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-262567e587",
+   "field": "title",
+   "quote": "UNC Guitar Ensemble",
+   "url": "https://calendar.unc.edu/event/unc-guitar-ensemble-7519",
+   "check_confidence": 0.9808250944924207,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-262567e587",
+   "field": "date",
+   "quote": "Sunday, November 22, 2026 5:30pm EST",
+   "url": "https://calendar.unc.edu/event/unc-guitar-ensemble-7519",
+   "check_confidence": 0.9706133024065637,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-262567e587",
+   "field": "start_time",
+   "quote": "17:30",
+   "url": "https://calendar.unc.edu/event/unc-guitar-ensemble-7519",
+   "check_confidence": 0.9885006561589941,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-262567e587",
+   "field": "venue_name",
+   "quote": "Person Hall\n181 E. Cameron Ave. Chapel Hill, NC 27514",
+   "url": "https://calendar.unc.edu/event/unc-guitar-ensemble-7519",
+   "check_confidence": 0.9744560237884491,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-262567e587",
+   "field": "organisation_name",
+   "quote": "College of Arts and Sciences",
+   "url": "https://calendar.unc.edu/event/unc-guitar-ensemble-7519",
+   "check_confidence": 0.8552850189256904,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-81a64d1a95",
+   "field": "title",
+   "quote": "Week of Balance: Therapy dog",
+   "url": "https://calendar.unc.edu/event/week-of-balance-pet-therapy-181",
+   "check_confidence": 0.9818389042424936,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-81a64d1a95",
+   "field": "date",
+   "quote": "Thursday, December 3, 2026 2:00pm to 4:00pm EST",
+   "url": "https://calendar.unc.edu/event/week-of-balance-pet-therapy-181",
+   "check_confidence": 0.9743949513978041,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-81a64d1a95",
+   "field": "start_time",
+   "quote": "14:00",
+   "url": "https://calendar.unc.edu/event/week-of-balance-pet-therapy-181",
+   "check_confidence": 0.9833710814845885,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-81a64d1a95",
+   "field": "venue_name",
+   "quote": "Health Sciences Library",
+   "url": "https://calendar.unc.edu/event/week-of-balance-pet-therapy-181",
+   "check_confidence": 0.9867381052801486,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-81a64d1a95",
+   "field": "organisation_name",
+   "quote": "University Library",
+   "url": "https://calendar.unc.edu/event/week-of-balance-pet-therapy-181",
+   "check_confidence": 0.97843618497973,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-9c4a6d808c",
+   "field": "title",
+   "quote": "Tour: A Closer Look at the Collection",
+   "url": "https://calendar.unc.edu/event/tour-a-closer-look-at-the-collection-4737",
+   "check_confidence": 0.9713985501420405,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-9c4a6d808c",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026 1:00pm to 1:30pm EST",
+   "url": "https://calendar.unc.edu/event/tour-a-closer-look-at-the-collection-4737",
+   "check_confidence": 0.962892912822652,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-9c4a6d808c",
+   "field": "start_time",
+   "quote": "13:00",
+   "url": "https://calendar.unc.edu/event/tour-a-closer-look-at-the-collection-4737",
+   "check_confidence": 0.9765708848689602,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-9c4a6d808c",
+   "field": "venue_name",
+   "quote": "Ackland Art Museum",
+   "url": "https://calendar.unc.edu/event/tour-a-closer-look-at-the-collection-4737",
+   "check_confidence": 0.9577991974685157,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-9c4a6d808c",
+   "field": "organisation_name",
+   "quote": "Ackland Art Museum",
+   "url": "https://calendar.unc.edu/event/tour-a-closer-look-at-the-collection-4737",
+   "check_confidence": 0.9634293242091798,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-6ca05900a9",
+   "field": "title",
+   "quote": "John and June Allcott Gallery: taylor barnes, Weight of Light",
+   "url": "https://calendar.unc.edu/event/john-and-june-allcott-gallery-taylor-barnes-weight-of-light",
+   "check_confidence": 0.9656992906273627,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-6ca05900a9",
+   "field": "date",
+   "quote": "Monday, November 23, 2026 8:00am to 5:00pm EST",
+   "url": "https://calendar.unc.edu/event/john-and-june-allcott-gallery-taylor-barnes-weight-of-light",
+   "check_confidence": 0.9748458892371195,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-6ca05900a9",
+   "field": "start_time",
+   "quote": "08:00",
+   "url": "https://calendar.unc.edu/event/john-and-june-allcott-gallery-taylor-barnes-weight-of-light",
+   "check_confidence": 0.9612365880826423,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-6ca05900a9",
+   "field": "venue_name",
+   "quote": "Hanes Art Center, John and June Allcott Gallery",
+   "url": "https://calendar.unc.edu/event/john-and-june-allcott-gallery-taylor-barnes-weight-of-light",
+   "check_confidence": 0.9727178896029823,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-6ca05900a9",
+   "field": "organisation_name",
+   "quote": "College of Arts and Sciences",
+   "url": "https://calendar.unc.edu/event/john-and-june-allcott-gallery-taylor-barnes-weight-of-light",
+   "check_confidence": 0.9436696698332042,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-029b52e24a",
+   "field": "title",
+   "quote": "Bridging Care and Community: A World AIDS Day Panel",
+   "url": "https://calendar.unc.edu/event/bridging-care-and-community-a-world-aids-day-panel",
+   "check_confidence": 0.9815355020584818,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-029b52e24a",
+   "field": "date",
+   "quote": "Tuesday, December 1, 2026; December 1st from 11:00 a.m. to 2:00 p.m.",
+   "url": "https://calendar.unc.edu/event/bridging-care-and-community-a-world-aids-day-panel",
+   "check_confidence": 0.9720151650947567,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-029b52e24a",
+   "field": "start_time",
+   "quote": "11:00",
+   "url": "https://calendar.unc.edu/event/bridging-care-and-community-a-world-aids-day-panel",
+   "check_confidence": 0.9799535463607866,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-029b52e24a",
+   "field": "venue_name",
+   "quote": "Medical Biomolecular Research Building (MBRB), 1st Floor Lobby",
+   "url": "https://calendar.unc.edu/event/bridging-care-and-community-a-world-aids-day-panel",
+   "check_confidence": 0.9654031069659709,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-4a300753ed",
+   "field": "title",
+   "quote": "Digitize Your Expert Knowledge",
+   "url": "https://calendar.unc.edu/event/digitize-your-expert-knowledge",
+   "check_confidence": 0.9734188497732944,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-4a300753ed",
+   "field": "date",
+   "quote": "Tuesday, December 1, 2026 5:00pm to 6:30pm EST",
+   "url": "https://calendar.unc.edu/event/digitize-your-expert-knowledge",
+   "check_confidence": 0.9852140125612384,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-4a300753ed",
+   "field": "start_time",
+   "quote": "17:00",
+   "url": "https://calendar.unc.edu/event/digitize-your-expert-knowledge",
+   "check_confidence": 0.9723713670661566,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-4a300753ed",
+   "field": "venue_name",
+   "quote": "Innovate Carolina Junction",
+   "url": "https://calendar.unc.edu/event/digitize-your-expert-knowledge",
+   "check_confidence": 0.9578875949121796,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-59cf8d67d4",
+   "field": "title",
+   "quote": "“Learning from Electric Lady,” presented by John Storyk, Award Winning Studio Designer",
+   "url": "https://calendar.unc.edu/event/learning-from-electric-lady-presented-by-john-storyk-award-winning-studio-designer",
+   "check_confidence": 0.9603710030229047,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-59cf8d67d4",
+   "field": "date",
+   "quote": "Tuesday, December 1, 2026 5:30pm to 7:00pm EST",
+   "url": "https://calendar.unc.edu/event/learning-from-electric-lady-presented-by-john-storyk-award-winning-studio-designer",
+   "check_confidence": 0.9779616026315795,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-59cf8d67d4",
+   "field": "start_time",
+   "quote": "17:30",
+   "url": "https://calendar.unc.edu/event/learning-from-electric-lady-presented-by-john-storyk-award-winning-studio-designer",
+   "check_confidence": 0.9830832963916881,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-59cf8d67d4",
+   "field": "venue_name",
+   "quote": "Hill Hall, Moeser Auditorium",
+   "url": "https://calendar.unc.edu/event/learning-from-electric-lady-presented-by-john-storyk-award-winning-studio-designer",
+   "check_confidence": 0.9678005049820022,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-59cf8d67d4",
+   "field": "organisation_name",
+   "quote": "College of Arts and Sciences",
+   "url": "https://calendar.unc.edu/event/learning-from-electric-lady-presented-by-john-storyk-award-winning-studio-designer",
+   "check_confidence": 0.8030343144665014,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-59cf8d67d4",
+   "field": "speaker",
+   "quote": "John Storyk",
+   "url": "https://calendar.unc.edu/event/learning-from-electric-lady-presented-by-john-storyk-award-winning-studio-designer",
+   "check_confidence": 0.9848557722173552,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-d02c7cd175",
+   "field": "title",
+   "quote": "From Pizza to Plant Leaves: The Mathematics of Thin Materials | Carolina Science Café",
+   "url": "https://calendar.unc.edu/event/from-pizza-to-plant-leaves-the-mathematics-of-thin-materials-carolina-science-cafe",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-d02c7cd175",
+   "field": "date",
+   "quote": "Tuesday, December 1, 2026 6:00pm to 7:00pm EST",
+   "url": "https://calendar.unc.edu/event/from-pizza-to-plant-leaves-the-mathematics-of-thin-materials-carolina-science-cafe",
+   "check_confidence": 0.9747702237527983,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-d02c7cd175",
+   "field": "start_time",
+   "quote": "18:00",
+   "url": "https://calendar.unc.edu/event/from-pizza-to-plant-leaves-the-mathematics-of-thin-materials-carolina-science-cafe",
+   "check_confidence": 0.9740027756387175,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-d02c7cd175",
+   "field": "venue_name",
+   "quote": "Haw River Tap Table",
+   "url": "https://calendar.unc.edu/event/from-pizza-to-plant-leaves-the-mathematics-of-thin-materials-carolina-science-cafe",
+   "check_confidence": 0.9619472852128548,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-d02c7cd175",
+   "field": "organisation_name",
+   "quote": "Morehead Planetarium",
+   "url": "https://calendar.unc.edu/event/from-pizza-to-plant-leaves-the-mathematics-of-thin-materials-carolina-science-cafe",
+   "check_confidence": 0.9882202194271087,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-d02c7cd175",
+   "field": "speaker",
+   "quote": "Dr. Thomas Chandler",
+   "url": "https://calendar.unc.edu/event/from-pizza-to-plant-leaves-the-mathematics-of-thin-materials-carolina-science-cafe",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-86347951ef",
+   "field": "title",
+   "quote": "Digital Accessibility Pop-Up Labs",
+   "url": "https://calendar.unc.edu/event/digital-accessibility-pop-up-labs",
+   "check_confidence": 0.9692799041558221,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-86347951ef",
+   "field": "date",
+   "quote": "Tuesday, December 15, 2026 11:00am to 1:00pm EST",
+   "url": "https://calendar.unc.edu/event/digital-accessibility-pop-up-labs",
+   "check_confidence": 0.9719427574804537,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-86347951ef",
+   "field": "start_time",
+   "quote": "11:00",
+   "url": "https://calendar.unc.edu/event/digital-accessibility-pop-up-labs",
+   "check_confidence": 0.9590301864248506,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-86347951ef",
+   "field": "venue_name",
+   "quote": "Carolina Union, 2502",
+   "url": "https://calendar.unc.edu/event/digital-accessibility-pop-up-labs",
+   "check_confidence": 0.9659977959290779,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-776151ab6f",
+   "field": "title",
+   "quote": "Masterclass with Paul Sánchez, piano",
+   "url": "https://calendar.unc.edu/event/masterclass-with-paul-sanchez-piano",
+   "check_confidence": 0.9723667332512403,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-776151ab6f",
+   "field": "date",
+   "quote": "Wednesday, December 2, 2026 6:00pm EST",
+   "url": "https://calendar.unc.edu/event/masterclass-with-paul-sanchez-piano",
+   "check_confidence": 0.9777983177031558,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-776151ab6f",
+   "field": "start_time",
+   "quote": "18:00",
+   "url": "https://calendar.unc.edu/event/masterclass-with-paul-sanchez-piano",
+   "check_confidence": 0.9644525315914859,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-776151ab6f",
+   "field": "venue_name",
+   "quote": "Hill Hall, Moeser Auditorium",
+   "url": "https://calendar.unc.edu/event/masterclass-with-paul-sanchez-piano",
+   "check_confidence": 0.966802951347212,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-776151ab6f",
+   "field": "organisation_name",
+   "quote": "College of Arts and Sciences",
+   "url": "https://calendar.unc.edu/event/masterclass-with-paul-sanchez-piano",
+   "check_confidence": 0.8643846944287044,
+   "passed": true
+  },
+  {
+   "entity_id": "unc-776151ab6f",
+   "field": "speaker",
+   "quote": "Paul Sánchez",
+   "url": "https://calendar.unc.edu/event/masterclass-with-paul-sanchez-piano",
+   "check_confidence": 0.69367770037113,
+   "passed": false
+  }
+ ]
+}

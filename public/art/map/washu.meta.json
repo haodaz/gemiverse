@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students.  Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Brookings Hall, a hall: A plain campus hall with a basement.; (2) Brookings Quadrangle, a quad: An open campus quadrangle.; (3) Busch Hall, a hall: A plain campus hall.; (4) Eads Hall, a hall: A plain campus hall with a basement.; (5) Ridgley, a other: A plain campus building.; (6) Cupples, a other: A plain campus building.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 16,
+ "tokens": 1959,
+ "at": "2026-11-22T00:18:03.197Z"
+}

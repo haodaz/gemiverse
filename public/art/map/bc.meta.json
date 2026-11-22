@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. The main campus sits atop a hill overlooking the Chestnut Hill Reservoir and features over 120 collegiate Gothic buildings with towers reaching into the sky. Draw exactly these 4 features, well spread across the picture with space between them, each clearly recognisable: (1) St. Ignatius Gate, a gate: A campus gate next to a transit station.; (2) St. Mary's Hall, a hall: A residential hall containing a university chapel.; (3) Gonzaga Hall, a hall: A campus hall with a chapel in its basement.; (4) Cushing Hall, a hall: A campus hall containing a chapel.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 16,
+ "tokens": 1922,
+ "at": "2026-11-22T00:19:38.980Z"
+}

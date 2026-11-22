@@ -1,0 +1,104 @@
+{
+ "school": "scu",
+ "name": "四川大学",
+ "at": "2026-11-22T00:17:26.055Z",
+ "source": "https://zh.wikipedia.org/wiki/%E5%9B%9B%E5%B7%9D%E5%A4%A7%E5%AD%A6",
+ "character": null,
+ "map": "/art/map/scu.jpg",
+ "landmarks": [
+  {
+   "name": "行政大楼",
+   "name_en": "Administration Building",
+   "kind": "hall",
+   "quote": "包括望江校区的行政大楼",
+   "look": "Plain historic administration building.",
+   "check": 0.9622661333724177,
+   "confidence": 0.9622661333724177,
+   "passed": true,
+   "x": 0.16,
+   "y": 0.22
+  },
+  {
+   "name": "四川大学数理馆",
+   "name_en": "Mathematics and Physics Building",
+   "kind": "hall",
+   "quote": "位于四川大学望江校区的四川大学数理馆与四川大学化学馆",
+   "look": "Plain historic academic hall.",
+   "check": 0.9799986277659161,
+   "confidence": 0.9799986277659161,
+   "passed": true,
+   "x": 0.44,
+   "y": 0.36
+  },
+  {
+   "name": "四川大学化学馆",
+   "name_en": "Chemistry Building",
+   "kind": "hall",
+   "quote": "位于四川大学望江校区的四川大学数理馆与四川大学化学馆",
+   "look": "Plain historic academic hall.",
+   "check": 0.9758770498721943,
+   "confidence": 0.9758770498721943,
+   "passed": true,
+   "x": 0.16,
+   "y": 0.67
+  },
+  {
+   "name": "原四川大学女生院",
+   "name_en": "Former Sichuan University Women's Hall",
+   "kind": "hall",
+   "quote": "位于四川大学望江校区的原四川大学女生院",
+   "look": "Plain historic residential hall.",
+   "check": 0.9360497032204578,
+   "confidence": 0.9360497032204578,
+   "passed": true,
+   "x": 0.51,
+   "y": 0.74
+  },
+  {
+   "name": "文理图书馆",
+   "name_en": "Liberal Arts and Science Library",
+   "kind": "library",
+   "quote": "四川大学图书馆（现文理图书馆）落成",
+   "look": "Plain university library building.",
+   "check": 0.9562709774505842,
+   "confidence": 0.9562709774505842,
+   "passed": true,
+   "x": 0.8,
+   "y": 0.22
+  },
+  {
+   "name": "望江校区东区体育场",
+   "name_en": "Wangjiang Campus East Zone Stadium",
+   "kind": "stadium",
+   "quote": "位于望江校区东区体育场",
+   "look": "Plain university sports stadium.",
+   "check": 0.9605321164277129,
+   "confidence": 0.9605321164277129,
+   "passed": true,
+   "x": 0.84,
+   "y": 0.75
+  },
+  {
+   "name": "校史纪念馆",
+   "name_en": "University History Memorial Hall",
+   "kind": "museum",
+   "quote": "老馆改作校史纪念馆",
+   "look": "Plain historic museum building.",
+   "check": 0.9523929436257419,
+   "confidence": 0.9523929436257419,
+   "passed": true
+  },
+  {
+   "name": "东门",
+   "name_en": "East Gate",
+   "kind": "gate",
+   "quote": "位于东门外望江路",
+   "look": "Plain university campus gate.",
+   "check": 0.709369933831692,
+   "confidence": 0.709369933831692,
+   "passed": false
+  }
+ ],
+ "tokens": 13627,
+ "seconds": 35
+}

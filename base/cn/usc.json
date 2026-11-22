@@ -1,0 +1,816 @@
+{
+ "school": "usc",
+ "name": "University of Southern California",
+ "at": "2026-11-22T00:19:35.980Z",
+ "seconds": 28,
+ "tokens": 88878,
+ "entities": [
+  {
+   "id": "usc-4077ab4c2b",
+   "type": "Event",
+   "school": "usc",
+   "name": "Whiff, Wonder, and Smell: Polyester",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.usc.edu/event/polyester",
+    "needs": [
+     "explore_a_field",
+     "rest_and_recover"
+    ],
+    "start": "2027-01-29T19:00",
+    "summary": "USC Visions and Voices hosts a free screening of John Waters' 1981 film Polyester with Odorama at Norris Cinema Theatre.",
+    "event_kind": "activity",
+    "venue_name": "Norris Cinema Theatre (NCT), 3507 Trousdale Pkwy Los Angeles, CA 90007",
+    "organisation_name": "USC Visions and Voices; Elizabeth Ramsey (Cinematic Arts) and Alex Ago (Cinematic Arts)",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2027-01-29T19:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "usc-9e103f4b0a",
+   "type": "Event",
+   "school": "usc",
+   "name": "Welcome to the Meowverse: An Evening with Meow Wolf",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.usc.edu/event/an-evening-with-meow-wolf",
+    "needs": [
+     "explore_a_field",
+     "make_and_express"
+    ],
+    "start": "2027-01-21T18:00",
+    "summary": "A behind-the-scenes conversation with Meow Wolf's creative team about their newest Los Angeles immersive installation, moderated by Steve Tatham.",
+    "event_kind": "lecture",
+    "venue_name": "Ginsburg Hall, 1031 Downey Way Los Angeles, CA 90089",
+    "organisation_name": "USC Visions and Voices",
+    "speaker": "Steve Tatham, Members of Meow Wolf's creative team",
+    "occurrences": [
+     {
+      "start": "2027-01-21T18:00",
+      "end": "2027-01-21T19:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "usc-892eca67c2",
+   "type": "Event",
+   "school": "usc",
+   "name": "Forbidden Pages: Past and Present",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.usc.edu/event/forbidden-pages-past-and-present",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-22T09:00",
+    "summary": "An exhibition at Doheny Memorial Library featuring books, periodicals, and photographs that explore the history of censorship and resistance.",
+    "event_kind": "exhibition",
+    "venue_name": "Doheny Memorial Library (DML), First Floor",
+    "organisation_name": "USC Libraries",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-22T09:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "usc-1bfaa988df",
+   "type": "Event",
+   "school": "usc",
+   "name": "Paul R. Williams: Community Spaces Tour",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.usc.edu/event/paul-r-williams",
+    "needs": [
+     "explore_a_field",
+     "find_my_people"
+    ],
+    "start": "2027-01-30T10:00",
+    "summary": "A guided bus tour of three Los Angeles community spaces designed by architect Paul R. Williams, followed by an exhibition visit.",
+    "event_kind": "activity",
+    "venue_name": "USC Fisher Museum of Art (HAR)",
+    "organisation_name": "USC Visions and Voices, USC Fisher Museum of Art, USC School of Architecture",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2027-01-30T10:00",
+      "end": "2027-01-30T16:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "usc-7199a3b4ae",
+   "type": "Event",
+   "school": "usc",
+   "name": "Seeing Patients: Empathy in TV Medical Dramas",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.usc.edu/event/seeing-patients",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2027-02-09T19:00",
+    "summary": "A panel discussion with clinicians, television writers, and advocates exploring how TV medical dramas shape public understanding of illness and patient care.",
+    "event_kind": "lecture",
+    "venue_name": "Ginsburg Hall, 1031 Downey Way, Los Angeles, CA 90089",
+    "organisation_name": "USC Visions and Voices",
+    "speaker": "Adam Scott Weissman, Kate Folb",
+    "occurrences": [
+     {
+      "start": "2027-02-09T19:00",
+      "end": "2027-02-09T20:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "usc-afa073b61e",
+   "type": "Event",
+   "school": "usc",
+   "name": "USC Peace Garden Open Garden Hours",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.usc.edu/event/usc-peace-garden-open-garden-hours",
+    "needs": [
+     "rest_and_recover"
+    ],
+    "start": "2026-11-22T09:00",
+    "summary": "Open garden hours at the USC Peace Garden where visitors can unwind, recharge, and enjoy nature.",
+    "event_kind": "activity",
+    "venue_name": "Kerckhoff Carriage House (KCH), Entrance next to Kerckhoff Carriage House (727 West 27th Street)",
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-22T09:00",
+      "end": "2026-11-22T13:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "usc-605e9d55d9",
+   "type": "Event",
+   "school": "usc",
+   "name": "Alice By Heart",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.usc.edu/event/alice-by-heart",
+    "needs": [
+     "rest_and_recover",
+     "make_and_express"
+    ],
+    "start": "2026-11-21T20:00",
+    "summary": "A musical performance of Alice By Heart featuring the USC BFA in Musical Theatre Junior Class at the Sanctuary Theatre.",
+    "event_kind": "other",
+    "venue_name": "Dick Wolf Drama Center (DAB), Sanctuary Theatre",
+    "organisation_name": "School of Dramatic Arts",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21T20:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "usc-7b5da49803",
+   "type": "Event",
+   "school": "usc",
+   "name": "The Swindlers: A True-ish Tall Tale",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.usc.edu/event/the-swindlers-a-true-ish-tall-tale",
+    "needs": [
+     "rest_and_recover",
+     "make_and_express"
+    ],
+    "start": "2026-11-21T20:00",
+    "summary": "A comedy play by Noah Diaz about a woman on a road trip with her con-man father to recover stolen funds.",
+    "event_kind": "other",
+    "venue_name": "McClintock Building and Theatre (MCC)",
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21T20:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "usc-c44321b045",
+   "type": "Event",
+   "school": "usc",
+   "name": "USC Thornton Opera: The Light in the Piazza",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.usc.edu/event/usc-thornton-opera-the-light-in-the-piazza-20261121",
+    "needs": [
+     "make_and_express",
+     "rest_and_recover"
+    ],
+    "start": "2026-11-21T19:30",
+    "summary": "USC Thornton Opera presents The Light in the Piazza at Bing Theatre on November 21, 2026.",
+    "event_kind": "other",
+    "venue_name": "Bing Theatre (BIT)",
+    "organisation_name": "Thornton School of Music",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21T19:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "usc-6c05785758",
+   "type": "Event",
+   "school": "usc",
+   "name": "Living Landscapes: Ecology of Rasa",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.usc.edu/event/living-landscapes",
+    "needs": [
+     "explore_a_field",
+     "make_and_express"
+    ],
+    "start": "2026-11-21T19:00",
+    "summary": "An immersive two-night installation and performance series by Gautam Rangan blending projection, spoken word, and Bharatanatyam dance at USC Pacific Asia Museum.",
+    "event_kind": "exhibition",
+    "venue_name": "USC Pacific Asia Museum, 46 N Los Robles Ave, Pasadena, California 91101",
+    "organisation_name": "USC Pacific Asia Museum",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21T19:00",
+      "end": "2026-11-21T21:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "usc-7195585ac5",
+   "type": "Event",
+   "school": "usc",
+   "name": "EMSI Early Music Series: 400 Years to John Dowland",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.usc.edu/event/400-years-to-john-dowland",
+    "needs": [
+     "rest_and_recover",
+     "explore_a_field"
+    ],
+    "start": "2026-11-22T14:00",
+    "summary": "USC Collegium Musicum, directed by Jason Yoshida, performs music by English composer John Dowland to celebrate his 400th death anniversary.",
+    "event_kind": "other",
+    "venue_name": "Mission San Gabriel Arcángel, 427 South Junipero Serra Drive, Dr. San Gabriel, CA, 91776",
+    "organisation_name": "Early Modern Studies Institute (EMSI), USC-Huntington Early Modern Studies Institute, Van Hunnick History Department",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-22T14:00",
+      "end": "2026-11-22T16:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "usc-bdcf36eca3",
+   "type": "Event",
+   "school": "usc",
+   "name": "USC Collegium Musicum",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.usc.edu/event/usc-thornton-collegium-musicum-261122",
+    "needs": [
+     "rest_and_recover",
+     "explore_a_field"
+    ],
+    "start": "2026-11-22T14:00",
+    "summary": "USC Collegium Musicum presents a concert celebrating the 400th anniversary of English composer John Dowland's death, directed by Jason Yoshida.",
+    "event_kind": "other",
+    "venue_name": "Mission San Gabriel Arcángel, 429 S Junipero Serra Dr, San Gabriel, CA 91776",
+    "organisation_name": "Thornton School of Music",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-22T14:00",
+      "end": null
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "usc-4077ab4c2b",
+   "field": "title",
+   "quote": "Whiff, Wonder, and Smell: Polyester",
+   "url": "https://calendar.usc.edu/event/polyester",
+   "check_confidence": 0.9735741845773981,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-4077ab4c2b",
+   "field": "date",
+   "quote": "Friday, January 29, 2027 7:00pm PST",
+   "url": "https://calendar.usc.edu/event/polyester",
+   "check_confidence": 0.9755522180765642,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-4077ab4c2b",
+   "field": "start_time",
+   "quote": "19:00",
+   "url": "https://calendar.usc.edu/event/polyester",
+   "check_confidence": 0.9899253965347096,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-4077ab4c2b",
+   "field": "venue_name",
+   "quote": "Norris Cinema Theatre (NCT)",
+   "url": "https://calendar.usc.edu/event/polyester",
+   "check_confidence": 0.9658970986456087,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-4077ab4c2b",
+   "field": "organisation_name",
+   "quote": "USC Visions and Voices; Elizabeth Ramsey (Cinematic Arts) and Alex Ago (Cinematic Arts)",
+   "url": "https://calendar.usc.edu/event/polyester",
+   "check_confidence": 0.9705449129176712,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-9e103f4b0a",
+   "field": "title",
+   "quote": "Welcome to the Meowverse: An Evening with Meow Wolf",
+   "url": "https://calendar.usc.edu/event/an-evening-with-meow-wolf",
+   "check_confidence": 0.9721761268763254,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-9e103f4b0a",
+   "field": "date",
+   "quote": "Thursday, January 21, 2027 6:00pm to 7:30pm PST",
+   "url": "https://calendar.usc.edu/event/an-evening-with-meow-wolf",
+   "check_confidence": 0.9777897139419959,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-9e103f4b0a",
+   "field": "start_time",
+   "quote": "18:00",
+   "url": "https://calendar.usc.edu/event/an-evening-with-meow-wolf",
+   "check_confidence": 0.9834628609564572,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-9e103f4b0a",
+   "field": "venue_name",
+   "quote": "Ginsburg Hall 1031 Downey Way Los Angeles, CA 90089",
+   "url": "https://calendar.usc.edu/event/an-evening-with-meow-wolf",
+   "check_confidence": 0.9655290085284883,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-9e103f4b0a",
+   "field": "organisation_name",
+   "quote": "USC Visions and Voices",
+   "url": "https://calendar.usc.edu/event/an-evening-with-meow-wolf",
+   "check_confidence": 0.9806969805685987,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-9e103f4b0a",
+   "field": "speaker",
+   "quote": "Steve Tatham, Members of Meow Wolf's creative team",
+   "url": "https://calendar.usc.edu/event/an-evening-with-meow-wolf",
+   "check_confidence": 0.9440216430614254,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-892eca67c2",
+   "field": "title",
+   "quote": "Forbidden Pages: Past and Present",
+   "url": "https://calendar.usc.edu/event/forbidden-pages-past-and-present",
+   "check_confidence": 0.9779299763968804,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-892eca67c2",
+   "field": "date",
+   "quote": "Sunday, November 22, 2026 9:00am PST",
+   "url": "https://calendar.usc.edu/event/forbidden-pages-past-and-present",
+   "check_confidence": 0.9850364309738795,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-892eca67c2",
+   "field": "start_time",
+   "quote": "09:00",
+   "url": "https://calendar.usc.edu/event/forbidden-pages-past-and-present",
+   "check_confidence": 0.9776941789866618,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-892eca67c2",
+   "field": "venue_name",
+   "quote": "Doheny Memorial Library (DML), First Floor",
+   "url": "https://calendar.usc.edu/event/forbidden-pages-past-and-present",
+   "check_confidence": 0.9808769387092445,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-892eca67c2",
+   "field": "organisation_name",
+   "quote": "USC Libraries",
+   "url": "https://calendar.usc.edu/event/forbidden-pages-past-and-present",
+   "check_confidence": 0.980039491800745,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-1bfaa988df",
+   "field": "title",
+   "quote": "Paul R. Williams: Community Spaces Tour",
+   "url": "https://calendar.usc.edu/event/paul-r-williams",
+   "check_confidence": 0.9859149295159305,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-1bfaa988df",
+   "field": "date",
+   "quote": "Saturday, January 30, 2027 10:00am to 4:00pm PST",
+   "url": "https://calendar.usc.edu/event/paul-r-williams",
+   "check_confidence": 0.975820256422099,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-1bfaa988df",
+   "field": "start_time",
+   "quote": "10:00",
+   "url": "https://calendar.usc.edu/event/paul-r-williams",
+   "check_confidence": 0.9826524262958162,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-1bfaa988df",
+   "field": "venue_name",
+   "quote": "USC Fisher Museum of Art (HAR)",
+   "url": "https://calendar.usc.edu/event/paul-r-williams",
+   "check_confidence": 0.9619335314573842,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-1bfaa988df",
+   "field": "organisation_name",
+   "quote": "USC Visions and Voices, USC Fisher Museum of Art, USC School of Architecture",
+   "url": "https://calendar.usc.edu/event/paul-r-williams",
+   "check_confidence": 0.9472469358734851,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-7199a3b4ae",
+   "field": "title",
+   "quote": "Seeing Patients: Empathy in TV Medical Dramas",
+   "url": "https://calendar.usc.edu/event/seeing-patients",
+   "check_confidence": 0.9783006270989486,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-7199a3b4ae",
+   "field": "date",
+   "quote": "Tuesday, February 9, 2027 7:00pm to 8:30pm PST",
+   "url": "https://calendar.usc.edu/event/seeing-patients",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-7199a3b4ae",
+   "field": "start_time",
+   "quote": "19:00",
+   "url": "https://calendar.usc.edu/event/seeing-patients",
+   "check_confidence": 0.981115734807977,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-7199a3b4ae",
+   "field": "venue_name",
+   "quote": "Ginsburg Hall",
+   "url": "https://calendar.usc.edu/event/seeing-patients",
+   "check_confidence": 0.9512175509855357,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-7199a3b4ae",
+   "field": "organisation_name",
+   "quote": "USC Visions and Voices",
+   "url": "https://calendar.usc.edu/event/seeing-patients",
+   "check_confidence": 0.9805110355161821,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-7199a3b4ae",
+   "field": "speaker",
+   "quote": "Adam Scott Weissman, Kate Folb",
+   "url": "https://calendar.usc.edu/event/seeing-patients",
+   "check_confidence": 0.9654865759127131,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-afa073b61e",
+   "field": "title",
+   "quote": "USC Peace Garden Open Garden Hours",
+   "url": "https://calendar.usc.edu/event/usc-peace-garden-open-garden-hours",
+   "check_confidence": 0.9837581297266149,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-afa073b61e",
+   "field": "date",
+   "quote": "Sunday, November 22, 2026 9:00am to 1:00pm PST",
+   "url": "https://calendar.usc.edu/event/usc-peace-garden-open-garden-hours",
+   "check_confidence": 0.9746146573760368,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-afa073b61e",
+   "field": "start_time",
+   "quote": "09:00",
+   "url": "https://calendar.usc.edu/event/usc-peace-garden-open-garden-hours",
+   "check_confidence": 0.9699870073814718,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-afa073b61e",
+   "field": "venue_name",
+   "quote": "Kerckhoff Carriage House (KCH), Entrance next to Kerckhoff Carriage House (727 West 27th Street)",
+   "url": "https://calendar.usc.edu/event/usc-peace-garden-open-garden-hours",
+   "check_confidence": 0.9692907136147888,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-605e9d55d9",
+   "field": "title",
+   "quote": "Alice By Heart",
+   "url": "https://calendar.usc.edu/event/alice-by-heart",
+   "check_confidence": 0.9790275936618068,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-605e9d55d9",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026 8:00pm PST",
+   "url": "https://calendar.usc.edu/event/alice-by-heart",
+   "check_confidence": 0.9762719339047478,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-605e9d55d9",
+   "field": "start_time",
+   "quote": "20:00",
+   "url": "https://calendar.usc.edu/event/alice-by-heart",
+   "check_confidence": 0.9731044734378566,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-605e9d55d9",
+   "field": "venue_name",
+   "quote": "Dick Wolf Drama Center (DAB), Sanctuary Theatre",
+   "url": "https://calendar.usc.edu/event/alice-by-heart",
+   "check_confidence": 0.9785640600182381,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-605e9d55d9",
+   "field": "organisation_name",
+   "quote": "School of Dramatic Arts",
+   "url": "https://calendar.usc.edu/event/alice-by-heart",
+   "check_confidence": 0.9657449145256208,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-7b5da49803",
+   "field": "title",
+   "quote": "The Swindlers: A True-ish Tall Tale",
+   "url": "https://calendar.usc.edu/event/the-swindlers-a-true-ish-tall-tale",
+   "check_confidence": 0.9700958830156242,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-7b5da49803",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026 8:00pm PST",
+   "url": "https://calendar.usc.edu/event/the-swindlers-a-true-ish-tall-tale",
+   "check_confidence": 0.9793583406099996,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-7b5da49803",
+   "field": "start_time",
+   "quote": "20:00",
+   "url": "https://calendar.usc.edu/event/the-swindlers-a-true-ish-tall-tale",
+   "check_confidence": 0.9820423114551338,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-7b5da49803",
+   "field": "venue_name",
+   "quote": "McClintock Building and Theatre (MCC)",
+   "url": "https://calendar.usc.edu/event/the-swindlers-a-true-ish-tall-tale",
+   "check_confidence": 0.9723828632518191,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-c44321b045",
+   "field": "title",
+   "quote": "USC Thornton Opera: The Light in the Piazza",
+   "url": "https://calendar.usc.edu/event/usc-thornton-opera-the-light-in-the-piazza-20261121",
+   "check_confidence": 0.9774304531799914,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-c44321b045",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026 7:30pm PST",
+   "url": "https://calendar.usc.edu/event/usc-thornton-opera-the-light-in-the-piazza-20261121",
+   "check_confidence": 0.9782511832205804,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-c44321b045",
+   "field": "start_time",
+   "quote": "19:30",
+   "url": "https://calendar.usc.edu/event/usc-thornton-opera-the-light-in-the-piazza-20261121",
+   "check_confidence": 0.9862869759499652,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-c44321b045",
+   "field": "venue_name",
+   "quote": "Bing Theatre (BIT)",
+   "url": "https://calendar.usc.edu/event/usc-thornton-opera-the-light-in-the-piazza-20261121",
+   "check_confidence": 0.9599849227571545,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-c44321b045",
+   "field": "organisation_name",
+   "quote": "Thornton School of Music",
+   "url": "https://calendar.usc.edu/event/usc-thornton-opera-the-light-in-the-piazza-20261121",
+   "check_confidence": 0.9719672822834708,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-6c05785758",
+   "field": "title",
+   "quote": "Living Landscapes: Ecology of Rasa",
+   "url": "https://calendar.usc.edu/event/living-landscapes",
+   "check_confidence": 0.9893074711608676,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-6c05785758",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026 7:00pm to 9:00pm PST",
+   "url": "https://calendar.usc.edu/event/living-landscapes",
+   "check_confidence": 0.9657969126774474,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-6c05785758",
+   "field": "start_time",
+   "quote": "19:00",
+   "url": "https://calendar.usc.edu/event/living-landscapes",
+   "check_confidence": 0.9683933371284511,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-6c05785758",
+   "field": "venue_name",
+   "quote": "USC Pacific Asia Museum\n46 N Los Robles Ave, Pasadena, California 91101",
+   "url": "https://calendar.usc.edu/event/living-landscapes",
+   "check_confidence": 0.9706882731655454,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-6c05785758",
+   "field": "organisation_name",
+   "quote": "USC Pacific Asia Museum",
+   "url": "https://calendar.usc.edu/event/living-landscapes",
+   "check_confidence": 0.9727434532060663,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-6c05785758",
+   "field": "speaker",
+   "quote": "Gautam Rangan",
+   "url": "https://calendar.usc.edu/event/living-landscapes",
+   "check_confidence": 0.4072342782390285,
+   "passed": false
+  },
+  {
+   "entity_id": "usc-7195585ac5",
+   "field": "title",
+   "quote": "EMSI Early Music Series: 400 Years to John Dowland",
+   "url": "https://calendar.usc.edu/event/400-years-to-john-dowland",
+   "check_confidence": 0.9502524349082723,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-7195585ac5",
+   "field": "date",
+   "quote": "Sunday, November 22, 2026 2:00pm to 4:00pm PST",
+   "url": "https://calendar.usc.edu/event/400-years-to-john-dowland",
+   "check_confidence": 0.9624384274251099,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-7195585ac5",
+   "field": "start_time",
+   "quote": "14:00",
+   "url": "https://calendar.usc.edu/event/400-years-to-john-dowland",
+   "check_confidence": 0.9679763816087178,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-7195585ac5",
+   "field": "venue_name",
+   "quote": "Mission San Gabriel Arcángel",
+   "url": "https://calendar.usc.edu/event/400-years-to-john-dowland",
+   "check_confidence": 0.9410154760029525,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-7195585ac5",
+   "field": "organisation_name",
+   "quote": "Early Modern Studies Institute (EMSI), USC-Huntington Early Modern Studies Institute, Van Hunnick History Department",
+   "url": "https://calendar.usc.edu/event/400-years-to-john-dowland",
+   "check_confidence": 0.9423711617966247,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-7195585ac5",
+   "field": "speaker",
+   "quote": "Jason Yoshida",
+   "url": "https://calendar.usc.edu/event/400-years-to-john-dowland",
+   "check_confidence": 0.112951985966627,
+   "passed": false
+  },
+  {
+   "entity_id": "usc-bdcf36eca3",
+   "field": "title",
+   "quote": "USC Collegium Musicum",
+   "url": "https://calendar.usc.edu/event/usc-thornton-collegium-musicum-261122",
+   "check_confidence": 0.9659101645090661,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-bdcf36eca3",
+   "field": "date",
+   "quote": "Sunday, November 22, 2026 2:00pm PST",
+   "url": "https://calendar.usc.edu/event/usc-thornton-collegium-musicum-261122",
+   "check_confidence": 0.9788676067971964,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-bdcf36eca3",
+   "field": "start_time",
+   "quote": "14:00",
+   "url": "https://calendar.usc.edu/event/usc-thornton-collegium-musicum-261122",
+   "check_confidence": 0.9781151903755727,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-bdcf36eca3",
+   "field": "venue_name",
+   "quote": "Mission San Gabriel Arcángel",
+   "url": "https://calendar.usc.edu/event/usc-thornton-collegium-musicum-261122",
+   "check_confidence": 0.961505717314805,
+   "passed": true
+  },
+  {
+   "entity_id": "usc-bdcf36eca3",
+   "field": "organisation_name",
+   "quote": "Thornton School of Music",
+   "url": "https://calendar.usc.edu/event/usc-thornton-collegium-musicum-261122",
+   "check_confidence": 0.930118059530005,
+   "passed": true
+  }
+ ]
+}

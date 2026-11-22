@@ -1,0 +1,104 @@
+{
+ "school": "gatech",
+ "name": "Georgia Institute of Technology",
+ "at": "2026-11-22T00:19:41.384Z",
+ "source": "https://en.wikipedia.org/wiki/Georgia%20Tech",
+ "character": "Located in Midtown Atlanta, the campus mixes tall buildings with greenery and over 15,000 trees covering nearly 30 percent of the grounds.",
+ "map": "/art/map/gatech.jpg",
+ "landmarks": [
+  {
+   "name": "Tech Tower",
+   "name_en": "Tech Tower",
+   "kind": "tower",
+   "quote": "Georgia Tech's administrative buildings, such as Tech Tower and the Bursar's Office, are also located on the Central Campus.",
+   "look": "Administrative tower building on Central Campus.",
+   "check": 0.9771608780499605,
+   "confidence": 0.9771608780499605,
+   "passed": true,
+   "x": 0.39,
+   "y": 0.38
+  },
+  {
+   "name": "Bobby Dodd Stadium",
+   "name_en": "Bobby Dodd Stadium",
+   "kind": "stadium",
+   "quote": "Georgia Tech football's home, Bobby Dodd Stadium, is located on East Campus",
+   "look": "Large football stadium on East Campus.",
+   "check": 0.9762490079003563,
+   "confidence": 0.9762490079003563,
+   "passed": true,
+   "x": 0.81,
+   "y": 0.25
+  },
+  {
+   "name": "Kessler Campanile",
+   "name_en": "Kessler Campanile",
+   "kind": "tower",
+   "quote": "The Kessler Campanile (which is referred to by students as \"The Shaft\") is located next to the eastern entrance of the Student Center.",
+   "look": "Tall slender tower next to greenspace.",
+   "check": 0.99,
+   "confidence": 0.99,
+   "passed": true,
+   "x": 0.7,
+   "y": 0.49
+  },
+  {
+   "name": "Brittain Dining Hall",
+   "name_en": "Brittain Dining Hall",
+   "kind": "hall",
+   "quote": "Brittain Dining Hall, a dining hall on East Campus that closed in 2024, was modeled after a medieval church, complete with carved columns and stained glass windows",
+   "look": "Medieval-church-style hall with carved columns and stained glass windows.",
+   "check": 0.9818194803524914,
+   "confidence": 0.9818194803524914,
+   "passed": true,
+   "x": 0.9,
+   "y": 0.56
+  },
+  {
+   "name": "Freshman Hill",
+   "name_en": "Freshman Hill",
+   "kind": "hill",
+   "quote": "The main road leading from East Campus to Central Campus is a steep, ascending incline commonly known as \"Freshman Hill\"",
+   "look": "Steep, ascending road incline between East and Central Campus.",
+   "check": 0.9783448281011883,
+   "confidence": 0.9783448281011883,
+   "passed": true,
+   "x": 0.61,
+   "y": 0.24
+  },
+  {
+   "name": "Tech Green",
+   "name_en": "Tech Green",
+   "kind": "quad",
+   "quote": "the G. Wayne Clough Undergraduate Learning Commons opened next to the library and occupies part of Tech Green (formerly Yellow Jacket Park).",
+   "look": "Open campus greenspace next to the library.",
+   "check": 0.9772022465952842,
+   "confidence": 0.9772022465952842,
+   "passed": true,
+   "x": 0.64,
+   "y": 0.81
+  },
+  {
+   "name": "Fifth Street Bridge",
+   "name_en": "Fifth Street Bridge",
+   "kind": "bridge",
+   "quote": "Connected by the Fifth Street Bridge, it is a pedestrian-friendly area comprising Georgia Tech facilities and retail locations.",
+   "look": "Pedestrian-friendly bridge connecting main campus to Technology Square.",
+   "check": 0.8478515474975803,
+   "confidence": 0.8478515474975803,
+   "passed": true
+  },
+  {
+   "name": "Robert C. Williams Museum of Papermaking",
+   "name_en": "Robert C. Williams Museum of Papermaking",
+   "kind": "museum",
+   "quote": "The Robert C. Williams Museum of Papermaking is located on West Campus.",
+   "look": "Plain museum building on West Campus.",
+   "check": 0.99,
+   "confidence": 0.99,
+   "passed": true
+  }
+ ],
+ "tokens": 9304,
+ "seconds": 26
+}

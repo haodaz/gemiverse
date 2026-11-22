@@ -1,0 +1,368 @@
+{
+ "school": "rice",
+ "name": "Rice University",
+ "at": "2026-11-22T00:13:29.397Z",
+ "seconds": 24,
+ "tokens": 29207,
+ "entities": [
+  {
+   "id": "rice-ca7f906275",
+   "type": "Event",
+   "school": "rice",
+   "name": "New Art / New Music Fall 2026",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.rice.edu/event/443207-new-art-new-music-fall-2026",
+    "needs": [
+     "make_and_express",
+     "explore_a_field"
+    ],
+    "start": null,
+    "summary": "New Art / New Music Fall 2026 is an event listed on Rice University's events calendar.",
+    "event_kind": "other",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "rice-7c7a0e28c5",
+   "type": "Event",
+   "school": "rice",
+   "name": "Class Visits - Full-Time MBA",
+   "tier": 1,
+   "fields": {
+    "url": "https://business.rice.edu/event/class-visits-full-time-mba-0",
+    "needs": [
+     "explore_a_field",
+     "decide_a_direction"
+    ],
+    "start": "2026-10-27T00:00",
+    "summary": "Prospective students can visit Rice Business to tour McNair Hall, observe Full-Time MBA classes, and connect with current students.",
+    "event_kind": "activity",
+    "venue_name": "Rice University - McNair Hall",
+    "organisation_name": "Jones Graduate School of Business at Rice University",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-10-27T00:00",
+      "end": "2026-10-27T23:59"
+     }
+    ]
+   }
+  },
+  {
+   "id": "rice-41870a38f8",
+   "type": "Event",
+   "school": "rice",
+   "name": "Finish Strong: a virtual AI series for Rice students",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.rice.edu/ai/event/445441-finish-strong-a-virtual-ai-series-for-rice",
+    "needs": [
+     "build_a_skill",
+     "explore_a_field"
+    ],
+    "start": null,
+    "summary": "A virtual AI series for Rice students listed on the Rice University Artificial Intelligence Hub Events page.",
+    "event_kind": "other",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "rice-d688a04891",
+   "type": "Event",
+   "school": "rice",
+   "name": "Teaching with AI, and Without: A virtual workshop series for Rice faculty, November–December",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.rice.edu/ai/event/445442-teaching-with-ai-and-without-a-virtual-workshop",
+    "needs": [
+     "build_a_skill",
+     "explore_a_field"
+    ],
+    "start": null,
+    "summary": "A virtual workshop series for Rice faculty on teaching with and without AI, taking place in November and December.",
+    "event_kind": "workshop",
+    "venue_name": null,
+    "organisation_name": "Artificial Intelligence Hub",
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "rice-fb02b2cad9",
+   "type": "Event",
+   "school": "rice",
+   "name": "Rice University Women’s Basketball vs Pepperdine",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.rice.edu/event/436960-rice-university-womens-basketball-vs-pepperdine",
+    "needs": [
+     "find_my_people"
+    ],
+    "start": null,
+    "summary": "Rice University Women's Basketball plays against Pepperdine.",
+    "event_kind": "competition",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "rice-47fad1281f",
+   "type": "Event",
+   "school": "rice",
+   "name": "Entropy stable reduced order modeling of nonlinear conservation laws using entropy correction artificial viscosity",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.rice.edu/event/443587-entropy-stable-reduced-order-modeling-of-nonlinear",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": null,
+    "summary": "A thesis defense at Rice University on entropy stable reduced order modeling of nonlinear conservation laws using entropy correction artificial viscosity.",
+    "event_kind": "lecture",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "rice-5979c0feb2",
+   "type": "Event",
+   "school": "rice",
+   "name": "Finish Strong: a virtual series for Rice students",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.rice.edu/event/445064-finish-strong-a-virtual-series-for-rice-students",
+    "needs": [
+     "build_a_skill"
+    ],
+    "start": null,
+    "summary": "This page lists a virtual event series titled 'Finish Strong' for Rice University students.",
+    "event_kind": "other",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "rice-1b5baa754c",
+   "type": "Event",
+   "school": "rice",
+   "name": "Hoxb5 and Pbx3b Regulation of Enteric Neuronal Differentiation and Spatial Organization During Enteric Nervous System Development in Danio rerio",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.rice.edu/event/445427-hoxb5-and-pbx3b-regulation-of-enteric-neuronal",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": null,
+    "summary": "A Rice University thesis defense on Hoxb5 and Pbx3b regulation during enteric nervous system development in Danio rerio.",
+    "event_kind": "lecture",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "rice-0e1e215637",
+   "type": "Event",
+   "school": "rice",
+   "name": "Tuning Magnetism and Superconductivity in Transition Metal Chalcogenides",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.rice.edu/event/446068-tuning-magnetism-and-superconductivity-in",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": null,
+    "summary": "A thesis defense at Rice University titled Tuning Magnetism and Superconductivity in Transition Metal Chalcogenides.",
+    "event_kind": "lecture",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "rice-d48cf9a5e7",
+   "type": "Event",
+   "school": "rice",
+   "name": "As Above, So Below: Infiltration, Subsurface Storage, and Flooding in the Texas Coastal Prairie",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.rice.edu/event/445471-as-above-so-below-infiltration-subsurface-storage",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": null,
+    "summary": "A thesis defense on infiltration, subsurface storage, and flooding in the Texas Coastal Prairie at Rice University.",
+    "event_kind": "lecture",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "rice-7c0f62b572",
+   "type": "Event",
+   "school": "rice",
+   "name": "Late Registration Begins: Continuing students that have not registered for any Spring classes are charged a $75 Late Registration Fee to add classes",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.rice.edu/academic-calendar/event/361441-late-registration-beginscontinuing-students-that",
+    "needs": [
+     "navigate_systems"
+    ],
+    "start": null,
+    "summary": "Late registration begins for continuing students who have not registered for Spring classes, incurring a $75 fee.",
+    "event_kind": "other",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "rice-ca7f906275",
+   "field": "title",
+   "quote": "New Art / New Music Fall 2026",
+   "url": "https://events.rice.edu/event/443207-new-art-new-music-fall-2026",
+   "check_confidence": 0.962060191298289,
+   "passed": true
+  },
+  {
+   "entity_id": "rice-7c7a0e28c5",
+   "field": "title",
+   "quote": "Class Visits - Full-Time MBA",
+   "url": "https://business.rice.edu/event/class-visits-full-time-mba-0",
+   "check_confidence": 0.964720738397712,
+   "passed": true
+  },
+  {
+   "entity_id": "rice-7c7a0e28c5",
+   "field": "date",
+   "quote": "Oct 27 - Dec 3",
+   "url": "https://business.rice.edu/event/class-visits-full-time-mba-0",
+   "check_confidence": 0.9728769458088676,
+   "passed": true
+  },
+  {
+   "entity_id": "rice-7c7a0e28c5",
+   "field": "start_time",
+   "quote": "00:00",
+   "url": "https://business.rice.edu/event/class-visits-full-time-mba-0",
+   "check_confidence": 0.9098357125138513,
+   "passed": true
+  },
+  {
+   "entity_id": "rice-7c7a0e28c5",
+   "field": "venue_name",
+   "quote": "Rice University - McNair Hall",
+   "url": "https://business.rice.edu/event/class-visits-full-time-mba-0",
+   "check_confidence": 0.9675392060361357,
+   "passed": true
+  },
+  {
+   "entity_id": "rice-7c7a0e28c5",
+   "field": "organisation_name",
+   "quote": "Jones Graduate School of Business at Rice University",
+   "url": "https://business.rice.edu/event/class-visits-full-time-mba-0",
+   "check_confidence": 0.9685589386567256,
+   "passed": true
+  },
+  {
+   "entity_id": "rice-41870a38f8",
+   "field": "title",
+   "quote": "Finish Strong: a virtual AI series for Rice students",
+   "url": "https://events.rice.edu/ai/event/445441-finish-strong-a-virtual-ai-series-for-rice",
+   "check_confidence": 0.951746751826552,
+   "passed": true
+  },
+  {
+   "entity_id": "rice-d688a04891",
+   "field": "title",
+   "quote": "Teaching with AI, and Without: A virtual workshop series for Rice faculty, November–December",
+   "url": "https://events.rice.edu/ai/event/445442-teaching-with-ai-and-without-a-virtual-workshop",
+   "check_confidence": 0.9485918256709148,
+   "passed": true
+  },
+  {
+   "entity_id": "rice-d688a04891",
+   "field": "organisation_name",
+   "quote": "Artificial Intelligence Hub",
+   "url": "https://events.rice.edu/ai/event/445442-teaching-with-ai-and-without-a-virtual-workshop",
+   "check_confidence": 0.9194667915973865,
+   "passed": true
+  },
+  {
+   "entity_id": "rice-fb02b2cad9",
+   "field": "title",
+   "quote": "Rice University Women’s Basketball vs Pepperdine",
+   "url": "https://events.rice.edu/event/436960-rice-university-womens-basketball-vs-pepperdine",
+   "check_confidence": 0.9454662073128118,
+   "passed": true
+  },
+  {
+   "entity_id": "rice-47fad1281f",
+   "field": "title",
+   "quote": "Entropy stable reduced order modeling of nonlinear conservation laws using entropy correction artificial viscosity",
+   "url": "https://events.rice.edu/event/443587-entropy-stable-reduced-order-modeling-of-nonlinear",
+   "check_confidence": 0.9464403827298205,
+   "passed": true
+  },
+  {
+   "entity_id": "rice-5979c0feb2",
+   "field": "title",
+   "quote": "Finish Strong: a virtual series for Rice students",
+   "url": "https://events.rice.edu/event/445064-finish-strong-a-virtual-series-for-rice-students",
+   "check_confidence": 0.9777860734859888,
+   "passed": true
+  },
+  {
+   "entity_id": "rice-1b5baa754c",
+   "field": "title",
+   "quote": "Hoxb5 and Pbx3b Regulation of Enteric Neuronal Differentiation and Spatial Organization During Enteric Nervous System Development in Danio rerio",
+   "url": "https://events.rice.edu/event/445427-hoxb5-and-pbx3b-regulation-of-enteric-neuronal",
+   "check_confidence": 0.9527580179539795,
+   "passed": true
+  },
+  {
+   "entity_id": "rice-0e1e215637",
+   "field": "title",
+   "quote": "Tuning Magnetism and Superconductivity in Transition Metal Chalcogenides",
+   "url": "https://events.rice.edu/event/446068-tuning-magnetism-and-superconductivity-in",
+   "check_confidence": 0.9537144734406551,
+   "passed": true
+  },
+  {
+   "entity_id": "rice-d48cf9a5e7",
+   "field": "title",
+   "quote": "As Above, So Below: Infiltration, Subsurface Storage, and Flooding in the Texas Coastal Prairie",
+   "url": "https://events.rice.edu/event/445471-as-above-so-below-infiltration-subsurface-storage",
+   "check_confidence": 0.9641392895053199,
+   "passed": true
+  },
+  {
+   "entity_id": "rice-7c0f62b572",
+   "field": "title",
+   "quote": "Late Registration Begins: Continuing students that have not registered for any Spring classes are charged a $75 Late Registration Fee to add classes",
+   "url": "https://events.rice.edu/academic-calendar/event/361441-late-registration-beginscontinuing-students-that",
+   "check_confidence": 0.9472570311157417,
+   "passed": true
+  }
+ ]
+}

@@ -1,0 +1,104 @@
+{
+ "school": "ufl",
+ "name": "University of Florida",
+ "at": "2026-11-22T00:19:39.166Z",
+ "seconds": 13,
+ "tokens": 22490,
+ "entities": [
+  {
+   "id": "ufl-69f40f43dd",
+   "type": "Event",
+   "school": "ufl",
+   "name": "Accessibility Office Hours",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.ufl.edu/training/event/59193-accessibility-office-hours",
+    "needs": [
+     "get_mentorship_and_feedback",
+     "navigate_systems"
+    ],
+    "start": null,
+    "summary": "Accessibility Office Hours is an event listed on the University of Florida calendar for December 2.",
+    "event_kind": "other",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "ufl-41fd299f2f",
+   "type": "Event",
+   "school": "ufl",
+   "name": "Writing for the Web",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.ufl.edu/training/event/54972-writing-for-the-web",
+    "needs": [
+     "build_a_skill"
+    ],
+    "start": null,
+    "summary": "A University of Florida training event titled Writing for the Web.",
+    "event_kind": "workshop",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "ufl-bffc864a51",
+   "type": "Event",
+   "school": "ufl",
+   "name": "Aiswarya Panangattu – Inorganic Seminar",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.ufl.edu/inorganic/event/57074-aiswarya-panangattu-inorganic-seminar",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": null,
+    "summary": "Aiswarya Panangattu will present an Inorganic Seminar at the University of Florida.",
+    "event_kind": "lecture",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": "Aiswarya Panangattu",
+    "occurrences": []
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "ufl-69f40f43dd",
+   "field": "title",
+   "quote": "Accessibility Office Hours",
+   "url": "https://calendar.ufl.edu/training/event/59193-accessibility-office-hours",
+   "check_confidence": 0.9016162450304178,
+   "passed": true
+  },
+  {
+   "entity_id": "ufl-41fd299f2f",
+   "field": "title",
+   "quote": "Writing for the Web",
+   "url": "https://calendar.ufl.edu/training/event/54972-writing-for-the-web",
+   "check_confidence": 0.9514112204437641,
+   "passed": true
+  },
+  {
+   "entity_id": "ufl-bffc864a51",
+   "field": "title",
+   "quote": "Aiswarya Panangattu – Inorganic Seminar",
+   "url": "https://calendar.ufl.edu/inorganic/event/57074-aiswarya-panangattu-inorganic-seminar",
+   "check_confidence": 0.9405387378973108,
+   "passed": true
+  },
+  {
+   "entity_id": "ufl-bffc864a51",
+   "field": "speaker",
+   "quote": "Aiswarya Panangattu",
+   "url": "https://calendar.ufl.edu/inorganic/event/57074-aiswarya-panangattu-inorganic-seminar",
+   "check_confidence": 0.9509051495118606,
+   "passed": true
+  }
+ ]
+}

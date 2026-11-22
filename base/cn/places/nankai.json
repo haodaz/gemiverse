@@ -1,0 +1,104 @@
+{
+ "school": "nankai",
+ "name": "南开大学",
+ "at": "2026-11-22T00:15:31.206Z",
+ "source": "https://zh.wikipedia.org/wiki/%E5%8D%97%E5%BC%80%E5%A4%A7%E5%AD%A6",
+ "character": "The main Balitai campus is surrounded by rivers and features a 'two lakes and one river' water system with lotus-filled lakes, historic halls, and tree-lined scenery.",
+ "map": "/art/map/nankai.jpg",
+ "landmarks": [
+  {
+   "name": "马蹄湖",
+   "name_en": "Horseshoe Lake",
+   "kind": "lake",
+   "quote": "马蹄湖（原北马蹄湖）位于大中路北侧，为马蹄形湖泊",
+   "look": "A horseshoe-shaped lake with a peninsula and blooming summer lotuses.",
+   "check": 0.9760770821223131,
+   "confidence": 0.9760770821223131,
+   "passed": true,
+   "x": 0.22,
+   "y": 0.66
+  },
+  {
+   "name": "思源堂",
+   "name_en": "Siyuan Hall",
+   "kind": "hall",
+   "quote": "2019年10月，思源堂被被核定为全国重点文物保护单位。",
+   "look": "A historic university hall, plain and dignified.",
+   "check": 0.9616598903421759,
+   "confidence": 0.9616598903421759,
+   "passed": true,
+   "x": 0.38,
+   "y": 0.35
+  },
+  {
+   "name": "周恩来纪念碑",
+   "name_en": "Zhou Enlai Monument",
+   "kind": "other",
+   "quote": "湖中半岛建有1979年南开大学建校60周年时设立的周恩来纪念碑",
+   "look": "A monument on a lake peninsula inscribed with gilded Chinese characters.",
+   "check": 0.9714691221177277,
+   "confidence": 0.9714691221177277,
+   "passed": true,
+   "x": 0.57,
+   "y": 0.6
+  },
+  {
+   "name": "新开湖",
+   "name_en": "Xinkai Lake",
+   "kind": "lake",
+   "quote": "校内分布有马蹄湖、新开湖及小引河，形成“两湖一河”的水系格局。",
+   "look": "A plain campus lake forming part of the campus water system.",
+   "check": 0.9744596585919384,
+   "confidence": 0.9744596585919384,
+   "passed": true,
+   "x": 0.69,
+   "y": 0.56
+  },
+  {
+   "name": "南开大学体育中心",
+   "name_en": "Nankai University Sports Center",
+   "kind": "stadium",
+   "quote": "2006年10月，南开大学体育中心竣工及投用，是南开大学自建校以来单体建筑面积最大",
+   "look": "A massive modern sports complex, the largest single building on campus.",
+   "check": 0.9718300687985836,
+   "confidence": 0.9718300687985836,
+   "passed": true,
+   "x": 0.7,
+   "y": 0.26
+  },
+  {
+   "name": "东门",
+   "name_en": "East Gate",
+   "kind": "gate",
+   "quote": "校区主干道为大中路，东起东门，西至化学学院楼。",
+   "look": "A plain university gate at the eastern end of the main road.",
+   "check": 0.9556603085408548,
+   "confidence": 0.9556603085408548,
+   "passed": true,
+   "x": 0.92,
+   "y": 0.39
+  },
+  {
+   "name": "陈省身墓园",
+   "name_en": "Chern Shiing-shen Memorial Garden",
+   "kind": "garden",
+   "quote": "此外，陈省身墓园位于校园内津河北岸。",
+   "look": "A quiet riverside memorial garden on the north bank of Jin River.",
+   "check": 0.9795164590626216,
+   "confidence": 0.9795164590626216,
+   "passed": true
+  },
+  {
+   "name": "化学学院楼",
+   "name_en": "Chemistry Building",
+   "kind": "hall",
+   "quote": "校区主干道为大中路，东起东门，西至化学学院楼。",
+   "look": "A plain academic building at the western end of the main road.",
+   "check": 0.9548051520012709,
+   "confidence": 0.9548051520012709,
+   "passed": true
+  }
+ ],
+ "tokens": 13992,
+ "seconds": 33
+}

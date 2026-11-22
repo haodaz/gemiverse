@@ -1,0 +1,104 @@
+{
+ "school": "ucsd",
+ "name": "University of California, San Diego",
+ "at": "2026-11-22T00:18:48.803Z",
+ "source": "https://en.wikipedia.org/wiki/University%20of%20California%2C%20San%20Diego",
+ "character": "Located on coastal mesa land with eucalyptus groves and natural reserves, the campus features disparate architectural styles across its buildings.",
+ "map": "/art/map/ucsd.jpg",
+ "landmarks": [
+  {
+   "name": "Geisel Library",
+   "name_en": "Geisel Library",
+   "kind": "library",
+   "quote": "Standing at the center of the university is the iconic Geisel Library",
+   "look": "An iconic library building standing at the center of the campus.",
+   "check": 0.99,
+   "confidence": 0.99,
+   "passed": true,
+   "x": 0.5,
+   "y": 0.4
+  },
+  {
+   "name": "Birch Aquarium",
+   "name_en": "Birch Aquarium",
+   "kind": "museum",
+   "quote": "the campus features eucalyptus groves, Birch Aquarium, and several major research centers.",
+   "look": "An aquarium building on campus.",
+   "check": 0.9733009466782,
+   "confidence": 0.9733009466782,
+   "passed": true,
+   "x": 0.27,
+   "y": 0.23
+  },
+  {
+   "name": "Epstein Family Amphitheater",
+   "name_en": "Epstein Family Amphitheater",
+   "kind": "stadium",
+   "quote": "opened the Epstein Family Amphitheater, a 2,650-seat open air performance venue",
+   "look": "A 2,650-seat open-air amphitheater.",
+   "check": 0.9816592788905453,
+   "confidence": 0.9816592788905453,
+   "passed": true,
+   "x": 0.78,
+   "y": 0.7
+  },
+  {
+   "name": "Mandeville Hall",
+   "name_en": "Mandeville Hall",
+   "kind": "hall",
+   "quote": "Another notable campus sight was the graffiti staircase of Mandeville Hall",
+   "look": "A campus hall with a staircase.",
+   "check": 0.9830036985013301,
+   "confidence": 0.9830036985013301,
+   "passed": true,
+   "x": 0.82,
+   "y": 0.21
+  },
+  {
+   "name": "Peterson Hall",
+   "name_en": "Peterson Hall",
+   "kind": "hall",
+   "quote": "a 15-by-50-foot (4.6 by 15.2 m) canvas mounted on the exterior of Peterson Hall",
+   "look": "A campus hall with a large mural on its exterior.",
+   "check": 0.9758143445655237,
+   "confidence": 0.9758143445655237,
+   "passed": true,
+   "x": 0.15,
+   "y": 0.53
+  },
+  {
+   "name": "Galbraith Hall",
+   "name_en": "Galbraith Hall",
+   "kind": "hall",
+   "quote": "the Arthur Wagner Theatre located in Revelle College's Galbraith Hall.",
+   "look": "A college hall housing a theatre.",
+   "check": 0.9775413422645342,
+   "confidence": 0.9775413422645342,
+   "passed": true,
+   "x": 0.16,
+   "y": 0.81
+  },
+  {
+   "name": "Center Hall",
+   "name_en": "Center Hall",
+   "kind": "hall",
+   "quote": "lies adjacent or close to Price Center, Center Hall, International Center",
+   "look": "A plain academic hall.",
+   "check": 0.9868446780164094,
+   "confidence": 0.9868446780164094,
+   "passed": true
+  },
+  {
+   "name": "Powell-Focht Bioengineering Hall",
+   "name_en": "Powell-Focht Bioengineering Hall",
+   "kind": "hall",
+   "quote": "Powell-Focht Bioengineering Hall, completed in 2003",
+   "look": "A plain bioengineering hall.",
+   "check": 0.99,
+   "confidence": 0.99,
+   "passed": true
+  }
+ ],
+ "tokens": 9674,
+ "seconds": 41
+}

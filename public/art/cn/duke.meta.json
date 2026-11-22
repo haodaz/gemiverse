@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A soft, warm storybook illustration in gentle pastel colours, wide 16:9, flat shapes with light texture, golden afternoon light, a few tiny students walking. No text, no letters, no logos, no emblems, no watermarks. Scene: a North Carolina campus with a tall grey gothic chapel tower at the end of a long quad lined with stone halls and oaks.",
+ "reference": null,
+ "seconds": 16,
+ "tokens": 1561,
+ "at": "2026-11-21T23:18:12.258Z"
+}

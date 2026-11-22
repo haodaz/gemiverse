@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. The campus sits by the shores of Union and Portage Bays with mountain views, featuring wetlands, open greenery, historic landmarks, and modernist structures. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Red Square, a quad: Open central plaza surrounded by landmark buildings and artworks.; (2) Suzzallo Library, a library: Landmark library building bordering Red Square.; (3) University of Washington Quad, a quad: Signature open quad north of Red Square.; (4) Husky Stadium, a stadium: Large sports stadium near East Campus wetlands and recreation fields.; (5) Burke Museum of Natural History and Culture, a museum: Plain museum building in North Campus.; (6) UW Botanic Gardens, a garden: Botanic gardens with greenery, farm, and natural area.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 18,
+ "tokens": 2240,
+ "at": "2026-11-22T00:20:17.461Z"
+}

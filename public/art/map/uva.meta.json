@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students.  Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) the Rotunda, a library: A central round library building; (2) the Lawn, a quad: A broad grassy quad; (3) Academical Village, a other: A historic university campus complex; (4) Alderman Library, a library: A large library building; (5) the Pavilions, a hall: Historic hall buildings along the Lawn; (6) Memorial to Enslaved Laborers, a other: A plain memorial on the grounds. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 15,
+ "tokens": 1922,
+ "at": "2026-11-22T00:18:10.921Z"
+}

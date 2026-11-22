@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A soft, warm storybook illustration in gentle pastel colours, wide 16:9, flat shapes with light texture, golden afternoon light, a few tiny students walking. No text, no letters, no logos, no emblems, no watermarks. Scene: a New Jersey campus with a grand collegiate gothic stone hall with ivy, a tall chapel, arches and old elms.",
+ "reference": null,
+ "seconds": 16,
+ "tokens": 1534,
+ "at": "2026-11-21T23:18:12.053Z"
+}

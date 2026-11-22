@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. The elongated main campus sits at the foot of Yujia Mountain beside East Lake and Yujia Lake, featuring 72% green coverage like a forest. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Yujia Mountain, a hill: A wooded hill rising along the northern edge of the campus.; (2) Optics Valley Gymnasium, a stadium: A large, plain modern gymnasium building.; (3) University History Museum, a museum: A plain museum building showcasing university history.; (4) West Building 12, a hall: A massive, plain teaching hall complex.; (5) South Building 1, a hall: A plain, iconic campus building.; (6) Main Campus South Gate, a gate: A plain main university entrance gate.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 17,
+ "tokens": 2150,
+ "at": "2026-11-22T00:16:42.004Z"
+}

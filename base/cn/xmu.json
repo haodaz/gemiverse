@@ -1,0 +1,795 @@
+{
+ "school": "xmu",
+ "name": "厦门大学",
+ "at": "2026-11-22T00:16:15.074Z",
+ "seconds": 51,
+ "tokens": 68903,
+ "entities": [
+  {
+   "id": "xmu-a129a8871f",
+   "type": "Event",
+   "school": "xmu",
+   "name": "i学堂：学术期刊检索与全文获取指南（理工科篇）",
+   "tier": 1,
+   "fields": {
+    "url": "https://lecture.xmu.edu.cn/node/1604",
+    "needs": [
+     "build_a_skill"
+    ],
+    "start": "2026-10-23T19:30",
+    "summary": "厦门大学图书馆i学堂讲座，介绍学术期刊分类、数据库及全文获取方法。",
+    "event_kind": "lecture",
+    "venue_name": "思明校区图书馆总馆321教室（同步直播，详见正文）",
+    "organisation_name": "厦门大学图书馆",
+    "speaker": "黄衍",
+    "occurrences": [
+     {
+      "start": "2026-10-23T19:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "xmu-37f7f92fda",
+   "type": "Event",
+   "school": "xmu",
+   "name": "i学堂：如何进行开题前的文献调研？（理工科篇）",
+   "tier": 1,
+   "fields": {
+    "url": "https://lecture.xmu.edu.cn/node/1605",
+    "needs": [
+     "build_a_skill"
+    ],
+    "start": "2026-10-28T19:30",
+    "summary": "厦门大学图书馆i学堂讲座，讲解理工科开题前的文献调研方法与数据库工具应用。",
+    "event_kind": "lecture",
+    "venue_name": "思明校区图书馆总馆321教室（同步直播，详见正文）",
+    "organisation_name": "厦门大学图书馆",
+    "speaker": "韩冬丽",
+    "occurrences": [
+     {
+      "start": "2026-10-28T19:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "xmu-3990a62e20",
+   "type": "Event",
+   "school": "xmu",
+   "name": "i学堂：从传统检索到AI分析，高效开展科研选题与文献调研（人文社科篇）",
+   "tier": 1,
+   "fields": {
+    "url": "https://lecture.xmu.edu.cn/node/1606",
+    "needs": [
+     "build_a_skill"
+    ],
+    "start": "2026-10-30T19:30",
+    "summary": "厦门大学图书馆举办关于科研选题与文献调研的讲座，涵盖传统检索与AI工具应用。",
+    "event_kind": "lecture",
+    "venue_name": "思明校区图书馆总馆321教室（同步直播，详见正文）",
+    "organisation_name": "厦门大学图书馆",
+    "speaker": "钟建法",
+    "occurrences": [
+     {
+      "start": "2026-10-30T19:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "xmu-8d4f3f8e7f",
+   "type": "Event",
+   "school": "xmu",
+   "name": "i学堂新生专场：一站解锁图书馆学术资源（理工科篇）",
+   "tier": 1,
+   "fields": {
+    "url": "https://lecture.xmu.edu.cn/node/1599",
+    "needs": [
+     "build_a_skill",
+     "navigate_systems"
+    ],
+    "start": "2026-09-24T19:30",
+    "summary": "面向理工科新生介绍图书馆学术资源检索、常用数据库及全文获取方法。",
+    "event_kind": "lecture",
+    "venue_name": "翔安校区未来学习空间G104创新工坊（学武楼负一层）",
+    "organisation_name": "厦门大学图书馆",
+    "speaker": "庄锐锌",
+    "occurrences": [
+     {
+      "start": "2026-09-24T19:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "xmu-8d5e01fe9b",
+   "type": "Event",
+   "school": "xmu",
+   "name": "弘扬长征精神，走好新时代的长征路",
+   "tier": 1,
+   "fields": {
+    "url": "https://mp.weixin.qq.com/s/R-B_4XIPYiLvkf7Glu_ZEA",
+    "needs": [
+     "explore_a_field",
+     "contribute_beyond_self"
+    ],
+    "start": "2026-11-16T16:40",
+    "summary": "王炳林教授主讲弘扬长征精神，阐释其历史、理论与实践逻辑。",
+    "event_kind": "lecture",
+    "venue_name": "思明校区科学艺术中心报告厅",
+    "organisation_name": "厦门大学美育与通识教育",
+    "speaker": "王炳林",
+    "occurrences": [
+     {
+      "start": "2026-11-16T16:40",
+      "end": "2026-11-16T18:20"
+     }
+    ]
+   }
+  },
+  {
+   "id": "xmu-b44adf59d2",
+   "type": "Event",
+   "school": "xmu",
+   "name": "AI赋能海洋科学：南强学术讲座暨“塔拉”号厦门行科学研讨会",
+   "tier": 1,
+   "fields": {
+    "url": "https://mp.weixin.qq.com/s/izCEzluL67QYuR4PSr9YdQ",
+    "needs": [
+     "explore_a_field",
+     "find_my_people"
+    ],
+    "start": "2026-10-26T09:00",
+    "summary": "厦门大学举办AI赋能海洋科学南强学术讲座暨“塔拉”号科学研讨会。",
+    "event_kind": "lecture",
+    "venue_name": "厦门大学翔安校区周隆泉楼二楼多功能厅",
+    "organisation_name": "海洋生物地球化学全国重点实验室、鹭江创新实验室",
+    "speaker": "Chris Bowler",
+    "occurrences": [
+     {
+      "start": "2026-10-26T09:00",
+      "end": "2026-10-26T18:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "xmu-e4331cd5d0",
+   "type": "Event",
+   "school": "xmu",
+   "name": "南强学术讲座｜资源共享与人文价值——海域研究的人类学反思",
+   "tier": 1,
+   "fields": {
+    "url": "https://mp.weixin.qq.com/s/YKPjYRQrA22juOMWy29aIw",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-15T14:30",
+    "summary": "麻国庆教授主讲海域研究的资源共享与人文价值，探讨人类学视角下的海洋研究。",
+    "event_kind": "lecture",
+    "venue_name": "社会与人类学院A302室（海韵园行政楼A栋）",
+    "organisation_name": null,
+    "speaker": "麻国庆",
+    "occurrences": [
+     {
+      "start": "2026-11-15T14:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "xmu-aa0bb5cd3c",
+   "type": "Event",
+   "school": "xmu",
+   "name": "群·贤 | 讲座预告：海洋能否实现可持续利用？海洋科学与外交的对话",
+   "tier": 1,
+   "fields": {
+    "url": "https://mp.weixin.qq.com/s/nb-IDA51cz1E4uB1gtYlUA",
+    "needs": [
+     "explore_a_field",
+     "contribute_beyond_self"
+    ],
+    "start": "2026-10-21T09:00",
+    "summary": "探讨海洋可持续利用、海洋科学与外交及小岛屿国家海洋负排放的讲座。",
+    "event_kind": "lecture",
+    "venue_name": "思明校区科艺中心报告厅",
+    "organisation_name": null,
+    "speaker": "Jean-Pierre Gattuso、Xavier Estico",
+    "occurrences": [
+     {
+      "start": "2026-10-21T09:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "xmu-2d47d41ab4",
+   "type": "Event",
+   "school": "xmu",
+   "name": "东南亚华人的族群与国族认同: 过去，现在与未来",
+   "tier": 1,
+   "fields": {
+    "url": "https://mp.weixin.qq.com/s/l20RWNuUPbkblTJXfmK19A",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-09-17T15:00",
+    "summary": "廖建裕教授主讲关于东南亚华人族群与国族认同的南强学术讲座。",
+    "event_kind": "lecture",
+    "venue_name": "南安楼301-3会议室",
+    "organisation_name": null,
+    "speaker": "廖建裕教授（Prof. Leo Suryadinata）",
+    "occurrences": [
+     {
+      "start": "2026-09-17T15:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "xmu-5f67c0f4ce",
+   "type": "Event",
+   "school": "xmu",
+   "name": "根植八闽守初心 育种攻坚赴新程",
+   "tier": 1,
+   "fields": {
+    "url": "https://mp.weixin.qq.com/s/8BUNp_3aZAVCkmKu8FDsRA",
+    "needs": [
+     "explore_a_field",
+     "decide_a_direction"
+    ],
+    "start": "2026-09-07T16:40",
+    "summary": "厦门大学黄烯教授主讲光控发育与光能育种及科研报国。",
+    "event_kind": "lecture",
+    "venue_name": "翔安校区德旺图书馆1号报告厅",
+    "organisation_name": "厦门大学美育与通识教育",
+    "speaker": "黄烯",
+    "occurrences": [
+     {
+      "start": "2026-09-07T16:40",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "xmu-f5b10594f3",
+   "type": "Event",
+   "school": "xmu",
+   "name": "南强学术讲座｜传播与实施科学（D I）：渊源，理论，策略和方法",
+   "tier": 1,
+   "fields": {
+    "url": "https://mp.weixin.qq.com/s/g4DV7Nikq70l_cqZN5IkpA",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-06-30T09:30",
+    "summary": "郭申阳教授主讲传播与实施科学（D I）的渊源、理论、策略和方法。",
+    "event_kind": "lecture",
+    "venue_name": "社会与人类学院A103室（海韵园行政楼A栋）",
+    "organisation_name": null,
+    "speaker": "郭申阳",
+    "occurrences": [
+     {
+      "start": "2026-06-30T09:30",
+      "end": null
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "xmu-a129a8871f",
+   "field": "title",
+   "quote": "i学堂：学术期刊检索与全文获取指南（理工科篇）",
+   "url": "https://lecture.xmu.edu.cn/node/1604",
+   "check_confidence": 0.9793033767888233,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-a129a8871f",
+   "field": "date",
+   "quote": "2026-10-23(星期五) 19:30",
+   "url": "https://lecture.xmu.edu.cn/node/1604",
+   "check_confidence": 0.9858283404269639,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-a129a8871f",
+   "field": "start_time",
+   "quote": "19:30",
+   "url": "https://lecture.xmu.edu.cn/node/1604",
+   "check_confidence": 0.9690227892291838,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-a129a8871f",
+   "field": "venue_name",
+   "quote": "思明校区图书馆总馆321教室（同步直播，详见正文）",
+   "url": "https://lecture.xmu.edu.cn/node/1604",
+   "check_confidence": 0.9734669136147793,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-a129a8871f",
+   "field": "organisation_name",
+   "quote": "厦门大学图书馆",
+   "url": "https://lecture.xmu.edu.cn/node/1604",
+   "check_confidence": 0.9725357220399614,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-a129a8871f",
+   "field": "speaker",
+   "quote": "黄衍",
+   "url": "https://lecture.xmu.edu.cn/node/1604",
+   "check_confidence": 0.9774896977562143,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-37f7f92fda",
+   "field": "title",
+   "quote": "i学堂：如何进行开题前的文献调研？（理工科篇）",
+   "url": "https://lecture.xmu.edu.cn/node/1605",
+   "check_confidence": 0.9747991802945711,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-37f7f92fda",
+   "field": "date",
+   "quote": "2026-10-28(星期三) 19:30",
+   "url": "https://lecture.xmu.edu.cn/node/1605",
+   "check_confidence": 0.9734093620421697,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-37f7f92fda",
+   "field": "start_time",
+   "quote": "19:30",
+   "url": "https://lecture.xmu.edu.cn/node/1605",
+   "check_confidence": 0.980910498666871,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-37f7f92fda",
+   "field": "venue_name",
+   "quote": "思明校区图书馆总馆321教室（同步直播，详见正文）",
+   "url": "https://lecture.xmu.edu.cn/node/1605",
+   "check_confidence": 0.9623698410126591,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-37f7f92fda",
+   "field": "organisation_name",
+   "quote": "厦门大学图书馆",
+   "url": "https://lecture.xmu.edu.cn/node/1605",
+   "check_confidence": 0.9645947905750182,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-37f7f92fda",
+   "field": "speaker",
+   "quote": "韩冬丽",
+   "url": "https://lecture.xmu.edu.cn/node/1605",
+   "check_confidence": 0.9712372067818814,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-3990a62e20",
+   "field": "title",
+   "quote": "i学堂：从传统检索到AI分析，高效开展科研选题与文献调研（人文社科篇）",
+   "url": "https://lecture.xmu.edu.cn/node/1606",
+   "check_confidence": 0.9683412312108185,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-3990a62e20",
+   "field": "date",
+   "quote": "2026-10-30(星期五) 19:30",
+   "url": "https://lecture.xmu.edu.cn/node/1606",
+   "check_confidence": 0.9632559847840315,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-3990a62e20",
+   "field": "start_time",
+   "quote": "19:30",
+   "url": "https://lecture.xmu.edu.cn/node/1606",
+   "check_confidence": 0.9605891733691377,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-3990a62e20",
+   "field": "venue_name",
+   "quote": "思明校区图书馆总馆321教室（同步直播，详见正文）",
+   "url": "https://lecture.xmu.edu.cn/node/1606",
+   "check_confidence": 0.9624957535644902,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-3990a62e20",
+   "field": "organisation_name",
+   "quote": "厦门大学图书馆",
+   "url": "https://lecture.xmu.edu.cn/node/1606",
+   "check_confidence": 0.9564462455700895,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-3990a62e20",
+   "field": "speaker",
+   "quote": "钟建法",
+   "url": "https://lecture.xmu.edu.cn/node/1606",
+   "check_confidence": 0.978831329690584,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-8d4f3f8e7f",
+   "field": "title",
+   "quote": "i学堂新生专场：一站解锁图书馆学术资源（理工科篇）",
+   "url": "https://lecture.xmu.edu.cn/node/1599",
+   "check_confidence": 0.9610227322251398,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-8d4f3f8e7f",
+   "field": "date",
+   "quote": "2026-09-24(星期四) 19:30",
+   "url": "https://lecture.xmu.edu.cn/node/1599",
+   "check_confidence": 0.9635763996571385,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-8d4f3f8e7f",
+   "field": "start_time",
+   "quote": "19:30",
+   "url": "https://lecture.xmu.edu.cn/node/1599",
+   "check_confidence": 0.9678926683960941,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-8d4f3f8e7f",
+   "field": "venue_name",
+   "quote": "翔安校区未来学习空间G104创新工坊（学武楼负一层）",
+   "url": "https://lecture.xmu.edu.cn/node/1599",
+   "check_confidence": 0.9555072662729288,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-8d4f3f8e7f",
+   "field": "organisation_name",
+   "quote": "厦门大学图书馆",
+   "url": "https://lecture.xmu.edu.cn/node/1599",
+   "check_confidence": 0.9533385418485035,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-8d4f3f8e7f",
+   "field": "speaker",
+   "quote": "庄锐锌",
+   "url": "https://lecture.xmu.edu.cn/node/1599",
+   "check_confidence": 0.9793013934546183,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-8d5e01fe9b",
+   "field": "title",
+   "quote": "弘扬长征精神，走好新时代的长征路",
+   "url": "https://mp.weixin.qq.com/s/R-B_4XIPYiLvkf7Glu_ZEA",
+   "check_confidence": 0.971858701841431,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-8d5e01fe9b",
+   "field": "date",
+   "quote": "2026年11月16日16:40-18:20",
+   "url": "https://mp.weixin.qq.com/s/R-B_4XIPYiLvkf7Glu_ZEA",
+   "check_confidence": 0.9663455325765432,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-8d5e01fe9b",
+   "field": "start_time",
+   "quote": "16:40",
+   "url": "https://mp.weixin.qq.com/s/R-B_4XIPYiLvkf7Glu_ZEA",
+   "check_confidence": 0.9804706179186955,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-8d5e01fe9b",
+   "field": "venue_name",
+   "quote": "线下课堂：思明校区科学艺术中心报告厅 同步课堂：思明校区、翔安校区 修读《形势与政策》公共教室",
+   "url": "https://mp.weixin.qq.com/s/R-B_4XIPYiLvkf7Glu_ZEA",
+   "check_confidence": 0.9681598813415598,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-8d5e01fe9b",
+   "field": "organisation_name",
+   "quote": "厦门大学美育与通识教育",
+   "url": "https://mp.weixin.qq.com/s/R-B_4XIPYiLvkf7Glu_ZEA",
+   "check_confidence": 0.9420895838164868,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-8d5e01fe9b",
+   "field": "speaker",
+   "quote": "王炳林",
+   "url": "https://mp.weixin.qq.com/s/R-B_4XIPYiLvkf7Glu_ZEA",
+   "check_confidence": 0.9719265538626781,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-b44adf59d2",
+   "field": "title",
+   "quote": "AI赋能海洋科学：南强学术讲座暨“塔拉”号厦门行科学研讨会",
+   "url": "https://mp.weixin.qq.com/s/izCEzluL67QYuR4PSr9YdQ",
+   "check_confidence": 0.9687026691261075,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-b44adf59d2",
+   "field": "date",
+   "quote": "2026年10月26日（星期一） 09:00-18:00",
+   "url": "https://mp.weixin.qq.com/s/izCEzluL67QYuR4PSr9YdQ",
+   "check_confidence": 0.9703453894281518,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-b44adf59d2",
+   "field": "start_time",
+   "quote": "09:00",
+   "url": "https://mp.weixin.qq.com/s/izCEzluL67QYuR4PSr9YdQ",
+   "check_confidence": 0.9767885326344156,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-b44adf59d2",
+   "field": "venue_name",
+   "quote": "厦门大学翔安校区周隆泉楼 二楼多功能厅",
+   "url": "https://mp.weixin.qq.com/s/izCEzluL67QYuR4PSr9YdQ",
+   "check_confidence": 0.9751910661378032,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-b44adf59d2",
+   "field": "organisation_name",
+   "quote": "海洋生物地球化学全国重点实验室、鹭江创新实验室",
+   "url": "https://mp.weixin.qq.com/s/izCEzluL67QYuR4PSr9YdQ",
+   "check_confidence": 0.9839759878338415,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-b44adf59d2",
+   "field": "speaker",
+   "quote": "Chris Bowler",
+   "url": "https://mp.weixin.qq.com/s/izCEzluL67QYuR4PSr9YdQ",
+   "check_confidence": 0.981649092738292,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-e4331cd5d0",
+   "field": "title",
+   "quote": "南强学术讲座｜资源共享与人文价值——海域研究的人类学反思",
+   "url": "https://mp.weixin.qq.com/s/YKPjYRQrA22juOMWy29aIw",
+   "check_confidence": 0.9807047585270631,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-e4331cd5d0",
+   "field": "date",
+   "quote": "2026年11月15日14:30",
+   "url": "https://mp.weixin.qq.com/s/YKPjYRQrA22juOMWy29aIw",
+   "check_confidence": 0.953696284590127,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-e4331cd5d0",
+   "field": "start_time",
+   "quote": "14:30",
+   "url": "https://mp.weixin.qq.com/s/YKPjYRQrA22juOMWy29aIw",
+   "check_confidence": 0.9802480745556148,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-e4331cd5d0",
+   "field": "venue_name",
+   "quote": "社会与人类学院A302室（海韵园行政楼A栋）",
+   "url": "https://mp.weixin.qq.com/s/YKPjYRQrA22juOMWy29aIw",
+   "check_confidence": 0.9750913444219863,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-e4331cd5d0",
+   "field": "speaker",
+   "quote": "麻国庆",
+   "url": "https://mp.weixin.qq.com/s/YKPjYRQrA22juOMWy29aIw",
+   "check_confidence": 0.9750203228389683,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-aa0bb5cd3c",
+   "field": "title",
+   "quote": "群·贤 | 讲座预告：海洋能否实现可持续利用？海洋科学与外交的对话",
+   "url": "https://mp.weixin.qq.com/s/nb-IDA51cz1E4uB1gtYlUA",
+   "check_confidence": 0.9564700976760253,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-aa0bb5cd3c",
+   "field": "date",
+   "quote": "2026年10月21日 9:00",
+   "url": "https://mp.weixin.qq.com/s/nb-IDA51cz1E4uB1gtYlUA",
+   "check_confidence": 0.984528775676245,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-aa0bb5cd3c",
+   "field": "start_time",
+   "quote": "09:00",
+   "url": "https://mp.weixin.qq.com/s/nb-IDA51cz1E4uB1gtYlUA",
+   "check_confidence": 0.9681469757063906,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-aa0bb5cd3c",
+   "field": "venue_name",
+   "quote": "思明校区科艺中心报告厅",
+   "url": "https://mp.weixin.qq.com/s/nb-IDA51cz1E4uB1gtYlUA",
+   "check_confidence": 0.9796512382718366,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-aa0bb5cd3c",
+   "field": "organisation_name",
+   "quote": "厦门大学美育与通识教育",
+   "url": "https://mp.weixin.qq.com/s/nb-IDA51cz1E4uB1gtYlUA",
+   "check_confidence": 0.7039993824252978,
+   "passed": false
+  },
+  {
+   "entity_id": "xmu-aa0bb5cd3c",
+   "field": "speaker",
+   "quote": "Jean-Pierre Gattuso、Xavier Estico",
+   "url": "https://mp.weixin.qq.com/s/nb-IDA51cz1E4uB1gtYlUA",
+   "check_confidence": 0.9838684256835967,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-2d47d41ab4",
+   "field": "title",
+   "quote": "东南亚华人的族群与国族认同: 过去，现在与未来",
+   "url": "https://mp.weixin.qq.com/s/l20RWNuUPbkblTJXfmK19A",
+   "check_confidence": 0.9738969531946798,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-2d47d41ab4",
+   "field": "date",
+   "quote": "2026年9月17日（周四）15:00",
+   "url": "https://mp.weixin.qq.com/s/l20RWNuUPbkblTJXfmK19A",
+   "check_confidence": 0.9610139663784404,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-2d47d41ab4",
+   "field": "start_time",
+   "quote": "15:00",
+   "url": "https://mp.weixin.qq.com/s/l20RWNuUPbkblTJXfmK19A",
+   "check_confidence": 0.9724636946641823,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-2d47d41ab4",
+   "field": "venue_name",
+   "quote": "南安楼301-3会议室",
+   "url": "https://mp.weixin.qq.com/s/l20RWNuUPbkblTJXfmK19A",
+   "check_confidence": 0.9754834681440452,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-2d47d41ab4",
+   "field": "speaker",
+   "quote": "廖建裕教授（Prof. Leo Suryadinata）",
+   "url": "https://mp.weixin.qq.com/s/l20RWNuUPbkblTJXfmK19A",
+   "check_confidence": 0.968417853387124,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-5f67c0f4ce",
+   "field": "title",
+   "quote": "根植八闽守初心 育种攻坚赴新程",
+   "url": "https://mp.weixin.qq.com/s/8BUNp_3aZAVCkmKu8FDsRA",
+   "check_confidence": 0.9512206114998266,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-5f67c0f4ce",
+   "field": "date",
+   "quote": "2026年9月7日16:40",
+   "url": "https://mp.weixin.qq.com/s/8BUNp_3aZAVCkmKu8FDsRA",
+   "check_confidence": 0.9838632456484041,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-5f67c0f4ce",
+   "field": "start_time",
+   "quote": "16:40",
+   "url": "https://mp.weixin.qq.com/s/8BUNp_3aZAVCkmKu8FDsRA",
+   "check_confidence": 0.968819159621238,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-5f67c0f4ce",
+   "field": "venue_name",
+   "quote": "翔安校区德旺图书馆1号报告厅",
+   "url": "https://mp.weixin.qq.com/s/8BUNp_3aZAVCkmKu8FDsRA",
+   "check_confidence": 0.9655033881007327,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-5f67c0f4ce",
+   "field": "organisation_name",
+   "quote": "厦门大学美育与通识教育",
+   "url": "https://mp.weixin.qq.com/s/8BUNp_3aZAVCkmKu8FDsRA",
+   "check_confidence": 0.9316871901751839,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-5f67c0f4ce",
+   "field": "speaker",
+   "quote": "黄烯",
+   "url": "https://mp.weixin.qq.com/s/8BUNp_3aZAVCkmKu8FDsRA",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-f5b10594f3",
+   "field": "title",
+   "quote": "南强学术讲座｜传播与实施科学（D I）：渊源，理论，策略和方法",
+   "url": "https://mp.weixin.qq.com/s/g4DV7Nikq70l_cqZN5IkpA",
+   "check_confidence": 0.9665577984787511,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-f5b10594f3",
+   "field": "date",
+   "quote": "2026年6月30日9:30",
+   "url": "https://mp.weixin.qq.com/s/g4DV7Nikq70l_cqZN5IkpA",
+   "check_confidence": 0.9640053329656106,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-f5b10594f3",
+   "field": "start_time",
+   "quote": "09:30",
+   "url": "https://mp.weixin.qq.com/s/g4DV7Nikq70l_cqZN5IkpA",
+   "check_confidence": 0.9841823369252964,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-f5b10594f3",
+   "field": "venue_name",
+   "quote": "社会与人类学院A103室（海韵园行政楼A栋）",
+   "url": "https://mp.weixin.qq.com/s/g4DV7Nikq70l_cqZN5IkpA",
+   "check_confidence": 0.965328528024901,
+   "passed": true
+  },
+  {
+   "entity_id": "xmu-f5b10594f3",
+   "field": "speaker",
+   "quote": "郭申阳",
+   "url": "https://mp.weixin.qq.com/s/g4DV7Nikq70l_cqZN5IkpA",
+   "check_confidence": 0.9842950180311825,
+   "passed": true
+  }
+ ]
+}

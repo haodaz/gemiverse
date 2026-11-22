@@ -1,0 +1,91 @@
+{
+ "school": "tamu",
+ "name": "Texas A&M University",
+ "at": "2026-11-22T00:22:19.182Z",
+ "seconds": 11,
+ "tokens": 24004,
+ "entities": [
+  {
+   "id": "tamu-04fe669138",
+   "type": "Event",
+   "school": "tamu",
+   "name": "Here for Good: Celebrating 150 Years of Texas A M University",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.tamu.edu/university-150/event/395704-here-for-good-celebrating-150-years-of-texas-aampm",
+    "needs": [],
+    "start": null,
+    "summary": "An event page titled Here for Good: Celebrating 150 Years of Texas A M University on the Texas A&M Events Calendar.",
+    "event_kind": "other",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "tamu-376efc1172",
+   "type": "Event",
+   "school": "tamu",
+   "name": "Here for Good: Celebrating 150 Years of Texas A M University",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.tamu.edu/university-150/event/395700-here-for-good-celebrating-150-years-of-texas-aampm",
+    "needs": [],
+    "start": null,
+    "summary": "A Texas A&M University event titled Here for Good: Celebrating 150 Years of Texas A M University.",
+    "event_kind": "other",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "tamu-285a0dad2b",
+   "type": "Event",
+   "school": "tamu",
+   "name": "Here for Good: Celebrating 150 Years of Texas A M University",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.tamu.edu/university-150/event/395708-here-for-good-celebrating-150-years-of-texas-aampm",
+    "needs": [
+     "find_my_people"
+    ],
+    "start": null,
+    "summary": "An event celebrating 150 years of Texas A&M University.",
+    "event_kind": "other",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "tamu-04fe669138",
+   "field": "title",
+   "quote": "Here for Good: Celebrating 150 Years of Texas A M University",
+   "url": "https://calendar.tamu.edu/university-150/event/395704-here-for-good-celebrating-150-years-of-texas-aampm",
+   "check_confidence": 0.8874510008388541,
+   "passed": true
+  },
+  {
+   "entity_id": "tamu-376efc1172",
+   "field": "title",
+   "quote": "Here for Good: Celebrating 150 Years of Texas A M University",
+   "url": "https://calendar.tamu.edu/university-150/event/395700-here-for-good-celebrating-150-years-of-texas-aampm",
+   "check_confidence": 0.8874510008388541,
+   "passed": true
+  },
+  {
+   "entity_id": "tamu-285a0dad2b",
+   "field": "title",
+   "quote": "Here for Good: Celebrating 150 Years of Texas A M University",
+   "url": "https://calendar.tamu.edu/university-150/event/395708-here-for-good-celebrating-150-years-of-texas-aampm",
+   "check_confidence": 0.8874510008388541,
+   "passed": true
+  }
+ ]
+}

@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A soft, warm storybook illustration in gentle pastel colours, wide 16:9, flat shapes with light texture, golden afternoon light, a few tiny students walking. No text, no letters, no logos, no emblems, no watermarks. Scene: a Hangzhou university campus beside a wide lake with a stone arch bridge, a modern library with a clock tower, lotus leaves on the water and soft hills behind.",
+ "reference": null,
+ "seconds": 14,
+ "tokens": 1559,
+ "at": "2026-11-21T23:15:29.917Z"
+}

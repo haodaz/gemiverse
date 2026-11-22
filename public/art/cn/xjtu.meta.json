@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A soft, warm storybook illustration in gentle pastel colours, wide 16:9, flat shapes with light texture, golden afternoon light, a few tiny students walking. No text, no letters, no logos, no emblems, no watermarks. Scene: a Xi'an university campus with a long avenue under tall plane trees, a modern stone library, and a slender monument tower in a square.",
+ "reference": null,
+ "seconds": 14,
+ "tokens": 1579,
+ "at": "2026-11-21T23:15:30.532Z"
+}

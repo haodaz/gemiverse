@@ -1,0 +1,84 @@
+{
+ "school": "ucsb",
+ "name": "University of California, Santa Barbara",
+ "at": "2026-11-22T00:19:14.996Z",
+ "source": "https://en.wikipedia.org/wiki/University%20of%20California%2C%20Santa%20Barbara",
+ "character": "The campus sits on cliffs above the Pacific Ocean with a beach, a lagoon, walking and bicycle paths, and buildings featuring custom-tinted patterned concrete blocks.",
+ "map": "/art/map/ucsb.jpg",
+ "landmarks": [
+  {
+   "name": "Storke Tower",
+   "name_en": "Storke Tower",
+   "kind": "tower",
+   "quote": "Storke Tower, completed in 1969, is the tallest steel/cement structure in Santa Barbara County.",
+   "look": "Tall steel and cement tower overlooking a plaza.",
+   "check": 0.971390523639123,
+   "confidence": 0.971390523639123,
+   "passed": true,
+   "x": 0.68,
+   "y": 0.56
+  },
+  {
+   "name": "Davidson Library",
+   "name_en": "Davidson Library",
+   "kind": "library",
+   "quote": "Situated at the center of campus, the Davidson Library in June 2013 broke ground",
+   "look": "Plain large library building at the center of campus.",
+   "check": 0.9706650136189648,
+   "confidence": 0.9706650136189648,
+   "passed": true,
+   "x": 0.55,
+   "y": 0.36
+  },
+  {
+   "name": "Campbell Hall",
+   "name_en": "Campbell Hall",
+   "kind": "hall",
+   "quote": "Campbell Hall is the university's largest lecture hall with 862 seats.",
+   "look": "Plain large lecture hall building.",
+   "check": 0.9772923289318497,
+   "confidence": 0.9772923289318497,
+   "passed": true,
+   "x": 0.78,
+   "y": 0.16
+  },
+  {
+   "name": "Goleta Point",
+   "name_en": "Goleta Point",
+   "kind": "other",
+   "quote": "and the rocky extension, Goleta Point, which is also known as \"Campus Point\".",
+   "look": "Rocky coastline point extending into the Pacific Ocean.",
+   "check": 0.9798473886653832,
+   "confidence": 0.9798473886653832,
+   "passed": true,
+   "x": 0.16,
+   "y": 0.51
+  },
+  {
+   "name": "Storke Plaza",
+   "name_en": "Storke Plaza",
+   "kind": "quad",
+   "quote": "It can be seen from most places on campus, and it overlooks Storke Plaza.",
+   "look": "Open campus plaza beneath a tall tower.",
+   "check": 0.9707372478164948,
+   "confidence": 0.9707372478164948,
+   "passed": true,
+   "x": 0.61,
+   "y": 0.56
+  },
+  {
+   "name": "Arts Library",
+   "name_en": "Arts Library",
+   "kind": "library",
+   "quote": "The UCSB Libraries, consisting of the Davidson Library and the Arts Library",
+   "look": "Plain library building.",
+   "check": 0.9690054225951636,
+   "confidence": 0.9690054225951636,
+   "passed": true,
+   "x": 0.4,
+   "y": 0.18
+  }
+ ],
+ "tokens": 10033,
+ "seconds": 27
+}

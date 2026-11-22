@@ -1,0 +1,104 @@
+{
+ "school": "sjtu",
+ "name": "上海交通大学",
+ "at": "2026-11-22T00:11:44.586Z",
+ "source": "https://zh.wikipedia.org/wiki/%E4%B8%8A%E6%B5%B7%E4%BA%A4%E9%80%9A%E5%A4%A7%E5%AD%A6",
+ "character": "The large Minhang campus sits near the Huangpu River, divided by an expressway, with Siyuan Lake beside the southern teaching buildings.",
+ "map": "/art/map/sjtu.jpg",
+ "landmarks": [
+  {
+   "name": "思源湖",
+   "name_en": "Siyuan Lake",
+   "kind": "lake",
+   "quote": "南部建有三座教学楼，其侧为思源湖",
+   "look": "Plain lake beside three teaching buildings.",
+   "check": 0.9779660798581783,
+   "confidence": 0.9779660798581783,
+   "passed": true,
+   "x": 0.55,
+   "y": 0.87
+  },
+  {
+   "name": "菁菁堂",
+   "name_en": "Jingjing Hall",
+   "kind": "hall",
+   "quote": "程及美术馆、南区体育场、光明体育场、体育馆新馆、菁菁堂、老行政楼等功能性建筑分布其中。",
+   "look": "Plain functional campus hall.",
+   "check": 0.9746116080036498,
+   "confidence": 0.9746116080036498,
+   "passed": true,
+   "x": 0.32,
+   "y": 0.35
+  },
+  {
+   "name": "程及美术馆",
+   "name_en": "Cheng Ji Art Museum",
+   "kind": "museum",
+   "quote": "程及美术馆、南区体育场、光明体育场、体育馆新馆、菁菁堂、老行政楼等功能性建筑分布其中。",
+   "look": "Plain modern art museum building.",
+   "check": 0.9719776462644169,
+   "confidence": 0.9719776462644169,
+   "passed": true,
+   "x": 0.74,
+   "y": 0.36
+  },
+  {
+   "name": "图书馆新馆",
+   "name_en": "New Library",
+   "kind": "library",
+   "quote": "中部有图书馆新馆、新行政楼以及法学院、媒设、人文学院等院系大楼。",
+   "look": "Plain central library building.",
+   "check": 0.9779096086689371,
+   "confidence": 0.9779096086689371,
+   "passed": true,
+   "x": 0.52,
+   "y": 0.33
+  },
+  {
+   "name": "南区体育场",
+   "name_en": "South Stadium",
+   "kind": "stadium",
+   "quote": "程及美术馆、南区体育场、光明体育场、体育馆新馆、菁菁堂、老行政楼等功能性建筑分布其中。",
+   "look": "Plain outdoor campus stadium.",
+   "check": 0.9626652233595437,
+   "confidence": 0.9626652233595437,
+   "passed": true,
+   "x": 0.22,
+   "y": 0.74
+  },
+  {
+   "name": "光明体育场",
+   "name_en": "Guangming Stadium",
+   "kind": "stadium",
+   "quote": "程及美术馆、南区体育场、光明体育场、体育馆新馆、菁菁堂、老行政楼等功能性建筑分布其中。",
+   "look": "Plain outdoor campus stadium.",
+   "check": 0.9708887078620859,
+   "confidence": 0.9708887078620859,
+   "passed": true,
+   "x": 0.53,
+   "y": 0.14
+  },
+  {
+   "name": "体育馆新馆",
+   "name_en": "New Gymnasium",
+   "kind": "stadium",
+   "quote": "程及美术馆、南区体育场、光明体育场、体育馆新馆、菁菁堂、老行政楼等功能性建筑分布其中。",
+   "look": "Plain indoor gymnasium building.",
+   "check": 0.9763222902181478,
+   "confidence": 0.9763222902181478,
+   "passed": true
+  },
+  {
+   "name": "老行政楼",
+   "name_en": "Old Administration Building",
+   "kind": "other",
+   "quote": "程及美术馆、南区体育场、光明体育场、体育馆新馆、菁菁堂、老行政楼等功能性建筑分布其中。",
+   "look": "Plain older administration building.",
+   "check": 0.9749585818478443,
+   "confidence": 0.9749585818478443,
+   "passed": true
+  }
+ ],
+ "tokens": 14100,
+ "seconds": 30
+}

@@ -1,0 +1,72 @@
+{
+ "school": "jhu",
+ "name": "Johns Hopkins University",
+ "at": "2026-11-22T00:13:35.962Z",
+ "source": "https://en.wikipedia.org/wiki/Johns%20Hopkins%20University",
+ "character": "Most buildings on the Homewood campus are modeled after Federal architecture, with no structure taller than Gilman Hall.",
+ "map": "/art/map/jhu.jpg",
+ "landmarks": [
+  {
+   "name": "Gilman Hall",
+   "name_en": "Gilman Hall",
+   "kind": "hall",
+   "quote": "no structure can be taller than Gilman Hall, the flagship academic building.",
+   "look": "Flagship academic hall, tallest building on campus, Federal-style architecture.",
+   "check": 0.9806465947435253,
+   "confidence": 0.9806465947435253,
+   "passed": true,
+   "x": 0.5,
+   "y": 0.35
+  },
+  {
+   "name": "Milton S. Eisenhower Library",
+   "name_en": "Milton S. Eisenhower Library",
+   "kind": "library",
+   "quote": "the Milton S. Eisenhower Library (the main library of the Homewood campus)",
+   "look": "Six-story library with only two stories above ground, shorter than Gilman Hall.",
+   "check": 0.966433207688601,
+   "confidence": 0.966433207688601,
+   "passed": true,
+   "x": 0.29,
+   "y": 0.69
+  },
+  {
+   "name": "Homewood House",
+   "name_en": "Homewood House",
+   "kind": "other",
+   "quote": "Carroll's Homewood House is considered one of the finest examples of Federal architecture",
+   "look": "Historic house in classic Federal architecture style.",
+   "check": 0.8281233768302927,
+   "confidence": 0.8281233768302927,
+   "passed": true,
+   "x": 0.86,
+   "y": 0.34
+  },
+  {
+   "name": "Brody Learning Commons",
+   "name_en": "Brody Learning Commons",
+   "kind": "library",
+   "quote": "A four-story expansion to the library, known as the Brody Learning Commons",
+   "look": "Four-story library expansion attached to the main library.",
+   "check": 0.9784438591387489,
+   "confidence": 0.9784438591387489,
+   "passed": true,
+   "x": 0.68,
+   "y": 0.71
+  },
+  {
+   "name": "Hutzler Reading Room",
+   "name_en": "Hutzler Reading Room",
+   "kind": "other",
+   "quote": "the Hutzler Reading Room (\"The Hut\") in Gilman Hall",
+   "look": "Reading room located inside Gilman Hall.",
+   "check": 0.9684417295017561,
+   "confidence": 0.9684417295017561,
+   "passed": true,
+   "x": 0.6,
+   "y": 0.44
+  }
+ ],
+ "tokens": 9547,
+ "seconds": 57
+}

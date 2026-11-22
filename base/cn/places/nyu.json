@@ -1,0 +1,104 @@
+{
+ "school": "nyu",
+ "name": "New York University",
+ "at": "2026-11-22T00:14:41.490Z",
+ "source": "https://en.wikipedia.org/wiki/New%20York%20University",
+ "character": null,
+ "map": "/art/map/nyu.jpg",
+ "landmarks": [
+  {
+   "name": "Washington Square Park",
+   "name_en": "Washington Square Park",
+   "kind": "quad",
+   "quote": "The core of NYU consists of buildings that surround Washington Square Park.",
+   "look": "An urban park functioning as a central campus quad surrounded by buildings.",
+   "check": 0.979145767378042,
+   "confidence": 0.979145767378042,
+   "passed": true,
+   "x": 0.37,
+   "y": 0.32
+  },
+  {
+   "name": "Washington Square Arch",
+   "name_en": "Washington Square Arch",
+   "kind": "other",
+   "quote": "The Washington Square Arch is an unofficial symbol of NYU.",
+   "look": "A plain monumental arch standing as a campus symbol.",
+   "check": 0.8414989789297159,
+   "confidence": 0.8414989789297159,
+   "passed": true,
+   "x": 0.46,
+   "y": 0.15
+  },
+  {
+   "name": "Elmer Holmes Bobst Library",
+   "name_en": "Elmer Holmes Bobst Library",
+   "kind": "library",
+   "quote": "The Elmer Holmes Bobst Library, built between 1967 and 1972, is the largest library at NYU",
+   "look": "A plain 12-story rectangular library building on the southern edge of the park.",
+   "check": 0.9828871557095776,
+   "confidence": 0.9828871557095776,
+   "passed": true,
+   "x": 0.53,
+   "y": 0.52
+  },
+  {
+   "name": "Jeffrey S. Gould Plaza",
+   "name_en": "Jeffrey S. Gould Plaza",
+   "kind": "quad",
+   "quote": "The Jeffrey S. Gould Plaza, located between Washington Square East and Mercer Street on West 4th Street",
+   "look": "A plain open urban plaza surrounded by academic buildings.",
+   "check": 0.9759548695740634,
+   "confidence": 0.9759548695740634,
+   "passed": true,
+   "x": 0.83,
+   "y": 0.3
+  },
+  {
+   "name": "Vanderbilt Hall",
+   "name_en": "Vanderbilt Hall",
+   "kind": "hall",
+   "quote": "Vanderbilt Hall, the main building for the School of Law, is located near the southwest corner of Washington Square",
+   "look": "A plain academic hall near the southwest corner of the square.",
+   "check": 0.9785919526688768,
+   "confidence": 0.9785919526688768,
+   "passed": true,
+   "x": 0.16,
+   "y": 0.72
+  },
+  {
+   "name": "Coral Tower",
+   "name_en": "Coral Tower",
+   "kind": "tower",
+   "quote": "priority residence halls of Carlyle Court, Palladium Residence Hall, Alumni Hall, Coral Tower, Thirteenth Street Hall",
+   "look": "A plain tall residential tower.",
+   "check": 0.9779355164644132,
+   "confidence": 0.9779355164644132,
+   "passed": true,
+   "x": 0.9,
+   "y": 0.73
+  },
+  {
+   "name": "Goddard Hall",
+   "name_en": "Goddard Hall",
+   "kind": "hall",
+   "quote": "Undergraduate residence halls in the immediate surroundings of Washington Square include Goddard Hall, Lipton Hall, and Weinstein Hall",
+   "look": "A plain undergraduate residence hall near Washington Square.",
+   "check": 0.99,
+   "confidence": 0.99,
+   "passed": true
+  },
+  {
+   "name": "Tamiment Library",
+   "name_en": "Tamiment Library",
+   "kind": "library",
+   "quote": "Bobst Library also houses the Tamiment Library, which holds collections in labor history",
+   "look": "A plain library interior housed within Bobst Library.",
+   "check": 0.980316104606134,
+   "confidence": 0.980316104606134,
+   "passed": true
+  }
+ ],
+ "tokens": 10195,
+ "seconds": 32
+}

@@ -1,0 +1,793 @@
+{
+ "school": "lehigh",
+ "name": "Lehigh University",
+ "at": "2026-11-22T00:22:15.292Z",
+ "seconds": 43,
+ "tokens": 92424,
+ "entities": [
+  {
+   "id": "lehigh-0e59cb0089",
+   "type": "Event",
+   "school": "lehigh",
+   "name": "Light Up Night 2026",
+   "tier": 1,
+   "fields": {
+    "url": "https://eventscalendar.lehigh.edu/event/light-up-night-2026",
+    "needs": [
+     "find_my_people",
+     "rest_and_recover"
+    ],
+    "start": "2026-12-03T16:30",
+    "summary": "Lehigh University's 6th annual Light Up Night celebrates the season with holiday lights, hot cocoa, a photo booth, music, and giveaways.",
+    "event_kind": "activity",
+    "venue_name": "Farrington Square Courtyard",
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-03T16:30",
+      "end": "2026-12-03T18:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "lehigh-f0dfd447ed",
+   "type": "Event",
+   "school": "lehigh",
+   "name": "AI-Powered Population Health and Preventive Care",
+   "tier": 1,
+   "fields": {
+    "url": "https://eventscalendar.lehigh.edu/event/ai-powered-population-health-and-preventive-care",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-23T12:00",
+    "summary": "A virtual colloquium by Lehigh's College of Health exploring how AI is reshaping care delivery and proactive community health.",
+    "event_kind": "lecture",
+    "venue_name": "Virtual Event",
+    "organisation_name": "College of Health",
+    "speaker": "Bart Smoot ’83, Michelle Mulcahy ’03",
+    "occurrences": [
+     {
+      "start": "2026-11-23T12:00",
+      "end": "2026-11-23T13:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "lehigh-a89d40b165",
+   "type": "Event",
+   "school": "lehigh",
+   "name": "Student Jazz Concert: Jazz Orchestra, Big Band Jazz Combos",
+   "tier": 1,
+   "fields": {
+    "url": "https://eventscalendar.lehigh.edu/event/student-jazz-concert-jazz-orchestra-big-band-jazz-combos",
+    "needs": [
+     "make_and_express",
+     "rest_and_recover"
+    ],
+    "start": "2026-12-04T20:00",
+    "summary": "Lehigh students and faculty jazz musicians present their fall concert, directed by Bill Warfield, at Baker Hall.",
+    "event_kind": "activity",
+    "venue_name": "Baker Hall",
+    "organisation_name": "Zoellner Arts Center",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-04T20:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "lehigh-951f82cb15",
+   "type": "Event",
+   "school": "lehigh",
+   "name": "Lehigh University Choral Arts: Christmas Vespers",
+   "tier": 1,
+   "fields": {
+    "url": "https://eventscalendar.lehigh.edu/event/lehigh_university_choral_arts_christmas_vespers_4063",
+    "needs": [
+     "rest_and_recover",
+     "find_my_people"
+    ],
+    "start": "2026-12-06T16:00",
+    "summary": "Lehigh University Choral Arts presents its annual free Christmas Vespers concert at Packer Memorial Church.",
+    "event_kind": "activity",
+    "venue_name": "Packer Memorial Church",
+    "organisation_name": "Lehigh University Choral Arts",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-06T16:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "lehigh-31f6ed22bf",
+   "type": "Event",
+   "school": "lehigh",
+   "name": "Masters in Data Science Virtual Information Session",
+   "tier": 1,
+   "fields": {
+    "url": "https://eventscalendar.lehigh.edu/event/masters-in-data-science-virtual-information-sesison",
+    "needs": [
+     "explore_a_field",
+     "decide_a_direction"
+    ],
+    "start": "2026-11-24T12:30",
+    "summary": "A virtual information session for prospective students to learn about Lehigh University's Masters in Data Science program from professors and students.",
+    "event_kind": "other",
+    "venue_name": "Virtual Event",
+    "organisation_name": "Data Science, P.C. Rossin College of Engineering and Applied Science, University Events",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-24T12:30",
+      "end": "2026-11-24T13:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "lehigh-5b043ff77b",
+   "type": "Event",
+   "school": "lehigh",
+   "name": "Unfinished Chapter: The First 250 Years of American Liberty, a Libraries Exhibition",
+   "tier": 1,
+   "fields": {
+    "url": "https://eventscalendar.lehigh.edu/event/unfinished-chapter-the-first-250-years-of-american-liberty-a-libraries-exhibition",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-23T08:00",
+    "summary": "An exhibition by Lehigh Libraries examining the history of American freedom through rare publications, historical texts, and student-curated reflections.",
+    "event_kind": "exhibition",
+    "venue_name": "Linderman Library",
+    "organisation_name": "Lehigh Libraries",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-23T08:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "lehigh-ade3904bd7",
+   "type": "Event",
+   "school": "lehigh",
+   "name": "Lehigh University Graduate Writing Group",
+   "tier": 1,
+   "fields": {
+    "url": "https://eventscalendar.lehigh.edu/event/lehigh-university-graduate-writing-group",
+    "needs": [
+     "build_a_skill",
+     "find_my_people"
+    ],
+    "start": "2026-11-23T08:30",
+    "summary": "A biweekly writing group providing graduate students and postdocs with dedicated, focused time, coffee, and snacks to work on theses or manuscripts.",
+    "event_kind": "workshop",
+    "venue_name": "Fairchild-Martindale Library (EWFM), Room 379",
+    "organisation_name": "The Graduate Life Office and Writing Across the Curriculum",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-23T08:30",
+      "end": "2026-11-23T00:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "lehigh-d3596082f9",
+   "type": "Event",
+   "school": "lehigh",
+   "name": "At LUAG through Dec. 4. | This Land: Reimagining the United States of America on its 250th Anniversary",
+   "tier": 1,
+   "fields": {
+    "url": "https://eventscalendar.lehigh.edu/event/at-luag-through-dec-4-this-land-reimagining-the-united-states-of-america-on-its-250th-anniversary",
+    "needs": [
+     "explore_a_field",
+     "make_and_express"
+    ],
+    "start": "2026-11-21",
+    "summary": "An exhibition at LUAG exploring identity, belonging, and shared American histories through maps, sonic metaphors, visual poetry, and interactive spaces.",
+    "event_kind": "exhibition",
+    "venue_name": "Lehigh University Art Galleries (LUAG), Main Gallery",
+    "organisation_name": "Lehigh University Art Galleries (LUAG)",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "lehigh-eb10d4faef",
+   "type": "Event",
+   "school": "lehigh",
+   "name": "Information Session: PhD in Industrial and Systems Engineering",
+   "tier": 1,
+   "fields": {
+    "url": "https://eventscalendar.lehigh.edu/event/information-session-phd-in-industrial-and-systems-engineering-3158",
+    "needs": [
+     "explore_a_field",
+     "decide_a_direction"
+    ],
+    "start": "2026-11-30T09:00",
+    "summary": "An online information session about Lehigh University's PhD program in Industrial and Systems Engineering, covering research, funding, and career opportunities.",
+    "event_kind": "other",
+    "venue_name": "Virtual Event",
+    "organisation_name": "Industrial and Systems Engineering Department",
+    "speaker": "prof. Frank E. Curtis",
+    "occurrences": [
+     {
+      "start": "2026-11-30T09:00",
+      "end": "2026-11-30T10:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "lehigh-22c4138015",
+   "type": "Event",
+   "school": "lehigh",
+   "name": "Career Lab",
+   "tier": 1,
+   "fields": {
+    "url": "https://eventscalendar.lehigh.edu/event/career-lab-1279",
+    "needs": [
+     "get_mentorship_and_feedback",
+     "decide_a_direction"
+    ],
+    "start": "2026-11-23T11:00",
+    "summary": "A walk-in Career Lab where undergraduate students can get resume reviews, career advice, and internship guidance from the Career Team.",
+    "event_kind": "activity",
+    "venue_name": "Maginnes Hall",
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-23T11:00",
+      "end": "2026-11-23T16:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "lehigh-aaa24971f1",
+   "type": "Event",
+   "school": "lehigh",
+   "name": "Eureka! Idea Bounce (Step One of the Student Venture Program)",
+   "tier": 1,
+   "fields": {
+    "url": "https://eventscalendar.lehigh.edu/event/eureka-idea-bounce-step-one-of-the-student-venture-program-4770",
+    "needs": [
+     "get_mentorship_and_feedback",
+     "build_a_skill"
+    ],
+    "start": "2026-11-24T12:15",
+    "summary": "A workshop where undergraduate students can bounce and validate venture ideas as step one of the Eureka! Student Venture Program.",
+    "event_kind": "workshop",
+    "venue_name": "472 Vine Street, Baker Bullpen (308)",
+    "organisation_name": "Entrepreneurship at Lehigh",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-24T12:15",
+      "end": "2026-11-24T13:15"
+     }
+    ]
+   }
+  },
+  {
+   "id": "lehigh-f25fdc02e2",
+   "type": "Event",
+   "school": "lehigh",
+   "name": "AI on Our Terms: A Community Storytelling of AI",
+   "tier": 1,
+   "fields": {
+    "url": "https://eventscalendar.lehigh.edu/event/ai-on-our-terms-a-community-storytelling-of-ai",
+    "needs": [
+     "explore_a_field",
+     "find_my_people"
+    ],
+    "start": "2026-12-01T10:30",
+    "summary": "A community panel discussion organized by COMM 351/451 Human-Centered AI exploring AI futures, environmental impact, artistic identity, and community thriving.",
+    "event_kind": "lecture",
+    "venue_name": "CIRCLE, Fairchild Martindale Library",
+    "organisation_name": "COMM 351/451 Human-Centered AI",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-01T10:30",
+      "end": "2026-12-01T12:30"
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "lehigh-0e59cb0089",
+   "field": "title",
+   "quote": "Light Up Night 2026",
+   "url": "https://eventscalendar.lehigh.edu/event/light-up-night-2026",
+   "check_confidence": 0.9710837511646139,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-0e59cb0089",
+   "field": "date",
+   "quote": "Thursday, December 3, 2026 4:30pm to 6pm",
+   "url": "https://eventscalendar.lehigh.edu/event/light-up-night-2026",
+   "check_confidence": 0.9643725443242511,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-0e59cb0089",
+   "field": "start_time",
+   "quote": "16:30",
+   "url": "https://eventscalendar.lehigh.edu/event/light-up-night-2026",
+   "check_confidence": 0.9767078968831677,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-0e59cb0089",
+   "field": "venue_name",
+   "quote": "Farrington Square Courtyard",
+   "url": "https://eventscalendar.lehigh.edu/event/light-up-night-2026",
+   "check_confidence": 0.964130643858028,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-f0dfd447ed",
+   "field": "title",
+   "quote": "AI-Powered Population Health and Preventive Care",
+   "url": "https://eventscalendar.lehigh.edu/event/ai-powered-population-health-and-preventive-care",
+   "check_confidence": 0.9709691612251626,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-f0dfd447ed",
+   "field": "date",
+   "quote": "Monday, November 23, 2026 12pm to 1:30pm",
+   "url": "https://eventscalendar.lehigh.edu/event/ai-powered-population-health-and-preventive-care",
+   "check_confidence": 0.9708039055371553,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-f0dfd447ed",
+   "field": "start_time",
+   "quote": "12:00",
+   "url": "https://eventscalendar.lehigh.edu/event/ai-powered-population-health-and-preventive-care",
+   "check_confidence": 0.9702448269096585,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-f0dfd447ed",
+   "field": "venue_name",
+   "quote": "Virtual Event",
+   "url": "https://eventscalendar.lehigh.edu/event/ai-powered-population-health-and-preventive-care",
+   "check_confidence": 0.9693432676326019,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-f0dfd447ed",
+   "field": "organisation_name",
+   "quote": "College of Health",
+   "url": "https://eventscalendar.lehigh.edu/event/ai-powered-population-health-and-preventive-care",
+   "check_confidence": 0.981544391092355,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-f0dfd447ed",
+   "field": "speaker",
+   "quote": "Bart Smoot ’83, Michelle Mulcahy ’03",
+   "url": "https://eventscalendar.lehigh.edu/event/ai-powered-population-health-and-preventive-care",
+   "check_confidence": 0.9616288683687821,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-a89d40b165",
+   "field": "title",
+   "quote": "Student Jazz Concert: Jazz Orchestra, Big Band Jazz Combos",
+   "url": "https://eventscalendar.lehigh.edu/event/student-jazz-concert-jazz-orchestra-big-band-jazz-combos",
+   "check_confidence": 0.9755006342834448,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-a89d40b165",
+   "field": "date",
+   "quote": "Friday, December 4, 2026 8pm",
+   "url": "https://eventscalendar.lehigh.edu/event/student-jazz-concert-jazz-orchestra-big-band-jazz-combos",
+   "check_confidence": 0.9646980354209022,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-a89d40b165",
+   "field": "start_time",
+   "quote": "20:00",
+   "url": "https://eventscalendar.lehigh.edu/event/student-jazz-concert-jazz-orchestra-big-band-jazz-combos",
+   "check_confidence": 0.9817711886822519,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-a89d40b165",
+   "field": "venue_name",
+   "quote": "Baker Hall",
+   "url": "https://eventscalendar.lehigh.edu/event/student-jazz-concert-jazz-orchestra-big-band-jazz-combos",
+   "check_confidence": 0.967556680033802,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-a89d40b165",
+   "field": "organisation_name",
+   "quote": "Zoellner Arts Center",
+   "url": "https://eventscalendar.lehigh.edu/event/student-jazz-concert-jazz-orchestra-big-band-jazz-combos",
+   "check_confidence": 0.896645654185752,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-951f82cb15",
+   "field": "title",
+   "quote": "Lehigh University Choral Arts: Christmas Vespers",
+   "url": "https://eventscalendar.lehigh.edu/event/lehigh_university_choral_arts_christmas_vespers_4063",
+   "check_confidence": 0.9793910349298681,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-951f82cb15",
+   "field": "date",
+   "quote": "Sunday, December 6, 2026 4pm",
+   "url": "https://eventscalendar.lehigh.edu/event/lehigh_university_choral_arts_christmas_vespers_4063",
+   "check_confidence": 0.978641572547008,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-951f82cb15",
+   "field": "start_time",
+   "quote": "16:00",
+   "url": "https://eventscalendar.lehigh.edu/event/lehigh_university_choral_arts_christmas_vespers_4063",
+   "check_confidence": 0.9892885400627539,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-951f82cb15",
+   "field": "venue_name",
+   "quote": "Packer Memorial Church",
+   "url": "https://eventscalendar.lehigh.edu/event/lehigh_university_choral_arts_christmas_vespers_4063",
+   "check_confidence": 0.978059402468561,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-951f82cb15",
+   "field": "organisation_name",
+   "quote": "Lehigh University Choral Arts",
+   "url": "https://eventscalendar.lehigh.edu/event/lehigh_university_choral_arts_christmas_vespers_4063",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-31f6ed22bf",
+   "field": "title",
+   "quote": "Masters in Data Science Virtual Information Session",
+   "url": "https://eventscalendar.lehigh.edu/event/masters-in-data-science-virtual-information-sesison",
+   "check_confidence": 0.9825106191322742,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-31f6ed22bf",
+   "field": "date",
+   "quote": "Tuesday, November 24, 2026 12:30pm to 1:30pm",
+   "url": "https://eventscalendar.lehigh.edu/event/masters-in-data-science-virtual-information-sesison",
+   "check_confidence": 0.9567432129254508,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-31f6ed22bf",
+   "field": "start_time",
+   "quote": "12:30",
+   "url": "https://eventscalendar.lehigh.edu/event/masters-in-data-science-virtual-information-sesison",
+   "check_confidence": 0.9729172725337504,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-31f6ed22bf",
+   "field": "venue_name",
+   "quote": "Virtual Event",
+   "url": "https://eventscalendar.lehigh.edu/event/masters-in-data-science-virtual-information-sesison",
+   "check_confidence": 0.9716438765921603,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-31f6ed22bf",
+   "field": "organisation_name",
+   "quote": "Data Science, P.C. Rossin College of Engineering and Applied Science, University Events",
+   "url": "https://eventscalendar.lehigh.edu/event/masters-in-data-science-virtual-information-sesison",
+   "check_confidence": 0.8270544873180812,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-5b043ff77b",
+   "field": "title",
+   "quote": "Unfinished Chapter: The First 250 Years of American Liberty, a Libraries Exhibition",
+   "url": "https://eventscalendar.lehigh.edu/event/unfinished-chapter-the-first-250-years-of-american-liberty-a-libraries-exhibition",
+   "check_confidence": 0.9695340619037641,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-5b043ff77b",
+   "field": "date",
+   "quote": "Monday, November 23, 2026 8am",
+   "url": "https://eventscalendar.lehigh.edu/event/unfinished-chapter-the-first-250-years-of-american-liberty-a-libraries-exhibition",
+   "check_confidence": 0.9792867970386384,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-5b043ff77b",
+   "field": "start_time",
+   "quote": "08:00",
+   "url": "https://eventscalendar.lehigh.edu/event/unfinished-chapter-the-first-250-years-of-american-liberty-a-libraries-exhibition",
+   "check_confidence": 0.956941736666564,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-5b043ff77b",
+   "field": "venue_name",
+   "quote": "Linderman Library",
+   "url": "https://eventscalendar.lehigh.edu/event/unfinished-chapter-the-first-250-years-of-american-liberty-a-libraries-exhibition",
+   "check_confidence": 0.9670997622010347,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-5b043ff77b",
+   "field": "organisation_name",
+   "quote": "Lehigh Libraries",
+   "url": "https://eventscalendar.lehigh.edu/event/unfinished-chapter-the-first-250-years-of-american-liberty-a-libraries-exhibition",
+   "check_confidence": 0.9838253367738642,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-ade3904bd7",
+   "field": "title",
+   "quote": "Lehigh University Graduate Writing Group",
+   "url": "https://eventscalendar.lehigh.edu/event/lehigh-university-graduate-writing-group",
+   "check_confidence": 0.9806509618042979,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-ade3904bd7",
+   "field": "date",
+   "quote": "Monday, November 23, 2026 8:30am to 12am",
+   "url": "https://eventscalendar.lehigh.edu/event/lehigh-university-graduate-writing-group",
+   "check_confidence": 0.9716611482925208,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-ade3904bd7",
+   "field": "start_time",
+   "quote": "08:30",
+   "url": "https://eventscalendar.lehigh.edu/event/lehigh-university-graduate-writing-group",
+   "check_confidence": 0.966871906417367,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-ade3904bd7",
+   "field": "venue_name",
+   "quote": "Fairchild-Martindale Library (EWFM), Room 379",
+   "url": "https://eventscalendar.lehigh.edu/event/lehigh-university-graduate-writing-group",
+   "check_confidence": 0.9677149625339357,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-ade3904bd7",
+   "field": "organisation_name",
+   "quote": "The Graduate Life Office and Writing Across the Curriculum",
+   "url": "https://eventscalendar.lehigh.edu/event/lehigh-university-graduate-writing-group",
+   "check_confidence": 0.9437210756870454,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-d3596082f9",
+   "field": "title",
+   "quote": "At LUAG through Dec. 4. | This Land: Reimagining the United States of America on its 250th Anniversary",
+   "url": "https://eventscalendar.lehigh.edu/event/at-luag-through-dec-4-this-land-reimagining-the-united-states-of-america-on-its-250th-anniversary",
+   "check_confidence": 0.9526046275702306,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-d3596082f9",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026",
+   "url": "https://eventscalendar.lehigh.edu/event/at-luag-through-dec-4-this-land-reimagining-the-united-states-of-america-on-its-250th-anniversary",
+   "check_confidence": 0.9671886567442559,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-d3596082f9",
+   "field": "venue_name",
+   "quote": "Lehigh University Art Galleries (LUAG), Main Gallery",
+   "url": "https://eventscalendar.lehigh.edu/event/at-luag-through-dec-4-this-land-reimagining-the-united-states-of-america-on-its-250th-anniversary",
+   "check_confidence": 0.9534867020761472,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-d3596082f9",
+   "field": "organisation_name",
+   "quote": "Lehigh University Art Galleries (LUAG)",
+   "url": "https://eventscalendar.lehigh.edu/event/at-luag-through-dec-4-this-land-reimagining-the-united-states-of-america-on-its-250th-anniversary",
+   "check_confidence": 0.9551686093078551,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-eb10d4faef",
+   "field": "title",
+   "quote": "Information Session: PhD in Industrial and Systems Engineering",
+   "url": "https://eventscalendar.lehigh.edu/event/information-session-phd-in-industrial-and-systems-engineering-3158",
+   "check_confidence": 0.98316507257313,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-eb10d4faef",
+   "field": "date",
+   "quote": "Monday, November 30, 2026 9am to 10am",
+   "url": "https://eventscalendar.lehigh.edu/event/information-session-phd-in-industrial-and-systems-engineering-3158",
+   "check_confidence": 0.9762108139238409,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-eb10d4faef",
+   "field": "start_time",
+   "quote": "09:00",
+   "url": "https://eventscalendar.lehigh.edu/event/information-session-phd-in-industrial-and-systems-engineering-3158",
+   "check_confidence": 0.9708085702624206,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-eb10d4faef",
+   "field": "venue_name",
+   "quote": "Virtual Event",
+   "url": "https://eventscalendar.lehigh.edu/event/information-session-phd-in-industrial-and-systems-engineering-3158",
+   "check_confidence": 0.9652189463084537,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-eb10d4faef",
+   "field": "organisation_name",
+   "quote": "Industrial and Systems Engineering Department",
+   "url": "https://eventscalendar.lehigh.edu/event/information-session-phd-in-industrial-and-systems-engineering-3158",
+   "check_confidence": 0.9690556648077983,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-eb10d4faef",
+   "field": "speaker",
+   "quote": "prof. Frank E. Curtis",
+   "url": "https://eventscalendar.lehigh.edu/event/information-session-phd-in-industrial-and-systems-engineering-3158",
+   "check_confidence": 0.9852955363882593,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-22c4138015",
+   "field": "title",
+   "quote": "Career Lab",
+   "url": "https://eventscalendar.lehigh.edu/event/career-lab-1279",
+   "check_confidence": 0.9861319445915818,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-22c4138015",
+   "field": "date",
+   "quote": "Monday, November 23, 2026 11am to 4pm",
+   "url": "https://eventscalendar.lehigh.edu/event/career-lab-1279",
+   "check_confidence": 0.9653556799645532,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-22c4138015",
+   "field": "start_time",
+   "quote": "11:00",
+   "url": "https://eventscalendar.lehigh.edu/event/career-lab-1279",
+   "check_confidence": 0.9873794096883058,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-22c4138015",
+   "field": "venue_name",
+   "quote": "Maginnes Hall",
+   "url": "https://eventscalendar.lehigh.edu/event/career-lab-1279",
+   "check_confidence": 0.9807594512731407,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-aaa24971f1",
+   "field": "title",
+   "quote": "Eureka! Idea Bounce (Step One of the Student Venture Program)",
+   "url": "https://eventscalendar.lehigh.edu/event/eureka-idea-bounce-step-one-of-the-student-venture-program-4770",
+   "check_confidence": 0.981983453770859,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-aaa24971f1",
+   "field": "date",
+   "quote": "Tuesday, November 24, 2026 12:15pm to 1:15pm",
+   "url": "https://eventscalendar.lehigh.edu/event/eureka-idea-bounce-step-one-of-the-student-venture-program-4770",
+   "check_confidence": 0.9765538328359619,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-aaa24971f1",
+   "field": "start_time",
+   "quote": "12:15",
+   "url": "https://eventscalendar.lehigh.edu/event/eureka-idea-bounce-step-one-of-the-student-venture-program-4770",
+   "check_confidence": 0.9682967597903586,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-aaa24971f1",
+   "field": "venue_name",
+   "quote": "472 Vine Street, Baker Bullpen (308)",
+   "url": "https://eventscalendar.lehigh.edu/event/eureka-idea-bounce-step-one-of-the-student-venture-program-4770",
+   "check_confidence": 0.96691154783519,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-aaa24971f1",
+   "field": "organisation_name",
+   "quote": "Entrepreneurship at Lehigh",
+   "url": "https://eventscalendar.lehigh.edu/event/eureka-idea-bounce-step-one-of-the-student-venture-program-4770",
+   "check_confidence": 0.9692059764383452,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-f25fdc02e2",
+   "field": "title",
+   "quote": "AI on Our Terms: A Community Storytelling of AI",
+   "url": "https://eventscalendar.lehigh.edu/event/ai-on-our-terms-a-community-storytelling-of-ai",
+   "check_confidence": 0.9866354103985308,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-f25fdc02e2",
+   "field": "date",
+   "quote": "Tuesday, December 1, 2026 10:30am to 12:30pm",
+   "url": "https://eventscalendar.lehigh.edu/event/ai-on-our-terms-a-community-storytelling-of-ai",
+   "check_confidence": 0.974006361116803,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-f25fdc02e2",
+   "field": "start_time",
+   "quote": "10:30",
+   "url": "https://eventscalendar.lehigh.edu/event/ai-on-our-terms-a-community-storytelling-of-ai",
+   "check_confidence": 0.9750143291871842,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-f25fdc02e2",
+   "field": "venue_name",
+   "quote": "CIRCLE, Fairchild Martindale Library",
+   "url": "https://eventscalendar.lehigh.edu/event/ai-on-our-terms-a-community-storytelling-of-ai",
+   "check_confidence": 0.9790874930254551,
+   "passed": true
+  },
+  {
+   "entity_id": "lehigh-f25fdc02e2",
+   "field": "organisation_name",
+   "quote": "COMM 351/451 Human-Centered AI",
+   "url": "https://eventscalendar.lehigh.edu/event/ai-on-our-terms-a-community-storytelling-of-ai",
+   "check_confidence": 0.9641416785143925,
+   "passed": true
+  }
+ ]
+}

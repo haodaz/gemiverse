@@ -1,0 +1,824 @@
+{
+ "school": "princeton",
+ "name": "Princeton University",
+ "at": "2026-11-22T00:11:19.836Z",
+ "seconds": 19,
+ "tokens": 46085,
+ "entities": [
+  {
+   "id": "princeton-7772595763",
+   "type": "Event",
+   "school": "princeton",
+   "name": "Silent Book Club",
+   "tier": 1,
+   "fields": {
+    "url": "https://libcal.princeton.edu/event/17384491",
+    "needs": [
+     "find_my_people",
+     "rest_and_recover"
+    ],
+    "start": "2026-11-29T14:00",
+    "summary": "A low-pressure reading community where members bring their own books to read together in quiet companionship.",
+    "event_kind": "activity",
+    "venue_name": "Commons Library Curiosity Studio",
+    "organisation_name": "Princeton University Library",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-29T14:00",
+      "end": "2026-11-29T16:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "princeton-de5aa38570",
+   "type": "Event",
+   "school": "princeton",
+   "name": "Digital Scholarship Foundations: Static Websites (4 of 4)",
+   "tier": 1,
+   "fields": {
+    "url": "https://libcal.princeton.edu/event/17356230",
+    "needs": [
+     "build_a_skill",
+     "explore_a_field"
+    ],
+    "start": "2026-12-02T10:30",
+    "summary": "The final session of a four-part Princeton University Library workshop series on building static websites, covering version control, metadata, and web publishing.",
+    "event_kind": "workshop",
+    "venue_name": "Firestone Library",
+    "organisation_name": "Princeton University Library",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-02T10:30",
+      "end": "2026-12-02T12:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "princeton-e0168183a6",
+   "type": "Event",
+   "school": "princeton",
+   "name": "Responsible AI: Crafting a Research Dataset",
+   "tier": 1,
+   "fields": {
+    "url": "https://libcal.princeton.edu/event/17407761",
+    "needs": [
+     "build_a_skill",
+     "explore_a_field"
+    ],
+    "start": "2026-12-02T15:00",
+    "summary": "A Princeton University Library workshop on building a reusable end-to-end research dataset pipeline and reviewing AI-assisted outputs.",
+    "event_kind": "workshop",
+    "venue_name": "Commons Library Classroom (D112)",
+    "organisation_name": "Princeton University Library",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-02T15:00",
+      "end": "2026-12-02T16:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "princeton-5e6790aa08",
+   "type": "Event",
+   "school": "princeton",
+   "name": "Guided tour: The Art of Japanese Publishing",
+   "tier": 1,
+   "fields": {
+    "url": "https://libcal.princeton.edu/event/17227495",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-24T12:30",
+    "summary": "A 30-minute guided tour of the Japanese publishing exhibition at Princeton's Milberg Gallery, featuring rare illustrated books from Marquand Library.",
+    "event_kind": "exhibition",
+    "venue_name": "Milberg Gallery",
+    "organisation_name": "Princeton University Library",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-24T12:30",
+      "end": "2026-11-24T13:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "princeton-e38c76e754",
+   "type": "Event",
+   "school": "princeton",
+   "name": "The Cretaceous World of Egg Mountain: 150 Years of Princeton Paleontology",
+   "tier": 1,
+   "fields": {
+    "url": "https://libcal.princeton.edu/event/17410534",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-12-02T17:00",
+    "summary": "An event showcasing real fossils and publications from Princeton's Geosciences collection to explore 150 years of Princeton vertebrate paleontology.",
+    "event_kind": "exhibition",
+    "venue_name": "Commons Library Curiosity Studio",
+    "organisation_name": "Princeton University Library",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-02T17:00",
+      "end": "2026-12-02T18:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "princeton-9f27cebc6f",
+   "type": "Event",
+   "school": "princeton",
+   "name": "Book Recommendations",
+   "tier": 1,
+   "fields": {
+    "url": "https://libcal.princeton.edu/event/17391649",
+    "needs": [
+     "rest_and_recover",
+     "navigate_systems"
+    ],
+    "start": "2026-12-07T13:00",
+    "summary": "Tell a librarian what you enjoyed recently and get book recommendations for winter break at Firestone Lobby.",
+    "event_kind": "activity",
+    "venue_name": "Firestone Lobby",
+    "organisation_name": "Princeton University Library",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-07T13:00",
+      "end": "2026-12-07T14:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "princeton-1071672225",
+   "type": "Event",
+   "school": "princeton",
+   "name": "Friends of PUL Small Talk: A Librarian's War with Molly Guptill Manning",
+   "tier": 1,
+   "fields": {
+    "url": "https://libcal.princeton.edu/event/17405009",
+    "needs": [
+     "explore_a_field",
+     "find_my_people"
+    ],
+    "start": "2026-12-03T16:00",
+    "summary": "Molly Guptill Manning will discuss Ray Trautman, the librarian behind the Armed Services Editions during World War II and his post-war literacy advocacy.",
+    "event_kind": "lecture",
+    "venue_name": "Center for Modern Aging (formerly PSRC), 101 Poor Farm Road, Princeton, NJ 08540",
+    "organisation_name": "Friends of Princeton University Library",
+    "speaker": "Molly Guptill Manning",
+    "occurrences": [
+     {
+      "start": "2026-12-03T16:00",
+      "end": "2026-12-03T17:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "princeton-98cd8d77a2",
+   "type": "Event",
+   "school": "princeton",
+   "name": "Fieldwork on Fire: What you don't know about the fires in Indonesia threatening orangutans with rapid extinction",
+   "tier": 1,
+   "fields": {
+    "url": "https://libcal.princeton.edu/event/17963998",
+    "needs": [
+     "explore_a_field",
+     "contribute_beyond_self"
+    ],
+    "start": "2026-12-03T17:00",
+    "summary": "Dr. Andrea DiGiorgio, Wahyu Nurbandi, and Maria Kochis discuss Indonesian forest fires threatening orangutans and related library resources.",
+    "event_kind": "lecture",
+    "venue_name": "Commons Library Curiosity Studio",
+    "organisation_name": "Princeton University Library",
+    "speaker": "Dr. Andrea DiGiorgio, Wahyu Nurbandi, Maria Kochis",
+    "occurrences": [
+     {
+      "start": "2026-12-03T17:00",
+      "end": "2026-12-03T18:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "princeton-97216198ee",
+   "type": "Event",
+   "school": "princeton",
+   "name": "Public lecture: Black Studies on 135th Street",
+   "tier": 1,
+   "fields": {
+    "url": "https://libcal.princeton.edu/event/17875543",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-12-09T16:00",
+    "summary": "Barrye Brown and Laura E. Helton discuss their new book on the founding and future of the Schomburg Collection.",
+    "event_kind": "lecture",
+    "venue_name": "Special Collections Large Classroom - C Floor",
+    "organisation_name": "Princeton University Library",
+    "speaker": "Barrye Brown and Laura E. Helton",
+    "occurrences": [
+     {
+      "start": "2026-12-09T16:00",
+      "end": "2026-12-09T18:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "princeton-14dd2dc873",
+   "type": "Event",
+   "school": "princeton",
+   "name": "30 Minutes Towards Better Bibliographies and Footnotes! (online)",
+   "tier": 1,
+   "fields": {
+    "url": "https://libcal.princeton.edu/event/17588701",
+    "needs": [
+     "build_a_skill",
+     "navigate_systems"
+    ],
+    "start": "2026-12-11T12:00",
+    "summary": "A 30-minute virtual workshop on using Zotero and similar citation tools to import and manage references.",
+    "event_kind": "workshop",
+    "venue_name": null,
+    "organisation_name": "Princeton University Library",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-11T12:00",
+      "end": "2026-12-11T12:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "princeton-326d19539d",
+   "type": "Event",
+   "school": "princeton",
+   "name": "Poetry, Prose and the Black Print Tradition",
+   "tier": 1,
+   "fields": {
+    "url": "https://libcal.princeton.edu/event/17874868",
+    "needs": [
+     "explore_a_field",
+     "build_a_skill"
+    ],
+    "start": "2026-12-09T13:30",
+    "summary": "A half-day event at Princeton University Library examining new approaches to and research in Black bibliography, featuring a workshop and lecture.",
+    "event_kind": "workshop",
+    "venue_name": "Special Collections Large Classroom - C Floor",
+    "organisation_name": "Princeton University Library",
+    "speaker": "Jennifer Garcon, Librarian for Modern and Contemporary Collections and Kinohi Nishikawa, Associate Professor of English and African American Studies",
+    "occurrences": [
+     {
+      "start": "2026-12-09T13:30",
+      "end": "2026-12-09T18:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "princeton-e8994867b0",
+   "type": "Event",
+   "school": "princeton",
+   "name": "Special Collections Showcase",
+   "tier": 1,
+   "fields": {
+    "url": "https://libcal.princeton.edu/event/17591333",
+    "needs": [
+     "explore_a_field",
+     "navigate_systems"
+    ],
+    "start": "2026-12-17T14:00",
+    "summary": "Special Collections Librarians will showcase rare objects and answer questions about accessing holdings in Firestone Lobby.",
+    "event_kind": "exhibition",
+    "venue_name": "Firestone Lobby",
+    "organisation_name": "Princeton University Library",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-17T14:00",
+      "end": "2026-12-17T16:00"
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "princeton-7772595763",
+   "field": "title",
+   "quote": "Silent Book Club",
+   "url": "https://libcal.princeton.edu/event/17384491",
+   "check_confidence": 0.9821779068966902,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-7772595763",
+   "field": "date",
+   "quote": "Sunday, November 29, 2026 2:00pm - 4:00pm",
+   "url": "https://libcal.princeton.edu/event/17384491",
+   "check_confidence": 0.9789400751157971,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-7772595763",
+   "field": "start_time",
+   "quote": "14:00",
+   "url": "https://libcal.princeton.edu/event/17384491",
+   "check_confidence": 0.9679444935253588,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-7772595763",
+   "field": "venue_name",
+   "quote": "Commons Library Curiosity Studio",
+   "url": "https://libcal.princeton.edu/event/17384491",
+   "check_confidence": 0.9718492448894918,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-7772595763",
+   "field": "organisation_name",
+   "quote": "Princeton University Library",
+   "url": "https://libcal.princeton.edu/event/17384491",
+   "check_confidence": 0.9742256028949751,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-de5aa38570",
+   "field": "title",
+   "quote": "Digital Scholarship Foundations: Static Websites (4 of 4)",
+   "url": "https://libcal.princeton.edu/event/17356230",
+   "check_confidence": 0.9883578908331984,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-de5aa38570",
+   "field": "date",
+   "quote": "Wednesday, December 2, 2026 10:30am - 12:00pm",
+   "url": "https://libcal.princeton.edu/event/17356230",
+   "check_confidence": 0.9776530400018808,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-de5aa38570",
+   "field": "start_time",
+   "quote": "10:30",
+   "url": "https://libcal.princeton.edu/event/17356230",
+   "check_confidence": 0.9739988376886803,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-de5aa38570",
+   "field": "venue_name",
+   "quote": "Firestone Library",
+   "url": "https://libcal.princeton.edu/event/17356230",
+   "check_confidence": 0.9721778284730653,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-de5aa38570",
+   "field": "organisation_name",
+   "quote": "Princeton University Library",
+   "url": "https://libcal.princeton.edu/event/17356230",
+   "check_confidence": 0.972871984470195,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-e0168183a6",
+   "field": "title",
+   "quote": "Responsible AI: Crafting a Research Dataset",
+   "url": "https://libcal.princeton.edu/event/17407761",
+   "check_confidence": 0.9805898080045073,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-e0168183a6",
+   "field": "date",
+   "quote": "Wednesday, December 2, 2026 3:00pm - 4:00pm",
+   "url": "https://libcal.princeton.edu/event/17407761",
+   "check_confidence": 0.9854971989917484,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-e0168183a6",
+   "field": "start_time",
+   "quote": "15:00",
+   "url": "https://libcal.princeton.edu/event/17407761",
+   "check_confidence": 0.9770657895014805,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-e0168183a6",
+   "field": "venue_name",
+   "quote": "Commons Library Classroom (D112)",
+   "url": "https://libcal.princeton.edu/event/17407761",
+   "check_confidence": 0.9561705900447206,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-e0168183a6",
+   "field": "organisation_name",
+   "quote": "Princeton University Library",
+   "url": "https://libcal.princeton.edu/event/17407761",
+   "check_confidence": 0.979237699684539,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-5e6790aa08",
+   "field": "title",
+   "quote": "Guided tour: The Art of Japanese Publishing",
+   "url": "https://libcal.princeton.edu/event/17227495",
+   "check_confidence": 0.9858017756958788,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-5e6790aa08",
+   "field": "date",
+   "quote": "Tuesday, November 24, 2026 12:30pm - 1:00pm",
+   "url": "https://libcal.princeton.edu/event/17227495",
+   "check_confidence": 0.9762384381219379,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-5e6790aa08",
+   "field": "start_time",
+   "quote": "12:30",
+   "url": "https://libcal.princeton.edu/event/17227495",
+   "check_confidence": 0.9796300635812752,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-5e6790aa08",
+   "field": "venue_name",
+   "quote": "Milberg Gallery",
+   "url": "https://libcal.princeton.edu/event/17227495",
+   "check_confidence": 0.9754882671202626,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-5e6790aa08",
+   "field": "organisation_name",
+   "quote": "Princeton University Library",
+   "url": "https://libcal.princeton.edu/event/17227495",
+   "check_confidence": 0.9529959191982268,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-e38c76e754",
+   "field": "title",
+   "quote": "The Cretaceous World of Egg Mountain: 150 Years of Princeton Paleontology",
+   "url": "https://libcal.princeton.edu/event/17410534",
+   "check_confidence": 0.9798400536057249,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-e38c76e754",
+   "field": "date",
+   "quote": "Wednesday, December 2, 2026\n Time:\n 5:00pm - 6:00pm",
+   "url": "https://libcal.princeton.edu/event/17410534",
+   "check_confidence": 0.9811396931791253,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-e38c76e754",
+   "field": "start_time",
+   "quote": "17:00",
+   "url": "https://libcal.princeton.edu/event/17410534",
+   "check_confidence": 0.9737875597990502,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-e38c76e754",
+   "field": "venue_name",
+   "quote": "Commons Library Curiosity Studio",
+   "url": "https://libcal.princeton.edu/event/17410534",
+   "check_confidence": 0.962834432890154,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-e38c76e754",
+   "field": "organisation_name",
+   "quote": "Princeton University Library",
+   "url": "https://libcal.princeton.edu/event/17410534",
+   "check_confidence": 0.9614262784881978,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-9f27cebc6f",
+   "field": "title",
+   "quote": "Book Recommendations",
+   "url": "https://libcal.princeton.edu/event/17391649",
+   "check_confidence": 0.962983755632561,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-9f27cebc6f",
+   "field": "date",
+   "quote": "Monday, December 7, 2026 1:00pm - 2:00pm",
+   "url": "https://libcal.princeton.edu/event/17391649",
+   "check_confidence": 0.9636717635585075,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-9f27cebc6f",
+   "field": "start_time",
+   "quote": "13:00",
+   "url": "https://libcal.princeton.edu/event/17391649",
+   "check_confidence": 0.9731976952973731,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-9f27cebc6f",
+   "field": "venue_name",
+   "quote": "Firestone Lobby",
+   "url": "https://libcal.princeton.edu/event/17391649",
+   "check_confidence": 0.9608324475729842,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-9f27cebc6f",
+   "field": "organisation_name",
+   "quote": "Princeton University Library",
+   "url": "https://libcal.princeton.edu/event/17391649",
+   "check_confidence": 0.9340288943915401,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-1071672225",
+   "field": "title",
+   "quote": "Friends of PUL Small Talk: A Librarian's War with Molly Guptill Manning",
+   "url": "https://libcal.princeton.edu/event/17405009",
+   "check_confidence": 0.9795692229334162,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-1071672225",
+   "field": "date",
+   "quote": "Thursday, December 3, 2026 4:00pm - 5:00pm",
+   "url": "https://libcal.princeton.edu/event/17405009",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-1071672225",
+   "field": "start_time",
+   "quote": "16:00",
+   "url": "https://libcal.princeton.edu/event/17405009",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-1071672225",
+   "field": "venue_name",
+   "quote": "Center for Modern Aging (formerly PSRC), 101 Poor Farm Road, Princeton, NJ 08540",
+   "url": "https://libcal.princeton.edu/event/17405009",
+   "check_confidence": 0.984194016482992,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-1071672225",
+   "field": "organisation_name",
+   "quote": "Friends of Princeton University Library",
+   "url": "https://libcal.princeton.edu/event/17405009",
+   "check_confidence": 0.955926017223719,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-1071672225",
+   "field": "speaker",
+   "quote": "Molly Guptill Manning",
+   "url": "https://libcal.princeton.edu/event/17405009",
+   "check_confidence": 0.9812864012306044,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-98cd8d77a2",
+   "field": "title",
+   "quote": "Fieldwork on Fire: What you don't know about the fires in Indonesia threatening orangutans with rapid extinction",
+   "url": "https://libcal.princeton.edu/event/17963998",
+   "check_confidence": 0.9802596759638756,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-98cd8d77a2",
+   "field": "date",
+   "quote": "Thursday, December 3, 2026 5:00pm - 6:30pm",
+   "url": "https://libcal.princeton.edu/event/17963998",
+   "check_confidence": 0.9868210583759157,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-98cd8d77a2",
+   "field": "start_time",
+   "quote": "17:00",
+   "url": "https://libcal.princeton.edu/event/17963998",
+   "check_confidence": 0.9876611870446489,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-98cd8d77a2",
+   "field": "venue_name",
+   "quote": "Commons Library Curiosity Studio",
+   "url": "https://libcal.princeton.edu/event/17963998",
+   "check_confidence": 0.9844519079133153,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-98cd8d77a2",
+   "field": "organisation_name",
+   "quote": "Princeton University Library",
+   "url": "https://libcal.princeton.edu/event/17963998",
+   "check_confidence": 0.9659156604128565,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-98cd8d77a2",
+   "field": "speaker",
+   "quote": "Dr. Andrea DiGiorgio, Wahyu Nurbandi, Maria Kochis",
+   "url": "https://libcal.princeton.edu/event/17963998",
+   "check_confidence": 0.9223463768413692,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-97216198ee",
+   "field": "title",
+   "quote": "Public lecture: Black Studies on 135th Street",
+   "url": "https://libcal.princeton.edu/event/17875543",
+   "check_confidence": 0.9863790741317435,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-97216198ee",
+   "field": "date",
+   "quote": "Wednesday, December 9, 2026 4:00pm - 6:00pm",
+   "url": "https://libcal.princeton.edu/event/17875543",
+   "check_confidence": 0.9871879124230543,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-97216198ee",
+   "field": "start_time",
+   "quote": "16:00",
+   "url": "https://libcal.princeton.edu/event/17875543",
+   "check_confidence": 0.985352515000686,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-97216198ee",
+   "field": "venue_name",
+   "quote": "Special Collections Large Classroom - C Floor",
+   "url": "https://libcal.princeton.edu/event/17875543",
+   "check_confidence": 0.9860470266968496,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-97216198ee",
+   "field": "organisation_name",
+   "quote": "Princeton University Library",
+   "url": "https://libcal.princeton.edu/event/17875543",
+   "check_confidence": 0.9857574993150654,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-97216198ee",
+   "field": "speaker",
+   "quote": "Barrye Brown and Laura E. Helton",
+   "url": "https://libcal.princeton.edu/event/17875543",
+   "check_confidence": 0.9609191108742966,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-14dd2dc873",
+   "field": "title",
+   "quote": "30 Minutes Towards Better Bibliographies and Footnotes! (online)",
+   "url": "https://libcal.princeton.edu/event/17588701",
+   "check_confidence": 0.9695255973134932,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-14dd2dc873",
+   "field": "date",
+   "quote": "Friday, December 11, 2026 12:00pm - 12:30pm",
+   "url": "https://libcal.princeton.edu/event/17588701",
+   "check_confidence": 0.9653720078888662,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-14dd2dc873",
+   "field": "start_time",
+   "quote": "12:00",
+   "url": "https://libcal.princeton.edu/event/17588701",
+   "check_confidence": 0.9750021170742931,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-14dd2dc873",
+   "field": "organisation_name",
+   "quote": "Princeton University Library",
+   "url": "https://libcal.princeton.edu/event/17588701",
+   "check_confidence": 0.9758813516721923,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-326d19539d",
+   "field": "title",
+   "quote": "Poetry, Prose and the Black Print Tradition",
+   "url": "https://libcal.princeton.edu/event/17874868",
+   "check_confidence": 0.965297759436109,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-326d19539d",
+   "field": "date",
+   "quote": "Wednesday, December 9, 2026\n Time:\n 1:30pm - 6:00pm",
+   "url": "https://libcal.princeton.edu/event/17874868",
+   "check_confidence": 0.9804370172826326,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-326d19539d",
+   "field": "start_time",
+   "quote": "13:30",
+   "url": "https://libcal.princeton.edu/event/17874868",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-326d19539d",
+   "field": "venue_name",
+   "quote": "Special Collections Large Classroom - C Floor",
+   "url": "https://libcal.princeton.edu/event/17874868",
+   "check_confidence": 0.9785952796670329,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-326d19539d",
+   "field": "organisation_name",
+   "quote": "Princeton University Library",
+   "url": "https://libcal.princeton.edu/event/17874868",
+   "check_confidence": 0.9720557201528364,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-326d19539d",
+   "field": "speaker",
+   "quote": "Jennifer Garcon, Librarian for Modern and Contemporary Collections and Kinohi Nishikawa, Associate Professor of English and African American Studies",
+   "url": "https://libcal.princeton.edu/event/17874868",
+   "check_confidence": 0.9490734635731298,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-e8994867b0",
+   "field": "title",
+   "quote": "Special Collections Showcase",
+   "url": "https://libcal.princeton.edu/event/17591333",
+   "check_confidence": 0.9872085911552008,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-e8994867b0",
+   "field": "date",
+   "quote": "Thursday, December 17, 2026 2:00pm - 4:00pm",
+   "url": "https://libcal.princeton.edu/event/17591333",
+   "check_confidence": 0.9803445764222488,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-e8994867b0",
+   "field": "start_time",
+   "quote": "14:00",
+   "url": "https://libcal.princeton.edu/event/17591333",
+   "check_confidence": 0.9855259416294645,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-e8994867b0",
+   "field": "venue_name",
+   "quote": "Firestone Lobby",
+   "url": "https://libcal.princeton.edu/event/17591333",
+   "check_confidence": 0.9708377200996577,
+   "passed": true
+  },
+  {
+   "entity_id": "princeton-e8994867b0",
+   "field": "organisation_name",
+   "quote": "Princeton University Library",
+   "url": "https://libcal.princeton.edu/event/17591333",
+   "check_confidence": 0.9538871000480993,
+   "passed": true
+  }
+ ]
+}

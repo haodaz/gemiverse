@@ -1,0 +1,23 @@
+{
+ "at": "2026-11-22T00:20:50.755Z",
+ "schools": 75,
+ "with_map": 74,
+ "landmarks_named": 543,
+ "landmarks_confirmed": 533,
+ "tokens": 923304,
+ "failures": [
+  "fudan: only 0 landmarks confirmed",
+  "stanford: text names no landmarks",
+  "muc: text names no landmarks",
+  "neu: no article text",
+  "jlu: text names no landmarks",
+  "tongji: text names no landmarks",
+  "scut: only 1 landmarks confirmed",
+  "uestc: only 1 landmarks confirmed",
+  "nwpu: only 0 landmarks confirmed",
+  "lzu: only 0 landmarks confirmed",
+  "nudt: text names no landmarks",
+  "rutgers: only 1 landmarks confirmed",
+  "ucdavis: no picture drawn"
+ ]
+}

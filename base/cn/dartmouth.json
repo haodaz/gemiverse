@@ -1,0 +1,477 @@
+{
+ "school": "dartmouth",
+ "name": "Dartmouth College",
+ "at": "2026-11-22T00:13:19.469Z",
+ "seconds": 42,
+ "tokens": 40712,
+ "entities": [
+  {
+   "id": "dartmouth-c7e79b7ca3",
+   "type": "Event",
+   "school": "dartmouth",
+   "name": "Broadway in HD: Giant",
+   "tier": 1,
+   "fields": {
+    "url": "https://home.dartmouth.edu/events/event?event=82453",
+    "needs": [
+     "rest_and_recover"
+    ],
+    "start": "2026-11-21T14:00",
+    "summary": "A screening of Mark Rosenblatt's play Giant starring John Lithgow as Roald Dahl, hosted by the Hopkins Center for the Arts.",
+    "event_kind": "other",
+    "venue_name": "Spaulding Auditorium, Hopkins Center for the Arts",
+    "organisation_name": "Hopkins Center for the Arts",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21T14:00",
+      "end": "2026-11-21T16:15"
+     }
+    ]
+   }
+  },
+  {
+   "id": "dartmouth-51051c6db1",
+   "type": "Event",
+   "school": "dartmouth",
+   "name": "Smoothie Saturday",
+   "tier": 1,
+   "fields": {
+    "url": "https://home.dartmouth.edu/events/event?event=82884",
+    "needs": [
+     "rest_and_recover"
+    ],
+    "start": "2026-11-21T10:00",
+    "summary": "Dartmouth Dining Services hosts Smoothie Saturday at The Class of 1953 Commons, offering new smoothie flavors.",
+    "event_kind": "activity",
+    "venue_name": "The Class of 1953 Commons",
+    "organisation_name": "Dining Services (DDS)",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21T10:00",
+      "end": "2026-11-21T15:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "dartmouth-db72c3916b",
+   "type": "Event",
+   "school": "dartmouth",
+   "name": "Monday Morning Meditation",
+   "tier": 1,
+   "fields": {
+    "url": "https://home.dartmouth.edu/events/event?event=82013",
+    "needs": [
+     "rest_and_recover",
+     "find_my_people"
+    ],
+    "start": "2026-11-23T08:00",
+    "summary": "A weekly guided meditation and discussion session open to students, staff, faculty, and community members at Rollins Chapel.",
+    "event_kind": "activity",
+    "venue_name": "Rollins Chapel",
+    "organisation_name": "Mindful Dartmouth, Student Wellness Center, Tucker Center, Wellness at Dartmouth",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-23T08:00",
+      "end": "2026-11-23T09:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "dartmouth-339ebfae9c",
+   "type": "Event",
+   "school": "dartmouth",
+   "name": "Monday Morning Meditation",
+   "tier": 1,
+   "fields": {
+    "url": "https://home.dartmouth.edu/events/event?event=82014",
+    "needs": [
+     "rest_and_recover",
+     "find_my_people"
+    ],
+    "start": "2026-11-30T08:00",
+    "summary": "A weekly guided meditation and discussion session open to students, staff, faculty, and community members at Rollins Chapel.",
+    "event_kind": "activity",
+    "venue_name": "Rollins Chapel",
+    "organisation_name": "Mindful Dartmouth, Student Wellness Center, Tucker Center, Wellness at Dartmouth",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-30T08:00",
+      "end": "2026-11-30T09:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "dartmouth-f17df2a0b8",
+   "type": "Event",
+   "school": "dartmouth",
+   "name": "Full Moon Party",
+   "tier": 1,
+   "fields": {
+    "url": "https://home.dartmouth.edu/events/event?event=83032",
+    "needs": [
+     "find_my_people",
+     "explore_a_field"
+    ],
+    "start": "2026-11-23T18:00",
+    "summary": "A full moon party hosted by the Physics Astronomy Society and Women in Science Project to celebrate the end of fall term.",
+    "event_kind": "activity",
+    "venue_name": "Wilder Hall",
+    "organisation_name": "The Physics Astronomy Society and the Women in Science Project",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-23T18:00",
+      "end": "2026-11-23T19:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "dartmouth-b89b7ec7df",
+   "type": "Event",
+   "school": "dartmouth",
+   "name": "Grading Co-Work Café 2",
+   "tier": 1,
+   "fields": {
+    "url": "https://home.dartmouth.edu/events/event?event=83139",
+    "needs": [
+     "find_my_people"
+    ],
+    "start": "2026-11-30T13:00",
+    "summary": "An informal co-working session with snacks and caffeine where participants can get their grading done alongside others.",
+    "event_kind": "activity",
+    "venue_name": "DCAL (Baker 102)",
+    "organisation_name": "Dartmouth Center for the Advancement of Learning (DCAL), Learning Design and Innovation",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-30T13:00",
+      "end": "2026-11-30T16:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "dartmouth-50aa358b68",
+   "type": "Event",
+   "school": "dartmouth",
+   "name": "PhD Thesis Proposal: Allen Nguyen",
+   "tier": 1,
+   "fields": {
+    "url": "https://home.dartmouth.edu/events/event?event=83276",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-30T14:00",
+    "summary": "Allen Nguyen presents his PhD thesis proposal on optimizing low magnetic energy storage for solid-state transformers and coupled inductors.",
+    "event_kind": "lecture",
+    "venue_name": "Rm 202, Cummings Hall/ Online",
+    "organisation_name": "Thayer School of Engineering",
+    "speaker": "Allen Nguyen",
+    "occurrences": [
+     {
+      "start": "2026-11-30T14:00",
+      "end": "2026-11-30T15:00"
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "dartmouth-c7e79b7ca3",
+   "field": "title",
+   "quote": "Broadway in HD: Giant",
+   "url": "https://home.dartmouth.edu/events/event?event=82453",
+   "check_confidence": 0.980191721308897,
+   "passed": true
+  },
+  {
+   "entity_id": "dartmouth-c7e79b7ca3",
+   "field": "date",
+   "quote": "11/21/2026 2:00 pm - 4:15 pm",
+   "url": "https://home.dartmouth.edu/events/event?event=82453",
+   "check_confidence": 0.9819893841939488,
+   "passed": true
+  },
+  {
+   "entity_id": "dartmouth-c7e79b7ca3",
+   "field": "start_time",
+   "quote": "14:00",
+   "url": "https://home.dartmouth.edu/events/event?event=82453",
+   "check_confidence": 0.9714899018802318,
+   "passed": true
+  },
+  {
+   "entity_id": "dartmouth-c7e79b7ca3",
+   "field": "venue_name",
+   "quote": "Spaulding Auditorium, Hopkins Center for the Arts",
+   "url": "https://home.dartmouth.edu/events/event?event=82453",
+   "check_confidence": 0.9742085717098863,
+   "passed": true
+  },
+  {
+   "entity_id": "dartmouth-c7e79b7ca3",
+   "field": "organisation_name",
+   "quote": "Hopkins Center for the Arts",
+   "url": "https://home.dartmouth.edu/events/event?event=82453",
+   "check_confidence": 0.9772665457528448,
+   "passed": true
+  },
+  {
+   "entity_id": "dartmouth-51051c6db1",
+   "field": "title",
+   "quote": "Smoothie Saturday",
+   "url": "https://home.dartmouth.edu/events/event?event=82884",
+   "check_confidence": 0.9674820737985758,
+   "passed": true
+  },
+  {
+   "entity_id": "dartmouth-51051c6db1",
+   "field": "date",
+   "quote": "11/21/2026 10 am - 3 pm",
+   "url": "https://home.dartmouth.edu/events/event?event=82884",
+   "check_confidence": 0.9750738059600658,
+   "passed": true
+  },
+  {
+   "entity_id": "dartmouth-51051c6db1",
+   "field": "start_time",
+   "quote": "10:00",
+   "url": "https://home.dartmouth.edu/events/event?event=82884",
+   "check_confidence": 0.9739312060414311,
+   "passed": true
+  },
+  {
+   "entity_id": "dartmouth-51051c6db1",
+   "field": "venue_name",
+   "quote": "The Class of 1953 Commons",
+   "url": "https://home.dartmouth.edu/events/event?event=82884",
+   "check_confidence": 0.9857657337472033,
+   "passed": true
+  },
+  {
+   "entity_id": "dartmouth-51051c6db1",
+   "field": "organisation_name",
+   "quote": "Dining Services (DDS)",
+   "url": "https://home.dartmouth.edu/events/event?event=82884",
+   "check_confidence": 0.9713602719558053,
+   "passed": true
+  },
+  {
+   "entity_id": "dartmouth-db72c3916b",
+   "field": "title",
+   "quote": "Monday Morning Meditation",
+   "url": "https://home.dartmouth.edu/events/event?event=82013",
+   "check_confidence": 0.9813624757224774,
+   "passed": true
+  },
+  {
+   "entity_id": "dartmouth-db72c3916b",
+   "field": "date",
+   "quote": "11/23/2026 8 am - 9 am",
+   "url": "https://home.dartmouth.edu/events/event?event=82013",
+   "check_confidence": 0.9781288546436955,
+   "passed": true
+  },
+  {
+   "entity_id": "dartmouth-db72c3916b",
+   "field": "start_time",
+   "quote": "08:00",
+   "url": "https://home.dartmouth.edu/events/event?event=82013",
+   "check_confidence": 0.9757428336928772,
+   "passed": true
+  },
+  {
+   "entity_id": "dartmouth-db72c3916b",
+   "field": "venue_name",
+   "quote": "Rollins Chapel",
+   "url": "https://home.dartmouth.edu/events/event?event=82013",
+   "check_confidence": 0.9756668692073907,
+   "passed": true
+  },
+  {
+   "entity_id": "dartmouth-db72c3916b",
+   "field": "organisation_name",
+   "quote": "Mindful Dartmouth, Student Wellness Center, Tucker Center, Wellness at Dartmouth",
+   "url": "https://home.dartmouth.edu/events/event?event=82013",
+   "check_confidence": 0.9701817473541484,
+   "passed": true
+  },
+  {
+   "entity_id": "dartmouth-339ebfae9c",
+   "field": "title",
+   "quote": "Monday Morning Meditation",
+   "url": "https://home.dartmouth.edu/events/event?event=82014",
+   "check_confidence": 0.9832388107200744,
+   "passed": true
+  },
+  {
+   "entity_id": "dartmouth-339ebfae9c",
+   "field": "date",
+   "quote": "11/30/2026 8 am - 9 am",
+   "url": "https://home.dartmouth.edu/events/event?event=82014",
+   "check_confidence": 0.9781983537040663,
+   "passed": true
+  },
+  {
+   "entity_id": "dartmouth-339ebfae9c",
+   "field": "start_time",
+   "quote": "08:00",
+   "url": "https://home.dartmouth.edu/events/event?event=82014",
+   "check_confidence": 0.9719874867393866,
+   "passed": true
+  },
+  {
+   "entity_id": "dartmouth-339ebfae9c",
+   "field": "venue_name",
+   "quote": "Rollins Chapel",
+   "url": "https://home.dartmouth.edu/events/event?event=82014",
+   "check_confidence": 0.9844325721741013,
+   "passed": true
+  },
+  {
+   "entity_id": "dartmouth-339ebfae9c",
+   "field": "organisation_name",
+   "quote": "Mindful Dartmouth, Student Wellness Center, Tucker Center, Wellness at Dartmouth",
+   "url": "https://home.dartmouth.edu/events/event?event=82014",
+   "check_confidence": 0.9862573987365238,
+   "passed": true
+  },
+  {
+   "entity_id": "dartmouth-f17df2a0b8",
+   "field": "title",
+   "quote": "Full Moon Party",
+   "url": "https://home.dartmouth.edu/events/event?event=83032",
+   "check_confidence": 0.9741120676320102,
+   "passed": true
+  },
+  {
+   "entity_id": "dartmouth-f17df2a0b8",
+   "field": "date",
+   "quote": "11/23/2026 6:00 pm - 7:30 am",
+   "url": "https://home.dartmouth.edu/events/event?event=83032",
+   "check_confidence": 0.9783714915879063,
+   "passed": true
+  },
+  {
+   "entity_id": "dartmouth-f17df2a0b8",
+   "field": "start_time",
+   "quote": "18:00",
+   "url": "https://home.dartmouth.edu/events/event?event=83032",
+   "check_confidence": 0.963314676003623,
+   "passed": true
+  },
+  {
+   "entity_id": "dartmouth-f17df2a0b8",
+   "field": "venue_name",
+   "quote": "Wilder Hall",
+   "url": "https://home.dartmouth.edu/events/event?event=83032",
+   "check_confidence": 0.9594052386874418,
+   "passed": true
+  },
+  {
+   "entity_id": "dartmouth-f17df2a0b8",
+   "field": "organisation_name",
+   "quote": "The Physics Astronomy Society and the Women in Science Project",
+   "url": "https://home.dartmouth.edu/events/event?event=83032",
+   "check_confidence": 0.9638874940878506,
+   "passed": true
+  },
+  {
+   "entity_id": "dartmouth-b89b7ec7df",
+   "field": "title",
+   "quote": "Grading Co-Work Café 2",
+   "url": "https://home.dartmouth.edu/events/event?event=83139",
+   "check_confidence": 0.9739409042593693,
+   "passed": true
+  },
+  {
+   "entity_id": "dartmouth-b89b7ec7df",
+   "field": "date",
+   "quote": "11/30/2026\n 1 pm - 4 pm",
+   "url": "https://home.dartmouth.edu/events/event?event=83139",
+   "check_confidence": 0.9769590086031339,
+   "passed": true
+  },
+  {
+   "entity_id": "dartmouth-b89b7ec7df",
+   "field": "start_time",
+   "quote": "13:00",
+   "url": "https://home.dartmouth.edu/events/event?event=83139",
+   "check_confidence": 0.9814859907542494,
+   "passed": true
+  },
+  {
+   "entity_id": "dartmouth-b89b7ec7df",
+   "field": "venue_name",
+   "quote": "DCAL (Baker 102)",
+   "url": "https://home.dartmouth.edu/events/event?event=83139",
+   "check_confidence": 0.9809017604243248,
+   "passed": true
+  },
+  {
+   "entity_id": "dartmouth-b89b7ec7df",
+   "field": "organisation_name",
+   "quote": "Dartmouth Center for the Advancement of Learning (DCAL), Learning Design and Innovation",
+   "url": "https://home.dartmouth.edu/events/event?event=83139",
+   "check_confidence": 0.9684366897448277,
+   "passed": true
+  },
+  {
+   "entity_id": "dartmouth-50aa358b68",
+   "field": "title",
+   "quote": "PhD Thesis Proposal: Allen Nguyen",
+   "url": "https://home.dartmouth.edu/events/event?event=83276",
+   "check_confidence": 0.9817038597996668,
+   "passed": true
+  },
+  {
+   "entity_id": "dartmouth-50aa358b68",
+   "field": "date",
+   "quote": "11/30/2026 2 pm - 3 pm",
+   "url": "https://home.dartmouth.edu/events/event?event=83276",
+   "check_confidence": 0.982066512027055,
+   "passed": true
+  },
+  {
+   "entity_id": "dartmouth-50aa358b68",
+   "field": "start_time",
+   "quote": "14:00",
+   "url": "https://home.dartmouth.edu/events/event?event=83276",
+   "check_confidence": 0.9738803251451168,
+   "passed": true
+  },
+  {
+   "entity_id": "dartmouth-50aa358b68",
+   "field": "venue_name",
+   "quote": "Rm 202, Cummings Hall/ Online",
+   "url": "https://home.dartmouth.edu/events/event?event=83276",
+   "check_confidence": 0.9853443945516702,
+   "passed": true
+  },
+  {
+   "entity_id": "dartmouth-50aa358b68",
+   "field": "organisation_name",
+   "quote": "Thayer School of Engineering",
+   "url": "https://home.dartmouth.edu/events/event?event=83276",
+   "check_confidence": 0.9796507052907228,
+   "passed": true
+  },
+  {
+   "entity_id": "dartmouth-50aa358b68",
+   "field": "speaker",
+   "quote": "Allen Nguyen",
+   "url": "https://home.dartmouth.edu/events/event?event=83276",
+   "check_confidence": 0.9671202476490859,
+   "passed": true
+  }
+ ]
+}

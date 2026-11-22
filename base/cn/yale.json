@@ -1,0 +1,658 @@
+{
+ "school": "yale",
+ "name": "Yale University",
+ "at": "2026-11-22T00:12:09.915Z",
+ "seconds": 39,
+ "tokens": 70785,
+ "entities": [
+  {
+   "id": "yale-34329b7708",
+   "type": "Event",
+   "school": "yale",
+   "name": "Public Nights at the Leitner Family Observatory Planetarium",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.yale.edu/event/public-nights-at-the-leitner-family-observatory-planetarium",
+    "needs": [
+     "explore_a_field",
+     "rest_and_recover"
+    ],
+    "start": "2026-12-01T18:00",
+    "summary": "Free indoor planetarium shows and weather-permitting outdoor telescope observing hosted by the Yale Department of Astronomy for the general public.",
+    "event_kind": "activity",
+    "venue_name": "Leitner Family Observatory Planetarium, 355 Prospect St. New Haven, CT 06511",
+    "organisation_name": "Department of Astronomy",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-01T18:00",
+      "end": "2026-12-01T20:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "yale-c82f81cdf7",
+   "type": "Event",
+   "school": "yale",
+   "name": "“Signs of Time: and the Science of the Stars in the Renaissance”",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.yale.edu/event/signs-of-time-and-the-science-of-the-stars-in-the-renaissance",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-21",
+    "summary": "An exhibition exploring Renaissance astronomical practices, rare books, and how celestial phenomena shaped interpretations of time, medicine, and chronology.",
+    "event_kind": "exhibition",
+    "venue_name": "Harvey Cushing/John Hay Whitney Medical Library, Sterling Hall of Medicine, Rotunda",
+    "organisation_name": "Yale Arts, Yale Library",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "yale-08a2112d63",
+   "type": "Event",
+   "school": "yale",
+   "name": "Beauty Unadorned: “Fire!!” and the Harlem Renaissance",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.yale.edu/event/beauty-unadorned-fire-and-the-harlem-renaissance",
+    "needs": [
+     "explore_a_field",
+     "make_and_express"
+    ],
+    "start": "2026-11-21",
+    "summary": "An exhibition at Beinecke Library celebrating the centennial of the Harlem Renaissance magazine Fire!! through correspondence, drafts, photographs, and artworks.",
+    "event_kind": "exhibition",
+    "venue_name": "Beinecke Library, 121 Wall Street, New Haven, CT 06511",
+    "organisation_name": "Yale Arts, Yale Library",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "yale-be42d54406",
+   "type": "Event",
+   "school": "yale",
+   "name": "In the Spirit: The Life and Work of Lex Hixon",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.yale.edu/event/in-the-spirit-the-life-and-work-of-lex-hixon",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-21",
+    "summary": "An exhibition at Yale Divinity Library exploring the life, spiritual philosophy, and radio work of scholar Lex Hixon.",
+    "event_kind": "exhibition",
+    "venue_name": "Yale Divinity Library, Latourette Learning Center",
+    "organisation_name": "Yale Arts, Yale Library",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "yale-5d6b63cacc",
+   "type": "Event",
+   "school": "yale",
+   "name": "Satire, Sympathy, and Social Critique: William Hogarth’s Progress Prints",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.yale.edu/event/satire-sympathy-and-social-critique-william-hogarths-progress-prints",
+    "needs": [
+     "explore_a_field",
+     "make_and_express"
+    ],
+    "start": "2026-11-21",
+    "summary": "An exhibition at Beinecke Library exploring William Hogarth's moral progress prints and their enduring social and political impact.",
+    "event_kind": "exhibition",
+    "venue_name": "Beinecke Library",
+    "organisation_name": "Yale Arts, Yale Center for British Art, Yale Library, Yale University Art Gallery",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "yale-031c1bcc5d",
+   "type": "Event",
+   "school": "yale",
+   "name": "Henry L. Stimson Lecture: Charles Kupchan",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.yale.edu/event/henry-l-stimson-lecture-charles-kupchan",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-12-03T12:00",
+    "summary": "A Henry L. Stimson Lecture by Georgetown University Professor Charles Kupchan, hosted by the MacMillan Center at Yale University.",
+    "event_kind": "lecture",
+    "venue_name": "Luce Hall, 203",
+    "organisation_name": "MacMillan Center",
+    "speaker": "Charles Kupchan",
+    "occurrences": [
+     {
+      "start": "2026-12-03T12:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "yale-5ceaaf97f7",
+   "type": "Event",
+   "school": "yale",
+   "name": "Patterns of Rescue during Genocide: A Yale Genocide Studies Program Symposium",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.yale.edu/event/patterns-of-rescue-during-genocide-a-yale-genocide-studies-program-symposium",
+    "needs": [
+     "explore_a_field",
+     "contribute_beyond_self"
+    ],
+    "start": "2026-12-04T09:15",
+    "summary": "A Yale Genocide Studies Program symposium examining patterns of rescue during the 1994 Rwandan genocide through survey findings and survivor interviews.",
+    "event_kind": "lecture",
+    "venue_name": "Luce Hall, Auditorium, 34 Hillhouse Avenue, New Haven, CT 06511",
+    "organisation_name": "Genocide Studies Program",
+    "speaker": "David Simon, Zachary Kaufman, Valens Nkurikiyinka, Jolene Chu",
+    "occurrences": [
+     {
+      "start": "2026-12-04T09:15",
+      "end": "2026-12-04T17:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "yale-a16ae330cb",
+   "type": "Event",
+   "school": "yale",
+   "name": "YQI Talk - Soonwon Choi - MIT",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.yale.edu/event/yqi-talk-soonwon-choi-mit",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-24T12:00",
+    "summary": "Soonwon Choi from MIT will discuss integrating quantum computing and quantum sensing to achieve practical quantum advantage.",
+    "event_kind": "lecture",
+    "venue_name": "17 Hillhouse Avenue, Seminar Room 402",
+    "organisation_name": "Yale Quantum Institute",
+    "speaker": "Soonwon Choi",
+    "occurrences": [
+     {
+      "start": "2026-11-24T12:00",
+      "end": "2026-11-24T13:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "yale-b74c2d9f11",
+   "type": "Event",
+   "school": "yale",
+   "name": "YQI Talk - Shi Jie Samuel Tan - University of Maryland",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.yale.edu/event/yqi-talk-shi-jie-samuel-tan-university-of-maryland",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-30T13:00",
+    "summary": "Shi Jie Samuel Tan from the University of Maryland will discuss addressable CCZ gates and single-shot code switching in quantum codes.",
+    "event_kind": "lecture",
+    "venue_name": "17 Hillhouse Avenue, Seminar Room 402",
+    "organisation_name": "Yale Quantum Institute",
+    "speaker": "Shi Jie Samuel Tan",
+    "occurrences": [
+     {
+      "start": "2026-11-30T13:00",
+      "end": "2026-11-30T14:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "yale-1f4b8cd35f",
+   "type": "Event",
+   "school": "yale",
+   "name": "RUSUNUNGUKO (liberty / independence / freedom)",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.yale.edu/event/rusununguko-liberty-independence-freedom",
+    "needs": [
+     "explore_a_field",
+     "make_and_express"
+    ],
+    "start": "2026-11-21",
+    "summary": "An exhibition by artist Nontsikelelo Mutiti at Yale Schwarzman Center exploring the history and aesthetics of hair braiding in black life.",
+    "event_kind": "exhibition",
+    "venue_name": "Yale Schwarzman Center, 168 Grove Street, New Haven, CT 06511",
+    "organisation_name": "Yale Arts, Yale Schwarzman Center",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21",
+      "end": null
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "yale-34329b7708",
+   "field": "title",
+   "quote": "Public Nights at the Leitner Family Observatory Planetarium",
+   "url": "https://events.yale.edu/event/public-nights-at-the-leitner-family-observatory-planetarium",
+   "check_confidence": 0.9890055154854996,
+   "passed": true
+  },
+  {
+   "entity_id": "yale-34329b7708",
+   "field": "date",
+   "quote": "Tuesday, December 1, 2026 6:00pm to 8:00pm EST",
+   "url": "https://events.yale.edu/event/public-nights-at-the-leitner-family-observatory-planetarium",
+   "check_confidence": 0.9796287404564769,
+   "passed": true
+  },
+  {
+   "entity_id": "yale-34329b7708",
+   "field": "start_time",
+   "quote": "18:00",
+   "url": "https://events.yale.edu/event/public-nights-at-the-leitner-family-observatory-planetarium",
+   "check_confidence": 0.9853390832443291,
+   "passed": true
+  },
+  {
+   "entity_id": "yale-34329b7708",
+   "field": "venue_name",
+   "quote": "Leitner Family Observatory Planetarium, 355 Prospect St. New Haven, CT 06511",
+   "url": "https://events.yale.edu/event/public-nights-at-the-leitner-family-observatory-planetarium",
+   "check_confidence": 0.9630607542821468,
+   "passed": true
+  },
+  {
+   "entity_id": "yale-34329b7708",
+   "field": "organisation_name",
+   "quote": "Department of Astronomy",
+   "url": "https://events.yale.edu/event/public-nights-at-the-leitner-family-observatory-planetarium",
+   "check_confidence": 0.9809862953336993,
+   "passed": true
+  },
+  {
+   "entity_id": "yale-c82f81cdf7",
+   "field": "title",
+   "quote": "“Signs of Time: and the Science of the Stars in the Renaissance”",
+   "url": "https://events.yale.edu/event/signs-of-time-and-the-science-of-the-stars-in-the-renaissance",
+   "check_confidence": 0.9709545003101355,
+   "passed": true
+  },
+  {
+   "entity_id": "yale-c82f81cdf7",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026",
+   "url": "https://events.yale.edu/event/signs-of-time-and-the-science-of-the-stars-in-the-renaissance",
+   "check_confidence": 0.9760828681682608,
+   "passed": true
+  },
+  {
+   "entity_id": "yale-c82f81cdf7",
+   "field": "venue_name",
+   "quote": "Harvey Cushing/John Hay Whitney Medical Library, Sterling Hall of Medicine, Rotunda",
+   "url": "https://events.yale.edu/event/signs-of-time-and-the-science-of-the-stars-in-the-renaissance",
+   "check_confidence": 0.9602763284268131,
+   "passed": true
+  },
+  {
+   "entity_id": "yale-c82f81cdf7",
+   "field": "organisation_name",
+   "quote": "Yale Arts, Yale Library",
+   "url": "https://events.yale.edu/event/signs-of-time-and-the-science-of-the-stars-in-the-renaissance",
+   "check_confidence": 0.9699683770601571,
+   "passed": true
+  },
+  {
+   "entity_id": "yale-08a2112d63",
+   "field": "title",
+   "quote": "Beauty Unadorned: “Fire!!” and the Harlem Renaissance",
+   "url": "https://events.yale.edu/event/beauty-unadorned-fire-and-the-harlem-renaissance",
+   "check_confidence": 0.9732437469664666,
+   "passed": true
+  },
+  {
+   "entity_id": "yale-08a2112d63",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026",
+   "url": "https://events.yale.edu/event/beauty-unadorned-fire-and-the-harlem-renaissance",
+   "check_confidence": 0.9541306738821962,
+   "passed": true
+  },
+  {
+   "entity_id": "yale-08a2112d63",
+   "field": "venue_name",
+   "quote": "Beinecke Library 121 Wall Street, New Haven, CT 06511",
+   "url": "https://events.yale.edu/event/beauty-unadorned-fire-and-the-harlem-renaissance",
+   "check_confidence": 0.9331797390968571,
+   "passed": true
+  },
+  {
+   "entity_id": "yale-08a2112d63",
+   "field": "organisation_name",
+   "quote": "Yale Arts, Yale Library",
+   "url": "https://events.yale.edu/event/beauty-unadorned-fire-and-the-harlem-renaissance",
+   "check_confidence": 0.964771806231347,
+   "passed": true
+  },
+  {
+   "entity_id": "yale-be42d54406",
+   "field": "title",
+   "quote": "In the Spirit: The Life and Work of Lex Hixon",
+   "url": "https://events.yale.edu/event/in-the-spirit-the-life-and-work-of-lex-hixon",
+   "check_confidence": 0.9477244346261929,
+   "passed": true
+  },
+  {
+   "entity_id": "yale-be42d54406",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026",
+   "url": "https://events.yale.edu/event/in-the-spirit-the-life-and-work-of-lex-hixon",
+   "check_confidence": 0.9554944056270375,
+   "passed": true
+  },
+  {
+   "entity_id": "yale-be42d54406",
+   "field": "venue_name",
+   "quote": "Yale Divinity Library , Latourette Learning Center",
+   "url": "https://events.yale.edu/event/in-the-spirit-the-life-and-work-of-lex-hixon",
+   "check_confidence": 0.9586994965800671,
+   "passed": true
+  },
+  {
+   "entity_id": "yale-be42d54406",
+   "field": "organisation_name",
+   "quote": "Yale Arts, Yale Library",
+   "url": "https://events.yale.edu/event/in-the-spirit-the-life-and-work-of-lex-hixon",
+   "check_confidence": 0.9598902496221433,
+   "passed": true
+  },
+  {
+   "entity_id": "yale-5d6b63cacc",
+   "field": "title",
+   "quote": "Satire, Sympathy, and Social Critique: William Hogarth’s Progress Prints",
+   "url": "https://events.yale.edu/event/satire-sympathy-and-social-critique-william-hogarths-progress-prints",
+   "check_confidence": 0.9876194043560422,
+   "passed": true
+  },
+  {
+   "entity_id": "yale-5d6b63cacc",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026",
+   "url": "https://events.yale.edu/event/satire-sympathy-and-social-critique-william-hogarths-progress-prints",
+   "check_confidence": 0.9797337115181779,
+   "passed": true
+  },
+  {
+   "entity_id": "yale-5d6b63cacc",
+   "field": "venue_name",
+   "quote": "Beinecke Library",
+   "url": "https://events.yale.edu/event/satire-sympathy-and-social-critique-william-hogarths-progress-prints",
+   "check_confidence": 0.9695938410339203,
+   "passed": true
+  },
+  {
+   "entity_id": "yale-5d6b63cacc",
+   "field": "organisation_name",
+   "quote": "Yale Arts, Yale Center for British Art, Yale Library, Yale University Art Gallery",
+   "url": "https://events.yale.edu/event/satire-sympathy-and-social-critique-william-hogarths-progress-prints",
+   "check_confidence": 0.9717952670539992,
+   "passed": true
+  },
+  {
+   "entity_id": "yale-031c1bcc5d",
+   "field": "title",
+   "quote": "Henry L. Stimson Lecture: Charles Kupchan",
+   "url": "https://events.yale.edu/event/henry-l-stimson-lecture-charles-kupchan",
+   "check_confidence": 0.9765147851697693,
+   "passed": true
+  },
+  {
+   "entity_id": "yale-031c1bcc5d",
+   "field": "date",
+   "quote": "Thursday, December 3, 2026 12:00pm EST",
+   "url": "https://events.yale.edu/event/henry-l-stimson-lecture-charles-kupchan",
+   "check_confidence": 0.9730494725963517,
+   "passed": true
+  },
+  {
+   "entity_id": "yale-031c1bcc5d",
+   "field": "start_time",
+   "quote": "12:00",
+   "url": "https://events.yale.edu/event/henry-l-stimson-lecture-charles-kupchan",
+   "check_confidence": 0.9798780528507491,
+   "passed": true
+  },
+  {
+   "entity_id": "yale-031c1bcc5d",
+   "field": "venue_name",
+   "quote": "Luce Hall, 203",
+   "url": "https://events.yale.edu/event/henry-l-stimson-lecture-charles-kupchan",
+   "check_confidence": 0.9616286295058266,
+   "passed": true
+  },
+  {
+   "entity_id": "yale-031c1bcc5d",
+   "field": "organisation_name",
+   "quote": "MacMillan Center",
+   "url": "https://events.yale.edu/event/henry-l-stimson-lecture-charles-kupchan",
+   "check_confidence": 0.9694873325097884,
+   "passed": true
+  },
+  {
+   "entity_id": "yale-031c1bcc5d",
+   "field": "speaker",
+   "quote": "Charles Kupchan",
+   "url": "https://events.yale.edu/event/henry-l-stimson-lecture-charles-kupchan",
+   "check_confidence": 0.9831088837653711,
+   "passed": true
+  },
+  {
+   "entity_id": "yale-5ceaaf97f7",
+   "field": "title",
+   "quote": "Patterns of Rescue during Genocide: A Yale Genocide Studies Program Symposium",
+   "url": "https://events.yale.edu/event/patterns-of-rescue-during-genocide-a-yale-genocide-studies-program-symposium",
+   "check_confidence": 0.980604240337498,
+   "passed": true
+  },
+  {
+   "entity_id": "yale-5ceaaf97f7",
+   "field": "date",
+   "quote": "Friday, December 4, 2026 9:15am to 5:30pm EST",
+   "url": "https://events.yale.edu/event/patterns-of-rescue-during-genocide-a-yale-genocide-studies-program-symposium",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "yale-5ceaaf97f7",
+   "field": "start_time",
+   "quote": "09:15",
+   "url": "https://events.yale.edu/event/patterns-of-rescue-during-genocide-a-yale-genocide-studies-program-symposium",
+   "check_confidence": 0.9820892021318873,
+   "passed": true
+  },
+  {
+   "entity_id": "yale-5ceaaf97f7",
+   "field": "venue_name",
+   "quote": "Luce Hall, Auditorium",
+   "url": "https://events.yale.edu/event/patterns-of-rescue-during-genocide-a-yale-genocide-studies-program-symposium",
+   "check_confidence": 0.9694640468006662,
+   "passed": true
+  },
+  {
+   "entity_id": "yale-5ceaaf97f7",
+   "field": "organisation_name",
+   "quote": "Genocide Studies Program",
+   "url": "https://events.yale.edu/event/patterns-of-rescue-during-genocide-a-yale-genocide-studies-program-symposium",
+   "check_confidence": 0.9761295320242327,
+   "passed": true
+  },
+  {
+   "entity_id": "yale-5ceaaf97f7",
+   "field": "speaker",
+   "quote": "David Simon, Zachary Kaufman, Valens Nkurikiyinka, Jolene Chu",
+   "url": "https://events.yale.edu/event/patterns-of-rescue-during-genocide-a-yale-genocide-studies-program-symposium",
+   "check_confidence": 0.9438623295365179,
+   "passed": true
+  },
+  {
+   "entity_id": "yale-a16ae330cb",
+   "field": "title",
+   "quote": "YQI Talk - Soonwon Choi - MIT",
+   "url": "https://events.yale.edu/event/yqi-talk-soonwon-choi-mit",
+   "check_confidence": 0.9798798793133715,
+   "passed": true
+  },
+  {
+   "entity_id": "yale-a16ae330cb",
+   "field": "date",
+   "quote": "Tuesday, November 24, 2026 12:00pm to 1:00pm EST",
+   "url": "https://events.yale.edu/event/yqi-talk-soonwon-choi-mit",
+   "check_confidence": 0.9599143089454156,
+   "passed": true
+  },
+  {
+   "entity_id": "yale-a16ae330cb",
+   "field": "start_time",
+   "quote": "12:00",
+   "url": "https://events.yale.edu/event/yqi-talk-soonwon-choi-mit",
+   "check_confidence": 0.9551685009951016,
+   "passed": true
+  },
+  {
+   "entity_id": "yale-a16ae330cb",
+   "field": "venue_name",
+   "quote": "17 Hillhouse Avenue, Seminar Room 402",
+   "url": "https://events.yale.edu/event/yqi-talk-soonwon-choi-mit",
+   "check_confidence": 0.954632107790209,
+   "passed": true
+  },
+  {
+   "entity_id": "yale-a16ae330cb",
+   "field": "organisation_name",
+   "quote": "Yale Quantum Institute",
+   "url": "https://events.yale.edu/event/yqi-talk-soonwon-choi-mit",
+   "check_confidence": 0.9835338902579733,
+   "passed": true
+  },
+  {
+   "entity_id": "yale-a16ae330cb",
+   "field": "speaker",
+   "quote": "Soonwon Choi",
+   "url": "https://events.yale.edu/event/yqi-talk-soonwon-choi-mit",
+   "check_confidence": 0.9876135797817474,
+   "passed": true
+  },
+  {
+   "entity_id": "yale-b74c2d9f11",
+   "field": "title",
+   "quote": "YQI Talk - Shi Jie Samuel Tan - University of Maryland",
+   "url": "https://events.yale.edu/event/yqi-talk-shi-jie-samuel-tan-university-of-maryland",
+   "check_confidence": 0.9733793946188289,
+   "passed": true
+  },
+  {
+   "entity_id": "yale-b74c2d9f11",
+   "field": "date",
+   "quote": "Monday, November 30, 2026 1:00pm to 2:00pm EST",
+   "url": "https://events.yale.edu/event/yqi-talk-shi-jie-samuel-tan-university-of-maryland",
+   "check_confidence": 0.9590054558277561,
+   "passed": true
+  },
+  {
+   "entity_id": "yale-b74c2d9f11",
+   "field": "start_time",
+   "quote": "13:00",
+   "url": "https://events.yale.edu/event/yqi-talk-shi-jie-samuel-tan-university-of-maryland",
+   "check_confidence": 0.9626666500287694,
+   "passed": true
+  },
+  {
+   "entity_id": "yale-b74c2d9f11",
+   "field": "venue_name",
+   "quote": "17 Hillhouse Avenue, Seminar Room 402",
+   "url": "https://events.yale.edu/event/yqi-talk-shi-jie-samuel-tan-university-of-maryland",
+   "check_confidence": 0.969045760825412,
+   "passed": true
+  },
+  {
+   "entity_id": "yale-b74c2d9f11",
+   "field": "organisation_name",
+   "quote": "Yale Quantum Institute",
+   "url": "https://events.yale.edu/event/yqi-talk-shi-jie-samuel-tan-university-of-maryland",
+   "check_confidence": 0.9866427988419085,
+   "passed": true
+  },
+  {
+   "entity_id": "yale-b74c2d9f11",
+   "field": "speaker",
+   "quote": "Shi Jie Samuel Tan",
+   "url": "https://events.yale.edu/event/yqi-talk-shi-jie-samuel-tan-university-of-maryland",
+   "check_confidence": 0.987639720914314,
+   "passed": true
+  },
+  {
+   "entity_id": "yale-1f4b8cd35f",
+   "field": "title",
+   "quote": "RUSUNUNGUKO (liberty / independence / freedom)",
+   "url": "https://events.yale.edu/event/rusununguko-liberty-independence-freedom",
+   "check_confidence": 0.9607393808111515,
+   "passed": true
+  },
+  {
+   "entity_id": "yale-1f4b8cd35f",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026",
+   "url": "https://events.yale.edu/event/rusununguko-liberty-independence-freedom",
+   "check_confidence": 0.9755184241938585,
+   "passed": true
+  },
+  {
+   "entity_id": "yale-1f4b8cd35f",
+   "field": "venue_name",
+   "quote": "Yale Schwarzman Center, 168 Grove Street, New Haven, CT 06511",
+   "url": "https://events.yale.edu/event/rusununguko-liberty-independence-freedom",
+   "check_confidence": 0.9721593537612352,
+   "passed": true
+  },
+  {
+   "entity_id": "yale-1f4b8cd35f",
+   "field": "organisation_name",
+   "quote": "Yale Arts, Yale Schwarzman Center",
+   "url": "https://events.yale.edu/event/rusununguko-liberty-independence-freedom",
+   "check_confidence": 0.9571187519503565,
+   "passed": true
+  }
+ ]
+}

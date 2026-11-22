@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. The predominantly red-brick campus features mostly Romanesque Revival buildings contrasted by Modernist structures, including two large Brutalist dormitories at its northern edge. Draw exactly these 2 features, well spread across the picture with space between them, each clearly recognisable: (1) Widney Alumni House, a other: Plain historic 1880 university house.; (2) Old College, a other: Plain 1887 college building.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 15,
+ "tokens": 1864,
+ "at": "2026-11-22T00:18:11.452Z"
+}

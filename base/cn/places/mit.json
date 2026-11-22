@@ -1,0 +1,104 @@
+{
+ "school": "mit",
+ "name": "Massachusetts Institute of Technology",
+ "at": "2026-11-22T00:12:10.706Z",
+ "source": "https://en.wikipedia.org/wiki/Massachusetts%20Institute%20of%20Technology",
+ "character": "An urban campus stretching a mile along the Charles River basin, featuring classical limestone-clad buildings with a Great Dome alongside modernist and contemporary architecture.",
+ "map": "/art/map/mit.jpg",
+ "landmarks": [
+  {
+   "name": "Killian Court",
+   "name_en": "Killian Court",
+   "kind": "quad",
+   "quote": "His design features the Pantheon-esque Great Dome overlooking Killian Court, where graduation ceremonies are held each year.",
+   "look": "Open courtyard surrounded by limestone-clad classical buildings",
+   "check": 0.9728684809509025,
+   "confidence": 0.9728684809509025,
+   "passed": true,
+   "x": 0.22,
+   "y": 0.52
+  },
+  {
+   "name": "Great Dome",
+   "name_en": "Great Dome",
+   "kind": "other",
+   "quote": "His design features the Pantheon-esque Great Dome overlooking Killian Court",
+   "look": "Pantheon-esque classical dome overlooking a courtyard",
+   "check": 0.9698667774970741,
+   "confidence": 0.9698667774970741,
+   "passed": true,
+   "x": 0.31,
+   "y": 0.16
+  },
+  {
+   "name": "MIT Museum",
+   "name_en": "MIT Museum",
+   "kind": "museum",
+   "quote": "The MIT Museumis immediately adjacent to the Kendall Square subway entrance.",
+   "look": "Plain museum building near a subway entrance",
+   "check": 0.9369184554044682,
+   "confidence": 0.9369184554044682,
+   "passed": true,
+   "x": 0.51,
+   "y": 0.58
+  },
+  {
+   "name": "Simmons Hall",
+   "name_en": "Simmons Hall",
+   "kind": "hall",
+   "quote": "Steven Holl's Simmons Hall (2002)",
+   "look": "Contemporary starchitecture residence hall",
+   "check": 0.9765432797267947,
+   "confidence": 0.9765432797267947,
+   "passed": true,
+   "x": 0.72,
+   "y": 0.32
+  },
+  {
+   "name": "Kresge Auditorium",
+   "name_en": "Kresge Auditorium",
+   "kind": "hall",
+   "quote": "Eero Saarinen's MIT Chapel and Kresge Auditorium (1955)",
+   "look": "Post-war modernist auditorium",
+   "check": 0.9547634175961448,
+   "confidence": 0.9547634175961448,
+   "passed": true,
+   "x": 0.7,
+   "y": 0.63
+  },
+  {
+   "name": "MIT Chapel",
+   "name_en": "MIT Chapel",
+   "kind": "other",
+   "quote": "Eero Saarinen's MIT Chapel and Kresge Auditorium (1955)",
+   "look": "Post-war modernist chapel",
+   "check": 0.9681027294464181,
+   "confidence": 0.9681027294464181,
+   "passed": true,
+   "x": 0.86,
+   "y": 0.57
+  },
+  {
+   "name": "Stata Center",
+   "name_en": "Stata Center",
+   "kind": "other",
+   "quote": "Frank Gehry's Stata Center (2004)",
+   "look": "Contemporary starchitecture building",
+   "check": 0.9672863668330149,
+   "confidence": 0.9672863668330149,
+   "passed": true
+  },
+  {
+   "name": "Harvard Bridge",
+   "name_en": "Harvard Bridge",
+   "kind": "bridge",
+   "quote": "The bridge closest to MIT is the Harvard Bridge",
+   "look": "Bridge spanning the river near campus",
+   "check": 0.6463856336436541,
+   "confidence": 0.6463856336436541,
+   "passed": false
+  }
+ ],
+ "tokens": 9915,
+ "seconds": 27
+}

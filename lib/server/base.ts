@@ -13,7 +13,15 @@ async function get<T>(path: string): Promise<T> {
   return res.json();
 }
 
+// Chinese edition: the nine C9 schools live in local files written by scripts/foundry/12-c9.mjs. Nothing of them is in the shared base.
+const NEED_FIX: Record<string, string> = { get_feedback: "get_mentorship_and_feedback", contribute: "contribute_beyond_self" };
+function readLocal(school: string) { try { const { readFileSync } = require("node:fs") as typeof import("node:fs"), { join } = require("node:path") as typeof import("node:path");
+    const j = JSON.parse(readFileSync(join(process.cwd(), "base", "cn", `${school}.json`), "utf8"));
+    for (const e of j.entities) e.fields.needs = (e.fields.needs ?? []).map((n: string) => NEED_FIX[n] ?? n).filter((n: string) => n !== "keep_going");
+    return { entities: j.entities as Entity[], evidence: j.evidence as Evidence[] }; } catch { return { entities: [] as Entity[], evidence: [] as Evidence[] }; } }
 export async function readBase(school: string, type = "Event") {
+  // Since 22 Nov the other schools are in the shared base too; the local files are only a fallback for a machine without the base.
+  if (!["nyu", "columbia"].includes(school) && (!URL_ || !KEY)) return readLocal(school);
   const entities = await get<Entity[]>(`entities?school=eq.${encodeURIComponent(school)}&type=eq.${encodeURIComponent(type)}&select=id,type,school,name,fields,tier&order=id`);
   if (!entities.length) return { entities, evidence: [] as Evidence[] };
   const ids = entities.map((e) => `"${e.id}"`).join(",");

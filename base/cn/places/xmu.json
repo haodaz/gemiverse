@@ -1,0 +1,72 @@
+{
+ "school": "xmu",
+ "name": "厦门大学",
+ "at": "2026-11-22T00:15:59.756Z",
+ "source": "https://zh.wikipedia.org/wiki/%E5%8E%A6%E9%97%A8%E5%A4%A7%E5%AD%A6",
+ "character": "The narrow coastal campus sits between mountains and the sea, featuring lush vegetation, complex terrain, a central lake, and Nanyang-style buildings blending Chinese and Western elements.",
+ "map": "/art/map/xmu.jpg",
+ "landmarks": [
+  {
+   "name": "芙蓉湖",
+   "name_en": "Furong Lake",
+   "kind": "lake",
+   "quote": "校园中心是芙蓉湖。",
+   "look": "A plain lake at the center of the campus.",
+   "check": 0.9681077019968305,
+   "confidence": 0.9681077019968305,
+   "passed": true,
+   "x": 0.52,
+   "y": 0.43
+  },
+  {
+   "name": "上弦场",
+   "name_en": "Shangxian Stadium",
+   "kind": "stadium",
+   "quote": "上弦场是位于厦门大学校本部南部的一个体育场。",
+   "look": "A crescent-shaped stadium with 25-tier hillside stands, a 400m track, and three soccer fields.",
+   "check": 0.9687354590372413,
+   "confidence": 0.9687354590372413,
+   "passed": true,
+   "x": 0.25,
+   "y": 0.7
+  },
+  {
+   "name": "嘉庚广场",
+   "name_en": "Jiageng Plaza",
+   "kind": "quad",
+   "quote": "2001年，由爱国华侨和厦大校友捐资兴建的嘉庚楼群及嘉庚广场落成。",
+   "look": "A plain open campus plaza.",
+   "check": 0.8650551901879321,
+   "confidence": 0.8650551901879321,
+   "passed": true,
+   "x": 0.59,
+   "y": 0.67
+  },
+  {
+   "name": "建南楼群",
+   "name_en": "Jiannan Building Complex",
+   "kind": "other",
+   "quote": "其北侧的建南楼群也于同期建造。",
+   "look": "A plain group of campus buildings on a hill north of the stadium.",
+   "check": 0.8860920910634728,
+   "confidence": 0.8860920910634728,
+   "passed": true,
+   "x": 0.27,
+   "y": 0.24
+  },
+  {
+   "name": "嘉庚楼群",
+   "name_en": "Jiageng Building Complex",
+   "kind": "other",
+   "quote": "2001年，由爱国华侨和厦大校友捐资兴建的嘉庚楼群及嘉庚广场落成。",
+   "look": "A plain group of campus buildings.",
+   "check": 0.8844766430573617,
+   "confidence": 0.8844766430573617,
+   "passed": true,
+   "x": 0.77,
+   "y": 0.45
+  }
+ ],
+ "tokens": 13674,
+ "seconds": 29
+}

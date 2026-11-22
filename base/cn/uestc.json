@@ -1,0 +1,765 @@
+{
+ "school": "uestc",
+ "name": "电子科技大学",
+ "at": "2026-11-22T00:18:03.568Z",
+ "seconds": 42,
+ "tokens": 95525,
+ "entities": [
+  {
+   "id": "uestc-c1d199929d",
+   "type": "Event",
+   "school": "uestc",
+   "name": "学者论坛：基于深度神经网络重参数化的地震走时和大地电磁成像",
+   "tier": 1,
+   "fields": {
+    "url": "https://news.uestc.edu.cn/info/1015/45677.htm",
+    "needs": [
+     "explore_a_field",
+     "build_a_skill"
+    ],
+    "start": "2026-11-20T15:00",
+    "summary": "中国科学技术大学张海江教授作基于深度神经网络重参数化的地震走时和大地电磁成像学术报告。",
+    "event_kind": "lecture",
+    "venue_name": "清水河校区经管楼A303",
+    "organisation_name": "教师发展中心",
+    "speaker": "中国科学技术大学张海江教授",
+    "occurrences": [
+     {
+      "start": "2026-11-20T15:00",
+      "end": "2026-11-20T17:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "uestc-df96c25fd8",
+   "type": "Event",
+   "school": "uestc",
+   "name": "创·见·未来！第六届新工科教育学生作品展",
+   "tier": 1,
+   "fields": {
+    "url": "https://news.uestc.edu.cn/info/1015/45586.htm",
+    "needs": [
+     "explore_a_field",
+     "make_and_express"
+    ],
+    "start": "2026-11-19T13:00",
+    "summary": "第六届新工科教育学生作品展将在清水河校区举行，展示110余件学生作品并开展路演竞赛。",
+    "event_kind": "exhibition",
+    "venue_name": "清水河校区·时间广场（主展区）/图书馆（路演场次）",
+    "organisation_name": "电子科技大学教务处",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-19T13:00",
+      "end": "2026-11-19T16:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "uestc-12c133b1c5",
+   "type": "Event",
+   "school": "uestc",
+   "name": "教学工作坊：教学能力提升系列讲座（一）",
+   "tier": 1,
+   "fields": {
+    "url": "https://news.uestc.edu.cn/info/1015/45669.htm",
+    "needs": [
+     "build_a_skill",
+     "get_mentorship_and_feedback"
+    ],
+    "start": "2026-11-24T14:00",
+    "summary": "教师发展中心举办教学工作坊，邀请吕恕、潘锦教授分享教学能力提升经验。",
+    "event_kind": "workshop",
+    "venue_name": "清水河校区立人楼B415",
+    "organisation_name": "教务处、教师发展中心、资源与环境学院",
+    "speaker": "吕恕、潘锦",
+    "occurrences": [
+     {
+      "start": "2026-11-24T14:00",
+      "end": "2026-11-24T17:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "uestc-ff38f355e0",
+   "type": "Event",
+   "school": "uestc",
+   "name": "「人文×科技」思想者讲坛第四十四期讲座预告",
+   "tier": 1,
+   "fields": {
+    "url": "https://news.uestc.edu.cn/info/1015/45363.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": null,
+    "summary": "电子科技大学「人文×科技」思想者讲坛即将举办，旨在深化交叉学科创新思维培养。",
+    "event_kind": "lecture",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "uestc-901b718bc8",
+   "type": "Event",
+   "school": "uestc",
+   "name": "学者论坛：从 Hopfield 网络到非 BP 算法——非传统学习规则的探索",
+   "tier": 1,
+   "fields": {
+    "url": "https://news.uestc.edu.cn/info/1015/45261.htm",
+    "needs": [
+     "explore_a_field",
+     "build_a_skill"
+    ],
+    "start": "2026-11-13T15:00",
+    "summary": "厦门大学赵鸿教授主讲非对称Hopfield网络与非BP学习规则的学术报告。",
+    "event_kind": "lecture",
+    "venue_name": "清水河校区六号科研楼B214会议室",
+    "organisation_name": "教师发展中心",
+    "speaker": "厦门大学赵鸿教授",
+    "occurrences": [
+     {
+      "start": "2026-11-13T15:00",
+      "end": "2026-11-13T16:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "uestc-e37f805830",
+   "type": "Event",
+   "school": "uestc",
+   "name": "学者论坛：SIRI—— Tensor Rank Selection via Stability Index with Random Initializations",
+   "tier": 1,
+   "fields": {
+    "url": "https://news.uestc.edu.cn/info/1015/45315.htm",
+    "needs": [
+     "explore_a_field",
+     "build_a_skill"
+    ],
+    "start": "2026-11-13T14:00",
+    "summary": "厦门大学钟威教授来校作关于随机初始化稳定性指数张量秩选择的学术报告。",
+    "event_kind": "lecture",
+    "venue_name": "清水河校区 六号科研楼A344",
+    "organisation_name": "教师发展中心",
+    "speaker": "厦门大学钟威教授",
+    "occurrences": [
+     {
+      "start": "2026-11-13T14:00",
+      "end": "2026-11-13T15:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "uestc-8de6acf97f",
+   "type": "Event",
+   "school": "uestc",
+   "name": "「人文×科技」思想者讲坛第四十三期讲座预告",
+   "tier": 1,
+   "fields": {
+    "url": "https://news.uestc.edu.cn/info/1015/44916.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": null,
+    "summary": "第四十三期“人文×科技”思想者讲坛即将举行，旨在深化交叉学科创新思维培养。",
+    "event_kind": "lecture",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "uestc-a2b3a4fdcf",
+   "type": "Event",
+   "school": "uestc",
+   "name": "名师讲堂：天问一号科学研究进展",
+   "tier": 1,
+   "fields": {
+    "url": "https://news.uestc.edu.cn/info/1015/44768.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-10-31T09:00",
+    "summary": "潘永信院士将作关于天问一号科学研究进展的学术报告，介绍火星探测核心成果与展望。",
+    "event_kind": "lecture",
+    "venue_name": "经管楼报告厅",
+    "organisation_name": "教师发展中心",
+    "speaker": "潘永信",
+    "occurrences": [
+     {
+      "start": "2026-10-31T09:00",
+      "end": "2026-10-31T11:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "uestc-d7db9d4262",
+   "type": "Event",
+   "school": "uestc",
+   "name": "「人文×科技」思想者论坛第四十一期讲座预告",
+   "tier": 1,
+   "fields": {
+    "url": "https://news.uestc.edu.cn/info/1015/44679.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": null,
+    "summary": "电子科技大学第四十一期“人文×科技”思想者论坛讲座预告，旨在深化交叉学科创新思维培养。",
+    "event_kind": "lecture",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "uestc-e364130155",
+   "type": "Event",
+   "school": "uestc",
+   "name": "学者论坛：先进电池基础科学与关键技术挑战",
+   "tier": 1,
+   "fields": {
+    "url": "https://news.uestc.edu.cn/info/1015/44631.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-10-24T10:00",
+    "summary": "李泓研究员将作题为《先进电池基础科学与关键技术挑战》的学术报告。",
+    "event_kind": "lecture",
+    "venue_name": "清水河校区六号科研楼A332B区会议室",
+    "organisation_name": "教师发展中心",
+    "speaker": "中国科学院物理研究所 李泓 研究员",
+    "occurrences": [
+     {
+      "start": "2026-10-24T10:00",
+      "end": "2026-10-24T12:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "uestc-0f94a579c1",
+   "type": "Event",
+   "school": "uestc",
+   "name": "名师讲堂：Small Droplets, Big Chemistry: Reactivity at Water and Organic Interfaces",
+   "tier": 1,
+   "fields": {
+    "url": "https://news.uestc.edu.cn/info/1015/44526.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-10-23T14:30",
+    "summary": "欧洲科学院院士Christian George教授将作大气与界面化学主题学术讲座。",
+    "event_kind": "lecture",
+    "venue_name": "六号科研楼B214会议室",
+    "organisation_name": "教师发展中心",
+    "speaker": "Christian George教授",
+    "occurrences": [
+     {
+      "start": "2026-10-23T14:30",
+      "end": "2026-10-23T16:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "uestc-cf8e32da06",
+   "type": "Event",
+   "school": "uestc",
+   "name": "学者论坛：复杂体系量子物态超快调控和探测",
+   "tier": 1,
+   "fields": {
+    "url": "https://news.uestc.edu.cn/info/1015/44525.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-10-22T10:00",
+    "summary": "王楠林教授主讲复杂体系量子物态超快调控和探测。",
+    "event_kind": "lecture",
+    "venue_name": "物理学院302会议室",
+    "organisation_name": "教师发展中心",
+    "speaker": "王楠林",
+    "occurrences": [
+     {
+      "start": "2026-10-22T10:00",
+      "end": "2026-10-22T11:00"
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "uestc-c1d199929d",
+   "field": "title",
+   "quote": "学者论坛：基于深度神经网络重参数化的地震走时和大地电磁成像",
+   "url": "https://news.uestc.edu.cn/info/1015/45677.htm",
+   "check_confidence": 0.9423668638687547,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-c1d199929d",
+   "field": "date",
+   "quote": "2026 年 11 月 20 日（星期五） 15:00-17:00",
+   "url": "https://news.uestc.edu.cn/info/1015/45677.htm",
+   "check_confidence": 0.9687336108693022,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-c1d199929d",
+   "field": "start_time",
+   "quote": "15:00",
+   "url": "https://news.uestc.edu.cn/info/1015/45677.htm",
+   "check_confidence": 0.9562052652644585,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-c1d199929d",
+   "field": "venue_name",
+   "quote": "清水河校区经管楼A303",
+   "url": "https://news.uestc.edu.cn/info/1015/45677.htm",
+   "check_confidence": 0.9583560080251392,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-c1d199929d",
+   "field": "organisation_name",
+   "quote": "教师发展中心",
+   "url": "https://news.uestc.edu.cn/info/1015/45677.htm",
+   "check_confidence": 0.9669410771834339,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-c1d199929d",
+   "field": "speaker",
+   "quote": "中国科学技术大学张海江教授",
+   "url": "https://news.uestc.edu.cn/info/1015/45677.htm",
+   "check_confidence": 0.9680181075120002,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-df96c25fd8",
+   "field": "title",
+   "quote": "创·见·未来！第六届新工科教育学生作品展",
+   "url": "https://news.uestc.edu.cn/info/1015/45586.htm",
+   "check_confidence": 0.9613049473791053,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-df96c25fd8",
+   "field": "date",
+   "quote": "2026年11月19日（周四）13:00—16:30",
+   "url": "https://news.uestc.edu.cn/info/1015/45586.htm",
+   "check_confidence": 0.9725455762176216,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-df96c25fd8",
+   "field": "start_time",
+   "quote": "13:00",
+   "url": "https://news.uestc.edu.cn/info/1015/45586.htm",
+   "check_confidence": 0.9383598878269298,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-df96c25fd8",
+   "field": "venue_name",
+   "quote": "清水河校区·时间广场（主展区）/图书馆（路演场次）",
+   "url": "https://news.uestc.edu.cn/info/1015/45586.htm",
+   "check_confidence": 0.9485396502071063,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-df96c25fd8",
+   "field": "organisation_name",
+   "quote": "电子科技大学教务处",
+   "url": "https://news.uestc.edu.cn/info/1015/45586.htm",
+   "check_confidence": 0.9603513548807564,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-12c133b1c5",
+   "field": "title",
+   "quote": "教学工作坊：教学能力提升系列讲座（一）",
+   "url": "https://news.uestc.edu.cn/info/1015/45669.htm",
+   "check_confidence": 0.9594903399960907,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-12c133b1c5",
+   "field": "date",
+   "quote": "2026年11月24日（星期二）下午14:00-17:00",
+   "url": "https://news.uestc.edu.cn/info/1015/45669.htm",
+   "check_confidence": 0.9669560959792143,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-12c133b1c5",
+   "field": "start_time",
+   "quote": "14:00",
+   "url": "https://news.uestc.edu.cn/info/1015/45669.htm",
+   "check_confidence": 0.956604539577595,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-12c133b1c5",
+   "field": "venue_name",
+   "quote": "清水河校区立人楼B415",
+   "url": "https://news.uestc.edu.cn/info/1015/45669.htm",
+   "check_confidence": 0.9703367841834477,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-12c133b1c5",
+   "field": "organisation_name",
+   "quote": "教务处、教师发展中心、资源与环境学院",
+   "url": "https://news.uestc.edu.cn/info/1015/45669.htm",
+   "check_confidence": 0.9359250279398049,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-12c133b1c5",
+   "field": "speaker",
+   "quote": "吕恕、潘锦",
+   "url": "https://news.uestc.edu.cn/info/1015/45669.htm",
+   "check_confidence": 0.9658195593394839,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-ff38f355e0",
+   "field": "title",
+   "quote": "「人文×科技」思想者讲坛第四十四期讲座预告",
+   "url": "https://news.uestc.edu.cn/info/1015/45363.htm",
+   "check_confidence": 0.929586882426612,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-ff38f355e0",
+   "field": "organisation_name",
+   "quote": "文研院",
+   "url": "https://news.uestc.edu.cn/info/1015/45363.htm",
+   "check_confidence": 0.669218652534684,
+   "passed": false
+  },
+  {
+   "entity_id": "uestc-901b718bc8",
+   "field": "title",
+   "quote": "学者论坛：从 Hopfield 网络到非 BP 算法——非传统学习规则的探索",
+   "url": "https://news.uestc.edu.cn/info/1015/45261.htm",
+   "check_confidence": 0.9515576953117126,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-901b718bc8",
+   "field": "date",
+   "quote": "2026 年 11 月 13 日（周五） 15:00-16:00",
+   "url": "https://news.uestc.edu.cn/info/1015/45261.htm",
+   "check_confidence": 0.9716435237755837,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-901b718bc8",
+   "field": "start_time",
+   "quote": "15:00",
+   "url": "https://news.uestc.edu.cn/info/1015/45261.htm",
+   "check_confidence": 0.9520726416566193,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-901b718bc8",
+   "field": "venue_name",
+   "quote": "清水河校区六号科研楼B214会议室",
+   "url": "https://news.uestc.edu.cn/info/1015/45261.htm",
+   "check_confidence": 0.9606973689138043,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-901b718bc8",
+   "field": "organisation_name",
+   "quote": "教师发展中心",
+   "url": "https://news.uestc.edu.cn/info/1015/45261.htm",
+   "check_confidence": 0.9704142938487484,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-901b718bc8",
+   "field": "speaker",
+   "quote": "厦门大学赵鸿教授",
+   "url": "https://news.uestc.edu.cn/info/1015/45261.htm",
+   "check_confidence": 0.9453194898302797,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-e37f805830",
+   "field": "title",
+   "quote": "学者论坛：SIRI—— Tensor Rank Selection via Stability Index with Random Initializations",
+   "url": "https://news.uestc.edu.cn/info/1015/45315.htm",
+   "check_confidence": 0.9662679290265318,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-e37f805830",
+   "field": "date",
+   "quote": "2026 年 11 月 13 日（星期五） 14:00-15:30",
+   "url": "https://news.uestc.edu.cn/info/1015/45315.htm",
+   "check_confidence": 0.9654532891690507,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-e37f805830",
+   "field": "start_time",
+   "quote": "14:00",
+   "url": "https://news.uestc.edu.cn/info/1015/45315.htm",
+   "check_confidence": 0.9466722565900044,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-e37f805830",
+   "field": "venue_name",
+   "quote": "清水河校区 六号科研楼A344",
+   "url": "https://news.uestc.edu.cn/info/1015/45315.htm",
+   "check_confidence": 0.972768509890542,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-e37f805830",
+   "field": "organisation_name",
+   "quote": "教师发展中心",
+   "url": "https://news.uestc.edu.cn/info/1015/45315.htm",
+   "check_confidence": 0.9758592775763943,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-e37f805830",
+   "field": "speaker",
+   "quote": "厦门大学钟威教授",
+   "url": "https://news.uestc.edu.cn/info/1015/45315.htm",
+   "check_confidence": 0.9619793317622539,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-8de6acf97f",
+   "field": "title",
+   "quote": "「人文×科技」思想者讲坛第四十三期讲座预告",
+   "url": "https://news.uestc.edu.cn/info/1015/44916.htm",
+   "check_confidence": 0.9591534965122469,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-a2b3a4fdcf",
+   "field": "title",
+   "quote": "名师讲堂：天问一号科学研究进展",
+   "url": "https://news.uestc.edu.cn/info/1015/44768.htm",
+   "check_confidence": 0.9514073445672145,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-a2b3a4fdcf",
+   "field": "date",
+   "quote": "2026年10月31日（周六）9:00-11:00",
+   "url": "https://news.uestc.edu.cn/info/1015/44768.htm",
+   "check_confidence": 0.9821646678944177,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-a2b3a4fdcf",
+   "field": "start_time",
+   "quote": "09:00",
+   "url": "https://news.uestc.edu.cn/info/1015/44768.htm",
+   "check_confidence": 0.9688629657341868,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-a2b3a4fdcf",
+   "field": "venue_name",
+   "quote": "经管楼报告厅",
+   "url": "https://news.uestc.edu.cn/info/1015/44768.htm",
+   "check_confidence": 0.9552981000484463,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-a2b3a4fdcf",
+   "field": "organisation_name",
+   "quote": "教师发展中心",
+   "url": "https://news.uestc.edu.cn/info/1015/44768.htm",
+   "check_confidence": 0.9788889761357066,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-a2b3a4fdcf",
+   "field": "speaker",
+   "quote": "潘永信",
+   "url": "https://news.uestc.edu.cn/info/1015/44768.htm",
+   "check_confidence": 0.9576027536908757,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-d7db9d4262",
+   "field": "title",
+   "quote": "「人文×科技」思想者论坛第四十一期讲座预告",
+   "url": "https://news.uestc.edu.cn/info/1015/44679.htm",
+   "check_confidence": 0.9562367221859766,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-d7db9d4262",
+   "field": "organisation_name",
+   "quote": "文研院",
+   "url": "https://news.uestc.edu.cn/info/1015/44679.htm",
+   "check_confidence": 0.3967014139957323,
+   "passed": false
+  },
+  {
+   "entity_id": "uestc-e364130155",
+   "field": "title",
+   "quote": "学者论坛：先进电池基础科学与关键技术挑战",
+   "url": "https://news.uestc.edu.cn/info/1015/44631.htm",
+   "check_confidence": 0.9571213987720799,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-e364130155",
+   "field": "date",
+   "quote": "2026年10月24日（周六）10:00-12:00",
+   "url": "https://news.uestc.edu.cn/info/1015/44631.htm",
+   "check_confidence": 0.9747028521003361,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-e364130155",
+   "field": "start_time",
+   "quote": "10:00",
+   "url": "https://news.uestc.edu.cn/info/1015/44631.htm",
+   "check_confidence": 0.9653860279151046,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-e364130155",
+   "field": "venue_name",
+   "quote": "清水河校区六号科研楼A332B区会议室",
+   "url": "https://news.uestc.edu.cn/info/1015/44631.htm",
+   "check_confidence": 0.9629614950762678,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-e364130155",
+   "field": "organisation_name",
+   "quote": "教师发展中心",
+   "url": "https://news.uestc.edu.cn/info/1015/44631.htm",
+   "check_confidence": 0.9575722003965063,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-e364130155",
+   "field": "speaker",
+   "quote": "中国科学院物理研究所 李泓 研究员",
+   "url": "https://news.uestc.edu.cn/info/1015/44631.htm",
+   "check_confidence": 0.9415404709071169,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-0f94a579c1",
+   "field": "title",
+   "quote": "名师讲堂：Small Droplets, Big Chemistry: Reactivity at Water and Organic Interfaces",
+   "url": "https://news.uestc.edu.cn/info/1015/44526.htm",
+   "check_confidence": 0.9563601714971954,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-0f94a579c1",
+   "field": "date",
+   "quote": "2026年10月23日（周五）14:30-16:00",
+   "url": "https://news.uestc.edu.cn/info/1015/44526.htm",
+   "check_confidence": 0.9809797386287654,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-0f94a579c1",
+   "field": "start_time",
+   "quote": "14:30",
+   "url": "https://news.uestc.edu.cn/info/1015/44526.htm",
+   "check_confidence": 0.9513600073262557,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-0f94a579c1",
+   "field": "venue_name",
+   "quote": "六号科研楼B214会议室",
+   "url": "https://news.uestc.edu.cn/info/1015/44526.htm",
+   "check_confidence": 0.9626418847313248,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-0f94a579c1",
+   "field": "organisation_name",
+   "quote": "教师发展中心",
+   "url": "https://news.uestc.edu.cn/info/1015/44526.htm",
+   "check_confidence": 0.9691878871129295,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-0f94a579c1",
+   "field": "speaker",
+   "quote": "Christian George教授",
+   "url": "https://news.uestc.edu.cn/info/1015/44526.htm",
+   "check_confidence": 0.9573469274041585,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-cf8e32da06",
+   "field": "title",
+   "quote": "学者论坛：复杂体系量子物态超快调控和探测",
+   "url": "https://news.uestc.edu.cn/info/1015/44525.htm",
+   "check_confidence": 0.9465256816010827,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-cf8e32da06",
+   "field": "date",
+   "quote": "2026年10月22日（周四）10:00-11:00",
+   "url": "https://news.uestc.edu.cn/info/1015/44525.htm",
+   "check_confidence": 0.9616672887534318,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-cf8e32da06",
+   "field": "start_time",
+   "quote": "10:00",
+   "url": "https://news.uestc.edu.cn/info/1015/44525.htm",
+   "check_confidence": 0.9431380732288425,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-cf8e32da06",
+   "field": "venue_name",
+   "quote": "物理学院302会议室",
+   "url": "https://news.uestc.edu.cn/info/1015/44525.htm",
+   "check_confidence": 0.9533897337293389,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-cf8e32da06",
+   "field": "organisation_name",
+   "quote": "教师发展中心",
+   "url": "https://news.uestc.edu.cn/info/1015/44525.htm",
+   "check_confidence": 0.9581091183758556,
+   "passed": true
+  },
+  {
+   "entity_id": "uestc-cf8e32da06",
+   "field": "speaker",
+   "quote": "王楠林",
+   "url": "https://news.uestc.edu.cn/info/1015/44525.htm",
+   "check_confidence": 0.9642127173961528,
+   "passed": true
+  }
+ ]
+}

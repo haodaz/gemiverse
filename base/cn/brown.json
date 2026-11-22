@@ -1,0 +1,417 @@
+{
+ "school": "brown",
+ "name": "Brown University",
+ "at": "2026-11-22T00:12:46.419Z",
+ "seconds": 18,
+ "tokens": 25373,
+ "entities": [
+  {
+   "id": "brown-c50f3d17ad",
+   "type": "Event",
+   "school": "brown",
+   "name": "Brown University Men’s Basketball at Vermont",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.brown.edu/athletics/event/335837-brown-university-mens-basketball-at-vermont",
+    "needs": [
+     "find_my_people"
+    ],
+    "start": null,
+    "summary": "A men's basketball game between Brown University and Vermont.",
+    "event_kind": "competition",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "brown-98cc1c8231",
+   "type": "Event",
+   "school": "brown",
+   "name": "Exhibition on View | Building Books with Dayanita Singh",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.brown.edu/bai/event/338354-exhibition-on-view-building-books-with-dayanita-singh",
+    "needs": [
+     "explore_a_field",
+     "make_and_express"
+    ],
+    "start": null,
+    "summary": "An exhibition titled Building Books with Dayanita Singh presented by the Brown Arts Institute.",
+    "event_kind": "exhibition",
+    "venue_name": null,
+    "organisation_name": "Brown Arts Institute (BAI)",
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "brown-4db5624f23",
+   "type": "Event",
+   "school": "brown",
+   "name": "Brown Football @ Dartmouth 2026",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.brown.edu/alumni-friends/event/343701-brown-football-dartmouth-2026",
+    "needs": [
+     "find_my_people"
+    ],
+    "start": null,
+    "summary": "A Brown University football game against Dartmouth in 2026.",
+    "event_kind": "competition",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "brown-2e10eaf90b",
+   "type": "Event",
+   "school": "brown",
+   "name": "Brown University Men’s Ice Hockey at Union",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.brown.edu/athletics/event/336238-brown-university-mens-ice-hockey-at-union",
+    "needs": [
+     "find_my_people"
+    ],
+    "start": null,
+    "summary": "Brown University Men’s Ice Hockey plays at Union.",
+    "event_kind": "competition",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "brown-01cf2e62f3",
+   "type": "Event",
+   "school": "brown",
+   "name": "Fall Dance Concert 2026",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.brown.edu/taps/event/336508-fall-dance-concert-2026",
+    "needs": [
+     "make_and_express",
+     "find_my_people"
+    ],
+    "start": null,
+    "summary": "Fall Dance Concert 2026 is an event listed under Theatre Arts and Performance Studies (TAPS) at Brown University.",
+    "event_kind": "activity",
+    "venue_name": null,
+    "organisation_name": "Theatre Arts and Performance Studies (TAPS)",
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "brown-b5af22f8d2",
+   "type": "Event",
+   "school": "brown",
+   "name": "Art at Watson Presents — Diagnósticos: technology, information and self",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.brown.edu/watson/event/340641-art-at-watson-presents-diagnosticos-technology",
+    "needs": [
+     "explore_a_field",
+     "make_and_express"
+    ],
+    "start": null,
+    "summary": "An Art at Watson event titled Diagnósticos: technology, information and self at Brown University.",
+    "event_kind": "exhibition",
+    "venue_name": null,
+    "organisation_name": "Watson School of International and Public Affairs",
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "brown-f363e67d59",
+   "type": "Event",
+   "school": "brown",
+   "name": "Art at Watson Presents — Human Mythology",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.brown.edu/watson/event/340513-art-at-watson-presents-human-mythology",
+    "needs": [
+     "make_and_express",
+     "explore_a_field"
+    ],
+    "start": null,
+    "summary": "An event titled Art at Watson Presents — Human Mythology at Brown University's Watson School of International and Public Affairs.",
+    "event_kind": "exhibition",
+    "venue_name": null,
+    "organisation_name": "Watson School of International and Public Affairs",
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "brown-93d9c22179",
+   "type": "Event",
+   "school": "brown",
+   "name": "Join the Annual Ivy+ Blood Drive Challenge (Co-hosted with Princeton)",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.brown.edu/alumni-friends/event/341941-join-the-annual-ivy-blood-drive-challenge",
+    "needs": [
+     "contribute_beyond_self"
+    ],
+    "start": null,
+    "summary": "Brown University is hosting the Annual Ivy+ Blood Drive Challenge, co-hosted with Princeton.",
+    "event_kind": "activity",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "brown-43c63bf54e",
+   "type": "Event",
+   "school": "brown",
+   "name": "Registration for Wintersession courses (begins at 9:00 a.m. EST).",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.brown.edu/academic-calendar/event/329156-registration-for-wintersession-courses-begins-at",
+    "needs": [
+     "navigate_systems"
+    ],
+    "start": null,
+    "summary": "Registration for Brown University Wintersession courses begins at 9:00 a.m. EST.",
+    "event_kind": "other",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "brown-bc2f3db827",
+   "type": "Event",
+   "school": "brown",
+   "name": "Winter Donation Drive",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.brown.edu/public-safety/event/344122-winter-donation-drive",
+    "needs": [
+     "contribute_beyond_self"
+    ],
+    "start": null,
+    "summary": "A winter donation drive listed on the Brown University Public Safety events calendar.",
+    "event_kind": "activity",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "brown-97297159b3",
+   "type": "Event",
+   "school": "brown",
+   "name": "Art at Watson Presents — Human Mythology",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.brown.edu/watson/event/340512-art-at-watson-presents-human-mythology",
+    "needs": [
+     "make_and_express",
+     "explore_a_field"
+    ],
+    "start": null,
+    "summary": "An Art at Watson event titled Human Mythology at Brown University's Watson School of International and Public Affairs.",
+    "event_kind": "exhibition",
+    "venue_name": null,
+    "organisation_name": "Watson School of International and Public Affairs",
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "brown-916fe27703",
+   "type": "Event",
+   "school": "brown",
+   "name": "Art at Watson Presents — Diagnósticos: technology, information and self",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.brown.edu/watson/event/340640-art-at-watson-presents-diagnosticos-technology",
+    "needs": [
+     "explore_a_field",
+     "make_and_express"
+    ],
+    "start": null,
+    "summary": "An Art at Watson event titled Diagnósticos: technology, information and self at Brown University.",
+    "event_kind": "exhibition",
+    "venue_name": null,
+    "organisation_name": "Watson School of International and Public Affairs",
+    "speaker": null,
+    "occurrences": []
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "brown-c50f3d17ad",
+   "field": "title",
+   "quote": "Brown University Men’s Basketball at Vermont",
+   "url": "https://events.brown.edu/athletics/event/335837-brown-university-mens-basketball-at-vermont",
+   "check_confidence": 0.9141888907513486,
+   "passed": true
+  },
+  {
+   "entity_id": "brown-98cc1c8231",
+   "field": "title",
+   "quote": "Exhibition on View | Building Books with Dayanita Singh",
+   "url": "https://events.brown.edu/bai/event/338354-exhibition-on-view-building-books-with-dayanita-singh",
+   "check_confidence": 0.9002226036927942,
+   "passed": true
+  },
+  {
+   "entity_id": "brown-98cc1c8231",
+   "field": "organisation_name",
+   "quote": "Brown Arts Institute (BAI)",
+   "url": "https://events.brown.edu/bai/event/338354-exhibition-on-view-building-books-with-dayanita-singh",
+   "check_confidence": 0.935146229362907,
+   "passed": true
+  },
+  {
+   "entity_id": "brown-4db5624f23",
+   "field": "title",
+   "quote": "Brown Football @ Dartmouth 2026",
+   "url": "https://events.brown.edu/alumni-friends/event/343701-brown-football-dartmouth-2026",
+   "check_confidence": 0.9178560069335903,
+   "passed": true
+  },
+  {
+   "entity_id": "brown-2e10eaf90b",
+   "field": "title",
+   "quote": "Brown University Men’s Ice Hockey at Union",
+   "url": "https://events.brown.edu/athletics/event/336238-brown-university-mens-ice-hockey-at-union",
+   "check_confidence": 0.9270371517998138,
+   "passed": true
+  },
+  {
+   "entity_id": "brown-01cf2e62f3",
+   "field": "title",
+   "quote": "Fall Dance Concert 2026",
+   "url": "https://events.brown.edu/taps/event/336508-fall-dance-concert-2026",
+   "check_confidence": 0.897823623375328,
+   "passed": true
+  },
+  {
+   "entity_id": "brown-01cf2e62f3",
+   "field": "organisation_name",
+   "quote": "Theatre Arts and Performance Studies (TAPS)",
+   "url": "https://events.brown.edu/taps/event/336508-fall-dance-concert-2026",
+   "check_confidence": 0.9462616590709836,
+   "passed": true
+  },
+  {
+   "entity_id": "brown-b5af22f8d2",
+   "field": "title",
+   "quote": "Art at Watson Presents — Diagnósticos: technology, information and self",
+   "url": "https://events.brown.edu/watson/event/340641-art-at-watson-presents-diagnosticos-technology",
+   "check_confidence": 0.9051612730875916,
+   "passed": true
+  },
+  {
+   "entity_id": "brown-b5af22f8d2",
+   "field": "organisation_name",
+   "quote": "Watson School of International and Public Affairs",
+   "url": "https://events.brown.edu/watson/event/340641-art-at-watson-presents-diagnosticos-technology",
+   "check_confidence": 0.922442069821778,
+   "passed": true
+  },
+  {
+   "entity_id": "brown-f363e67d59",
+   "field": "title",
+   "quote": "Art at Watson Presents — Human Mythology",
+   "url": "https://events.brown.edu/watson/event/340513-art-at-watson-presents-human-mythology",
+   "check_confidence": 0.9194640821556758,
+   "passed": true
+  },
+  {
+   "entity_id": "brown-f363e67d59",
+   "field": "organisation_name",
+   "quote": "Watson School of International and Public Affairs",
+   "url": "https://events.brown.edu/watson/event/340513-art-at-watson-presents-human-mythology",
+   "check_confidence": 0.9199351013705347,
+   "passed": true
+  },
+  {
+   "entity_id": "brown-93d9c22179",
+   "field": "title",
+   "quote": "Join the Annual Ivy+ Blood Drive Challenge (Co-hosted with Princeton)",
+   "url": "https://events.brown.edu/alumni-friends/event/341941-join-the-annual-ivy-blood-drive-challenge",
+   "check_confidence": 0.9534027302418692,
+   "passed": true
+  },
+  {
+   "entity_id": "brown-43c63bf54e",
+   "field": "title",
+   "quote": "Registration for Wintersession courses (begins at 9:00 a.m. EST).",
+   "url": "https://events.brown.edu/academic-calendar/event/329156-registration-for-wintersession-courses-begins-at",
+   "check_confidence": 0.9349087978044379,
+   "passed": true
+  },
+  {
+   "entity_id": "brown-43c63bf54e",
+   "field": "start_time",
+   "quote": "09:00",
+   "url": "https://events.brown.edu/academic-calendar/event/329156-registration-for-wintersession-courses-begins-at",
+   "check_confidence": 0.9833070485386689,
+   "passed": true
+  },
+  {
+   "entity_id": "brown-bc2f3db827",
+   "field": "title",
+   "quote": "Winter Donation Drive",
+   "url": "https://events.brown.edu/public-safety/event/344122-winter-donation-drive",
+   "check_confidence": 0.8383206099341124,
+   "passed": true
+  },
+  {
+   "entity_id": "brown-bc2f3db827",
+   "field": "organisation_name",
+   "quote": "Public Safety",
+   "url": "https://events.brown.edu/public-safety/event/344122-winter-donation-drive",
+   "check_confidence": 0.7960384268627514,
+   "passed": false
+  },
+  {
+   "entity_id": "brown-97297159b3",
+   "field": "title",
+   "quote": "Art at Watson Presents — Human Mythology",
+   "url": "https://events.brown.edu/watson/event/340512-art-at-watson-presents-human-mythology",
+   "check_confidence": 0.9194640821556758,
+   "passed": true
+  },
+  {
+   "entity_id": "brown-97297159b3",
+   "field": "organisation_name",
+   "quote": "Watson School of International and Public Affairs",
+   "url": "https://events.brown.edu/watson/event/340512-art-at-watson-presents-human-mythology",
+   "check_confidence": 0.9199351013705347,
+   "passed": true
+  },
+  {
+   "entity_id": "brown-916fe27703",
+   "field": "title",
+   "quote": "Art at Watson Presents — Diagnósticos: technology, information and self",
+   "url": "https://events.brown.edu/watson/event/340640-art-at-watson-presents-diagnosticos-technology",
+   "check_confidence": 0.9051612730875916,
+   "passed": true
+  },
+  {
+   "entity_id": "brown-916fe27703",
+   "field": "organisation_name",
+   "quote": "Watson School of International and Public Affairs",
+   "url": "https://events.brown.edu/watson/event/340640-art-at-watson-presents-diagnosticos-technology",
+   "check_confidence": 0.922442069821778,
+   "passed": true
+  }
+ ]
+}

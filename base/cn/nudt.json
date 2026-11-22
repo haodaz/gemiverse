@@ -1,0 +1,449 @@
+{
+ "school": "nudt",
+ "name": "国防科技大学",
+ "at": "2026-11-22T00:19:05.831Z",
+ "seconds": 30,
+ "tokens": 95426,
+ "entities": [
+  {
+   "id": "nudt-5328d81c2a",
+   "type": "Event",
+   "school": "nudt",
+   "name": "第六届前沿交叉科技论坛 | 第二轮会议通知",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.nudt.edu.cn/xwgg/tzgg/2785aee50b6c4a8492e1d3fd7c0f4692.htm",
+    "needs": [
+     "explore_a_field",
+     "find_my_people"
+    ],
+    "start": "2026-10-23",
+    "summary": "第六届前沿交叉科技论坛将于10月23日至25日在国防科技大学四号院举行。",
+    "event_kind": "other",
+    "venue_name": "湖南省长沙市雨花区芙蓉中路黄土岭国防科技大学四号院",
+    "organisation_name": "国防科技大学",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-10-23",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "nudt-96bd02c813",
+   "type": "Event",
+   "school": "nudt",
+   "name": "第六届前沿交叉科技论坛丨第一轮会议通知",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.nudt.edu.cn/xwgg/tzgg/1dfe318ba03b404cb058cc309e0f1b68.htm",
+    "needs": [
+     "explore_a_field",
+     "find_my_people"
+    ],
+    "start": "2026-10-23",
+    "summary": "第六届前沿交叉科技论坛将在长沙举行，聚焦光子、电子与量子前沿交叉领域。",
+    "event_kind": "lecture",
+    "venue_name": "湖南省长沙市雨花区芙蓉中路黄土岭国防科技大学四号院",
+    "organisation_name": "国防科技大学前沿交叉学科学院、中国激光杂志社",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-10-23",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "nudt-8167742106",
+   "type": "Event",
+   "school": "nudt",
+   "name": "名师示范课开讲啦！",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.nudt.edu.cn/xwgg/tzgg/5dd30818cb4a48fc9415e0a9b2abb3d2.htm",
+    "needs": [
+     "build_a_skill",
+     "get_mentorship_and_feedback"
+    ],
+    "start": null,
+    "summary": "国防科技大学各单位开设系列名师示范课，涵盖教学创新、AI赋能教育等主题。",
+    "event_kind": "lecture",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "nudt-a844ccf8bd",
+   "type": "Event",
+   "school": "nudt",
+   "name": "第八届“纵横”网络空间安全创新论坛｜第二轮公告",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.nudt.edu.cn/xwgg/tzgg/fdeb1e33b6544c809f2a55f30aa6558a.htm",
+    "needs": [
+     "explore_a_field",
+     "find_my_people"
+    ],
+    "start": null,
+    "summary": "国防科技大学发布第八届“纵横”网络空间安全创新论坛第二轮公告。",
+    "event_kind": "other",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "nudt-cdc51a236f",
+   "type": "Event",
+   "school": "nudt",
+   "name": "第四届国防科技高地论坛第三轮公告（含大会议程）",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.nudt.edu.cn/xwgg/tzgg/af3006b869724d299df00691673469d2.htm",
+    "needs": [
+     "explore_a_field",
+     "find_my_people"
+    ],
+    "start": null,
+    "summary": "国防科技大学发布的第四届国防科技高地论坛第三轮公告（含大会议程）。",
+    "event_kind": "other",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "nudt-d6908f4987",
+   "type": "Event",
+   "school": "nudt",
+   "name": "第四届国防科技高地论坛第二轮公告（含报名注册通道）",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.nudt.edu.cn/xwgg/tzgg/db171ec5478a4e72a9345d9f895e40e2.htm",
+    "needs": [
+     "explore_a_field",
+     "find_my_people"
+    ],
+    "start": "2026-07-04",
+    "summary": "第四届国防科技高地论坛将于2026年7月在长沙举办，聚焦空天前沿技术。",
+    "event_kind": "lecture",
+    "venue_name": "湖南长沙",
+    "organisation_name": "国防科技大学、军事科学院、中国电子信息产业集团有限公司",
+    "speaker": "于登云、杨宏、李贺军、张海联、吴建军、贾永刚",
+    "occurrences": [
+     {
+      "start": "2026-07-04",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "nudt-1d79d801cc",
+   "type": "Event",
+   "school": "nudt",
+   "name": "高地星火奖学金海选报名高燃启动！",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.nudt.edu.cn/xwgg/hdss/fcb046f78e7146c194f19ae887484e7e.htm",
+    "needs": [
+     "fund_my_path",
+     "get_experience"
+    ],
+    "start": null,
+    "summary": "国防科技大学启动高地星火奖学金海选报名，11月28日前报名，12月5日评审。",
+    "event_kind": "competition",
+    "venue_name": null,
+    "organisation_name": "研究生院",
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "nudt-88a5314fe7",
+   "type": "Event",
+   "school": "nudt",
+   "name": "第四届国防科技高地论坛首轮公告（含报名注册通道）",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.nudt.edu.cn/xwgg/tzgg/8384086aa0794ec6ad598f5c86778414.htm",
+    "needs": [
+     "explore_a_field",
+     "find_my_people"
+    ],
+    "start": "2026-07-04",
+    "summary": "第四届国防科技高地论坛将于2026年7月4日至5日在长沙举办，聚焦空天前沿技术。",
+    "event_kind": "activity",
+    "venue_name": "湖南长沙",
+    "organisation_name": "国防科技大学、军事科学院、中国电子信息产业集团有限公司、中国航天科技集团有限公司",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-07-04",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "nudt-e5224836cc",
+   "type": "Event",
+   "school": "nudt",
+   "name": "高地冲锋 绿茵飞扬 | 国防科技大学第54届军事体育运动会“奋进杯”足球赛来啦！",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.nudt.edu.cn/xwgg/hdss/30c67b6389c44da38788111351d68122.htm",
+    "needs": [
+     "find_my_people",
+     "rest_and_recover"
+    ],
+    "start": "2025-05-16T15:00",
+    "summary": "国防科技大学第54届军事体育运动会“奋进杯”足球赛将于5月16日开幕。",
+    "event_kind": "competition",
+    "venue_name": "长沙校区一号院足球场",
+    "organisation_name": "学校政治工作部、电子科学学院",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2025-05-16T15:00",
+      "end": null
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "nudt-5328d81c2a",
+   "field": "title",
+   "quote": "第六届前沿交叉科技论坛 | 第二轮会议通知",
+   "url": "https://www.nudt.edu.cn/xwgg/tzgg/2785aee50b6c4a8492e1d3fd7c0f4692.htm",
+   "check_confidence": 0.9819138700988834,
+   "passed": true
+  },
+  {
+   "entity_id": "nudt-5328d81c2a",
+   "field": "date",
+   "quote": "2026年10月23日—25日（23日全天报到）",
+   "url": "https://www.nudt.edu.cn/xwgg/tzgg/2785aee50b6c4a8492e1d3fd7c0f4692.htm",
+   "check_confidence": 0.9780171563882628,
+   "passed": true
+  },
+  {
+   "entity_id": "nudt-5328d81c2a",
+   "field": "venue_name",
+   "quote": "湖南省长沙市雨花区芙蓉中路黄土岭国防科技大学四号院",
+   "url": "https://www.nudt.edu.cn/xwgg/tzgg/2785aee50b6c4a8492e1d3fd7c0f4692.htm",
+   "check_confidence": 0.9740712651048941,
+   "passed": true
+  },
+  {
+   "entity_id": "nudt-5328d81c2a",
+   "field": "organisation_name",
+   "quote": "国防科技大学",
+   "url": "https://www.nudt.edu.cn/xwgg/tzgg/2785aee50b6c4a8492e1d3fd7c0f4692.htm",
+   "check_confidence": 0.9782375749211775,
+   "passed": true
+  },
+  {
+   "entity_id": "nudt-96bd02c813",
+   "field": "title",
+   "quote": "第六届前沿交叉科技论坛丨第一轮会议通知",
+   "url": "https://www.nudt.edu.cn/xwgg/tzgg/1dfe318ba03b404cb058cc309e0f1b68.htm",
+   "check_confidence": 0.975632914025511,
+   "passed": true
+  },
+  {
+   "entity_id": "nudt-96bd02c813",
+   "field": "date",
+   "quote": "2026年10月23日—25日",
+   "url": "https://www.nudt.edu.cn/xwgg/tzgg/1dfe318ba03b404cb058cc309e0f1b68.htm",
+   "check_confidence": 0.9768573405796583,
+   "passed": true
+  },
+  {
+   "entity_id": "nudt-96bd02c813",
+   "field": "venue_name",
+   "quote": "湖南省长沙市雨花区芙蓉中路黄土岭国防科技大学四号院",
+   "url": "https://www.nudt.edu.cn/xwgg/tzgg/1dfe318ba03b404cb058cc309e0f1b68.htm",
+   "check_confidence": 0.959858405594641,
+   "passed": true
+  },
+  {
+   "entity_id": "nudt-96bd02c813",
+   "field": "organisation_name",
+   "quote": "国防科技大学前沿交叉学科学院、中国激光杂志社",
+   "url": "https://www.nudt.edu.cn/xwgg/tzgg/1dfe318ba03b404cb058cc309e0f1b68.htm",
+   "check_confidence": 0.9680261485967304,
+   "passed": true
+  },
+  {
+   "entity_id": "nudt-8167742106",
+   "field": "title",
+   "quote": "名师示范课开讲啦！",
+   "url": "https://www.nudt.edu.cn/xwgg/tzgg/5dd30818cb4a48fc9415e0a9b2abb3d2.htm",
+   "check_confidence": 0.96662664246083,
+   "passed": true
+  },
+  {
+   "entity_id": "nudt-a844ccf8bd",
+   "field": "title",
+   "quote": "第八届“纵横”网络空间安全创新论坛｜第二轮公告",
+   "url": "https://www.nudt.edu.cn/xwgg/tzgg/fdeb1e33b6544c809f2a55f30aa6558a.htm",
+   "check_confidence": 0.9586940138067772,
+   "passed": true
+  },
+  {
+   "entity_id": "nudt-cdc51a236f",
+   "field": "title",
+   "quote": "第四届国防科技高地论坛第三轮公告（含大会议程）",
+   "url": "https://www.nudt.edu.cn/xwgg/tzgg/af3006b869724d299df00691673469d2.htm",
+   "check_confidence": 0.958576687302937,
+   "passed": true
+  },
+  {
+   "entity_id": "nudt-d6908f4987",
+   "field": "title",
+   "quote": "第四届国防科技高地论坛第二轮公告（含报名注册通道）",
+   "url": "https://www.nudt.edu.cn/xwgg/tzgg/db171ec5478a4e72a9345d9f895e40e2.htm",
+   "check_confidence": 0.9826861239246408,
+   "passed": true
+  },
+  {
+   "entity_id": "nudt-d6908f4987",
+   "field": "date",
+   "quote": "将于2026年7月4日至5日",
+   "url": "https://www.nudt.edu.cn/xwgg/tzgg/db171ec5478a4e72a9345d9f895e40e2.htm",
+   "check_confidence": 0.9740704867913498,
+   "passed": true
+  },
+  {
+   "entity_id": "nudt-d6908f4987",
+   "field": "venue_name",
+   "quote": "在湖南长沙",
+   "url": "https://www.nudt.edu.cn/xwgg/tzgg/db171ec5478a4e72a9345d9f895e40e2.htm",
+   "check_confidence": 0.9578812737715569,
+   "passed": true
+  },
+  {
+   "entity_id": "nudt-d6908f4987",
+   "field": "organisation_name",
+   "quote": "国防科技大学、军事科学院、中国电子信息产业集团有限公司",
+   "url": "https://www.nudt.edu.cn/xwgg/tzgg/db171ec5478a4e72a9345d9f895e40e2.htm",
+   "check_confidence": 0.9748686424447567,
+   "passed": true
+  },
+  {
+   "entity_id": "nudt-d6908f4987",
+   "field": "speaker",
+   "quote": "于登云、杨宏、李贺军、张海联、吴建军、贾永刚",
+   "url": "https://www.nudt.edu.cn/xwgg/tzgg/db171ec5478a4e72a9345d9f895e40e2.htm",
+   "check_confidence": 0.9675608987188368,
+   "passed": true
+  },
+  {
+   "entity_id": "nudt-1d79d801cc",
+   "field": "title",
+   "quote": "高地星火奖学金海选报名高燃启动！",
+   "url": "https://www.nudt.edu.cn/xwgg/hdss/fcb046f78e7146c194f19ae887484e7e.htm",
+   "check_confidence": 0.9610471892464875,
+   "passed": true
+  },
+  {
+   "entity_id": "nudt-1d79d801cc",
+   "field": "date",
+   "quote": "12月5日",
+   "url": "https://www.nudt.edu.cn/xwgg/hdss/fcb046f78e7146c194f19ae887484e7e.htm",
+   "check_confidence": 0.7362576696391673,
+   "passed": false
+  },
+  {
+   "entity_id": "nudt-1d79d801cc",
+   "field": "organisation_name",
+   "quote": "研究生院",
+   "url": "https://www.nudt.edu.cn/xwgg/hdss/fcb046f78e7146c194f19ae887484e7e.htm",
+   "check_confidence": 0.917393000532993,
+   "passed": true
+  },
+  {
+   "entity_id": "nudt-88a5314fe7",
+   "field": "title",
+   "quote": "第四届国防科技高地论坛首轮公告（含报名注册通道）",
+   "url": "https://www.nudt.edu.cn/xwgg/tzgg/8384086aa0794ec6ad598f5c86778414.htm",
+   "check_confidence": 0.9709311480071724,
+   "passed": true
+  },
+  {
+   "entity_id": "nudt-88a5314fe7",
+   "field": "date",
+   "quote": "2026年7月4日至5日",
+   "url": "https://www.nudt.edu.cn/xwgg/tzgg/8384086aa0794ec6ad598f5c86778414.htm",
+   "check_confidence": 0.9771839341312043,
+   "passed": true
+  },
+  {
+   "entity_id": "nudt-88a5314fe7",
+   "field": "venue_name",
+   "quote": "湖南长沙",
+   "url": "https://www.nudt.edu.cn/xwgg/tzgg/8384086aa0794ec6ad598f5c86778414.htm",
+   "check_confidence": 0.9673741796691677,
+   "passed": true
+  },
+  {
+   "entity_id": "nudt-88a5314fe7",
+   "field": "organisation_name",
+   "quote": "国防科技大学、军事科学院、中国电子信息产业集团有限公司、中国航天科技集团有限公司",
+   "url": "https://www.nudt.edu.cn/xwgg/tzgg/8384086aa0794ec6ad598f5c86778414.htm",
+   "check_confidence": 0.954312425479302,
+   "passed": true
+  },
+  {
+   "entity_id": "nudt-e5224836cc",
+   "field": "title",
+   "quote": "高地冲锋 绿茵飞扬 | 国防科技大学第54届军事体育运动会“奋进杯”足球赛来啦！",
+   "url": "https://www.nudt.edu.cn/xwgg/hdss/30c67b6389c44da38788111351d68122.htm",
+   "check_confidence": 0.9499937198186713,
+   "passed": true
+  },
+  {
+   "entity_id": "nudt-e5224836cc",
+   "field": "date",
+   "quote": "5月16日（星期五）15:00",
+   "url": "https://www.nudt.edu.cn/xwgg/hdss/30c67b6389c44da38788111351d68122.htm",
+   "check_confidence": 0.8980068513402644,
+   "passed": true
+  },
+  {
+   "entity_id": "nudt-e5224836cc",
+   "field": "start_time",
+   "quote": "15:00",
+   "url": "https://www.nudt.edu.cn/xwgg/hdss/30c67b6389c44da38788111351d68122.htm",
+   "check_confidence": 0.9601833325186776,
+   "passed": true
+  },
+  {
+   "entity_id": "nudt-e5224836cc",
+   "field": "venue_name",
+   "quote": "长沙校区一号院足球场",
+   "url": "https://www.nudt.edu.cn/xwgg/hdss/30c67b6389c44da38788111351d68122.htm",
+   "check_confidence": 0.9578080282782567,
+   "passed": true
+  },
+  {
+   "entity_id": "nudt-e5224836cc",
+   "field": "organisation_name",
+   "quote": "学校政治工作部、电子科学学院",
+   "url": "https://www.nudt.edu.cn/xwgg/hdss/30c67b6389c44da38788111351d68122.htm",
+   "check_confidence": 0.9519176710364416,
+   "passed": true
+  }
+ ]
+}

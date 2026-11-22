@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A soft, warm storybook illustration in gentle pastel colours, wide 16:9, flat shapes with light texture, golden afternoon light, a few tiny students walking. No text, no letters, no logos, no emblems, no watermarks. Scene: a small Southern California campus with a Spanish-style club building, an arcade, olive trees and a round modern library by a pond.",
+ "reference": null,
+ "seconds": 15,
+ "tokens": 1569,
+ "at": "2026-11-21T23:18:11.233Z"
+}

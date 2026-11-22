@@ -6,7 +6,7 @@ export const maxDuration = 120;
 export async function POST(req: Request) {
   try {
     const { school = "nyu", n = 3, me } = await req.json();
-    const p = PRESETS[school as "nyu" | "columbia"];
+    const p = PRESETS[school as string];
     const mine: Side = me ?? { gemi: p.gemiName, student: `${p.year}, ${p.field}`, public: [`${p.year} in ${p.field}`, "wants to meet people who build things for learners", "prefers small groups"],
       private: ["gets tired and anxious at big mixers", "is not sure the PhD was the right choice"], looking_for: "two or three people to talk with about making things for learners" };
     const inv = await inventPeers(school, Math.min(4, n), mine);

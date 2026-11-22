@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. Located in a bend of the Genesee River, the main campus features 20th-century Greek Revival academic buildings. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Rush Rhees Library, a library: Greek Revival library building at the head of a quadrangle; (2) Eastman Quadrangle, a quad: Open quadrangle flanked by Greek Revival academic buildings; (3) Morey Hall, a hall: Greek Revival academic hall flanking a quadrangle; (4) Bausch & Lomb Hall, a hall: Greek Revival academic hall flanking a quadrangle; (5) Lattimore Hall, a hall: Greek Revival academic hall flanking a quadrangle; (6) Dewey Hall, a hall: Greek Revival academic hall flanking a quadrangle. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 18,
+ "tokens": 2180,
+ "at": "2026-11-22T00:20:20.556Z"
+}

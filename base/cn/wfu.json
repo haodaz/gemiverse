@@ -1,0 +1,744 @@
+{
+ "school": "wfu",
+ "name": "Wake Forest University",
+ "at": "2026-11-22T00:22:22.610Z",
+ "seconds": 29,
+ "tokens": 66345,
+ "entities": [
+  {
+   "id": "wfu-50f45a1e97",
+   "type": "Event",
+   "school": "wfu",
+   "name": "Men's Soccer: Second Round NCAA Tournament vs. Akron",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.wfu.edu/event/wake-forest-mens-soccer-at-second-round-vs-1-akron",
+    "needs": [
+     "find_my_people",
+     "rest_and_recover"
+    ],
+    "start": "2026-11-22T13:00",
+    "summary": "Wake Forest Men's Soccer competes against Akron in the Second Round of the NCAA Tournament at FirstEnergy Stadium.",
+    "event_kind": "competition",
+    "venue_name": "Akron, Ohio, FirstEnergy Stadium",
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-22T13:00",
+      "end": "2026-11-22T15:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "wfu-5387ba7613",
+   "type": "Event",
+   "school": "wfu",
+   "name": "Fall Faculty and Guest Artist Dance Concert",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.wfu.edu/event/fall-faculty-and-guest-artist-dance-concert-5243",
+    "needs": [
+     "make_and_express",
+     "rest_and_recover"
+    ],
+    "start": "2026-11-22T14:00",
+    "summary": "A dance concert featuring modern, jazz, contemporary, and classical ballet choreography by Wake Forest dance faculty and guest choreographers.",
+    "event_kind": "other",
+    "venue_name": "Scales Fine Arts Center, Tedford Stage",
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-22T14:00",
+      "end": "2026-11-22T15:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "wfu-801663a48d",
+   "type": "Event",
+   "school": "wfu",
+   "name": "Google Sheets Unlocked: Advanced Techniques",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.wfu.edu/event/google-sheets-unlocked-advanced-techniques-for-next-level-spreadsheets",
+    "needs": [
+     "build_a_skill"
+    ],
+    "start": "2026-11-23T15:00",
+    "summary": "This virtual training covers advanced Google Sheets techniques, including conditional formatting, advanced formulas, Pivot Tables, and Macros.",
+    "event_kind": "workshop",
+    "venue_name": "Virtual Event",
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-23T15:00",
+      "end": "2026-11-23T16:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "wfu-a4ea167433",
+   "type": "Event",
+   "school": "wfu",
+   "name": "Wake Forest Women's Basketball vs Wofford- Dancing with the Deacs",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.wfu.edu/event/wake-forest-womens-basketball-vs-wofford",
+    "needs": [
+     "find_my_people",
+     "rest_and_recover"
+    ],
+    "start": "2026-11-23T18:00",
+    "summary": "Wake Forest Women's Basketball plays against Wofford in Winston-Salem, N.C., on November 23, 2026.",
+    "event_kind": "competition",
+    "venue_name": "Winston-Salem, N.C.",
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-23T18:00",
+      "end": "2026-11-23T20:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "wfu-acd98881fd",
+   "type": "Event",
+   "school": "wfu",
+   "name": "Wake MBA Coffee Chat - North Charlotte",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.wfu.edu/event/wake-mba-coffee-chat-north-charlotte",
+    "needs": [
+     "explore_a_field",
+     "decide_a_direction"
+    ],
+    "start": "2026-11-23T08:00",
+    "summary": "Prospective students can drop by for coffee and chat with the Wake MBA admissions team about Charlotte programs.",
+    "event_kind": "activity",
+    "venue_name": "Summit Coffee Birkdale Landing, 16639 Birkdale Commons Pkwy Huntersville, NC 28078-5612",
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-23T08:00",
+      "end": "2026-11-23T11:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "wfu-500a05ddfc",
+   "type": "Event",
+   "school": "wfu",
+   "name": "Prompt Engineering: Communicating with Artificial Intelligence",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.wfu.edu/event/prompt-engineering-communicating-with-artificial-intelligence-5534",
+    "needs": [
+     "build_a_skill"
+    ],
+    "start": "2026-11-24T11:00",
+    "summary": "An introductory virtual workshop on prompt engineering, covering prompt frameworks, responsible prompting, and practical exercises for workplace efficiency.",
+    "event_kind": "workshop",
+    "venue_name": "Virtual Event",
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-24T11:00",
+      "end": "2026-11-24T12:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "wfu-68928a8088",
+   "type": "Event",
+   "school": "wfu",
+   "name": "The Gamma Rho Rho Chapter of Phi Beta Sigma presents Meet the Sigmas",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.wfu.edu/event/the-gamma-rho-rho-chapter-of-phi-beta-sigma-fraternity-inc-presents-meet-the-sigmas",
+    "needs": [
+     "find_my_people"
+    ],
+    "start": "2026-11-29T19:15",
+    "summary": "An event to learn about Phi Beta Sigma Fraternity, Inc., the Gamma Rho Rho chapter, and their commitment to Brotherhood, Scholarship, and Service.",
+    "event_kind": "activity",
+    "venue_name": "Zick's Underground",
+    "organisation_name": "The Gamma Rho Rho Chapter of Phi Beta Sigma",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-29T19:15",
+      "end": "2026-11-29T21:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "wfu-00401fc424",
+   "type": "Event",
+   "school": "wfu",
+   "name": "Lighting of the Quad",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.wfu.edu/event/lighting-of-the-quad-8391",
+    "needs": [
+     "find_my_people",
+     "rest_and_recover"
+    ],
+    "start": "2026-11-30T19:00",
+    "summary": "Students gather on Hearn Plaza to celebrate the holiday season with lights, music, and seasonal refreshments at Lighting of the Quad.",
+    "event_kind": "activity",
+    "venue_name": "Hearn Plaza",
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-30T19:00",
+      "end": "2026-11-30T20:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "wfu-3a13125987",
+   "type": "Event",
+   "school": "wfu",
+   "name": "2026 Winter Celebration",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.wfu.edu/event/2026-winter-celebration",
+    "needs": [
+     "find_my_people",
+     "rest_and_recover"
+    ],
+    "start": "2026-12-11T14:00",
+    "summary": "A winter celebration for Wake Forest faculty and staff featuring heavy hors d'oeuvres, happy hour, and fellowship.",
+    "event_kind": "activity",
+    "venue_name": "Sutton Center, 4th Floor, Reynolds Gymnasium, Winston-Salem, NC 27109, USA",
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-11T14:00",
+      "end": "2026-12-11T16:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "wfu-dff980c300",
+   "type": "Event",
+   "school": "wfu",
+   "name": "AI Town Hall: Shaping Wake Forest’s Academic Approach to AI",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.wfu.edu/event/ai-town-hall-shaping-wake-forests-academic-approach-to-ai-292",
+    "needs": [
+     "contribute_beyond_self",
+     "explore_a_field"
+    ],
+    "start": "2026-12-16T14:00",
+    "summary": "An open conversation hosted by the AI Task Force and Faculty Senate to gather faculty and staff input on Wake Forest's academic AI strategy.",
+    "event_kind": "activity",
+    "venue_name": "Carswell Hall, 111 (Annenberg Forum)",
+    "organisation_name": "AI Task Force and the Faculty Senate",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-16T14:00",
+      "end": "2026-12-16T15:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "wfu-4c86a86b7c",
+   "type": "Event",
+   "school": "wfu",
+   "name": "Wake Forest Symphony Orchestra and Wind Ensemble's Sounds of Joy: A Holiday Gala",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.wfu.edu/event/holiday-gala-wfu-choirs-wfu-symphony-orchestra",
+    "needs": [
+     "rest_and_recover",
+     "find_my_people"
+    ],
+    "start": "2026-12-04T19:30",
+    "summary": "The Wake Forest University Symphony Orchestra and Wind Ensemble present an annual free holiday concert featuring festive favorites and seasonal classics.",
+    "event_kind": "activity",
+    "venue_name": "Scales Fine Arts Center, Brendle Recital Hall",
+    "organisation_name": "Wake Forest University Symphony Orchestra and Wind Ensemble",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-04T19:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "wfu-670554bdde",
+   "type": "Event",
+   "school": "wfu",
+   "name": "AI the Forest",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.wfu.edu/event/ai-the-forest",
+    "needs": [
+     "explore_a_field",
+     "build_a_skill"
+    ],
+    "start": "2026-12-14",
+    "summary": "A two-day Wake Forest University event exploring how artificial intelligence shapes the university and world through strategy, teaching, and innovation conversations.",
+    "event_kind": "activity",
+    "venue_name": "Farrell Hall, Winston-Salem, NC",
+    "organisation_name": "Information Systems",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-14",
+      "end": null
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "wfu-50f45a1e97",
+   "field": "title",
+   "quote": "Men's Soccer: Second Round NCAA Tournament vs. Akron",
+   "url": "https://events.wfu.edu/event/wake-forest-mens-soccer-at-second-round-vs-1-akron",
+   "check_confidence": 0.978437372274778,
+   "passed": true
+  },
+  {
+   "entity_id": "wfu-50f45a1e97",
+   "field": "date",
+   "quote": "Sunday, November 22, 2026 1pm to 3pm",
+   "url": "https://events.wfu.edu/event/wake-forest-mens-soccer-at-second-round-vs-1-akron",
+   "check_confidence": 0.9723863364849242,
+   "passed": true
+  },
+  {
+   "entity_id": "wfu-50f45a1e97",
+   "field": "start_time",
+   "quote": "13:00",
+   "url": "https://events.wfu.edu/event/wake-forest-mens-soccer-at-second-round-vs-1-akron",
+   "check_confidence": 0.9808685695817635,
+   "passed": true
+  },
+  {
+   "entity_id": "wfu-50f45a1e97",
+   "field": "venue_name",
+   "quote": "Akron, Ohio, FirstEnergy Stadium",
+   "url": "https://events.wfu.edu/event/wake-forest-mens-soccer-at-second-round-vs-1-akron",
+   "check_confidence": 0.9598510030307158,
+   "passed": true
+  },
+  {
+   "entity_id": "wfu-5387ba7613",
+   "field": "title",
+   "quote": "Fall Faculty and Guest Artist Dance Concert",
+   "url": "https://events.wfu.edu/event/fall-faculty-and-guest-artist-dance-concert-5243",
+   "check_confidence": 0.9809257044846144,
+   "passed": true
+  },
+  {
+   "entity_id": "wfu-5387ba7613",
+   "field": "date",
+   "quote": "Sunday, November 22, 2026 2pm to 3:30pm",
+   "url": "https://events.wfu.edu/event/fall-faculty-and-guest-artist-dance-concert-5243",
+   "check_confidence": 0.969526905386543,
+   "passed": true
+  },
+  {
+   "entity_id": "wfu-5387ba7613",
+   "field": "start_time",
+   "quote": "14:00",
+   "url": "https://events.wfu.edu/event/fall-faculty-and-guest-artist-dance-concert-5243",
+   "check_confidence": 0.9797215829684597,
+   "passed": true
+  },
+  {
+   "entity_id": "wfu-5387ba7613",
+   "field": "venue_name",
+   "quote": "Scales Fine Arts Center, Tedford Stage",
+   "url": "https://events.wfu.edu/event/fall-faculty-and-guest-artist-dance-concert-5243",
+   "check_confidence": 0.9697429103358453,
+   "passed": true
+  },
+  {
+   "entity_id": "wfu-801663a48d",
+   "field": "title",
+   "quote": "Google Sheets Unlocked: Advanced Techniques",
+   "url": "https://events.wfu.edu/event/google-sheets-unlocked-advanced-techniques-for-next-level-spreadsheets",
+   "check_confidence": 0.9881047092111018,
+   "passed": true
+  },
+  {
+   "entity_id": "wfu-801663a48d",
+   "field": "date",
+   "quote": "Monday, November 23, 2026 3pm to 4:30pm",
+   "url": "https://events.wfu.edu/event/google-sheets-unlocked-advanced-techniques-for-next-level-spreadsheets",
+   "check_confidence": 0.9858439051724485,
+   "passed": true
+  },
+  {
+   "entity_id": "wfu-801663a48d",
+   "field": "start_time",
+   "quote": "15:00",
+   "url": "https://events.wfu.edu/event/google-sheets-unlocked-advanced-techniques-for-next-level-spreadsheets",
+   "check_confidence": 0.9800884295876119,
+   "passed": true
+  },
+  {
+   "entity_id": "wfu-801663a48d",
+   "field": "venue_name",
+   "quote": "Virtual Event",
+   "url": "https://events.wfu.edu/event/google-sheets-unlocked-advanced-techniques-for-next-level-spreadsheets",
+   "check_confidence": 0.9725793366421777,
+   "passed": true
+  },
+  {
+   "entity_id": "wfu-a4ea167433",
+   "field": "title",
+   "quote": "Wake Forest Women's Basketball vs Wofford- Dancing with the Deacs",
+   "url": "https://events.wfu.edu/event/wake-forest-womens-basketball-vs-wofford",
+   "check_confidence": 0.9853061134912292,
+   "passed": true
+  },
+  {
+   "entity_id": "wfu-a4ea167433",
+   "field": "date",
+   "quote": "Monday, November 23, 2026 6pm to 8pm",
+   "url": "https://events.wfu.edu/event/wake-forest-womens-basketball-vs-wofford",
+   "check_confidence": 0.9661386193796785,
+   "passed": true
+  },
+  {
+   "entity_id": "wfu-a4ea167433",
+   "field": "start_time",
+   "quote": "18:00",
+   "url": "https://events.wfu.edu/event/wake-forest-womens-basketball-vs-wofford",
+   "check_confidence": 0.9734422600601855,
+   "passed": true
+  },
+  {
+   "entity_id": "wfu-a4ea167433",
+   "field": "venue_name",
+   "quote": "Winston-Salem, N.C.",
+   "url": "https://events.wfu.edu/event/wake-forest-womens-basketball-vs-wofford",
+   "check_confidence": 0.96969474751002,
+   "passed": true
+  },
+  {
+   "entity_id": "wfu-acd98881fd",
+   "field": "title",
+   "quote": "Wake MBA Coffee Chat - North Charlotte",
+   "url": "https://events.wfu.edu/event/wake-mba-coffee-chat-north-charlotte",
+   "check_confidence": 0.9717246711993075,
+   "passed": true
+  },
+  {
+   "entity_id": "wfu-acd98881fd",
+   "field": "date",
+   "quote": "Monday, November 23, 2026 8am to 11am",
+   "url": "https://events.wfu.edu/event/wake-mba-coffee-chat-north-charlotte",
+   "check_confidence": 0.9746348624498417,
+   "passed": true
+  },
+  {
+   "entity_id": "wfu-acd98881fd",
+   "field": "start_time",
+   "quote": "08:00",
+   "url": "https://events.wfu.edu/event/wake-mba-coffee-chat-north-charlotte",
+   "check_confidence": 0.9721936232856477,
+   "passed": true
+  },
+  {
+   "entity_id": "wfu-acd98881fd",
+   "field": "venue_name",
+   "quote": "Summit Coffee Birkdale Landing, 16639 Birkdale Commons Pkwy Huntersville, NC 28078-5612",
+   "url": "https://events.wfu.edu/event/wake-mba-coffee-chat-north-charlotte",
+   "check_confidence": 0.9717466183544295,
+   "passed": true
+  },
+  {
+   "entity_id": "wfu-acd98881fd",
+   "field": "organisation_name",
+   "quote": "School of Business",
+   "url": "https://events.wfu.edu/event/wake-mba-coffee-chat-north-charlotte",
+   "check_confidence": 0.7859039861160243,
+   "passed": false
+  },
+  {
+   "entity_id": "wfu-500a05ddfc",
+   "field": "title",
+   "quote": "Prompt Engineering: Communicating with Artificial Intelligence",
+   "url": "https://events.wfu.edu/event/prompt-engineering-communicating-with-artificial-intelligence-5534",
+   "check_confidence": 0.9867370466641183,
+   "passed": true
+  },
+  {
+   "entity_id": "wfu-500a05ddfc",
+   "field": "date",
+   "quote": "Tuesday, November 24, 2026 11am to 12pm",
+   "url": "https://events.wfu.edu/event/prompt-engineering-communicating-with-artificial-intelligence-5534",
+   "check_confidence": 0.9797179788147459,
+   "passed": true
+  },
+  {
+   "entity_id": "wfu-500a05ddfc",
+   "field": "start_time",
+   "quote": "11:00",
+   "url": "https://events.wfu.edu/event/prompt-engineering-communicating-with-artificial-intelligence-5534",
+   "check_confidence": 0.9827115592048885,
+   "passed": true
+  },
+  {
+   "entity_id": "wfu-500a05ddfc",
+   "field": "venue_name",
+   "quote": "Virtual Event",
+   "url": "https://events.wfu.edu/event/prompt-engineering-communicating-with-artificial-intelligence-5534",
+   "check_confidence": 0.9740732575430601,
+   "passed": true
+  },
+  {
+   "entity_id": "wfu-500a05ddfc",
+   "field": "organisation_name",
+   "quote": "Administrative, Information Systems",
+   "url": "https://events.wfu.edu/event/prompt-engineering-communicating-with-artificial-intelligence-5534",
+   "check_confidence": 0.4716591684140295,
+   "passed": false
+  },
+  {
+   "entity_id": "wfu-68928a8088",
+   "field": "title",
+   "quote": "The Gamma Rho Rho Chapter of Phi Beta Sigma presents Meet the Sigmas",
+   "url": "https://events.wfu.edu/event/the-gamma-rho-rho-chapter-of-phi-beta-sigma-fraternity-inc-presents-meet-the-sigmas",
+   "check_confidence": 0.9748721787427075,
+   "passed": true
+  },
+  {
+   "entity_id": "wfu-68928a8088",
+   "field": "date",
+   "quote": "Sunday, November 29, 2026 7:15pm to 9pm",
+   "url": "https://events.wfu.edu/event/the-gamma-rho-rho-chapter-of-phi-beta-sigma-fraternity-inc-presents-meet-the-sigmas",
+   "check_confidence": 0.9469894142802225,
+   "passed": true
+  },
+  {
+   "entity_id": "wfu-68928a8088",
+   "field": "start_time",
+   "quote": "19:15",
+   "url": "https://events.wfu.edu/event/the-gamma-rho-rho-chapter-of-phi-beta-sigma-fraternity-inc-presents-meet-the-sigmas",
+   "check_confidence": 0.9720706765357244,
+   "passed": true
+  },
+  {
+   "entity_id": "wfu-68928a8088",
+   "field": "venue_name",
+   "quote": "Zick's Underground",
+   "url": "https://events.wfu.edu/event/the-gamma-rho-rho-chapter-of-phi-beta-sigma-fraternity-inc-presents-meet-the-sigmas",
+   "check_confidence": 0.972446300933378,
+   "passed": true
+  },
+  {
+   "entity_id": "wfu-68928a8088",
+   "field": "organisation_name",
+   "quote": "The Gamma Rho Rho Chapter of Phi Beta Sigma",
+   "url": "https://events.wfu.edu/event/the-gamma-rho-rho-chapter-of-phi-beta-sigma-fraternity-inc-presents-meet-the-sigmas",
+   "check_confidence": 0.9761391294294943,
+   "passed": true
+  },
+  {
+   "entity_id": "wfu-00401fc424",
+   "field": "title",
+   "quote": "Lighting of the Quad",
+   "url": "https://events.wfu.edu/event/lighting-of-the-quad-8391",
+   "check_confidence": 0.9680167918758003,
+   "passed": true
+  },
+  {
+   "entity_id": "wfu-00401fc424",
+   "field": "date",
+   "quote": "Monday, November 30, 2026 7pm to 8:30pm",
+   "url": "https://events.wfu.edu/event/lighting-of-the-quad-8391",
+   "check_confidence": 0.9846972377488951,
+   "passed": true
+  },
+  {
+   "entity_id": "wfu-00401fc424",
+   "field": "start_time",
+   "quote": "19:00",
+   "url": "https://events.wfu.edu/event/lighting-of-the-quad-8391",
+   "check_confidence": 0.9877153906794842,
+   "passed": true
+  },
+  {
+   "entity_id": "wfu-00401fc424",
+   "field": "venue_name",
+   "quote": "Hearn Plaza",
+   "url": "https://events.wfu.edu/event/lighting-of-the-quad-8391",
+   "check_confidence": 0.979150677616681,
+   "passed": true
+  },
+  {
+   "entity_id": "wfu-3a13125987",
+   "field": "title",
+   "quote": "2026 Winter Celebration",
+   "url": "https://events.wfu.edu/event/2026-winter-celebration",
+   "check_confidence": 0.9639615331957428,
+   "passed": true
+  },
+  {
+   "entity_id": "wfu-3a13125987",
+   "field": "date",
+   "quote": "Friday, December 11, 2026 2pm to 4pm",
+   "url": "https://events.wfu.edu/event/2026-winter-celebration",
+   "check_confidence": 0.9747434008345813,
+   "passed": true
+  },
+  {
+   "entity_id": "wfu-3a13125987",
+   "field": "start_time",
+   "quote": "14:00",
+   "url": "https://events.wfu.edu/event/2026-winter-celebration",
+   "check_confidence": 0.9868219351402037,
+   "passed": true
+  },
+  {
+   "entity_id": "wfu-3a13125987",
+   "field": "venue_name",
+   "quote": "Sutton Center, 4th Floor",
+   "url": "https://events.wfu.edu/event/2026-winter-celebration",
+   "check_confidence": 0.9095944480255694,
+   "passed": true
+  },
+  {
+   "entity_id": "wfu-dff980c300",
+   "field": "title",
+   "quote": "AI Town Hall: Shaping Wake Forest’s Academic Approach to AI",
+   "url": "https://events.wfu.edu/event/ai-town-hall-shaping-wake-forests-academic-approach-to-ai-292",
+   "check_confidence": 0.9686420125871394,
+   "passed": true
+  },
+  {
+   "entity_id": "wfu-dff980c300",
+   "field": "date",
+   "quote": "Wednesday, December 16, 2026 2pm to 3pm",
+   "url": "https://events.wfu.edu/event/ai-town-hall-shaping-wake-forests-academic-approach-to-ai-292",
+   "check_confidence": 0.9754827180523403,
+   "passed": true
+  },
+  {
+   "entity_id": "wfu-dff980c300",
+   "field": "start_time",
+   "quote": "14:00",
+   "url": "https://events.wfu.edu/event/ai-town-hall-shaping-wake-forests-academic-approach-to-ai-292",
+   "check_confidence": 0.9746031326318871,
+   "passed": true
+  },
+  {
+   "entity_id": "wfu-dff980c300",
+   "field": "venue_name",
+   "quote": "Carswell Hall, 111 (Annenberg Forum)",
+   "url": "https://events.wfu.edu/event/ai-town-hall-shaping-wake-forests-academic-approach-to-ai-292",
+   "check_confidence": 0.9779585861591605,
+   "passed": true
+  },
+  {
+   "entity_id": "wfu-dff980c300",
+   "field": "organisation_name",
+   "quote": "AI Task Force and the Faculty Senate",
+   "url": "https://events.wfu.edu/event/ai-town-hall-shaping-wake-forests-academic-approach-to-ai-292",
+   "check_confidence": 0.8665624071128751,
+   "passed": true
+  },
+  {
+   "entity_id": "wfu-4c86a86b7c",
+   "field": "title",
+   "quote": "Wake Forest Symphony Orchestra and Wind Ensemble's Sounds of Joy: A Holiday Gala",
+   "url": "https://events.wfu.edu/event/holiday-gala-wfu-choirs-wfu-symphony-orchestra",
+   "check_confidence": 0.9737066843370121,
+   "passed": true
+  },
+  {
+   "entity_id": "wfu-4c86a86b7c",
+   "field": "date",
+   "quote": "Friday, December 4, 2026 7:30pm",
+   "url": "https://events.wfu.edu/event/holiday-gala-wfu-choirs-wfu-symphony-orchestra",
+   "check_confidence": 0.988138070689471,
+   "passed": true
+  },
+  {
+   "entity_id": "wfu-4c86a86b7c",
+   "field": "start_time",
+   "quote": "19:30",
+   "url": "https://events.wfu.edu/event/holiday-gala-wfu-choirs-wfu-symphony-orchestra",
+   "check_confidence": 0.9807403076700603,
+   "passed": true
+  },
+  {
+   "entity_id": "wfu-4c86a86b7c",
+   "field": "venue_name",
+   "quote": "Scales Fine Arts Center, Brendle Recital Hall",
+   "url": "https://events.wfu.edu/event/holiday-gala-wfu-choirs-wfu-symphony-orchestra",
+   "check_confidence": 0.9643456559509869,
+   "passed": true
+  },
+  {
+   "entity_id": "wfu-4c86a86b7c",
+   "field": "organisation_name",
+   "quote": "Wake Forest University Symphony Orchestra and Wind Ensemble",
+   "url": "https://events.wfu.edu/event/holiday-gala-wfu-choirs-wfu-symphony-orchestra",
+   "check_confidence": 0.9211394038698234,
+   "passed": true
+  },
+  {
+   "entity_id": "wfu-670554bdde",
+   "field": "title",
+   "quote": "AI the Forest",
+   "url": "https://events.wfu.edu/event/ai-the-forest",
+   "check_confidence": 0.9764662700298851,
+   "passed": true
+  },
+  {
+   "entity_id": "wfu-670554bdde",
+   "field": "date",
+   "quote": "Monday, December 14, 2026",
+   "url": "https://events.wfu.edu/event/ai-the-forest",
+   "check_confidence": 0.9783495270955467,
+   "passed": true
+  },
+  {
+   "entity_id": "wfu-670554bdde",
+   "field": "venue_name",
+   "quote": "Farrell Hall, Winston-Salem, NC",
+   "url": "https://events.wfu.edu/event/ai-the-forest",
+   "check_confidence": 0.9662634913657223,
+   "passed": true
+  },
+  {
+   "entity_id": "wfu-670554bdde",
+   "field": "organisation_name",
+   "quote": "Information Systems",
+   "url": "https://events.wfu.edu/event/ai-the-forest",
+   "check_confidence": 0.9847536423395878,
+   "passed": true
+  }
+ ]
+}

@@ -1,0 +1,878 @@
+{
+ "school": "cornell",
+ "name": "Cornell University",
+ "at": "2026-11-22T00:12:37.034Z",
+ "seconds": 26,
+ "tokens": 71788,
+ "entities": [
+  {
+   "id": "cornell-ed3c429573",
+   "type": "Event",
+   "school": "cornell",
+   "name": "Annual Celebration of Gratitude Dinner on Thanksgiving Day",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.cornell.edu/event/annual-celebration-of-gratitude-dinner-on-thanksgiving-day-2026",
+    "needs": [
+     "find_my_people",
+     "rest_and_recover"
+    ],
+    "start": "2026-11-26T11:30",
+    "summary": "Cornell Dining hosts the 39th Annual Celebration of Gratitude Dinner on Thanksgiving Day with two seatings at Morrison Dining.",
+    "event_kind": "activity",
+    "venue_name": "Morrison Dining, Toni Morrison Hall",
+    "organisation_name": "Cornell Dining",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-26T11:30",
+      "end": "2026-11-26T14:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "cornell-323b7bfe44",
+   "type": "Event",
+   "school": "cornell",
+   "name": "Winter Wonders: Mindful Botany Walks",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.cornell.edu/event/winter-wonders-mindful-botany-walks",
+    "needs": [
+     "rest_and_recover",
+     "explore_a_field"
+    ],
+    "start": "2027-01-29T12:00",
+    "summary": "Cornell Botanic Gardens hosts free mindful winter walks to observe nature and practice mindfulness near the Nevin Welcome Center.",
+    "event_kind": "activity",
+    "venue_name": "Brian C. Nevin Welcome Center",
+    "organisation_name": "Cornell Botanic Gardens",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2027-01-29T12:00",
+      "end": "2027-01-29T13:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "cornell-13ccc97973",
+   "type": "Event",
+   "school": "cornell",
+   "name": "Get started with Genealogy Research",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.cornell.edu/event/genealogy_12826",
+    "needs": [
+     "build_a_skill",
+     "explore_a_field"
+    ],
+    "start": "2026-12-08T12:00",
+    "summary": "A hybrid workshop on genealogy concepts, methodology, and search techniques for online genealogical resources.",
+    "event_kind": "workshop",
+    "venue_name": "Olin Library, Olin 108",
+    "organisation_name": "Cornell University Library",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-08T12:00",
+      "end": "2026-12-08T13:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "cornell-2a29ecc992",
+   "type": "Event",
+   "school": "cornell",
+   "name": "Cornell Chorale Fall 2026 Concert - Seasons of Life (CU Music)",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.cornell.edu/event/cornell-chorale-fall-2026-concert-seasons-of-life-cu-music",
+    "needs": [
+     "rest_and_recover",
+     "make_and_express"
+    ],
+    "start": "2026-11-22T19:30",
+    "summary": "The Cornell Chorale presents its Fall 2026 concert featuring diverse choral traditions and guest conductor Dr. Jo-Michael Scheibe.",
+    "event_kind": "other",
+    "venue_name": "Bailey Hall, 230 Garden Ave, Ithaca, NY 14850",
+    "organisation_name": "Department of Music",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-22T19:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "cornell-2a57ede939",
+   "type": "Event",
+   "school": "cornell",
+   "name": "Information Session: Global Internships",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.cornell.edu/event/information-session-fall26-global-internships-4",
+    "needs": [
+     "get_experience",
+     "explore_a_field"
+    ],
+    "start": "2026-12-03T16:30",
+    "summary": "An information session for undergraduate students about summer 2027 Global Internships offering international work experience.",
+    "event_kind": "other",
+    "venue_name": "Uris Hall, G08",
+    "organisation_name": "Mario Einaudi Center for International Studies",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-03T16:30",
+      "end": "2026-12-03T17:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "cornell-f79262f039",
+   "type": "Event",
+   "school": "cornell",
+   "name": "Decolonial Endurance: Indigenous Wellbeing Against Chinese Settler Colonialism",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.cornell.edu/event/book-talk-decolonial-endurance-lisu-worldmaking-against-chinese-settler-colonialism",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-24T12:15",
+    "summary": "Ting Hui Lau discusses her book on Indigenous Lisu health, wellbeing, and everyday decolonization practices against Chinese settler colonialism.",
+    "event_kind": "lecture",
+    "venue_name": "Kahin Center, 640 Stewart Ave, Ithaca, NY 14850, USA",
+    "organisation_name": null,
+    "speaker": "Ting Hui Lau",
+    "occurrences": [
+     {
+      "start": "2026-11-24T12:15",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "cornell-1a702a8e6a",
+   "type": "Event",
+   "school": "cornell",
+   "name": "Malaysia, Decolonization, and Finding a New Language for Self-Determination",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.cornell.edu/event/malaysia-decolonization-and-finding-a-new-language-for-self-determination",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-12-03T12:15",
+    "summary": "A Gatty Lecture by Muhammad Suhail Mohamed Yazid examining how Malaysian leaders used self-determination rhetoric during decolonization.",
+    "event_kind": "lecture",
+    "venue_name": "Kahin Center, 640 Stewart Ave, Ithaca, NY 14850, USA",
+    "organisation_name": "Southeast Asia Program",
+    "speaker": "Muhammad Suhail Mohamed Yazid",
+    "occurrences": [
+     {
+      "start": "2026-12-03T12:15",
+      "end": "2026-12-03T13:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "cornell-ed2444392b",
+   "type": "Event",
+   "school": "cornell",
+   "name": "Fall Open House at the Mushroom Museum!",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.cornell.edu/event/fall-open-house-at-the-mushroom-museum",
+    "needs": [
+     "explore_a_field",
+     "find_my_people"
+    ],
+    "start": "2026-12-05T14:00",
+    "summary": "The Cornell Plant Pathology Herbarium hosts an annual open house showcasing historical fungi collections, antique models, and drawings.",
+    "event_kind": "exhibition",
+    "venue_name": "214 Gallus Rd, Ithaca NY",
+    "organisation_name": "School of Integrative Plant Science",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-05T14:00",
+      "end": "2026-12-05T17:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "cornell-d70bf00edf",
+   "type": "Event",
+   "school": "cornell",
+   "name": "Immigration After the Midterms: Policy, Rights, and the Future of American Democracy",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.cornell.edu/event/immigration-policy-after-midterms",
+    "needs": [
+     "explore_a_field",
+     "navigate_systems"
+    ],
+    "start": "2026-12-01T16:00",
+    "summary": "A panel of policy experts discusses how the midterm elections will shape future US immigration policy, rights, and democratic health.",
+    "event_kind": "lecture",
+    "venue_name": "Virtual Event",
+    "organisation_name": "Global Cornell, Cornell Center on Democracy, Cornell Law School Migration and Human Rights Program, and Einaudi Center for International Studies Migrations Program",
+    "speaker": "Dan Berger, David Bier, Gunisha Kaur, Margy O'Herron, Diego Sánchez, Tara Watson; Moderator: Rachel Beatty Riedl",
+    "occurrences": [
+     {
+      "start": "2026-12-01T16:00",
+      "end": "2026-12-01T17:15"
+     }
+    ]
+   }
+  },
+  {
+   "id": "cornell-faddf82677",
+   "type": "Event",
+   "school": "cornell",
+   "name": "Island Editions Conversation Series at the Gensler Family AAP NYC Center Fall 2026",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.cornell.edu/event/island-editions-conversation-series-at-the-gensler-family-aap-nyc-center-fall-2026",
+    "needs": [
+     "explore_a_field",
+     "find_my_people"
+    ],
+    "start": null,
+    "summary": "A conversation series at the Gensler Family AAP NYC Center inviting leading architects to reflect on their work and careers.",
+    "event_kind": "lecture",
+    "venue_name": "Gensler Family AAP NYC Center",
+    "organisation_name": null,
+    "speaker": "Preston Scott Cohen, Peter Eisenman, Billie Tsien, Cynthia Davidson",
+    "occurrences": []
+   }
+  },
+  {
+   "id": "cornell-97fd89bda7",
+   "type": "Event",
+   "school": "cornell",
+   "name": "Cornell Art Faculty 2026",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.cornell.edu/event/cornell-art-faculty-2026",
+    "needs": [
+     "explore_a_field",
+     "make_and_express"
+    ],
+    "start": "2026-11-21",
+    "summary": "An exhibition featuring works by Cornell Department of Art faculty paired with selections from the Johnson Museum's permanent collection.",
+    "event_kind": "exhibition",
+    "venue_name": "Herbert F. Johnson Museum of Art, Gold, Schaenen, Moak, and Class of 1953 Galleries, Floor 2L",
+    "organisation_name": "Department of Art",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "cornell-c5fe4cd4d8",
+   "type": "Event",
+   "school": "cornell",
+   "name": "Cornell Men's Ice Hockey vs St. Lawrence University",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.cornell.edu/event/cornell-mens-ice-hockey-vs-st-lawrence-university-1523",
+    "needs": [
+     "find_my_people",
+     "rest_and_recover"
+    ],
+    "start": "2026-11-21T19:00",
+    "summary": "Cornell Men's Ice Hockey plays against St. Lawrence University at Lynah Rink on November 21, 2026, at 7pm.",
+    "event_kind": "competition",
+    "venue_name": "Lynah Rink",
+    "organisation_name": "Athletics",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21T19:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "cornell-f0e17ba9b7",
+   "type": "Event",
+   "school": "cornell",
+   "name": "Ancient Worlds in Modern Threads",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.cornell.edu/event/ancient-worlds-in-modern-threads",
+    "needs": [
+     "explore_a_field",
+     "make_and_express"
+    ],
+    "start": "2026-11-22T08:00",
+    "summary": "An exhibition exploring how ancient Greek, Roman, and Egyptian silhouettes, patterns, and ideals of beauty are reinterpreted through modern fashion.",
+    "event_kind": "exhibition",
+    "venue_name": "Human Ecology Building (HEB), HEB Display cases (Terrace Level, Level 1 and Level 2)",
+    "organisation_name": "College of Human Ecology Human Centered Design",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-22T08:00",
+      "end": "2026-11-22T17:00"
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "cornell-ed3c429573",
+   "field": "title",
+   "quote": "Annual Celebration of Gratitude Dinner on Thanksgiving Day",
+   "url": "https://events.cornell.edu/event/annual-celebration-of-gratitude-dinner-on-thanksgiving-day-2026",
+   "check_confidence": 0.9870190836216788,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-ed3c429573",
+   "field": "date",
+   "quote": "Thursday, November 26, 2026 11:30am to 2:30pm",
+   "url": "https://events.cornell.edu/event/annual-celebration-of-gratitude-dinner-on-thanksgiving-day-2026",
+   "check_confidence": 0.9853500395122822,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-ed3c429573",
+   "field": "start_time",
+   "quote": "11:30",
+   "url": "https://events.cornell.edu/event/annual-celebration-of-gratitude-dinner-on-thanksgiving-day-2026",
+   "check_confidence": 0.976086280547911,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-ed3c429573",
+   "field": "venue_name",
+   "quote": "Morrison Dining",
+   "url": "https://events.cornell.edu/event/annual-celebration-of-gratitude-dinner-on-thanksgiving-day-2026",
+   "check_confidence": 0.9843351989193786,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-ed3c429573",
+   "field": "organisation_name",
+   "quote": "Cornell Dining",
+   "url": "https://events.cornell.edu/event/annual-celebration-of-gratitude-dinner-on-thanksgiving-day-2026",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-323b7bfe44",
+   "field": "title",
+   "quote": "Winter Wonders: Mindful Botany Walks",
+   "url": "https://events.cornell.edu/event/winter-wonders-mindful-botany-walks",
+   "check_confidence": 0.9876835249208907,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-323b7bfe44",
+   "field": "date",
+   "quote": "Friday, January 29, 2027 12pm to 1pm",
+   "url": "https://events.cornell.edu/event/winter-wonders-mindful-botany-walks",
+   "check_confidence": 0.97734877881756,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-323b7bfe44",
+   "field": "start_time",
+   "quote": "12:00",
+   "url": "https://events.cornell.edu/event/winter-wonders-mindful-botany-walks",
+   "check_confidence": 0.9850887779370587,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-323b7bfe44",
+   "field": "venue_name",
+   "quote": "Brian C. Nevin Welcome Center",
+   "url": "https://events.cornell.edu/event/winter-wonders-mindful-botany-walks",
+   "check_confidence": 0.9819627055243035,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-323b7bfe44",
+   "field": "organisation_name",
+   "quote": "Cornell Botanic Gardens",
+   "url": "https://events.cornell.edu/event/winter-wonders-mindful-botany-walks",
+   "check_confidence": 0.9837611134963684,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-323b7bfe44",
+   "field": "speaker",
+   "quote": "Sarah Fiorello, Interpretation Coordinator, and Kara Peet, Student Public Education Coordinator",
+   "url": "https://events.cornell.edu/event/winter-wonders-mindful-botany-walks",
+   "check_confidence": 0.7581471705925941,
+   "passed": false
+  },
+  {
+   "entity_id": "cornell-13ccc97973",
+   "field": "title",
+   "quote": "Get started with Genealogy Research",
+   "url": "https://events.cornell.edu/event/genealogy_12826",
+   "check_confidence": 0.9755009364354842,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-13ccc97973",
+   "field": "date",
+   "quote": "Tuesday, December 8, 2026 12pm to 1pm",
+   "url": "https://events.cornell.edu/event/genealogy_12826",
+   "check_confidence": 0.9800435030258697,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-13ccc97973",
+   "field": "start_time",
+   "quote": "12:00",
+   "url": "https://events.cornell.edu/event/genealogy_12826",
+   "check_confidence": 0.9829438327726451,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-13ccc97973",
+   "field": "venue_name",
+   "quote": "Olin Library, Olin 108",
+   "url": "https://events.cornell.edu/event/genealogy_12826",
+   "check_confidence": 0.9839012565383969,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-13ccc97973",
+   "field": "organisation_name",
+   "quote": "Cornell University Library",
+   "url": "https://events.cornell.edu/event/genealogy_12826",
+   "check_confidence": 0.9604118019693301,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-2a29ecc992",
+   "field": "title",
+   "quote": "Cornell Chorale Fall 2026 Concert - Seasons of Life (CU Music)",
+   "url": "https://events.cornell.edu/event/cornell-chorale-fall-2026-concert-seasons-of-life-cu-music",
+   "check_confidence": 0.988558284359161,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-2a29ecc992",
+   "field": "date",
+   "quote": "Sunday, November 22, 2026 7:30pm",
+   "url": "https://events.cornell.edu/event/cornell-chorale-fall-2026-concert-seasons-of-life-cu-music",
+   "check_confidence": 0.9810190754789743,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-2a29ecc992",
+   "field": "start_time",
+   "quote": "19:30",
+   "url": "https://events.cornell.edu/event/cornell-chorale-fall-2026-concert-seasons-of-life-cu-music",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-2a29ecc992",
+   "field": "venue_name",
+   "quote": "Bailey Hall, 230 Garden Ave, Ithaca, NY 14850",
+   "url": "https://events.cornell.edu/event/cornell-chorale-fall-2026-concert-seasons-of-life-cu-music",
+   "check_confidence": 0.9783196751309869,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-2a29ecc992",
+   "field": "organisation_name",
+   "quote": "Department of Music",
+   "url": "https://events.cornell.edu/event/cornell-chorale-fall-2026-concert-seasons-of-life-cu-music",
+   "check_confidence": 0.9552289406822643,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-2a57ede939",
+   "field": "title",
+   "quote": "Information Session: Global Internships",
+   "url": "https://events.cornell.edu/event/information-session-fall26-global-internships-4",
+   "check_confidence": 0.9678367135537428,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-2a57ede939",
+   "field": "date",
+   "quote": "Thursday, December 3, 2026 4:30pm to 5:30pm",
+   "url": "https://events.cornell.edu/event/information-session-fall26-global-internships-4",
+   "check_confidence": 0.9815181312003841,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-2a57ede939",
+   "field": "start_time",
+   "quote": "16:30",
+   "url": "https://events.cornell.edu/event/information-session-fall26-global-internships-4",
+   "check_confidence": 0.9608214191146004,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-2a57ede939",
+   "field": "venue_name",
+   "quote": "Uris Hall, G08",
+   "url": "https://events.cornell.edu/event/information-session-fall26-global-internships-4",
+   "check_confidence": 0.9600194539992016,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-2a57ede939",
+   "field": "organisation_name",
+   "quote": "Mario Einaudi Center for International Studies",
+   "url": "https://events.cornell.edu/event/information-session-fall26-global-internships-4",
+   "check_confidence": 0.9597629268006106,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-f79262f039",
+   "field": "title",
+   "quote": "Decolonial Endurance: Indigenous Wellbeing Against Chinese Settler Colonialism",
+   "url": "https://events.cornell.edu/event/book-talk-decolonial-endurance-lisu-worldmaking-against-chinese-settler-colonialism",
+   "check_confidence": 0.9732477496818971,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-f79262f039",
+   "field": "date",
+   "quote": "Tuesday, November 24, 2026 12:15pm",
+   "url": "https://events.cornell.edu/event/book-talk-decolonial-endurance-lisu-worldmaking-against-chinese-settler-colonialism",
+   "check_confidence": 0.9872971538467822,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-f79262f039",
+   "field": "start_time",
+   "quote": "12:15",
+   "url": "https://events.cornell.edu/event/book-talk-decolonial-endurance-lisu-worldmaking-against-chinese-settler-colonialism",
+   "check_confidence": 0.9867686038994862,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-f79262f039",
+   "field": "venue_name",
+   "quote": "Kahin Center, 640 Stewart Ave, Ithaca, NY 14850, USA",
+   "url": "https://events.cornell.edu/event/book-talk-decolonial-endurance-lisu-worldmaking-against-chinese-settler-colonialism",
+   "check_confidence": 0.9506923620964464,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-f79262f039",
+   "field": "organisation_name",
+   "quote": "Mario Einaudi Center for International Studies",
+   "url": "https://events.cornell.edu/event/book-talk-decolonial-endurance-lisu-worldmaking-against-chinese-settler-colonialism",
+   "check_confidence": 0.7628418993400901,
+   "passed": false
+  },
+  {
+   "entity_id": "cornell-f79262f039",
+   "field": "speaker",
+   "quote": "Ting Hui Lau",
+   "url": "https://events.cornell.edu/event/book-talk-decolonial-endurance-lisu-worldmaking-against-chinese-settler-colonialism",
+   "check_confidence": 0.985552738254709,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-1a702a8e6a",
+   "field": "title",
+   "quote": "Malaysia, Decolonization, and Finding a New Language for Self-Determination",
+   "url": "https://events.cornell.edu/event/malaysia-decolonization-and-finding-a-new-language-for-self-determination",
+   "check_confidence": 0.9643833548321844,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-1a702a8e6a",
+   "field": "date",
+   "quote": "Thursday, December 3, 2026 12:15pm to 1:30pm",
+   "url": "https://events.cornell.edu/event/malaysia-decolonization-and-finding-a-new-language-for-self-determination",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-1a702a8e6a",
+   "field": "start_time",
+   "quote": "12:15",
+   "url": "https://events.cornell.edu/event/malaysia-decolonization-and-finding-a-new-language-for-self-determination",
+   "check_confidence": 0.9812208942720057,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-1a702a8e6a",
+   "field": "venue_name",
+   "quote": "Kahin Center, 640 Stewart Ave.",
+   "url": "https://events.cornell.edu/event/malaysia-decolonization-and-finding-a-new-language-for-self-determination",
+   "check_confidence": 0.9642359816606106,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-1a702a8e6a",
+   "field": "organisation_name",
+   "quote": "Southeast Asia Program",
+   "url": "https://events.cornell.edu/event/malaysia-decolonization-and-finding-a-new-language-for-self-determination",
+   "check_confidence": 0.9336683388956459,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-1a702a8e6a",
+   "field": "speaker",
+   "quote": "Muhammad Suhail Mohamed Yazid",
+   "url": "https://events.cornell.edu/event/malaysia-decolonization-and-finding-a-new-language-for-self-determination",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-ed2444392b",
+   "field": "title",
+   "quote": "Fall Open House at the Mushroom Museum!",
+   "url": "https://events.cornell.edu/event/fall-open-house-at-the-mushroom-museum",
+   "check_confidence": 0.9849191454928012,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-ed2444392b",
+   "field": "date",
+   "quote": "Saturday, December 5, 2026 2pm to 5pm",
+   "url": "https://events.cornell.edu/event/fall-open-house-at-the-mushroom-museum",
+   "check_confidence": 0.9724733672276986,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-ed2444392b",
+   "field": "start_time",
+   "quote": "14:00",
+   "url": "https://events.cornell.edu/event/fall-open-house-at-the-mushroom-museum",
+   "check_confidence": 0.9816479141242601,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-ed2444392b",
+   "field": "venue_name",
+   "quote": "214 Gallus Rd, Ithaca NY",
+   "url": "https://events.cornell.edu/event/fall-open-house-at-the-mushroom-museum",
+   "check_confidence": 0.9730643042120494,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-ed2444392b",
+   "field": "organisation_name",
+   "quote": "School of Integrative Plant Science",
+   "url": "https://events.cornell.edu/event/fall-open-house-at-the-mushroom-museum",
+   "check_confidence": 0.8891939397031811,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-d70bf00edf",
+   "field": "title",
+   "quote": "Immigration After the Midterms: Policy, Rights, and the Future of American Democracy",
+   "url": "https://events.cornell.edu/event/immigration-policy-after-midterms",
+   "check_confidence": 0.97666796792895,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-d70bf00edf",
+   "field": "date",
+   "quote": "Tuesday, December 1, 2026 4pm to 5:15pm",
+   "url": "https://events.cornell.edu/event/immigration-policy-after-midterms",
+   "check_confidence": 0.9759651941398352,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-d70bf00edf",
+   "field": "start_time",
+   "quote": "16:00",
+   "url": "https://events.cornell.edu/event/immigration-policy-after-midterms",
+   "check_confidence": 0.9788685056286635,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-d70bf00edf",
+   "field": "venue_name",
+   "quote": "Virtual Event",
+   "url": "https://events.cornell.edu/event/immigration-policy-after-midterms",
+   "check_confidence": 0.9745540282435946,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-d70bf00edf",
+   "field": "organisation_name",
+   "quote": "Global Cornell, Cornell Center on Democracy, Cornell Law School Migration and Human Rights Program, and Einaudi Center for International Studies Migrations Program",
+   "url": "https://events.cornell.edu/event/immigration-policy-after-midterms",
+   "check_confidence": 0.9486765277884793,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-d70bf00edf",
+   "field": "speaker",
+   "quote": "Dan Berger, David Bier, Gunisha Kaur, Margy O'Herron, Diego Sánchez, Tara Watson; Moderator: Rachel Beatty Riedl",
+   "url": "https://events.cornell.edu/event/immigration-policy-after-midterms",
+   "check_confidence": 0.9728689606442432,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-faddf82677",
+   "field": "title",
+   "quote": "Island Editions Conversation Series at the Gensler Family AAP NYC Center Fall 2026",
+   "url": "https://events.cornell.edu/event/island-editions-conversation-series-at-the-gensler-family-aap-nyc-center-fall-2026",
+   "check_confidence": 0.9662255769106799,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-faddf82677",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026",
+   "url": "https://events.cornell.edu/event/island-editions-conversation-series-at-the-gensler-family-aap-nyc-center-fall-2026",
+   "check_confidence": 0.7531306525525591,
+   "passed": false
+  },
+  {
+   "entity_id": "cornell-faddf82677",
+   "field": "venue_name",
+   "quote": "Gensler Family AAP NYC Center",
+   "url": "https://events.cornell.edu/event/island-editions-conversation-series-at-the-gensler-family-aap-nyc-center-fall-2026",
+   "check_confidence": 0.9873221749887492,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-faddf82677",
+   "field": "speaker",
+   "quote": "Preston Scott Cohen, Peter Eisenman, Billie Tsien, Cynthia Davidson",
+   "url": "https://events.cornell.edu/event/island-editions-conversation-series-at-the-gensler-family-aap-nyc-center-fall-2026",
+   "check_confidence": 0.9430212669014056,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-97fd89bda7",
+   "field": "title",
+   "quote": "Cornell Art Faculty 2026",
+   "url": "https://events.cornell.edu/event/cornell-art-faculty-2026",
+   "check_confidence": 0.9735276059419037,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-97fd89bda7",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026",
+   "url": "https://events.cornell.edu/event/cornell-art-faculty-2026",
+   "check_confidence": 0.9813726460347262,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-97fd89bda7",
+   "field": "venue_name",
+   "quote": "Herbert F. Johnson Museum of Art\nGold, Schaenen, Moak, and Class of 1953 Galleries, Floor 2L",
+   "url": "https://events.cornell.edu/event/cornell-art-faculty-2026",
+   "check_confidence": 0.9533826321443051,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-97fd89bda7",
+   "field": "organisation_name",
+   "quote": "Department of Art",
+   "url": "https://events.cornell.edu/event/cornell-art-faculty-2026",
+   "check_confidence": 0.8890013823893599,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-c5fe4cd4d8",
+   "field": "title",
+   "quote": "Cornell Men's Ice Hockey vs St. Lawrence University",
+   "url": "https://events.cornell.edu/event/cornell-mens-ice-hockey-vs-st-lawrence-university-1523",
+   "check_confidence": 0.9555995568059015,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-c5fe4cd4d8",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026 7pm",
+   "url": "https://events.cornell.edu/event/cornell-mens-ice-hockey-vs-st-lawrence-university-1523",
+   "check_confidence": 0.9705247762346526,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-c5fe4cd4d8",
+   "field": "start_time",
+   "quote": "19:00",
+   "url": "https://events.cornell.edu/event/cornell-mens-ice-hockey-vs-st-lawrence-university-1523",
+   "check_confidence": 0.9771476773209129,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-c5fe4cd4d8",
+   "field": "venue_name",
+   "quote": "Lynah Rink",
+   "url": "https://events.cornell.edu/event/cornell-mens-ice-hockey-vs-st-lawrence-university-1523",
+   "check_confidence": 0.9763934677151674,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-c5fe4cd4d8",
+   "field": "organisation_name",
+   "quote": "Athletics",
+   "url": "https://events.cornell.edu/event/cornell-mens-ice-hockey-vs-st-lawrence-university-1523",
+   "check_confidence": 0.8463014017420057,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-f0e17ba9b7",
+   "field": "title",
+   "quote": "Ancient Worlds in Modern Threads",
+   "url": "https://events.cornell.edu/event/ancient-worlds-in-modern-threads",
+   "check_confidence": 0.9711502638225954,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-f0e17ba9b7",
+   "field": "date",
+   "quote": "Sunday, November 22, 2026 8am to 5pm",
+   "url": "https://events.cornell.edu/event/ancient-worlds-in-modern-threads",
+   "check_confidence": 0.97721427712533,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-f0e17ba9b7",
+   "field": "start_time",
+   "quote": "08:00",
+   "url": "https://events.cornell.edu/event/ancient-worlds-in-modern-threads",
+   "check_confidence": 0.9688993006724133,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-f0e17ba9b7",
+   "field": "venue_name",
+   "quote": "Human Ecology Building (HEB), HEB Display cases (Terrace Level, Level 1 and Level 2)",
+   "url": "https://events.cornell.edu/event/ancient-worlds-in-modern-threads",
+   "check_confidence": 0.9773704403207376,
+   "passed": true
+  },
+  {
+   "entity_id": "cornell-f0e17ba9b7",
+   "field": "organisation_name",
+   "quote": "College of Human Ecology Human Centered Design",
+   "url": "https://events.cornell.edu/event/ancient-worlds-in-modern-threads",
+   "check_confidence": 0.8889364984713323,
+   "passed": true
+  }
+ ]
+}

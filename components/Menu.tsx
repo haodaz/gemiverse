@@ -9,10 +9,14 @@ const L: Record<string, Record<Lang, string>> = {
   menu: { en: "Menu", zh: "菜单", es: "Menú" }, language: { en: "Language", zh: "语言", es: "Idioma" }, music: { en: "Music", zh: "音乐", es: "Música" }, off: { en: "Off", zh: "关", es: "No" },
   account: { en: "Account", zh: "账号", es: "Cuenta" }, local: { en: "Kept in this browser only. Sign-in opens later.", zh: "现在只存在这个浏览器里，登录稍后开放。", es: "Solo en este navegador. El acceso llegará después." },
   fresh: { en: "Start over as a new student", zh: "当作新同学重新开始", es: "Empezar de nuevo" },
+  outside: { en: "Outside the window", zh: "窗外", es: "Fuera de la ventana" }, now: { en: "Now", zh: "现在", es: "Ahora" },
+  clear: { en: "Clear", zh: "晴", es: "Despejado" }, cloudy: { en: "Cloudy", zh: "阴", es: "Nublado" }, rain: { en: "Rain", zh: "雨", es: "Lluvia" }, snow: { en: "Snow", zh: "雪", es: "Nieve" },
   more: { en: "Behind the room", zh: "小屋背后", es: "Detrás del cuarto" }, school: { en: "Change school", zh: "换学校", es: "Cambiar de escuela" },
 };
 export function Menu({ lang, onLang }: { lang: Lang; onLang: (l: Lang) => void }) {
-  const [open, setOpen] = useState(false), [on, setOn] = useState(false), [idx, setIdx] = useState(0);
+  const [open, setOpen] = useState(false), [on, setOn] = useState(false), [idx, setIdx] = useState(0), [hour, setHour] = useState<number | null>(null), [weather, setWeather] = useState("clear");
+  // The light in the room follows the hour and the weather; this tells the 3D view which to use.
+  const amb = (value: Record<string, unknown>) => { for (const f of Array.from(document.querySelectorAll("iframe"))) f.contentWindow?.postMessage({ source: "gemiverse", type: "ambience", value }, "*"); };
   const audio = useRef<HTMLAudioElement | null>(null);
   useEffect(() => { const a = audio.current; if (!a) return; if (on) { a.src = `/music/${TRACKS[idx][0]}.mp3`; a.loop = true; a.volume = 0.35; a.play().catch(() => {}); } else a.pause(); }, [on, idx]);
   const chip = (on: boolean) => ({ borderColor: INK, background: on ? "#2b2536" : "#fff", color: on ? "#fff" : "#2b2536" });
@@ -35,10 +39,13 @@ export function Menu({ lang, onLang }: { lang: Lang; onLang: (l: Lang) => void }
               <span className="truncate px-1 text-sm font-bold">{TRACKS[idx][1]}</span>
               <button onClick={() => setIdx((idx + 1) % TRACKS.length)} aria-label="Next track" className="grid h-7 w-7 place-items-center rounded-full text-lg font-bold hover:bg-[#f1ebf7]">›</button></div>
           </div>
+          <div className={head}>{L.outside[lang]}</div>
+          <div className="flex flex-wrap gap-1.5">{([[null, L.now[lang]], [8, "08:00"], [18.2, "18:00"], [22, "22:00"]] as [number | null, string][]).map(([h, t]) => <button key={t} onClick={() => { setHour(h); amb({ hour: h }); }} className="rounded-full border-2 px-2.5 py-0.5 text-[13px] font-bold" style={chip(hour === h)}>{t}</button>)}</div>
+          <div className="mt-1.5 flex flex-wrap gap-1.5">{(["clear", "cloudy", "rain", "snow"] as const).map((w) => <button key={w} onClick={() => { setWeather(w); amb({ weather: w }); }} className="rounded-full border-2 px-2.5 py-0.5 text-[13px] font-bold" style={chip(weather === w)}>{L[w][lang]}</button>)}</div>
           <div className={head}>{L.account[lang]}</div><p className="text-xs leading-snug text-[#6d6579]">{L.local[lang]}</p>
           <button onClick={() => { try { const sc = localStorage.getItem("gemi.school"); for (const k of Object.keys(localStorage)) if (k.startsWith("gemi.") && k.endsWith(`.${sc}`)) localStorage.removeItem(k); } catch {} location.reload(); }} className="mt-1.5 rounded-full border-2 px-3 py-0.5 text-xs font-bold" style={{ borderColor: INK }}>{L.fresh[lang]}</button>
           <div className={head}>{L.more[lang]}</div>
-          <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm font-bold underline">{[["/", L.school[lang]], ["/meet", "Gemi to Gemi"], ["/foundry", "Foundry"], ["/admin", "Admin"], ["/deck", "Deck"]].map(([h, n]) => <a key={h} href={h}>{n}</a>)}</div>
+          <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm font-bold underline">{[["/campus", lang === "zh" ? "校园地图" : "Campus map"], ["/", L.school[lang]], ["/meet", "Gemi to Gemi"], ["/foundry", "Foundry"], ["/admin", "Admin"], ["/deck", "Deck"]].map(([h, n]) => <a key={h} href={h}>{n}</a>)}</div>
         </div>)}
     </div>);
 }

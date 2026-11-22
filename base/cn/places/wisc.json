@@ -1,0 +1,104 @@
+{
+ "school": "wisc",
+ "name": "University of Wisconsin–Madison",
+ "at": "2026-11-22T00:19:22.758Z",
+ "source": "https://en.wikipedia.org/wiki/University%20of%20Wisconsin%E2%80%93Madison",
+ "character": "The main campus sits on an isthmus along Lake Mendota with an urban street grid, a central hill, and buildings in Federal, Neoclassical, Romanesque, Gothic, Beaux-Arts, and Brutalist styles.",
+ "map": "/art/map/wisc.jpg",
+ "landmarks": [
+  {
+   "name": "Lake Mendota",
+   "name_en": "Lake Mendota",
+   "kind": "lake",
+   "quote": "The 933-acre (378 ha) main campus is located on the shores of Lake Mendota",
+   "look": "Broad lake bordering the campus shore, with sailboats on the water.",
+   "check": 0.9454537572335772,
+   "confidence": 0.9454537572335772,
+   "passed": true,
+   "x": 0.5,
+   "y": 0.09
+  },
+  {
+   "name": "Bascom Hall",
+   "name_en": "Bascom Hall",
+   "kind": "hall",
+   "quote": "Bascom Hall, at the top of Bascom Hill, is often considered the \"heart of the campus.\"",
+   "look": "Historic hilltop hall with a balustrade, without a dome.",
+   "check": 0.9875249082044529,
+   "confidence": 0.9875249082044529,
+   "passed": true,
+   "x": 0.5,
+   "y": 0.25
+  },
+  {
+   "name": "Bascom Hill",
+   "name_en": "Bascom Hill",
+   "kind": "hill",
+   "quote": "Bascom Hall, at the top of Bascom Hill, is often considered the \"heart of the campus.\"",
+   "look": "Central campus hill topped by historic university buildings.",
+   "check": 0.9758847979389481,
+   "confidence": 0.9758847979389481,
+   "passed": true,
+   "x": 0.47,
+   "y": 0.43
+  },
+  {
+   "name": "Memorial Union",
+   "name_en": "Memorial Union",
+   "kind": "other",
+   "quote": "The hub of campus life is the Memorial Union.",
+   "look": "Lakeside student union building with a terrace overlooking Lake Mendota.",
+   "check": 0.9856648160188766,
+   "confidence": 0.9856648160188766,
+   "passed": true,
+   "x": 0.78,
+   "y": 0.35
+  },
+  {
+   "name": "Carillon Tower",
+   "name_en": "Carillon Tower",
+   "kind": "tower",
+   "quote": "The Carillon Tower, erected in 1936, was designed by Warren Powers Laird and Paul Philippe Cret",
+   "look": "Tall bell tower with a balustrade echoing Bascom Hall.",
+   "check": 0.9891441940294227,
+   "confidence": 0.9891441940294227,
+   "passed": true,
+   "x": 0.3,
+   "y": 0.58
+  },
+  {
+   "name": "Henry Mall",
+   "name_en": "Henry Mall",
+   "kind": "quad",
+   "quote": "Henry Mall is a 50-foot wide and 575-foot long landscaped quadrangle",
+   "look": "Long, narrow landscaped quadrangle lined with historic academic buildings and a boulder.",
+   "check": 0.99,
+   "confidence": 0.99,
+   "passed": true,
+   "x": 0.71,
+   "y": 0.65
+  },
+  {
+   "name": "Science Hall",
+   "name_en": "Science Hall",
+   "kind": "hall",
+   "quote": "Henry C. Koch designed the new Science Hall (built in 1888) in a Romanesque Revival style.",
+   "look": "1888 Romanesque Revival academic hall.",
+   "check": 0.99,
+   "confidence": 0.99,
+   "passed": true
+  },
+  {
+   "name": "Allen Centennial Gardens",
+   "name_en": "Allen Centennial Gardens",
+   "kind": "garden",
+   "quote": "It also features the Allen Centennial Gardens and University of Wisconsin–Madison Lakeshore Nature Preserve.",
+   "look": "Campus garden with landscaped plantings.",
+   "check": 0.9757406152452159,
+   "confidence": 0.9757406152452159,
+   "passed": true
+  }
+ ],
+ "tokens": 10131,
+ "seconds": 32
+}

@@ -1,0 +1,719 @@
+{
+ "school": "uw",
+ "name": "University of Washington",
+ "at": "2026-11-22T00:21:55.909Z",
+ "seconds": 33,
+ "tokens": 78707,
+ "entities": [
+  {
+   "id": "uw-0c5d665754",
+   "type": "Event",
+   "school": "uw",
+   "name": "UW Night at the Mariners",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.washington.edu/alumni/event/fy27-uw-night-at-the-mariners/",
+    "needs": [
+     "find_my_people",
+     "rest_and_recover"
+    ],
+    "start": "2026-08-21T19:10",
+    "summary": "The UW Alumni Association hosts a Mariners baseball game night with a themed jersey giveaway, pregame celebration, and postgame fireworks.",
+    "event_kind": "activity",
+    "venue_name": "T-Mobile Park, 1250 1st Avenue South, Seattle, WA 98134",
+    "organisation_name": "UW Alumni Association",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-08-21T19:10",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "uw-e1600637a7",
+   "type": "Event",
+   "school": "uw",
+   "name": "UW Converge Taipei",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.washington.edu/alumni/event/uw-converge-taipei-2027/",
+    "needs": [
+     "find_my_people",
+     "explore_a_field"
+    ],
+    "start": "2027-03-19",
+    "summary": "UW Converge Taipei brings together University of Washington alumni, leaders, and partners in Taiwan for a summit, reception, and networking.",
+    "event_kind": "activity",
+    "venue_name": "W Taipei, 10 Zhongxiao East Road Sec. 5, Xinyi District Taipei, Taiwan",
+    "organisation_name": null,
+    "speaker": "Robert J. Jones, Nancy Allbritton, Anind Dey, Ryan Hass, Raymond Greene, Denzil Suite, Hilaire Thompson, Joel Thornton",
+    "occurrences": [
+     {
+      "start": "2027-03-19",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "uw-3c3292fb22",
+   "type": "Event",
+   "school": "uw",
+   "name": "Fall Fling",
+   "tier": 1,
+   "fields": {
+    "url": "https://dawgdaze.fyp.uw.edu/event/fall-fling/",
+    "needs": [
+     "find_my_people",
+     "rest_and_recover"
+    ],
+    "start": null,
+    "summary": "An annual kickoff concert on the HUB Lawn featuring live music performances and food trucks for incoming students.",
+    "event_kind": "activity",
+    "venue_name": "Husky Union Building (HUB) Lawn",
+    "organisation_name": "ASUW Arts + Entertainment",
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "uw-9ca1595ef5",
+   "type": "Event",
+   "school": "uw",
+   "name": "State of the University Address",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.washington.edu/president/address/",
+    "needs": [
+     "navigate_systems"
+    ],
+    "start": "2026-10-08T10:30",
+    "summary": "University of Washington President Robert J. Jones reflects on his first year and shares his vision and strategy for the future.",
+    "event_kind": "lecture",
+    "venue_name": null,
+    "organisation_name": "Office of the President",
+    "speaker": "Robert J. Jones",
+    "occurrences": [
+     {
+      "start": "2026-10-08T10:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "uw-d2a554c01c",
+   "type": "Event",
+   "school": "uw",
+   "name": "2026 Provost’s Town Hall",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.washington.edu/provost/townhall/",
+    "needs": [
+     "navigate_systems",
+     "explore_a_field"
+    ],
+    "start": "2026-02-12",
+    "summary": "UW Provost Tricia Serio and faculty speakers discussed the state of the University and the role of public research universities.",
+    "event_kind": "lecture",
+    "venue_name": null,
+    "organisation_name": "Office of the Provost",
+    "speaker": "Tricia Serio, Ted Poor, Jodi Sandfort, Sarah Cusworth Walker",
+    "occurrences": [
+     {
+      "start": "2026-02-12",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "uw-194cc8b744",
+   "type": "Event",
+   "school": "uw",
+   "name": "Makers Fair",
+   "tier": 1,
+   "fields": {
+    "url": "https://hub.washington.edu/whats-happening/hub-events/makers-fair/",
+    "needs": [
+     "make_and_express",
+     "get_experience"
+    ],
+    "start": "2026-12-01T11:00",
+    "summary": "A quarterly fair at the HUB where UW community members and local vendors sell handmade and personally designed items.",
+    "event_kind": "activity",
+    "venue_name": "HUB Street/Lyceum",
+    "organisation_name": "The HUB",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-01T11:00",
+      "end": "2026-12-01T15:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "uw-3b97f12342",
+   "type": "Event",
+   "school": "uw",
+   "name": "Windermere Cup 2026",
+   "tier": 1,
+   "fields": {
+    "url": "https://windermerecup.com/",
+    "needs": [
+     "find_my_people",
+     "rest_and_recover"
+    ],
+    "start": "2026-05-02T10:15",
+    "summary": "The Windermere Cup 2026 is an annual rowing competition at Montlake Cut in Seattle, featuring crew races, a boat parade, and awards.",
+    "event_kind": "competition",
+    "venue_name": "Montlake Cut - Seattle, WA",
+    "organisation_name": "Windermere Real Estate",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-05-02T10:15",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "uw-9d3098608f",
+   "type": "Event",
+   "school": "uw",
+   "name": "OMA D s 56th Annual Celebration Gala",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.washington.edu/omad/celebration/",
+    "needs": [
+     "find_my_people",
+     "contribute_beyond_self"
+    ],
+    "start": "2027-05-19",
+    "summary": "The 56th Annual Celebration Gala honors leadership, community, and educational access while raising funds for the Educational Opportunity Program.",
+    "event_kind": "activity",
+    "venue_name": null,
+    "organisation_name": "Office of Minority Affairs Diversity",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2027-05-19",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "uw-3d4ec649c3",
+   "type": "Event",
+   "school": "uw",
+   "name": "Spring CELEbration 2026",
+   "tier": 1,
+   "fields": {
+    "url": "https://cele.uw.edu/about/news-events/spring-celebration/",
+    "needs": [
+     "find_my_people",
+     "contribute_beyond_self"
+    ],
+    "start": "2026-05-06T16:30",
+    "summary": "UW students showcase their community-engaged work, leadership, and activism at the Husky Union Building.",
+    "event_kind": "exhibition",
+    "venue_name": "Husky Union Building (HUB) ballroom and meeting rooms",
+    "organisation_name": "Community Engagement Leadership Education (CELE) Center",
+    "speaker": "Ed Taylor, Francesca Lo",
+    "occurrences": [
+     {
+      "start": "2026-05-06T16:30",
+      "end": "2026-05-06T19:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "uw-96e557bed2",
+   "type": "Event",
+   "school": "uw",
+   "name": "UW Global Accessibility Awareness Day (UW GAAD)",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.washington.edu/accesstech/get-involved/events/gaad/",
+    "needs": [
+     "explore_a_field",
+     "contribute_beyond_self"
+    ],
+    "start": null,
+    "summary": "The University of Washington celebrates Global Accessibility Awareness Day annually on the third Thursday in May to promote digital access and inclusion.",
+    "event_kind": "activity",
+    "venue_name": null,
+    "organisation_name": "University of Washington",
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "uw-f18922ef5c",
+   "type": "Event",
+   "school": "uw",
+   "name": "30th Annual UW Undergraduate Research Symposium",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.washington.edu/urs/",
+    "needs": [
+     "explore_a_field",
+     "get_experience"
+    ],
+    "start": "2027-05-21",
+    "summary": "The 30th Annual UW Undergraduate Research Symposium showcases student research across posters, oral presentations, visual arts, and performing arts.",
+    "event_kind": "other",
+    "venue_name": null,
+    "organisation_name": "Office of Undergraduate Research",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2027-05-21",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "uw-a76623df52",
+   "type": "Event",
+   "school": "uw",
+   "name": "UW Photo Day",
+   "tier": 1,
+   "fields": {
+    "url": "https://thewholeu.uw.edu/events-and-programs/signature-programs/uw-photo-day/",
+    "needs": [
+     "find_my_people"
+    ],
+    "start": "2026-08-10",
+    "summary": "An annual summer event on the Seattle campus where UW community members and their families get free professional photos.",
+    "event_kind": "activity",
+    "venue_name": "Seattle campus",
+    "organisation_name": "The Whole U",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-08-10",
+      "end": null
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "uw-0c5d665754",
+   "field": "title",
+   "quote": "UW Night at the Mariners",
+   "url": "https://www.washington.edu/alumni/event/fy27-uw-night-at-the-mariners/",
+   "check_confidence": 0.9781291341807595,
+   "passed": true
+  },
+  {
+   "entity_id": "uw-0c5d665754",
+   "field": "date",
+   "quote": "Aug. 21, 2026 First Pitch: 7:10 p.m.",
+   "url": "https://www.washington.edu/alumni/event/fy27-uw-night-at-the-mariners/",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "uw-0c5d665754",
+   "field": "start_time",
+   "quote": "19:10",
+   "url": "https://www.washington.edu/alumni/event/fy27-uw-night-at-the-mariners/",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "uw-0c5d665754",
+   "field": "venue_name",
+   "quote": "T-Mobile Park 1250 1st Avenue South, Seattle, WA 98134",
+   "url": "https://www.washington.edu/alumni/event/fy27-uw-night-at-the-mariners/",
+   "check_confidence": 0.9802279096945506,
+   "passed": true
+  },
+  {
+   "entity_id": "uw-0c5d665754",
+   "field": "organisation_name",
+   "quote": "UW Alumni Association",
+   "url": "https://www.washington.edu/alumni/event/fy27-uw-night-at-the-mariners/",
+   "check_confidence": 0.9846688440024162,
+   "passed": true
+  },
+  {
+   "entity_id": "uw-e1600637a7",
+   "field": "title",
+   "quote": "UW Converge Taipei",
+   "url": "https://www.washington.edu/alumni/event/uw-converge-taipei-2027/",
+   "check_confidence": 0.9849976117432556,
+   "passed": true
+  },
+  {
+   "entity_id": "uw-e1600637a7",
+   "field": "date",
+   "quote": "March 19-21, 2027",
+   "url": "https://www.washington.edu/alumni/event/uw-converge-taipei-2027/",
+   "check_confidence": 0.9843112213035871,
+   "passed": true
+  },
+  {
+   "entity_id": "uw-e1600637a7",
+   "field": "venue_name",
+   "quote": "W Taipei 10 Zhongxiao East Road Sec. 5, Xinyi District Taipei, Taiwan",
+   "url": "https://www.washington.edu/alumni/event/uw-converge-taipei-2027/",
+   "check_confidence": 0.9501075793460197,
+   "passed": true
+  },
+  {
+   "entity_id": "uw-e1600637a7",
+   "field": "organisation_name",
+   "quote": "UW Alumni Association",
+   "url": "https://www.washington.edu/alumni/event/uw-converge-taipei-2027/",
+   "check_confidence": 0.7480256608371068,
+   "passed": false
+  },
+  {
+   "entity_id": "uw-e1600637a7",
+   "field": "speaker",
+   "quote": "Robert J. Jones, Nancy Allbritton, Anind Dey, Ryan Hass, Raymond Greene, Denzil Suite, Hilaire Thompson, Joel Thornton",
+   "url": "https://www.washington.edu/alumni/event/uw-converge-taipei-2027/",
+   "check_confidence": 0.9703404870314049,
+   "passed": true
+  },
+  {
+   "entity_id": "uw-3c3292fb22",
+   "field": "title",
+   "quote": "Fall Fling",
+   "url": "https://dawgdaze.fyp.uw.edu/event/fall-fling/",
+   "check_confidence": 0.9747148997389325,
+   "passed": true
+  },
+  {
+   "entity_id": "uw-3c3292fb22",
+   "field": "start_time",
+   "quote": "15:00",
+   "url": "https://dawgdaze.fyp.uw.edu/event/fall-fling/",
+   "check_confidence": 0.9829367698386208,
+   "passed": true
+  },
+  {
+   "entity_id": "uw-3c3292fb22",
+   "field": "venue_name",
+   "quote": "Husky Union Building (HUB) Lawn",
+   "url": "https://dawgdaze.fyp.uw.edu/event/fall-fling/",
+   "check_confidence": 0.9700837814378763,
+   "passed": true
+  },
+  {
+   "entity_id": "uw-3c3292fb22",
+   "field": "organisation_name",
+   "quote": "ASUW Arts + Entertainment",
+   "url": "https://dawgdaze.fyp.uw.edu/event/fall-fling/",
+   "check_confidence": 0.9729694628537667,
+   "passed": true
+  },
+  {
+   "entity_id": "uw-9ca1595ef5",
+   "field": "title",
+   "quote": "State of the University Address",
+   "url": "https://www.washington.edu/president/address/",
+   "check_confidence": 0.9780662364566352,
+   "passed": true
+  },
+  {
+   "entity_id": "uw-9ca1595ef5",
+   "field": "date",
+   "quote": "Thursday, Oct. 8, 2026, 10:30 a.m.",
+   "url": "https://www.washington.edu/president/address/",
+   "check_confidence": 0.970469683004845,
+   "passed": true
+  },
+  {
+   "entity_id": "uw-9ca1595ef5",
+   "field": "start_time",
+   "quote": "10:30",
+   "url": "https://www.washington.edu/president/address/",
+   "check_confidence": 0.9802199103313826,
+   "passed": true
+  },
+  {
+   "entity_id": "uw-9ca1595ef5",
+   "field": "organisation_name",
+   "quote": "Office of the President",
+   "url": "https://www.washington.edu/president/address/",
+   "check_confidence": 0.9643963929827837,
+   "passed": true
+  },
+  {
+   "entity_id": "uw-9ca1595ef5",
+   "field": "speaker",
+   "quote": "Robert J. Jones",
+   "url": "https://www.washington.edu/president/address/",
+   "check_confidence": 0.9819339808666234,
+   "passed": true
+  },
+  {
+   "entity_id": "uw-d2a554c01c",
+   "field": "title",
+   "quote": "2026 Provost’s Town Hall",
+   "url": "https://www.washington.edu/provost/townhall/",
+   "check_confidence": 0.9808996455145526,
+   "passed": true
+  },
+  {
+   "entity_id": "uw-d2a554c01c",
+   "field": "date",
+   "quote": "Thursday, Feb. 12, 2026",
+   "url": "https://www.washington.edu/provost/townhall/",
+   "check_confidence": 0.9895685370816686,
+   "passed": true
+  },
+  {
+   "entity_id": "uw-d2a554c01c",
+   "field": "organisation_name",
+   "quote": "Office of the Provost",
+   "url": "https://www.washington.edu/provost/townhall/",
+   "check_confidence": 0.931932031846367,
+   "passed": true
+  },
+  {
+   "entity_id": "uw-d2a554c01c",
+   "field": "speaker",
+   "quote": "Tricia Serio, Ted Poor, Jodi Sandfort, Sarah Cusworth Walker",
+   "url": "https://www.washington.edu/provost/townhall/",
+   "check_confidence": 0.9551293317259083,
+   "passed": true
+  },
+  {
+   "entity_id": "uw-194cc8b744",
+   "field": "title",
+   "quote": "Makers Fair",
+   "url": "https://hub.washington.edu/whats-happening/hub-events/makers-fair/",
+   "check_confidence": 0.9892180204491953,
+   "passed": true
+  },
+  {
+   "entity_id": "uw-194cc8b744",
+   "field": "date",
+   "quote": "Tuesday, December 1st Thursday, December 3rd | 11:00-3:00pm",
+   "url": "https://hub.washington.edu/whats-happening/hub-events/makers-fair/",
+   "check_confidence": 0.9263569955125017,
+   "passed": true
+  },
+  {
+   "entity_id": "uw-194cc8b744",
+   "field": "start_time",
+   "quote": "11:00",
+   "url": "https://hub.washington.edu/whats-happening/hub-events/makers-fair/",
+   "check_confidence": 0.9494362705248685,
+   "passed": true
+  },
+  {
+   "entity_id": "uw-194cc8b744",
+   "field": "venue_name",
+   "quote": "HUB Street/Lyceum",
+   "url": "https://hub.washington.edu/whats-happening/hub-events/makers-fair/",
+   "check_confidence": 0.9570772997830004,
+   "passed": true
+  },
+  {
+   "entity_id": "uw-194cc8b744",
+   "field": "organisation_name",
+   "quote": "The HUB",
+   "url": "https://hub.washington.edu/whats-happening/hub-events/makers-fair/",
+   "check_confidence": 0.9817703550902973,
+   "passed": true
+  },
+  {
+   "entity_id": "uw-3b97f12342",
+   "field": "title",
+   "quote": "Windermere Cup 2026",
+   "url": "https://windermerecup.com/",
+   "check_confidence": 0.9718716124256258,
+   "passed": true
+  },
+  {
+   "entity_id": "uw-3b97f12342",
+   "field": "date",
+   "quote": "Saturday, May 2ND; Crew Races begin at 10:15 AM",
+   "url": "https://windermerecup.com/",
+   "check_confidence": 0.968591025436126,
+   "passed": true
+  },
+  {
+   "entity_id": "uw-3b97f12342",
+   "field": "start_time",
+   "quote": "10:15",
+   "url": "https://windermerecup.com/",
+   "check_confidence": 0.9747716837324554,
+   "passed": true
+  },
+  {
+   "entity_id": "uw-3b97f12342",
+   "field": "venue_name",
+   "quote": "Montlake Cut - Seattle, WA",
+   "url": "https://windermerecup.com/",
+   "check_confidence": 0.9827595199487126,
+   "passed": true
+  },
+  {
+   "entity_id": "uw-3b97f12342",
+   "field": "organisation_name",
+   "quote": "Windermere Real Estate",
+   "url": "https://windermerecup.com/",
+   "check_confidence": 0.9154767151939975,
+   "passed": true
+  },
+  {
+   "entity_id": "uw-9d3098608f",
+   "field": "title",
+   "quote": "OMA D s 56th Annual Celebration Gala",
+   "url": "https://www.washington.edu/omad/celebration/",
+   "check_confidence": 0.9482094344530239,
+   "passed": true
+  },
+  {
+   "entity_id": "uw-9d3098608f",
+   "field": "date",
+   "quote": "SAVE-THE-DATE: Wednesday, May 19, 2027",
+   "url": "https://www.washington.edu/omad/celebration/",
+   "check_confidence": 0.986037425600658,
+   "passed": true
+  },
+  {
+   "entity_id": "uw-9d3098608f",
+   "field": "organisation_name",
+   "quote": "Office of Minority Affairs Diversity",
+   "url": "https://www.washington.edu/omad/celebration/",
+   "check_confidence": 0.9837711794827629,
+   "passed": true
+  },
+  {
+   "entity_id": "uw-3d4ec649c3",
+   "field": "title",
+   "quote": "Spring CELEbration 2026",
+   "url": "https://cele.uw.edu/about/news-events/spring-celebration/",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "uw-3d4ec649c3",
+   "field": "date",
+   "quote": "Wednesday May 6, 2026 | 4:30– 7:30 p.m",
+   "url": "https://cele.uw.edu/about/news-events/spring-celebration/",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "uw-3d4ec649c3",
+   "field": "start_time",
+   "quote": "16:30",
+   "url": "https://cele.uw.edu/about/news-events/spring-celebration/",
+   "check_confidence": 0.9820244690026396,
+   "passed": true
+  },
+  {
+   "entity_id": "uw-3d4ec649c3",
+   "field": "venue_name",
+   "quote": "Husky Union Building (HUB) ballroom and meeting rooms",
+   "url": "https://cele.uw.edu/about/news-events/spring-celebration/",
+   "check_confidence": 0.9623880103758312,
+   "passed": true
+  },
+  {
+   "entity_id": "uw-3d4ec649c3",
+   "field": "organisation_name",
+   "quote": "Community Engagement Leadership Education (CELE) Center",
+   "url": "https://cele.uw.edu/about/news-events/spring-celebration/",
+   "check_confidence": 0.9633302168461981,
+   "passed": true
+  },
+  {
+   "entity_id": "uw-3d4ec649c3",
+   "field": "speaker",
+   "quote": "Ed Taylor, Francesca Lo",
+   "url": "https://cele.uw.edu/about/news-events/spring-celebration/",
+   "check_confidence": 0.955077825642302,
+   "passed": true
+  },
+  {
+   "entity_id": "uw-96e557bed2",
+   "field": "title",
+   "quote": "UW Global Accessibility Awareness Day (UW GAAD)",
+   "url": "https://www.washington.edu/accesstech/get-involved/events/gaad/",
+   "check_confidence": 0.9754224332293655,
+   "passed": true
+  },
+  {
+   "entity_id": "uw-96e557bed2",
+   "field": "organisation_name",
+   "quote": "University of Washington",
+   "url": "https://www.washington.edu/accesstech/get-involved/events/gaad/",
+   "check_confidence": 0.973650462741334,
+   "passed": true
+  },
+  {
+   "entity_id": "uw-f18922ef5c",
+   "field": "title",
+   "quote": "30th Annual UW Undergraduate Research Symposium",
+   "url": "https://www.washington.edu/urs/",
+   "check_confidence": 0.802860082957174,
+   "passed": true
+  },
+  {
+   "entity_id": "uw-f18922ef5c",
+   "field": "date",
+   "quote": "May 21, 2027",
+   "url": "https://www.washington.edu/urs/",
+   "check_confidence": 0.9742941930618868,
+   "passed": true
+  },
+  {
+   "entity_id": "uw-f18922ef5c",
+   "field": "organisation_name",
+   "quote": "Office of Undergraduate Research",
+   "url": "https://www.washington.edu/urs/",
+   "check_confidence": 0.9650101346135534,
+   "passed": true
+  },
+  {
+   "entity_id": "uw-a76623df52",
+   "field": "title",
+   "quote": "UW Photo Day",
+   "url": "https://thewholeu.uw.edu/events-and-programs/signature-programs/uw-photo-day/",
+   "check_confidence": 0.9876140212335149,
+   "passed": true
+  },
+  {
+   "entity_id": "uw-a76623df52",
+   "field": "date",
+   "quote": "On Sunday, August 10",
+   "url": "https://thewholeu.uw.edu/events-and-programs/signature-programs/uw-photo-day/",
+   "check_confidence": 0.9567888806306842,
+   "passed": true
+  },
+  {
+   "entity_id": "uw-a76623df52",
+   "field": "venue_name",
+   "quote": "Seattle campus",
+   "url": "https://thewholeu.uw.edu/events-and-programs/signature-programs/uw-photo-day/",
+   "check_confidence": 0.9749237418666336,
+   "passed": true
+  },
+  {
+   "entity_id": "uw-a76623df52",
+   "field": "organisation_name",
+   "quote": "The Whole U",
+   "url": "https://thewholeu.uw.edu/events-and-programs/signature-programs/uw-photo-day/",
+   "check_confidence": 0.974778340843426,
+   "passed": true
+  }
+ ]
+}

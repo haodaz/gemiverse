@@ -1,0 +1,816 @@
+{
+ "school": "seu",
+ "name": "东南大学",
+ "at": "2026-11-22T00:15:41.783Z",
+ "seconds": 36,
+ "tokens": 71060,
+ "entities": [
+  {
+   "id": "seu-dd9180e08a",
+   "type": "Event",
+   "school": "seu",
+   "name": "【“六朝松”大师讲堂】勤能补拙立根基，恒以创新绘蓝图",
+   "tier": 1,
+   "fields": {
+    "url": "https://jwc.seu.edu.cn/2026/1008/c53663a585167/page.htm",
+    "needs": [
+     "explore_a_field",
+     "decide_a_direction"
+    ],
+    "start": "2026-10-12T15:00",
+    "summary": "孙和平院士主讲的“六朝松”大师讲堂，分享勤能补拙与创新相关内容。",
+    "event_kind": "lecture",
+    "venue_name": "四牌楼校区大礼堂",
+    "organisation_name": "教务处",
+    "speaker": "孙和平",
+    "occurrences": [
+     {
+      "start": "2026-10-12T15:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "seu-8f5af8d8ac",
+   "type": "Event",
+   "school": "seu",
+   "name": "【“六朝松”大师讲堂】AI科技赋能蓝天与零碳未来",
+   "tier": 1,
+   "fields": {
+    "url": "https://jwc.seu.edu.cn/2026/0629/c53663a574319/page.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-06-30T10:00",
+    "summary": "清华大学李俊华院士主讲AI赋能蓝天与零碳未来的技术路径与战略思考。",
+    "event_kind": "lecture",
+    "venue_name": "九龙湖校区纪忠楼YF101",
+    "organisation_name": "东南大学教务处",
+    "speaker": "李俊华",
+    "occurrences": [
+     {
+      "start": "2026-06-30T10:00",
+      "end": "2026-06-30T11:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "seu-5ea1b37e73",
+   "type": "Event",
+   "school": "seu",
+   "name": "【“六朝松”大师讲堂】塑造创新人才的研究生教育",
+   "tier": 1,
+   "fields": {
+    "url": "https://jwc.seu.edu.cn/2026/0918/c53663a583607/page.htm",
+    "needs": [
+     "explore_a_field",
+     "decide_a_direction"
+    ],
+    "start": "2026-09-22T14:00",
+    "summary": "杨卫院士将作题为“塑造创新人才的研究生教育”的讲座，需通过数智东南预约。",
+    "event_kind": "lecture",
+    "venue_name": "九龙湖校区纪忠楼报告厅",
+    "organisation_name": null,
+    "speaker": "杨卫",
+    "occurrences": [
+     {
+      "start": "2026-09-22T14:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "seu-a6d628f4d9",
+   "type": "Event",
+   "school": "seu",
+   "name": "【“六朝松”大师讲堂】好房子的空气质量保障对策",
+   "tier": 1,
+   "fields": {
+    "url": "https://jwc.seu.edu.cn/2026/0430/c53663a566566/page.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-05-06T10:00",
+    "summary": "侯立安院士将围绕“好房子”室内空气质量保障、深度净化技术及未来对策作报告。",
+    "event_kind": "lecture",
+    "venue_name": "九龙湖校区纪忠楼报告厅",
+    "organisation_name": "教务处",
+    "speaker": "侯立安",
+    "occurrences": [
+     {
+      "start": "2026-05-06T10:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "seu-da009a1523",
+   "type": "Event",
+   "school": "seu",
+   "name": "【“六朝松”大师讲堂】从移动自组织网（Mobile Ad-hoc Network）到边缘数据网格（Edge Data Mesh）",
+   "tier": 1,
+   "fields": {
+    "url": "https://jwc.seu.edu.cn/2026/0601/c53663a569655/page.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-06-06T14:00",
+    "summary": "于全院士主讲“六朝松”大师讲堂，介绍从移动自组织网到边缘数据网格的架构。",
+    "event_kind": "lecture",
+    "venue_name": "九龙湖校区教三105",
+    "organisation_name": null,
+    "speaker": "于全",
+    "occurrences": [
+     {
+      "start": "2026-06-06T14:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "seu-276a9e8c40",
+   "type": "Event",
+   "school": "seu",
+   "name": "【“六朝松”大师讲堂】生物建造体系与展望",
+   "tier": 1,
+   "fields": {
+    "url": "https://jwc.seu.edu.cn/2026/0428/c53663a566004/page.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-05-06T10:00",
+    "summary": "刘汉龙院士主讲生物建造体系，涵盖微生物、植物、动物及仿生建造与展望。",
+    "event_kind": "lecture",
+    "venue_name": "九龙湖校区圆形报告厅一楼",
+    "organisation_name": null,
+    "speaker": "刘汉龙教授",
+    "occurrences": [
+     {
+      "start": "2026-05-06T10:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "seu-3f346a44c1",
+   "type": "Event",
+   "school": "seu",
+   "name": "【“六朝松”大师讲堂】从多孔金属到生命组织：走向“多物理力生命医学”的力学路径",
+   "tier": 1,
+   "fields": {
+    "url": "https://jwc.seu.edu.cn/2026/0402/c53663a560463/page.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-04-09T10:00",
+    "summary": "卢天健教授主讲，探讨从多孔金属到生命组织的多物理力生命医学力学路径。",
+    "event_kind": "lecture",
+    "venue_name": "九龙湖校区润良报告厅",
+    "organisation_name": "教务处",
+    "speaker": "卢天健",
+    "occurrences": [
+     {
+      "start": "2026-04-09T10:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "seu-8d657ec99b",
+   "type": "Event",
+   "school": "seu",
+   "name": "【“六朝松”大师讲堂】用于城市热岛效应减缓与全球气候变暖对策的高反射材料",
+   "tier": 1,
+   "fields": {
+    "url": "https://jwc.seu.edu.cn/2026/0417/c53663a563606/page.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-04-24T19:00",
+    "summary": "Hashem Akbari教授主讲高反射材料如何减缓城市热岛效应与气候变暖。",
+    "event_kind": "lecture",
+    "venue_name": "四牌楼校区大礼堂",
+    "organisation_name": null,
+    "speaker": "Hashem Akbari教授",
+    "occurrences": [
+     {
+      "start": "2026-04-24T19:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "seu-2a2adfa04c",
+   "type": "Event",
+   "school": "seu",
+   "name": "【“六朝松”大师讲堂】完美神奇的数字6",
+   "tier": 1,
+   "fields": {
+    "url": "https://jwc.seu.edu.cn/2026/0320/c53663a558807/page.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-03-23T10:00",
+    "summary": "张继平院士主讲“完美神奇的数字6”，探讨数字6在数学等学科中的神奇性质。",
+    "event_kind": "lecture",
+    "venue_name": "九龙湖校区教三-105",
+    "organisation_name": "教务处",
+    "speaker": "张继平",
+    "occurrences": [
+     {
+      "start": "2026-03-23T10:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "seu-10c593d45f",
+   "type": "Event",
+   "school": "seu",
+   "name": "【“六朝松”大师讲堂】从人类智慧到智慧工程系统",
+   "tier": 1,
+   "fields": {
+    "url": "https://jwc.seu.edu.cn/2026/0316/c53663a558203/page.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-03-20T09:30",
+    "summary": "朱合华院士主讲“六朝松”大师讲堂，探讨从人类智慧到智慧工程系统的内涵与模型。",
+    "event_kind": "lecture",
+    "venue_name": "九龙湖校区润良报告厅",
+    "organisation_name": "教务处",
+    "speaker": "朱合华",
+    "occurrences": [
+     {
+      "start": "2026-03-20T09:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "seu-e97ed5c1ec",
+   "type": "Event",
+   "school": "seu",
+   "name": "【“六朝松”大师讲堂】智能科学与经济社会",
+   "tier": 1,
+   "fields": {
+    "url": "https://jwc.seu.edu.cn/2025/1021/c53663a542867/page.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2025-11-03T15:00",
+    "summary": "范剑青教授将探讨智能数据科学在数字经济与社会治理中的关键应用。",
+    "event_kind": "lecture",
+    "venue_name": "九龙湖校区润良报告厅",
+    "organisation_name": "教务处",
+    "speaker": "范剑青",
+    "occurrences": [
+     {
+      "start": "2025-11-03T15:00",
+      "end": null
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "seu-dd9180e08a",
+   "field": "title",
+   "quote": "【“六朝松”大师讲堂】勤能补拙立根基，恒以创新绘蓝图",
+   "url": "https://jwc.seu.edu.cn/2026/1008/c53663a585167/page.htm",
+   "check_confidence": 0.9683397099844077,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-dd9180e08a",
+   "field": "date",
+   "quote": "2026年10月12日（周一）15：00",
+   "url": "https://jwc.seu.edu.cn/2026/1008/c53663a585167/page.htm",
+   "check_confidence": 0.967373284499565,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-dd9180e08a",
+   "field": "start_time",
+   "quote": "15:00",
+   "url": "https://jwc.seu.edu.cn/2026/1008/c53663a585167/page.htm",
+   "check_confidence": 0.9670840052107862,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-dd9180e08a",
+   "field": "venue_name",
+   "quote": "四牌楼校区大礼堂",
+   "url": "https://jwc.seu.edu.cn/2026/1008/c53663a585167/page.htm",
+   "check_confidence": 0.9681401995847468,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-dd9180e08a",
+   "field": "organisation_name",
+   "quote": "教务处",
+   "url": "https://jwc.seu.edu.cn/2026/1008/c53663a585167/page.htm",
+   "check_confidence": 0.8898247791507038,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-dd9180e08a",
+   "field": "speaker",
+   "quote": "孙和平",
+   "url": "https://jwc.seu.edu.cn/2026/1008/c53663a585167/page.htm",
+   "check_confidence": 0.978744695860002,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-8f5af8d8ac",
+   "field": "title",
+   "quote": "【“六朝松”大师讲堂】AI科技赋能蓝天与零碳未来",
+   "url": "https://jwc.seu.edu.cn/2026/0629/c53663a574319/page.htm",
+   "check_confidence": 0.9713052604328126,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-8f5af8d8ac",
+   "field": "date",
+   "quote": "2026年6月30日（周二）10：00-11：30",
+   "url": "https://jwc.seu.edu.cn/2026/0629/c53663a574319/page.htm",
+   "check_confidence": 0.9868358870787495,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-8f5af8d8ac",
+   "field": "start_time",
+   "quote": "10:00",
+   "url": "https://jwc.seu.edu.cn/2026/0629/c53663a574319/page.htm",
+   "check_confidence": 0.9598035958694037,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-8f5af8d8ac",
+   "field": "venue_name",
+   "quote": "九龙湖校区纪忠楼YF101",
+   "url": "https://jwc.seu.edu.cn/2026/0629/c53663a574319/page.htm",
+   "check_confidence": 0.9715098901678964,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-8f5af8d8ac",
+   "field": "organisation_name",
+   "quote": "东南大学教务处",
+   "url": "https://jwc.seu.edu.cn/2026/0629/c53663a574319/page.htm",
+   "check_confidence": 0.8158765842397557,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-8f5af8d8ac",
+   "field": "speaker",
+   "quote": "李俊华",
+   "url": "https://jwc.seu.edu.cn/2026/0629/c53663a574319/page.htm",
+   "check_confidence": 0.9748946909551442,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-5ea1b37e73",
+   "field": "title",
+   "quote": "【“六朝松”大师讲堂】塑造创新人才的研究生教育",
+   "url": "https://jwc.seu.edu.cn/2026/0918/c53663a583607/page.htm",
+   "check_confidence": 0.9815640569619412,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-5ea1b37e73",
+   "field": "date",
+   "quote": "2026年9月22日（周二）14：00",
+   "url": "https://jwc.seu.edu.cn/2026/0918/c53663a583607/page.htm",
+   "check_confidence": 0.9762824797822677,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-5ea1b37e73",
+   "field": "start_time",
+   "quote": "14:00",
+   "url": "https://jwc.seu.edu.cn/2026/0918/c53663a583607/page.htm",
+   "check_confidence": 0.98500446107999,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-5ea1b37e73",
+   "field": "venue_name",
+   "quote": "九龙湖校区纪忠楼报告厅",
+   "url": "https://jwc.seu.edu.cn/2026/0918/c53663a583607/page.htm",
+   "check_confidence": 0.9750390518835312,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-5ea1b37e73",
+   "field": "organisation_name",
+   "quote": "教务处",
+   "url": "https://jwc.seu.edu.cn/2026/0918/c53663a583607/page.htm",
+   "check_confidence": 0.7035203851155288,
+   "passed": false
+  },
+  {
+   "entity_id": "seu-5ea1b37e73",
+   "field": "speaker",
+   "quote": "杨卫",
+   "url": "https://jwc.seu.edu.cn/2026/0918/c53663a583607/page.htm",
+   "check_confidence": 0.9847983817221865,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-a6d628f4d9",
+   "field": "title",
+   "quote": "【“六朝松”大师讲堂】好房子的空气质量保障对策",
+   "url": "https://jwc.seu.edu.cn/2026/0430/c53663a566566/page.htm",
+   "check_confidence": 0.9685030013025365,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-a6d628f4d9",
+   "field": "date",
+   "quote": "2026年5月6日（周三）10：00",
+   "url": "https://jwc.seu.edu.cn/2026/0430/c53663a566566/page.htm",
+   "check_confidence": 0.9759701938814188,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-a6d628f4d9",
+   "field": "start_time",
+   "quote": "10:00",
+   "url": "https://jwc.seu.edu.cn/2026/0430/c53663a566566/page.htm",
+   "check_confidence": 0.9734128472953577,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-a6d628f4d9",
+   "field": "venue_name",
+   "quote": "九龙湖校区纪忠楼报告厅",
+   "url": "https://jwc.seu.edu.cn/2026/0430/c53663a566566/page.htm",
+   "check_confidence": 0.9665404001036378,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-a6d628f4d9",
+   "field": "organisation_name",
+   "quote": "教务处",
+   "url": "https://jwc.seu.edu.cn/2026/0430/c53663a566566/page.htm",
+   "check_confidence": 0.898757206642461,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-a6d628f4d9",
+   "field": "speaker",
+   "quote": "侯立安",
+   "url": "https://jwc.seu.edu.cn/2026/0430/c53663a566566/page.htm",
+   "check_confidence": 0.9667216182226481,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-da009a1523",
+   "field": "title",
+   "quote": "【“六朝松”大师讲堂】从移动自组织网（Mobile Ad-hoc Network）到边缘数据网格（Edge Data Mesh）",
+   "url": "https://jwc.seu.edu.cn/2026/0601/c53663a569655/page.htm",
+   "check_confidence": 0.9845853870719619,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-da009a1523",
+   "field": "date",
+   "quote": "2026年6月6日（周六）14：00",
+   "url": "https://jwc.seu.edu.cn/2026/0601/c53663a569655/page.htm",
+   "check_confidence": 0.9810642883627139,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-da009a1523",
+   "field": "start_time",
+   "quote": "14:00",
+   "url": "https://jwc.seu.edu.cn/2026/0601/c53663a569655/page.htm",
+   "check_confidence": 0.9836454235684579,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-da009a1523",
+   "field": "venue_name",
+   "quote": "九龙湖校区教三105",
+   "url": "https://jwc.seu.edu.cn/2026/0601/c53663a569655/page.htm",
+   "check_confidence": 0.9639121118656183,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-da009a1523",
+   "field": "organisation_name",
+   "quote": "东南大学教务处",
+   "url": "https://jwc.seu.edu.cn/2026/0601/c53663a569655/page.htm",
+   "check_confidence": 0.7368488329390505,
+   "passed": false
+  },
+  {
+   "entity_id": "seu-da009a1523",
+   "field": "speaker",
+   "quote": "于全",
+   "url": "https://jwc.seu.edu.cn/2026/0601/c53663a569655/page.htm",
+   "check_confidence": 0.9854357949672737,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-276a9e8c40",
+   "field": "title",
+   "quote": "【“六朝松”大师讲堂】生物建造体系与展望",
+   "url": "https://jwc.seu.edu.cn/2026/0428/c53663a566004/page.htm",
+   "check_confidence": 0.9849125069956884,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-276a9e8c40",
+   "field": "date",
+   "quote": "2026年5月6日（周三）10：00",
+   "url": "https://jwc.seu.edu.cn/2026/0428/c53663a566004/page.htm",
+   "check_confidence": 0.9744238852196745,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-276a9e8c40",
+   "field": "start_time",
+   "quote": "10:00",
+   "url": "https://jwc.seu.edu.cn/2026/0428/c53663a566004/page.htm",
+   "check_confidence": 0.9718734071714852,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-276a9e8c40",
+   "field": "venue_name",
+   "quote": "九龙湖校区圆形报告厅一楼",
+   "url": "https://jwc.seu.edu.cn/2026/0428/c53663a566004/page.htm",
+   "check_confidence": 0.9784123792637206,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-276a9e8c40",
+   "field": "organisation_name",
+   "quote": "东南大学教务处",
+   "url": "https://jwc.seu.edu.cn/2026/0428/c53663a566004/page.htm",
+   "check_confidence": 0.7576554563502287,
+   "passed": false
+  },
+  {
+   "entity_id": "seu-276a9e8c40",
+   "field": "speaker",
+   "quote": "刘汉龙教授",
+   "url": "https://jwc.seu.edu.cn/2026/0428/c53663a566004/page.htm",
+   "check_confidence": 0.9662540592592281,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-3f346a44c1",
+   "field": "title",
+   "quote": "【“六朝松”大师讲堂】从多孔金属到生命组织：走向“多物理力生命医学”的力学路径",
+   "url": "https://jwc.seu.edu.cn/2026/0402/c53663a560463/page.htm",
+   "check_confidence": 0.9851078498822446,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-3f346a44c1",
+   "field": "date",
+   "quote": "2026年4月9日（周四）上午10：00",
+   "url": "https://jwc.seu.edu.cn/2026/0402/c53663a560463/page.htm",
+   "check_confidence": 0.9746503950375323,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-3f346a44c1",
+   "field": "start_time",
+   "quote": "10:00",
+   "url": "https://jwc.seu.edu.cn/2026/0402/c53663a560463/page.htm",
+   "check_confidence": 0.9741302700660456,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-3f346a44c1",
+   "field": "venue_name",
+   "quote": "九龙湖校区润良报告厅",
+   "url": "https://jwc.seu.edu.cn/2026/0402/c53663a560463/page.htm",
+   "check_confidence": 0.9806320730079057,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-3f346a44c1",
+   "field": "organisation_name",
+   "quote": "教务处",
+   "url": "https://jwc.seu.edu.cn/2026/0402/c53663a560463/page.htm",
+   "check_confidence": 0.9358004214392884,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-3f346a44c1",
+   "field": "speaker",
+   "quote": "卢天健",
+   "url": "https://jwc.seu.edu.cn/2026/0402/c53663a560463/page.htm",
+   "check_confidence": 0.9611239753738159,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-8d657ec99b",
+   "field": "title",
+   "quote": "【“六朝松”大师讲堂】用于城市热岛效应减缓与全球气候变暖对策的高反射材料",
+   "url": "https://jwc.seu.edu.cn/2026/0417/c53663a563606/page.htm",
+   "check_confidence": 0.9769003887895538,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-8d657ec99b",
+   "field": "date",
+   "quote": "2026年4月24日（周五）19：00",
+   "url": "https://jwc.seu.edu.cn/2026/0417/c53663a563606/page.htm",
+   "check_confidence": 0.9796756477765088,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-8d657ec99b",
+   "field": "start_time",
+   "quote": "19:00",
+   "url": "https://jwc.seu.edu.cn/2026/0417/c53663a563606/page.htm",
+   "check_confidence": 0.9819242582652746,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-8d657ec99b",
+   "field": "venue_name",
+   "quote": "四牌楼校区大礼堂",
+   "url": "https://jwc.seu.edu.cn/2026/0417/c53663a563606/page.htm",
+   "check_confidence": 0.9518340315529394,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-8d657ec99b",
+   "field": "organisation_name",
+   "quote": "教务处",
+   "url": "https://jwc.seu.edu.cn/2026/0417/c53663a563606/page.htm",
+   "check_confidence": 0.7766905791906276,
+   "passed": false
+  },
+  {
+   "entity_id": "seu-8d657ec99b",
+   "field": "speaker",
+   "quote": "Hashem Akbari教授",
+   "url": "https://jwc.seu.edu.cn/2026/0417/c53663a563606/page.htm",
+   "check_confidence": 0.9758372340064251,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-2a2adfa04c",
+   "field": "title",
+   "quote": "【“六朝松”大师讲堂】完美神奇的数字6",
+   "url": "https://jwc.seu.edu.cn/2026/0320/c53663a558807/page.htm",
+   "check_confidence": 0.9670307842402658,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-2a2adfa04c",
+   "field": "date",
+   "quote": "2026年3月23日（周一）10：00",
+   "url": "https://jwc.seu.edu.cn/2026/0320/c53663a558807/page.htm",
+   "check_confidence": 0.9700482771077071,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-2a2adfa04c",
+   "field": "start_time",
+   "quote": "10:00",
+   "url": "https://jwc.seu.edu.cn/2026/0320/c53663a558807/page.htm",
+   "check_confidence": 0.9827387544322767,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-2a2adfa04c",
+   "field": "venue_name",
+   "quote": "九龙湖校区教三-105",
+   "url": "https://jwc.seu.edu.cn/2026/0320/c53663a558807/page.htm",
+   "check_confidence": 0.9833656486187696,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-2a2adfa04c",
+   "field": "organisation_name",
+   "quote": "教务处",
+   "url": "https://jwc.seu.edu.cn/2026/0320/c53663a558807/page.htm",
+   "check_confidence": 0.8982158601316105,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-2a2adfa04c",
+   "field": "speaker",
+   "quote": "张继平",
+   "url": "https://jwc.seu.edu.cn/2026/0320/c53663a558807/page.htm",
+   "check_confidence": 0.9771790059988602,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-10c593d45f",
+   "field": "title",
+   "quote": "【“六朝松”大师讲堂】从人类智慧到智慧工程系统",
+   "url": "https://jwc.seu.edu.cn/2026/0316/c53663a558203/page.htm",
+   "check_confidence": 0.9692226501414901,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-10c593d45f",
+   "field": "date",
+   "quote": "2026年3月20日（周五）9：30",
+   "url": "https://jwc.seu.edu.cn/2026/0316/c53663a558203/page.htm",
+   "check_confidence": 0.976425817654543,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-10c593d45f",
+   "field": "start_time",
+   "quote": "09:30",
+   "url": "https://jwc.seu.edu.cn/2026/0316/c53663a558203/page.htm",
+   "check_confidence": 0.9681112322518862,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-10c593d45f",
+   "field": "venue_name",
+   "quote": "九龙湖校区润良报告厅",
+   "url": "https://jwc.seu.edu.cn/2026/0316/c53663a558203/page.htm",
+   "check_confidence": 0.9460821013316789,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-10c593d45f",
+   "field": "organisation_name",
+   "quote": "教务处",
+   "url": "https://jwc.seu.edu.cn/2026/0316/c53663a558203/page.htm",
+   "check_confidence": 0.8297139958116208,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-10c593d45f",
+   "field": "speaker",
+   "quote": "朱合华",
+   "url": "https://jwc.seu.edu.cn/2026/0316/c53663a558203/page.htm",
+   "check_confidence": 0.9656890069487039,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-e97ed5c1ec",
+   "field": "title",
+   "quote": "【“六朝松”大师讲堂】智能科学与经济社会",
+   "url": "https://jwc.seu.edu.cn/2025/1021/c53663a542867/page.htm",
+   "check_confidence": 0.9697569148043168,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-e97ed5c1ec",
+   "field": "date",
+   "quote": "2025年11月3日（周一）15：00",
+   "url": "https://jwc.seu.edu.cn/2025/1021/c53663a542867/page.htm",
+   "check_confidence": 0.9724923828791228,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-e97ed5c1ec",
+   "field": "start_time",
+   "quote": "15:00",
+   "url": "https://jwc.seu.edu.cn/2025/1021/c53663a542867/page.htm",
+   "check_confidence": 0.9718439746782993,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-e97ed5c1ec",
+   "field": "venue_name",
+   "quote": "九龙湖校区润良报告厅",
+   "url": "https://jwc.seu.edu.cn/2025/1021/c53663a542867/page.htm",
+   "check_confidence": 0.9722262969267416,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-e97ed5c1ec",
+   "field": "organisation_name",
+   "quote": "教务处",
+   "url": "https://jwc.seu.edu.cn/2025/1021/c53663a542867/page.htm",
+   "check_confidence": 0.8881675884739584,
+   "passed": true
+  },
+  {
+   "entity_id": "seu-e97ed5c1ec",
+   "field": "speaker",
+   "quote": "范剑青",
+   "url": "https://jwc.seu.edu.cn/2025/1021/c53663a542867/page.htm",
+   "check_confidence": 0.99,
+   "passed": true
+  }
+ ]
+}

@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. Situated on College Hill and integrated into Providence's urban fabric, the campus features Georgian and Richardsonian Romanesque buildings, brick and wrought-iron fences, and landscaped greens. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Van Wickle Gates, a gate: Wrought iron gates with a larger central gate and two smaller side gates.; (2) Main or College Green, a quad: A grassy open campus green surrounded by historic brick buildings.; (3) Ruth J. Simmons Quadrangle, a quad: A grassy campus quadrangle bordered by academic buildings.; (4) John Hay Library, a library: A historic library building facing the western edge of the central campus.; (5) John Carter Brown Library, a library: A classic early 20th-century library building on the main campus.; (6) Haffenreffer Museum of Anthropology, a museum: A historic hall housing museum galleries on the main green.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 17,
+ "tokens": 2312,
+ "at": "2026-11-22T00:14:04.150Z"
+}

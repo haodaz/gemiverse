@@ -1,0 +1,94 @@
+{
+ "school": "zju",
+ "name": "浙江大学",
+ "at": "2026-11-22T00:13:15.701Z",
+ "source": "https://zh.wikipedia.org/wiki/%E6%B5%99%E6%B1%9F%E5%A4%A7%E5%AD%A6",
+ "character": null,
+ "map": "/art/map/zju.jpg",
+ "landmarks": [
+  {
+   "name": "白沙",
+   "name_en": "Baisha Academy",
+   "kind": "other",
+   "quote": "紫金港校区学生住宿区共分七个学园，自东向西、自北向南分别名为“白沙”、“翠柏”、“青溪”、“丹阳”、“蓝田”、“紫云”、“碧峰”。",
+   "look": "Plain student residential area buildings, details unknown",
+   "check": 0.949450955660425,
+   "confidence": 0.949450955660425,
+   "passed": true,
+   "x": 0.19,
+   "y": 0.25
+  },
+  {
+   "name": "翠柏",
+   "name_en": "Cuibai Academy",
+   "kind": "other",
+   "quote": "紫金港校区学生住宿区共分七个学园，自东向西、自北向南分别名为“白沙”、“翠柏”、“青溪”、“丹阳”、“蓝田”、“紫云”、“碧峰”。",
+   "look": "Plain student residential area buildings, details unknown",
+   "check": 0.9702550244352358,
+   "confidence": 0.9702550244352358,
+   "passed": true,
+   "x": 0.52,
+   "y": 0.23
+  },
+  {
+   "name": "青溪",
+   "name_en": "Qingxi Academy",
+   "kind": "other",
+   "quote": "紫金港校区学生住宿区共分七个学园，自东向西、自北向南分别名为“白沙”、“翠柏”、“青溪”、“丹阳”、“蓝田”、“紫云”、“碧峰”。",
+   "look": "Plain student residential area buildings, details unknown",
+   "check": 0.9571563373996061,
+   "confidence": 0.9571563373996061,
+   "passed": true,
+   "x": 0.83,
+   "y": 0.26
+  },
+  {
+   "name": "丹阳",
+   "name_en": "Danyang Academy",
+   "kind": "other",
+   "quote": "紫金港校区学生住宿区共分七个学园，自东向西、自北向南分别名为“白沙”、“翠柏”、“青溪”、“丹阳”、“蓝田”、“紫云”、“碧峰”。",
+   "look": "Plain student residential area buildings, details unknown",
+   "check": 0.9157630042975585,
+   "confidence": 0.9157630042975585,
+   "passed": true,
+   "x": 0.19,
+   "y": 0.67
+  },
+  {
+   "name": "蓝田",
+   "name_en": "Lantian Academy",
+   "kind": "other",
+   "quote": "紫金港校区学生住宿区共分七个学园，自东向西、自北向南分别名为“白沙”、“翠柏”、“青溪”、“丹阳”、“蓝田”、“紫云”、“碧峰”。",
+   "look": "Plain student residential area buildings, details unknown",
+   "check": 0.9555157869258487,
+   "confidence": 0.9555157869258487,
+   "passed": true,
+   "x": 0.53,
+   "y": 0.73
+  },
+  {
+   "name": "紫云",
+   "name_en": "Ziyun Academy",
+   "kind": "other",
+   "quote": "紫金港校区学生住宿区共分七个学园，自东向西、自北向南分别名为“白沙”、“翠柏”、“青溪”、“丹阳”、“蓝田”、“紫云”、“碧峰”。",
+   "look": "Plain student residential area buildings, details unknown",
+   "check": 0.9371462221299287,
+   "confidence": 0.9371462221299287,
+   "passed": true,
+   "x": 0.82,
+   "y": 0.66
+  },
+  {
+   "name": "碧峰",
+   "name_en": "Bifeng Academy",
+   "kind": "other",
+   "quote": "紫金港校区学生住宿区共分七个学园，自东向西、自北向南分别名为“白沙”、“翠柏”、“青溪”、“丹阳”、“蓝田”、“紫云”、“碧峰”。",
+   "look": "Plain student residential area buildings, details unknown",
+   "check": 0.9497518102908404,
+   "confidence": 0.9497518102908404,
+   "passed": true
+  }
+ ],
+ "tokens": 17242,
+ "seconds": 45
+}

@@ -1,0 +1,104 @@
+{
+ "school": "washu",
+ "name": "Washington University in St. Louis",
+ "at": "2026-11-22T00:18:07.518Z",
+ "source": "https://en.wikipedia.org/wiki/Washington%20University%20in%20St.%20Louis",
+ "character": null,
+ "map": "/art/map/washu.jpg",
+ "landmarks": [
+  {
+   "name": "Brookings Hall",
+   "name_en": "Brookings Hall",
+   "kind": "hall",
+   "quote": "followed by Brookings Hall, Ridgley, and Cupples.",
+   "look": "A plain campus hall with a basement.",
+   "check": 0.9844017445110195,
+   "confidence": 0.9844017445110195,
+   "passed": true,
+   "x": 0.23,
+   "y": 0.25
+  },
+  {
+   "name": "Brookings Quadrangle",
+   "name_en": "Brookings Quadrangle",
+   "kind": "quad",
+   "quote": "a large meeting in Brookings Quadrangle led to a march",
+   "look": "An open campus quadrangle.",
+   "check": 0.9763523380023512,
+   "confidence": 0.9763523380023512,
+   "passed": true,
+   "x": 0.39,
+   "y": 0.48
+  },
+  {
+   "name": "Busch Hall",
+   "name_en": "Busch Hall",
+   "kind": "hall",
+   "quote": "The cornerstone of the first building on its new Hilltop Campus, Busch Hall",
+   "look": "A plain campus hall.",
+   "check": 0.9751374884435037,
+   "confidence": 0.9751374884435037,
+   "passed": true,
+   "x": 0.7,
+   "y": 0.5
+  },
+  {
+   "name": "Eads Hall",
+   "name_en": "Eads Hall",
+   "kind": "hall",
+   "quote": "conducted a series of experiments in the basement of Eads Hall",
+   "look": "A plain campus hall with a basement.",
+   "check": 0.9814308999063411,
+   "confidence": 0.9814308999063411,
+   "passed": true,
+   "x": 0.48,
+   "y": 0.71
+  },
+  {
+   "name": "Ridgley",
+   "name_en": "Ridgley",
+   "kind": "other",
+   "quote": "followed by Brookings Hall, Ridgley, and Cupples.",
+   "look": "A plain campus building.",
+   "check": 0.9866954660389592,
+   "confidence": 0.9866954660389592,
+   "passed": true,
+   "x": 0.84,
+   "y": 0.77
+  },
+  {
+   "name": "Cupples",
+   "name_en": "Cupples",
+   "kind": "other",
+   "quote": "followed by Brookings Hall, Ridgley, and Cupples.",
+   "look": "A plain campus building.",
+   "check": 0.9706752389480945,
+   "confidence": 0.9706752389480945,
+   "passed": true,
+   "x": 0.85,
+   "y": 0.21
+  },
+  {
+   "name": "South 40",
+   "name_en": "South 40",
+   "kind": "other",
+   "quote": "Work on the South 40, named for its location south of the Hilltop Campus",
+   "look": "A 40-acre residential area with dormitories and a food service building.",
+   "check": 0.9674650849997012,
+   "confidence": 0.9674650849997012,
+   "passed": true
+  },
+  {
+   "name": "AFROTC building",
+   "name_en": "AFROTC building",
+   "kind": "other",
+   "quote": "toward the AFROTC building. The building was subsequently damaged",
+   "look": "A plain campus building.",
+   "check": 0.9441229680198931,
+   "confidence": 0.9441229680198931,
+   "passed": true
+  }
+ ],
+ "tokens": 10601,
+ "seconds": 35
+}

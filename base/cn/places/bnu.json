@@ -1,0 +1,104 @@
+{
+ "school": "bnu",
+ "name": "北京师范大学",
+ "at": "2026-11-22T00:15:09.287Z",
+ "source": "https://zh.wikipedia.org/wiki/%E5%8C%97%E4%BA%AC%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6",
+ "character": "Many older Soviet-style buildings were replaced by modern structures, while green space has been decreasing and campus traffic congestion is an issue.",
+ "map": "/art/map/bnu.jpg",
+ "landmarks": [
+  {
+   "name": "京师大厦",
+   "name_en": "Jingshi Building",
+   "kind": "other",
+   "quote": "在百年校庆前夕，北师大新建成京师大厦，新主楼和曾宪梓教学楼并投入使用。",
+   "look": "A modern multi-story university building, plain exterior.",
+   "check": 0.9185546034014604,
+   "confidence": 0.9185546034014604,
+   "passed": true,
+   "x": 0.16,
+   "y": 0.17
+  },
+  {
+   "name": "新主楼",
+   "name_en": "New Main Building",
+   "kind": "other",
+   "quote": "北师大新建成京师大厦，新主楼和曾宪梓教学楼并投入使用。",
+   "look": "A modern main academic building, plain exterior.",
+   "check": 0.961093474141873,
+   "confidence": 0.961093474141873,
+   "passed": true,
+   "x": 0.3,
+   "y": 0.37
+  },
+  {
+   "name": "后主楼",
+   "name_en": "Rear Main Building",
+   "kind": "other",
+   "quote": "邱季瑞体育馆（2008）和后主楼（2011）。",
+   "look": "A modern multi-story academic building, plain exterior.",
+   "check": 0.94371771169172,
+   "confidence": 0.94371771169172,
+   "passed": true,
+   "x": 0.21,
+   "y": 0.72
+  },
+  {
+   "name": "曾宪梓教学楼",
+   "name_en": "Zeng Xianzi Teaching Building",
+   "kind": "other",
+   "quote": "北师大新建成京师大厦，新主楼和曾宪梓教学楼并投入使用。",
+   "look": "A modern classroom building, plain exterior.",
+   "check": 0.9641333271886016,
+   "confidence": 0.9641333271886016,
+   "passed": true,
+   "x": 0.55,
+   "y": 0.48
+  },
+  {
+   "name": "邱季瑞体育馆",
+   "name_en": "Qiu Jirui Gymnasium",
+   "kind": "stadium",
+   "quote": "邱季瑞体育馆（2008）",
+   "look": "A modern indoor sports arena, plain exterior.",
+   "check": 0.9840785806717334,
+   "confidence": 0.9840785806717334,
+   "passed": true,
+   "x": 0.79,
+   "y": 0.33
+  },
+  {
+   "name": "英东教育楼",
+   "name_en": "Yingdong Education Building",
+   "kind": "other",
+   "quote": "在英东教育楼西南侧树立“北师大星”纪念雕塑。",
+   "look": "A university education building with a sculpture on its southwest side.",
+   "check": 0.9460655636767018,
+   "confidence": 0.9460655636767018,
+   "passed": true,
+   "x": 0.84,
+   "y": 0.76
+  },
+  {
+   "name": "“北师大星”纪念雕塑",
+   "name_en": "\"BNU Star\" Memorial Sculpture",
+   "kind": "other",
+   "quote": "在英东教育楼西南侧树立“北师大星”纪念雕塑。",
+   "look": "A commemorative campus sculpture, plain design.",
+   "check": 0.8203278087586595,
+   "confidence": 0.8203278087586595,
+   "passed": true
+  },
+  {
+   "name": "西区学生公寓A座-G座",
+   "name_en": "West Area Student Apartments A–G",
+   "kind": "other",
+   "quote": "先后建成并投入使用的包括西区学生公寓A座-G座（2003）",
+   "look": "A cluster of modern student dormitory buildings.",
+   "check": 0.9816118397930887,
+   "confidence": 0.9816118397930887,
+   "passed": true
+  }
+ ],
+ "tokens": 17958,
+ "seconds": 28
+}

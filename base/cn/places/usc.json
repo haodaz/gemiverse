@@ -1,0 +1,36 @@
+{
+ "school": "usc",
+ "name": "University of Southern California",
+ "at": "2026-11-22T00:18:15.445Z",
+ "source": "https://en.wikipedia.org/wiki/University%20of%20Southern%20California",
+ "character": "The predominantly red-brick campus features mostly Romanesque Revival buildings contrasted by Modernist structures, including two large Brutalist dormitories at its northern edge.",
+ "map": "/art/map/usc.jpg",
+ "landmarks": [
+  {
+   "name": "Widney Alumni House",
+   "name_en": "Widney Alumni House",
+   "kind": "other",
+   "quote": "Widney Alumni House, built in 1880, is the oldest university building in Southern California.",
+   "look": "Plain historic 1880 university house.",
+   "check": 0.9781709664584428,
+   "confidence": 0.9781709664584428,
+   "passed": true,
+   "x": 0.42,
+   "y": 0.8
+  },
+  {
+   "name": "Old College",
+   "name_en": "Old College",
+   "kind": "other",
+   "quote": "USC was further expanded with the construction of Old College in 1887, which served as the college of Liberal Arts",
+   "look": "Plain 1887 college building.",
+   "check": 0.9094103084111288,
+   "confidence": 0.9094103084111288,
+   "passed": true,
+   "x": 0.83,
+   "y": 0.72
+  }
+ ],
+ "tokens": 8834,
+ "seconds": 29
+}

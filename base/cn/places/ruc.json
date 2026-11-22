@@ -1,0 +1,104 @@
+{
+ "school": "ruc",
+ "name": "中国人民大学",
+ "at": "2026-11-22T00:14:58.117Z",
+ "source": "https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E4%BA%BA%E6%B0%91%E5%A4%A7%E5%AD%A6",
+ "character": "The compact, rectangular campus features dense clusters of gray 1980s Soviet-style buildings alongside modern red-toned academic buildings.",
+ "map": "/art/map/ruc.jpg",
+ "landmarks": [
+  {
+   "name": "求是楼",
+   "name_en": "Qiushi Building",
+   "kind": "other",
+   "quote": "最具代表性的是求是楼。",
+   "look": "Gray Soviet-style academic building from the 1980s or earlier.",
+   "check": 0.9565152314810074,
+   "confidence": 0.9565152314810074,
+   "passed": true,
+   "x": 0.15,
+   "y": 0.67
+  },
+  {
+   "name": "公共教学一楼",
+   "name_en": "Public Teaching Building No. 1",
+   "kind": "other",
+   "quote": "1990年代后期至今修建的公共教学一楼",
+   "look": "Modern academic building with a red-toned exterior.",
+   "check": 0.972120457099703,
+   "confidence": 0.972120457099703,
+   "passed": true,
+   "x": 0.34,
+   "y": 0.7
+  },
+  {
+   "name": "如论讲堂",
+   "name_en": "Rulun Hall",
+   "kind": "hall",
+   "quote": "如论讲堂",
+   "look": "Plain auditorium hall.",
+   "check": 0.9530284716509762,
+   "confidence": 0.9530284716509762,
+   "passed": true,
+   "x": 0.6,
+   "y": 0.21
+  },
+  {
+   "name": "世纪馆",
+   "name_en": "Century Hall",
+   "kind": "hall",
+   "quote": "世纪馆",
+   "look": "Plain large hall.",
+   "check": 0.9591834252138473,
+   "confidence": 0.9591834252138473,
+   "passed": true,
+   "x": 0.8,
+   "y": 0.23
+  },
+  {
+   "name": "游泳馆",
+   "name_en": "Swimming Pool",
+   "kind": "stadium",
+   "quote": "游泳馆",
+   "look": "Plain indoor swimming stadium.",
+   "check": 0.9559951648110764,
+   "confidence": 0.9559951648110764,
+   "passed": true,
+   "x": 0.8,
+   "y": 0.66
+  },
+  {
+   "name": "明德主楼",
+   "name_en": "Mingde Main Building",
+   "kind": "other",
+   "quote": "明德主楼",
+   "look": "Plain main academic building.",
+   "check": 0.9669520211882577,
+   "confidence": 0.9669520211882577,
+   "passed": true,
+   "x": 0.57,
+   "y": 0.5
+  },
+  {
+   "name": "人文楼",
+   "name_en": "Humanities Building",
+   "kind": "other",
+   "quote": "人文楼",
+   "look": "Plain academic building.",
+   "check": 0.9518103638368498,
+   "confidence": 0.9518103638368498,
+   "passed": true
+  },
+  {
+   "name": "理工楼",
+   "name_en": "Science and Engineering Building",
+   "kind": "other",
+   "quote": "理工楼",
+   "look": "Plain academic building.",
+   "check": 0.9621028138961198,
+   "confidence": 0.9621028138961198,
+   "passed": true
+  }
+ ],
+ "tokens": 8991,
+ "seconds": 45
+}

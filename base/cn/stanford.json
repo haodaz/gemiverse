@@ -1,0 +1,784 @@
+{
+ "school": "stanford",
+ "name": "Stanford University",
+ "at": "2026-11-22T00:11:56.701Z",
+ "seconds": 27,
+ "tokens": 66378,
+ "entities": [
+  {
+   "id": "stanford-35a5d3090d",
+   "type": "Event",
+   "school": "stanford",
+   "name": "Film Screening of the Latvian submission for the Academy Awards – Ulya",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.stanford.edu/event/film-screening-of-ulya",
+    "needs": [
+     "explore_a_field",
+     "find_my_people"
+    ],
+    "start": "2026-12-03T18:30",
+    "summary": "A free film screening of the Latvian Academy Award submission Ulya, followed by commentary from Dr. Karla Oeler.",
+    "event_kind": "other",
+    "venue_name": "Bishop Auditorium, 518 Memorial Way, Stanford, CA 94305",
+    "organisation_name": "CREEES Center for Russian, East European Eurasian Studies, Stanford University Libraries, The Europe Center",
+    "speaker": "Dr. Karla Oeler",
+    "occurrences": [
+     {
+      "start": "2026-12-03T18:30",
+      "end": "2026-12-03T21:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "stanford-d6276b4f65",
+   "type": "Event",
+   "school": "stanford",
+   "name": "Ivetta Sergeeva — The Authoritarian Passport: How States Discipline Emigrants",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.stanford.edu/event/ivetta-sergeeva-the-authoritarian-passport-how-states-discipline-emigrants-without-repressing-them",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-12-03T12:00",
+    "summary": "Ivetta Sergeeva presents research on how authoritarian states use passport and legal dependencies to discipline emigrants without targeted violence.",
+    "event_kind": "lecture",
+    "venue_name": "Virtual Event",
+    "organisation_name": "Center on Democracy, Development and the Rule of Law",
+    "speaker": "Ivetta Sergeeva",
+    "occurrences": [
+     {
+      "start": "2026-12-03T12:00",
+      "end": "2026-12-03T13:15"
+     }
+    ]
+   }
+  },
+  {
+   "id": "stanford-6096410d17",
+   "type": "Event",
+   "school": "stanford",
+   "name": "Take a break, pet a dog",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.stanford.edu/event/copy-of-take-a-break-pet-a-dog-4631",
+    "needs": [
+     "rest_and_recover"
+    ],
+    "start": "2026-12-02T15:00",
+    "summary": "Therapy dogs from Pet Partners visit the Y2E2 Courtyard for a one-hour relaxation and stress relief session hosted by Terman Engineering Library.",
+    "event_kind": "activity",
+    "venue_name": "Science and Engineering Quad, Y2E2 Courtyard",
+    "organisation_name": "Frederick Emmons Terman Engineering Library, Stanford University Libraries",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-02T15:00",
+      "end": "2026-12-02T16:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "stanford-f6f528b963",
+   "type": "Event",
+   "school": "stanford",
+   "name": "Stanford Percussion Ensemble",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.stanford.edu/event/stanford-percussion-ensemble-fall26",
+    "needs": [
+     "make_and_express",
+     "rest_and_recover"
+    ],
+    "start": "2026-11-30T19:30",
+    "summary": "The Stanford Percussion Ensemble, directed by Marty Thenell, performs contemporary percussion works at Dinkelspiel Auditorium.",
+    "event_kind": "other",
+    "venue_name": "Dinkelspiel Auditorium, 471 Lagunita Drive, Stanford, CA 94305",
+    "organisation_name": "Department of Music",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-30T19:30",
+      "end": "2026-11-30T21:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "stanford-d7707ab4f8",
+   "type": "Event",
+   "school": "stanford",
+   "name": "Meet the Makers!",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.stanford.edu/event/AY27AUT-meet-the-makers",
+    "needs": [
+     "explore_a_field",
+     "make_and_express"
+    ],
+    "start": "2026-12-09T20:00",
+    "summary": "Student makers from the Stanford Product Realization Lab present their Autumn quarter product innovations in sports, health, education, and more.",
+    "event_kind": "exhibition",
+    "venue_name": "Building 550, Peterson Laboratory, Atrium",
+    "organisation_name": "Stanford Product Realization Laboratories",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-09T20:00",
+      "end": "2026-12-09T21:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "stanford-2b78623cbf",
+   "type": "Event",
+   "school": "stanford",
+   "name": "Branner Library Book Map Exhibit - Water in the West",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.stanford.edu/event/branner-library-book-map-exhibit-water",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-23",
+    "summary": "An exhibition highlighting water resources in California and the Western United States through maps and Water Education Foundation guides.",
+    "event_kind": "exhibition",
+    "venue_name": "Mitchell Earth Sciences, Branner Earth Sciences Library Map Collections, 397 Panama Mall, Stanford, CA 94305",
+    "organisation_name": "Branner Earth Sciences Library, Stanford University Libraries",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-23",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "stanford-1272a34389",
+   "type": "Event",
+   "school": "stanford",
+   "name": "Stanford New Ensemble: Wind Power",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.stanford.edu/event/stanford-new-ensemble-fall26",
+    "needs": [
+     "rest_and_recover",
+     "make_and_express"
+    ],
+    "start": "2026-12-02T19:30",
+    "summary": "The Stanford New Ensemble performs an evening concert of 20th-century woodwind works by student soloists at Campbell Recital Hall.",
+    "event_kind": "other",
+    "venue_name": "Braun Music Center, Campbell Recital Hall, 541 Lasuen Mall, Stanford, CA 94305",
+    "organisation_name": "Department of Music",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-02T19:30",
+      "end": "2026-12-02T21:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "stanford-b6048c3475",
+   "type": "Event",
+   "school": "stanford",
+   "name": "The Genesis Mission AI Project: From Materials Development to Autonomous Labs and Beyond",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.stanford.edu/event/data-center-expansion-challenges-and-solutions-for-thermal-management-and-materials-access",
+    "needs": [
+     "explore_a_field",
+     "build_a_skill"
+    ],
+    "start": "2026-12-03T16:30",
+    "summary": "A seminar on the Genesis Mission AI Project, covering materials development and autonomous labs, hosted by the US-Asia Technology Management Center.",
+    "event_kind": "lecture",
+    "venue_name": "Bishop Auditorium, 518 Memorial Way, Stanford, CA 94305",
+    "organisation_name": "US-Asia Technology Management Center",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-03T16:30",
+      "end": "2026-12-03T17:50"
+     }
+    ]
+   }
+  },
+  {
+   "id": "stanford-ad2bec0569",
+   "type": "Event",
+   "school": "stanford",
+   "name": "Poetry on the Porch with Stephanie Horvath and Hieu Minh Nguyen",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.stanford.edu/event/poetry-on-the-porch-with-stephanie-horvath-and-hieu-minh-nguyen",
+    "needs": [
+     "make_and_express",
+     "find_my_people"
+    ],
+    "start": "2026-12-02T12:00",
+    "summary": "Creative Writing lecturers Stephanie Horvath and Hieu Minh Nguyen celebrate and launch their newest poetry collections at Mariposa House.",
+    "event_kind": "activity",
+    "venue_name": "Mariposa House, Front Lawn, 585 Capistrano Way, Stanford, CA 94305",
+    "organisation_name": "Creative Writing Program",
+    "speaker": "Stephanie Horvath, Hieu Minh Nguyen",
+    "occurrences": [
+     {
+      "start": "2026-12-02T12:00",
+      "end": "2026-12-02T14:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "stanford-a7805776f4",
+   "type": "Event",
+   "school": "stanford",
+   "name": "Italian Baroque Vocal Recital – MUSIC 184A",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.stanford.edu/event/Italian-baroque-music184a",
+    "needs": [
+     "make_and_express",
+     "explore_a_field"
+    ],
+    "start": "2026-12-03T17:30",
+    "summary": "Students of MUSIC 184A perform Italian baroque vocal works, including Handel favorites and edited cantatas and arias, at Toyon Hall.",
+    "event_kind": "other",
+    "venue_name": "Toyon Hall, 455 Arguello Way, Stanford, CA 94305",
+    "organisation_name": "Department of Music",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-03T17:30",
+      "end": "2026-12-03T18:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "stanford-db13195092",
+   "type": "Event",
+   "school": "stanford",
+   "name": "Carolyn Lazard: Long Take",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.stanford.edu/event/carolyn-lazard-long-take",
+    "needs": [
+     "explore_a_field",
+     "make_and_express"
+    ],
+    "start": "2026-11-21",
+    "summary": "A multimedia exhibition by artist Carolyn Lazard at Cantor Arts Center exploring accessibility as an artistic material.",
+    "event_kind": "exhibition",
+    "venue_name": "Cantor Arts Center, Lynn Krywick Gibbons Gallery, 328 Lomita Drive, Stanford, CA 94305",
+    "organisation_name": "Cantor Arts Center",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "stanford-6c4246899c",
+   "type": "Event",
+   "school": "stanford",
+   "name": "California Current: Art and Histories from the Bay Area",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.stanford.edu/event/california-current-art-and-histories-from-the-bay-area-6587",
+    "needs": [
+     "explore_a_field",
+     "make_and_express"
+    ],
+    "start": "2026-11-21",
+    "summary": "An exhibition featuring over 60 works exploring Bay Area history, art, and artists from the twentieth century to the present.",
+    "event_kind": "exhibition",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21",
+      "end": null
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "stanford-35a5d3090d",
+   "field": "title",
+   "quote": "Film Screening of the Latvian submission for the Academy Awards – Ulya",
+   "url": "https://events.stanford.edu/event/film-screening-of-ulya",
+   "check_confidence": 0.980400759272847,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-35a5d3090d",
+   "field": "date",
+   "quote": "Thursday, December 3, 2026\n6:30pm to 9pm PT",
+   "url": "https://events.stanford.edu/event/film-screening-of-ulya",
+   "check_confidence": 0.9739896048124904,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-35a5d3090d",
+   "field": "start_time",
+   "quote": "18:30",
+   "url": "https://events.stanford.edu/event/film-screening-of-ulya",
+   "check_confidence": 0.9738201488347636,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-35a5d3090d",
+   "field": "venue_name",
+   "quote": "Bishop Auditorium\n518 Memorial Way, Stanford, CA 94305",
+   "url": "https://events.stanford.edu/event/film-screening-of-ulya",
+   "check_confidence": 0.9723354933714917,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-35a5d3090d",
+   "field": "organisation_name",
+   "quote": "CREEES Center for Russian, East European Eurasian Studies, Stanford University Libraries, The Europe Center",
+   "url": "https://events.stanford.edu/event/film-screening-of-ulya",
+   "check_confidence": 0.9616097381859116,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-35a5d3090d",
+   "field": "speaker",
+   "quote": "Dr. Karla Oeler",
+   "url": "https://events.stanford.edu/event/film-screening-of-ulya",
+   "check_confidence": 0.978107520890916,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-d6276b4f65",
+   "field": "title",
+   "quote": "Ivetta Sergeeva — The Authoritarian Passport: How States Discipline Emigrants",
+   "url": "https://events.stanford.edu/event/ivetta-sergeeva-the-authoritarian-passport-how-states-discipline-emigrants-without-repressing-them",
+   "check_confidence": 0.9688178037476732,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-d6276b4f65",
+   "field": "date",
+   "quote": "Thursday, December 3, 2026 12pm to 1:15pm PT",
+   "url": "https://events.stanford.edu/event/ivetta-sergeeva-the-authoritarian-passport-how-states-discipline-emigrants-without-repressing-them",
+   "check_confidence": 0.9781758969120691,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-d6276b4f65",
+   "field": "start_time",
+   "quote": "12:00",
+   "url": "https://events.stanford.edu/event/ivetta-sergeeva-the-authoritarian-passport-how-states-discipline-emigrants-without-repressing-them",
+   "check_confidence": 0.9709840380392906,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-d6276b4f65",
+   "field": "venue_name",
+   "quote": "Virtual Event",
+   "url": "https://events.stanford.edu/event/ivetta-sergeeva-the-authoritarian-passport-how-states-discipline-emigrants-without-repressing-them",
+   "check_confidence": 0.9753744706198907,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-d6276b4f65",
+   "field": "organisation_name",
+   "quote": "Center on Democracy, Development and the Rule of Law",
+   "url": "https://events.stanford.edu/event/ivetta-sergeeva-the-authoritarian-passport-how-states-discipline-emigrants-without-repressing-them",
+   "check_confidence": 0.9770290316748084,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-d6276b4f65",
+   "field": "speaker",
+   "quote": "Ivetta Sergeeva",
+   "url": "https://events.stanford.edu/event/ivetta-sergeeva-the-authoritarian-passport-how-states-discipline-emigrants-without-repressing-them",
+   "check_confidence": 0.9829022420159247,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-6096410d17",
+   "field": "title",
+   "quote": "Take a break, pet a dog",
+   "url": "https://events.stanford.edu/event/copy-of-take-a-break-pet-a-dog-4631",
+   "check_confidence": 0.966528442991365,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-6096410d17",
+   "field": "date",
+   "quote": "Wednesday, December 2, 2026 3pm to 4pm PT",
+   "url": "https://events.stanford.edu/event/copy-of-take-a-break-pet-a-dog-4631",
+   "check_confidence": 0.980655726603205,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-6096410d17",
+   "field": "start_time",
+   "quote": "15:00",
+   "url": "https://events.stanford.edu/event/copy-of-take-a-break-pet-a-dog-4631",
+   "check_confidence": 0.9823878196800976,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-6096410d17",
+   "field": "venue_name",
+   "quote": "Science and Engineering Quad, Y2E2 Courtyard",
+   "url": "https://events.stanford.edu/event/copy-of-take-a-break-pet-a-dog-4631",
+   "check_confidence": 0.9763637350320676,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-6096410d17",
+   "field": "organisation_name",
+   "quote": "Frederick Emmons Terman Engineering Library, Stanford University Libraries",
+   "url": "https://events.stanford.edu/event/copy-of-take-a-break-pet-a-dog-4631",
+   "check_confidence": 0.9774932495754507,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-f6f528b963",
+   "field": "title",
+   "quote": "Stanford Percussion Ensemble",
+   "url": "https://events.stanford.edu/event/stanford-percussion-ensemble-fall26",
+   "check_confidence": 0.9810727422733777,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-f6f528b963",
+   "field": "date",
+   "quote": "Monday, November 30, 2026 7:30pm to 9pm PT",
+   "url": "https://events.stanford.edu/event/stanford-percussion-ensemble-fall26",
+   "check_confidence": 0.980789428211127,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-f6f528b963",
+   "field": "start_time",
+   "quote": "19:30",
+   "url": "https://events.stanford.edu/event/stanford-percussion-ensemble-fall26",
+   "check_confidence": 0.9788082126478537,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-f6f528b963",
+   "field": "venue_name",
+   "quote": "Dinkelspiel Auditorium 471 Lagunita Drive, Stanford, CA 94305",
+   "url": "https://events.stanford.edu/event/stanford-percussion-ensemble-fall26",
+   "check_confidence": 0.9588620845654142,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-f6f528b963",
+   "field": "organisation_name",
+   "quote": "Department of Music",
+   "url": "https://events.stanford.edu/event/stanford-percussion-ensemble-fall26",
+   "check_confidence": 0.9861332354148146,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-d7707ab4f8",
+   "field": "title",
+   "quote": "Meet the Makers!",
+   "url": "https://events.stanford.edu/event/AY27AUT-meet-the-makers",
+   "check_confidence": 0.9703015278577075,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-d7707ab4f8",
+   "field": "date",
+   "quote": "Wednesday, December 9, 2026 8pm to 9:30pm PT",
+   "url": "https://events.stanford.edu/event/AY27AUT-meet-the-makers",
+   "check_confidence": 0.9644518340991837,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-d7707ab4f8",
+   "field": "start_time",
+   "quote": "20:00",
+   "url": "https://events.stanford.edu/event/AY27AUT-meet-the-makers",
+   "check_confidence": 0.9719175690781646,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-d7707ab4f8",
+   "field": "venue_name",
+   "quote": "Building 550, Peterson Laboratory, Atrium",
+   "url": "https://events.stanford.edu/event/AY27AUT-meet-the-makers",
+   "check_confidence": 0.9756977181604085,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-d7707ab4f8",
+   "field": "organisation_name",
+   "quote": "Stanford Product Realization Laboratories",
+   "url": "https://events.stanford.edu/event/AY27AUT-meet-the-makers",
+   "check_confidence": 0.982637616954561,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-2b78623cbf",
+   "field": "title",
+   "quote": "Branner Library Book Map Exhibit - Water in the West",
+   "url": "https://events.stanford.edu/event/branner-library-book-map-exhibit-water",
+   "check_confidence": 0.9819224442295417,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-2b78623cbf",
+   "field": "date",
+   "quote": "Monday, November 23, 2026",
+   "url": "https://events.stanford.edu/event/branner-library-book-map-exhibit-water",
+   "check_confidence": 0.982745260900798,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-2b78623cbf",
+   "field": "venue_name",
+   "quote": "Mitchell Earth Sciences, Branner Earth Sciences Library Map Collections 397 Panama Mall, Stanford, CA 94305",
+   "url": "https://events.stanford.edu/event/branner-library-book-map-exhibit-water",
+   "check_confidence": 0.9804994249049529,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-2b78623cbf",
+   "field": "organisation_name",
+   "quote": "Branner Earth Sciences Library, Stanford University Libraries",
+   "url": "https://events.stanford.edu/event/branner-library-book-map-exhibit-water",
+   "check_confidence": 0.9782275705016643,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-1272a34389",
+   "field": "title",
+   "quote": "Stanford New Ensemble: Wind Power",
+   "url": "https://events.stanford.edu/event/stanford-new-ensemble-fall26",
+   "check_confidence": 0.9738425971098802,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-1272a34389",
+   "field": "date",
+   "quote": "Wednesday, December 2, 2026 7:30pm to 9pm PT",
+   "url": "https://events.stanford.edu/event/stanford-new-ensemble-fall26",
+   "check_confidence": 0.9678757323082025,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-1272a34389",
+   "field": "start_time",
+   "quote": "19:30",
+   "url": "https://events.stanford.edu/event/stanford-new-ensemble-fall26",
+   "check_confidence": 0.9889565300417217,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-1272a34389",
+   "field": "venue_name",
+   "quote": "Braun Music Center, Campbell Recital Hall 541 Lasuen Mall, Stanford, CA 94305",
+   "url": "https://events.stanford.edu/event/stanford-new-ensemble-fall26",
+   "check_confidence": 0.969143200299816,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-1272a34389",
+   "field": "organisation_name",
+   "quote": "Department of Music",
+   "url": "https://events.stanford.edu/event/stanford-new-ensemble-fall26",
+   "check_confidence": 0.9899257124068128,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-b6048c3475",
+   "field": "title",
+   "quote": "The Genesis Mission AI Project: From Materials Development to Autonomous Labs and Beyond",
+   "url": "https://events.stanford.edu/event/data-center-expansion-challenges-and-solutions-for-thermal-management-and-materials-access",
+   "check_confidence": 0.980947665413144,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-b6048c3475",
+   "field": "date",
+   "quote": "Thursday, December 3, 2026 4:30pm to 5:50pm PT",
+   "url": "https://events.stanford.edu/event/data-center-expansion-challenges-and-solutions-for-thermal-management-and-materials-access",
+   "check_confidence": 0.97000806344139,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-b6048c3475",
+   "field": "start_time",
+   "quote": "16:30",
+   "url": "https://events.stanford.edu/event/data-center-expansion-challenges-and-solutions-for-thermal-management-and-materials-access",
+   "check_confidence": 0.960040033395493,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-b6048c3475",
+   "field": "venue_name",
+   "quote": "Bishop Auditorium 518 Memorial Way, Stanford, CA 94305",
+   "url": "https://events.stanford.edu/event/data-center-expansion-challenges-and-solutions-for-thermal-management-and-materials-access",
+   "check_confidence": 0.9804666584628231,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-b6048c3475",
+   "field": "organisation_name",
+   "quote": "US-Asia Technology Management Center",
+   "url": "https://events.stanford.edu/event/data-center-expansion-challenges-and-solutions-for-thermal-management-and-materials-access",
+   "check_confidence": 0.9800965736745607,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-ad2bec0569",
+   "field": "title",
+   "quote": "Poetry on the Porch with Stephanie Horvath and Hieu Minh Nguyen",
+   "url": "https://events.stanford.edu/event/poetry-on-the-porch-with-stephanie-horvath-and-hieu-minh-nguyen",
+   "check_confidence": 0.9832372944316866,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-ad2bec0569",
+   "field": "date",
+   "quote": "Wednesday, December 2, 2026 12pm to 2pm PT",
+   "url": "https://events.stanford.edu/event/poetry-on-the-porch-with-stephanie-horvath-and-hieu-minh-nguyen",
+   "check_confidence": 0.982561698329085,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-ad2bec0569",
+   "field": "start_time",
+   "quote": "12:00",
+   "url": "https://events.stanford.edu/event/poetry-on-the-porch-with-stephanie-horvath-and-hieu-minh-nguyen",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-ad2bec0569",
+   "field": "venue_name",
+   "quote": "Mariposa House, Front Lawn 585 Capistrano Way, Stanford, CA 94305",
+   "url": "https://events.stanford.edu/event/poetry-on-the-porch-with-stephanie-horvath-and-hieu-minh-nguyen",
+   "check_confidence": 0.9624225658907813,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-ad2bec0569",
+   "field": "organisation_name",
+   "quote": "Creative Writing Program",
+   "url": "https://events.stanford.edu/event/poetry-on-the-porch-with-stephanie-horvath-and-hieu-minh-nguyen",
+   "check_confidence": 0.9844982555127523,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-ad2bec0569",
+   "field": "speaker",
+   "quote": "Stephanie Horvath, Hieu Minh Nguyen",
+   "url": "https://events.stanford.edu/event/poetry-on-the-porch-with-stephanie-horvath-and-hieu-minh-nguyen",
+   "check_confidence": 0.9152360893727486,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-a7805776f4",
+   "field": "title",
+   "quote": "Italian Baroque Vocal Recital – MUSIC 184A",
+   "url": "https://events.stanford.edu/event/Italian-baroque-music184a",
+   "check_confidence": 0.9788367667394218,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-a7805776f4",
+   "field": "date",
+   "quote": "Thursday, December 3, 2026 5:30pm to 6:30pm PT",
+   "url": "https://events.stanford.edu/event/Italian-baroque-music184a",
+   "check_confidence": 0.9830255678769019,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-a7805776f4",
+   "field": "start_time",
+   "quote": "17:30",
+   "url": "https://events.stanford.edu/event/Italian-baroque-music184a",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-a7805776f4",
+   "field": "venue_name",
+   "quote": "Toyon Hall 455 Arguello Way, Stanford, CA 94305",
+   "url": "https://events.stanford.edu/event/Italian-baroque-music184a",
+   "check_confidence": 0.9763053013476849,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-a7805776f4",
+   "field": "organisation_name",
+   "quote": "Department of Music",
+   "url": "https://events.stanford.edu/event/Italian-baroque-music184a",
+   "check_confidence": 0.9802132877796549,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-db13195092",
+   "field": "title",
+   "quote": "Carolyn Lazard: Long Take",
+   "url": "https://events.stanford.edu/event/carolyn-lazard-long-take",
+   "check_confidence": 0.9800864906154855,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-db13195092",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026",
+   "url": "https://events.stanford.edu/event/carolyn-lazard-long-take",
+   "check_confidence": 0.9806564046420955,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-db13195092",
+   "field": "venue_name",
+   "quote": "Cantor Arts Center, Lynn Krywick Gibbons Gallery, 328 Lomita Drive, Stanford, CA 94305",
+   "url": "https://events.stanford.edu/event/carolyn-lazard-long-take",
+   "check_confidence": 0.9592533802090079,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-db13195092",
+   "field": "organisation_name",
+   "quote": "Cantor Arts Center",
+   "url": "https://events.stanford.edu/event/carolyn-lazard-long-take",
+   "check_confidence": 0.981948986922594,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-6c4246899c",
+   "field": "title",
+   "quote": "California Current: Art and Histories from the Bay Area",
+   "url": "https://events.stanford.edu/event/california-current-art-and-histories-from-the-bay-area-6587",
+   "check_confidence": 0.9877694044202061,
+   "passed": true
+  },
+  {
+   "entity_id": "stanford-6c4246899c",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026",
+   "url": "https://events.stanford.edu/event/california-current-art-and-histories-from-the-bay-area-6587",
+   "check_confidence": 0.9816863335910856,
+   "passed": true
+  }
+ ]
+}

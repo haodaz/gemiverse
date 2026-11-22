@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. Located on coastal mesa land with eucalyptus groves and natural reserves, the campus features disparate architectural styles across its buildings. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Geisel Library, a library: An iconic library building standing at the center of the campus.; (2) Birch Aquarium, a museum: An aquarium building on campus.; (3) Epstein Family Amphitheater, a stadium: A 2,650-seat open-air amphitheater.; (4) Mandeville Hall, a hall: A campus hall with a staircase.; (5) Peterson Hall, a hall: A campus hall with a large mural on its exterior.; (6) Galbraith Hall, a hall: A college hall housing a theatre.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 16,
+ "tokens": 2152,
+ "at": "2026-11-22T00:18:45.546Z"
+}

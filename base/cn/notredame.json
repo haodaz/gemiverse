@@ -1,0 +1,782 @@
+{
+ "school": "notredame",
+ "name": "University of Notre Dame",
+ "at": "2026-11-22T00:13:40.646Z",
+ "seconds": 21,
+ "tokens": 57760,
+ "entities": [
+  {
+   "id": "notredame-20258a1449",
+   "type": "Event",
+   "school": "notredame",
+   "name": "Film: The Debut (2026)",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.nd.edu/events/2026/11/22/the-debut-2026/",
+    "needs": [
+     "rest_and_recover",
+     "explore_a_field"
+    ],
+    "start": "2026-11-22T19:00",
+    "summary": "A free, ticketed sneak peek screening of Jesse Eisenberg's film The Debut starring Julianne Moore and Paul Giamatti.",
+    "event_kind": "other",
+    "venue_name": "Browning Cinema, DeBartolo Performing Arts Center",
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-22T19:00",
+      "end": "2026-11-22T20:45"
+     }
+    ]
+   }
+  },
+  {
+   "id": "notredame-a27257c79f",
+   "type": "Event",
+   "school": "notredame",
+   "name": "2026 Seamus Heaney Memorial Lecture with Nicholas Allen: \"Heaney in the Seventies\"",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.nd.edu/events/2026/12/02/2026-seamus-heaney-memorial-lecture-with-nicholas-allen-heaney-in-the-seventies/",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-12-02T17:00",
+    "summary": "Professor Nicholas Allen delivers the 2026 Seamus Heaney Memorial Lecture exploring Heaney's 1970s poetry, society, and the early civil war.",
+    "event_kind": "lecture",
+    "venue_name": "Hesburgh Center Auditorium",
+    "organisation_name": "Keough-Naughton Institute for Irish Studies at the University of Notre Dame, in partnership with Queen's University Belfast",
+    "speaker": "Nicholas Allen",
+    "occurrences": [
+     {
+      "start": "2026-12-02T17:00",
+      "end": "2026-12-02T18:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "notredame-71ff1b7a69",
+   "type": "Event",
+   "school": "notredame",
+   "name": "Saturdays with the Saints Lecture: \"Sts. Vincent DePaul and Louise de Marillac\"",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.nd.edu/events/2026/11/21/saturdays-with-the-saints-sts-vincent-depaul-and-louise-de-marillac/",
+    "needs": [
+     "explore_a_field",
+     "find_my_people"
+    ],
+    "start": "2026-11-21T10:30",
+    "summary": "A free public pregame lecture by Rev. Matt Hovde, C.S.C., on Sts. Vincent DePaul and Louise de Marillac at Notre Dame.",
+    "event_kind": "lecture",
+    "venue_name": "Andrews Auditorium, Geddes Hall",
+    "organisation_name": null,
+    "speaker": "Rev. Matt Hovde, C.S.C.",
+    "occurrences": [
+     {
+      "start": "2026-11-21T10:30",
+      "end": "2026-11-21T11:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "notredame-3b1ffe3171",
+   "type": "Event",
+   "school": "notredame",
+   "name": "Film: The Iron Giant (1999)",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.nd.edu/events/2026/11/22/the-iron-giant-1999/",
+    "needs": [
+     "rest_and_recover"
+    ],
+    "start": "2026-11-22T13:00",
+    "summary": "A $1 Sunday film screening of the animated movie The Iron Giant (1999) at Browning Cinema.",
+    "event_kind": "other",
+    "venue_name": "Browning Cinema, DeBartolo Performing Arts Center",
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-22T13:00",
+      "end": "2026-11-22T14:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "notredame-2606a1e446",
+   "type": "Event",
+   "school": "notredame",
+   "name": "FTT Mainstage Theatre: These Shining Lives (Matinee)",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.nd.edu/events/2026/11/22/ftt-mainstage-theatre-these-shining-lives-2/",
+    "needs": [
+     "make_and_express",
+     "rest_and_recover"
+    ],
+    "start": "2026-11-22T14:30",
+    "summary": "Notre Dame Film, Television, and Theatre presents a matinee performance of the play These Shining Lives about women at the Radium Dial Company.",
+    "event_kind": "other",
+    "venue_name": "Regis Philbin Studio Theatre, DeBartolo Performing Arts Center",
+    "organisation_name": "Notre Dame Film, Television, and Theatre",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-22T14:30",
+      "end": "2026-11-22T16:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "notredame-487e134a2c",
+   "type": "Event",
+   "school": "notredame",
+   "name": "Film: Dissolution Room (2026)",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.nd.edu/events/2026/11/22/dissolution-room-2026/",
+    "needs": [
+     "explore_a_field",
+     "rest_and_recover"
+    ],
+    "start": "2026-11-22T16:00",
+    "summary": "A documentary film screening by Cecilia Kim and David Bird examining the cave as a framework for memory, geological time, and data accumulation.",
+    "event_kind": "other",
+    "venue_name": "Browning Cinema, DeBartolo Performing Arts Center",
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-22T16:00",
+      "end": "2026-11-22T16:25"
+     }
+    ]
+   }
+  },
+  {
+   "id": "notredame-51666631e3",
+   "type": "Event",
+   "school": "notredame",
+   "name": "Welcome Desk Concert",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.nd.edu/events/2026/11/22/welcome-desk-concert-8/",
+    "needs": [
+     "rest_and_recover",
+     "find_my_people"
+    ],
+    "start": "2026-11-22T16:00",
+    "summary": "Jack Rankin and Matt McCollum perform jazz ballads and original songs at the Raclin Murphy Museum of Art.",
+    "event_kind": "activity",
+    "venue_name": "Raclin Murphy Museum of Art",
+    "organisation_name": "Student Programming Committee (SPC)",
+    "speaker": "Jack Rankin ND ’28 and Matt McCollum ND ’25",
+    "occurrences": [
+     {
+      "start": "2026-11-22T16:00",
+      "end": "2026-11-22T16:45"
+     }
+    ]
+   }
+  },
+  {
+   "id": "notredame-c6f490985a",
+   "type": "Event",
+   "school": "notredame",
+   "name": "Film: Billy Preston: That’s the Way God Planned It (2024)",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.nd.edu/events/2026/11/24/billy-preston-thats-the-way-god-planned-it-2024/",
+    "needs": [
+     "rest_and_recover"
+    ],
+    "start": "2026-11-24T19:30",
+    "summary": "Screening of the 2024 documentary concert film about musician Billy Preston's career and personal life at Browning Cinema.",
+    "event_kind": "other",
+    "venue_name": "Browning Cinema, DeBartolo Performing Arts Center",
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-24T19:30",
+      "end": "2026-11-24T21:15"
+     }
+    ]
+   }
+  },
+  {
+   "id": "notredame-3514380d7c",
+   "type": "Event",
+   "school": "notredame",
+   "name": "Film: Inside Llewyn Davis (2013)",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.nd.edu/events/2026/12/01/inside-llewyn-davis-2013/",
+    "needs": [
+     "rest_and_recover"
+    ],
+    "start": "2026-12-01T19:30",
+    "summary": "A screening of the 2013 Coen Brothers film Inside Llewyn Davis at the DeBartolo Performing Arts Center.",
+    "event_kind": "other",
+    "venue_name": "Browning Cinema, DeBartolo Performing Arts Center",
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-01T19:30",
+      "end": "2026-12-01T21:15"
+     }
+    ]
+   }
+  },
+  {
+   "id": "notredame-49d8f3eaa8",
+   "type": "Event",
+   "school": "notredame",
+   "name": "Bite-Sized Art",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.nd.edu/events/2026/12/02/bite-sized-art-8/",
+    "needs": [
+     "explore_a_field",
+     "rest_and_recover"
+    ],
+    "start": "2026-12-02T12:00",
+    "summary": "A 10- to 15-minute lunchtime program at the Raclin Murphy Museum of Art exploring a single work from the permanent collection.",
+    "event_kind": "activity",
+    "venue_name": "Raclin Murphy Museum of Art",
+    "organisation_name": "Raclin Murphy Museum of Art",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-02T12:00",
+      "end": "2026-12-02T12:15"
+     }
+    ]
+   }
+  },
+  {
+   "id": "notredame-a6333feb05",
+   "type": "Event",
+   "school": "notredame",
+   "name": "The Met Opera Live in HD: \"Samson et Dalila\" (Saint-Saëns)",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.nd.edu/events/2026/12/05/the-met-opera-live-in-hd-samson-et-dalila-saint-saens/",
+    "needs": [
+     "rest_and_recover"
+    ],
+    "start": "2026-12-05T12:00",
+    "summary": "A live HD broadcast of Saint-Saëns's French grand opera \"Samson et Dalila\" from the Metropolitan Opera.",
+    "event_kind": "other",
+    "venue_name": "Browning Cinema, DeBartolo Performing Arts Center",
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-05T12:00",
+      "end": "2026-12-05T16:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "notredame-96eb3e72ea",
+   "type": "Event",
+   "school": "notredame",
+   "name": "Winter Wonders",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.nd.edu/events/2026/12/05/winter-wonders-2/",
+    "needs": [
+     "make_and_express",
+     "find_my_people"
+    ],
+    "start": "2026-12-05T14:00",
+    "summary": "Celebrate the winter season at the Raclin Murphy Museum of Art with ornament making, live holiday music, cocoa, and cookies.",
+    "event_kind": "activity",
+    "venue_name": "Raclin Murphy Museum of Art",
+    "organisation_name": "Raclin Murphy Museum of Art",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-05T14:00",
+      "end": "2026-12-05T16:00"
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "notredame-20258a1449",
+   "field": "title",
+   "quote": "Film: The Debut (2026)",
+   "url": "https://events.nd.edu/events/2026/11/22/the-debut-2026/",
+   "check_confidence": 0.9680512611722577,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-20258a1449",
+   "field": "date",
+   "quote": "Sun Nov 22, 2026, 7:00 pm - 8:45 pm",
+   "url": "https://events.nd.edu/events/2026/11/22/the-debut-2026/",
+   "check_confidence": 0.9891548990071976,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-20258a1449",
+   "field": "start_time",
+   "quote": "19:00",
+   "url": "https://events.nd.edu/events/2026/11/22/the-debut-2026/",
+   "check_confidence": 0.9731238745730166,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-20258a1449",
+   "field": "venue_name",
+   "quote": "Browning Cinema, DeBartolo Performing Arts Center",
+   "url": "https://events.nd.edu/events/2026/11/22/the-debut-2026/",
+   "check_confidence": 0.9706672381779413,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-20258a1449",
+   "field": "organisation_name",
+   "quote": "Department of Film, Television and Theatre",
+   "url": "https://events.nd.edu/events/2026/11/22/the-debut-2026/",
+   "check_confidence": 0.7431509360618282,
+   "passed": false
+  },
+  {
+   "entity_id": "notredame-a27257c79f",
+   "field": "title",
+   "quote": "2026 Seamus Heaney Memorial Lecture with Nicholas Allen: \"Heaney in the Seventies\"",
+   "url": "https://events.nd.edu/events/2026/12/02/2026-seamus-heaney-memorial-lecture-with-nicholas-allen-heaney-in-the-seventies/",
+   "check_confidence": 0.9729768604425691,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-a27257c79f",
+   "field": "date",
+   "quote": "Wed Dec 2, 2026, 5:00 pm - 6:30 pm",
+   "url": "https://events.nd.edu/events/2026/12/02/2026-seamus-heaney-memorial-lecture-with-nicholas-allen-heaney-in-the-seventies/",
+   "check_confidence": 0.977951877897407,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-a27257c79f",
+   "field": "start_time",
+   "quote": "17:00",
+   "url": "https://events.nd.edu/events/2026/12/02/2026-seamus-heaney-memorial-lecture-with-nicholas-allen-heaney-in-the-seventies/",
+   "check_confidence": 0.9819196784815741,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-a27257c79f",
+   "field": "venue_name",
+   "quote": "Hesburgh Center Auditorium",
+   "url": "https://events.nd.edu/events/2026/12/02/2026-seamus-heaney-memorial-lecture-with-nicholas-allen-heaney-in-the-seventies/",
+   "check_confidence": 0.9736044382396434,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-a27257c79f",
+   "field": "organisation_name",
+   "quote": "Keough-Naughton Institute for Irish Studies at the University of Notre Dame, in partnership with Queen's University Belfast",
+   "url": "https://events.nd.edu/events/2026/12/02/2026-seamus-heaney-memorial-lecture-with-nicholas-allen-heaney-in-the-seventies/",
+   "check_confidence": 0.9789407085929397,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-a27257c79f",
+   "field": "speaker",
+   "quote": "Nicholas Allen",
+   "url": "https://events.nd.edu/events/2026/12/02/2026-seamus-heaney-memorial-lecture-with-nicholas-allen-heaney-in-the-seventies/",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-71ff1b7a69",
+   "field": "title",
+   "quote": "Saturdays with the Saints Lecture: \"Sts. Vincent DePaul and Louise de Marillac\"",
+   "url": "https://events.nd.edu/events/2026/11/21/saturdays-with-the-saints-sts-vincent-depaul-and-louise-de-marillac/",
+   "check_confidence": 0.9779440830900276,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-71ff1b7a69",
+   "field": "date",
+   "quote": "Sat Nov 21, 2026, 10:30 am - 11:30 am",
+   "url": "https://events.nd.edu/events/2026/11/21/saturdays-with-the-saints-sts-vincent-depaul-and-louise-de-marillac/",
+   "check_confidence": 0.975238717299374,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-71ff1b7a69",
+   "field": "start_time",
+   "quote": "10:30",
+   "url": "https://events.nd.edu/events/2026/11/21/saturdays-with-the-saints-sts-vincent-depaul-and-louise-de-marillac/",
+   "check_confidence": 0.9697623269765755,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-71ff1b7a69",
+   "field": "venue_name",
+   "quote": "Andrews Auditorium, Geddes Hall",
+   "url": "https://events.nd.edu/events/2026/11/21/saturdays-with-the-saints-sts-vincent-depaul-and-louise-de-marillac/",
+   "check_confidence": 0.9757229163201492,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-71ff1b7a69",
+   "field": "speaker",
+   "quote": "Rev. Matt Hovde, C.S.C.",
+   "url": "https://events.nd.edu/events/2026/11/21/saturdays-with-the-saints-sts-vincent-depaul-and-louise-de-marillac/",
+   "check_confidence": 0.979525147673441,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-3b1ffe3171",
+   "field": "title",
+   "quote": "Film: The Iron Giant (1999)",
+   "url": "https://events.nd.edu/events/2026/11/22/the-iron-giant-1999/",
+   "check_confidence": 0.9821433078350313,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-3b1ffe3171",
+   "field": "date",
+   "quote": "Sun Nov 22, 2026, 1:00 pm - 2:30 pm",
+   "url": "https://events.nd.edu/events/2026/11/22/the-iron-giant-1999/",
+   "check_confidence": 0.9758196789853385,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-3b1ffe3171",
+   "field": "start_time",
+   "quote": "13:00",
+   "url": "https://events.nd.edu/events/2026/11/22/the-iron-giant-1999/",
+   "check_confidence": 0.9744770462655782,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-3b1ffe3171",
+   "field": "venue_name",
+   "quote": "Browning Cinema, DeBartolo Performing Arts Center",
+   "url": "https://events.nd.edu/events/2026/11/22/the-iron-giant-1999/",
+   "check_confidence": 0.9823399764287106,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-2606a1e446",
+   "field": "title",
+   "quote": "FTT Mainstage Theatre: These Shining Lives (Matinee)",
+   "url": "https://events.nd.edu/events/2026/11/22/ftt-mainstage-theatre-these-shining-lives-2/",
+   "check_confidence": 0.9713785936701637,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-2606a1e446",
+   "field": "date",
+   "quote": "Sun Nov 22, 2026, 2:30 pm - 4:30 pm",
+   "url": "https://events.nd.edu/events/2026/11/22/ftt-mainstage-theatre-these-shining-lives-2/",
+   "check_confidence": 0.9846421600622969,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-2606a1e446",
+   "field": "start_time",
+   "quote": "14:30",
+   "url": "https://events.nd.edu/events/2026/11/22/ftt-mainstage-theatre-these-shining-lives-2/",
+   "check_confidence": 0.9770647611383632,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-2606a1e446",
+   "field": "venue_name",
+   "quote": "Regis Philbin Studio Theatre, DeBartolo Performing Arts Center",
+   "url": "https://events.nd.edu/events/2026/11/22/ftt-mainstage-theatre-these-shining-lives-2/",
+   "check_confidence": 0.9746341044315693,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-2606a1e446",
+   "field": "organisation_name",
+   "quote": "Notre Dame Film, Television, and Theatre",
+   "url": "https://events.nd.edu/events/2026/11/22/ftt-mainstage-theatre-these-shining-lives-2/",
+   "check_confidence": 0.9829002664579173,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-487e134a2c",
+   "field": "title",
+   "quote": "Film: Dissolution Room (2026)",
+   "url": "https://events.nd.edu/events/2026/11/22/dissolution-room-2026/",
+   "check_confidence": 0.9533809446019149,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-487e134a2c",
+   "field": "date",
+   "quote": "Sun Nov 22, 2026, 4:00 pm - 4:25 pm",
+   "url": "https://events.nd.edu/events/2026/11/22/dissolution-room-2026/",
+   "check_confidence": 0.9744527706537333,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-487e134a2c",
+   "field": "start_time",
+   "quote": "16:00",
+   "url": "https://events.nd.edu/events/2026/11/22/dissolution-room-2026/",
+   "check_confidence": 0.9728081735981046,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-487e134a2c",
+   "field": "venue_name",
+   "quote": "Browning Cinema, DeBartolo Performing Arts Center",
+   "url": "https://events.nd.edu/events/2026/11/22/dissolution-room-2026/",
+   "check_confidence": 0.9651111627954381,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-51666631e3",
+   "field": "title",
+   "quote": "Welcome Desk Concert",
+   "url": "https://events.nd.edu/events/2026/11/22/welcome-desk-concert-8/",
+   "check_confidence": 0.9844391405598694,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-51666631e3",
+   "field": "date",
+   "quote": "Sun Nov 22, 2026, 4:00 pm - 4:45 pm",
+   "url": "https://events.nd.edu/events/2026/11/22/welcome-desk-concert-8/",
+   "check_confidence": 0.9789731404628602,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-51666631e3",
+   "field": "start_time",
+   "quote": "16:00",
+   "url": "https://events.nd.edu/events/2026/11/22/welcome-desk-concert-8/",
+   "check_confidence": 0.9825412487408597,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-51666631e3",
+   "field": "venue_name",
+   "quote": "Raclin Murphy Museum of Art",
+   "url": "https://events.nd.edu/events/2026/11/22/welcome-desk-concert-8/",
+   "check_confidence": 0.9693150568145954,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-51666631e3",
+   "field": "organisation_name",
+   "quote": "Student Programming Committee (SPC)",
+   "url": "https://events.nd.edu/events/2026/11/22/welcome-desk-concert-8/",
+   "check_confidence": 0.9428363231356756,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-51666631e3",
+   "field": "speaker",
+   "quote": "Jack Rankin ND ’28 and Matt McCollum ND ’25",
+   "url": "https://events.nd.edu/events/2026/11/22/welcome-desk-concert-8/",
+   "check_confidence": 0.8865796696750963,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-c6f490985a",
+   "field": "title",
+   "quote": "Film: Billy Preston: That’s the Way God Planned It (2024)",
+   "url": "https://events.nd.edu/events/2026/11/24/billy-preston-thats-the-way-god-planned-it-2024/",
+   "check_confidence": 0.9652037521341278,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-c6f490985a",
+   "field": "date",
+   "quote": "Tue Nov 24, 2026, 7:30 pm - 9:15 pm",
+   "url": "https://events.nd.edu/events/2026/11/24/billy-preston-thats-the-way-god-planned-it-2024/",
+   "check_confidence": 0.9760540733846048,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-c6f490985a",
+   "field": "start_time",
+   "quote": "19:30",
+   "url": "https://events.nd.edu/events/2026/11/24/billy-preston-thats-the-way-god-planned-it-2024/",
+   "check_confidence": 0.9658765196179588,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-c6f490985a",
+   "field": "venue_name",
+   "quote": "Browning Cinema, DeBartolo Performing Arts Center",
+   "url": "https://events.nd.edu/events/2026/11/24/billy-preston-thats-the-way-god-planned-it-2024/",
+   "check_confidence": 0.9817047635021287,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-3514380d7c",
+   "field": "title",
+   "quote": "Film: Inside Llewyn Davis (2013)",
+   "url": "https://events.nd.edu/events/2026/12/01/inside-llewyn-davis-2013/",
+   "check_confidence": 0.9721361332888565,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-3514380d7c",
+   "field": "date",
+   "quote": "Tue Dec 1, 2026, 7:30 pm - 9:15 pm",
+   "url": "https://events.nd.edu/events/2026/12/01/inside-llewyn-davis-2013/",
+   "check_confidence": 0.9722860859550517,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-3514380d7c",
+   "field": "start_time",
+   "quote": "19:30",
+   "url": "https://events.nd.edu/events/2026/12/01/inside-llewyn-davis-2013/",
+   "check_confidence": 0.9793095395611079,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-3514380d7c",
+   "field": "venue_name",
+   "quote": "Browning Cinema, DeBartolo Performing Arts Center",
+   "url": "https://events.nd.edu/events/2026/12/01/inside-llewyn-davis-2013/",
+   "check_confidence": 0.9769804737552455,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-3514380d7c",
+   "field": "organisation_name",
+   "quote": "Meg and John P. Brogan Endowment for Classic Cinema",
+   "url": "https://events.nd.edu/events/2026/12/01/inside-llewyn-davis-2013/",
+   "check_confidence": 0.7144300426218335,
+   "passed": false
+  },
+  {
+   "entity_id": "notredame-49d8f3eaa8",
+   "field": "title",
+   "quote": "Bite-Sized Art",
+   "url": "https://events.nd.edu/events/2026/12/02/bite-sized-art-8/",
+   "check_confidence": 0.9828063313135896,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-49d8f3eaa8",
+   "field": "date",
+   "quote": "Wed Dec 2, 2026, 12:00 pm - 12:15 pm",
+   "url": "https://events.nd.edu/events/2026/12/02/bite-sized-art-8/",
+   "check_confidence": 0.9748531285609129,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-49d8f3eaa8",
+   "field": "start_time",
+   "quote": "12:00",
+   "url": "https://events.nd.edu/events/2026/12/02/bite-sized-art-8/",
+   "check_confidence": 0.9622480806820068,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-49d8f3eaa8",
+   "field": "venue_name",
+   "quote": "Raclin Murphy Museum of Art",
+   "url": "https://events.nd.edu/events/2026/12/02/bite-sized-art-8/",
+   "check_confidence": 0.9655244852100261,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-49d8f3eaa8",
+   "field": "organisation_name",
+   "quote": "Raclin Murphy Museum of Art",
+   "url": "https://events.nd.edu/events/2026/12/02/bite-sized-art-8/",
+   "check_confidence": 0.9138982502932488,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-a6333feb05",
+   "field": "title",
+   "quote": "The Met Opera Live in HD: \"Samson et Dalila\" (Saint-Saëns)",
+   "url": "https://events.nd.edu/events/2026/12/05/the-met-opera-live-in-hd-samson-et-dalila-saint-saens/",
+   "check_confidence": 0.9730322571397061,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-a6333feb05",
+   "field": "date",
+   "quote": "Sat Dec 5, 2026, 12:00 pm - 4:00 pm",
+   "url": "https://events.nd.edu/events/2026/12/05/the-met-opera-live-in-hd-samson-et-dalila-saint-saens/",
+   "check_confidence": 0.9824475800169139,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-a6333feb05",
+   "field": "start_time",
+   "quote": "12:00",
+   "url": "https://events.nd.edu/events/2026/12/05/the-met-opera-live-in-hd-samson-et-dalila-saint-saens/",
+   "check_confidence": 0.9664474993028914,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-a6333feb05",
+   "field": "venue_name",
+   "quote": "Browning Cinema, DeBartolo Performing Arts Center",
+   "url": "https://events.nd.edu/events/2026/12/05/the-met-opera-live-in-hd-samson-et-dalila-saint-saens/",
+   "check_confidence": 0.9745649255191021,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-96eb3e72ea",
+   "field": "title",
+   "quote": "Winter Wonders",
+   "url": "https://events.nd.edu/events/2026/12/05/winter-wonders-2/",
+   "check_confidence": 0.9868813565603963,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-96eb3e72ea",
+   "field": "date",
+   "quote": "Sat Dec 5, 2026, 2:00 pm - 4:00 pm",
+   "url": "https://events.nd.edu/events/2026/12/05/winter-wonders-2/",
+   "check_confidence": 0.9861737145926267,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-96eb3e72ea",
+   "field": "start_time",
+   "quote": "14:00",
+   "url": "https://events.nd.edu/events/2026/12/05/winter-wonders-2/",
+   "check_confidence": 0.9804078074945461,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-96eb3e72ea",
+   "field": "venue_name",
+   "quote": "Raclin Murphy Museum of Art",
+   "url": "https://events.nd.edu/events/2026/12/05/winter-wonders-2/",
+   "check_confidence": 0.980914727708239,
+   "passed": true
+  },
+  {
+   "entity_id": "notredame-96eb3e72ea",
+   "field": "organisation_name",
+   "quote": "Raclin Murphy Museum of Art",
+   "url": "https://events.nd.edu/events/2026/12/05/winter-wonders-2/",
+   "check_confidence": 0.9709558187780101,
+   "passed": true
+  }
+ ]
+}

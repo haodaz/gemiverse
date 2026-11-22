@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. The 299-acre urban campus features Collegiate Gothic architecture, a central car-free pedestrian spine, and accredited arboretum green spaces. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) College Hall, a hall: Historic central university hall, plain if unknown.; (2) Houston Hall, a hall: Historic student union hall, plain if unknown.; (3) Franklin Field, a stadium: Two-tier college football stadium with an open field.; (4) Van Pelt Library, a library: Large anchor university library building, plain if unknown.; (5) University of Pennsylvania Museum of Archaeology and Anthropology, a museum: University museum building, plain if unknown.; (6) Fisher Fine Arts Library, a library: Specialized university fine arts library building, plain if unknown.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 16,
+ "tokens": 2004,
+ "at": "2026-11-22T00:13:32.258Z"
+}

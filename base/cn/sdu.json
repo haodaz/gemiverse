@@ -1,0 +1,494 @@
+{
+ "school": "sdu",
+ "name": "山东大学",
+ "at": "2026-11-22T00:16:18.874Z",
+ "seconds": 37,
+ "tokens": 59859,
+ "entities": [
+  {
+   "id": "sdu-08a283dfd8",
+   "type": "Event",
+   "school": "sdu",
+   "name": "顾而言他——现行AI模式之于往古文史余波",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.view.sdu.edu.cn/info/1020/215248.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-16",
+    "summary": "山东大学学术预告，主题为现行AI模式之于往古文史余波。",
+    "event_kind": "lecture",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-16",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "sdu-621006649d",
+   "type": "Event",
+   "school": "sdu",
+   "name": "薪传讲堂学界论：以“图像为方法”",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.view.sdu.edu.cn/info/1020/215246.htm",
+    "needs": [
+     "explore_a_field",
+     "build_a_skill"
+    ],
+    "start": "2026-11-18T14:30",
+    "summary": "南京大学李晓愚教授主讲“以‘图像为方法’”学术讲座。",
+    "event_kind": "lecture",
+    "venue_name": "生命南楼209会议室",
+    "organisation_name": null,
+    "speaker": "李晓愚",
+    "occurrences": [
+     {
+      "start": "2026-11-18T14:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "sdu-d8721a221a",
+   "type": "Event",
+   "school": "sdu",
+   "name": "基础医学院创新论坛第152期：细胞外基质调节线粒体稳态与衰老的分子机制研究",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.view.sdu.edu.cn/info/1020/215207.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-19T14:00",
+    "summary": "张汉林研究员将作关于细胞外基质调节线粒体稳态与衰老分子机制的学术报告。",
+    "event_kind": "lecture",
+    "venue_name": "趵突泉校区教学六号楼6520会议室",
+    "organisation_name": "基础医学院",
+    "speaker": "张汉林",
+    "occurrences": [
+     {
+      "start": "2026-11-19T14:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "sdu-def964e169",
+   "type": "Event",
+   "school": "sdu",
+   "name": "基础医学院创新论坛第151期：高速介观成像与介观神经解剖学",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.view.sdu.edu.cn/info/1020/214924.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-07T15:00",
+    "summary": "毕国强教授将介绍高速介观成像技术及其在介观神经解剖学中的创新应用。",
+    "event_kind": "lecture",
+    "venue_name": "趵突泉校区教学一号楼一层会议室",
+    "organisation_name": "基础医学院",
+    "speaker": "毕国强",
+    "occurrences": [
+     {
+      "start": "2026-11-07T15:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "sdu-52a5e0993a",
+   "type": "Event",
+   "school": "sdu",
+   "name": "晚明的“诗学知识化”现象——一个书籍史的视角",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.view.sdu.edu.cn/info/1020/215040.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-12T14:00",
+    "summary": "浙江大学徐隆垚研究员主讲，从书籍史视角探讨晚明“诗学知识化”现象。",
+    "event_kind": "lecture",
+    "venue_name": "山东大学中心校区知新楼A606",
+    "organisation_name": null,
+    "speaker": "徐隆垚研究员",
+    "occurrences": [
+     {
+      "start": "2026-11-12T14:00",
+      "end": "2026-11-12T16:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "sdu-f47a99a13c",
+   "type": "Event",
+   "school": "sdu",
+   "name": "第295期“求材”学术论坛：环境过程与能量转化过程中的单原子催化",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.view.sdu.edu.cn/info/1020/214917.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": null,
+    "summary": "第295期“求材”学术论坛，主题为环境过程与能量转化过程中的单原子催化。",
+    "event_kind": "lecture",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "sdu-2a2a7e414d",
+   "type": "Event",
+   "school": "sdu",
+   "name": "第293期“求材”学术论坛：氧化铁与电化学界面的机器学习原子间势函数",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.view.sdu.edu.cn/info/1020/214914.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": null,
+    "summary": "第293期“求材”学术论坛预告，主题为氧化铁与电化学界面的机器学习原子间势函数。",
+    "event_kind": "lecture",
+    "venue_name": null,
+    "organisation_name": "材料科学与工程学院",
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "sdu-1fdc24d4e8",
+   "type": "Event",
+   "school": "sdu",
+   "name": "Healthcare and Rehabilitation期刊“健康照护与康复”齐鲁国际学术讲座第十六期",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.view.sdu.edu.cn/info/1020/214913.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-03T16:00",
+    "summary": "澳大利亚麦考瑞大学顾源远副教授主讲服务偏好研究如何支持心理危机预防。",
+    "event_kind": "lecture",
+    "venue_name": "扫码观看直播",
+    "organisation_name": null,
+    "speaker": "顾源远 澳大利亚麦考瑞大学卫生经济中心副教授",
+    "occurrences": [
+     {
+      "start": "2026-11-03T16:00",
+      "end": "2026-11-03T17:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "sdu-c56b6e8c9a",
+   "type": "Event",
+   "school": "sdu",
+   "name": "第1512期“稷下风”研究生学术讲坛：人工智能与数据驱动材料设计",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.view.sdu.edu.cn/info/1020/214864.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": null,
+    "summary": "山东大学第1512期“稷下风”研究生学术讲坛预告，主题为人工智能与数据驱动材料设计。",
+    "event_kind": "lecture",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "sdu-08a283dfd8",
+   "field": "title",
+   "quote": "顾而言他——现行AI模式之于往古文史余波",
+   "url": "https://www.view.sdu.edu.cn/info/1020/215248.htm",
+   "check_confidence": 0.9671054089606738,
+   "passed": true
+  },
+  {
+   "entity_id": "sdu-08a283dfd8",
+   "field": "date",
+   "quote": "2026年11月16日",
+   "url": "https://www.view.sdu.edu.cn/info/1020/215248.htm",
+   "check_confidence": 0.8245545859880793,
+   "passed": true
+  },
+  {
+   "entity_id": "sdu-621006649d",
+   "field": "title",
+   "quote": "薪传讲堂学界论：以“图像为方法”",
+   "url": "https://www.view.sdu.edu.cn/info/1020/215246.htm",
+   "check_confidence": 0.9779912743308249,
+   "passed": true
+  },
+  {
+   "entity_id": "sdu-621006649d",
+   "field": "date",
+   "quote": "2026年11月18日14:30",
+   "url": "https://www.view.sdu.edu.cn/info/1020/215246.htm",
+   "check_confidence": 0.960441483542709,
+   "passed": true
+  },
+  {
+   "entity_id": "sdu-621006649d",
+   "field": "start_time",
+   "quote": "14:30",
+   "url": "https://www.view.sdu.edu.cn/info/1020/215246.htm",
+   "check_confidence": 0.9800382709024916,
+   "passed": true
+  },
+  {
+   "entity_id": "sdu-621006649d",
+   "field": "venue_name",
+   "quote": "生命南楼209会议室",
+   "url": "https://www.view.sdu.edu.cn/info/1020/215246.htm",
+   "check_confidence": 0.9704134281056896,
+   "passed": true
+  },
+  {
+   "entity_id": "sdu-621006649d",
+   "field": "speaker",
+   "quote": "李晓愚",
+   "url": "https://www.view.sdu.edu.cn/info/1020/215246.htm",
+   "check_confidence": 0.9757708206616006,
+   "passed": true
+  },
+  {
+   "entity_id": "sdu-d8721a221a",
+   "field": "title",
+   "quote": "基础医学院创新论坛第152期：细胞外基质调节线粒体稳态与衰老的分子机制研究",
+   "url": "https://www.view.sdu.edu.cn/info/1020/215207.htm",
+   "check_confidence": 0.9709582982596364,
+   "passed": true
+  },
+  {
+   "entity_id": "sdu-d8721a221a",
+   "field": "date",
+   "quote": "2026年11月19日 14:00",
+   "url": "https://www.view.sdu.edu.cn/info/1020/215207.htm",
+   "check_confidence": 0.9684683026184461,
+   "passed": true
+  },
+  {
+   "entity_id": "sdu-d8721a221a",
+   "field": "start_time",
+   "quote": "14:00",
+   "url": "https://www.view.sdu.edu.cn/info/1020/215207.htm",
+   "check_confidence": 0.9632278569883851,
+   "passed": true
+  },
+  {
+   "entity_id": "sdu-d8721a221a",
+   "field": "venue_name",
+   "quote": "趵突泉校区教学六号楼6520会议室",
+   "url": "https://www.view.sdu.edu.cn/info/1020/215207.htm",
+   "check_confidence": 0.9711718764639168,
+   "passed": true
+  },
+  {
+   "entity_id": "sdu-d8721a221a",
+   "field": "organisation_name",
+   "quote": "基础医学院",
+   "url": "https://www.view.sdu.edu.cn/info/1020/215207.htm",
+   "check_confidence": 0.9635043512900526,
+   "passed": true
+  },
+  {
+   "entity_id": "sdu-d8721a221a",
+   "field": "speaker",
+   "quote": "张汉林",
+   "url": "https://www.view.sdu.edu.cn/info/1020/215207.htm",
+   "check_confidence": 0.983063044480306,
+   "passed": true
+  },
+  {
+   "entity_id": "sdu-def964e169",
+   "field": "title",
+   "quote": "基础医学院创新论坛第151期：高速介观成像与介观神经解剖学",
+   "url": "https://www.view.sdu.edu.cn/info/1020/214924.htm",
+   "check_confidence": 0.9768423761680328,
+   "passed": true
+  },
+  {
+   "entity_id": "sdu-def964e169",
+   "field": "date",
+   "quote": "2026年11月7日 15:00",
+   "url": "https://www.view.sdu.edu.cn/info/1020/214924.htm",
+   "check_confidence": 0.9806076589374347,
+   "passed": true
+  },
+  {
+   "entity_id": "sdu-def964e169",
+   "field": "start_time",
+   "quote": "15:00",
+   "url": "https://www.view.sdu.edu.cn/info/1020/214924.htm",
+   "check_confidence": 0.9804142437776199,
+   "passed": true
+  },
+  {
+   "entity_id": "sdu-def964e169",
+   "field": "venue_name",
+   "quote": "趵突泉校区教学一号楼一层会议室",
+   "url": "https://www.view.sdu.edu.cn/info/1020/214924.htm",
+   "check_confidence": 0.9725423437173537,
+   "passed": true
+  },
+  {
+   "entity_id": "sdu-def964e169",
+   "field": "organisation_name",
+   "quote": "基础医学院",
+   "url": "https://www.view.sdu.edu.cn/info/1020/214924.htm",
+   "check_confidence": 0.9778952015952117,
+   "passed": true
+  },
+  {
+   "entity_id": "sdu-def964e169",
+   "field": "speaker",
+   "quote": "毕国强",
+   "url": "https://www.view.sdu.edu.cn/info/1020/214924.htm",
+   "check_confidence": 0.984598736940611,
+   "passed": true
+  },
+  {
+   "entity_id": "sdu-52a5e0993a",
+   "field": "title",
+   "quote": "晚明的“诗学知识化”现象——一个书籍史的视角",
+   "url": "https://www.view.sdu.edu.cn/info/1020/215040.htm",
+   "check_confidence": 0.9767603494395406,
+   "passed": true
+  },
+  {
+   "entity_id": "sdu-52a5e0993a",
+   "field": "date",
+   "quote": "2026年11月12日（星期四）14：00-16：00",
+   "url": "https://www.view.sdu.edu.cn/info/1020/215040.htm",
+   "check_confidence": 0.9628725560730639,
+   "passed": true
+  },
+  {
+   "entity_id": "sdu-52a5e0993a",
+   "field": "start_time",
+   "quote": "14:00",
+   "url": "https://www.view.sdu.edu.cn/info/1020/215040.htm",
+   "check_confidence": 0.9777351764082025,
+   "passed": true
+  },
+  {
+   "entity_id": "sdu-52a5e0993a",
+   "field": "venue_name",
+   "quote": "山东大学中心校区知新楼A606",
+   "url": "https://www.view.sdu.edu.cn/info/1020/215040.htm",
+   "check_confidence": 0.961566912258869,
+   "passed": true
+  },
+  {
+   "entity_id": "sdu-52a5e0993a",
+   "field": "speaker",
+   "quote": "徐隆垚研究员",
+   "url": "https://www.view.sdu.edu.cn/info/1020/215040.htm",
+   "check_confidence": 0.9765092450849083,
+   "passed": true
+  },
+  {
+   "entity_id": "sdu-f47a99a13c",
+   "field": "title",
+   "quote": "第295期“求材”学术论坛：环境过程与能量转化过程中的单原子催化",
+   "url": "https://www.view.sdu.edu.cn/info/1020/214917.htm",
+   "check_confidence": 0.9694126798905088,
+   "passed": true
+  },
+  {
+   "entity_id": "sdu-f47a99a13c",
+   "field": "date",
+   "quote": "2026年10月29日",
+   "url": "https://www.view.sdu.edu.cn/info/1020/214917.htm",
+   "check_confidence": 0.5955116347397366,
+   "passed": false
+  },
+  {
+   "entity_id": "sdu-2a2a7e414d",
+   "field": "title",
+   "quote": "第293期“求材”学术论坛：氧化铁与电化学界面的机器学习原子间势函数",
+   "url": "https://www.view.sdu.edu.cn/info/1020/214914.htm",
+   "check_confidence": 0.9742228486463184,
+   "passed": true
+  },
+  {
+   "entity_id": "sdu-2a2a7e414d",
+   "field": "organisation_name",
+   "quote": "材料科学与工程学院",
+   "url": "https://www.view.sdu.edu.cn/info/1020/214914.htm",
+   "check_confidence": 0.876922304415533,
+   "passed": true
+  },
+  {
+   "entity_id": "sdu-1fdc24d4e8",
+   "field": "title",
+   "quote": "Healthcare and Rehabilitation期刊“健康照护与康复”齐鲁国际学术讲座第十六期",
+   "url": "https://www.view.sdu.edu.cn/info/1020/214913.htm",
+   "check_confidence": 0.9698561460858335,
+   "passed": true
+  },
+  {
+   "entity_id": "sdu-1fdc24d4e8",
+   "field": "date",
+   "quote": "2026年11月3日（周二）16:00-17:00（北京时间）",
+   "url": "https://www.view.sdu.edu.cn/info/1020/214913.htm",
+   "check_confidence": 0.9729542170690021,
+   "passed": true
+  },
+  {
+   "entity_id": "sdu-1fdc24d4e8",
+   "field": "start_time",
+   "quote": "16:00",
+   "url": "https://www.view.sdu.edu.cn/info/1020/214913.htm",
+   "check_confidence": 0.9618044735763606,
+   "passed": true
+  },
+  {
+   "entity_id": "sdu-1fdc24d4e8",
+   "field": "venue_name",
+   "quote": "扫码观看直播",
+   "url": "https://www.view.sdu.edu.cn/info/1020/214913.htm",
+   "check_confidence": 0.8346656058236326,
+   "passed": true
+  },
+  {
+   "entity_id": "sdu-1fdc24d4e8",
+   "field": "speaker",
+   "quote": "顾源远 澳大利亚麦考瑞大学卫生经济中心副教授",
+   "url": "https://www.view.sdu.edu.cn/info/1020/214913.htm",
+   "check_confidence": 0.9591320688534685,
+   "passed": true
+  },
+  {
+   "entity_id": "sdu-c56b6e8c9a",
+   "field": "title",
+   "quote": "第1512期“稷下风”研究生学术讲坛：人工智能与数据驱动材料设计",
+   "url": "https://www.view.sdu.edu.cn/info/1020/214864.htm",
+   "check_confidence": 0.9706576269258814,
+   "passed": true
+  }
+ ]
+}

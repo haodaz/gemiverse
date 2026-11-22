@@ -1,0 +1,104 @@
+{
+ "school": "wfu",
+ "name": "Wake Forest University",
+ "at": "2026-11-22T00:20:47.274Z",
+ "source": "https://en.wikipedia.org/wiki/Wake%20Forest%20University",
+ "character": "The Reynolda Campus is known for its Georgian architecture centered around two interlinked quads, with nearby formal gardens, woods, and a lake.",
+ "map": "/art/map/wfu.jpg",
+ "landmarks": [
+  {
+   "name": "Reynolda Hall",
+   "name_en": "Reynolda Hall",
+   "kind": "hall",
+   "quote": "separated by the main administrative building and dining facility, Reynolda Hall, into North and South Campus.",
+   "look": "Georgian-style administrative and dining hall separating two quads.",
+   "check": 0.9759359409614922,
+   "confidence": 0.9759359409614922,
+   "passed": true,
+   "x": 0.55,
+   "y": 0.49
+  },
+  {
+   "name": "Hearn Plaza",
+   "name_en": "Hearn Plaza",
+   "kind": "quad",
+   "quote": "North Campus consists of Hearn Plaza, better known as \"the quad\"",
+   "look": "Open campus quad surrounded by Georgian residential buildings and Wait Chapel.",
+   "check": 0.9748896840782802,
+   "confidence": 0.9748896840782802,
+   "passed": true,
+   "x": 0.55,
+   "y": 0.36
+  },
+  {
+   "name": "Manchester Quad",
+   "name_en": "Manchester Quad",
+   "kind": "quad",
+   "quote": "South Campus is the home of Manchester Quad, named for substantial donors Doug and Elizabeth Manchester.",
+   "look": "Open campus quad surrounded by classroom buildings, housing, and a library.",
+   "check": 0.9817469706678235,
+   "confidence": 0.9817469706678235,
+   "passed": true,
+   "x": 0.55,
+   "y": 0.65
+  },
+  {
+   "name": "Z. Smith Reynolds Library",
+   "name_en": "Z. Smith Reynolds Library",
+   "kind": "library",
+   "quote": "It holds freshman housing, most of the classroom buildings, the Benson Center, and the Z. Smith Reynolds Library.",
+   "look": "Plain Georgian-style university library building on the South Campus quad.",
+   "check": 0.9750618035509654,
+   "confidence": 0.9750618035509654,
+   "passed": true,
+   "x": 0.56,
+   "y": 0.8
+  },
+  {
+   "name": "Wait Chapel",
+   "name_en": "Wait Chapel",
+   "kind": "other",
+   "quote": "which holds six upperclassmen residential buildings, Subway restaurant, a book/office supply store, a clothing/athletic store, and Wait Chapel.",
+   "look": "Georgian-style campus chapel with classrooms located on Hearn Plaza.",
+   "check": 0.966108979167143,
+   "confidence": 0.966108979167143,
+   "passed": true,
+   "x": 0.55,
+   "y": 0.16
+  },
+  {
+   "name": "Reynolda House Museum of American Art",
+   "name_en": "Reynolda House Museum of American Art",
+   "kind": "museum",
+   "quote": "Reynolda House Museum of American Art is the centerpiece of the Reynolda Estate, from which the university's Reynolda Campus takes its name.",
+   "look": "Historic 1917 residence converted into an art museum.",
+   "check": 0.8670727584064847,
+   "confidence": 0.8670727584064847,
+   "passed": true,
+   "x": 0.19,
+   "y": 0.77
+  },
+  {
+   "name": "Reynolda Gardens",
+   "name_en": "Reynolda Gardens",
+   "kind": "garden",
+   "quote": "The 129-acre (52-hectare) property that constitutes Reynolda Gardens of Wake Forest University... included a lake, golf course, formal gardens, greenhouses, and woods.",
+   "look": "Expansive preserve with formal gardens, greenhouses, woods, and a lake.",
+   "check": 0.9607746169248487,
+   "confidence": 0.9607746169248487,
+   "passed": true
+  },
+  {
+   "name": "Benson Center",
+   "name_en": "Benson Center",
+   "kind": "other",
+   "quote": "It holds freshman housing, most of the classroom buildings, the Benson Center, and the Z. Smith Reynolds Library.",
+   "look": "Plain Georgian-style campus building located on Manchester Quad.",
+   "check": 0.975468272279991,
+   "confidence": 0.975468272279991,
+   "passed": true
+  }
+ ],
+ "tokens": 10138,
+ "seconds": 29
+}

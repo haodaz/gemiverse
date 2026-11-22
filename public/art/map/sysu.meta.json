@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. The main campus, Kangleyuan, features many Western classical buildings, including Qing-era halls, alongside squares, pavilions, and trees. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Martin Hall, a hall: Western classical Qing-era building with 'AD1905' stone and chimneys removed.; (2) Grant Hall, a hall: Western classical clock tower hall with damaged stone pillars and added floor.; (3) Swasey Hall, a hall: Western classical small auditorium with diamond patterns on the exterior facade.; (4) Yongfang Hall, a hall: Symmetrical square-outside, round-inside building with two wings and sixty outdoor steps.; (5) Square of Eighteen Pioneers' Bronze Statues, a quad: Plaza in front of Yongfang Hall lined with eighteen bronze statues.; (6) Xingting Pavilion, a other: Traditional pavilion with a calligraphy plaque, facing the library and statue.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 16,
+ "tokens": 2218,
+ "at": "2026-11-22T00:16:49.072Z"
+}

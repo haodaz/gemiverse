@@ -1,0 +1,761 @@
+{
+ "school": "cmu",
+ "name": "Carnegie Mellon University",
+ "at": "2026-11-22T00:19:07.738Z",
+ "seconds": 25,
+ "tokens": 75332,
+ "entities": [
+  {
+   "id": "cmu-53831abfce",
+   "type": "Event",
+   "school": "cmu",
+   "name": "The Search for New Frontiers and the Making of Modern China",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/shellen-xiao-wu.html",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2024-09-25T17:00",
+    "summary": "Shellen Xiao Wu discusses how global frontier settlements shaped modern China's territorial integrity and global power dynamics.",
+    "event_kind": "lecture",
+    "venue_name": "Connan Room, Cohon University Center",
+    "organisation_name": "The Humanities Center",
+    "speaker": "Shellen Xiao Wu",
+    "occurrences": [
+     {
+      "start": "2024-09-25T17:00",
+      "end": "2024-09-25T18:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "cmu-5532154ca7",
+   "type": "Event",
+   "school": "cmu",
+   "name": "Film Screening: The Cost of Inheritance",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/cause-film-screening.html",
+    "needs": [
+     "explore_a_field",
+     "find_my_people"
+    ],
+    "start": null,
+    "summary": "A film screening of The Cost of Inheritance followed by a discussion with Executive Producer Daryl Ford-Williams on reparations and redress movements.",
+    "event_kind": "activity",
+    "venue_name": "McConomy Auditorium, Cohon University Center",
+    "organisation_name": "Center for Africanamerican Urban Studies the Economy",
+    "speaker": "Daryl Ford-Williams",
+    "occurrences": []
+   }
+  },
+  {
+   "id": "cmu-27fc77229e",
+   "type": "Event",
+   "school": "cmu",
+   "name": "A Constitution Day Symposium.",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/constitution-day-conference.html",
+    "needs": [
+     "explore_a_field",
+     "find_my_people"
+    ],
+    "start": "2026-09-17T09:00",
+    "summary": "A symposium at Carnegie Mellon University examining the United States Constitution through legal and humanities perspectives, featuring a keynote, panels, and performances.",
+    "event_kind": "lecture",
+    "venue_name": null,
+    "organisation_name": "The Humanities Center",
+    "speaker": "Sanford Levinson",
+    "occurrences": [
+     {
+      "start": "2026-09-17T09:00",
+      "end": "2026-09-17T18:45"
+     }
+    ]
+   }
+  },
+  {
+   "id": "cmu-67017d321c",
+   "type": "Event",
+   "school": "cmu",
+   "name": "The US Militia Movement and the Dangers Militias Pose in 2024",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/amy-cooter.html",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2024-04-18T17:00",
+    "summary": "Dr. Amy Cooter will discuss the modern US militia movement, its motivations, ideology, and potential election-related violence.",
+    "event_kind": "lecture",
+    "venue_name": "Steinberg Auditorium (BH A53)",
+    "organisation_name": "The Humanities Center",
+    "speaker": "Dr. Amy Cooter",
+    "occurrences": [
+     {
+      "start": "2024-04-18T17:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "cmu-0192bafb0d",
+   "type": "Event",
+   "school": "cmu",
+   "name": "\"Concerning Any Violence Necessary\"",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/michael-sawyer.html",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2024-02-22T17:00",
+    "summary": "Michael Sawyer discusses Walter Benjamin, Frantz Fanon, and Malcolm X to derive a theory of violence and defense for aggrieved subjects.",
+    "event_kind": "lecture",
+    "venue_name": "Steinberg Auditorium (BH A53)",
+    "organisation_name": "The Humanities Center",
+    "speaker": "Michael Sawyer",
+    "occurrences": [
+     {
+      "start": "2024-02-22T17:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "cmu-3f7396a6c1",
+   "type": "Event",
+   "school": "cmu",
+   "name": "Political Theology in a Cartel Training Camp",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/claudio-lomnitz.html",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2024-01-25T17:00",
+    "summary": "Claudio W. Lomnitz lectures on socialization practices in a Mexican cartel training camp and the political theology of organized crime.",
+    "event_kind": "lecture",
+    "venue_name": "Posner Grand Room",
+    "organisation_name": "The Humanities Center",
+    "speaker": "Claudio W. Lomnitz",
+    "occurrences": [
+     {
+      "start": "2024-01-25T17:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "cmu-736759e8d2",
+   "type": "Event",
+   "school": "cmu",
+   "name": "\"The Birth of a Nation\" and the Origins of Cinematic Vigilantism",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/paul-mcewan.html",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2023-11-30T17:00",
+    "summary": "Paul McEwan discusses the influence of D.W. Griffith's The Birth of a Nation on American filmmaking, vigilantism, and culture.",
+    "event_kind": "lecture",
+    "venue_name": "Steinberg Auditorium (BH A53)",
+    "organisation_name": "The Humanities Center",
+    "speaker": "Paul McEwan",
+    "occurrences": [
+     {
+      "start": "2023-11-30T17:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "cmu-09267173ba",
+   "type": "Event",
+   "school": "cmu",
+   "name": "\"Winter Counts\" Faculty Workshop Discussion",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/winter-counts.html",
+    "needs": [
+     "explore_a_field",
+     "find_my_people"
+    ],
+    "start": "2023-11-16T12:00",
+    "summary": "A faculty workshop discussion led by Anne Lambright on David Heska Wanbli Weiden's novel Winter Counts.",
+    "event_kind": "workshop",
+    "venue_name": "Posner Grand Room",
+    "organisation_name": "The Humanities Center",
+    "speaker": "Anne Lambright, Chickasaw Nation, Department of Modern Languages",
+    "occurrences": [
+     {
+      "start": "2023-11-16T12:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "cmu-b1200e2c2e",
+   "type": "Event",
+   "school": "cmu",
+   "name": "Frontier Rebels: The Vigilante Origins of the American Revolution, 1765-1776",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/patrick-spero.html",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2023-10-05T17:00",
+    "summary": "Dr. Patrick Spero lectures on the 1765 Black Boys rebellion and the vigilante origins of the American Revolution on the Pennsylvania frontier.",
+    "event_kind": "lecture",
+    "venue_name": "Steinberg Auditorium (BH A53)",
+    "organisation_name": "The Humanities Center",
+    "speaker": "Dr. Patrick Spero",
+    "occurrences": [
+     {
+      "start": "2023-10-05T17:00",
+      "end": "2023-10-05T18:20"
+     }
+    ]
+   }
+  },
+  {
+   "id": "cmu-65d2263dc0",
+   "type": "Event",
+   "school": "cmu",
+   "name": "Environmental Humanities Slam",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/environmental-humanities-slam.html",
+    "needs": [
+     "explore_a_field",
+     "find_my_people"
+    ],
+    "start": null,
+    "summary": "An interdisciplinary celebration featuring flash talks by local researchers and educators from Pitt, CMU, and beyond.",
+    "event_kind": "lecture",
+    "venue_name": null,
+    "organisation_name": "Environmental Humanities Research Seminar",
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "cmu-b6f26eb864",
+   "type": "Event",
+   "school": "cmu",
+   "name": "Make Research Come Alive in the Humanities, Arts Social Sciences",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/make-research-come-alive.html",
+    "needs": [
+     "explore_a_field",
+     "find_my_people"
+    ],
+    "start": "2025-04-17",
+    "summary": "A symposium featuring scholars and funding organizations discussing how humanities, arts, and social sciences research reaches broader audiences.",
+    "event_kind": "lecture",
+    "venue_name": "William Pitt Union",
+    "organisation_name": "The Humanities Center",
+    "speaker": "Edda Fields-Black, Marcus Rediker, Jeanne-Marie Laskas, Erin Anderson",
+    "occurrences": [
+     {
+      "start": "2025-04-17",
+      "end": null
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "cmu-53831abfce",
+   "field": "title",
+   "quote": "The Search for New Frontiers and the Making of Modern China",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/shellen-xiao-wu.html",
+   "check_confidence": 0.9759765001929913,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-53831abfce",
+   "field": "date",
+   "quote": "Wednesday, Sept. 25, 2024, 5 to 6:30 p.m.",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/shellen-xiao-wu.html",
+   "check_confidence": 0.9812811257290998,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-53831abfce",
+   "field": "start_time",
+   "quote": "17:00",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/shellen-xiao-wu.html",
+   "check_confidence": 0.9619396856342782,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-53831abfce",
+   "field": "venue_name",
+   "quote": "Connan Room, Cohon University Center",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/shellen-xiao-wu.html",
+   "check_confidence": 0.9778851926809603,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-53831abfce",
+   "field": "organisation_name",
+   "quote": "The Humanities Center",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/shellen-xiao-wu.html",
+   "check_confidence": 0.9515964020815761,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-53831abfce",
+   "field": "speaker",
+   "quote": "Shellen Xiao Wu",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/shellen-xiao-wu.html",
+   "check_confidence": 0.9715405779492224,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-5532154ca7",
+   "field": "title",
+   "quote": "Film Screening: The Cost of Inheritance",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/cause-film-screening.html",
+   "check_confidence": 0.9871724746016485,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-5532154ca7",
+   "field": "date",
+   "quote": "Date: Friday, Oct. 18, 6:00 to 7:30 p.m.",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/cause-film-screening.html",
+   "check_confidence": 0.4248636582664784,
+   "passed": false
+  },
+  {
+   "entity_id": "cmu-5532154ca7",
+   "field": "start_time",
+   "quote": "18:00",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/cause-film-screening.html",
+   "check_confidence": 0.9660263852813439,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-5532154ca7",
+   "field": "venue_name",
+   "quote": "McConomy Auditorium, Cohon University Center",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/cause-film-screening.html",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-5532154ca7",
+   "field": "organisation_name",
+   "quote": "Center for Africanamerican Urban Studies the Economy",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/cause-film-screening.html",
+   "check_confidence": 0.9709731432584581,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-5532154ca7",
+   "field": "speaker",
+   "quote": "Daryl Ford-Williams",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/cause-film-screening.html",
+   "check_confidence": 0.8476362561866024,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-27fc77229e",
+   "field": "title",
+   "quote": "A Constitution Day Symposium.",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/constitution-day-conference.html",
+   "check_confidence": 0.9864937309543852,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-27fc77229e",
+   "field": "date",
+   "quote": "September 17, 2026.\n9:00 a.m - 6:45 p.m",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/constitution-day-conference.html",
+   "check_confidence": 0.9797499843393737,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-27fc77229e",
+   "field": "start_time",
+   "quote": "09:00",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/constitution-day-conference.html",
+   "check_confidence": 0.9878182906029983,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-27fc77229e",
+   "field": "organisation_name",
+   "quote": "The Humanities Center",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/constitution-day-conference.html",
+   "check_confidence": 0.9752836978616394,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-27fc77229e",
+   "field": "speaker",
+   "quote": "Sanford Levinson",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/constitution-day-conference.html",
+   "check_confidence": 0.9866185011196815,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-67017d321c",
+   "field": "title",
+   "quote": "The US Militia Movement and the Dangers Militias Pose in 2024",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/amy-cooter.html",
+   "check_confidence": 0.9500243781007224,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-67017d321c",
+   "field": "date",
+   "quote": "April 18, 2024 5:00 pm",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/amy-cooter.html",
+   "check_confidence": 0.9821489222193639,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-67017d321c",
+   "field": "start_time",
+   "quote": "17:00",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/amy-cooter.html",
+   "check_confidence": 0.9712325393667217,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-67017d321c",
+   "field": "venue_name",
+   "quote": "Steinberg Auditorium (BH A53)",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/amy-cooter.html",
+   "check_confidence": 0.9787718804630925,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-67017d321c",
+   "field": "organisation_name",
+   "quote": "The Humanities Center",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/amy-cooter.html",
+   "check_confidence": 0.9433582236340113,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-67017d321c",
+   "field": "speaker",
+   "quote": "Dr. Amy Cooter",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/amy-cooter.html",
+   "check_confidence": 0.9876163265982941,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-0192bafb0d",
+   "field": "title",
+   "quote": "\"Concerning Any Violence Necessary\"",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/michael-sawyer.html",
+   "check_confidence": 0.9680721614090352,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-0192bafb0d",
+   "field": "date",
+   "quote": "February 22, 2024 5:00 pm",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/michael-sawyer.html",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-0192bafb0d",
+   "field": "start_time",
+   "quote": "17:00",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/michael-sawyer.html",
+   "check_confidence": 0.9818034759736338,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-0192bafb0d",
+   "field": "venue_name",
+   "quote": "Steinberg Auditorium (BH A53)",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/michael-sawyer.html",
+   "check_confidence": 0.976799666496002,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-0192bafb0d",
+   "field": "organisation_name",
+   "quote": "The Humanities Center",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/michael-sawyer.html",
+   "check_confidence": 0.9648503617142332,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-0192bafb0d",
+   "field": "speaker",
+   "quote": "Michael Sawyer",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/michael-sawyer.html",
+   "check_confidence": 0.9879470186482149,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-3f7396a6c1",
+   "field": "title",
+   "quote": "Political Theology in a Cartel Training Camp",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/claudio-lomnitz.html",
+   "check_confidence": 0.9726816412443983,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-3f7396a6c1",
+   "field": "date",
+   "quote": "January 25, 2024 5:00 pm",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/claudio-lomnitz.html",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-3f7396a6c1",
+   "field": "start_time",
+   "quote": "17:00",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/claudio-lomnitz.html",
+   "check_confidence": 0.980452165908288,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-3f7396a6c1",
+   "field": "venue_name",
+   "quote": "Posner Grand Room",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/claudio-lomnitz.html",
+   "check_confidence": 0.9738979429508169,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-3f7396a6c1",
+   "field": "organisation_name",
+   "quote": "The Humanities Center",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/claudio-lomnitz.html",
+   "check_confidence": 0.9684996072607681,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-3f7396a6c1",
+   "field": "speaker",
+   "quote": "Claudio W. Lomnitz",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/claudio-lomnitz.html",
+   "check_confidence": 0.9887131023616805,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-736759e8d2",
+   "field": "title",
+   "quote": "\"The Birth of a Nation\" and the Origins of Cinematic Vigilantism",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/paul-mcewan.html",
+   "check_confidence": 0.9663136233467389,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-736759e8d2",
+   "field": "date",
+   "quote": "November 30, 2023 5:00-pm",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/paul-mcewan.html",
+   "check_confidence": 0.9813747201190781,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-736759e8d2",
+   "field": "start_time",
+   "quote": "17:00",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/paul-mcewan.html",
+   "check_confidence": 0.9662428712139388,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-736759e8d2",
+   "field": "venue_name",
+   "quote": "Steinberg Auditorium (BH A53)",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/paul-mcewan.html",
+   "check_confidence": 0.9655090225009294,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-736759e8d2",
+   "field": "organisation_name",
+   "quote": "The Humanities Center",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/paul-mcewan.html",
+   "check_confidence": 0.94852267768965,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-736759e8d2",
+   "field": "speaker",
+   "quote": "Paul McEwan",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/paul-mcewan.html",
+   "check_confidence": 0.9685213374841115,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-09267173ba",
+   "field": "title",
+   "quote": "\"Winter Counts\" Faculty Workshop Discussion",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/winter-counts.html",
+   "check_confidence": 0.9782595661917595,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-09267173ba",
+   "field": "date",
+   "quote": "November 16, 2023\n12:00pm",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/winter-counts.html",
+   "check_confidence": 0.9855140179668804,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-09267173ba",
+   "field": "start_time",
+   "quote": "12:00",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/winter-counts.html",
+   "check_confidence": 0.9751861078103529,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-09267173ba",
+   "field": "venue_name",
+   "quote": "Posner Grand Room",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/winter-counts.html",
+   "check_confidence": 0.9781244717693383,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-09267173ba",
+   "field": "organisation_name",
+   "quote": "The Humanities Center",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/winter-counts.html",
+   "check_confidence": 0.9366552986292523,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-09267173ba",
+   "field": "speaker",
+   "quote": "Anne Lambright, Chickasaw Nation, Department of Modern Languages",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/winter-counts.html",
+   "check_confidence": 0.8596136658913445,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-b1200e2c2e",
+   "field": "title",
+   "quote": "Frontier Rebels: The Vigilante Origins of the American Revolution, 1765-1776",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/patrick-spero.html",
+   "check_confidence": 0.9626718398063495,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-b1200e2c2e",
+   "field": "date",
+   "quote": "October 5, 2023 5:00-6:20pm",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/patrick-spero.html",
+   "check_confidence": 0.9875030786810755,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-b1200e2c2e",
+   "field": "start_time",
+   "quote": "17:00",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/patrick-spero.html",
+   "check_confidence": 0.9635415322562724,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-b1200e2c2e",
+   "field": "venue_name",
+   "quote": "Steinberg Auditorium (BH A53)",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/patrick-spero.html",
+   "check_confidence": 0.9751788097487125,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-b1200e2c2e",
+   "field": "organisation_name",
+   "quote": "The Humanities Center",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/patrick-spero.html",
+   "check_confidence": 0.9512136158096297,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-b1200e2c2e",
+   "field": "speaker",
+   "quote": "Dr. Patrick Spero",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/patrick-spero.html",
+   "check_confidence": 0.9806747567813746,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-65d2263dc0",
+   "field": "title",
+   "quote": "Environmental Humanities Slam",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/environmental-humanities-slam.html",
+   "check_confidence": 0.9504569734629836,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-65d2263dc0",
+   "field": "organisation_name",
+   "quote": "Environmental Humanities Research Seminar",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/environmental-humanities-slam.html",
+   "check_confidence": 0.9496128632581727,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-b6f26eb864",
+   "field": "title",
+   "quote": "Make Research Come Alive in the Humanities, Arts Social Sciences",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/make-research-come-alive.html",
+   "check_confidence": 0.9486043053482749,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-b6f26eb864",
+   "field": "date",
+   "quote": "Thursday, April 17, 2025",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/make-research-come-alive.html",
+   "check_confidence": 0.9783891943704639,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-b6f26eb864",
+   "field": "venue_name",
+   "quote": "William Pitt Union",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/make-research-come-alive.html",
+   "check_confidence": 0.9734642424888401,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-b6f26eb864",
+   "field": "organisation_name",
+   "quote": "The Humanities Center",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/make-research-come-alive.html",
+   "check_confidence": 0.9191485487860243,
+   "passed": true
+  },
+  {
+   "entity_id": "cmu-b6f26eb864",
+   "field": "speaker",
+   "quote": "Edda Fields-Black, Marcus Rediker, Jeanne-Marie Laskas, Erin Anderson",
+   "url": "https://www.cmu.edu/dietrich/humanities-center/center-events/make-research-come-alive.html",
+   "check_confidence": 0.9530922980351607,
+   "passed": true
+  }
+ ]
+}

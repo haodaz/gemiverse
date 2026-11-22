@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. The 1,250-acre campus features the large McKeldin Mall, Georgian-style halls, 7,500 documented trees, nearly 400 acres of urban forest, and the Paint Branch stream. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) McKeldin Mall, a quad: Vast open grassy academic mall bordered by buildings on all sides.; (2) McKeldin Library, a library: Plain library building bordering the west end of McKeldin Mall.; (3) The \"M\", a other: Grassy mound with a large letter M formed by flowers in its center.; (4) Morrill Quad, a quad: Historic campus quadrangle at the original center of campus.; (5) Morrill Hall, a hall: Plain historic academic hall on Morrill Quad.; (6) North Gate, a gate: Ornate gateway and gatehouse at the main campus entrance.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 15,
+ "tokens": 2003,
+ "at": "2026-11-22T00:20:16.293Z"
+}

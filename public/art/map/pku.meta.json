@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. Built on a Qing-era garden site, the campus blends traditional Chinese architecture and classical gardens with modern Western planning, featuring a southern academic zone and northern lake area. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Weiming Lake, a lake: A scenic lake in the northern area of the campus.; (2) Boya Tower, a tower: A tower situated along the campus's east-west main axis.; (3) Alumni Gate (West Gate), a gate: A campus gate located at the western end of the main axis.; (4) Beigong Building (Administration Building), a hall: A main office building positioned on the east-west axis.; (5) Centennial Hall, a hall: A large auditorium hall used for campus performances.; (6) Khoo Teck Puat Gymnasium, a stadium: A modern comprehensive sports stadium and gymnasium.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 15,
+ "tokens": 1928,
+ "at": "2026-11-22T00:11:05.501Z"
+}

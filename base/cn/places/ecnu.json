@@ -1,0 +1,104 @@
+{
+ "school": "ecnu",
+ "name": "华东师范大学",
+ "at": "2026-11-22T00:15:50.642Z",
+ "source": "https://zh.wikipedia.org/wiki/%E5%8D%8E%E4%B8%9C%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6",
+ "character": "The historic campus features the famous Liwa River, grand early twentieth-century buildings from the former Great China University, and scenic spots with old trees, ponds, and greenery.",
+ "map": "/art/map/ecnu.jpg",
+ "landmarks": [
+  {
+   "name": "丽娃河",
+   "name_en": "Liwa River",
+   "kind": "other",
+   "quote": "校园内有上海著名的丽娃河（西班牙语：Rio Rita）",
+   "look": "A winding campus river with scenic banks, plain",
+   "check": 0.9877570667991062,
+   "confidence": 0.9877570667991062,
+   "passed": true,
+   "x": 0.55,
+   "y": 0.52
+  },
+  {
+   "name": "思群堂",
+   "name_en": "Siqun Hall",
+   "kind": "hall",
+   "quote": "现存大夏大学时期的主要建筑有：主教学楼群贤堂，大礼堂思群堂",
+   "look": "A grand historic auditorium building from the early twentieth century",
+   "check": 0.96570272158283,
+   "confidence": 0.96570272158283,
+   "passed": true,
+   "x": 0.51,
+   "y": 0.17
+  },
+  {
+   "name": "群贤堂",
+   "name_en": "Qunxian Hall",
+   "kind": "hall",
+   "quote": "现存大夏大学时期的主要建筑有：主教学楼群贤堂，大礼堂思群堂",
+   "look": "A grand historic main teaching building, plain",
+   "check": 0.977725493348266,
+   "confidence": 0.977725493348266,
+   "passed": true,
+   "x": 0.82,
+   "y": 0.23
+  },
+  {
+   "name": "办公楼",
+   "name_en": "Office Building",
+   "kind": "other",
+   "quote": "2015年，华东师范大学办公楼和思群堂被列入上海市优秀历史建筑名单。",
+   "look": "An early historic university office building, plain",
+   "check": 0.9693160483908613,
+   "confidence": 0.9693160483908613,
+   "passed": true,
+   "x": 0.61,
+   "y": 0.67
+  },
+  {
+   "name": "地理馆",
+   "name_en": "Geography Hall",
+   "kind": "hall",
+   "quote": "华东师范大学早期建筑（包括老干部活动中心、办公楼、地理馆和毛泽东像等）",
+   "look": "An early historic academic hall, plain",
+   "check": 0.9699081256554132,
+   "confidence": 0.9699081256554132,
+   "passed": true,
+   "x": 0.16,
+   "y": 0.47
+  },
+  {
+   "name": "毛泽东像",
+   "name_en": "Statue of Mao Zedong",
+   "kind": "other",
+   "quote": "华东师范大学早期建筑（包括老干部活动中心、办公楼、地理馆和毛泽东像等）",
+   "look": "A standing statue of Mao Zedong on campus, plain",
+   "check": 0.9427641781270578,
+   "confidence": 0.9427641781270578,
+   "passed": true,
+   "x": 0.44,
+   "y": 0.72
+  },
+  {
+   "name": "原生物实验楼",
+   "name_en": "Former Biology Laboratory Building",
+   "kind": "other",
+   "quote": "现存大夏大学时期的主要建筑有：主教学楼群贤堂，大礼堂思群堂，原生物实验楼和化学实验楼等。",
+   "look": "A historic early twentieth-century laboratory building, plain",
+   "check": 0.9728418494192288,
+   "confidence": 0.9728418494192288,
+   "passed": true
+  },
+  {
+   "name": "化学实验楼",
+   "name_en": "Chemistry Laboratory Building",
+   "kind": "other",
+   "quote": "现存大夏大学时期的主要建筑有：主教学楼群贤堂，大礼堂思群堂，原生物实验楼和化学实验楼等。",
+   "look": "A historic early twentieth-century laboratory building, plain",
+   "check": 0.9602851678437679,
+   "confidence": 0.9602851678437679,
+   "passed": true
+  }
+ ],
+ "tokens": 11136,
+ "seconds": 28
+}

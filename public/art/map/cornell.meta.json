@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. Set on East Hill overlooking Cayuga Lake and bordered by two gorges, the campus features an irregular layout blending ornate pre-war Collegiate Gothic, Victorian, and Neoclassical buildings with modernist structures. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) East Hill, a hill: Elevated hill overlooking a city and lake.; (2) Morrill Hall, a hall: Historic pre-war academic hall in an ornate traditional style.; (3) Barton Hall, a hall: Large campus hall suitable for hosting concerts.; (4) Bailey Hall, a hall: Historic campus hall, plain.; (5) Cornell Botanic Gardens, a garden: Expansive cultivated gardens, arboretum trees, and natural areas.; (6) Fall Creek Gorge, a other: Deep natural gorge with water bordering the campus.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 18,
+ "tokens": 2315,
+ "at": "2026-11-22T00:13:38.204Z"
+}

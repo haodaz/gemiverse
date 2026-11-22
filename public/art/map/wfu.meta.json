@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. The Reynolda Campus is known for its Georgian architecture centered around two interlinked quads, with nearby formal gardens, woods, and a lake. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Reynolda Hall, a hall: Georgian-style administrative and dining hall separating two quads.; (2) Hearn Plaza, a quad: Open campus quad surrounded by Georgian residential buildings and Wait Chapel.; (3) Manchester Quad, a quad: Open campus quad surrounded by classroom buildings, housing, and a library.; (4) Z. Smith Reynolds Library, a library: Plain Georgian-style university library building on the South Campus quad.; (5) Wait Chapel, a other: Georgian-style campus chapel with classrooms located on Hearn Plaza.; (6) Reynolda House Museum of American Art, a museum: Historic 1917 residence converted into an art museum.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 17,
+ "tokens": 2271,
+ "at": "2026-11-22T00:20:42.121Z"
+}

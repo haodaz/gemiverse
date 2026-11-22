@@ -1,0 +1,77 @@
+{
+ "school": "osu",
+ "name": "Ohio State University",
+ "at": "2026-11-22T00:21:23.524Z",
+ "seconds": 20,
+ "tokens": 25469,
+ "entities": [
+  {
+   "id": "osu-d7d06b4817",
+   "type": "Event",
+   "school": "osu",
+   "name": "Members’ First Look: 2026–27 Performing Arts Season",
+   "tier": 1,
+   "fields": {
+    "url": "https://wexarts.org/special-events/members-first-look-2026-27-performing-arts-season",
+    "needs": [
+     "find_my_people",
+     "explore_a_field"
+    ],
+    "start": "2026-11-21T12:00",
+    "summary": "Wexner Center for the Arts hosts a members-only preview of the 2026–27 performing arts season with curator insights and light refreshments.",
+    "event_kind": "other",
+    "venue_name": "Film/Video Theater",
+    "organisation_name": "Wexner Center for the Arts",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21T12:00",
+      "end": null
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "osu-d7d06b4817",
+   "field": "title",
+   "quote": "Members’ First Look: 2026–27 Performing Arts Season",
+   "url": "https://wexarts.org/special-events/members-first-look-2026-27-performing-arts-season",
+   "check_confidence": 0.9775991862413925,
+   "passed": true
+  },
+  {
+   "entity_id": "osu-d7d06b4817",
+   "field": "date",
+   "quote": "Nov 21, 2026 12:00 PM",
+   "url": "https://wexarts.org/special-events/members-first-look-2026-27-performing-arts-season",
+   "check_confidence": 0.9837598921011412,
+   "passed": true
+  },
+  {
+   "entity_id": "osu-d7d06b4817",
+   "field": "start_time",
+   "quote": "12:00",
+   "url": "https://wexarts.org/special-events/members-first-look-2026-27-performing-arts-season",
+   "check_confidence": 0.9861935354242096,
+   "passed": true
+  },
+  {
+   "entity_id": "osu-d7d06b4817",
+   "field": "venue_name",
+   "quote": "Film/Video Theater",
+   "url": "https://wexarts.org/special-events/members-first-look-2026-27-performing-arts-season",
+   "check_confidence": 0.972537305109175,
+   "passed": true
+  },
+  {
+   "entity_id": "osu-d7d06b4817",
+   "field": "organisation_name",
+   "quote": "Wexner Center for the Arts",
+   "url": "https://wexarts.org/special-events/members-first-look-2026-27-performing-arts-season",
+   "check_confidence": 0.9539179992874558,
+   "passed": true
+  }
+ ]
+}

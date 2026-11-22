@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. Located by the Jialing River, the main campus features an artificial lake alongside traditional Chinese-style Republican-era buildings, Soviet-style neoclassical halls, and a 27-story modern teaching building. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Minzhu Lake, a lake: An artificial campus lake with a memorial stone and lecture hall nearby.; (2) Main Gate, a gate: A historic early-20th-century university gate.; (3) Old Library Building, a library: A historic early-20th-century brick-and-tile library building.; (4) Former Science College Building (First Teaching Building), a hall: A 1932 brick-and-wood building with traditional upturned eaves and red pillars.; (5) Former Engineering College Building (Second Teaching Building), a hall: A 1935 Republican-era academic hall with a bombing memorial monument nearby.; (6) Yinchu Pavilion, a other: A traditional Chinese memorial pavilion.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 15,
+ "tokens": 2187,
+ "at": "2026-11-22T00:17:22.611Z"
+}

@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. The 32-acre urban campus in Morningside Heights was designed along Beaux-Arts planning principles with a lower part and an upper terrace. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Low Memorial Library, a library: Grand Beaux-Arts centerpiece library with long granite front steps.; (2) Butler Library, a library: One of the largest buildings on campus, plain library.; (3) South Field, a other: Open lower campus field below the granite steps.; (4) Philosophy Hall, a hall: Historic academic hall on the Morningside Heights campus.; (5) Pupin Hall, a hall: Historic academic hall housing physics and astronomy departments.; (6) Earl Hall, a hall: Historic campus hall, plain.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 23,
+ "tokens": 2218,
+ "at": "2026-11-22T00:14:50.279Z"
+}

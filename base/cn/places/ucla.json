@@ -1,0 +1,104 @@
+{
+ "school": "ucla",
+ "name": "University of California, Los Angeles",
+ "at": "2026-11-22T00:14:09.683Z",
+ "source": "https://en.wikipedia.org/wiki/University%20of%20California%2C%20Los%20Angeles",
+ "character": "The campus features early Romanesque Revival buildings around a central quad alongside rows of minimalist, slab-shaped brick buildings on its southern half.",
+ "map": "/art/map/ucla.jpg",
+ "landmarks": [
+  {
+   "name": "Royce Hall",
+   "name_en": "Royce Hall",
+   "kind": "hall",
+   "quote": "Royce Hall and Haines Hall on the north",
+   "look": "Romanesque Revival building on the north side of the quad.",
+   "check": 0.9801963832223853,
+   "confidence": 0.9801963832223853,
+   "passed": true,
+   "x": 0.39,
+   "y": 0.17
+  },
+  {
+   "name": "Powell Library",
+   "name_en": "Powell Library",
+   "kind": "library",
+   "quote": "Powell Library and Kinsey Hall (now called Renee And David Kaplan Hall) on the south.",
+   "look": "Romanesque Revival library building on the south side of the quad.",
+   "check": 0.9677488181849813,
+   "confidence": 0.9677488181849813,
+   "passed": true,
+   "x": 0.65,
+   "y": 0.47
+  },
+  {
+   "name": "Janss Steps",
+   "name_en": "Janss Steps",
+   "kind": "other",
+   "quote": "The Janss Steps were the original 87-step entrance to the university",
+   "look": "An 87-step grand entrance staircase leading up to the quad.",
+   "check": 0.9724004577559302,
+   "confidence": 0.9724004577559302,
+   "passed": true,
+   "x": 0.17,
+   "y": 0.36
+  },
+  {
+   "name": "Haines Hall",
+   "name_en": "Haines Hall",
+   "kind": "hall",
+   "quote": "Royce Hall and Haines Hall on the north",
+   "look": "Romanesque Revival building on the north side of the quad.",
+   "check": 0.9783382004101894,
+   "confidence": 0.9783382004101894,
+   "passed": true,
+   "x": 0.67,
+   "y": 0.19
+  },
+  {
+   "name": "Renee And David Kaplan Hall",
+   "name_en": "Renee And David Kaplan Hall",
+   "kind": "hall",
+   "quote": "Kinsey Hall (now called Renee And David Kaplan Hall) on the south.",
+   "look": "Romanesque Revival building on the south side of the quad.",
+   "check": 0.9706330785717473,
+   "confidence": 0.9706330785717473,
+   "passed": true,
+   "x": 0.38,
+   "y": 0.5
+  },
+  {
+   "name": "Franklin D. Murphy Sculpture Garden",
+   "name_en": "Franklin D. Murphy Sculpture Garden",
+   "kind": "garden",
+   "quote": "overlooking the Franklin D. Murphy Sculpture Garden.",
+   "look": "Outdoor sculpture garden.",
+   "check": 0.9701832469335792,
+   "confidence": 0.9701832469335792,
+   "passed": true,
+   "x": 0.84,
+   "y": 0.77
+  },
+  {
+   "name": "Bunche Hall",
+   "name_en": "Bunche Hall",
+   "kind": "hall",
+   "quote": "The entrance of Bunche Hall features a bust of him",
+   "look": "Campus building with a bust at its entrance.",
+   "check": 0.9829796532792875,
+   "confidence": 0.9829796532792875,
+   "passed": true
+  },
+  {
+   "name": "UCLA Medical Center",
+   "name_en": "UCLA Medical Center",
+   "kind": "other",
+   "quote": "minimalist, slab–shaped brick buildings to the southern half, the largest of these being the UCLA Medical Center.",
+   "look": "Large minimalist, slab-shaped brick building.",
+   "check": 0.9441791802678166,
+   "confidence": 0.9441791802678166,
+   "passed": true
+  }
+ ],
+ "tokens": 10603,
+ "seconds": 29
+}

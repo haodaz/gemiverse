@@ -1,0 +1,84 @@
+{
+ "school": "lehigh",
+ "name": "Lehigh University",
+ "at": "2026-11-22T00:20:35.011Z",
+ "source": "https://en.wikipedia.org/wiki/Lehigh%20University",
+ "character": "The main campus is built into the northern slope of South Mountain, featuring recreational and playing fields alongside numerous university buildings.",
+ "map": "/art/map/lehigh.jpg",
+ "landmarks": [
+  {
+   "name": "South Mountain",
+   "name_en": "South Mountain",
+   "kind": "hill",
+   "quote": "three contiguous campuses on and around South Mountain",
+   "look": "A mountain slope with campus buildings built into it.",
+   "check": 0.9789986041882971,
+   "confidence": 0.9789986041882971,
+   "passed": true,
+   "x": 0.37,
+   "y": 0.18
+  },
+  {
+   "name": "Maginnes Hall",
+   "name_en": "Maginnes Hall",
+   "kind": "hall",
+   "quote": "Based in Maginnes Hall, the College of Arts and Sciences",
+   "look": "A plain academic hall.",
+   "check": 0.9736850493262504,
+   "confidence": 0.9736850493262504,
+   "passed": true,
+   "x": 0.2,
+   "y": 0.46
+  },
+  {
+   "name": "Drown Hall",
+   "name_en": "Drown Hall",
+   "kind": "hall",
+   "quote": "moved from Coppée Hall to the purpose-built Drown Hall.",
+   "look": "A plain purpose-built academic hall.",
+   "check": 0.9603538454852961,
+   "confidence": 0.9603538454852961,
+   "passed": true,
+   "x": 0.41,
+   "y": 0.49
+  },
+  {
+   "name": "Coppée Hall",
+   "name_en": "Coppée Hall",
+   "kind": "hall",
+   "quote": "moved from Coppée Hall to the purpose-built Drown Hall.",
+   "look": "A plain academic hall.",
+   "check": 0.950724726692017,
+   "confidence": 0.950724726692017,
+   "passed": true,
+   "x": 0.66,
+   "y": 0.5
+  },
+  {
+   "name": "The Hill",
+   "name_en": "The Hill",
+   "kind": "hill",
+   "quote": "along Upper and Lower Sayre Park Roads in a region known as \"The Hill\".",
+   "look": "A hillside road lined with fraternity and sorority houses.",
+   "check": 0.9415614176206927,
+   "confidence": 0.9415614176206927,
+   "passed": true,
+   "x": 0.48,
+   "y": 0.8
+  },
+  {
+   "name": "Health, Science, and Technology (HST) building",
+   "name_en": "Health, Science, and Technology (HST) building",
+   "kind": "other",
+   "quote": "based at the Health, Science, and Technology (HST) building",
+   "look": "A plain modern academic building.",
+   "check": 0.9810693490164584,
+   "confidence": 0.9810693490164584,
+   "passed": true,
+   "x": 0.81,
+   "y": 0.71
+  }
+ ],
+ "tokens": 10550,
+ "seconds": 27
+}

@@ -1,0 +1,104 @@
+{
+ "school": "tju",
+ "name": "天津大学",
+ "at": "2026-11-22T00:15:30.398Z",
+ "source": "https://zh.wikipedia.org/wiki/%E5%A4%A9%E6%B4%A5%E5%A4%A7%E5%AD%A6",
+ "character": "The Weijin Road campus borders the Weijin River, features four lakes, and houses historic 1950s–1960s brick-and-wood buildings with hip-and-gable roofs.",
+ "map": "/art/map/tju.jpg",
+ "landmarks": [
+  {
+   "name": "第九教学楼",
+   "name_en": "Ninth Teaching Building",
+   "kind": "hall",
+   "quote": "天津大学建筑群包括标志性建筑第九教学楼",
+   "look": "Four-story brick-and-wood hall with grey hip-and-gable roof and clean-brick facade",
+   "check": 0.9836112225126443,
+   "confidence": 0.9836112225126443,
+   "passed": true,
+   "x": 0.3,
+   "y": 0.23
+  },
+  {
+   "name": "青年湖",
+   "name_en": "Qingnian Lake",
+   "kind": "lake",
+   "quote": "卫津路校区内有四个湖泊：青年湖、敬业湖、爱晚湖和友谊湖。",
+   "look": "Plain campus lake",
+   "check": 0.9872339945421379,
+   "confidence": 0.9872339945421379,
+   "passed": true,
+   "x": 0.22,
+   "y": 0.64
+  },
+  {
+   "name": "敬业湖",
+   "name_en": "Jingye Lake",
+   "kind": "lake",
+   "quote": "卫津路校区内有四个湖泊：青年湖、敬业湖、爱晚湖和友谊湖。",
+   "look": "Plain campus lake",
+   "check": 0.9862647044703932,
+   "confidence": 0.9862647044703932,
+   "passed": true,
+   "x": 0.48,
+   "y": 0.48
+  },
+  {
+   "name": "爱晚湖",
+   "name_en": "Aiwan Lake",
+   "kind": "lake",
+   "quote": "卫津路校区内有四个湖泊：青年湖、敬业湖、爱晚湖和友谊湖。",
+   "look": "Plain campus lake",
+   "check": 0.99,
+   "confidence": 0.99,
+   "passed": true,
+   "x": 0.68,
+   "y": 0.59
+  },
+  {
+   "name": "友谊湖",
+   "name_en": "Youyi Lake",
+   "kind": "lake",
+   "quote": "卫津路校区内有四个湖泊：青年湖、敬业湖、爱晚湖和友谊湖。",
+   "look": "Plain campus lake",
+   "check": 0.99,
+   "confidence": 0.99,
+   "passed": true,
+   "x": 0.82,
+   "y": 0.76
+  },
+  {
+   "name": "图书馆（北馆）",
+   "name_en": "Library (North Building)",
+   "kind": "library",
+   "quote": "土建馆、内燃机大楼、图书馆（北馆）、体育馆",
+   "look": "Plain historic campus library building",
+   "check": 0.9804838832683341,
+   "confidence": 0.9804838832683341,
+   "passed": true,
+   "x": 0.71,
+   "y": 0.24
+  },
+  {
+   "name": "体育馆",
+   "name_en": "Gymnasium",
+   "kind": "stadium",
+   "quote": "土建馆、内燃机大楼、图书馆（北馆）、体育馆",
+   "look": "Plain historic campus gymnasium",
+   "check": 0.9783607293388454,
+   "confidence": 0.9783607293388454,
+   "passed": true
+  },
+  {
+   "name": "第五教学楼",
+   "name_en": "Fifth Teaching Building",
+   "kind": "hall",
+   "quote": "目前，天津大学第五教学楼、天津大学第六教学楼",
+   "look": "Plain historic campus teaching building",
+   "check": 0.6262669182971632,
+   "confidence": 0.6262669182971632,
+   "passed": false
+  }
+ ],
+ "tokens": 15755,
+ "seconds": 31
+}

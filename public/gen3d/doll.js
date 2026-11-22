@@ -25,12 +25,15 @@ export async function buildDoll(THREE, look, kit, report = console.warn) {
   const [body, face, hair, tops, bottoms, shoes, motion] = await Promise.all([load("body"), first("face2", "face"), first(...(V5 ? ["hair5"] : []), "hair4", "hair3", "hair2", "hair"), first("tops"), first("bottoms"), first("shoes"), first("motion")]);
   let headMod = null; for (const n of ["doll-head4", "doll-head"]) { try { headMod = await import(`./${n}.js`); break; } catch {} }   // third version: head and face as one module, made after Neon was shown a render
   if (!body) return null;
+  if ((look.headScale ?? 1.3) !== 1 && !new URLSearchParams(globalThis.location?.search ?? "").has("oldbody")) look = { ...look, bodyHeight: (look.bodyHeight ?? 1) * 0.9, bodyWidth: (look.bodyWidth ?? 1) * 0.9, coverEars: look.coverEars ?? true };   // smaller body, hair over the ears
   let root; try { root = body.buildBody(THREE, look, kit); } catch (e) { report("body: " + e.message); return null; }
   const head = root.getObjectByName("head");
   if (head) head.position.y -= 0.012;   // a shorter neck (Elodie): the head sits lower on the shoulders
-  // Chibi proportion, tried at 16:00 against the Gemi in the generated stills: a larger head on the same body. ?cute=1.25 or look.headScale.
-  const cute = +(new URLSearchParams(globalThis.location?.search ?? "").get("cute") ?? look.headScale ?? 1);
-  if (head && cute !== 1) { head.scale.setScalar(cute); head.position.y += (cute - 1) * +(new URLSearchParams(globalThis.location?.search ?? "").get("lift") ?? 0.1); }
+  // Chibi proportion (18:55, after comparing renders with the Gemi in the generated stills): the head assembly is 1.3 times larger and sits
+  // lower on the shoulders; the body is a tenth smaller (set before the body is built, below). ?cute=1 or look.headScale = 1 gives the old doll.
+  const Q = new URLSearchParams(globalThis.location?.search ?? "");
+  const cute = +(Q.get("cute") ?? look.headScale ?? 1.3);
+  if (head && cute !== 1) { head.scale.setScalar(cute); head.position.y += (cute - 1) * +(Q.get("lift") ?? -0.15); }
   // Hand corrections after Elodie's review: hands were sculpted too small, and the head carried a dark painted gradient.
   for (const n of ["handL", "handR"]) root.getObjectByName(n)?.scale.multiplyScalar(1.7);
   head?.traverse((o) => { if (o.isMesh && o.material && o.userData.slot === "skin") { o.material = o.material.clone(); o.material.map = null; o.material.color = new THREE.Color(look.skin); o.material.needsUpdate = true; } });

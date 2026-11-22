@@ -1,0 +1,104 @@
+{
+ "school": "vt",
+ "name": "Virginia Tech",
+ "at": "2026-11-22T00:20:48.946Z",
+ "source": "https://en.wikipedia.org/wiki/Virginia%20Tech",
+ "character": "The main campus features neo-Gothic limestone and gray Hokie Stone buildings, green spaces including a duck pond and old-growth forest, and a central oval Drillfield.",
+ "map": "/art/map/vt.jpg",
+ "landmarks": [
+  {
+   "name": "Drillfield",
+   "name_en": "Drillfield",
+   "kind": "other",
+   "quote": "In the center of the Blacksburg campus lies the Drillfield, a large oval field running northeast to southwest",
+   "look": "A large oval grassy field encircled by a street.",
+   "check": 0.9862910470548357,
+   "confidence": 0.9862910470548357,
+   "passed": true,
+   "x": 0.57,
+   "y": 0.49
+  },
+  {
+   "name": "Upper Quad",
+   "name_en": "Upper Quad",
+   "kind": "quad",
+   "quote": "North of the Drillfield and northwest of Alumni Mall lies the Upper Quad",
+   "look": "A campus quadrangle with cadet barracks and older buildings.",
+   "check": 0.9788990611217099,
+   "confidence": 0.9788990611217099,
+   "passed": true,
+   "x": 0.73,
+   "y": 0.25
+  },
+  {
+   "name": "Newman Library",
+   "name_en": "Newman Library",
+   "kind": "library",
+   "quote": "Newman Library is on the eastern side of campus and connects to Torgersen Bridge",
+   "look": "A large neo-Gothic limestone library building.",
+   "check": 0.9810879875764517,
+   "confidence": 0.9810879875764517,
+   "passed": true,
+   "x": 0.19,
+   "y": 0.2
+  },
+  {
+   "name": "Torgersen Bridge",
+   "name_en": "Torgersen Bridge",
+   "kind": "bridge",
+   "quote": "connects to Torgersen Bridge, which spans the main road into campus, Alumni Mall.",
+   "look": "An enclosed bridge spanning across a main campus road.",
+   "check": 0.99,
+   "confidence": 0.99,
+   "passed": true,
+   "x": 0.31,
+   "y": 0.47
+  },
+  {
+   "name": "Hahn Horticulture Garden",
+   "name_en": "Hahn Horticulture Garden",
+   "kind": "garden",
+   "quote": "Notable green spaces include the Hahn Horticulture Garden, Virginia Tech Duck Pond",
+   "look": "A landscaped green garden space with plants and pathways.",
+   "check": 0.9771198560443205,
+   "confidence": 0.9771198560443205,
+   "passed": true,
+   "x": 0.18,
+   "y": 0.76
+  },
+  {
+   "name": "Virginia Tech Duck Pond",
+   "name_en": "Virginia Tech Duck Pond",
+   "kind": "lake",
+   "quote": "Notable green spaces include the Hahn Horticulture Garden, Virginia Tech Duck Pond",
+   "look": "A campus pond surrounded by green space.",
+   "check": 0.9752099226716665,
+   "confidence": 0.9752099226716665,
+   "passed": true,
+   "x": 0.77,
+   "y": 0.8
+  },
+  {
+   "name": "Lane Hall",
+   "name_en": "Lane Hall",
+   "kind": "hall",
+   "quote": "is the namesake of Lane Hall, one of the oldest buildings",
+   "look": "An old limestone campus hall.",
+   "check": 0.9792990511558014,
+   "confidence": 0.9792990511558014,
+   "passed": true
+  },
+  {
+   "name": "Miles Stadium",
+   "name_en": "Miles Stadium",
+   "kind": "stadium",
+   "quote": "after the completion of Virginia Tech's first real stadium, Miles Stadium",
+   "look": "A plain college athletic stadium.",
+   "check": 0.9210011489144491,
+   "confidence": 0.9210011489144491,
+   "passed": true
+  }
+ ],
+ "tokens": 9483,
+ "seconds": 29
+}

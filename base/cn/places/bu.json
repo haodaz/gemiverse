@@ -1,0 +1,94 @@
+{
+ "school": "bu",
+ "name": "Boston University",
+ "at": "2026-11-22T00:19:51.353Z",
+ "source": "https://en.wikipedia.org/wiki/Boston%20University",
+ "character": "The main campus stretches along the Charles River and tree-lined streets, featuring a grassy lawn and architecturally diverse buildings in collegiate gothic, brownstone, brutalist, brick, and glass-and-steel styles.",
+ "map": "/art/map/bu.jpg",
+ "landmarks": [
+  {
+   "name": "Boston University Bridge",
+   "name_en": "Boston University Bridge",
+   "kind": "bridge",
+   "quote": "The Boston University Bridge over the Charles River into Cambridge represents the dividing line between Main Campus",
+   "look": "A bridge spanning the Charles River, carrying street and pedestrian traffic.",
+   "check": 0.9535707839742826,
+   "confidence": 0.9535707839742826,
+   "passed": true,
+   "x": 0.14,
+   "y": 0.65
+  },
+  {
+   "name": "BU Beach",
+   "name_en": "BU Beach",
+   "kind": "other",
+   "quote": "A narrow strip of grassy lawn between BU academic buildings lining Commonwealth Avenue and the torrent of traffic on Storrow Drive has been humorously dubbed \"BU Beach\"",
+   "look": "A narrow grassy lawn beside academic buildings and a raised earthen berm.",
+   "check": 0.9678137663080676,
+   "confidence": 0.9678137663080676,
+   "passed": true,
+   "x": 0.43,
+   "y": 0.67
+  },
+  {
+   "name": "Mugar Memorial Library",
+   "name_en": "Mugar Memorial Library",
+   "kind": "library",
+   "quote": "The Mugar Memorial Library is the central academic library for the Charles River Campus.",
+   "look": "A contemporary concrete library building in the brutalist style of architecture.",
+   "check": 0.9896411885915845,
+   "confidence": 0.9896411885915845,
+   "passed": true,
+   "x": 0.56,
+   "y": 0.45
+  },
+  {
+   "name": "Warren Towers",
+   "name_en": "Warren Towers",
+   "kind": "tower",
+   "quote": "including the Mugar Library, BU Law School, and Warren Towers, all of which were built in the brutalist style of architecture.",
+   "look": "Large, high-rise brutalist dormitory towers.",
+   "check": 0.9758028263658469,
+   "confidence": 0.9758028263658469,
+   "passed": true,
+   "x": 0.77,
+   "y": 0.19
+  },
+  {
+   "name": "School of Law tower",
+   "name_en": "School of Law tower",
+   "kind": "tower",
+   "quote": "BU has earned several historic preservation awards with recent extensive building renovation projects, such as the School of Law tower",
+   "look": "A renovated brutalist-style academic tower.",
+   "check": 0.9848808943529604,
+   "confidence": 0.9848808943529604,
+   "passed": true,
+   "x": 0.72,
+   "y": 0.45
+  },
+  {
+   "name": "Kilachand Hall",
+   "name_en": "Kilachand Hall",
+   "kind": "hall",
+   "quote": "Kilachand Hall, formerly Shelton Hall, is rumored to be haunted by the ghost of playwright Eugene O'Neill.",
+   "look": "A multi-story former residential hotel converted into a university dormitory.",
+   "check": 0.9852917227552294,
+   "confidence": 0.9852917227552294,
+   "passed": true,
+   "x": 0.9,
+   "y": 0.5
+  },
+  {
+   "name": "Myles Standish Hall",
+   "name_en": "Myles Standish Hall",
+   "kind": "hall",
+   "quote": "610 Beacon Street (formerly Myles Standish Hall)",
+   "look": "A renovated historic campus hall.",
+   "check": 0.9658690706060857,
+   "confidence": 0.9658690706060857,
+   "passed": true
+  }
+ ],
+ "tokens": 9843,
+ "seconds": 29
+}

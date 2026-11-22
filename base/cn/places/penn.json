@@ -1,0 +1,104 @@
+{
+ "school": "penn",
+ "name": "University of Pennsylvania",
+ "at": "2026-11-22T00:13:40.192Z",
+ "source": "https://en.wikipedia.org/wiki/University%20of%20Pennsylvania",
+ "character": "The 299-acre urban campus features Collegiate Gothic architecture, a central car-free pedestrian spine, and accredited arboretum green spaces.",
+ "map": "/art/map/penn.jpg",
+ "landmarks": [
+  {
+   "name": "College Hall",
+   "name_en": "College Hall",
+   "kind": "hall",
+   "quote": "centered around College Hall.",
+   "look": "Historic central university hall, plain if unknown.",
+   "check": 0.9778026018370612,
+   "confidence": 0.9778026018370612,
+   "passed": true,
+   "x": 0.5,
+   "y": 0.16
+  },
+  {
+   "name": "Houston Hall",
+   "name_en": "Houston Hall",
+   "kind": "hall",
+   "quote": "Campus landmarks include Houston Hall, described as the first student union building in the United States",
+   "look": "Historic student union hall, plain if unknown.",
+   "check": 0.9743367906299712,
+   "confidence": 0.9743367906299712,
+   "passed": true,
+   "x": 0.67,
+   "y": 0.36
+  },
+  {
+   "name": "Franklin Field",
+   "name_en": "Franklin Field",
+   "kind": "stadium",
+   "quote": "Franklin Field, which has hosted college football since 1895 and was expanded into a two-tier stadium in 1924.",
+   "look": "Two-tier college football stadium with an open field.",
+   "check": 0.9573261935471142,
+   "confidence": 0.9573261935471142,
+   "passed": true,
+   "x": 0.88,
+   "y": 0.36
+  },
+  {
+   "name": "Van Pelt Library",
+   "name_en": "Van Pelt Library",
+   "kind": "library",
+   "quote": "Penn Libraries is a multi-library system anchored by Van Pelt Library",
+   "look": "Large anchor university library building, plain if unknown.",
+   "check": 0.9809899124997068,
+   "confidence": 0.9809899124997068,
+   "passed": true,
+   "x": 0.18,
+   "y": 0.28
+  },
+  {
+   "name": "University of Pennsylvania Museum of Archaeology and Anthropology",
+   "name_en": "University of Pennsylvania Museum of Archaeology and Anthropology",
+   "kind": "museum",
+   "quote": "Penn is home to the University of Pennsylvania Museum of Archaeology and Anthropology (Penn Museum).",
+   "look": "University museum building, plain if unknown.",
+   "check": 0.9749987389593179,
+   "confidence": 0.9749987389593179,
+   "passed": true,
+   "x": 0.2,
+   "y": 0.69
+  },
+  {
+   "name": "Fisher Fine Arts Library",
+   "name_en": "Fisher Fine Arts Library",
+   "kind": "library",
+   "quote": "such as the Fisher Fine Arts Library.",
+   "look": "Specialized university fine arts library building, plain if unknown.",
+   "check": 0.9784054195593027,
+   "confidence": 0.9784054195593027,
+   "passed": true,
+   "x": 0.75,
+   "y": 0.76
+  },
+  {
+   "name": "College Green",
+   "name_en": "College Green",
+   "kind": "quad",
+   "quote": "at the College Green gateway to campus near the corner of 34th Street and Woodland Walk.",
+   "look": "Open grassy campus green with a nearby bronze sculpture.",
+   "check": 0.9610511951322637,
+   "confidence": 0.9610511951322637,
+   "passed": true
+  },
+  {
+   "name": "Penn Campus Arboretum",
+   "name_en": "Penn Campus Arboretum",
+   "kind": "garden",
+   "quote": "Penn maintains the Penn Campus Arboretum, an accredited arboretum encompassing the main campus and associated green spaces.",
+   "look": "Green campus spaces planted with diverse trees.",
+   "check": 0.9720539721951073,
+   "confidence": 0.9720539721951073,
+   "passed": true
+  }
+ ],
+ "tokens": 10047,
+ "seconds": 32
+}

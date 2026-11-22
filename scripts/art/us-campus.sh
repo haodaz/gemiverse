@@ -1,0 +1,25 @@
+#!/bin/bash
+# Illustrated campus views for the US top twenty, drawn by Gemini's image model. No logos, no text.
+cd "$(dirname "$0")/../.." && export OUT_DIR="$PWD/public/art/cn"
+S="A soft, warm storybook illustration in gentle pastel colours, wide 16:9, flat shapes with light texture, golden afternoon light, a few tiny students walking. No text, no letters, no logos, no emblems, no watermarks."
+gen(){ node scripts/art/image.mjs "$1" "$S Scene: $2." > "/tmp/cn-$1.log" 2>&1 & }
+gen princeton "a New Jersey campus with a grand collegiate gothic stone hall with ivy, a tall chapel, arches and old elms"
+gen mit "a riverside campus with a great limestone dome above a row of columns facing a wide lawn and a river with sailboats"
+gen harvard "an old New England yard with red-brick Georgian halls, a white steeple, a wrought-iron gate and tall elms"
+gen stanford "a California campus with long sandstone arcades and red tile roofs, a slender tower, palm trees and warm light"
+gen yale "a gothic stone campus with a tall carillon tower, leaded windows, courtyards and autumn trees"
+gen caltech "a small Southern California campus with a Spanish-style club building, an arcade, olive trees and a round modern library by a pond"
+gen duke "a North Carolina campus with a tall grey gothic chapel tower at the end of a long quad lined with stone halls and oaks"
+gen jhu "a Baltimore campus with a red-brick Georgian hall with a white clock cupola above a green bowl-shaped lawn"
+gen northwestern "a lakeside campus with a pale stone gothic library tower, an iron arch gate and a great lake behind"
+gen penn "a city campus with an ornate red-brick and terracotta gothic hall, a tree-lined brick walk and a green"
+gen cornell "a hilltop campus with a stone clock tower, a quad of old halls, and a deep gorge with a waterfall and bridge"
+gen uchicago "a grey gothic quadrangle with gargoyles, a tall chapel tower, ivy and a glass dome library nearby"
+gen brown "a hilltop New England campus with a brick colonial hall, a slim brick clock tower, iron gates and a green"
+gen dartmouth "a small New Hampshire town green with a white-towered brick library, white colonial halls and pine hills"
+gen ucla "a Los Angeles campus with a Romanesque red-brick hall with twin towers, broad brick steps and jacaranda trees"
+gen berkeley "a California hillside campus with a tall white granite bell tower, a classical gate and a view of a bay"
+gen rice "a Texas campus with a pink-brick Byzantine-style hall with a great arch, live oaks and a long quad"
+gen notredame "an Indiana campus with a main building topped by a golden dome, a basilica spire and two small lakes"
+gen vanderbilt "a Nashville campus with a red-brick Victorian hall with a clock tower, magnolia trees and lawns"
+wait; ls public/art/cn/*.jpg | wc -l

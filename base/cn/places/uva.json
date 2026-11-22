@@ -1,0 +1,104 @@
+{
+ "school": "uva",
+ "name": "University of Virginia",
+ "at": "2026-11-22T00:18:19.390Z",
+ "source": "https://en.wikipedia.org/wiki/University%20of%20Virginia",
+ "character": null,
+ "map": "/art/map/uva.jpg",
+ "landmarks": [
+  {
+   "name": "the Rotunda",
+   "name_en": "the Rotunda",
+   "kind": "library",
+   "quote": "centered upon a library, the Rotunda, rather than a church",
+   "look": "A central round library building",
+   "check": 0.9875736769046374,
+   "confidence": 0.9875736769046374,
+   "passed": true,
+   "x": 0.49,
+   "y": 0.29
+  },
+  {
+   "name": "the Lawn",
+   "name_en": "the Lawn",
+   "kind": "quad",
+   "quote": "Union troops camped on the Lawn and damaged many of the Pavilions",
+   "look": "A broad grassy quad",
+   "check": 0.9841679122029142,
+   "confidence": 0.9841679122029142,
+   "passed": true,
+   "x": 0.65,
+   "y": 0.65
+  },
+  {
+   "name": "Academical Village",
+   "name_en": "Academical Village",
+   "kind": "other",
+   "quote": "contains his Academical Village, a UNESCO World Heritage Site.",
+   "look": "A historic university campus complex",
+   "check": 0.9760661958131646,
+   "confidence": 0.9760661958131646,
+   "passed": true,
+   "x": 0.17,
+   "y": 0.42
+  },
+  {
+   "name": "Alderman Library",
+   "name_en": "Alderman Library",
+   "kind": "library",
+   "quote": "Alderman Library was named in his honor in 1938.",
+   "look": "A large library building",
+   "check": 0.9689927779292409,
+   "confidence": 0.9689927779292409,
+   "passed": true,
+   "x": 0.85,
+   "y": 0.28
+  },
+  {
+   "name": "the Pavilions",
+   "name_en": "the Pavilions",
+   "kind": "hall",
+   "quote": "Union troops camped on the Lawn and damaged many of the Pavilions",
+   "look": "Historic hall buildings along the Lawn",
+   "check": 0.9748869465039521,
+   "confidence": 0.9748869465039521,
+   "passed": true,
+   "x": 0.76,
+   "y": 0.53
+  },
+  {
+   "name": "Memorial to Enslaved Laborers",
+   "name_en": "Memorial to Enslaved Laborers",
+   "kind": "other",
+   "quote": "The Memorial to Enslaved Laborers on Central Grounds was built to memorialize their lives",
+   "look": "A plain memorial on the grounds",
+   "check": 0.9789198559501947,
+   "confidence": 0.9789198559501947,
+   "passed": true,
+   "x": 0.35,
+   "y": 0.78
+  },
+  {
+   "name": "13 West Range",
+   "name_en": "13 West Range",
+   "kind": "other",
+   "quote": "continues to maintain 13 West Range, the room Poe inhabited",
+   "look": "A plain historic student room",
+   "check": 0.9841438865055252,
+   "confidence": 0.9841438865055252,
+   "passed": true
+  },
+  {
+   "name": "University Hospital",
+   "name_en": "University Hospital",
+   "kind": "other",
+   "quote": "He added significantly to the University Hospital to support new sickbeds",
+   "look": "A plain hospital building",
+   "check": 0.9564479637016942,
+   "confidence": 0.9564479637016942,
+   "passed": true
+  }
+ ],
+ "tokens": 10025,
+ "seconds": 33
+}

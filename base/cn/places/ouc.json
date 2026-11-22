@@ -1,0 +1,84 @@
+{
+ "school": "ouc",
+ "name": "中国海洋大学",
+ "at": "2026-11-22T00:16:11.316Z",
+ "source": "https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E6%B5%B7%E6%B4%8B%E5%A4%A7%E5%AD%A6",
+ "character": "The main Laoshan campus sits at the foot of Mount Lao and features modern facilities including a library, gymnasium, track field, swimming pool, and dining halls.",
+ "map": "/art/map/ouc.jpg",
+ "landmarks": [
+  {
+   "name": "图书馆",
+   "name_en": "Library",
+   "kind": "library",
+   "quote": "建设有图书馆、体育馆、田径场、游泳馆、工程训练中心",
+   "look": "A plain modern university library building.",
+   "check": 0.9301204574834461,
+   "confidence": 0.9301204574834461,
+   "passed": true,
+   "x": 0.36,
+   "y": 0.47
+  },
+  {
+   "name": "体育馆",
+   "name_en": "Gymnasium",
+   "kind": "stadium",
+   "quote": "建设有图书馆、体育馆、田径场、游泳馆、工程训练中心",
+   "look": "A plain large indoor sports gymnasium.",
+   "check": 0.9589101926049663,
+   "confidence": 0.9589101926049663,
+   "passed": true,
+   "x": 0.81,
+   "y": 0.29
+  },
+  {
+   "name": "田径场",
+   "name_en": "Track and Field Stadium",
+   "kind": "stadium",
+   "quote": "建设有图书馆、体育馆、田径场、游泳馆、工程训练中心",
+   "look": "An outdoor athletic track and field.",
+   "check": 0.9664805950100516,
+   "confidence": 0.9664805950100516,
+   "passed": true,
+   "x": 0.78,
+   "y": 0.72
+  },
+  {
+   "name": "游泳馆",
+   "name_en": "Natatorium",
+   "kind": "other",
+   "quote": "建设有图书馆、体育馆、田径场、游泳馆、工程训练中心",
+   "look": "A plain indoor swimming pool building.",
+   "check": 0.9700286551216181,
+   "confidence": 0.9700286551216181,
+   "passed": true,
+   "x": 0.17,
+   "y": 0.71
+  },
+  {
+   "name": "工程训练中心",
+   "name_en": "Engineering Training Center",
+   "kind": "other",
+   "quote": "建设有图书馆、体育馆、田径场、游泳馆、工程训练中心",
+   "look": "A plain modern academic training building.",
+   "check": 0.9595881386253439,
+   "confidence": 0.9595881386253439,
+   "passed": true,
+   "x": 0.17,
+   "y": 0.33
+  },
+  {
+   "name": "南区、北区和东区在内的十余个餐厅",
+   "name_en": "South, North, and East Zone Dining Halls",
+   "kind": "hall",
+   "quote": "以及包括南区、北区和东区在内的十余个餐厅等基础设施",
+   "look": "Plain campus dining hall buildings.",
+   "check": 0.9248408003696819,
+   "confidence": 0.9248408003696819,
+   "passed": true,
+   "x": 0.65,
+   "y": 0.47
+  }
+ ],
+ "tokens": 13588,
+ "seconds": 38
+}

@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. The main campus sits on an isthmus along Lake Mendota with an urban street grid, a central hill, and buildings in Federal, Neoclassical, Romanesque, Gothic, Beaux-Arts, and Brutalist styles. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Lake Mendota, a lake: Broad lake bordering the campus shore, with sailboats on the water.; (2) Bascom Hall, a hall: Historic hilltop hall with a balustrade, without a dome.; (3) Bascom Hill, a hill: Central campus hill topped by historic university buildings.; (4) Memorial Union, a other: Lakeside student union building with a terrace overlooking Lake Mendota.; (5) Carillon Tower, a tower: Tall bell tower with a balustrade echoing Bascom Hall.; (6) Henry Mall, a quad: Long, narrow landscaped quadrangle lined with historic academic buildings and a boulder.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 17,
+ "tokens": 2320,
+ "at": "2026-11-22T00:19:18.342Z"
+}

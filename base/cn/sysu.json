@@ -1,0 +1,731 @@
+{
+ "school": "sysu",
+ "name": "中山大学",
+ "at": "2026-11-22T00:17:50.934Z",
+ "seconds": 57,
+ "tokens": 71674,
+ "entities": [
+  {
+   "id": "sysu-5244fa6b43",
+   "type": "Event",
+   "school": "sysu",
+   "name": "广东省清远市直教育系统2026年下半年公开招聘宣讲会",
+   "tier": 1,
+   "fields": {
+    "url": "https://mp.weixin.qq.com/s/Ev9aSOJ0soX1wXYKt9-pfA",
+    "needs": [
+     "decide_a_direction",
+     "explore_a_field"
+    ],
+    "start": "2026-11-04T15:00",
+    "summary": "清远市直教育系统2026年下半年公开招聘宣讲会，招聘94名事业编制人员。",
+    "event_kind": "activity",
+    "venue_name": "南校园中文堂206讲学厅",
+    "organisation_name": "中山大学就业指导与服务中心",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-04T15:00",
+      "end": "2026-11-04T16:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "sysu-ec16b41dec",
+   "type": "Event",
+   "school": "sysu",
+   "name": "起跑！艺术学院2026年 “艺跃长风”秋季长跑月开启",
+   "tier": 1,
+   "fields": {
+    "url": "https://mp.weixin.qq.com/s/1t0FwZ_GHNXldr_TTcOYmQ",
+    "needs": [
+     "rest_and_recover",
+     "find_my_people"
+    ],
+    "start": "2026-11-16T19:00",
+    "summary": "艺术学院于11月16日至12月2日每晚在英东体育场举办秋季长跑月活动，打卡可获积分。",
+    "event_kind": "activity",
+    "venue_name": "中山大学南校区英东体育场田径场",
+    "organisation_name": "中山大学艺术学院",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-16T19:00",
+      "end": "2026-11-16T21:40"
+     }
+    ]
+   }
+  },
+  {
+   "id": "sysu-bf2464cc6c",
+   "type": "Event",
+   "school": "sysu",
+   "name": "浅谈二聚体模型与变分法的数学之美",
+   "tier": 1,
+   "fields": {
+    "url": "https://mp.weixin.qq.com/s/21A-0zwXjncpEAUQBMPJhQ",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-16T14:30",
+    "summary": "钟晓教授将在深圳校区主讲二聚体模型与变分法的数学之美。",
+    "event_kind": "lecture",
+    "venue_name": "深圳校区西教学楼4栋103室",
+    "organisation_name": "党委宣传部 理学院 深圳校区管理委员会",
+    "speaker": "钟晓 教授",
+    "occurrences": [
+     {
+      "start": "2026-11-16T14:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "sysu-aac9898b37",
+   "type": "Event",
+   "school": "sysu",
+   "name": "乐耕清远·江声入乐 ——广清耕读书院“音乐耕读”校外实践基地活动",
+   "tier": 1,
+   "fields": {
+    "url": "https://mp.weixin.qq.com/s/Gg4Ss5N2ttEfkWwWDe1bzQ",
+    "needs": [
+     "get_experience",
+     "contribute_beyond_self"
+    ],
+    "start": null,
+    "summary": "中山大学艺术学院在清远开展“音乐耕读”校外实践及民乐快闪、导赏音乐会活动。",
+    "event_kind": "activity",
+    "venue_name": "清远江心岛、广清耕读书院稻田区域、北江生活馆",
+    "organisation_name": "中山大学艺术学院",
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "sysu-74814a101e",
+   "type": "Event",
+   "school": "sysu",
+   "name": "管理学杰出学者讲座丨黄一农教授：大数据时代的深度学习 以明清小说中有关香料与白银的叙事为例",
+   "tier": 1,
+   "fields": {
+    "url": "https://mp.weixin.qq.com/s/Rgv0VnzKcttY9-QG9mevMg",
+    "needs": [
+     "explore_a_field",
+     "build_a_skill"
+    ],
+    "start": "2026-10-30T10:00",
+    "summary": "黄一农教授主讲大数据时代如何利用海量数据研究明清小说中的物质文化。",
+    "event_kind": "lecture",
+    "venue_name": "广州校区东校园 兰园6号管理学院332课室",
+    "organisation_name": "中山大学管理学院",
+    "speaker": "黄一农教授",
+    "occurrences": [
+     {
+      "start": "2026-10-30T10:00",
+      "end": "2026-10-30T11:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "sysu-3fde48a7b0",
+   "type": "Event",
+   "school": "sysu",
+   "name": "医学教育创新论坛",
+   "tier": 1,
+   "fields": {
+    "url": "https://mp.weixin.qq.com/s/-ZWp30VvfxV_vtGgcETkeA",
+    "needs": [
+     "explore_a_field",
+     "find_my_people"
+    ],
+    "start": "2026-11-08T14:00",
+    "summary": "中山大学医学教育创新论坛，聚焦医学教育改革与人工智能赋能医学。",
+    "event_kind": "lecture",
+    "venue_name": "中山大学广州校区南校园怀士堂",
+    "organisation_name": "医学教育处、教务部、研究生院、继续教育办公室主办，中山医学院承办",
+    "speaker": "曾木圣、陈国强、陈晔光、黄荷凤、董晨、李劲松、王庭槐、郝继辉、王振宁、季勇、王宏斌、翟理祥",
+    "occurrences": [
+     {
+      "start": "2026-11-08T14:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "sysu-94a31c0e69",
+   "type": "Event",
+   "school": "sysu",
+   "name": "等你回家｜中山大学医科全球校友返校邀约！",
+   "tier": 1,
+   "fields": {
+    "url": "https://mp.weixin.qq.com/s/rJJ8d81irWE2pT3m23IC-A",
+    "needs": [
+     "find_my_people",
+     "contribute_beyond_self"
+    ],
+    "start": null,
+    "summary": "中山大学医科办学160周年全球校友返校活动，11月7日至8日在广州和深圳校区举行。",
+    "event_kind": "activity",
+    "venue_name": "广州校区北校园、深圳校区",
+    "organisation_name": "中山医学院",
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "sysu-1cd65854d7",
+   "type": "Event",
+   "school": "sysu",
+   "name": "管理学杰出学者讲座丨陆亚东教授：跨国企业的智能基础观",
+   "tier": 1,
+   "fields": {
+    "url": "https://mp.weixin.qq.com/s/nWas5bvEG6z04ZvlL3kJfA",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-10-27T10:00",
+    "summary": "中山大学管理学院举办讲座，陆亚东教授将分享跨国企业的智能基础观。",
+    "event_kind": "lecture",
+    "venue_name": "广州校区东校园 兰园6号管理学院333课室",
+    "organisation_name": "中山大学管理学院",
+    "speaker": "陆亚东教授",
+    "occurrences": [
+     {
+      "start": "2026-10-27T10:00",
+      "end": "2026-10-27T11:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "sysu-3ff7d52c3f",
+   "type": "Event",
+   "school": "sysu",
+   "name": "通货膨胀、违约与公司债券收益",
+   "tier": 1,
+   "fields": {
+    "url": "https://mp.weixin.qq.com/s/36_aRrjq-jXDvAG9Y4Lx0g",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-09-03T10:30",
+    "summary": "中山大学管理学院举办前沿讲座，探讨通货膨胀、违约与公司债券收益。",
+    "event_kind": "lecture",
+    "venue_name": "广州校区南校园管理学院善思堂M311课室",
+    "organisation_name": "中山大学管理学院",
+    "speaker": "宋兆刚教授，约翰霍普金斯大学凯里商学院",
+    "occurrences": [
+     {
+      "start": "2026-09-03T10:30",
+      "end": "2026-09-03T12:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "sysu-7eb76c52a8",
+   "type": "Event",
+   "school": "sysu",
+   "name": "管理学杰出学者讲座丨张宗益教授：人工智能时代的管理教育",
+   "tier": 1,
+   "fields": {
+    "url": "https://mp.weixin.qq.com/s/0KmLkTH28OGFm_xqCzi0SA",
+    "needs": [
+     "explore_a_field",
+     "get_mentorship_and_feedback"
+    ],
+    "start": "2026-06-22T10:00",
+    "summary": "张宗益教授在中山大学管理学院主讲“人工智能时代的管理教育”讲座。",
+    "event_kind": "lecture",
+    "venue_name": "中山大学广州校区南校园 管理学院善思堂M301",
+    "organisation_name": "中山大学管理学院",
+    "speaker": "张宗益教授",
+    "occurrences": [
+     {
+      "start": "2026-06-22T10:00",
+      "end": "2026-06-22T11:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "sysu-c836a3efeb",
+   "type": "Event",
+   "school": "sysu",
+   "name": "大道之行——纪念孙中山先生诞辰160周年专题展",
+   "tier": 1,
+   "fields": {
+    "url": "https://mp.weixin.qq.com/s/d-Vs1BPYFhjTxGAs1FsChw",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-07",
+    "summary": "中山大学博物馆校史馆主办纪念孙中山先生诞辰160周年专题展，展出多件珍贵文物。",
+    "event_kind": "exhibition",
+    "venue_name": "中山大学广州校区南校园 中山大学博物馆二层专题展厅",
+    "organisation_name": "中山大学博物馆校史馆",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-07",
+      "end": null
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "sysu-5244fa6b43",
+   "field": "title",
+   "quote": "广东省清远市直教育系统2026年下半年公开招聘宣讲会",
+   "url": "https://mp.weixin.qq.com/s/Ev9aSOJ0soX1wXYKt9-pfA",
+   "check_confidence": 0.9752318074176988,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-5244fa6b43",
+   "field": "date",
+   "quote": "宣讲时间： 2026-11-04 15:00-16:30（周三）",
+   "url": "https://mp.weixin.qq.com/s/Ev9aSOJ0soX1wXYKt9-pfA",
+   "check_confidence": 0.9793029450424485,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-5244fa6b43",
+   "field": "start_time",
+   "quote": "15:00",
+   "url": "https://mp.weixin.qq.com/s/Ev9aSOJ0soX1wXYKt9-pfA",
+   "check_confidence": 0.9625980408360231,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-5244fa6b43",
+   "field": "venue_name",
+   "quote": "举办地点： 南校园中文堂206讲学厅",
+   "url": "https://mp.weixin.qq.com/s/Ev9aSOJ0soX1wXYKt9-pfA",
+   "check_confidence": 0.9840654679704844,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-5244fa6b43",
+   "field": "organisation_name",
+   "quote": "中山大学就业指导与服务中心",
+   "url": "https://mp.weixin.qq.com/s/Ev9aSOJ0soX1wXYKt9-pfA",
+   "check_confidence": 0.9579101152560459,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-ec16b41dec",
+   "field": "title",
+   "quote": "起跑！艺术学院2026年 “艺跃长风”秋季长跑月开启",
+   "url": "https://mp.weixin.qq.com/s/1t0FwZ_GHNXldr_TTcOYmQ",
+   "check_confidence": 0.966671111002496,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-ec16b41dec",
+   "field": "date",
+   "quote": "11月16日—12月2日（共17天） 每晚 19:00～21:40",
+   "url": "https://mp.weixin.qq.com/s/1t0FwZ_GHNXldr_TTcOYmQ",
+   "check_confidence": 0.9022945333841842,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-ec16b41dec",
+   "field": "start_time",
+   "quote": "19:00",
+   "url": "https://mp.weixin.qq.com/s/1t0FwZ_GHNXldr_TTcOYmQ",
+   "check_confidence": 0.9722961609152464,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-ec16b41dec",
+   "field": "venue_name",
+   "quote": "中山大学南校区英东体育场田径场",
+   "url": "https://mp.weixin.qq.com/s/1t0FwZ_GHNXldr_TTcOYmQ",
+   "check_confidence": 0.9710082289775384,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-ec16b41dec",
+   "field": "organisation_name",
+   "quote": "中山大学艺术学院",
+   "url": "https://mp.weixin.qq.com/s/1t0FwZ_GHNXldr_TTcOYmQ",
+   "check_confidence": 0.9686775968270923,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-bf2464cc6c",
+   "field": "title",
+   "quote": "浅谈二聚体模型与变分法的数学之美",
+   "url": "https://mp.weixin.qq.com/s/21A-0zwXjncpEAUQBMPJhQ",
+   "check_confidence": 0.975650815339695,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-bf2464cc6c",
+   "field": "date",
+   "quote": "2026年11月16日（星期一） 14:30",
+   "url": "https://mp.weixin.qq.com/s/21A-0zwXjncpEAUQBMPJhQ",
+   "check_confidence": 0.9461952698970058,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-bf2464cc6c",
+   "field": "start_time",
+   "quote": "14:30",
+   "url": "https://mp.weixin.qq.com/s/21A-0zwXjncpEAUQBMPJhQ",
+   "check_confidence": 0.9380416136168234,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-bf2464cc6c",
+   "field": "venue_name",
+   "quote": "深圳校区西教学楼4栋103室",
+   "url": "https://mp.weixin.qq.com/s/21A-0zwXjncpEAUQBMPJhQ",
+   "check_confidence": 0.9677627490847592,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-bf2464cc6c",
+   "field": "organisation_name",
+   "quote": "党委宣传部 理学院 深圳校区管理委员会",
+   "url": "https://mp.weixin.qq.com/s/21A-0zwXjncpEAUQBMPJhQ",
+   "check_confidence": 0.9570500260790139,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-bf2464cc6c",
+   "field": "speaker",
+   "quote": "钟晓 教授",
+   "url": "https://mp.weixin.qq.com/s/21A-0zwXjncpEAUQBMPJhQ",
+   "check_confidence": 0.9668990958747382,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-aac9898b37",
+   "field": "title",
+   "quote": "乐耕清远·江声入乐 ——广清耕读书院“音乐耕读”校外实践基地活动",
+   "url": "https://mp.weixin.qq.com/s/Gg4Ss5N2ttEfkWwWDe1bzQ",
+   "check_confidence": 0.9794563107762315,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-aac9898b37",
+   "field": "venue_name",
+   "quote": "依次走进清远江心岛、广清耕读书院稻田区域、北江生活馆",
+   "url": "https://mp.weixin.qq.com/s/Gg4Ss5N2ttEfkWwWDe1bzQ",
+   "check_confidence": 0.9802374484263437,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-aac9898b37",
+   "field": "organisation_name",
+   "quote": "中山大学艺术学院",
+   "url": "https://mp.weixin.qq.com/s/Gg4Ss5N2ttEfkWwWDe1bzQ",
+   "check_confidence": 0.9719522198110416,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-74814a101e",
+   "field": "title",
+   "quote": "管理学杰出学者讲座丨黄一农教授：大数据时代的深度学习 以明清小说中有关香料与白银的叙事为例",
+   "url": "https://mp.weixin.qq.com/s/Rgv0VnzKcttY9-QG9mevMg",
+   "check_confidence": 0.9632607198215019,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-74814a101e",
+   "field": "date",
+   "quote": "2026年10月30日（周五） 10:00-11:30",
+   "url": "https://mp.weixin.qq.com/s/Rgv0VnzKcttY9-QG9mevMg",
+   "check_confidence": 0.9488110399292184,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-74814a101e",
+   "field": "start_time",
+   "quote": "10:00",
+   "url": "https://mp.weixin.qq.com/s/Rgv0VnzKcttY9-QG9mevMg",
+   "check_confidence": 0.9787316669974447,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-74814a101e",
+   "field": "venue_name",
+   "quote": "广州校区东校园 兰园6号管理学院332课室",
+   "url": "https://mp.weixin.qq.com/s/Rgv0VnzKcttY9-QG9mevMg",
+   "check_confidence": 0.9731046678792128,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-74814a101e",
+   "field": "organisation_name",
+   "quote": "中山大学管理学院",
+   "url": "https://mp.weixin.qq.com/s/Rgv0VnzKcttY9-QG9mevMg",
+   "check_confidence": 0.972198021941911,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-74814a101e",
+   "field": "speaker",
+   "quote": "黄一农教授",
+   "url": "https://mp.weixin.qq.com/s/Rgv0VnzKcttY9-QG9mevMg",
+   "check_confidence": 0.978815919765968,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-3fde48a7b0",
+   "field": "title",
+   "quote": "医学教育创新论坛",
+   "url": "https://mp.weixin.qq.com/s/-ZWp30VvfxV_vtGgcETkeA",
+   "check_confidence": 0.9701965985013604,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-3fde48a7b0",
+   "field": "date",
+   "quote": "2026年11月8日（周日）14:00 （13:30入场）",
+   "url": "https://mp.weixin.qq.com/s/-ZWp30VvfxV_vtGgcETkeA",
+   "check_confidence": 0.9698377306738853,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-3fde48a7b0",
+   "field": "start_time",
+   "quote": "14:00",
+   "url": "https://mp.weixin.qq.com/s/-ZWp30VvfxV_vtGgcETkeA",
+   "check_confidence": 0.9691725032189351,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-3fde48a7b0",
+   "field": "venue_name",
+   "quote": "中山大学广州校区南校园怀士堂",
+   "url": "https://mp.weixin.qq.com/s/-ZWp30VvfxV_vtGgcETkeA",
+   "check_confidence": 0.965665220899793,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-3fde48a7b0",
+   "field": "organisation_name",
+   "quote": "医学教育处、教务部、研究生院、继续教育办公室主办，中山医学院承办",
+   "url": "https://mp.weixin.qq.com/s/-ZWp30VvfxV_vtGgcETkeA",
+   "check_confidence": 0.9646332889928512,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-3fde48a7b0",
+   "field": "speaker",
+   "quote": "曾木圣、陈国强、陈晔光、黄荷凤、董晨、李劲松、王庭槐、郝继辉、王振宁、季勇、王宏斌、翟理祥",
+   "url": "https://mp.weixin.qq.com/s/-ZWp30VvfxV_vtGgcETkeA",
+   "check_confidence": 0.8312974876074561,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-94a31c0e69",
+   "field": "title",
+   "quote": "等你回家｜中山大学医科全球校友返校邀约！",
+   "url": "https://mp.weixin.qq.com/s/rJJ8d81irWE2pT3m23IC-A",
+   "check_confidence": 0.9724380663787067,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-94a31c0e69",
+   "field": "venue_name",
+   "quote": "11月7日广州校区北校园，11月8日深圳校区。",
+   "url": "https://mp.weixin.qq.com/s/rJJ8d81irWE2pT3m23IC-A",
+   "check_confidence": 0.9657898430309985,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-94a31c0e69",
+   "field": "organisation_name",
+   "quote": "中山医学院",
+   "url": "https://mp.weixin.qq.com/s/rJJ8d81irWE2pT3m23IC-A",
+   "check_confidence": 0.9359388502579506,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-1cd65854d7",
+   "field": "title",
+   "quote": "管理学杰出学者讲座丨陆亚东教授：跨国企业的智能基础观",
+   "url": "https://mp.weixin.qq.com/s/nWas5bvEG6z04ZvlL3kJfA",
+   "check_confidence": 0.9650877048123191,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-1cd65854d7",
+   "field": "date",
+   "quote": "2026年10月27日（周二） 10:00-11:30",
+   "url": "https://mp.weixin.qq.com/s/nWas5bvEG6z04ZvlL3kJfA",
+   "check_confidence": 0.963090398119623,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-1cd65854d7",
+   "field": "start_time",
+   "quote": "10:00",
+   "url": "https://mp.weixin.qq.com/s/nWas5bvEG6z04ZvlL3kJfA",
+   "check_confidence": 0.9708603805794506,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-1cd65854d7",
+   "field": "venue_name",
+   "quote": "广州校区东校园 兰园6号管理学院333课室",
+   "url": "https://mp.weixin.qq.com/s/nWas5bvEG6z04ZvlL3kJfA",
+   "check_confidence": 0.969680500636527,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-1cd65854d7",
+   "field": "organisation_name",
+   "quote": "中山大学管理学院",
+   "url": "https://mp.weixin.qq.com/s/nWas5bvEG6z04ZvlL3kJfA",
+   "check_confidence": 0.955450924170346,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-1cd65854d7",
+   "field": "speaker",
+   "quote": "陆亚东教授",
+   "url": "https://mp.weixin.qq.com/s/nWas5bvEG6z04ZvlL3kJfA",
+   "check_confidence": 0.9795889754777434,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-3ff7d52c3f",
+   "field": "title",
+   "quote": "通货膨胀、违约与公司债券收益",
+   "url": "https://mp.weixin.qq.com/s/36_aRrjq-jXDvAG9Y4Lx0g",
+   "check_confidence": 0.971254417380567,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-3ff7d52c3f",
+   "field": "date",
+   "quote": "2026年9月3日（周四）10:30-12:00",
+   "url": "https://mp.weixin.qq.com/s/36_aRrjq-jXDvAG9Y4Lx0g",
+   "check_confidence": 0.9514966905136323,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-3ff7d52c3f",
+   "field": "start_time",
+   "quote": "10:30",
+   "url": "https://mp.weixin.qq.com/s/36_aRrjq-jXDvAG9Y4Lx0g",
+   "check_confidence": 0.9777369352118267,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-3ff7d52c3f",
+   "field": "venue_name",
+   "quote": "广州校区南校园管理学院善思堂M311课室",
+   "url": "https://mp.weixin.qq.com/s/36_aRrjq-jXDvAG9Y4Lx0g",
+   "check_confidence": 0.9631749013613826,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-3ff7d52c3f",
+   "field": "organisation_name",
+   "quote": "中山大学管理学院",
+   "url": "https://mp.weixin.qq.com/s/36_aRrjq-jXDvAG9Y4Lx0g",
+   "check_confidence": 0.9457739714885628,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-3ff7d52c3f",
+   "field": "speaker",
+   "quote": "宋兆刚教授，约翰霍普金斯大学凯里商学院",
+   "url": "https://mp.weixin.qq.com/s/36_aRrjq-jXDvAG9Y4Lx0g",
+   "check_confidence": 0.9551522493110844,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-7eb76c52a8",
+   "field": "title",
+   "quote": "管理学杰出学者讲座丨张宗益教授：人工智能时代的管理教育",
+   "url": "https://mp.weixin.qq.com/s/0KmLkTH28OGFm_xqCzi0SA",
+   "check_confidence": 0.9831941521255391,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-7eb76c52a8",
+   "field": "date",
+   "quote": "2026年06月22日（周一） 10:00-11:00",
+   "url": "https://mp.weixin.qq.com/s/0KmLkTH28OGFm_xqCzi0SA",
+   "check_confidence": 0.9624074618199249,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-7eb76c52a8",
+   "field": "start_time",
+   "quote": "10:00",
+   "url": "https://mp.weixin.qq.com/s/0KmLkTH28OGFm_xqCzi0SA",
+   "check_confidence": 0.9652358760992582,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-7eb76c52a8",
+   "field": "venue_name",
+   "quote": "中山大学广州校区南校园 管理学院善思堂M301",
+   "url": "https://mp.weixin.qq.com/s/0KmLkTH28OGFm_xqCzi0SA",
+   "check_confidence": 0.9834606476531281,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-7eb76c52a8",
+   "field": "organisation_name",
+   "quote": "中山大学管理学院",
+   "url": "https://mp.weixin.qq.com/s/0KmLkTH28OGFm_xqCzi0SA",
+   "check_confidence": 0.988062825301154,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-7eb76c52a8",
+   "field": "speaker",
+   "quote": "张宗益教授",
+   "url": "https://mp.weixin.qq.com/s/0KmLkTH28OGFm_xqCzi0SA",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-c836a3efeb",
+   "field": "title",
+   "quote": "大道之行——纪念孙中山先生诞辰160周年专题展",
+   "url": "https://mp.weixin.qq.com/s/d-Vs1BPYFhjTxGAs1FsChw",
+   "check_confidence": 0.9573625545214061,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-c836a3efeb",
+   "field": "date",
+   "quote": "开展时间 2026年11月7日",
+   "url": "https://mp.weixin.qq.com/s/d-Vs1BPYFhjTxGAs1FsChw",
+   "check_confidence": 0.9619745121751359,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-c836a3efeb",
+   "field": "venue_name",
+   "quote": "展览地点 中山大学广州校区南校园 中山大学博物馆二层专题展厅",
+   "url": "https://mp.weixin.qq.com/s/d-Vs1BPYFhjTxGAs1FsChw",
+   "check_confidence": 0.9649831047775332,
+   "passed": true
+  },
+  {
+   "entity_id": "sysu-c836a3efeb",
+   "field": "organisation_name",
+   "quote": "中山大学博物馆校史馆",
+   "url": "https://mp.weixin.qq.com/s/d-Vs1BPYFhjTxGAs1FsChw",
+   "check_confidence": 0.971353666603403,
+   "passed": true
+  }
+ ]
+}

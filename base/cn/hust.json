@@ -1,0 +1,706 @@
+{
+ "school": "hust",
+ "name": "华中科技大学",
+ "at": "2026-11-22T00:17:20.536Z",
+ "seconds": 65,
+ "tokens": 90437,
+ "entities": [
+  {
+   "id": "hust-de310e4980",
+   "type": "Event",
+   "school": "hust",
+   "name": "朱永官院士做客人文讲座 解码万物共生的同一健康密码",
+   "tier": 1,
+   "fields": {
+    "url": "https://news.hust.edu.cn/info/1003/60076.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": null,
+    "summary": "朱永官院士做客华科大第2629期人文讲座，阐释“同一健康”理念及微生物组调控。",
+    "event_kind": "lecture",
+    "venue_name": "梧桐语问学中心明德报告厅",
+    "organisation_name": null,
+    "speaker": "朱永官",
+    "occurrences": []
+   }
+  },
+  {
+   "id": "hust-d9227e9b10",
+   "type": "Event",
+   "school": "hust",
+   "name": "王星：文凭社会与技能社会——技能形成研究理路及拓展",
+   "tier": 1,
+   "fields": {
+    "url": "https://news.hust.edu.cn/info/1008/60077.htm",
+    "needs": [
+     "explore_a_field",
+     "decide_a_direction"
+    ],
+    "start": null,
+    "summary": "王星教授作题为文凭社会与技能社会的讲座，探讨技能形成与社会转型。",
+    "event_kind": "lecture",
+    "venue_name": "西十二楼N111",
+    "organisation_name": "国家大学生文化素质教育基地",
+    "speaker": "王星",
+    "occurrences": []
+   }
+  },
+  {
+   "id": "hust-c3ae6b3bf6",
+   "type": "Event",
+   "school": "hust",
+   "name": "姚欣校友为学子作“AI时代下大学生发展规划”专题分享",
+   "tier": 1,
+   "fields": {
+    "url": "http://news.hust.edu.cn/info/1004/60071.htm",
+    "needs": [
+     "explore_a_field",
+     "decide_a_direction"
+    ],
+    "start": null,
+    "summary": "华科大校友姚欣作AI时代下大学生发展规划与创业方向专题分享。",
+    "event_kind": "lecture",
+    "venue_name": "机械学院东一楼创新创业基地",
+    "organisation_name": "耕塾创新教育基金、机械学院耕塾创新实验室（Gengshu Labs）社团",
+    "speaker": "姚欣",
+    "occurrences": []
+   }
+  },
+  {
+   "id": "hust-9286cf0bb5",
+   "type": "Event",
+   "school": "hust",
+   "name": "边思康：爱 死亡 机器人——技术发展规律和科幻引申的未来就业和教育的思考",
+   "tier": 1,
+   "fields": {
+    "url": "https://news.hust.edu.cn/info/1008/60073.htm",
+    "needs": [
+     "explore_a_field",
+     "decide_a_direction"
+    ],
+    "start": null,
+    "summary": "边思康在华科大第2630期人文讲座探讨AI时代技术规律、未来就业与教育思考。",
+    "event_kind": "lecture",
+    "venue_name": "东九楼C102教室",
+    "organisation_name": null,
+    "speaker": "边思康",
+    "occurrences": []
+   }
+  },
+  {
+   "id": "hust-871d0e9cb5",
+   "type": "Event",
+   "school": "hust",
+   "name": "史双元：怎样说好中国文学故事？——AI时代古典文学研究的传统守护与叙事创新",
+   "tier": 1,
+   "fields": {
+    "url": "http://news.hust.edu.cn/info/1008/60018.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": null,
+    "summary": "史双元教授作题为怎样说好中国文学故事的专题讲座，探讨AI时代古典文学研究与创新。",
+    "event_kind": "lecture",
+    "venue_name": "东九楼 C102教室",
+    "organisation_name": null,
+    "speaker": "史双元",
+    "occurrences": []
+   }
+  },
+  {
+   "id": "hust-4fc454dcdd",
+   "type": "Event",
+   "school": "hust",
+   "name": "“红色传承”艺术经典思政音乐会举办",
+   "tier": 1,
+   "fields": {
+    "url": "http://news.hust.edu.cn/info/1003/60056.htm",
+    "needs": [
+     "make_and_express",
+     "contribute_beyond_self"
+    ],
+    "start": null,
+    "summary": "华中科技大学举办“红色传承”艺术经典思政音乐会，以多种艺术形式融合思政教育。",
+    "event_kind": "activity",
+    "venue_name": "光电信息学院",
+    "organisation_name": "艺术学院、马克思主义学院、人民公开课以及“与美同行·思政留声“教育部全国高校辅导员名师工作室”",
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "hust-7bfaa542bb",
+   "type": "Event",
+   "school": "hust",
+   "name": "Sérgio Luiz Cruz Aguilar：演变中的国际秩序",
+   "tier": 1,
+   "fields": {
+    "url": "https://news.hust.edu.cn/info/1008/60132.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": null,
+    "summary": "巴西圣保罗州立大学教授Sérgio Luiz Cruz Aguilar就演变中的国际秩序做专题分享。",
+    "event_kind": "lecture",
+    "venue_name": "梧桐语问学中心明义楼问道厅",
+    "organisation_name": null,
+    "speaker": "Sérgio Luiz Cruz Aguilar",
+    "occurrences": []
+   }
+  },
+  {
+   "id": "hust-30b006048a",
+   "type": "Event",
+   "school": "hust",
+   "name": "体育学院红十字初级救护员培训班举办",
+   "tier": 1,
+   "fields": {
+    "url": "http://news.hust.edu.cn/info/1004/60113.htm",
+    "needs": [
+     "build_a_skill",
+     "get_experience"
+    ],
+    "start": "2026-11-15",
+    "summary": "体育学院联合校医院及洪山区红十字会举办初级救护员培训班，70余名师生参训获证。",
+    "event_kind": "workshop",
+    "venue_name": "光谷体育馆",
+    "organisation_name": "洪山区红十字会、体育学院、校医院",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-15",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "hust-df615867a1",
+   "type": "Event",
+   "school": "hust",
+   "name": "肖瑞峰：诗与仕的交织——文学与政治的互动",
+   "tier": 1,
+   "fields": {
+    "url": "http://news.hust.edu.cn/info/1008/60017.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": null,
+    "summary": "肖瑞峰教授主讲第2626期人文讲座，探讨中国古代文学与政治的互动关系。",
+    "event_kind": "lecture",
+    "venue_name": "东九教学楼 C102",
+    "organisation_name": "国家大学生文化素质教育基地",
+    "speaker": "肖瑞峰",
+    "occurrences": []
+   }
+  },
+  {
+   "id": "hust-245cc0cdb4",
+   "type": "Event",
+   "school": "hust",
+   "name": "同济医学院消防宣传月启动仪式暨第二届大学生消防技能竞赛举办",
+   "tier": 1,
+   "fields": {
+    "url": "http://news.hust.edu.cn/info/1004/60050.htm",
+    "needs": [
+     "build_a_skill",
+     "get_experience"
+    ],
+    "start": "2026-11-09",
+    "summary": "同济医学院举办消防宣传月启动仪式暨第二届大学生消防技能竞赛。",
+    "event_kind": "competition",
+    "venue_name": "医学院体育场",
+    "organisation_name": "医学保卫处",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-09",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "hust-d2727e80d2",
+   "type": "Event",
+   "school": "hust",
+   "name": "软件学院举办“校友同心谈”活动",
+   "tier": 1,
+   "fields": {
+    "url": "http://news.hust.edu.cn/info/1003/60030.htm",
+    "needs": [
+     "get_mentorship_and_feedback",
+     "decide_a_direction"
+    ],
+    "start": null,
+    "summary": "软件学院邀请校友吴毅斌、孔淼返校分享创新创业与职业发展经验。",
+    "event_kind": "activity",
+    "venue_name": "恩明楼1016会议室",
+    "organisation_name": "软件学院",
+    "speaker": "吴毅斌、孔淼",
+    "occurrences": []
+   }
+  },
+  {
+   "id": "hust-f69a775134",
+   "type": "Event",
+   "school": "hust",
+   "name": "公管学院开展消防应急疏散演练",
+   "tier": 1,
+   "fields": {
+    "url": "http://news.hust.edu.cn/info/1004/59997.htm",
+    "needs": [
+     "build_a_skill",
+     "navigate_systems"
+    ],
+    "start": "2026-11-04",
+    "summary": "公管学院开展2026年消防应急疏散实战演练及灭火实操培训。",
+    "event_kind": "activity",
+    "venue_name": "学院101教室、学院大楼、学院大楼前广场",
+    "organisation_name": "公管学院",
+    "speaker": "舒象春",
+    "occurrences": [
+     {
+      "start": "2026-11-04",
+      "end": null
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "hust-de310e4980",
+   "field": "title",
+   "quote": "朱永官院士做客人文讲座 解码万物共生的同一健康密码",
+   "url": "https://news.hust.edu.cn/info/1003/60076.htm",
+   "check_confidence": 0.9770621697841395,
+   "passed": true
+  },
+  {
+   "entity_id": "hust-de310e4980",
+   "field": "date",
+   "quote": "11月9日上午",
+   "url": "https://news.hust.edu.cn/info/1003/60076.htm",
+   "check_confidence": 0.6796232636802929,
+   "passed": false
+  },
+  {
+   "entity_id": "hust-de310e4980",
+   "field": "venue_name",
+   "quote": "梧桐语问学中心明德报告厅",
+   "url": "https://news.hust.edu.cn/info/1003/60076.htm",
+   "check_confidence": 0.9736546166411381,
+   "passed": true
+  },
+  {
+   "entity_id": "hust-de310e4980",
+   "field": "speaker",
+   "quote": "朱永官",
+   "url": "https://news.hust.edu.cn/info/1003/60076.htm",
+   "check_confidence": 0.9842973273300993,
+   "passed": true
+  },
+  {
+   "entity_id": "hust-d9227e9b10",
+   "field": "title",
+   "quote": "王星：文凭社会与技能社会——技能形成研究理路及拓展",
+   "url": "https://news.hust.edu.cn/info/1008/60077.htm",
+   "check_confidence": 0.9692044967786189,
+   "passed": true
+  },
+  {
+   "entity_id": "hust-d9227e9b10",
+   "field": "date",
+   "quote": "11月6日晚",
+   "url": "https://news.hust.edu.cn/info/1008/60077.htm",
+   "check_confidence": 0.5791093159417292,
+   "passed": false
+  },
+  {
+   "entity_id": "hust-d9227e9b10",
+   "field": "venue_name",
+   "quote": "西十二楼N111",
+   "url": "https://news.hust.edu.cn/info/1008/60077.htm",
+   "check_confidence": 0.9761177105196228,
+   "passed": true
+  },
+  {
+   "entity_id": "hust-d9227e9b10",
+   "field": "organisation_name",
+   "quote": "国家大学生文化素质教育基地",
+   "url": "https://news.hust.edu.cn/info/1008/60077.htm",
+   "check_confidence": 0.960768449693371,
+   "passed": true
+  },
+  {
+   "entity_id": "hust-d9227e9b10",
+   "field": "speaker",
+   "quote": "王星",
+   "url": "https://news.hust.edu.cn/info/1008/60077.htm",
+   "check_confidence": 0.9773067303219981,
+   "passed": true
+  },
+  {
+   "entity_id": "hust-c3ae6b3bf6",
+   "field": "title",
+   "quote": "姚欣校友为学子作“AI时代下大学生发展规划”专题分享",
+   "url": "http://news.hust.edu.cn/info/1004/60071.htm",
+   "check_confidence": 0.9810025301152769,
+   "passed": true
+  },
+  {
+   "entity_id": "hust-c3ae6b3bf6",
+   "field": "date",
+   "quote": "11月9日",
+   "url": "http://news.hust.edu.cn/info/1004/60071.htm",
+   "check_confidence": 0.38690893928391135,
+   "passed": false
+  },
+  {
+   "entity_id": "hust-c3ae6b3bf6",
+   "field": "venue_name",
+   "quote": "机械学院东一楼创新创业基地",
+   "url": "http://news.hust.edu.cn/info/1004/60071.htm",
+   "check_confidence": 0.9717701912099656,
+   "passed": true
+  },
+  {
+   "entity_id": "hust-c3ae6b3bf6",
+   "field": "organisation_name",
+   "quote": "耕塾创新教育基金、机械学院耕塾创新实验室（Gengshu Labs）社团",
+   "url": "http://news.hust.edu.cn/info/1004/60071.htm",
+   "check_confidence": 0.9394977587476105,
+   "passed": true
+  },
+  {
+   "entity_id": "hust-c3ae6b3bf6",
+   "field": "speaker",
+   "quote": "姚欣",
+   "url": "http://news.hust.edu.cn/info/1004/60071.htm",
+   "check_confidence": 0.9634637813209143,
+   "passed": true
+  },
+  {
+   "entity_id": "hust-9286cf0bb5",
+   "field": "title",
+   "quote": "边思康：爱 死亡 机器人——技术发展规律和科幻引申的未来就业和教育的思考",
+   "url": "https://news.hust.edu.cn/info/1008/60073.htm",
+   "check_confidence": 0.9738305919669022,
+   "passed": true
+  },
+  {
+   "entity_id": "hust-9286cf0bb5",
+   "field": "date",
+   "quote": "11月12日晚",
+   "url": "https://news.hust.edu.cn/info/1008/60073.htm",
+   "check_confidence": 0.42937111550565693,
+   "passed": false
+  },
+  {
+   "entity_id": "hust-9286cf0bb5",
+   "field": "venue_name",
+   "quote": "东九楼C102教室",
+   "url": "https://news.hust.edu.cn/info/1008/60073.htm",
+   "check_confidence": 0.9598671875763694,
+   "passed": true
+  },
+  {
+   "entity_id": "hust-9286cf0bb5",
+   "field": "speaker",
+   "quote": "边思康",
+   "url": "https://news.hust.edu.cn/info/1008/60073.htm",
+   "check_confidence": 0.9817158865070535,
+   "passed": true
+  },
+  {
+   "entity_id": "hust-871d0e9cb5",
+   "field": "title",
+   "quote": "史双元：怎样说好中国文学故事？——AI时代古典文学研究的传统守护与叙事创新",
+   "url": "http://news.hust.edu.cn/info/1008/60018.htm",
+   "check_confidence": 0.9821894074878698,
+   "passed": true
+  },
+  {
+   "entity_id": "hust-871d0e9cb5",
+   "field": "date",
+   "quote": "11月5日晚",
+   "url": "http://news.hust.edu.cn/info/1008/60018.htm",
+   "check_confidence": 0.7396622688512597,
+   "passed": false
+  },
+  {
+   "entity_id": "hust-871d0e9cb5",
+   "field": "venue_name",
+   "quote": "东九楼 C102教室",
+   "url": "http://news.hust.edu.cn/info/1008/60018.htm",
+   "check_confidence": 0.9415902347890872,
+   "passed": true
+  },
+  {
+   "entity_id": "hust-871d0e9cb5",
+   "field": "speaker",
+   "quote": "史双元",
+   "url": "http://news.hust.edu.cn/info/1008/60018.htm",
+   "check_confidence": 0.9773105825238002,
+   "passed": true
+  },
+  {
+   "entity_id": "hust-4fc454dcdd",
+   "field": "title",
+   "quote": "“红色传承”艺术经典思政音乐会举办",
+   "url": "http://news.hust.edu.cn/info/1003/60056.htm",
+   "check_confidence": 0.9679464177531262,
+   "passed": true
+  },
+  {
+   "entity_id": "hust-4fc454dcdd",
+   "field": "date",
+   "quote": "11月8日",
+   "url": "http://news.hust.edu.cn/info/1003/60056.htm",
+   "check_confidence": 0.695880911615543,
+   "passed": false
+  },
+  {
+   "entity_id": "hust-4fc454dcdd",
+   "field": "venue_name",
+   "quote": "光电信息学院",
+   "url": "http://news.hust.edu.cn/info/1003/60056.htm",
+   "check_confidence": 0.9669499938935101,
+   "passed": true
+  },
+  {
+   "entity_id": "hust-4fc454dcdd",
+   "field": "organisation_name",
+   "quote": "艺术学院、马克思主义学院、人民公开课以及“与美同行·思政留声“教育部全国高校辅导员名师工作室”",
+   "url": "http://news.hust.edu.cn/info/1003/60056.htm",
+   "check_confidence": 0.9703484864731713,
+   "passed": true
+  },
+  {
+   "entity_id": "hust-7bfaa542bb",
+   "field": "title",
+   "quote": "Sérgio Luiz Cruz Aguilar：演变中的国际秩序",
+   "url": "https://news.hust.edu.cn/info/1008/60132.htm",
+   "check_confidence": 0.9730277588850557,
+   "passed": true
+  },
+  {
+   "entity_id": "hust-7bfaa542bb",
+   "field": "date",
+   "quote": "11月16日晚",
+   "url": "https://news.hust.edu.cn/info/1008/60132.htm",
+   "check_confidence": 0.749013008388596,
+   "passed": false
+  },
+  {
+   "entity_id": "hust-7bfaa542bb",
+   "field": "venue_name",
+   "quote": "梧桐语问学中心明义楼问道厅",
+   "url": "https://news.hust.edu.cn/info/1008/60132.htm",
+   "check_confidence": 0.9695445252229277,
+   "passed": true
+  },
+  {
+   "entity_id": "hust-7bfaa542bb",
+   "field": "speaker",
+   "quote": "Sérgio Luiz Cruz Aguilar",
+   "url": "https://news.hust.edu.cn/info/1008/60132.htm",
+   "check_confidence": 0.9732052482278427,
+   "passed": true
+  },
+  {
+   "entity_id": "hust-30b006048a",
+   "field": "title",
+   "quote": "体育学院红十字初级救护员培训班举办",
+   "url": "http://news.hust.edu.cn/info/1004/60113.htm",
+   "check_confidence": 0.9801349916182536,
+   "passed": true
+  },
+  {
+   "entity_id": "hust-30b006048a",
+   "field": "date",
+   "quote": "11月15日",
+   "url": "http://news.hust.edu.cn/info/1004/60113.htm",
+   "check_confidence": 0.822782485663139,
+   "passed": true
+  },
+  {
+   "entity_id": "hust-30b006048a",
+   "field": "venue_name",
+   "quote": "光谷体育馆",
+   "url": "http://news.hust.edu.cn/info/1004/60113.htm",
+   "check_confidence": 0.9723465348045265,
+   "passed": true
+  },
+  {
+   "entity_id": "hust-30b006048a",
+   "field": "organisation_name",
+   "quote": "洪山区红十字会、体育学院、校医院",
+   "url": "http://news.hust.edu.cn/info/1004/60113.htm",
+   "check_confidence": 0.9110343762711814,
+   "passed": true
+  },
+  {
+   "entity_id": "hust-30b006048a",
+   "field": "speaker",
+   "quote": "洪山区红十字初级救护员培训讲师团",
+   "url": "http://news.hust.edu.cn/info/1004/60113.htm",
+   "check_confidence": 0.7553016395620958,
+   "passed": false
+  },
+  {
+   "entity_id": "hust-df615867a1",
+   "field": "title",
+   "quote": "肖瑞峰：诗与仕的交织——文学与政治的互动",
+   "url": "http://news.hust.edu.cn/info/1008/60017.htm",
+   "check_confidence": 0.9662341375193618,
+   "passed": true
+  },
+  {
+   "entity_id": "hust-df615867a1",
+   "field": "date",
+   "quote": "11 月 4 日晚",
+   "url": "http://news.hust.edu.cn/info/1008/60017.htm",
+   "check_confidence": 0.7289700048795039,
+   "passed": false
+  },
+  {
+   "entity_id": "hust-df615867a1",
+   "field": "venue_name",
+   "quote": "东九教学楼 C102",
+   "url": "http://news.hust.edu.cn/info/1008/60017.htm",
+   "check_confidence": 0.9624715388075021,
+   "passed": true
+  },
+  {
+   "entity_id": "hust-df615867a1",
+   "field": "organisation_name",
+   "quote": "国家大学生文化素质教育基地",
+   "url": "http://news.hust.edu.cn/info/1008/60017.htm",
+   "check_confidence": 0.9178969263332944,
+   "passed": true
+  },
+  {
+   "entity_id": "hust-df615867a1",
+   "field": "speaker",
+   "quote": "肖瑞峰",
+   "url": "http://news.hust.edu.cn/info/1008/60017.htm",
+   "check_confidence": 0.9728390085659904,
+   "passed": true
+  },
+  {
+   "entity_id": "hust-245cc0cdb4",
+   "field": "title",
+   "quote": "同济医学院消防宣传月启动仪式暨第二届大学生消防技能竞赛举办",
+   "url": "http://news.hust.edu.cn/info/1004/60050.htm",
+   "check_confidence": 0.9700108081564557,
+   "passed": true
+  },
+  {
+   "entity_id": "hust-245cc0cdb4",
+   "field": "date",
+   "quote": "11月9日，2026年",
+   "url": "http://news.hust.edu.cn/info/1004/60050.htm",
+   "check_confidence": 0.9489344219099054,
+   "passed": true
+  },
+  {
+   "entity_id": "hust-245cc0cdb4",
+   "field": "venue_name",
+   "quote": "医学院体育场",
+   "url": "http://news.hust.edu.cn/info/1004/60050.htm",
+   "check_confidence": 0.9563904015370027,
+   "passed": true
+  },
+  {
+   "entity_id": "hust-245cc0cdb4",
+   "field": "organisation_name",
+   "quote": "医学保卫处",
+   "url": "http://news.hust.edu.cn/info/1004/60050.htm",
+   "check_confidence": 0.9764364969474697,
+   "passed": true
+  },
+  {
+   "entity_id": "hust-d2727e80d2",
+   "field": "title",
+   "quote": "软件学院举办“校友同心谈”活动",
+   "url": "http://news.hust.edu.cn/info/1003/60030.htm",
+   "check_confidence": 0.9660615893360037,
+   "passed": true
+  },
+  {
+   "entity_id": "hust-d2727e80d2",
+   "field": "date",
+   "quote": "11月8日",
+   "url": "http://news.hust.edu.cn/info/1003/60030.htm",
+   "check_confidence": 0.5473460328346937,
+   "passed": false
+  },
+  {
+   "entity_id": "hust-d2727e80d2",
+   "field": "venue_name",
+   "quote": "恩明楼1016会议室",
+   "url": "http://news.hust.edu.cn/info/1003/60030.htm",
+   "check_confidence": 0.9698082761925529,
+   "passed": true
+  },
+  {
+   "entity_id": "hust-d2727e80d2",
+   "field": "organisation_name",
+   "quote": "软件学院",
+   "url": "http://news.hust.edu.cn/info/1003/60030.htm",
+   "check_confidence": 0.9704458948683777,
+   "passed": true
+  },
+  {
+   "entity_id": "hust-d2727e80d2",
+   "field": "speaker",
+   "quote": "吴毅斌、孔淼",
+   "url": "http://news.hust.edu.cn/info/1003/60030.htm",
+   "check_confidence": 0.9564896033789305,
+   "passed": true
+  },
+  {
+   "entity_id": "hust-f69a775134",
+   "field": "title",
+   "quote": "公管学院开展消防应急疏散演练",
+   "url": "http://news.hust.edu.cn/info/1004/59997.htm",
+   "check_confidence": 0.9765924545451378,
+   "passed": true
+  },
+  {
+   "entity_id": "hust-f69a775134",
+   "field": "date",
+   "quote": "11月4日",
+   "url": "http://news.hust.edu.cn/info/1004/59997.htm",
+   "check_confidence": 0.8372701216638602,
+   "passed": true
+  },
+  {
+   "entity_id": "hust-f69a775134",
+   "field": "venue_name",
+   "quote": "学院101教室、学院大楼、学院大楼前广场",
+   "url": "http://news.hust.edu.cn/info/1004/59997.htm",
+   "check_confidence": 0.9480646697232146,
+   "passed": true
+  },
+  {
+   "entity_id": "hust-f69a775134",
+   "field": "organisation_name",
+   "quote": "公管学院",
+   "url": "http://news.hust.edu.cn/info/1004/59997.htm",
+   "check_confidence": 0.9809198299836759,
+   "passed": true
+  },
+  {
+   "entity_id": "hust-f69a775134",
+   "field": "speaker",
+   "quote": "舒象春",
+   "url": "http://news.hust.edu.cn/info/1004/59997.htm",
+   "check_confidence": 0.8936255893329169,
+   "passed": true
+  }
+ ]
+}

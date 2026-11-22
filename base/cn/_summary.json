@@ -1,0 +1,424 @@
+{
+ "at": "2026-11-21T23:40:38.114Z",
+ "schools": [
+  {
+   "school": "ruc",
+   "entities": 0,
+   "fields": 0,
+   "passed": 0,
+   "tokens": 13003
+  },
+  {
+   "school": "buaa",
+   "entities": 2,
+   "fields": 11,
+   "passed": 10,
+   "tokens": 15307
+  },
+  {
+   "school": "bit",
+   "entities": 6,
+   "fields": 21,
+   "passed": 21,
+   "tokens": 22868
+  },
+  {
+   "school": "bnu",
+   "entities": 3,
+   "fields": 9,
+   "passed": 8,
+   "tokens": 21670
+  },
+  {
+   "school": "cau",
+   "entities": 0,
+   "fields": 0,
+   "passed": 0,
+   "tokens": 7108
+  },
+  {
+   "school": "muc",
+   "entities": 0,
+   "fields": 0,
+   "passed": 0,
+   "tokens": 3639
+  },
+  {
+   "school": "nankai",
+   "entities": 0,
+   "fields": 0,
+   "passed": 0,
+   "tokens": 10167
+  },
+  {
+   "school": "tju",
+   "entities": 5,
+   "fields": 30,
+   "passed": 30,
+   "tokens": 28820
+  },
+  {
+   "school": "dlut",
+   "entities": 6,
+   "fields": 30,
+   "passed": 30,
+   "tokens": 22250
+  },
+  {
+   "school": "neu",
+   "entities": 4,
+   "fields": 21,
+   "passed": 21,
+   "tokens": 22292
+  },
+  {
+   "school": "jlu",
+   "entities": 6,
+   "fields": 36,
+   "passed": 36,
+   "tokens": 27423
+  },
+  {
+   "school": "tongji",
+   "entities": 2,
+   "fields": 9,
+   "passed": 9,
+   "tokens": 14047
+  },
+  {
+   "school": "ecnu",
+   "entities": 6,
+   "fields": 34,
+   "passed": 34,
+   "tokens": 32149
+  },
+  {
+   "school": "seu",
+   "entities": 6,
+   "fields": 36,
+   "passed": 34,
+   "tokens": 26840
+  },
+  {
+   "school": "xmu",
+   "entities": 6,
+   "fields": 35,
+   "passed": 34,
+   "tokens": 27366
+  },
+  {
+   "school": "sdu",
+   "entities": 6,
+   "fields": 29,
+   "passed": 28,
+   "tokens": 26059
+  },
+  {
+   "school": "ouc",
+   "entities": 6,
+   "fields": 12,
+   "passed": 12,
+   "tokens": 35408
+  },
+  {
+   "school": "whu",
+   "entities": 5,
+   "fields": 30,
+   "passed": 29,
+   "tokens": 26932
+  },
+  {
+   "school": "hust",
+   "entities": 6,
+   "fields": 27,
+   "passed": 21,
+   "tokens": 32729
+  },
+  {
+   "school": "hnu",
+   "entities": 1,
+   "fields": 6,
+   "passed": 6,
+   "tokens": 10937
+  },
+  {
+   "school": "csu",
+   "entities": 3,
+   "fields": 4,
+   "passed": 4,
+   "tokens": 21868
+  },
+  {
+   "school": "sysu",
+   "entities": 6,
+   "fields": 34,
+   "passed": 34,
+   "tokens": 25692
+  },
+  {
+   "school": "scut",
+   "entities": 0,
+   "fields": 0,
+   "passed": 0,
+   "tokens": 324
+  },
+  {
+   "school": "scu",
+   "entities": 6,
+   "fields": 34,
+   "passed": 34,
+   "tokens": 31371
+  },
+  {
+   "school": "uestc",
+   "entities": 6,
+   "fields": 31,
+   "passed": 30,
+   "tokens": 33631
+  },
+  {
+   "school": "cqu",
+   "entities": 6,
+   "fields": 33,
+   "passed": 33,
+   "tokens": 26162
+  },
+  {
+   "school": "nwpu",
+   "entities": 6,
+   "fields": 36,
+   "passed": 36,
+   "tokens": 27133
+  },
+  {
+   "school": "nwafu",
+   "entities": 6,
+   "fields": 32,
+   "passed": 32,
+   "tokens": 28900
+  },
+  {
+   "school": "nudt",
+   "entities": 6,
+   "fields": 14,
+   "passed": 13,
+   "tokens": 36880
+  },
+  {
+   "school": "emory",
+   "entities": 0,
+   "fields": 0,
+   "passed": 0,
+   "tokens": 4238
+  },
+  {
+   "school": "georgetown",
+   "entities": 0,
+   "fields": 0,
+   "passed": 0,
+   "tokens": 7739
+  },
+  {
+   "school": "cmu",
+   "entities": 5,
+   "fields": 26,
+   "passed": 24,
+   "tokens": 26858
+  },
+  {
+   "school": "washu",
+   "entities": 6,
+   "fields": 31,
+   "passed": 31,
+   "tokens": 38190
+  },
+  {
+   "school": "uva",
+   "entities": 0,
+   "fields": 0,
+   "passed": 0,
+   "tokens": 6493
+  },
+  {
+   "school": "usc",
+   "entities": 6,
+   "fields": 32,
+   "passed": 32,
+   "tokens": 34360
+  },
+  {
+   "school": "unc",
+   "entities": 6,
+   "fields": 31,
+   "passed": 30,
+   "tokens": 30823
+  },
+  {
+   "school": "ufl",
+   "entities": 3,
+   "fields": 4,
+   "passed": 4,
+   "tokens": 11400
+  },
+  {
+   "school": "ucsd",
+   "entities": 4,
+   "fields": 22,
+   "passed": 22,
+   "tokens": 30991
+  },
+  {
+   "school": "ucdavis",
+   "entities": 0,
+   "fields": 0,
+   "passed": 0,
+   "tokens": 14827
+  },
+  {
+   "school": "uci",
+   "entities": 5,
+   "fields": 26,
+   "passed": 26,
+   "tokens": 25454
+  },
+  {
+   "school": "ucsb",
+   "entities": 5,
+   "fields": 25,
+   "passed": 25,
+   "tokens": 28839
+  },
+  {
+   "school": "utexas",
+   "entities": 6,
+   "fields": 24,
+   "passed": 24,
+   "tokens": 30925
+  },
+  {
+   "school": "wisc",
+   "entities": 6,
+   "fields": 27,
+   "passed": 27,
+   "tokens": 21675
+  },
+  {
+   "school": "gatech",
+   "entities": 5,
+   "fields": 26,
+   "passed": 26,
+   "tokens": 24120
+  },
+  {
+   "school": "bc",
+   "entities": 6,
+   "fields": 36,
+   "passed": 36,
+   "tokens": 33144
+  },
+  {
+   "school": "bu",
+   "entities": 6,
+   "fields": 27,
+   "passed": 24,
+   "tokens": 28873
+  },
+  {
+   "school": "tufts",
+   "entities": 0,
+   "fields": 0,
+   "passed": 0,
+   "tokens": 11003
+  },
+  {
+   "school": "rutgers",
+   "entities": 6,
+   "fields": 31,
+   "passed": 31,
+   "tokens": 32116
+  },
+  {
+   "school": "osu",
+   "entities": 1,
+   "fields": 5,
+   "passed": 5,
+   "tokens": 12766
+  },
+  {
+   "school": "purdue",
+   "entities": 5,
+   "fields": 28,
+   "passed": 27,
+   "tokens": 30869
+  },
+  {
+   "school": "uw",
+   "entities": 6,
+   "fields": 28,
+   "passed": 27,
+   "tokens": 28507
+  },
+  {
+   "school": "rochester",
+   "entities": 0,
+   "fields": 0,
+   "passed": 0,
+   "tokens": 5769
+  },
+  {
+   "school": "lehigh",
+   "entities": 6,
+   "fields": 30,
+   "passed": 30,
+   "tokens": 38412
+  },
+  {
+   "school": "wfu",
+   "entities": 4,
+   "fields": 17,
+   "passed": 16,
+   "tokens": 23081
+  },
+  {
+   "school": "vt",
+   "entities": 3,
+   "fields": 16,
+   "passed": 16,
+   "tokens": 21490
+  },
+  {
+   "school": "tamu",
+   "entities": 3,
+   "fields": 3,
+   "passed": 3,
+   "tokens": 11911
+  }
+ ],
+ "failures": [
+  "buaa page https://www.buaa.edu.cn/info/1076/8723.htm: fetch failed",
+  "buaa page https://www.buaa.edu.cn/info/1076/8653.htm: fetch failed",
+  "buaa page https://www.buaa.edu.cn/info/1076/8654.htm: fetch failed",
+  "buaa page https://www.buaa.edu.cn/info/1076/8599.htm: fetch failed",
+  "ruc page https://www.ruc.edu.cn/2123591154637402114.html: The operation was aborted due to timeout",
+  "cau list https://www.cau.edu.cn/whsh/mjlt/index.htm: fetch failed",
+  "cau list https://news.cau.edu.cn/: fetch failed",
+  "bnu page https://news.bnu.edu.cn/zx/xzdt/2e5e669e4ece443dbf2e2c205a0710b0.htm: 404 https://news.bnu.edu.cn/zx/xzdt/2e5e669e4ece443dbf2e2c205a0710b0.htm",
+  "scut: no listing links",
+  "csu page https://rsc.csu.edu.cn/info/1020/6325.htm: 404 https://rsc.csu.edu.cn/info/1020/6325.htm",
+  "cqu list https://campus.cqu.edu.cn/activity.htm: fetch failed",
+  "lzu: 412 https://www.lzu.edu.cn",
+  "umich: 403 https://www.umich.edu",
+  "cmu page https://www.givecampus.com/schools/CarnegieMellonUniversity/events/the: 403 https://www.givecampus.com/schools/CarnegieMellonUniversity/events/the-pursu",
+  "unc list https://www.unc.edu/events/: 403 https://www.unc.edu/events/",
+  "unc list https://www.unc.edu/category/news/: 403 https://www.unc.edu/category/news/",
+  "ucsd page https://calendar.ucsd.edu/event/copy-of-aip-summer-enrollment-workshop: fetch failed",
+  "ucsd page https://calendar.ucsd.edu/event/shaping-a-library-exhibition-2026: fetch failed",
+  "ucsb page https://www.campuscalendar.ucsb.edu/event/bonnie-ora-sherk-life-frames: fetch failed",
+  "uiuc: fetch failed",
+  "osu page https://wexarts.org/node/16747: 403 https://wexarts.org/node/16747",
+  "umd: 403 https://www.umd.edu",
+  "purdue page https://events.purdue.edu/event/isf-fall-research-expo-9983: fetch failed",
+  "wfu page https://events.wfu.edu/event/prompt-engineering-communicating-with-art: fetch failed",
+  "wfu page https://events.wfu.edu/event/fall-faculty-and-guest-artist-dance-conce: fetch failed"
+ ]
+}

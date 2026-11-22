@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. The square-shaped main campus features symmetrical Sino-Soviet style gray-brick buildings with red-tile roofs, ivy-covered facades, and avenues lined with tall plane trees and flower gardens. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Qian Xuesen Library, a library: Three-story Sino-Soviet north wing connected to a 13-story pyramid-shaped south wing.; (2) Old Main Teaching Buildings, a hall: Symmetrical Sino-Soviet gray-brick buildings with red-tile gable roofs and ivy.; (3) New Main Teaching Buildings, a hall: Five-building complex with low lecture halls and a tall central office tower.; (4) North Gate, a gate: Main campus gate positioned along the north-south central axis.; (5) Tengfei Tower, a tower: Plain campus tower landmark.; (6) Four Great Inventions Square, a quad: Plain campus plaza.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 18,
+ "tokens": 2430,
+ "at": "2026-11-22T00:12:09.848Z"
+}

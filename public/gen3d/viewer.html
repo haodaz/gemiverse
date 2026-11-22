@@ -10,6 +10,8 @@ import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import { offered } from "./hidden.js";
 import { makeKit } from "./kit.js";
 import { buildDoll, LOOKS } from "./doll.js";
+import { buildVendorDoll, bodyFor } from "./vendor-doll.js";
+const BODY = bodyFor("mochi");   // the ready-made CC0 character is the Gemi now; ?body=doll shows our own
 import { RoomEnvironment } from "three/addons/environments/RoomEnvironment.js";
 import { EffectComposer } from "three/addons/postprocessing/EffectComposer.js";
 import { RenderPass } from "three/addons/postprocessing/RenderPass.js";
@@ -23,10 +25,10 @@ const CHAR = new URLSearchParams(location.search).get("char") ?? "hero-person";
 const [room, items, character] = await Promise.all(["room", "items", CHAR].map(load));
 const kit = makeKit(THREE);
 // Embedded in the room page: no test buttons, the school decides the window view and the starting palette.
-const Q = new URLSearchParams(location.search), EMBED = Q.has("embed"), SCHOOL = Q.get("school") === "columbia" ? "columbia" : "nyu";
+const Q = new URLSearchParams(location.search), EMBED = Q.has("embed"), SCHOOL = (Q.get("school") ?? "tsinghua").replace(/[^a-z]/g, "");
 if (EMBED) document.getElementById("ui").style.display = "none";
 let windowView = null;
-try { windowView = await new THREE.TextureLoader().loadAsync(`/art/window-${SCHOOL}.svg`); windowView.colorSpace = THREE.SRGBColorSpace; } catch (e) { err("window view: " + e.message); }
+try { windowView = await new THREE.TextureLoader().loadAsync(`/art/cn/${SCHOOL}.jpg`); windowView.colorSpace = THREE.SRGBColorSpace; } catch (e) { err("window view: " + e.message); }
 
 const BARE = new URLSearchParams(location.search).has("bare");   // bare: no background at all, so the room sits directly on whatever page embeds it
 const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
@@ -39,11 +41,58 @@ const d = 3.3, a = innerWidth / innerHeight;
 const camera = new THREE.OrthographicCamera(-d * a, d * a, d, -d, 0.1, 100);
 camera.position.set(9, 8, 9); const controls = new OrbitControls(camera, renderer.domElement); controls.target.set(0, 1.0, 0); controls.update();
 scene.environment = new THREE.PMREMGenerator(renderer).fromScene(new RoomEnvironment(), 0.04).texture; scene.environmentIntensity = 0.55;
-scene.add(new THREE.HemisphereLight("#fff7ee", "#c9bfe0", 0.5));
+const hemi = new THREE.HemisphereLight("#fff7ee", "#c9bfe0", 0.5); scene.add(hemi);
 const composer = new EffectComposer(renderer); composer.addPass(new RenderPass(scene, camera));
 const gtao = new GTAOPass(scene, camera, innerWidth, innerHeight); gtao.updateGtaoMaterial({ radius: 0.45, distanceExponent: 1.4, thickness: 1.2, scale: 1.1 }); composer.addPass(gtao); composer.addPass(new OutputPass());
 const sun = new THREE.DirectionalLight("#fff1dd", 2.2); sun.position.set(6, 10, 4); sun.castShadow = true;
 sun.shadow.mapSize.set(2048, 2048); Object.assign(sun.shadow.camera, { left: -6, right: 6, top: 6, bottom: -6 }); sun.shadow.bias = -0.0004; scene.add(sun);
+
+// ---- Ambience: the light in the room follows the hour and the weather outside the window ---------------------------------
+// hour: the viewer's own clock unless ?hour= or a message sets it. weather: clear | cloudy | rain | snow (?weather= or a message).
+// Lights that are computed: the sun (direction, colour, strength by hour and cloud), sky fill, light through the window,
+// the desk lamp (on when it is dark), and the picture outside the window (dimmed and tinted). Rain and snow fall outside the glass.
+const AMB = { hour: Q.has("hour") ? +Q.get("hour") : null, weather: Q.get("weather") ?? "clear" };
+const lampLight = new THREE.PointLight("#ffd3a0", 0, 3.2, 1.6); lampLight.castShadow = true; lampLight.shadow.mapSize.set(512, 512); lampLight.shadow.bias = -0.002; scene.add(lampLight);
+const lampGlow = new THREE.Mesh(new THREE.SphereGeometry(0.035, 16, 12), new THREE.MeshBasicMaterial({ color: "#fff0cf", transparent: true, opacity: 0 })); scene.add(lampGlow);
+const windowLight = new THREE.SpotLight("#fff1dd", 0, 7, 0.62, 0.85, 1.2); scene.add(windowLight, windowLight.target);
+const fall = new THREE.Group(); scene.add(fall); let fallPts = null, skyMesh = null, fallBox = null;
+const mix = (a, b, k) => new THREE.Color(a).lerp(new THREE.Color(b), Math.max(0, Math.min(1, k)));
+function ambience() {
+  const d = new Date(), h = AMB.hour ?? d.getHours() + d.getMinutes() / 60, w = AMB.weather;
+  const day = Math.max(0, Math.min(1, Math.min((h - 5.5) / 2.5, (19.5 - h) / 2.5))), low = Math.max(0, 1 - Math.abs(h - 6.8) / 1.6) + Math.max(0, 1 - Math.abs(h - 18.2) / 1.6);   // daylight 0..1; how low and warm the sun is
+  const cloud = w === "clear" ? 0 : w === "cloudy" ? 0.55 : 0.75, lit = day * (1 - cloud * 0.7);
+  const ang = ((h - 6) / 12) * Math.PI;                                                    // east at six, overhead at noon, west at six
+  sun.position.set(Math.cos(ang) * 8 + 2, Math.max(1.2, Math.sin(ang) * 10), 4 + Math.sin(ang) * 1.5);
+  sun.color.copy(day > 0.02 ? mix("#fff1dd", "#ffb27a", low * (1 - cloud)).lerp(new THREE.Color("#dfe6ee"), cloud * 0.8) : new THREE.Color("#9fb4ff"));
+  sun.intensity = day > 0.02 ? 0.25 + 2.0 * lit : 0.22;                                    // moonlight at night
+  hemi.intensity = 0.07 + 0.47 * lit; hemi.color.copy(mix("#2a3358", "#fff7ee", day)).lerp(new THREE.Color("#cfd6de"), cloud * day * 0.6); hemi.groundColor.copy(mix("#1b1830", "#c9bfe0", day));
+  scene.environmentIntensity = 0.05 + 0.5 * lit; renderer.toneMappingExposure = 0.8 + 0.2 * day;
+  if (scene.background?.isColor) scene.background.copy(mix("#1f2238", "#e9e6e1", day));
+  // the picture outside: a noon picture at night would be wrong, so it dims and turns blue; grey under cloud; warm when the sun is low
+  if (skyMesh) { const tint = mix("#31406e", "#ffffff", day).lerp(new THREE.Color("#ffc59a"), low * 0.45 * (1 - cloud)).lerp(new THREE.Color("#8f98a6"), cloud * day * 0.9); skyMesh.material.color.copy(tint); skyMesh.material.emissive.copy(tint); skyMesh.material.emissiveIntensity = 0.06 + 0.3 * lit; }
+  // light through the window: strongest when the sun is low and the sky is clear
+  if (skyMesh) { const c = new THREE.Vector3(); skyMesh.getWorldPosition(c); windowLight.position.set(c.x + 0.2, c.y + 0.9, c.z - 0.6); windowLight.target.position.set(c.x - 0.5, 0, c.z + 2.2);
+    windowLight.color.copy(mix("#fff4e4", "#ffb070", low)); windowLight.intensity = day > 0.02 ? (5 + 14 * low) * (1 - cloud) * day : 1.2; if (day <= 0.02) windowLight.color.set("#8ea6ff"); }
+  // the desk lamp turns on when it is dark
+  const L = layout.lamp?.p ?? [0.25, 0.75, -1.72], on = Math.max(0, Math.min(1, (0.55 - lit) / 0.3));
+  lampLight.position.set(L[0] + 0.1, L[1] + 0.3, L[2] + 0.12); lampLight.intensity = 3.6 * on; lampGlow.position.copy(lampLight.position); lampGlow.material.opacity = 0.9 * on;
+  // rain or snow, outside the glass
+  const want = w === "rain" || w === "snow" ? w : null;
+  if (fallPts && fallPts.userData.kind !== want) { fall.remove(fallPts); fallPts.geometry.dispose(); fallPts = null; }
+  if (want && !fallPts && skyMesh) { const b = new THREE.Box3().setFromObject(skyMesh); fallBox = b; const rain = want === "rain", n = rain ? 170 : 150, per = rain ? 2 : 1, pos = new Float32Array(n * per * 3);
+    for (let i = 0; i < n; i++) { const x = b.min.x + Math.random() * (b.max.x - b.min.x), y = b.min.y + Math.random() * (b.max.y - b.min.y), z = b.max.z + 0.012 + Math.random() * 0.02;
+      pos.set([x, y, z], i * per * 3); if (rain) pos.set([x - 0.012, y + 0.075, z], i * 6 + 3); }                     // a raindrop is a short slanted streak, a snowflake a dot
+    const g = new THREE.BufferGeometry(); g.setAttribute("position", new THREE.BufferAttribute(pos, 3));
+    fallPts = rain ? new THREE.LineSegments(g, new THREE.LineBasicMaterial({ color: "#6f86a6", transparent: true, opacity: 0.85, depthWrite: false }))
+      : new THREE.Points(g, new THREE.PointsMaterial({ color: "#ffffff", size: 0.075, transparent: true, opacity: 1, sizeAttenuation: true, depthWrite: false }));
+    fallPts.userData.kind = want; fall.add(fallPts); }
+  try { tell("ambience", { hour: Math.round(h * 10) / 10, weather: w, day: Math.round(day * 100) / 100, lamp: on > 0.5 }); } catch {}   // the first call runs before `tell` exists
+}
+function ambienceTick(t, dt) { if (!fallPts || !fallBox) return; const a = fallPts.geometry.attributes.position, rain = fallPts.userData.kind === "rain", H = fallBox.max.y - fallBox.min.y, W = fallBox.max.x - fallBox.min.x, per = rain ? 2 : 1;
+  for (let i = 0; i < a.count / per; i++) { const k = i * per, dy = dt * (rain ? 2.2 : 0.3) * (0.7 + (i % 5) * 0.12), dx = rain ? -dt * 0.35 : Math.sin(t * 0.9 + i) * dt * 0.06; let wrapY = 0, wrapX = 0;
+    if (a.getY(k) - dy < fallBox.min.y) wrapY = H; if (a.getX(k) + dx < fallBox.min.x) wrapX = W;
+    for (let v = 0; v < per; v++) { a.setY(k + v, a.getY(k + v) - dy + wrapY); a.setX(k + v, a.getX(k + v) + dx + wrapX); } } a.needsUpdate = true; }
+setInterval(() => { if (AMB.hour === null) ambience(); }, 60000);
 
 const PALETTES = [
   { wall: "#f4ebe1", trim: "#ffffff", floor: "#d9a877", primary: "#b8a2e3", secondary: "#f7e7c6", accent: "#f2a7b8", wood: "#c89462", metal: "#d9c08a", fabric: "#b8a2e3" },
@@ -64,7 +113,7 @@ const DEFAULT_LAYOUT = {
 let layout; try { layout = JSON.parse(localStorage.getItem("gemi.layout")) } catch {} layout ??= structuredClone(DEFAULT_LAYOUT);
 const saveLayout = () => { try { localStorage.setItem("gemi.layout", JSON.stringify(layout)) } catch {} };
 let away = false, held = false;
-let pi = SCHOOL === "columbia" ? 1 : 0, vi = 0, world, who, placed = {}, arranging = false, picked = null, lookNow = null;
+let pi = SCHOOL.length % 3, vi = 0, world, who, placed = {}, arranging = false, picked = null, lookNow = null;
 const grid = new THREE.GridHelper(4, 16, "#5b46e0", "#7c6cf0"); grid.position.y = 0.012; grid.visible = false; scene.add(grid);
 const marker = new THREE.BoxHelper(new THREE.Object3D(), "#7c6cf0"); marker.visible = false; scene.add(marker);
 function place(name) { const g = placed[name], L = layout[name]; g.position.set(...L.p); g.rotation.y = L.r * Math.PI / 2; }
@@ -76,17 +125,18 @@ function build() {
     const make = items.ITEMS[name]; if (!make) continue;
     try { const g = make(THREE, { ...p, material: ["wood", "painted", "fabric"][vi % 3], variant: vi % 3 }); g.userData.item = name; placed[name] = g; place(name); world.add(g); } catch (e) { err(`${name}: ${e.message}`); }
   }
+  skyMesh = null; world.traverse((o) => { if (o.isMesh && o.userData.slot === "sky") skyMesh = o; }); if (fallPts) { fall.remove(fallPts); fallPts = null; } ambience();
   spawn(lookNow); drawState();
 }
 const HAIR = ["short", "bob", "longStraight", "curly", "ponytail", "afro", "braids", "buzz"], SKIN = ["#f6dcc6", "#f1cfb4", "#e8b796", "#d49a72", "#b9794f", "#a86f4c", "#8d5a3c", "#6b4226"], HAIRC = ["#1f1a1c", "#3b2a22", "#6b4a2f", "#c98b4a", "#a5482f", "#e58fb0", "#5b8fd6", "#c8ccd4"];
 // The Gemi is the jointed doll: generated body, clothes, hair and motion library, with the hand-painted face.
 let doll = null, spawnId = 0;
-const DEFAULT_LOOK = SCHOOL === "columbia" ? LOOKS.kai : LOOKS.mochi;
+const DEFAULT_LOOK = LOOKS.mochi;
 async function spawn(look) {
   const mine = ++spawnId;
   const r = (a) => a[Math.floor(Math.random() * a.length)];
   lookNow = look ? { ...DEFAULT_LOOK, ...look } : lookNow && look !== null ? lookNow : { ...r(Object.values(LOOKS)), hairStyle: r(["bob", "shortLayered", "longWavy", "ponytail", "twinTails", "curlyMedium", "pixie", "bun"]), top: r(["hoodie", "cardigan", "sweater", "shirt", "tee", "blazer"]), bottom: r(["pleatedSkirt", "trousers", "jeans", "shorts", "longSkirt"]) };
-  const d = await buildDoll(THREE, lookNow, kit, err);
+  const d = BODY ? await buildVendorDoll(THREE, BODY, err) : await buildDoll(THREE, lookNow, kit, err);
   if (!d || mine !== spawnId) return;
   if (who) world.remove(who);
   doll = d; who = d.root; who.scale.setScalar(1.12); who.position.set(0.25, 0, 0.5); who.visible = !away && !arranging; world.add(who); d.express("happy");
@@ -163,7 +213,7 @@ function live(t, dt) {
   if (!goal && t > waitUntil) { goal = SPOTS[FORCE_SPOT ?? Math.floor(Math.random() * SPOTS.length)]; if (goal.seat && layout[goal.seat]) goal = { ...goal, at: [layout[goal.seat].p[0], layout[goal.seat].p[2]] }; document.getElementById("say").textContent = "…"; doll?.play("walk"); doll?.express("awake"); }
   if (goal) {
     const dx = goal.at[0] - who.position.x, dz = goal.at[1] - who.position.z, dist = Math.hypot(dx, dz);
-    if (dist < 0.03) { who.rotation.y = goal.face; who.position.y = goal.seat ? SEAT_LIFT : 0; doll?.express(goal.mood); doll?.play(goal.clip ?? "idle"); document.getElementById("say").textContent = goal.say; tell("doing", goal.say); waitUntil = t + 5 + Math.random() * 4; goal = null; }
+    if (dist < 0.03) { who.rotation.y = goal.face; who.position.y = goal.seat ? (doll?.seatLift ?? SEAT_LIFT) : 0; doll?.express(goal.mood); doll?.play(goal.clip ?? "idle"); document.getElementById("say").textContent = goal.say; tell("doing", goal.say); waitUntil = t + 5 + Math.random() * 4; goal = null; }
     else { who.position.y = 0; const step = Math.min(dist, (doll?.walkSpeed("walk") ?? 0.5) * 1.12 * dt); who.position.x += dx / dist * step; who.position.z += dz / dist * step;   // speed matched to the walk cycle so the feet do not slide
       let turn = Math.atan2(dx, dz) - who.rotation.y; turn = Math.atan2(Math.sin(turn), Math.cos(turn)); who.rotation.y += turn * Math.min(1, dt * 8); }
   }
@@ -221,13 +271,14 @@ addEventListener("message", (ev) => { const m = ev.data; if (!m || m.source !== 
   if (m.type === "play" && m.value) doll?.play(m.value);
   if (m.type === "arrange") document.getElementById("arr").click();
   if (m.type === "look" && m.value) spawn(m.value);
+  if (m.type === "ambience" && m.value) { if ("hour" in m.value) AMB.hour = m.value.hour; if (m.value.weather) AMB.weather = m.value.weather; ambience(); }
   if (m.type === "palette") { pi = m.value % PALETTES.length; build(); } });
 const tell = (type, value) => { if (EMBED) parent.postMessage({ source: "gemiverse-room", type, value }, "*"); };
 tell("ready");
 if (BARE) { scene.background = null; renderer.setClearColor(0x000000, 0); document.documentElement.style.background = document.body.style.background = "transparent"; }
 const clock = new THREE.Clock();
 let last = 0;
-renderer.setAnimationLoop(() => { const t = clock.getElapsedTime(), dt = Math.min(0.05, t - last); last = t; live(t, dt); if (who && t - headTold > 0.12) { headTold = t; tell("head", who.visible && !arranging ? headOnScreen() : null); } if (extras) for (const c of companions) try { extras.pp.idle(c, t); } catch {} if (doll) try { doll.update(t, dt); } catch {}
+renderer.setAnimationLoop(() => { const t = clock.getElapsedTime(), dt = Math.min(0.05, t - last); last = t; live(t, dt); ambienceTick(t, dt); if (who && t - headTold > 0.12) { headTold = t; tell("head", who.visible && !arranging ? headOnScreen() : null); } if (extras) for (const c of companions) try { extras.pp.idle(c, t); } catch {} if (doll) try { doll.update(t, dt); } catch {}
   controls.target.lerp(new THREE.Vector3(...view.target), Math.min(1, dt * 4)); camera.zoom += (view.zoom - camera.zoom) * Math.min(1, dt * 4); camera.updateProjectionMatrix(); controls.update();
   stateGroup?.traverse((o) => { if (o.userData.spin) o.rotation.y += dt * o.userData.spin; }); if (BARE) renderer.render(scene, camera); else composer.render(); });
 </script>

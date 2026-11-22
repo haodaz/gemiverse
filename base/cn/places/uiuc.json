@@ -1,0 +1,104 @@
+{
+ "school": "uiuc",
+ "name": "University of Illinois Urbana-Champaign",
+ "at": "2026-11-22T00:19:24.762Z",
+ "source": "https://en.wikipedia.org/wiki/University%20of%20Illinois%20Urbana-Champaign",
+ "character": "The campus features four main north-to-south quads, historic buildings, Boneyard Creek, and a solar calendar with an obelisk and copper fountains.",
+ "map": "/art/map/uiuc.jpg",
+ "landmarks": [
+  {
+   "name": "Main Quadrangle",
+   "name_en": "Main Quadrangle",
+   "kind": "quad",
+   "quote": "The Main Quadrangle and South Quadrangle follow immediately after the John Bardeen Quad.",
+   "look": "Large open quadrangle surrounded by liberal arts and sciences buildings.",
+   "check": 0.974684843416559,
+   "confidence": 0.974684843416559,
+   "passed": true,
+   "x": 0.36,
+   "y": 0.23
+  },
+  {
+   "name": "Beckman Quadrangle",
+   "name_en": "Beckman Quadrangle",
+   "kind": "quad",
+   "quote": "The Beckman Quadrangle, named after Arnold Orville Beckman, is primarily composed of research units and laboratories",
+   "look": "Engineering quad with research buildings, an obelisk, and copper fountains.",
+   "check": 0.9700071859112348,
+   "confidence": 0.9700071859112348,
+   "passed": true,
+   "x": 0.76,
+   "y": 0.26
+  },
+  {
+   "name": "John Bardeen Quadrangle",
+   "name_en": "John Bardeen Quadrangle",
+   "kind": "quad",
+   "quote": "Boneyard Creek flows through the John Bardeen Quadrangle, parallel to Green Street.",
+   "look": "Central engineering quadrangle with a creek flowing through it.",
+   "check": 0.9780602985270971,
+   "confidence": 0.9780602985270971,
+   "passed": true,
+   "x": 0.57,
+   "y": 0.56
+  },
+  {
+   "name": "South Quadrangle",
+   "name_en": "South Quadrangle",
+   "kind": "quad",
+   "quote": "The Main Quadrangle and South Quadrangle follow immediately after the John Bardeen Quad.",
+   "look": "Open quadrangle surrounded by agricultural and environmental science buildings.",
+   "check": 0.9698733771691125,
+   "confidence": 0.9698733771691125,
+   "passed": true,
+   "x": 0.27,
+   "y": 0.78
+  },
+  {
+   "name": "Main Library",
+   "name_en": "Main Library",
+   "kind": "library",
+   "quote": "including Harker Hall, the Astronomical Observatory, Louise Freer Hall, the Main Library, the Experimental Dairy Farm Historic District, and the Morrow Plots.",
+   "look": "Historic university library building.",
+   "check": 0.9758855619352259,
+   "confidence": 0.9758855619352259,
+   "passed": true,
+   "x": 0.12,
+   "y": 0.43
+  },
+  {
+   "name": "Grainger Engineering Library",
+   "name_en": "Grainger Engineering Library",
+   "kind": "library",
+   "quote": "including donations for the construction of the Grainger Engineering Library.",
+   "look": "Plain engineering library building.",
+   "check": 0.9646592739650105,
+   "confidence": 0.9646592739650105,
+   "passed": true,
+   "x": 0.83,
+   "y": 0.62
+  },
+  {
+   "name": "Harker Hall",
+   "name_en": "Harker Hall",
+   "kind": "hall",
+   "quote": "including Harker Hall, the Astronomical Observatory, Louise Freer Hall, the Main Library",
+   "look": "Historic campus hall building.",
+   "check": 0.9837175174580178,
+   "confidence": 0.9837175174580178,
+   "passed": true
+  },
+  {
+   "name": "Louise Freer Hall",
+   "name_en": "Louise Freer Hall",
+   "kind": "hall",
+   "quote": "including Harker Hall, the Astronomical Observatory, Louise Freer Hall, the Main Library",
+   "look": "Historic campus hall building.",
+   "check": 0.9789399124606699,
+   "confidence": 0.9789399124606699,
+   "passed": true
+  }
+ ],
+ "tokens": 9959,
+ "seconds": 26
+}

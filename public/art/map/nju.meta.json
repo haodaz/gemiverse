@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. The main Xianlin campus sits near the southern Yangtze River bank surrounded by mountains, while the historic Gulou campus features traditional Chinese-style architecture. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) North Building, a hall: Traditional Chinese-style iconic university building; (2) Nanjing University Xianlin Library, a library: Large plain library building; (3) Nanjing University Solar Tower, a tower: Tall astronomical solar telescope tower; (4) Nanjing University Museum of Archaeology and Art, a museum: Plain museum building; (5) Nanjing University Earth Sciences Museum, a museum: Plain museum building; (6) Nanjing University History Museum, a museum: Plain museum building. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 16,
+ "tokens": 2027,
+ "at": "2026-11-22T00:11:38.548Z"
+}

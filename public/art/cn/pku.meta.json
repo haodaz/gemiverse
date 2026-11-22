@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A soft, warm storybook illustration in gentle pastel colours, wide 16:9, flat shapes with light texture, golden afternoon light, a few tiny students walking. No text, no letters, no logos, no emblems, no watermarks. Scene: a Beijing university campus with a calm lake, a tall grey multi-eaved brick pagoda tower beside it, weeping willows and a stone boat at the shore.",
+ "reference": null,
+ "seconds": 15,
+ "tokens": 1733,
+ "at": "2026-11-21T23:15:31.201Z"
+}

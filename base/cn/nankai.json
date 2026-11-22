@@ -1,0 +1,47 @@
+{
+ "school": "nankai",
+ "name": "南开大学",
+ "at": "2026-11-22T00:14:26.310Z",
+ "seconds": 13,
+ "tokens": 19943,
+ "entities": [
+  {
+   "id": "nankai-c10b6b36e7",
+   "type": "Event",
+   "school": "nankai",
+   "name": "关于举办2026年南开大学科技周活动的通知",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.nankai.edu.cn/2026/0522/c17471a596037/page.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": null,
+    "summary": "南开大学将举办2026年科技周系列科普活动，各学科活动日程及预约方式见附件。",
+    "event_kind": "activity",
+    "venue_name": null,
+    "organisation_name": "南开大学科研部、南开大学科协",
+    "speaker": null,
+    "occurrences": []
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "nankai-c10b6b36e7",
+   "field": "title",
+   "quote": "关于举办2026年南开大学科技周活动的通知",
+   "url": "https://www.nankai.edu.cn/2026/0522/c17471a596037/page.htm",
+   "check_confidence": 0.9661806851868194,
+   "passed": true
+  },
+  {
+   "entity_id": "nankai-c10b6b36e7",
+   "field": "organisation_name",
+   "quote": "南开大学科研部、南开大学科协",
+   "url": "https://www.nankai.edu.cn/2026/0522/c17471a596037/page.htm",
+   "check_confidence": 0.9664240936674108,
+   "passed": true
+  }
+ ]
+}

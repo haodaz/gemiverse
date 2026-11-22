@@ -1,0 +1,412 @@
+{
+ "school": "tsinghua",
+ "name": "清华大学",
+ "at": "2026-11-22T00:10:19.927Z",
+ "seconds": 25,
+ "tokens": 59951,
+ "entities": [
+  {
+   "id": "tsinghua-662307fc22",
+   "type": "Event",
+   "school": "tsinghua",
+   "name": "2026年度《柳叶刀人群健康与气候变化倒计时报告》发布",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.tsinghua.edu.cn/info/1002/128965.htm",
+    "needs": [
+     "explore_a_field",
+     "contribute_beyond_self"
+    ],
+    "start": "2026-10-29T14:00",
+    "summary": "2026年度《柳叶刀人群健康与气候变化倒计时报告》发布活动，聚焦气候变化与健康。",
+    "event_kind": "lecture",
+    "venue_name": "清华大学主楼接待厅",
+    "organisation_name": null,
+    "speaker": "清华大学地球系统科学系教授 蔡闻佳",
+    "occurrences": [
+     {
+      "start": "2026-10-29T14:00",
+      "end": "2026-10-29T16:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "tsinghua-f7b9ec3dee",
+   "type": "Event",
+   "school": "tsinghua",
+   "name": "清华艺术公开课 | 非遗的全球叙事与国际传播实践",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.tsinghua.edu.cn/info/1002/128908.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-10-28T14:30",
+    "summary": "清华大学艺术公开课，探讨非遗的全球叙事与国际传播实践。",
+    "event_kind": "lecture",
+    "venue_name": "清华大学大礼堂",
+    "organisation_name": null,
+    "speaker": "杨澜",
+    "occurrences": [
+     {
+      "start": "2026-10-28T14:30",
+      "end": "2026-10-28T16:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "tsinghua-83f3e020c9",
+   "type": "Event",
+   "school": "tsinghua",
+   "name": "“人文清华”讲坛：你是谁？探案三星堆",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.tsinghua.edu.cn/info/1002/129141.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-09T19:00",
+    "summary": "许杰教授将在“人文清华”讲坛循迹考古线索，解读三星堆文明。",
+    "event_kind": "lecture",
+    "venue_name": "清华大学大礼堂",
+    "organisation_name": "清华大学文科建设处 清华大学新闻与传播学院 清华大学影视传播研究中心",
+    "speaker": "许杰 清华大学卓越访问教授",
+    "occurrences": [
+     {
+      "start": "2026-11-09T19:00",
+      "end": "2026-11-09T21:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "tsinghua-4218b6376d",
+   "type": "Event",
+   "school": "tsinghua",
+   "name": "2026年度唯真讲坛系列宣讲第九讲：红军长征的光辉历程与伟大意义",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.tsinghua.edu.cn/info/1002/128634.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-10-14T14:00",
+    "summary": "张牧云主讲红军长征的光辉历程与伟大意义，纪念长征胜利90周年。",
+    "event_kind": "lecture",
+    "venue_name": "线上学习",
+    "organisation_name": null,
+    "speaker": "张牧云",
+    "occurrences": [
+     {
+      "start": "2026-10-14T14:00",
+      "end": "2026-10-14T15:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "tsinghua-cbea2e1bd3",
+   "type": "Event",
+   "school": "tsinghua",
+   "name": "帕拉第奥的中国对话：从经典建筑到当代实验",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.tsinghua.edu.cn/info/1002/128549.htm",
+    "needs": [
+     "explore_a_field",
+     "make_and_express"
+    ],
+    "start": "2026-07-10",
+    "summary": "清华大学艺术博物馆举办中意合作建筑与艺术展，探讨帕拉第奥思想的当代意义。",
+    "event_kind": "exhibition",
+    "venue_name": "清华大学艺术博物馆二层展厅",
+    "organisation_name": "清华大学艺术博物馆　都灵理工大学建筑与设计学院　清华大学建筑学院",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-07-10",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "tsinghua-09bcbf4ae9",
+   "type": "Event",
+   "school": "tsinghua",
+   "name": "水木开卷·真人图书馆78期 | 格非：文学的道路",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.tsinghua.edu.cn/info/1002/128619.htm",
+    "needs": [
+     "explore_a_field",
+     "make_and_express"
+    ],
+    "start": "2026-10-13T15:00",
+    "summary": "格非教授围绕散文集《云朵的道路》，解读阅读与写作及文学如何成为面对生活的方式。",
+    "event_kind": "lecture",
+    "venue_name": "清华大学图书馆老馆第一阅览室",
+    "organisation_name": "清华大学工会、清华大学图书馆",
+    "speaker": "格非",
+    "occurrences": [
+     {
+      "start": "2026-10-13T15:00",
+      "end": null
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "tsinghua-662307fc22",
+   "field": "title",
+   "quote": "2026年度《柳叶刀人群健康与气候变化倒计时报告》发布",
+   "url": "https://www.tsinghua.edu.cn/info/1002/128965.htm",
+   "check_confidence": 0.9633065937337176,
+   "passed": true
+  },
+  {
+   "entity_id": "tsinghua-662307fc22",
+   "field": "date",
+   "quote": "2026年10月29日 14:00 - 16:30",
+   "url": "https://www.tsinghua.edu.cn/info/1002/128965.htm",
+   "check_confidence": 0.9893963047318807,
+   "passed": true
+  },
+  {
+   "entity_id": "tsinghua-662307fc22",
+   "field": "start_time",
+   "quote": "14:00",
+   "url": "https://www.tsinghua.edu.cn/info/1002/128965.htm",
+   "check_confidence": 0.9755658849727146,
+   "passed": true
+  },
+  {
+   "entity_id": "tsinghua-662307fc22",
+   "field": "venue_name",
+   "quote": "清华大学主楼接待厅",
+   "url": "https://www.tsinghua.edu.cn/info/1002/128965.htm",
+   "check_confidence": 0.9725110146474336,
+   "passed": true
+  },
+  {
+   "entity_id": "tsinghua-662307fc22",
+   "field": "speaker",
+   "quote": "清华大学地球系统科学系教授 蔡闻佳",
+   "url": "https://www.tsinghua.edu.cn/info/1002/128965.htm",
+   "check_confidence": 0.9643580840366913,
+   "passed": true
+  },
+  {
+   "entity_id": "tsinghua-f7b9ec3dee",
+   "field": "title",
+   "quote": "清华艺术公开课 | 非遗的全球叙事与国际传播实践",
+   "url": "https://www.tsinghua.edu.cn/info/1002/128908.htm",
+   "check_confidence": 0.9754094111321922,
+   "passed": true
+  },
+  {
+   "entity_id": "tsinghua-f7b9ec3dee",
+   "field": "date",
+   "quote": "2026年10月28日 14:30 - 16:30",
+   "url": "https://www.tsinghua.edu.cn/info/1002/128908.htm",
+   "check_confidence": 0.9615127074042016,
+   "passed": true
+  },
+  {
+   "entity_id": "tsinghua-f7b9ec3dee",
+   "field": "start_time",
+   "quote": "14:30",
+   "url": "https://www.tsinghua.edu.cn/info/1002/128908.htm",
+   "check_confidence": 0.965660566367615,
+   "passed": true
+  },
+  {
+   "entity_id": "tsinghua-f7b9ec3dee",
+   "field": "venue_name",
+   "quote": "清华大学大礼堂",
+   "url": "https://www.tsinghua.edu.cn/info/1002/128908.htm",
+   "check_confidence": 0.9664585865637919,
+   "passed": true
+  },
+  {
+   "entity_id": "tsinghua-f7b9ec3dee",
+   "field": "speaker",
+   "quote": "杨澜",
+   "url": "https://www.tsinghua.edu.cn/info/1002/128908.htm",
+   "check_confidence": 0.9850917609523256,
+   "passed": true
+  },
+  {
+   "entity_id": "tsinghua-83f3e020c9",
+   "field": "title",
+   "quote": "“人文清华”讲坛：你是谁？探案三星堆",
+   "url": "https://www.tsinghua.edu.cn/info/1002/129141.htm",
+   "check_confidence": 0.9777982455280706,
+   "passed": true
+  },
+  {
+   "entity_id": "tsinghua-83f3e020c9",
+   "field": "date",
+   "quote": "2026年11月9日 19:00 - 21:00",
+   "url": "https://www.tsinghua.edu.cn/info/1002/129141.htm",
+   "check_confidence": 0.956239357422852,
+   "passed": true
+  },
+  {
+   "entity_id": "tsinghua-83f3e020c9",
+   "field": "start_time",
+   "quote": "19:00",
+   "url": "https://www.tsinghua.edu.cn/info/1002/129141.htm",
+   "check_confidence": 0.9662852250535193,
+   "passed": true
+  },
+  {
+   "entity_id": "tsinghua-83f3e020c9",
+   "field": "venue_name",
+   "quote": "清华大学大礼堂",
+   "url": "https://www.tsinghua.edu.cn/info/1002/129141.htm",
+   "check_confidence": 0.9711445662951296,
+   "passed": true
+  },
+  {
+   "entity_id": "tsinghua-83f3e020c9",
+   "field": "organisation_name",
+   "quote": "清华大学文科建设处 清华大学新闻与传播学院 清华大学影视传播研究中心",
+   "url": "https://www.tsinghua.edu.cn/info/1002/129141.htm",
+   "check_confidence": 0.9627511480891788,
+   "passed": true
+  },
+  {
+   "entity_id": "tsinghua-83f3e020c9",
+   "field": "speaker",
+   "quote": "许杰 清华大学卓越访问教授",
+   "url": "https://www.tsinghua.edu.cn/info/1002/129141.htm",
+   "check_confidence": 0.9650741919345747,
+   "passed": true
+  },
+  {
+   "entity_id": "tsinghua-4218b6376d",
+   "field": "title",
+   "quote": "2026年度唯真讲坛系列宣讲第九讲：红军长征的光辉历程与伟大意义",
+   "url": "https://www.tsinghua.edu.cn/info/1002/128634.htm",
+   "check_confidence": 0.9757430952938239,
+   "passed": true
+  },
+  {
+   "entity_id": "tsinghua-4218b6376d",
+   "field": "date",
+   "quote": "时间：2026年10月14日（星期三）14:00 - 15:30",
+   "url": "https://www.tsinghua.edu.cn/info/1002/128634.htm",
+   "check_confidence": 0.9658014444826938,
+   "passed": true
+  },
+  {
+   "entity_id": "tsinghua-4218b6376d",
+   "field": "start_time",
+   "quote": "14:00",
+   "url": "https://www.tsinghua.edu.cn/info/1002/128634.htm",
+   "check_confidence": 0.9804104136251236,
+   "passed": true
+  },
+  {
+   "entity_id": "tsinghua-4218b6376d",
+   "field": "venue_name",
+   "quote": "参与方式：线上学习",
+   "url": "https://www.tsinghua.edu.cn/info/1002/128634.htm",
+   "check_confidence": 0.9747551762873069,
+   "passed": true
+  },
+  {
+   "entity_id": "tsinghua-4218b6376d",
+   "field": "speaker",
+   "quote": "张牧云",
+   "url": "https://www.tsinghua.edu.cn/info/1002/128634.htm",
+   "check_confidence": 0.979902068659685,
+   "passed": true
+  },
+  {
+   "entity_id": "tsinghua-cbea2e1bd3",
+   "field": "title",
+   "quote": "帕拉第奥的中国对话：从经典建筑到当代实验",
+   "url": "https://www.tsinghua.edu.cn/info/1002/128549.htm",
+   "check_confidence": 0.9860041029879001,
+   "passed": true
+  },
+  {
+   "entity_id": "tsinghua-cbea2e1bd3",
+   "field": "date",
+   "quote": "2026年7月10日 – 2026年12月6日",
+   "url": "https://www.tsinghua.edu.cn/info/1002/128549.htm",
+   "check_confidence": 0.9887902562202299,
+   "passed": true
+  },
+  {
+   "entity_id": "tsinghua-cbea2e1bd3",
+   "field": "venue_name",
+   "quote": "清华大学艺术博物馆二层展厅",
+   "url": "https://www.tsinghua.edu.cn/info/1002/128549.htm",
+   "check_confidence": 0.9722753314045501,
+   "passed": true
+  },
+  {
+   "entity_id": "tsinghua-cbea2e1bd3",
+   "field": "organisation_name",
+   "quote": "清华大学艺术博物馆　都灵理工大学建筑与设计学院　清华大学建筑学院",
+   "url": "https://www.tsinghua.edu.cn/info/1002/128549.htm",
+   "check_confidence": 0.9828105951812985,
+   "passed": true
+  },
+  {
+   "entity_id": "tsinghua-09bcbf4ae9",
+   "field": "title",
+   "quote": "水木开卷·真人图书馆78期 | 格非：文学的道路",
+   "url": "https://www.tsinghua.edu.cn/info/1002/128619.htm",
+   "check_confidence": 0.9663951580149609,
+   "passed": true
+  },
+  {
+   "entity_id": "tsinghua-09bcbf4ae9",
+   "field": "date",
+   "quote": "2026年10月13日（周二）15:00",
+   "url": "https://www.tsinghua.edu.cn/info/1002/128619.htm",
+   "check_confidence": 0.9728301194513704,
+   "passed": true
+  },
+  {
+   "entity_id": "tsinghua-09bcbf4ae9",
+   "field": "start_time",
+   "quote": "15:00",
+   "url": "https://www.tsinghua.edu.cn/info/1002/128619.htm",
+   "check_confidence": 0.9632616930730321,
+   "passed": true
+  },
+  {
+   "entity_id": "tsinghua-09bcbf4ae9",
+   "field": "venue_name",
+   "quote": "清华大学图书馆老馆第一阅览室",
+   "url": "https://www.tsinghua.edu.cn/info/1002/128619.htm",
+   "check_confidence": 0.9689292846413872,
+   "passed": true
+  },
+  {
+   "entity_id": "tsinghua-09bcbf4ae9",
+   "field": "organisation_name",
+   "quote": "清华大学工会、清华大学图书馆",
+   "url": "https://www.tsinghua.edu.cn/info/1002/128619.htm",
+   "check_confidence": 0.9668072203911222,
+   "passed": true
+  },
+  {
+   "entity_id": "tsinghua-09bcbf4ae9",
+   "field": "speaker",
+   "quote": "格非",
+   "url": "https://www.tsinghua.edu.cn/info/1002/128619.htm",
+   "check_confidence": 0.9894978853134175,
+   "passed": true
+  }
+ ]
+}

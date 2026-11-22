@@ -1,0 +1,104 @@
+{
+ "school": "utexas",
+ "name": "University of Texas at Austin",
+ "at": "2026-11-22T00:19:15.932Z",
+ "source": "https://en.wikipedia.org/wiki/University%20of%20Texas%20at%20Austin",
+ "character": "The main campus has 150 buildings, featuring the Beaux-Arts Main Building with its 307-foot tower in the middle of campus.",
+ "map": "/art/map/utexas.jpg",
+ "landmarks": [
+  {
+   "name": "Main Building",
+   "name_en": "Main Building",
+   "kind": "tower",
+   "quote": "the Beaux-Arts Main Building, including a 307-foot (94 m) tower designed by Paul Philippe Cret.",
+   "look": "Beaux-Arts building with a tall 307-foot tower and observation deck.",
+   "check": 0.9713752140185984,
+   "confidence": 0.9713752140185984,
+   "passed": true,
+   "x": 0.52,
+   "y": 0.45
+  },
+  {
+   "name": "Blanton Museum of Art",
+   "name_en": "Blanton Museum of Art",
+   "kind": "museum",
+   "quote": "The newest museum, the 155,000-square-foot (14,400 m2) Blanton Museum of Art, is the largest university art museum",
+   "look": "Large, plain modern art museum building.",
+   "check": 0.9742230595966245,
+   "confidence": 0.9742230595966245,
+   "passed": true,
+   "x": 0.21,
+   "y": 0.2
+  },
+  {
+   "name": "Lyndon B. Johnson Presidential Library",
+   "name_en": "Lyndon B. Johnson Presidential Library",
+   "kind": "library",
+   "quote": "including the Lyndon B. Johnson Presidential Library and the Blanton Museum of Art",
+   "look": "Plain presidential library building.",
+   "check": 0.8934048908505715,
+   "confidence": 0.8934048908505715,
+   "passed": true,
+   "x": 0.82,
+   "y": 0.17
+  },
+  {
+   "name": "Perry–Castañeda Library",
+   "name_en": "Perry–Castañeda Library",
+   "kind": "library",
+   "quote": "The Perry–Castañeda Library, which houses the central University Libraries operations",
+   "look": "Plain central university library building.",
+   "check": 0.9759356394703039,
+   "confidence": 0.9759356394703039,
+   "passed": true,
+   "x": 0.16,
+   "y": 0.69
+  },
+  {
+   "name": "Harry Ransom Humanities Research Center",
+   "name_en": "Harry Ransom Humanities Research Center",
+   "kind": "other",
+   "quote": "The holdings of the university's Harry Ransom Humanities Research Center include",
+   "look": "Plain humanities research center building.",
+   "check": 0.9695633434929752,
+   "confidence": 0.9695633434929752,
+   "passed": true,
+   "x": 0.85,
+   "y": 0.68
+  },
+  {
+   "name": "Benson Latin American Collection",
+   "name_en": "Benson Latin American Collection",
+   "kind": "library",
+   "quote": "The Benson Latin American Collection holds the largest collection of Latin American materials",
+   "look": "Plain university library building.",
+   "check": 0.9751102042654807,
+   "confidence": 0.9751102042654807,
+   "passed": true,
+   "x": 0.65,
+   "y": 0.9
+  },
+  {
+   "name": "Norman Hackerman building",
+   "name_en": "Norman Hackerman building",
+   "kind": "hall",
+   "quote": "the university opened the state-of-the-art Norman Hackerman building",
+   "look": "Modern science laboratory and teaching building.",
+   "check": 0.9732399811629392,
+   "confidence": 0.9732399811629392,
+   "passed": true
+  },
+  {
+   "name": "Dell Computer Science Hall",
+   "name_en": "Dell Computer Science Hall",
+   "kind": "hall",
+   "quote": "Bill & Melinda Gates Computer Science Complex and Dell Computer Science Hall",
+   "look": "Plain modern academic hall.",
+   "check": 0.9666813002098567,
+   "confidence": 0.9666813002098567,
+   "passed": true
+  }
+ ],
+ "tokens": 10398,
+ "seconds": 27
+}

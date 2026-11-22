@@ -1,0 +1,104 @@
+{
+ "school": "umich",
+ "name": "University of Michigan",
+ "at": "2026-11-22T00:17:55.542Z",
+ "source": "https://en.wikipedia.org/wiki/University%20of%20Michigan",
+ "character": "The Ann Arbor campus features Classical, Art Deco, and Gothic buildings on Central Campus, with the Huron River separating it from North Campus.",
+ "map": "/art/map/umich.jpg",
+ "landmarks": [
+  {
+   "name": "Michigan Stadium",
+   "name_en": "Michigan Stadium",
+   "kind": "stadium",
+   "quote": "It encompasses Michigan Stadium, which is the largest stadium in the United States",
+   "look": "massive open-air sports stadium",
+   "check": 0.9809605766651913,
+   "confidence": 0.9809605766651913,
+   "passed": true,
+   "x": 0.18,
+   "y": 0.45
+  },
+  {
+   "name": "The Diag",
+   "name_en": "The Diag",
+   "kind": "quad",
+   "quote": "an open space known as The Diag began to take shape.",
+   "look": "open campus quadrangle",
+   "check": 0.9854023114111533,
+   "confidence": 0.9854023114111533,
+   "passed": true,
+   "x": 0.5,
+   "y": 0.55
+  },
+  {
+   "name": "Burton Memorial Tower",
+   "name_en": "Burton Memorial Tower",
+   "kind": "tower",
+   "quote": "and Art Deco Burton Memorial Tower (1936) all feature unusual and costly materials",
+   "look": "tall Art Deco tower",
+   "check": 0.9783440971046657,
+   "confidence": 0.9783440971046657,
+   "passed": true,
+   "x": 0.59,
+   "y": 0.43
+  },
+  {
+   "name": "Law Quadrangle",
+   "name_en": "Law Quadrangle",
+   "kind": "quad",
+   "quote": "York and Sawyer also designed the Law Quadrangle, which features a flagstone courtyard",
+   "look": "Gothic quadrangle with a flagstone courtyard",
+   "check": 0.9840742210693673,
+   "confidence": 0.9840742210693673,
+   "passed": true,
+   "x": 0.33,
+   "y": 0.77
+  },
+  {
+   "name": "Angell Hall",
+   "name_en": "Angell Hall",
+   "kind": "hall",
+   "quote": "Classical Greek Angell Hall (1924)",
+   "look": "grand Classical Greek academic hall",
+   "check": 0.9832729590382228,
+   "confidence": 0.9832729590382228,
+   "passed": true,
+   "x": 0.86,
+   "y": 0.43
+  },
+  {
+   "name": "Clements Library",
+   "name_en": "Clements Library",
+   "kind": "library",
+   "quote": "Kahn's Italian Renaissance Clements Library (1923)",
+   "look": "Italian Renaissance style library building",
+   "check": 0.9894839671673454,
+   "confidence": 0.9894839671673454,
+   "passed": true,
+   "x": 0.84,
+   "y": 0.76
+  },
+  {
+   "name": "Hatcher Graduate Library",
+   "name_en": "Hatcher Graduate Library",
+   "kind": "library",
+   "quote": "Two main libraries, Hatcher Graduate Library and Shapiro Undergraduate Library",
+   "look": "large plain university library building",
+   "check": 0.9855327921180875,
+   "confidence": 0.9855327921180875,
+   "passed": true
+  },
+  {
+   "name": "Lurie Tower",
+   "name_en": "Lurie Tower",
+   "kind": "tower",
+   "quote": "The North Campus Diag features a bell tower called Lurie Tower, which contains a grand carillon.",
+   "look": "tall bell tower on a campus diag",
+   "check": 0.9834075971952473,
+   "confidence": 0.9834075971952473,
+   "passed": true
+  }
+ ],
+ "tokens": 9482,
+ "seconds": 27
+}

@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. The campus features two perpendicular grassy areas, The Cut and The Mall, surrounded by Beaux-Arts buildings with green Spanish tile roofs and International Style structures. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) The Cut, a other: Large grassy area forming a central campus backbone.; (2) The Mall, a other: Grassy area running perpendicular to The Cut.; (3) Cohon University Center, a hall: Modern student union building.; (4) Gates Hillman Complex, a hall: Large academic complex with offices, labs, and classrooms.; (5) Randy Pausch Memorial Footbridge, a bridge: Footbridge connecting two campus buildings.; (6) Tepper Quadrangle, a quad: North campus quadrangle with a business school and welcome center.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 17,
+ "tokens": 2246,
+ "at": "2026-11-22T00:17:52.478Z"
+}

@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students.  Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Baisha Academy, a other: Plain student residential area buildings, details unknown; (2) Cuibai Academy, a other: Plain student residential area buildings, details unknown; (3) Qingxi Academy, a other: Plain student residential area buildings, details unknown; (4) Danyang Academy, a other: Plain student residential area buildings, details unknown; (5) Lantian Academy, a other: Plain student residential area buildings, details unknown; (6) Ziyun Academy, a other: Plain student residential area buildings, details unknown. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 27,
+ "tokens": 2645,
+ "at": "2026-11-22T00:13:11.197Z"
+}

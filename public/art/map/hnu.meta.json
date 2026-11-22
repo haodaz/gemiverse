@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. Built against Yuelu Mountain and stretching east to the Xiang River, the campus blends black-and-white Ming-Qing academy courtyards, red-walled green-tiled Republican buildings, and modern halls. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Yuelu Academy, a other: Black-and-white Ming-Qing courtyard complex arranged along a central axis.; (2) Yuelu Mountain, a hill: Mountain rising immediately to the west of the campus.; (3) Grand Auditorium, a hall: Republican-era auditorium with red walls and green tiles.; (4) Old Library, a library: Republican-era library building with red walls and green tiles.; (5) Science Hall, a hall: Republican-era science building with red walls and green tiles.; (6) Engineering Hall, a hall: Republican-era engineering hall with red walls and green tiles.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 18,
+ "tokens": 2359,
+ "at": "2026-11-22T00:16:41.897Z"
+}

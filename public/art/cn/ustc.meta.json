@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A soft, warm storybook illustration in gentle pastel colours, wide 16:9, flat shapes with light texture, golden afternoon light, a few tiny students walking. No text, no letters, no logos, no emblems, no watermarks. Scene: a Hefei university campus with a simple stone gate, a small round pond with a bridge, cherry trees in pink blossom and low brick science buildings.",
+ "reference": null,
+ "seconds": 14,
+ "tokens": 1542,
+ "at": "2026-11-21T23:15:29.891Z"
+}

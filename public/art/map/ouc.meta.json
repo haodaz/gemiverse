@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. The main Laoshan campus sits at the foot of Mount Lao and features modern facilities including a library, gymnasium, track field, swimming pool, and dining halls. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Library, a library: A plain modern university library building.; (2) Gymnasium, a stadium: A plain large indoor sports gymnasium.; (3) Track and Field Stadium, a stadium: An outdoor athletic track and field.; (4) Natatorium, a other: A plain indoor swimming pool building.; (5) Engineering Training Center, a other: A plain modern academic training building.; (6) South, North, and East Zone Dining Halls, a hall: Plain campus dining hall buildings.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 25,
+ "tokens": 2460,
+ "at": "2026-11-22T00:16:06.374Z"
+}

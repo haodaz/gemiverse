@@ -1,0 +1,104 @@
+{
+ "school": "notredame",
+ "name": "University of Notre Dame",
+ "at": "2026-11-22T00:14:19.656Z",
+ "source": "https://en.wikipedia.org/wiki/University%20of%20Notre%20Dame",
+ "character": "The 1,250-acre suburban campus features greenery, two lakes, seven quadrangles, athletic fields, and around 170 buildings including the French Revival-style Basilica.",
+ "map": "/art/map/notredame.jpg",
+ "landmarks": [
+  {
+   "name": "Main Building",
+   "name_en": "Main Building",
+   "kind": "other",
+   "quote": "The Main Building serves as the center for the university's administrative offices",
+   "look": "Administrative building topped by a golden dome and statue of Mary.",
+   "check": 0.9749326538406062,
+   "confidence": 0.9749326538406062,
+   "passed": true,
+   "x": 0.35,
+   "y": 0.42
+  },
+  {
+   "name": "Basilica of the Sacred Heart",
+   "name_en": "Basilica of the Sacred Heart",
+   "kind": "other",
+   "quote": "The current Basilica of the Sacred Heart is on the site of Sorin's original church",
+   "look": "French Revival-style church with stained glass windows and a bell tower.",
+   "check": 0.9791574937853774,
+   "confidence": 0.9791574937853774,
+   "passed": true,
+   "x": 0.51,
+   "y": 0.33
+  },
+  {
+   "name": "Notre Dame Stadium",
+   "name_en": "Notre Dame Stadium",
+   "kind": "stadium",
+   "quote": "The most prominent is Notre Dame Stadium, home of the Fighting Irish football team",
+   "look": "Large football stadium seating over 80,000 people.",
+   "check": 0.9647627355649696,
+   "confidence": 0.9647627355649696,
+   "passed": true,
+   "x": 0.72,
+   "y": 0.22
+  },
+  {
+   "name": "Hesburgh Library",
+   "name_en": "Hesburgh Library",
+   "kind": "library",
+   "quote": "the Hesburgh Library with its Word of Life stone mural",
+   "look": "Library building featuring a prominent stone mural on its exterior.",
+   "check": 0.9816173348961329,
+   "confidence": 0.9816173348961329,
+   "passed": true,
+   "x": 0.81,
+   "y": 0.42
+  },
+  {
+   "name": "Main Quad",
+   "name_en": "Main Quad",
+   "kind": "quad",
+   "quote": "The main building is located on Main Quad (also known as \"God Quad\")",
+   "look": "Historic central quadrangle with greenery in front of the Main Building.",
+   "check": 0.978436541287652,
+   "confidence": 0.978436541287652,
+   "passed": true,
+   "x": 0.53,
+   "y": 0.61
+  },
+  {
+   "name": "Grotto of Our Lady of Lourdes",
+   "name_en": "Grotto of Our Lady of Lourdes",
+   "kind": "other",
+   "quote": "The Grotto of Our Lady of Lourdes, built in 1896",
+   "look": "Stone grotto replica of the shrine in Lourdes.",
+   "check": 0.95802746434307,
+   "confidence": 0.95802746434307,
+   "passed": true,
+   "x": 0.14,
+   "y": 0.71
+  },
+  {
+   "name": "East Quad",
+   "name_en": "East Quad",
+   "kind": "quad",
+   "quote": "geothermal wells on East Quad",
+   "look": "Open campus quadrangle with greenery.",
+   "check": 0.9836216312033731,
+   "confidence": 0.9836216312033731,
+   "passed": true
+  },
+  {
+   "name": "Frank Eck Stadium",
+   "name_en": "Frank Eck Stadium",
+   "kind": "stadium",
+   "quote": "such as the Frank Eck Stadium for baseball.",
+   "look": "Outdoor baseball stadium and field.",
+   "check": 0.9730304565209461,
+   "confidence": 0.9730304565209461,
+   "passed": true
+  }
+ ],
+ "tokens": 10474,
+ "seconds": 36
+}

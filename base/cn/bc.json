@@ -1,0 +1,797 @@
+{
+ "school": "bc",
+ "name": "Boston College",
+ "at": "2026-11-22T00:21:13.570Z",
+ "seconds": 43,
+ "tokens": 73153,
+ "entities": [
+  {
+   "id": "bc-192c2330cd",
+   "type": "Event",
+   "school": "bc",
+   "name": "Macroeconomics Lunch: Carlos Eggers, Boston College",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.bc.edu/event/macroeconomics-lunch-carlos-eggers-boston-college",
+    "needs": [
+     "explore_a_field",
+     "find_my_people"
+    ],
+    "start": "2026-12-02T12:00",
+    "summary": "Carlos Eggers from Boston College will present 'Risky Fiscal Multipliers' at a Macroeconomics Lunch seminar hosted by the Economics Department.",
+    "event_kind": "lecture",
+    "venue_name": "Maloney Hall, 313",
+    "organisation_name": "Economics, Morrissey College of Arts and Sciences",
+    "speaker": "Carlos Eggers, Boston College",
+    "occurrences": [
+     {
+      "start": "2026-12-02T12:00",
+      "end": "2026-12-02T13:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "bc-1a1a7e9b4f",
+   "type": "Event",
+   "school": "bc",
+   "name": "Econometrics Seminar: Yiru Wang, University of Pittsburgh",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.bc.edu/event/econometrics-seminar-yiru-wang-university-of-pittsburgh",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-12-04T14:00",
+    "summary": "An econometrics seminar featuring Yiru Wang from the University of Pittsburgh at Boston College.",
+    "event_kind": "lecture",
+    "venue_name": "Maloney Hall, 313",
+    "organisation_name": "Morrissey College of Arts and Sciences",
+    "speaker": "Yiru Wang, University of Pittsburgh",
+    "occurrences": [
+     {
+      "start": "2026-12-04T14:00",
+      "end": "2026-12-04T15:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "bc-4d962d905a",
+   "type": "Event",
+   "school": "bc",
+   "name": "Econometrics Seminar: Kohei Yata, University of Wisconsin–Madison",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.bc.edu/event/econometrics-seminar-kohei-yata-universityofwisconsinmadison",
+    "needs": [
+     "explore_a_field",
+     "build_a_skill"
+    ],
+    "start": "2026-12-07T16:00",
+    "summary": "An econometrics seminar featuring Kohei Yata from the University of Wisconsin–Madison at Boston College.",
+    "event_kind": "lecture",
+    "venue_name": "Maloney Hall, 313",
+    "organisation_name": "Morrissey College of Arts and Sciences",
+    "speaker": "Kohei Yata, University of Wisconsin–Madison",
+    "occurrences": [
+     {
+      "start": "2026-12-07T16:00",
+      "end": "2026-12-07T17:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "bc-e6d3ea007e",
+   "type": "Event",
+   "school": "bc",
+   "name": "Macroeconomics and Financial Economics Seminar: Corina Boar, New York University",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.bc.edu/event/macroeconomics-and-financial-economics-seminar-corina-boar-new-york-university",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-12-10T15:30",
+    "summary": "Corina Boar from New York University presents at the Macroeconomics and Financial Economics Seminar hosted by Boston College's Economics Department.",
+    "event_kind": "lecture",
+    "venue_name": "Maloney Hall, 313",
+    "organisation_name": "Economics, Morrissey College of Arts and Sciences",
+    "speaker": "Corina Boar, New York University",
+    "occurrences": [
+     {
+      "start": "2026-12-10T15:30",
+      "end": "2026-12-10T17:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "bc-c76cadd586",
+   "type": "Event",
+   "school": "bc",
+   "name": "Macro Lunch: Yang Liu, Boston College",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.bc.edu/event/macroeconomics-yang-liu-boston-college-2691",
+    "needs": [
+     "explore_a_field",
+     "find_my_people"
+    ],
+    "start": "2026-12-09T12:00",
+    "summary": "Yang Liu from Boston College will present \"Uncertainty Discounting\" at a Macro Lunch seminar hosted by the Economics department.",
+    "event_kind": "lecture",
+    "venue_name": "Maloney Hall, 313",
+    "organisation_name": "Economics, Morrissey College of Arts and Sciences",
+    "speaker": "Yang Liu, Boston College",
+    "occurrences": [
+     {
+      "start": "2026-12-09T12:00",
+      "end": "2026-12-09T13:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "bc-9e91878b3d",
+   "type": "Event",
+   "school": "bc",
+   "name": "Faith Feeds: Advent | Faith",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.bc.edu/event/faith-feeds-advent-faith",
+    "needs": [
+     "find_my_people",
+     "rest_and_recover"
+    ],
+    "start": "2026-12-11T13:00",
+    "summary": "A virtual Faith Feeds conversation on Faith in Advent hosted by the Church in the 21st Century Center.",
+    "event_kind": "activity",
+    "venue_name": "Virtual Event",
+    "organisation_name": "Church in the 21st Century Center",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-11T13:00",
+      "end": "2026-12-11T14:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "bc-b434f5a99c",
+   "type": "Event",
+   "school": "bc",
+   "name": "How Elite Universities Respond Strategically to Polycrisis",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.bc.edu/event/how-elite-universities-respond-strategically-to-polycrisis",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-12-08T12:00",
+    "summary": "A lecture by Morten Hansen on how elite universities respond strategically to polycrisis, hosted by the Center for International Higher Education.",
+    "event_kind": "lecture",
+    "venue_name": "Campion Hall, 208",
+    "organisation_name": "Center for International Higher Education (CIHE)",
+    "speaker": "Morten Hansen, DTU Management, Denmark",
+    "occurrences": [
+     {
+      "start": "2026-12-08T12:00",
+      "end": "2026-12-08T13:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "bc-8629314809",
+   "type": "Event",
+   "school": "bc",
+   "name": "McMullen Holiday Celebration",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.bc.edu/event/mcmullen-holiday-celebration-2097",
+    "needs": [
+     "find_my_people",
+     "make_and_express"
+    ],
+    "start": "2026-12-05T12:00",
+    "summary": "The McMullen Museum hosts a free annual holiday celebration featuring music, treats, exhibition tours, games, and arts and crafts.",
+    "event_kind": "activity",
+    "venue_name": "McMullen Museum of Art, 2101 Commonwealth Avenue, Boston, MA 02135",
+    "organisation_name": "Art, Art History, and Film, Morrissey College of Arts and Sciences, Arts Council, McMullen Museum of Art",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-05T12:00",
+      "end": "2026-12-05T16:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "bc-8b4ad9b025",
+   "type": "Event",
+   "school": "bc",
+   "name": "A Midsummer Night’s Dream: A New Musical",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.bc.edu/event/a-midsummer-nights-dream-a-new-musical",
+    "needs": [
+     "make_and_express",
+     "rest_and_recover"
+    ],
+    "start": "2026-11-22T14:00",
+    "summary": "A new musical adaptation of Shakespeare's A Midsummer Night's Dream set in a humid, Florida-like setting, presented by the Theatre Department.",
+    "event_kind": "other",
+    "venue_name": "Robsham Theater Arts Center, Main Stage",
+    "organisation_name": "Robsham Theater, Theatre, Morrissey College of Arts and Sciences",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-22T14:00",
+      "end": "2026-11-22T16:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "bc-c437d32f45",
+   "type": "Event",
+   "school": "bc",
+   "name": "Gaelic Roots ft. Susan McKeown",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.bc.edu/event/gaelic-roots-ft-susan-mckeown",
+    "needs": [
+     "rest_and_recover",
+     "make_and_express"
+    ],
+    "start": "2026-12-03T18:30",
+    "summary": "Grammy Award-winning vocalist and songwriter Susan McKeown performs as part of the Gaelic Roots Series at Boston College.",
+    "event_kind": "other",
+    "venue_name": "Connolly House, Andover Room",
+    "organisation_name": "Gaelic Roots Series, Irish Studies",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-03T18:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "bc-6822e4151c",
+   "type": "Event",
+   "school": "bc",
+   "name": "Econometrics Seminar: Matt Masten, Duke University",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.bc.edu/event/econometrics-seminar-matt-masten-duke-university",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-30T16:00",
+    "summary": "Matt Masten from Duke University will present an econometrics seminar at Boston College.",
+    "event_kind": "lecture",
+    "venue_name": "Maloney Hall, 313",
+    "organisation_name": "David Hughes",
+    "speaker": "Matt Masten, Duke University",
+    "occurrences": [
+     {
+      "start": "2026-11-30T16:00",
+      "end": "2026-11-30T17:00"
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "bc-192c2330cd",
+   "field": "title",
+   "quote": "Macroeconomics Lunch: Carlos Eggers, Boston College",
+   "url": "https://events.bc.edu/event/macroeconomics-lunch-carlos-eggers-boston-college",
+   "check_confidence": 0.9848867082772305,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-192c2330cd",
+   "field": "date",
+   "quote": "Wednesday, December 2, 2026 12pm to 1pm",
+   "url": "https://events.bc.edu/event/macroeconomics-lunch-carlos-eggers-boston-college",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-192c2330cd",
+   "field": "start_time",
+   "quote": "12:00",
+   "url": "https://events.bc.edu/event/macroeconomics-lunch-carlos-eggers-boston-college",
+   "check_confidence": 0.9739345899631427,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-192c2330cd",
+   "field": "venue_name",
+   "quote": "Maloney Hall, 313",
+   "url": "https://events.bc.edu/event/macroeconomics-lunch-carlos-eggers-boston-college",
+   "check_confidence": 0.975900003316241,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-192c2330cd",
+   "field": "organisation_name",
+   "quote": "Economics, Morrissey College of Arts and Sciences",
+   "url": "https://events.bc.edu/event/macroeconomics-lunch-carlos-eggers-boston-college",
+   "check_confidence": 0.9791301958024018,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-192c2330cd",
+   "field": "speaker",
+   "quote": "Carlos Eggers, Boston College",
+   "url": "https://events.bc.edu/event/macroeconomics-lunch-carlos-eggers-boston-college",
+   "check_confidence": 0.985346742218575,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-1a1a7e9b4f",
+   "field": "title",
+   "quote": "Econometrics Seminar: Yiru Wang, University of Pittsburgh",
+   "url": "https://events.bc.edu/event/econometrics-seminar-yiru-wang-university-of-pittsburgh",
+   "check_confidence": 0.9825431448860268,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-1a1a7e9b4f",
+   "field": "date",
+   "quote": "Friday, December 4, 2026 2pm to 3pm",
+   "url": "https://events.bc.edu/event/econometrics-seminar-yiru-wang-university-of-pittsburgh",
+   "check_confidence": 0.9798249848088544,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-1a1a7e9b4f",
+   "field": "start_time",
+   "quote": "14:00",
+   "url": "https://events.bc.edu/event/econometrics-seminar-yiru-wang-university-of-pittsburgh",
+   "check_confidence": 0.9771581015970587,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-1a1a7e9b4f",
+   "field": "venue_name",
+   "quote": "Maloney Hall, 313",
+   "url": "https://events.bc.edu/event/econometrics-seminar-yiru-wang-university-of-pittsburgh",
+   "check_confidence": 0.9689796987261861,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-1a1a7e9b4f",
+   "field": "organisation_name",
+   "quote": "Morrissey College of Arts and Sciences",
+   "url": "https://events.bc.edu/event/econometrics-seminar-yiru-wang-university-of-pittsburgh",
+   "check_confidence": 0.8784313937019539,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-1a1a7e9b4f",
+   "field": "speaker",
+   "quote": "Yiru Wang, University of Pittsburgh",
+   "url": "https://events.bc.edu/event/econometrics-seminar-yiru-wang-university-of-pittsburgh",
+   "check_confidence": 0.9760939591706318,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-4d962d905a",
+   "field": "title",
+   "quote": "Econometrics Seminar: Kohei Yata, University of Wisconsin–Madison",
+   "url": "https://events.bc.edu/event/econometrics-seminar-kohei-yata-universityofwisconsinmadison",
+   "check_confidence": 0.9799098671120906,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-4d962d905a",
+   "field": "date",
+   "quote": "Monday, December 7, 2026 4pm to 5pm",
+   "url": "https://events.bc.edu/event/econometrics-seminar-kohei-yata-universityofwisconsinmadison",
+   "check_confidence": 0.9679158859949315,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-4d962d905a",
+   "field": "start_time",
+   "quote": "16:00",
+   "url": "https://events.bc.edu/event/econometrics-seminar-kohei-yata-universityofwisconsinmadison",
+   "check_confidence": 0.9816204918042951,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-4d962d905a",
+   "field": "venue_name",
+   "quote": "Maloney Hall, 313",
+   "url": "https://events.bc.edu/event/econometrics-seminar-kohei-yata-universityofwisconsinmadison",
+   "check_confidence": 0.9874482406901627,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-4d962d905a",
+   "field": "organisation_name",
+   "quote": "Morrissey College of Arts and Sciences",
+   "url": "https://events.bc.edu/event/econometrics-seminar-kohei-yata-universityofwisconsinmadison",
+   "check_confidence": 0.8221398099674241,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-4d962d905a",
+   "field": "speaker",
+   "quote": "Kohei Yata, University of Wisconsin–Madison",
+   "url": "https://events.bc.edu/event/econometrics-seminar-kohei-yata-universityofwisconsinmadison",
+   "check_confidence": 0.9746595708196188,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-e6d3ea007e",
+   "field": "title",
+   "quote": "Macroeconomics and Financial Economics Seminar: Corina Boar, New York University",
+   "url": "https://events.bc.edu/event/macroeconomics-and-financial-economics-seminar-corina-boar-new-york-university",
+   "check_confidence": 0.984587351880107,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-e6d3ea007e",
+   "field": "date",
+   "quote": "Thursday, December 10, 2026 3:30pm to 5pm",
+   "url": "https://events.bc.edu/event/macroeconomics-and-financial-economics-seminar-corina-boar-new-york-university",
+   "check_confidence": 0.9810497023759696,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-e6d3ea007e",
+   "field": "start_time",
+   "quote": "15:30",
+   "url": "https://events.bc.edu/event/macroeconomics-and-financial-economics-seminar-corina-boar-new-york-university",
+   "check_confidence": 0.9789233444753347,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-e6d3ea007e",
+   "field": "venue_name",
+   "quote": "Maloney Hall, 313",
+   "url": "https://events.bc.edu/event/macroeconomics-and-financial-economics-seminar-corina-boar-new-york-university",
+   "check_confidence": 0.9769532995086919,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-e6d3ea007e",
+   "field": "organisation_name",
+   "quote": "Economics, Morrissey College of Arts and Sciences",
+   "url": "https://events.bc.edu/event/macroeconomics-and-financial-economics-seminar-corina-boar-new-york-university",
+   "check_confidence": 0.9806298178557252,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-e6d3ea007e",
+   "field": "speaker",
+   "quote": "Corina Boar, New York University",
+   "url": "https://events.bc.edu/event/macroeconomics-and-financial-economics-seminar-corina-boar-new-york-university",
+   "check_confidence": 0.9631374384269874,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-c76cadd586",
+   "field": "title",
+   "quote": "Macro Lunch: Yang Liu, Boston College",
+   "url": "https://events.bc.edu/event/macroeconomics-yang-liu-boston-college-2691",
+   "check_confidence": 0.9846283907108375,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-c76cadd586",
+   "field": "date",
+   "quote": "Wednesday, December 9, 2026 12pm to 1pm",
+   "url": "https://events.bc.edu/event/macroeconomics-yang-liu-boston-college-2691",
+   "check_confidence": 0.9838816506474296,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-c76cadd586",
+   "field": "start_time",
+   "quote": "12:00",
+   "url": "https://events.bc.edu/event/macroeconomics-yang-liu-boston-college-2691",
+   "check_confidence": 0.9856521797655632,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-c76cadd586",
+   "field": "venue_name",
+   "quote": "Maloney Hall, 313",
+   "url": "https://events.bc.edu/event/macroeconomics-yang-liu-boston-college-2691",
+   "check_confidence": 0.9659438624114748,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-c76cadd586",
+   "field": "organisation_name",
+   "quote": "Economics, Morrissey College of Arts and Sciences",
+   "url": "https://events.bc.edu/event/macroeconomics-yang-liu-boston-college-2691",
+   "check_confidence": 0.9734007365282166,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-c76cadd586",
+   "field": "speaker",
+   "quote": "Yang Liu, Boston College",
+   "url": "https://events.bc.edu/event/macroeconomics-yang-liu-boston-college-2691",
+   "check_confidence": 0.9813684982825225,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-9e91878b3d",
+   "field": "title",
+   "quote": "Faith Feeds: Advent | Faith",
+   "url": "https://events.bc.edu/event/faith-feeds-advent-faith",
+   "check_confidence": 0.9841340723760797,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-9e91878b3d",
+   "field": "date",
+   "quote": "Friday, December 11, 2026 1pm to 2pm",
+   "url": "https://events.bc.edu/event/faith-feeds-advent-faith",
+   "check_confidence": 0.9882951600884787,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-9e91878b3d",
+   "field": "start_time",
+   "quote": "13:00",
+   "url": "https://events.bc.edu/event/faith-feeds-advent-faith",
+   "check_confidence": 0.985236280888243,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-9e91878b3d",
+   "field": "venue_name",
+   "quote": "Virtual Event",
+   "url": "https://events.bc.edu/event/faith-feeds-advent-faith",
+   "check_confidence": 0.9748449630686188,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-9e91878b3d",
+   "field": "organisation_name",
+   "quote": "Church in the 21st Century Center",
+   "url": "https://events.bc.edu/event/faith-feeds-advent-faith",
+   "check_confidence": 0.9784808754518439,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-b434f5a99c",
+   "field": "title",
+   "quote": "How Elite Universities Respond Strategically to Polycrisis",
+   "url": "https://events.bc.edu/event/how-elite-universities-respond-strategically-to-polycrisis",
+   "check_confidence": 0.9730123781774925,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-b434f5a99c",
+   "field": "date",
+   "quote": "Tuesday, December 8, 2026 12pm to 1pm",
+   "url": "https://events.bc.edu/event/how-elite-universities-respond-strategically-to-polycrisis",
+   "check_confidence": 0.9555786914917871,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-b434f5a99c",
+   "field": "start_time",
+   "quote": "12:00",
+   "url": "https://events.bc.edu/event/how-elite-universities-respond-strategically-to-polycrisis",
+   "check_confidence": 0.9686388796424124,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-b434f5a99c",
+   "field": "venue_name",
+   "quote": "Campion Hall, 208",
+   "url": "https://events.bc.edu/event/how-elite-universities-respond-strategically-to-polycrisis",
+   "check_confidence": 0.9694204108844463,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-b434f5a99c",
+   "field": "organisation_name",
+   "quote": "Center for International Higher Education (CIHE)",
+   "url": "https://events.bc.edu/event/how-elite-universities-respond-strategically-to-polycrisis",
+   "check_confidence": 0.9720268478895738,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-b434f5a99c",
+   "field": "speaker",
+   "quote": "Morten Hansen, DTU Management, Denmark",
+   "url": "https://events.bc.edu/event/how-elite-universities-respond-strategically-to-polycrisis",
+   "check_confidence": 0.9843928568161412,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-8629314809",
+   "field": "title",
+   "quote": "McMullen Holiday Celebration",
+   "url": "https://events.bc.edu/event/mcmullen-holiday-celebration-2097",
+   "check_confidence": 0.9858827959917955,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-8629314809",
+   "field": "date",
+   "quote": "Saturday, December 5, 2026 12pm to 4pm",
+   "url": "https://events.bc.edu/event/mcmullen-holiday-celebration-2097",
+   "check_confidence": 0.9656924725039471,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-8629314809",
+   "field": "start_time",
+   "quote": "12:00",
+   "url": "https://events.bc.edu/event/mcmullen-holiday-celebration-2097",
+   "check_confidence": 0.9779769959087693,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-8629314809",
+   "field": "venue_name",
+   "quote": "McMullen Museum of Art",
+   "url": "https://events.bc.edu/event/mcmullen-holiday-celebration-2097",
+   "check_confidence": 0.9684099529288199,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-8629314809",
+   "field": "organisation_name",
+   "quote": "Art, Art History, and Film, Morrissey College of Arts and Sciences, Arts Council, McMullen Museum of Art",
+   "url": "https://events.bc.edu/event/mcmullen-holiday-celebration-2097",
+   "check_confidence": 0.9533140825118591,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-8b4ad9b025",
+   "field": "title",
+   "quote": "A Midsummer Night’s Dream: A New Musical",
+   "url": "https://events.bc.edu/event/a-midsummer-nights-dream-a-new-musical",
+   "check_confidence": 0.9759874104850766,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-8b4ad9b025",
+   "field": "date",
+   "quote": "Sunday, November 22, 2026 2pm to 4:30pm",
+   "url": "https://events.bc.edu/event/a-midsummer-nights-dream-a-new-musical",
+   "check_confidence": 0.9820407981523631,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-8b4ad9b025",
+   "field": "start_time",
+   "quote": "14:00",
+   "url": "https://events.bc.edu/event/a-midsummer-nights-dream-a-new-musical",
+   "check_confidence": 0.9854796799451597,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-8b4ad9b025",
+   "field": "venue_name",
+   "quote": "Robsham Theater Arts Center, Main Stage",
+   "url": "https://events.bc.edu/event/a-midsummer-nights-dream-a-new-musical",
+   "check_confidence": 0.9754924446049426,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-8b4ad9b025",
+   "field": "organisation_name",
+   "quote": "Robsham Theater, Theatre, Morrissey College of Arts and Sciences",
+   "url": "https://events.bc.edu/event/a-midsummer-nights-dream-a-new-musical",
+   "check_confidence": 0.9694064268062001,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-c437d32f45",
+   "field": "title",
+   "quote": "Gaelic Roots ft. Susan McKeown",
+   "url": "https://events.bc.edu/event/gaelic-roots-ft-susan-mckeown",
+   "check_confidence": 0.9737541630354994,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-c437d32f45",
+   "field": "date",
+   "quote": "Thursday, December 3, 2026 6:30pm",
+   "url": "https://events.bc.edu/event/gaelic-roots-ft-susan-mckeown",
+   "check_confidence": 0.9800436466084855,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-c437d32f45",
+   "field": "start_time",
+   "quote": "18:30",
+   "url": "https://events.bc.edu/event/gaelic-roots-ft-susan-mckeown",
+   "check_confidence": 0.984217033135513,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-c437d32f45",
+   "field": "venue_name",
+   "quote": "Connolly House, Andover Room",
+   "url": "https://events.bc.edu/event/gaelic-roots-ft-susan-mckeown",
+   "check_confidence": 0.9800257341571316,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-c437d32f45",
+   "field": "organisation_name",
+   "quote": "Gaelic Roots Series, Irish Studies",
+   "url": "https://events.bc.edu/event/gaelic-roots-ft-susan-mckeown",
+   "check_confidence": 0.9722251232015229,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-c437d32f45",
+   "field": "speaker",
+   "quote": "Susan McKeown",
+   "url": "https://events.bc.edu/event/gaelic-roots-ft-susan-mckeown",
+   "check_confidence": 0.6736110295010713,
+   "passed": false
+  },
+  {
+   "entity_id": "bc-6822e4151c",
+   "field": "title",
+   "quote": "Econometrics Seminar: Matt Masten, Duke University",
+   "url": "https://events.bc.edu/event/econometrics-seminar-matt-masten-duke-university",
+   "check_confidence": 0.9759652566381521,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-6822e4151c",
+   "field": "date",
+   "quote": "Monday, November 30, 2026 4pm to 5pm",
+   "url": "https://events.bc.edu/event/econometrics-seminar-matt-masten-duke-university",
+   "check_confidence": 0.9814972743087863,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-6822e4151c",
+   "field": "start_time",
+   "quote": "16:00",
+   "url": "https://events.bc.edu/event/econometrics-seminar-matt-masten-duke-university",
+   "check_confidence": 0.9687534978527826,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-6822e4151c",
+   "field": "venue_name",
+   "quote": "Maloney Hall, 313",
+   "url": "https://events.bc.edu/event/econometrics-seminar-matt-masten-duke-university",
+   "check_confidence": 0.9651830830928068,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-6822e4151c",
+   "field": "organisation_name",
+   "quote": "David Hughes",
+   "url": "https://events.bc.edu/event/econometrics-seminar-matt-masten-duke-university",
+   "check_confidence": 0.9466811246483198,
+   "passed": true
+  },
+  {
+   "entity_id": "bc-6822e4151c",
+   "field": "speaker",
+   "quote": "Matt Masten, Duke University",
+   "url": "https://events.bc.edu/event/econometrics-seminar-matt-masten-duke-university",
+   "check_confidence": 0.9669063788220479,
+   "passed": true
+  }
+ ]
+}

@@ -1,0 +1,92 @@
+{
+ "school": "ucdavis",
+ "name": "University of California, Davis",
+ "at": "2026-11-22T00:19:50.334Z",
+ "source": "https://en.wikipedia.org/wiki/University%20of%20California%2C%20Davis",
+ "character": "Located in California's Central Valley, the vast campus features a large rectangular Quad, extensive bicycle trails, angular metallic buildings, and a 100-acre arboretum with 4,000 tree specimens, Putah Creek, and Lake Spafford.",
+ "map": null,
+ "landmarks": [
+  {
+   "name": "the Quad",
+   "name_en": "The Quad",
+   "kind": "quad",
+   "quote": "Towards the northeast end of campus is the Quad, a large rectangular field, which was the historic geographic center of campus.",
+   "look": "A large rectangular grassy field at the center of campus.",
+   "check": 0.9754799990280769,
+   "confidence": 0.9754799990280769,
+   "passed": true
+  },
+  {
+   "name": "Shields Library",
+   "name_en": "Shields Library",
+   "kind": "library",
+   "quote": "The Quad remains the center of campus life, anchored to the north by the Memorial Union (student union), to the south by the Shields Library",
+   "look": "A plain university library building bordering the south side of a quad.",
+   "check": 0.978028299095406,
+   "confidence": 0.978028299095406,
+   "passed": true
+  },
+  {
+   "name": "UC Davis Arboretum",
+   "name_en": "UC Davis Arboretum",
+   "kind": "garden",
+   "quote": "To the south side of the campus core is the 100-acre UC Davis Arboretum, which includes 3.5 miles of paved paths, 4,000 tree specimens",
+   "look": "A sprawling 100-acre wooded garden with paved paths and thousands of trees.",
+   "check": 0.9766213610086957,
+   "confidence": 0.9766213610086957,
+   "passed": true
+  },
+  {
+   "name": "Lake Spafford",
+   "name_en": "Lake Spafford",
+   "kind": "lake",
+   "quote": "the 100-acre UC Davis Arboretum, which includes 3.5 miles of paved paths, 4,000 tree specimens, Putah Creek and Lake Spafford.",
+   "look": "A calm lake surrounded by trees and paved paths in an arboretum.",
+   "check": 0.9764807654663966,
+   "confidence": 0.9764807654663966,
+   "passed": true
+  },
+  {
+   "name": "Wellman Hall",
+   "name_en": "Wellman Hall",
+   "kind": "hall",
+   "quote": "The northeast side of campus holds more of the core buildings that were built earlier in UC Davis's history, such as Wellman Hall",
+   "look": "An older, plain campus hall near the northeast corner of the quad.",
+   "check": 0.9809184740615546,
+   "confidence": 0.9809184740615546,
+   "passed": true
+  },
+  {
+   "name": "Mrak Hall",
+   "name_en": "Mrak Hall",
+   "kind": "hall",
+   "quote": "core buildings that were built earlier in UC Davis's history, such as Wellman Hall, Shields Library, Mrak Hall, and Hutchison Hall.",
+   "look": "An older, plain administrative hall with an egghead sculpture outside.",
+   "check": 0.99,
+   "confidence": 0.99,
+   "passed": true
+  },
+  {
+   "name": "C.N. Gorman Museum",
+   "name_en": "C.N. Gorman Museum",
+   "kind": "museum",
+   "quote": "Museums on campus include the C.N. Gorman Museum, specializing in indigenous and Native American art",
+   "look": "A plain campus museum building.",
+   "check": 0.9769174902607933,
+   "confidence": 0.9769174902607933,
+   "passed": true
+  },
+  {
+   "name": "Manetti Shrem Museum of Art",
+   "name_en": "Manetti Shrem Museum of Art",
+   "kind": "museum",
+   "quote": "and the Manetti Shrem Museum of Art, with a focus on local artists from the Bay Area Figurative Movement, Pop art and Funk art movements.",
+   "look": "A plain campus art museum building.",
+   "check": 0.98258483196608,
+   "confidence": 0.98258483196608,
+   "passed": true
+  }
+ ],
+ "tokens": 8063,
+ "seconds": 95
+}

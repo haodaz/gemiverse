@@ -1,0 +1,438 @@
+{
+ "school": "berkeley",
+ "name": "University of California, Berkeley",
+ "at": "2026-11-22T00:13:28.229Z",
+ "seconds": 42,
+ "tokens": 30915,
+ "entities": [
+  {
+   "id": "berkeley-f9588dc0ed",
+   "type": "Event",
+   "school": "berkeley",
+   "name": "CMES Grants Info Session | 2026-2027",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.berkeley.edu/CMES/event/337873-cmes-grants-info-session-2026-2027",
+    "needs": [
+     "fund_my_path",
+     "navigate_systems"
+    ],
+    "start": null,
+    "summary": "An information session about Center for Middle Eastern Studies grants for 2026-2027 at UC Berkeley.",
+    "event_kind": "other",
+    "venue_name": null,
+    "organisation_name": "Center for Middle Eastern Studies",
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "berkeley-326200a9f2",
+   "type": "Event",
+   "school": "berkeley",
+   "name": "How State and Local Land Use Laws Shape Housing Supply",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.berkeley.edu/ced/event/338318-how-state-and-local-land-use-laws-shape-housing",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": null,
+    "summary": "An event titled How State and Local Land Use Laws Shape Housing Supply listed under the College of Environmental Design.",
+    "event_kind": "other",
+    "venue_name": null,
+    "organisation_name": "College of Environmental Design",
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "berkeley-7ae0230443",
+   "type": "Event",
+   "school": "berkeley",
+   "name": "Jacobs Winter Design Showcase 2026",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.berkeley.edu/Jacobs/event/337522-jacobs-winter-design-showcase-2026",
+    "needs": [
+     "explore_a_field",
+     "make_and_express"
+    ],
+    "start": null,
+    "summary": "The Jacobs Winter Design Showcase 2026 is an event listed by the Jacobs Institute for Design Innovation at UC Berkeley.",
+    "event_kind": "exhibition",
+    "venue_name": null,
+    "organisation_name": "Jacobs Institute for Design Innovation",
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "berkeley-3134227fd2",
+   "type": "Event",
+   "school": "berkeley",
+   "name": "Lunch Poems: Sara Nicholson",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.berkeley.edu/Library/event/329796-lunch-poems-sara-nicholson",
+    "needs": [
+     "make_and_express",
+     "rest_and_recover"
+    ],
+    "start": null,
+    "summary": "A UC Berkeley event page titled Lunch Poems: Sara Nicholson, with no date, time, or location listed.",
+    "event_kind": "other",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": "Sara Nicholson",
+    "occurrences": []
+   }
+  },
+  {
+   "id": "berkeley-da8b96b16d",
+   "type": "Event",
+   "school": "berkeley",
+   "name": "Berkeley Book Chat with Miryam Sas",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.berkeley.edu/townsend/event/337966-berkeley-book-chat-with-miryam-sas",
+    "needs": [
+     "explore_a_field",
+     "find_my_people"
+    ],
+    "start": null,
+    "summary": "Berkeley Book Chat with Miryam Sas, hosted by the Townsend Center for the Humanities at UC Berkeley.",
+    "event_kind": "lecture",
+    "venue_name": null,
+    "organisation_name": "Townsend Center for the Humanities",
+    "speaker": "Miryam Sas",
+    "occurrences": []
+   }
+  },
+  {
+   "id": "berkeley-555bc4a5b9",
+   "type": "Event",
+   "school": "berkeley",
+   "name": "An attempt towards the Autistic Image feat. Perwana Nazif",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.berkeley.edu/bcnm/event/325583-an-attempt-towards-the-autistic-image-feat-perwana-na",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": null,
+    "summary": "An event titled 'An attempt towards the Autistic Image' featuring Perwana Nazif, listed by the Berkeley Center for New Media.",
+    "event_kind": "other",
+    "venue_name": null,
+    "organisation_name": "Berkeley Center for New Media",
+    "speaker": "Perwana Nazif",
+    "occurrences": []
+   }
+  },
+  {
+   "id": "berkeley-0d96c2564e",
+   "type": "Event",
+   "school": "berkeley",
+   "name": "Berkeley Master of Design 2026 Graduate Exhibition",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.berkeley.edu/Jacobs/event/337521-berkeley-master-of-design-2026-graduate-exhibition",
+    "needs": [
+     "explore_a_field",
+     "make_and_express"
+    ],
+    "start": null,
+    "summary": "An exhibition for the Berkeley Master of Design 2026 graduates at UC Berkeley.",
+    "event_kind": "exhibition",
+    "venue_name": null,
+    "organisation_name": "Jacobs Institute for Design Innovation",
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "berkeley-b57012ba51",
+   "type": "Event",
+   "school": "berkeley",
+   "name": "Film Screening: Modern Times",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.berkeley.edu/BAMPFA/event/331164-film-screening-modern-times",
+    "needs": [
+     "rest_and_recover"
+    ],
+    "start": null,
+    "summary": "A film screening of Modern Times listed by the Berkeley Art Museum Pacific Film Archive.",
+    "event_kind": "activity",
+    "venue_name": null,
+    "organisation_name": "Berkeley Art Museum Pacific Film Archive",
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "berkeley-628bca8c2f",
+   "type": "Event",
+   "school": "berkeley",
+   "name": "Research-Tested Classroom Practices for Supporting Language Learning",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.berkeley.edu/crlp/event/337365-research-tested-classroom-practices-for-supporting-la",
+    "needs": [
+     "build_a_skill",
+     "explore_a_field"
+    ],
+    "start": null,
+    "summary": "An event titled Research-Tested Classroom Practices for Supporting Language Learning by the California Reading Literature Project at UC Berkeley.",
+    "event_kind": "other",
+    "venue_name": null,
+    "organisation_name": "California Reading Literature Project",
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "berkeley-aafc63cb45",
+   "type": "Event",
+   "school": "berkeley",
+   "name": "Danielle Roper | Hemispheric Blackface: A Reflection on Racial Impersonation",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.berkeley.edu/clacs/event/337371-danielle-roper-hemispheric-blackface-a-reflection",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": null,
+    "summary": "An event titled Hemispheric Blackface: A Reflection on Racial Impersonation featuring Danielle Roper, listed by CLACS at UC Berkeley.",
+    "event_kind": "lecture",
+    "venue_name": null,
+    "organisation_name": "Center for Latin American and Caribbean Studies (CLACS)",
+    "speaker": "Danielle Roper",
+    "occurrences": []
+   }
+  },
+  {
+   "id": "berkeley-5c0eb1e1e5",
+   "type": "Event",
+   "school": "berkeley",
+   "name": "Film Screening | My Father and Qaddafi",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.berkeley.edu/CMES/event/337785-film-screening-my-father-and-qaddafi",
+    "needs": [
+     "explore_a_field",
+     "find_my_people"
+    ],
+    "start": null,
+    "summary": "A film screening event titled My Father and Qaddafi listed by the Center for Middle Eastern Studies at UC Berkeley.",
+    "event_kind": "other",
+    "venue_name": null,
+    "organisation_name": "Center for Middle Eastern Studies",
+    "speaker": null,
+    "occurrences": []
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "berkeley-f9588dc0ed",
+   "field": "title",
+   "quote": "CMES Grants Info Session | 2026-2027",
+   "url": "https://events.berkeley.edu/CMES/event/337873-cmes-grants-info-session-2026-2027",
+   "check_confidence": 0.9422609121006641,
+   "passed": true
+  },
+  {
+   "entity_id": "berkeley-f9588dc0ed",
+   "field": "organisation_name",
+   "quote": "Center for Middle Eastern Studies",
+   "url": "https://events.berkeley.edu/CMES/event/337873-cmes-grants-info-session-2026-2027",
+   "check_confidence": 0.944033327527506,
+   "passed": true
+  },
+  {
+   "entity_id": "berkeley-326200a9f2",
+   "field": "title",
+   "quote": "How State and Local Land Use Laws Shape Housing Supply",
+   "url": "https://events.berkeley.edu/ced/event/338318-how-state-and-local-land-use-laws-shape-housing",
+   "check_confidence": 0.9495365691938413,
+   "passed": true
+  },
+  {
+   "entity_id": "berkeley-326200a9f2",
+   "field": "organisation_name",
+   "quote": "College of Environmental Design",
+   "url": "https://events.berkeley.edu/ced/event/338318-how-state-and-local-land-use-laws-shape-housing",
+   "check_confidence": 0.9342141554043673,
+   "passed": true
+  },
+  {
+   "entity_id": "berkeley-7ae0230443",
+   "field": "title",
+   "quote": "Jacobs Winter Design Showcase 2026",
+   "url": "https://events.berkeley.edu/Jacobs/event/337522-jacobs-winter-design-showcase-2026",
+   "check_confidence": 0.9565501131963623,
+   "passed": true
+  },
+  {
+   "entity_id": "berkeley-7ae0230443",
+   "field": "organisation_name",
+   "quote": "Jacobs Institute for Design Innovation",
+   "url": "https://events.berkeley.edu/Jacobs/event/337522-jacobs-winter-design-showcase-2026",
+   "check_confidence": 0.9338559819679839,
+   "passed": true
+  },
+  {
+   "entity_id": "berkeley-3134227fd2",
+   "field": "title",
+   "quote": "Lunch Poems: Sara Nicholson",
+   "url": "https://events.berkeley.edu/Library/event/329796-lunch-poems-sara-nicholson",
+   "check_confidence": 0.9621008561785531,
+   "passed": true
+  },
+  {
+   "entity_id": "berkeley-3134227fd2",
+   "field": "speaker",
+   "quote": "Sara Nicholson",
+   "url": "https://events.berkeley.edu/Library/event/329796-lunch-poems-sara-nicholson",
+   "check_confidence": 0.9024938550150944,
+   "passed": true
+  },
+  {
+   "entity_id": "berkeley-da8b96b16d",
+   "field": "title",
+   "quote": "Berkeley Book Chat with Miryam Sas",
+   "url": "https://events.berkeley.edu/townsend/event/337966-berkeley-book-chat-with-miryam-sas",
+   "check_confidence": 0.9582177738593087,
+   "passed": true
+  },
+  {
+   "entity_id": "berkeley-da8b96b16d",
+   "field": "organisation_name",
+   "quote": "Townsend Center for the Humanities",
+   "url": "https://events.berkeley.edu/townsend/event/337966-berkeley-book-chat-with-miryam-sas",
+   "check_confidence": 0.9380313779370588,
+   "passed": true
+  },
+  {
+   "entity_id": "berkeley-da8b96b16d",
+   "field": "speaker",
+   "quote": "Miryam Sas",
+   "url": "https://events.berkeley.edu/townsend/event/337966-berkeley-book-chat-with-miryam-sas",
+   "check_confidence": 0.8858836331730503,
+   "passed": true
+  },
+  {
+   "entity_id": "berkeley-555bc4a5b9",
+   "field": "title",
+   "quote": "An attempt towards the Autistic Image feat. Perwana Nazif",
+   "url": "https://events.berkeley.edu/bcnm/event/325583-an-attempt-towards-the-autistic-image-feat-perwana-na",
+   "check_confidence": 0.9738548577213394,
+   "passed": true
+  },
+  {
+   "entity_id": "berkeley-555bc4a5b9",
+   "field": "organisation_name",
+   "quote": "Berkeley Center for New Media",
+   "url": "https://events.berkeley.edu/bcnm/event/325583-an-attempt-towards-the-autistic-image-feat-perwana-na",
+   "check_confidence": 0.9540916259193212,
+   "passed": true
+  },
+  {
+   "entity_id": "berkeley-555bc4a5b9",
+   "field": "speaker",
+   "quote": "Perwana Nazif",
+   "url": "https://events.berkeley.edu/bcnm/event/325583-an-attempt-towards-the-autistic-image-feat-perwana-na",
+   "check_confidence": 0.8022499840072765,
+   "passed": true
+  },
+  {
+   "entity_id": "berkeley-0d96c2564e",
+   "field": "title",
+   "quote": "Berkeley Master of Design 2026 Graduate Exhibition",
+   "url": "https://events.berkeley.edu/Jacobs/event/337521-berkeley-master-of-design-2026-graduate-exhibition",
+   "check_confidence": 0.9654361881665234,
+   "passed": true
+  },
+  {
+   "entity_id": "berkeley-0d96c2564e",
+   "field": "organisation_name",
+   "quote": "Jacobs Institute for Design Innovation",
+   "url": "https://events.berkeley.edu/Jacobs/event/337521-berkeley-master-of-design-2026-graduate-exhibition",
+   "check_confidence": 0.9258264988098401,
+   "passed": true
+  },
+  {
+   "entity_id": "berkeley-b57012ba51",
+   "field": "title",
+   "quote": "Film Screening: Modern Times",
+   "url": "https://events.berkeley.edu/BAMPFA/event/331164-film-screening-modern-times",
+   "check_confidence": 0.9592081186618324,
+   "passed": true
+  },
+  {
+   "entity_id": "berkeley-b57012ba51",
+   "field": "organisation_name",
+   "quote": "Berkeley Art Museum Pacific Film Archive",
+   "url": "https://events.berkeley.edu/BAMPFA/event/331164-film-screening-modern-times",
+   "check_confidence": 0.927045668551754,
+   "passed": true
+  },
+  {
+   "entity_id": "berkeley-628bca8c2f",
+   "field": "title",
+   "quote": "Research-Tested Classroom Practices for Supporting Language Learning",
+   "url": "https://events.berkeley.edu/crlp/event/337365-research-tested-classroom-practices-for-supporting-la",
+   "check_confidence": 0.9510818941288555,
+   "passed": true
+  },
+  {
+   "entity_id": "berkeley-628bca8c2f",
+   "field": "organisation_name",
+   "quote": "California Reading Literature Project",
+   "url": "https://events.berkeley.edu/crlp/event/337365-research-tested-classroom-practices-for-supporting-la",
+   "check_confidence": 0.9090359180064745,
+   "passed": true
+  },
+  {
+   "entity_id": "berkeley-aafc63cb45",
+   "field": "title",
+   "quote": "Danielle Roper | Hemispheric Blackface: A Reflection on Racial Impersonation",
+   "url": "https://events.berkeley.edu/clacs/event/337371-danielle-roper-hemispheric-blackface-a-reflection",
+   "check_confidence": 0.9707931842393435,
+   "passed": true
+  },
+  {
+   "entity_id": "berkeley-aafc63cb45",
+   "field": "organisation_name",
+   "quote": "Center for Latin American and Caribbean Studies (CLACS)",
+   "url": "https://events.berkeley.edu/clacs/event/337371-danielle-roper-hemispheric-blackface-a-reflection",
+   "check_confidence": 0.9491856761300418,
+   "passed": true
+  },
+  {
+   "entity_id": "berkeley-aafc63cb45",
+   "field": "speaker",
+   "quote": "Danielle Roper",
+   "url": "https://events.berkeley.edu/clacs/event/337371-danielle-roper-hemispheric-blackface-a-reflection",
+   "check_confidence": 0.9594227455540728,
+   "passed": true
+  },
+  {
+   "entity_id": "berkeley-5c0eb1e1e5",
+   "field": "title",
+   "quote": "Film Screening | My Father and Qaddafi",
+   "url": "https://events.berkeley.edu/CMES/event/337785-film-screening-my-father-and-qaddafi",
+   "check_confidence": 0.9731053060461775,
+   "passed": true
+  },
+  {
+   "entity_id": "berkeley-5c0eb1e1e5",
+   "field": "organisation_name",
+   "quote": "Center for Middle Eastern Studies",
+   "url": "https://events.berkeley.edu/CMES/event/337785-film-screening-my-father-and-qaddafi",
+   "check_confidence": 0.9323175103994793,
+   "passed": true
+  }
+ ]
+}

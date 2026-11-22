@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students.  Draw exactly these 4 features, well spread across the picture with space between them, each clearly recognisable: (1) Bochuan Library, a library: Plain modern university library building.; (2) Lingxi Library, a library: Plain modern university library building.; (3) Central Competition Hall, a stadium: Large plain indoor sports arena.; (4) Swimming Pool, a stadium: Large plain indoor swimming complex.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 16,
+ "tokens": 2043,
+ "at": "2026-11-22T00:15:29.317Z"
+}

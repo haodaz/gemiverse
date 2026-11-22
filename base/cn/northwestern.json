@@ -1,0 +1,759 @@
+{
+ "school": "northwestern",
+ "name": "Northwestern University",
+ "at": "2026-11-22T00:12:27.550Z",
+ "seconds": 28,
+ "tokens": 41569,
+ "entities": [
+  {
+   "id": "northwestern-ae8d016854",
+   "type": "Event",
+   "school": "northwestern",
+   "name": "Outdoor Education: Navigating November",
+   "tier": 1,
+   "fields": {
+    "url": "https://planitpurple.northwestern.edu/event/648633",
+    "needs": [
+     "find_my_people",
+     "build_a_skill"
+    ],
+    "start": "2026-11-21",
+    "summary": "An all-day outdoor education activity sponsored by NU-Q Student Affairs for students.",
+    "event_kind": "activity",
+    "venue_name": "Off Campus, NU-Q, Qatar",
+    "organisation_name": "NU-Q Student Affairs",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "northwestern-695bb4b5ee",
+   "type": "Event",
+   "school": "northwestern",
+   "name": "Fiat Retreat",
+   "tier": 1,
+   "fields": {
+    "url": "https://planitpurple.northwestern.edu/event/646308",
+    "needs": [
+     "rest_and_recover",
+     "find_my_people"
+    ],
+    "start": "2026-11-21",
+    "summary": "An all-day Catholic retreat for undergraduate students featuring prayer, witness talks, creative activities, and silence to step away from campus busyness.",
+    "event_kind": "activity",
+    "venue_name": "Sheil Catholic Center, Sheil Catholic Center at Northwestern University / Newman Center, 2110 Sheridan Road, Evanston, IL 60208",
+    "organisation_name": "Sheil Catholic Center at Northwestern University",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "northwestern-ddd3fc141a",
+   "type": "Event",
+   "school": "northwestern",
+   "name": "Break Right Through That Line: Football at Northwestern",
+   "tier": 1,
+   "fields": {
+    "url": "https://planitpurple.northwestern.edu/event/644032",
+    "needs": [
+     "find_my_people",
+     "rest_and_recover"
+    ],
+    "start": "2026-11-21",
+    "summary": "An exhibition at Deering Library showcasing over 130 years of Northwestern football history through photographs, uniforms, and University Archives materials.",
+    "event_kind": "exhibition",
+    "venue_name": "Deering Library, 1937 Sheridan Road, Evanston, IL 60208",
+    "organisation_name": "Northwestern Libraries",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "northwestern-01b8e63661",
+   "type": "Event",
+   "school": "northwestern",
+   "name": "Neighborhood Bingo",
+   "tier": 1,
+   "fields": {
+    "url": "https://planitpurple.northwestern.edu/event/647784",
+    "needs": [
+     "find_my_people"
+    ],
+    "start": "2026-11-21T08:00",
+    "summary": "A free neighborhood Bingo game in Evanston for students and neighbors to explore the area and win a prize.",
+    "event_kind": "activity",
+    "venue_name": null,
+    "organisation_name": "Office of Off-Campus Life",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21T08:00",
+      "end": "2026-11-21T17:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "northwestern-9d64bac35c",
+   "type": "Event",
+   "school": "northwestern",
+   "name": "Revolutions in Medicine: 250 Years of Medical Progress",
+   "tier": 1,
+   "fields": {
+    "url": "https://planitpurple.northwestern.edu/event/644165",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-21",
+    "summary": "An exhibition at Galter Health Sciences Library showcasing four medical breakthroughs—epidemiology, vaccination, anesthesiology, and X-rays—and their global impact.",
+    "event_kind": "exhibition",
+    "venue_name": "Ward Building, Galter Health Sciences Library, 303 E. Chicago Avenue, Chicago, IL 60611",
+    "organisation_name": "Galter Health Sciences Library Learning Center",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "northwestern-32a1b0ee22",
+   "type": "Event",
+   "school": "northwestern",
+   "name": "Dittmar Exhibition: The Names We Give to Home",
+   "tier": 1,
+   "fields": {
+    "url": "https://planitpurple.northwestern.edu/event/646638",
+    "needs": [
+     "explore_a_field",
+     "make_and_express"
+    ],
+    "start": "2026-11-21T10:00",
+    "summary": "An exhibition featuring paintings by artist Lelia Byron exploring the meaning of home through stories from Springfield, Ohio residents.",
+    "event_kind": "exhibition",
+    "venue_name": "Norris University Center, Dittmar Memorial Gallery, 1999 Campus Drive, Evanston, IL 60208",
+    "organisation_name": "Dittmar Memorial Gallery",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21T10:00",
+      "end": "2026-11-21T22:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "northwestern-779655042c",
+   "type": "Event",
+   "school": "northwestern",
+   "name": "Picturing the Modern Metropolis: Prints and Photographs from The Block's Collection",
+   "tier": 1,
+   "fields": {
+    "url": "https://planitpurple.northwestern.edu/event/645325",
+    "needs": [
+     "explore_a_field",
+     "make_and_express"
+    ],
+    "start": "2026-11-21T12:00",
+    "summary": "An exhibition at the Block Museum of Art featuring over 100 20th-century prints and photographs depicting urban life.",
+    "event_kind": "exhibition",
+    "venue_name": "Block Museum of Art, Mary and Leigh, 40 Arts Circle Drive, Evanston, IL 60208",
+    "organisation_name": "Block Museum Exhibitions",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21T12:00",
+      "end": "2026-11-21T17:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "northwestern-263830e652",
+   "type": "Event",
+   "school": "northwestern",
+   "name": "MFA COLLABORATION SERIES: FEEDING BEATRICE",
+   "tier": 1,
+   "fields": {
+    "url": "https://planitpurple.northwestern.edu/event/643442",
+    "needs": [
+     "make_and_express",
+     "rest_and_recover"
+    ],
+    "start": "2026-11-21T14:00",
+    "summary": "A gothic play by Kirsten Greenidge, directed by Reva Stover, exploring race, class, and the American Dream.",
+    "event_kind": "other",
+    "venue_name": "Online",
+    "organisation_name": "Virginia Wadsworth Wirtz Center for the Performing Arts",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21T14:00",
+      "end": "2026-11-21T16:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "northwestern-b7cbf58d79",
+   "type": "Event",
+   "school": "northwestern",
+   "name": "NPEP Annual Thanksgiving Potluck",
+   "tier": 1,
+   "fields": {
+    "url": "https://planitpurple.northwestern.edu/event/643154",
+    "needs": [
+     "find_my_people"
+    ],
+    "start": "2026-11-21T13:00",
+    "summary": "A Thanksgiving potluck for Northwestern Prison Education Program faculty, staff, volunteers, students, and their families to gather and share a meal.",
+    "event_kind": "activity",
+    "venue_name": "405 Church Street, Evanston, IL 60201",
+    "organisation_name": "Northwestern Prison Education Program",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21T13:00",
+      "end": "2026-11-21T16:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "northwestern-0fbf35ae39",
+   "type": "Event",
+   "school": "northwestern",
+   "name": "She Loves Me",
+   "tier": 1,
+   "fields": {
+    "url": "https://planitpurple.northwestern.edu/event/643437",
+    "needs": [
+     "rest_and_recover"
+    ],
+    "start": "2026-11-21T14:00",
+    "summary": "The Virginia Wadsworth Wirtz Center presents the musical She Loves Me at Josephine Louis Theater on November 21, 2026.",
+    "event_kind": "other",
+    "venue_name": "Wirtz Center: Josephine Louis Theater, 20 Arts Circle Drive, Evanston, IL 60208",
+    "organisation_name": "Virginia Wadsworth Wirtz Center for the Performing Arts",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21T14:00",
+      "end": "2026-11-21T17:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "northwestern-47728c4ac0",
+   "type": "Event",
+   "school": "northwestern",
+   "name": "Zoe Heim, horn",
+   "tier": 1,
+   "fields": {
+    "url": "https://planitpurple.northwestern.edu/event/647798",
+    "needs": [
+     "make_and_express",
+     "rest_and_recover"
+    ],
+    "start": "2026-11-21T14:30",
+    "summary": "Zoe Heim performs a free Bachelor of Music horn recital with pianist Kay Kim at Regenstein Hall of Music.",
+    "event_kind": "other",
+    "venue_name": "Regenstein Hall of Music, Regenstein Master Class Room, 60 Arts Circle Drive, Evanston, IL 60208",
+    "organisation_name": "Bienen School of Music Concerts and Events",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21T14:30",
+      "end": "2026-11-21T16:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "northwestern-30fcae44c8",
+   "type": "Event",
+   "school": "northwestern",
+   "name": "Guitar Ensemble",
+   "tier": 1,
+   "fields": {
+    "url": "https://planitpurple.northwestern.edu/event/645348",
+    "needs": [
+     "rest_and_recover",
+     "make_and_express"
+    ],
+    "start": "2026-11-21T19:30",
+    "summary": "Guitar Ensemble concert directed by Anne Waller featuring music for guitar soloists, small ensembles, and full ensemble.",
+    "event_kind": "other",
+    "venue_name": "Patrick G. and Shirley W. Ryan Center for the Musical Arts, Galvin Recital Hall, 70 Arts Circle, Evanston, IL 60208",
+    "organisation_name": "Bienen School of Music Concerts and Events",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21T19:30",
+      "end": "2026-11-21T21:30"
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "northwestern-ae8d016854",
+   "field": "title",
+   "quote": "Outdoor Education: Navigating November",
+   "url": "https://planitpurple.northwestern.edu/event/648633",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-ae8d016854",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026 | All day",
+   "url": "https://planitpurple.northwestern.edu/event/648633",
+   "check_confidence": 0.9762995924448518,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-ae8d016854",
+   "field": "venue_name",
+   "quote": "Off Campus, NU-Q, Qatar",
+   "url": "https://planitpurple.northwestern.edu/event/648633",
+   "check_confidence": 0.9814720394883121,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-ae8d016854",
+   "field": "organisation_name",
+   "quote": "NU-Q Student Affairs",
+   "url": "https://planitpurple.northwestern.edu/event/648633",
+   "check_confidence": 0.9718118634270276,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-695bb4b5ee",
+   "field": "title",
+   "quote": "Fiat Retreat",
+   "url": "https://planitpurple.northwestern.edu/event/646308",
+   "check_confidence": 0.9759878131763424,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-695bb4b5ee",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026 | All day",
+   "url": "https://planitpurple.northwestern.edu/event/646308",
+   "check_confidence": 0.9671644420134229,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-695bb4b5ee",
+   "field": "venue_name",
+   "quote": "Sheil Catholic Center, Sheil Catholic Center at Northwestern University / Newman Center, 2110 Sheridan Road, Evanston, IL 60208",
+   "url": "https://planitpurple.northwestern.edu/event/646308",
+   "check_confidence": 0.9662886077518895,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-695bb4b5ee",
+   "field": "organisation_name",
+   "quote": "Sheil Catholic Center at Northwestern University",
+   "url": "https://planitpurple.northwestern.edu/event/646308",
+   "check_confidence": 0.9826792352288509,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-ddd3fc141a",
+   "field": "title",
+   "quote": "Break Right Through That Line: Football at Northwestern",
+   "url": "https://planitpurple.northwestern.edu/event/644032",
+   "check_confidence": 0.9791100651781551,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-ddd3fc141a",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026 | \n All day",
+   "url": "https://planitpurple.northwestern.edu/event/644032",
+   "check_confidence": 0.9653312876748971,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-ddd3fc141a",
+   "field": "venue_name",
+   "quote": "Deering Library, 1937 Sheridan Road, Evanston, IL 60208",
+   "url": "https://planitpurple.northwestern.edu/event/644032",
+   "check_confidence": 0.9718638095848028,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-ddd3fc141a",
+   "field": "organisation_name",
+   "quote": "Northwestern Libraries",
+   "url": "https://planitpurple.northwestern.edu/event/644032",
+   "check_confidence": 0.9657030953527717,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-01b8e63661",
+   "field": "title",
+   "quote": "Neighborhood Bingo",
+   "url": "https://planitpurple.northwestern.edu/event/647784",
+   "check_confidence": 0.9788379984829765,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-01b8e63661",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026 | 8:00 AM - 5:00 PM CT",
+   "url": "https://planitpurple.northwestern.edu/event/647784",
+   "check_confidence": 0.9790409519863899,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-01b8e63661",
+   "field": "start_time",
+   "quote": "08:00",
+   "url": "https://planitpurple.northwestern.edu/event/647784",
+   "check_confidence": 0.9775046967911746,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-01b8e63661",
+   "field": "organisation_name",
+   "quote": "Office of Off-Campus Life",
+   "url": "https://planitpurple.northwestern.edu/event/647784",
+   "check_confidence": 0.9678853010388326,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-9d64bac35c",
+   "field": "title",
+   "quote": "Revolutions in Medicine: 250 Years of Medical Progress",
+   "url": "https://planitpurple.northwestern.edu/event/644165",
+   "check_confidence": 0.9791805481179618,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-9d64bac35c",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026 | All day",
+   "url": "https://planitpurple.northwestern.edu/event/644165",
+   "check_confidence": 0.9621536411711367,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-9d64bac35c",
+   "field": "venue_name",
+   "quote": "Ward Building, Galter Health Sciences Library, 303 E. Chicago Avenue, Chicago, IL 60611",
+   "url": "https://planitpurple.northwestern.edu/event/644165",
+   "check_confidence": 0.9644006836585198,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-9d64bac35c",
+   "field": "organisation_name",
+   "quote": "Galter Health Sciences Library Learning Center",
+   "url": "https://planitpurple.northwestern.edu/event/644165",
+   "check_confidence": 0.9380101407087985,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-32a1b0ee22",
+   "field": "title",
+   "quote": "Dittmar Exhibition: The Names We Give to Home",
+   "url": "https://planitpurple.northwestern.edu/event/646638",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-32a1b0ee22",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026 | 10:00 AM - 10:00 PM CT",
+   "url": "https://planitpurple.northwestern.edu/event/646638",
+   "check_confidence": 0.9839833616013293,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-32a1b0ee22",
+   "field": "start_time",
+   "quote": "10:00",
+   "url": "https://planitpurple.northwestern.edu/event/646638",
+   "check_confidence": 0.9781648374665145,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-32a1b0ee22",
+   "field": "venue_name",
+   "quote": "Norris University Center, Dittmar Memorial Gallery, 1999 Campus Drive, Evanston, IL 60208",
+   "url": "https://planitpurple.northwestern.edu/event/646638",
+   "check_confidence": 0.9864819397715789,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-32a1b0ee22",
+   "field": "organisation_name",
+   "quote": "Dittmar Memorial Gallery",
+   "url": "https://planitpurple.northwestern.edu/event/646638",
+   "check_confidence": 0.97928850309681,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-779655042c",
+   "field": "title",
+   "quote": "Picturing the Modern Metropolis: Prints and Photographs from The Block's Collection",
+   "url": "https://planitpurple.northwestern.edu/event/645325",
+   "check_confidence": 0.9793198234722221,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-779655042c",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026 | 12:00 PM - 5:00 PM CT",
+   "url": "https://planitpurple.northwestern.edu/event/645325",
+   "check_confidence": 0.9816372680570774,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-779655042c",
+   "field": "start_time",
+   "quote": "12:00",
+   "url": "https://planitpurple.northwestern.edu/event/645325",
+   "check_confidence": 0.9870366973012007,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-779655042c",
+   "field": "venue_name",
+   "quote": "Block Museum of Art, Mary and Leigh, 40 Arts Circle Drive, Evanston, IL 60208",
+   "url": "https://planitpurple.northwestern.edu/event/645325",
+   "check_confidence": 0.9721109613530735,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-779655042c",
+   "field": "organisation_name",
+   "quote": "Block Museum Exhibitions",
+   "url": "https://planitpurple.northwestern.edu/event/645325",
+   "check_confidence": 0.8882046225385019,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-263830e652",
+   "field": "title",
+   "quote": "MFA COLLABORATION SERIES: FEEDING BEATRICE",
+   "url": "https://planitpurple.northwestern.edu/event/643442",
+   "check_confidence": 0.9896724096164057,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-263830e652",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026 | 2:00 PM - 4:30 PM CT",
+   "url": "https://planitpurple.northwestern.edu/event/643442",
+   "check_confidence": 0.9806299566063756,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-263830e652",
+   "field": "start_time",
+   "quote": "14:00",
+   "url": "https://planitpurple.northwestern.edu/event/643442",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-263830e652",
+   "field": "venue_name",
+   "quote": "Online",
+   "url": "https://planitpurple.northwestern.edu/event/643442",
+   "check_confidence": 0.9361235910787127,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-263830e652",
+   "field": "organisation_name",
+   "quote": "Virginia Wadsworth Wirtz Center for the Performing Arts",
+   "url": "https://planitpurple.northwestern.edu/event/643442",
+   "check_confidence": 0.9804164108621041,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-b7cbf58d79",
+   "field": "title",
+   "quote": "NPEP Annual Thanksgiving Potluck",
+   "url": "https://planitpurple.northwestern.edu/event/643154",
+   "check_confidence": 0.9881285484887729,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-b7cbf58d79",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026 | 1:00 PM - 4:00 PM CT",
+   "url": "https://planitpurple.northwestern.edu/event/643154",
+   "check_confidence": 0.9827955108218853,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-b7cbf58d79",
+   "field": "start_time",
+   "quote": "13:00",
+   "url": "https://planitpurple.northwestern.edu/event/643154",
+   "check_confidence": 0.977845324718799,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-b7cbf58d79",
+   "field": "venue_name",
+   "quote": "405 Church Street, Evanston, IL 60201",
+   "url": "https://planitpurple.northwestern.edu/event/643154",
+   "check_confidence": 0.9783409485789133,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-b7cbf58d79",
+   "field": "organisation_name",
+   "quote": "Northwestern Prison Education Program",
+   "url": "https://planitpurple.northwestern.edu/event/643154",
+   "check_confidence": 0.9835365458056919,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-0fbf35ae39",
+   "field": "title",
+   "quote": "She Loves Me",
+   "url": "https://planitpurple.northwestern.edu/event/643437",
+   "check_confidence": 0.9834569861733874,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-0fbf35ae39",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026 | 2:00 PM - 5:00 PM CT",
+   "url": "https://planitpurple.northwestern.edu/event/643437",
+   "check_confidence": 0.9680811117167266,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-0fbf35ae39",
+   "field": "start_time",
+   "quote": "14:00",
+   "url": "https://planitpurple.northwestern.edu/event/643437",
+   "check_confidence": 0.9821369494344296,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-0fbf35ae39",
+   "field": "venue_name",
+   "quote": "Wirtz Center: Josephine Louis Theater, 20 Arts Circle Drive, Evanston, IL 60208",
+   "url": "https://planitpurple.northwestern.edu/event/643437",
+   "check_confidence": 0.9774417811253401,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-0fbf35ae39",
+   "field": "organisation_name",
+   "quote": "Virginia Wadsworth Wirtz Center for the Performing Arts",
+   "url": "https://planitpurple.northwestern.edu/event/643437",
+   "check_confidence": 0.9641059657036284,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-47728c4ac0",
+   "field": "title",
+   "quote": "Zoe Heim, horn",
+   "url": "https://planitpurple.northwestern.edu/event/647798",
+   "check_confidence": 0.9853372247479196,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-47728c4ac0",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026 | 2:30 PM - 4:00 PM CT",
+   "url": "https://planitpurple.northwestern.edu/event/647798",
+   "check_confidence": 0.986868986259564,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-47728c4ac0",
+   "field": "start_time",
+   "quote": "14:30",
+   "url": "https://planitpurple.northwestern.edu/event/647798",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-47728c4ac0",
+   "field": "venue_name",
+   "quote": "Regenstein Hall of Music, Regenstein Master Class Room, 60 Arts Circle Drive, Evanston, IL 60208",
+   "url": "https://planitpurple.northwestern.edu/event/647798",
+   "check_confidence": 0.9666012068295332,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-47728c4ac0",
+   "field": "organisation_name",
+   "quote": "Bienen School of Music Concerts and Events",
+   "url": "https://planitpurple.northwestern.edu/event/647798",
+   "check_confidence": 0.9493708393837105,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-30fcae44c8",
+   "field": "title",
+   "quote": "Guitar Ensemble",
+   "url": "https://planitpurple.northwestern.edu/event/645348",
+   "check_confidence": 0.9810022615823631,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-30fcae44c8",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026 | 7:30 PM - 9:30 PM CT",
+   "url": "https://planitpurple.northwestern.edu/event/645348",
+   "check_confidence": 0.9731201399769552,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-30fcae44c8",
+   "field": "start_time",
+   "quote": "19:30",
+   "url": "https://planitpurple.northwestern.edu/event/645348",
+   "check_confidence": 0.9819087673703468,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-30fcae44c8",
+   "field": "venue_name",
+   "quote": "Patrick G. and Shirley W. Ryan Center for the Musical Arts, Galvin Recital Hall, 70 Arts Circle, Evanston, IL 60208",
+   "url": "https://planitpurple.northwestern.edu/event/645348",
+   "check_confidence": 0.9741713491240845,
+   "passed": true
+  },
+  {
+   "entity_id": "northwestern-30fcae44c8",
+   "field": "organisation_name",
+   "quote": "Bienen School of Music Concerts and Events",
+   "url": "https://planitpurple.northwestern.edu/event/645348",
+   "check_confidence": 0.9456481879504598,
+   "passed": true
+  }
+ ]
+}

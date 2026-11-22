@@ -1,0 +1,84 @@
+{
+ "school": "bit",
+ "name": "北京理工大学",
+ "at": "2026-11-22T00:15:05.969Z",
+ "source": "https://zh.wikipedia.org/wiki/%E5%8C%97%E4%BA%AC%E7%90%86%E5%B7%A5%E5%A4%A7%E5%AD%A6",
+ "character": null,
+ "map": "/art/map/bit.jpg",
+ "landmarks": [
+  {
+   "name": "中心花园",
+   "name_en": "Central Garden",
+   "kind": "garden",
+   "quote": "复制件位于中关村校区中心花园",
+   "look": "A central campus garden featuring a replica of a large planetarium.",
+   "check": 0.9561831450329273,
+   "confidence": 0.9561831450329273,
+   "passed": true,
+   "x": 0.5,
+   "y": 0.51
+  },
+  {
+   "name": "中关村校区的体育馆",
+   "name_en": "Zhongguancun Campus Gymnasium",
+   "kind": "stadium",
+   "quote": "中关村校区的体育馆，在2008年北京奥运会及残奥会时用作排球比赛及盲人门球比赛场馆。",
+   "look": "An Olympic-grade indoor sports gymnasium.",
+   "check": 0.9534083886109056,
+   "confidence": 0.9534083886109056,
+   "passed": true,
+   "x": 0.49,
+   "y": 0.17
+  },
+  {
+   "name": "中心教学楼",
+   "name_en": "Central Teaching Building",
+   "kind": "hall",
+   "quote": "校训由欧阳中石先生所题，并悬挂于中心教学楼入口处。",
+   "look": "A teaching building with the school motto hanging at its entrance.",
+   "check": 0.936273363674431,
+   "confidence": 0.936273363674431,
+   "passed": true,
+   "x": 0.83,
+   "y": 0.31
+  },
+  {
+   "name": "四号教学楼",
+   "name_en": "No. 4 Teaching Building",
+   "kind": "hall",
+   "quote": "中关村校区四号教学楼",
+   "look": "A plain academic teaching building.",
+   "check": 0.9402447404930746,
+   "confidence": 0.9402447404930746,
+   "passed": true,
+   "x": 0.16,
+   "y": 0.32
+  },
+  {
+   "name": "图书馆",
+   "name_en": "Library",
+   "kind": "library",
+   "quote": "北理工基础设施完善，美术馆、图书馆、以及图书馆齐全。",
+   "look": "A plain university library building.",
+   "check": 0.8215050443507858,
+   "confidence": 0.8215050443507858,
+   "passed": true,
+   "x": 0.24,
+   "y": 0.67
+  },
+  {
+   "name": "美术馆",
+   "name_en": "Art Museum",
+   "kind": "museum",
+   "quote": "北理工基础设施完善，美术馆、图书馆、以及图书馆齐全。",
+   "look": "A plain university art museum building.",
+   "check": 0.9180433531599416,
+   "confidence": 0.9180433531599416,
+   "passed": true,
+   "x": 0.8,
+   "y": 0.75
+  }
+ ],
+ "tokens": 13810,
+ "seconds": 27
+}

@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. The main Xueyuan Road campus features 20th-century modern architectural heritage buildings divided into teaching, living, and family zones, with an on-campus park called Lüyuan. Draw exactly these 4 features, well spread across the picture with space between them, each clearly recognisable: (1) Lüyuan Park, a garden: An on-campus green park separating residential areas.; (2) Beihang Stadium, a stadium: A university athletic stadium with a track and field.; (3) Student Canteen No. 5, a hall: A plain university dining hall building.; (4) Student Activity Center, a hall: A plain campus activity hall building, now demolished.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 14,
+ "tokens": 1837,
+ "at": "2026-11-22T00:14:45.841Z"
+}

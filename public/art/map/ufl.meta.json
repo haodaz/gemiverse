@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. The 2,000-acre campus includes a 650-acre historic district and Lake Alice on its western portion. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Century Tower, a tower: A tall 157-foot carillon tower.; (2) Steve Spurrier-Florida Field at Ben Hill Griffin Stadium, a stadium: A large university athletic stadium.; (3) Lake Alice, a lake: A lake on the western portion of campus.; (4) Smathers Library, a library: A large university library building.; (5) Samuel P. Harn Museum of Art, a museum: A large university art museum with a pavilion.; (6) Florida Museum of Natural History, a museum: A natural history museum building.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 18,
+ "tokens": 2409,
+ "at": "2026-11-22T00:18:43.933Z"
+}

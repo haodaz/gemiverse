@@ -1,0 +1,104 @@
+{
+ "school": "ustc",
+ "name": "中国科学技术大学",
+ "at": "2026-11-22T00:11:47.535Z",
+ "source": "https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%A4%A7%E5%AD%A6",
+ "character": "The campus features roads lined with cherry and scholar trees, 1970s dormitory buildings, a historic waterside auditorium, and a tall 1997 library.",
+ "map": "/art/map/ustc.jpg",
+ "landmarks": [
+  {
+   "name": "水上报告厅",
+   "name_en": "Waterside Auditorium",
+   "kind": "hall",
+   "quote": "水上报告厅 科大现存最有历史的报告厅",
+   "look": "Historic auditorium hall, plain style",
+   "check": 0.9771942706457316,
+   "confidence": 0.9771942706457316,
+   "passed": true,
+   "x": 0.16,
+   "y": 0.67
+  },
+  {
+   "name": "西区图书馆",
+   "name_en": "West Campus Library",
+   "kind": "library",
+   "quote": "西区图书馆 建成于1997年，曾是中国科大图书馆的总馆，同时也曾经是西区高度最高的建筑。",
+   "look": "Tall 1997 library building, plain style",
+   "check": 0.9799644015110094,
+   "confidence": 0.9799644015110094,
+   "passed": true,
+   "x": 0.78,
+   "y": 0.4
+  },
+  {
+   "name": "玉泉北路",
+   "name_en": "Yuquan North Road",
+   "kind": "other",
+   "quote": "玉泉北路 该路名为沿用科大在北京建校时所在位置的地名而来，为第一教学楼通往老北门的主干道。道路两旁栽种有日本晚樱",
+   "look": "Main road lined with blooming cherry trees",
+   "check": 0.9750011707474134,
+   "confidence": 0.9750011707474134,
+   "passed": true,
+   "x": 0.41,
+   "y": 0.27
+  },
+  {
+   "name": "老北门",
+   "name_en": "Old North Gate",
+   "kind": "gate",
+   "quote": "为第一教学楼通往老北门的主干道。",
+   "look": "Campus gate, plain style",
+   "check": 0.9555638767583912,
+   "confidence": 0.9555638767583912,
+   "passed": true,
+   "x": 0.65,
+   "y": 0.09
+  },
+  {
+   "name": "四牌楼",
+   "name_en": "Sipailou",
+   "kind": "other",
+   "quote": "四牌楼 东校区西南侧222、223、230和231四栋宿舍楼的统称。1970年代建成",
+   "look": "Four 1970s dormitory buildings grouped together",
+   "check": 0.9682497575137521,
+   "confidence": 0.9682497575137521,
+   "passed": true,
+   "x": 0.4,
+   "y": 0.48
+  },
+  {
+   "name": "天使路",
+   "name_en": "Angel Road",
+   "kind": "other",
+   "quote": "天使路 少年班学院楼前的道路，因种植路旁的国槐上栖息大量灰喜鹊",
+   "look": "Road lined with Chinese scholar trees",
+   "check": 0.9676043873017491,
+   "confidence": 0.9676043873017491,
+   "passed": true,
+   "x": 0.71,
+   "y": 0.75
+  },
+  {
+   "name": "第一教学楼",
+   "name_en": "First Teaching Building",
+   "kind": "other",
+   "quote": "为第一教学楼通往老北门的主干道。",
+   "look": "Academic teaching building, plain style",
+   "check": 0.9703476885129739,
+   "confidence": 0.9703476885129739,
+   "passed": true
+  },
+  {
+   "name": "少年班学院楼",
+   "name_en": "School of the Gifted Young Building",
+   "kind": "other",
+   "quote": "少年班学院楼前的道路",
+   "look": "Academic building, plain style",
+   "check": 0.961751815169602,
+   "confidence": 0.961751815169602,
+   "passed": true
+  }
+ ],
+ "tokens": 13817,
+ "seconds": 28
+}

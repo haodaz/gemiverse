@@ -12,7 +12,7 @@ function place(x, y, W, H) {
 
 function drawEye(g, W, H, cx, cy, side, o) {
   const p = place(cx, cy, W, H), u = H / Math.PI;                 // u: pixels per unit of arc
-  const w = 0.215 * u * p.sx, h = 0.25 * u;                       // half sizes
+  const w = (o.soft ? 0.146 : 0.215) * u * p.sx, h = (o.soft ? 0.2 : 0.25) * u;   // half sizes; the soft style (19:10) is smaller: the large one read as an embroidered plush-doll eye
   g.save(); g.translate(p.px, p.py);
   if (o.closed === "squint") {                                     // > <
     g.strokeStyle = o.line; g.lineWidth = h * 0.16; g.lineCap = "round"; g.lineJoin = "round"; g.beginPath();
@@ -27,10 +27,11 @@ function drawEye(g, W, H, cx, cy, side, o) {
   const eye = new Path2D(); eye.moveTo(-w, -h * 0.25); eye.bezierCurveTo(-w, -h * 0.95, -w * 0.5, -h, 0, -h); eye.bezierCurveTo(w * 0.5, -h, w, -h * 0.95, w, -h * 0.25);
   eye.bezierCurveTo(w, h * 0.55, w * 0.62, h, 0, h); eye.bezierCurveTo(-w * 0.62, h, -w, h * 0.55, -w, -h * 0.25); eye.closePath();
   g.save(); g.clip(eye);
-  g.fillStyle = "#fffaf5"; g.fillRect(-w, -h, w * 2, h * 2);
+  g.fillStyle = o.soft && !o.irisScale ? shade(o.eye, -0.5) : "#fffaf5"; g.fillRect(-w, -h, w * 2, h * 2);
   const ix = (o.look?.[0] ?? 0) * w * 0.25, iy = (o.look?.[1] ?? 0) * h * 0.2 + h * 0.06;
   const iris = g.createLinearGradient(0, -h, 0, h); iris.addColorStop(0, shade(o.eye, -0.55)); iris.addColorStop(0.55, o.eye); iris.addColorStop(1, shade(o.eye, 0.45));
-  const is = o.irisScale ?? 1; g.fillStyle = iris; g.beginPath(); g.ellipse(ix, iy - h * 0.04, w * 0.80 * is, h * 1.08 * is, 0, 0, TAU); g.fill();
+  // soft style: the iris fills the opening, so no white shows (a solid dark eye with highlights, as on the reference Gemi)
+  const is = (o.irisScale ?? 1) * (o.soft ? 1.3 : 1); g.fillStyle = iris; g.beginPath(); g.ellipse(ix, iy - h * 0.04, w * 0.80 * is, h * 1.08 * is, 0, 0, TAU); g.fill();
   g.strokeStyle = shade(o.eye, -0.7); g.lineWidth = w * 0.05; g.stroke();
   if (!o.shape) { g.fillStyle = shade(o.eye, -0.75); g.beginPath(); g.ellipse(ix, iy - h * 0.1 * is, w * 0.36 * is, h * 0.44 * is, 0, 0, TAU); g.fill(); }   // pupil
   g.fillStyle = shade(o.eye, 0.6); g.globalAlpha = 0.55; g.beginPath(); g.ellipse(ix, iy + h * 0.55, w * 0.5, h * 0.2, 0, 0, TAU); g.fill(); g.globalAlpha = 1;   // lower glow
@@ -48,9 +49,11 @@ function drawEye(g, W, H, cx, cy, side, o) {
   g.strokeStyle = o.line; g.fillStyle = o.line; g.lineCap = "round"; g.lineJoin = "round";
   const lid = (t) => { const xn = -1.04 + 2.08 * t, yy = -h * (0.22 + 0.86 * Math.pow(Math.max(0, 1 - Math.pow(Math.abs(xn) / 1.04, 2.6)), 1 / 2.6)); return [side * xn * w, yy]; };   // t: 0 inner corner, 1 outer corner
   const N = 28; for (let i = 0; i < N; i++) { const t0 = i / N, t1 = (i + 1.3) / N, [x0, y0] = lid(t0), [x1, y1] = lid(Math.min(1, t1));
-    g.lineWidth = h * (0.035 + 0.17 * Math.pow(t0, 1.5) * (1 - 0.35 * Math.pow(t0, 6))); g.beginPath(); g.moveTo(x0, y0); g.lineTo(x1, y1); g.stroke(); }
+    g.lineWidth = h * (o.soft ? 0.03 + 0.1 * Math.pow(t0, 1.5) : 0.035 + 0.17 * Math.pow(t0, 1.5) * (1 - 0.35 * Math.pow(t0, 6))); g.beginPath(); g.moveTo(x0, y0); g.lineTo(x1, y1); g.stroke(); }
   const spike = (t, len, lift) => { const [x, y] = lid(t), [xb, yb] = lid(t - 0.09); g.beginPath(); g.moveTo(xb, yb - h * 0.02); g.lineTo(x + side * w * len, y - h * lift); g.lineTo(x, y + h * 0.1); g.closePath(); g.fill(); };
-  spike(0.99, 0.34, 0.22); spike(0.9, 0.26, 0.34); if (o.lashes) spike(0.8, 0.14, 0.3);
+  // 19:00: three lash points read as harsh on the larger head. By default the lid now ends in one small flick (two for looks with lashes); look.softEyes = false restores the points.
+  if (o.soft) { spike(0.97, 0.16, 0.2); if (o.lashes) spike(0.86, 0.12, 0.26); } else { spike(0.99, 0.34, 0.22); spike(0.9, 0.26, 0.34); if (o.lashes) spike(0.8, 0.14, 0.3); }
+  if (o.soft) { g.restore(); return; }   // no crease, no lower-lid strokes
   g.globalAlpha = 0.55; g.lineWidth = h * 0.035; g.beginPath(); g.moveTo(-side * w * 0.55, -h * 1.3); g.quadraticCurveTo(side * w * 0.2, -h * 1.42, side * w * 0.95, -h * 1.12); g.stroke(); g.globalAlpha = 1;   // crease above the lid
   g.lineWidth = h * 0.045; g.beginPath(); g.moveTo(-w * 0.32, h * 1.01); g.quadraticCurveTo(0, h * 1.06, w * 0.32, h * 1.01); g.stroke();                                                   // short lower lid mark
   g.beginPath(); g.moveTo(side * w * 0.45, h * 1.0); g.quadraticCurveTo(side * w * 0.9, h * 0.92, side * w * 1.02, h * 0.45); g.lineWidth = h * 0.04; g.globalAlpha = 0.65; g.stroke(); g.globalAlpha = 1;   // faint lower line, outer corner only
@@ -65,13 +68,13 @@ export function paintFace(THREE, kit, look, expression = "awake") {
       gr.addColorStop(0, colour); gr.addColorStop(1, "rgba(255,255,255,0)"); g.save(); g.globalAlpha = alpha; g.translate(p.px, p.py); g.scale((rx * p.sx) / Math.max(rx * p.sx, ry), ry / Math.max(rx * p.sx, ry)); g.translate(-p.px, -p.py);
       g.fillStyle = gr; g.fillRect(p.px - R, p.py - R, R * 2, R * 2); g.restore(); };
     if (look.blush !== false) { soft(-0.52, -0.52, 0.19, 0.11, "#ff8fa3", 0.6); soft(0.52, -0.52, 0.19, 0.11, "#ff8fa3", 0.6); }
-    const EY = -0.2, EX = 0.45;   // the lower lid sits just above the nose line (Elodie), as on figure faceplates
+    const softF = look.softEyes ?? true, EY = softF ? -0.25 : -0.2, EX = softF ? 0.37 : 0.45;   // soft style: eyes a little lower and closer   // the lower lid sits just above the nose line (Elodie), as on figure faceplates
     const E = { asleep: { closed: "sleep" }, blink: { closed: "sleep" }, happy: { closed: "happy" }, laugh: { closed: "happy" }, squint: { closed: "squint" }, thinking: { look: [0.9, -1] },
       surprised: { irisScale: 0.62 }, star: { shape: "star" }, heart: { shape: "heart" }, sad: { look: [0, 0.6] }, wink: {} }[expression] ?? {};
-    for (const side of [-1, 1]) drawEye(g, W, H, EX * side, EY, side, { eye: look.eye ?? "#6b4a3a", line, lashes: look.lashes, look: [0, 0], ...E, ...(expression === "wink" && side > 0 ? { closed: "happy" } : {}) });
+    for (const side of [-1, 1]) drawEye(g, W, H, EX * side, EY, side, { eye: look.eye ?? "#6b4a3a", line, lashes: look.lashes, soft: look.softEyes ?? true, look: [0, 0], ...E, ...(expression === "wink" && side > 0 ? { closed: "happy" } : {}) });
     if (expression === "sad") { const tp = place(-EX - 0.02, EY - 0.3, W, H); g.fillStyle = "rgba(120,190,255,0.85)"; g.beginPath(); g.ellipse(tp.px, tp.py, u * 0.025 * tp.sx, u * 0.04, 0, 0, TAU); g.fill(); }
     // brows
-    g.strokeStyle = look.browColor ?? line; g.globalAlpha = 0.8; g.lineCap = "round"; g.lineWidth = u * 0.022;
+    g.strokeStyle = look.browColor ?? line; g.globalAlpha = softF ? 0.55 : 0.8; g.lineCap = "round"; g.lineWidth = u * (softF ? 0.017 : 0.022);
     for (const side of [-1, 1]) { const a = place(side * (EX - 0.13), EY + 0.36 + (["unsure", "sad"].includes(expression) ? 0.05 : expression === "surprised" ? 0.06 : 0), W, H), b = place(side * (EX + 0.13), EY + 0.34 - (["unsure", "sad"].includes(expression) ? 0.04 : 0) + (expression === "surprised" ? 0.06 : 0) + (expression === "thinking" && side > 0 ? 0.05 : 0), W, H), m = place(side * EX, EY + 0.385, W, H);
       g.beginPath(); g.moveTo(a.px, a.py); g.quadraticCurveTo(m.px, m.py, b.px, b.py); g.stroke(); }
     g.globalAlpha = 1;
@@ -101,16 +104,16 @@ export function headGeometry(THREE) {
   const ss = (a, b, x) => { const t = Math.max(0, Math.min(1, (x - a) / (b - a))); return t * t * (3 - 2 * t); }, bump = (d, r) => Math.exp(-(d * d) / (r * r));
   for (let i = 0; i < p.count; i++) {
     let x = p.getX(i), y = p.getY(i), z = p.getZ(i);
-    const front = Math.max(0, z), t = ss(-0.5, -1, y);
+    const front = Math.max(0, z), t = ss(-0.28, -1, y);   // 19:10: the taper starts higher and goes further; the face was a flat pillow
     let wx = 1 + 0.035 * bump(y + 0.32, 0.38);                      // cheeks: the widest point
-    wx *= 1 - 0.26 * Math.pow(t, 1.6);                              // a jaw that stays wide, then rounds into the chin
+    wx *= 1 - 0.36 * Math.pow(t, 1.45);                              // a jaw that stays wide, then rounds into the chin
     let wz = 1 - 0.12 * Math.pow(t, 1.5);
     x *= wx;
-    if (z > 0) { z *= wz * (1 - 0.10 * bump(y + 0.25, 0.55));      // a calm, nearly flat face plane
+    if (z > 0) { z *= wz * (1 - 0.03 * bump(y + 0.25, 0.55));      // a rounded face plane
       z += 0.05 * front * bump(y - 0.45, 0.4);                      // full forehead
       z += 0.05 * bump(Math.hypot(x, y + 0.41), 0.085) * front;     // tiny nose, a little higher (Elodie)
       z += 0.02 * bump(Math.hypot(x, y + 0.66), 0.13) * front;      // mouth mound
-      z += 0.03 * front * bump(Math.hypot(Math.abs(x) - 0.5, y + 0.5), 0.22);  // cheek fullness
+      z += 0.06 * front * bump(Math.hypot(Math.abs(x) - 0.42, y + 0.48), 0.26);  // cheek fullness
     } else z *= 1 + 0.06 * bump(y - 0.05, 0.6);                    // big round back of the skull
     // A chin is a shape of its own: the underside of the jaw is nearly flat and the chin sits forward of the neck.
     // (Before this, the face funnelled from the nose straight into the neck.)

@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. The campus sits on cliffs above the Pacific Ocean with a beach, a lagoon, walking and bicycle paths, and buildings featuring custom-tinted patterned concrete blocks. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Storke Tower, a tower: Tall steel and cement tower overlooking a plaza.; (2) Davidson Library, a library: Plain large library building at the center of campus.; (3) Campbell Hall, a hall: Plain large lecture hall building.; (4) Goleta Point, a other: Rocky coastline point extending into the Pacific Ocean.; (5) Storke Plaza, a quad: Open campus plaza beneath a tall tower.; (6) Arts Library, a library: Plain library building.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 15,
+ "tokens": 2055,
+ "at": "2026-11-22T00:19:10.923Z"
+}

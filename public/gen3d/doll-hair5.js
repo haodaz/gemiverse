@@ -109,6 +109,8 @@ function skullSurfaceAtXZ(THREE, x, z, scale) {
   return new THREE.Vector3(x, HC_Y + sy * ry, z);
 }
 
+// 18:50: with the larger head, strands pushed out around the ears read as two lumps. opts.coverEars lets the hair fall over the ears instead.
+let COVER_EARS = false;
 function pushColliders(p, headScale, avoidEars) {
   const rx = HR_X * headScale;
   const ry = HR_Y * headScale;
@@ -124,7 +126,7 @@ function pushColliders(p, headScale, avoidEars) {
     p.z = dz * inv * rz;
   }
 
-  if (avoidEars) {
+  if (avoidEars && !COVER_EARS) {
     for (let sx = -1; sx <= 1; sx += 2) {
       const ex = (p.x - sx * EAR_X) / EAR_RX;
       const ey = (p.y - EAR_Y) / EAR_RY;
@@ -500,7 +502,8 @@ function buildPanel(THREE, cfg, mat, rng, swayItems) {
     }
 
     const halfW = width * 0.5 * wf;
-    const localThick = thick * (blunt ? lerp(0.85, 0.92, v) : lerp(0.9, 0.25, Math.pow(v, 1.8)));
+    // 19:05: a blunt cut kept its full thickness to the tip, so the cut face read as a hard dark line under the fringe. cfg.tipThin thins the edge while the outline stays straight.
+    const localThick = thick * (blunt ? lerp(0.85, cfg.tipThin ?? 0.92, Math.pow(v, 2.2)) : lerp(0.9, 0.25, Math.pow(v, 1.8)));
     const localArc = arcCurv * lerp(1.0, 0.65, hangBlend);
     const rootFade = smoothstep(0.0, 0.08, v);
     const tipFade = blunt ? 1.0 : clamp(wf * 1.4, 0.1, 1.0);
@@ -819,6 +822,7 @@ function addBackAndSides(THREE, group, mat, rng, swayItems, spec) {
     backEndY = 0.015,
     sideEndY = 0.02,
     earCut = false,
+    tipThin,
     blunt = true,
     tipWidth = 0.92,
     width = 0.115,
@@ -875,6 +879,7 @@ function addBackAndSides(THREE, group, mat, rng, swayItems, spec) {
         width: width * (isBack ? 1.06 : 0.95),
         thick,
         blunt: earCut && isEarZone ? false : blunt,
+        tipThin,
         tipWidth: earCut && isEarZone ? 0.35 : tipWidth,
         flare,
         curlIn: isBack ? curlIn : curlIn * 0.7,
@@ -921,6 +926,7 @@ function addBackAndSides(THREE, group, mat, rng, swayItems, spec) {
           width: width * 0.92,
           thick: thick * 0.92,
           blunt: earCut ? false : blunt,
+          tipThin,
           tipWidth: earCut ? 0.25 : tipWidth,
           flare: flare * 1.05,
           curlIn,
@@ -957,6 +963,7 @@ function addBackAndSides(THREE, group, mat, rng, swayItems, spec) {
           width: frontLockWidth,
           thick: thick * 0.85,
           blunt: frontLockBlunt,
+          tipThin,
           tipWidth: frontLockBlunt ? 0.84 : 0.14,
           curlIn: curlIn + 0.006,
           waveAmp: waveAmp * 0.55,
@@ -1079,11 +1086,12 @@ function addFringe(THREE, group, mat, rng, swayItems, fringe, partX, styleOpts =
           az,
           azEnd: az * 1.02,
           dropEl: 0.34,
-          endY: pointed ? 0.202 : 0.203,
-          layer: 2.0 + step * 0.22,
+          endY: pointed ? 0.202 : 0.176,   // 19:15: the blunt fringe comes down to the brows, as on the reference
+          layer: 2.0 + step * 0.1,
           puff: 0.016 + extraPuff,
-          width: pointed ? 0.076 : 0.088,
+          width: pointed ? 0.076 : 0.102,
           thick: 0.015,
+          tipThin: 0.22,
           blunt: !pointed,
           tipWidth: pointed ? 0.16 : 0.96,
           rootWidth: 0.55,
@@ -1192,6 +1200,7 @@ function addFringe(THREE, group, mat, rng, swayItems, fringe, partX, styleOpts =
 }
 
 export function buildHair(THREE, opts = {}, kit) {
+  COVER_EARS = !!opts.coverEars;
   const hairStyle = STYLES.includes(opts.hairStyle) ? opts.hairStyle : "bob";
   const fringe = FRINGES.includes(opts.fringe) ? opts.fringe : "blunt";
   const hairColor = opts.hairColor ?? "#2c2828";
@@ -1236,11 +1245,12 @@ export function buildHair(THREE, opts = {}, kit) {
       backEndY: 0.015,
       sideEndY: 0.018,
       blunt: true,
+      tipThin: 0.45,
       tipWidth: 0.94,
       width: 0.118,
       thick: 0.016,
       puff: 0.015,
-      curlIn: 0.01,
+      curlIn: 0.016,
       addFrontLocks: true,
       frontLockEndY: 0.022,
       frontLockBlunt: true,

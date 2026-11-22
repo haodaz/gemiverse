@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. Situated near the western bank of the Wabash River, the campus is divided by Mitch Daniels Boulevard with academic buildings, malls, athletic facilities, and underground tunnels. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Purdue Mall, a quad: A central campus quad featuring a 38-foot-tall concrete fountain.; (2) Purdue Bell Tower, a tower: An iconic university bell tower standing between two campus malls.; (3) University Hall, a hall: A historic 1870s university hall facing Memorial Mall.; (4) Ross-Ade Stadium, a stadium: A large collegiate American football stadium.; (5) Purdue Memorial Mall, a quad: An open campus quad surrounded by academic and cultural buildings.; (6) Edward C. Elliott Hall of Music, a hall: A large theater hall building.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 18,
+ "tokens": 2349,
+ "at": "2026-11-22T00:20:13.558Z"
+}

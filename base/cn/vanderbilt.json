@@ -1,0 +1,139 @@
+{
+ "school": "vanderbilt",
+ "name": "Vanderbilt University",
+ "at": "2026-11-22T00:13:40.472Z",
+ "seconds": 12,
+ "tokens": 27465,
+ "entities": [
+  {
+   "id": "vanderbilt-d7169894c6",
+   "type": "Event",
+   "school": "vanderbilt",
+   "name": "Aetna Benefits Holiday Celebration",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.vanderbilt.edu/event/102899-aetna-benefits-holiday-celebration",
+    "needs": [
+     "rest_and_recover"
+    ],
+    "start": null,
+    "summary": "Aetna Benefits Holiday Celebration is an event at Vanderbilt University on December 2 from 9:00am to 3:00pm.",
+    "event_kind": "activity",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "vanderbilt-0e4bf099e2",
+   "type": "Event",
+   "school": "vanderbilt",
+   "name": "MJB Scholars - Fall Recital 1",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.vanderbilt.edu/blair/event/101555-mjb-scholars-fall-recital-1",
+    "needs": [
+     "make_and_express",
+     "rest_and_recover"
+    ],
+    "start": null,
+    "summary": "A fall recital by MJB Scholars at Vanderbilt University's Blair School of Music.",
+    "event_kind": "other",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "vanderbilt-8a2880ff7d",
+   "type": "Event",
+   "school": "vanderbilt",
+   "name": "Living Sounds #2",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.vanderbilt.edu/blair/event/101554-living-sounds-2",
+    "needs": [],
+    "start": null,
+    "summary": "An event titled Living Sounds #2 listed on the Vanderbilt University Blair School of Music events calendar, with no further details provided.",
+    "event_kind": "other",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "vanderbilt-84b6dad640",
+   "type": "Event",
+   "school": "vanderbilt",
+   "name": "General Information Session",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.vanderbilt.edu/event/107228-general-information-session",
+    "needs": [
+     "navigate_systems",
+     "decide_a_direction"
+    ],
+    "start": null,
+    "summary": "A general information session listed on Vanderbilt University's events calendar for December 2 from 5:00pm to 6:00pm.",
+    "event_kind": "other",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "vanderbilt-d7169894c6",
+   "field": "title",
+   "quote": "Aetna Benefits Holiday Celebration",
+   "url": "https://events.vanderbilt.edu/event/102899-aetna-benefits-holiday-celebration",
+   "check_confidence": 0.8681257529908477,
+   "passed": true
+  },
+  {
+   "entity_id": "vanderbilt-d7169894c6",
+   "field": "start_time",
+   "quote": "09:00",
+   "url": "https://events.vanderbilt.edu/event/102899-aetna-benefits-holiday-celebration",
+   "check_confidence": 0.9681563350456096,
+   "passed": true
+  },
+  {
+   "entity_id": "vanderbilt-0e4bf099e2",
+   "field": "title",
+   "quote": "MJB Scholars - Fall Recital 1",
+   "url": "https://events.vanderbilt.edu/blair/event/101555-mjb-scholars-fall-recital-1",
+   "check_confidence": 0.892479578763344,
+   "passed": true
+  },
+  {
+   "entity_id": "vanderbilt-8a2880ff7d",
+   "field": "title",
+   "quote": "Living Sounds #2",
+   "url": "https://events.vanderbilt.edu/blair/event/101554-living-sounds-2",
+   "check_confidence": 0.8438845465024226,
+   "passed": true
+  },
+  {
+   "entity_id": "vanderbilt-84b6dad640",
+   "field": "title",
+   "quote": "General Information Session",
+   "url": "https://events.vanderbilt.edu/event/107228-general-information-session",
+   "check_confidence": 0.8315614599948505,
+   "passed": true
+  },
+  {
+   "entity_id": "vanderbilt-84b6dad640",
+   "field": "start_time",
+   "quote": "17:00",
+   "url": "https://events.vanderbilt.edu/event/107228-general-information-session",
+   "check_confidence": 0.9458583580732427,
+   "passed": true
+  }
+ ]
+}

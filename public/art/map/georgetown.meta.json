@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. The compact 104-acre hilltop campus overlooks the Potomac River, featuring Neo-Medieval Healy Hall, traditional quadrangles, fountains, flowers, and groves of trees. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Healy Hall, a hall: Large Neo-Medieval style hall building.; (2) Healy Gates, a gate: Main campus entrance gates.; (3) Dahlgren Quadrangle, a quad: Traditional open quadrangle behind Healy Hall.; (4) Red Square, a other: Open central campus square.; (5) Riggs Library, a library: Library room inside Healy Hall.; (6) Gaston Hall, a hall: Notable hall room inside Healy Hall.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 15,
+ "tokens": 2121,
+ "at": "2026-11-22T00:17:41.264Z"
+}

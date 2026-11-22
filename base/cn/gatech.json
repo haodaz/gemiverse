@@ -1,0 +1,346 @@
+{
+ "school": "gatech",
+ "name": "Georgia Institute of Technology",
+ "at": "2026-11-22T00:20:31.493Z",
+ "seconds": 18,
+ "tokens": 48627,
+ "entities": [
+  {
+   "id": "gatech-1bbf4bbd49",
+   "type": "Event",
+   "school": "gatech",
+   "name": "Fall 2026 Commencement - Thursday Afternoon Commencement",
+   "tier": 1,
+   "fields": {
+    "url": "https://specialevents.gatech.edu/events/fall-2026-commencement-thursday-afternoon-commencement",
+    "needs": [
+     "find_my_people"
+    ],
+    "start": "2026-12-17T18:00",
+    "summary": "Georgia Tech's Fall 2026 Thursday Afternoon Commencement ceremony for Master's College of Computing and MSCS-O students at McCamish Pavilion.",
+    "event_kind": "other",
+    "venue_name": "McCamish Pavilion",
+    "organisation_name": "Georgia Tech Commencement Office",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-17T18:00",
+      "end": "2026-12-17T20:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "gatech-a97c59fd6e",
+   "type": "Event",
+   "school": "gatech",
+   "name": "Fall 2026 Commencement - Ph.D. Commencement",
+   "tier": 1,
+   "fields": {
+    "url": "https://specialevents.gatech.edu/events/fall-2026-commencement-phd-commencement",
+    "needs": [
+     "find_my_people",
+     "navigate_systems"
+    ],
+    "start": "2026-12-17T10:00",
+    "summary": "Georgia Tech will hold its Fall 2026 Ph.D. Commencement ceremony at McCamish Pavilion, with live streaming available and no tickets required.",
+    "event_kind": "other",
+    "venue_name": "McCamish Pavilion",
+    "organisation_name": "Georgia Tech Commencement Office",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-17T10:00",
+      "end": "2026-12-17T11:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "gatech-44dbfaf213",
+   "type": "Event",
+   "school": "gatech",
+   "name": "The 2027 Event Coordinators' Network Workshop",
+   "tier": 1,
+   "fields": {
+    "url": "https://specialevents.gatech.edu/ecnworkshop",
+    "needs": [
+     "build_a_skill",
+     "find_my_people"
+    ],
+    "start": "2027-02-03T09:00",
+    "summary": "The 2027 Event Coordinators' Network Workshop offers keynotes, breakout sessions, and networking for Georgia Tech colleagues.",
+    "event_kind": "workshop",
+    "venue_name": "Georgia Tech Exhibition Hall",
+    "organisation_name": "Special Events Protocol Team",
+    "speaker": "Dr. Angela Thibeaux",
+    "occurrences": [
+     {
+      "start": "2027-02-03T09:00",
+      "end": "2027-02-03T16:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "gatech-f317c604c5",
+   "type": "Event",
+   "school": "gatech",
+   "name": "Fall 2026 Commencement - Friday Afternoon Commencement",
+   "tier": 1,
+   "fields": {
+    "url": "https://specialevents.gatech.edu/events/fall-2026-commencement-friday-afternoon-commencement",
+    "needs": [
+     "find_my_people"
+    ],
+    "start": "2026-12-18T16:00",
+    "summary": "Georgia Tech's Fall 2026 Friday Afternoon Commencement ceremony for Bachelor's and Master's students in the Colleges of Design and Engineering.",
+    "event_kind": "other",
+    "venue_name": "McCamish Pavilion",
+    "organisation_name": "Georgia Tech Commencement Office",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-18T16:00",
+      "end": "2026-12-18T18:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "gatech-e7f8902123",
+   "type": "Event",
+   "school": "gatech",
+   "name": "Fall 2026 Commencement - Friday Morning Commencement",
+   "tier": 1,
+   "fields": {
+    "url": "https://specialevents.gatech.edu/events/fall-2026-commencement-friday-morning-commencement",
+    "needs": [
+     "find_my_people"
+    ],
+    "start": "2026-12-18T09:00",
+    "summary": "Georgia Tech's Fall 2026 Friday Morning Commencement ceremony for bachelor's and master's graduates from Computing, Engineering, and Liberal Arts.",
+    "event_kind": "other",
+    "venue_name": "McCamish Pavilion",
+    "organisation_name": "Georgia Tech Commencement Office",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-18T09:00",
+      "end": "2026-12-18T11:30"
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "gatech-1bbf4bbd49",
+   "field": "title",
+   "quote": "Fall 2026 Commencement - Thursday Afternoon Commencement",
+   "url": "https://specialevents.gatech.edu/events/fall-2026-commencement-thursday-afternoon-commencement",
+   "check_confidence": 0.9711145648381992,
+   "passed": true
+  },
+  {
+   "entity_id": "gatech-1bbf4bbd49",
+   "field": "date",
+   "quote": "Thursday December 17, 2026 6:00PM - 8:30PM",
+   "url": "https://specialevents.gatech.edu/events/fall-2026-commencement-thursday-afternoon-commencement",
+   "check_confidence": 0.98825521129381,
+   "passed": true
+  },
+  {
+   "entity_id": "gatech-1bbf4bbd49",
+   "field": "start_time",
+   "quote": "18:00",
+   "url": "https://specialevents.gatech.edu/events/fall-2026-commencement-thursday-afternoon-commencement",
+   "check_confidence": 0.9896513476428266,
+   "passed": true
+  },
+  {
+   "entity_id": "gatech-1bbf4bbd49",
+   "field": "venue_name",
+   "quote": "McCamish Pavilion",
+   "url": "https://specialevents.gatech.edu/events/fall-2026-commencement-thursday-afternoon-commencement",
+   "check_confidence": 0.9780670985792971,
+   "passed": true
+  },
+  {
+   "entity_id": "gatech-1bbf4bbd49",
+   "field": "organisation_name",
+   "quote": "Georgia Tech Commencement Office",
+   "url": "https://specialevents.gatech.edu/events/fall-2026-commencement-thursday-afternoon-commencement",
+   "check_confidence": 0.9855306142448249,
+   "passed": true
+  },
+  {
+   "entity_id": "gatech-a97c59fd6e",
+   "field": "title",
+   "quote": "Fall 2026 Commencement - Ph.D. Commencement",
+   "url": "https://specialevents.gatech.edu/events/fall-2026-commencement-phd-commencement",
+   "check_confidence": 0.9720609083713928,
+   "passed": true
+  },
+  {
+   "entity_id": "gatech-a97c59fd6e",
+   "field": "date",
+   "quote": "Thursday December 17, 2026 10:00AM - 11:30AM",
+   "url": "https://specialevents.gatech.edu/events/fall-2026-commencement-phd-commencement",
+   "check_confidence": 0.9848721873336375,
+   "passed": true
+  },
+  {
+   "entity_id": "gatech-a97c59fd6e",
+   "field": "start_time",
+   "quote": "10:00",
+   "url": "https://specialevents.gatech.edu/events/fall-2026-commencement-phd-commencement",
+   "check_confidence": 0.9794070521363316,
+   "passed": true
+  },
+  {
+   "entity_id": "gatech-a97c59fd6e",
+   "field": "venue_name",
+   "quote": "McCamish Pavilion",
+   "url": "https://specialevents.gatech.edu/events/fall-2026-commencement-phd-commencement",
+   "check_confidence": 0.9889533878396085,
+   "passed": true
+  },
+  {
+   "entity_id": "gatech-a97c59fd6e",
+   "field": "organisation_name",
+   "quote": "Georgia Tech Commencement Office",
+   "url": "https://specialevents.gatech.edu/events/fall-2026-commencement-phd-commencement",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "gatech-44dbfaf213",
+   "field": "title",
+   "quote": "The 2027 Event Coordinators' Network Workshop",
+   "url": "https://specialevents.gatech.edu/ecnworkshop",
+   "check_confidence": 0.981751883368496,
+   "passed": true
+  },
+  {
+   "entity_id": "gatech-44dbfaf213",
+   "field": "date",
+   "quote": "Wednesday, Feb. 3 9 a.m. - 4:30 p.m.",
+   "url": "https://specialevents.gatech.edu/ecnworkshop",
+   "check_confidence": 0.9458148373167087,
+   "passed": true
+  },
+  {
+   "entity_id": "gatech-44dbfaf213",
+   "field": "start_time",
+   "quote": "09:00",
+   "url": "https://specialevents.gatech.edu/ecnworkshop",
+   "check_confidence": 0.9642603236962423,
+   "passed": true
+  },
+  {
+   "entity_id": "gatech-44dbfaf213",
+   "field": "venue_name",
+   "quote": "Georgia Tech Exhibition Hall",
+   "url": "https://specialevents.gatech.edu/ecnworkshop",
+   "check_confidence": 0.9783414022361734,
+   "passed": true
+  },
+  {
+   "entity_id": "gatech-44dbfaf213",
+   "field": "organisation_name",
+   "quote": "Special Events Protocol Team",
+   "url": "https://specialevents.gatech.edu/ecnworkshop",
+   "check_confidence": 0.9330299234139144,
+   "passed": true
+  },
+  {
+   "entity_id": "gatech-44dbfaf213",
+   "field": "speaker",
+   "quote": "Dr. Angela Thibeaux",
+   "url": "https://specialevents.gatech.edu/ecnworkshop",
+   "check_confidence": 0.9694497688789901,
+   "passed": true
+  },
+  {
+   "entity_id": "gatech-f317c604c5",
+   "field": "title",
+   "quote": "Fall 2026 Commencement - Friday Afternoon Commencement",
+   "url": "https://specialevents.gatech.edu/events/fall-2026-commencement-friday-afternoon-commencement",
+   "check_confidence": 0.9751885671996191,
+   "passed": true
+  },
+  {
+   "entity_id": "gatech-f317c604c5",
+   "field": "date",
+   "quote": "Friday December 18, 2026 4:00PM - 6:30PM",
+   "url": "https://specialevents.gatech.edu/events/fall-2026-commencement-friday-afternoon-commencement",
+   "check_confidence": 0.9855259362885426,
+   "passed": true
+  },
+  {
+   "entity_id": "gatech-f317c604c5",
+   "field": "start_time",
+   "quote": "16:00",
+   "url": "https://specialevents.gatech.edu/events/fall-2026-commencement-friday-afternoon-commencement",
+   "check_confidence": 0.9768304185588857,
+   "passed": true
+  },
+  {
+   "entity_id": "gatech-f317c604c5",
+   "field": "venue_name",
+   "quote": "McCamish Pavilion",
+   "url": "https://specialevents.gatech.edu/events/fall-2026-commencement-friday-afternoon-commencement",
+   "check_confidence": 0.9658164264869845,
+   "passed": true
+  },
+  {
+   "entity_id": "gatech-f317c604c5",
+   "field": "organisation_name",
+   "quote": "Georgia Tech Commencement Office",
+   "url": "https://specialevents.gatech.edu/events/fall-2026-commencement-friday-afternoon-commencement",
+   "check_confidence": 0.9860353356551296,
+   "passed": true
+  },
+  {
+   "entity_id": "gatech-e7f8902123",
+   "field": "title",
+   "quote": "Fall 2026 Commencement - Friday Morning Commencement",
+   "url": "https://specialevents.gatech.edu/events/fall-2026-commencement-friday-morning-commencement",
+   "check_confidence": 0.9721745076983692,
+   "passed": true
+  },
+  {
+   "entity_id": "gatech-e7f8902123",
+   "field": "date",
+   "quote": "Friday December 18, 2026 9:00AM - 11:30AM",
+   "url": "https://specialevents.gatech.edu/events/fall-2026-commencement-friday-morning-commencement",
+   "check_confidence": 0.9746137729374879,
+   "passed": true
+  },
+  {
+   "entity_id": "gatech-e7f8902123",
+   "field": "start_time",
+   "quote": "09:00",
+   "url": "https://specialevents.gatech.edu/events/fall-2026-commencement-friday-morning-commencement",
+   "check_confidence": 0.961624356440929,
+   "passed": true
+  },
+  {
+   "entity_id": "gatech-e7f8902123",
+   "field": "venue_name",
+   "quote": "McCamish Pavilion",
+   "url": "https://specialevents.gatech.edu/events/fall-2026-commencement-friday-morning-commencement",
+   "check_confidence": 0.9750356769114322,
+   "passed": true
+  },
+  {
+   "entity_id": "gatech-e7f8902123",
+   "field": "organisation_name",
+   "quote": "Georgia Tech Commencement Office",
+   "url": "https://specialevents.gatech.edu/events/fall-2026-commencement-friday-morning-commencement",
+   "check_confidence": 0.9831197213553636,
+   "passed": true
+  }
+ ]
+}

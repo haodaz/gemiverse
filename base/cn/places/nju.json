@@ -1,0 +1,104 @@
+{
+ "school": "nju",
+ "name": "南京大学",
+ "at": "2026-11-22T00:11:41.956Z",
+ "source": "https://zh.wikipedia.org/wiki/%E5%8D%97%E4%BA%AC%E5%A4%A7%E5%AD%A6",
+ "character": "The main Xianlin campus sits near the southern Yangtze River bank surrounded by mountains, while the historic Gulou campus features traditional Chinese-style architecture.",
+ "map": "/art/map/nju.jpg",
+ "landmarks": [
+  {
+   "name": "北大楼",
+   "name_en": "North Building",
+   "kind": "hall",
+   "quote": "其中的北大楼已经成为南京大学的标志性建筑。",
+   "look": "Traditional Chinese-style iconic university building",
+   "check": 0.9694820825524187,
+   "confidence": 0.9694820825524187,
+   "passed": true,
+   "x": 0.73,
+   "y": 0.21
+  },
+  {
+   "name": "南京大学仙林图书馆",
+   "name_en": "Nanjing University Xianlin Library",
+   "kind": "library",
+   "quote": "其中，南京大学仙林图书馆藏书500万册。",
+   "look": "Large plain library building",
+   "check": 0.940612568953583,
+   "confidence": 0.940612568953583,
+   "passed": true,
+   "x": 0.28,
+   "y": 0.55
+  },
+  {
+   "name": "南京大学太阳塔",
+   "name_en": "Nanjing University Solar Tower",
+   "kind": "tower",
+   "quote": "南京大学天文台装备有全国唯一的太阳塔望远镜——南京大学太阳塔",
+   "look": "Tall astronomical solar telescope tower",
+   "check": 0.9041014179774584,
+   "confidence": 0.9041014179774584,
+   "passed": true,
+   "x": 0.47,
+   "y": 0.5
+  },
+  {
+   "name": "南京大学考古与艺术博物馆",
+   "name_en": "Nanjing University Museum of Archaeology and Art",
+   "kind": "museum",
+   "quote": "鼓楼校区有南京大学考古与艺术博物馆",
+   "look": "Plain museum building",
+   "check": 0.9760101950310152,
+   "confidence": 0.9760101950310152,
+   "passed": true,
+   "x": 0.59,
+   "y": 0.56
+  },
+  {
+   "name": "南京大学地球科学博物馆",
+   "name_en": "Nanjing University Earth Sciences Museum",
+   "kind": "museum",
+   "quote": "南京大学地球科学博物馆",
+   "look": "Plain museum building",
+   "check": 0.973240175895283,
+   "confidence": 0.973240175895283,
+   "passed": true,
+   "x": 0.77,
+   "y": 0.59
+  },
+  {
+   "name": "南京大学校史博物馆",
+   "name_en": "Nanjing University History Museum",
+   "kind": "museum",
+   "quote": "南京大学校史博物馆等。",
+   "look": "Plain museum building",
+   "check": 0.9680036759216837,
+   "confidence": 0.9680036759216837,
+   "passed": true,
+   "x": 0.54,
+   "y": 0.77
+  },
+  {
+   "name": "拉贝与国际安全区纪念馆",
+   "name_en": "John Rabe and International Safety Zone Memorial Hall",
+   "kind": "museum",
+   "quote": "还有设立了拉贝与国际安全区纪念馆的拉贝故居",
+   "look": "Historic former residence converted into a memorial hall",
+   "check": 0.9017746163997299,
+   "confidence": 0.9017746163997299,
+   "passed": true
+  },
+  {
+   "name": "金陵苑",
+   "name_en": "Jinlingyuan",
+   "kind": "quad",
+   "quote": "北园内金陵苑一带为中华传统风格建筑群",
+   "look": "Courtyard area surrounded by traditional Chinese-style buildings",
+   "check": 0.966058131642881,
+   "confidence": 0.966058131642881,
+   "passed": true
+  }
+ ],
+ "tokens": 16251,
+ "seconds": 28
+}

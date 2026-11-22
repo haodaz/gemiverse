@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A soft, warm storybook illustration in gentle pastel colours, wide 16:9, flat shapes with light texture, golden afternoon light, a few tiny students walking. No text, no letters, no logos, no emblems, no watermarks. Scene: a university campus in a subtropical campus, red-brick halls with green-glazed roofs, banyan trees and a lawn by a river.",
+ "reference": null,
+ "seconds": 15,
+ "tokens": 1678,
+ "at": "2026-11-21T23:34:00.984Z"
+}

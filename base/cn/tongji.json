@@ -1,0 +1,124 @@
+{
+ "school": "tongji",
+ "name": "同济大学",
+ "at": "2026-11-21T23:36:08.002Z",
+ "seconds": 41,
+ "tokens": 14047,
+ "entities": [
+  {
+   "id": "tongji-9204d16342",
+   "type": "Event",
+   "school": "tongji",
+   "name": "地球春秋之一：科学拓展世界观",
+   "tier": 1,
+   "fields": {
+    "url": "https://mp.weixin.qq.com/s/fhNYa0hJDOuRcsxXecsnXA",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": null,
+    "summary": "汪品先院士主讲同济高等讲堂“地球春秋”系列讲座首场，探讨科学拓展世界观。",
+    "event_kind": "lecture",
+    "venue_name": "四平路校区逸夫楼一楼报告厅",
+    "organisation_name": "研究生院、海洋与地球科学学院",
+    "speaker": "汪品先",
+    "occurrences": []
+   }
+  },
+  {
+   "id": "tongji-3e8076bd9a",
+   "type": "Event",
+   "school": "tongji",
+   "name": "同济大学2027届校园综合招聘会",
+   "tier": 1,
+   "fields": {
+    "url": "https://mp.weixin.qq.com/s/_fGlS21tHGbZbaTCLaG20A",
+    "needs": [
+     "explore_a_field",
+     "decide_a_direction"
+    ],
+    "start": null,
+    "summary": "同济大学2027届校园综合招聘会首场在嘉定校区举行，600余家单位参会。",
+    "event_kind": "activity",
+    "venue_name": "嘉定校区同德楼、济人楼（曹安公路4800号）",
+    "organisation_name": "党委学生工作部、学生就业指导中心",
+    "speaker": null,
+    "occurrences": []
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "tongji-9204d16342",
+   "field": "title",
+   "quote": "地球春秋之一：科学拓展世界观",
+   "url": "https://mp.weixin.qq.com/s/fhNYa0hJDOuRcsxXecsnXA",
+   "check_confidence": 0.9312825329387885,
+   "passed": true
+  },
+  {
+   "entity_id": "tongji-9204d16342",
+   "field": "start_time",
+   "quote": "18:30",
+   "url": "https://mp.weixin.qq.com/s/fhNYa0hJDOuRcsxXecsnXA",
+   "check_confidence": 0.9773864492636649,
+   "passed": true
+  },
+  {
+   "entity_id": "tongji-9204d16342",
+   "field": "venue_name",
+   "quote": "四平路校区逸夫楼一楼报告厅",
+   "url": "https://mp.weixin.qq.com/s/fhNYa0hJDOuRcsxXecsnXA",
+   "check_confidence": 0.9718310162700826,
+   "passed": true
+  },
+  {
+   "entity_id": "tongji-9204d16342",
+   "field": "organisation_name",
+   "quote": "研究生院、海洋与地球科学学院",
+   "url": "https://mp.weixin.qq.com/s/fhNYa0hJDOuRcsxXecsnXA",
+   "check_confidence": 0.8110056023579365,
+   "passed": true
+  },
+  {
+   "entity_id": "tongji-9204d16342",
+   "field": "speaker",
+   "quote": "汪品先",
+   "url": "https://mp.weixin.qq.com/s/fhNYa0hJDOuRcsxXecsnXA",
+   "check_confidence": 0.9834115851535661,
+   "passed": true
+  },
+  {
+   "entity_id": "tongji-3e8076bd9a",
+   "field": "title",
+   "quote": "同济大学2027届校园综合招聘会",
+   "url": "https://mp.weixin.qq.com/s/_fGlS21tHGbZbaTCLaG20A",
+   "check_confidence": 0.9666923345929586,
+   "passed": true
+  },
+  {
+   "entity_id": "tongji-3e8076bd9a",
+   "field": "start_time",
+   "quote": "13:30",
+   "url": "https://mp.weixin.qq.com/s/_fGlS21tHGbZbaTCLaG20A",
+   "check_confidence": 0.9861472947722929,
+   "passed": true
+  },
+  {
+   "entity_id": "tongji-3e8076bd9a",
+   "field": "venue_name",
+   "quote": "嘉定校区同德楼、济人楼（曹安公路4800号）",
+   "url": "https://mp.weixin.qq.com/s/_fGlS21tHGbZbaTCLaG20A",
+   "check_confidence": 0.9725443027445723,
+   "passed": true
+  },
+  {
+   "entity_id": "tongji-3e8076bd9a",
+   "field": "organisation_name",
+   "quote": "党委学生工作部、学生就业指导中心",
+   "url": "https://mp.weixin.qq.com/s/_fGlS21tHGbZbaTCLaG20A",
+   "check_confidence": 0.9640798591581247,
+   "passed": true
+  }
+ ]
+}

@@ -1,0 +1,146 @@
+{
+ "school": "buaa",
+ "name": "北京航空航天大学",
+ "at": "2026-11-22T00:14:06.563Z",
+ "seconds": 26,
+ "tokens": 18983,
+ "entities": [
+  {
+   "id": "buaa-be717d0e27",
+   "type": "Event",
+   "school": "buaa",
+   "name": "海淀区民族音乐\"艺\"起来中央民族乐团走进北京航空航天大学专场音乐会",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.buaa.edu.cn/info/1076/8681.htm",
+    "needs": [
+     "rest_and_recover",
+     "explore_a_field"
+    ],
+    "start": "2026-11-05T19:00",
+    "summary": "中央民族乐团将在北航晨兴音乐厅举办专场民族音乐会，面向全校师生开放报名。",
+    "event_kind": "activity",
+    "venue_name": "北京航空航天大学晨兴音乐厅",
+    "organisation_name": "北京航空航天大学、北京市海淀区文化和旅游局",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-05T19:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "buaa-4e52f1a272",
+   "type": "Event",
+   "school": "buaa",
+   "name": "【北航美育大讲堂】张璐：华夏文明的筝乐之美",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.buaa.edu.cn/info/1076/8732.htm",
+    "needs": [
+     "explore_a_field",
+     "rest_and_recover"
+    ],
+    "start": null,
+    "summary": "邀请古筝演奏家张璐主讲华夏文明的筝乐之美，介绍古筝艺术特色。",
+    "event_kind": "lecture",
+    "venue_name": "北航晨兴音乐厅",
+    "organisation_name": "北京市海淀区文化和旅游局、北京航空航天大学",
+    "speaker": "张璐",
+    "occurrences": []
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "buaa-be717d0e27",
+   "field": "title",
+   "quote": "海淀区民族音乐\"艺\"起来中央民族乐团走进北京航空航天大学专场音乐会",
+   "url": "https://www.buaa.edu.cn/info/1076/8681.htm",
+   "check_confidence": 0.9551737375321923,
+   "passed": true
+  },
+  {
+   "entity_id": "buaa-be717d0e27",
+   "field": "date",
+   "quote": "2026年11月5日 19:00",
+   "url": "https://www.buaa.edu.cn/info/1076/8681.htm",
+   "check_confidence": 0.968911992187431,
+   "passed": true
+  },
+  {
+   "entity_id": "buaa-be717d0e27",
+   "field": "start_time",
+   "quote": "19:00",
+   "url": "https://www.buaa.edu.cn/info/1076/8681.htm",
+   "check_confidence": 0.978994090174517,
+   "passed": true
+  },
+  {
+   "entity_id": "buaa-be717d0e27",
+   "field": "venue_name",
+   "quote": "北京航空航天大学晨兴音乐厅",
+   "url": "https://www.buaa.edu.cn/info/1076/8681.htm",
+   "check_confidence": 0.9795002519321768,
+   "passed": true
+  },
+  {
+   "entity_id": "buaa-be717d0e27",
+   "field": "organisation_name",
+   "quote": "北京航空航天大学、北京市海淀区文化和旅游局",
+   "url": "https://www.buaa.edu.cn/info/1076/8681.htm",
+   "check_confidence": 0.9597691247304604,
+   "passed": true
+  },
+  {
+   "entity_id": "buaa-4e52f1a272",
+   "field": "title",
+   "quote": "【北航美育大讲堂】张璐：华夏文明的筝乐之美",
+   "url": "https://www.buaa.edu.cn/info/1076/8732.htm",
+   "check_confidence": 0.9732983962776075,
+   "passed": true
+  },
+  {
+   "entity_id": "buaa-4e52f1a272",
+   "field": "date",
+   "quote": "11月11日（周三）14:00-16:00（提前半小时13:30入场）",
+   "url": "https://www.buaa.edu.cn/info/1076/8732.htm",
+   "check_confidence": 0.4368682034123413,
+   "passed": false
+  },
+  {
+   "entity_id": "buaa-4e52f1a272",
+   "field": "start_time",
+   "quote": "14:00",
+   "url": "https://www.buaa.edu.cn/info/1076/8732.htm",
+   "check_confidence": 0.9781893985867917,
+   "passed": true
+  },
+  {
+   "entity_id": "buaa-4e52f1a272",
+   "field": "venue_name",
+   "quote": "北航晨兴音乐厅",
+   "url": "https://www.buaa.edu.cn/info/1076/8732.htm",
+   "check_confidence": 0.9694585578598184,
+   "passed": true
+  },
+  {
+   "entity_id": "buaa-4e52f1a272",
+   "field": "organisation_name",
+   "quote": "北京市海淀区文化和旅游局、北京航空航天大学",
+   "url": "https://www.buaa.edu.cn/info/1076/8732.htm",
+   "check_confidence": 0.9641756838047579,
+   "passed": true
+  },
+  {
+   "entity_id": "buaa-4e52f1a272",
+   "field": "speaker",
+   "quote": "张璐",
+   "url": "https://www.buaa.edu.cn/info/1076/8732.htm",
+   "check_confidence": 0.9864121136286751,
+   "passed": true
+  }
+ ]
+}

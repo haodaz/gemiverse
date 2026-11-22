@@ -1,0 +1,796 @@
+{
+ "school": "wisc",
+ "name": "University of Wisconsin–Madison",
+ "at": "2026-11-22T00:20:34.437Z",
+ "seconds": 26,
+ "tokens": 61749,
+ "entities": [
+  {
+   "id": "wisc-13657fd56f",
+   "type": "Event",
+   "school": "wisc",
+   "name": "Academic Fellowship Club dinner and lecture",
+   "tier": 1,
+   "fields": {
+    "url": "https://today.wisc.edu/events/view/227402",
+    "needs": [
+     "find_my_people",
+     "explore_a_field"
+    ],
+    "start": "2026-11-22",
+    "summary": "The Academic Fellowship Club hosts a monthly sit-down dinner and after-dinner lecture for active and retired faculty, academic staff, and their partners.",
+    "event_kind": "lecture",
+    "venue_name": "TBA for December 8th dinner and lecture, Union South",
+    "organisation_name": "Academic Fellowship Club",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-22",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "wisc-eb2d27dbc1",
+   "type": "Event",
+   "school": "wisc",
+   "name": "k1, p2: from Handknits to Computational Design",
+   "tier": 1,
+   "fields": {
+    "url": "https://today.wisc.edu/events/view/228078",
+    "needs": [
+     "explore_a_field",
+     "make_and_express"
+    ],
+    "start": "2026-11-22",
+    "summary": "An exhibition showcasing knits from the Helen Louise Allen Textile Collection alongside objects by contemporary artists and designers.",
+    "event_kind": "exhibition",
+    "venue_name": "1199 Nancy Nicholas Hall",
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-22",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "wisc-159661ef4e",
+   "type": "Event",
+   "school": "wisc",
+   "name": "Knitted Dimensions: Knit, Technology, and Spatial Practices",
+   "tier": 1,
+   "fields": {
+    "url": "https://today.wisc.edu/events/view/228107",
+    "needs": [
+     "explore_a_field",
+     "make_and_express"
+    ],
+    "start": "2026-11-22",
+    "summary": "An exhibition of knit-based soft architecture installations demonstrating how computational knitting reshapes spatial, structural, and interactive textile systems.",
+    "event_kind": "exhibition",
+    "venue_name": "1199 Nancy Nicholas Hall",
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-22",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "wisc-fdedaa3ffc",
+   "type": "Event",
+   "school": "wisc",
+   "name": "Women s Hockey: UW vs. Bemidji State University",
+   "tier": 1,
+   "fields": {
+    "url": "https://today.wisc.edu/events/view/224426",
+    "needs": [
+     "find_my_people",
+     "rest_and_recover"
+    ],
+    "start": "2026-11-22T12:00",
+    "summary": "University of Wisconsin women's hockey team plays against Bemidji State University at LaBahn Arena.",
+    "event_kind": "competition",
+    "venue_name": "LaBahn Arena",
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-22T12:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "wisc-f1265debdd",
+   "type": "Event",
+   "school": "wisc",
+   "name": "Women s Basketball: UW vs. Lafayette",
+   "tier": 1,
+   "fields": {
+    "url": "https://today.wisc.edu/events/view/225464",
+    "needs": [
+     "find_my_people",
+     "rest_and_recover"
+    ],
+    "start": "2026-11-22T12:00",
+    "summary": "UW–Madison women's basketball team plays against Lafayette at The Kohl Center.",
+    "event_kind": "competition",
+    "venue_name": "The Kohl Center",
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-22T12:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "wisc-8a303aaa63",
+   "type": "Event",
+   "school": "wisc",
+   "name": "The Joyful Urgency of Dickey Lee Stafford",
+   "tier": 1,
+   "fields": {
+    "url": "https://today.wisc.edu/events/view/227746",
+    "needs": [
+     "explore_a_field",
+     "find_my_people"
+    ],
+    "start": "2026-11-22T08:00",
+    "summary": "An exhibition at Memorial Library showcasing the commercial, activist, and fine art of Madison artist Dickey Lee Stafford.",
+    "event_kind": "exhibition",
+    "venue_name": "Class of 1925 Gallery, Memorial Library",
+    "organisation_name": "UW–Madison Libraries’ LGBTQ+ Archive and the Wisconsin Union Directorate Art Committee",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-22T08:00",
+      "end": "2026-11-22T22:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "wisc-ad12b141a9",
+   "type": "Event",
+   "school": "wisc",
+   "name": "Souper Bowl Fundraiser",
+   "tier": 1,
+   "fields": {
+    "url": "https://today.wisc.edu/events/view/227859",
+    "needs": [
+     "make_and_express",
+     "contribute_beyond_self"
+    ],
+    "start": "2026-11-22T12:00",
+    "summary": "UW-Madison students, staff, and faculty with ceramics experience can trim bowls to donate for the Souper Bowl XXXI fundraiser.",
+    "event_kind": "activity",
+    "venue_name": "Ceramics Lab Room 1040, Art Lofts",
+    "organisation_name": "Habitat for Humanity UW-Madison Campus Chapter and the UW Art Ceramics Program",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-22T12:00",
+      "end": "2026-11-22T16:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "wisc-ca99bb5a59",
+   "type": "Event",
+   "school": "wisc",
+   "name": "Drop-In Tour: Recollection: Exhibiting the Collection",
+   "tier": 1,
+   "fields": {
+    "url": "https://today.wisc.edu/events/view/226098",
+    "needs": [
+     "explore_a_field",
+     "rest_and_recover"
+    ],
+    "start": "2026-11-22T12:00",
+    "summary": "A participatory 60-minute guided tour of the Recollection: Exhibiting the Collection exhibition at the Chazen Museum of Art.",
+    "event_kind": "exhibition",
+    "venue_name": "Chazen Museum of Art",
+    "organisation_name": "Chazen Museum of Art",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-22T12:00",
+      "end": "2026-11-22T13:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "wisc-ecef2f2d19",
+   "type": "Event",
+   "school": "wisc",
+   "name": "Knitting 101",
+   "tier": 1,
+   "fields": {
+    "url": "https://union.wisc.edu/events-and-activities/event-calendar/event/knitting-101-2",
+    "needs": [
+     "build_a_skill",
+     "make_and_express"
+    ],
+    "start": "2026-11-08T12:30",
+    "summary": "A three-week Wheelhouse Studios class at Memorial Union teaching knitting, purling, and other foundational knitting skills.",
+    "event_kind": "workshop",
+    "venue_name": "Memorial Union Studio G",
+    "organisation_name": "Wheelhouse Studios",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-08T12:30",
+      "end": "2026-11-08T15:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "wisc-699f371903",
+   "type": "Event",
+   "school": "wisc",
+   "name": "Wisconsin Women s Water Polo Club Tournament",
+   "tier": 1,
+   "fields": {
+    "url": "https://today.wisc.edu/events/view/227482",
+    "needs": [
+     "find_my_people"
+    ],
+    "start": "2026-11-21T11:00",
+    "summary": "The Wisconsin Water Polo Club hosts a free women's water polo tournament at the Nicholas Recreation Center.",
+    "event_kind": "competition",
+    "venue_name": "Soderholm Family Aquatic Center, Nicholas Recreation Center",
+    "organisation_name": "Wisconsin Water Polo Club",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21T11:00",
+      "end": "2026-11-21T21:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "wisc-2f0c6938f3",
+   "type": "Event",
+   "school": "wisc",
+   "name": "Scenic Stroll",
+   "tier": 1,
+   "fields": {
+    "url": "https://today.wisc.edu/events/view/222695",
+    "needs": [
+     "rest_and_recover",
+     "explore_a_field"
+    ],
+    "start": "2026-11-22T13:00",
+    "summary": "A free, gently paced walk at the UW–Madison Arboretum exploring ecological communities, plants, animals, and phenology near the Visitor Center.",
+    "event_kind": "activity",
+    "venue_name": "Meet at Visitor Center, UW–Madison Arboretum",
+    "organisation_name": "Arboretum",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-22T13:00",
+      "end": "2026-11-22T14:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "wisc-f2300dc0a3",
+   "type": "Event",
+   "school": "wisc",
+   "name": "Self-Care Sundays: Game Night (Board Games)",
+   "tier": 1,
+   "fields": {
+    "url": "https://today.wisc.edu/events/view/225326",
+    "needs": [
+     "rest_and_recover",
+     "find_my_people"
+    ],
+    "start": "2026-11-22T13:00",
+    "summary": "A free drop-in self-care event featuring board games, warm beverages, and crafts at Steenbock Library's STEM Commons.",
+    "event_kind": "activity",
+    "venue_name": "STEM Commons (Room 126), Steenbock Library",
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-22T13:00",
+      "end": "2026-11-22T17:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "wisc-cf861187cf",
+   "type": "Event",
+   "school": "wisc",
+   "name": "Men s Hockey: UW vs. Penn State",
+   "tier": 1,
+   "fields": {
+    "url": "https://today.wisc.edu/events/view/225975",
+    "needs": [
+     "find_my_people",
+     "rest_and_recover"
+    ],
+    "start": "2026-11-21T18:00",
+    "summary": "UW–Madison men's hockey team plays against Penn State at The Kohl Center.",
+    "event_kind": "competition",
+    "venue_name": "The Kohl Center",
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21T18:00",
+      "end": null
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "wisc-13657fd56f",
+   "field": "title",
+   "quote": "Academic Fellowship Club dinner and lecture",
+   "url": "https://today.wisc.edu/events/view/227402",
+   "check_confidence": 0.9874245143325696,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-13657fd56f",
+   "field": "date",
+   "quote": "Sunday, November 22, 2026 All day",
+   "url": "https://today.wisc.edu/events/view/227402",
+   "check_confidence": 0.9767416721662235,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-13657fd56f",
+   "field": "venue_name",
+   "quote": "TBA for December 8th dinner and lecture, Union South",
+   "url": "https://today.wisc.edu/events/view/227402",
+   "check_confidence": 0.9623322461406759,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-13657fd56f",
+   "field": "organisation_name",
+   "quote": "Academic Fellowship Club",
+   "url": "https://today.wisc.edu/events/view/227402",
+   "check_confidence": 0.9634424919631349,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-eb2d27dbc1",
+   "field": "title",
+   "quote": "k1, p2: from Handknits to Computational Design",
+   "url": "https://today.wisc.edu/events/view/228078",
+   "check_confidence": 0.9816148480339483,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-eb2d27dbc1",
+   "field": "date",
+   "quote": "Sunday, November 22, 2026 All day",
+   "url": "https://today.wisc.edu/events/view/228078",
+   "check_confidence": 0.9801398356857444,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-eb2d27dbc1",
+   "field": "venue_name",
+   "quote": "1199 Nancy Nicholas Hall",
+   "url": "https://today.wisc.edu/events/view/228078",
+   "check_confidence": 0.9825339656582697,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-159661ef4e",
+   "field": "title",
+   "quote": "Knitted Dimensions: Knit, Technology, and Spatial Practices",
+   "url": "https://today.wisc.edu/events/view/228107",
+   "check_confidence": 0.9728729110976839,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-159661ef4e",
+   "field": "date",
+   "quote": "Sunday, November 22, 2026 All day",
+   "url": "https://today.wisc.edu/events/view/228107",
+   "check_confidence": 0.9773695097386631,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-159661ef4e",
+   "field": "venue_name",
+   "quote": "1199 Nancy Nicholas Hall",
+   "url": "https://today.wisc.edu/events/view/228107",
+   "check_confidence": 0.96736960418367,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-fdedaa3ffc",
+   "field": "title",
+   "quote": "Women s Hockey: UW vs. Bemidji State University",
+   "url": "https://today.wisc.edu/events/view/224426",
+   "check_confidence": 0.9728099097847883,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-fdedaa3ffc",
+   "field": "date",
+   "quote": "Sunday, November 22, 2026 Noon",
+   "url": "https://today.wisc.edu/events/view/224426",
+   "check_confidence": 0.9818893076955406,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-fdedaa3ffc",
+   "field": "start_time",
+   "quote": "12:00",
+   "url": "https://today.wisc.edu/events/view/224426",
+   "check_confidence": 0.9739270962173093,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-fdedaa3ffc",
+   "field": "venue_name",
+   "quote": "LaBahn Arena",
+   "url": "https://today.wisc.edu/events/view/224426",
+   "check_confidence": 0.9792154587179903,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-f1265debdd",
+   "field": "title",
+   "quote": "Women s Basketball: UW vs. Lafayette",
+   "url": "https://today.wisc.edu/events/view/225464",
+   "check_confidence": 0.9897515359562339,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-f1265debdd",
+   "field": "date",
+   "quote": "Sunday, November 22, 2026, Noon",
+   "url": "https://today.wisc.edu/events/view/225464",
+   "check_confidence": 0.981876595450797,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-f1265debdd",
+   "field": "start_time",
+   "quote": "12:00",
+   "url": "https://today.wisc.edu/events/view/225464",
+   "check_confidence": 0.9671967347103804,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-f1265debdd",
+   "field": "venue_name",
+   "quote": "The Kohl Center",
+   "url": "https://today.wisc.edu/events/view/225464",
+   "check_confidence": 0.9813318840338698,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-8a303aaa63",
+   "field": "title",
+   "quote": "The Joyful Urgency of Dickey Lee Stafford",
+   "url": "https://today.wisc.edu/events/view/227746",
+   "check_confidence": 0.9770530394099034,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-8a303aaa63",
+   "field": "date",
+   "quote": "Sunday, November 22, 2026 8 a.m.- 10 p.m.",
+   "url": "https://today.wisc.edu/events/view/227746",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-8a303aaa63",
+   "field": "start_time",
+   "quote": "08:00",
+   "url": "https://today.wisc.edu/events/view/227746",
+   "check_confidence": 0.9771893684574835,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-8a303aaa63",
+   "field": "venue_name",
+   "quote": "Class of 1925 Gallery, Memorial Library",
+   "url": "https://today.wisc.edu/events/view/227746",
+   "check_confidence": 0.9859057229101207,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-8a303aaa63",
+   "field": "organisation_name",
+   "quote": "UW–Madison Libraries’ LGBTQ+ Archive and the Wisconsin Union Directorate Art Committee",
+   "url": "https://today.wisc.edu/events/view/227746",
+   "check_confidence": 0.958774809536456,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-ad12b141a9",
+   "field": "title",
+   "quote": "Souper Bowl Fundraiser",
+   "url": "https://today.wisc.edu/events/view/227859",
+   "check_confidence": 0.9787685119551114,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-ad12b141a9",
+   "field": "date",
+   "quote": "Sunday, November 22, 2026 Noon- 4 p.m.",
+   "url": "https://today.wisc.edu/events/view/227859",
+   "check_confidence": 0.9806768073738116,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-ad12b141a9",
+   "field": "start_time",
+   "quote": "12:00",
+   "url": "https://today.wisc.edu/events/view/227859",
+   "check_confidence": 0.9837428383496583,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-ad12b141a9",
+   "field": "venue_name",
+   "quote": "Ceramics Lab Room 1040, Art Lofts",
+   "url": "https://today.wisc.edu/events/view/227859",
+   "check_confidence": 0.9830083992769686,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-ad12b141a9",
+   "field": "organisation_name",
+   "quote": "Habitat for Humanity UW-Madison Campus Chapter and the UW Art Ceramics Program",
+   "url": "https://today.wisc.edu/events/view/227859",
+   "check_confidence": 0.9662223739136937,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-ca99bb5a59",
+   "field": "title",
+   "quote": "Drop-In Tour: Recollection: Exhibiting the Collection",
+   "url": "https://today.wisc.edu/events/view/226098",
+   "check_confidence": 0.9812085048582361,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-ca99bb5a59",
+   "field": "date",
+   "quote": "Sunday, November 22, 2026 Noon- 1 p.m.",
+   "url": "https://today.wisc.edu/events/view/226098",
+   "check_confidence": 0.9691870990691548,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-ca99bb5a59",
+   "field": "start_time",
+   "quote": "12:00",
+   "url": "https://today.wisc.edu/events/view/226098",
+   "check_confidence": 0.9762659480851025,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-ca99bb5a59",
+   "field": "venue_name",
+   "quote": "Chazen Museum of Art",
+   "url": "https://today.wisc.edu/events/view/226098",
+   "check_confidence": 0.9858601204330235,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-ca99bb5a59",
+   "field": "organisation_name",
+   "quote": "Chazen Museum of Art",
+   "url": "https://today.wisc.edu/events/view/226098",
+   "check_confidence": 0.9559198606959841,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-ecef2f2d19",
+   "field": "title",
+   "quote": "Knitting 101",
+   "url": "https://union.wisc.edu/events-and-activities/event-calendar/event/knitting-101-2",
+   "check_confidence": 0.9758054763535781,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-ecef2f2d19",
+   "field": "date",
+   "quote": "Starts Sunday, November 08, 2026 12:30 - 3pm",
+   "url": "https://union.wisc.edu/events-and-activities/event-calendar/event/knitting-101-2",
+   "check_confidence": 0.9719245791324093,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-ecef2f2d19",
+   "field": "start_time",
+   "quote": "12:30",
+   "url": "https://union.wisc.edu/events-and-activities/event-calendar/event/knitting-101-2",
+   "check_confidence": 0.9587723773878338,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-ecef2f2d19",
+   "field": "venue_name",
+   "quote": "Memorial Union Studio G",
+   "url": "https://union.wisc.edu/events-and-activities/event-calendar/event/knitting-101-2",
+   "check_confidence": 0.9542277788791217,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-ecef2f2d19",
+   "field": "organisation_name",
+   "quote": "Wheelhouse Studios",
+   "url": "https://union.wisc.edu/events-and-activities/event-calendar/event/knitting-101-2",
+   "check_confidence": 0.9845728163067233,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-699f371903",
+   "field": "title",
+   "quote": "Wisconsin Women s Water Polo Club Tournament",
+   "url": "https://today.wisc.edu/events/view/227482",
+   "check_confidence": 0.9631771533227603,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-699f371903",
+   "field": "date",
+   "quote": "Today, November 21, 2026 11 a.m.- 9 p.m.",
+   "url": "https://today.wisc.edu/events/view/227482",
+   "check_confidence": 0.9793094037927838,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-699f371903",
+   "field": "start_time",
+   "quote": "11:00",
+   "url": "https://today.wisc.edu/events/view/227482",
+   "check_confidence": 0.9804452843342432,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-699f371903",
+   "field": "venue_name",
+   "quote": "Soderholm Family Aquatic Center, Nicholas Recreation Center",
+   "url": "https://today.wisc.edu/events/view/227482",
+   "check_confidence": 0.9700186590849907,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-699f371903",
+   "field": "organisation_name",
+   "quote": "Wisconsin Water Polo Club",
+   "url": "https://today.wisc.edu/events/view/227482",
+   "check_confidence": 0.9773378640804401,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-2f0c6938f3",
+   "field": "title",
+   "quote": "Scenic Stroll",
+   "url": "https://today.wisc.edu/events/view/222695",
+   "check_confidence": 0.9817153245762966,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-2f0c6938f3",
+   "field": "date",
+   "quote": "Sunday, November 22, 2026 1 - 2 p.m.",
+   "url": "https://today.wisc.edu/events/view/222695",
+   "check_confidence": 0.9668141262156386,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-2f0c6938f3",
+   "field": "start_time",
+   "quote": "13:00",
+   "url": "https://today.wisc.edu/events/view/222695",
+   "check_confidence": 0.9798031998022675,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-2f0c6938f3",
+   "field": "venue_name",
+   "quote": "Meet at Visitor Center, UW–Madison Arboretum",
+   "url": "https://today.wisc.edu/events/view/222695",
+   "check_confidence": 0.9604854740606533,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-2f0c6938f3",
+   "field": "organisation_name",
+   "quote": "Arboretum",
+   "url": "https://today.wisc.edu/events/view/222695",
+   "check_confidence": 0.9633481659829698,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-f2300dc0a3",
+   "field": "title",
+   "quote": "Self-Care Sundays: Game Night (Board Games)",
+   "url": "https://today.wisc.edu/events/view/225326",
+   "check_confidence": 0.9847474261794054,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-f2300dc0a3",
+   "field": "date",
+   "quote": "Sunday, November 22, 2026 | 1 - 5 p.m.",
+   "url": "https://today.wisc.edu/events/view/225326",
+   "check_confidence": 0.9779894514787782,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-f2300dc0a3",
+   "field": "start_time",
+   "quote": "13:00",
+   "url": "https://today.wisc.edu/events/view/225326",
+   "check_confidence": 0.9765713860618513,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-f2300dc0a3",
+   "field": "venue_name",
+   "quote": "STEM Commons (Room 126), Steenbock Library",
+   "url": "https://today.wisc.edu/events/view/225326",
+   "check_confidence": 0.9748088849684625,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-cf861187cf",
+   "field": "title",
+   "quote": "Men s Hockey: UW vs. Penn State",
+   "url": "https://today.wisc.edu/events/view/225975",
+   "check_confidence": 0.9799968675763664,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-cf861187cf",
+   "field": "date",
+   "quote": "Today, November 21, 2026 6 p.m.",
+   "url": "https://today.wisc.edu/events/view/225975",
+   "check_confidence": 0.9682715440315935,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-cf861187cf",
+   "field": "start_time",
+   "quote": "18:00",
+   "url": "https://today.wisc.edu/events/view/225975",
+   "check_confidence": 0.9847701181739851,
+   "passed": true
+  },
+  {
+   "entity_id": "wisc-cf861187cf",
+   "field": "venue_name",
+   "quote": "The Kohl Center",
+   "url": "https://today.wisc.edu/events/view/225975",
+   "check_confidence": 0.9698405259284825,
+   "passed": true
+  }
+ ]
+}

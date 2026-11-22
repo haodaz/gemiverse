@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. The campus features early Romanesque Revival buildings around a central quad alongside rows of minimalist, slab-shaped brick buildings on its southern half. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Royce Hall, a hall: Romanesque Revival building on the north side of the quad.; (2) Powell Library, a library: Romanesque Revival library building on the south side of the quad.; (3) Janss Steps, a other: An 87-step grand entrance staircase leading up to the quad.; (4) Haines Hall, a hall: Romanesque Revival building on the north side of the quad.; (5) Renee And David Kaplan Hall, a hall: Romanesque Revival building on the south side of the quad.; (6) Franklin D. Murphy Sculpture Garden, a garden: Outdoor sculpture garden.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 17,
+ "tokens": 2422,
+ "at": "2026-11-22T00:14:04.615Z"
+}

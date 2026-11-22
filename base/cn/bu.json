@@ -1,0 +1,768 @@
+{
+ "school": "bu",
+ "name": "Boston University",
+ "at": "2026-11-22T00:21:03.648Z",
+ "seconds": 32,
+ "tokens": 69980,
+ "entities": [
+  {
+   "id": "bu-b107cb859f",
+   "type": "Event",
+   "school": "bu",
+   "name": "Learn to Belay",
+   "tier": 1,
+   "fields": {
+    "url": "https://butodayevents.bu.edu/event/learn-to-belay-8951",
+    "needs": [
+     "build_a_skill"
+    ],
+    "start": "2026-11-22T17:00",
+    "summary": "A climbing course at FitRec teaching basic belaying skills to prepare participants for standard climbing gym belay tests.",
+    "event_kind": "activity",
+    "venue_name": "FitRec, 915 Commonwealth Avenue, Boston, MA",
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-22T17:00",
+      "end": "2026-11-22T18:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "bu-842ad0845d",
+   "type": "Event",
+   "school": "bu",
+   "name": "First Generation Support Group",
+   "tier": 1,
+   "fields": {
+    "url": "https://butodayevents.bu.edu/event/first-generation-support-group-3995",
+    "needs": [
+     "find_my_people",
+     "navigate_systems"
+    ],
+    "start": "2026-11-22T17:00",
+    "summary": "A supportive community group for first-generation college and graduate students to build connections, share resources, and discuss navigating college life.",
+    "event_kind": "activity",
+    "venue_name": "Newbury Center",
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-22T17:00",
+      "end": "2026-11-22T18:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "bu-5eeaf7345d",
+   "type": "Event",
+   "school": "bu",
+   "name": "Jessica of Venice",
+   "tier": 1,
+   "fields": {
+    "url": "https://butodayevents.bu.edu/event/jessica-of-venice-6036",
+    "needs": [
+     "rest_and_recover"
+    ],
+    "start": "2026-11-22T19:00",
+    "summary": "A theatrical performance of 'Jessica of Venice,' following an Orthodox Jewish schoolgirl torn between her religious community and secular desires.",
+    "event_kind": "other",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-22T19:00",
+      "end": "2026-11-22T21:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "bu-9477f82afc",
+   "type": "Event",
+   "school": "bu",
+   "name": "White Phoenix",
+   "tier": 1,
+   "fields": {
+    "url": "https://butodayevents.bu.edu/event/white-phoenix-1968",
+    "needs": [
+     "make_and_express",
+     "rest_and_recover"
+    ],
+    "start": "2026-11-21T20:00",
+    "summary": "White Phoenix is an epic family drama about two separated Chinese siblings whose lives entangle with powerful political families in China and America.",
+    "event_kind": "other",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21T20:00",
+      "end": "2026-11-21T22:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "bu-6fb5626e69",
+   "type": "Event",
+   "school": "bu",
+   "name": "Community Coloring",
+   "tier": 1,
+   "fields": {
+    "url": "https://butodayevents.bu.edu/event/community-coloring",
+    "needs": [
+     "rest_and_recover",
+     "find_my_people"
+    ],
+    "start": "2026-11-23T11:00",
+    "summary": "Students can drop in to color a community mandala, take a break, and chat with others in the GSU.",
+    "event_kind": "activity",
+    "venue_name": "George Sherman Union (GSU), The Link",
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-23T11:00",
+      "end": "2026-11-23T13:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "bu-3359253318",
+   "type": "Event",
+   "school": "bu",
+   "name": "Tai Chi @ Marsh Chapel",
+   "tier": 1,
+   "fields": {
+    "url": "https://butodayevents.bu.edu/event/tai-chi-marsh-chapel-123",
+    "needs": [
+     "rest_and_recover",
+     "build_a_skill"
+    ],
+    "start": "2026-11-23T12:00",
+    "summary": "An all-levels Tai Chi class combining movement, balance, and focus, taught by Sifu Mynor Diaz at Marsh Chapel.",
+    "event_kind": "activity",
+    "venue_name": "Marsh Room, Lower Level of Marsh Chapel",
+    "organisation_name": null,
+    "speaker": "Sifu Mynor Diaz",
+    "occurrences": [
+     {
+      "start": "2026-11-23T12:00",
+      "end": "2026-11-23T13:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "bu-534d484f5f",
+   "type": "Event",
+   "school": "bu",
+   "name": "Sharpen Your Focus",
+   "tier": 1,
+   "fields": {
+    "url": "https://butodayevents.bu.edu/event/sharpen-your-focus-1747",
+    "needs": [
+     "build_a_skill",
+     "rest_and_recover"
+    ],
+    "start": "2026-11-23T16:00",
+    "summary": "A skills-based group for students to learn strategies for improving attention, productivity, organization, time management, and self-care.",
+    "event_kind": "workshop",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-23T16:00",
+      "end": "2026-11-23T17:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "bu-4fc81aba9f",
+   "type": "Event",
+   "school": "bu",
+   "name": "Stress ReLeaf: Working with Tea for Calm and Focus",
+   "tier": 1,
+   "fields": {
+    "url": "https://butodayevents.bu.edu/event/stress-releaf-working-with-tea-for-calm-and-focus-8054",
+    "needs": [
+     "rest_and_recover",
+     "build_a_skill"
+    ],
+    "start": "2026-11-30T16:00",
+    "summary": "A mindfulness workshop exploring the gong fu cha tea brewing ritual for calm, focus, and relaxation.",
+    "event_kind": "workshop",
+    "venue_name": "LGBTQIA+ Student Resource Center, 2nd floor, 808 Commonwealth Avenue",
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-30T16:00",
+      "end": "2026-11-30T17:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "bu-601a891601",
+   "type": "Event",
+   "school": "bu",
+   "name": "Boston University Women's Tennis vs NCAA Individual Championships",
+   "tier": 1,
+   "fields": {
+    "url": "https://butodayevents.bu.edu/event/boston-university-womens-tennis-vs-ncaa-individual-championships",
+    "needs": [
+     "find_my_people"
+    ],
+    "start": "2026-11-21",
+    "summary": "Boston University Women's Tennis competes in the NCAA Individual Championships in Athens, Georgia, with streaming video available.",
+    "event_kind": "competition",
+    "venue_name": "Athens, GA",
+    "organisation_name": "BU Athletics",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "bu-8855297c03",
+   "type": "Event",
+   "school": "bu",
+   "name": "LGBTQ+ Support Group",
+   "tier": 1,
+   "fields": {
+    "url": "https://butodayevents.bu.edu/event/lgbtq-support-group-2915",
+    "needs": [
+     "find_my_people",
+     "rest_and_recover"
+    ],
+    "start": "2026-11-24T17:00",
+    "summary": "A welcoming support group for LGBTQ+ individuals to connect, offer emotional support, and discuss relationships, coming out, and identity.",
+    "event_kind": "activity",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-24T17:00",
+      "end": "2026-11-24T18:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "bu-1e0cd45f0e",
+   "type": "Event",
+   "school": "bu",
+   "name": "Boston University Men's Swimming Diving vs Terrier Invitational",
+   "tier": 1,
+   "fields": {
+    "url": "https://butodayevents.bu.edu/event/boston-university-mens-swimming-diving-vs-terrier-invite-6255",
+    "needs": [
+     "find_my_people"
+    ],
+    "start": "2026-11-21T10:00",
+    "summary": "Boston University Men's Swimming and Diving competes in the Terrier Invitational at the FitRec Competition Pool.",
+    "event_kind": "competition",
+    "venue_name": "Boston, MA, FitRec Competition Pool",
+    "organisation_name": "BU Athletics",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21T10:00",
+      "end": "2026-11-21T13:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "bu-90cc681b89",
+   "type": "Event",
+   "school": "bu",
+   "name": "Boston University Men's Basketball vs Columbia",
+   "tier": 1,
+   "fields": {
+    "url": "https://butodayevents.bu.edu/event/boston-university-mens-basketball-vs-columbia",
+    "needs": [
+     "find_my_people",
+     "rest_and_recover"
+    ],
+    "start": "2026-11-21T12:00",
+    "summary": "Boston University Men's Basketball plays against Columbia at Case Gym – The Roof in Boston.",
+    "event_kind": "competition",
+    "venue_name": "Boston, MA, Case Gym – The Roof",
+    "organisation_name": "BU Athletics",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21T12:00",
+      "end": "2026-11-21T14:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "bu-34e34b88db",
+   "type": "Event",
+   "school": "bu",
+   "name": "Physics of Bikes",
+   "tier": 1,
+   "fields": {
+    "url": "https://butodayevents.bu.edu/event/physics-of-bikes",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-21T14:00",
+    "summary": "Physics of Bikes is an event presented in partnership with Abby Plummer from BU College of Engineering.",
+    "event_kind": "other",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21T14:00",
+      "end": "2026-11-21T16:00"
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "bu-b107cb859f",
+   "field": "title",
+   "quote": "Learn to Belay",
+   "url": "https://butodayevents.bu.edu/event/learn-to-belay-8951",
+   "check_confidence": 0.9672492641951014,
+   "passed": true
+  },
+  {
+   "entity_id": "bu-b107cb859f",
+   "field": "date",
+   "quote": "Sunday, November 22, 2026 5:00pm to 6:30pm EST",
+   "url": "https://butodayevents.bu.edu/event/learn-to-belay-8951",
+   "check_confidence": 0.9810460359855607,
+   "passed": true
+  },
+  {
+   "entity_id": "bu-b107cb859f",
+   "field": "start_time",
+   "quote": "17:00",
+   "url": "https://butodayevents.bu.edu/event/learn-to-belay-8951",
+   "check_confidence": 0.9636517618644668,
+   "passed": true
+  },
+  {
+   "entity_id": "bu-b107cb859f",
+   "field": "venue_name",
+   "quote": "FitRec",
+   "url": "https://butodayevents.bu.edu/event/learn-to-belay-8951",
+   "check_confidence": 0.9478390002877931,
+   "passed": true
+  },
+  {
+   "entity_id": "bu-842ad0845d",
+   "field": "title",
+   "quote": "First Generation Support Group",
+   "url": "https://butodayevents.bu.edu/event/first-generation-support-group-3995",
+   "check_confidence": 0.9788060522266381,
+   "passed": true
+  },
+  {
+   "entity_id": "bu-842ad0845d",
+   "field": "date",
+   "quote": "Sunday, November 22, 2026 5:00pm to 6:00pm EST",
+   "url": "https://butodayevents.bu.edu/event/first-generation-support-group-3995",
+   "check_confidence": 0.9718628600384089,
+   "passed": true
+  },
+  {
+   "entity_id": "bu-842ad0845d",
+   "field": "start_time",
+   "quote": "17:00",
+   "url": "https://butodayevents.bu.edu/event/first-generation-support-group-3995",
+   "check_confidence": 0.9594972321324223,
+   "passed": true
+  },
+  {
+   "entity_id": "bu-842ad0845d",
+   "field": "venue_name",
+   "quote": "Located in the Newbury Center",
+   "url": "https://butodayevents.bu.edu/event/first-generation-support-group-3995",
+   "check_confidence": 0.9318840129586728,
+   "passed": true
+  },
+  {
+   "entity_id": "bu-5eeaf7345d",
+   "field": "title",
+   "quote": "Jessica of Venice",
+   "url": "https://butodayevents.bu.edu/event/jessica-of-venice-6036",
+   "check_confidence": 0.9776612646163111,
+   "passed": true
+  },
+  {
+   "entity_id": "bu-5eeaf7345d",
+   "field": "date",
+   "quote": "Sunday, November 22, 2026 7:00pm to 9:30pm EST",
+   "url": "https://butodayevents.bu.edu/event/jessica-of-venice-6036",
+   "check_confidence": 0.9802056858797007,
+   "passed": true
+  },
+  {
+   "entity_id": "bu-5eeaf7345d",
+   "field": "start_time",
+   "quote": "19:00",
+   "url": "https://butodayevents.bu.edu/event/jessica-of-venice-6036",
+   "check_confidence": 0.9742865348322184,
+   "passed": true
+  },
+  {
+   "entity_id": "bu-9477f82afc",
+   "field": "title",
+   "quote": "White Phoenix",
+   "url": "https://butodayevents.bu.edu/event/white-phoenix-1968",
+   "check_confidence": 0.9826733368140949,
+   "passed": true
+  },
+  {
+   "entity_id": "bu-9477f82afc",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026 8:00pm to 10:00pm EST",
+   "url": "https://butodayevents.bu.edu/event/white-phoenix-1968",
+   "check_confidence": 0.9716415239137678,
+   "passed": true
+  },
+  {
+   "entity_id": "bu-9477f82afc",
+   "field": "start_time",
+   "quote": "20:00",
+   "url": "https://butodayevents.bu.edu/event/white-phoenix-1968",
+   "check_confidence": 0.9648732132888639,
+   "passed": true
+  },
+  {
+   "entity_id": "bu-6fb5626e69",
+   "field": "title",
+   "quote": "Community Coloring",
+   "url": "https://butodayevents.bu.edu/event/community-coloring",
+   "check_confidence": 0.974279346183774,
+   "passed": true
+  },
+  {
+   "entity_id": "bu-6fb5626e69",
+   "field": "date",
+   "quote": "Monday, November 23, 2026 11:00am to 1:00pm EST",
+   "url": "https://butodayevents.bu.edu/event/community-coloring",
+   "check_confidence": 0.9640682326770414,
+   "passed": true
+  },
+  {
+   "entity_id": "bu-6fb5626e69",
+   "field": "start_time",
+   "quote": "11:00",
+   "url": "https://butodayevents.bu.edu/event/community-coloring",
+   "check_confidence": 0.9817954470498987,
+   "passed": true
+  },
+  {
+   "entity_id": "bu-6fb5626e69",
+   "field": "venue_name",
+   "quote": "George Sherman Union (GSU), The Link",
+   "url": "https://butodayevents.bu.edu/event/community-coloring",
+   "check_confidence": 0.9712104383787457,
+   "passed": true
+  },
+  {
+   "entity_id": "bu-6fb5626e69",
+   "field": "organisation_name",
+   "quote": "Student Wellbeing",
+   "url": "https://butodayevents.bu.edu/event/community-coloring",
+   "check_confidence": 0.5902546161319511,
+   "passed": false
+  },
+  {
+   "entity_id": "bu-3359253318",
+   "field": "title",
+   "quote": "Tai Chi @ Marsh Chapel",
+   "url": "https://butodayevents.bu.edu/event/tai-chi-marsh-chapel-123",
+   "check_confidence": 0.9780263604573584,
+   "passed": true
+  },
+  {
+   "entity_id": "bu-3359253318",
+   "field": "date",
+   "quote": "Monday, November 23, 2026 12:00pm to 1:00pm EST",
+   "url": "https://butodayevents.bu.edu/event/tai-chi-marsh-chapel-123",
+   "check_confidence": 0.9533541437706102,
+   "passed": true
+  },
+  {
+   "entity_id": "bu-3359253318",
+   "field": "start_time",
+   "quote": "12:00",
+   "url": "https://butodayevents.bu.edu/event/tai-chi-marsh-chapel-123",
+   "check_confidence": 0.9602398697579896,
+   "passed": true
+  },
+  {
+   "entity_id": "bu-3359253318",
+   "field": "venue_name",
+   "quote": "Marsh Room, Lower Level of Marsh Chapel",
+   "url": "https://butodayevents.bu.edu/event/tai-chi-marsh-chapel-123",
+   "check_confidence": 0.9697005395591015,
+   "passed": true
+  },
+  {
+   "entity_id": "bu-3359253318",
+   "field": "speaker",
+   "quote": "Sifu Mynor Diaz",
+   "url": "https://butodayevents.bu.edu/event/tai-chi-marsh-chapel-123",
+   "check_confidence": 0.9256606596099822,
+   "passed": true
+  },
+  {
+   "entity_id": "bu-534d484f5f",
+   "field": "title",
+   "quote": "Sharpen Your Focus",
+   "url": "https://butodayevents.bu.edu/event/sharpen-your-focus-1747",
+   "check_confidence": 0.968765964778676,
+   "passed": true
+  },
+  {
+   "entity_id": "bu-534d484f5f",
+   "field": "date",
+   "quote": "Monday, November 23, 2026 4:00pm to 5:00pm EST",
+   "url": "https://butodayevents.bu.edu/event/sharpen-your-focus-1747",
+   "check_confidence": 0.9835831012298935,
+   "passed": true
+  },
+  {
+   "entity_id": "bu-534d484f5f",
+   "field": "start_time",
+   "quote": "16:00",
+   "url": "https://butodayevents.bu.edu/event/sharpen-your-focus-1747",
+   "check_confidence": 0.9800114985350283,
+   "passed": true
+  },
+  {
+   "entity_id": "bu-4fc81aba9f",
+   "field": "title",
+   "quote": "Stress ReLeaf: Working with Tea for Calm and Focus",
+   "url": "https://butodayevents.bu.edu/event/stress-releaf-working-with-tea-for-calm-and-focus-8054",
+   "check_confidence": 0.9821734801559637,
+   "passed": true
+  },
+  {
+   "entity_id": "bu-4fc81aba9f",
+   "field": "date",
+   "quote": "Monday, November 30, 2026 4:00pm to 5:00pm EST",
+   "url": "https://butodayevents.bu.edu/event/stress-releaf-working-with-tea-for-calm-and-focus-8054",
+   "check_confidence": 0.9816430217698061,
+   "passed": true
+  },
+  {
+   "entity_id": "bu-4fc81aba9f",
+   "field": "start_time",
+   "quote": "16:00",
+   "url": "https://butodayevents.bu.edu/event/stress-releaf-working-with-tea-for-calm-and-focus-8054",
+   "check_confidence": 0.9765925390998953,
+   "passed": true
+  },
+  {
+   "entity_id": "bu-4fc81aba9f",
+   "field": "venue_name",
+   "quote": "LGBTQIA+ Student Resource Center, 2nd floor, 808 Commonwealth Avenue",
+   "url": "https://butodayevents.bu.edu/event/stress-releaf-working-with-tea-for-calm-and-focus-8054",
+   "check_confidence": 0.9454425476462621,
+   "passed": true
+  },
+  {
+   "entity_id": "bu-4fc81aba9f",
+   "field": "organisation_name",
+   "quote": "Student Wellbeing",
+   "url": "https://butodayevents.bu.edu/event/stress-releaf-working-with-tea-for-calm-and-focus-8054",
+   "check_confidence": 0.6825259834054915,
+   "passed": false
+  },
+  {
+   "entity_id": "bu-601a891601",
+   "field": "title",
+   "quote": "Boston University Women's Tennis vs NCAA Individual Championships",
+   "url": "https://butodayevents.bu.edu/event/boston-university-womens-tennis-vs-ncaa-individual-championships",
+   "check_confidence": 0.9779749528309243,
+   "passed": true
+  },
+  {
+   "entity_id": "bu-601a891601",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026",
+   "url": "https://butodayevents.bu.edu/event/boston-university-womens-tennis-vs-ncaa-individual-championships",
+   "check_confidence": 0.9511156862809399,
+   "passed": true
+  },
+  {
+   "entity_id": "bu-601a891601",
+   "field": "venue_name",
+   "quote": "Athens, GA",
+   "url": "https://butodayevents.bu.edu/event/boston-university-womens-tennis-vs-ncaa-individual-championships",
+   "check_confidence": 0.9690827678814845,
+   "passed": true
+  },
+  {
+   "entity_id": "bu-601a891601",
+   "field": "organisation_name",
+   "quote": "BU Athletics",
+   "url": "https://butodayevents.bu.edu/event/boston-university-womens-tennis-vs-ncaa-individual-championships",
+   "check_confidence": 0.9857448277487316,
+   "passed": true
+  },
+  {
+   "entity_id": "bu-8855297c03",
+   "field": "title",
+   "quote": "LGBTQ+ Support Group",
+   "url": "https://butodayevents.bu.edu/event/lgbtq-support-group-2915",
+   "check_confidence": 0.9683225594972468,
+   "passed": true
+  },
+  {
+   "entity_id": "bu-8855297c03",
+   "field": "date",
+   "quote": "Tuesday, November 24, 2026 5:00pm to 6:00pm EST",
+   "url": "https://butodayevents.bu.edu/event/lgbtq-support-group-2915",
+   "check_confidence": 0.9681954325591863,
+   "passed": true
+  },
+  {
+   "entity_id": "bu-8855297c03",
+   "field": "start_time",
+   "quote": "17:00",
+   "url": "https://butodayevents.bu.edu/event/lgbtq-support-group-2915",
+   "check_confidence": 0.9596027286724563,
+   "passed": true
+  },
+  {
+   "entity_id": "bu-1e0cd45f0e",
+   "field": "title",
+   "quote": "Boston University Men's Swimming Diving vs Terrier Invitational",
+   "url": "https://butodayevents.bu.edu/event/boston-university-mens-swimming-diving-vs-terrier-invite-6255",
+   "check_confidence": 0.966275401862439,
+   "passed": true
+  },
+  {
+   "entity_id": "bu-1e0cd45f0e",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026 10:00am to 1:00pm EST",
+   "url": "https://butodayevents.bu.edu/event/boston-university-mens-swimming-diving-vs-terrier-invite-6255",
+   "check_confidence": 0.9771593698642241,
+   "passed": true
+  },
+  {
+   "entity_id": "bu-1e0cd45f0e",
+   "field": "start_time",
+   "quote": "10:00",
+   "url": "https://butodayevents.bu.edu/event/boston-university-mens-swimming-diving-vs-terrier-invite-6255",
+   "check_confidence": 0.9783197500308123,
+   "passed": true
+  },
+  {
+   "entity_id": "bu-1e0cd45f0e",
+   "field": "venue_name",
+   "quote": "Boston, MA, FitRec Competition Pool",
+   "url": "https://butodayevents.bu.edu/event/boston-university-mens-swimming-diving-vs-terrier-invite-6255",
+   "check_confidence": 0.9683793786728722,
+   "passed": true
+  },
+  {
+   "entity_id": "bu-1e0cd45f0e",
+   "field": "organisation_name",
+   "quote": "BU Athletics",
+   "url": "https://butodayevents.bu.edu/event/boston-university-mens-swimming-diving-vs-terrier-invite-6255",
+   "check_confidence": 0.9780479372654549,
+   "passed": true
+  },
+  {
+   "entity_id": "bu-90cc681b89",
+   "field": "title",
+   "quote": "Boston University Men's Basketball vs Columbia",
+   "url": "https://butodayevents.bu.edu/event/boston-university-mens-basketball-vs-columbia",
+   "check_confidence": 0.9573499505874061,
+   "passed": true
+  },
+  {
+   "entity_id": "bu-90cc681b89",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026 12:00pm to 2:00pm EST",
+   "url": "https://butodayevents.bu.edu/event/boston-university-mens-basketball-vs-columbia",
+   "check_confidence": 0.970789111513403,
+   "passed": true
+  },
+  {
+   "entity_id": "bu-90cc681b89",
+   "field": "start_time",
+   "quote": "12:00",
+   "url": "https://butodayevents.bu.edu/event/boston-university-mens-basketball-vs-columbia",
+   "check_confidence": 0.966195653063166,
+   "passed": true
+  },
+  {
+   "entity_id": "bu-90cc681b89",
+   "field": "venue_name",
+   "quote": "Boston, MA, Case Gym – The Roof",
+   "url": "https://butodayevents.bu.edu/event/boston-university-mens-basketball-vs-columbia",
+   "check_confidence": 0.9705247219984846,
+   "passed": true
+  },
+  {
+   "entity_id": "bu-90cc681b89",
+   "field": "organisation_name",
+   "quote": "BU Athletics",
+   "url": "https://butodayevents.bu.edu/event/boston-university-mens-basketball-vs-columbia",
+   "check_confidence": 0.9769932344178792,
+   "passed": true
+  },
+  {
+   "entity_id": "bu-34e34b88db",
+   "field": "title",
+   "quote": "Physics of Bikes",
+   "url": "https://butodayevents.bu.edu/event/physics-of-bikes",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "bu-34e34b88db",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026 2:00pm to 4:00pm EST",
+   "url": "https://butodayevents.bu.edu/event/physics-of-bikes",
+   "check_confidence": 0.978563388345372,
+   "passed": true
+  },
+  {
+   "entity_id": "bu-34e34b88db",
+   "field": "start_time",
+   "quote": "14:00",
+   "url": "https://butodayevents.bu.edu/event/physics-of-bikes",
+   "check_confidence": 0.9743187477848013,
+   "passed": true
+  },
+  {
+   "entity_id": "bu-34e34b88db",
+   "field": "organisation_name",
+   "quote": "Abby Plummer, Assistant Professor, BU College of Engineering",
+   "url": "https://butodayevents.bu.edu/event/physics-of-bikes",
+   "check_confidence": 0.757243342585633,
+   "passed": false
+  }
+ ]
+}

@@ -1,0 +1,719 @@
+{
+ "school": "ustc",
+ "name": "中国科学技术大学",
+ "at": "2026-11-22T00:11:05.408Z",
+ "seconds": 32,
+ "tokens": 65861,
+ "entities": [
+  {
+   "id": "ustc-d62e8e358d",
+   "type": "Event",
+   "school": "ustc",
+   "name": "关于举行2026年“唱响时代主旋律，共谱科大新华章”教职工合唱比赛的通知",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.ustc.edu.cn/info/1366/26112.htm",
+    "needs": [
+     "make_and_express",
+     "find_my_people"
+    ],
+    "start": "2026-11-27T19:00",
+    "summary": "学校将举行教职工合唱比赛，并向校内教职工开放现场观众席。",
+    "event_kind": "competition",
+    "venue_name": "东区大礼堂",
+    "organisation_name": "党委宣传部、党委组织部、校工会、保卫与校园管理处",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-27T19:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "ustc-44ffa68b6d",
+   "type": "Event",
+   "school": "ustc",
+   "name": "关于开展中医药特色服务暨健康文化宣传进校园活动的通知",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.ustc.edu.cn/info/1366/26092.htm",
+    "needs": [
+     "rest_and_recover"
+    ],
+    "start": "2026-11-26T14:10",
+    "summary": "学校开展中医药特色服务暨健康文化宣传进校园活动，提供讲座、问诊及体验。",
+    "event_kind": "activity",
+    "venue_name": "校医院",
+    "organisation_name": "学校离退休干部工作处、附属第一医院、校医院",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-26T14:10",
+      "end": "2026-11-26T17:20"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ustc-df54e060ec",
+   "type": "Event",
+   "school": "ustc",
+   "name": "2026全国颠覆性技术创新大赛智能网联新能源汽车锦标赛报名通知",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.ustc.edu.cn/info/1362/26069.htm",
+    "needs": [
+     "get_experience",
+     "fund_my_path"
+    ],
+    "start": null,
+    "summary": "2026全国颠覆性技术创新大赛智能网联新能源汽车锦标赛报名通知，报名截止12月6日。",
+    "event_kind": "competition",
+    "venue_name": null,
+    "organisation_name": "京津冀国家技术创新中心",
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "ustc-58b5034015",
+   "type": "Event",
+   "school": "ustc",
+   "name": "关于举办学校二级网站群使用技术培训的通知",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.ustc.edu.cn/info/1366/26063.htm",
+    "needs": [
+     "build_a_skill"
+    ],
+    "start": "2026-11-19T09:00",
+    "summary": "学校将举办二级网站群使用技术专题培训，面向各单位网站管理员及相关人员。",
+    "event_kind": "workshop",
+    "venue_name": "网络信息中心三楼 312 学术报告厅",
+    "organisation_name": "网络信息中心、网络安全和信息化办公室",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-19T09:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "ustc-651b503e84",
+   "type": "Event",
+   "school": "ustc",
+   "name": "关于举办第二场小额零星智能化采购平台使用培训的通知",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.ustc.edu.cn/info/1364/26040.htm",
+    "needs": [
+     "navigate_systems",
+     "build_a_skill"
+    ],
+    "start": "2026-11-12T15:00",
+    "summary": "资产与后勤保障处联合财务处举办第二场小额零星智能化采购平台使用培训。",
+    "event_kind": "workshop",
+    "venue_name": "西校区学生活动中心二楼学术报告厅",
+    "organisation_name": "资产与后勤保障处、财务处",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-12T15:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "ustc-b8c9fd8822",
+   "type": "Event",
+   "school": "ustc",
+   "name": "关于《大漠驼韵——阿拉善民俗文物展》的开展通知",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.ustc.edu.cn/info/1366/26035.htm",
+    "needs": [
+     "explore_a_field",
+     "rest_and_recover"
+    ],
+    "start": "2026-11-10T09:30",
+    "summary": "中国科大档案文博院联合阿拉善博物馆举办民俗文物展，展出百余件文物及非遗项目。",
+    "event_kind": "exhibition",
+    "venue_name": "东区师生活动中心六楼博物馆第一展厅",
+    "organisation_name": "中国科大档案文博院联合阿拉善盟文体旅游广电局、阿拉善博物馆",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-10T09:30",
+      "end": "2026-11-10T17:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ustc-de1bd7cc33",
+   "type": "Event",
+   "school": "ustc",
+   "name": "关于开展2026年“联合国糖尿病日”科普宣教活动的通知",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.ustc.edu.cn/info/1366/26014.htm",
+    "needs": [
+     "rest_and_recover"
+    ],
+    "start": "2026-11-13T11:00",
+    "summary": "校医院开展联合国糖尿病日科普宣教活动，提供免费检测及专家健康咨询。",
+    "event_kind": "activity",
+    "venue_name": "中国科学技术大学东校区美食广场中庭",
+    "organisation_name": "校医院",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-13T11:00",
+      "end": "2026-11-13T13:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ustc-9ad365f1dc",
+   "type": "Event",
+   "school": "ustc",
+   "name": "关于举办中国科学技术大学第五十七届学生体育运动大会的通知",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.ustc.edu.cn/info/1360/25927.htm",
+    "needs": [
+     "find_my_people",
+     "rest_and_recover"
+    ],
+    "start": "2026-10-30T08:00",
+    "summary": "中国科学技术大学将于10月30日至31日在东校区田径场举办第五十七届学生体育运动大会。",
+    "event_kind": "competition",
+    "venue_name": "东校区田径场",
+    "organisation_name": "中国科学技术大学体育运动委员会",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-10-30T08:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "ustc-24399839d0",
+   "type": "Event",
+   "school": "ustc",
+   "name": "中国科大“理实交融”马理学科系列讲座第36讲通知",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.ustc.edu.cn/info/1360/25905.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-10-22T09:00",
+    "summary": "马克思主义学院举办“理实交融”马理学科系列讲座第36讲，刘建军教授作专题报告。",
+    "event_kind": "lecture",
+    "venue_name": "东校区5教101教室",
+    "organisation_name": "马克思主义学院",
+    "speaker": "中国人民大学刘建军教授",
+    "occurrences": [
+     {
+      "start": "2026-10-22T09:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "ustc-e0cc273f20",
+   "type": "Event",
+   "school": "ustc",
+   "name": "关于“习近平新时代中国特色社会主义思想”系列讲座之张晓亮副教授报告会的通知",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.ustc.edu.cn/info/1360/25873.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-10-14T19:00",
+    "summary": "张晓亮副教授主讲“赓续渡江精神 走好新时代长征路”专题报告会。",
+    "event_kind": "lecture",
+    "venue_name": "东校区第五教学楼 5101 教室",
+    "organisation_name": "马克思主义学院",
+    "speaker": "张晓亮副教授",
+    "occurrences": [
+     {
+      "start": "2026-10-14T19:00",
+      "end": "2026-10-14T21:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ustc-e5fdc5d5e6",
+   "type": "Event",
+   "school": "ustc",
+   "name": "关于举行第二十六届RoboGame机器人大赛决赛的通知",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.ustc.edu.cn/info/1360/25830.htm",
+    "needs": [
+     "explore_a_field",
+     "build_a_skill"
+    ],
+    "start": "2026-10-04T14:00",
+    "summary": "第二十六届RoboGame机器人大赛决赛，以未来月球基地智能建设为背景，含竞技与展示。",
+    "event_kind": "competition",
+    "venue_name": "中区体育中心综合馆",
+    "organisation_name": "教务处、校团委、党委学生工作部（处）、党委宣传部、保卫与校园管理处",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-10-04T14:00",
+      "end": "2026-10-04T17:30"
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "ustc-d62e8e358d",
+   "field": "title",
+   "quote": "关于举行2026年“唱响时代主旋律，共谱科大新华章”教职工合唱比赛的通知",
+   "url": "https://www.ustc.edu.cn/info/1366/26112.htm",
+   "check_confidence": 0.9709378368536633,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-d62e8e358d",
+   "field": "date",
+   "quote": "2026 年 11 月 27 日（星期五） 19:00",
+   "url": "https://www.ustc.edu.cn/info/1366/26112.htm",
+   "check_confidence": 0.9708017117055828,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-d62e8e358d",
+   "field": "start_time",
+   "quote": "19:00",
+   "url": "https://www.ustc.edu.cn/info/1366/26112.htm",
+   "check_confidence": 0.9837948657262453,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-d62e8e358d",
+   "field": "venue_name",
+   "quote": "东区大礼堂",
+   "url": "https://www.ustc.edu.cn/info/1366/26112.htm",
+   "check_confidence": 0.9597611149531594,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-d62e8e358d",
+   "field": "organisation_name",
+   "quote": "党委宣传部、党委组织部、校工会、保卫与校园管理处",
+   "url": "https://www.ustc.edu.cn/info/1366/26112.htm",
+   "check_confidence": 0.9632096188710431,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-44ffa68b6d",
+   "field": "title",
+   "quote": "关于开展中医药特色服务暨健康文化宣传进校园活动的通知",
+   "url": "https://www.ustc.edu.cn/info/1366/26092.htm",
+   "check_confidence": 0.9688468829036465,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-44ffa68b6d",
+   "field": "date",
+   "quote": "2026 年 11 月 26 日下午 14:10—17:20",
+   "url": "https://www.ustc.edu.cn/info/1366/26092.htm",
+   "check_confidence": 0.9728771965721615,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-44ffa68b6d",
+   "field": "start_time",
+   "quote": "14:10",
+   "url": "https://www.ustc.edu.cn/info/1366/26092.htm",
+   "check_confidence": 0.973819054213665,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-44ffa68b6d",
+   "field": "venue_name",
+   "quote": "校医院",
+   "url": "https://www.ustc.edu.cn/info/1366/26092.htm",
+   "check_confidence": 0.97954472613301,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-44ffa68b6d",
+   "field": "organisation_name",
+   "quote": "学校离退休干部工作处、附属第一医院、校医院",
+   "url": "https://www.ustc.edu.cn/info/1366/26092.htm",
+   "check_confidence": 0.9577252496935028,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-df54e060ec",
+   "field": "title",
+   "quote": "2026全国颠覆性技术创新大赛智能网联新能源汽车锦标赛报名通知",
+   "url": "https://www.ustc.edu.cn/info/1362/26069.htm",
+   "check_confidence": 0.9768171561990947,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-df54e060ec",
+   "field": "organisation_name",
+   "quote": "京津冀国家技术创新中心",
+   "url": "https://www.ustc.edu.cn/info/1362/26069.htm",
+   "check_confidence": 0.9875653167005523,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-58b5034015",
+   "field": "title",
+   "quote": "关于举办学校二级网站群使用技术培训的通知",
+   "url": "https://www.ustc.edu.cn/info/1366/26063.htm",
+   "check_confidence": 0.9777665254442472,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-58b5034015",
+   "field": "date",
+   "quote": "2026 年 11 月 19 日（星期四） 9:00",
+   "url": "https://www.ustc.edu.cn/info/1366/26063.htm",
+   "check_confidence": 0.9622945774568349,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-58b5034015",
+   "field": "start_time",
+   "quote": "09:00",
+   "url": "https://www.ustc.edu.cn/info/1366/26063.htm",
+   "check_confidence": 0.9666371934274796,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-58b5034015",
+   "field": "venue_name",
+   "quote": "网络信息中心三楼 312 学术报告厅",
+   "url": "https://www.ustc.edu.cn/info/1366/26063.htm",
+   "check_confidence": 0.9776026219894617,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-58b5034015",
+   "field": "organisation_name",
+   "quote": "网络信息中心、网络安全和信息化办公室",
+   "url": "https://www.ustc.edu.cn/info/1366/26063.htm",
+   "check_confidence": 0.9764519301034967,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-651b503e84",
+   "field": "title",
+   "quote": "关于举办第二场小额零星智能化采购平台使用培训的通知",
+   "url": "https://www.ustc.edu.cn/info/1364/26040.htm",
+   "check_confidence": 0.9656984702278316,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-651b503e84",
+   "field": "date",
+   "quote": "2026 年 11 月 12 日（周四）下午 15:00",
+   "url": "https://www.ustc.edu.cn/info/1364/26040.htm",
+   "check_confidence": 0.9785066360905966,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-651b503e84",
+   "field": "start_time",
+   "quote": "15:00",
+   "url": "https://www.ustc.edu.cn/info/1364/26040.htm",
+   "check_confidence": 0.9677359953972661,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-651b503e84",
+   "field": "venue_name",
+   "quote": "西校区学生活动中心二楼学术报告厅",
+   "url": "https://www.ustc.edu.cn/info/1364/26040.htm",
+   "check_confidence": 0.9630453279514561,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-651b503e84",
+   "field": "organisation_name",
+   "quote": "资产与后勤保障处、财务处",
+   "url": "https://www.ustc.edu.cn/info/1364/26040.htm",
+   "check_confidence": 0.9712938713204821,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-b8c9fd8822",
+   "field": "title",
+   "quote": "关于《大漠驼韵——阿拉善民俗文物展》的开展通知",
+   "url": "https://www.ustc.edu.cn/info/1366/26035.htm",
+   "check_confidence": 0.9779536890351129,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-b8c9fd8822",
+   "field": "date",
+   "quote": "2026 年 11 月 10 日— 2027 年 3 月 10 日 9:30-17:30 （周一闭馆）",
+   "url": "https://www.ustc.edu.cn/info/1366/26035.htm",
+   "check_confidence": 0.9803232705218198,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-b8c9fd8822",
+   "field": "start_time",
+   "quote": "09:30",
+   "url": "https://www.ustc.edu.cn/info/1366/26035.htm",
+   "check_confidence": 0.9598080443193985,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-b8c9fd8822",
+   "field": "venue_name",
+   "quote": "东区师生活动中心六楼博物馆第一展厅",
+   "url": "https://www.ustc.edu.cn/info/1366/26035.htm",
+   "check_confidence": 0.9698940146866976,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-b8c9fd8822",
+   "field": "organisation_name",
+   "quote": "中国科大档案文博院联合阿拉善盟文体旅游广电局、阿拉善博物馆",
+   "url": "https://www.ustc.edu.cn/info/1366/26035.htm",
+   "check_confidence": 0.9741471022617586,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-de1bd7cc33",
+   "field": "title",
+   "quote": "关于开展2026年“联合国糖尿病日”科普宣教活动的通知",
+   "url": "https://www.ustc.edu.cn/info/1366/26014.htm",
+   "check_confidence": 0.9795072265159835,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-de1bd7cc33",
+   "field": "date",
+   "quote": "2026 年 11 月 13 日（星期五） 11:00 — 13:00",
+   "url": "https://www.ustc.edu.cn/info/1366/26014.htm",
+   "check_confidence": 0.9721819747025658,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-de1bd7cc33",
+   "field": "start_time",
+   "quote": "11:00",
+   "url": "https://www.ustc.edu.cn/info/1366/26014.htm",
+   "check_confidence": 0.9591024965500395,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-de1bd7cc33",
+   "field": "venue_name",
+   "quote": "中国科学技术大学东校区美食广场中庭",
+   "url": "https://www.ustc.edu.cn/info/1366/26014.htm",
+   "check_confidence": 0.9741085431449015,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-de1bd7cc33",
+   "field": "organisation_name",
+   "quote": "校医院",
+   "url": "https://www.ustc.edu.cn/info/1366/26014.htm",
+   "check_confidence": 0.976282427885182,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-9ad365f1dc",
+   "field": "title",
+   "quote": "关于举办中国科学技术大学第五十七届学生体育运动大会的通知",
+   "url": "https://www.ustc.edu.cn/info/1360/25927.htm",
+   "check_confidence": 0.967972686606052,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-9ad365f1dc",
+   "field": "date",
+   "quote": "2026 年 10 月 30 日（周五）、 10 月 31 日（周六）",
+   "url": "https://www.ustc.edu.cn/info/1360/25927.htm",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-9ad365f1dc",
+   "field": "start_time",
+   "quote": "08:00",
+   "url": "https://www.ustc.edu.cn/info/1360/25927.htm",
+   "check_confidence": 0.8956524736932362,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-9ad365f1dc",
+   "field": "venue_name",
+   "quote": "东校区田径场",
+   "url": "https://www.ustc.edu.cn/info/1360/25927.htm",
+   "check_confidence": 0.9591951383343311,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-9ad365f1dc",
+   "field": "organisation_name",
+   "quote": "中国科学技术大学体育运动委员会",
+   "url": "https://www.ustc.edu.cn/info/1360/25927.htm",
+   "check_confidence": 0.962677586470803,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-24399839d0",
+   "field": "title",
+   "quote": "中国科大“理实交融”马理学科系列讲座第36讲通知",
+   "url": "https://www.ustc.edu.cn/info/1360/25905.htm",
+   "check_confidence": 0.9823578087145524,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-24399839d0",
+   "field": "date",
+   "quote": "10月22日（周四）上午9:00",
+   "url": "https://www.ustc.edu.cn/info/1360/25905.htm",
+   "check_confidence": 0.8499404053166743,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-24399839d0",
+   "field": "start_time",
+   "quote": "09:00",
+   "url": "https://www.ustc.edu.cn/info/1360/25905.htm",
+   "check_confidence": 0.9752592138158758,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-24399839d0",
+   "field": "venue_name",
+   "quote": "东校区5教101教室",
+   "url": "https://www.ustc.edu.cn/info/1360/25905.htm",
+   "check_confidence": 0.958902920671157,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-24399839d0",
+   "field": "organisation_name",
+   "quote": "马克思主义学院",
+   "url": "https://www.ustc.edu.cn/info/1360/25905.htm",
+   "check_confidence": 0.9598633636112012,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-24399839d0",
+   "field": "speaker",
+   "quote": "中国人民大学刘建军教授",
+   "url": "https://www.ustc.edu.cn/info/1360/25905.htm",
+   "check_confidence": 0.9847887729971062,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-e0cc273f20",
+   "field": "title",
+   "quote": "关于“习近平新时代中国特色社会主义思想”系列讲座之张晓亮副教授报告会的通知",
+   "url": "https://www.ustc.edu.cn/info/1360/25873.htm",
+   "check_confidence": 0.9766327408955433,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-e0cc273f20",
+   "field": "date",
+   "quote": "2026 年 10 月 14 日 19:00-21:00",
+   "url": "https://www.ustc.edu.cn/info/1360/25873.htm",
+   "check_confidence": 0.9770289289974856,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-e0cc273f20",
+   "field": "start_time",
+   "quote": "19:00",
+   "url": "https://www.ustc.edu.cn/info/1360/25873.htm",
+   "check_confidence": 0.9680062198427176,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-e0cc273f20",
+   "field": "venue_name",
+   "quote": "东校区第五教学楼 5101 教室",
+   "url": "https://www.ustc.edu.cn/info/1360/25873.htm",
+   "check_confidence": 0.981093360503632,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-e0cc273f20",
+   "field": "organisation_name",
+   "quote": "马克思主义学院",
+   "url": "https://www.ustc.edu.cn/info/1360/25873.htm",
+   "check_confidence": 0.9644851803575276,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-e0cc273f20",
+   "field": "speaker",
+   "quote": "张晓亮副教授",
+   "url": "https://www.ustc.edu.cn/info/1360/25873.htm",
+   "check_confidence": 0.9849914101883618,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-e5fdc5d5e6",
+   "field": "title",
+   "quote": "关于举行第二十六届RoboGame机器人大赛决赛的通知",
+   "url": "https://www.ustc.edu.cn/info/1360/25830.htm",
+   "check_confidence": 0.9645876160004627,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-e5fdc5d5e6",
+   "field": "date",
+   "quote": "2026 年 10 月 4 日（星期日）下午 14:00 – 17:30",
+   "url": "https://www.ustc.edu.cn/info/1360/25830.htm",
+   "check_confidence": 0.9716564800707658,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-e5fdc5d5e6",
+   "field": "start_time",
+   "quote": "14:00",
+   "url": "https://www.ustc.edu.cn/info/1360/25830.htm",
+   "check_confidence": 0.9802171635914797,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-e5fdc5d5e6",
+   "field": "venue_name",
+   "quote": "中区体育中心综合馆",
+   "url": "https://www.ustc.edu.cn/info/1360/25830.htm",
+   "check_confidence": 0.9720885075220237,
+   "passed": true
+  },
+  {
+   "entity_id": "ustc-e5fdc5d5e6",
+   "field": "organisation_name",
+   "quote": "教务处、校团委、党委学生工作部（处）、党委宣传部、保卫与校园管理处",
+   "url": "https://www.ustc.edu.cn/info/1360/25830.htm",
+   "check_confidence": 0.9662911387816698,
+   "passed": true
+  }
+ ]
+}

@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A soft, warm storybook illustration in gentle pastel colours, wide 16:9, flat shapes with light texture, golden afternoon light, a few tiny students walking. No text, no letters, no logos, no emblems, no watermarks. Scene: a university campus in a northern Chinese city, grey-brick teaching buildings, a traditional gate, ginkgo and pine trees.",
+ "reference": null,
+ "seconds": 14,
+ "tokens": 1476,
+ "at": "2026-11-21T23:33:46.023Z"
+}

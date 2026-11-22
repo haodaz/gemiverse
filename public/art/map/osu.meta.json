@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. The campus features a formal landscape with green quads, a lake, and mostly reddish-brown brick buildings. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) the Oval, a quad: Large open green quad forming the central axis of campus.; (2) Ohio Stadium, a stadium: Large sports stadium, plain.; (3) Mirror Lake, a lake: Small campus lake.; (4) University Hall, a hall: Campus hall overlooking the Oval, plain.; (5) Knowlton Hall, a hall: Building clad in white marble tiles with five white marble columns.; (6) South Oval, a quad: Smaller expanse of green space south of the Oval.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 15,
+ "tokens": 1898,
+ "at": "2026-11-22T00:20:05.364Z"
+}

@@ -1,0 +1,77 @@
+{
+ "school": "ucla",
+ "name": "University of California, Los Angeles",
+ "at": "2026-11-22T00:13:04.901Z",
+ "seconds": 19,
+ "tokens": 14444,
+ "entities": [
+  {
+   "id": "ucla-2b5c86bb5a",
+   "type": "Event",
+   "school": "ucla",
+   "name": "Cloud Gate: Blue Hour / Beckoning: A Double Bill",
+   "tier": 1,
+   "fields": {
+    "url": "https://cap.ucla.edu/event/cloud-gate",
+    "needs": [
+     "rest_and_recover",
+     "make_and_express"
+    ],
+    "start": "2026-11-21T20:00",
+    "summary": "Cloud Gate Dance Theatre of Taiwan performs Blue Hour and Beckoning, a double bill of contemporary dance works choreographed by CHENG Tsung-lung.",
+    "event_kind": "other",
+    "venue_name": "Royce Hall, 340 Royce Drive, Los Angeles, CA 90095",
+    "organisation_name": "CAP UCLA",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21T20:00",
+      "end": null
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "ucla-2b5c86bb5a",
+   "field": "title",
+   "quote": "Cloud Gate: Blue Hour / Beckoning: A Double Bill",
+   "url": "https://cap.ucla.edu/event/cloud-gate",
+   "check_confidence": 0.9645530164289389,
+   "passed": true
+  },
+  {
+   "entity_id": "ucla-2b5c86bb5a",
+   "field": "date",
+   "quote": "Sat, Nov 21, 2026 at 8 pm",
+   "url": "https://cap.ucla.edu/event/cloud-gate",
+   "check_confidence": 0.9749279072701612,
+   "passed": true
+  },
+  {
+   "entity_id": "ucla-2b5c86bb5a",
+   "field": "start_time",
+   "quote": "20:00",
+   "url": "https://cap.ucla.edu/event/cloud-gate",
+   "check_confidence": 0.9751581035072557,
+   "passed": true
+  },
+  {
+   "entity_id": "ucla-2b5c86bb5a",
+   "field": "venue_name",
+   "quote": "Royce Hall 340 Royce Drive, Los Angeles, CA 90095",
+   "url": "https://cap.ucla.edu/event/cloud-gate",
+   "check_confidence": 0.9671871176503577,
+   "passed": true
+  },
+  {
+   "entity_id": "ucla-2b5c86bb5a",
+   "field": "organisation_name",
+   "quote": "CAP UCLA",
+   "url": "https://cap.ucla.edu/event/cloud-gate",
+   "check_confidence": 0.9732596255403665,
+   "passed": true
+  }
+ ]
+}

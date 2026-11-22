@@ -1,0 +1,317 @@
+{
+ "school": "uchicago",
+ "name": "University of Chicago",
+ "at": "2026-11-22T00:12:45.454Z",
+ "seconds": 18,
+ "tokens": 24653,
+ "entities": [
+  {
+   "id": "uchicago-9fa19f58ee",
+   "type": "Event",
+   "school": "uchicago",
+   "name": "Charles White Across Media: A Visual Archive",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.uchicago.edu/event/charles-white-across-media",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": null,
+    "summary": "An event page titled Charles White Across Media: A Visual Archive on the University of Chicago calendar, with no date or details listed.",
+    "event_kind": "exhibition",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "uchicago-52def7beb1",
+   "type": "Event",
+   "school": "uchicago",
+   "name": "America@250 - Now is the Time: Artists Go to Work",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.uchicago.edu/event/282129-america250-now-is-the-time-artists-go-to-work",
+    "needs": [
+     "make_and_express"
+    ],
+    "start": null,
+    "summary": "An event titled America@250 - Now is the Time: Artists Go to Work listed on the University of Chicago calendar.",
+    "event_kind": "other",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "uchicago-f85facc845",
+   "type": "Event",
+   "school": "uchicago",
+   "name": "Sewn as One",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.uchicago.edu/event/sewn-as-one",
+    "needs": [],
+    "start": null,
+    "summary": "An event titled Sewn as One listed on the University of Chicago Calendar of Events.",
+    "event_kind": "other",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "uchicago-1f48d976c1",
+   "type": "Event",
+   "school": "uchicago",
+   "name": "Created Equal: The Premises and Promises of the Declaration of Independence",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.uchicago.edu/event/273314-created-equal-the-premises-and-promises-of-the",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": null,
+    "summary": "An event titled Created Equal: The Premises and Promises of the Declaration of Independence at the University of Chicago.",
+    "event_kind": "other",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "uchicago-2ab7290108",
+   "type": "Event",
+   "school": "uchicago",
+   "name": "Applications Open_CAPS Mock Study Section",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.uchicago.edu/event/284946-applications-opencaps-mock-study-section",
+    "needs": [
+     "get_experience",
+     "get_mentorship_and_feedback"
+    ],
+    "start": null,
+    "summary": "Applications are open for the CAPS Mock Study Section at the University of Chicago.",
+    "event_kind": "other",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "uchicago-ecd72ee177",
+   "type": "Event",
+   "school": "uchicago",
+   "name": "Sunday Somatics – Healing with Yoga",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.uchicago.edu/event/277944-sunday-somatics-healing-with-yoga",
+    "needs": [
+     "rest_and_recover"
+    ],
+    "start": null,
+    "summary": "A University of Chicago event titled Sunday Somatics – Healing with Yoga.",
+    "event_kind": "activity",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "uchicago-3fde4093ab",
+   "type": "Event",
+   "school": "uchicago",
+   "name": "Winter 2027 Graduate Registration Open",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.uchicago.edu/event/266154-winter-2027-graduate-registration-open",
+    "needs": [
+     "navigate_systems"
+    ],
+    "start": null,
+    "summary": "A University of Chicago calendar entry for Winter 2027 Graduate Registration Open, with no date, time, or location details.",
+    "event_kind": "other",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "uchicago-31a9fe649e",
+   "type": "Event",
+   "school": "uchicago",
+   "name": "Sundays at Rockefeller",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.uchicago.edu/event/278128-sundays-at-rockefeller",
+    "needs": [],
+    "start": null,
+    "summary": "An event titled Sundays at Rockefeller at The University of Chicago, with no further details provided on the page.",
+    "event_kind": "other",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "uchicago-164b33ff07",
+   "type": "Event",
+   "school": "uchicago",
+   "name": "Ask an Archaeologist! Youth and Family Workshop",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.uchicago.edu/event/283182-ask-an-archaeologist-youth-and-family-workshop",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": null,
+    "summary": "A youth and family workshop titled Ask an Archaeologist! listed on the University of Chicago Calendar of Events.",
+    "event_kind": "workshop",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "uchicago-5d9332b304",
+   "type": "Event",
+   "school": "uchicago",
+   "name": "A Seat at the Table - Sunday Brunch",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.uchicago.edu/event/278073-a-seat-at-the-table-sunday-brunch",
+    "needs": [
+     "find_my_people",
+     "rest_and_recover"
+    ],
+    "start": null,
+    "summary": "An event titled A Seat at the Table - Sunday Brunch listed on the University of Chicago calendar, with no further details provided.",
+    "event_kind": "activity",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "uchicago-ddddd5fa17",
+   "type": "Event",
+   "school": "uchicago",
+   "name": "A Night in Good Company",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.uchicago.edu/event/282661-a-night-in-good-company",
+    "needs": [
+     "find_my_people"
+    ],
+    "start": null,
+    "summary": "An event titled A Night in Good Company listed on the University of Chicago Calendar of Events.",
+    "event_kind": "other",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "uchicago-9fa19f58ee",
+   "field": "title",
+   "quote": "Charles White Across Media: A Visual Archive",
+   "url": "https://events.uchicago.edu/event/charles-white-across-media",
+   "check_confidence": 0.811147583492369,
+   "passed": true
+  },
+  {
+   "entity_id": "uchicago-52def7beb1",
+   "field": "title",
+   "quote": "America@250 - Now is the Time: Artists Go to Work",
+   "url": "https://events.uchicago.edu/event/282129-america250-now-is-the-time-artists-go-to-work",
+   "check_confidence": 0.8733285348033768,
+   "passed": true
+  },
+  {
+   "entity_id": "uchicago-f85facc845",
+   "field": "title",
+   "quote": "Sewn as One",
+   "url": "https://events.uchicago.edu/event/sewn-as-one",
+   "check_confidence": 0.8294839565926113,
+   "passed": true
+  },
+  {
+   "entity_id": "uchicago-1f48d976c1",
+   "field": "title",
+   "quote": "Created Equal: The Premises and Promises of the Declaration of Independence",
+   "url": "https://events.uchicago.edu/event/273314-created-equal-the-premises-and-promises-of-the",
+   "check_confidence": 0.8345439141112788,
+   "passed": true
+  },
+  {
+   "entity_id": "uchicago-2ab7290108",
+   "field": "title",
+   "quote": "Applications Open_CAPS Mock Study Section",
+   "url": "https://events.uchicago.edu/event/284946-applications-opencaps-mock-study-section",
+   "check_confidence": 0.9294965078695687,
+   "passed": true
+  },
+  {
+   "entity_id": "uchicago-ecd72ee177",
+   "field": "title",
+   "quote": "Sunday Somatics – Healing with Yoga",
+   "url": "https://events.uchicago.edu/event/277944-sunday-somatics-healing-with-yoga",
+   "check_confidence": 0.8617309115152161,
+   "passed": true
+  },
+  {
+   "entity_id": "uchicago-3fde4093ab",
+   "field": "title",
+   "quote": "Winter 2027 Graduate Registration Open",
+   "url": "https://events.uchicago.edu/event/266154-winter-2027-graduate-registration-open",
+   "check_confidence": 0.8802103829485722,
+   "passed": true
+  },
+  {
+   "entity_id": "uchicago-31a9fe649e",
+   "field": "title",
+   "quote": "Sundays at Rockefeller",
+   "url": "https://events.uchicago.edu/event/278128-sundays-at-rockefeller",
+   "check_confidence": 0.8164982502890387,
+   "passed": true
+  },
+  {
+   "entity_id": "uchicago-164b33ff07",
+   "field": "title",
+   "quote": "Ask an Archaeologist! Youth and Family Workshop",
+   "url": "https://events.uchicago.edu/event/283182-ask-an-archaeologist-youth-and-family-workshop",
+   "check_confidence": 0.9677107786543492,
+   "passed": true
+  },
+  {
+   "entity_id": "uchicago-5d9332b304",
+   "field": "title",
+   "quote": "A Seat at the Table - Sunday Brunch",
+   "url": "https://events.uchicago.edu/event/278073-a-seat-at-the-table-sunday-brunch",
+   "check_confidence": 0.8903598029180284,
+   "passed": true
+  },
+  {
+   "entity_id": "uchicago-ddddd5fa17",
+   "field": "title",
+   "quote": "A Night in Good Company",
+   "url": "https://events.uchicago.edu/event/282661-a-night-in-good-company",
+   "check_confidence": 0.8417208796056113,
+   "passed": true
+  }
+ ]
+}

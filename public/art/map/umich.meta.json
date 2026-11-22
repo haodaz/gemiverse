@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. The Ann Arbor campus features Classical, Art Deco, and Gothic buildings on Central Campus, with the Huron River separating it from North Campus. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Michigan Stadium, a stadium: massive open-air sports stadium; (2) The Diag, a quad: open campus quadrangle; (3) Burton Memorial Tower, a tower: tall Art Deco tower; (4) Law Quadrangle, a quad: Gothic quadrangle with a flagstone courtyard; (5) Angell Hall, a hall: grand Classical Greek academic hall; (6) Clements Library, a library: Italian Renaissance style library building. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 14,
+ "tokens": 1890,
+ "at": "2026-11-22T00:17:51.205Z"
+}

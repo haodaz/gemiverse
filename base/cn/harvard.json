@@ -1,0 +1,304 @@
+{
+ "school": "harvard",
+ "name": "Harvard University",
+ "at": "2026-11-22T00:11:30.088Z",
+ "seconds": 10,
+ "tokens": 32627,
+ "entities": [
+  {
+   "id": "harvard-96d0fb301f",
+   "type": "Event",
+   "school": "harvard",
+   "name": "Ground Rules: Property and the Making and Remaking of the American Countryside",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.radcliffe.harvard.edu/event/2026-jessica-a-shoemaker-fellow-presentation-virtual",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-12-09T12:00",
+    "summary": "Legal scholar Jessica A. Shoemaker discusses how property law shapes human communities and environmental conditions across the American countryside.",
+    "event_kind": "lecture",
+    "venue_name": "Online on Zoom",
+    "organisation_name": "Radcliffe Institute for Advanced Study",
+    "speaker": "Jessica A. Shoemaker",
+    "occurrences": [
+     {
+      "start": "2026-12-09T12:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "harvard-3da49ffb35",
+   "type": "Event",
+   "school": "harvard",
+   "name": "We Must Remember: Asian American Monuments and Reckonings with American History",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.radcliffe.harvard.edu/event/2026-erika-lee-fellow-presentation-virtual",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-12-02T12:00",
+    "summary": "Historian Erika Lee presents her research on Asian American monuments and historic sites, examining how communities restore lost histories and promote justice.",
+    "event_kind": "lecture",
+    "venue_name": "Online on Zoom",
+    "organisation_name": "Radcliffe Institute for Advanced Study at Harvard University",
+    "speaker": "Erika Lee",
+    "occurrences": [
+     {
+      "start": "2026-12-02T12:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "harvard-3eec010705",
+   "type": "Event",
+   "school": "harvard",
+   "name": "The Expertise Economy",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.radcliffe.harvard.edu/event/2026-david-h-autor-lecture-3",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-12-03T16:00",
+    "summary": "David H. Autor discusses how new technologies and artificial intelligence reshape work and human expertise.",
+    "event_kind": "lecture",
+    "venue_name": "Knafel Center OR Online on Zoom, 10 Garden Street, Cambridge, MA 02138",
+    "organisation_name": "Radcliffe Institute for Advanced Study at Harvard University",
+    "speaker": "David H. Autor",
+    "occurrences": [
+     {
+      "start": "2026-12-03T16:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "harvard-8cacbb1a25",
+   "type": "Event",
+   "school": "harvard",
+   "name": "Curator-Led Tour: Cooking Up Change",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.radcliffe.harvard.edu/event/2026-cooking-up-change-curator-led-tour-9",
+    "needs": [
+     "explore_a_field",
+     "find_my_people"
+    ],
+    "start": "2026-12-16T12:00",
+    "summary": "Curator Erin LaBove leads a tour of the Cooking Up Change exhibition, exploring community cookbooks and women's community building.",
+    "event_kind": "exhibition",
+    "venue_name": "Lia and William Poorvu Gallery, Schlesinger Library, 3 James Street, Cambridge, MA 02138",
+    "organisation_name": "Harvard Radcliffe Institute",
+    "speaker": "Erin LaBove",
+    "occurrences": [
+     {
+      "start": "2026-12-16T12:00",
+      "end": null
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "harvard-96d0fb301f",
+   "field": "title",
+   "quote": "Ground Rules: Property and the Making and Remaking of the American Countryside",
+   "url": "https://www.radcliffe.harvard.edu/event/2026-jessica-a-shoemaker-fellow-presentation-virtual",
+   "check_confidence": 0.9844163727457758,
+   "passed": true
+  },
+  {
+   "entity_id": "harvard-96d0fb301f",
+   "field": "date",
+   "quote": "Wednesday, December 9, 2026\n12 PM ET",
+   "url": "https://www.radcliffe.harvard.edu/event/2026-jessica-a-shoemaker-fellow-presentation-virtual",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "harvard-96d0fb301f",
+   "field": "start_time",
+   "quote": "12:00",
+   "url": "https://www.radcliffe.harvard.edu/event/2026-jessica-a-shoemaker-fellow-presentation-virtual",
+   "check_confidence": 0.9748333271315878,
+   "passed": true
+  },
+  {
+   "entity_id": "harvard-96d0fb301f",
+   "field": "venue_name",
+   "quote": "Online on Zoom",
+   "url": "https://www.radcliffe.harvard.edu/event/2026-jessica-a-shoemaker-fellow-presentation-virtual",
+   "check_confidence": 0.984599459761209,
+   "passed": true
+  },
+  {
+   "entity_id": "harvard-96d0fb301f",
+   "field": "organisation_name",
+   "quote": "Radcliffe Institute for Advanced Study",
+   "url": "https://www.radcliffe.harvard.edu/event/2026-jessica-a-shoemaker-fellow-presentation-virtual",
+   "check_confidence": 0.9584895392733264,
+   "passed": true
+  },
+  {
+   "entity_id": "harvard-96d0fb301f",
+   "field": "speaker",
+   "quote": "Jessica A. Shoemaker",
+   "url": "https://www.radcliffe.harvard.edu/event/2026-jessica-a-shoemaker-fellow-presentation-virtual",
+   "check_confidence": 0.9841347683509134,
+   "passed": true
+  },
+  {
+   "entity_id": "harvard-3da49ffb35",
+   "field": "title",
+   "quote": "We Must Remember: Asian American Monuments and Reckonings with American History",
+   "url": "https://www.radcliffe.harvard.edu/event/2026-erika-lee-fellow-presentation-virtual",
+   "check_confidence": 0.9860132374710205,
+   "passed": true
+  },
+  {
+   "entity_id": "harvard-3da49ffb35",
+   "field": "date",
+   "quote": "Wednesday, December 2, 2026 12 PM ET",
+   "url": "https://www.radcliffe.harvard.edu/event/2026-erika-lee-fellow-presentation-virtual",
+   "check_confidence": 0.9716055262198146,
+   "passed": true
+  },
+  {
+   "entity_id": "harvard-3da49ffb35",
+   "field": "start_time",
+   "quote": "12:00",
+   "url": "https://www.radcliffe.harvard.edu/event/2026-erika-lee-fellow-presentation-virtual",
+   "check_confidence": 0.9609934162468196,
+   "passed": true
+  },
+  {
+   "entity_id": "harvard-3da49ffb35",
+   "field": "venue_name",
+   "quote": "Online on Zoom",
+   "url": "https://www.radcliffe.harvard.edu/event/2026-erika-lee-fellow-presentation-virtual",
+   "check_confidence": 0.961581910883253,
+   "passed": true
+  },
+  {
+   "entity_id": "harvard-3da49ffb35",
+   "field": "organisation_name",
+   "quote": "Radcliffe Institute for Advanced Study at Harvard University",
+   "url": "https://www.radcliffe.harvard.edu/event/2026-erika-lee-fellow-presentation-virtual",
+   "check_confidence": 0.9562258291355928,
+   "passed": true
+  },
+  {
+   "entity_id": "harvard-3da49ffb35",
+   "field": "speaker",
+   "quote": "Erika Lee",
+   "url": "https://www.radcliffe.harvard.edu/event/2026-erika-lee-fellow-presentation-virtual",
+   "check_confidence": 0.9720023529544056,
+   "passed": true
+  },
+  {
+   "entity_id": "harvard-3eec010705",
+   "field": "title",
+   "quote": "The Expertise Economy",
+   "url": "https://www.radcliffe.harvard.edu/event/2026-david-h-autor-lecture-3",
+   "check_confidence": 0.9854132958957538,
+   "passed": true
+  },
+  {
+   "entity_id": "harvard-3eec010705",
+   "field": "date",
+   "quote": "Thursday, December 3, 2026 4 PM ET",
+   "url": "https://www.radcliffe.harvard.edu/event/2026-david-h-autor-lecture-3",
+   "check_confidence": 0.9879710979943515,
+   "passed": true
+  },
+  {
+   "entity_id": "harvard-3eec010705",
+   "field": "start_time",
+   "quote": "16:00",
+   "url": "https://www.radcliffe.harvard.edu/event/2026-david-h-autor-lecture-3",
+   "check_confidence": 0.9496357205045104,
+   "passed": true
+  },
+  {
+   "entity_id": "harvard-3eec010705",
+   "field": "venue_name",
+   "quote": "Knafel Center OR Online on Zoom 10 Garden Street Cambridge, MA 02138",
+   "url": "https://www.radcliffe.harvard.edu/event/2026-david-h-autor-lecture-3",
+   "check_confidence": 0.9274759695952169,
+   "passed": true
+  },
+  {
+   "entity_id": "harvard-3eec010705",
+   "field": "organisation_name",
+   "quote": "Radcliffe Institute for Advanced Study at Harvard University",
+   "url": "https://www.radcliffe.harvard.edu/event/2026-david-h-autor-lecture-3",
+   "check_confidence": 0.927746160264865,
+   "passed": true
+  },
+  {
+   "entity_id": "harvard-3eec010705",
+   "field": "speaker",
+   "quote": "David H. Autor",
+   "url": "https://www.radcliffe.harvard.edu/event/2026-david-h-autor-lecture-3",
+   "check_confidence": 0.9758387000362921,
+   "passed": true
+  },
+  {
+   "entity_id": "harvard-8cacbb1a25",
+   "field": "title",
+   "quote": "Curator-Led Tour: Cooking Up Change",
+   "url": "https://www.radcliffe.harvard.edu/event/2026-cooking-up-change-curator-led-tour-9",
+   "check_confidence": 0.9865448798364534,
+   "passed": true
+  },
+  {
+   "entity_id": "harvard-8cacbb1a25",
+   "field": "date",
+   "quote": "Wednesday, December 16, 2026\n12 PM ET",
+   "url": "https://www.radcliffe.harvard.edu/event/2026-cooking-up-change-curator-led-tour-9",
+   "check_confidence": 0.9841425325068475,
+   "passed": true
+  },
+  {
+   "entity_id": "harvard-8cacbb1a25",
+   "field": "start_time",
+   "quote": "12:00",
+   "url": "https://www.radcliffe.harvard.edu/event/2026-cooking-up-change-curator-led-tour-9",
+   "check_confidence": 0.9737723866078485,
+   "passed": true
+  },
+  {
+   "entity_id": "harvard-8cacbb1a25",
+   "field": "venue_name",
+   "quote": "Lia and William Poorvu Gallery, Schlesinger Library\n 3 James Street\n Cambridge, MA 02138",
+   "url": "https://www.radcliffe.harvard.edu/event/2026-cooking-up-change-curator-led-tour-9",
+   "check_confidence": 0.9690124609388298,
+   "passed": true
+  },
+  {
+   "entity_id": "harvard-8cacbb1a25",
+   "field": "organisation_name",
+   "quote": "Harvard Radcliffe Institute",
+   "url": "https://www.radcliffe.harvard.edu/event/2026-cooking-up-change-curator-led-tour-9",
+   "check_confidence": 0.9496657492310937,
+   "passed": true
+  },
+  {
+   "entity_id": "harvard-8cacbb1a25",
+   "field": "speaker",
+   "quote": "Erin LaBove",
+   "url": "https://www.radcliffe.harvard.edu/event/2026-cooking-up-change-curator-led-tour-9",
+   "check_confidence": 0.90470987711714,
+   "passed": true
+  }
+ ]
+}

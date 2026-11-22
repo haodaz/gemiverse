@@ -1,0 +1,104 @@
+{
+ "school": "hust",
+ "name": "华中科技大学",
+ "at": "2026-11-22T00:16:50.999Z",
+ "source": "https://zh.wikipedia.org/wiki/%E5%8D%8E%E4%B8%AD%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%A6",
+ "character": "The elongated main campus sits at the foot of Yujia Mountain beside East Lake and Yujia Lake, featuring 72% green coverage like a forest.",
+ "map": "/art/map/hust.jpg",
+ "landmarks": [
+  {
+   "name": "喻家山",
+   "name_en": "Yujia Mountain",
+   "kind": "hill",
+   "quote": "北为喻家山、喻家湖",
+   "look": "A wooded hill rising along the northern edge of the campus.",
+   "check": 0.941310651119926,
+   "confidence": 0.941310651119926,
+   "passed": true,
+   "x": 0.49,
+   "y": 0.18
+  },
+  {
+   "name": "光谷体育馆",
+   "name_en": "Optics Valley Gymnasium",
+   "kind": "stadium",
+   "quote": "学校的标志建筑包括毛泽东像、南一楼、校史馆、建校纪念碑、光谷体育馆、裘法祖像等。",
+   "look": "A large, plain modern gymnasium building.",
+   "check": 0.9768344776413768,
+   "confidence": 0.9768344776413768,
+   "passed": true,
+   "x": 0.6,
+   "y": 0.26
+  },
+  {
+   "name": "校史馆",
+   "name_en": "University History Museum",
+   "kind": "museum",
+   "quote": "学校的标志建筑包括毛泽东像、南一楼、校史馆、建校纪念碑、光谷体育馆、裘法祖像等。",
+   "look": "A plain museum building showcasing university history.",
+   "check": 0.9734198182320609,
+   "confidence": 0.9734198182320609,
+   "passed": true,
+   "x": 0.54,
+   "y": 0.46
+  },
+  {
+   "name": "西十二楼",
+   "name_en": "West Building 12",
+   "kind": "hall",
+   "quote": "西十二楼位于主校区南三门北侧，建成时为亚洲第一大教学楼。",
+   "look": "A massive, plain teaching hall complex.",
+   "check": 0.9746478586716928,
+   "confidence": 0.9746478586716928,
+   "passed": true,
+   "x": 0.24,
+   "y": 0.54
+  },
+  {
+   "name": "南一楼",
+   "name_en": "South Building 1",
+   "kind": "hall",
+   "quote": "学校的标志建筑包括毛泽东像、南一楼、校史馆、建校纪念碑、光谷体育馆、裘法祖像等。",
+   "look": "A plain, iconic campus building.",
+   "check": 0.9782361555559745,
+   "confidence": 0.9782361555559745,
+   "passed": true,
+   "x": 0.6,
+   "y": 0.67
+  },
+  {
+   "name": "主校区南大门",
+   "name_en": "Main Campus South Gate",
+   "kind": "gate",
+   "quote": "华中科技大学站（主校区南大门、南四门）",
+   "look": "A plain main university entrance gate.",
+   "check": 0.9666794553379037,
+   "confidence": 0.9666794553379037,
+   "passed": true,
+   "x": 0.38,
+   "y": 0.84
+  },
+  {
+   "name": "毛泽东像",
+   "name_en": "Statue of Mao Zedong",
+   "kind": "other",
+   "quote": "学校的标志建筑包括毛泽东像、南一楼、校史馆、建校纪念碑、光谷体育馆、裘法祖像等。",
+   "look": "A prominent statue of Mao Zedong.",
+   "check": 0.9755040264395983,
+   "confidence": 0.9755040264395983,
+   "passed": true
+  },
+  {
+   "name": "建校纪念碑",
+   "name_en": "Founding Monument",
+   "kind": "other",
+   "quote": "学校的标志建筑包括毛泽东像、南一楼、校史馆、建校纪念碑、光谷体育馆、裘法祖像等。",
+   "look": "A plain stone monument commemorating the university's founding.",
+   "check": 0.9612695337883318,
+   "confidence": 0.9612695337883318,
+   "passed": true
+  }
+ ],
+ "tokens": 16067,
+ "seconds": 54
+}

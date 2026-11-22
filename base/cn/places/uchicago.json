@@ -1,0 +1,104 @@
+{
+ "school": "uchicago",
+ "name": "University of Chicago",
+ "at": "2026-11-22T00:13:44.052Z",
+ "source": "https://en.wikipedia.org/wiki/University%20of%20Chicago",
+ "character": "The 217-acre campus is split by a large linear park and features Victorian and Collegiate Gothic quadrangles alongside modern, brutalist, and glass-domed buildings.",
+ "map": "/art/map/uchicago.jpg",
+ "landmarks": [
+  {
+   "name": "Main Quadrangles",
+   "name_en": "Main Quadrangles",
+   "kind": "quad",
+   "quote": "what are now known as the Main Quadrangles",
+   "look": "Six Victorian and Collegiate Gothic quadrangles bordering one larger quadrangle.",
+   "check": 0.9880352700789976,
+   "confidence": 0.9880352700789976,
+   "passed": true,
+   "x": 0.22,
+   "y": 0.55
+  },
+  {
+   "name": "Mitchell Tower",
+   "name_en": "Mitchell Tower",
+   "kind": "tower",
+   "quote": "Mitchell Tower, for example, is modeled after Oxford's Magdalen Tower",
+   "look": "Gothic-style stone tower modeled after Oxford's Magdalen Tower.",
+   "check": 0.9749767537436232,
+   "confidence": 0.9749767537436232,
+   "passed": true,
+   "x": 0.29,
+   "y": 0.31
+  },
+  {
+   "name": "Hutchinson Hall",
+   "name_en": "Hutchinson Hall",
+   "kind": "hall",
+   "quote": "the university Commons, Hutchinson Hall, replicates Christ Church Hall.",
+   "look": "Gothic-style university commons hall replicating Christ Church Hall.",
+   "check": 0.9723995568488888,
+   "confidence": 0.9723995568488888,
+   "passed": true,
+   "x": 0.43,
+   "y": 0.22
+  },
+  {
+   "name": "Regenstein Library",
+   "name_en": "Regenstein Library",
+   "kind": "library",
+   "quote": "the Regenstein Library, the largest building on campus, a brutalist structure",
+   "look": "Massive brutalist library building, the largest structure on campus.",
+   "check": 0.9774108407832848,
+   "confidence": 0.9774108407832848,
+   "passed": true,
+   "x": 0.79,
+   "y": 0.23
+  },
+  {
+   "name": "Joe and Rika Mansueto Library",
+   "name_en": "Joe and Rika Mansueto Library",
+   "kind": "library",
+   "quote": "the glass dome-shaped Joe and Rika Mansueto Library",
+   "look": "Modern library topped with a large glass dome over a reading room.",
+   "check": 0.9800402441123983,
+   "confidence": 0.9800402441123983,
+   "passed": true,
+   "x": 0.88,
+   "y": 0.48
+  },
+  {
+   "name": "Laird Bell Law Quadrangle",
+   "name_en": "Laird Bell Law Quadrangle",
+   "kind": "quad",
+   "quote": "including the Laird Bell Law Quadrangle (a complex designed by Saarinen)",
+   "look": "Modernist law school complex arranged around a quadrangle.",
+   "check": 0.9785476775958256,
+   "confidence": 0.9785476775958256,
+   "passed": true,
+   "x": 0.79,
+   "y": 0.72
+  },
+  {
+   "name": "Stagg Field",
+   "name_en": "Stagg Field",
+   "kind": "stadium",
+   "quote": "beneath the viewing stands of the university's Stagg Field.",
+   "look": "Athletic field with viewing stands.",
+   "check": 0.9454205306578317,
+   "confidence": 0.9454205306578317,
+   "passed": true
+  },
+  {
+   "name": "Hitchcock Hall",
+   "name_en": "Hitchcock Hall",
+   "kind": "hall",
+   "quote": "Hitchcock Hall, an undergraduate dormitory, is on the National Register of Historic Places.",
+   "look": "Historic undergraduate dormitory building.",
+   "check": 0.9881260124483459,
+   "confidence": 0.9881260124483459,
+   "passed": true
+  }
+ ],
+ "tokens": 9909,
+ "seconds": 28
+}

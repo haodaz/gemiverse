@@ -1,0 +1,216 @@
+{
+ "school": "vt",
+ "name": "Virginia Tech",
+ "at": "2026-11-22T00:22:07.697Z",
+ "seconds": 12,
+ "tokens": 42962,
+ "entities": [
+  {
+   "id": "vt-44fd1358e0",
+   "type": "Event",
+   "school": "vt",
+   "name": "Center for the Barks Howl-o-ween Dog Parade",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.vt.edu/events/2026/10/center-for-the-barks-howl-o-ween-dog-parade-2026.html",
+    "needs": [
+     "find_my_people",
+     "rest_and_recover"
+    ],
+    "start": "2026-10-29T17:30",
+    "summary": "A free, family-friendly Halloween dog parade and costume contest at the Center for the Arts at Virginia Tech.",
+    "event_kind": "activity",
+    "venue_name": "Center for the Arts at Virginia Tech, 190 Alumni Mall, Blacksburg, Virginia 24061",
+    "organisation_name": "Center for the Arts",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-10-29T17:30",
+      "end": "2026-10-29T18:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "vt-cc7e9a6c5c",
+   "type": "Event",
+   "school": "vt",
+   "name": "An Evening with David Sedaris",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.vt.edu/events/2026/11/an-evening-with-david-sedaris.html",
+    "needs": [
+     "rest_and_recover"
+    ],
+    "start": "2026-11-04T19:30",
+    "summary": "Essayist David Sedaris presents an evening of live readings and reflections at the Center for the Arts at Virginia Tech.",
+    "event_kind": "other",
+    "venue_name": "Center for the Arts at Virginia Tech, 190 Alumni Mall, Blacksburg, Virginia 24061",
+    "organisation_name": "Center for the Arts",
+    "speaker": "David Sedaris",
+    "occurrences": [
+     {
+      "start": "2026-11-04T19:30",
+      "end": "2026-11-04T21:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "vt-f071d2c2a2",
+   "type": "Event",
+   "school": "vt",
+   "name": "Opening Reception: Young Artists: Against the Grain",
+   "tier": 1,
+   "fields": {
+    "url": "https://events.vt.edu/events/2026/12/opening-reception-young-artists-against-the-grain.html",
+    "needs": [
+     "make_and_express",
+     "find_my_people"
+    ],
+    "start": "2026-12-03T17:00",
+    "summary": "A free opening reception at the Center for the Arts celebrates the Young Artists: Against the Grain exhibition featuring Radford High School students.",
+    "event_kind": "exhibition",
+    "venue_name": "Center for the Arts at Virginia Tech, 190 Alumni Mall, Blacksburg, Virginia 24061",
+    "organisation_name": "Center for the Arts",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-03T17:00",
+      "end": "2026-12-03T19:00"
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "vt-44fd1358e0",
+   "field": "title",
+   "quote": "Center for the Barks Howl-o-ween Dog Parade",
+   "url": "https://events.vt.edu/events/2026/10/center-for-the-barks-howl-o-ween-dog-parade-2026.html",
+   "check_confidence": 0.9578189037572274,
+   "passed": true
+  },
+  {
+   "entity_id": "vt-44fd1358e0",
+   "field": "date",
+   "quote": "2026-10-29 Time: 5:30 PM to 6:30 PM",
+   "url": "https://events.vt.edu/events/2026/10/center-for-the-barks-howl-o-ween-dog-parade-2026.html",
+   "check_confidence": 0.9826573877318353,
+   "passed": true
+  },
+  {
+   "entity_id": "vt-44fd1358e0",
+   "field": "start_time",
+   "quote": "17:30",
+   "url": "https://events.vt.edu/events/2026/10/center-for-the-barks-howl-o-ween-dog-parade-2026.html",
+   "check_confidence": 0.967731215919433,
+   "passed": true
+  },
+  {
+   "entity_id": "vt-44fd1358e0",
+   "field": "venue_name",
+   "quote": "Center for the Arts at Virginia Tech 190 Alumni Mall Blacksburg, Virginia 24061",
+   "url": "https://events.vt.edu/events/2026/10/center-for-the-barks-howl-o-ween-dog-parade-2026.html",
+   "check_confidence": 0.9648471752724885,
+   "passed": true
+  },
+  {
+   "entity_id": "vt-44fd1358e0",
+   "field": "organisation_name",
+   "quote": "Center for the Arts",
+   "url": "https://events.vt.edu/events/2026/10/center-for-the-barks-howl-o-ween-dog-parade-2026.html",
+   "check_confidence": 0.9738333820963867,
+   "passed": true
+  },
+  {
+   "entity_id": "vt-cc7e9a6c5c",
+   "field": "title",
+   "quote": "An Evening with David Sedaris",
+   "url": "https://events.vt.edu/events/2026/11/an-evening-with-david-sedaris.html",
+   "check_confidence": 0.9651144488863624,
+   "passed": true
+  },
+  {
+   "entity_id": "vt-cc7e9a6c5c",
+   "field": "date",
+   "quote": "2026-11-04 Time: 7:30 PM to 9:00 PM",
+   "url": "https://events.vt.edu/events/2026/11/an-evening-with-david-sedaris.html",
+   "check_confidence": 0.9734392449110512,
+   "passed": true
+  },
+  {
+   "entity_id": "vt-cc7e9a6c5c",
+   "field": "start_time",
+   "quote": "19:30",
+   "url": "https://events.vt.edu/events/2026/11/an-evening-with-david-sedaris.html",
+   "check_confidence": 0.9845596693018269,
+   "passed": true
+  },
+  {
+   "entity_id": "vt-cc7e9a6c5c",
+   "field": "venue_name",
+   "quote": "Center for the Arts at Virginia Tech 190 Alumni Mall Blacksburg, Virginia 24061",
+   "url": "https://events.vt.edu/events/2026/11/an-evening-with-david-sedaris.html",
+   "check_confidence": 0.9704494442705304,
+   "passed": true
+  },
+  {
+   "entity_id": "vt-cc7e9a6c5c",
+   "field": "organisation_name",
+   "quote": "Center for the Arts",
+   "url": "https://events.vt.edu/events/2026/11/an-evening-with-david-sedaris.html",
+   "check_confidence": 0.9864391313881444,
+   "passed": true
+  },
+  {
+   "entity_id": "vt-cc7e9a6c5c",
+   "field": "speaker",
+   "quote": "David Sedaris",
+   "url": "https://events.vt.edu/events/2026/11/an-evening-with-david-sedaris.html",
+   "check_confidence": 0.9616316857697813,
+   "passed": true
+  },
+  {
+   "entity_id": "vt-f071d2c2a2",
+   "field": "title",
+   "quote": "Opening Reception: Young Artists: Against the Grain",
+   "url": "https://events.vt.edu/events/2026/12/opening-reception-young-artists-against-the-grain.html",
+   "check_confidence": 0.95229320580338,
+   "passed": true
+  },
+  {
+   "entity_id": "vt-f071d2c2a2",
+   "field": "date",
+   "quote": "2026-12-03 Time: 5:00 PM to 7:00 PM",
+   "url": "https://events.vt.edu/events/2026/12/opening-reception-young-artists-against-the-grain.html",
+   "check_confidence": 0.9771912238412311,
+   "passed": true
+  },
+  {
+   "entity_id": "vt-f071d2c2a2",
+   "field": "start_time",
+   "quote": "17:00",
+   "url": "https://events.vt.edu/events/2026/12/opening-reception-young-artists-against-the-grain.html",
+   "check_confidence": 0.9727431051603063,
+   "passed": true
+  },
+  {
+   "entity_id": "vt-f071d2c2a2",
+   "field": "venue_name",
+   "quote": "Center for the Arts at Virginia Tech 190 Alumni Mall Blacksburg, Virginia 24061",
+   "url": "https://events.vt.edu/events/2026/12/opening-reception-young-artists-against-the-grain.html",
+   "check_confidence": 0.9689497125181712,
+   "passed": true
+  },
+  {
+   "entity_id": "vt-f071d2c2a2",
+   "field": "organisation_name",
+   "quote": "Center for the Arts",
+   "url": "https://events.vt.edu/events/2026/12/opening-reception-young-artists-against-the-grain.html",
+   "check_confidence": 0.9637789191357472,
+   "passed": true
+  }
+ ]
+}

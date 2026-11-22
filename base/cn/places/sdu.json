@@ -1,0 +1,36 @@
+{
+ "school": "sdu",
+ "name": "山东大学",
+ "at": "2026-11-22T00:15:58.128Z",
+ "source": "https://zh.wikipedia.org/wiki/%E5%B1%B1%E4%B8%9C%E5%A4%A7%E5%AD%A6",
+ "character": null,
+ "map": "/art/map/sdu.jpg",
+ "landmarks": [
+  {
+   "name": "山东大学图书馆",
+   "name_en": "Shandong University Library",
+   "kind": "library",
+   "quote": "山东大学图书馆",
+   "look": "A plain university library building.",
+   "check": 0.8933267050703607,
+   "confidence": 0.8933267050703607,
+   "passed": true,
+   "x": 0.23,
+   "y": 0.38
+  },
+  {
+   "name": "山东大学博物馆",
+   "name_en": "Shandong University Museum",
+   "kind": "museum",
+   "quote": "山东大学博物馆",
+   "look": "A plain university museum building.",
+   "check": 0.8918443017392211,
+   "confidence": 0.8918443017392211,
+   "passed": true,
+   "x": 0.81,
+   "y": 0.29
+  }
+ ],
+ "tokens": 16054,
+ "seconds": 27
+}

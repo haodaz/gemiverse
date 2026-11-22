@@ -1,0 +1,783 @@
+{
+ "school": "mit",
+ "name": "Massachusetts Institute of Technology",
+ "at": "2026-11-22T00:11:35.683Z",
+ "seconds": 30,
+ "tokens": 74171,
+ "entities": [
+  {
+   "id": "mit-290cf13ac7",
+   "type": "Event",
+   "school": "mit",
+   "name": "Boulez at 100",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.mit.edu/event/boulez-at-100",
+    "needs": [
+     "explore_a_field",
+     "rest_and_recover"
+    ],
+    "start": "2026-11-23T19:30",
+    "summary": "Pianists Gloria Cheng and Ralph van Raat perform works by Pierre Boulez and related composers at MIT's Thomas Tull Concert Hall.",
+    "event_kind": "other",
+    "venue_name": "Building W18, Thomas Tull Concert Hall",
+    "organisation_name": "Arts at MIT",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-23T19:30",
+      "end": "2026-11-23T21:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "mit-94d104fac5",
+   "type": "Event",
+   "school": "mit",
+   "name": "COP31 Debriefing: What's Next for Global Climate Action?",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.mit.edu/event/cop31-debriefing",
+    "needs": [
+     "explore_a_field",
+     "contribute_beyond_self"
+    ],
+    "start": "2026-11-30T12:00",
+    "summary": "A seminar debriefing the outcomes of the COP31 UN climate conference, discussing international cooperation, energy transition, and climate finance.",
+    "event_kind": "lecture",
+    "venue_name": "Building E40, 496",
+    "organisation_name": "Center for International Studies, MIT Climate Policy Center, MIT Climate Project",
+    "speaker": "Evan Lieberman, Bethany Patten, Shannon Hwang, Ben Soltoff",
+    "occurrences": [
+     {
+      "start": "2026-11-30T12:00",
+      "end": "2026-11-30T13:15"
+     }
+    ]
+   }
+  },
+  {
+   "id": "mit-abe467ef84",
+   "type": "Event",
+   "school": "mit",
+   "name": "Men's Soccer vs. Wheaton College (Mass.)",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.mit.edu/event/mens-soccer-vs-emmanuel-college-mass",
+    "needs": [
+     "find_my_people",
+     "rest_and_recover"
+    ],
+    "start": "2026-11-22T12:30",
+    "summary": "MIT men's soccer team competes against Wheaton College (Mass.) in Norton, Massachusetts.",
+    "event_kind": "competition",
+    "venue_name": "Norton, MA",
+    "organisation_name": "Department of Athletics, Physical Education and Recreation",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-22T12:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "mit-fcecfe2d9a",
+   "type": "Event",
+   "school": "mit",
+   "name": "Women's Soccer vs. No. 9 Messiah University",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.mit.edu/event/womens-soccer-vs-gordon-college-3384",
+    "needs": [
+     "find_my_people",
+     "rest_and_recover"
+    ],
+    "start": "2026-11-22T13:00",
+    "summary": "MIT women's soccer team competes against No. 9 Messiah University in Cambridge, MA.",
+    "event_kind": "competition",
+    "venue_name": "Cambridge, MA",
+    "organisation_name": "Department of Athletics, Physical Education and Recreation",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-22T13:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "mit-17402bdece",
+   "type": "Event",
+   "school": "mit",
+   "name": "SURGE: A Participatory Performance on Sea Level Rise",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.mit.edu/event/surge-a-participatory-performance-on-sea-level-rise",
+    "needs": [
+     "make_and_express",
+     "explore_a_field"
+    ],
+    "start": "2026-12-01T18:00",
+    "summary": "An interactive performance-workshop at the MIT Museum combining movement, climate science, and activism to explore sea level rise.",
+    "event_kind": "workshop",
+    "venue_name": "MIT Museum, 314 Main Street, Gambrill Center, Cambridge MA 02142",
+    "organisation_name": "MIT Museum",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-01T18:00",
+      "end": "2026-12-01T19:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "mit-b510a0704b",
+   "type": "Event",
+   "school": "mit",
+   "name": "Concerts in the Chapel",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.mit.edu/event/concerts-in-the-chapel",
+    "needs": [
+     "rest_and_recover"
+    ],
+    "start": "2026-12-02T12:10",
+    "summary": "ORSEL presents a midday concert in the MIT Chapel featuring Christine Southworth and Evan Ziporyn for stillness and reflection.",
+    "event_kind": "activity",
+    "venue_name": "Building W15: MIT Chapel",
+    "organisation_name": "Office of Religious, Spiritual, and Ethical Life",
+    "speaker": "Christine Southworth, Evan Ziporyn",
+    "occurrences": [
+     {
+      "start": "2026-12-02T12:10",
+      "end": "2026-12-02T12:40"
+     }
+    ]
+   }
+  },
+  {
+   "id": "mit-c91a1b46a8",
+   "type": "Event",
+   "school": "mit",
+   "name": "After Dark: The Twilight Zone",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.mit.edu/event/after-dark-the-twilight-zone",
+    "needs": [
+     "explore_a_field",
+     "make_and_express"
+    ],
+    "start": "2026-12-10T18:00",
+    "summary": "An evening event at the MIT Museum exploring ocean Twilight Zone research through talks, marine technology activities, specimens, and bioluminescent crafts.",
+    "event_kind": "activity",
+    "venue_name": "MIT Museum, 314 Main Street, Gambrill Center, Cambridge MA 02142",
+    "organisation_name": "MIT Museum",
+    "speaker": "Dana Yoerger, Peter Girguis",
+    "occurrences": [
+     {
+      "start": "2026-12-10T18:00",
+      "end": "2026-12-10T21:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "mit-e27a4d5cba",
+   "type": "Event",
+   "school": "mit",
+   "name": "The Art of Looking: Netherlandish Paintings at the MIT Museum",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.mit.edu/event/the-art-of-looking-netherlandish-paintings-at-the-mit-museum",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-12-12T13:30",
+    "summary": "MIT students lead short talks and a viewing of seventeenth-century Dutch and Flemish paintings at the MIT Museum.",
+    "event_kind": "exhibition",
+    "venue_name": "MIT Museum, 314 Main Street, Gambrill Center, Cambridge MA 02142",
+    "organisation_name": "MIT Museum",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-12T13:30",
+      "end": "2026-12-12T14:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "mit-7f7b1d3194",
+   "type": "Event",
+   "school": "mit",
+   "name": "IAP: Crochet Coral Reef",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.mit.edu/event/iap-crochet-coral-reef",
+    "needs": [
+     "make_and_express",
+     "build_a_skill"
+    ],
+    "start": "2027-01-11T10:00",
+    "summary": "Participants work with artists to assemble crochet coral pieces into a museum exhibit while learning about crochet, hyperbolic geometry, and coral biology.",
+    "event_kind": "workshop",
+    "venue_name": "MIT Museum, 314 Main Street, Gambrill Center, Cambridge MA 02142",
+    "organisation_name": "MIT Museum",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2027-01-11T10:00",
+      "end": "2027-01-11T16:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "mit-f5c91ee99e",
+   "type": "Event",
+   "school": "mit",
+   "name": "IAP: Design a Museum Activity Cart",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.mit.edu/event/iap-design-a-museum-activity-cart",
+    "needs": [
+     "build_a_skill",
+     "make_and_express"
+    ],
+    "start": "2027-01-25T14:00",
+    "summary": "MIT Museum hosts a three-day IAP workshop for students to design and present an interactive gallery cart activity.",
+    "event_kind": "workshop",
+    "venue_name": "MIT Museum, Learning Lab, 314 Main Street, Gambrill Center, Cambridge MA 02142",
+    "organisation_name": "MIT Museum",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2027-01-25T14:00",
+      "end": "2027-01-25T17:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "mit-321e9244c5",
+   "type": "Event",
+   "school": "mit",
+   "name": "CorpusGUIDE Software Demonstration",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.mit.edu/event/corpusguide-software-demonstration",
+    "needs": [
+     "build_a_skill",
+     "explore_a_field"
+    ],
+    "start": "2026-12-03T12:00",
+    "summary": "A software demonstration showing teachers how to use CorpusGUIDE to find model college student-written papers for their classes.",
+    "event_kind": "workshop",
+    "venue_name": "Building E25, 117",
+    "organisation_name": "Global Languages",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-03T12:00",
+      "end": "2026-12-03T13:00"
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "mit-290cf13ac7",
+   "field": "title",
+   "quote": "Boulez at 100",
+   "url": "https://calendar.mit.edu/event/boulez-at-100",
+   "check_confidence": 0.9765906819345133,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-290cf13ac7",
+   "field": "date",
+   "quote": "Monday, November 23, 2026 7:30pm to 9:00pm EST",
+   "url": "https://calendar.mit.edu/event/boulez-at-100",
+   "check_confidence": 0.9793306632933503,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-290cf13ac7",
+   "field": "start_time",
+   "quote": "19:30",
+   "url": "https://calendar.mit.edu/event/boulez-at-100",
+   "check_confidence": 0.9721431999462188,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-290cf13ac7",
+   "field": "venue_name",
+   "quote": "Building W18, Thomas Tull Concert Hall",
+   "url": "https://calendar.mit.edu/event/boulez-at-100",
+   "check_confidence": 0.9766222370199198,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-290cf13ac7",
+   "field": "organisation_name",
+   "quote": "Arts at MIT",
+   "url": "https://calendar.mit.edu/event/boulez-at-100",
+   "check_confidence": 0.9558086792957597,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-290cf13ac7",
+   "field": "speaker",
+   "quote": "Gloria Cheng, Ralph van Raat",
+   "url": "https://calendar.mit.edu/event/boulez-at-100",
+   "check_confidence": 0.7113098197553647,
+   "passed": false
+  },
+  {
+   "entity_id": "mit-94d104fac5",
+   "field": "title",
+   "quote": "COP31 Debriefing: What's Next for Global Climate Action?",
+   "url": "https://calendar.mit.edu/event/cop31-debriefing",
+   "check_confidence": 0.9763221148332039,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-94d104fac5",
+   "field": "date",
+   "quote": "Monday, November 30, 2026 12:00pm to 1:15pm EST",
+   "url": "https://calendar.mit.edu/event/cop31-debriefing",
+   "check_confidence": 0.9803016651869779,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-94d104fac5",
+   "field": "start_time",
+   "quote": "12:00",
+   "url": "https://calendar.mit.edu/event/cop31-debriefing",
+   "check_confidence": 0.9602705190670736,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-94d104fac5",
+   "field": "venue_name",
+   "quote": "Building E40, 496",
+   "url": "https://calendar.mit.edu/event/cop31-debriefing",
+   "check_confidence": 0.9593963101002154,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-94d104fac5",
+   "field": "organisation_name",
+   "quote": "Center for International Studies, MIT Climate Policy Center, MIT Climate Project",
+   "url": "https://calendar.mit.edu/event/cop31-debriefing",
+   "check_confidence": 0.8097413569608886,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-94d104fac5",
+   "field": "speaker",
+   "quote": "Evan Lieberman, Bethany Patten, Shannon Hwang, Ben Soltoff",
+   "url": "https://calendar.mit.edu/event/cop31-debriefing",
+   "check_confidence": 0.9687340264424017,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-abe467ef84",
+   "field": "title",
+   "quote": "Men's Soccer vs. Wheaton College (Mass.)",
+   "url": "https://calendar.mit.edu/event/mens-soccer-vs-emmanuel-college-mass",
+   "check_confidence": 0.9701317479045228,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-abe467ef84",
+   "field": "date",
+   "quote": "Sunday, November 22, 2026 1:00am EST; Time: 12:30 PM",
+   "url": "https://calendar.mit.edu/event/mens-soccer-vs-emmanuel-college-mass",
+   "check_confidence": 0.9727757905199674,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-abe467ef84",
+   "field": "start_time",
+   "quote": "12:30",
+   "url": "https://calendar.mit.edu/event/mens-soccer-vs-emmanuel-college-mass",
+   "check_confidence": 0.9515752098629903,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-abe467ef84",
+   "field": "venue_name",
+   "quote": "Location: Norton, MA",
+   "url": "https://calendar.mit.edu/event/mens-soccer-vs-emmanuel-college-mass",
+   "check_confidence": 0.9761719531433651,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-abe467ef84",
+   "field": "organisation_name",
+   "quote": "Department of Athletics, Physical Education and Recreation",
+   "url": "https://calendar.mit.edu/event/mens-soccer-vs-emmanuel-college-mass",
+   "check_confidence": 0.9316074738651622,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-fcecfe2d9a",
+   "field": "title",
+   "quote": "Women's Soccer vs. No. 9 Messiah University",
+   "url": "https://calendar.mit.edu/event/womens-soccer-vs-gordon-college-3384",
+   "check_confidence": 0.9627745265418571,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-fcecfe2d9a",
+   "field": "date",
+   "quote": "Sunday, November 22, 2026 1:00am EST / Time: 1:00 PM",
+   "url": "https://calendar.mit.edu/event/womens-soccer-vs-gordon-college-3384",
+   "check_confidence": 0.9719834017979847,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-fcecfe2d9a",
+   "field": "start_time",
+   "quote": "13:00",
+   "url": "https://calendar.mit.edu/event/womens-soccer-vs-gordon-college-3384",
+   "check_confidence": 0.8819850377951467,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-fcecfe2d9a",
+   "field": "venue_name",
+   "quote": "Location: Cambridge, MA",
+   "url": "https://calendar.mit.edu/event/womens-soccer-vs-gordon-college-3384",
+   "check_confidence": 0.9736105418313955,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-fcecfe2d9a",
+   "field": "organisation_name",
+   "quote": "Department of Athletics, Physical Education and Recreation",
+   "url": "https://calendar.mit.edu/event/womens-soccer-vs-gordon-college-3384",
+   "check_confidence": 0.9446167738811414,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-17402bdece",
+   "field": "title",
+   "quote": "SURGE: A Participatory Performance on Sea Level Rise",
+   "url": "https://calendar.mit.edu/event/surge-a-participatory-performance-on-sea-level-rise",
+   "check_confidence": 0.9771539231514617,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-17402bdece",
+   "field": "date",
+   "quote": "Tuesday, December 1, 2026 6:00pm to 7:30pm EST",
+   "url": "https://calendar.mit.edu/event/surge-a-participatory-performance-on-sea-level-rise",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-17402bdece",
+   "field": "start_time",
+   "quote": "18:00",
+   "url": "https://calendar.mit.edu/event/surge-a-participatory-performance-on-sea-level-rise",
+   "check_confidence": 0.9455871580966019,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-17402bdece",
+   "field": "venue_name",
+   "quote": "MIT Museum, 314 Main Street, Gambrill Center, Cambridge MA 02142",
+   "url": "https://calendar.mit.edu/event/surge-a-participatory-performance-on-sea-level-rise",
+   "check_confidence": 0.9659538743706716,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-17402bdece",
+   "field": "organisation_name",
+   "quote": "MIT Museum",
+   "url": "https://calendar.mit.edu/event/surge-a-participatory-performance-on-sea-level-rise",
+   "check_confidence": 0.9811364091549073,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-17402bdece",
+   "field": "speaker",
+   "quote": "Jessie Jeanne Stinnett and Boston Dance Theater Core Members",
+   "url": "https://calendar.mit.edu/event/surge-a-participatory-performance-on-sea-level-rise",
+   "check_confidence": 0.7759481045234827,
+   "passed": false
+  },
+  {
+   "entity_id": "mit-b510a0704b",
+   "field": "title",
+   "quote": "Concerts in the Chapel",
+   "url": "https://calendar.mit.edu/event/concerts-in-the-chapel",
+   "check_confidence": 0.9607870331789055,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-b510a0704b",
+   "field": "date",
+   "quote": "Wednesday, December 2, 2026 12:10pm to 12:40pm EST",
+   "url": "https://calendar.mit.edu/event/concerts-in-the-chapel",
+   "check_confidence": 0.969672199231001,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-b510a0704b",
+   "field": "start_time",
+   "quote": "12:10",
+   "url": "https://calendar.mit.edu/event/concerts-in-the-chapel",
+   "check_confidence": 0.9538603606858528,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-b510a0704b",
+   "field": "venue_name",
+   "quote": "Building W15: MIT Chapel",
+   "url": "https://calendar.mit.edu/event/concerts-in-the-chapel",
+   "check_confidence": 0.9813749903048807,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-b510a0704b",
+   "field": "organisation_name",
+   "quote": "Office of Religious, Spiritual, and Ethical Life",
+   "url": "https://calendar.mit.edu/event/concerts-in-the-chapel",
+   "check_confidence": 0.9603372531007877,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-b510a0704b",
+   "field": "speaker",
+   "quote": "Christine Southworth, Evan Ziporyn",
+   "url": "https://calendar.mit.edu/event/concerts-in-the-chapel",
+   "check_confidence": 0.8975951762545974,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-c91a1b46a8",
+   "field": "title",
+   "quote": "After Dark: The Twilight Zone",
+   "url": "https://calendar.mit.edu/event/after-dark-the-twilight-zone",
+   "check_confidence": 0.9809039142075251,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-c91a1b46a8",
+   "field": "date",
+   "quote": "Thursday, December 10, 2026 6:00pm to 9:00pm EST",
+   "url": "https://calendar.mit.edu/event/after-dark-the-twilight-zone",
+   "check_confidence": 0.9571092270515548,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-c91a1b46a8",
+   "field": "start_time",
+   "quote": "18:00",
+   "url": "https://calendar.mit.edu/event/after-dark-the-twilight-zone",
+   "check_confidence": 0.9581293938956664,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-c91a1b46a8",
+   "field": "venue_name",
+   "quote": "314 Main Street, Gambrill Center, Cambridge MA 02142",
+   "url": "https://calendar.mit.edu/event/after-dark-the-twilight-zone",
+   "check_confidence": 0.9539945865926561,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-c91a1b46a8",
+   "field": "organisation_name",
+   "quote": "MIT Museum",
+   "url": "https://calendar.mit.edu/event/after-dark-the-twilight-zone",
+   "check_confidence": 0.9639179771687318,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-c91a1b46a8",
+   "field": "speaker",
+   "quote": "Dana Yoerger, Peter Girguis",
+   "url": "https://calendar.mit.edu/event/after-dark-the-twilight-zone",
+   "check_confidence": 0.9512694426875903,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-e27a4d5cba",
+   "field": "title",
+   "quote": "The Art of Looking: Netherlandish Paintings at the MIT Museum",
+   "url": "https://calendar.mit.edu/event/the-art-of-looking-netherlandish-paintings-at-the-mit-museum",
+   "check_confidence": 0.980060611002337,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-e27a4d5cba",
+   "field": "date",
+   "quote": "Saturday, December 12, 2026 1:30pm to 2:30pm EST",
+   "url": "https://calendar.mit.edu/event/the-art-of-looking-netherlandish-paintings-at-the-mit-museum",
+   "check_confidence": 0.9452664195707546,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-e27a4d5cba",
+   "field": "start_time",
+   "quote": "13:30",
+   "url": "https://calendar.mit.edu/event/the-art-of-looking-netherlandish-paintings-at-the-mit-museum",
+   "check_confidence": 0.9672774532689072,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-e27a4d5cba",
+   "field": "venue_name",
+   "quote": "314 Main Street, Gambrill Center, Cambridge MA 02142",
+   "url": "https://calendar.mit.edu/event/the-art-of-looking-netherlandish-paintings-at-the-mit-museum",
+   "check_confidence": 0.946793955278294,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-e27a4d5cba",
+   "field": "organisation_name",
+   "quote": "MIT Museum",
+   "url": "https://calendar.mit.edu/event/the-art-of-looking-netherlandish-paintings-at-the-mit-museum",
+   "check_confidence": 0.9770373753454914,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-7f7b1d3194",
+   "field": "title",
+   "quote": "IAP: Crochet Coral Reef",
+   "url": "https://calendar.mit.edu/event/iap-crochet-coral-reef",
+   "check_confidence": 0.9870591062043576,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-7f7b1d3194",
+   "field": "date",
+   "quote": "Monday, January 11, 2027 10:00am to 4:00pm EST",
+   "url": "https://calendar.mit.edu/event/iap-crochet-coral-reef",
+   "check_confidence": 0.9783709249055742,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-7f7b1d3194",
+   "field": "start_time",
+   "quote": "10:00",
+   "url": "https://calendar.mit.edu/event/iap-crochet-coral-reef",
+   "check_confidence": 0.958568730699534,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-7f7b1d3194",
+   "field": "venue_name",
+   "quote": "MIT Museum 314 Main Street, Gambrill Center, Cambridge MA 02142",
+   "url": "https://calendar.mit.edu/event/iap-crochet-coral-reef",
+   "check_confidence": 0.956387498527378,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-7f7b1d3194",
+   "field": "organisation_name",
+   "quote": "MIT Museum",
+   "url": "https://calendar.mit.edu/event/iap-crochet-coral-reef",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-7f7b1d3194",
+   "field": "speaker",
+   "quote": "Christine Wertheim, Margaret Wertheim",
+   "url": "https://calendar.mit.edu/event/iap-crochet-coral-reef",
+   "check_confidence": 0.6517029998915455,
+   "passed": false
+  },
+  {
+   "entity_id": "mit-f5c91ee99e",
+   "field": "title",
+   "quote": "IAP: Design a Museum Activity Cart",
+   "url": "https://calendar.mit.edu/event/iap-design-a-museum-activity-cart",
+   "check_confidence": 0.9716624258095174,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-f5c91ee99e",
+   "field": "date",
+   "quote": "Monday, January 25, 2027 2:00pm to 5:00pm EST",
+   "url": "https://calendar.mit.edu/event/iap-design-a-museum-activity-cart",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-f5c91ee99e",
+   "field": "start_time",
+   "quote": "14:00",
+   "url": "https://calendar.mit.edu/event/iap-design-a-museum-activity-cart",
+   "check_confidence": 0.9526465499992643,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-f5c91ee99e",
+   "field": "venue_name",
+   "quote": "MIT Museum, Learning Lab",
+   "url": "https://calendar.mit.edu/event/iap-design-a-museum-activity-cart",
+   "check_confidence": 0.9539924550504298,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-f5c91ee99e",
+   "field": "organisation_name",
+   "quote": "MIT Museum",
+   "url": "https://calendar.mit.edu/event/iap-design-a-museum-activity-cart",
+   "check_confidence": 0.974266273696778,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-321e9244c5",
+   "field": "title",
+   "quote": "CorpusGUIDE Software Demonstration",
+   "url": "https://calendar.mit.edu/event/corpusguide-software-demonstration",
+   "check_confidence": 0.9739051966406224,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-321e9244c5",
+   "field": "date",
+   "quote": "Thursday, December 3, 2026 12:00pm to 1:00pm EST",
+   "url": "https://calendar.mit.edu/event/corpusguide-software-demonstration",
+   "check_confidence": 0.9864171712974399,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-321e9244c5",
+   "field": "start_time",
+   "quote": "12:00",
+   "url": "https://calendar.mit.edu/event/corpusguide-software-demonstration",
+   "check_confidence": 0.9684300238278355,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-321e9244c5",
+   "field": "venue_name",
+   "quote": "Building E25, 117",
+   "url": "https://calendar.mit.edu/event/corpusguide-software-demonstration",
+   "check_confidence": 0.9683248439380938,
+   "passed": true
+  },
+  {
+   "entity_id": "mit-321e9244c5",
+   "field": "organisation_name",
+   "quote": "Global Languages",
+   "url": "https://calendar.mit.edu/event/corpusguide-software-demonstration",
+   "check_confidence": 0.9456093712672914,
+   "passed": true
+  }
+ ]
+}

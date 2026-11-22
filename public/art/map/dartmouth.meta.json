@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. Situated on a terrace above the Connecticut River, the rural campus centers on a 5-acre Green surrounded by Georgian colonial buildings and many American elms. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) The Green, a quad: 5-acre open grassy lawn at the center of campus; (2) Baker-Berry Library, a library: Main library building featuring an iconic 200-foot tower; (3) Hood Museum of Art, a museum: Museum building connected to the Hopkins Center, plain; (4) Hopkins Center for the Arts, a other: Arts center with a façade like Manhattan's Metropolitan Opera House; (5) Memorial Field, a stadium: 15,600-seat stadium overlooking a football field and track; (6) Dartmouth Hall, a hall: Renovated historic college hall, plain. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 18,
+ "tokens": 2158,
+ "at": "2026-11-22T00:14:02.955Z"
+}

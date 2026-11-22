@@ -1,0 +1,104 @@
+{
+ "school": "emory",
+ "name": "Emory University",
+ "at": "2026-11-22T00:17:46.302Z",
+ "source": "https://en.wikipedia.org/wiki/Emory%20University",
+ "character": "The Beaux-Arts campus is heavily forested with pine, maples, oak, and magnolias, crossed by Peavine Creek, with buildings featuring multi-hued granite and Spanish Saltillo tile.",
+ "map": "/art/map/emory.jpg",
+ "landmarks": [
+  {
+   "name": "Robert W. Woodruff Library",
+   "name_en": "Robert W. Woodruff Library",
+   "kind": "library",
+   "quote": "In the Candler Library Annex of Robert W. Woodruff Library, there is a 1920s Pietro Caproni reproduction",
+   "look": "Plain library building.",
+   "check": 0.9809852453975588,
+   "confidence": 0.9809852453975588,
+   "passed": true,
+   "x": 0.21,
+   "y": 0.21
+  },
+  {
+   "name": "Michael C. Carlos Museum",
+   "name_en": "Michael C. Carlos Museum",
+   "kind": "museum",
+   "quote": "The campus is home to Emory University Hospital, Michael C. Carlos Museum, which has the largest collection of ancient artifacts",
+   "look": "Plain museum building.",
+   "check": 0.9698614722193876,
+   "confidence": 0.9698614722193876,
+   "passed": true,
+   "x": 0.81,
+   "y": 0.2
+  },
+  {
+   "name": "Candler Library Annex",
+   "name_en": "Candler Library Annex",
+   "kind": "library",
+   "quote": "In the Candler Library Annex of Robert W. Woodruff Library, there is a 1920s Pietro Caproni reproduction",
+   "look": "Plain library annex building.",
+   "check": 0.9832852571906051,
+   "confidence": 0.9832852571906051,
+   "passed": true,
+   "x": 0.17,
+   "y": 0.64
+  },
+  {
+   "name": "Cox Hall Ballroom",
+   "name_en": "Cox Hall Ballroom",
+   "kind": "hall",
+   "quote": "The Cox Hall Ballroom was transformed into a news center for the Olympic foreign press.",
+   "look": "Plain hall or ballroom.",
+   "check": 0.9774356885377913,
+   "confidence": 0.9774356885377913,
+   "passed": true,
+   "x": 0.62,
+   "y": 0.42
+  },
+  {
+   "name": "Peavine Creek",
+   "name_en": "Peavine Creek",
+   "kind": "other",
+   "quote": "and Peavine Creek, a branch of the Peachtree Creek, runs through the campus.",
+   "look": "A creek running through a heavily forested campus.",
+   "check": 0.9588300261764944,
+   "confidence": 0.9588300261764944,
+   "passed": true,
+   "x": 0.52,
+   "y": 0.65
+  },
+  {
+   "name": "Schwartz Center for Performing Arts",
+   "name_en": "Schwartz Center for Performing Arts",
+   "kind": "other",
+   "quote": "Emory routinely hosts arts events in the Schwartz Center for Performing Arts",
+   "look": "Plain performing arts center building.",
+   "check": 0.96419219906928,
+   "confidence": 0.96419219906928,
+   "passed": true,
+   "x": 0.84,
+   "y": 0.73
+  },
+  {
+   "name": "Emory Student Center",
+   "name_en": "Emory Student Center",
+   "kind": "other",
+   "quote": "The Emory Student Center (ESC), opened in May 2019, includes a dining hall, study and collaboration spaces",
+   "look": "Plain modern student center building.",
+   "check": 0.979954037854644,
+   "confidence": 0.979954037854644,
+   "passed": true
+  },
+  {
+   "name": "Sanford S. Atwood Chemistry Center",
+   "name_en": "Sanford S. Atwood Chemistry Center",
+   "kind": "other",
+   "quote": "a $52 million expansion and renovation project of the Sanford S. Atwood Chemistry Center was completed.",
+   "look": "Plain academic chemistry building.",
+   "check": 0.98290774370213,
+   "confidence": 0.98290774370213,
+   "passed": true
+  }
+ ],
+ "tokens": 11627,
+ "seconds": 36
+}

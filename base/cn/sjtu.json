@@ -1,0 +1,150 @@
+{
+ "school": "sjtu",
+ "name": "上海交通大学",
+ "at": "2026-11-22T00:10:33.573Z",
+ "seconds": 18,
+ "tokens": 30733,
+ "entities": [
+  {
+   "id": "sjtu-dd63c7d870",
+   "type": "Event",
+   "school": "sjtu",
+   "name": "上海交通大学2026年主题献血活动通知",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.sjtu.edu.cn/tg/20261120/227768.html",
+    "needs": [
+     "contribute_beyond_self"
+    ],
+    "start": "2026-11-25T09:00",
+    "summary": "校红十字会于11月25日在闵行校区校医院组织主题献血活动。",
+    "event_kind": "activity",
+    "venue_name": "闵行校区校医院【从正门进入】",
+    "organisation_name": "上海交通大学红十字会",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-25T09:00",
+      "end": "2026-11-25T15:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "sjtu-aa8b6a16c9",
+   "type": "Event",
+   "school": "sjtu",
+   "name": "关于组织全校教职工人工智能素养提升专题培训暨“AI素养大讲堂”第三讲的通知",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.sjtu.edu.cn/tg/20261116/227627.html",
+    "needs": [
+     "build_a_skill",
+     "explore_a_field"
+    ],
+    "start": "2026-11-18T14:00",
+    "summary": "许志钦教授作“人工智能与科学”专题报告，介绍AI基本原理及其赋能科学研究的应用。",
+    "event_kind": "lecture",
+    "venue_name": "另行通知",
+    "organisation_name": "教务处 研究生院 科学技术发展研究院 人力资源处",
+    "speaker": "许志钦",
+    "occurrences": [
+     {
+      "start": "2026-11-18T14:00",
+      "end": null
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "sjtu-dd63c7d870",
+   "field": "title",
+   "quote": "上海交通大学2026年主题献血活动通知",
+   "url": "https://www.sjtu.edu.cn/tg/20261120/227768.html",
+   "check_confidence": 0.9732414803193111,
+   "passed": true
+  },
+  {
+   "entity_id": "sjtu-dd63c7d870",
+   "field": "date",
+   "quote": "2026年 11 月 25 日 （星期 三 ） 9:00 - 11:00 12:00 - 15:30",
+   "url": "https://www.sjtu.edu.cn/tg/20261120/227768.html",
+   "check_confidence": 0.9727032708581146,
+   "passed": true
+  },
+  {
+   "entity_id": "sjtu-dd63c7d870",
+   "field": "start_time",
+   "quote": "09:00",
+   "url": "https://www.sjtu.edu.cn/tg/20261120/227768.html",
+   "check_confidence": 0.9675839024383736,
+   "passed": true
+  },
+  {
+   "entity_id": "sjtu-dd63c7d870",
+   "field": "venue_name",
+   "quote": "闵行校区校医院【从正门进入】",
+   "url": "https://www.sjtu.edu.cn/tg/20261120/227768.html",
+   "check_confidence": 0.9822287441529266,
+   "passed": true
+  },
+  {
+   "entity_id": "sjtu-dd63c7d870",
+   "field": "organisation_name",
+   "quote": "上海交通大学红十字会",
+   "url": "https://www.sjtu.edu.cn/tg/20261120/227768.html",
+   "check_confidence": 0.9661265520373469,
+   "passed": true
+  },
+  {
+   "entity_id": "sjtu-aa8b6a16c9",
+   "field": "title",
+   "quote": "关于组织全校教职工人工智能素养提升专题培训暨“AI素养大讲堂”第三讲的通知",
+   "url": "https://www.sjtu.edu.cn/tg/20261116/227627.html",
+   "check_confidence": 0.9732062371630384,
+   "passed": true
+  },
+  {
+   "entity_id": "sjtu-aa8b6a16c9",
+   "field": "date",
+   "quote": "2026年11月18日下午2:00",
+   "url": "https://www.sjtu.edu.cn/tg/20261116/227627.html",
+   "check_confidence": 0.982430706730806,
+   "passed": true
+  },
+  {
+   "entity_id": "sjtu-aa8b6a16c9",
+   "field": "start_time",
+   "quote": "14:00",
+   "url": "https://www.sjtu.edu.cn/tg/20261116/227627.html",
+   "check_confidence": 0.9856790230971829,
+   "passed": true
+  },
+  {
+   "entity_id": "sjtu-aa8b6a16c9",
+   "field": "venue_name",
+   "quote": "另行通知",
+   "url": "https://www.sjtu.edu.cn/tg/20261116/227627.html",
+   "check_confidence": 0.9797763607129771,
+   "passed": true
+  },
+  {
+   "entity_id": "sjtu-aa8b6a16c9",
+   "field": "organisation_name",
+   "quote": "教务处 研究生院 科学技术发展研究院 人力资源处",
+   "url": "https://www.sjtu.edu.cn/tg/20261116/227627.html",
+   "check_confidence": 0.9577550276435887,
+   "passed": true
+  },
+  {
+   "entity_id": "sjtu-aa8b6a16c9",
+   "field": "speaker",
+   "quote": "许志钦",
+   "url": "https://www.sjtu.edu.cn/tg/20261116/227627.html",
+   "check_confidence": 0.9830965142106305,
+   "passed": true
+  }
+ ]
+}

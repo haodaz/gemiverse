@@ -1,0 +1,104 @@
+{
+ "school": "cmu",
+ "name": "Carnegie Mellon University",
+ "at": "2026-11-22T00:17:57.209Z",
+ "source": "https://en.wikipedia.org/wiki/Carnegie%20Mellon%20University",
+ "character": "The campus features two perpendicular grassy areas, The Cut and The Mall, surrounded by Beaux-Arts buildings with green Spanish tile roofs and International Style structures.",
+ "map": "/art/map/cmu.jpg",
+ "landmarks": [
+  {
+   "name": "The Cut",
+   "name_en": "The Cut",
+   "kind": "other",
+   "quote": "A large grassy area known as \"The Cut\" forms the backbone of the campus",
+   "look": "Large grassy area forming a central campus backbone.",
+   "check": 0.9786660099170786,
+   "confidence": 0.9786660099170786,
+   "passed": true,
+   "x": 0.41,
+   "y": 0.56
+  },
+  {
+   "name": "The Mall",
+   "name_en": "The Mall",
+   "kind": "other",
+   "quote": "with a separate grassy area known as \"The Mall\" running perpendicular.",
+   "look": "Grassy area running perpendicular to The Cut.",
+   "check": 0.9803953292216433,
+   "confidence": 0.9803953292216433,
+   "passed": true,
+   "x": 0.6,
+   "y": 0.8
+  },
+  {
+   "name": "Cohon University Center",
+   "name_en": "Cohon University Center",
+   "kind": "hall",
+   "quote": "re-dedicated the University Center as the Cohon University Center",
+   "look": "Modern student union building.",
+   "check": 0.9834251244164326,
+   "confidence": 0.9834251244164326,
+   "passed": true,
+   "x": 0.55,
+   "y": 0.38
+  },
+  {
+   "name": "Gates Hillman Complex",
+   "name_en": "Gates Hillman Complex",
+   "kind": "hall",
+   "quote": "The Gates Hillman Complex opened for occupancy on August 7, 2009.",
+   "look": "Large academic complex with offices, labs, and classrooms.",
+   "check": 0.99,
+   "confidence": 0.99,
+   "passed": true,
+   "x": 0.81,
+   "y": 0.28
+  },
+  {
+   "name": "Randy Pausch Memorial Footbridge",
+   "name_en": "Randy Pausch Memorial Footbridge",
+   "kind": "bridge",
+   "quote": "connected by the Randy Pausch Memorial Footbridge.",
+   "look": "Footbridge connecting two campus buildings.",
+   "check": 0.9749882702950675,
+   "confidence": 0.9749882702950675,
+   "passed": true,
+   "x": 0.83,
+   "y": 0.48
+  },
+  {
+   "name": "Tepper Quadrangle",
+   "name_en": "Tepper Quadrangle",
+   "kind": "quad",
+   "quote": "develop the Tepper Quadrangle on the north campus.",
+   "look": "North campus quadrangle with a business school and welcome center.",
+   "check": 0.9885744093712338,
+   "confidence": 0.9885744093712338,
+   "passed": true,
+   "x": 0.62,
+   "y": 0.22
+  },
+  {
+   "name": "College of Fine Arts building",
+   "name_en": "College of Fine Arts building",
+   "kind": "hall",
+   "quote": "a nearby hill that was leveled to build the College of Fine Arts building.",
+   "look": "Academic building on leveled ground.",
+   "check": 0.974299838432801,
+   "confidence": 0.974299838432801,
+   "passed": true
+  },
+  {
+   "name": "Walking to the Sky",
+   "name_en": "Walking to the Sky",
+   "kind": "other",
+   "quote": "donated the 80-foot (24 m)-tall sculpture Walking to the Sky",
+   "look": "Tall 80-foot sculpture standing on a lawn.",
+   "check": 0.4584172407813795,
+   "confidence": 0.5415827592186204,
+   "passed": false
+  }
+ ],
+ "tokens": 9681,
+ "seconds": 31
+}

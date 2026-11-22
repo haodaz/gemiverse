@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. The main campus features Collegiate Gothic buildings of multicolored Duke stone on West Campus, Georgian-style buildings on East Campus, expansive gardens, and surrounding forest. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Duke Chapel, a other: Tall 210-foot Collegiate Gothic stone chapel standing on a ridge.; (2) Sarah P. Duke Gardens, a garden: Expansive gardens with terraces, native plants, arboretum, and winding paths.; (3) Cameron Indoor Stadium, a stadium: Historic indoor basketball stadium on West Campus.; (4) Lilly Library, a library: Georgian-style campus library building on East Campus.; (5) Nasher Museum of Art, a museum: Art museum building on Central Campus.; (6) Baldwin Auditorium, a hall: Georgian-style auditorium hall on East Campus.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 18,
+ "tokens": 2368,
+ "at": "2026-11-22T00:13:33.316Z"
+}

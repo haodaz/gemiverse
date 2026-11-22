@@ -1,0 +1,861 @@
+{
+ "school": "scu",
+ "name": "四川大学",
+ "at": "2026-11-22T00:18:06.943Z",
+ "seconds": 46,
+ "tokens": 86531,
+ "entities": [
+  {
+   "id": "scu-698efa51ba",
+   "type": "Event",
+   "school": "scu",
+   "name": "艺术研究新视野|第六届中国现当代艺术史论坛 ——抗战与中国艺术史",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.scu.edu.cn/info/1201/41274.htm",
+    "needs": [
+     "explore_a_field",
+     "find_my_people"
+    ],
+    "start": "2026-11-28T09:00",
+    "summary": "艺术学院主办第六届中国现当代艺术史论坛，探讨抗战与中国艺术史。",
+    "event_kind": "lecture",
+    "venue_name": "博物馆",
+    "organisation_name": "艺术学院",
+    "speaker": "张慨等",
+    "occurrences": [
+     {
+      "start": "2026-11-28T09:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "scu-615cac010c",
+   "type": "Event",
+   "school": "scu",
+   "name": "布拉格汉学学派的解放区文学译介与研究",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.scu.edu.cn/info/1201/41272.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-27T09:00",
+    "summary": "文学院主办的学术讲座，由郭建玲主讲布拉格汉学学派的解放区文学译介与研究。",
+    "event_kind": "lecture",
+    "venue_name": "江安校区文科楼一区311会议室",
+    "organisation_name": "文学院",
+    "speaker": "郭建玲",
+    "occurrences": [
+     {
+      "start": "2026-11-27T09:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "scu-7045ce4da7",
+   "type": "Event",
+   "school": "scu",
+   "name": "国家烟气脱硫工程技术研究中心工程技术委员会年会",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.scu.edu.cn/info/1201/41273.htm",
+    "needs": [
+     "explore_a_field",
+     "find_my_people"
+    ],
+    "start": "2026-11-28T08:00",
+    "summary": "碳中和未来技术学院主办的国家烟气脱硫工程技术研究中心工程技术委员会年会。",
+    "event_kind": "other",
+    "venue_name": "望江校区行政楼401",
+    "organisation_name": "碳中和未来技术学院",
+    "speaker": "马良",
+    "occurrences": [
+     {
+      "start": "2026-11-28T08:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "scu-d6c766fdb6",
+   "type": "Event",
+   "school": "scu",
+   "name": "德国哲学系列讲座|“一”的形而上学 ——重思埃克哈特的神秘主义",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.scu.edu.cn/info/1201/41269.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-26T19:30",
+    "summary": "哲学系主办的德国哲学系列讲座，由贺腾主讲“一”的形而上学与埃克哈特的神秘主义。",
+    "event_kind": "lecture",
+    "venue_name": "望江校区文科楼200",
+    "organisation_name": "哲学系",
+    "speaker": "贺腾",
+    "occurrences": [
+     {
+      "start": "2026-11-26T19:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "scu-88dad6aa04",
+   "type": "Event",
+   "school": "scu",
+   "name": "“对抗”：布拉格汉学学派中国现代文学的比较研究",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.scu.edu.cn/info/1201/41270.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-26T15:00",
+    "summary": "文学院主办的关于布拉格汉学学派中国现代文学比较研究的学术讲座。",
+    "event_kind": "lecture",
+    "venue_name": "江安校区文科楼一区311会议室",
+    "organisation_name": "文学院",
+    "speaker": "郭建玲",
+    "occurrences": [
+     {
+      "start": "2026-11-26T15:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "scu-84c5a26819",
+   "type": "Event",
+   "school": "scu",
+   "name": "格致讲坛|秩序与次序：司法社会工作的价值立场与实践策略",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.scu.edu.cn/info/1201/41271.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-26T16:00",
+    "summary": "公共管理学院举办格致讲坛，宋阿沛主讲司法社会工作的价值立场与实践策略。",
+    "event_kind": "lecture",
+    "venue_name": "公共管理学院206室",
+    "organisation_name": "公共管理学院",
+    "speaker": "宋阿沛",
+    "occurrences": [
+     {
+      "start": "2026-11-26T16:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "scu-4fea987bed",
+   "type": "Event",
+   "school": "scu",
+   "name": "《修昔底德文本的流传、评论与接受史研究》 新书分享会",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.scu.edu.cn/info/1201/41266.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-24T16:30",
+    "summary": "古典学系举办线上新书分享会，由白春晓主讲《修昔底德文本的流传、评论与接受史研究》。",
+    "event_kind": "lecture",
+    "venue_name": "线上腾讯会议 869-335-465",
+    "organisation_name": "古典学系",
+    "speaker": "白春晓",
+    "occurrences": [
+     {
+      "start": "2026-11-24T16:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "scu-55ec2b6d23",
+   "type": "Event",
+   "school": "scu",
+   "name": "最后的荫庇：逊淸奉天残留特权的存续与瓦解",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.scu.edu.cn/info/1201/41267.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-24T14:00",
+    "summary": "历史文化学院举办学术讲座，主讲人刘灿探讨逊清奉天残留特权的存续与瓦解。",
+    "event_kind": "lecture",
+    "venue_name": "江安校区文科楼二区518会议室",
+    "organisation_name": "历史文化学院",
+    "speaker": "刘灿",
+    "occurrences": [
+     {
+      "start": "2026-11-24T14:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "scu-7401d7823d",
+   "type": "Event",
+   "school": "scu",
+   "name": "“凤华英才”研究生风采大赛线下终审",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.scu.edu.cn/info/1753/41284.htm",
+    "needs": [
+     "make_and_express",
+     "get_experience"
+    ],
+    "start": "2026-11-29T10:00",
+    "summary": "研究生工作部举办“凤华英才”研究生风采大赛线下终审。",
+    "event_kind": "competition",
+    "venue_name": "望江校区研究生”一站式“社区",
+    "organisation_name": "研究生工作部",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-29T10:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "scu-ab3677dfbf",
+   "type": "Event",
+   "school": "scu",
+   "name": "第六期“江安律动”健身操活动",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.scu.edu.cn/info/1753/41281.htm",
+    "needs": [
+     "rest_and_recover",
+     "find_my_people"
+    ],
+    "start": "2026-11-27T19:30",
+    "summary": "研究生工作部将在江安校区东园食堂广场举办第六期“江安律动”健身操活动。",
+    "event_kind": "activity",
+    "venue_name": "江安校区东园食堂广场",
+    "organisation_name": "研究生工作部",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-27T19:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "scu-1160429dc5",
+   "type": "Event",
+   "school": "scu",
+   "name": "“东忆新生，创见未来”——走进东郊记忆，探寻工业遗产活化与文创产业创新之路",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.scu.edu.cn/info/1753/41279.htm",
+    "needs": [
+     "explore_a_field",
+     "get_experience"
+    ],
+    "start": "2026-11-26T14:00",
+    "summary": "研究生工作部主办，走进成都东郊记忆探寻工业遗产活化与文创产业创新之路。",
+    "event_kind": "activity",
+    "venue_name": "成都东郊记忆·成都国际时尚产业园",
+    "organisation_name": "研究生工作部",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-26T14:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "scu-ddd3e8a3e8",
+   "type": "Event",
+   "school": "scu",
+   "name": "巴蜀文风·草堂雅集——第十一期周末LIVE艺术之约暨巴蜀文化茶座",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.scu.edu.cn/info/1753/41280.htm",
+    "needs": [
+     "find_my_people",
+     "rest_and_recover"
+    ],
+    "start": "2026-11-27T13:00",
+    "summary": "党委学生工作部（处）在成都杜甫草堂主办的艺术之约暨巴蜀文化茶座活动。",
+    "event_kind": "activity",
+    "venue_name": "成都杜甫草堂",
+    "organisation_name": "党委学生工作部（处）",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-27T13:00",
+      "end": null
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "scu-698efa51ba",
+   "field": "title",
+   "quote": "艺术研究新视野|第六届中国现当代艺术史论坛 ——抗战与中国艺术史",
+   "url": "https://www.scu.edu.cn/info/1201/41274.htm",
+   "check_confidence": 0.9663422061322934,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-698efa51ba",
+   "field": "date",
+   "quote": "时间：2026年11月28日 09:00",
+   "url": "https://www.scu.edu.cn/info/1201/41274.htm",
+   "check_confidence": 0.9679729983521309,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-698efa51ba",
+   "field": "start_time",
+   "quote": "09:00",
+   "url": "https://www.scu.edu.cn/info/1201/41274.htm",
+   "check_confidence": 0.9630364007350811,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-698efa51ba",
+   "field": "venue_name",
+   "quote": "地点：博物馆",
+   "url": "https://www.scu.edu.cn/info/1201/41274.htm",
+   "check_confidence": 0.9578566053996236,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-698efa51ba",
+   "field": "organisation_name",
+   "quote": "艺术学院",
+   "url": "https://www.scu.edu.cn/info/1201/41274.htm",
+   "check_confidence": 0.9709195550244895,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-698efa51ba",
+   "field": "speaker",
+   "quote": "张慨等",
+   "url": "https://www.scu.edu.cn/info/1201/41274.htm",
+   "check_confidence": 0.9714307456293952,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-615cac010c",
+   "field": "title",
+   "quote": "布拉格汉学学派的解放区文学译介与研究",
+   "url": "https://www.scu.edu.cn/info/1201/41272.htm",
+   "check_confidence": 0.9626750669526282,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-615cac010c",
+   "field": "date",
+   "quote": "时间：2026年11月27日 09:00",
+   "url": "https://www.scu.edu.cn/info/1201/41272.htm",
+   "check_confidence": 0.9611120306028089,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-615cac010c",
+   "field": "start_time",
+   "quote": "09:00",
+   "url": "https://www.scu.edu.cn/info/1201/41272.htm",
+   "check_confidence": 0.9649520317678715,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-615cac010c",
+   "field": "venue_name",
+   "quote": "地点：江安校区文科楼一区311会议室",
+   "url": "https://www.scu.edu.cn/info/1201/41272.htm",
+   "check_confidence": 0.973457202501801,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-615cac010c",
+   "field": "organisation_name",
+   "quote": "文学院",
+   "url": "https://www.scu.edu.cn/info/1201/41272.htm",
+   "check_confidence": 0.9639543279826331,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-615cac010c",
+   "field": "speaker",
+   "quote": "郭建玲",
+   "url": "https://www.scu.edu.cn/info/1201/41272.htm",
+   "check_confidence": 0.9787604882066578,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-7045ce4da7",
+   "field": "title",
+   "quote": "国家烟气脱硫工程技术研究中心工程技术委员会年会",
+   "url": "https://www.scu.edu.cn/info/1201/41273.htm",
+   "check_confidence": 0.9754032038483096,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-7045ce4da7",
+   "field": "date",
+   "quote": "时间：2026年11月28日 08:00",
+   "url": "https://www.scu.edu.cn/info/1201/41273.htm",
+   "check_confidence": 0.9776781075887598,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-7045ce4da7",
+   "field": "start_time",
+   "quote": "08:00",
+   "url": "https://www.scu.edu.cn/info/1201/41273.htm",
+   "check_confidence": 0.961246136186292,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-7045ce4da7",
+   "field": "venue_name",
+   "quote": "地点：望江校区行政楼401",
+   "url": "https://www.scu.edu.cn/info/1201/41273.htm",
+   "check_confidence": 0.971646083150971,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-7045ce4da7",
+   "field": "organisation_name",
+   "quote": "碳中和未来技术学院",
+   "url": "https://www.scu.edu.cn/info/1201/41273.htm",
+   "check_confidence": 0.9683028643559884,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-7045ce4da7",
+   "field": "speaker",
+   "quote": "马良",
+   "url": "https://www.scu.edu.cn/info/1201/41273.htm",
+   "check_confidence": 0.9762782874553875,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-d6c766fdb6",
+   "field": "title",
+   "quote": "德国哲学系列讲座|“一”的形而上学 ——重思埃克哈特的神秘主义",
+   "url": "https://www.scu.edu.cn/info/1201/41269.htm",
+   "check_confidence": 0.9549280016785998,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-d6c766fdb6",
+   "field": "date",
+   "quote": "时间：2026年11月26日 19:30",
+   "url": "https://www.scu.edu.cn/info/1201/41269.htm",
+   "check_confidence": 0.9632528070516558,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-d6c766fdb6",
+   "field": "start_time",
+   "quote": "19:30",
+   "url": "https://www.scu.edu.cn/info/1201/41269.htm",
+   "check_confidence": 0.9739827831505331,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-d6c766fdb6",
+   "field": "venue_name",
+   "quote": "地点：望江校区文科楼200",
+   "url": "https://www.scu.edu.cn/info/1201/41269.htm",
+   "check_confidence": 0.9607187045460198,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-d6c766fdb6",
+   "field": "organisation_name",
+   "quote": "哲学系",
+   "url": "https://www.scu.edu.cn/info/1201/41269.htm",
+   "check_confidence": 0.9578901076232624,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-d6c766fdb6",
+   "field": "speaker",
+   "quote": "贺腾",
+   "url": "https://www.scu.edu.cn/info/1201/41269.htm",
+   "check_confidence": 0.9549840923176031,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-88dad6aa04",
+   "field": "title",
+   "quote": "“对抗”：布拉格汉学学派中国现代文学的比较研究",
+   "url": "https://www.scu.edu.cn/info/1201/41270.htm",
+   "check_confidence": 0.9475450082300052,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-88dad6aa04",
+   "field": "date",
+   "quote": "2026年11月26日 15:00",
+   "url": "https://www.scu.edu.cn/info/1201/41270.htm",
+   "check_confidence": 0.9560767390676378,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-88dad6aa04",
+   "field": "start_time",
+   "quote": "15:00",
+   "url": "https://www.scu.edu.cn/info/1201/41270.htm",
+   "check_confidence": 0.9708517849308762,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-88dad6aa04",
+   "field": "venue_name",
+   "quote": "江安校区文科楼一区311会议室",
+   "url": "https://www.scu.edu.cn/info/1201/41270.htm",
+   "check_confidence": 0.9677365325860674,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-88dad6aa04",
+   "field": "organisation_name",
+   "quote": "文学院",
+   "url": "https://www.scu.edu.cn/info/1201/41270.htm",
+   "check_confidence": 0.9773271824305255,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-88dad6aa04",
+   "field": "speaker",
+   "quote": "郭建玲",
+   "url": "https://www.scu.edu.cn/info/1201/41270.htm",
+   "check_confidence": 0.9733367157603378,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-84c5a26819",
+   "field": "title",
+   "quote": "格致讲坛|秩序与次序：司法社会工作的价值立场与实践策略",
+   "url": "https://www.scu.edu.cn/info/1201/41271.htm",
+   "check_confidence": 0.9548815163512426,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-84c5a26819",
+   "field": "date",
+   "quote": "时间：2026年11月26日 16:00",
+   "url": "https://www.scu.edu.cn/info/1201/41271.htm",
+   "check_confidence": 0.973403613646764,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-84c5a26819",
+   "field": "start_time",
+   "quote": "16:00",
+   "url": "https://www.scu.edu.cn/info/1201/41271.htm",
+   "check_confidence": 0.973758840149616,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-84c5a26819",
+   "field": "venue_name",
+   "quote": "地点：公共管理学院206室",
+   "url": "https://www.scu.edu.cn/info/1201/41271.htm",
+   "check_confidence": 0.978595818042469,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-84c5a26819",
+   "field": "organisation_name",
+   "quote": "公共管理学院",
+   "url": "https://www.scu.edu.cn/info/1201/41271.htm",
+   "check_confidence": 0.9744368516702723,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-84c5a26819",
+   "field": "speaker",
+   "quote": "宋阿沛",
+   "url": "https://www.scu.edu.cn/info/1201/41271.htm",
+   "check_confidence": 0.982499917671457,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-4fea987bed",
+   "field": "title",
+   "quote": "《修昔底德文本的流传、评论与接受史研究》 新书分享会",
+   "url": "https://www.scu.edu.cn/info/1201/41266.htm",
+   "check_confidence": 0.9710691059891856,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-4fea987bed",
+   "field": "date",
+   "quote": "时间：2026年11月24日 16:30",
+   "url": "https://www.scu.edu.cn/info/1201/41266.htm",
+   "check_confidence": 0.980509964580554,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-4fea987bed",
+   "field": "start_time",
+   "quote": "16:30",
+   "url": "https://www.scu.edu.cn/info/1201/41266.htm",
+   "check_confidence": 0.9639961013649784,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-4fea987bed",
+   "field": "venue_name",
+   "quote": "地点：线上腾讯会议 869-335-465",
+   "url": "https://www.scu.edu.cn/info/1201/41266.htm",
+   "check_confidence": 0.9612678518263434,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-4fea987bed",
+   "field": "organisation_name",
+   "quote": "古典学系",
+   "url": "https://www.scu.edu.cn/info/1201/41266.htm",
+   "check_confidence": 0.9745960404320682,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-4fea987bed",
+   "field": "speaker",
+   "quote": "白春晓",
+   "url": "https://www.scu.edu.cn/info/1201/41266.htm",
+   "check_confidence": 0.9643371141994076,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-55ec2b6d23",
+   "field": "title",
+   "quote": "最后的荫庇：逊淸奉天残留特权的存续与瓦解",
+   "url": "https://www.scu.edu.cn/info/1201/41267.htm",
+   "check_confidence": 0.9575760026352512,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-55ec2b6d23",
+   "field": "date",
+   "quote": "2026年11月24日 14:00",
+   "url": "https://www.scu.edu.cn/info/1201/41267.htm",
+   "check_confidence": 0.9745108113392271,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-55ec2b6d23",
+   "field": "start_time",
+   "quote": "14:00",
+   "url": "https://www.scu.edu.cn/info/1201/41267.htm",
+   "check_confidence": 0.9701176849453497,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-55ec2b6d23",
+   "field": "venue_name",
+   "quote": "江安校区文科楼二区518会议室",
+   "url": "https://www.scu.edu.cn/info/1201/41267.htm",
+   "check_confidence": 0.9683264934793424,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-55ec2b6d23",
+   "field": "organisation_name",
+   "quote": "历史文化学院",
+   "url": "https://www.scu.edu.cn/info/1201/41267.htm",
+   "check_confidence": 0.9753823876685901,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-55ec2b6d23",
+   "field": "speaker",
+   "quote": "刘灿",
+   "url": "https://www.scu.edu.cn/info/1201/41267.htm",
+   "check_confidence": 0.982016797697719,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-7401d7823d",
+   "field": "title",
+   "quote": "“凤华英才”研究生风采大赛线下终审",
+   "url": "https://www.scu.edu.cn/info/1753/41284.htm",
+   "check_confidence": 0.966128389909515,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-7401d7823d",
+   "field": "date",
+   "quote": "时间：2026年11月29日 10:00",
+   "url": "https://www.scu.edu.cn/info/1753/41284.htm",
+   "check_confidence": 0.9696168476786153,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-7401d7823d",
+   "field": "start_time",
+   "quote": "10:00",
+   "url": "https://www.scu.edu.cn/info/1753/41284.htm",
+   "check_confidence": 0.9709256528614704,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-7401d7823d",
+   "field": "venue_name",
+   "quote": "地点：望江校区研究生”一站式“社区",
+   "url": "https://www.scu.edu.cn/info/1753/41284.htm",
+   "check_confidence": 0.9402073165307835,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-7401d7823d",
+   "field": "organisation_name",
+   "quote": "研究生工作部",
+   "url": "https://www.scu.edu.cn/info/1753/41284.htm",
+   "check_confidence": 0.9759391355421824,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-ab3677dfbf",
+   "field": "title",
+   "quote": "第六期“江安律动”健身操活动",
+   "url": "https://www.scu.edu.cn/info/1753/41281.htm",
+   "check_confidence": 0.9748073214093956,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-ab3677dfbf",
+   "field": "date",
+   "quote": "时间：2026年11月27日 19:30",
+   "url": "https://www.scu.edu.cn/info/1753/41281.htm",
+   "check_confidence": 0.9570374092163999,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-ab3677dfbf",
+   "field": "start_time",
+   "quote": "19:30",
+   "url": "https://www.scu.edu.cn/info/1753/41281.htm",
+   "check_confidence": 0.9767968960956442,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-ab3677dfbf",
+   "field": "venue_name",
+   "quote": "地点：江安校区东园食堂广场",
+   "url": "https://www.scu.edu.cn/info/1753/41281.htm",
+   "check_confidence": 0.9587970366132988,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-ab3677dfbf",
+   "field": "organisation_name",
+   "quote": "研究生工作部",
+   "url": "https://www.scu.edu.cn/info/1753/41281.htm",
+   "check_confidence": 0.96373289172747,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-1160429dc5",
+   "field": "title",
+   "quote": "“东忆新生，创见未来”——走进东郊记忆，探寻工业遗产活化与文创产业创新之路",
+   "url": "https://www.scu.edu.cn/info/1753/41279.htm",
+   "check_confidence": 0.9556076550551041,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-1160429dc5",
+   "field": "date",
+   "quote": "时间：2026年11月26日 14:00",
+   "url": "https://www.scu.edu.cn/info/1753/41279.htm",
+   "check_confidence": 0.9736520896166663,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-1160429dc5",
+   "field": "start_time",
+   "quote": "14:00",
+   "url": "https://www.scu.edu.cn/info/1753/41279.htm",
+   "check_confidence": 0.9621269703274231,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-1160429dc5",
+   "field": "venue_name",
+   "quote": "地点：成都东郊记忆·成都国际时尚产业园",
+   "url": "https://www.scu.edu.cn/info/1753/41279.htm",
+   "check_confidence": 0.9545353814669102,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-1160429dc5",
+   "field": "organisation_name",
+   "quote": "研究生工作部",
+   "url": "https://www.scu.edu.cn/info/1753/41279.htm",
+   "check_confidence": 0.9784266421738398,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-ddd3e8a3e8",
+   "field": "title",
+   "quote": "巴蜀文风·草堂雅集——第十一期周末LIVE艺术之约暨巴蜀文化茶座",
+   "url": "https://www.scu.edu.cn/info/1753/41280.htm",
+   "check_confidence": 0.9696775116516274,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-ddd3e8a3e8",
+   "field": "date",
+   "quote": "2026年11月27日 13:00",
+   "url": "https://www.scu.edu.cn/info/1753/41280.htm",
+   "check_confidence": 0.9584072954499241,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-ddd3e8a3e8",
+   "field": "start_time",
+   "quote": "13:00",
+   "url": "https://www.scu.edu.cn/info/1753/41280.htm",
+   "check_confidence": 0.9707794631620963,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-ddd3e8a3e8",
+   "field": "venue_name",
+   "quote": "成都杜甫草堂",
+   "url": "https://www.scu.edu.cn/info/1753/41280.htm",
+   "check_confidence": 0.9635861913208813,
+   "passed": true
+  },
+  {
+   "entity_id": "scu-ddd3e8a3e8",
+   "field": "organisation_name",
+   "quote": "党委学生工作部（处）",
+   "url": "https://www.scu.edu.cn/info/1753/41280.htm",
+   "check_confidence": 0.9577445623020193,
+   "passed": true
+  }
+ ]
+}

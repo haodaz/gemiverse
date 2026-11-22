@@ -1,0 +1,542 @@
+[
+ {
+  "id": "ruc",
+  "name": "中国人民大学",
+  "short": "人大",
+  "place": "北京",
+  "home": "https://www.ruc.edu.cn",
+  "group": "cn985",
+  "accent": "#7c4dce"
+ },
+ {
+  "id": "buaa",
+  "name": "北京航空航天大学",
+  "short": "北航",
+  "place": "北京",
+  "home": "https://www.buaa.edu.cn",
+  "group": "cn985",
+  "accent": "#b5432e"
+ },
+ {
+  "id": "bit",
+  "name": "北京理工大学",
+  "short": "北理工",
+  "place": "北京",
+  "home": "https://www.bit.edu.cn",
+  "group": "cn985",
+  "accent": "#3d8fd1"
+ },
+ {
+  "id": "bnu",
+  "name": "北京师范大学",
+  "short": "北师大",
+  "place": "北京",
+  "home": "https://www.bnu.edu.cn",
+  "group": "cn985",
+  "accent": "#1f7a6d"
+ },
+ {
+  "id": "cau",
+  "name": "中国农业大学",
+  "short": "中国农大",
+  "place": "北京",
+  "home": "https://www.cau.edu.cn",
+  "group": "cn985",
+  "accent": "#c0392b"
+ },
+ {
+  "id": "muc",
+  "name": "中央民族大学",
+  "short": "民大",
+  "place": "北京",
+  "home": "https://www.muc.edu.cn",
+  "group": "cn985",
+  "accent": "#2f6fb0"
+ },
+ {
+  "id": "nankai",
+  "name": "南开大学",
+  "short": "南开",
+  "place": "天津",
+  "home": "https://www.nankai.edu.cn",
+  "group": "cn985",
+  "accent": "#6a3d9a"
+ },
+ {
+  "id": "tju",
+  "name": "天津大学",
+  "short": "天大",
+  "place": "天津",
+  "home": "https://www.tju.edu.cn",
+  "group": "cn985",
+  "accent": "#34699a"
+ },
+ {
+  "id": "dlut",
+  "name": "大连理工大学",
+  "short": "大工",
+  "place": "大连",
+  "home": "https://www.dlut.edu.cn",
+  "group": "cn985",
+  "accent": "#7c4dce"
+ },
+ {
+  "id": "neu",
+  "name": "东北大学",
+  "short": "东大",
+  "place": "沈阳",
+  "home": "https://www.neu.edu.cn",
+  "group": "cn985",
+  "accent": "#b5432e"
+ },
+ {
+  "id": "jlu",
+  "name": "吉林大学",
+  "short": "吉大",
+  "place": "长春",
+  "home": "https://www.jlu.edu.cn",
+  "group": "cn985",
+  "accent": "#3d8fd1"
+ },
+ {
+  "id": "tongji",
+  "name": "同济大学",
+  "short": "同济",
+  "place": "上海",
+  "home": "https://www.tongji.edu.cn",
+  "group": "cn985",
+  "accent": "#1f7a6d"
+ },
+ {
+  "id": "ecnu",
+  "name": "华东师范大学",
+  "short": "华东师大",
+  "place": "上海",
+  "home": "https://www.ecnu.edu.cn",
+  "group": "cn985",
+  "accent": "#c0392b"
+ },
+ {
+  "id": "seu",
+  "name": "东南大学",
+  "short": "东南",
+  "place": "南京",
+  "home": "https://www.seu.edu.cn",
+  "group": "cn985",
+  "accent": "#2f6fb0"
+ },
+ {
+  "id": "xmu",
+  "name": "厦门大学",
+  "short": "厦大",
+  "place": "厦门",
+  "home": "https://www.xmu.edu.cn",
+  "group": "cn985",
+  "accent": "#6a3d9a"
+ },
+ {
+  "id": "sdu",
+  "name": "山东大学",
+  "short": "山大",
+  "place": "济南",
+  "home": "https://www.sdu.edu.cn",
+  "group": "cn985",
+  "accent": "#34699a"
+ },
+ {
+  "id": "ouc",
+  "name": "中国海洋大学",
+  "short": "海大",
+  "place": "青岛",
+  "home": "https://www.ouc.edu.cn",
+  "group": "cn985",
+  "accent": "#7c4dce"
+ },
+ {
+  "id": "whu",
+  "name": "武汉大学",
+  "short": "武大",
+  "place": "武汉",
+  "home": "https://www.whu.edu.cn",
+  "group": "cn985",
+  "accent": "#b5432e"
+ },
+ {
+  "id": "hust",
+  "name": "华中科技大学",
+  "short": "华科",
+  "place": "武汉",
+  "home": "https://www.hust.edu.cn",
+  "group": "cn985",
+  "accent": "#3d8fd1"
+ },
+ {
+  "id": "hnu",
+  "name": "湖南大学",
+  "short": "湖大",
+  "place": "长沙",
+  "home": "https://www.hnu.edu.cn",
+  "group": "cn985",
+  "accent": "#1f7a6d"
+ },
+ {
+  "id": "csu",
+  "name": "中南大学",
+  "short": "中南",
+  "place": "长沙",
+  "home": "https://www.csu.edu.cn",
+  "group": "cn985",
+  "accent": "#c0392b"
+ },
+ {
+  "id": "sysu",
+  "name": "中山大学",
+  "short": "中大",
+  "place": "广州",
+  "home": "https://www.sysu.edu.cn",
+  "group": "cn985",
+  "accent": "#2f6fb0"
+ },
+ {
+  "id": "scut",
+  "name": "华南理工大学",
+  "short": "华工",
+  "place": "广州",
+  "home": "https://www.scut.edu.cn",
+  "group": "cn985",
+  "accent": "#6a3d9a"
+ },
+ {
+  "id": "scu",
+  "name": "四川大学",
+  "short": "川大",
+  "place": "成都",
+  "home": "https://www.scu.edu.cn",
+  "group": "cn985",
+  "accent": "#34699a"
+ },
+ {
+  "id": "uestc",
+  "name": "电子科技大学",
+  "short": "成电",
+  "place": "成都",
+  "home": "https://www.uestc.edu.cn",
+  "group": "cn985",
+  "accent": "#7c4dce"
+ },
+ {
+  "id": "cqu",
+  "name": "重庆大学",
+  "short": "重大",
+  "place": "重庆",
+  "home": "https://www.cqu.edu.cn",
+  "group": "cn985",
+  "accent": "#b5432e"
+ },
+ {
+  "id": "nwpu",
+  "name": "西北工业大学",
+  "short": "西工大",
+  "place": "西安",
+  "home": "https://www.nwpu.edu.cn",
+  "group": "cn985",
+  "accent": "#3d8fd1"
+ },
+ {
+  "id": "nwafu",
+  "name": "西北农林科技大学",
+  "short": "西农",
+  "place": "杨凌",
+  "home": "https://www.nwafu.edu.cn",
+  "group": "cn985",
+  "accent": "#1f7a6d"
+ },
+ {
+  "id": "lzu",
+  "name": "兰州大学",
+  "short": "兰大",
+  "place": "兰州",
+  "home": "https://www.lzu.edu.cn",
+  "group": "cn985",
+  "accent": "#c0392b"
+ },
+ {
+  "id": "nudt",
+  "name": "国防科技大学",
+  "short": "国防科大",
+  "place": "长沙",
+  "home": "https://www.nudt.edu.cn",
+  "group": "cn985",
+  "accent": "#2f6fb0"
+ },
+ {
+  "id": "emory",
+  "name": "Emory University",
+  "short": "Emory",
+  "place": "Atlanta, GA",
+  "home": "https://www.emory.edu",
+  "group": "us50",
+  "accent": "#7c4dce"
+ },
+ {
+  "id": "georgetown",
+  "name": "Georgetown University",
+  "short": "Georgetown",
+  "place": "Washington, DC",
+  "home": "https://www.georgetown.edu",
+  "group": "us50",
+  "accent": "#b5432e"
+ },
+ {
+  "id": "cmu",
+  "name": "Carnegie Mellon University",
+  "short": "CMU",
+  "place": "Pittsburgh, PA",
+  "home": "https://www.cmu.edu",
+  "group": "us50",
+  "accent": "#3d8fd1"
+ },
+ {
+  "id": "umich",
+  "name": "University of Michigan",
+  "short": "Michigan",
+  "place": "Ann Arbor, MI",
+  "home": "https://www.umich.edu",
+  "group": "us50",
+  "accent": "#1f7a6d"
+ },
+ {
+  "id": "washu",
+  "name": "Washington University in St. Louis",
+  "short": "WashU",
+  "place": "St. Louis, MO",
+  "home": "https://www.washu.edu",
+  "group": "us50",
+  "accent": "#c0392b"
+ },
+ {
+  "id": "uva",
+  "name": "University of Virginia",
+  "short": "UVA",
+  "place": "Charlottesville, VA",
+  "home": "https://www.virginia.edu",
+  "group": "us50",
+  "accent": "#2f6fb0"
+ },
+ {
+  "id": "usc",
+  "name": "University of Southern California",
+  "short": "USC",
+  "place": "Los Angeles, CA",
+  "home": "https://www.usc.edu",
+  "group": "us50",
+  "accent": "#6a3d9a"
+ },
+ {
+  "id": "unc",
+  "name": "University of North Carolina at Chapel Hill",
+  "short": "UNC",
+  "place": "Chapel Hill, NC",
+  "home": "https://www.unc.edu",
+  "group": "us50",
+  "accent": "#34699a"
+ },
+ {
+  "id": "ufl",
+  "name": "University of Florida",
+  "short": "Florida",
+  "place": "Gainesville, FL",
+  "home": "https://www.ufl.edu",
+  "group": "us50",
+  "accent": "#7c4dce"
+ },
+ {
+  "id": "ucsd",
+  "name": "University of California, San Diego",
+  "short": "UC San Diego",
+  "place": "La Jolla, CA",
+  "home": "https://www.ucsd.edu",
+  "group": "us50",
+  "accent": "#b5432e"
+ },
+ {
+  "id": "ucdavis",
+  "name": "University of California, Davis",
+  "short": "UC Davis",
+  "place": "Davis, CA",
+  "home": "https://www.ucdavis.edu",
+  "group": "us50",
+  "accent": "#3d8fd1"
+ },
+ {
+  "id": "uci",
+  "name": "University of California, Irvine",
+  "short": "UC Irvine",
+  "place": "Irvine, CA",
+  "home": "https://www.uci.edu",
+  "group": "us50",
+  "accent": "#1f7a6d"
+ },
+ {
+  "id": "ucsb",
+  "name": "University of California, Santa Barbara",
+  "short": "UCSB",
+  "place": "Santa Barbara, CA",
+  "home": "https://www.ucsb.edu",
+  "group": "us50",
+  "accent": "#c0392b"
+ },
+ {
+  "id": "utexas",
+  "name": "University of Texas at Austin",
+  "short": "UT Austin",
+  "place": "Austin, TX",
+  "home": "https://www.utexas.edu",
+  "group": "us50",
+  "accent": "#2f6fb0"
+ },
+ {
+  "id": "wisc",
+  "name": "University of Wisconsin–Madison",
+  "short": "Wisconsin",
+  "place": "Madison, WI",
+  "home": "https://www.wisc.edu",
+  "group": "us50",
+  "accent": "#6a3d9a"
+ },
+ {
+  "id": "uiuc",
+  "name": "University of Illinois Urbana-Champaign",
+  "short": "UIUC",
+  "place": "Urbana, IL",
+  "home": "https://www.illinois.edu",
+  "group": "us50",
+  "accent": "#34699a"
+ },
+ {
+  "id": "gatech",
+  "name": "Georgia Institute of Technology",
+  "short": "Georgia Tech",
+  "place": "Atlanta, GA",
+  "home": "https://www.gatech.edu",
+  "group": "us50",
+  "accent": "#7c4dce"
+ },
+ {
+  "id": "bc",
+  "name": "Boston College",
+  "short": "Boston College",
+  "place": "Chestnut Hill, MA",
+  "home": "https://www.bc.edu",
+  "group": "us50",
+  "accent": "#b5432e"
+ },
+ {
+  "id": "bu",
+  "name": "Boston University",
+  "short": "BU",
+  "place": "Boston, MA",
+  "home": "https://www.bu.edu",
+  "group": "us50",
+  "accent": "#3d8fd1"
+ },
+ {
+  "id": "tufts",
+  "name": "Tufts University",
+  "short": "Tufts",
+  "place": "Medford, MA",
+  "home": "https://www.tufts.edu",
+  "group": "us50",
+  "accent": "#1f7a6d"
+ },
+ {
+  "id": "rutgers",
+  "name": "Rutgers University",
+  "short": "Rutgers",
+  "place": "New Brunswick, NJ",
+  "home": "https://www.rutgers.edu",
+  "group": "us50",
+  "accent": "#c0392b"
+ },
+ {
+  "id": "osu",
+  "name": "Ohio State University",
+  "short": "Ohio State",
+  "place": "Columbus, OH",
+  "home": "https://www.osu.edu",
+  "group": "us50",
+  "accent": "#2f6fb0"
+ },
+ {
+  "id": "purdue",
+  "name": "Purdue University",
+  "short": "Purdue",
+  "place": "West Lafayette, IN",
+  "home": "https://www.purdue.edu",
+  "group": "us50",
+  "accent": "#6a3d9a"
+ },
+ {
+  "id": "umd",
+  "name": "University of Maryland",
+  "short": "Maryland",
+  "place": "College Park, MD",
+  "home": "https://www.umd.edu",
+  "group": "us50",
+  "accent": "#34699a"
+ },
+ {
+  "id": "uw",
+  "name": "University of Washington",
+  "short": "Washington",
+  "place": "Seattle, WA",
+  "home": "https://www.washington.edu",
+  "group": "us50",
+  "accent": "#7c4dce"
+ },
+ {
+  "id": "rochester",
+  "name": "University of Rochester",
+  "short": "Rochester",
+  "place": "Rochester, NY",
+  "home": "https://www.rochester.edu",
+  "group": "us50",
+  "accent": "#b5432e"
+ },
+ {
+  "id": "lehigh",
+  "name": "Lehigh University",
+  "short": "Lehigh",
+  "place": "Bethlehem, PA",
+  "home": "https://www.lehigh.edu",
+  "group": "us50",
+  "accent": "#3d8fd1"
+ },
+ {
+  "id": "wfu",
+  "name": "Wake Forest University",
+  "short": "Wake Forest",
+  "place": "Winston-Salem, NC",
+  "home": "https://www.wfu.edu",
+  "group": "us50",
+  "accent": "#1f7a6d"
+ },
+ {
+  "id": "vt",
+  "name": "Virginia Tech",
+  "short": "Virginia Tech",
+  "place": "Blacksburg, VA",
+  "home": "https://www.vt.edu",
+  "group": "us50",
+  "accent": "#c0392b"
+ },
+ {
+  "id": "tamu",
+  "name": "Texas A&M University",
+  "short": "Texas A&M",
+  "place": "College Station, TX",
+  "home": "https://www.tamu.edu",
+  "group": "us50",
+  "accent": "#2f6fb0"
+ }
+]

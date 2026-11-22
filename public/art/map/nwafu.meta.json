@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. The main campus is divided into South and North campuses, featuring historic, rustic architecture like the 1934 No. 3 Teaching Building alongside newly built and renovated modern facilities. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) North Campus No. 3 Teaching Building, a other: Rustic historic teaching building with a clock tower and visible bomb scars.; (2) Xiushan Student Activity Center, a hall: Modern student activity hall; the South Campus lobby contains a sculpture.; (3) Former Insect Museum, a museum: Plain museum building on the North Campus.; (4) South Campus Expo Park Complex, a museum: Complex of exhibition buildings including an insect museum and animal museum.; (5) Northwest A&F University Library, a library: Library building featuring calligraphy signage by Guo Moruo.; (6) North Campus No. 8 Teaching Building, a other: Large, bright main teaching building with simple, fine modern decoration.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 17,
+ "tokens": 2338,
+ "at": "2026-11-22T00:17:28.332Z"
+}

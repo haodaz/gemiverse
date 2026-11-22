@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. The main Balitai campus is surrounded by rivers and features a 'two lakes and one river' water system with lotus-filled lakes, historic halls, and tree-lined scenery. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Horseshoe Lake, a lake: A horseshoe-shaped lake with a peninsula and blooming summer lotuses.; (2) Siyuan Hall, a hall: A historic university hall, plain and dignified.; (3) Zhou Enlai Monument, a other: A monument on a lake peninsula inscribed with gilded Chinese characters.; (4) Xinkai Lake, a lake: A plain campus lake forming part of the campus water system.; (5) Nankai University Sports Center, a stadium: A massive modern sports complex, the largest single building on campus.; (6) East Gate, a gate: A plain university gate at the eastern end of the main road.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 16,
+ "tokens": 2202,
+ "at": "2026-11-22T00:15:26.390Z"
+}

@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. The historic campus features the famous Liwa River, grand early twentieth-century buildings from the former Great China University, and scenic spots with old trees, ponds, and greenery. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Liwa River, a other: A winding campus river with scenic banks, plain; (2) Siqun Hall, a hall: A grand historic auditorium building from the early twentieth century; (3) Qunxian Hall, a hall: A grand historic main teaching building, plain; (4) Office Building, a other: An early historic university office building, plain; (5) Geography Hall, a hall: An early historic academic hall, plain; (6) Statue of Mao Zedong, a other: A standing statue of Mao Zedong on campus, plain. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 14,
+ "tokens": 1914,
+ "at": "2026-11-22T00:15:46.276Z"
+}

@@ -1,0 +1,60 @@
+{
+ "school": "dlut",
+ "name": "大连理工大学",
+ "at": "2026-11-22T00:15:32.822Z",
+ "source": "https://zh.wikipedia.org/wiki/%E5%A4%A7%E8%BF%9E%E7%90%86%E5%B7%A5%E5%A4%A7%E5%AD%A6",
+ "character": null,
+ "map": "/art/map/dlut.jpg",
+ "landmarks": [
+  {
+   "name": "伯川图书馆",
+   "name_en": "Bochuan Library",
+   "kind": "library",
+   "quote": "伯川图书馆和令希图书馆也位于主校区",
+   "look": "Plain modern university library building.",
+   "check": 0.9824494405844516,
+   "confidence": 0.9824494405844516,
+   "passed": true,
+   "x": 0.26,
+   "y": 0.28
+  },
+  {
+   "name": "令希图书馆",
+   "name_en": "Lingxi Library",
+   "kind": "library",
+   "quote": "伯川图书馆和令希图书馆也位于主校区",
+   "look": "Plain modern university library building.",
+   "check": 0.983089309958524,
+   "confidence": 0.983089309958524,
+   "passed": true,
+   "x": 0.75,
+   "y": 0.28
+  },
+  {
+   "name": "中心比赛馆",
+   "name_en": "Central Competition Hall",
+   "kind": "stadium",
+   "quote": "大型体育馆，包括中心比赛馆和游泳馆等",
+   "look": "Large plain indoor sports arena.",
+   "check": 0.9780580403920452,
+   "confidence": 0.9780580403920452,
+   "passed": true,
+   "x": 0.24,
+   "y": 0.67
+  },
+  {
+   "name": "游泳馆",
+   "name_en": "Swimming Pool",
+   "kind": "stadium",
+   "quote": "大型体育馆，包括中心比赛馆和游泳馆等",
+   "look": "Large plain indoor swimming complex.",
+   "check": 0.9694597435998599,
+   "confidence": 0.9694597435998599,
+   "passed": true,
+   "x": 0.77,
+   "y": 0.7
+  }
+ ],
+ "tokens": 19621,
+ "seconds": 27
+}

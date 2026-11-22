@@ -1,0 +1,94 @@
+{
+ "school": "caltech",
+ "name": "California Institute of Technology",
+ "at": "2026-11-22T00:13:11.448Z",
+ "source": "https://en.wikipedia.org/wiki/California%20Institute%20of%20Technology",
+ "character": "The 124-acre campus features buildings designed in a style influenced by the traditional Spanish mission architecture of Southern California.",
+ "map": "/art/map/caltech.jpg",
+ "landmarks": [
+  {
+   "name": "Dabney Hall",
+   "name_en": "Dabney Hall",
+   "kind": "hall",
+   "quote": "designed the physics building, Dabney Hall, and several other structures",
+   "look": "A hall in traditional Spanish mission architectural style.",
+   "check": 0.9822827057094752,
+   "confidence": 0.9822827057094752,
+   "passed": true,
+   "x": 0.24,
+   "y": 0.3
+  },
+  {
+   "name": "Throop Hall",
+   "name_en": "Throop Hall",
+   "kind": "hall",
+   "quote": "two historic buildings dating from the early days of the Institute—Throop Hall and the Goodhue-designed Culbertson Auditorium—had cracked.",
+   "look": "A historic hall from the institute's early days.",
+   "check": 0.9822021353814875,
+   "confidence": 0.9822021353814875,
+   "passed": true,
+   "x": 0.68,
+   "y": 0.25
+  },
+  {
+   "name": "Culbertson Auditorium",
+   "name_en": "Culbertson Auditorium",
+   "kind": "other",
+   "quote": "Throop Hall and the Goodhue-designed Culbertson Auditorium—had cracked.",
+   "look": "A historic auditorium in traditional Spanish mission architectural style.",
+   "check": 0.9706860544322781,
+   "confidence": 0.9706860544322781,
+   "passed": true,
+   "x": 0.44,
+   "y": 0.5
+  },
+  {
+   "name": "Cahill Center for Astronomy and Astrophysics",
+   "name_en": "Cahill Center for Astronomy and Astrophysics",
+   "kind": "other",
+   "quote": "New additions to the campus include the Cahill Center for Astronomy and Astrophysics",
+   "look": "A modern academic center building, plain.",
+   "check": 0.9835484706301039,
+   "confidence": 0.9835484706301039,
+   "passed": true,
+   "x": 0.83,
+   "y": 0.6
+  },
+  {
+   "name": "Walter and Leonore Annenberg Center for Information Science and Technology",
+   "name_en": "Walter and Leonore Annenberg Center for Information Science and Technology",
+   "kind": "other",
+   "quote": "the Walter and Leonore Annenberg Center for Information Science and Technology, which opened in 2009",
+   "look": "A modern academic center building, plain.",
+   "check": 0.9761982900976627,
+   "confidence": 0.9761982900976627,
+   "passed": true,
+   "x": 0.58,
+   "y": 0.78
+  },
+  {
+   "name": "Warren and Katherine Schlinger Laboratory for Chemistry and Chemical Engineering",
+   "name_en": "Warren and Katherine Schlinger Laboratory for Chemistry and Chemical Engineering",
+   "kind": "other",
+   "quote": "the Warren and Katherine Schlinger Laboratory for Chemistry and Chemical Engineering followed in March 2010.",
+   "look": "A modern laboratory building, plain.",
+   "check": 0.9843866197784524,
+   "confidence": 0.9843866197784524,
+   "passed": true,
+   "x": 0.21,
+   "y": 0.75
+  },
+  {
+   "name": "South Houses",
+   "name_en": "South Houses",
+   "kind": "other",
+   "quote": "The institute also concluded an upgrading of the South Houses in 2006.",
+   "look": "A group of residential campus houses, plain.",
+   "check": 0.9683098238539414,
+   "confidence": 0.9683098238539414,
+   "passed": true
+  }
+ ],
+ "tokens": 10223,
+ "seconds": 41
+}

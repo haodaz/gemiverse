@@ -11,7 +11,7 @@ export async function POST(req: Request) {
     const t = await takeTrip(input);
     const finds = t.finds;
     if (!finds.length) return Response.json({ finds: [], reason: t.reason, stars: 0 });
-    bumpServed(input.school === "columbia" ? "columbia" : "nyu", finds.map((f: any) => f.id)).catch(() => {});   // the flywheel: anonymous demand
+    if (["nyu", "columbia"].includes(input.school)) bumpServed(input.school, finds.map((f: any) => f.id)).catch(() => {});   // the flywheel: anonymous demand
     // Seal the prediction (commit and reveal). The browser gets the cards WITHOUT the numbers, plus a hash of the numbers and a
     // random nonce, plus the numbers encrypted with a key only the server has. After the student has chosen, the browser sends the
     // encrypted blob to /api/reveal, gets the numbers and the nonce back, and can recompute the hash itself.

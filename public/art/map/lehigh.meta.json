@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. The main campus is built into the northern slope of South Mountain, featuring recreational and playing fields alongside numerous university buildings. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) South Mountain, a hill: A mountain slope with campus buildings built into it.; (2) Maginnes Hall, a hall: A plain academic hall.; (3) Drown Hall, a hall: A plain purpose-built academic hall.; (4) Coppée Hall, a hall: A plain academic hall.; (5) The Hill, a hill: A hillside road lined with fraternity and sorority houses.; (6) Health, Science, and Technology (HST) building, a other: A plain modern academic building.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 16,
+ "tokens": 1933,
+ "at": "2026-11-22T00:20:30.887Z"
+}

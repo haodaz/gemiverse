@@ -1,0 +1,104 @@
+{
+ "school": "uw",
+ "name": "University of Washington",
+ "at": "2026-11-22T00:20:21.803Z",
+ "source": "https://en.wikipedia.org/wiki/University%20of%20Washington",
+ "character": "The campus sits by the shores of Union and Portage Bays with mountain views, featuring wetlands, open greenery, historic landmarks, and modernist structures.",
+ "map": "/art/map/uw.jpg",
+ "landmarks": [
+  {
+   "name": "Red Square",
+   "name_en": "Red Square",
+   "kind": "quad",
+   "quote": "Red Square is the heart of the campus, surrounded by landmark buildings and artworks",
+   "look": "Open central plaza surrounded by landmark buildings and artworks.",
+   "check": 0.9796474034630601,
+   "confidence": 0.9796474034630601,
+   "passed": true,
+   "x": 0.39,
+   "y": 0.58
+  },
+  {
+   "name": "Suzzallo Library",
+   "name_en": "Suzzallo Library",
+   "kind": "library",
+   "quote": "surrounded by landmark buildings and artworks, such as Suzzallo Library",
+   "look": "Landmark library building bordering Red Square.",
+   "check": 0.9798537103047373,
+   "confidence": 0.9798537103047373,
+   "passed": true,
+   "x": 0.54,
+   "y": 0.53
+  },
+  {
+   "name": "University of Washington Quad",
+   "name_en": "University of Washington Quad",
+   "kind": "quad",
+   "quote": "stretching from the signature University of Washington Quad directly north of Red Square",
+   "look": "Signature open quad north of Red Square.",
+   "check": 0.981286729033182,
+   "confidence": 0.981286729033182,
+   "passed": true,
+   "x": 0.39,
+   "y": 0.37
+  },
+  {
+   "name": "Husky Stadium",
+   "name_en": "Husky Stadium",
+   "kind": "stadium",
+   "quote": "sports facilities and recreation fields, including Husky Stadium, Hec Edmundson Pavilion, and Husky Ballpark.",
+   "look": "Large sports stadium near East Campus wetlands and recreation fields.",
+   "check": 0.9773463135455882,
+   "confidence": 0.9773463135455882,
+   "passed": true,
+   "x": 0.73,
+   "y": 0.38
+  },
+  {
+   "name": "Burke Museum of Natural History and Culture",
+   "name_en": "Burke Museum of Natural History and Culture",
+   "kind": "museum",
+   "quote": "and the Burke Museum of Natural History and Culture",
+   "look": "Plain museum building in North Campus.",
+   "check": 0.9796741427711224,
+   "confidence": 0.9796741427711224,
+   "passed": true,
+   "x": 0.58,
+   "y": 0.2
+  },
+  {
+   "name": "UW Botanic Gardens",
+   "name_en": "UW Botanic Gardens",
+   "kind": "garden",
+   "quote": "occupied by components of the UW Botanic Gardens",
+   "look": "Botanic gardens with greenery, farm, and natural area.",
+   "check": 0.9862359992831824,
+   "confidence": 0.9862359992831824,
+   "passed": true,
+   "x": 0.81,
+   "y": 0.68
+  },
+  {
+   "name": "Hec Edmundson Pavilion",
+   "name_en": "Hec Edmundson Pavilion",
+   "kind": "hall",
+   "quote": "sports facilities and recreation fields, including Husky Stadium, Hec Edmundson Pavilion, and Husky Ballpark.",
+   "look": "Large indoor sports pavilion near recreation fields.",
+   "check": 0.9788771619624946,
+   "confidence": 0.9788771619624946,
+   "passed": true
+  },
+  {
+   "name": "Elm Hall",
+   "name_en": "Elm Hall",
+   "kind": "hall",
+   "quote": "and residence halls Alder, Lander, Maple and Elm Hall.",
+   "look": "Modernist residence hall on city streets in West Campus.",
+   "check": 0.9753798394890534,
+   "confidence": 0.9753798394890534,
+   "passed": true
+  }
+ ],
+ "tokens": 10044,
+ "seconds": 30
+}

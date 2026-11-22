@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. The narrow coastal campus sits between mountains and the sea, featuring lush vegetation, complex terrain, a central lake, and Nanyang-style buildings blending Chinese and Western elements. Draw exactly these 5 features, well spread across the picture with space between them, each clearly recognisable: (1) Furong Lake, a lake: A plain lake at the center of the campus.; (2) Shangxian Stadium, a stadium: A crescent-shaped stadium with 25-tier hillside stands, a 400m track, and three soccer fields.; (3) Jiageng Plaza, a quad: A plain open campus plaza.; (4) Jiannan Building Complex, a other: A plain group of campus buildings on a hill north of the stadium.; (5) Jiageng Building Complex, a other: A plain group of campus buildings.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 18,
+ "tokens": 2471,
+ "at": "2026-11-22T00:15:55.481Z"
+}

@@ -1,0 +1,158 @@
+{
+ "school": "bnu",
+ "name": "北京师范大学",
+ "at": "2026-11-22T00:14:13.743Z",
+ "seconds": 23,
+ "tokens": 42939,
+ "entities": [
+  {
+   "id": "bnu-baf01f4008",
+   "type": "Event",
+   "school": "bnu",
+   "name": "“我拍你赏——金秋校园随手拍”摄影活动",
+   "tier": 1,
+   "fields": {
+    "url": "https://news.bnu.edu.cn/sj/gysd/113152.htm",
+    "needs": [
+     "make_and_express",
+     "find_my_people"
+    ],
+    "start": null,
+    "summary": "北京师范大学教工摄影协会开展的金秋校园随手拍摄影活动作品展示。",
+    "event_kind": "activity",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "bnu-470b092695",
+   "type": "Event",
+   "school": "bnu",
+   "name": "关于2026北京青少年人工智能应用实践活动的作品申报通知",
+   "tier": 1,
+   "fields": {
+    "url": "https://keyanyuan.bnu.edu.cn/tzgg/sbtz/31a3fabf67a8461db14ae057fe0d1452.html",
+    "needs": [
+     "make_and_express",
+     "get_experience"
+    ],
+    "start": "2026-05-25",
+    "summary": "2026北京青少年人工智能应用实践活动校内作品申报通知，5月25日12时截止。",
+    "event_kind": "competition",
+    "venue_name": null,
+    "organisation_name": "北京市科学技术协会、北京市教育委员会、共青团北京市委员会、北京市门头沟区人民政府",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-05-25",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "bnu-a0b80321c9",
+   "type": "Event",
+   "school": "bnu",
+   "name": "[讲座]牛津大学教授安德鲁·汤普森做客“京师大讲堂”",
+   "tier": 1,
+   "fields": {
+    "url": "https://news.bnu.edu.cn/zx/xzdt/42d293d5298048eba138d7347714daff.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": null,
+    "summary": "牛津大学教授安德鲁·汤普森在京师学堂作全球史视角下第一次世界大战主题报告。",
+    "event_kind": "lecture",
+    "venue_name": "京师学堂",
+    "organisation_name": "中华文化研究院|京师书院、历史学院、科研院",
+    "speaker": "安德鲁·汤普森（Andrew Thompson）",
+    "occurrences": []
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "bnu-baf01f4008",
+   "field": "title",
+   "quote": "“我拍你赏——金秋校园随手拍”摄影活动",
+   "url": "https://news.bnu.edu.cn/sj/gysd/113152.htm",
+   "check_confidence": 0.973767323390549,
+   "passed": true
+  },
+  {
+   "entity_id": "bnu-baf01f4008",
+   "field": "organisation_name",
+   "quote": "北师大教工摄影协会",
+   "url": "https://news.bnu.edu.cn/sj/gysd/113152.htm",
+   "check_confidence": 0.797454808620129,
+   "passed": false
+  },
+  {
+   "entity_id": "bnu-470b092695",
+   "field": "title",
+   "quote": "关于2026北京青少年人工智能应用实践活动的作品申报通知",
+   "url": "https://keyanyuan.bnu.edu.cn/tzgg/sbtz/31a3fabf67a8461db14ae057fe0d1452.html",
+   "check_confidence": 0.9840984848478339,
+   "passed": true
+  },
+  {
+   "entity_id": "bnu-470b092695",
+   "field": "date",
+   "quote": "申报时间截至5月25日中午12:00",
+   "url": "https://keyanyuan.bnu.edu.cn/tzgg/sbtz/31a3fabf67a8461db14ae057fe0d1452.html",
+   "check_confidence": 0.9315560957215673,
+   "passed": true
+  },
+  {
+   "entity_id": "bnu-470b092695",
+   "field": "organisation_name",
+   "quote": "北京市科学技术协会、北京市教育委员会、共青团北京市委员会、北京市门头沟区人民政府",
+   "url": "https://keyanyuan.bnu.edu.cn/tzgg/sbtz/31a3fabf67a8461db14ae057fe0d1452.html",
+   "check_confidence": 0.9624014794393411,
+   "passed": true
+  },
+  {
+   "entity_id": "bnu-a0b80321c9",
+   "field": "title",
+   "quote": "[讲座]牛津大学教授安德鲁·汤普森做客“京师大讲堂”",
+   "url": "https://news.bnu.edu.cn/zx/xzdt/42d293d5298048eba138d7347714daff.htm",
+   "check_confidence": 0.9607956536995161,
+   "passed": true
+  },
+  {
+   "entity_id": "bnu-a0b80321c9",
+   "field": "date",
+   "quote": "11月10日",
+   "url": "https://news.bnu.edu.cn/zx/xzdt/42d293d5298048eba138d7347714daff.htm",
+   "check_confidence": 0.543259677525048,
+   "passed": false
+  },
+  {
+   "entity_id": "bnu-a0b80321c9",
+   "field": "venue_name",
+   "quote": "京师学堂",
+   "url": "https://news.bnu.edu.cn/zx/xzdt/42d293d5298048eba138d7347714daff.htm",
+   "check_confidence": 0.9724541767216158,
+   "passed": true
+  },
+  {
+   "entity_id": "bnu-a0b80321c9",
+   "field": "organisation_name",
+   "quote": "中华文化研究院|京师书院、历史学院、科研院",
+   "url": "https://news.bnu.edu.cn/zx/xzdt/42d293d5298048eba138d7347714daff.htm",
+   "check_confidence": 0.9000657820915462,
+   "passed": true
+  },
+  {
+   "entity_id": "bnu-a0b80321c9",
+   "field": "speaker",
+   "quote": "安德鲁·汤普森（Andrew Thompson）",
+   "url": "https://news.bnu.edu.cn/zx/xzdt/42d293d5298048eba138d7347714daff.htm",
+   "check_confidence": 0.9700910015105219,
+   "passed": true
+  }
+ ]
+}

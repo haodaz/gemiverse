@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students.  Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Washington Square Park, a quad: An urban park functioning as a central campus quad surrounded by buildings.; (2) Washington Square Arch, a other: A plain monumental arch standing as a campus symbol.; (3) Elmer Holmes Bobst Library, a library: A plain 12-story rectangular library building on the southern edge of the park.; (4) Jeffrey S. Gould Plaza, a quad: A plain open urban plaza surrounded by academic buildings.; (5) Vanderbilt Hall, a hall: A plain academic hall near the southwest corner of the square.; (6) Coral Tower, a tower: A plain tall residential tower.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 16,
+ "tokens": 2179,
+ "at": "2026-11-22T00:14:37.328Z"
+}

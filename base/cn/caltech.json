@@ -1,0 +1,273 @@
+{
+ "school": "caltech",
+ "name": "California Institute of Technology",
+ "at": "2026-11-22T00:11:45.849Z",
+ "seconds": 10,
+ "tokens": 36562,
+ "entities": [
+  {
+   "id": "caltech-676661196d",
+   "type": "Event",
+   "school": "caltech",
+   "name": "Dare Mighty Things: Caltech JPL Archival Exhibition",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.caltech.edu/campus-life-events/calendar/caltech-jpl-archival-exhibition",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-03T13:00",
+    "summary": "An archival exhibition celebrating 90 years of Caltech and JPL history through historic documents, spacecraft models, and concept paintings.",
+    "event_kind": "exhibition",
+    "venue_name": "Beckman Institute 131",
+    "organisation_name": "Caltech Archives, Jet Propulsion Laboratory (JPL)",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-03T13:00",
+      "end": "2026-11-03T16:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "caltech-d76a63b07e",
+   "type": "Event",
+   "school": "caltech",
+   "name": "Caltech Y Holiday Gift Drive",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.caltech.edu/campus-life-events/calendar/caltech-y-holiday-gift-drive-1",
+    "needs": [
+     "contribute_beyond_self"
+    ],
+    "start": "2026-11-11T12:00",
+    "summary": "The Caltech Y and PCC Stars host a holiday gift drive for current and former foster youth from November 11 to December 2, 2026.",
+    "event_kind": "activity",
+    "venue_name": "Caltech Y (505 S. Wilson Ave.), Caltech Bookstore, Center for Student Services, Any student house",
+    "organisation_name": "The Caltech Y",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-11T12:00",
+      "end": "2026-11-11T12:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "caltech-73d8f63587",
+   "type": "Event",
+   "school": "caltech",
+   "name": "International Education Week: Fulbright Reception",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.caltech.edu/campus-life-events/calendar/international-education-week-fulbright-reception-1",
+    "needs": [
+     "find_my_people",
+     "fund_my_path"
+    ],
+    "start": "2026-11-21T17:00",
+    "summary": "A networking reception for Caltech students, postdocs, faculty, and staff to meet Fulbright alumni and learn about Fulbright programs.",
+    "event_kind": "activity",
+    "venue_name": "Dabney Hall, Garden of the Associates",
+    "organisation_name": "Theater Arts at Caltech (TACIT), Caltech Fellowships Advising Study Abroad (FASA) office, Caltech International Student Programs (ISP), and the Greater Los Angeles Fulbright Chapter",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21T17:00",
+      "end": "2026-11-21T19:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "caltech-c32f137303",
+   "type": "Event",
+   "school": "caltech",
+   "name": "CALTECH GLEE CLUB CHAMBER SINGERS CONCERTS",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.caltech.edu/campus-life-events/calendar/caltech-glee-club-and-chamber-singers-concert-11",
+    "needs": [
+     "make_and_express",
+     "rest_and_recover"
+    ],
+    "start": "2026-11-21T20:00",
+    "summary": "A public concert performed by the Caltech Glee Club and Chamber Singers at Ramo Auditorium.",
+    "event_kind": "activity",
+    "venue_name": "Ramo Auditorium",
+    "organisation_name": "Caltech Glee Club, Performing and Visual Arts (PVA), Student Affairs",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21T20:00",
+      "end": "2026-11-21T21:30"
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "caltech-676661196d",
+   "field": "title",
+   "quote": "Dare Mighty Things: Caltech JPL Archival Exhibition",
+   "url": "https://www.caltech.edu/campus-life-events/calendar/caltech-jpl-archival-exhibition",
+   "check_confidence": 0.975884608589685,
+   "passed": true
+  },
+  {
+   "entity_id": "caltech-676661196d",
+   "field": "date",
+   "quote": "Tuesday, November 3, 2026 1:00pm to Thursday, December 24, 2026 4:00pm",
+   "url": "https://www.caltech.edu/campus-life-events/calendar/caltech-jpl-archival-exhibition",
+   "check_confidence": 0.9609341463368309,
+   "passed": true
+  },
+  {
+   "entity_id": "caltech-676661196d",
+   "field": "start_time",
+   "quote": "13:00",
+   "url": "https://www.caltech.edu/campus-life-events/calendar/caltech-jpl-archival-exhibition",
+   "check_confidence": 0.9612363846077107,
+   "passed": true
+  },
+  {
+   "entity_id": "caltech-676661196d",
+   "field": "venue_name",
+   "quote": "Beckman Institute 131",
+   "url": "https://www.caltech.edu/campus-life-events/calendar/caltech-jpl-archival-exhibition",
+   "check_confidence": 0.8992011170207672,
+   "passed": true
+  },
+  {
+   "entity_id": "caltech-676661196d",
+   "field": "organisation_name",
+   "quote": "Caltech Archives, Jet Propulsion Laboratory (JPL)",
+   "url": "https://www.caltech.edu/campus-life-events/calendar/caltech-jpl-archival-exhibition",
+   "check_confidence": 0.9019879587388314,
+   "passed": true
+  },
+  {
+   "entity_id": "caltech-d76a63b07e",
+   "field": "title",
+   "quote": "Caltech Y Holiday Gift Drive",
+   "url": "https://www.caltech.edu/campus-life-events/calendar/caltech-y-holiday-gift-drive-1",
+   "check_confidence": 0.978082115453356,
+   "passed": true
+  },
+  {
+   "entity_id": "caltech-d76a63b07e",
+   "field": "date",
+   "quote": "Wednesday, November 11, 2026 12:00pm to Wednesday, December 2, 2026 12:00pm",
+   "url": "https://www.caltech.edu/campus-life-events/calendar/caltech-y-holiday-gift-drive-1",
+   "check_confidence": 0.9675648122804249,
+   "passed": true
+  },
+  {
+   "entity_id": "caltech-d76a63b07e",
+   "field": "start_time",
+   "quote": "12:00",
+   "url": "https://www.caltech.edu/campus-life-events/calendar/caltech-y-holiday-gift-drive-1",
+   "check_confidence": 0.9449058849925206,
+   "passed": true
+  },
+  {
+   "entity_id": "caltech-d76a63b07e",
+   "field": "venue_name",
+   "quote": "Caltech Y (505 S. Wilson Ave.) Caltech Bookstore Center for Student Services Any student house",
+   "url": "https://www.caltech.edu/campus-life-events/calendar/caltech-y-holiday-gift-drive-1",
+   "check_confidence": 0.9480473787801535,
+   "passed": true
+  },
+  {
+   "entity_id": "caltech-d76a63b07e",
+   "field": "organisation_name",
+   "quote": "The Caltech Y",
+   "url": "https://www.caltech.edu/campus-life-events/calendar/caltech-y-holiday-gift-drive-1",
+   "check_confidence": 0.9792576662306753,
+   "passed": true
+  },
+  {
+   "entity_id": "caltech-73d8f63587",
+   "field": "title",
+   "quote": "International Education Week: Fulbright Reception",
+   "url": "https://www.caltech.edu/campus-life-events/calendar/international-education-week-fulbright-reception-1",
+   "check_confidence": 0.9751057843103758,
+   "passed": true
+  },
+  {
+   "entity_id": "caltech-73d8f63587",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026 5:00pm to 7:00pm",
+   "url": "https://www.caltech.edu/campus-life-events/calendar/international-education-week-fulbright-reception-1",
+   "check_confidence": 0.9723495629025104,
+   "passed": true
+  },
+  {
+   "entity_id": "caltech-73d8f63587",
+   "field": "start_time",
+   "quote": "17:00",
+   "url": "https://www.caltech.edu/campus-life-events/calendar/international-education-week-fulbright-reception-1",
+   "check_confidence": 0.9734598128145778,
+   "passed": true
+  },
+  {
+   "entity_id": "caltech-73d8f63587",
+   "field": "venue_name",
+   "quote": "Dabney Hall, Garden of the Associates",
+   "url": "https://www.caltech.edu/campus-life-events/calendar/international-education-week-fulbright-reception-1",
+   "check_confidence": 0.9703170597590779,
+   "passed": true
+  },
+  {
+   "entity_id": "caltech-73d8f63587",
+   "field": "organisation_name",
+   "quote": "Theater Arts at Caltech (TACIT), Caltech Fellowships Advising Study Abroad (FASA) office, Caltech International Student Programs (ISP), and the Greater Los Angeles Fulbright Chapter",
+   "url": "https://www.caltech.edu/campus-life-events/calendar/international-education-week-fulbright-reception-1",
+   "check_confidence": 0.9295064846865903,
+   "passed": true
+  },
+  {
+   "entity_id": "caltech-c32f137303",
+   "field": "title",
+   "quote": "CALTECH GLEE CLUB CHAMBER SINGERS CONCERTS",
+   "url": "https://www.caltech.edu/campus-life-events/calendar/caltech-glee-club-and-chamber-singers-concert-11",
+   "check_confidence": 0.9660176318733649,
+   "passed": true
+  },
+  {
+   "entity_id": "caltech-c32f137303",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026 8:00pm to 9:30pm",
+   "url": "https://www.caltech.edu/campus-life-events/calendar/caltech-glee-club-and-chamber-singers-concert-11",
+   "check_confidence": 0.9683910407614633,
+   "passed": true
+  },
+  {
+   "entity_id": "caltech-c32f137303",
+   "field": "start_time",
+   "quote": "20:00",
+   "url": "https://www.caltech.edu/campus-life-events/calendar/caltech-glee-club-and-chamber-singers-concert-11",
+   "check_confidence": 0.9643231030133828,
+   "passed": true
+  },
+  {
+   "entity_id": "caltech-c32f137303",
+   "field": "venue_name",
+   "quote": "Ramo Auditorium",
+   "url": "https://www.caltech.edu/campus-life-events/calendar/caltech-glee-club-and-chamber-singers-concert-11",
+   "check_confidence": 0.9618534256076382,
+   "passed": true
+  },
+  {
+   "entity_id": "caltech-c32f137303",
+   "field": "organisation_name",
+   "quote": "Caltech Glee Club, Performing and Visual Arts (PVA), Student Affairs",
+   "url": "https://www.caltech.edu/campus-life-events/calendar/caltech-glee-club-and-chamber-singers-concert-11",
+   "check_confidence": 0.9409596953962097,
+   "passed": true
+  }
+ ]
+}

@@ -1,0 +1,48 @@
+{
+ "school": "hit",
+ "name": "哈尔滨工业大学",
+ "at": "2026-11-22T00:11:45.469Z",
+ "source": "https://zh.wikipedia.org/wiki/%E5%93%88%E5%B0%94%E6%BB%A8%E5%B7%A5%E4%B8%9A%E5%A4%A7%E5%AD%A6",
+ "character": "The main campus features neoclassical-style architecture such as the three-story Administration Building with dormer windows, pillar reliefs, a front colonnade, and flanking lawns.",
+ "map": "/art/map/hit.jpg",
+ "landmarks": [
+  {
+   "name": "校部楼",
+   "name_en": "Administration Building",
+   "kind": "hall",
+   "quote": "哈工大校部楼建于1929年，位于哈尔滨复华二道街1号，是哈工大最古老的建筑",
+   "look": "Three-story neoclassical building with semi-basement, dormer-windowed attic, pillar reliefs, and front colonnade.",
+   "check": 0.9642357471737941,
+   "confidence": 0.9642357471737941,
+   "passed": true,
+   "x": 0.56,
+   "y": 0.39
+  },
+  {
+   "name": "土木楼",
+   "name_en": "Civil Engineering Building",
+   "kind": "hall",
+   "quote": "1958年，哈工大的校部机关由土木楼搬楼，因而改名为“校部楼”。",
+   "look": "Plain campus hall building.",
+   "check": 0.895604731123471,
+   "confidence": 0.895604731123471,
+   "passed": true,
+   "x": 0.17,
+   "y": 0.36
+  },
+  {
+   "name": "草坪",
+   "name_en": "Front Colonnade Lawns",
+   "kind": "other",
+   "quote": "门前柱廊两边有草坪",
+   "look": "Flat green lawns flanking the front colonnade of the Administration Building.",
+   "check": 0.8442379207617087,
+   "confidence": 0.8442379207617087,
+   "passed": true,
+   "x": 0.7,
+   "y": 0.64
+  }
+ ],
+ "tokens": 9490,
+ "seconds": 24
+}

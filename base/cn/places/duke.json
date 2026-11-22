@@ -1,0 +1,104 @@
+{
+ "school": "duke",
+ "name": "Duke University",
+ "at": "2026-11-22T00:13:37.412Z",
+ "source": "https://en.wikipedia.org/wiki/Duke%20University",
+ "character": "The main campus features Collegiate Gothic buildings of multicolored Duke stone on West Campus, Georgian-style buildings on East Campus, expansive gardens, and surrounding forest.",
+ "map": "/art/map/duke.jpg",
+ "landmarks": [
+  {
+   "name": "Duke Chapel",
+   "name_en": "Duke Chapel",
+   "kind": "other",
+   "quote": "Duke Chapel stands at the center of West Campus on the highest ridge.",
+   "look": "Tall 210-foot Collegiate Gothic stone chapel standing on a ridge.",
+   "check": 0.9832459499932302,
+   "confidence": 0.9832459499932302,
+   "passed": true,
+   "x": 0.18,
+   "y": 0.32
+  },
+  {
+   "name": "Sarah P. Duke Gardens",
+   "name_en": "Sarah P. Duke Gardens",
+   "kind": "garden",
+   "quote": "One of the major public attractions on the main campus is the 54-acre (220,000 m2) Sarah P. Duke Gardens",
+   "look": "Expansive gardens with terraces, native plants, arboretum, and winding paths.",
+   "check": 0.9621494532327218,
+   "confidence": 0.9621494532327218,
+   "passed": true,
+   "x": 0.48,
+   "y": 0.38
+  },
+  {
+   "name": "Cameron Indoor Stadium",
+   "name_en": "Cameron Indoor Stadium",
+   "kind": "stadium",
+   "quote": "including the historic basketball stadium, Cameron Indoor Stadium – are on West Campus.",
+   "look": "Historic indoor basketball stadium on West Campus.",
+   "check": 0.9756568913066505,
+   "confidence": 0.9756568913066505,
+   "passed": true,
+   "x": 0.34,
+   "y": 0.71
+  },
+  {
+   "name": "Lilly Library",
+   "name_en": "Lilly Library",
+   "kind": "library",
+   "quote": "Lilly Library, Baldwin Auditorium, a theater, Brodie Gym",
+   "look": "Georgian-style campus library building on East Campus.",
+   "check": 0.9755398435499459,
+   "confidence": 0.9755398435499459,
+   "passed": true,
+   "x": 0.72,
+   "y": 0.25
+  },
+  {
+   "name": "Nasher Museum of Art",
+   "name_en": "Nasher Museum of Art",
+   "kind": "museum",
+   "quote": "Central Campus is home to the Nasher Museum of Art",
+   "look": "Art museum building on Central Campus.",
+   "check": 0.9703809847796186,
+   "confidence": 0.9703809847796186,
+   "passed": true,
+   "x": 0.76,
+   "y": 0.71
+  },
+  {
+   "name": "Baldwin Auditorium",
+   "name_en": "Baldwin Auditorium",
+   "kind": "hall",
+   "quote": "Lilly Library, Baldwin Auditorium, a theater, Brodie Gym",
+   "look": "Georgian-style auditorium hall on East Campus.",
+   "check": 0.9802029366740238,
+   "confidence": 0.9802029366740238,
+   "passed": true,
+   "x": 0.89,
+   "y": 0.38
+  },
+  {
+   "name": "Craven Quad",
+   "name_en": "Craven Quad",
+   "kind": "quad",
+   "quote": "The residential quads on West Campus are Craven Quad, Crowell Quad, Edens Quad",
+   "look": "Unadorned Collegiate Gothic residential quadrangle on West Campus.",
+   "check": 0.9840443833285183,
+   "confidence": 0.9840443833285183,
+   "passed": true
+  },
+  {
+   "name": "Allen Building",
+   "name_en": "Allen Building",
+   "kind": "hall",
+   "quote": "Duke University Allen Building was the site of student protest in the late 1960s.",
+   "look": "Plain campus building.",
+   "check": 0.9700532453942071,
+   "confidence": 0.9700532453942071,
+   "passed": true
+  }
+ ],
+ "tokens": 10325,
+ "seconds": 60
+}

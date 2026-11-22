@@ -1,0 +1,104 @@
+{
+ "school": "dartmouth",
+ "name": "Dartmouth College",
+ "at": "2026-11-22T00:14:07.797Z",
+ "source": "https://en.wikipedia.org/wiki/Dartmouth%20College",
+ "character": "Situated on a terrace above the Connecticut River, the rural campus centers on a 5-acre Green surrounded by Georgian colonial buildings and many American elms.",
+ "map": "/art/map/dartmouth.jpg",
+ "landmarks": [
+  {
+   "name": "Green",
+   "name_en": "The Green",
+   "kind": "quad",
+   "quote": "centered on a 5-acre (2 ha) \"Green\", a former field of pine trees",
+   "look": "5-acre open grassy lawn at the center of campus",
+   "check": 0.9823716876341594,
+   "confidence": 0.9823716876341594,
+   "passed": true,
+   "x": 0.467,
+   "y": 0.495
+  },
+  {
+   "name": "Baker-Berry Library",
+   "name_en": "Baker-Berry Library",
+   "kind": "library",
+   "quote": "Baker-Berry Library is the main library at Dartmouth",
+   "look": "Main library building featuring an iconic 200-foot tower",
+   "check": 0.9674509100564335,
+   "confidence": 0.9674509100564335,
+   "passed": true,
+   "x": 0.453,
+   "y": 0.23
+  },
+  {
+   "name": "Hood Museum of Art",
+   "name_en": "Hood Museum of Art",
+   "kind": "museum",
+   "quote": "connected to the Hood Museum of Art, arguably North America's oldest museum",
+   "look": "Museum building connected to the Hopkins Center, plain",
+   "check": 0.9595280285467556,
+   "confidence": 0.9595280285467556,
+   "passed": true,
+   "x": 0.66,
+   "y": 0.36
+  },
+  {
+   "name": "Hopkins Center for the Arts",
+   "name_en": "Hopkins Center for the Arts",
+   "kind": "other",
+   "quote": "creative and performing arts facility is the Hopkins Center for the Arts",
+   "look": "Arts center with a façade like Manhattan's Metropolitan Opera House",
+   "check": 0.9771386846155677,
+   "confidence": 0.9771386846155677,
+   "passed": true,
+   "x": 0.77,
+   "y": 0.33
+  },
+  {
+   "name": "Memorial Field",
+   "name_en": "Memorial Field",
+   "kind": "stadium",
+   "quote": "Behind the Alumni Gymnasium is Memorial Field, a 15,600-seat stadium",
+   "look": "15,600-seat stadium overlooking a football field and track",
+   "check": 0.9755079199175334,
+   "confidence": 0.9755079199175334,
+   "passed": true,
+   "x": 0.81,
+   "y": 0.7
+  },
+  {
+   "name": "Dartmouth Hall",
+   "name_en": "Dartmouth Hall",
+   "kind": "hall",
+   "quote": "In November 2022, Dartmouth Hall was rededicated after a $42 million renovation.",
+   "look": "Renovated historic college hall, plain",
+   "check": 0.9745196212146835,
+   "confidence": 0.9745196212146835,
+   "passed": true,
+   "x": 0.175,
+   "y": 0.51
+  },
+  {
+   "name": "Wentworth and Thornton Halls",
+   "name_en": "Wentworth and Thornton Halls",
+   "kind": "hall",
+   "quote": "vary in age from Wentworth and Thornton Halls of the 1820s",
+   "look": "1820s Georgian colonial style college halls",
+   "check": 0.9740955602354255,
+   "confidence": 0.9740955602354255,
+   "passed": true
+  },
+  {
+   "name": "Robinson Hall",
+   "name_en": "Robinson Hall",
+   "kind": "hall",
+   "quote": "Robinson Hall, next door to both the Collis Center and the Class of 1953 Commons",
+   "look": "Campus hall next to Collis Center, plain",
+   "check": 0.9814713510108903,
+   "confidence": 0.9814713510108903,
+   "passed": true
+  }
+ ],
+ "tokens": 10001,
+ "seconds": 30
+}

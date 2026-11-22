@@ -1,0 +1,104 @@
+{
+ "school": "rochester",
+ "name": "University of Rochester",
+ "at": "2026-11-22T00:20:24.228Z",
+ "source": "https://en.wikipedia.org/wiki/University%20of%20Rochester",
+ "character": "Located in a bend of the Genesee River, the main campus features 20th-century Greek Revival academic buildings.",
+ "map": "/art/map/rochester.jpg",
+ "landmarks": [
+  {
+   "name": "Rush Rhees Library",
+   "name_en": "Rush Rhees Library",
+   "kind": "library",
+   "quote": "The main buildings situated upon the Eastman Quadrangle are Rush Rhees Library at the head",
+   "look": "Greek Revival library building at the head of a quadrangle",
+   "check": 0.9792357563057997,
+   "confidence": 0.9792357563057997,
+   "passed": true,
+   "x": 0.5,
+   "y": 0.26
+  },
+  {
+   "name": "Eastman Quadrangle",
+   "name_en": "Eastman Quadrangle",
+   "kind": "quad",
+   "quote": "The main buildings situated upon the Eastman Quadrangle are Rush Rhees Library at the head",
+   "look": "Open quadrangle flanked by Greek Revival academic buildings",
+   "check": 0.9800638935011469,
+   "confidence": 0.9800638935011469,
+   "passed": true,
+   "x": 0.5,
+   "y": 0.5
+  },
+  {
+   "name": "Morey Hall",
+   "name_en": "Morey Hall",
+   "kind": "hall",
+   "quote": "flanked by the Morey Hall, Bausch & Lomb Hall, Lattimore Hall, and Dewey Hall.",
+   "look": "Greek Revival academic hall flanking a quadrangle",
+   "check": 0.9880433905676148,
+   "confidence": 0.9880433905676148,
+   "passed": true,
+   "x": 0.31,
+   "y": 0.44
+  },
+  {
+   "name": "Bausch & Lomb Hall",
+   "name_en": "Bausch & Lomb Hall",
+   "kind": "hall",
+   "quote": "flanked by the Morey Hall, Bausch & Lomb Hall, Lattimore Hall, and Dewey Hall.",
+   "look": "Greek Revival academic hall flanking a quadrangle",
+   "check": 0.9814432072490586,
+   "confidence": 0.9814432072490586,
+   "passed": true,
+   "x": 0.71,
+   "y": 0.44
+  },
+  {
+   "name": "Lattimore Hall",
+   "name_en": "Lattimore Hall",
+   "kind": "hall",
+   "quote": "flanked by the Morey Hall, Bausch & Lomb Hall, Lattimore Hall, and Dewey Hall.",
+   "look": "Greek Revival academic hall flanking a quadrangle",
+   "check": 0.9753062699676824,
+   "confidence": 0.9753062699676824,
+   "passed": true,
+   "x": 0.39,
+   "y": 0.66
+  },
+  {
+   "name": "Dewey Hall",
+   "name_en": "Dewey Hall",
+   "kind": "hall",
+   "quote": "flanked by the Morey Hall, Bausch & Lomb Hall, Lattimore Hall, and Dewey Hall.",
+   "look": "Greek Revival academic hall flanking a quadrangle",
+   "check": 0.966537476053263,
+   "confidence": 0.966537476053263,
+   "passed": true,
+   "x": 0.62,
+   "y": 0.66
+  },
+  {
+   "name": "Todd Union",
+   "name_en": "Todd Union",
+   "kind": "other",
+   "quote": "Todd Union, constructed in 1930",
+   "look": "Plain 1930s campus union building",
+   "check": 0.9803280874610488,
+   "confidence": 0.9803280874610488,
+   "passed": true
+  },
+  {
+   "name": "Robert B. Goergen Hall for Biomedical Engineering and Optics",
+   "name_en": "Robert B. Goergen Hall for Biomedical Engineering and Optics",
+   "kind": "hall",
+   "quote": "Robert B. Goergen Hall for Biomedical Engineering and Optics on the River Campus.",
+   "look": "Plain modern research hall",
+   "check": 0.9648354293632259,
+   "confidence": 0.9648354293632259,
+   "passed": true
+  }
+ ],
+ "tokens": 10011,
+ "seconds": 29
+}

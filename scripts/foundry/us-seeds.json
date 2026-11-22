@@ -1,0 +1,21 @@
+{
+ "princeton": ["Princeton University", "https://www.princeton.edu/events"],
+ "mit": ["Massachusetts Institute of Technology", "https://calendar.mit.edu/"],
+ "harvard": ["Harvard University", "https://news.harvard.edu/gazette/harvard-events/"],
+ "stanford": ["Stanford University", "https://events.stanford.edu/"],
+ "yale": ["Yale University", "https://calendar.yale.edu/"],
+ "caltech": ["California Institute of Technology", "https://www.caltech.edu/campus-life-events/calendar"],
+ "duke": ["Duke University", "https://calendar.duke.edu/"],
+ "jhu": ["Johns Hopkins University", "https://hub.jhu.edu/events/"],
+ "northwestern": ["Northwestern University", "https://planitpurple.northwestern.edu/"],
+ "penn": ["University of Pennsylvania", "https://penntoday.upenn.edu/events"],
+ "cornell": ["Cornell University", "https://events.cornell.edu/"],
+ "uchicago": ["University of Chicago", "https://events.uchicago.edu/"],
+ "brown": ["Brown University", "https://events.brown.edu/"],
+ "dartmouth": ["Dartmouth College", "https://home.dartmouth.edu/events"],
+ "ucla": ["University of California, Los Angeles", "https://www.ucla.edu/events"],
+ "berkeley": ["University of California, Berkeley", "https://events.berkeley.edu/"],
+ "rice": ["Rice University", "https://events.rice.edu/"],
+ "notredame": ["University of Notre Dame", "https://events.nd.edu/"],
+ "vanderbilt": ["Vanderbilt University", "https://events.vanderbilt.edu/"]
+}

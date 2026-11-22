@@ -1,0 +1,104 @@
+{
+ "school": "tsinghua",
+ "name": "清华大学",
+ "at": "2026-11-22T00:11:43.868Z",
+ "source": "https://zh.wikipedia.org/wiki/%E6%B8%85%E5%8D%8E%E5%A4%A7%E5%AD%A6",
+ "character": "The heavily wooded campus blends traditional Chinese imperial gardens and ponds with American-style red-brick historical buildings in the west and Soviet-style and modern white buildings in the east.",
+ "map": "/art/map/tsinghua.jpg",
+ "landmarks": [
+  {
+   "name": "二校门",
+   "name_en": "Second Gate",
+   "kind": "gate",
+   "quote": "仿制文艺复兴券柱式大门的新校门（今二校门）",
+   "look": "Renaissance-style arched gate with columns.",
+   "check": 0.9770663741852547,
+   "confidence": 0.9770663741852547,
+   "passed": true,
+   "x": 0.16,
+   "y": 0.28
+  },
+  {
+   "name": "大礼堂",
+   "name_en": "Grand Auditorium",
+   "kind": "hall",
+   "quote": "大礼堂也是红砖外墙，入口处有大理石柱廊",
+   "look": "Red-brick auditorium with a marble colonnade at the entrance.",
+   "check": 0.99,
+   "confidence": 0.99,
+   "passed": true,
+   "x": 0.36,
+   "y": 0.58
+  },
+  {
+   "name": "图书馆",
+   "name_en": "Tsinghua Library",
+   "kind": "library",
+   "quote": "图书馆室内则采用磨光花岗石装饰",
+   "look": "American university-style library with polished granite interior.",
+   "check": 0.99,
+   "confidence": 0.99,
+   "passed": true,
+   "x": 0.13,
+   "y": 0.51
+  },
+  {
+   "name": "清华学堂",
+   "name_en": "Tsinghua Xuetang",
+   "kind": "hall",
+   "quote": "一院（今清华学堂西半部）",
+   "look": "Two-story brick-and-wood hall in German classical style.",
+   "check": 0.9805988089909843,
+   "confidence": 0.9805988089909843,
+   "passed": true,
+   "x": 0.39,
+   "y": 0.22
+  },
+  {
+   "name": "科学馆",
+   "name_en": "Science Building",
+   "kind": "hall",
+   "quote": "科学馆为红色砖墙，屋顶铺设石板瓦",
+   "look": "Red-brick hall with a slate-tiled roof.",
+   "check": 0.9854389296821725,
+   "confidence": 0.9854389296821725,
+   "passed": true,
+   "x": 0.65,
+   "y": 0.3
+  },
+  {
+   "name": "工字厅",
+   "name_en": "Gongziting",
+   "kind": "hall",
+   "quote": "原王府庭园工字厅、古月堂、水木清华等古建筑",
+   "look": "Traditional Qing-dynasty Chinese courtyard hall.",
+   "check": 0.9857728915807086,
+   "confidence": 0.9857728915807086,
+   "passed": true,
+   "x": 0.8,
+   "y": 0.63
+  },
+  {
+   "name": "荷花池",
+   "name_en": "Lotus Pond",
+   "kind": "lake",
+   "quote": "朱自清先生在《荷塘月色》中描述的“荷花池”（近春园遗址）",
+   "look": "Traditional Chinese garden pond.",
+   "check": 0.9794872274150552,
+   "confidence": 0.9794872274150552,
+   "passed": true
+  },
+  {
+   "name": "艺术博物馆",
+   "name_en": "Art Museum",
+   "kind": "museum",
+   "quote": "主楼的东侧则有美术学院、环境节能楼、艺术博物馆",
+   "look": "Modern white museum building.",
+   "check": 0.9739559229907544,
+   "confidence": 0.9739559229907544,
+   "passed": true
+  }
+ ],
+ "tokens": 20359,
+ "seconds": 30
+}

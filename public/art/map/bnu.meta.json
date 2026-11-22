@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. Many older Soviet-style buildings were replaced by modern structures, while green space has been decreasing and campus traffic congestion is an issue. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Jingshi Building, a other: A modern multi-story university building, plain exterior.; (2) New Main Building, a other: A modern main academic building, plain exterior.; (3) Rear Main Building, a other: A modern multi-story academic building, plain exterior.; (4) Zeng Xianzi Teaching Building, a other: A modern classroom building, plain exterior.; (5) Qiu Jirui Gymnasium, a stadium: A modern indoor sports arena, plain exterior.; (6) Yingdong Education Building, a other: A university education building with a sculpture on its southwest side.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 16,
+ "tokens": 2097,
+ "at": "2026-11-22T00:15:04.656Z"
+}

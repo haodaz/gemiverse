@@ -1,0 +1,888 @@
+{
+ "school": "jlu",
+ "name": "吉林大学",
+ "at": "2026-11-22T00:15:23.755Z",
+ "seconds": 40,
+ "tokens": 74151,
+ "entities": [
+  {
+   "id": "jlu-ed94e805f8",
+   "type": "Event",
+   "school": "jlu",
+   "name": "余瑞璜大讲堂（七十四）——材料、强关联机理与 AI 逆向设计",
+   "tier": 1,
+   "fields": {
+    "url": "https://news.jlu.edu.cn/info/1067/61939.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-09-21T09:00",
+    "summary": "中国人民大学卢仲毅教授主讲余瑞璜大讲堂，探讨超导机理、强关联计算与AI逆向设计。",
+    "event_kind": "lecture",
+    "venue_name": "吉林大学中心校区物理楼323会议室",
+    "organisation_name": "吉林大学物理学院 物质模拟方法与软件教育部重点实验室",
+    "speaker": "卢仲毅，中国人民大学教授",
+    "occurrences": [
+     {
+      "start": "2026-09-21T09:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "jlu-a6f0b9e341",
+   "type": "Event",
+   "school": "jlu",
+   "name": "余瑞璜大讲堂（七十二）——拓扑自旋存储材料和器件",
+   "tier": 1,
+   "fields": {
+    "url": "https://news.jlu.edu.cn/info/1067/61867.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-09-10T09:00",
+    "summary": "于国强研究员介绍拓扑自旋存储材料与器件方向的最新研究进展及关键问题。",
+    "event_kind": "lecture",
+    "venue_name": "吉林大学中心校区唐敖庆楼B区521报告厅",
+    "organisation_name": "吉林大学物理学院、物质模拟方法与软件教育部重点实验室",
+    "speaker": "于国强，中国科学院物理研究所研究员",
+    "occurrences": [
+     {
+      "start": "2026-09-10T09:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "jlu-5c99eb28b4",
+   "type": "Event",
+   "school": "jlu",
+   "name": "余瑞璜大讲堂（七十六）——暗能量宇宙学：新进展与范式转变",
+   "tier": 1,
+   "fields": {
+    "url": "https://news.jlu.edu.cn/info/1067/62162.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-10-30T09:00",
+    "summary": "东北大学张鑫教授将作题为“暗能量宇宙学：新进展与范式转变”的学术报告。",
+    "event_kind": "lecture",
+    "venue_name": "吉林大学中心校区物理楼323会议室",
+    "organisation_name": "吉林大学物理学院、物质模拟方法与软件教育部重点实验室",
+    "speaker": "张鑫，东北大学教授",
+    "occurrences": [
+     {
+      "start": "2026-10-30T09:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "jlu-d425738c8d",
+   "type": "Event",
+   "school": "jlu",
+   "name": "余瑞璜大讲堂（六十七）——真空紫外光电功能晶体创制",
+   "tier": 1,
+   "fields": {
+    "url": "https://news.jlu.edu.cn/info/1067/61615.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-07-10T13:30",
+    "summary": "吉林大学物理学院举办余瑞璜大讲堂，邀请潘世烈作真空紫外光电功能晶体创制专题报告。",
+    "event_kind": "lecture",
+    "venue_name": "吉林大学中心校区物理楼323会议室",
+    "organisation_name": "吉林大学物理学院",
+    "speaker": "潘世烈，中国科学院新疆理化技术研究所所长",
+    "occurrences": [
+     {
+      "start": "2026-07-10T13:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "jlu-c87ad44c0d",
+   "type": "Event",
+   "school": "jlu",
+   "name": "余瑞璜大讲堂（六十五）——“锌”有猛虎，细嗅蔷薇",
+   "tier": 1,
+   "fields": {
+    "url": "https://news.jlu.edu.cn/info/1067/61524.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-06-30T09:30",
+    "summary": "新加坡南洋理工大学范红金教授将作关于水系锌基电池研究的学术报告。",
+    "event_kind": "lecture",
+    "venue_name": "吉林大学中心校区物理楼333会议室",
+    "organisation_name": "吉林大学物理学院 新型电池物理与技术教育部重点实验室",
+    "speaker": "范红金，新加坡南洋理工大学教授",
+    "occurrences": [
+     {
+      "start": "2026-06-30T09:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "jlu-85a51776ea",
+   "type": "Event",
+   "school": "jlu",
+   "name": "余瑞璜大讲堂（六十六）——基于物理演化过程的智能计算",
+   "tier": 1,
+   "fields": {
+    "url": "https://news.jlu.edu.cn/info/1067/61525.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-06-30T10:00",
+    "summary": "复旦大学沈健教授主讲基于物理演化过程的智能计算，探讨突破能耗瓶颈的新型计算架构。",
+    "event_kind": "lecture",
+    "venue_name": "吉林大学中心校区唐敖庆楼B区521报告厅",
+    "organisation_name": "吉林大学物理学院、物质模拟方法与软件教育部重点实验室",
+    "speaker": "沈健，复旦大学教授",
+    "occurrences": [
+     {
+      "start": "2026-06-30T10:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "jlu-edffbb8b2f",
+   "type": "Event",
+   "school": "jlu",
+   "name": "吉大物理名家讲座（155）——DFT+X能量的线性修正方法及其在铀合金U-M (M=Al, Ga, In)中的应用",
+   "tier": 1,
+   "fields": {
+    "url": "https://news.jlu.edu.cn/info/1067/61466.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-06-25T14:00",
+    "summary": "吉林大学物理学院等举办讲座，探讨DFT+X能量的线性修正方法及其在铀合金中的应用。",
+    "event_kind": "lecture",
+    "venue_name": "吉林大学中心校区唐敖庆楼B区521报告厅",
+    "organisation_name": "吉林大学物理学院 物质模拟方法与软件教育部重点实验室",
+    "speaker": "耿华运，中国工程物理研究院流体物理研究所研究员",
+    "occurrences": [
+     {
+      "start": "2026-06-25T14:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "jlu-f22cd679be",
+   "type": "Event",
+   "school": "jlu",
+   "name": "余瑞璜大讲堂（六十四）——动态加载下物质结构演化的实验和理论协同研究",
+   "tier": 1,
+   "fields": {
+    "url": "https://news.jlu.edu.cn/info/1067/61420.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-06-16T09:30",
+    "summary": "国防科技大学戴佳钰教授作动态加载下物质结构演化实验与理论协同研究的学术报告。",
+    "event_kind": "lecture",
+    "venue_name": "吉林大学中心校区唐敖庆楼B区521报告厅",
+    "organisation_name": "吉林大学物理学院、物质模拟方法与软件教育部重点实验室",
+    "speaker": "戴佳钰，国防科技大学教授",
+    "occurrences": [
+     {
+      "start": "2026-06-16T09:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "jlu-a275c1e22d",
+   "type": "Event",
+   "school": "jlu",
+   "name": "余瑞璜大讲堂（六十二）——超构表面光场调控：从界面相位到平面光学",
+   "tier": 1,
+   "fields": {
+    "url": "https://news.jlu.edu.cn/info/1067/61376.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-06-12T14:30",
+    "summary": "复旦大学周磊教授将作关于超构表面光场调控与平面光学的学术报告。",
+    "event_kind": "lecture",
+    "venue_name": "吉林大学中心校区物理楼323会议室",
+    "organisation_name": "吉林大学物理学院",
+    "speaker": "周磊，复旦大学副校长、教授",
+    "occurrences": [
+     {
+      "start": "2026-06-12T14:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "jlu-10e6edca19",
+   "type": "Event",
+   "school": "jlu",
+   "name": "余瑞璜大讲堂（六十一）——金刚石色心量子技术及应用",
+   "tier": 1,
+   "fields": {
+    "url": "https://news.jlu.edu.cn/info/1067/61375.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-06-09T15:00",
+    "summary": "吉林大学物理学院举办讲座，王亚教授介绍金刚石色心量子技术及应用。",
+    "event_kind": "lecture",
+    "venue_name": "吉林大学中心校区物理楼333会议室",
+    "organisation_name": "吉林大学物理学院",
+    "speaker": "王亚，中国科学技术大学讲席教授",
+    "occurrences": [
+     {
+      "start": "2026-06-09T15:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "jlu-91cdbc5f33",
+   "type": "Event",
+   "school": "jlu",
+   "name": "余瑞璜大讲堂（六十）——漫谈粒子宇宙物理之美",
+   "tier": 1,
+   "fields": {
+    "url": "https://news.jlu.edu.cn/info/1067/61330.htm",
+    "needs": [
+     "explore_a_field",
+     "decide_a_direction"
+    ],
+    "start": "2026-06-05T14:30",
+    "summary": "耿朝强教授将探讨粒子宇宙物理之美，并介绍国科大杭高院招生及夏令营安排。",
+    "event_kind": "lecture",
+    "venue_name": "吉林大学中心校区物理楼333会议室",
+    "organisation_name": "吉林大学物理学院、吉林大学理论物理中心",
+    "speaker": "耿朝强， 中国科学院大学杭州高等研究院教授",
+    "occurrences": [
+     {
+      "start": "2026-06-05T14:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "jlu-350e3f9549",
+   "type": "Event",
+   "school": "jlu",
+   "name": "俄中友谊的基础与前景",
+   "tier": 1,
+   "fields": {
+    "url": "https://news.jlu.edu.cn/info/1067/60959.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-04-22T14:00",
+    "summary": "基里尔·巴巴耶夫主讲“俄中友谊的基础与前景”哲学社会科学学术讲座。",
+    "event_kind": "lecture",
+    "venue_name": "中心校区东荣大厦第一会议室",
+    "organisation_name": "吉林大学东北亚研究中心 吉林大学社会科学研究院",
+    "speaker": "基里尔·巴巴耶夫",
+    "occurrences": [
+     {
+      "start": "2026-04-22T14:00",
+      "end": null
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "jlu-ed94e805f8",
+   "field": "title",
+   "quote": "余瑞璜大讲堂（七十四）——材料、强关联机理与 AI 逆向设计",
+   "url": "https://news.jlu.edu.cn/info/1067/61939.htm",
+   "check_confidence": 0.9702219297370457,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-ed94e805f8",
+   "field": "date",
+   "quote": "2026年9月21日9：00",
+   "url": "https://news.jlu.edu.cn/info/1067/61939.htm",
+   "check_confidence": 0.9712711583939283,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-ed94e805f8",
+   "field": "start_time",
+   "quote": "09:00",
+   "url": "https://news.jlu.edu.cn/info/1067/61939.htm",
+   "check_confidence": 0.9808922429084689,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-ed94e805f8",
+   "field": "venue_name",
+   "quote": "吉林大学中心校区物理楼323会议室",
+   "url": "https://news.jlu.edu.cn/info/1067/61939.htm",
+   "check_confidence": 0.9817070226029079,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-ed94e805f8",
+   "field": "organisation_name",
+   "quote": "吉林大学物理学院 物质模拟方法与软件教育部重点实验室",
+   "url": "https://news.jlu.edu.cn/info/1067/61939.htm",
+   "check_confidence": 0.964931580338713,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-ed94e805f8",
+   "field": "speaker",
+   "quote": "卢仲毅，中国人民大学教授",
+   "url": "https://news.jlu.edu.cn/info/1067/61939.htm",
+   "check_confidence": 0.9460345991130252,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-a6f0b9e341",
+   "field": "title",
+   "quote": "余瑞璜大讲堂（七十二）——拓扑自旋存储材料和器件",
+   "url": "https://news.jlu.edu.cn/info/1067/61867.htm",
+   "check_confidence": 0.9783792884088053,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-a6f0b9e341",
+   "field": "date",
+   "quote": "2026年9月10日9：00",
+   "url": "https://news.jlu.edu.cn/info/1067/61867.htm",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-a6f0b9e341",
+   "field": "start_time",
+   "quote": "09:00",
+   "url": "https://news.jlu.edu.cn/info/1067/61867.htm",
+   "check_confidence": 0.9827864930372706,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-a6f0b9e341",
+   "field": "venue_name",
+   "quote": "吉林大学中心校区唐敖庆楼B区521报告厅",
+   "url": "https://news.jlu.edu.cn/info/1067/61867.htm",
+   "check_confidence": 0.9879698873948058,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-a6f0b9e341",
+   "field": "organisation_name",
+   "quote": "吉林大学物理学院、物质模拟方法与软件教育部重点实验室",
+   "url": "https://news.jlu.edu.cn/info/1067/61867.htm",
+   "check_confidence": 0.9673115101334341,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-a6f0b9e341",
+   "field": "speaker",
+   "quote": "于国强，中国科学院物理研究所研究员",
+   "url": "https://news.jlu.edu.cn/info/1067/61867.htm",
+   "check_confidence": 0.9656860776697569,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-5c99eb28b4",
+   "field": "title",
+   "quote": "余瑞璜大讲堂（七十六）——暗能量宇宙学：新进展与范式转变",
+   "url": "https://news.jlu.edu.cn/info/1067/62162.htm",
+   "check_confidence": 0.9790596534252802,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-5c99eb28b4",
+   "field": "date",
+   "quote": "2026年10月30日9:00",
+   "url": "https://news.jlu.edu.cn/info/1067/62162.htm",
+   "check_confidence": 0.9864524430731236,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-5c99eb28b4",
+   "field": "start_time",
+   "quote": "09:00",
+   "url": "https://news.jlu.edu.cn/info/1067/62162.htm",
+   "check_confidence": 0.9775277459290125,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-5c99eb28b4",
+   "field": "venue_name",
+   "quote": "吉林大学中心校区物理楼323会议室",
+   "url": "https://news.jlu.edu.cn/info/1067/62162.htm",
+   "check_confidence": 0.9720570733816334,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-5c99eb28b4",
+   "field": "organisation_name",
+   "quote": "吉林大学物理学院、物质模拟方法与软件教育部重点实验室",
+   "url": "https://news.jlu.edu.cn/info/1067/62162.htm",
+   "check_confidence": 0.9533668357954742,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-5c99eb28b4",
+   "field": "speaker",
+   "quote": "张鑫，东北大学教授",
+   "url": "https://news.jlu.edu.cn/info/1067/62162.htm",
+   "check_confidence": 0.9764921946044866,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-d425738c8d",
+   "field": "title",
+   "quote": "余瑞璜大讲堂（六十七）——真空紫外光电功能晶体创制",
+   "url": "https://news.jlu.edu.cn/info/1067/61615.htm",
+   "check_confidence": 0.9685779263693967,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-d425738c8d",
+   "field": "date",
+   "quote": "2026年7月10日13:30",
+   "url": "https://news.jlu.edu.cn/info/1067/61615.htm",
+   "check_confidence": 0.9698694082234376,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-d425738c8d",
+   "field": "start_time",
+   "quote": "13:30",
+   "url": "https://news.jlu.edu.cn/info/1067/61615.htm",
+   "check_confidence": 0.97921369126658,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-d425738c8d",
+   "field": "venue_name",
+   "quote": "吉林大学中心校区物理楼323会议室",
+   "url": "https://news.jlu.edu.cn/info/1067/61615.htm",
+   "check_confidence": 0.9675770721624135,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-d425738c8d",
+   "field": "organisation_name",
+   "quote": "吉林大学物理学院",
+   "url": "https://news.jlu.edu.cn/info/1067/61615.htm",
+   "check_confidence": 0.9671089680814381,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-d425738c8d",
+   "field": "speaker",
+   "quote": "潘世烈，中国科学院新疆理化技术研究所所长",
+   "url": "https://news.jlu.edu.cn/info/1067/61615.htm",
+   "check_confidence": 0.9339294493490268,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-c87ad44c0d",
+   "field": "title",
+   "quote": "余瑞璜大讲堂（六十五）——“锌”有猛虎，细嗅蔷薇",
+   "url": "https://news.jlu.edu.cn/info/1067/61524.htm",
+   "check_confidence": 0.9701008825036032,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-c87ad44c0d",
+   "field": "date",
+   "quote": "报告时间：2026年6月30日9:30",
+   "url": "https://news.jlu.edu.cn/info/1067/61524.htm",
+   "check_confidence": 0.9850262000581693,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-c87ad44c0d",
+   "field": "start_time",
+   "quote": "09:30",
+   "url": "https://news.jlu.edu.cn/info/1067/61524.htm",
+   "check_confidence": 0.9776425219892492,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-c87ad44c0d",
+   "field": "venue_name",
+   "quote": "报告地点：吉林大学中心校区物理楼333会议室",
+   "url": "https://news.jlu.edu.cn/info/1067/61524.htm",
+   "check_confidence": 0.9778541608557727,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-c87ad44c0d",
+   "field": "organisation_name",
+   "quote": "吉林大学物理学院 新型电池物理与技术教育部重点实验室",
+   "url": "https://news.jlu.edu.cn/info/1067/61524.htm",
+   "check_confidence": 0.9589811251763637,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-c87ad44c0d",
+   "field": "speaker",
+   "quote": "范红金，新加坡南洋理工大学教授",
+   "url": "https://news.jlu.edu.cn/info/1067/61524.htm",
+   "check_confidence": 0.9818656075632688,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-85a51776ea",
+   "field": "title",
+   "quote": "余瑞璜大讲堂（六十六）——基于物理演化过程的智能计算",
+   "url": "https://news.jlu.edu.cn/info/1067/61525.htm",
+   "check_confidence": 0.9692911384525141,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-85a51776ea",
+   "field": "date",
+   "quote": "2026年6月30日10:00",
+   "url": "https://news.jlu.edu.cn/info/1067/61525.htm",
+   "check_confidence": 0.9897194324091848,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-85a51776ea",
+   "field": "start_time",
+   "quote": "10:00",
+   "url": "https://news.jlu.edu.cn/info/1067/61525.htm",
+   "check_confidence": 0.9692401176236823,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-85a51776ea",
+   "field": "venue_name",
+   "quote": "吉林大学中心校区唐敖庆楼B区521报告厅",
+   "url": "https://news.jlu.edu.cn/info/1067/61525.htm",
+   "check_confidence": 0.9763968330684724,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-85a51776ea",
+   "field": "organisation_name",
+   "quote": "吉林大学物理学院、物质模拟方法与软件教育部重点实验室",
+   "url": "https://news.jlu.edu.cn/info/1067/61525.htm",
+   "check_confidence": 0.9777765616761739,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-85a51776ea",
+   "field": "speaker",
+   "quote": "沈健，复旦大学教授",
+   "url": "https://news.jlu.edu.cn/info/1067/61525.htm",
+   "check_confidence": 0.9603477743155862,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-edffbb8b2f",
+   "field": "title",
+   "quote": "吉大物理名家讲座（155）——DFT+X能量的线性修正方法及其在铀合金U-M (M=Al, Ga, In)中的应用",
+   "url": "https://news.jlu.edu.cn/info/1067/61466.htm",
+   "check_confidence": 0.979133326182453,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-edffbb8b2f",
+   "field": "date",
+   "quote": "2026年6月25日 14:00",
+   "url": "https://news.jlu.edu.cn/info/1067/61466.htm",
+   "check_confidence": 0.9839295700527543,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-edffbb8b2f",
+   "field": "start_time",
+   "quote": "14:00",
+   "url": "https://news.jlu.edu.cn/info/1067/61466.htm",
+   "check_confidence": 0.9781767749277078,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-edffbb8b2f",
+   "field": "venue_name",
+   "quote": "吉林大学中心校区唐敖庆楼B区521报告厅",
+   "url": "https://news.jlu.edu.cn/info/1067/61466.htm",
+   "check_confidence": 0.9798579939283333,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-edffbb8b2f",
+   "field": "organisation_name",
+   "quote": "吉林大学物理学院 物质模拟方法与软件教育部重点实验室",
+   "url": "https://news.jlu.edu.cn/info/1067/61466.htm",
+   "check_confidence": 0.9573094769764924,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-edffbb8b2f",
+   "field": "speaker",
+   "quote": "耿华运，中国工程物理研究院流体物理研究所研究员",
+   "url": "https://news.jlu.edu.cn/info/1067/61466.htm",
+   "check_confidence": 0.9169498504488781,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-f22cd679be",
+   "field": "title",
+   "quote": "余瑞璜大讲堂（六十四）——动态加载下物质结构演化的实验和理论协同研究",
+   "url": "https://news.jlu.edu.cn/info/1067/61420.htm",
+   "check_confidence": 0.9672143005042659,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-f22cd679be",
+   "field": "date",
+   "quote": "2026年6月16日9:30",
+   "url": "https://news.jlu.edu.cn/info/1067/61420.htm",
+   "check_confidence": 0.9769602683336905,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-f22cd679be",
+   "field": "start_time",
+   "quote": "09:30",
+   "url": "https://news.jlu.edu.cn/info/1067/61420.htm",
+   "check_confidence": 0.9594873327022099,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-f22cd679be",
+   "field": "venue_name",
+   "quote": "吉林大学中心校区唐敖庆楼B区521报告厅",
+   "url": "https://news.jlu.edu.cn/info/1067/61420.htm",
+   "check_confidence": 0.9651153179719923,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-f22cd679be",
+   "field": "organisation_name",
+   "quote": "吉林大学物理学院、物质模拟方法与软件教育部重点实验室",
+   "url": "https://news.jlu.edu.cn/info/1067/61420.htm",
+   "check_confidence": 0.9590002714360658,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-f22cd679be",
+   "field": "speaker",
+   "quote": "戴佳钰，国防科技大学教授",
+   "url": "https://news.jlu.edu.cn/info/1067/61420.htm",
+   "check_confidence": 0.9577526059441893,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-a275c1e22d",
+   "field": "title",
+   "quote": "余瑞璜大讲堂（六十二）——超构表面光场调控：从界面相位到平面光学",
+   "url": "https://news.jlu.edu.cn/info/1067/61376.htm",
+   "check_confidence": 0.9798016704782332,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-a275c1e22d",
+   "field": "date",
+   "quote": "2026年6月12日14:30",
+   "url": "https://news.jlu.edu.cn/info/1067/61376.htm",
+   "check_confidence": 0.9754621403714426,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-a275c1e22d",
+   "field": "start_time",
+   "quote": "14:30",
+   "url": "https://news.jlu.edu.cn/info/1067/61376.htm",
+   "check_confidence": 0.9815946906970561,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-a275c1e22d",
+   "field": "venue_name",
+   "quote": "吉林大学中心校区物理楼323会议室",
+   "url": "https://news.jlu.edu.cn/info/1067/61376.htm",
+   "check_confidence": 0.9797242099655358,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-a275c1e22d",
+   "field": "organisation_name",
+   "quote": "吉林大学物理学院",
+   "url": "https://news.jlu.edu.cn/info/1067/61376.htm",
+   "check_confidence": 0.9795141249377056,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-a275c1e22d",
+   "field": "speaker",
+   "quote": "周磊，复旦大学副校长、教授",
+   "url": "https://news.jlu.edu.cn/info/1067/61376.htm",
+   "check_confidence": 0.9645875007043688,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-10e6edca19",
+   "field": "title",
+   "quote": "余瑞璜大讲堂（六十一）——金刚石色心量子技术及应用",
+   "url": "https://news.jlu.edu.cn/info/1067/61375.htm",
+   "check_confidence": 0.9768166624564419,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-10e6edca19",
+   "field": "date",
+   "quote": "2026年6月9日15:00",
+   "url": "https://news.jlu.edu.cn/info/1067/61375.htm",
+   "check_confidence": 0.9764715877553367,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-10e6edca19",
+   "field": "start_time",
+   "quote": "15:00",
+   "url": "https://news.jlu.edu.cn/info/1067/61375.htm",
+   "check_confidence": 0.9838644295218947,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-10e6edca19",
+   "field": "venue_name",
+   "quote": "吉林大学中心校区物理楼333会议室",
+   "url": "https://news.jlu.edu.cn/info/1067/61375.htm",
+   "check_confidence": 0.9708167768070523,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-10e6edca19",
+   "field": "organisation_name",
+   "quote": "吉林大学物理学院",
+   "url": "https://news.jlu.edu.cn/info/1067/61375.htm",
+   "check_confidence": 0.9734049726383353,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-10e6edca19",
+   "field": "speaker",
+   "quote": "王亚，中国科学技术大学讲席教授",
+   "url": "https://news.jlu.edu.cn/info/1067/61375.htm",
+   "check_confidence": 0.9687411852067985,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-91cdbc5f33",
+   "field": "title",
+   "quote": "余瑞璜大讲堂（六十）——漫谈粒子宇宙物理之美",
+   "url": "https://news.jlu.edu.cn/info/1067/61330.htm",
+   "check_confidence": 0.9737422815316623,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-91cdbc5f33",
+   "field": "date",
+   "quote": "2026年6月5日 14:30",
+   "url": "https://news.jlu.edu.cn/info/1067/61330.htm",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-91cdbc5f33",
+   "field": "start_time",
+   "quote": "14:30",
+   "url": "https://news.jlu.edu.cn/info/1067/61330.htm",
+   "check_confidence": 0.9851415731705743,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-91cdbc5f33",
+   "field": "venue_name",
+   "quote": "吉林大学中心校区物理楼333会议室",
+   "url": "https://news.jlu.edu.cn/info/1067/61330.htm",
+   "check_confidence": 0.9737869940749452,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-91cdbc5f33",
+   "field": "organisation_name",
+   "quote": "吉林大学物理学院、吉林大学理论物理中心",
+   "url": "https://news.jlu.edu.cn/info/1067/61330.htm",
+   "check_confidence": 0.980029571533262,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-91cdbc5f33",
+   "field": "speaker",
+   "quote": "耿朝强， 中国科学院大学杭州高等研究院教授",
+   "url": "https://news.jlu.edu.cn/info/1067/61330.htm",
+   "check_confidence": 0.9587512721006383,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-350e3f9549",
+   "field": "title",
+   "quote": "俄中友谊的基础与前景",
+   "url": "https://news.jlu.edu.cn/info/1067/60959.htm",
+   "check_confidence": 0.9741646517678054,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-350e3f9549",
+   "field": "date",
+   "quote": "2026年4月22日14:00",
+   "url": "https://news.jlu.edu.cn/info/1067/60959.htm",
+   "check_confidence": 0.9754583634249706,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-350e3f9549",
+   "field": "start_time",
+   "quote": "14:00",
+   "url": "https://news.jlu.edu.cn/info/1067/60959.htm",
+   "check_confidence": 0.9724120829641929,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-350e3f9549",
+   "field": "venue_name",
+   "quote": "中心校区东荣大厦第一会议室",
+   "url": "https://news.jlu.edu.cn/info/1067/60959.htm",
+   "check_confidence": 0.9811538974775666,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-350e3f9549",
+   "field": "organisation_name",
+   "quote": "吉林大学东北亚研究中心 吉林大学社会科学研究院",
+   "url": "https://news.jlu.edu.cn/info/1067/60959.htm",
+   "check_confidence": 0.9751792661430662,
+   "passed": true
+  },
+  {
+   "entity_id": "jlu-350e3f9549",
+   "field": "speaker",
+   "quote": "基里尔·巴巴耶夫",
+   "url": "https://news.jlu.edu.cn/info/1067/60959.htm",
+   "check_confidence": 0.9830106341383548,
+   "passed": true
+  }
+ ]
+}

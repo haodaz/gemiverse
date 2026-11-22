@@ -1,0 +1,415 @@
+{
+ "school": "uci",
+ "name": "University of California, Irvine",
+ "at": "2026-11-22T00:19:57.120Z",
+ "seconds": 18,
+ "tokens": 42919,
+ "entities": [
+  {
+   "id": "uci-b30e9f38c6",
+   "type": "Event",
+   "school": "uci",
+   "name": "Tenth Thursday Undergraduate Student Exhibition",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.arts.uci.edu/events/tenth-thursday-undergraduate-student-exhibition-fall-2026",
+    "needs": [
+     "make_and_express",
+     "explore_a_field"
+    ],
+    "start": "2026-12-03T18:00",
+    "summary": "An evening showcase celebrating undergraduate student artwork across painting, ceramics, photography, video, sculpture, performance, and installation at UCI.",
+    "event_kind": "exhibition",
+    "venue_name": "Arts Campus",
+    "organisation_name": "Deborah Oliver",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-03T18:00",
+      "end": "2026-12-03T20:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "uci-f98c8f5adb",
+   "type": "Event",
+   "school": "uci",
+   "name": "Symposium: Before the Look of Law",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.arts.uci.edu/events/symposium-look-law",
+    "needs": [
+     "explore_a_field",
+     "find_my_people"
+    ],
+    "start": "2026-12-02T10:00",
+    "summary": "A full-day symposium at UC Irvine featuring a keynote lecture by Judith Butler, staged readings, and discussions parallel to the exhibition.",
+    "event_kind": "lecture",
+    "venue_name": "University Art Gallery, Contemporary Arts Center Gallery, Room Gallery, UCI Humanities Gateway",
+    "organisation_name": "University Art Galleries",
+    "speaker": "Judith Butler",
+    "occurrences": [
+     {
+      "start": "2026-12-02T10:00",
+      "end": "2026-12-02T18:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "uci-dcb5805ba8",
+   "type": "Event",
+   "school": "uci",
+   "name": "UC Irvine Wind Ensemble",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.arts.uci.edu/events/uc-irvine-wind-ensemble-fall-2026",
+    "needs": [
+     "rest_and_recover",
+     "make_and_express"
+    ],
+    "start": "2026-11-30T20:00",
+    "summary": "The UCI Wind Ensemble, conducted by Kevin McKeown, performs a program of traditional and contemporary works for wind band.",
+    "event_kind": "other",
+    "venue_name": "Winifred Smith Hall",
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-30T20:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "uci-d6b3b07425",
+   "type": "Event",
+   "school": "uci",
+   "name": "Before the Look of Law",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.arts.uci.edu/events/look-law",
+    "needs": [
+     "explore_a_field",
+     "make_and_express"
+    ],
+    "start": "2026-10-03T12:00",
+    "summary": "An art exhibition at UC Irvine exploring law, technology, and state power through artworks from the 1990s to the present.",
+    "event_kind": "exhibition",
+    "venue_name": "University Art Gallery, Contemporary Arts Center Gallery, Room Gallery",
+    "organisation_name": "UC Irvine Claire Trevor School of the Arts’ University Art Galleries (UAG), Department of Art, and UCI Critical Theory",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-10-03T12:00",
+      "end": "2026-10-03T18:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "uci-2afb42aa11",
+   "type": "Event",
+   "school": "uci",
+   "name": "Ecotechnics",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.arts.uci.edu/events/ecotechnics",
+    "needs": [
+     "explore_a_field",
+     "make_and_express"
+    ],
+    "start": "2026-10-10T12:00",
+    "summary": "An exhibition at the Beall Center for Art + Technology exploring how contemporary artists use technology to sense and represent ecology.",
+    "event_kind": "exhibition",
+    "venue_name": "Beall Center for Art + Technology",
+    "organisation_name": "Beall Center for Art + Technology",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-10-10T12:00",
+      "end": "2026-10-10T18:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "uci-8aa3c962cd",
+   "type": "Event",
+   "school": "uci",
+   "name": "Fall Jazz Concert",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.arts.uci.edu/events/fall-jazz-concert-2026",
+    "needs": [
+     "rest_and_recover",
+     "make_and_express"
+    ],
+    "start": "2026-12-02T20:00",
+    "summary": "The UCI Jazz Orchestra and UCI Jazz Combos present an evening of classic and contemporary jazz music at Winifred Smith Hall.",
+    "event_kind": "other",
+    "venue_name": "Winifred Smith Hall",
+    "organisation_name": "UCI Arts",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-02T20:00",
+      "end": null
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "uci-b30e9f38c6",
+   "field": "title",
+   "quote": "Tenth Thursday Undergraduate Student Exhibition",
+   "url": "https://www.arts.uci.edu/events/tenth-thursday-undergraduate-student-exhibition-fall-2026",
+   "check_confidence": 0.9752388936772538,
+   "passed": true
+  },
+  {
+   "entity_id": "uci-b30e9f38c6",
+   "field": "date",
+   "quote": "Dec 3, 2026, 6:00 - 8:00pm",
+   "url": "https://www.arts.uci.edu/events/tenth-thursday-undergraduate-student-exhibition-fall-2026",
+   "check_confidence": 0.9729313725335611,
+   "passed": true
+  },
+  {
+   "entity_id": "uci-b30e9f38c6",
+   "field": "start_time",
+   "quote": "18:00",
+   "url": "https://www.arts.uci.edu/events/tenth-thursday-undergraduate-student-exhibition-fall-2026",
+   "check_confidence": 0.9659253978333632,
+   "passed": true
+  },
+  {
+   "entity_id": "uci-b30e9f38c6",
+   "field": "venue_name",
+   "quote": "Arts Campus",
+   "url": "https://www.arts.uci.edu/events/tenth-thursday-undergraduate-student-exhibition-fall-2026",
+   "check_confidence": 0.9727513344617813,
+   "passed": true
+  },
+  {
+   "entity_id": "uci-b30e9f38c6",
+   "field": "organisation_name",
+   "quote": "Deborah Oliver",
+   "url": "https://www.arts.uci.edu/events/tenth-thursday-undergraduate-student-exhibition-fall-2026",
+   "check_confidence": 0.9762077138059674,
+   "passed": true
+  },
+  {
+   "entity_id": "uci-f98c8f5adb",
+   "field": "title",
+   "quote": "Symposium: Before the Look of Law",
+   "url": "https://www.arts.uci.edu/events/symposium-look-law",
+   "check_confidence": 0.966546593259854,
+   "passed": true
+  },
+  {
+   "entity_id": "uci-f98c8f5adb",
+   "field": "date",
+   "quote": "Dec 2, 2026, 10:00am - 6:30pm",
+   "url": "https://www.arts.uci.edu/events/symposium-look-law",
+   "check_confidence": 0.9737792158314382,
+   "passed": true
+  },
+  {
+   "entity_id": "uci-f98c8f5adb",
+   "field": "start_time",
+   "quote": "10:00",
+   "url": "https://www.arts.uci.edu/events/symposium-look-law",
+   "check_confidence": 0.9690067273793825,
+   "passed": true
+  },
+  {
+   "entity_id": "uci-f98c8f5adb",
+   "field": "venue_name",
+   "quote": "University Art Gallery, Contemporary Arts Center Gallery, Room Gallery, UCI Humanities Gateway",
+   "url": "https://www.arts.uci.edu/events/symposium-look-law",
+   "check_confidence": 0.9360588308242856,
+   "passed": true
+  },
+  {
+   "entity_id": "uci-f98c8f5adb",
+   "field": "organisation_name",
+   "quote": "University Art Galleries",
+   "url": "https://www.arts.uci.edu/events/symposium-look-law",
+   "check_confidence": 0.8032139456504684,
+   "passed": true
+  },
+  {
+   "entity_id": "uci-f98c8f5adb",
+   "field": "speaker",
+   "quote": "Judith Butler",
+   "url": "https://www.arts.uci.edu/events/symposium-look-law",
+   "check_confidence": 0.9763776375664788,
+   "passed": true
+  },
+  {
+   "entity_id": "uci-dcb5805ba8",
+   "field": "title",
+   "quote": "UC Irvine Wind Ensemble",
+   "url": "https://www.arts.uci.edu/events/uc-irvine-wind-ensemble-fall-2026",
+   "check_confidence": 0.9799519501360725,
+   "passed": true
+  },
+  {
+   "entity_id": "uci-dcb5805ba8",
+   "field": "date",
+   "quote": "Nov 30, 2026, 8:00pm",
+   "url": "https://www.arts.uci.edu/events/uc-irvine-wind-ensemble-fall-2026",
+   "check_confidence": 0.9715829969490889,
+   "passed": true
+  },
+  {
+   "entity_id": "uci-dcb5805ba8",
+   "field": "start_time",
+   "quote": "20:00",
+   "url": "https://www.arts.uci.edu/events/uc-irvine-wind-ensemble-fall-2026",
+   "check_confidence": 0.9812063644489084,
+   "passed": true
+  },
+  {
+   "entity_id": "uci-dcb5805ba8",
+   "field": "venue_name",
+   "quote": "Winifred Smith Hall",
+   "url": "https://www.arts.uci.edu/events/uc-irvine-wind-ensemble-fall-2026",
+   "check_confidence": 0.9682566018717093,
+   "passed": true
+  },
+  {
+   "entity_id": "uci-dcb5805ba8",
+   "field": "organisation_name",
+   "quote": "UCI Arts",
+   "url": "https://www.arts.uci.edu/events/uc-irvine-wind-ensemble-fall-2026",
+   "check_confidence": 0.7366228274673073,
+   "passed": false
+  },
+  {
+   "entity_id": "uci-d6b3b07425",
+   "field": "title",
+   "quote": "Before the Look of Law",
+   "url": "https://www.arts.uci.edu/events/look-law",
+   "check_confidence": 0.98114834064224,
+   "passed": true
+  },
+  {
+   "entity_id": "uci-d6b3b07425",
+   "field": "date",
+   "quote": "Oct 3, 2026, 12:00pm - Dec 13, 2026, 6:00pm",
+   "url": "https://www.arts.uci.edu/events/look-law",
+   "check_confidence": 0.9669415793304105,
+   "passed": true
+  },
+  {
+   "entity_id": "uci-d6b3b07425",
+   "field": "start_time",
+   "quote": "12:00",
+   "url": "https://www.arts.uci.edu/events/look-law",
+   "check_confidence": 0.9581488396699289,
+   "passed": true
+  },
+  {
+   "entity_id": "uci-d6b3b07425",
+   "field": "venue_name",
+   "quote": "University Art Gallery, Contemporary Arts Center Gallery, Room Gallery",
+   "url": "https://www.arts.uci.edu/events/look-law",
+   "check_confidence": 0.9589463273354674,
+   "passed": true
+  },
+  {
+   "entity_id": "uci-d6b3b07425",
+   "field": "organisation_name",
+   "quote": "UC Irvine Claire Trevor School of the Arts’ University Art Galleries (UAG), Department of Art, and UCI Critical Theory",
+   "url": "https://www.arts.uci.edu/events/look-law",
+   "check_confidence": 0.959622494343315,
+   "passed": true
+  },
+  {
+   "entity_id": "uci-2afb42aa11",
+   "field": "title",
+   "quote": "Ecotechnics",
+   "url": "https://www.arts.uci.edu/events/ecotechnics",
+   "check_confidence": 0.9801977657055462,
+   "passed": true
+  },
+  {
+   "entity_id": "uci-2afb42aa11",
+   "field": "date",
+   "quote": "Oct 10, 2026, 12:00pm - Feb 6, 2027, 6:00pm",
+   "url": "https://www.arts.uci.edu/events/ecotechnics",
+   "check_confidence": 0.9704918176245776,
+   "passed": true
+  },
+  {
+   "entity_id": "uci-2afb42aa11",
+   "field": "start_time",
+   "quote": "12:00",
+   "url": "https://www.arts.uci.edu/events/ecotechnics",
+   "check_confidence": 0.9661977943947805,
+   "passed": true
+  },
+  {
+   "entity_id": "uci-2afb42aa11",
+   "field": "venue_name",
+   "quote": "Beall Center for Art + Technology",
+   "url": "https://www.arts.uci.edu/events/ecotechnics",
+   "check_confidence": 0.9597334863852123,
+   "passed": true
+  },
+  {
+   "entity_id": "uci-2afb42aa11",
+   "field": "organisation_name",
+   "quote": "Beall Center for Art + Technology",
+   "url": "https://www.arts.uci.edu/events/ecotechnics",
+   "check_confidence": 0.9571563296353635,
+   "passed": true
+  },
+  {
+   "entity_id": "uci-8aa3c962cd",
+   "field": "title",
+   "quote": "Fall Jazz Concert",
+   "url": "https://www.arts.uci.edu/events/fall-jazz-concert-2026",
+   "check_confidence": 0.9897902848170429,
+   "passed": true
+  },
+  {
+   "entity_id": "uci-8aa3c962cd",
+   "field": "date",
+   "quote": "Dec 2, 2026, 8:00pm",
+   "url": "https://www.arts.uci.edu/events/fall-jazz-concert-2026",
+   "check_confidence": 0.9755600400133065,
+   "passed": true
+  },
+  {
+   "entity_id": "uci-8aa3c962cd",
+   "field": "start_time",
+   "quote": "20:00",
+   "url": "https://www.arts.uci.edu/events/fall-jazz-concert-2026",
+   "check_confidence": 0.9824440854645269,
+   "passed": true
+  },
+  {
+   "entity_id": "uci-8aa3c962cd",
+   "field": "venue_name",
+   "quote": "Winifred Smith Hall",
+   "url": "https://www.arts.uci.edu/events/fall-jazz-concert-2026",
+   "check_confidence": 0.9697815512250176,
+   "passed": true
+  },
+  {
+   "entity_id": "uci-8aa3c962cd",
+   "field": "organisation_name",
+   "quote": "UCI Arts",
+   "url": "https://www.arts.uci.edu/events/fall-jazz-concert-2026",
+   "check_confidence": 0.8084338853820506,
+   "passed": true
+  }
+ ]
+}

@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students.  Draw exactly these 4 features, well spread across the picture with space between them, each clearly recognisable: (1) China Agricultural University Gymnasium, a stadium: Large indoor sports stadium with tiered seating for thousands of spectators.; (2) China Agricultural University Library, a library: Plain university library building with reading rooms and book stacks.; (3) East Library, a library: Plain university library building on the east campus.; (4) West Library, a library: Plain university library building on the west campus.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 15,
+ "tokens": 2050,
+ "at": "2026-11-22T00:15:13.785Z"
+}

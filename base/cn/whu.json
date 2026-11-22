@@ -1,0 +1,371 @@
+{
+ "school": "whu",
+ "name": "武汉大学",
+ "at": "2026-11-22T00:16:53.840Z",
+ "seconds": 39,
+ "tokens": 56495,
+ "entities": [
+  {
+   "id": "whu-1a210b872b",
+   "type": "Event",
+   "school": "whu",
+   "name": "Earth in motion: Improving understanding of geodynamic processes through crustal deformation studies in Iceland",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.whu.edu.cn/info/5231/277904.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-11T15:00",
+    "summary": "欧洲科学院院士Freysteinn Sigmundsson将主讲冰岛地壳形变与地球动力学过程。",
+    "event_kind": "lecture",
+    "venue_name": "武汉大学樱顶老图书馆",
+    "organisation_name": "武汉大学测绘学院 武汉大学卫星导航定位技术研究中心",
+    "speaker": "Freysteinn Sigmundsson 欧洲科学院院士",
+    "occurrences": [
+     {
+      "start": "2026-11-11T15:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "whu-5675ab4b72",
+   "type": "Event",
+   "school": "whu",
+   "name": "珞珈讲坛第551讲预告",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.whu.edu.cn/info/5231/277704.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-06T10:00",
+    "summary": "魏悦广院士将作关于膜/基失效与跨尺度力学表征及测量的学术报告。",
+    "event_kind": "lecture",
+    "venue_name": "武汉大学樱顶老图书馆",
+    "organisation_name": "土木建筑工程学院",
+    "speaker": "魏悦广 中国科学院院士",
+    "occurrences": [
+     {
+      "start": "2026-11-06T10:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "whu-93b00922f3",
+   "type": "Event",
+   "school": "whu",
+   "name": "面向航空航天需求的速度场测量技术及应用",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.whu.edu.cn/info/5231/276614.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-10-23T15:00",
+    "summary": "王晋军院士主讲面向航空航天需求的速度场测量技术及应用。",
+    "event_kind": "lecture",
+    "venue_name": "武汉大学樱顶老图书馆",
+    "organisation_name": "水利水电学院 水资源工程与调度全国重点实验室",
+    "speaker": "王晋军 中国科学院院士",
+    "occurrences": [
+     {
+      "start": "2026-10-23T15:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "whu-d8e5a488be",
+   "type": "Event",
+   "school": "whu",
+   "name": "珞珈讲坛第549讲预告",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.whu.edu.cn/info/5231/276744.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": null,
+    "summary": "武汉大学珞珈讲坛第549讲，冯达文主讲从认知发展史看先秦哲学思想的变迁。",
+    "event_kind": "lecture",
+    "venue_name": "武汉大学樱顶老图书馆",
+    "organisation_name": "武汉大学",
+    "speaker": "冯达文",
+    "occurrences": []
+   }
+  },
+  {
+   "id": "whu-e6af64336b",
+   "type": "Event",
+   "school": "whu",
+   "name": "珞珈讲坛第550讲预告",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.whu.edu.cn/info/5231/277484.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-03T16:00",
+    "summary": "欧洲科学院院士Maria J. Esteban主讲数学与人工智能相关主题。",
+    "event_kind": "lecture",
+    "venue_name": "武汉大学樱顶老图书馆",
+    "organisation_name": "武汉数学与智能研究院",
+    "speaker": "Maria J. Esteban 欧洲科学院院士",
+    "occurrences": [
+     {
+      "start": "2026-11-03T16:00",
+      "end": null
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "whu-1a210b872b",
+   "field": "title",
+   "quote": "Earth in motion: Improving understanding of geodynamic processes through crustal deformation studies in Iceland",
+   "url": "https://www.whu.edu.cn/info/5231/277904.htm",
+   "check_confidence": 0.9697576900407513,
+   "passed": true
+  },
+  {
+   "entity_id": "whu-1a210b872b",
+   "field": "date",
+   "quote": "2026年11月11日（周三）下午15:00",
+   "url": "https://www.whu.edu.cn/info/5231/277904.htm",
+   "check_confidence": 0.9719078830585849,
+   "passed": true
+  },
+  {
+   "entity_id": "whu-1a210b872b",
+   "field": "start_time",
+   "quote": "15:00",
+   "url": "https://www.whu.edu.cn/info/5231/277904.htm",
+   "check_confidence": 0.9609209681666108,
+   "passed": true
+  },
+  {
+   "entity_id": "whu-1a210b872b",
+   "field": "venue_name",
+   "quote": "武汉大学樱顶老图书馆",
+   "url": "https://www.whu.edu.cn/info/5231/277904.htm",
+   "check_confidence": 0.9617863703295272,
+   "passed": true
+  },
+  {
+   "entity_id": "whu-1a210b872b",
+   "field": "organisation_name",
+   "quote": "武汉大学测绘学院 武汉大学卫星导航定位技术研究中心",
+   "url": "https://www.whu.edu.cn/info/5231/277904.htm",
+   "check_confidence": 0.968553436572961,
+   "passed": true
+  },
+  {
+   "entity_id": "whu-1a210b872b",
+   "field": "speaker",
+   "quote": "Freysteinn Sigmundsson 欧洲科学院院士",
+   "url": "https://www.whu.edu.cn/info/5231/277904.htm",
+   "check_confidence": 0.9594079025375989,
+   "passed": true
+  },
+  {
+   "entity_id": "whu-5675ab4b72",
+   "field": "title",
+   "quote": "珞珈讲坛第551讲预告",
+   "url": "https://www.whu.edu.cn/info/5231/277704.htm",
+   "check_confidence": 0.9589722735578124,
+   "passed": true
+  },
+  {
+   "entity_id": "whu-5675ab4b72",
+   "field": "date",
+   "quote": "2026年11月6日（周五）上午10:00",
+   "url": "https://www.whu.edu.cn/info/5231/277704.htm",
+   "check_confidence": 0.960185192672307,
+   "passed": true
+  },
+  {
+   "entity_id": "whu-5675ab4b72",
+   "field": "start_time",
+   "quote": "10:00",
+   "url": "https://www.whu.edu.cn/info/5231/277704.htm",
+   "check_confidence": 0.9576041705774757,
+   "passed": true
+  },
+  {
+   "entity_id": "whu-5675ab4b72",
+   "field": "venue_name",
+   "quote": "武汉大学樱顶老图书馆",
+   "url": "https://www.whu.edu.cn/info/5231/277704.htm",
+   "check_confidence": 0.9517567601384186,
+   "passed": true
+  },
+  {
+   "entity_id": "whu-5675ab4b72",
+   "field": "organisation_name",
+   "quote": "土木建筑工程学院",
+   "url": "https://www.whu.edu.cn/info/5231/277704.htm",
+   "check_confidence": 0.9640461916485822,
+   "passed": true
+  },
+  {
+   "entity_id": "whu-5675ab4b72",
+   "field": "speaker",
+   "quote": "魏悦广 中国科学院院士",
+   "url": "https://www.whu.edu.cn/info/5231/277704.htm",
+   "check_confidence": 0.9435799540201215,
+   "passed": true
+  },
+  {
+   "entity_id": "whu-93b00922f3",
+   "field": "title",
+   "quote": "面向航空航天需求的速度场测量技术及应用",
+   "url": "https://www.whu.edu.cn/info/5231/276614.htm",
+   "check_confidence": 0.9780079417744773,
+   "passed": true
+  },
+  {
+   "entity_id": "whu-93b00922f3",
+   "field": "date",
+   "quote": "时间：2026年10月23日（周五）下午15:00",
+   "url": "https://www.whu.edu.cn/info/5231/276614.htm",
+   "check_confidence": 0.9763603966252087,
+   "passed": true
+  },
+  {
+   "entity_id": "whu-93b00922f3",
+   "field": "start_time",
+   "quote": "15:00",
+   "url": "https://www.whu.edu.cn/info/5231/276614.htm",
+   "check_confidence": 0.9649776371015502,
+   "passed": true
+  },
+  {
+   "entity_id": "whu-93b00922f3",
+   "field": "venue_name",
+   "quote": "地点：武汉大学樱顶老图书馆",
+   "url": "https://www.whu.edu.cn/info/5231/276614.htm",
+   "check_confidence": 0.9732647405363647,
+   "passed": true
+  },
+  {
+   "entity_id": "whu-93b00922f3",
+   "field": "organisation_name",
+   "quote": "水利水电学院 水资源工程与调度全国重点实验室",
+   "url": "https://www.whu.edu.cn/info/5231/276614.htm",
+   "check_confidence": 0.9731156992186415,
+   "passed": true
+  },
+  {
+   "entity_id": "whu-93b00922f3",
+   "field": "speaker",
+   "quote": "王晋军 中国科学院院士",
+   "url": "https://www.whu.edu.cn/info/5231/276614.htm",
+   "check_confidence": 0.9748911951092375,
+   "passed": true
+  },
+  {
+   "entity_id": "whu-d8e5a488be",
+   "field": "title",
+   "quote": "珞珈讲坛第549讲预告",
+   "url": "https://www.whu.edu.cn/info/5231/276744.htm",
+   "check_confidence": 0.9747687594226749,
+   "passed": true
+  },
+  {
+   "entity_id": "whu-d8e5a488be",
+   "field": "date",
+   "quote": "10月25日（周日）上午10:00-12:00",
+   "url": "https://www.whu.edu.cn/info/5231/276744.htm",
+   "check_confidence": 0.7627067117321887,
+   "passed": false
+  },
+  {
+   "entity_id": "whu-d8e5a488be",
+   "field": "start_time",
+   "quote": "10:00",
+   "url": "https://www.whu.edu.cn/info/5231/276744.htm",
+   "check_confidence": 0.9844491469842892,
+   "passed": true
+  },
+  {
+   "entity_id": "whu-d8e5a488be",
+   "field": "venue_name",
+   "quote": "武汉大学樱顶老图书馆",
+   "url": "https://www.whu.edu.cn/info/5231/276744.htm",
+   "check_confidence": 0.9623268012305916,
+   "passed": true
+  },
+  {
+   "entity_id": "whu-d8e5a488be",
+   "field": "organisation_name",
+   "quote": "武汉大学",
+   "url": "https://www.whu.edu.cn/info/5231/276744.htm",
+   "check_confidence": 0.970497879538992,
+   "passed": true
+  },
+  {
+   "entity_id": "whu-d8e5a488be",
+   "field": "speaker",
+   "quote": "冯达文",
+   "url": "https://www.whu.edu.cn/info/5231/276744.htm",
+   "check_confidence": 0.9787705872957984,
+   "passed": true
+  },
+  {
+   "entity_id": "whu-e6af64336b",
+   "field": "title",
+   "quote": "珞珈讲坛第550讲预告",
+   "url": "https://www.whu.edu.cn/info/5231/277484.htm",
+   "check_confidence": 0.9752461757191672,
+   "passed": true
+  },
+  {
+   "entity_id": "whu-e6af64336b",
+   "field": "date",
+   "quote": "2026年11月3日（周二）下午16:00",
+   "url": "https://www.whu.edu.cn/info/5231/277484.htm",
+   "check_confidence": 0.9730810893093743,
+   "passed": true
+  },
+  {
+   "entity_id": "whu-e6af64336b",
+   "field": "start_time",
+   "quote": "16:00",
+   "url": "https://www.whu.edu.cn/info/5231/277484.htm",
+   "check_confidence": 0.9620526456012674,
+   "passed": true
+  },
+  {
+   "entity_id": "whu-e6af64336b",
+   "field": "venue_name",
+   "quote": "武汉大学樱顶老图书馆",
+   "url": "https://www.whu.edu.cn/info/5231/277484.htm",
+   "check_confidence": 0.9629747020359367,
+   "passed": true
+  },
+  {
+   "entity_id": "whu-e6af64336b",
+   "field": "organisation_name",
+   "quote": "武汉数学与智能研究院",
+   "url": "https://www.whu.edu.cn/info/5231/277484.htm",
+   "check_confidence": 0.9695711964695181,
+   "passed": true
+  },
+  {
+   "entity_id": "whu-e6af64336b",
+   "field": "speaker",
+   "quote": "Maria J. Esteban 欧洲科学院院士",
+   "url": "https://www.whu.edu.cn/info/5231/277484.htm",
+   "check_confidence": 0.9713795451275854,
+   "passed": true
+  }
+ ]
+}

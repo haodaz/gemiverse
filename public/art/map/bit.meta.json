@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students.  Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Central Garden, a garden: A central campus garden featuring a replica of a large planetarium.; (2) Zhongguancun Campus Gymnasium, a stadium: An Olympic-grade indoor sports gymnasium.; (3) Central Teaching Building, a hall: A teaching building with the school motto hanging at its entrance.; (4) No. 4 Teaching Building, a hall: A plain academic teaching building.; (5) Library, a library: A plain university library building.; (6) Art Museum, a museum: A plain university art museum building.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 14,
+ "tokens": 1842,
+ "at": "2026-11-22T00:15:00.743Z"
+}

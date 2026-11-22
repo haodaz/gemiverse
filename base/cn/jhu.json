@@ -1,0 +1,767 @@
+{
+ "school": "jhu",
+ "name": "Johns Hopkins University",
+ "at": "2026-11-22T00:12:11.525Z",
+ "seconds": 15,
+ "tokens": 36989,
+ "entities": [
+  {
+   "id": "jhu-0afdea8300",
+   "type": "Event",
+   "school": "jhu",
+   "name": "An Enchanted Evergreen",
+   "tier": 1,
+   "fields": {
+    "url": "https://jhu.libcal.com/event/17522479",
+    "needs": [
+     "rest_and_recover",
+     "make_and_express"
+    ],
+    "start": "2026-12-05T11:00",
+    "summary": "An annual holiday program at Evergreen Museum Library featuring carolers, a scavenger hunt, crafts, and festive treats.",
+    "event_kind": "activity",
+    "venue_name": "Evergreen Museum Library",
+    "organisation_name": "Sheridan Libraries & University Museums",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-05T11:00",
+      "end": "2026-12-05T14:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "jhu-5a326a154b",
+   "type": "Event",
+   "school": "jhu",
+   "name": "The American Revolution and the Fate of the World",
+   "tier": 1,
+   "fields": {
+    "url": "https://jhu.libcal.com/event/16144733",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-12-10T18:00",
+    "summary": "Historian Richard Bell discusses his book on the American Revolution as a global war that transformed six continents.",
+    "event_kind": "lecture",
+    "venue_name": "Homewood Museum",
+    "organisation_name": "Sheridan Libraries & University Museums",
+    "speaker": "Richard Bell",
+    "occurrences": [
+     {
+      "start": "2026-12-10T18:00",
+      "end": "2026-12-10T19:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "jhu-bb192e913c",
+   "type": "Event",
+   "school": "jhu",
+   "name": "Lunch with the Libraries Museums—Halls of Wonder: The Earliest Illustrated Books of Libraries and Museums",
+   "tier": 1,
+   "fields": {
+    "url": "https://jhu.libcal.com/event/17442062",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-12-11T12:00",
+    "summary": "Experts from the Virginia Fox Stern Center discuss the earliest illustrated books about libraries and museums from the Renaissance to the Enlightenment.",
+    "event_kind": "lecture",
+    "venue_name": null,
+    "organisation_name": "Sheridan Libraries University Museums",
+    "speaker": "Dr. Earle Havens, Leib Celnik, Jullianne Mehra, Yuefeng Wu",
+    "occurrences": [
+     {
+      "start": "2026-12-11T12:00",
+      "end": "2026-12-11T13:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "jhu-f9eb21fd7c",
+   "type": "Event",
+   "school": "jhu",
+   "name": "Eisenhower Library Reopening Celebration",
+   "tier": 1,
+   "fields": {
+    "url": "https://jhu.libcal.com/event/17951966",
+    "needs": [
+     "find_my_people",
+     "rest_and_recover"
+    ],
+    "start": "2027-01-25T16:45",
+    "summary": "Celebrate the reopening of the newly renovated Milton S. Eisenhower Library with activities, exhibits, giveaways, and more for the Hopkins community.",
+    "event_kind": "activity",
+    "venue_name": "Milton S. Eisenhower Library",
+    "organisation_name": "Sheridan Libraries & University Museums",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2027-01-25T16:45",
+      "end": "2027-01-25T19:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "jhu-a52ae8a638",
+   "type": "Event",
+   "school": "jhu",
+   "name": "DH Speaker Series with Nan Da",
+   "tier": 1,
+   "fields": {
+    "url": "https://jhu.libcal.com/event/17217515",
+    "needs": [
+     "explore_a_field",
+     "find_my_people"
+    ],
+    "start": "2027-01-28T12:00",
+    "summary": "Nan Z. Da will discuss her work on the intersection of literature and data science in this Digital Humanities Speaker Series event.",
+    "event_kind": "lecture",
+    "venue_name": "Room 429, Mergenthaler Hall",
+    "organisation_name": "Sheridan Libraries Digital Scholarship group in partnership with the Center for Digital Humanities (CDH) and LifexCode",
+    "speaker": "Nan Z. Da",
+    "occurrences": [
+     {
+      "start": "2027-01-28T12:00",
+      "end": "2027-01-28T13:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "jhu-b80f786034",
+   "type": "Event",
+   "school": "jhu",
+   "name": "Music at Evergreen: Empire Wild",
+   "tier": 1,
+   "fields": {
+    "url": "https://jhu.libcal.com/event/17417112",
+    "needs": [
+     "rest_and_recover",
+     "find_my_people"
+    ],
+    "start": "2027-02-07T14:00",
+    "summary": "Empire Wild will perform a genre-defying chamber music concert at Bakst Theatre, followed by a meet-and-greet reception with the artists.",
+    "event_kind": "other",
+    "venue_name": "Bakst Theatre, Evergreen Museum Library",
+    "organisation_name": "Sheridan Libraries University Museums",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2027-02-07T14:00",
+      "end": "2027-02-07T16:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "jhu-8f89aa0b27",
+   "type": "Event",
+   "school": "jhu",
+   "name": "DH Speaker Series with Kim Brillante Knight",
+   "tier": 1,
+   "fields": {
+    "url": "https://jhu.libcal.com/event/17217435",
+    "needs": [
+     "explore_a_field",
+     "find_my_people"
+    ],
+    "start": "2027-02-11T12:00",
+    "summary": "Kim Brillante Knight will discuss her digital humanities research on power, identity, and marginalized groups in digital culture.",
+    "event_kind": "lecture",
+    "venue_name": null,
+    "organisation_name": "Sheridan Libraries Digital Scholarship group",
+    "speaker": "Kim Brillante Knight",
+    "occurrences": [
+     {
+      "start": "2027-02-11T12:00",
+      "end": "2027-02-11T13:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "jhu-f80e12d19c",
+   "type": "Event",
+   "school": "jhu",
+   "name": "Music at Evergreen: Claremont Trio",
+   "tier": 1,
+   "fields": {
+    "url": "https://jhu.libcal.com/event/17417515",
+    "needs": [
+     "rest_and_recover",
+     "make_and_express"
+    ],
+    "start": "2027-03-07T14:00",
+    "summary": "The Claremont Trio will perform a chamber music concert followed by a meet-and-greet reception at Bakst Theatre.",
+    "event_kind": "activity",
+    "venue_name": "Bakst Theatre, Evergreen Museum Library",
+    "organisation_name": "Sheridan Libraries University Museums",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2027-03-07T14:00",
+      "end": "2027-03-07T16:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "jhu-130b72990c",
+   "type": "Event",
+   "school": "jhu",
+   "name": "DH Speaker Series with Winnie Pérez Martínez",
+   "tier": 1,
+   "fields": {
+    "url": "https://jhu.libcal.com/event/17217093",
+    "needs": [
+     "explore_a_field",
+     "find_my_people"
+    ],
+    "start": "2027-03-11T12:00",
+    "summary": "Winnie Pérez Martínez will discuss their research on the material effects of technology infrastructures in the Caribbean.",
+    "event_kind": "lecture",
+    "venue_name": "Room 429, Mergenthaler Hall",
+    "organisation_name": "Sheridan Libraries Digital Scholarship group",
+    "speaker": "Winnie Pérez Martínez",
+    "occurrences": [
+     {
+      "start": "2027-03-11T12:00",
+      "end": "2027-03-11T13:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "jhu-ae045e5aaa",
+   "type": "Event",
+   "school": "jhu",
+   "name": "Before Spirited Away Happy Hour",
+   "tier": 1,
+   "fields": {
+    "url": "https://jhu.libcal.com/event/17751826",
+    "needs": [
+     "find_my_people",
+     "rest_and_recover"
+    ],
+    "start": "2027-03-18T18:00",
+    "summary": "Evergreen Museum Library hosts its annual Before Spirited Away Happy Hour, open to the public.",
+    "event_kind": "activity",
+    "venue_name": "North Wing, Evergreen Museum Library",
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2027-03-18T18:00",
+      "end": "2027-03-18T20:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "jhu-ec30d22820",
+   "type": "Event",
+   "school": "jhu",
+   "name": "DH Speaker Series with Elise Mitchell",
+   "tier": 1,
+   "fields": {
+    "url": "https://jhu.libcal.com/event/17214937",
+    "needs": [
+     "explore_a_field",
+     "find_my_people"
+    ],
+    "start": "2027-04-08T12:00",
+    "summary": "Dr. Elise A. Mitchell discusses social and political histories of embodiment, healing, disease, race, and gender in the early modern Atlantic World.",
+    "event_kind": "lecture",
+    "venue_name": "Room 429, Mergenthaler Hall",
+    "organisation_name": "Sheridan Libraries Digital Scholarship group",
+    "speaker": "Dr. Elise A. Mitchell",
+    "occurrences": [
+     {
+      "start": "2027-04-08T12:00",
+      "end": "2027-04-08T13:30"
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "jhu-0afdea8300",
+   "field": "title",
+   "quote": "An Enchanted Evergreen",
+   "url": "https://jhu.libcal.com/event/17522479",
+   "check_confidence": 0.9805815927035108,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-0afdea8300",
+   "field": "date",
+   "quote": "Saturday, December 5, 2026 11:00am - 2:00pm",
+   "url": "https://jhu.libcal.com/event/17522479",
+   "check_confidence": 0.9884232880428214,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-0afdea8300",
+   "field": "start_time",
+   "quote": "11:00",
+   "url": "https://jhu.libcal.com/event/17522479",
+   "check_confidence": 0.9793638835235241,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-0afdea8300",
+   "field": "venue_name",
+   "quote": "Evergreen Museum Library",
+   "url": "https://jhu.libcal.com/event/17522479",
+   "check_confidence": 0.9778531983464711,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-0afdea8300",
+   "field": "organisation_name",
+   "quote": "Sheridan Libraries & University Museums",
+   "url": "https://jhu.libcal.com/event/17522479",
+   "check_confidence": 0.9286916335945999,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-5a326a154b",
+   "field": "title",
+   "quote": "The American Revolution and the Fate of the World",
+   "url": "https://jhu.libcal.com/event/16144733",
+   "check_confidence": 0.9630783834240858,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-5a326a154b",
+   "field": "date",
+   "quote": "Thursday, December 10, 2026 6:00pm - 7:00pm",
+   "url": "https://jhu.libcal.com/event/16144733",
+   "check_confidence": 0.983604999999459,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-5a326a154b",
+   "field": "start_time",
+   "quote": "18:00",
+   "url": "https://jhu.libcal.com/event/16144733",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-5a326a154b",
+   "field": "venue_name",
+   "quote": "Homewood Museum",
+   "url": "https://jhu.libcal.com/event/16144733",
+   "check_confidence": 0.973283613630216,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-5a326a154b",
+   "field": "organisation_name",
+   "quote": "Sheridan Libraries & University Museums",
+   "url": "https://jhu.libcal.com/event/16144733",
+   "check_confidence": 0.9477173894482608,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-5a326a154b",
+   "field": "speaker",
+   "quote": "Richard Bell",
+   "url": "https://jhu.libcal.com/event/16144733",
+   "check_confidence": 0.9832148678917048,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-bb192e913c",
+   "field": "title",
+   "quote": "Lunch with the Libraries Museums—Halls of Wonder: The Earliest Illustrated Books of Libraries and Museums",
+   "url": "https://jhu.libcal.com/event/17442062",
+   "check_confidence": 0.9846583372235875,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-bb192e913c",
+   "field": "date",
+   "quote": "Friday, December 11, 2026 12:00pm - 1:00pm",
+   "url": "https://jhu.libcal.com/event/17442062",
+   "check_confidence": 0.9779455304223414,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-bb192e913c",
+   "field": "start_time",
+   "quote": "12:00",
+   "url": "https://jhu.libcal.com/event/17442062",
+   "check_confidence": 0.9825361368044109,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-bb192e913c",
+   "field": "organisation_name",
+   "quote": "Sheridan Libraries University Museums",
+   "url": "https://jhu.libcal.com/event/17442062",
+   "check_confidence": 0.9660427567509143,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-bb192e913c",
+   "field": "speaker",
+   "quote": "Dr. Earle Havens, Leib Celnik, Jullianne Mehra, Yuefeng Wu",
+   "url": "https://jhu.libcal.com/event/17442062",
+   "check_confidence": 0.9621072669117663,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-f9eb21fd7c",
+   "field": "title",
+   "quote": "Eisenhower Library Reopening Celebration",
+   "url": "https://jhu.libcal.com/event/17951966",
+   "check_confidence": 0.9765374637851102,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-f9eb21fd7c",
+   "field": "date",
+   "quote": "Monday, January 25, 2027 4:45pm - 7:00pm",
+   "url": "https://jhu.libcal.com/event/17951966",
+   "check_confidence": 0.9688002015729157,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-f9eb21fd7c",
+   "field": "start_time",
+   "quote": "16:45",
+   "url": "https://jhu.libcal.com/event/17951966",
+   "check_confidence": 0.9504229840214516,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-f9eb21fd7c",
+   "field": "venue_name",
+   "quote": "Milton S. Eisenhower Library",
+   "url": "https://jhu.libcal.com/event/17951966",
+   "check_confidence": 0.9748510743444021,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-f9eb21fd7c",
+   "field": "organisation_name",
+   "quote": "Sheridan Libraries & University Museums",
+   "url": "https://jhu.libcal.com/event/17951966",
+   "check_confidence": 0.9197826709735336,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-a52ae8a638",
+   "field": "title",
+   "quote": "DH Speaker Series with Nan Da",
+   "url": "https://jhu.libcal.com/event/17217515",
+   "check_confidence": 0.9715069117198102,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-a52ae8a638",
+   "field": "date",
+   "quote": "Thursday, January 28, 2027 12:00pm - 1:30pm",
+   "url": "https://jhu.libcal.com/event/17217515",
+   "check_confidence": 0.98276229038784,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-a52ae8a638",
+   "field": "start_time",
+   "quote": "12:00",
+   "url": "https://jhu.libcal.com/event/17217515",
+   "check_confidence": 0.9781313713702373,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-a52ae8a638",
+   "field": "venue_name",
+   "quote": "Room 429, Mergenthaler Hall",
+   "url": "https://jhu.libcal.com/event/17217515",
+   "check_confidence": 0.976200996312982,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-a52ae8a638",
+   "field": "organisation_name",
+   "quote": "Sheridan Libraries Digital Scholarship group in partnership with the Center for Digital Humanities (CDH) and LifexCode",
+   "url": "https://jhu.libcal.com/event/17217515",
+   "check_confidence": 0.9394214525809013,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-a52ae8a638",
+   "field": "speaker",
+   "quote": "Nan Z. Da",
+   "url": "https://jhu.libcal.com/event/17217515",
+   "check_confidence": 0.9367146577309959,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-b80f786034",
+   "field": "title",
+   "quote": "Music at Evergreen: Empire Wild",
+   "url": "https://jhu.libcal.com/event/17417112",
+   "check_confidence": 0.9828719210921275,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-b80f786034",
+   "field": "date",
+   "quote": "Sunday, February 7, 2027 2:00pm - 4:00pm",
+   "url": "https://jhu.libcal.com/event/17417112",
+   "check_confidence": 0.981538811108232,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-b80f786034",
+   "field": "start_time",
+   "quote": "14:00",
+   "url": "https://jhu.libcal.com/event/17417112",
+   "check_confidence": 0.9778845534180045,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-b80f786034",
+   "field": "venue_name",
+   "quote": "Bakst Theatre, Evergreen Museum Library",
+   "url": "https://jhu.libcal.com/event/17417112",
+   "check_confidence": 0.9814681549323929,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-b80f786034",
+   "field": "organisation_name",
+   "quote": "Sheridan Libraries University Museums",
+   "url": "https://jhu.libcal.com/event/17417112",
+   "check_confidence": 0.8592064030645045,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-8f89aa0b27",
+   "field": "title",
+   "quote": "DH Speaker Series with Kim Brillante Knight",
+   "url": "https://jhu.libcal.com/event/17217435",
+   "check_confidence": 0.983284293633489,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-8f89aa0b27",
+   "field": "date",
+   "quote": "Thursday, February 11, 2027 12:00pm - 1:30pm",
+   "url": "https://jhu.libcal.com/event/17217435",
+   "check_confidence": 0.9817050520486997,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-8f89aa0b27",
+   "field": "start_time",
+   "quote": "12:00",
+   "url": "https://jhu.libcal.com/event/17217435",
+   "check_confidence": 0.9693151843420024,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-8f89aa0b27",
+   "field": "organisation_name",
+   "quote": "Sheridan Libraries Digital Scholarship group",
+   "url": "https://jhu.libcal.com/event/17217435",
+   "check_confidence": 0.9710682618982676,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-8f89aa0b27",
+   "field": "speaker",
+   "quote": "Kim Brillante Knight",
+   "url": "https://jhu.libcal.com/event/17217435",
+   "check_confidence": 0.980639296525258,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-f80e12d19c",
+   "field": "title",
+   "quote": "Music at Evergreen: Claremont Trio",
+   "url": "https://jhu.libcal.com/event/17417515",
+   "check_confidence": 0.9841727196021822,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-f80e12d19c",
+   "field": "date",
+   "quote": "Sunday, March 7, 2027 2:00pm - 4:00pm",
+   "url": "https://jhu.libcal.com/event/17417515",
+   "check_confidence": 0.9853230204524094,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-f80e12d19c",
+   "field": "start_time",
+   "quote": "14:00",
+   "url": "https://jhu.libcal.com/event/17417515",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-f80e12d19c",
+   "field": "venue_name",
+   "quote": "Bakst Theatre, Evergreen Museum Library",
+   "url": "https://jhu.libcal.com/event/17417515",
+   "check_confidence": 0.9867064014744095,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-f80e12d19c",
+   "field": "organisation_name",
+   "quote": "Sheridan Libraries University Museums",
+   "url": "https://jhu.libcal.com/event/17417515",
+   "check_confidence": 0.8426632525019596,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-f80e12d19c",
+   "field": "speaker",
+   "quote": "Claremont Trio",
+   "url": "https://jhu.libcal.com/event/17417515",
+   "check_confidence": 0.3125874279124083,
+   "passed": false
+  },
+  {
+   "entity_id": "jhu-130b72990c",
+   "field": "title",
+   "quote": "DH Speaker Series with Winnie Pérez Martínez",
+   "url": "https://jhu.libcal.com/event/17217093",
+   "check_confidence": 0.9759811667625983,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-130b72990c",
+   "field": "date",
+   "quote": "Thursday, March 11, 2027 12:00pm - 1:30pm",
+   "url": "https://jhu.libcal.com/event/17217093",
+   "check_confidence": 0.9615590608859784,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-130b72990c",
+   "field": "start_time",
+   "quote": "12:00",
+   "url": "https://jhu.libcal.com/event/17217093",
+   "check_confidence": 0.971318185872137,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-130b72990c",
+   "field": "venue_name",
+   "quote": "Room 429, Mergenthaler Hall",
+   "url": "https://jhu.libcal.com/event/17217093",
+   "check_confidence": 0.9738309425414479,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-130b72990c",
+   "field": "organisation_name",
+   "quote": "Sheridan Libraries Digital Scholarship group",
+   "url": "https://jhu.libcal.com/event/17217093",
+   "check_confidence": 0.9393138125728707,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-130b72990c",
+   "field": "speaker",
+   "quote": "Winnie Pérez Martínez",
+   "url": "https://jhu.libcal.com/event/17217093",
+   "check_confidence": 0.9572121132513803,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-ae045e5aaa",
+   "field": "title",
+   "quote": "Before Spirited Away Happy Hour",
+   "url": "https://jhu.libcal.com/event/17751826",
+   "check_confidence": 0.9837715930800294,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-ae045e5aaa",
+   "field": "date",
+   "quote": "Thursday, March 18, 2027 6:00pm - 8:30pm",
+   "url": "https://jhu.libcal.com/event/17751826",
+   "check_confidence": 0.9735312606241989,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-ae045e5aaa",
+   "field": "start_time",
+   "quote": "18:00",
+   "url": "https://jhu.libcal.com/event/17751826",
+   "check_confidence": 0.9647912537620748,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-ae045e5aaa",
+   "field": "venue_name",
+   "quote": "North Wing, Evergreen Museum Library",
+   "url": "https://jhu.libcal.com/event/17751826",
+   "check_confidence": 0.9666373477831945,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-ec30d22820",
+   "field": "title",
+   "quote": "DH Speaker Series with Elise Mitchell",
+   "url": "https://jhu.libcal.com/event/17214937",
+   "check_confidence": 0.9841702507153517,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-ec30d22820",
+   "field": "date",
+   "quote": "Thursday, April 8, 2027 12:00pm - 1:30pm",
+   "url": "https://jhu.libcal.com/event/17214937",
+   "check_confidence": 0.9778290806716795,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-ec30d22820",
+   "field": "start_time",
+   "quote": "12:00",
+   "url": "https://jhu.libcal.com/event/17214937",
+   "check_confidence": 0.979373078031635,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-ec30d22820",
+   "field": "venue_name",
+   "quote": "Room 429, Mergenthaler Hall",
+   "url": "https://jhu.libcal.com/event/17214937",
+   "check_confidence": 0.9707782308473594,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-ec30d22820",
+   "field": "organisation_name",
+   "quote": "Sheridan Libraries Digital Scholarship group",
+   "url": "https://jhu.libcal.com/event/17214937",
+   "check_confidence": 0.965951281077921,
+   "passed": true
+  },
+  {
+   "entity_id": "jhu-ec30d22820",
+   "field": "speaker",
+   "quote": "Dr. Elise A. Mitchell",
+   "url": "https://jhu.libcal.com/event/17214937",
+   "check_confidence": 0.9675889976140851,
+   "passed": true
+  }
+ ]
+}

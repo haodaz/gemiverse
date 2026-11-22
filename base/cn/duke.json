@@ -1,0 +1,735 @@
+{
+ "school": "duke",
+ "name": "Duke University",
+ "at": "2026-11-22T00:11:59.901Z",
+ "seconds": 14,
+ "tokens": 45444,
+ "entities": [
+  {
+   "id": "duke-5668933406",
+   "type": "Event",
+   "school": "duke",
+   "name": "Gallery Talk: China's Modernization in Everyday Print",
+   "tier": 1,
+   "fields": {
+    "url": "https://duke.libcal.com/event/17743566",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-12-02T15:00",
+    "summary": "A gallery talk exploring how everyday printed materials documented and shaped social change in modern China.",
+    "event_kind": "lecture",
+    "venue_name": "Gillespie East Asia Reading Room, Bostock Library",
+    "organisation_name": "Luo Zhou",
+    "speaker": "Carlos Rojas, Luo Zhou",
+    "occurrences": [
+     {
+      "start": "2026-12-02T15:00",
+      "end": "2026-12-02T16:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "duke-217e41cd27",
+   "type": "Event",
+   "school": "duke",
+   "name": "Graduate Writing Lab (GWL)",
+   "tier": 1,
+   "fields": {
+    "url": "https://duke.libcal.com/event/17407923",
+    "needs": [
+     "get_mentorship_and_feedback",
+     "build_a_skill"
+    ],
+    "start": "2026-11-24T14:00",
+    "summary": "Drop-in writing group offering accountability and feedback from graduate writing consultants for graduate students working on theses, dissertations, presentations, or papers.",
+    "event_kind": "workshop",
+    "venue_name": "Bostock 121 (Murthy Digital Studio)",
+    "organisation_name": "Duke University Libraries",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-24T14:00",
+      "end": "2026-11-24T17:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "duke-b050b8600e",
+   "type": "Event",
+   "school": "duke",
+   "name": "Productive Procrastination: Planning, Pastries Paper Crafts",
+   "tier": 1,
+   "fields": {
+    "url": "https://duke.libcal.com/event/18044127",
+    "needs": [
+     "rest_and_recover",
+     "build_a_skill"
+    ],
+    "start": "2026-12-01T14:00",
+    "summary": "Students can drop by Bostock Library's Edge Lounge to relax, eat donuts, do paper crafts, and get finals study tips from ARC staff.",
+    "event_kind": "activity",
+    "venue_name": "Bostock Library - The Edge Lounge",
+    "organisation_name": "Jenna Strawbridge",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-01T14:00",
+      "end": "2026-12-01T16:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "duke-5a6543bd84",
+   "type": "Event",
+   "school": "duke",
+   "name": "Undergraduate Writing Accountability Group (UWAG)",
+   "tier": 1,
+   "fields": {
+    "url": "https://duke.libcal.com/event/17400868",
+    "needs": [
+     "build_a_skill",
+     "find_my_people"
+    ],
+    "start": "2026-12-04T14:30",
+    "summary": "A weekly writing accountability workshop for undergraduate students working on honors theses or other writing projects.",
+    "event_kind": "workshop",
+    "venue_name": "Bostock 121 (Murthy Digital Studio)",
+    "organisation_name": "Duke University Libraries",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-04T14:30",
+      "end": "2026-12-04T17:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "duke-6c4ea0ff6b",
+   "type": "Event",
+   "school": "duke",
+   "name": "Flipping the Bird Friday",
+   "tier": 1,
+   "fields": {
+    "url": "https://duke.libcal.com/event/17507373",
+    "needs": [
+     "explore_a_field",
+     "rest_and_recover"
+    ],
+    "start": "2026-12-04T12:15",
+    "summary": "Duke University Libraries will turn pages of the Birds of America edition for visitors to watch on December 4, 2026.",
+    "event_kind": "exhibition",
+    "venue_name": "Mary Duke Biddle Room (Rubenstein Library)",
+    "organisation_name": "Meg Brown",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-04T12:15",
+      "end": "2026-12-04T12:45"
+     }
+    ]
+   }
+  },
+  {
+   "id": "duke-016775d101",
+   "type": "Event",
+   "school": "duke",
+   "name": "Art and Science of Teaching: The Teaching Table",
+   "tier": 1,
+   "fields": {
+    "url": "https://duke.libcal.com/event/17677226",
+    "needs": [
+     "find_my_people",
+     "rest_and_recover"
+    ],
+    "start": "2026-12-08T12:00",
+    "summary": "An informal end-of-term gathering for faculty to share a meal and reflect on teaching through small-group conversations.",
+    "event_kind": "activity",
+    "venue_name": "Alumni Memorial Conference Room, Langford 152 (Duke Divinity School)",
+    "organisation_name": "Duke Center for Teaching and Learning",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-08T12:00",
+      "end": "2026-12-08T13:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "duke-b831ad9ccf",
+   "type": "Event",
+   "school": "duke",
+   "name": "Coursera Call for Proposals Office Hours",
+   "tier": 1,
+   "fields": {
+    "url": "https://duke.libcal.com/event/18033523",
+    "needs": [
+     "get_mentorship_and_feedback",
+     "navigate_systems"
+    ],
+    "start": "2026-12-15T10:00",
+    "summary": "Duke's Learning Experience Design Team hosts Zoom office hours for faculty to ask questions about the Coursera Call for Proposals.",
+    "event_kind": "other",
+    "venue_name": "Zoom",
+    "organisation_name": "Duke Center for Teaching and Learning",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-15T10:00",
+      "end": "2026-12-15T12:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "duke-95936e16ff",
+   "type": "Event",
+   "school": "duke",
+   "name": "Pressing Prompts Community Conversation (Online)",
+   "tier": 1,
+   "fields": {
+    "url": "https://duke.libcal.com/event/17364595",
+    "needs": [
+     "find_my_people",
+     "build_a_skill"
+    ],
+    "start": "2026-12-11T12:00",
+    "summary": "An online community conversation hosted by Duke Center for Teaching and Learning about integrating AI ethics into classrooms using Pressing Prompts.",
+    "event_kind": "activity",
+    "venue_name": null,
+    "organisation_name": "Duke Center for Teaching and Learning",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-11T12:00",
+      "end": "2026-12-11T13:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "duke-e987038d40",
+   "type": "Event",
+   "school": "duke",
+   "name": "Munch Mull: Book Chapter Potluck",
+   "tier": 1,
+   "fields": {
+    "url": "https://duke.libcal.com/event/17413576",
+    "needs": [
+     "explore_a_field",
+     "find_my_people"
+    ],
+    "start": "2026-12-16T12:00",
+    "summary": "An informal hybrid seminar discussing chapters from The Routledge Companion to Libraries, Archives, and the Digital Humanities.",
+    "event_kind": "activity",
+    "venue_name": "Hybrid: Music Library Seminar Rom (East Campus) and Zoom",
+    "organisation_name": "Arianne Hartsell-Gundy",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-16T12:00",
+      "end": "2026-12-16T13:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "duke-ee99c5a2ce",
+   "type": "Event",
+   "school": "duke",
+   "name": "Perkins Bostock Libraries Tour",
+   "tier": 1,
+   "fields": {
+    "url": "https://duke.libcal.com/event/18035777",
+    "needs": [
+     "navigate_systems"
+    ],
+    "start": "2027-01-08T11:00",
+    "summary": "A 1-hour walking tour of Perkins Bostock Libraries introducing collections, services, and spaces for students, staff, and faculty.",
+    "event_kind": "activity",
+    "venue_name": "Meet at the Service Desk, 1st Floor Perkins Library",
+    "organisation_name": "Ryan Denniston",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2027-01-08T11:00",
+      "end": "2027-01-08T12:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "duke-48477855ba",
+   "type": "Event",
+   "school": "duke",
+   "name": "You're Invited! Lilly Library Community Open House",
+   "tier": 1,
+   "fields": {
+    "url": "https://duke.libcal.com/event/18058792",
+    "needs": [
+     "find_my_people",
+     "navigate_systems"
+    ],
+    "start": "2027-01-12T17:00",
+    "summary": "Duke University Libraries is hosting a community open house to celebrate the reopening of the newly renovated and expanded Lilly Library.",
+    "event_kind": "activity",
+    "venue_name": "Lilly Library",
+    "organisation_name": "Duke University Libraries",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2027-01-12T17:00",
+      "end": "2027-01-12T19:00"
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "duke-5668933406",
+   "field": "title",
+   "quote": "Gallery Talk: China's Modernization in Everyday Print",
+   "url": "https://duke.libcal.com/event/17743566",
+   "check_confidence": 0.9708329112429891,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-5668933406",
+   "field": "date",
+   "quote": "Wednesday, December 2, 2026\n Time:\n 3:00pm - 4:30pm",
+   "url": "https://duke.libcal.com/event/17743566",
+   "check_confidence": 0.9719922987779632,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-5668933406",
+   "field": "start_time",
+   "quote": "15:00",
+   "url": "https://duke.libcal.com/event/17743566",
+   "check_confidence": 0.9623898337734523,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-5668933406",
+   "field": "venue_name",
+   "quote": "Gillespie East Asia Reading Room, Bostock Library",
+   "url": "https://duke.libcal.com/event/17743566",
+   "check_confidence": 0.9583318079193341,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-5668933406",
+   "field": "organisation_name",
+   "quote": "Luo Zhou",
+   "url": "https://duke.libcal.com/event/17743566",
+   "check_confidence": 0.9639320364694861,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-5668933406",
+   "field": "speaker",
+   "quote": "Carlos Rojas, Luo Zhou",
+   "url": "https://duke.libcal.com/event/17743566",
+   "check_confidence": 0.9484629867950136,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-217e41cd27",
+   "field": "title",
+   "quote": "Graduate Writing Lab (GWL)",
+   "url": "https://duke.libcal.com/event/17407923",
+   "check_confidence": 0.9672789684710784,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-217e41cd27",
+   "field": "date",
+   "quote": "Tuesday, November 24, 2026, 2:00pm - 5:00pm",
+   "url": "https://duke.libcal.com/event/17407923",
+   "check_confidence": 0.9765793474534263,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-217e41cd27",
+   "field": "start_time",
+   "quote": "14:00",
+   "url": "https://duke.libcal.com/event/17407923",
+   "check_confidence": 0.9660027786827797,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-217e41cd27",
+   "field": "venue_name",
+   "quote": "Bostock 121 (Murthy Digital Studio)",
+   "url": "https://duke.libcal.com/event/17407923",
+   "check_confidence": 0.9695234679005137,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-217e41cd27",
+   "field": "organisation_name",
+   "quote": "Duke University Libraries",
+   "url": "https://duke.libcal.com/event/17407923",
+   "check_confidence": 0.9758300034038992,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-b050b8600e",
+   "field": "title",
+   "quote": "Productive Procrastination: Planning, Pastries Paper Crafts",
+   "url": "https://duke.libcal.com/event/18044127",
+   "check_confidence": 0.9890659869485608,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-b050b8600e",
+   "field": "date",
+   "quote": "Tuesday, December 1, 2026 2:00pm - 4:00pm",
+   "url": "https://duke.libcal.com/event/18044127",
+   "check_confidence": 0.9795892807175683,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-b050b8600e",
+   "field": "start_time",
+   "quote": "14:00",
+   "url": "https://duke.libcal.com/event/18044127",
+   "check_confidence": 0.9882931384402489,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-b050b8600e",
+   "field": "venue_name",
+   "quote": "Bostock Library - The Edge Lounge",
+   "url": "https://duke.libcal.com/event/18044127",
+   "check_confidence": 0.9799871303970564,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-b050b8600e",
+   "field": "organisation_name",
+   "quote": "Jenna Strawbridge",
+   "url": "https://duke.libcal.com/event/18044127",
+   "check_confidence": 0.9867202392772659,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-5a6543bd84",
+   "field": "title",
+   "quote": "Undergraduate Writing Accountability Group (UWAG)",
+   "url": "https://duke.libcal.com/event/17400868",
+   "check_confidence": 0.9804182286704067,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-5a6543bd84",
+   "field": "date",
+   "quote": "Friday, December 4, 2026 2:30pm - 5:30pm",
+   "url": "https://duke.libcal.com/event/17400868",
+   "check_confidence": 0.9714411240881294,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-5a6543bd84",
+   "field": "start_time",
+   "quote": "14:30",
+   "url": "https://duke.libcal.com/event/17400868",
+   "check_confidence": 0.9795145994919651,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-5a6543bd84",
+   "field": "venue_name",
+   "quote": "Bostock 121 (Murthy Digital Studio)",
+   "url": "https://duke.libcal.com/event/17400868",
+   "check_confidence": 0.9817563194393025,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-5a6543bd84",
+   "field": "organisation_name",
+   "quote": "Duke University Libraries",
+   "url": "https://duke.libcal.com/event/17400868",
+   "check_confidence": 0.9782408477543357,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-6c4ea0ff6b",
+   "field": "title",
+   "quote": "Flipping the Bird Friday",
+   "url": "https://duke.libcal.com/event/17507373",
+   "check_confidence": 0.9773443249951701,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-6c4ea0ff6b",
+   "field": "date",
+   "quote": "Friday, December 4, 2026 12:15pm - 12:45pm",
+   "url": "https://duke.libcal.com/event/17507373",
+   "check_confidence": 0.9758231729002336,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-6c4ea0ff6b",
+   "field": "start_time",
+   "quote": "12:15",
+   "url": "https://duke.libcal.com/event/17507373",
+   "check_confidence": 0.9630612298111257,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-6c4ea0ff6b",
+   "field": "venue_name",
+   "quote": "Mary Duke Biddle Room (Rubenstein Library)",
+   "url": "https://duke.libcal.com/event/17507373",
+   "check_confidence": 0.9583680040955891,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-6c4ea0ff6b",
+   "field": "organisation_name",
+   "quote": "Meg Brown",
+   "url": "https://duke.libcal.com/event/17507373",
+   "check_confidence": 0.9574854285196455,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-016775d101",
+   "field": "title",
+   "quote": "Art and Science of Teaching: The Teaching Table",
+   "url": "https://duke.libcal.com/event/17677226",
+   "check_confidence": 0.9756430502444287,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-016775d101",
+   "field": "date",
+   "quote": "Tuesday, December 8, 2026, 12:00pm - 1:30pm",
+   "url": "https://duke.libcal.com/event/17677226",
+   "check_confidence": 0.9689762066945059,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-016775d101",
+   "field": "start_time",
+   "quote": "12:00",
+   "url": "https://duke.libcal.com/event/17677226",
+   "check_confidence": 0.960718993328739,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-016775d101",
+   "field": "venue_name",
+   "quote": "Alumni Memorial Conference Room, Langford 152 (Duke Divinity School)",
+   "url": "https://duke.libcal.com/event/17677226",
+   "check_confidence": 0.9753500596604544,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-016775d101",
+   "field": "organisation_name",
+   "quote": "Duke Center for Teaching and Learning",
+   "url": "https://duke.libcal.com/event/17677226",
+   "check_confidence": 0.9619438757404086,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-b831ad9ccf",
+   "field": "title",
+   "quote": "Coursera Call for Proposals Office Hours",
+   "url": "https://duke.libcal.com/event/18033523",
+   "check_confidence": 0.9887044257020092,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-b831ad9ccf",
+   "field": "date",
+   "quote": "Tuesday, December 15, 2026 Time: 10:00am - 12:00pm",
+   "url": "https://duke.libcal.com/event/18033523",
+   "check_confidence": 0.9591509092103901,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-b831ad9ccf",
+   "field": "start_time",
+   "quote": "10:00",
+   "url": "https://duke.libcal.com/event/18033523",
+   "check_confidence": 0.9626619038983761,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-b831ad9ccf",
+   "field": "venue_name",
+   "quote": "Join us on Zoom",
+   "url": "https://duke.libcal.com/event/18033523",
+   "check_confidence": 0.916034646177238,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-b831ad9ccf",
+   "field": "organisation_name",
+   "quote": "Duke Center for Teaching and Learning",
+   "url": "https://duke.libcal.com/event/18033523",
+   "check_confidence": 0.9709601232860272,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-95936e16ff",
+   "field": "title",
+   "quote": "Pressing Prompts Community Conversation (Online)",
+   "url": "https://duke.libcal.com/event/17364595",
+   "check_confidence": 0.9802712871912969,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-95936e16ff",
+   "field": "date",
+   "quote": "Friday, December 11, 2026 12:00pm - 1:00pm",
+   "url": "https://duke.libcal.com/event/17364595",
+   "check_confidence": 0.9721961484723859,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-95936e16ff",
+   "field": "start_time",
+   "quote": "12:00",
+   "url": "https://duke.libcal.com/event/17364595",
+   "check_confidence": 0.9586066114596227,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-95936e16ff",
+   "field": "organisation_name",
+   "quote": "Duke Center for Teaching and Learning",
+   "url": "https://duke.libcal.com/event/17364595",
+   "check_confidence": 0.9796362821882324,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-e987038d40",
+   "field": "title",
+   "quote": "Munch Mull: Book Chapter Potluck",
+   "url": "https://duke.libcal.com/event/17413576",
+   "check_confidence": 0.9865254197409381,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-e987038d40",
+   "field": "date",
+   "quote": "Wednesday, December 16, 2026 Time: 12:00pm - 1:00pm",
+   "url": "https://duke.libcal.com/event/17413576",
+   "check_confidence": 0.9636178280943295,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-e987038d40",
+   "field": "start_time",
+   "quote": "12:00",
+   "url": "https://duke.libcal.com/event/17413576",
+   "check_confidence": 0.9862277010499436,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-e987038d40",
+   "field": "venue_name",
+   "quote": "Hybrid In person (register below) - Music Library Seminar Rom (East Campus) Virtual (register here ) - Zoom",
+   "url": "https://duke.libcal.com/event/17413576",
+   "check_confidence": 0.9547890157735587,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-e987038d40",
+   "field": "organisation_name",
+   "quote": "Arianne Hartsell-Gundy",
+   "url": "https://duke.libcal.com/event/17413576",
+   "check_confidence": 0.9801041412515338,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-ee99c5a2ce",
+   "field": "title",
+   "quote": "Perkins Bostock Libraries Tour",
+   "url": "https://duke.libcal.com/event/18035777",
+   "check_confidence": 0.9641182720900864,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-ee99c5a2ce",
+   "field": "date",
+   "quote": "Friday, January 8, 2027 Time: 11:00am - 12:00pm",
+   "url": "https://duke.libcal.com/event/18035777",
+   "check_confidence": 0.968212705416967,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-ee99c5a2ce",
+   "field": "start_time",
+   "quote": "11:00",
+   "url": "https://duke.libcal.com/event/18035777",
+   "check_confidence": 0.9680622597820444,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-ee99c5a2ce",
+   "field": "venue_name",
+   "quote": "Meet at the Service Desk, 1st Floor Perkins Library",
+   "url": "https://duke.libcal.com/event/18035777",
+   "check_confidence": 0.94347275083815,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-ee99c5a2ce",
+   "field": "organisation_name",
+   "quote": "Ryan Denniston",
+   "url": "https://duke.libcal.com/event/18035777",
+   "check_confidence": 0.9689464828195685,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-48477855ba",
+   "field": "title",
+   "quote": "You're Invited! Lilly Library Community Open House",
+   "url": "https://duke.libcal.com/event/18058792",
+   "check_confidence": 0.9732506102355168,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-48477855ba",
+   "field": "date",
+   "quote": "Tuesday, January 12, 2027\n Time:\n 5:00pm - 7:00pm",
+   "url": "https://duke.libcal.com/event/18058792",
+   "check_confidence": 0.9684694039913452,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-48477855ba",
+   "field": "start_time",
+   "quote": "17:00",
+   "url": "https://duke.libcal.com/event/18058792",
+   "check_confidence": 0.9773559443169605,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-48477855ba",
+   "field": "venue_name",
+   "quote": "Lilly Library",
+   "url": "https://duke.libcal.com/event/18058792",
+   "check_confidence": 0.9666963633350286,
+   "passed": true
+  },
+  {
+   "entity_id": "duke-48477855ba",
+   "field": "organisation_name",
+   "quote": "Duke University Libraries",
+   "url": "https://duke.libcal.com/event/18058792",
+   "check_confidence": 0.982354520785463,
+   "passed": true
+  }
+ ]
+}

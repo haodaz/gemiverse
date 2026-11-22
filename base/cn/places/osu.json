@@ -1,0 +1,104 @@
+{
+ "school": "osu",
+ "name": "Ohio State University",
+ "at": "2026-11-22T00:20:08.313Z",
+ "source": "https://en.wikipedia.org/wiki/Ohio%20State%20University",
+ "character": "The campus features a formal landscape with green quads, a lake, and mostly reddish-brown brick buildings.",
+ "map": "/art/map/osu.jpg",
+ "landmarks": [
+  {
+   "name": "the Oval",
+   "name_en": "the Oval",
+   "kind": "quad",
+   "quote": "The historical center of campus is the Oval, a quad of about 11 acres (4.5 ha).",
+   "look": "Large open green quad forming the central axis of campus.",
+   "check": 0.9834128723647118,
+   "confidence": 0.9834128723647118,
+   "passed": true,
+   "x": 0.57,
+   "y": 0.52
+  },
+  {
+   "name": "Ohio Stadium",
+   "name_en": "Ohio Stadium",
+   "kind": "stadium",
+   "quote": "at the corner of West Woodruff Avenue and Tuttle Park Place, next to Ohio Stadium.",
+   "look": "Large sports stadium, plain.",
+   "check": 0.9665265871117813,
+   "confidence": 0.9665265871117813,
+   "passed": true,
+   "x": 0.21,
+   "y": 0.19
+  },
+  {
+   "name": "Mirror Lake",
+   "name_en": "Mirror Lake",
+   "kind": "lake",
+   "quote": "To the west are Hale Hall, the Kuhn Honors House, Browning Amphitheatre (a traditional stone Greek theatre) and Mirror Lake.",
+   "look": "Small campus lake.",
+   "check": 0.9729022962470645,
+   "confidence": 0.9729022962470645,
+   "passed": true,
+   "x": 0.35,
+   "y": 0.8
+  },
+  {
+   "name": "University Hall",
+   "name_en": "University Hall",
+   "kind": "hall",
+   "quote": "The original campus was laid out in the English country style with University Hall overlooking what would become the Oval.",
+   "look": "Campus hall overlooking the Oval, plain.",
+   "check": 0.9608159772308424,
+   "confidence": 0.9608159772308424,
+   "passed": true,
+   "x": 0.45,
+   "y": 0.26
+  },
+  {
+   "name": "Knowlton Hall",
+   "name_en": "Knowlton Hall",
+   "kind": "hall",
+   "quote": "Knowlton Hall stands out from the general reddish-brown brick of Ohio State's campus with distinctive white marble tiles",
+   "look": "Building clad in white marble tiles with five white marble columns.",
+   "check": 0.985904520533862,
+   "confidence": 0.985904520533862,
+   "passed": true,
+   "x": 0.9,
+   "y": 0.49
+  },
+  {
+   "name": "South Oval",
+   "name_en": "South Oval",
+   "kind": "quad",
+   "quote": "another, somewhat smaller expanse of green space commonly referred to as the South Oval.",
+   "look": "Smaller expanse of green space south of the Oval.",
+   "check": 0.9733814037677708,
+   "confidence": 0.9733814037677708,
+   "passed": true,
+   "x": 0.71,
+   "y": 0.77
+  },
+  {
+   "name": "Ohio State Cartoon Library & Museum",
+   "name_en": "Ohio State Cartoon Library & Museum",
+   "kind": "museum",
+   "quote": "the Ohio State Cartoon Library & Museum, the world's largest repository of original cartoons;",
+   "look": "Campus library and museum building, plain.",
+   "check": 0.9630609136512688,
+   "confidence": 0.9630609136512688,
+   "passed": true
+  },
+  {
+   "name": "Hale Hall",
+   "name_en": "Hale Hall",
+   "kind": "hall",
+   "quote": "To the west are Hale Hall, the Kuhn Honors House, Browning Amphitheatre (a traditional stone Greek theatre) and Mirror Lake.",
+   "look": "Campus hall, plain.",
+   "check": 0.9786270867609004,
+   "confidence": 0.9786270867609004,
+   "passed": true
+  }
+ ],
+ "tokens": 10071,
+ "seconds": 25
+}

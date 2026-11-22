@@ -1,0 +1,104 @@
+{
+ "school": "hnu",
+ "name": "湖南大学",
+ "at": "2026-11-22T00:16:48.003Z",
+ "source": "https://zh.wikipedia.org/wiki/%E6%B9%96%E5%8D%97%E5%A4%A7%E5%AD%A6",
+ "character": "Built against Yuelu Mountain and stretching east to the Xiang River, the campus blends black-and-white Ming-Qing academy courtyards, red-walled green-tiled Republican buildings, and modern halls.",
+ "map": "/art/map/hnu.jpg",
+ "landmarks": [
+  {
+   "name": "岳麓书院",
+   "name_en": "Yuelu Academy",
+   "kind": "other",
+   "quote": "岳麓书院的建筑大部分为明清遗构，以黑白色调为主，为中国现存规模最大的书院建筑群。",
+   "look": "Black-and-white Ming-Qing courtyard complex arranged along a central axis.",
+   "check": 0.9667565191645741,
+   "confidence": 0.9667565191645741,
+   "passed": true,
+   "x": 0.22,
+   "y": 0.62
+  },
+  {
+   "name": "岳麓山",
+   "name_en": "Yuelu Mountain",
+   "kind": "hill",
+   "quote": "主校区东濒湘江，西偎岳麓山",
+   "look": "Mountain rising immediately to the west of the campus.",
+   "check": 0.8894338406622767,
+   "confidence": 0.8894338406622767,
+   "passed": true,
+   "x": 0.14,
+   "y": 0.23
+  },
+  {
+   "name": "大礼堂",
+   "name_en": "Grand Auditorium",
+   "kind": "hall",
+   "quote": "代表作品有一院，二院，大礼堂，老图书馆，科技馆等。",
+   "look": "Republican-era auditorium with red walls and green tiles.",
+   "check": 0.965520232768762,
+   "confidence": 0.965520232768762,
+   "passed": true,
+   "x": 0.57,
+   "y": 0.24
+  },
+  {
+   "name": "老图书馆",
+   "name_en": "Old Library",
+   "kind": "library",
+   "quote": "代表作品有一院，二院，大礼堂，老图书馆，科技馆等。",
+   "look": "Republican-era library building with red walls and green tiles.",
+   "check": 0.9706091396789175,
+   "confidence": 0.9706091396789175,
+   "passed": true,
+   "x": 0.57,
+   "y": 0.53
+  },
+  {
+   "name": "科学馆",
+   "name_en": "Science Hall",
+   "kind": "hall",
+   "quote": "包括老图书馆、科学馆、大礼堂、工程馆、二院（现物理实验楼）",
+   "look": "Republican-era science building with red walls and green tiles.",
+   "check": 0.9720385142645475,
+   "confidence": 0.9720385142645475,
+   "passed": true,
+   "x": 0.79,
+   "y": 0.3
+  },
+  {
+   "name": "工程馆",
+   "name_en": "Engineering Hall",
+   "kind": "hall",
+   "quote": "包括老图书馆、科学馆、大礼堂、工程馆、二院（现物理实验楼）",
+   "look": "Republican-era engineering hall with red walls and green tiles.",
+   "check": 0.9723502144811994,
+   "confidence": 0.9723502144811994,
+   "passed": true,
+   "x": 0.79,
+   "y": 0.59
+  },
+  {
+   "name": "二院",
+   "name_en": "Second Building",
+   "kind": "hall",
+   "quote": "包括老图书馆、科学馆、大礼堂、工程馆、二院（现物理实验楼）",
+   "look": "Republican-era academic hall with red walls and green tiles.",
+   "check": 0.9622421984560934,
+   "confidence": 0.9622421984560934,
+   "passed": true
+  },
+  {
+   "name": "御书楼",
+   "name_en": "Imperial Book Tower",
+   "kind": "tower",
+   "quote": "主体建筑如头门、大门、二门、讲堂、御书楼集中于中轴线上",
+   "look": "Traditional Ming-Qing pavilion tower on the central axis of Yuelu Academy.",
+   "check": 0.9608483197871648,
+   "confidence": 0.9608483197871648,
+   "passed": true
+  }
+ ],
+ "tokens": 12047,
+ "seconds": 50
+}

@@ -1,0 +1,104 @@
+{
+ "school": "purdue",
+ "name": "Purdue University",
+ "at": "2026-11-22T00:20:18.371Z",
+ "source": "https://en.wikipedia.org/wiki/Purdue%20University",
+ "character": "Situated near the western bank of the Wabash River, the campus is divided by Mitch Daniels Boulevard with academic buildings, malls, athletic facilities, and underground tunnels.",
+ "map": "/art/map/purdue.jpg",
+ "landmarks": [
+  {
+   "name": "Purdue Mall",
+   "name_en": "Purdue Mall",
+   "kind": "quad",
+   "quote": "The Purdue Mall is the central quad of Purdue University and was created to connect the academic campus with Ross-Ade Stadium.",
+   "look": "A central campus quad featuring a 38-foot-tall concrete fountain.",
+   "check": 0.9729331762796416,
+   "confidence": 0.9729331762796416,
+   "passed": true,
+   "x": 0.41,
+   "y": 0.56
+  },
+  {
+   "name": "Purdue Bell Tower",
+   "name_en": "Purdue Bell Tower",
+   "kind": "tower",
+   "quote": "The Purdue Bell Tower is between the Stadium and Centennial Malls.",
+   "look": "An iconic university bell tower standing between two campus malls.",
+   "check": 0.9812796943162062,
+   "confidence": 0.9812796943162062,
+   "passed": true,
+   "x": 0.585,
+   "y": 0.39
+  },
+  {
+   "name": "University Hall",
+   "name_en": "University Hall",
+   "kind": "hall",
+   "quote": "University Hall is the only building remaining from the original six-building campus.",
+   "look": "A historic 1870s university hall facing Memorial Mall.",
+   "check": 0.983243503500122,
+   "confidence": 0.983243503500122,
+   "passed": true,
+   "x": 0.725,
+   "y": 0.5
+  },
+  {
+   "name": "Ross-Ade Stadium",
+   "name_en": "Ross-Ade Stadium",
+   "kind": "stadium",
+   "quote": "Many of Purdue's athletic facilities are there, including Ross–Ade Stadium (American football)",
+   "look": "A large collegiate American football stadium.",
+   "check": 0.9842939322303115,
+   "confidence": 0.9842939322303115,
+   "passed": true,
+   "x": 0.23,
+   "y": 0.22
+  },
+  {
+   "name": "Purdue Memorial Mall",
+   "name_en": "Purdue Memorial Mall",
+   "kind": "quad",
+   "quote": "The Purdue Memorial Mall, south of the Purdue Mall, is the original section of campus.",
+   "look": "An open campus quad surrounded by academic and cultural buildings.",
+   "check": 0.9845020875599471,
+   "confidence": 0.9845020875599471,
+   "passed": true,
+   "x": 0.73,
+   "y": 0.73
+  },
+  {
+   "name": "Edward C. Elliott Hall of Music",
+   "name_en": "Edward C. Elliott Hall of Music",
+   "kind": "hall",
+   "quote": "Southwest of the Stadium Mall is the Edward C. Elliott Hall of Music, one of the largest proscenium theaters in the world.",
+   "look": "A large theater hall building.",
+   "check": 0.976667071710761,
+   "confidence": 0.976667071710761,
+   "passed": true,
+   "x": 0.15,
+   "y": 0.57
+  },
+  {
+   "name": "Felix Haas Hall",
+   "name_en": "Felix Haas Hall",
+   "kind": "hall",
+   "quote": "Near this section of campus is Felix Haas Hall, which was constructed in 1909 as Memorial Gymnasium",
+   "look": "An early 20th-century academic hall originally built as a gymnasium.",
+   "check": 0.9840495121942513,
+   "confidence": 0.9840495121942513,
+   "passed": true
+  },
+  {
+   "name": "Horticulture Gardens",
+   "name_en": "Horticulture Gardens",
+   "kind": "garden",
+   "quote": "This area also includes the Krannert School of Management, Horticulture Gardens, Discovery Park, Lyles Porter Hall and the Purdue Airport.",
+   "look": "Plain cultivated university gardens on the south side of campus.",
+   "check": 0.9769825084645241,
+   "confidence": 0.9769825084645241,
+   "passed": true
+  }
+ ],
+ "tokens": 9864,
+ "seconds": 31
+}

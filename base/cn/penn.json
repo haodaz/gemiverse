@@ -1,0 +1,803 @@
+{
+ "school": "penn",
+ "name": "University of Pennsylvania",
+ "at": "2026-11-22T00:12:28.170Z",
+ "seconds": 18,
+ "tokens": 37175,
+ "entities": [
+  {
+   "id": "penn-37ca216677",
+   "type": "Event",
+   "school": "penn",
+   "name": "Qualitative Data Office Hours",
+   "tier": 1,
+   "fields": {
+    "url": "https://libcal.library.upenn.edu/event/17340124",
+    "needs": [
+     "get_mentorship_and_feedback",
+     "build_a_skill"
+    ],
+    "start": "2026-11-23T09:00",
+    "summary": "Drop-in or registered office hours for qualitative researchers seeking help with NVivo, Atlas.TI, Dedoose, data management, and qualitative research methods.",
+    "event_kind": "other",
+    "venue_name": "Research Data and Digital Scholarship Exchange",
+    "organisation_name": "Lynda Kellam",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-23T09:00",
+      "end": "2026-11-23T10:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "penn-2368530596",
+   "type": "Event",
+   "school": "penn",
+   "name": "GIS Mapping Office hour (online via zoom)",
+   "tier": 1,
+   "fields": {
+    "url": "https://libcal.library.upenn.edu/event/17427494",
+    "needs": [
+     "build_a_skill",
+     "get_mentorship_and_feedback"
+    ],
+    "start": "2026-11-23T11:00",
+    "summary": "An online office hour offering one-on-one GIS and mapping assistance, hosted by Penn Libraries.",
+    "event_kind": "other",
+    "venue_name": "Online",
+    "organisation_name": "Girmaye Misgna",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-23T11:00",
+      "end": "2026-11-23T12:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "penn-fd3b32e53e",
+   "type": "Event",
+   "school": "penn",
+   "name": "Statistical Software Consulting Office Hours",
+   "tier": 1,
+   "fields": {
+    "url": "https://libcal.library.upenn.edu/event/17799996",
+    "needs": [
+     "build_a_skill",
+     "get_mentorship_and_feedback"
+    ],
+    "start": "2026-11-23T12:00",
+    "summary": "Penn Libraries Statistical Software Consultants offer in-person office hours to help with R, Python, Stata, SPSS, and data analysis.",
+    "event_kind": "other",
+    "venue_name": "RDDSx nook",
+    "organisation_name": "Lynda Kellam",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-23T12:00",
+      "end": "2026-11-23T17:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "penn-12adc52f69",
+   "type": "Event",
+   "school": "penn",
+   "name": "PRIVATE: LARP Workshop 1: Binding Session 2",
+   "tier": 1,
+   "fields": {
+    "url": "https://libcal.library.upenn.edu/event/17480934",
+    "needs": [
+     "build_a_skill",
+     "make_and_express"
+    ],
+    "start": "2026-11-24T14:00",
+    "summary": "A private bookbinding workshop session held at Common Press for a specific class.",
+    "event_kind": "workshop",
+    "venue_name": "Common Press",
+    "organisation_name": "Jessica Peterson",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-24T14:00",
+      "end": "2026-11-24T16:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "penn-2fa2235b48",
+   "type": "Event",
+   "school": "penn",
+   "name": "PRIVATE: LARP Workshop 1: Binding Session 1",
+   "tier": 1,
+   "fields": {
+    "url": "https://libcal.library.upenn.edu/event/17480929",
+    "needs": [
+     "build_a_skill",
+     "make_and_express"
+    ],
+    "start": "2026-11-24T12:00",
+    "summary": "A private binding workshop session at Common Press in Fisher Fine Arts Library for a specific class.",
+    "event_kind": "workshop",
+    "venue_name": "Common Press, Fisher Fine Arts Library",
+    "organisation_name": "Jessica Peterson",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-24T12:00",
+      "end": "2026-11-24T14:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "penn-e93350f8ca",
+   "type": "Event",
+   "school": "penn",
+   "name": "Canvas Office Hours: 12PM",
+   "tier": 1,
+   "fields": {
+    "url": "https://libcal.library.upenn.edu/event/15790663",
+    "needs": [
+     "build_a_skill",
+     "navigate_systems"
+    ],
+    "start": "2026-11-25T12:00",
+    "summary": "A 1:1 online office hours session with Kate Rojas to discuss any Canvas questions for Penn students, faculty, and staff.",
+    "event_kind": "other",
+    "venue_name": "Online",
+    "organisation_name": "Kate Rojas",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-25T12:00",
+      "end": "2026-11-25T12:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "penn-b71d5b79a1",
+   "type": "Event",
+   "school": "penn",
+   "name": "Canvas Office Hours: 1PM",
+   "tier": 1,
+   "fields": {
+    "url": "https://libcal.library.upenn.edu/event/15790769",
+    "needs": [
+     "navigate_systems",
+     "get_mentorship_and_feedback"
+    ],
+    "start": "2026-11-25T13:00",
+    "summary": "A 1:1 online office hours session with Kate Rojas to discuss any Canvas questions for Penn students, faculty, and staff.",
+    "event_kind": "other",
+    "venue_name": "Online",
+    "organisation_name": "Kate Rojas",
+    "speaker": "Kate Rojas",
+    "occurrences": [
+     {
+      "start": "2026-11-25T13:00",
+      "end": "2026-11-25T13:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "penn-b275c196f8",
+   "type": "Event",
+   "school": "penn",
+   "name": "Canvas Office Hours: 12:30PM",
+   "tier": 1,
+   "fields": {
+    "url": "https://libcal.library.upenn.edu/event/15790716",
+    "needs": [
+     "get_mentorship_and_feedback",
+     "navigate_systems"
+    ],
+    "start": "2026-11-25T12:30",
+    "summary": "A 1:1 online office hours session with Kate Rojas to answer Canvas questions for Penn students, faculty, and staff.",
+    "event_kind": "other",
+    "venue_name": "Online",
+    "organisation_name": "Kate Rojas",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-25T12:30",
+      "end": "2026-11-25T13:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "penn-f4a1ad239a",
+   "type": "Event",
+   "school": "penn",
+   "name": "Canvas Office Hours: 1:30PM",
+   "tier": 1,
+   "fields": {
+    "url": "https://libcal.library.upenn.edu/event/15790855",
+    "needs": [
+     "get_mentorship_and_feedback",
+     "navigate_systems"
+    ],
+    "start": "2026-11-25T13:30",
+    "summary": "A 1:1 online office hours session with Kate Rojas to discuss any Canvas questions for Penn users.",
+    "event_kind": "other",
+    "venue_name": "Online",
+    "organisation_name": "Kate Rojas",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-25T13:30",
+      "end": "2026-11-25T14:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "penn-3970c02da1",
+   "type": "Event",
+   "school": "penn",
+   "name": "Canvas Office Hours: 2:30PM",
+   "tier": 1,
+   "fields": {
+    "url": "https://libcal.library.upenn.edu/event/15791232",
+    "needs": [
+     "build_a_skill",
+     "get_mentorship_and_feedback"
+    ],
+    "start": "2026-11-25T14:30",
+    "summary": "A 1:1 online office hours session with Kate Rojas to answer Penn users' Canvas questions.",
+    "event_kind": "other",
+    "venue_name": "Online",
+    "organisation_name": "Kate Rojas",
+    "speaker": "Kate Rojas",
+    "occurrences": [
+     {
+      "start": "2026-11-25T14:30",
+      "end": "2026-11-25T15:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "penn-a0eb24a18d",
+   "type": "Event",
+   "school": "penn",
+   "name": "Canvas Office Hours: 2PM",
+   "tier": 1,
+   "fields": {
+    "url": "https://libcal.library.upenn.edu/event/15791175",
+    "needs": [
+     "navigate_systems",
+     "get_mentorship_and_feedback"
+    ],
+    "start": "2026-11-25T14:00",
+    "summary": "A 1:1 online office hours session with Kate Rojas to answer Canvas questions for Penn students, faculty, and staff.",
+    "event_kind": "other",
+    "venue_name": "Online",
+    "organisation_name": "Kate Rojas",
+    "speaker": "Kate Rojas",
+    "occurrences": [
+     {
+      "start": "2026-11-25T14:00",
+      "end": "2026-11-25T14:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "penn-f0894d1210",
+   "type": "Event",
+   "school": "penn",
+   "name": "Common Press closed",
+   "tier": 1,
+   "fields": {
+    "url": "https://libcal.library.upenn.edu/event/17961741",
+    "needs": [],
+    "start": null,
+    "summary": "Common Press at Penn Libraries is closed, as posted on LibCal.",
+    "event_kind": "other",
+    "venue_name": "Common Press",
+    "organisation_name": "Jessica Peterson",
+    "speaker": null,
+    "occurrences": []
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "penn-37ca216677",
+   "field": "title",
+   "quote": "Qualitative Data Office Hours",
+   "url": "https://libcal.library.upenn.edu/event/17340124",
+   "check_confidence": 0.9783829637211457,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-37ca216677",
+   "field": "date",
+   "quote": "Monday, November 23, 2026, 9:00am - 10:00am",
+   "url": "https://libcal.library.upenn.edu/event/17340124",
+   "check_confidence": 0.9821197171168975,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-37ca216677",
+   "field": "start_time",
+   "quote": "09:00",
+   "url": "https://libcal.library.upenn.edu/event/17340124",
+   "check_confidence": 0.9748647888627372,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-37ca216677",
+   "field": "venue_name",
+   "quote": "Research Data and Digital Scholarship Exchange",
+   "url": "https://libcal.library.upenn.edu/event/17340124",
+   "check_confidence": 0.9786561238090593,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-37ca216677",
+   "field": "organisation_name",
+   "quote": "Lynda Kellam",
+   "url": "https://libcal.library.upenn.edu/event/17340124",
+   "check_confidence": 0.9595358783234815,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-2368530596",
+   "field": "title",
+   "quote": "GIS Mapping Office hour (online via zoom)",
+   "url": "https://libcal.library.upenn.edu/event/17427494",
+   "check_confidence": 0.9770335533706309,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-2368530596",
+   "field": "date",
+   "quote": "Monday, November 23, 2026 11:00am - 12:00pm",
+   "url": "https://libcal.library.upenn.edu/event/17427494",
+   "check_confidence": 0.9726253072747585,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-2368530596",
+   "field": "start_time",
+   "quote": "11:00",
+   "url": "https://libcal.library.upenn.edu/event/17427494",
+   "check_confidence": 0.9657697978624141,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-2368530596",
+   "field": "venue_name",
+   "quote": "Online",
+   "url": "https://libcal.library.upenn.edu/event/17427494",
+   "check_confidence": 0.9733723167931706,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-2368530596",
+   "field": "organisation_name",
+   "quote": "Girmaye Misgna",
+   "url": "https://libcal.library.upenn.edu/event/17427494",
+   "check_confidence": 0.9796822558918096,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-fd3b32e53e",
+   "field": "title",
+   "quote": "Statistical Software Consulting Office Hours",
+   "url": "https://libcal.library.upenn.edu/event/17799996",
+   "check_confidence": 0.9740809719953238,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-fd3b32e53e",
+   "field": "date",
+   "quote": "Monday, November 23, 2026 Time: 12:00pm - 5:00pm",
+   "url": "https://libcal.library.upenn.edu/event/17799996",
+   "check_confidence": 0.9654669509567096,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-fd3b32e53e",
+   "field": "start_time",
+   "quote": "12:00",
+   "url": "https://libcal.library.upenn.edu/event/17799996",
+   "check_confidence": 0.9746132072945756,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-fd3b32e53e",
+   "field": "venue_name",
+   "quote": "RDDSx nook",
+   "url": "https://libcal.library.upenn.edu/event/17799996",
+   "check_confidence": 0.979510428256862,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-fd3b32e53e",
+   "field": "organisation_name",
+   "quote": "Lynda Kellam",
+   "url": "https://libcal.library.upenn.edu/event/17799996",
+   "check_confidence": 0.9881116813921655,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-12adc52f69",
+   "field": "title",
+   "quote": "PRIVATE: LARP Workshop 1: Binding Session 2",
+   "url": "https://libcal.library.upenn.edu/event/17480934",
+   "check_confidence": 0.9778939512755441,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-12adc52f69",
+   "field": "date",
+   "quote": "Tuesday, November 24, 2026 2:00pm - 4:00pm",
+   "url": "https://libcal.library.upenn.edu/event/17480934",
+   "check_confidence": 0.9872519207002005,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-12adc52f69",
+   "field": "start_time",
+   "quote": "14:00",
+   "url": "https://libcal.library.upenn.edu/event/17480934",
+   "check_confidence": 0.9846628823321294,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-12adc52f69",
+   "field": "venue_name",
+   "quote": "Common Press",
+   "url": "https://libcal.library.upenn.edu/event/17480934",
+   "check_confidence": 0.9795734859770338,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-12adc52f69",
+   "field": "organisation_name",
+   "quote": "Jessica Peterson",
+   "url": "https://libcal.library.upenn.edu/event/17480934",
+   "check_confidence": 0.9865537669479549,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-2fa2235b48",
+   "field": "title",
+   "quote": "PRIVATE: LARP Workshop 1: Binding Session 1",
+   "url": "https://libcal.library.upenn.edu/event/17480929",
+   "check_confidence": 0.9796430176510292,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-2fa2235b48",
+   "field": "date",
+   "quote": "Tuesday, November 24, 2026 12:00pm - 2:00pm",
+   "url": "https://libcal.library.upenn.edu/event/17480929",
+   "check_confidence": 0.9708752905180212,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-2fa2235b48",
+   "field": "start_time",
+   "quote": "12:00",
+   "url": "https://libcal.library.upenn.edu/event/17480929",
+   "check_confidence": 0.9608817571014375,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-2fa2235b48",
+   "field": "venue_name",
+   "quote": "Common Press, Fisher Fine Arts Library",
+   "url": "https://libcal.library.upenn.edu/event/17480929",
+   "check_confidence": 0.9396215324474783,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-2fa2235b48",
+   "field": "organisation_name",
+   "quote": "Jessica Peterson",
+   "url": "https://libcal.library.upenn.edu/event/17480929",
+   "check_confidence": 0.9882956905555517,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-e93350f8ca",
+   "field": "title",
+   "quote": "Canvas Office Hours: 12PM",
+   "url": "https://libcal.library.upenn.edu/event/15790663",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-e93350f8ca",
+   "field": "date",
+   "quote": "Wednesday, November 25, 2026 12:00pm - 12:30pm",
+   "url": "https://libcal.library.upenn.edu/event/15790663",
+   "check_confidence": 0.9767573998156297,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-e93350f8ca",
+   "field": "start_time",
+   "quote": "12:00",
+   "url": "https://libcal.library.upenn.edu/event/15790663",
+   "check_confidence": 0.9715419215644651,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-e93350f8ca",
+   "field": "venue_name",
+   "quote": "Online",
+   "url": "https://libcal.library.upenn.edu/event/15790663",
+   "check_confidence": 0.9825777788568446,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-e93350f8ca",
+   "field": "organisation_name",
+   "quote": "Kate Rojas",
+   "url": "https://libcal.library.upenn.edu/event/15790663",
+   "check_confidence": 0.9892287583019094,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-b71d5b79a1",
+   "field": "title",
+   "quote": "Canvas Office Hours: 1PM",
+   "url": "https://libcal.library.upenn.edu/event/15790769",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-b71d5b79a1",
+   "field": "date",
+   "quote": "Wednesday, November 25, 2026 1:00pm - 1:30pm",
+   "url": "https://libcal.library.upenn.edu/event/15790769",
+   "check_confidence": 0.9828402279346596,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-b71d5b79a1",
+   "field": "start_time",
+   "quote": "13:00",
+   "url": "https://libcal.library.upenn.edu/event/15790769",
+   "check_confidence": 0.9728976778686845,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-b71d5b79a1",
+   "field": "venue_name",
+   "quote": "Online",
+   "url": "https://libcal.library.upenn.edu/event/15790769",
+   "check_confidence": 0.9770931332961281,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-b71d5b79a1",
+   "field": "organisation_name",
+   "quote": "Kate Rojas",
+   "url": "https://libcal.library.upenn.edu/event/15790769",
+   "check_confidence": 0.9761131347255942,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-b71d5b79a1",
+   "field": "speaker",
+   "quote": "Kate Rojas",
+   "url": "https://libcal.library.upenn.edu/event/15790769",
+   "check_confidence": 0.8673102226651775,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-b275c196f8",
+   "field": "title",
+   "quote": "Canvas Office Hours: 12:30PM",
+   "url": "https://libcal.library.upenn.edu/event/15790716",
+   "check_confidence": 0.9803756686418909,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-b275c196f8",
+   "field": "date",
+   "quote": "Wednesday, November 25, 2026 12:30pm - 1:00pm",
+   "url": "https://libcal.library.upenn.edu/event/15790716",
+   "check_confidence": 0.9705812755573164,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-b275c196f8",
+   "field": "start_time",
+   "quote": "12:30",
+   "url": "https://libcal.library.upenn.edu/event/15790716",
+   "check_confidence": 0.9773242388366029,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-b275c196f8",
+   "field": "venue_name",
+   "quote": "Online",
+   "url": "https://libcal.library.upenn.edu/event/15790716",
+   "check_confidence": 0.9772042896893852,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-b275c196f8",
+   "field": "organisation_name",
+   "quote": "Kate Rojas",
+   "url": "https://libcal.library.upenn.edu/event/15790716",
+   "check_confidence": 0.9766020879531324,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-f4a1ad239a",
+   "field": "title",
+   "quote": "Canvas Office Hours: 1:30PM",
+   "url": "https://libcal.library.upenn.edu/event/15790855",
+   "check_confidence": 0.9871661376785795,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-f4a1ad239a",
+   "field": "date",
+   "quote": "Wednesday, November 25, 2026 1:30pm - 2:00pm",
+   "url": "https://libcal.library.upenn.edu/event/15790855",
+   "check_confidence": 0.9715428481650454,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-f4a1ad239a",
+   "field": "start_time",
+   "quote": "13:30",
+   "url": "https://libcal.library.upenn.edu/event/15790855",
+   "check_confidence": 0.9768015567377393,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-f4a1ad239a",
+   "field": "venue_name",
+   "quote": "Online",
+   "url": "https://libcal.library.upenn.edu/event/15790855",
+   "check_confidence": 0.9747015135469643,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-f4a1ad239a",
+   "field": "organisation_name",
+   "quote": "Kate Rojas",
+   "url": "https://libcal.library.upenn.edu/event/15790855",
+   "check_confidence": 0.9686195864640629,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-3970c02da1",
+   "field": "title",
+   "quote": "Canvas Office Hours: 2:30PM",
+   "url": "https://libcal.library.upenn.edu/event/15791232",
+   "check_confidence": 0.9771420403991,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-3970c02da1",
+   "field": "date",
+   "quote": "Wednesday, November 25, 2026 2:30pm - 3:00pm",
+   "url": "https://libcal.library.upenn.edu/event/15791232",
+   "check_confidence": 0.9649062350883498,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-3970c02da1",
+   "field": "start_time",
+   "quote": "14:30",
+   "url": "https://libcal.library.upenn.edu/event/15791232",
+   "check_confidence": 0.9749194277212431,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-3970c02da1",
+   "field": "venue_name",
+   "quote": "Online",
+   "url": "https://libcal.library.upenn.edu/event/15791232",
+   "check_confidence": 0.9782978468265479,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-3970c02da1",
+   "field": "organisation_name",
+   "quote": "Kate Rojas",
+   "url": "https://libcal.library.upenn.edu/event/15791232",
+   "check_confidence": 0.9744813545707249,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-3970c02da1",
+   "field": "speaker",
+   "quote": "Kate Rojas",
+   "url": "https://libcal.library.upenn.edu/event/15791232",
+   "check_confidence": 0.8872237575294758,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-a0eb24a18d",
+   "field": "title",
+   "quote": "Canvas Office Hours: 2PM",
+   "url": "https://libcal.library.upenn.edu/event/15791175",
+   "check_confidence": 0.9760668960109263,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-a0eb24a18d",
+   "field": "date",
+   "quote": "Wednesday, November 25, 2026 2:00pm - 2:30pm",
+   "url": "https://libcal.library.upenn.edu/event/15791175",
+   "check_confidence": 0.9690117506141649,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-a0eb24a18d",
+   "field": "start_time",
+   "quote": "14:00",
+   "url": "https://libcal.library.upenn.edu/event/15791175",
+   "check_confidence": 0.9870362794513612,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-a0eb24a18d",
+   "field": "venue_name",
+   "quote": "Online",
+   "url": "https://libcal.library.upenn.edu/event/15791175",
+   "check_confidence": 0.959204675988819,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-a0eb24a18d",
+   "field": "organisation_name",
+   "quote": "Kate Rojas",
+   "url": "https://libcal.library.upenn.edu/event/15791175",
+   "check_confidence": 0.9735110468630712,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-a0eb24a18d",
+   "field": "speaker",
+   "quote": "Kate Rojas",
+   "url": "https://libcal.library.upenn.edu/event/15791175",
+   "check_confidence": 0.9310616871252175,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-f0894d1210",
+   "field": "title",
+   "quote": "Common Press closed",
+   "url": "https://libcal.library.upenn.edu/event/17961741",
+   "check_confidence": 0.8991731062779645,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-f0894d1210",
+   "field": "venue_name",
+   "quote": "Common Press",
+   "url": "https://libcal.library.upenn.edu/event/17961741",
+   "check_confidence": 0.9841509512893131,
+   "passed": true
+  },
+  {
+   "entity_id": "penn-f0894d1210",
+   "field": "organisation_name",
+   "quote": "Jessica Peterson",
+   "url": "https://libcal.library.upenn.edu/event/17961741",
+   "check_confidence": 0.9692906141620281,
+   "passed": true
+  }
+ ]
+}

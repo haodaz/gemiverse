@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. A green, open, symmetrically laid-out campus blending Chinese and Western styles, featuring six-story white-walled buildings with pitched roofs, concentric ring roads, and a lake. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Li Wenzheng Library, a library: Five-story neoclassical library on raised base with gray-white granite facade and wide colonnade.; (2) Jiulong Lake, a lake: Lake entering from the northwest corner, forming the main water landscape.; (3) Nine-Bend Bridge, a bridge: Zigzag bridge spanning the lake along the innermost circular campus road.; (4) Student Activity Center - Jiao Tingbiao Hall, a hall: Asymmetric complex with six-story block, round hall, cabin-shaped auditorium, and red walls.; (5) Gymnasium, a stadium: Circular bowl-shaped stadium with vertical lines and four indoor training halls.; (6) East Gate, a gate: Campus east gate along the east-west axis.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 18,
+ "tokens": 2452,
+ "at": "2026-11-22T00:15:51.932Z"
+}

@@ -1,0 +1,104 @@
+{
+ "school": "yale",
+ "name": "Yale University",
+ "at": "2026-11-22T00:13:08.312Z",
+ "source": "https://en.wikipedia.org/wiki/Yale%20University",
+ "character": "The central campus features largely Collegiate Gothic stone buildings with spires and leaded glass windows, alongside Georgian cupolas and iconic modern structures.",
+ "map": "/art/map/yale.jpg",
+ "landmarks": [
+  {
+   "name": "Harkness Tower",
+   "name_en": "Harkness Tower",
+   "kind": "tower",
+   "quote": "One exception is Harkness Tower, 216 feet (66 m) tall, which was originally a free-standing stone structure.",
+   "look": "Tall 216-foot free-standing stone tower in Collegiate Gothic style.",
+   "check": 0.9787830228721529,
+   "confidence": 0.9787830228721529,
+   "passed": true,
+   "x": 0.525,
+   "y": 0.38
+  },
+  {
+   "name": "Beinecke Rare Book and Manuscript Library",
+   "name_en": "Beinecke Rare Book and Manuscript Library",
+   "kind": "library",
+   "quote": "The Beinecke Rare Book and Manuscript Library, designed by Gordon Bunshaft of Skidmore, Owings & Merrill",
+   "look": "Modern library with translucent Vermont marble panels, steel and granite truss.",
+   "check": 0.9686257779724406,
+   "confidence": 0.9686257779724406,
+   "passed": true,
+   "x": 0.17,
+   "y": 0.41
+  },
+  {
+   "name": "Connecticut Hall",
+   "name_en": "Connecticut Hall",
+   "kind": "hall",
+   "quote": "The oldest building on campus, Connecticut Hall (built in 1750), is in the Georgian style.",
+   "look": "Historic Georgian-style campus hall.",
+   "check": 0.9757464886584658,
+   "confidence": 0.9757464886584658,
+   "passed": true,
+   "x": 0.36,
+   "y": 0.16
+  },
+  {
+   "name": "Sterling Memorial Library",
+   "name_en": "Sterling Memorial Library",
+   "kind": "library",
+   "quote": "Sterling Memorial Library",
+   "look": "Plain academic library building.",
+   "check": 0.9827557919109596,
+   "confidence": 0.9827557919109596,
+   "passed": true,
+   "x": 0.78,
+   "y": 0.25
+  },
+  {
+   "name": "Peabody Museum of Natural History",
+   "name_en": "Peabody Museum of Natural History",
+   "kind": "museum",
+   "quote": "Peabody Museum of Natural History",
+   "look": "Natural history museum building.",
+   "check": 0.9662513275768954,
+   "confidence": 0.9662513275768954,
+   "passed": true,
+   "x": 0.82,
+   "y": 0.62
+  },
+  {
+   "name": "Yale University Art Gallery",
+   "name_en": "Yale University Art Gallery",
+   "kind": "museum",
+   "quote": "Yale University Art Gallery",
+   "look": "Iconic modern art museum building.",
+   "check": 0.9586912944322264,
+   "confidence": 0.9586912944322264,
+   "passed": true,
+   "x": 0.64,
+   "y": 0.86
+  },
+  {
+   "name": "Hewitt Quadrangle",
+   "name_en": "Hewitt Quadrangle",
+   "kind": "quad",
+   "quote": "located near the center of the university in Hewitt Quadrangle, which is now more commonly referred to as \"Beinecke Plaza\".",
+   "look": "Central campus quadrangle with a sunken sculpture courtyard.",
+   "check": 0.9846801769076398,
+   "confidence": 0.9846801769076398,
+   "passed": true
+  },
+  {
+   "name": "Kline Biology Tower",
+   "name_en": "Kline Biology Tower",
+   "kind": "tower",
+   "quote": "Kline Biology Tower",
+   "look": "Tall campus tower.",
+   "check": 0.966309715210505,
+   "confidence": 0.966309715210505,
+   "passed": true
+  }
+ ],
+ "tokens": 10316,
+ "seconds": 38
+}

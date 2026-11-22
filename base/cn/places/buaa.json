@@ -1,0 +1,60 @@
+{
+ "school": "buaa",
+ "name": "北京航空航天大学",
+ "at": "2026-11-22T00:14:53.290Z",
+ "source": "https://zh.wikipedia.org/wiki/%E5%8C%97%E4%BA%AC%E8%88%AA%E7%A9%BA%E8%88%AA%E5%A4%A9%E5%A4%A7%E5%AD%A6",
+ "character": "The main Xueyuan Road campus features 20th-century modern architectural heritage buildings divided into teaching, living, and family zones, with an on-campus park called Lüyuan.",
+ "map": "/art/map/buaa.jpg",
+ "landmarks": [
+  {
+   "name": "绿园",
+   "name_en": "Lüyuan Park",
+   "kind": "garden",
+   "quote": "分为南区和北区两个部分，以绿园（校内公园）分隔",
+   "look": "An on-campus green park separating residential areas.",
+   "check": 0.9875387059651584,
+   "confidence": 0.9875387059651584,
+   "passed": true,
+   "x": 0.55,
+   "y": 0.27
+  },
+  {
+   "name": "体育场",
+   "name_en": "Beihang Stadium",
+   "kind": "stadium",
+   "quote": "2014年，北京航空航天大学体育场告示牌出现语法错误",
+   "look": "A university athletic stadium with a track and field.",
+   "check": 0.9586084290209266,
+   "confidence": 0.9586084290209266,
+   "passed": true,
+   "x": 0.44,
+   "y": 0.69
+  },
+  {
+   "name": "学五食堂",
+   "name_en": "Student Canteen No. 5",
+   "kind": "hall",
+   "quote": "2003年9月18日，北航学五食堂改制后重新开业",
+   "look": "A plain university dining hall building.",
+   "check": 0.9419155395874735,
+   "confidence": 0.9419155395874735,
+   "passed": true,
+   "x": 0.14,
+   "y": 0.39
+  },
+  {
+   "name": "大学生活动中心",
+   "name_en": "Student Activity Center",
+   "kind": "hall",
+   "quote": "曾在学院路校区的大学生活动中心（已拆除）内设有专门的办公室",
+   "look": "A plain campus activity hall building, now demolished.",
+   "check": 0.8792909492492738,
+   "confidence": 0.8792909492492738,
+   "passed": true,
+   "x": 0.88,
+   "y": 0.47
+  }
+ ],
+ "tokens": 19726,
+ "seconds": 34
+}

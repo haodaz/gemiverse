@@ -1,0 +1,104 @@
+{
+ "school": "brown",
+ "name": "Brown University",
+ "at": "2026-11-22T00:14:09.152Z",
+ "source": "https://en.wikipedia.org/wiki/Brown%20University",
+ "character": "Situated on College Hill and integrated into Providence's urban fabric, the campus features Georgian and Richardsonian Romanesque buildings, brick and wrought-iron fences, and landscaped greens.",
+ "map": "/art/map/brown.jpg",
+ "landmarks": [
+  {
+   "name": "Van Wickle Gates",
+   "name_en": "Van Wickle Gates",
+   "kind": "gate",
+   "quote": "the Van Wickle Gates are a set of wrought iron gates that stand at the western edge of Brown's campus.",
+   "look": "Wrought iron gates with a larger central gate and two smaller side gates.",
+   "check": 0.9778002900152912,
+   "confidence": 0.9778002900152912,
+   "passed": true,
+   "x": 0.5,
+   "y": 0.81
+  },
+  {
+   "name": "Main or College Green",
+   "name_en": "Main or College Green",
+   "kind": "quad",
+   "quote": "defined by three greens: the Front or Quiet Green, the Main or College Green, and the Ruth J. Simmons Quadrangle",
+   "look": "A grassy open campus green surrounded by historic brick buildings.",
+   "check": 0.9753043949686441,
+   "confidence": 0.9753043949686441,
+   "passed": true,
+   "x": 0.39,
+   "y": 0.49
+  },
+  {
+   "name": "Ruth J. Simmons Quadrangle",
+   "name_en": "Ruth J. Simmons Quadrangle",
+   "kind": "quad",
+   "quote": "and the Ruth J. Simmons Quadrangle (historically known as Lincoln Field).",
+   "look": "A grassy campus quadrangle bordered by academic buildings.",
+   "check": 0.9759449099788713,
+   "confidence": 0.9759449099788713,
+   "passed": true,
+   "x": 0.71,
+   "y": 0.38
+  },
+  {
+   "name": "John Hay Library",
+   "name_en": "John Hay Library",
+   "kind": "library",
+   "quote": "Facing the western edge of the central campus sit two of the Brown's seven libraries, the John Hay Library",
+   "look": "A historic library building facing the western edge of the central campus.",
+   "check": 0.974673243740927,
+   "confidence": 0.974673243740927,
+   "passed": true,
+   "x": 0.16,
+   "y": 0.47
+  },
+  {
+   "name": "John Carter Brown Library",
+   "name_en": "John Carter Brown Library",
+   "kind": "library",
+   "quote": "the John Carter Brown Library... has been owned by Brown and located on its campus since 1904.",
+   "look": "A classic early 20th-century library building on the main campus.",
+   "check": 0.9667005358965924,
+   "confidence": 0.9667005358965924,
+   "passed": true,
+   "x": 0.45,
+   "y": 0.58
+  },
+  {
+   "name": "Haffenreffer Museum of Anthropology",
+   "name_en": "Haffenreffer Museum of Anthropology",
+   "kind": "museum",
+   "quote": "The exhibition galleries of the Haffenreffer Museum of Anthropology, Brown's teaching museum, are located in Manning Hall on the campus's main green.",
+   "look": "A historic hall housing museum galleries on the main green.",
+   "check": 0.9712395029545628,
+   "confidence": 0.9712395029545628,
+   "passed": true,
+   "x": 0.84,
+   "y": 0.47
+  },
+  {
+   "name": "The Walk",
+   "name_en": "The Walk",
+   "kind": "other",
+   "quote": "The Walk, a landscaped pedestrian corridor, connects the Pembroke Campus to the main campus.",
+   "look": "A landscaped pedestrian walkway with public art sculptures.",
+   "check": 0.9843977344749233,
+   "confidence": 0.9843977344749233,
+   "passed": true
+  },
+  {
+   "name": "College Hill",
+   "name_en": "College Hill",
+   "kind": "hill",
+   "quote": "Brown's main campus, comprises 235 buildings and 143 acres (58 ha) in the East Side neighborhood of College Hill.",
+   "look": "A sloped urban hill covered with historic brick campus buildings.",
+   "check": 0.98010704981391,
+   "confidence": 0.98010704981391,
+   "passed": true
+  }
+ ],
+ "tokens": 10763,
+ "seconds": 33
+}

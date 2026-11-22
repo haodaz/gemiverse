@@ -1,0 +1,104 @@
+{
+ "school": "harvard",
+ "name": "Harvard University",
+ "at": "2026-11-22T00:12:12.704Z",
+ "source": "https://en.wikipedia.org/wiki/Harvard%20University",
+ "character": "The 209-acre main campus in Cambridge is centered on Harvard Yard near the Charles River, featuring historic buildings dating back to 1718.",
+ "map": "/art/map/harvard.jpg",
+ "landmarks": [
+  {
+   "name": "Harvard Yard",
+   "name_en": "Harvard Yard",
+   "kind": "quad",
+   "quote": "centered on Harvard Yard, colloquially known as \"the Yard\"",
+   "look": "Open grassy quadrangle surrounded by historic university buildings and libraries.",
+   "check": 0.9721276528580003,
+   "confidence": 0.9721276528580003,
+   "passed": true,
+   "x": 0.49,
+   "y": 0.49
+  },
+  {
+   "name": "Massachusetts Hall",
+   "name_en": "Massachusetts Hall",
+   "kind": "hall",
+   "quote": "Massachusetts Hall, built between 1718 and 1720 and the university's oldest still standing building",
+   "look": "Historic early-18th-century academic hall, plain in style.",
+   "check": 0.9689815309358328,
+   "confidence": 0.9689815309358328,
+   "passed": true,
+   "x": 0.5,
+   "y": 0.11
+  },
+  {
+   "name": "Widener",
+   "name_en": "Widener Library",
+   "kind": "library",
+   "quote": "four of the university's libraries, Houghton, Lamont, Pusey, and Widener.",
+   "look": "Plain university library building.",
+   "check": 0.9806822965448985,
+   "confidence": 0.9806822965448985,
+   "passed": true,
+   "x": 0.83,
+   "y": 0.44
+  },
+  {
+   "name": "University Hall",
+   "name_en": "University Hall",
+   "kind": "hall",
+   "quote": "Memorial Church, and University Hall.",
+   "look": "Plain university hall building.",
+   "check": 0.9693496325759592,
+   "confidence": 0.9693496325759592,
+   "passed": true,
+   "x": 0.16,
+   "y": 0.47
+  },
+  {
+   "name": "Memorial Church",
+   "name_en": "Memorial Church",
+   "kind": "other",
+   "quote": "oldest still standing building, Memorial Church, and University Hall.",
+   "look": "Plain university church building.",
+   "check": 0.980986288390316,
+   "confidence": 0.980986288390316,
+   "passed": true,
+   "x": 0.59,
+   "y": 0.44
+  },
+  {
+   "name": "Harvard Hall",
+   "name_en": "Harvard Hall",
+   "kind": "hall",
+   "quote": "including Sever Hall, Harvard Hall, and freshman dormitories.",
+   "look": "Plain academic hall building.",
+   "check": 0.9705120571176103,
+   "confidence": 0.9705120571176103,
+   "passed": true,
+   "x": 0.5,
+   "y": 0.76
+  },
+  {
+   "name": "Sever Hall",
+   "name_en": "Sever Hall",
+   "kind": "hall",
+   "quote": "including Sever Hall, Harvard Hall, and freshman dormitories.",
+   "look": "Plain academic hall building.",
+   "check": 0.9879917019272971,
+   "confidence": 0.9879917019272971,
+   "passed": true
+  },
+  {
+   "name": "Radcliffe Quadrangle",
+   "name_en": "Radcliffe Quadrangle",
+   "kind": "quad",
+   "quote": "and three on the Radcliffe Quadrangle",
+   "look": "Open quadrangle bordered by three residential houses.",
+   "check": 0.9775370626637049,
+   "confidence": 0.9775370626637049,
+   "passed": true
+  }
+ ],
+ "tokens": 10353,
+ "seconds": 28
+}

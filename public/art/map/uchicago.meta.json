@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. The 217-acre campus is split by a large linear park and features Victorian and Collegiate Gothic quadrangles alongside modern, brutalist, and glass-domed buildings. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Main Quadrangles, a quad: Six Victorian and Collegiate Gothic quadrangles bordering one larger quadrangle.; (2) Mitchell Tower, a tower: Gothic-style stone tower modeled after Oxford's Magdalen Tower.; (3) Hutchinson Hall, a hall: Gothic-style university commons hall replicating Christ Church Hall.; (4) Regenstein Library, a library: Massive brutalist library building, the largest structure on campus.; (5) Joe and Rika Mansueto Library, a library: Modern library topped with a large glass dome over a reading room.; (6) Laird Bell Law Quadrangle, a quad: Modernist law school complex arranged around a quadrangle.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 16,
+ "tokens": 2223,
+ "at": "2026-11-22T00:13:39.223Z"
+}

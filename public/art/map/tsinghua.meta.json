@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. The heavily wooded campus blends traditional Chinese imperial gardens and ponds with American-style red-brick historical buildings in the west and Soviet-style and modern white buildings in the east. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Second Gate, a gate: Renaissance-style arched gate with columns.; (2) Grand Auditorium, a hall: Red-brick auditorium with a marble colonnade at the entrance.; (3) Tsinghua Library, a library: American university-style library with polished granite interior.; (4) Tsinghua Xuetang, a hall: Two-story brick-and-wood hall in German classical style.; (5) Science Building, a hall: Red-brick hall with a slate-tiled roof.; (6) Gongziting, a hall: Traditional Qing-dynasty Chinese courtyard hall.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 17,
+ "tokens": 2372,
+ "at": "2026-11-22T00:11:40.150Z"
+}

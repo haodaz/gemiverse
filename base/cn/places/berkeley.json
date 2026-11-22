@@ -1,0 +1,104 @@
+{
+ "school": "berkeley",
+ "name": "University of California, Berkeley",
+ "at": "2026-11-22T00:14:13.528Z",
+ "source": "https://en.wikipedia.org/wiki/University%20of%20California%2C%20Berkeley",
+ "character": "The low-lying central campus features Beaux-Arts Classical and Victorian Second-Empire buildings, two branches of Strawberry Creek, and wooded areas including the Eucalyptus Grove.",
+ "map": "/art/map/berkeley.jpg",
+ "landmarks": [
+  {
+   "name": "Sather Tower",
+   "name_en": "Sather Tower",
+   "kind": "tower",
+   "quote": "and the Sather Tower (nicknamed \"the Campanile\" after its architectural inspiration, St Mark's Campanile in Venice)",
+   "look": "Tall Beaux-Arts Classical clock tower inspired by St Mark's Campanile.",
+   "check": 0.9816645025561902,
+   "confidence": 0.9816645025561902,
+   "passed": true,
+   "x": 0.14,
+   "y": 0.25
+  },
+  {
+   "name": "Sather Gate",
+   "name_en": "Sather Gate",
+   "kind": "gate",
+   "quote": "Sather Gate, and the Sather Tower",
+   "look": "Beaux-Arts Classical campus gate.",
+   "check": 0.9843947228773607,
+   "confidence": 0.9843947228773607,
+   "passed": true,
+   "x": 0.29,
+   "y": 0.49
+  },
+  {
+   "name": "Doe Memorial Library",
+   "name_en": "Doe Memorial Library",
+   "kind": "library",
+   "quote": "Doe Memorial Library, California Hall, Wheeler Hall",
+   "look": "Beaux-Arts Classical library building.",
+   "check": 0.977280064049714,
+   "confidence": 0.977280064049714,
+   "passed": true,
+   "x": 0.61,
+   "y": 0.49
+  },
+  {
+   "name": "California Memorial Stadium",
+   "name_en": "California Memorial Stadium",
+   "kind": "stadium",
+   "quote": "passes beneath California Memorial Stadium before appearing again in Faculty Glade.",
+   "look": "Large campus football stadium.",
+   "check": 0.9787893643385128,
+   "confidence": 0.9787893643385128,
+   "passed": true,
+   "x": 0.83,
+   "y": 0.36
+  },
+  {
+   "name": "South Hall",
+   "name_en": "South Hall",
+   "kind": "hall",
+   "quote": "Built in 1873 in a Victorian Second-Empire-style, South Hall, designed by David Farquharson, is the oldest university building in California.",
+   "look": "Victorian Second-Empire-style university hall.",
+   "check": 0.9839789179499584,
+   "confidence": 0.9839789179499584,
+   "passed": true,
+   "x": 0.17,
+   "y": 0.75
+  },
+  {
+   "name": "Hearst Greek Theatre",
+   "name_en": "Hearst Greek Theatre",
+   "kind": "other",
+   "quote": "and include Hearst Greek Theatre, Hearst Memorial Mining Building",
+   "look": "Beaux-Arts Classical open-air theatre.",
+   "check": 0.9762752502796891,
+   "confidence": 0.9762752502796891,
+   "passed": true,
+   "x": 0.84,
+   "y": 0.77
+  },
+  {
+   "name": "University of California Botanical Garden",
+   "name_en": "University of California Botanical Garden",
+   "kind": "garden",
+   "quote": "The campus is also home to the University of California Botanical Garden, with more than 12,000 individual species.",
+   "look": "Botanical garden with diverse plant species.",
+   "check": 0.9883856494070219,
+   "confidence": 0.9883856494070219,
+   "passed": true
+  },
+  {
+   "name": "University of California Museum of Paleontology",
+   "name_en": "University of California Museum of Paleontology",
+   "kind": "museum",
+   "quote": "The campus is home to several museums including the University of California Museum of Paleontology",
+   "look": "Museum with dinosaur fossils and a Tyrannosaurus Rex cast.",
+   "check": 0.9834108533534259,
+   "confidence": 0.9834108533534259,
+   "passed": true
+  }
+ ],
+ "tokens": 9755,
+ "seconds": 30
+}

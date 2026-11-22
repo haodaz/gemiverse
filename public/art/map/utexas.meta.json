@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. The main campus has 150 buildings, featuring the Beaux-Arts Main Building with its 307-foot tower in the middle of campus. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Main Building, a tower: Beaux-Arts building with a tall 307-foot tower and observation deck.; (2) Blanton Museum of Art, a museum: Large, plain modern art museum building.; (3) Lyndon B. Johnson Presidential Library, a library: Plain presidential library building.; (4) Perry–Castañeda Library, a library: Plain central university library building.; (5) Harry Ransom Humanities Research Center, a other: Plain humanities research center building.; (6) Benson Latin American Collection, a library: Plain university library building.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 14,
+ "tokens": 1826,
+ "at": "2026-11-22T00:19:11.455Z"
+}

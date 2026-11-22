@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. The compact, rectangular campus features dense clusters of gray 1980s Soviet-style buildings alongside modern red-toned academic buildings. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Qiushi Building, a other: Gray Soviet-style academic building from the 1980s or earlier.; (2) Public Teaching Building No. 1, a other: Modern academic building with a red-toned exterior.; (3) Rulun Hall, a hall: Plain auditorium hall.; (4) Century Hall, a hall: Plain large hall.; (5) Swimming Pool, a stadium: Plain indoor swimming stadium.; (6) Mingde Main Building, a other: Plain main academic building.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 26,
+ "tokens": 2599,
+ "at": "2026-11-22T00:14:54.274Z"
+}

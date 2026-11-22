@@ -1,0 +1,510 @@
+{
+ "school": "bit",
+ "name": "北京理工大学",
+ "at": "2026-11-22T00:14:22.181Z",
+ "seconds": 42,
+ "tokens": 57845,
+ "entities": [
+  {
+   "id": "bit-feaec72caf",
+   "type": "Event",
+   "school": "bit",
+   "name": "【创新创业与成果转化主题讲座】第六期 A股上市视角的科技成果转化模式与实践",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.bit.edu.cn/tzgg17/jzyg2/a530135e5fe5460aaa8cc0e5fb84116a.htm",
+    "needs": [
+     "explore_a_field",
+     "build_a_skill"
+    ],
+    "start": "2025-05-22T18:30",
+    "summary": "德恒律师事务所高级合伙人侯志伟主讲A股上市视角的科技成果转化模式与实践。",
+    "event_kind": "lecture",
+    "venue_name": "北京理工大学中关村校区研究生楼206",
+    "organisation_name": "北京理工大学技术转移中心 国家中小企业创新研究院 北京理工资产经营有限公司",
+    "speaker": "侯志伟 德恒律师事务所高级合伙人、融资并购专业委员会执委",
+    "occurrences": [
+     {
+      "start": "2025-05-22T18:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "bit-0b818f1138",
+   "type": "Event",
+   "school": "bit",
+   "name": "【创新创业与成果转化主题讲座】第五期 从实验室到市场——光学仪器的产业化突围之路",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.bit.edu.cn/tzgg17/jzyg2/12d37b86f08f4bfab9ba427735ee296f.htm",
+    "needs": [
+     "explore_a_field",
+     "decide_a_direction"
+    ],
+    "start": "2025-05-15T18:30",
+    "summary": "牟涛涛教授分享光学仪器从实验室到市场的产业化突围之路。",
+    "event_kind": "lecture",
+    "venue_name": "北京理工大学中关村校区研究生楼207",
+    "organisation_name": "技术转移中心 国家中小企业创新研究院",
+    "speaker": "牟涛涛 北京信息科技大学教授、云端光科创始人、北京理工大学校友",
+    "occurrences": [
+     {
+      "start": "2025-05-15T18:30",
+      "end": "2025-05-15T21:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "bit-c5abd1861b",
+   "type": "Event",
+   "school": "bit",
+   "name": "“国粹京剧走进北理工”专题艺术讲座",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.bit.edu.cn/tzgg17/jzyg2/612b793642ec48438c1eb7798aa3a967.htm",
+    "needs": [
+     "explore_a_field",
+     "rest_and_recover"
+    ],
+    "start": "2025-12-12T14:00",
+    "summary": "北京京剧院原院长刘侗携团队来校举办京剧专题艺术讲座与赏析活动。",
+    "event_kind": "lecture",
+    "venue_name": "良乡校区音乐厅",
+    "organisation_name": "党委统战部、校党外知识分子联谊会",
+    "speaker": "刘侗",
+    "occurrences": [
+     {
+      "start": "2025-12-12T14:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "bit-bec616d105",
+   "type": "Event",
+   "school": "bit",
+   "name": "【知识产权系列讲座】第三期 AI赋能知识产权保护",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.bit.edu.cn/tzgg17/jzyg2/2cefee7086a044208c9035f9ba0b8de9.htm",
+    "needs": [
+     "explore_a_field",
+     "build_a_skill"
+    ],
+    "start": null,
+    "summary": "北京理工大学举办的AI赋能知识产权保护主题系列讲座第三期。",
+    "event_kind": "lecture",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "bit-c127ad6cca",
+   "type": "Event",
+   "school": "bit",
+   "name": "【知识产权系列讲座】第四期 专利申请和授权流程解读",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.bit.edu.cn/tzgg17/jzyg2/80410ad895464adf9ed9b38d62a9a0be.htm",
+    "needs": [
+     "build_a_skill",
+     "explore_a_field"
+    ],
+    "start": null,
+    "summary": "北京理工大学知识产权系列讲座第四期，主题为专利申请和授权流程解读。",
+    "event_kind": "lecture",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "bit-7a35fd61b8",
+   "type": "Event",
+   "school": "bit",
+   "name": "【知识产权系列讲座】第二期 如何撰写技术交底书",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.bit.edu.cn/tzgg17/jzyg2/d14006085efd49fe8640b4aed8f88ebd.htm",
+    "needs": [
+     "build_a_skill",
+     "explore_a_field"
+    ],
+    "start": null,
+    "summary": "北京理工大学发布的知识产权系列讲座第二期通知，主题为如何撰写技术交底书。",
+    "event_kind": "lecture",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "bit-2c8fa5c0e1",
+   "type": "Event",
+   "school": "bit",
+   "name": "【知识产权系列讲座】第一期 高校专利转化运用政策解读与发展趋势",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.bit.edu.cn/tzgg17/jzyg2/62f9f2caa33e43659333fcec356dbff4.htm",
+    "needs": [
+     "explore_a_field",
+     "navigate_systems"
+    ],
+    "start": null,
+    "summary": "北京理工大学“知识产权系列讲座”第一期，聚焦高校专利转化运用政策解读与发展趋势。",
+    "event_kind": "lecture",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": []
+   }
+  },
+  {
+   "id": "bit-defa337cef",
+   "type": "Event",
+   "school": "bit",
+   "name": "关于转发2026新域新质创新大赛命题揭榜赛道赛题的通知",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.bit.edu.cn/tzgg17/kyxs/431db4f91fb0407ca01f34adfa33bb05.htm",
+    "needs": [
+     "get_experience",
+     "build_a_skill"
+    ],
+    "start": "2026-09-18",
+    "summary": "转发2026新域新质创新大赛命题揭榜赛道赛题，校内师生可于9月18日前报名。",
+    "event_kind": "competition",
+    "venue_name": null,
+    "organisation_name": "中国电子信息产业发展研究院、青岛市人民政府",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-09-18",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "bit-0fe94c0d4b",
+   "type": "Event",
+   "school": "bit",
+   "name": "2026京-澳科普与科学教育交流会通知",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.bit.edu.cn/tzgg17/kyxs/331d7602d9734c72912401cd334631c1.htm",
+    "needs": [
+     "explore_a_field",
+     "find_my_people"
+    ],
+    "start": "2026-06-21T14:00",
+    "summary": "京澳高校共同举办科普与科学教育研讨会，探讨创新人才培养路径。",
+    "event_kind": "other",
+    "venue_name": "北京理工大学（报名结束后通知具体地点）",
+    "organisation_name": "北京理工大学港澳台办公室、北京理工大学科学技术协会",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-06-21T14:00",
+      "end": "2026-06-21T17:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "bit-edc5fd398c",
+   "type": "Event",
+   "school": "bit",
+   "name": "北京理工大学第十届“特立论坛”国际青年学者论坛",
+   "tier": 1,
+   "fields": {
+    "url": "https://mp.weixin.qq.com/s/b1PvSykOMPy9MFUCxgaYmQ",
+    "needs": [
+     "explore_a_field",
+     "find_my_people"
+    ],
+    "start": null,
+    "summary": "北京理工大学举办第十届“特立论坛”国际青年学者论坛。",
+    "event_kind": "activity",
+    "venue_name": null,
+    "organisation_name": "北京理工大学人力资源部",
+    "speaker": null,
+    "occurrences": []
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "bit-feaec72caf",
+   "field": "title",
+   "quote": "【创新创业与成果转化主题讲座】第六期 A股上市视角的科技成果转化模式与实践",
+   "url": "https://www.bit.edu.cn/tzgg17/jzyg2/a530135e5fe5460aaa8cc0e5fb84116a.htm",
+   "check_confidence": 0.9641476640664574,
+   "passed": true
+  },
+  {
+   "entity_id": "bit-feaec72caf",
+   "field": "date",
+   "quote": "2025年5月22日18:30",
+   "url": "https://www.bit.edu.cn/tzgg17/jzyg2/a530135e5fe5460aaa8cc0e5fb84116a.htm",
+   "check_confidence": 0.9810940850482128,
+   "passed": true
+  },
+  {
+   "entity_id": "bit-feaec72caf",
+   "field": "start_time",
+   "quote": "18:30",
+   "url": "https://www.bit.edu.cn/tzgg17/jzyg2/a530135e5fe5460aaa8cc0e5fb84116a.htm",
+   "check_confidence": 0.9884685247768814,
+   "passed": true
+  },
+  {
+   "entity_id": "bit-feaec72caf",
+   "field": "venue_name",
+   "quote": "北京理工大学中关村校区研究生楼206",
+   "url": "https://www.bit.edu.cn/tzgg17/jzyg2/a530135e5fe5460aaa8cc0e5fb84116a.htm",
+   "check_confidence": 0.9688388451633289,
+   "passed": true
+  },
+  {
+   "entity_id": "bit-feaec72caf",
+   "field": "organisation_name",
+   "quote": "北京理工大学技术转移中心 国家中小企业创新研究院 北京理工资产经营有限公司",
+   "url": "https://www.bit.edu.cn/tzgg17/jzyg2/a530135e5fe5460aaa8cc0e5fb84116a.htm",
+   "check_confidence": 0.9428128730799379,
+   "passed": true
+  },
+  {
+   "entity_id": "bit-feaec72caf",
+   "field": "speaker",
+   "quote": "侯志伟 德恒律师事务所高级合伙人、融资并购专业委员会执委",
+   "url": "https://www.bit.edu.cn/tzgg17/jzyg2/a530135e5fe5460aaa8cc0e5fb84116a.htm",
+   "check_confidence": 0.9751644467662138,
+   "passed": true
+  },
+  {
+   "entity_id": "bit-0b818f1138",
+   "field": "title",
+   "quote": "【创新创业与成果转化主题讲座】第五期 从实验室到市场——光学仪器的产业化突围之路",
+   "url": "https://www.bit.edu.cn/tzgg17/jzyg2/12d37b86f08f4bfab9ba427735ee296f.htm",
+   "check_confidence": 0.9656099025309642,
+   "passed": true
+  },
+  {
+   "entity_id": "bit-0b818f1138",
+   "field": "date",
+   "quote": "2025年5月15日18:30-21:30",
+   "url": "https://www.bit.edu.cn/tzgg17/jzyg2/12d37b86f08f4bfab9ba427735ee296f.htm",
+   "check_confidence": 0.9790590410416883,
+   "passed": true
+  },
+  {
+   "entity_id": "bit-0b818f1138",
+   "field": "start_time",
+   "quote": "18:30",
+   "url": "https://www.bit.edu.cn/tzgg17/jzyg2/12d37b86f08f4bfab9ba427735ee296f.htm",
+   "check_confidence": 0.9701500585848797,
+   "passed": true
+  },
+  {
+   "entity_id": "bit-0b818f1138",
+   "field": "venue_name",
+   "quote": "北京理工大学中关村校区研究生楼207",
+   "url": "https://www.bit.edu.cn/tzgg17/jzyg2/12d37b86f08f4bfab9ba427735ee296f.htm",
+   "check_confidence": 0.9734426118602534,
+   "passed": true
+  },
+  {
+   "entity_id": "bit-0b818f1138",
+   "field": "organisation_name",
+   "quote": "技术转移中心 国家中小企业创新研究院",
+   "url": "https://www.bit.edu.cn/tzgg17/jzyg2/12d37b86f08f4bfab9ba427735ee296f.htm",
+   "check_confidence": 0.9376225163754544,
+   "passed": true
+  },
+  {
+   "entity_id": "bit-0b818f1138",
+   "field": "speaker",
+   "quote": "牟涛涛 北京信息科技大学教授、云端光科创始人、北京理工大学校友",
+   "url": "https://www.bit.edu.cn/tzgg17/jzyg2/12d37b86f08f4bfab9ba427735ee296f.htm",
+   "check_confidence": 0.9742959641951309,
+   "passed": true
+  },
+  {
+   "entity_id": "bit-c5abd1861b",
+   "field": "title",
+   "quote": "“国粹京剧走进北理工”专题艺术讲座",
+   "url": "https://www.bit.edu.cn/tzgg17/jzyg2/612b793642ec48438c1eb7798aa3a967.htm",
+   "check_confidence": 0.9826817958333297,
+   "passed": true
+  },
+  {
+   "entity_id": "bit-c5abd1861b",
+   "field": "date",
+   "quote": "时间：2025年12月12日（周五）14:00",
+   "url": "https://www.bit.edu.cn/tzgg17/jzyg2/612b793642ec48438c1eb7798aa3a967.htm",
+   "check_confidence": 0.9770737533558418,
+   "passed": true
+  },
+  {
+   "entity_id": "bit-c5abd1861b",
+   "field": "start_time",
+   "quote": "14:00",
+   "url": "https://www.bit.edu.cn/tzgg17/jzyg2/612b793642ec48438c1eb7798aa3a967.htm",
+   "check_confidence": 0.9796245601676355,
+   "passed": true
+  },
+  {
+   "entity_id": "bit-c5abd1861b",
+   "field": "venue_name",
+   "quote": "地点：良乡校区音乐厅",
+   "url": "https://www.bit.edu.cn/tzgg17/jzyg2/612b793642ec48438c1eb7798aa3a967.htm",
+   "check_confidence": 0.9730377153836159,
+   "passed": true
+  },
+  {
+   "entity_id": "bit-c5abd1861b",
+   "field": "organisation_name",
+   "quote": "党委统战部、校党外知识分子联谊会",
+   "url": "https://www.bit.edu.cn/tzgg17/jzyg2/612b793642ec48438c1eb7798aa3a967.htm",
+   "check_confidence": 0.9620370606393343,
+   "passed": true
+  },
+  {
+   "entity_id": "bit-c5abd1861b",
+   "field": "speaker",
+   "quote": "刘侗",
+   "url": "https://www.bit.edu.cn/tzgg17/jzyg2/612b793642ec48438c1eb7798aa3a967.htm",
+   "check_confidence": 0.9785756280652976,
+   "passed": true
+  },
+  {
+   "entity_id": "bit-bec616d105",
+   "field": "title",
+   "quote": "【知识产权系列讲座】第三期 AI赋能知识产权保护",
+   "url": "https://www.bit.edu.cn/tzgg17/jzyg2/2cefee7086a044208c9035f9ba0b8de9.htm",
+   "check_confidence": 0.9708717777209424,
+   "passed": true
+  },
+  {
+   "entity_id": "bit-c127ad6cca",
+   "field": "title",
+   "quote": "【知识产权系列讲座】第四期 专利申请和授权流程解读",
+   "url": "https://www.bit.edu.cn/tzgg17/jzyg2/80410ad895464adf9ed9b38d62a9a0be.htm",
+   "check_confidence": 0.9732507345081164,
+   "passed": true
+  },
+  {
+   "entity_id": "bit-7a35fd61b8",
+   "field": "title",
+   "quote": "【知识产权系列讲座】第二期 如何撰写技术交底书",
+   "url": "https://www.bit.edu.cn/tzgg17/jzyg2/d14006085efd49fe8640b4aed8f88ebd.htm",
+   "check_confidence": 0.9626684279009228,
+   "passed": true
+  },
+  {
+   "entity_id": "bit-2c8fa5c0e1",
+   "field": "title",
+   "quote": "【知识产权系列讲座】第一期 高校专利转化运用政策解读与发展趋势",
+   "url": "https://www.bit.edu.cn/tzgg17/jzyg2/62f9f2caa33e43659333fcec356dbff4.htm",
+   "check_confidence": 0.9600109619895848,
+   "passed": true
+  },
+  {
+   "entity_id": "bit-defa337cef",
+   "field": "title",
+   "quote": "关于转发2026新域新质创新大赛命题揭榜赛道赛题的通知",
+   "url": "https://www.bit.edu.cn/tzgg17/kyxs/431db4f91fb0407ca01f34adfa33bb05.htm",
+   "check_confidence": 0.9679967134207111,
+   "passed": true
+  },
+  {
+   "entity_id": "bit-defa337cef",
+   "field": "date",
+   "quote": "9月18日前",
+   "url": "https://www.bit.edu.cn/tzgg17/kyxs/431db4f91fb0407ca01f34adfa33bb05.htm",
+   "check_confidence": 0.8683741382407634,
+   "passed": true
+  },
+  {
+   "entity_id": "bit-defa337cef",
+   "field": "venue_name",
+   "quote": "北京理工大学国防科技园5号楼19层1909室",
+   "url": "https://www.bit.edu.cn/tzgg17/kyxs/431db4f91fb0407ca01f34adfa33bb05.htm",
+   "check_confidence": 0.3842933138479075,
+   "passed": false
+  },
+  {
+   "entity_id": "bit-defa337cef",
+   "field": "organisation_name",
+   "quote": "中国电子信息产业发展研究院、青岛市人民政府",
+   "url": "https://www.bit.edu.cn/tzgg17/kyxs/431db4f91fb0407ca01f34adfa33bb05.htm",
+   "check_confidence": 0.9748999593269364,
+   "passed": true
+  },
+  {
+   "entity_id": "bit-0fe94c0d4b",
+   "field": "title",
+   "quote": "2026京-澳科普与科学教育交流会通知",
+   "url": "https://www.bit.edu.cn/tzgg17/kyxs/331d7602d9734c72912401cd334631c1.htm",
+   "check_confidence": 0.97781315050975,
+   "passed": true
+  },
+  {
+   "entity_id": "bit-0fe94c0d4b",
+   "field": "date",
+   "quote": "2026年6月21日下午14:00-17:30",
+   "url": "https://www.bit.edu.cn/tzgg17/kyxs/331d7602d9734c72912401cd334631c1.htm",
+   "check_confidence": 0.9664949632260292,
+   "passed": true
+  },
+  {
+   "entity_id": "bit-0fe94c0d4b",
+   "field": "start_time",
+   "quote": "14:00",
+   "url": "https://www.bit.edu.cn/tzgg17/kyxs/331d7602d9734c72912401cd334631c1.htm",
+   "check_confidence": 0.9739430842223495,
+   "passed": true
+  },
+  {
+   "entity_id": "bit-0fe94c0d4b",
+   "field": "venue_name",
+   "quote": "北京理工大学（报名结束后通知具体地点）",
+   "url": "https://www.bit.edu.cn/tzgg17/kyxs/331d7602d9734c72912401cd334631c1.htm",
+   "check_confidence": 0.9738947690034158,
+   "passed": true
+  },
+  {
+   "entity_id": "bit-0fe94c0d4b",
+   "field": "organisation_name",
+   "quote": "北京理工大学港澳台办公室、北京理工大学科学技术协会",
+   "url": "https://www.bit.edu.cn/tzgg17/kyxs/331d7602d9734c72912401cd334631c1.htm",
+   "check_confidence": 0.9711092922103678,
+   "passed": true
+  },
+  {
+   "entity_id": "bit-edc5fd398c",
+   "field": "title",
+   "quote": "北京理工大学第十届“特立论坛”国际青年学者论坛",
+   "url": "https://mp.weixin.qq.com/s/b1PvSykOMPy9MFUCxgaYmQ",
+   "check_confidence": 0.9810382113962027,
+   "passed": true
+  },
+  {
+   "entity_id": "bit-edc5fd398c",
+   "field": "organisation_name",
+   "quote": "北京理工大学人力资源部",
+   "url": "https://mp.weixin.qq.com/s/b1PvSykOMPy9MFUCxgaYmQ",
+   "check_confidence": 0.9367670613111022,
+   "passed": true
+  }
+ ]
+}

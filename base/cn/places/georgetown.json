@@ -1,0 +1,104 @@
+{
+ "school": "georgetown",
+ "name": "Georgetown University",
+ "at": "2026-11-22T00:17:46.056Z",
+ "source": "https://en.wikipedia.org/wiki/Georgetown%20University",
+ "character": "The compact 104-acre hilltop campus overlooks the Potomac River, featuring Neo-Medieval Healy Hall, traditional quadrangles, fountains, flowers, and groves of trees.",
+ "map": "/art/map/georgetown.jpg",
+ "landmarks": [
+  {
+   "name": "Healy Hall",
+   "name_en": "Healy Hall",
+   "kind": "hall",
+   "quote": "Healy Hall, designed by Paul J. Pelz in Neo-Medieval style and built from 1877 to 1879",
+   "look": "Large Neo-Medieval style hall building.",
+   "check": 0.9899394734895914,
+   "confidence": 0.9899394734895914,
+   "passed": true,
+   "x": 0.5,
+   "y": 0.52
+  },
+  {
+   "name": "Healy Gates",
+   "name_en": "Healy Gates",
+   "kind": "gate",
+   "quote": "The main gates, known as the Healy Gates, are located at the intersection of 37th and O Streets NW",
+   "look": "Main campus entrance gates.",
+   "check": 0.9826551627801831,
+   "confidence": 0.9826551627801831,
+   "passed": true,
+   "x": 0.5,
+   "y": 0.85
+  },
+  {
+   "name": "Dahlgren Quadrangle",
+   "name_en": "Dahlgren Quadrangle",
+   "kind": "quad",
+   "quote": "the main campus has traditionally centered on Dahlgren Quadrangle behind Healy Hall",
+   "look": "Traditional open quadrangle behind Healy Hall.",
+   "check": 0.977777148415232,
+   "confidence": 0.977777148415232,
+   "passed": true,
+   "x": 0.5,
+   "y": 0.32
+  },
+  {
+   "name": "Red Square",
+   "name_en": "Red Square",
+   "kind": "other",
+   "quote": "Red Square has replaced the Dahlgren Quadrangle as a center of student life.",
+   "look": "Open central campus square.",
+   "check": 0.9791616614601296,
+   "confidence": 0.9791616614601296,
+   "passed": true,
+   "x": 0.71,
+   "y": 0.39
+  },
+  {
+   "name": "Riggs Library",
+   "name_en": "Riggs Library",
+   "kind": "library",
+   "quote": "Within Healy Hall are a number of notable rooms including Gaston Hall, Riggs Library, and the Bioethics Library Hirst Reading Room.",
+   "look": "Library room inside Healy Hall.",
+   "check": 0.9828440328238136,
+   "confidence": 0.9828440328238136,
+   "passed": true,
+   "x": 0.3,
+   "y": 0.62
+  },
+  {
+   "name": "Gaston Hall",
+   "name_en": "Gaston Hall",
+   "kind": "hall",
+   "quote": "Within Healy Hall are a number of notable rooms including Gaston Hall, Riggs Library, and the Bioethics Library Hirst Reading Room.",
+   "look": "Notable hall room inside Healy Hall.",
+   "check": 0.9777338508291635,
+   "confidence": 0.9777338508291635,
+   "passed": true,
+   "x": 0.71,
+   "y": 0.62
+  },
+  {
+   "name": "Georgetown University Astronomical Observatory",
+   "name_en": "Georgetown University Astronomical Observatory",
+   "kind": "other",
+   "quote": "Both Healy Hall and the Georgetown University Astronomical Observatory, built in 1844, are listed on the National Register of Historic Places.",
+   "look": "Historic 1844 astronomical observatory building.",
+   "check": 0.9721721269608061,
+   "confidence": 0.9721721269608061,
+   "passed": true
+  },
+  {
+   "name": "Regents Hall",
+   "name_en": "Regents Hall",
+   "kind": "hall",
+   "quote": "Regents Hall, the new science building, opened in Fall 2012.",
+   "look": "Large science hall overlooking a scenic lawn.",
+   "check": 0.9720384963742658,
+   "confidence": 0.9720384963742658,
+   "passed": true
+  }
+ ],
+ "tokens": 9949,
+ "seconds": 35
+}

@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students.  Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Kyle Field, a other: Plain notable campus building or sports field.; (2) Sterling C. Evans Library, a library: Plain campus library building.; (3) Rudder Tower, a tower: Plain tall campus tower.; (4) Albritton Bell Tower, a tower: Plain tall bell tower.; (5) Harrington Hall, a hall: Plain campus hall building.; (6) George H. W. Bush Presidential Library and Museum, a museum: Plain library and museum building.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 17,
+ "tokens": 1942,
+ "at": "2026-11-22T00:20:45.903Z"
+}

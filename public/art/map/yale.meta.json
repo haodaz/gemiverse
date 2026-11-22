@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. The central campus features largely Collegiate Gothic stone buildings with spires and leaded glass windows, alongside Georgian cupolas and iconic modern structures. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Harkness Tower, a tower: Tall 216-foot free-standing stone tower in Collegiate Gothic style.; (2) Beinecke Rare Book and Manuscript Library, a library: Modern library with translucent Vermont marble panels, steel and granite truss.; (3) Connecticut Hall, a hall: Historic Georgian-style campus hall.; (4) Sterling Memorial Library, a library: Plain academic library building.; (5) Peabody Museum of Natural History, a museum: Natural history museum building.; (6) Yale University Art Gallery, a museum: Iconic modern art museum building.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 15,
+ "tokens": 1939,
+ "at": "2026-11-22T00:13:04.170Z"
+}

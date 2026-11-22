@@ -1,0 +1,104 @@
+{
+ "school": "pku",
+ "name": "北京大学",
+ "at": "2026-11-22T00:11:09.333Z",
+ "source": "https://zh.wikipedia.org/wiki/%E5%8C%97%E4%BA%AC%E5%A4%A7%E5%AD%A6",
+ "character": "Built on a Qing-era garden site, the campus blends traditional Chinese architecture and classical gardens with modern Western planning, featuring a southern academic zone and northern lake area.",
+ "map": "/art/map/pku.jpg",
+ "landmarks": [
+  {
+   "name": "未名湖",
+   "name_en": "Weiming Lake",
+   "kind": "lake",
+   "quote": "燕园的主要景观包括：未名湖、博雅塔、校友门（西门）",
+   "look": "A scenic lake in the northern area of the campus.",
+   "check": 0.9787092351841048,
+   "confidence": 0.9787092351841048,
+   "passed": true,
+   "x": 0.43,
+   "y": 0.2
+  },
+  {
+   "name": "博雅塔",
+   "name_en": "Boya Tower",
+   "kind": "tower",
+   "quote": "主轴线连接西门、贝公楼、博雅塔",
+   "look": "A tower situated along the campus's east-west main axis.",
+   "check": 0.9737748194830061,
+   "confidence": 0.9737748194830061,
+   "passed": true,
+   "x": 0.89,
+   "y": 0.41
+  },
+  {
+   "name": "校友门（西门）",
+   "name_en": "Alumni Gate (West Gate)",
+   "kind": "gate",
+   "quote": "燕园的主要景观包括：未名湖、博雅塔、校友门（西门）",
+   "look": "A campus gate located at the western end of the main axis.",
+   "check": 0.9744736465392564,
+   "confidence": 0.9744736465392564,
+   "passed": true,
+   "x": 0.14,
+   "y": 0.46
+  },
+  {
+   "name": "贝公楼（办公楼）",
+   "name_en": "Beigong Building (Administration Building)",
+   "kind": "hall",
+   "quote": "贝公楼（办公楼）",
+   "look": "A main office building positioned on the east-west axis.",
+   "check": 0.9772678149533135,
+   "confidence": 0.9772678149533135,
+   "passed": true,
+   "x": 0.5,
+   "y": 0.38
+  },
+  {
+   "name": "百周年纪念讲堂",
+   "name_en": "Centennial Hall",
+   "kind": "hall",
+   "quote": "新建理科楼群、图书馆新馆、百周年纪念讲堂",
+   "look": "A large auditorium hall used for campus performances.",
+   "check": 0.9669184561312182,
+   "confidence": 0.9669184561312182,
+   "passed": true,
+   "x": 0.37,
+   "y": 0.61
+  },
+  {
+   "name": "邱德拔体育馆",
+   "name_en": "Khoo Teck Puat Gymnasium",
+   "kind": "stadium",
+   "quote": "邱德拔体育馆是北京奥运会乒乓球比赛场馆",
+   "look": "A modern comprehensive sports stadium and gymnasium.",
+   "check": 0.9866265175741261,
+   "confidence": 0.9866265175741261,
+   "passed": true,
+   "x": 0.67,
+   "y": 0.77
+  },
+  {
+   "name": "图书馆新馆",
+   "name_en": "New Library",
+   "kind": "library",
+   "quote": "新建理科楼群、图书馆新馆、百周年纪念讲堂",
+   "look": "A modern university library building.",
+   "check": 0.948871991380818,
+   "confidence": 0.948871991380818,
+   "passed": true
+  },
+  {
+   "name": "静园",
+   "name_en": "Jingyuan (Quiet Garden)",
+   "kind": "garden",
+   "quote": "静园（燕大女生宿舍）",
+   "look": "A garden area formerly serving as women's dormitories.",
+   "check": 0.9834514068195295,
+   "confidence": 0.9834514068195295,
+   "passed": true
+  }
+ ],
+ "tokens": 23650,
+ "seconds": 34
+}

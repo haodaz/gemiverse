@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. An urban campus stretching a mile along the Charles River basin, featuring classical limestone-clad buildings with a Great Dome alongside modernist and contemporary architecture. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Killian Court, a quad: Open courtyard surrounded by limestone-clad classical buildings; (2) Great Dome, a other: Pantheon-esque classical dome overlooking a courtyard; (3) MIT Museum, a museum: Plain museum building near a subway entrance; (4) Simmons Hall, a hall: Contemporary starchitecture residence hall; (5) Kresge Auditorium, a hall: Post-war modernist auditorium; (6) MIT Chapel, a other: Post-war modernist chapel. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 16,
+ "tokens": 2162,
+ "at": "2026-11-22T00:12:06.689Z"
+}

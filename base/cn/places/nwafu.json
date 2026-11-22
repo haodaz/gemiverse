@@ -1,0 +1,104 @@
+{
+ "school": "nwafu",
+ "name": "西北农林科技大学",
+ "at": "2026-11-22T00:17:33.011Z",
+ "source": "https://zh.wikipedia.org/wiki/%E8%A5%BF%E5%8C%97%E5%86%9C%E6%9E%97%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%A6",
+ "character": "The main campus is divided into South and North campuses, featuring historic, rustic architecture like the 1934 No. 3 Teaching Building alongside newly built and renovated modern facilities.",
+ "map": "/art/map/nwafu.jpg",
+ "landmarks": [
+  {
+   "name": "北校区3号教学楼",
+   "name_en": "North Campus No. 3 Teaching Building",
+   "kind": "other",
+   "quote": "现北校区3号教学楼历史悠久，建筑风格古朴，系1934年建校时国民政府资助所建，兼有钟楼的功能",
+   "look": "Rustic historic teaching building with a clock tower and visible bomb scars.",
+   "check": 0.9870677562769713,
+   "confidence": 0.9870677562769713,
+   "passed": true,
+   "x": 0.22,
+   "y": 0.28
+  },
+  {
+   "name": "绣山学生活动中心",
+   "name_en": "Xiushan Student Activity Center",
+   "kind": "hall",
+   "quote": "南、北校区各有1个“绣山学生活动中心”",
+   "look": "Modern student activity hall; the South Campus lobby contains a sculpture.",
+   "check": 0.978775306902864,
+   "confidence": 0.978775306902864,
+   "passed": true,
+   "x": 0.21,
+   "y": 0.73
+  },
+  {
+   "name": "原昆虫博物馆",
+   "name_en": "Former Insect Museum",
+   "kind": "museum",
+   "quote": "位于北校区的原昆虫博物馆的建设亦得到了国家农业部的资助。",
+   "look": "Plain museum building on the North Campus.",
+   "check": 0.959466474216958,
+   "confidence": 0.959466474216958,
+   "passed": true,
+   "x": 0.45,
+   "y": 0.1
+  },
+  {
+   "name": "南校区博览园建筑群",
+   "name_en": "South Campus Expo Park Complex",
+   "kind": "museum",
+   "quote": "南校区博览园建筑群",
+   "look": "Complex of exhibition buildings including an insect museum and animal museum.",
+   "check": 0.9743553213790644,
+   "confidence": 0.9743553213790644,
+   "passed": true,
+   "x": 0.78,
+   "y": 0.75
+  },
+  {
+   "name": "西北农林科技大学图书馆",
+   "name_en": "Northwest A&F University Library",
+   "kind": "library",
+   "quote": "西北农林科技大学图书馆的馆名由郭沫若书写。",
+   "look": "Library building featuring calligraphy signage by Guo Moruo.",
+   "check": 0.8938293726367049,
+   "confidence": 0.8938293726367049,
+   "passed": true,
+   "x": 0.72,
+   "y": 0.42
+  },
+  {
+   "name": "北校区8号教学楼",
+   "name_en": "North Campus No. 8 Teaching Building",
+   "kind": "other",
+   "quote": "学校将主教学楼——八号教学楼进行了彻底的整修。",
+   "look": "Large, bright main teaching building with simple, fine modern decoration.",
+   "check": 0.9751472199295247,
+   "confidence": 0.9751472199295247,
+   "passed": true,
+   "x": 0.82,
+   "y": 0.12
+  },
+  {
+   "name": "北校区标准体育场",
+   "name_en": "North Campus Standard Stadium",
+   "kind": "stadium",
+   "quote": "北校区标准体育场",
+   "look": "Standard outdoor sports stadium.",
+   "check": 0.9773852889154192,
+   "confidence": 0.9773852889154192,
+   "passed": true
+  },
+  {
+   "name": "南校区室内体育馆",
+   "name_en": "South Campus Indoor Gymnasium",
+   "kind": "stadium",
+   "quote": "南校区室内体育馆",
+   "look": "Plain indoor sports gymnasium.",
+   "check": 0.9749534094340399,
+   "confidence": 0.9749534094340399,
+   "passed": true
+  }
+ ],
+ "tokens": 23436,
+ "seconds": 37
+}

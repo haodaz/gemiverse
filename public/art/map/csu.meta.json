@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. Located at the foot of Mount Yuelu, the main campus features mostly simple, antique red-brick Soviet-style buildings. Draw exactly these 2 features, well spread across the picture with space between them, each clearly recognisable: (1) Minzhu Building, a hall: Simple, antique red-brick Soviet-style academic building.; (2) Heping Building, a hall: Simple, antique red-brick Soviet-style academic building.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 14,
+ "tokens": 1778,
+ "at": "2026-11-22T00:16:44.726Z"
+}

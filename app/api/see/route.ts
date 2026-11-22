@@ -35,7 +35,7 @@ ${needList()}` }, file], "low");
     // an event with a checked title. Who showed it, and that it was shown at all, is not recorded. Posters rank below official pages (tier 3).
     let added: string | null = null, same: { id: string; name: string; confidence: number } | null = null;
     const ok = (k: string) => fields.find((f) => f.field === k)?.passed;
-    if (rec.is_event && ok("title")) {
+    if (rec.is_event && ok("title") && ["nyu", "columbia"].includes(school)) {   // local-edition schools are never written to the shared base
       try {
         // Identity before entry: is this something the base already holds? Candidates share a word with the title; the Decisions API judges each.
         const sch = school === "columbia" ? "columbia" : "nyu", words = String(rec.title).toLowerCase().split(/[^a-z0-9]+/).filter((w: string) => w.length > 3);

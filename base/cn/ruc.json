@@ -1,0 +1,69 @@
+{
+ "school": "ruc",
+ "name": "中国人民大学",
+ "at": "2026-11-22T00:13:50.355Z",
+ "seconds": 21,
+ "tokens": 32654,
+ "entities": [
+  {
+   "id": "ruc-408c3d6c43",
+   "type": "Event",
+   "school": "ruc",
+   "name": "“艺韵溯光”｜中国人民大学学生艺术团2026年冬季演出季",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.ruc.edu.cn/2123591154637402114.html",
+    "needs": [
+     "rest_and_recover",
+     "make_and_express"
+    ],
+    "start": "2026-11-22",
+    "summary": "中国人民大学学生艺术团2026年冬季演出季，将在通州和中关村校区举办8场演出。",
+    "event_kind": "activity",
+    "venue_name": "中国人民大学通州校区先锋剧场，中国人民大学中关村校区明德堂、八百人大教室",
+    "organisation_name": "共青团委员会",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-22",
+      "end": null
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "ruc-408c3d6c43",
+   "field": "title",
+   "quote": "“艺韵溯光”｜中国人民大学学生艺术团2026年冬季演出季",
+   "url": "https://www.ruc.edu.cn/2123591154637402114.html",
+   "check_confidence": 0.9581880220032365,
+   "passed": true
+  },
+  {
+   "entity_id": "ruc-408c3d6c43",
+   "field": "date",
+   "quote": "2026年11月22日至12月20日",
+   "url": "https://www.ruc.edu.cn/2123591154637402114.html",
+   "check_confidence": 0.9750567736150664,
+   "passed": true
+  },
+  {
+   "entity_id": "ruc-408c3d6c43",
+   "field": "venue_name",
+   "quote": "中国人民大学通州校区先锋剧场，中国人民大学中关村校区明德堂、八百人大教室",
+   "url": "https://www.ruc.edu.cn/2123591154637402114.html",
+   "check_confidence": 0.9547317323031558,
+   "passed": true
+  },
+  {
+   "entity_id": "ruc-408c3d6c43",
+   "field": "organisation_name",
+   "quote": "共青团委员会",
+   "url": "https://www.ruc.edu.cn/2123591154637402114.html",
+   "check_confidence": 0.9732619839215447,
+   "passed": true
+  }
+ ]
+}

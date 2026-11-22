@@ -1,0 +1,104 @@
+{
+ "school": "columbia",
+ "name": "Columbia University",
+ "at": "2026-11-22T00:14:54.251Z",
+ "source": "https://en.wikipedia.org/wiki/Columbia%20University",
+ "character": "The 32-acre urban campus in Morningside Heights was designed along Beaux-Arts planning principles with a lower part and an upper terrace.",
+ "map": "/art/map/columbia.jpg",
+ "landmarks": [
+  {
+   "name": "Low Memorial Library",
+   "name_en": "Low Memorial Library",
+   "kind": "library",
+   "quote": "Low Memorial Library, a National Historic Landmark and the centerpiece of the campus",
+   "look": "Grand Beaux-Arts centerpiece library with long granite front steps.",
+   "check": 0.9838667932004743,
+   "confidence": 0.9838667932004743,
+   "passed": true,
+   "x": 0.58,
+   "y": 0.38
+  },
+  {
+   "name": "Butler Library",
+   "name_en": "Butler Library",
+   "kind": "library",
+   "quote": "Butler Library is the largest in the Columbia University Libraries system",
+   "look": "One of the largest buildings on campus, plain library.",
+   "check": 0.9878986135108382,
+   "confidence": 0.9878986135108382,
+   "passed": true,
+   "x": 0.17,
+   "y": 0.58
+  },
+  {
+   "name": "South Field",
+   "name_en": "South Field",
+   "kind": "other",
+   "quote": "leading from the lower part of campus (South Field) to its upper terrace.",
+   "look": "Open lower campus field below the granite steps.",
+   "check": 0.9430581285453001,
+   "confidence": 0.9430581285453001,
+   "passed": true,
+   "x": 0.4,
+   "y": 0.84
+  },
+  {
+   "name": "Philosophy Hall",
+   "name_en": "Philosophy Hall",
+   "kind": "hall",
+   "quote": "Philosophy Hall is listed as the site of the invention of FM radio.",
+   "look": "Historic academic hall on the Morningside Heights campus.",
+   "check": 0.9685496024741054,
+   "confidence": 0.9685496024741054,
+   "passed": true,
+   "x": 0.36,
+   "y": 0.17
+  },
+  {
+   "name": "Pupin Hall",
+   "name_en": "Pupin Hall",
+   "kind": "hall",
+   "quote": "Also listed is Pupin Hall, another National Historic Landmark",
+   "look": "Historic academic hall housing physics and astronomy departments.",
+   "check": 0.9713556488112672,
+   "confidence": 0.9713556488112672,
+   "passed": true,
+   "x": 0.71,
+   "y": 0.14
+  },
+  {
+   "name": "Earl Hall",
+   "name_en": "Earl Hall",
+   "kind": "hall",
+   "quote": "Other buildings listed include Casa Italiana, the Delta Psi, Alpha Chapter building of St. Anthony Hall, Earl Hall",
+   "look": "Historic campus hall, plain.",
+   "check": 0.9790096820773911,
+   "confidence": 0.9790096820773911,
+   "passed": true,
+   "x": 0.91,
+   "y": 0.28
+  },
+  {
+   "name": "Casa Italiana",
+   "name_en": "Casa Italiana",
+   "kind": "other",
+   "quote": "Other buildings listed include Casa Italiana",
+   "look": "Historic campus building, plain.",
+   "check": 0.9730903258543357,
+   "confidence": 0.9730903258543357,
+   "passed": true
+  },
+  {
+   "name": "St. Anthony Hall",
+   "name_en": "St. Anthony Hall",
+   "kind": "hall",
+   "quote": "the Delta Psi, Alpha Chapter building of St. Anthony Hall",
+   "look": "Historic chapter hall building, plain.",
+   "check": 0.9411735417538171,
+   "confidence": 0.9411735417538171,
+   "passed": true
+  }
+ ],
+ "tokens": 9980,
+ "seconds": 45
+}

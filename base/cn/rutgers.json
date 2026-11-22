@@ -1,0 +1,876 @@
+{
+ "school": "rutgers",
+ "name": "Rutgers University",
+ "at": "2026-11-22T00:21:14.892Z",
+ "seconds": 29,
+ "tokens": 86711,
+ "entities": [
+  {
+   "id": "rutgers-f10acb544b",
+   "type": "Event",
+   "school": "rutgers",
+   "name": "Rutgers Big Chill 5K",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.rutgers.edu/event/big-chill-5k",
+    "needs": [
+     "contribute_beyond_self",
+     "find_my_people"
+    ],
+    "start": "2026-12-12T10:00",
+    "summary": "The 24th annual Rutgers Big Chill 5K unites the community to support local children and combat student food insecurity.",
+    "event_kind": "activity",
+    "venue_name": "College Avenue Gym",
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-12T10:00",
+      "end": "2026-12-12T13:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "rutgers-78a7c9d777",
+   "type": "Event",
+   "school": "rutgers",
+   "name": "MGSA 50: Mason Gross School of the Arts Golden Anniversary",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.rutgers.edu/event/mason-gross-school-of-arts-50-year-anniversary",
+    "needs": [
+     "find_my_people",
+     "make_and_express"
+    ],
+    "start": "2026-09-03T08:00",
+    "summary": "Mason Gross School of the Arts celebrates 50 years of fostering artists at Rutgers with events featuring students, alumni, and faculty throughout 2026.",
+    "event_kind": "other",
+    "venue_name": null,
+    "organisation_name": "Mason Gross School of the Arts",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-09-03T08:00",
+      "end": "2026-09-03T21:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "rutgers-399ae26050",
+   "type": "Event",
+   "school": "rutgers",
+   "name": "Rutgers Community Farmers Market",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.rutgers.edu/event/rutgers-community-farmers-market",
+    "needs": [
+     "rest_and_recover",
+     "contribute_beyond_self"
+    ],
+    "start": "2026-05-22T09:00",
+    "summary": "The Rutgers Community Farmers Market offers locally grown produce, baked goods, and handmade products from New Jersey vendors across three locations.",
+    "event_kind": "activity",
+    "venue_name": "RCFM Market Pavilion, 178 Jones Avenue, New Brunswick; Rutgers Gardens Pavilion, 112 Log Cabin Road, North Brunswick; College Avenue Student Center, 126 College Ave, New Brunswick",
+    "organisation_name": null,
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-05-22T09:00",
+      "end": "2026-05-22T15:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "rutgers-ff38d524f6",
+   "type": "Event",
+   "school": "rutgers",
+   "name": "Rethinking Liberalism, Libertas (Freedom), and Self-Cultivation",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.rutgers.edu/event/rethinking-liberalism-libertas-freedom-and-self-cultivation",
+    "needs": [
+     "explore_a_field",
+     "find_my_people"
+    ],
+    "start": "2026-12-01T12:00",
+    "summary": "A panel discussion reassessing European and Jewish Enlightenment values, liberalism, freedom, and self-cultivation in our present moment.",
+    "event_kind": "lecture",
+    "venue_name": "New Brunswick Theological Seminary, 35 Seminary Place, New Brunswick, NJ, 08901",
+    "organisation_name": "Bildner Center for the Study of Jewish Life",
+    "speaker": "Susan Neiman, Helena Rosenblatt, David Sorkin, Nancy Sinkoff",
+    "occurrences": [
+     {
+      "start": "2026-12-01T12:00",
+      "end": "2026-12-01T13:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "rutgers-585fd82c4d",
+   "type": "Event",
+   "school": "rutgers",
+   "name": "MFA Visual Arts First-Year Exhibition",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.rutgers.edu/event/mfa-visual-arts-first-year-exhibition",
+    "needs": [
+     "make_and_express",
+     "explore_a_field"
+    ],
+    "start": "2026-11-14T10:30",
+    "summary": "First-year MFA Visual Arts students at Mason Gross School of the Arts present an annual interdisciplinary exhibition.",
+    "event_kind": "exhibition",
+    "venue_name": "Mason Gross Galleries, 33 Livingston Avenue, New Brunswick, NJ, 08901",
+    "organisation_name": "Mason Gross School of the Arts",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-14T10:30",
+      "end": "2026-11-14T18:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "rutgers-f74b857cd9",
+   "type": "Event",
+   "school": "rutgers",
+   "name": "Astronomical Observatory Public Open Viewing Nights (Thursdays)",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.rutgers.edu/event/astronomical-observatory-public-open-viewing-nights",
+    "needs": [
+     "explore_a_field",
+     "find_my_people"
+    ],
+    "start": "2026-10-08T20:30",
+    "summary": "The Robert A. Schommer Astronomical Observatory on Busch Campus hosts free public open viewing nights on select Thursdays, weather permitting.",
+    "event_kind": "activity",
+    "venue_name": "The Robert A. Schommer Astronomical Observatory, Serin Physics Laboratories, Busch Campus",
+    "organisation_name": "The Robert A. Schommer Astronomical Observatory",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-10-08T20:30",
+      "end": "2026-10-08T22:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "rutgers-0ecb0ab1e6",
+   "type": "Event",
+   "school": "rutgers",
+   "name": "Café Democracy: Who Do We Trust? Science, Government, and Public Policy",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.rutgers.edu/event/cafe-democracy-who-do-we-trust-science-government-and-public-policy",
+    "needs": [
+     "find_my_people",
+     "contribute_beyond_self"
+    ],
+    "start": "2026-12-03T16:30",
+    "summary": "A moderated group discussion hosted by the Eagleton Institute of Politics exploring trust in science, government, and public policy.",
+    "event_kind": "activity",
+    "venue_name": "Eagleton Institute of Politics, 191 Ryders Lane, New Brunswick, NJ, 08901",
+    "organisation_name": "Eagleton Institute of Politics",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-03T16:30",
+      "end": "2026-12-03T18:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "rutgers-c55ebad3b6",
+   "type": "Event",
+   "school": "rutgers",
+   "name": "Rutgers Brain Health Institute Symposium",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.rutgers.edu/event/rutgers-brain-health-institute-symposium",
+    "needs": [
+     "explore_a_field",
+     "find_my_people"
+    ],
+    "start": "2026-12-02T08:30",
+    "summary": "The 12th annual Rutgers Brain Health Institute Symposium features a keynote lecture, faculty presentations, a panel, trainee talks, posters, and an art exhibition.",
+    "event_kind": "lecture",
+    "venue_name": "College Ave Student Center, 126 College Ave, New Brunswick, NJ, 08901",
+    "organisation_name": "Rutgers Brain Health Institute",
+    "speaker": "Dr. Joseph E. LeDoux",
+    "occurrences": [
+     {
+      "start": "2026-12-02T08:30",
+      "end": "2026-12-02T17:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "rutgers-b2a7858268",
+   "type": "Event",
+   "school": "rutgers",
+   "name": "Fall Dance Plus 2026",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.rutgers.edu/event/fall-dance-plus",
+    "needs": [
+     "make_and_express",
+     "rest_and_recover"
+    ],
+    "start": "2026-12-03T19:30",
+    "summary": "University DanceWorks presents new and classic dance works by several choreographers at Victoria J. Mastrobuono Theater.",
+    "event_kind": "other",
+    "venue_name": "Victoria J. Mastrobuono Theater, 87 George street, New Brunswick, NJ, 08901",
+    "organisation_name": "Mason Gross School of the Arts",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-03T19:30",
+      "end": "2026-12-03T21:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "rutgers-512a043b65",
+   "type": "Event",
+   "school": "rutgers",
+   "name": "Christmas in Carol and Song",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.rutgers.edu/event/christmas-carol-and-song",
+    "needs": [
+     "rest_and_recover",
+     "find_my_people"
+    ],
+    "start": "2026-12-05T17:00",
+    "summary": "Rutgers University Kirkpatrick Choir and Glee Club perform traditional songs and new works in an annual holiday concert.",
+    "event_kind": "activity",
+    "venue_name": "Kirkpatrick Chapel, 81 Somerset Street, New Brunswick, NJ, 08901",
+    "organisation_name": "Mason Gross School of the Arts",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-05T17:00",
+      "end": "2026-12-05T21:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "rutgers-6af0e46153",
+   "type": "Event",
+   "school": "rutgers",
+   "name": "Flute Guitar Concert at the Robeson Campus Center",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.rutgers.edu/event/flute-guitar-concert-robeson-campus-center",
+    "needs": [
+     "rest_and_recover",
+     "make_and_express"
+    ],
+    "start": "2026-12-07T11:30",
+    "summary": "A free flute and guitar concert by Duo Diletto at Rutgers-Newark's Robeson Campus Center, featuring classical and contemporary works.",
+    "event_kind": "activity",
+    "venue_name": "Robeson Campus Center, 350 Dr Martin Luther King Jr Blvd, Newark, NJ, 07102",
+    "organisation_name": "Rutgers-Newark Cultural Programming Committee and Department of Arts, Culture Media",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-07T11:30",
+      "end": "2026-12-07T13:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "rutgers-a48143ee6f",
+   "type": "Event",
+   "school": "rutgers",
+   "name": "Rutgers Innovation Showcase",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.rutgers.edu/index%2ephp/event/rutgers-innovation-showcase",
+    "needs": [
+     "explore_a_field",
+     "find_my_people"
+    ],
+    "start": "2027-03-18T10:00",
+    "summary": "A showcase featuring Rutgers researchers' lightning talks, student and faculty poster presentations, startup pitches, and networking with industry and investors.",
+    "event_kind": "exhibition",
+    "venue_name": "Rutgers Academic Building, East Wing, 15 Seminary Pl, New Brunswick, NJ, 08901",
+    "organisation_name": "Technology Transfer New Ventures",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2027-03-18T10:00",
+      "end": "2027-03-18T18:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "rutgers-6975f46a87",
+   "type": "Event",
+   "school": "rutgers",
+   "name": "Rethinking Liberalism, Libertas (Freedom), and Self-Cultivation",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.rutgers.edu/index%2ephp/event/rethinking-liberalism-libertas-freedom-and-self-cultivation",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-12-01T12:00",
+    "summary": "A panel discussion reassessing Enlightenment liberalism, libertas, and self-cultivation, presented by the Bildner Center for the Study of Jewish Life.",
+    "event_kind": "lecture",
+    "venue_name": "New Brunswick Theological Seminary, 35 Seminary Place, New Brunswick, NJ, 08901",
+    "organisation_name": "Bildner Center for the Study of Jewish Life",
+    "speaker": "Susan Neiman, Helena Rosenblatt, David Sorkin, Nancy Sinkoff",
+    "occurrences": [
+     {
+      "start": "2026-12-01T12:00",
+      "end": "2026-12-01T13:00"
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "rutgers-f10acb544b",
+   "field": "title",
+   "quote": "Rutgers Big Chill 5K",
+   "url": "https://www.rutgers.edu/event/big-chill-5k",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-f10acb544b",
+   "field": "date",
+   "quote": "Saturday, December 12, 2026, 10:00 a.m.-1:00 p.m.",
+   "url": "https://www.rutgers.edu/event/big-chill-5k",
+   "check_confidence": 0.9758862137712427,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-f10acb544b",
+   "field": "start_time",
+   "quote": "10:00",
+   "url": "https://www.rutgers.edu/event/big-chill-5k",
+   "check_confidence": 0.9720360052997232,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-f10acb544b",
+   "field": "venue_name",
+   "quote": "beginning at the College Avenue Gym!",
+   "url": "https://www.rutgers.edu/event/big-chill-5k",
+   "check_confidence": 0.9699516066409279,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-78a7c9d777",
+   "field": "title",
+   "quote": "MGSA 50: Mason Gross School of the Arts Golden Anniversary",
+   "url": "https://www.rutgers.edu/event/mason-gross-school-of-arts-50-year-anniversary",
+   "check_confidence": 0.9562298795101974,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-78a7c9d777",
+   "field": "date",
+   "quote": "Thursday, September 03, 2026, 8:00 a.m.-Saturday, December 05, 2026, 9:00 p.m.",
+   "url": "https://www.rutgers.edu/event/mason-gross-school-of-arts-50-year-anniversary",
+   "check_confidence": 0.9673014534278465,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-78a7c9d777",
+   "field": "start_time",
+   "quote": "08:00",
+   "url": "https://www.rutgers.edu/event/mason-gross-school-of-arts-50-year-anniversary",
+   "check_confidence": 0.960106859442793,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-78a7c9d777",
+   "field": "organisation_name",
+   "quote": "Mason Gross School of the Arts",
+   "url": "https://www.rutgers.edu/event/mason-gross-school-of-arts-50-year-anniversary",
+   "check_confidence": 0.9497480455041362,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-399ae26050",
+   "field": "title",
+   "quote": "Rutgers Community Farmers Market",
+   "url": "https://www.rutgers.edu/event/rutgers-community-farmers-market",
+   "check_confidence": 0.962810719801617,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-399ae26050",
+   "field": "date",
+   "quote": "Friday, May 22, 2026, 9:00 a.m.-Sunday, November 22, 2026, 3:00 p.m.",
+   "url": "https://www.rutgers.edu/event/rutgers-community-farmers-market",
+   "check_confidence": 0.9651449909487967,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-399ae26050",
+   "field": "start_time",
+   "quote": "09:00",
+   "url": "https://www.rutgers.edu/event/rutgers-community-farmers-market",
+   "check_confidence": 0.9683265379205596,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-399ae26050",
+   "field": "venue_name",
+   "quote": "178 Jones Avenue, New Brunswick; 112 Log Cabin Road, North Brunswick; 126 College Ave, New Brunswick",
+   "url": "https://www.rutgers.edu/event/rutgers-community-farmers-market",
+   "check_confidence": 0.9641005569525809,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-ff38d524f6",
+   "field": "title",
+   "quote": "Rethinking Liberalism, Libertas (Freedom), and Self-Cultivation",
+   "url": "https://www.rutgers.edu/event/rethinking-liberalism-libertas-freedom-and-self-cultivation",
+   "check_confidence": 0.9633079873466357,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-ff38d524f6",
+   "field": "date",
+   "quote": "Tuesday, December 01, 2026, 12:00 p.m.-1:00 p.m.",
+   "url": "https://www.rutgers.edu/event/rethinking-liberalism-libertas-freedom-and-self-cultivation",
+   "check_confidence": 0.9674125817410534,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-ff38d524f6",
+   "field": "start_time",
+   "quote": "12:00",
+   "url": "https://www.rutgers.edu/event/rethinking-liberalism-libertas-freedom-and-self-cultivation",
+   "check_confidence": 0.9684849695950472,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-ff38d524f6",
+   "field": "venue_name",
+   "quote": "New Brunswick Theological Seminary 35 Seminary Place New Brunswick, NJ, 08901",
+   "url": "https://www.rutgers.edu/event/rethinking-liberalism-libertas-freedom-and-self-cultivation",
+   "check_confidence": 0.9634254043739717,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-ff38d524f6",
+   "field": "organisation_name",
+   "quote": "Bildner Center for the Study of Jewish Life",
+   "url": "https://www.rutgers.edu/event/rethinking-liberalism-libertas-freedom-and-self-cultivation",
+   "check_confidence": 0.9616361716970555,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-ff38d524f6",
+   "field": "speaker",
+   "quote": "Susan Neiman, Helena Rosenblatt, David Sorkin, Nancy Sinkoff",
+   "url": "https://www.rutgers.edu/event/rethinking-liberalism-libertas-freedom-and-self-cultivation",
+   "check_confidence": 0.9382276373386261,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-585fd82c4d",
+   "field": "title",
+   "quote": "MFA Visual Arts First-Year Exhibition",
+   "url": "https://www.rutgers.edu/event/mfa-visual-arts-first-year-exhibition",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-585fd82c4d",
+   "field": "date",
+   "quote": "Saturday, November 14, 2026, 10:30 a.m.-Saturday, December 05, 2026, 6:00 p.m.",
+   "url": "https://www.rutgers.edu/event/mfa-visual-arts-first-year-exhibition",
+   "check_confidence": 0.9645251046209407,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-585fd82c4d",
+   "field": "start_time",
+   "quote": "10:30",
+   "url": "https://www.rutgers.edu/event/mfa-visual-arts-first-year-exhibition",
+   "check_confidence": 0.9751584122600042,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-585fd82c4d",
+   "field": "venue_name",
+   "quote": "Mason Gross Galleries 33 Livingston Avenue New Brunswick, NJ, 08901",
+   "url": "https://www.rutgers.edu/event/mfa-visual-arts-first-year-exhibition",
+   "check_confidence": 0.9687930555047395,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-585fd82c4d",
+   "field": "organisation_name",
+   "quote": "Mason Gross School of the Arts",
+   "url": "https://www.rutgers.edu/event/mfa-visual-arts-first-year-exhibition",
+   "check_confidence": 0.9780075441579631,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-f74b857cd9",
+   "field": "title",
+   "quote": "Astronomical Observatory Public Open Viewing Nights (Thursdays)",
+   "url": "https://www.rutgers.edu/event/astronomical-observatory-public-open-viewing-nights",
+   "check_confidence": 0.9697566525468512,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-f74b857cd9",
+   "field": "date",
+   "quote": "Thursday, October 08, 2026, 8:30 p.m.-Thursday, March 25, 2027, 10:30 p.m.",
+   "url": "https://www.rutgers.edu/event/astronomical-observatory-public-open-viewing-nights",
+   "check_confidence": 0.9492996745420822,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-f74b857cd9",
+   "field": "start_time",
+   "quote": "20:30",
+   "url": "https://www.rutgers.edu/event/astronomical-observatory-public-open-viewing-nights",
+   "check_confidence": 0.9596150978917984,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-f74b857cd9",
+   "field": "venue_name",
+   "quote": "The Robert A. Schommer Astronomical Observatory is located in the dome on the roof of the Serin Physics Laboratories on Busch Campus.",
+   "url": "https://www.rutgers.edu/event/astronomical-observatory-public-open-viewing-nights",
+   "check_confidence": 0.9515780599533471,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-f74b857cd9",
+   "field": "organisation_name",
+   "quote": "The Robert A. Schommer Astronomical Observatory",
+   "url": "https://www.rutgers.edu/event/astronomical-observatory-public-open-viewing-nights",
+   "check_confidence": 0.9680424606441428,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-0ecb0ab1e6",
+   "field": "title",
+   "quote": "Café Democracy: Who Do We Trust? Science, Government, and Public Policy",
+   "url": "https://www.rutgers.edu/event/cafe-democracy-who-do-we-trust-science-government-and-public-policy",
+   "check_confidence": 0.9731129504890409,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-0ecb0ab1e6",
+   "field": "date",
+   "quote": "Thursday, December 03, 2026, 4:30 p.m.-6:00 p.m.",
+   "url": "https://www.rutgers.edu/event/cafe-democracy-who-do-we-trust-science-government-and-public-policy",
+   "check_confidence": 0.9702910345344746,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-0ecb0ab1e6",
+   "field": "start_time",
+   "quote": "16:30",
+   "url": "https://www.rutgers.edu/event/cafe-democracy-who-do-we-trust-science-government-and-public-policy",
+   "check_confidence": 0.9505338965032587,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-0ecb0ab1e6",
+   "field": "venue_name",
+   "quote": "Eagleton Institute of Politics 191 Ryders Lane New Brunswick, NJ, 08901",
+   "url": "https://www.rutgers.edu/event/cafe-democracy-who-do-we-trust-science-government-and-public-policy",
+   "check_confidence": 0.9713512676943831,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-0ecb0ab1e6",
+   "field": "organisation_name",
+   "quote": "Eagleton Institute of Politics",
+   "url": "https://www.rutgers.edu/event/cafe-democracy-who-do-we-trust-science-government-and-public-policy",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-c55ebad3b6",
+   "field": "title",
+   "quote": "Rutgers Brain Health Institute Symposium",
+   "url": "https://www.rutgers.edu/event/rutgers-brain-health-institute-symposium",
+   "check_confidence": 0.974330149195023,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-c55ebad3b6",
+   "field": "date",
+   "quote": "Wednesday, December 02, 2026, 8:30 a.m.-5:30 p.m.",
+   "url": "https://www.rutgers.edu/event/rutgers-brain-health-institute-symposium",
+   "check_confidence": 0.9882273635439885,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-c55ebad3b6",
+   "field": "start_time",
+   "quote": "08:30",
+   "url": "https://www.rutgers.edu/event/rutgers-brain-health-institute-symposium",
+   "check_confidence": 0.9781034428002832,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-c55ebad3b6",
+   "field": "venue_name",
+   "quote": "College Ave Student Center 126 College Ave New Brunswick, NJ, 08901",
+   "url": "https://www.rutgers.edu/event/rutgers-brain-health-institute-symposium",
+   "check_confidence": 0.9698618869606718,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-c55ebad3b6",
+   "field": "organisation_name",
+   "quote": "Rutgers Brain Health Institute",
+   "url": "https://www.rutgers.edu/event/rutgers-brain-health-institute-symposium",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-c55ebad3b6",
+   "field": "speaker",
+   "quote": "Dr. Joseph E. LeDoux",
+   "url": "https://www.rutgers.edu/event/rutgers-brain-health-institute-symposium",
+   "check_confidence": 0.9736642264870806,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-b2a7858268",
+   "field": "title",
+   "quote": "Fall Dance Plus 2026",
+   "url": "https://www.rutgers.edu/event/fall-dance-plus",
+   "check_confidence": 0.9775890573573199,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-b2a7858268",
+   "field": "date",
+   "quote": "Thursday, December 03, 2026, 7:30 p.m.-Saturday, December 05, 2026, 9:30 p.m.",
+   "url": "https://www.rutgers.edu/event/fall-dance-plus",
+   "check_confidence": 0.9822890087464312,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-b2a7858268",
+   "field": "start_time",
+   "quote": "19:30",
+   "url": "https://www.rutgers.edu/event/fall-dance-plus",
+   "check_confidence": 0.9746064996460427,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-b2a7858268",
+   "field": "venue_name",
+   "quote": "Victoria J. Mastrobuono Theater 87 George street New Brunswick, NJ, 08901",
+   "url": "https://www.rutgers.edu/event/fall-dance-plus",
+   "check_confidence": 0.9641113481925154,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-b2a7858268",
+   "field": "organisation_name",
+   "quote": "Mason Gross School of the Arts",
+   "url": "https://www.rutgers.edu/event/fall-dance-plus",
+   "check_confidence": 0.9868245413339903,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-512a043b65",
+   "field": "title",
+   "quote": "Christmas in Carol and Song",
+   "url": "https://www.rutgers.edu/event/christmas-carol-and-song",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-512a043b65",
+   "field": "date",
+   "quote": "Saturday, December 05, 2026, 5:00 p.m.-Sunday, December 06, 2026, 9:00 p.m.",
+   "url": "https://www.rutgers.edu/event/christmas-carol-and-song",
+   "check_confidence": 0.9816311312335192,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-512a043b65",
+   "field": "start_time",
+   "quote": "17:00",
+   "url": "https://www.rutgers.edu/event/christmas-carol-and-song",
+   "check_confidence": 0.9574920046081697,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-512a043b65",
+   "field": "venue_name",
+   "quote": "Kirkpatrick Chapel 81 Somerset Street New Brunswick, NJ, 08901",
+   "url": "https://www.rutgers.edu/event/christmas-carol-and-song",
+   "check_confidence": 0.9757377065828934,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-512a043b65",
+   "field": "organisation_name",
+   "quote": "Mason Gross School of the Arts",
+   "url": "https://www.rutgers.edu/event/christmas-carol-and-song",
+   "check_confidence": 0.985857479297605,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-6af0e46153",
+   "field": "title",
+   "quote": "Flute Guitar Concert at the Robeson Campus Center",
+   "url": "https://www.rutgers.edu/event/flute-guitar-concert-robeson-campus-center",
+   "check_confidence": 0.972730200810015,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-6af0e46153",
+   "field": "date",
+   "quote": "Monday, December 07, 2026, 11:30 a.m.-1:00 p.m.",
+   "url": "https://www.rutgers.edu/event/flute-guitar-concert-robeson-campus-center",
+   "check_confidence": 0.9848877950073966,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-6af0e46153",
+   "field": "start_time",
+   "quote": "11:30",
+   "url": "https://www.rutgers.edu/event/flute-guitar-concert-robeson-campus-center",
+   "check_confidence": 0.9661699837315447,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-6af0e46153",
+   "field": "venue_name",
+   "quote": "Robeson Campus Center 350 Dr Martin Luther King Jr Blvd Newark, NJ, 07102",
+   "url": "https://www.rutgers.edu/event/flute-guitar-concert-robeson-campus-center",
+   "check_confidence": 0.966012934042061,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-6af0e46153",
+   "field": "organisation_name",
+   "quote": "Rutgers-Newark Cultural Programming Committee and Department of Arts, Culture Media",
+   "url": "https://www.rutgers.edu/event/flute-guitar-concert-robeson-campus-center",
+   "check_confidence": 0.9595942493686774,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-6af0e46153",
+   "field": "speaker",
+   "quote": "Duo Diletto (Leighann Narum and Dr. Sarah Carrier)",
+   "url": "https://www.rutgers.edu/event/flute-guitar-concert-robeson-campus-center",
+   "check_confidence": 0.7845117949791857,
+   "passed": false
+  },
+  {
+   "entity_id": "rutgers-a48143ee6f",
+   "field": "title",
+   "quote": "Rutgers Innovation Showcase",
+   "url": "https://www.rutgers.edu/index%2ephp/event/rutgers-innovation-showcase",
+   "check_confidence": 0.9619200432921924,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-a48143ee6f",
+   "field": "date",
+   "quote": "Thursday, March 18, 2027, 10:00 a.m.-6:30 p.m.",
+   "url": "https://www.rutgers.edu/index%2ephp/event/rutgers-innovation-showcase",
+   "check_confidence": 0.9801702158810247,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-a48143ee6f",
+   "field": "start_time",
+   "quote": "10:00",
+   "url": "https://www.rutgers.edu/index%2ephp/event/rutgers-innovation-showcase",
+   "check_confidence": 0.96985802068253,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-a48143ee6f",
+   "field": "venue_name",
+   "quote": "Rutgers Academic Building, East Wing, 15 Seminary Pl, New Brunswick, NJ, 08901",
+   "url": "https://www.rutgers.edu/index%2ephp/event/rutgers-innovation-showcase",
+   "check_confidence": 0.9594851588714629,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-a48143ee6f",
+   "field": "organisation_name",
+   "quote": "Technology Transfer New Ventures",
+   "url": "https://www.rutgers.edu/index%2ephp/event/rutgers-innovation-showcase",
+   "check_confidence": 0.9804304438654016,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-6975f46a87",
+   "field": "title",
+   "quote": "Rethinking Liberalism, Libertas (Freedom), and Self-Cultivation",
+   "url": "https://www.rutgers.edu/index%2ephp/event/rethinking-liberalism-libertas-freedom-and-self-cultivation",
+   "check_confidence": 0.9633079873466357,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-6975f46a87",
+   "field": "date",
+   "quote": "Tuesday, December 01, 2026, 12:00 p.m.-1:00 p.m.",
+   "url": "https://www.rutgers.edu/index%2ephp/event/rethinking-liberalism-libertas-freedom-and-self-cultivation",
+   "check_confidence": 0.9674125817410534,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-6975f46a87",
+   "field": "start_time",
+   "quote": "12:00",
+   "url": "https://www.rutgers.edu/index%2ephp/event/rethinking-liberalism-libertas-freedom-and-self-cultivation",
+   "check_confidence": 0.9684849695950472,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-6975f46a87",
+   "field": "venue_name",
+   "quote": "New Brunswick Theological Seminary 35 Seminary Place New Brunswick, NJ, 08901",
+   "url": "https://www.rutgers.edu/index%2ephp/event/rethinking-liberalism-libertas-freedom-and-self-cultivation",
+   "check_confidence": 0.9634254043739717,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-6975f46a87",
+   "field": "organisation_name",
+   "quote": "Bildner Center for the Study of Jewish Life",
+   "url": "https://www.rutgers.edu/index%2ephp/event/rethinking-liberalism-libertas-freedom-and-self-cultivation",
+   "check_confidence": 0.9616361716970555,
+   "passed": true
+  },
+  {
+   "entity_id": "rutgers-6975f46a87",
+   "field": "speaker",
+   "quote": "Susan Neiman, Helena Rosenblatt, David Sorkin, Nancy Sinkoff",
+   "url": "https://www.rutgers.edu/index%2ephp/event/rethinking-liberalism-libertas-freedom-and-self-cultivation",
+   "check_confidence": 0.9382276373386261,
+   "passed": true
+  }
+ ]
+}

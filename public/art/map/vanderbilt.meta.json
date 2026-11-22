@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. The campus features eclectic buildings of various styles along ridge lines, surrounded by abundant green space and roughly 190 species of trees and shrubs. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Kirkland Hall, a hall: Italianate-style building with a single tower; (2) Heard Central Library, a library: plain library building; (3) Vanderbilt Stadium, a stadium: plain varsity athletic stadium; (4) Carmichael Towers, a tower: set of high-rise dormitory towers; (5) Branscomb Quadrangle, a quad: quadrangle of residence halls; (6) Alumni Lawn, a other: open grassy campus lawn. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 19,
+ "tokens": 2356,
+ "at": "2026-11-22T00:14:35.160Z"
+}

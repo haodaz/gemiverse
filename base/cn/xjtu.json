@@ -1,0 +1,765 @@
+{
+ "school": "xjtu",
+ "name": "西安交通大学",
+ "at": "2026-11-22T00:11:30.958Z",
+ "seconds": 36,
+ "tokens": 88025,
+ "entities": [
+  {
+   "id": "xjtu-7cd6348906",
+   "type": "Event",
+   "school": "xjtu",
+   "name": "Hydrogen Fuel Cells for Aircraft Propulsion",
+   "tier": 1,
+   "fields": {
+    "url": "http://meeting.xjtu.edu.cn/lecturenotice/7035.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-19T09:30",
+    "summary": "关于飞机推进用氢燃料电池技术路线、工程难题及应用前景的学术讲座。",
+    "event_kind": "lecture",
+    "venue_name": "创新港校区敏行楼1-6116",
+    "organisation_name": null,
+    "speaker": "Ruky Navaratne",
+    "occurrences": [
+     {
+      "start": "2026-11-19T09:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "xjtu-585460c0d5",
+   "type": "Event",
+   "school": "xjtu",
+   "name": "周惠久论坛——宏观超分子组装及其应用",
+   "tier": 1,
+   "fields": {
+    "url": "http://meeting.xjtu.edu.cn/lecturenotice/7034.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-23T09:30",
+    "summary": "石峰教授主讲周惠久论坛，介绍宏观超分子组装及其应用研究。",
+    "event_kind": "lecture",
+    "venue_name": "创新港-3号巨构躬行楼3-2011会议室",
+    "organisation_name": "材料学院 金属材料强度全国重点实验室",
+    "speaker": "石峰 教授",
+    "occurrences": [
+     {
+      "start": "2026-11-23T09:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "xjtu-cd430e644c",
+   "type": "Event",
+   "school": "xjtu",
+   "name": "周惠久论坛——钠离子电池磷酸盐正极材料",
+   "tier": 1,
+   "fields": {
+    "url": "http://meeting.xjtu.edu.cn/lecturenotice/7033.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-23T16:00",
+    "summary": "吴兴隆教授将作钠离子电池磷酸盐正极材料储能性能提升机理的报告。",
+    "event_kind": "lecture",
+    "venue_name": "兴庆校区-仲英楼第一会议室",
+    "organisation_name": "材料学院 金属材料强度全国重点实验室",
+    "speaker": "吴兴隆 教授",
+    "occurrences": [
+     {
+      "start": "2026-11-23T16:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "xjtu-96679eb1af",
+   "type": "Event",
+   "school": "xjtu",
+   "name": "人工智能时代学科重塑的思考",
+   "tier": 1,
+   "fields": {
+    "url": "http://meeting.xjtu.edu.cn/lecturenotice/7032.htm",
+    "needs": [
+     "explore_a_field",
+     "decide_a_direction"
+    ],
+    "start": "2026-11-16T09:30",
+    "summary": "南京师范大学闾国年教授作题为“人工智能时代学科重塑的思考”的学术报告。",
+    "event_kind": "lecture",
+    "venue_name": "兴庆校区东二楼东333会议室",
+    "organisation_name": null,
+    "speaker": "闾国年",
+    "occurrences": [
+     {
+      "start": "2026-11-16T09:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "xjtu-7d7931f9e9",
+   "type": "Event",
+   "school": "xjtu",
+   "name": "如何明辨道德证言？",
+   "tier": 1,
+   "fields": {
+    "url": "http://meeting.xjtu.edu.cn/lecturenotice/7031.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-11-14T08:00",
+    "summary": "王奇琦主讲关于如何在不同道德认知情境中明辨道德证言的学术讲座。",
+    "event_kind": "lecture",
+    "venue_name": "兴庆校区主楼E810",
+    "organisation_name": null,
+    "speaker": "王奇琦",
+    "occurrences": [
+     {
+      "start": "2026-11-14T08:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "xjtu-0c5604ecaf",
+   "type": "Event",
+   "school": "xjtu",
+   "name": "【讲座预告】数学与统计系列第三期讲座",
+   "tier": 1,
+   "fields": {
+    "url": "https://xgbg.xjtu.edu.cn/info/1191/2711.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2022-10-15T09:00",
+    "summary": "吴建宏教授将做关于数学科学在公共卫生突发事件最优快速响应中作用的讲座。",
+    "event_kind": "lecture",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": "吴建宏",
+    "occurrences": [
+     {
+      "start": "2022-10-15T09:00",
+      "end": "2022-10-15T11:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "xjtu-6c8b8b8581",
+   "type": "Event",
+   "school": "xjtu",
+   "name": "The Energy Quest：current status and future of fusion energy 追寻能源：聚变能源的现状和未来",
+   "tier": 1,
+   "fields": {
+    "url": "https://mp.weixin.qq.com/s/JxGYNtwRXHWWO8azNQB0Iw",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": null,
+    "summary": "西安交大新港报告物理系列讲座，探讨核聚变能源的现状与未来。",
+    "event_kind": "lecture",
+    "venue_name": "腾讯会议：883-7992-4249",
+    "organisation_name": "西安交通大学研究生院（党委研工部）",
+    "speaker": "Dieter Heinz Hermann Hoffmann",
+    "occurrences": []
+   }
+  },
+  {
+   "id": "xjtu-87024f74ff",
+   "type": "Event",
+   "school": "xjtu",
+   "name": "【讲座预告】数学与统计系列第四期讲座",
+   "tier": 1,
+   "fields": {
+    "url": "https://xgbg.xjtu.edu.cn/info/1191/2712.htm",
+    "needs": [
+     "explore_a_field",
+     "build_a_skill"
+    ],
+    "start": "2022-10-17T09:00",
+    "summary": "蔡智强教授将介绍神经网络在偏微分方程数值解中的应用及自适应网络增强方法。",
+    "event_kind": "lecture",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": "蔡智强",
+    "occurrences": [
+     {
+      "start": "2022-10-17T09:00",
+      "end": "2022-10-17T10:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "xjtu-fec60a2960",
+   "type": "Event",
+   "school": "xjtu",
+   "name": "【讲座预告】数学与统计系列第二期讲座",
+   "tier": 1,
+   "fields": {
+    "url": "https://xgbg.xjtu.edu.cn/info/1191/2697.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2022-09-16T10:00",
+    "summary": "舒其望教授主讲《科学计算中的数学》，介绍数学在科学计算发展中的重要作用。",
+    "event_kind": "lecture",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": "舒其望",
+    "occurrences": [
+     {
+      "start": "2022-09-16T10:00",
+      "end": "2022-09-16T11:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "xjtu-e55b7c31a6",
+   "type": "Event",
+   "school": "xjtu",
+   "name": "【讲座预告】数学与统计系列第一期讲座",
+   "tier": 1,
+   "fields": {
+    "url": "https://xgbg.xjtu.edu.cn/info/1191/2687.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2022-09-13T10:00",
+    "summary": "浙江大学杨易教授将作题为《高效多场景多模态智能分析技术及其应用》的学术讲座。",
+    "event_kind": "lecture",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": "杨易",
+    "occurrences": [
+     {
+      "start": "2022-09-13T10:00",
+      "end": "2022-09-13T11:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "xjtu-5c379667c0",
+   "type": "Event",
+   "school": "xjtu",
+   "name": "【讲座预告】机械工程系列第一期讲座",
+   "tier": 1,
+   "fields": {
+    "url": "https://xgbg.xjtu.edu.cn/info/1191/2661.htm",
+    "needs": [
+     "explore_a_field",
+     "build_a_skill"
+    ],
+    "start": "2022-05-09T10:00",
+    "summary": "机械工程系列第一期讲座，包含太赫兹成像检测和数字加工两场报告。",
+    "event_kind": "lecture",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": "Professor Yukio Kawano, Professor Yusuf Altintas",
+    "occurrences": [
+     {
+      "start": "2022-05-09T10:00",
+      "end": "2022-05-09T12:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "xjtu-9a0e5928fc",
+   "type": "Event",
+   "school": "xjtu",
+   "name": "【讲座预告】能源与动力工程系列第一期讲座",
+   "tier": 1,
+   "fields": {
+    "url": "https://xgbg.xjtu.edu.cn/info/1191/2646.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2022-04-25T14:30",
+    "summary": "西安交通大学能源与动力工程系列第一期讲座，包含核能与燃烧学科两场学术报告。",
+    "event_kind": "lecture",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": "巫英伟、汤成龙",
+    "occurrences": [
+     {
+      "start": "2022-04-25T14:30",
+      "end": "2022-04-25T16:30"
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "xjtu-7cd6348906",
+   "field": "title",
+   "quote": "Hydrogen Fuel Cells for Aircraft Propulsion",
+   "url": "http://meeting.xjtu.edu.cn/lecturenotice/7035.htm",
+   "check_confidence": 0.97991475659817,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-7cd6348906",
+   "field": "date",
+   "quote": "2026-11-19 09:30",
+   "url": "http://meeting.xjtu.edu.cn/lecturenotice/7035.htm",
+   "check_confidence": 0.9842477695504924,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-7cd6348906",
+   "field": "start_time",
+   "quote": "09:30",
+   "url": "http://meeting.xjtu.edu.cn/lecturenotice/7035.htm",
+   "check_confidence": 0.9666771709302816,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-7cd6348906",
+   "field": "venue_name",
+   "quote": "创新港校区敏行楼1-6116",
+   "url": "http://meeting.xjtu.edu.cn/lecturenotice/7035.htm",
+   "check_confidence": 0.9584743926470731,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-7cd6348906",
+   "field": "speaker",
+   "quote": "Ruky Navaratne",
+   "url": "http://meeting.xjtu.edu.cn/lecturenotice/7035.htm",
+   "check_confidence": 0.9822063095274999,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-585460c0d5",
+   "field": "title",
+   "quote": "周惠久论坛——宏观超分子组装及其应用",
+   "url": "http://meeting.xjtu.edu.cn/lecturenotice/7034.htm",
+   "check_confidence": 0.9805843739059973,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-585460c0d5",
+   "field": "date",
+   "quote": "2026 年11月23日 上午9:30",
+   "url": "http://meeting.xjtu.edu.cn/lecturenotice/7034.htm",
+   "check_confidence": 0.9811765064941244,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-585460c0d5",
+   "field": "start_time",
+   "quote": "09:30",
+   "url": "http://meeting.xjtu.edu.cn/lecturenotice/7034.htm",
+   "check_confidence": 0.9691348000601391,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-585460c0d5",
+   "field": "venue_name",
+   "quote": "创新港-3号巨构躬行楼3-2011会议室",
+   "url": "http://meeting.xjtu.edu.cn/lecturenotice/7034.htm",
+   "check_confidence": 0.9617822314397618,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-585460c0d5",
+   "field": "organisation_name",
+   "quote": "材料学院 金属材料强度全国重点实验室",
+   "url": "http://meeting.xjtu.edu.cn/lecturenotice/7034.htm",
+   "check_confidence": 0.972327760506733,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-585460c0d5",
+   "field": "speaker",
+   "quote": "石峰 教授",
+   "url": "http://meeting.xjtu.edu.cn/lecturenotice/7034.htm",
+   "check_confidence": 0.9579403472481368,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-cd430e644c",
+   "field": "title",
+   "quote": "周惠久论坛——钠离子电池磷酸盐正极材料",
+   "url": "http://meeting.xjtu.edu.cn/lecturenotice/7033.htm",
+   "check_confidence": 0.9630107539929434,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-cd430e644c",
+   "field": "date",
+   "quote": "2026 年 11 月 23 日 下午 16:00",
+   "url": "http://meeting.xjtu.edu.cn/lecturenotice/7033.htm",
+   "check_confidence": 0.9729121247269493,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-cd430e644c",
+   "field": "start_time",
+   "quote": "16:00",
+   "url": "http://meeting.xjtu.edu.cn/lecturenotice/7033.htm",
+   "check_confidence": 0.9630755008251018,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-cd430e644c",
+   "field": "venue_name",
+   "quote": "兴庆校区-仲英楼第一会议室",
+   "url": "http://meeting.xjtu.edu.cn/lecturenotice/7033.htm",
+   "check_confidence": 0.9780166875916512,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-cd430e644c",
+   "field": "organisation_name",
+   "quote": "材料学院 金属材料强度全国重点实验室",
+   "url": "http://meeting.xjtu.edu.cn/lecturenotice/7033.htm",
+   "check_confidence": 0.9728305165973998,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-cd430e644c",
+   "field": "speaker",
+   "quote": "吴兴隆 教授",
+   "url": "http://meeting.xjtu.edu.cn/lecturenotice/7033.htm",
+   "check_confidence": 0.9622158171090353,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-96679eb1af",
+   "field": "title",
+   "quote": "人工智能时代学科重塑的思考",
+   "url": "http://meeting.xjtu.edu.cn/lecturenotice/7032.htm",
+   "check_confidence": 0.9807771516564104,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-96679eb1af",
+   "field": "date",
+   "quote": "2026-11-16 09:30",
+   "url": "http://meeting.xjtu.edu.cn/lecturenotice/7032.htm",
+   "check_confidence": 0.9657020125865097,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-96679eb1af",
+   "field": "start_time",
+   "quote": "09:30",
+   "url": "http://meeting.xjtu.edu.cn/lecturenotice/7032.htm",
+   "check_confidence": 0.9683000162847771,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-96679eb1af",
+   "field": "venue_name",
+   "quote": "兴庆校区东二楼东333会议室",
+   "url": "http://meeting.xjtu.edu.cn/lecturenotice/7032.htm",
+   "check_confidence": 0.9464533605317275,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-96679eb1af",
+   "field": "speaker",
+   "quote": "闾国年",
+   "url": "http://meeting.xjtu.edu.cn/lecturenotice/7032.htm",
+   "check_confidence": 0.9754199447524169,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-7d7931f9e9",
+   "field": "title",
+   "quote": "如何明辨道德证言？",
+   "url": "http://meeting.xjtu.edu.cn/lecturenotice/7031.htm",
+   "check_confidence": 0.9788707984212789,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-7d7931f9e9",
+   "field": "date",
+   "quote": "2026-11-14 08:00",
+   "url": "http://meeting.xjtu.edu.cn/lecturenotice/7031.htm",
+   "check_confidence": 0.975034551817634,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-7d7931f9e9",
+   "field": "start_time",
+   "quote": "08:00",
+   "url": "http://meeting.xjtu.edu.cn/lecturenotice/7031.htm",
+   "check_confidence": 0.967045195406676,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-7d7931f9e9",
+   "field": "venue_name",
+   "quote": "兴庆校区主楼E810",
+   "url": "http://meeting.xjtu.edu.cn/lecturenotice/7031.htm",
+   "check_confidence": 0.9766142966580242,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-7d7931f9e9",
+   "field": "speaker",
+   "quote": "王奇琦",
+   "url": "http://meeting.xjtu.edu.cn/lecturenotice/7031.htm",
+   "check_confidence": 0.9886320829640611,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-0c5604ecaf",
+   "field": "title",
+   "quote": "【讲座预告】数学与统计系列第三期讲座",
+   "url": "https://xgbg.xjtu.edu.cn/info/1191/2711.htm",
+   "check_confidence": 0.9703686716894376,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-0c5604ecaf",
+   "field": "date",
+   "quote": "时间： 2022 年10 月15 日 9:00--11:30",
+   "url": "https://xgbg.xjtu.edu.cn/info/1191/2711.htm",
+   "check_confidence": 0.9650603782607908,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-0c5604ecaf",
+   "field": "start_time",
+   "quote": "09:00",
+   "url": "https://xgbg.xjtu.edu.cn/info/1191/2711.htm",
+   "check_confidence": 0.9609208698548659,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-0c5604ecaf",
+   "field": "speaker",
+   "quote": "吴建宏",
+   "url": "https://xgbg.xjtu.edu.cn/info/1191/2711.htm",
+   "check_confidence": 0.9809226250443474,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-6c8b8b8581",
+   "field": "title",
+   "quote": "The Energy Quest：current status and future of fusion energy 追寻能源：聚变能源的现状和未来",
+   "url": "https://mp.weixin.qq.com/s/JxGYNtwRXHWWO8azNQB0Iw",
+   "check_confidence": 0.9515476471158675,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-6c8b8b8581",
+   "field": "date",
+   "quote": "3月2日（周四） 上午9:30-11:00",
+   "url": "https://mp.weixin.qq.com/s/JxGYNtwRXHWWO8azNQB0Iw",
+   "check_confidence": 0.7138623449869274,
+   "passed": false
+  },
+  {
+   "entity_id": "xjtu-6c8b8b8581",
+   "field": "start_time",
+   "quote": "09:30",
+   "url": "https://mp.weixin.qq.com/s/JxGYNtwRXHWWO8azNQB0Iw",
+   "check_confidence": 0.961441798146873,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-6c8b8b8581",
+   "field": "venue_name",
+   "quote": "腾讯会议：883-7992-4249",
+   "url": "https://mp.weixin.qq.com/s/JxGYNtwRXHWWO8azNQB0Iw",
+   "check_confidence": 0.9398572024594791,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-6c8b8b8581",
+   "field": "organisation_name",
+   "quote": "西安交通大学研究生院（党委研工部）",
+   "url": "https://mp.weixin.qq.com/s/JxGYNtwRXHWWO8azNQB0Iw",
+   "check_confidence": 0.8416286479055441,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-6c8b8b8581",
+   "field": "speaker",
+   "quote": "Dieter Heinz Hermann Hoffmann",
+   "url": "https://mp.weixin.qq.com/s/JxGYNtwRXHWWO8azNQB0Iw",
+   "check_confidence": 0.9680731503477172,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-87024f74ff",
+   "field": "title",
+   "quote": "【讲座预告】数学与统计系列第四期讲座",
+   "url": "https://xgbg.xjtu.edu.cn/info/1191/2712.htm",
+   "check_confidence": 0.9619728965424862,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-87024f74ff",
+   "field": "date",
+   "quote": "时间： 2022 年10 月17 日 9:00--10:00",
+   "url": "https://xgbg.xjtu.edu.cn/info/1191/2712.htm",
+   "check_confidence": 0.9839754572563723,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-87024f74ff",
+   "field": "start_time",
+   "quote": "09:00",
+   "url": "https://xgbg.xjtu.edu.cn/info/1191/2712.htm",
+   "check_confidence": 0.9583347983976925,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-87024f74ff",
+   "field": "speaker",
+   "quote": "蔡智强",
+   "url": "https://xgbg.xjtu.edu.cn/info/1191/2712.htm",
+   "check_confidence": 0.9714563481732542,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-fec60a2960",
+   "field": "title",
+   "quote": "【讲座预告】数学与统计系列第二期讲座",
+   "url": "https://xgbg.xjtu.edu.cn/info/1191/2697.htm",
+   "check_confidence": 0.9618846626072654,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-fec60a2960",
+   "field": "date",
+   "quote": "时间： 2022 年9 月16 日 10:00--11:00",
+   "url": "https://xgbg.xjtu.edu.cn/info/1191/2697.htm",
+   "check_confidence": 0.9856104446109103,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-fec60a2960",
+   "field": "start_time",
+   "quote": "10:00",
+   "url": "https://xgbg.xjtu.edu.cn/info/1191/2697.htm",
+   "check_confidence": 0.9601041006978878,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-fec60a2960",
+   "field": "speaker",
+   "quote": "舒其望",
+   "url": "https://xgbg.xjtu.edu.cn/info/1191/2697.htm",
+   "check_confidence": 0.9689772538907203,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-e55b7c31a6",
+   "field": "title",
+   "quote": "【讲座预告】数学与统计系列第一期讲座",
+   "url": "https://xgbg.xjtu.edu.cn/info/1191/2687.htm",
+   "check_confidence": 0.9676409048191814,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-e55b7c31a6",
+   "field": "date",
+   "quote": "时间： 2022 年9 月13 日 10:00--11:00",
+   "url": "https://xgbg.xjtu.edu.cn/info/1191/2687.htm",
+   "check_confidence": 0.970153020731072,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-e55b7c31a6",
+   "field": "start_time",
+   "quote": "10:00",
+   "url": "https://xgbg.xjtu.edu.cn/info/1191/2687.htm",
+   "check_confidence": 0.9519489070835546,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-e55b7c31a6",
+   "field": "speaker",
+   "quote": "杨易",
+   "url": "https://xgbg.xjtu.edu.cn/info/1191/2687.htm",
+   "check_confidence": 0.9605921966163119,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-5c379667c0",
+   "field": "title",
+   "quote": "【讲座预告】机械工程系列第一期讲座",
+   "url": "https://xgbg.xjtu.edu.cn/info/1191/2661.htm",
+   "check_confidence": 0.956786405222008,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-5c379667c0",
+   "field": "date",
+   "quote": "2022 年 5 月 9 日 10 ：0 0 —— 12:30",
+   "url": "https://xgbg.xjtu.edu.cn/info/1191/2661.htm",
+   "check_confidence": 0.9589414653985496,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-5c379667c0",
+   "field": "start_time",
+   "quote": "10:00",
+   "url": "https://xgbg.xjtu.edu.cn/info/1191/2661.htm",
+   "check_confidence": 0.9402874687846382,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-5c379667c0",
+   "field": "speaker",
+   "quote": "Professor Yukio Kawano, Professor Yusuf Altintas",
+   "url": "https://xgbg.xjtu.edu.cn/info/1191/2661.htm",
+   "check_confidence": 0.922865182052227,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-9a0e5928fc",
+   "field": "title",
+   "quote": "【讲座预告】能源与动力工程系列第一期讲座",
+   "url": "https://xgbg.xjtu.edu.cn/info/1191/2646.htm",
+   "check_confidence": 0.9696624564496105,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-9a0e5928fc",
+   "field": "date",
+   "quote": "时间： 2022 年 4 月 25 日 14 ： 30 —— 16:30",
+   "url": "https://xgbg.xjtu.edu.cn/info/1191/2646.htm",
+   "check_confidence": 0.9859974459156914,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-9a0e5928fc",
+   "field": "start_time",
+   "quote": "14:30",
+   "url": "https://xgbg.xjtu.edu.cn/info/1191/2646.htm",
+   "check_confidence": 0.9654016310154395,
+   "passed": true
+  },
+  {
+   "entity_id": "xjtu-9a0e5928fc",
+   "field": "speaker",
+   "quote": "巫英伟、汤成龙",
+   "url": "https://xgbg.xjtu.edu.cn/info/1191/2646.htm",
+   "check_confidence": 0.9486847802976176,
+   "passed": true
+  }
+ ]
+}

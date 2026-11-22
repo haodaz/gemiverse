@@ -1,0 +1,104 @@
+{
+ "school": "vanderbilt",
+ "name": "Vanderbilt University",
+ "at": "2026-11-22T00:14:39.076Z",
+ "source": "https://en.wikipedia.org/wiki/Vanderbilt%20University",
+ "character": "The campus features eclectic buildings of various styles along ridge lines, surrounded by abundant green space and roughly 190 species of trees and shrubs.",
+ "map": "/art/map/vanderbilt.jpg",
+ "landmarks": [
+  {
+   "name": "Kirkland Hall",
+   "name_en": "Kirkland Hall",
+   "kind": "hall",
+   "quote": "One of these is Kirkland Hall, one of the more recognizable buildings on campus.",
+   "look": "Italianate-style building with a single tower",
+   "check": 0.9881129852475874,
+   "confidence": 0.9881129852475874,
+   "passed": true,
+   "x": 0.26,
+   "y": 0.23
+  },
+  {
+   "name": "Heard Central Library",
+   "name_en": "Heard Central Library",
+   "kind": "library",
+   "quote": "Additionally, the Heard Central Library and Sarratt Student Center/Rand Hall can be found on the original campus.",
+   "look": "plain library building",
+   "check": 0.9836429803528615,
+   "confidence": 0.9836429803528615,
+   "passed": true,
+   "x": 0.5,
+   "y": 0.42
+  },
+  {
+   "name": "Vanderbilt Stadium",
+   "name_en": "Vanderbilt Stadium",
+   "kind": "stadium",
+   "quote": "Memorial Gymnasium, Vanderbilt Stadium, Hawkins Field, McGugin Center, and all the other varsity athletic fields",
+   "look": "plain varsity athletic stadium",
+   "check": 0.9740654192152763,
+   "confidence": 0.9740654192152763,
+   "passed": true,
+   "x": 0.66,
+   "y": 0.71
+  },
+  {
+   "name": "Carmichael Towers",
+   "name_en": "Carmichael Towers",
+   "kind": "tower",
+   "quote": "Carmichael Towers, a set of high-rise dormitories on the northern edge of campus",
+   "look": "set of high-rise dormitory towers",
+   "check": 0.99,
+   "confidence": 0.99,
+   "passed": true,
+   "x": 0.88,
+   "y": 0.52
+  },
+  {
+   "name": "Branscomb Quadrangle",
+   "name_en": "Branscomb Quadrangle",
+   "kind": "quad",
+   "quote": "Branscomb Quadrangle is a residence hall complex named for the chancellor.",
+   "look": "quadrangle of residence halls",
+   "check": 0.9851482567037241,
+   "confidence": 0.9851482567037241,
+   "passed": true,
+   "x": 0.73,
+   "y": 0.25
+  },
+  {
+   "name": "Alumni Lawn",
+   "name_en": "Alumni Lawn",
+   "kind": "other",
+   "quote": "west from 21st Avenue to Alumni Lawn.",
+   "look": "open grassy campus lawn",
+   "check": 0.9859538323679217,
+   "confidence": 0.9859538323679217,
+   "passed": true,
+   "x": 0.27,
+   "y": 0.71
+  },
+  {
+   "name": "Rand Hall",
+   "name_en": "Rand Hall",
+   "kind": "hall",
+   "quote": "the Bicentennial Oak between Rand Hall and Garland Hall",
+   "look": "plain campus hall",
+   "check": 0.9844344533201898,
+   "confidence": 0.9844344533201898,
+   "passed": true
+  },
+  {
+   "name": "Garland Hall",
+   "name_en": "Garland Hall",
+   "kind": "hall",
+   "quote": "Garland Hall, an academic building on campus, is named in his honor.",
+   "look": "plain academic hall",
+   "check": 0.9816216787975084,
+   "confidence": 0.9816216787975084,
+   "passed": true
+  }
+ ],
+ "tokens": 9941,
+ "seconds": 31
+}

@@ -1,0 +1,3 @@
+Third-party models used for the Gemi's body (added after the hackathon, 21 Nov 2026 evening):
+- KayKit Character Pack: Adventurers 1.0 by Kay Lousberg (kaylousberg.com), licence CC0 1.0. See kaykit/LICENSE.txt.
+Weapons, capes and hats in the files are hidden by public/gen3d/vendor-doll.js.

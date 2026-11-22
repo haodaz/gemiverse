@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A soft, warm storybook illustration in gentle pastel colours, wide 16:9, flat shapes with light texture, golden afternoon light, a few tiny students walking. No text, no letters, no logos, no emblems, no watermarks. Scene: an American university campus in Columbus, OH with buildings and trees typical of that region and season, a quad and walking paths.",
+ "reference": null,
+ "seconds": 13,
+ "tokens": 1495,
+ "at": "2026-11-21T23:34:44.718Z"
+}

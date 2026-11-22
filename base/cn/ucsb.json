@@ -1,0 +1,794 @@
+{
+ "school": "ucsb",
+ "name": "University of California, Santa Barbara",
+ "at": "2026-11-22T00:20:13.676Z",
+ "seconds": 31,
+ "tokens": 81749,
+ "entities": [
+  {
+   "id": "ucsb-ffb056ef81",
+   "type": "Event",
+   "school": "ucsb",
+   "name": "Health for the Holidays Challenge",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.campuscalendar.ucsb.edu/event/health4theholidays-2026",
+    "needs": [
+     "rest_and_recover"
+    ],
+    "start": "2026-11-02",
+    "summary": "A wellness campaign hosted by UC Santa Barbara Human Resources to help faculty and staff relieve holiday stress and build healthy habits.",
+    "event_kind": "activity",
+    "venue_name": null,
+    "organisation_name": "Human Resources",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-02",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "ucsb-0adb885bf6",
+   "type": "Event",
+   "school": "ucsb",
+   "name": "University of California, Santa Barbara Women's Tennis vs NCAA Individual Championships",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.campuscalendar.ucsb.edu/event/university-of-california-santa-barbara-womens-tennis-vs-ncaa-individual-championships",
+    "needs": [
+     "find_my_people",
+     "rest_and_recover"
+    ],
+    "start": "2026-11-21",
+    "summary": "UC Santa Barbara Women's Tennis competes in the NCAA Individual Championships at Dan Magill Tennis Complex in Athens, Georgia.",
+    "event_kind": "competition",
+    "venue_name": "Athens, GA, Dan Magill Tennis Complex",
+    "organisation_name": "Athletics",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "ucsb-875083aaf6",
+   "type": "Event",
+   "school": "ucsb",
+   "name": "Creating Community Through Books: 20 Years of UCSB Reads",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.campuscalendar.ucsb.edu/event/creating-community-through-books-20-years-of-ucsb-reads",
+    "needs": [
+     "find_my_people",
+     "explore_a_field"
+    ],
+    "start": "2026-11-21T08:00",
+    "summary": "An exhibition at the UCSB Library highlighting the 20-year history of the UCSB Reads community reading program.",
+    "event_kind": "exhibition",
+    "venue_name": "Library, Ocean Gallery",
+    "organisation_name": "UCSB Library",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21T08:00",
+      "end": "2026-11-21T16:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ucsb-03ca379bf6",
+   "type": "Event",
+   "school": "ucsb",
+   "name": "Bonnie Ora Sherk: Life Frames since 1970",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.campuscalendar.ucsb.edu/event/bonnie-ora-sherk-life-frames-since-1970",
+    "needs": [
+     "explore_a_field",
+     "make_and_express"
+    ],
+    "start": "2026-11-22T12:00",
+    "summary": "A survey exhibition tracing the art and ecology works of Bonnie Ora Sherk at the Art, Design Architecture Museum.",
+    "event_kind": "exhibition",
+    "venue_name": "Art, Design Architecture Museum",
+    "organisation_name": "Art, Design Architecture Museum",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-22T12:00",
+      "end": "2026-11-22T17:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ucsb-ed24f002ff",
+   "type": "Event",
+   "school": "ucsb",
+   "name": "University of California, Santa Barbara Men's Water Polo vs UC San Diego",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.campuscalendar.ucsb.edu/event/university-of-california-santa-barbara-mens-water-polo-at-the-big-west-championship",
+    "needs": [
+     "find_my_people",
+     "rest_and_recover"
+    ],
+    "start": "2026-11-21T12:00",
+    "summary": "A men's water polo game between UC Santa Barbara and UC San Diego at Ken Lindgren Aquatics Center.",
+    "event_kind": "competition",
+    "venue_name": "Long Beach, Calif., Ken Lindgren Aquatics Center",
+    "organisation_name": "Athletics",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21T12:00",
+      "end": "2026-11-21T13:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ucsb-0100151770",
+   "type": "Event",
+   "school": "ucsb",
+   "name": "LAUNCH PAD 2026 Amplify Reading Series Festival",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.campuscalendar.ucsb.edu/event/launch-pad-2026-amplify-reading-series-festival",
+    "needs": [
+     "make_and_express",
+     "explore_a_field"
+    ],
+    "start": "2026-11-21T17:00",
+    "summary": "A two-day festival at UCSB featuring four play readings, with three livestreamed on the Department of Theater and Dance's YouTube page.",
+    "event_kind": "activity",
+    "venue_name": "Studio Theater, UCSB",
+    "organisation_name": "Department of Theater Dance",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21T17:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "ucsb-472bf59384",
+   "type": "Event",
+   "school": "ucsb",
+   "name": "Jackie Amézquita: Gemidos de la Tierra",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.campuscalendar.ucsb.edu/event/jackie-amezquita-gemidos-de-la-tierra",
+    "needs": [
+     "explore_a_field",
+     "make_and_express"
+    ],
+    "start": "2026-11-22T12:00",
+    "summary": "An exhibition by Jackie Amézquita at the AD&A Museum examining migration, collective memory, and human-ecological systems.",
+    "event_kind": "exhibition",
+    "venue_name": "Art, Design Architecture Museum",
+    "organisation_name": "Art, Design Architecture Museum at UC Santa Barbara",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-22T12:00",
+      "end": "2026-11-22T17:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ucsb-9c0b0bee53",
+   "type": "Event",
+   "school": "ucsb",
+   "name": "University of California, Santa Barbara Women's Volleyball at UC Riverside",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.campuscalendar.ucsb.edu/event/university-of-california-santa-barbara-womens-volleyball-at-uc-riverside",
+    "needs": [
+     "find_my_people",
+     "rest_and_recover"
+    ],
+    "start": "2026-11-21T16:00",
+    "summary": "UC Santa Barbara Women's Volleyball will play against UC Riverside at SRC Arena on November 21, 2026.",
+    "event_kind": "competition",
+    "venue_name": "Riverside, Calif., SRC Arena",
+    "organisation_name": "Athletics",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21T16:00",
+      "end": "2026-11-21T18:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ucsb-19a15b8078",
+   "type": "Event",
+   "school": "ucsb",
+   "name": "CWC Classics: The Big Red One",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.campuscalendar.ucsb.edu/event/cwc-classics-the-big-red-one",
+    "needs": [
+     "explore_a_field",
+     "rest_and_recover"
+    ],
+    "start": "2026-11-21T14:00",
+    "summary": "The Carsey-Wolf Center presents a screening of Samuel Fuller's war film The Big Red One, followed by a discussion with guests.",
+    "event_kind": "exhibition",
+    "venue_name": "Pollock Theater",
+    "organisation_name": "Carsey-Wolf Center",
+    "speaker": "Samantha Fuller, Bobby Di Cicco, Mark Hamill, Perry Lang, Kelly Ward, Andréas-Benjamin Seyfert",
+    "occurrences": [
+     {
+      "start": "2026-11-21T14:00",
+      "end": "2026-11-21T17:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ucsb-6b693737a2",
+   "type": "Event",
+   "school": "ucsb",
+   "name": "UCSB Middle East Ensemble Fall Concert",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.campuscalendar.ucsb.edu/event/ucsb-middle-east-ensemble-fall-concert",
+    "needs": [
+     "make_and_express",
+     "rest_and_recover"
+    ],
+    "start": "2026-11-21T19:30",
+    "summary": "The UCSB Middle East Ensemble presents its Fall concert featuring Arab, Armenian, and Persian music and dance with guest artists.",
+    "event_kind": "other",
+    "venue_name": "Lotte Lehmann Concert Hall",
+    "organisation_name": "Department of Music",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21T19:30",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "ucsb-021f781d74",
+   "type": "Event",
+   "school": "ucsb",
+   "name": "Cultivating Community: Garden Volunteer Day",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.campuscalendar.ucsb.edu/event/cultivating-community-garden-volunteer-day-6204",
+    "needs": [
+     "contribute_beyond_self",
+     "find_my_people"
+    ],
+    "start": "2026-11-22T12:00",
+    "summary": "Edible Campus Program hosts a free community garden volunteer day at Methodist Community Garden in Isla Vista, open to everyone.",
+    "event_kind": "activity",
+    "venue_name": "Methodist Community Garden, 880 Camino Del Sur, Isla Vista, CA 93117",
+    "organisation_name": "Edible Campus Program",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-22T12:00",
+      "end": "2026-11-22T14:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ucsb-a64af77b09",
+   "type": "Event",
+   "school": "ucsb",
+   "name": "UCSB Student Carillon Recital",
+   "tier": 1,
+   "fields": {
+    "url": "https://www.campuscalendar.ucsb.edu/event/ucsb-student-carillon-recital-9960",
+    "needs": [
+     "rest_and_recover",
+     "make_and_express"
+    ],
+    "start": "2026-11-22T10:00",
+    "summary": "Students from Wesley Arai's carillon studio will present a free carillon recital at UCSB's Storke Tower on November 22, 2026.",
+    "event_kind": "activity",
+    "venue_name": "Storke Tower",
+    "organisation_name": "Department of Music",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-22T10:00",
+      "end": null
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "ucsb-ffb056ef81",
+   "field": "title",
+   "quote": "Health for the Holidays Challenge",
+   "url": "https://www.campuscalendar.ucsb.edu/event/health4theholidays-2026",
+   "check_confidence": 0.9687775400469077,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-ffb056ef81",
+   "field": "date",
+   "quote": "Monday, November 2, 2026 - Friday, December 18, 2026",
+   "url": "https://www.campuscalendar.ucsb.edu/event/health4theholidays-2026",
+   "check_confidence": 0.9729849681133295,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-ffb056ef81",
+   "field": "organisation_name",
+   "quote": "Human Resources",
+   "url": "https://www.campuscalendar.ucsb.edu/event/health4theholidays-2026",
+   "check_confidence": 0.9366891456018301,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-0adb885bf6",
+   "field": "title",
+   "quote": "University of California, Santa Barbara Women's Tennis vs NCAA Individual Championships",
+   "url": "https://www.campuscalendar.ucsb.edu/event/university-of-california-santa-barbara-womens-tennis-vs-ncaa-individual-championships",
+   "check_confidence": 0.9749995922954164,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-0adb885bf6",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026",
+   "url": "https://www.campuscalendar.ucsb.edu/event/university-of-california-santa-barbara-womens-tennis-vs-ncaa-individual-championships",
+   "check_confidence": 0.9658374583002576,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-0adb885bf6",
+   "field": "venue_name",
+   "quote": "Athens, GA, Dan Magill Tennis Complex",
+   "url": "https://www.campuscalendar.ucsb.edu/event/university-of-california-santa-barbara-womens-tennis-vs-ncaa-individual-championships",
+   "check_confidence": 0.9784069156429911,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-0adb885bf6",
+   "field": "organisation_name",
+   "quote": "Athletics",
+   "url": "https://www.campuscalendar.ucsb.edu/event/university-of-california-santa-barbara-womens-tennis-vs-ncaa-individual-championships",
+   "check_confidence": 0.8512092433565923,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-875083aaf6",
+   "field": "title",
+   "quote": "Creating Community Through Books: 20 Years of UCSB Reads",
+   "url": "https://www.campuscalendar.ucsb.edu/event/creating-community-through-books-20-years-of-ucsb-reads",
+   "check_confidence": 0.9843593932030729,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-875083aaf6",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026 8am to 4pm",
+   "url": "https://www.campuscalendar.ucsb.edu/event/creating-community-through-books-20-years-of-ucsb-reads",
+   "check_confidence": 0.9710098698457005,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-875083aaf6",
+   "field": "start_time",
+   "quote": "08:00",
+   "url": "https://www.campuscalendar.ucsb.edu/event/creating-community-through-books-20-years-of-ucsb-reads",
+   "check_confidence": 0.9585689149966712,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-875083aaf6",
+   "field": "venue_name",
+   "quote": "Library, Ocean Gallery",
+   "url": "https://www.campuscalendar.ucsb.edu/event/creating-community-through-books-20-years-of-ucsb-reads",
+   "check_confidence": 0.9626859732393005,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-875083aaf6",
+   "field": "organisation_name",
+   "quote": "UCSB Library",
+   "url": "https://www.campuscalendar.ucsb.edu/event/creating-community-through-books-20-years-of-ucsb-reads",
+   "check_confidence": 0.8685430604974579,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-03ca379bf6",
+   "field": "title",
+   "quote": "Bonnie Ora Sherk: Life Frames since 1970",
+   "url": "https://www.campuscalendar.ucsb.edu/event/bonnie-ora-sherk-life-frames-since-1970",
+   "check_confidence": 0.9825640515187922,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-03ca379bf6",
+   "field": "date",
+   "quote": "Sunday, November 22, 2026 12pm to 5pm",
+   "url": "https://www.campuscalendar.ucsb.edu/event/bonnie-ora-sherk-life-frames-since-1970",
+   "check_confidence": 0.9777450431133144,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-03ca379bf6",
+   "field": "start_time",
+   "quote": "12:00",
+   "url": "https://www.campuscalendar.ucsb.edu/event/bonnie-ora-sherk-life-frames-since-1970",
+   "check_confidence": 0.9777986757760291,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-03ca379bf6",
+   "field": "venue_name",
+   "quote": "Art, Design Architecture Museum",
+   "url": "https://www.campuscalendar.ucsb.edu/event/bonnie-ora-sherk-life-frames-since-1970",
+   "check_confidence": 0.9714836986624374,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-03ca379bf6",
+   "field": "organisation_name",
+   "quote": "Art, Design Architecture Museum",
+   "url": "https://www.campuscalendar.ucsb.edu/event/bonnie-ora-sherk-life-frames-since-1970",
+   "check_confidence": 0.9521589524326514,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-ed24f002ff",
+   "field": "title",
+   "quote": "University of California, Santa Barbara Men's Water Polo vs UC San Diego",
+   "url": "https://www.campuscalendar.ucsb.edu/event/university-of-california-santa-barbara-mens-water-polo-at-the-big-west-championship",
+   "check_confidence": 0.9797254452521321,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-ed24f002ff",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026 12pm to 1:30pm",
+   "url": "https://www.campuscalendar.ucsb.edu/event/university-of-california-santa-barbara-mens-water-polo-at-the-big-west-championship",
+   "check_confidence": 0.9869476148148605,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-ed24f002ff",
+   "field": "start_time",
+   "quote": "12:00",
+   "url": "https://www.campuscalendar.ucsb.edu/event/university-of-california-santa-barbara-mens-water-polo-at-the-big-west-championship",
+   "check_confidence": 0.980298525521835,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-ed24f002ff",
+   "field": "venue_name",
+   "quote": "Long Beach, Calif., Ken Lindgren Aquatics Center",
+   "url": "https://www.campuscalendar.ucsb.edu/event/university-of-california-santa-barbara-mens-water-polo-at-the-big-west-championship",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-ed24f002ff",
+   "field": "organisation_name",
+   "quote": "Athletics",
+   "url": "https://www.campuscalendar.ucsb.edu/event/university-of-california-santa-barbara-mens-water-polo-at-the-big-west-championship",
+   "check_confidence": 0.8396032140836512,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-0100151770",
+   "field": "title",
+   "quote": "LAUNCH PAD 2026 Amplify Reading Series Festival",
+   "url": "https://www.campuscalendar.ucsb.edu/event/launch-pad-2026-amplify-reading-series-festival",
+   "check_confidence": 0.9787323788670178,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-0100151770",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026 5pm",
+   "url": "https://www.campuscalendar.ucsb.edu/event/launch-pad-2026-amplify-reading-series-festival",
+   "check_confidence": 0.961316847204422,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-0100151770",
+   "field": "start_time",
+   "quote": "17:00",
+   "url": "https://www.campuscalendar.ucsb.edu/event/launch-pad-2026-amplify-reading-series-festival",
+   "check_confidence": 0.9646893561761428,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-0100151770",
+   "field": "venue_name",
+   "quote": "Studio Theater, UCSB",
+   "url": "https://www.campuscalendar.ucsb.edu/event/launch-pad-2026-amplify-reading-series-festival",
+   "check_confidence": 0.9837902655657448,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-0100151770",
+   "field": "organisation_name",
+   "quote": "Department of Theater Dance",
+   "url": "https://www.campuscalendar.ucsb.edu/event/launch-pad-2026-amplify-reading-series-festival",
+   "check_confidence": 0.952017037672493,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-472bf59384",
+   "field": "title",
+   "quote": "Jackie Amézquita: Gemidos de la Tierra",
+   "url": "https://www.campuscalendar.ucsb.edu/event/jackie-amezquita-gemidos-de-la-tierra",
+   "check_confidence": 0.9813207569722285,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-472bf59384",
+   "field": "date",
+   "quote": "Sunday, November 22, 2026 12pm to 5pm",
+   "url": "https://www.campuscalendar.ucsb.edu/event/jackie-amezquita-gemidos-de-la-tierra",
+   "check_confidence": 0.9745086276281995,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-472bf59384",
+   "field": "start_time",
+   "quote": "12:00",
+   "url": "https://www.campuscalendar.ucsb.edu/event/jackie-amezquita-gemidos-de-la-tierra",
+   "check_confidence": 0.981710986882676,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-472bf59384",
+   "field": "venue_name",
+   "quote": "Art, Design Architecture Museum",
+   "url": "https://www.campuscalendar.ucsb.edu/event/jackie-amezquita-gemidos-de-la-tierra",
+   "check_confidence": 0.9715811863016847,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-472bf59384",
+   "field": "organisation_name",
+   "quote": "Art, Design Architecture Museum at UC Santa Barbara",
+   "url": "https://www.campuscalendar.ucsb.edu/event/jackie-amezquita-gemidos-de-la-tierra",
+   "check_confidence": 0.9597183047659629,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-9c0b0bee53",
+   "field": "title",
+   "quote": "University of California, Santa Barbara Women's Volleyball at UC Riverside",
+   "url": "https://www.campuscalendar.ucsb.edu/event/university-of-california-santa-barbara-womens-volleyball-at-uc-riverside",
+   "check_confidence": 0.9810804648698757,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-9c0b0bee53",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026 4pm to 6pm",
+   "url": "https://www.campuscalendar.ucsb.edu/event/university-of-california-santa-barbara-womens-volleyball-at-uc-riverside",
+   "check_confidence": 0.9712809661882992,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-9c0b0bee53",
+   "field": "start_time",
+   "quote": "16:00",
+   "url": "https://www.campuscalendar.ucsb.edu/event/university-of-california-santa-barbara-womens-volleyball-at-uc-riverside",
+   "check_confidence": 0.9862158694057894,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-9c0b0bee53",
+   "field": "venue_name",
+   "quote": "Riverside, Calif., SRC Arena",
+   "url": "https://www.campuscalendar.ucsb.edu/event/university-of-california-santa-barbara-womens-volleyball-at-uc-riverside",
+   "check_confidence": 0.981847581821466,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-9c0b0bee53",
+   "field": "organisation_name",
+   "quote": "Athletics",
+   "url": "https://www.campuscalendar.ucsb.edu/event/university-of-california-santa-barbara-womens-volleyball-at-uc-riverside",
+   "check_confidence": 0.8116457716015886,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-19a15b8078",
+   "field": "title",
+   "quote": "CWC Classics: The Big Red One",
+   "url": "https://www.campuscalendar.ucsb.edu/event/cwc-classics-the-big-red-one",
+   "check_confidence": 0.9866183965829661,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-19a15b8078",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026 2pm to 5:30pm",
+   "url": "https://www.campuscalendar.ucsb.edu/event/cwc-classics-the-big-red-one",
+   "check_confidence": 0.9803421859921132,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-19a15b8078",
+   "field": "start_time",
+   "quote": "14:00",
+   "url": "https://www.campuscalendar.ucsb.edu/event/cwc-classics-the-big-red-one",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-19a15b8078",
+   "field": "venue_name",
+   "quote": "Pollock Theater",
+   "url": "https://www.campuscalendar.ucsb.edu/event/cwc-classics-the-big-red-one",
+   "check_confidence": 0.9812035550954922,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-19a15b8078",
+   "field": "organisation_name",
+   "quote": "Carsey-Wolf Center",
+   "url": "https://www.campuscalendar.ucsb.edu/event/cwc-classics-the-big-red-one",
+   "check_confidence": 0.9873895879095987,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-19a15b8078",
+   "field": "speaker",
+   "quote": "Samantha Fuller, Bobby Di Cicco, Mark Hamill, Perry Lang, Kelly Ward, Andréas-Benjamin Seyfert",
+   "url": "https://www.campuscalendar.ucsb.edu/event/cwc-classics-the-big-red-one",
+   "check_confidence": 0.899234495131185,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-6b693737a2",
+   "field": "title",
+   "quote": "UCSB Middle East Ensemble Fall Concert",
+   "url": "https://www.campuscalendar.ucsb.edu/event/ucsb-middle-east-ensemble-fall-concert",
+   "check_confidence": 0.9832190770740168,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-6b693737a2",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026 7:30pm",
+   "url": "https://www.campuscalendar.ucsb.edu/event/ucsb-middle-east-ensemble-fall-concert",
+   "check_confidence": 0.9776267647854257,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-6b693737a2",
+   "field": "start_time",
+   "quote": "19:30",
+   "url": "https://www.campuscalendar.ucsb.edu/event/ucsb-middle-east-ensemble-fall-concert",
+   "check_confidence": 0.9810667620778774,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-6b693737a2",
+   "field": "venue_name",
+   "quote": "Lotte Lehmann Concert Hall",
+   "url": "https://www.campuscalendar.ucsb.edu/event/ucsb-middle-east-ensemble-fall-concert",
+   "check_confidence": 0.9811287712374787,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-6b693737a2",
+   "field": "organisation_name",
+   "quote": "Department of Music",
+   "url": "https://www.campuscalendar.ucsb.edu/event/ucsb-middle-east-ensemble-fall-concert",
+   "check_confidence": 0.9593606391147796,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-021f781d74",
+   "field": "title",
+   "quote": "Cultivating Community: Garden Volunteer Day",
+   "url": "https://www.campuscalendar.ucsb.edu/event/cultivating-community-garden-volunteer-day-6204",
+   "check_confidence": 0.9870209101253659,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-021f781d74",
+   "field": "date",
+   "quote": "Sunday, November 22, 2026 12pm to 2pm",
+   "url": "https://www.campuscalendar.ucsb.edu/event/cultivating-community-garden-volunteer-day-6204",
+   "check_confidence": 0.9699391024120091,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-021f781d74",
+   "field": "start_time",
+   "quote": "12:00",
+   "url": "https://www.campuscalendar.ucsb.edu/event/cultivating-community-garden-volunteer-day-6204",
+   "check_confidence": 0.988160382891537,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-021f781d74",
+   "field": "venue_name",
+   "quote": "Methodist Community Garden, 880 Camino Del Sur, Isla Vista, CA 93117 (Corner of Sueno and Camino Del Sur)",
+   "url": "https://www.campuscalendar.ucsb.edu/event/cultivating-community-garden-volunteer-day-6204",
+   "check_confidence": 0.9739534394432707,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-021f781d74",
+   "field": "organisation_name",
+   "quote": "Edible Campus Program",
+   "url": "https://www.campuscalendar.ucsb.edu/event/cultivating-community-garden-volunteer-day-6204",
+   "check_confidence": 0.974191960436716,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-a64af77b09",
+   "field": "title",
+   "quote": "UCSB Student Carillon Recital",
+   "url": "https://www.campuscalendar.ucsb.edu/event/ucsb-student-carillon-recital-9960",
+   "check_confidence": 0.9712684709665861,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-a64af77b09",
+   "field": "date",
+   "quote": "Sunday, November 22, 2026 10am",
+   "url": "https://www.campuscalendar.ucsb.edu/event/ucsb-student-carillon-recital-9960",
+   "check_confidence": 0.9830442919365295,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-a64af77b09",
+   "field": "start_time",
+   "quote": "10:00",
+   "url": "https://www.campuscalendar.ucsb.edu/event/ucsb-student-carillon-recital-9960",
+   "check_confidence": 0.9835491206756674,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-a64af77b09",
+   "field": "venue_name",
+   "quote": "Storke Tower",
+   "url": "https://www.campuscalendar.ucsb.edu/event/ucsb-student-carillon-recital-9960",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-a64af77b09",
+   "field": "organisation_name",
+   "quote": "Department of Music",
+   "url": "https://www.campuscalendar.ucsb.edu/event/ucsb-student-carillon-recital-9960",
+   "check_confidence": 0.9357883154157969,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsb-a64af77b09",
+   "field": "speaker",
+   "quote": "Annmarie Fan, Rose Gallagher, Julia Ong, Pratyush Rallapally, Ryan Stenberg",
+   "url": "https://www.campuscalendar.ucsb.edu/event/ucsb-student-carillon-recital-9960",
+   "check_confidence": 0.7812161441127633,
+   "passed": false
+  }
+ ]
+}

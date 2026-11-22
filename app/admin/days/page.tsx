@@ -27,7 +27,7 @@ function Chart({ title, note, values, max = 1, colour, fmt }: { title: string; n
 }
 
 export default function Admin() {
-  const [school, setSchool] = useState<SchoolId>("nyu");
+  const [school, setSchool] = useState<SchoolId>("tsinghua");
   const [days, setDays] = useState<Day[]>([]);
   const [running, setRunning] = useState<string | null>(null);
   const stop = useRef(false);
@@ -61,7 +61,7 @@ export default function Admin() {
           <p className="max-w-4xl text-sm leading-relaxed text-[#5f576c]">Each day the Gemi decides by itself how to spend its own Gem Stars (6 for the student, 4 for itself), goes out, and brings back three things per trip with a guess of which will be kept.
             <b> The student here is simulated</b>: Hydrogen plays the preset below, with hidden tendencies the Gemi never sees. That lets us measure whether its guesses and its picture of the student get better day by day.</p>
           <div className="mt-4 flex flex-wrap items-center gap-2">
-            {(["nyu", "columbia"] as const).map((s) => <Chunky key={s} small color={school === s ? "#ffe08a" : "#fffaf0"} disabled={!!running || days.length > 0} onClick={() => setSchool(s)}>{s === "nyu" ? "NYU · PhD, education" : "Columbia · sophomore"}</Chunky>)}
+            {(["tsinghua", "stanford", "nyu"] as const).map((s) => <Chunky key={s} small color={school === s ? "#ffe08a" : "#fffaf0"} disabled={!!running || days.length > 0} onClick={() => setSchool(s)}>{s === "nyu" ? "NYU · PhD, education" : "Columbia · sophomore"}</Chunky>)}
             <span className="mx-2 h-6 w-px bg-[#d9d0c0]" />
             {[1, 3, 5].map((n) => <Chunky key={n} color="#a8e0c0" disabled={!!running} onClick={() => run(n)}>Run {n} day{n > 1 ? "s" : ""}</Chunky>)}
             {running && <Chunky small color="#fffaf0" onClick={() => { stop.current = true; }}>Stop after this day</Chunky>}

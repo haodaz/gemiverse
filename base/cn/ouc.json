@@ -1,0 +1,374 @@
+{
+ "school": "ouc",
+ "name": "中国海洋大学",
+ "at": "2026-11-22T00:16:15.952Z",
+ "seconds": 33,
+ "tokens": 82753,
+ "entities": [
+  {
+   "id": "ouc-194d5f472b",
+   "type": "Event",
+   "school": "ouc",
+   "name": "研究生百川讲坛第636讲-石森昌：智库服务区域海洋经济发展的实践与思考",
+   "tier": 1,
+   "fields": {
+    "url": "http://www.ouc.edu.cn/2026/1118/c30993a542052/page.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": null,
+    "summary": "石森昌主讲研究生百川讲坛第636讲，探讨智库服务区域海洋经济发展的实践与思考。",
+    "event_kind": "lecture",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": "石森昌",
+    "occurrences": []
+   }
+  },
+  {
+   "id": "ouc-2296db1069",
+   "type": "Event",
+   "school": "ouc",
+   "name": "未来海洋讲坛第165讲（2026年第30讲）-关大博：面向海洋可持续发展的人海系统耦合研究",
+   "tier": 1,
+   "fields": {
+    "url": "http://www.ouc.edu.cn/2026/1119/c30993a542181/page.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": null,
+    "summary": "未来海洋讲坛第165讲，由关大博主讲面向海洋可持续发展的人海系统耦合研究。",
+    "event_kind": "lecture",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": "关大博",
+    "occurrences": []
+   }
+  },
+  {
+   "id": "ouc-e3b42763a9",
+   "type": "Event",
+   "school": "ouc",
+   "name": "未来海洋讲坛第167讲（2026年第32讲）-印萍：海岸带复杂系统智能认知与地学研究",
+   "tier": 1,
+   "fields": {
+    "url": "http://www.ouc.edu.cn/2026/1119/c30993a542183/page.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": null,
+    "summary": "未来海洋讲坛第167讲，由印萍主讲海岸带复杂系统智能认知与地学研究。",
+    "event_kind": "lecture",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": "印萍",
+    "occurrences": []
+   }
+  },
+  {
+   "id": "ouc-afade82d83",
+   "type": "Event",
+   "school": "ouc",
+   "name": "本科生卓越大讲堂第19讲-唐波院士与你聊聊生命过程中的化学传感与成像问题",
+   "tier": 1,
+   "fields": {
+    "url": "http://www.ouc.edu.cn/2026/1117/c30993a541997/page.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": null,
+    "summary": "中国海洋大学本科生卓越大讲堂第19讲，由唐波院士主讲生命过程中的化学传感与成像问题。",
+    "event_kind": "lecture",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": "唐波院士",
+    "occurrences": []
+   }
+  },
+  {
+   "id": "ouc-d1d6136c09",
+   "type": "Event",
+   "school": "ouc",
+   "name": "研究生百川讲坛第635讲-唐波：从经验设计到AI赋能的跨尺度化学传感与成像",
+   "tier": 1,
+   "fields": {
+    "url": "http://www.ouc.edu.cn/2026/1117/c30993a541990/page.htm",
+    "needs": [
+     "explore_a_field",
+     "build_a_skill"
+    ],
+    "start": null,
+    "summary": "唐波主讲研究生百川讲坛第635讲，主题为从经验设计到AI赋能的跨尺度化学传感与成像。",
+    "event_kind": "lecture",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": "唐波",
+    "occurrences": []
+   }
+  },
+  {
+   "id": "ouc-cbb8844568",
+   "type": "Event",
+   "school": "ouc",
+   "name": "海大人文讲坛2026年第49讲-辛鸣：共同富裕与人民主体",
+   "tier": 1,
+   "fields": {
+    "url": "http://www.ouc.edu.cn/2026/1113/c30993a541891/page.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": null,
+    "summary": "海大人文讲坛2026年第49讲，由辛鸣主讲“共同富裕与人民主体”。",
+    "event_kind": "lecture",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": "辛鸣",
+    "occurrences": []
+   }
+  },
+  {
+   "id": "ouc-21887d476c",
+   "type": "Event",
+   "school": "ouc",
+   "name": "实学讲堂第二十三期-张四纯：单细胞代谢物质谱流式分析",
+   "tier": 1,
+   "fields": {
+    "url": "http://www.ouc.edu.cn/2026/1106/c30993a541444/page.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": null,
+    "summary": "中国海洋大学实学讲堂第二十三期，张四纯主讲单细胞代谢物质谱流式分析。",
+    "event_kind": "lecture",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": "张四纯",
+    "occurrences": []
+   }
+  },
+  {
+   "id": "ouc-cb6282dce9",
+   "type": "Event",
+   "school": "ouc",
+   "name": "海大人文讲坛2026年第48讲-马宝君：人工智能赋能商科前沿交叉研究探索",
+   "tier": 1,
+   "fields": {
+    "url": "http://www.ouc.edu.cn/2026/1112/c30993a541765/page.htm",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": null,
+    "summary": "海大人文讲坛2026年第48讲，马宝君主讲人工智能赋能商科前沿交叉研究探索。",
+    "event_kind": "lecture",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": "马宝君",
+    "occurrences": []
+   }
+  },
+  {
+   "id": "ouc-9217737bfa",
+   "type": "Event",
+   "school": "ouc",
+   "name": "研究生百川讲坛第633讲-毛海涛：高质量导向下的经济学论文写作与发表",
+   "tier": 1,
+   "fields": {
+    "url": "http://www.ouc.edu.cn/2026/1112/c30993a541707/page.htm",
+    "needs": [
+     "build_a_skill",
+     "explore_a_field"
+    ],
+    "start": null,
+    "summary": "中国海洋大学研究生百川讲坛第633讲，由毛海涛主讲高质量导向下的经济学论文写作与发表。",
+    "event_kind": "lecture",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": "毛海涛",
+    "occurrences": []
+   }
+  },
+  {
+   "id": "ouc-c892317ed2",
+   "type": "Event",
+   "school": "ouc",
+   "name": "研究生百川讲坛第634讲-林仕骏：旅游管理国际顶刊论文：前沿方向、写作范式与发表路径",
+   "tier": 1,
+   "fields": {
+    "url": "http://www.ouc.edu.cn/2026/1116/c30993a541918/page.htm",
+    "needs": [
+     "explore_a_field",
+     "build_a_skill"
+    ],
+    "start": null,
+    "summary": "林仕骏主讲旅游管理国际顶刊论文的前沿方向、写作范式与发表路径。",
+    "event_kind": "lecture",
+    "venue_name": null,
+    "organisation_name": null,
+    "speaker": "林仕骏",
+    "occurrences": []
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "ouc-194d5f472b",
+   "field": "title",
+   "quote": "研究生百川讲坛第636讲-石森昌：智库服务区域海洋经济发展的实践与思考",
+   "url": "http://www.ouc.edu.cn/2026/1118/c30993a542052/page.htm",
+   "check_confidence": 0.9591668098275211,
+   "passed": true
+  },
+  {
+   "entity_id": "ouc-194d5f472b",
+   "field": "speaker",
+   "quote": "石森昌",
+   "url": "http://www.ouc.edu.cn/2026/1118/c30993a542052/page.htm",
+   "check_confidence": 0.9608019326226838,
+   "passed": true
+  },
+  {
+   "entity_id": "ouc-2296db1069",
+   "field": "title",
+   "quote": "未来海洋讲坛第165讲（2026年第30讲）-关大博：面向海洋可持续发展的人海系统耦合研究",
+   "url": "http://www.ouc.edu.cn/2026/1119/c30993a542181/page.htm",
+   "check_confidence": 0.9426841537871808,
+   "passed": true
+  },
+  {
+   "entity_id": "ouc-2296db1069",
+   "field": "speaker",
+   "quote": "关大博",
+   "url": "http://www.ouc.edu.cn/2026/1119/c30993a542181/page.htm",
+   "check_confidence": 0.9673172912748379,
+   "passed": true
+  },
+  {
+   "entity_id": "ouc-e3b42763a9",
+   "field": "title",
+   "quote": "未来海洋讲坛第167讲（2026年第32讲）-印萍：海岸带复杂系统智能认知与地学研究",
+   "url": "http://www.ouc.edu.cn/2026/1119/c30993a542183/page.htm",
+   "check_confidence": 0.966207885217725,
+   "passed": true
+  },
+  {
+   "entity_id": "ouc-e3b42763a9",
+   "field": "speaker",
+   "quote": "印萍",
+   "url": "http://www.ouc.edu.cn/2026/1119/c30993a542183/page.htm",
+   "check_confidence": 0.9629516339103682,
+   "passed": true
+  },
+  {
+   "entity_id": "ouc-afade82d83",
+   "field": "title",
+   "quote": "本科生卓越大讲堂第19讲-唐波院士与你聊聊生命过程中的化学传感与成像问题",
+   "url": "http://www.ouc.edu.cn/2026/1117/c30993a541997/page.htm",
+   "check_confidence": 0.9409132192124182,
+   "passed": true
+  },
+  {
+   "entity_id": "ouc-afade82d83",
+   "field": "speaker",
+   "quote": "唐波院士",
+   "url": "http://www.ouc.edu.cn/2026/1117/c30993a541997/page.htm",
+   "check_confidence": 0.954848772751613,
+   "passed": true
+  },
+  {
+   "entity_id": "ouc-d1d6136c09",
+   "field": "title",
+   "quote": "研究生百川讲坛第635讲-唐波：从经验设计到AI赋能的跨尺度化学传感与成像",
+   "url": "http://www.ouc.edu.cn/2026/1117/c30993a541990/page.htm",
+   "check_confidence": 0.9458774971942955,
+   "passed": true
+  },
+  {
+   "entity_id": "ouc-d1d6136c09",
+   "field": "speaker",
+   "quote": "唐波",
+   "url": "http://www.ouc.edu.cn/2026/1117/c30993a541990/page.htm",
+   "check_confidence": 0.9576571037867042,
+   "passed": true
+  },
+  {
+   "entity_id": "ouc-cbb8844568",
+   "field": "title",
+   "quote": "海大人文讲坛2026年第49讲-辛鸣：共同富裕与人民主体",
+   "url": "http://www.ouc.edu.cn/2026/1113/c30993a541891/page.htm",
+   "check_confidence": 0.9570293337206787,
+   "passed": true
+  },
+  {
+   "entity_id": "ouc-cbb8844568",
+   "field": "speaker",
+   "quote": "辛鸣",
+   "url": "http://www.ouc.edu.cn/2026/1113/c30993a541891/page.htm",
+   "check_confidence": 0.9625182992061052,
+   "passed": true
+  },
+  {
+   "entity_id": "ouc-21887d476c",
+   "field": "title",
+   "quote": "实学讲堂第二十三期-张四纯：单细胞代谢物质谱流式分析",
+   "url": "http://www.ouc.edu.cn/2026/1106/c30993a541444/page.htm",
+   "check_confidence": 0.9365679969399062,
+   "passed": true
+  },
+  {
+   "entity_id": "ouc-21887d476c",
+   "field": "speaker",
+   "quote": "张四纯",
+   "url": "http://www.ouc.edu.cn/2026/1106/c30993a541444/page.htm",
+   "check_confidence": 0.9590579312920752,
+   "passed": true
+  },
+  {
+   "entity_id": "ouc-cb6282dce9",
+   "field": "title",
+   "quote": "海大人文讲坛2026年第48讲-马宝君：人工智能赋能商科前沿交叉研究探索",
+   "url": "http://www.ouc.edu.cn/2026/1112/c30993a541765/page.htm",
+   "check_confidence": 0.9525966201005825,
+   "passed": true
+  },
+  {
+   "entity_id": "ouc-cb6282dce9",
+   "field": "speaker",
+   "quote": "马宝君",
+   "url": "http://www.ouc.edu.cn/2026/1112/c30993a541765/page.htm",
+   "check_confidence": 0.9479217955112768,
+   "passed": true
+  },
+  {
+   "entity_id": "ouc-9217737bfa",
+   "field": "title",
+   "quote": "研究生百川讲坛第633讲-毛海涛：高质量导向下的经济学论文写作与发表",
+   "url": "http://www.ouc.edu.cn/2026/1112/c30993a541707/page.htm",
+   "check_confidence": 0.9397244564040188,
+   "passed": true
+  },
+  {
+   "entity_id": "ouc-9217737bfa",
+   "field": "speaker",
+   "quote": "毛海涛",
+   "url": "http://www.ouc.edu.cn/2026/1112/c30993a541707/page.htm",
+   "check_confidence": 0.9439154073471631,
+   "passed": true
+  },
+  {
+   "entity_id": "ouc-c892317ed2",
+   "field": "title",
+   "quote": "研究生百川讲坛第634讲-林仕骏：旅游管理国际顶刊论文：前沿方向、写作范式与发表路径",
+   "url": "http://www.ouc.edu.cn/2026/1116/c30993a541918/page.htm",
+   "check_confidence": 0.9481050300564161,
+   "passed": true
+  },
+  {
+   "entity_id": "ouc-c892317ed2",
+   "field": "speaker",
+   "quote": "林仕骏",
+   "url": "http://www.ouc.edu.cn/2026/1116/c30993a541918/page.htm",
+   "check_confidence": 0.9541354257350477,
+   "passed": true
+  }
+ ]
+}

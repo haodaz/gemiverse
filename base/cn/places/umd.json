@@ -1,0 +1,104 @@
+{
+ "school": "umd",
+ "name": "University of Maryland",
+ "at": "2026-11-22T00:20:20.397Z",
+ "source": "https://en.wikipedia.org/wiki/University%20of%20Maryland%2C%20College%20Park",
+ "character": "The 1,250-acre campus features the large McKeldin Mall, Georgian-style halls, 7,500 documented trees, nearly 400 acres of urban forest, and the Paint Branch stream.",
+ "map": "/art/map/umd.jpg",
+ "landmarks": [
+  {
+   "name": "McKeldin Mall",
+   "name_en": "McKeldin Mall",
+   "kind": "quad",
+   "quote": "The center of the university's 1,250 acres (5.1 km2) is McKeldin Mall, which is the largest academic mall in the United States.",
+   "look": "Vast open grassy academic mall bordered by buildings on all sides.",
+   "check": 0.9845636323670758,
+   "confidence": 0.9845636323670758,
+   "passed": true,
+   "x": 0.41,
+   "y": 0.45
+  },
+  {
+   "name": "McKeldin Library",
+   "name_en": "McKeldin Library",
+   "kind": "library",
+   "quote": "The Mall is bordered on the west and east by McKeldin Library and the Thomas V. Miller, Jr. Administration Building, respectively.",
+   "look": "Plain library building bordering the west end of McKeldin Mall.",
+   "check": 0.9725031153958398,
+   "confidence": 0.9725031153958398,
+   "passed": true,
+   "x": 0.25,
+   "y": 0.67
+  },
+  {
+   "name": "The \"M\"",
+   "name_en": "The \"M\"",
+   "kind": "other",
+   "quote": "at the campus hallmark, The \"M\", which is a mound with a large \"M\" formed by flowers in its center.",
+   "look": "Grassy mound with a large letter M formed by flowers in its center.",
+   "check": 0.9614672169555479,
+   "confidence": 0.9614672169555479,
+   "passed": true,
+   "x": 0.52,
+   "y": 0.73
+  },
+  {
+   "name": "Morrill Quad",
+   "name_en": "Morrill Quad",
+   "kind": "quad",
+   "quote": "the original center of campus, Morrill Hall and the Morrill Quad.",
+   "look": "Historic campus quadrangle at the original center of campus.",
+   "check": 0.9604417728456577,
+   "confidence": 0.9604417728456577,
+   "passed": true,
+   "x": 0.8,
+   "y": 0.71
+  },
+  {
+   "name": "Morrill Hall",
+   "name_en": "Morrill Hall",
+   "kind": "hall",
+   "quote": "the original center of campus, Morrill Hall and the Morrill Quad.",
+   "look": "Plain historic academic hall on Morrill Quad.",
+   "check": 0.9729908858307789,
+   "confidence": 0.9729908858307789,
+   "passed": true,
+   "x": 0.75,
+   "y": 0.81
+  },
+  {
+   "name": "North Gate",
+   "name_en": "North Gate",
+   "kind": "gate",
+   "quote": "referred to as North Gate and features the Gatehouse, an ornate gateway honoring the university's founders.",
+   "look": "Ornate gateway and gatehouse at the main campus entrance.",
+   "check": 0.9643123446637344,
+   "confidence": 0.9643123446637344,
+   "passed": true,
+   "x": 0.59,
+   "y": 0.12
+  },
+  {
+   "name": "Rossborough Inn",
+   "name_en": "Rossborough Inn",
+   "kind": "other",
+   "quote": "The Rossborough Inn, which was built during the years 1798 to 1812, is the oldest building on campus",
+   "look": "Historic late-18th to early-19th-century building, plain in style.",
+   "check": 0.9755755270964228,
+   "confidence": 0.9755755270964228,
+   "passed": true
+  },
+  {
+   "name": "University of Maryland Arboretum & Botanical Garden",
+   "name_en": "University of Maryland Arboretum & Botanical Garden",
+   "kind": "garden",
+   "quote": "designate the campus the University of Maryland Arboretum & Botanical Garden in 2008.",
+   "look": "Expansive campus grounds filled with thousands of trees and garden plantings.",
+   "check": 0.9563345112222207,
+   "confidence": 0.9563345112222207,
+   "passed": true
+  }
+ ],
+ "tokens": 11505,
+ "seconds": 30
+}

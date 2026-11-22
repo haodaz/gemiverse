@@ -1,0 +1,650 @@
+{
+ "school": "ucsd",
+ "name": "University of California, San Diego",
+ "at": "2026-11-22T00:20:08.804Z",
+ "seconds": 33,
+ "tokens": 81260,
+ "entities": [
+  {
+   "id": "ucsd-7faeeaa0b8",
+   "type": "Event",
+   "school": "ucsd",
+   "name": "AIP Enrollment Workshop",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.ucsd.edu/event/copy-of-aip-summer-enrollment-workshop",
+    "needs": [
+     "navigate_systems",
+     "get_experience"
+    ],
+    "start": "2026-11-30T15:00",
+    "summary": "An enrollment workshop for students seeking Winter Quarter internship course options and support through the Academic Internship Program.",
+    "event_kind": "workshop",
+    "venue_name": "Triton Administrative Services Building West, Second Floor, Teaching and Learning Commons",
+    "organisation_name": "Experiential Learning, Teaching and Learning Commons",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-30T15:00",
+      "end": "2026-11-30T16:00"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ucsd-0fef30c996",
+   "type": "Event",
+   "school": "ucsd",
+   "name": "Library Milestones | Exhibit",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.ucsd.edu/event/library-milestones-exhibit-fall26",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-09-21",
+    "summary": "An exhibit at Geisel Library highlighting five milestone titles in the growth of UC San Diego Library's physical collections.",
+    "event_kind": "exhibition",
+    "venue_name": "Geisel Library, 2nd Floor Southwest",
+    "organisation_name": "UC San Diego Library",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-09-21",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "ucsd-c97198b893",
+   "type": "Event",
+   "school": "ucsd",
+   "name": "Shaping a Library | Exhibition",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.ucsd.edu/event/shaping-a-library-exhibition-2026",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-09-26",
+    "summary": "An exhibition at Geisel Library tracing the architectural design, construction, and expansion history of UC San Diego's Central University Library from 1965 to 1993.",
+    "event_kind": "exhibition",
+    "venue_name": "Geisel Library, Exhibition Gallery",
+    "organisation_name": "UC San Diego Library",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-09-26",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "ucsd-364ee21fac",
+   "type": "Event",
+   "school": "ucsd",
+   "name": "United States Poets Laureate | Exhibit",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.ucsd.edu/event/united-states-poet-laureates-exhibit-fall26",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2026-09-21",
+    "summary": "An exhibition showcasing selected books and broadsides by U.S. Poets Laureate from UC San Diego Library's Archive of New Poetry.",
+    "event_kind": "exhibition",
+    "venue_name": "Geisel Library, 2nd Floor Southwest",
+    "organisation_name": "UC San Diego Library",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-09-21",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "ucsd-9e8754bd74",
+   "type": "Event",
+   "school": "ucsd",
+   "name": "The Human Condition: An Exploration of Art Literature | Exhibit",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.ucsd.edu/event/the-human-condition-exhibit",
+    "needs": [
+     "make_and_express",
+     "rest_and_recover"
+    ],
+    "start": "2026-09-26",
+    "summary": "An exhibition at UC San Diego featuring selected art and literary works from the School of Medicine's student-led magazine.",
+    "event_kind": "exhibition",
+    "venue_name": "Sally T. WongAvery Library, Breezeway",
+    "organisation_name": "UC San Diego Library",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-09-26",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "ucsd-082105a1b6",
+   "type": "Event",
+   "school": "ucsd",
+   "name": "The Galileo Hackathon: Challenge Day (AI for Science)",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.ucsd.edu/event/the-galileo-hackathon-challenge-day-ai-for-science",
+    "needs": [
+     "build_a_skill",
+     "get_experience"
+    ],
+    "start": "2026-11-21T10:00",
+    "summary": "A hands-on AI for Science hackathon hosted by UC San Diego's Halıcıoğlu Data Science Institute where teams solve scientific tasks.",
+    "event_kind": "competition",
+    "venue_name": "UC San Diego, venue to be announced",
+    "organisation_name": "UC San Diego's Halıcıoğlu Data Science Institute",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-11-21T10:00",
+      "end": "2026-11-21T16:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ucsd-8739eb0e29",
+   "type": "Event",
+   "school": "ucsd",
+   "name": "Understanding Love and Eros in the Holocaust: A German-Jewish Gay Romance in Prague, Featuring Anna Hájková",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.ucsd.edu/event/HLHW-Anna-Hajkova",
+    "needs": [
+     "explore_a_field"
+    ],
+    "start": "2027-01-21T17:00",
+    "summary": "Anna Hájková presents a lecture on queer history and same-sex desire in the Holocaust, offered in person and via Zoom.",
+    "event_kind": "lecture",
+    "venue_name": "Geisel Library, Seuss Room",
+    "organisation_name": "UC San Diego Library",
+    "speaker": "Anna Hájková",
+    "occurrences": [
+     {
+      "start": "2027-01-21T17:00",
+      "end": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "ucsd-4336df7bdd",
+   "type": "Event",
+   "school": "ucsd",
+   "name": "Destress with CLS: Community Hour",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.ucsd.edu/event/chicanx-and-latinx-community-hour",
+    "needs": [
+     "rest_and_recover",
+     "find_my_people"
+    ],
+    "start": "2026-12-02T14:00",
+    "summary": "A Chicanx and Latinx Studies community hour featuring hot chocolate, pan dulce, crafts, and reflection to relax and connect.",
+    "event_kind": "activity",
+    "venue_name": "Student Center B, Dolores Huerta Vera Cruz Room",
+    "organisation_name": "Institute of Arts and Humanities (IAH)",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-02T14:00",
+      "end": "2026-12-02T15:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ucsd-43c6054370",
+   "type": "Event",
+   "school": "ucsd",
+   "name": "Global Coffee Hour",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.ucsd.edu/event/global-coffee-hour-270",
+    "needs": [
+     "find_my_people"
+    ],
+    "start": "2026-12-09T08:00",
+    "summary": "International and domestic students, scholars, and families gather for coffee, pastries, fun activities, and global community connections.",
+    "event_kind": "activity",
+    "venue_name": "Triton Administrative Services Building, East Tower, Multipurpose Room 1320",
+    "organisation_name": "Globally Engaged Tritons",
+    "speaker": null,
+    "occurrences": [
+     {
+      "start": "2026-12-09T08:00",
+      "end": "2026-12-09T09:30"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ucsd-1d620ea5f4",
+   "type": "Event",
+   "school": "ucsd",
+   "name": "New Writing Series: PhD Creative-Critical Poet Reading",
+   "tier": 1,
+   "fields": {
+    "url": "https://calendar.ucsd.edu/event/new-writing-series-phd-creative-critical-poet-reading",
+    "needs": [
+     "explore_a_field",
+     "make_and_express"
+    ],
+    "start": "2026-12-02T17:00",
+    "summary": "UCSD Literature Department PhD students will read poetry and discuss craft and artistic practice in a public Q&A.",
+    "event_kind": "lecture",
+    "venue_name": "International House, Great Hall",
+    "organisation_name": "Department of Literature",
+    "speaker": "Ana Villalpando, Nilufar Karimi, Phuong Vuong, Traimaine Suubi, Vyxz Vasquez",
+    "occurrences": [
+     {
+      "start": "2026-12-02T17:00",
+      "end": "2026-12-02T19:00"
+     }
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "entity_id": "ucsd-7faeeaa0b8",
+   "field": "title",
+   "quote": "AIP Enrollment Workshop",
+   "url": "https://calendar.ucsd.edu/event/copy-of-aip-summer-enrollment-workshop",
+   "check_confidence": 0.976982994491269,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsd-7faeeaa0b8",
+   "field": "date",
+   "quote": "Monday, November 30, 2026 3:00pm to 4:00pm PST",
+   "url": "https://calendar.ucsd.edu/event/copy-of-aip-summer-enrollment-workshop",
+   "check_confidence": 0.9647551941401883,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsd-7faeeaa0b8",
+   "field": "start_time",
+   "quote": "15:00",
+   "url": "https://calendar.ucsd.edu/event/copy-of-aip-summer-enrollment-workshop",
+   "check_confidence": 0.9668073321622631,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsd-7faeeaa0b8",
+   "field": "venue_name",
+   "quote": "Triton Administrative Services Building West, Second Floor, Teaching and Learning Commons",
+   "url": "https://calendar.ucsd.edu/event/copy-of-aip-summer-enrollment-workshop",
+   "check_confidence": 0.9465306819137816,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsd-7faeeaa0b8",
+   "field": "organisation_name",
+   "quote": "Experiential Learning, Teaching and Learning Commons",
+   "url": "https://calendar.ucsd.edu/event/copy-of-aip-summer-enrollment-workshop",
+   "check_confidence": 0.9583132175993748,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsd-0fef30c996",
+   "field": "title",
+   "quote": "Library Milestones | Exhibit",
+   "url": "https://calendar.ucsd.edu/event/library-milestones-exhibit-fall26",
+   "check_confidence": 0.9701491825376044,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsd-0fef30c996",
+   "field": "date",
+   "quote": "Monday, September 21, 2026 - Sunday, December 13, 2026",
+   "url": "https://calendar.ucsd.edu/event/library-milestones-exhibit-fall26",
+   "check_confidence": 0.9706914037163837,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsd-0fef30c996",
+   "field": "venue_name",
+   "quote": "Geisel Library, 2nd Floor Southwest",
+   "url": "https://calendar.ucsd.edu/event/library-milestones-exhibit-fall26",
+   "check_confidence": 0.9527102550502906,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsd-0fef30c996",
+   "field": "organisation_name",
+   "quote": "UC San Diego Library",
+   "url": "https://calendar.ucsd.edu/event/library-milestones-exhibit-fall26",
+   "check_confidence": 0.9691279642622178,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsd-c97198b893",
+   "field": "title",
+   "quote": "Shaping a Library | Exhibition",
+   "url": "https://calendar.ucsd.edu/event/shaping-a-library-exhibition-2026",
+   "check_confidence": 0.9832816240981533,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsd-c97198b893",
+   "field": "date",
+   "quote": "Saturday, September 26, 2026 - Tuesday, December 8, 2026",
+   "url": "https://calendar.ucsd.edu/event/shaping-a-library-exhibition-2026",
+   "check_confidence": 0.9764509615406379,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsd-c97198b893",
+   "field": "venue_name",
+   "quote": "Geisel Library, Exhibition Gallery",
+   "url": "https://calendar.ucsd.edu/event/shaping-a-library-exhibition-2026",
+   "check_confidence": 0.9822310046232999,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsd-c97198b893",
+   "field": "organisation_name",
+   "quote": "UC San Diego Library",
+   "url": "https://calendar.ucsd.edu/event/shaping-a-library-exhibition-2026",
+   "check_confidence": 0.989452297725186,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsd-364ee21fac",
+   "field": "title",
+   "quote": "United States Poets Laureate | Exhibit",
+   "url": "https://calendar.ucsd.edu/event/united-states-poet-laureates-exhibit-fall26",
+   "check_confidence": 0.9768556506708086,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsd-364ee21fac",
+   "field": "date",
+   "quote": "Monday, September 21, 2026 - Sunday, December 13, 2026",
+   "url": "https://calendar.ucsd.edu/event/united-states-poet-laureates-exhibit-fall26",
+   "check_confidence": 0.9660859498794397,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsd-364ee21fac",
+   "field": "venue_name",
+   "quote": "Geisel Library, 2nd Floor Southwest",
+   "url": "https://calendar.ucsd.edu/event/united-states-poet-laureates-exhibit-fall26",
+   "check_confidence": 0.9721195333301745,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsd-364ee21fac",
+   "field": "organisation_name",
+   "quote": "UC San Diego Library",
+   "url": "https://calendar.ucsd.edu/event/united-states-poet-laureates-exhibit-fall26",
+   "check_confidence": 0.9685843574069193,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsd-9e8754bd74",
+   "field": "title",
+   "quote": "The Human Condition: An Exploration of Art Literature | Exhibit",
+   "url": "https://calendar.ucsd.edu/event/the-human-condition-exhibit",
+   "check_confidence": 0.9581591083799504,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsd-9e8754bd74",
+   "field": "date",
+   "quote": "Saturday, September 26, 2026 - Sunday, December 13, 2026",
+   "url": "https://calendar.ucsd.edu/event/the-human-condition-exhibit",
+   "check_confidence": 0.9853929851555218,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsd-9e8754bd74",
+   "field": "venue_name",
+   "quote": "Sally T. WongAvery Library, Breezeway",
+   "url": "https://calendar.ucsd.edu/event/the-human-condition-exhibit",
+   "check_confidence": 0.9707098834635588,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsd-9e8754bd74",
+   "field": "organisation_name",
+   "quote": "UC San Diego Library",
+   "url": "https://calendar.ucsd.edu/event/the-human-condition-exhibit",
+   "check_confidence": 0.9756535842334747,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsd-082105a1b6",
+   "field": "title",
+   "quote": "The Galileo Hackathon: Challenge Day (AI for Science)",
+   "url": "https://calendar.ucsd.edu/event/the-galileo-hackathon-challenge-day-ai-for-science",
+   "check_confidence": 0.9672336071740901,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsd-082105a1b6",
+   "field": "date",
+   "quote": "Saturday, November 21, 2026 10:00am to 4:30pm PST",
+   "url": "https://calendar.ucsd.edu/event/the-galileo-hackathon-challenge-day-ai-for-science",
+   "check_confidence": 0.9662444597303242,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsd-082105a1b6",
+   "field": "start_time",
+   "quote": "10:00",
+   "url": "https://calendar.ucsd.edu/event/the-galileo-hackathon-challenge-day-ai-for-science",
+   "check_confidence": 0.9792011205258272,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsd-082105a1b6",
+   "field": "venue_name",
+   "quote": "UC San Diego, venue to be announced",
+   "url": "https://calendar.ucsd.edu/event/the-galileo-hackathon-challenge-day-ai-for-science",
+   "check_confidence": 0.9608037613267907,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsd-082105a1b6",
+   "field": "organisation_name",
+   "quote": "UC San Diego's Halıcıoğlu Data Science Institute",
+   "url": "https://calendar.ucsd.edu/event/the-galileo-hackathon-challenge-day-ai-for-science",
+   "check_confidence": 0.9731089346208969,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsd-8739eb0e29",
+   "field": "title",
+   "quote": "Understanding Love and Eros in the Holocaust: A German-Jewish Gay Romance in Prague, Featuring Anna Hájková",
+   "url": "https://calendar.ucsd.edu/event/HLHW-Anna-Hajkova",
+   "check_confidence": 0.9850987845520512,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsd-8739eb0e29",
+   "field": "date",
+   "quote": "Thursday, January 21, 2027 5:00pm PST",
+   "url": "https://calendar.ucsd.edu/event/HLHW-Anna-Hajkova",
+   "check_confidence": 0.9772916167617401,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsd-8739eb0e29",
+   "field": "start_time",
+   "quote": "17:00",
+   "url": "https://calendar.ucsd.edu/event/HLHW-Anna-Hajkova",
+   "check_confidence": 0.9662206587608816,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsd-8739eb0e29",
+   "field": "venue_name",
+   "quote": "Geisel Library, Seuss Room",
+   "url": "https://calendar.ucsd.edu/event/HLHW-Anna-Hajkova",
+   "check_confidence": 0.9762290974979096,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsd-8739eb0e29",
+   "field": "organisation_name",
+   "quote": "UC San Diego Library",
+   "url": "https://calendar.ucsd.edu/event/HLHW-Anna-Hajkova",
+   "check_confidence": 0.99,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsd-8739eb0e29",
+   "field": "speaker",
+   "quote": "Anna Hájková",
+   "url": "https://calendar.ucsd.edu/event/HLHW-Anna-Hajkova",
+   "check_confidence": 0.9812028435698285,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsd-4336df7bdd",
+   "field": "title",
+   "quote": "Destress with CLS: Community Hour",
+   "url": "https://calendar.ucsd.edu/event/chicanx-and-latinx-community-hour",
+   "check_confidence": 0.9626673606289654,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsd-4336df7bdd",
+   "field": "date",
+   "quote": "Wednesday, December 2, 2026 2:00pm to 3:30pm PST",
+   "url": "https://calendar.ucsd.edu/event/chicanx-and-latinx-community-hour",
+   "check_confidence": 0.9815504515579779,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsd-4336df7bdd",
+   "field": "start_time",
+   "quote": "14:00",
+   "url": "https://calendar.ucsd.edu/event/chicanx-and-latinx-community-hour",
+   "check_confidence": 0.9782144247133443,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsd-4336df7bdd",
+   "field": "venue_name",
+   "quote": "Student Center B, Dolores Huerta Vera Cruz Room",
+   "url": "https://calendar.ucsd.edu/event/chicanx-and-latinx-community-hour",
+   "check_confidence": 0.9486159082259527,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsd-4336df7bdd",
+   "field": "organisation_name",
+   "quote": "Institute of Arts and Humanities (IAH)",
+   "url": "https://calendar.ucsd.edu/event/chicanx-and-latinx-community-hour",
+   "check_confidence": 0.9702736862029957,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsd-43c6054370",
+   "field": "title",
+   "quote": "Global Coffee Hour",
+   "url": "https://calendar.ucsd.edu/event/global-coffee-hour-270",
+   "check_confidence": 0.9662862947240304,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsd-43c6054370",
+   "field": "date",
+   "quote": "Wednesday, December 9, 2026 8:00am to 9:30am PST",
+   "url": "https://calendar.ucsd.edu/event/global-coffee-hour-270",
+   "check_confidence": 0.9652667561224911,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsd-43c6054370",
+   "field": "start_time",
+   "quote": "08:00",
+   "url": "https://calendar.ucsd.edu/event/global-coffee-hour-270",
+   "check_confidence": 0.9729666653324754,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsd-43c6054370",
+   "field": "venue_name",
+   "quote": "Triton Administrative Services Building, East Tower, Multipurpose Room 1320",
+   "url": "https://calendar.ucsd.edu/event/global-coffee-hour-270",
+   "check_confidence": 0.9656495381193654,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsd-43c6054370",
+   "field": "organisation_name",
+   "quote": "Globally Engaged Tritons",
+   "url": "https://calendar.ucsd.edu/event/global-coffee-hour-270",
+   "check_confidence": 0.9566129150905273,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsd-1d620ea5f4",
+   "field": "title",
+   "quote": "New Writing Series: PhD Creative-Critical Poet Reading",
+   "url": "https://calendar.ucsd.edu/event/new-writing-series-phd-creative-critical-poet-reading",
+   "check_confidence": 0.9831138230395332,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsd-1d620ea5f4",
+   "field": "date",
+   "quote": "Wednesday, December 2, 2026 5:00pm to 7:00pm PST",
+   "url": "https://calendar.ucsd.edu/event/new-writing-series-phd-creative-critical-poet-reading",
+   "check_confidence": 0.9811686611265619,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsd-1d620ea5f4",
+   "field": "start_time",
+   "quote": "17:00",
+   "url": "https://calendar.ucsd.edu/event/new-writing-series-phd-creative-critical-poet-reading",
+   "check_confidence": 0.9496278002150066,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsd-1d620ea5f4",
+   "field": "venue_name",
+   "quote": "International House, Great Hall",
+   "url": "https://calendar.ucsd.edu/event/new-writing-series-phd-creative-critical-poet-reading",
+   "check_confidence": 0.9688057735782031,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsd-1d620ea5f4",
+   "field": "organisation_name",
+   "quote": "Department of Literature",
+   "url": "https://calendar.ucsd.edu/event/new-writing-series-phd-creative-critical-poet-reading",
+   "check_confidence": 0.9847862243224819,
+   "passed": true
+  },
+  {
+   "entity_id": "ucsd-1d620ea5f4",
+   "field": "speaker",
+   "quote": "Ana Villalpando, Nilufar Karimi, Phuong Vuong, Traimaine Suubi, Vyxz Vasquez",
+   "url": "https://calendar.ucsd.edu/event/new-writing-series-phd-creative-critical-poet-reading",
+   "check_confidence": 0.9480050539419718,
+   "passed": true
+  }
+ ]
+}

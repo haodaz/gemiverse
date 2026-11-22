@@ -72,7 +72,7 @@ const T: Record<string, Record<Lang, string>> = {
   cost: { en: "cost", zh: "花费", es: "coste" }, you: { en: "You", zh: "你", es: "Tú" },
 };
 export const t = (key: string, lang: Lang) => T[key]?.[lang] ?? T[key]?.en ?? key;
-export const loadLang = (): Lang => { try { const v = localStorage.getItem("gemi.lang"); return v === "zh" || v === "es" ? v : "en"; } catch { return "en"; } };
+export const loadLang = (): Lang => { try { const v = localStorage.getItem("gemi.lang"); if (v === "en" || v === "es" || v === "zh") return v; return navigator.language.toLowerCase().startsWith("zh") ? "zh" : navigator.language.toLowerCase().startsWith("es") ? "es" : "en"; } catch { return "en"; } };   // the student's choice first, then the browser's language
 export const saveLang = (l: Lang) => { try { localStorage.setItem("gemi.lang", l); } catch {} };
 
 // Sentences that are produced as English by the 3D view (what the Gemi is doing) and by the autonomy table (why). They are shown

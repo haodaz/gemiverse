@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. The 124-acre campus features buildings designed in a style influenced by the traditional Spanish mission architecture of Southern California. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Dabney Hall, a hall: A hall in traditional Spanish mission architectural style.; (2) Throop Hall, a hall: A historic hall from the institute's early days.; (3) Culbertson Auditorium, a other: A historic auditorium in traditional Spanish mission architectural style.; (4) Cahill Center for Astronomy and Astrophysics, a other: A modern academic center building, plain.; (5) Walter and Leonore Annenberg Center for Information Science and Technology, a other: A modern academic center building, plain.; (6) Warren and Katherine Schlinger Laboratory for Chemistry and Chemical Engineering, a other: A modern laboratory building, plain.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 17,
+ "tokens": 2321,
+ "at": "2026-11-22T00:13:07.120Z"
+}

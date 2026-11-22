@@ -1,0 +1,625 @@
+{
+ "at": "2026-11-22T00:22:22.610Z",
+ "schools": [
+  {
+   "school": "tsinghua",
+   "entities": 6,
+   "fields": 31,
+   "passed": 31,
+   "tokens": 59951
+  },
+  {
+   "school": "pku",
+   "entities": 4,
+   "fields": 20,
+   "passed": 20,
+   "tokens": 20613
+  },
+  {
+   "school": "fudan",
+   "entities": 6,
+   "fields": 17,
+   "passed": 16,
+   "tokens": 74636
+  },
+  {
+   "school": "sjtu",
+   "entities": 2,
+   "fields": 11,
+   "passed": 11,
+   "tokens": 30733
+  },
+  {
+   "school": "zju",
+   "entities": 11,
+   "fields": 38,
+   "passed": 36,
+   "tokens": 58421
+  },
+  {
+   "school": "nju",
+   "entities": 0,
+   "fields": 0,
+   "passed": 0,
+   "tokens": 644
+  },
+  {
+   "school": "ustc",
+   "entities": 11,
+   "fields": 54,
+   "passed": 54,
+   "tokens": 65861
+  },
+  {
+   "school": "hit",
+   "entities": 0,
+   "fields": 0,
+   "passed": 0,
+   "tokens": 14820
+  },
+  {
+   "school": "xjtu",
+   "entities": 12,
+   "fields": 57,
+   "passed": 56,
+   "tokens": 88025
+  },
+  {
+   "school": "princeton",
+   "entities": 12,
+   "fields": 63,
+   "passed": 63,
+   "tokens": 46085
+  },
+  {
+   "school": "mit",
+   "entities": 11,
+   "fields": 61,
+   "passed": 58,
+   "tokens": 74171
+  },
+  {
+   "school": "harvard",
+   "entities": 4,
+   "fields": 24,
+   "passed": 24,
+   "tokens": 32627
+  },
+  {
+   "school": "stanford",
+   "entities": 12,
+   "fields": 58,
+   "passed": 58,
+   "tokens": 66378
+  },
+  {
+   "school": "yale",
+   "entities": 10,
+   "fields": 49,
+   "passed": 49,
+   "tokens": 70785
+  },
+  {
+   "school": "caltech",
+   "entities": 4,
+   "fields": 20,
+   "passed": 20,
+   "tokens": 36562
+  },
+  {
+   "school": "duke",
+   "entities": 11,
+   "fields": 55,
+   "passed": 55,
+   "tokens": 45444
+  },
+  {
+   "school": "jhu",
+   "entities": 11,
+   "fields": 59,
+   "passed": 58,
+   "tokens": 36989
+  },
+  {
+   "school": "northwestern",
+   "entities": 12,
+   "fields": 55,
+   "passed": 55,
+   "tokens": 41569
+  },
+  {
+   "school": "penn",
+   "entities": 12,
+   "fields": 61,
+   "passed": 61,
+   "tokens": 37175
+  },
+  {
+   "school": "cornell",
+   "entities": 13,
+   "fields": 67,
+   "passed": 64,
+   "tokens": 71788
+  },
+  {
+   "school": "uchicago",
+   "entities": 11,
+   "fields": 11,
+   "passed": 11,
+   "tokens": 24653
+  },
+  {
+   "school": "brown",
+   "entities": 12,
+   "fields": 20,
+   "passed": 19,
+   "tokens": 25373
+  },
+  {
+   "school": "dartmouth",
+   "entities": 7,
+   "fields": 36,
+   "passed": 36,
+   "tokens": 40712
+  },
+  {
+   "school": "ucla",
+   "entities": 1,
+   "fields": 5,
+   "passed": 5,
+   "tokens": 14444
+  },
+  {
+   "school": "berkeley",
+   "entities": 11,
+   "fields": 25,
+   "passed": 25,
+   "tokens": 30915
+  },
+  {
+   "school": "rice",
+   "entities": 11,
+   "fields": 16,
+   "passed": 16,
+   "tokens": 29207
+  },
+  {
+   "school": "notredame",
+   "entities": 12,
+   "fields": 58,
+   "passed": 56,
+   "tokens": 57760
+  },
+  {
+   "school": "vanderbilt",
+   "entities": 4,
+   "fields": 6,
+   "passed": 6,
+   "tokens": 27465
+  },
+  {
+   "school": "ruc",
+   "entities": 1,
+   "fields": 4,
+   "passed": 4,
+   "tokens": 32654
+  },
+  {
+   "school": "buaa",
+   "entities": 2,
+   "fields": 11,
+   "passed": 10,
+   "tokens": 18983
+  },
+  {
+   "school": "bit",
+   "entities": 10,
+   "fields": 33,
+   "passed": 32,
+   "tokens": 57845
+  },
+  {
+   "school": "bnu",
+   "entities": 3,
+   "fields": 10,
+   "passed": 8,
+   "tokens": 42939
+  },
+  {
+   "school": "muc",
+   "entities": 0,
+   "fields": 0,
+   "passed": 0,
+   "tokens": 7229
+  },
+  {
+   "school": "nankai",
+   "entities": 1,
+   "fields": 2,
+   "passed": 2,
+   "tokens": 19943
+  },
+  {
+   "school": "tju",
+   "entities": 5,
+   "fields": 30,
+   "passed": 30,
+   "tokens": 57158
+  },
+  {
+   "school": "dlut",
+   "entities": 11,
+   "fields": 55,
+   "passed": 55,
+   "tokens": 56248
+  },
+  {
+   "school": "neu",
+   "entities": 4,
+   "fields": 21,
+   "passed": 20,
+   "tokens": 44679
+  },
+  {
+   "school": "jlu",
+   "entities": 12,
+   "fields": 72,
+   "passed": 72,
+   "tokens": 74151
+  },
+  {
+   "school": "ecnu",
+   "entities": 12,
+   "fields": 63,
+   "passed": 62,
+   "tokens": 87634
+  },
+  {
+   "school": "seu",
+   "entities": 11,
+   "fields": 66,
+   "passed": 62,
+   "tokens": 71060
+  },
+  {
+   "school": "xmu",
+   "entities": 11,
+   "fields": 63,
+   "passed": 62,
+   "tokens": 68903
+  },
+  {
+   "school": "sdu",
+   "entities": 9,
+   "fields": 34,
+   "passed": 33,
+   "tokens": 59859
+  },
+  {
+   "school": "ouc",
+   "entities": 10,
+   "fields": 20,
+   "passed": 20,
+   "tokens": 82753
+  },
+  {
+   "school": "whu",
+   "entities": 5,
+   "fields": 30,
+   "passed": 29,
+   "tokens": 56495
+  },
+  {
+   "school": "hust",
+   "entities": 12,
+   "fields": 54,
+   "passed": 44,
+   "tokens": 90437
+  },
+  {
+   "school": "hnu",
+   "entities": 1,
+   "fields": 6,
+   "passed": 6,
+   "tokens": 24335
+  },
+  {
+   "school": "csu",
+   "entities": 7,
+   "fields": 16,
+   "passed": 14,
+   "tokens": 56249
+  },
+  {
+   "school": "sysu",
+   "entities": 11,
+   "fields": 56,
+   "passed": 56,
+   "tokens": 71674
+  },
+  {
+   "school": "scut",
+   "entities": 0,
+   "fields": 0,
+   "passed": 0,
+   "tokens": 638
+  },
+  {
+   "school": "scu",
+   "entities": 12,
+   "fields": 68,
+   "passed": 68,
+   "tokens": 86531
+  },
+  {
+   "school": "uestc",
+   "entities": 12,
+   "fields": 58,
+   "passed": 56,
+   "tokens": 95525
+  },
+  {
+   "school": "cqu",
+   "entities": 12,
+   "fields": 66,
+   "passed": 66,
+   "tokens": 72210
+  },
+  {
+   "school": "nwpu",
+   "entities": 12,
+   "fields": 72,
+   "passed": 72,
+   "tokens": 73592
+  },
+  {
+   "school": "nwafu",
+   "entities": 12,
+   "fields": 63,
+   "passed": 62,
+   "tokens": 74197
+  },
+  {
+   "school": "nudt",
+   "entities": 9,
+   "fields": 28,
+   "passed": 27,
+   "tokens": 95426
+  },
+  {
+   "school": "emory",
+   "entities": 0,
+   "fields": 0,
+   "passed": 0,
+   "tokens": 8364
+  },
+  {
+   "school": "georgetown",
+   "entities": 0,
+   "fields": 0,
+   "passed": 0,
+   "tokens": 15360
+  },
+  {
+   "school": "cmu",
+   "entities": 11,
+   "fields": 60,
+   "passed": 59,
+   "tokens": 75332
+  },
+  {
+   "school": "washu",
+   "entities": 12,
+   "fields": 57,
+   "passed": 57,
+   "tokens": 99980
+  },
+  {
+   "school": "uva",
+   "entities": 0,
+   "fields": 0,
+   "passed": 0,
+   "tokens": 12847
+  },
+  {
+   "school": "usc",
+   "entities": 12,
+   "fields": 62,
+   "passed": 60,
+   "tokens": 88878
+  },
+  {
+   "school": "unc",
+   "entities": 12,
+   "fields": 60,
+   "passed": 59,
+   "tokens": 77341
+  },
+  {
+   "school": "ufl",
+   "entities": 3,
+   "fields": 4,
+   "passed": 4,
+   "tokens": 22490
+  },
+  {
+   "school": "ucsd",
+   "entities": 10,
+   "fields": 48,
+   "passed": 48,
+   "tokens": 81260
+  },
+  {
+   "school": "ucdavis",
+   "entities": 0,
+   "fields": 0,
+   "passed": 0,
+   "tokens": 29634
+  },
+  {
+   "school": "uci",
+   "entities": 6,
+   "fields": 31,
+   "passed": 30,
+   "tokens": 42919
+  },
+  {
+   "school": "ucsb",
+   "entities": 12,
+   "fields": 59,
+   "passed": 58,
+   "tokens": 81749
+  },
+  {
+   "school": "utexas",
+   "entities": 12,
+   "fields": 50,
+   "passed": 50,
+   "tokens": 77334
+  },
+  {
+   "school": "wisc",
+   "entities": 13,
+   "fields": 56,
+   "passed": 56,
+   "tokens": 61749
+  },
+  {
+   "school": "gatech",
+   "entities": 5,
+   "fields": 26,
+   "passed": 26,
+   "tokens": 48627
+  },
+  {
+   "school": "bc",
+   "entities": 11,
+   "fields": 63,
+   "passed": 62,
+   "tokens": 73153
+  },
+  {
+   "school": "bu",
+   "entities": 13,
+   "fields": 53,
+   "passed": 50,
+   "tokens": 69980
+  },
+  {
+   "school": "tufts",
+   "entities": 0,
+   "fields": 0,
+   "passed": 0,
+   "tokens": 21546
+  },
+  {
+   "school": "rutgers",
+   "entities": 13,
+   "fields": 66,
+   "passed": 65,
+   "tokens": 86711
+  },
+  {
+   "school": "osu",
+   "entities": 1,
+   "fields": 5,
+   "passed": 5,
+   "tokens": 25469
+  },
+  {
+   "school": "purdue",
+   "entities": 11,
+   "fields": 58,
+   "passed": 57,
+   "tokens": 75562
+  },
+  {
+   "school": "umd",
+   "entities": 0,
+   "fields": 0,
+   "passed": 0,
+   "tokens": 4500
+  },
+  {
+   "school": "uw",
+   "entities": 12,
+   "fields": 51,
+   "passed": 50,
+   "tokens": 78707
+  },
+  {
+   "school": "rochester",
+   "entities": 0,
+   "fields": 0,
+   "passed": 0,
+   "tokens": 11332
+  },
+  {
+   "school": "lehigh",
+   "entities": 12,
+   "fields": 59,
+   "passed": 59,
+   "tokens": 92424
+  },
+  {
+   "school": "wfu",
+   "entities": 12,
+   "fields": 53,
+   "passed": 51,
+   "tokens": 66345
+  },
+  {
+   "school": "vt",
+   "entities": 3,
+   "fields": 16,
+   "passed": 16,
+   "tokens": 42962
+  },
+  {
+   "school": "tamu",
+   "entities": 3,
+   "fields": 3,
+   "passed": 3,
+   "tokens": 24004
+  }
+ ],
+ "failures": [
+  "mit page https://calendar.mit.edu/event/sony-playstation-student-street-takeove: fetch failed",
+  "mit page https://calendar.mit.edu/event/corpusguide-software-demonstration: fetch failed",
+  "yale page https://events.yale.edu/event/cave-canem-a-home-for-black-poetry-4220: fetch failed",
+  "yale page https://events.yale.edu/event/nguni-migrant-nations-southeast-africa: fetch failed",
+  "uchicago: title not confirmed, dropped: Time, Fragmented",
+  "brown: title not confirmed, dropped: Apply to West House",
+  "brown: title not confirmed, dropped: International Education Week is November",
+  "berkeley: title not confirmed, dropped: Maps More: Russell City",
+  "vanderbilt: title not confirmed, dropped: Student Chamber Recital Series",
+  "vanderbilt: title not confirmed, dropped: Student Chamber Recital Series",
+  "buaa list https://www.buaa.edu.cn/index/xswh1.htm: fetch failed",
+  "buaa list https://www.buaa.edu.cn/kxyj1/xsjl/bhdjt.htm: fetch failed",
+  "buaa: no listing links",
+  "cau: fetch failed",
+  "bnu page https://news.bnu.edu.cn/zx/xzdt/2e5e669e4ece443dbf2e2c205a0710b0.htm: 404 https://news.bnu.edu.cn/zx/xzdt/2e5e669e4ece443dbf2e2c205a0710b0.htm",
+  "dlut page http://huodong.dlut.edu.cn/info/1192/17483.htm: fetch failed",
+  "tongji: fetch failed",
+  "ouc page http://www.ouc.edu.cn/2026/1116/c30993a541918/page.htm: fetch failed",
+  "csu page https://rsc.csu.edu.cn/info/1020/6325.htm: 404 https://rsc.csu.edu.cn/info/1020/6325.htm",
+  "scut: no listing links",
+  "cqu list https://campus.cqu.edu.cn/activity.htm: fetch failed",
+  "lzu: 412 https://www.lzu.edu.cn",
+  "umich: 403 https://www.umich.edu",
+  "cmu page https://www.givecampus.com/schools/CarnegieMellonUniversity/events/the: 403 https://www.givecampus.com/schools/CarnegieMellonUniversity/events/the-pursu",
+  "unc list https://www.unc.edu/events/: 403 https://www.unc.edu/events/",
+  "ucsd page https://calendar.ucsd.edu/event/triton-time-foresight-essentials-for-s: fetch failed",
+  "ucsd page https://calendar.ucsd.edu/event/collage-poetry-exhibition-donation-dri: fetch failed",
+  "uiuc: fetch failed",
+  "utexas page https://calendar.utexas.edu/event/experimental-seeing-russell-lees-ped: fetch failed",
+  "bc list http://events.bc.edu/: fetch failed",
+  "bu page https://butodayevents.bu.edu/event/boston-university-mens-basketball-v: fetch failed",
+  "bc page https://events.bc.edu/event/faith-feeds-advent-hope: fetch failed",
+  "bc page https://events.bc.edu/event/econometrics-seminar-matt-masten-duke-univ: fetch failed",
+  "osu page https://wexarts.org/node/16747: 403 https://wexarts.org/node/16747",
+  "purdue page https://events.purdue.edu/event/epics-vip-poster-showcase: fetch failed",
+  "purdue page https://events.purdue.edu/event/isf-fall-research-expo-9983: fetch failed",
+  "purdue page https://events.purdue.edu/event/planning-for-2027-hands-on-concept-not: fetch failed"
+ ]
+}

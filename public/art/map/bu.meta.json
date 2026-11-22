@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. The main campus stretches along the Charles River and tree-lined streets, featuring a grassy lawn and architecturally diverse buildings in collegiate gothic, brownstone, brutalist, brick, and glass-and-steel styles. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Boston University Bridge, a bridge: A bridge spanning the Charles River, carrying street and pedestrian traffic.; (2) BU Beach, a other: A narrow grassy lawn beside academic buildings and a raised earthen berm.; (3) Mugar Memorial Library, a library: A contemporary concrete library building in the brutalist style of architecture.; (4) Warren Towers, a tower: Large, high-rise brutalist dormitory towers.; (5) School of Law tower, a tower: A renovated brutalist-style academic tower.; (6) Kilachand Hall, a hall: A multi-story former residential hotel converted into a university dormitory.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 17,
+ "tokens": 2297,
+ "at": "2026-11-22T00:19:47.780Z"
+}

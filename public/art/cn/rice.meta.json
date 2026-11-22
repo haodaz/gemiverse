@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A soft, warm storybook illustration in gentle pastel colours, wide 16:9, flat shapes with light texture, golden afternoon light, a few tiny students walking. No text, no letters, no logos, no emblems, no watermarks. Scene: a Texas campus with a pink-brick Byzantine-style hall with a great arch, live oaks and a long quad.",
+ "reference": null,
+ "seconds": 13,
+ "tokens": 1486,
+ "at": "2026-11-21T23:18:09.576Z"
+}

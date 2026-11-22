@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. The 1,250-acre suburban campus features greenery, two lakes, seven quadrangles, athletic fields, and around 170 buildings including the French Revival-style Basilica. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Main Building, a other: Administrative building topped by a golden dome and statue of Mary.; (2) Basilica of the Sacred Heart, a other: French Revival-style church with stained glass windows and a bell tower.; (3) Notre Dame Stadium, a stadium: Large football stadium seating over 80,000 people.; (4) Hesburgh Library, a library: Library building featuring a prominent stone mural on its exterior.; (5) Main Quad, a quad: Historic central quadrangle with greenery in front of the Main Building.; (6) Grotto of Our Lady of Lourdes, a other: Stone grotto replica of the shrine in Lourdes.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 16,
+ "tokens": 2245,
+ "at": "2026-11-22T00:14:14.577Z"
+}

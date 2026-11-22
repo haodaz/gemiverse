@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. The Weijin Road campus borders the Weijin River, features four lakes, and houses historic 1950s–1960s brick-and-wood buildings with hip-and-gable roofs. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Ninth Teaching Building, a hall: Four-story brick-and-wood hall with grey hip-and-gable roof and clean-brick facade; (2) Qingnian Lake, a lake: Plain campus lake; (3) Jingye Lake, a lake: Plain campus lake; (4) Aiwan Lake, a lake: Plain campus lake; (5) Youyi Lake, a lake: Plain campus lake; (6) Library (North Building), a library: Plain historic campus library building. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 15,
+ "tokens": 2085,
+ "at": "2026-11-22T00:15:26.029Z"
+}
