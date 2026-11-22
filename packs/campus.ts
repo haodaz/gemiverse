@@ -48,6 +48,18 @@ export const campus: WorldPack = {
     { id: "potter", when: { always: true }, then: { state: "pottering", tool: null, purse: null, stars: 0 } },
   ],
   readout: SPACE.map((r) => ({ fact: r.fact, shows_as: r.shows_as, where: r.where })),
+  // The first rubric, written by hand on 22 Nov from what the kinds and needs mean. It is a starting point to be tested, not a finding.
+  // Axes: pace (polish slowly - / try fast +), scope (deep on one - / touch many +), arena (public stakes - / private space +),
+  // closeness (principles - / make things +), horizon (nearby - / outward +), structure (guided - / self-directed +), collaboration (alone - / group +).
+  rubric: [
+    ...([["social_study_break", "collaboration", 0.7], ["social_study_break", "structure", 0.4], ["social_study_break", "scope", 0.3], ["workshop", "structure", -0.6], ["workshop", "closeness", 0.5], ["workshop", "scope", -0.3],
+      ["talk_panel", "closeness", -0.6], ["talk_panel", "structure", -0.4], ["talk_panel", "horizon", 0.4], ["talk_panel", "collaboration", -0.2], ["community_wellness", "arena", 0.6], ["community_wellness", "pace", -0.4],
+      ["performance_exhibit", "arena", -0.5], ["performance_exhibit", "closeness", 0.3], ["performance_exhibit", "horizon", 0.3], ["competition_showcase", "arena", -0.8], ["competition_showcase", "pace", 0.7], ["competition_showcase", "collaboration", 0.3]] as [string, string, number][]).map(([value, axis, x]) => ({ flag: "event_kind", value, axis, x })),
+    ...([["find_my_people", "collaboration", 0.5], ["build_a_skill", "scope", -0.4], ["build_a_skill", "structure", -0.2], ["explore_a_field", "scope", 0.5], ["explore_a_field", "closeness", -0.3], ["get_experience", "pace", 0.4], ["get_experience", "closeness", 0.4],
+      ["make_and_express", "closeness", 0.4], ["make_and_express", "structure", 0.3], ["rest_and_recover", "arena", 0.5], ["rest_and_recover", "pace", -0.3], ["contribute_beyond_self", "horizon", 0.6], ["decide_a_direction", "horizon", 0.3], ["decide_a_direction", "scope", 0.2],
+      ["get_mentorship_and_feedback", "collaboration", -0.2], ["get_mentorship_and_feedback", "structure", -0.3], ["navigate_systems", "structure", -0.5], ["fund_my_path", "horizon", 0.2]] as [string, string, number][]).map(([value, axis, x]) => ({ flag: "need", value, axis, x })),
+  ],
+  aliases: { starsYou: "purse.for_you", starsSelf: "purse.for_itself", pending: "desk", bank: "savings", diaryToday: "used.write_diary", outNow: "open.go_out" },
   needs: Object.entries(NEEDS).map(([id, n]) => ({ id, means: n.means, terms: TERMS[id] ?? [] })),
   fields: [
     { id: "title", labels: [], headline: true },

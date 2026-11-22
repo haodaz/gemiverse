@@ -39,6 +39,6 @@ export const aime: WorldPack = {
     { fact: "what it changed in its room", shows_as: "the changed thing, with a way to put it back", where: "the room" },
     { fact: "things it brought back", shows_as: "items in the basket by its door, each with where it was found", where: "the basket" },
   ],
-  needs: [], fields: [],
+  rubric: [], needs: [], fields: [],
   gate: { yes: 0.8, confidence: 0.5 },
 };

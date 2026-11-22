@@ -301,7 +301,7 @@ engine/test/        invariants and golden tests; the mind-swap harness
 | M1 | Two packs as data against one type; a policy grammar; a pack validator | **done** (the second pack is on paper) |
 | M2 | Capability probes, routes, the song as the first task with four routes; MCP connections by config with a pre-use check | **done**, on stand-in models and stand-in servers |
 | M3 | `check` and `hear` as tasks with routes and strict floors; the right to judge earned by calibration; adapters for real models | **done**, measured on real models (above) |
-| M3b | `fill` and `choose` as tasks; flags and a rubric instead of model-written numbers; a headless day runner on the core only | next |
+| M3b | `choose` as a task; flags and a rubric instead of model-written numbers; a headless day runner on the core only | **done** (`fill` as a task is still to do) |
 | M4 | The same on an open model of 8 billion parameters or less, when one can be reached; the fuller sets of section 9 | first runs done on cheap hosted models |
 | M5 | `readout` computed in the core; the space protocol written and versioned against a 3D and a 2D renderer; a small synthesiser page that plays a score | |
 | M6 | The campus app runs on the core: its stars and its day come from the log | |
@@ -334,6 +334,42 @@ Where the running app differs from this design today (found while writing the te
    drawn from it, but replay applies words only to cares. A test records this as today's behaviour.
 4. **Undo and stars.** The app has no intent/result pair, so there is nothing yet that a refund could be tested against;
    the rule "undo never refunds" exists only in the engine.
+
+### M3b · done (22 Nov): no number from a model in the mind; a day with no page
+
+Built: flags and a **rubric** in the pack (`place`), the sealed prediction and where to look next in code (`predict`,
+`nextLook`), choosing as a task (`chooseTask`, floor `floorChoose`), a **headless day runner** (`engine/core/day.ts`) that
+runs a day from the log, the pack, a snapshot of the base (`base/snapshots/nyu-events.json`, 168 checked events) and a model
+or none, and a person played by code for repeatable runs. 54 tests. A week with no model completes: two trips a day on its
+own stars, the diary, saving, the song on day two, and the whole week replays from the log alone.
+
+The campus rubric (event kind and need tags to positions on the seven axes) was **written by hand on 22 Nov**. It is a
+starting point. Nothing below validates it against people.
+
+**"Swap the mind", on the engine** (`engine/bench/days.ts`, records `base/runs/19-minds-on-engine*.json`): seven days,
+fourteen trips, 42 sealed guesses per mind. The honest yardstick for a guess is not a coin but **always guessing the commoner
+answer**, because this person keeps most things.
+
+| Mind | run 1: the model picks all three | | run 2: the engine fixes the two ends, the model picks the third | |
+|---|---|---|---|---|
+| | guesses right | always-commoner | guesses right | always-commoner |
+| none | 35/42 (83%) | 27/42 (64%) | 35/42 (83%) | 27/42 (64%) |
+| gpt-5.4-nano | 20/24 (83%) | 21/24 (88%) | 34/42 (81%) | 30/42 (71%) |
+| qwen-flash | 36/42 (86%) | 37/42 (88%) | 35/42 (83%) | 33/42 (79%) |
+| gemini-4-hydrogen | 36/42 (86%) | 33/42 (79%) | 33/42 (79%) | 33/42 (79%) |
+
+What it shows, with its limits stated:
+
+- In run 1 the models, asked to include one thing from each side of the axis it knew least, mostly did not. They chose what
+  the person would like; the person kept nearly everything; and the guesses were **no better than always guessing "keep"**
+  for the two cheap models. So the two ends are now chosen in code and the model picks only the third (run 2).
+- With no model the guesses beat the yardstick clearly (83% against 64%; from day three 87% against 60%). With a model
+  picking the third the margin is small (10, 4 and 0 points) on 42 guesses. **A model choosing does not yet help the mind
+  learn, and may hurt it**; the reason is not established.
+- Distance from the person's hidden leanings fell with no model (0.30 to 0.24) and did not fall reliably with a model.
+- **The person here is code, and decides by the same rubric the engine uses.** This shows the mechanism can recover leanings
+  that are there to be found by that rubric. It is not evidence about real students, and the film's statement that the third
+  hypothesis "does not stand yet" remains the accurate one.
 
 ### First runs on real models (22 Nov) · the gate was changed twice by what they showed
 

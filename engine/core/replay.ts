@@ -1,4 +1,4 @@
-import { blank, step } from "./mind";
+import { blank, place, step } from "./mind";
 import type { WorldPack, Event, State } from "./types";
 
 // Everything the engine knows is recomputed from the log, in order. Same log, same state, on any machine.
@@ -67,7 +67,7 @@ export function replay(pack: WorldPack, log: Event[]): State {
     if (e.type === "trip") for (const f of e.found) if (!s.desk.includes(f) && !s.kept.includes(f) && !s.skipped.includes(f)) s.desk.push(f);
     if (e.type === "choice") {
       s.desk = s.desk.filter((f) => f !== e.find); (e.action === "keep" ? s.kept : s.skipped).push(e.find);
-      for (const ev of e.evidence) if (s.beliefs[ev.axis])
+      for (const ev of e.evidence ?? place(pack, e)) if (s.beliefs[ev.axis])
         s.beliefs[ev.axis] = e.action === "keep" ? step(pack, s.beliefs[ev.axis], ev.x, "checked") : step(pack, s.beliefs[ev.axis], -ev.x, "checked", pack.skipWeight);
     }
     if (e.type === "went" && !s.went.includes(e.find)) s.went.push(e.find);
@@ -85,7 +85,7 @@ export function fromLegacy(log: Legacy[]): Event[] {
   for (const e of log) { const base = { id: e.id, at: e.at, ...(e.undone ? { undone: true } : {}) };
     if (e.type === "said") out.push({ ...base, type: "said", text: String(e.text ?? ""), needs: (e.needs as { id: string; quote: string }[]) ?? [] });
     else if (e.type === "trip") out.push({ ...base, type: "trip", place: String(e.place), found: (e.found as string[]) ?? [], seal: e.seal as string | undefined, predicted: e.predicted as Record<string, number> | undefined });
-    else if (e.type === "choice") out.push({ ...base, type: "choice", find: String(e.find), action: e.action as "keep" | "skip", evidence: ((e.evidence as { axis: string; x: number }[]) ?? []).map(({ axis, x }) => ({ axis, x })) });
+    else if (e.type === "choice") out.push({ ...base, type: "choice", find: String(e.find), action: e.action as "keep" | "skip", evidence: ((e.evidence as { axis: string; x: number }[]) ?? []).map(({ axis, x }) => ({ axis, x })) });   // older logs keep the numbers they were written with
     else if (e.type === "room") out.push({ ...base, type: "space", by: e.by === "gemi" ? "self" : "person", what: String(e.what), item: e.item as string | undefined });
   }
   return out;

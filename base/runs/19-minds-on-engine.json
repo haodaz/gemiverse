@@ -1,0 +1,640 @@
+{
+ "at": "2026-11-22T19:32:38.452Z",
+ "days": 7,
+ "person": "played by code (hidden leanings; it decides by the same rubric the engine uses)",
+ "items": 168,
+ "minds": {
+  "no model": {
+   "profile": {
+    "form": 0,
+    "structure": 0,
+    "notes": 0,
+    "check": 0,
+    "vision": 0,
+    "audio": 0
+   },
+   "tokens": 0,
+   "calls": 0,
+   "errors": 0,
+   "chose_by_model": 0,
+   "trips": 14,
+   "guesses_all": "35/42",
+   "guesses_from_day_3": "26/30",
+   "kept": 27,
+   "songs_on_days": [
+    2
+   ],
+   "days": [
+    {
+     "day": 1,
+     "acts": [
+      "go:floor",
+      "go:floor",
+      "diary",
+      "save"
+     ],
+     "right": 4,
+     "shown": 6,
+     "kept": 4,
+     "halo": 0.573,
+     "error": 0.3,
+     "signs": 5,
+     "savings": 0,
+     "song": false
+    },
+    {
+     "day": 2,
+     "acts": [
+      "go:floor",
+      "go:floor",
+      "diary",
+      "make",
+      "rest"
+     ],
+     "right": 5,
+     "shown": 6,
+     "kept": 5,
+     "halo": 0.499,
+     "error": 0.265,
+     "signs": 4,
+     "savings": 0,
+     "song": true
+    },
+    {
+     "day": 3,
+     "acts": [
+      "go:floor",
+      "go:floor",
+      "diary",
+      "tidy",
+      "tidy",
+      "tidy",
+      "rest"
+     ],
+     "right": 6,
+     "shown": 6,
+     "kept": 4,
+     "halo": 0.474,
+     "error": 0.261,
+     "signs": 4,
+     "savings": 0,
+     "song": false
+    },
+    {
+     "day": 4,
+     "acts": [
+      "go:floor",
+      "go:floor",
+      "diary",
+      "tidy",
+      "tidy",
+      "tidy",
+      "rest"
+     ],
+     "right": 5,
+     "shown": 6,
+     "kept": 4,
+     "halo": 0.463,
+     "error": 0.242,
+     "signs": 5,
+     "savings": 0,
+     "song": false
+    },
+    {
+     "day": 5,
+     "acts": [
+      "go:floor",
+      "go:floor",
+      "diary",
+      "tidy",
+      "tidy",
+      "tidy",
+      "rest"
+     ],
+     "right": 5,
+     "shown": 6,
+     "kept": 4,
+     "halo": 0.453,
+     "error": 0.268,
+     "signs": 5,
+     "savings": 0,
+     "song": false
+    },
+    {
+     "day": 6,
+     "acts": [
+      "go:floor",
+      "go:floor",
+      "diary",
+      "tidy",
+      "tidy",
+      "tidy",
+      "rest"
+     ],
+     "right": 4,
+     "shown": 6,
+     "kept": 2,
+     "halo": 0.574,
+     "error": 0.289,
+     "signs": 5,
+     "savings": 0,
+     "song": false
+    },
+    {
+     "day": 7,
+     "acts": [
+      "go:floor",
+      "go:floor",
+      "diary",
+      "tidy",
+      "tidy",
+      "tidy",
+      "rest"
+     ],
+     "right": 6,
+     "shown": 6,
+     "kept": 4,
+     "halo": 0.458,
+     "error": 0.243,
+     "signs": 5,
+     "savings": 0,
+     "song": false
+    }
+   ]
+  },
+  "gpt-5.4-nano": {
+   "profile": {
+    "form": 2,
+    "structure": 2,
+    "notes": 2,
+    "check": 0,
+    "vision": 0,
+    "audio": 0
+   },
+   "tokens": 6739,
+   "calls": 17,
+   "errors": 0,
+   "chose_by_model": 14,
+   "trips": 14,
+   "guesses_all": "34/42",
+   "guesses_from_day_3": "25/30",
+   "kept": 30,
+   "songs_on_days": [
+    2
+   ],
+   "days": [
+    {
+     "day": 1,
+     "acts": [
+      "go:pick",
+      "go:pick",
+      "diary",
+      "save"
+     ],
+     "right": 4,
+     "shown": 6,
+     "kept": 4,
+     "halo": 0.553,
+     "error": 0.254,
+     "signs": 6,
+     "savings": 0,
+     "song": false
+    },
+    {
+     "day": 2,
+     "acts": [
+      "go:pick",
+      "go:pick",
+      "diary",
+      "make",
+      "rest"
+     ],
+     "right": 5,
+     "shown": 6,
+     "kept": 3,
+     "halo": 0.524,
+     "error": 0.251,
+     "signs": 5,
+     "savings": 0,
+     "song": true
+    },
+    {
+     "day": 3,
+     "acts": [
+      "go:pick",
+      "go:pick",
+      "diary",
+      "tidy",
+      "tidy",
+      "tidy",
+      "rest"
+     ],
+     "right": 6,
+     "shown": 6,
+     "kept": 5,
+     "halo": 0.439,
+     "error": 0.248,
+     "signs": 5,
+     "savings": 0,
+     "song": false
+    },
+    {
+     "day": 4,
+     "acts": [
+      "go:pick",
+      "go:pick",
+      "diary",
+      "tidy",
+      "tidy",
+      "tidy",
+      "rest"
+     ],
+     "right": 5,
+     "shown": 6,
+     "kept": 4,
+     "halo": 0.482,
+     "error": 0.294,
+     "signs": 3,
+     "savings": 0,
+     "song": false
+    },
+    {
+     "day": 5,
+     "acts": [
+      "go:pick",
+      "go:pick",
+      "diary",
+      "tidy",
+      "tidy",
+      "tidy",
+      "rest"
+     ],
+     "right": 5,
+     "shown": 6,
+     "kept": 5,
+     "halo": 0.418,
+     "error": 0.294,
+     "signs": 4,
+     "savings": 0,
+     "song": false
+    },
+    {
+     "day": 6,
+     "acts": [
+      "go:pick",
+      "go:pick",
+      "diary",
+      "tidy",
+      "tidy",
+      "tidy",
+      "rest"
+     ],
+     "right": 5,
+     "shown": 6,
+     "kept": 5,
+     "halo": 0.498,
+     "error": 0.305,
+     "signs": 4,
+     "savings": 0,
+     "song": false
+    },
+    {
+     "day": 7,
+     "acts": [
+      "go:pick",
+      "go:pick",
+      "diary",
+      "tidy",
+      "tidy",
+      "tidy",
+      "rest"
+     ],
+     "right": 4,
+     "shown": 6,
+     "kept": 4,
+     "halo": 0.487,
+     "error": 0.236,
+     "signs": 4,
+     "savings": 0,
+     "song": false
+    }
+   ]
+  },
+  "qwen-flash": {
+   "profile": {
+    "form": 2,
+    "structure": 2,
+    "notes": 2,
+    "check": 0,
+    "vision": 0,
+    "audio": 0
+   },
+   "tokens": 7454,
+   "calls": 17,
+   "errors": 0,
+   "chose_by_model": 14,
+   "trips": 14,
+   "guesses_all": "35/42",
+   "guesses_from_day_3": "26/30",
+   "kept": 33,
+   "songs_on_days": [
+    2
+   ],
+   "days": [
+    {
+     "day": 1,
+     "acts": [
+      "go:pick",
+      "go:pick",
+      "diary",
+      "save"
+     ],
+     "right": 3,
+     "shown": 6,
+     "kept": 3,
+     "halo": 0.584,
+     "error": 0.313,
+     "signs": 6,
+     "savings": 0,
+     "song": false
+    },
+    {
+     "day": 2,
+     "acts": [
+      "go:pick",
+      "go:pick",
+      "diary",
+      "make",
+      "rest"
+     ],
+     "right": 6,
+     "shown": 6,
+     "kept": 5,
+     "halo": 0.466,
+     "error": 0.241,
+     "signs": 5,
+     "savings": 0,
+     "song": true
+    },
+    {
+     "day": 3,
+     "acts": [
+      "go:pick",
+      "go:pick",
+      "diary",
+      "tidy",
+      "tidy",
+      "tidy",
+      "rest"
+     ],
+     "right": 6,
+     "shown": 6,
+     "kept": 5,
+     "halo": 0.454,
+     "error": 0.283,
+     "signs": 5,
+     "savings": 0,
+     "song": false
+    },
+    {
+     "day": 4,
+     "acts": [
+      "go:pick",
+      "go:pick",
+      "diary",
+      "tidy",
+      "tidy",
+      "tidy",
+      "rest"
+     ],
+     "right": 4,
+     "shown": 6,
+     "kept": 4,
+     "halo": 0.472,
+     "error": 0.331,
+     "signs": 3,
+     "savings": 0,
+     "song": false
+    },
+    {
+     "day": 5,
+     "acts": [
+      "go:pick",
+      "go:pick",
+      "diary",
+      "tidy",
+      "tidy",
+      "tidy",
+      "rest"
+     ],
+     "right": 6,
+     "shown": 6,
+     "kept": 6,
+     "halo": 0.422,
+     "error": 0.322,
+     "signs": 4,
+     "savings": 0,
+     "song": false
+    },
+    {
+     "day": 6,
+     "acts": [
+      "go:pick",
+      "go:pick",
+      "diary",
+      "tidy",
+      "tidy",
+      "tidy",
+      "rest"
+     ],
+     "right": 5,
+     "shown": 6,
+     "kept": 5,
+     "halo": 0.493,
+     "error": 0.365,
+     "signs": 3,
+     "savings": 0,
+     "song": false
+    },
+    {
+     "day": 7,
+     "acts": [
+      "go:pick",
+      "go:pick",
+      "diary",
+      "tidy",
+      "tidy",
+      "tidy",
+      "rest"
+     ],
+     "right": 5,
+     "shown": 6,
+     "kept": 5,
+     "halo": 0.463,
+     "error": 0.352,
+     "signs": 3,
+     "savings": 0,
+     "song": false
+    }
+   ]
+  },
+  "gemini-4-hydrogen": {
+   "profile": {
+    "form": 2,
+    "structure": 2,
+    "notes": 2,
+    "check": 0,
+    "vision": 0,
+    "audio": 0
+   },
+   "tokens": 17125,
+   "calls": 17,
+   "errors": 0,
+   "chose_by_model": 14,
+   "trips": 14,
+   "guesses_all": "33/42",
+   "guesses_from_day_3": "24/30",
+   "kept": 33,
+   "songs_on_days": [
+    2
+   ],
+   "days": [
+    {
+     "day": 1,
+     "acts": [
+      "go:pick",
+      "go:pick",
+      "diary",
+      "save"
+     ],
+     "right": 4,
+     "shown": 6,
+     "kept": 4,
+     "halo": 0.587,
+     "error": 0.247,
+     "signs": 6,
+     "savings": 0,
+     "song": false
+    },
+    {
+     "day": 2,
+     "acts": [
+      "go:pick",
+      "go:pick",
+      "diary",
+      "make",
+      "rest"
+     ],
+     "right": 5,
+     "shown": 6,
+     "kept": 5,
+     "halo": 0.543,
+     "error": 0.251,
+     "signs": 5,
+     "savings": 0,
+     "song": true
+    },
+    {
+     "day": 3,
+     "acts": [
+      "go:pick",
+      "go:pick",
+      "diary",
+      "tidy",
+      "tidy",
+      "tidy",
+      "rest"
+     ],
+     "right": 4,
+     "shown": 6,
+     "kept": 4,
+     "halo": 0.485,
+     "error": 0.279,
+     "signs": 4,
+     "savings": 0,
+     "song": false
+    },
+    {
+     "day": 4,
+     "acts": [
+      "go:pick",
+      "go:pick",
+      "diary",
+      "tidy",
+      "tidy",
+      "tidy",
+      "rest"
+     ],
+     "right": 5,
+     "shown": 6,
+     "kept": 5,
+     "halo": 0.472,
+     "error": 0.285,
+     "signs": 4,
+     "savings": 0,
+     "song": false
+    },
+    {
+     "day": 5,
+     "acts": [
+      "go:pick",
+      "go:pick",
+      "diary",
+      "tidy",
+      "tidy",
+      "tidy",
+      "rest"
+     ],
+     "right": 6,
+     "shown": 6,
+     "kept": 5,
+     "halo": 0.462,
+     "error": 0.289,
+     "signs": 4,
+     "savings": 0,
+     "song": false
+    },
+    {
+     "day": 6,
+     "acts": [
+      "go:pick",
+      "go:pick",
+      "diary",
+      "tidy",
+      "tidy",
+      "tidy",
+      "rest"
+     ],
+     "right": 4,
+     "shown": 6,
+     "kept": 5,
+     "halo": 0.475,
+     "error": 0.33,
+     "signs": 3,
+     "savings": 0,
+     "song": false
+    },
+    {
+     "day": 7,
+     "acts": [
+      "go:pick",
+      "go:pick",
+      "diary",
+      "tidy",
+      "tidy",
+      "tidy",
+      "rest"
+     ],
+     "right": 5,
+     "shown": 6,
+     "kept": 5,
+     "halo": 0.476,
+     "error": 0.321,
+     "signs": 4,
+     "savings": 0,
+     "song": false
+    }
+   ]
+  }
+ }
+}

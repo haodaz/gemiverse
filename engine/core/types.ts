@@ -39,6 +39,9 @@ export type WorldPack = {
   counters: string[];                                    // the only names a policy row may read
   policy: PolicyRow[];                                   // read from the top; the first row that matches wins
   readout: { fact: string; shows_as: string; where: string }[];   // one fact, one thing in the space
+  // Where a thing sits on an axis is computed from its discrete, checkable properties by this table. No model writes that number.
+  rubric: { flag: string; value: string; axis: string; x: number }[];   // flag "need" matches a thing's need tags; any other flag matches its flags[flag]
+  aliases?: Record<string, string>;                                      // a pack's own counter names -> the runner's standard counters (day.ts)
   needs: { id: string; means: string; terms: string[] }[];           // what a person may want; terms are for hearing with no model
   fields: { id: string; labels: string[]; headline?: boolean }[];    // what a thing may state; labels are the words a page prints next to it
   gate: { yes: number; confidence: number };
@@ -56,7 +59,8 @@ export type Event = Base & (
   | { type: "earn"; source: string; times?: number }                                                        // stars come in by one of the pack's ways of earning
   | { type: "goal"; goal: string | null }                                                                   // it sets itself something bigger than a day, or is done with it
   | { type: "trip"; call?: string; place: string; found: string[]; seal?: string; predicted?: Record<string, number> }
-  | { type: "choice"; find: string; action: "keep" | "skip"; evidence: { axis: string; x: number }[] }     // evidence is still model-written today; M3 replaces it with flags and a rubric
+  | { type: "choice"; find: string; action: "keep" | "skip"; flags?: Record<string, string | null>; needs?: string[];   // what the thing is; the rubric turns that into evidence
+      evidence?: { axis: string; x: number }[] }                                                            // legacy: numbers a model wrote, as in the campus app's older logs
   | { type: "went"; find: string }
   | { type: "space"; by: "person" | "self"; what: string; item?: string });
 
@@ -72,3 +76,6 @@ export type State = {
   desk: string[]; kept: string[]; skipped: string[]; went: string[];
   open: OpenCall[]; expired: string[];
 };
+
+// A thing from the base, as the engine sees it: public, checked, and carrying only discrete properties.
+export type Item = { id: string; name: string; summary?: string | null; needs: string[]; flags: Record<string, string | null> };

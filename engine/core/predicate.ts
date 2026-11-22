@@ -38,6 +38,8 @@ export function validatePack(pack: WorldPack): string[] {
   if (B.asked.purse && !purses.has(B.asked.purse)) bad.push(`what the person asks for is charged to the unknown purse "${B.asked.purse}"`);
   for (const w of B.earn) { if (w.to !== "reservoir" && !purses.has(w.to)) bad.push(`earning "${w.id}" pays into the unknown purse "${w.to}"`); if (w.to === "reservoir" && !B.reservoir) bad.push(`earning "${w.id}" pays into a reservoir the pack does not have`); if (!(w.stars > 0)) bad.push(`earning "${w.id}" must give at least one star`); }
   if (new Set(B.earn.map((w) => w.id)).size !== B.earn.length) bad.push("ways of earning need distinct ids");
+  const axes = new Set(pack.axes.map((a) => a.id)), needIds = new Set(pack.needs.map((n) => n.id));
+  for (const r of pack.rubric) { if (!axes.has(r.axis)) bad.push(`the rubric names the unknown axis "${r.axis}"`); if (r.flag === "need" && !needIds.has(r.value)) bad.push(`the rubric names the unknown need "${r.value}"`); if (!(r.x >= -1 && r.x <= 1)) bad.push("a rubric position must be between -1 and 1"); }
   if (new Set(pack.readout.map((r) => r.fact)).size !== pack.readout.length) bad.push("each fact may be shown by one thing only");
   for (const t of Object.values(pack.tiers)) if (t.noise <= 0 || t.floor < 0 || t.floor > 1) bad.push("a tier needs noise above zero and a floor between 0 and 1");
   if (pack.gate.yes <= 0 || pack.gate.yes > 1 || pack.gate.confidence < 0 || pack.gate.confidence > 1) bad.push("gate thresholds must be between 0 and 1");
