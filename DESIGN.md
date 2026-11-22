@@ -141,3 +141,6 @@ Works end to end on a laptop: meet (`/start`), talk with Decisions routing, trip
 - **Campus map** (`/campus`) · built: landmarks named in public text, each checked by Decisions, drawn by the image model, located by Hydrogen. 82 maps. An illustration, said so on the page.
 - **Body** · changed: KayKit Adventurers (CC0) by default; own doll behind `?body=doll`. Wardrobe and expressions for the new body · not built.
 - **Room light** · built: hour and weather.
+
+## The engine (22 Nov, after the submission)
+Gemiverse is now designed as an engine with the campus Gemi as its first application. The design record is `ENGINE.md` (Chinese guide `ENGINE.zh.md`); the code is under `engine/` and `packs/`. This file (DESIGN.md) remains the design of the campus app as submitted and is not updated for the engine. The app does not run on the engine yet.

@@ -17,6 +17,7 @@ The hackathon submission is the commit tagged `hackathon-submission` (`23dcd7f`,
 - **Campus maps with each school's own features** (`/campus`, `scripts/foundry/13-landmarks.mjs`): Hydrogen lists the landmarks a public encyclopedia article names, the Decisions API checks each one against that text, the image model draws a picture map from the confirmed ones, and Hydrogen locates each landmark in the picture so the page can label it. 82 maps. They are illustrations: the landmarks are checked, their positions and looks are drawn, not surveyed.
 - **The Gemi's body** is now a ready-made character from the **KayKit Character Pack: Adventurers by Kay Lousberg (CC0)**, see `public/vendor/CREDITS.txt`. Our own jointed doll is still there (`?body=doll`); the wardrobe only dresses our own doll.
 - **Light in the room** follows the hour and the weather outside the window (sun, lamp, rain, snow).
+- **The engine** (22 Nov): the same ideas rebuilt as an engine other applications can run on, with no model load-bearing: `engine/`, `packs/`, design record in [`ENGINE.md`](ENGINE.md) (Chinese guide [`ENGINE.zh.md`](ENGINE.zh.md)). 56 tests (`npm test`). The app itself does not run on it yet.
 - Chinese is offered first to Chinese-language browsers; the campus pictures of the added schools show the region, not the real campus.
 
 ## The task

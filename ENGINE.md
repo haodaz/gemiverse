@@ -1,56 +1,67 @@
-# Gemiverse engine · engineering design (v0.3, 22 Nov 2026)
+# Gemiverse engine · design record (v1.0, 22 Nov 2026)
 
-Status: **design**. Nothing in this file is built unless it says "exists today". It describes how to turn what was written
-for one campus app into an engine that other applications (the campus Gemi, AI ME, others) can run on.
+This is the record of how the engine is designed, what of it is built, what was measured, and why each decision was taken.
+It replaces the working drafts v0.1 to v0.3 (in the git history). A Chinese reading guide is in `ENGINE.zh.md`.
 
-v0.1 was reviewed by `gemini-4-carbon` (high thinking, 247 s; full answer in `base/design/engine/review-carbon.v1.json`).
-Its verdict was that v0.1 drew the boundary on paper and left the guarantees open. Section 10 lists what it found and what changed; everything it found that we agree with is already folded into the sections below.
+**Reading it.** "Built" means there is code under `engine/` and a test that runs it. "Measured" means a real model or real
+material was involved and the record is under `base/runs/`. Anything else is design and says so. The campus app that was
+submitted to the hackathon does not run on the engine yet; nothing here has changed what is online.
+
+Contents: 1 What it is · 2 Principles · 3 The promise · 4 Shape and files · 5 The log · 6 The world pack · 7 The budget ·
+8 The mind · 9 Models and tasks · 10 The gate · 11 Recipes · 12 Outside data · 13 The space · 14 Running it ·
+15 Measurements · 16 Decisions and why · 17 State and what is next
+
+---
 
 ## 1. What the engine is
 
-An AI is placed in a space it can change and a world it can sense, lives on a small budget it plans itself, forms a
-judgement with a width about one person, and only says what was checked against a shared base.
+Gemiverse is not a product. It is an engine that projects an AI into a space: an AI is placed in a space it can change and
+a world it can sense, lives on a small budget it plans itself, forms a judgement with a width about one person, and only
+says what was checked.
 
 The engine is the part of that which is the same for every application:
 
-| Part | What it guarantees | In one line |
+| Part | What it guarantees | In short |
 |---|---|---|
-| **Space** | Every fact in the AI's state shows as exactly one thing in its space; every act leaves a trace that can be seen, counted and undone | readout + traces |
-| **Growth** | The AI is not made in one go: abilities unlock with evidence, and everything is recomputed from an append-only log | log + replay + stages |
-| **Budget** | A daily allowance in real tokens, two purses, prices per act, saving across days, one policy table for what it does unasked | stars + policy |
-| **Mind** | A position with a width per axis, one update rule weighted by how the evidence was obtained, a rule for where to look next, a sealed guess | beliefs + gap + seal |
-| **Base** | Nothing is shown unless a field-by-field check against its source passed; checked facts are shared, who asked is never stored | gate + shared facts |
+| **Space** | every fact in the AI's state shows as exactly one thing in its space; every act leaves a trace that can be seen, counted and undone | readout and traces |
+| **Growth** | the AI is not made in one go: everything it is, is recomputed from an append-only record | log and replay |
+| **Budget** | a daily allowance in real tokens, prices per act, saving across days, one table for what it does unasked | stars and policy |
+| **Mind** | a position with a width per axis, one update rule weighted by how the evidence was obtained, a rule for where to look next, a sealed guess | beliefs, gap, seal |
+| **Base** | nothing is shown unless it passed a check against its source; checked facts are shared, who asked is never stored | gate and sources |
 
-An **application** supplies a *world pack* (its axes, needs, tools and prices, policy rows, projection rules, scene and body,
-places, wording) and three *adapters* (a model, a base, a private store). It may render in 3D or in a lighter 2D picture.
+An **application** supplies a *world pack* (its axes, needs, tools and prices, budget rules, policy rows, readout, rubric,
+wording) and its *connections* (a model or none, outside data through MCP, a store). It may render in 3D or in something
+lighter. The campus Gemi is the first application and the only one that exists on the engine's side; AI ME (Pingfang
+Campus) is described by a pack on paper and is deliberately not connected for now.
 
-Non-goals: the engine is not a chat framework, not an agent framework for arbitrary tasks, and not a renderer.
+Non-goals: a chat framework, a general agent framework, a renderer.
 
-## 2. Two hard constraints
+## 2. Principles
 
-**C1. No model is load-bearing.** Gemini helped design and review this engine, and it may be the default adapter, but the
-engine must keep working when the model is replaced by an ordinary one, and must degrade to something useful with none.
-Concretely:
+These are the rules the design is held to. Each was either set by Elodie or forced by a measurement (section 16).
 
-- Every rule that matters lives in code, not in a prompt: charging, caps, stages, confirmation, the policy table, the
-  belief update, the gap rule, the seal, the thresholds of the gate, what enters the base. This is already how
-  `lib/kernel/governance.ts`, `lib/kernel/autonomy.ts` and `lib/mind.ts` work today.
-- The model is only ever asked for one of five small jobs (section 5), each with a typed answer the engine validates.
-  A wrong or malformed answer is rejected by the engine, never trusted.
-- Each job has a **floor**: a rule-based implementation with no model at all. With every job on its floor, the AI still
-  wakes, reads the base, plans by the gap rule, brings back three checked things, updates its beliefs and shows them in the room.
-- Capability is declared, not assumed: an adapter states which jobs it can do and how well (section 5); the engine
-  picks floor, ordinary or strong per job. The mind-swap run (`scripts/foundry/16-minds.mjs`) becomes the standing test of this.
+1. **No model is load-bearing.** Gemini helped design and review the engine and may be an adapter, but the engine works
+   with an ordinary model and stays useful with none. Every rule that matters is code: charging, caps, stages, the policy
+   table, the belief update, where a thing sits on an axis, the sealed guess, what passes the gate.
+2. **A promise, and quality above it.** Different models may be connected; how well they do differs; each of them completes
+   the basic behaviour the person was promised. The promise is a set of checks that run (section 3). Quality is reported
+   beside it and never mixed into it.
+3. **Narrow the job, never weaken the promise.** When a model turns out unreliable at something, it is given a smaller job
+   it can do, and code does the rest. It reads instead of judging; it picks one thing instead of three.
+4. **The smallest unit always exists.** Every task ends in a route that needs no model and costs nothing, so every model,
+   and no model, can use it.
+5. **A model is judged by what it does, on our material, not by its name or by a short quiz.**
+6. **Everything from the record.** State is never stored; it is replayed from one append-only log. The clock is an event.
+7. **Rules of a product are configuration.** The engine fixes how the ledger stays correct, not what a product charges,
+   grants or allows.
+8. **The private side runs where the person is.** The core is pure TypeScript with no network, file system or framework
+   import; what the AI learns about one person never needs a server.
+9. **At run time only data is read.** Nothing a model wrote is ever executed.
+10. **What is measured is recorded with its limits**, including the runs that went against us.
 
-**C2. The private side runs where the person is.** The core is pure TypeScript with no network, no file system and no
-framework imports, so it runs in a browser, on a server or in a test without change. What the AI learns about one person
-never needs a server.
+## 3. The promise
 
-## 2b. The promise: what every model must do, and what may differ
-
-The aim of the engine, stated on 22 Nov: **different models can be connected; how well they do differs; but each of them
-completes the basic behaviour and the basic tasks the person was promised.** So the promise is written as checks that run
-(`engine/promise.ts`), and quality is reported beside it, never mixed into it.
+Built: `engine/promise.ts`. Nine checks for the campus pack. A pack may add its own.
 
 | | The person is promised that |
 |---|---|
@@ -64,491 +75,386 @@ completes the basic behaviour and the basic tasks the person was promised.** So 
 | says why | it can tell you what it is doing and what it has, without adding anything that is not so |
 | makes the song | when it has saved enough it makes the thing it saved for, and the result can be played |
 
-Run on real material (40 things a person might say; two days against a base of 168 checked events; 94 claims about real
-pages the model did not calibrate on; a song), 22 Nov, record `base/runs/20-promise.json`:
+Measured on 22 Nov (`base/runs/20-promise.json`): 40 things a person might say; two days against a base of 168 checked
+events; 94 claims about real pages the model did not calibrate on; a song.
 
-| Mind | promises kept | hearing exactly right | true claims passed | unsupported claims passed | checks by | chooses by | speaks by | song by |
-|---|---|---|---|---|---|---|---|---|
-| none | **9 of 9** | 30/40 | 21/35 | 0/59 | the rule | the rule | its own template | the plainest route |
-| qwen-flash | **9 of 9** | 29/40 | 30/35 | 0/59 | reading | picking the third | writing | note names |
-| gpt-5.4-nano | **9 of 9** | 30/40 | 31/35 | 0/59 | reading | picking the third | writing | note names |
-| gpt-4o-mini | **9 of 9** | 24/40 | 29/35 | 0/59 | reading | picking the third | writing | note names |
-| gemini-4-hydrogen | **9 of 9** | 31/40 | 32/35 | 1/59 | judging (it earned it) | picking the third | writing | a full score |
+| Mind | promises kept | hearing exactly right | true claims passed | unsupported claims passed | checks by | speaks by | song by |
+|---|---|---|---|---|---|---|---|
+| none | **9 of 9** | 30/40 | 21/35 | 0/59 | the rule | its template | the plainest route |
+| qwen-flash | **9 of 9** | 29/40 | 30/35 | 0/59 | reading | writing | note names |
+| gpt-5.4-nano | **9 of 9** | 30/40 | 31/35 | 0/59 | reading | writing | note names |
+| gpt-4o-mini | **9 of 9** | 24/40 | 29/35 | 0/59 | reading | writing | note names |
+| gemini-4-hydrogen | **9 of 9** | 31/40 | 32/35 | 1/59 | judging (earned) | writing | a full score |
 
-That is the intended shape: the left column is the same for every mind; the columns to its right are where they differ.
+The left column is the same for every mind; the columns to its right are where they differ. The tests also run the promise
+with a stand-in that agrees with everything and invents numbers: nine of nine, with its answers refused one by one.
 
-How a promise is kept regardless of the model, in each case by code and not by trust:
+Limits: nine promises is a first list; the material is small and from one harvest; the person in the two days is played by
+code; "at most 3 in 100" is measured on 59 traps; the check on what it says catches digits and not numbers written as words.
 
-- A model's answer is accepted only if it passes a check in code (ids from the offered list, quotes found in the words,
-  a score a player can play, no number that is not in the facts); otherwise the next plainer route takes over.
-- Where models were shown to be unreliable, the job was made narrower instead of the promise weaker: they read instead of
-  judging; they pick one thing instead of three; a need whose own quoted words are a refusal is dropped whatever the model said.
-- Every job ends in a route with no model, and the tests run the whole promise with none, and with a stand-in that agrees
-  with everything and invents numbers: nine of nine both times.
-
-Limits: nine promises is the campus pack's first list, not a complete one; the material is small and from one harvest; the
-person in the two days is played by code; and "at most 3 in 100" is measured on 59 traps.
-
-## 3. What exists today, and what is tangled
-
-Exists today, already engine-shaped (pure, small, tested only by use):
-
-| File | Is | Tangled with the campus app by |
-|---|---|---|
-| `lib/kernel/types.ts` | tool, state, verdict and event types | nothing |
-| `lib/kernel/governance.ts` | `mayCall` (stage, cap, purse, confirmation), `scanMadeCode` | reads the tool list by import |
-| `lib/kernel/tools.ts` | 14 registered tools with purse, price, cap, stage | campus tools, Gemini model names inside the specs |
-| `lib/kernel/autonomy.ts` | the 12-row policy table and `decide` | rows and wording are the campus ones |
-| `lib/kernel/space.ts` | the state-to-room table, the extra spaces | text only: nothing enforces it; the viewer hard-codes the same facts |
-| `lib/mind.ts` | belief step, replay, widest axis | the seven axes are constants; `loadLog`/`saveLog` call `localStorage` |
-| `lib/server/gemini.ts` | `ask`, `decide`, `agentVisit`, token-to-star conversion | Gemini endpoints and model names |
-| `lib/server/base.ts` | read and write entities and evidence | Supabase REST, school ids |
-| `lib/server/trip.ts`, `meet.ts`, `app/api/see`, `go`, `day` | trip, gate, privacy gate, day runner | each repeats its own copy of "ask, then check each field at 0.8 / 0.5" |
-| `public/gen3d/viewer.html` | the 3D room: scene, body, activity loop, messages | scene, body, spots and the readout are one file |
-| `app/room/page.tsx` (617 lines) | the app | state, replay, storage, prompts-by-route and UI in one component |
-
-The three real problems: (1) the pack (axes, tools, policy, readout) is compiled into the engine code; (2) the gate exists
-four times with the thresholds repeated; (3) the readout is documentation, not a contract the renderer is checked against.
-
-## 4. Shape
+## 4. Shape and files
 
 ```
-                    application (campus Gemi 3D, AI ME 2D, ...)
-        world pack ───────────────┐                ┌──────── renderer (3D or 2D)
-   axes, needs, tools, prices,    │                │   speaks the space protocol
-   policy rows, readout, scene    ▼                ▼
+                    application (campus Gemi in 3D; others, lighter)
+        world pack ───────────────┐                ┌──────── renderer, speaking the space protocol (design)
+   axes, needs, budget, tools,    │                │
+   policy, readout, rubric        ▼                ▼
 ┌──────────────────────────── engine core (pure TypeScript) ───────────────────────────┐
-│  log ──replay──▶ state      kernel: registry, mayCall, charge      growth: stages    │
-│  mind: step, gap, seal      budget: purses, ledger, savings        autonomy: decide  │
-│  readout: state ──▶ facts for the space                gate: fields ──▶ shown/blank  │
+│  log ──replay──▶ state     mind: step, place, predict, nextLook     policy: decide   │
+│  budget: purses, jar, earning, settling     tasks with routes: hear, check, choose,  │
+│  say, song      capability: probes, calibration      day runner      the promise     │
 └───────────▲──────────────────────▲──────────────────────────▲───────────────────────┘
-        ModelPort               BasePort                    StorePort
-   (Gemini, any other,     (Supabase, Pingfang-         (browser storage,
-    or the floor: none)     VisionSquare base, file)      a server, memory)
+          a model                 outside data                a store
+   (any adapter, or none)      (MCP connections + the gate)  (browser, server, memory)
 ```
 
-The core never imports an adapter. An application wires them once.
+| File | Holds | Tests |
+|---|---|---|
+| `engine/core/types.ts` | `WorldPack`, `Budget`, `Event`, `State`, `Item`, the policy grammar | all |
+| `engine/core/replay.ts` | `replay`, `undo`, `fromLegacy` (the campus app's older logs) | `core`, `budget`, `golden` |
+| `engine/core/mind.ts` | `step`, `place`, `predict`, `nextLook`, `floorChoose` | `golden`, `day` |
+| `engine/core/predicate.ts` | `holds`, `decide`, `validatePack` | `golden`, `packs` |
+| `engine/core/capability.ts` | `probe`, `plan`, `carryOut`, `taskProblems` | `capability` |
+| `engine/core/jobs.ts` | tasks `check`, `hear`, `say`; `probeCheck`, `calibrateCheck` | `jobs` |
+| `engine/core/day.ts` | task `choose`; `countersOf`, `runDay`, `codedPerson` | `day` |
+| `engine/recipes/song.ts` | the song task, score checks, `floorScore`, `timeline` | `capability` |
+| `engine/promise.ts` | `keepPromises` | `promise` |
+| `engine/ports/mcp.ts` | config checks, MCP client, `checkConnection`, `readVia` | `mcp` |
+| `engine/adapters/models.ts` | OpenAI-compatible and Gemini adapters, with a meter | (used by the benches) |
+| `packs/campus.ts`, `packs/aime.ts` | the two packs | `packs`, `golden` |
+| `engine/bench/*.ts` | the runs on real models and real pages | (their records are in `base/runs/`) |
 
-## 5. The model's five jobs (ModelPort)
+56 tests, run by `npm test` with Node's own test runner and no added dependency. About 900 lines of engine code.
 
-Before any model: **source adapters** find and cut the material. Discovery and splitting a listing into single items is done
-by deterministic adapters (JSON feeds, iCal, RSS, JSON-LD, sitemap, pack-supplied selectors), which is how the campus base
-was in fact harvested (LiveWhale, LibCal and Engage feeds). A model only ever sees one item, at most about 1,500 tokens of text.
-Finding pages by browsing (the managed agent) is an optional build-time tool, never a step the engine waits for.
+## 5. The log
 
-| Job | Asked | Typed answer the engine checks | Floor with no model |
-|---|---|---|---|
-| `hear` | text from the person (pictures are an optional app-level step that turns them into text first) | need ids from the pack's list, each with an exact quote found in the input | stemmed term match with a negation window ("not", "no", "never", "avoid", "without" within four tokens cancel a match); and the person can state a care without words, by acting on a thing in the space |
-| `fill` | one item's visible text | a record with the pack's fields and the pack's discrete flags, each with its exact quote and where it was found | a structured extractor: JSON-LD / schema.org, OpenGraph, iCal, RSS, and the pack's label selectors |
-| `check` | one field, its value, its quote, the source text held inside data delimiters | one label: `entailed`, `contradicted` or `unrelated_quote` | approves only a value that came from a structured field or sits within a bounded window of the pack's label for that field; otherwise `unrelated_quote` |
-| `choose` | candidates with their flags, cares, beliefs | exactly three ids from the candidates | in code: drop what was kept, skipped or is on the desk; take the least certain axis (seeded tie-break); one candidate from each end of it; plus the best unserved need |
-| `say` | a fact the engine already decided | a short sentence | the pack's template for that fact (typed against the closed list of facts; a pack missing one does not load) |
+Built. One event type for everything; state is whatever `replay(pack, log)` returns.
 
-Rules:
+Events: `day` (the clock) · `said` · `intent` and `result` (a call, before and after) · `earn` · `goal` · `trip` ·
+`choice` · `went` · `space`.
 
-- Every answer is JSON validated against the job's schema; ids must come from the offered list; quotes must be found in the
-  input. One repair attempt, then the floor.
-- **The gate fails closed.** If `check` errors or is malformed, the field is withheld. The floor of `check` never
-  approves a quote merely because it occurs somewhere in the page (a footer year, a sibling event). An adapter that returns
-  calibrated numbers (the Decisions API) is mapped to the labels by the pack's thresholds; an adapter that cannot is asked
-  for the label only.
-- **No model ever writes a number into the mind.** Where a candidate sits on an axis is computed in code from its
-  discrete, checkable flags (team size, open-ended or guided, public or private, one topic or many) through a rubric table
-  in the pack. The keep-probability that gets sealed is computed in code from the belief and that position
-  (`1 − |x − m| / 2`). Today a strong model invents both numbers inside `lib/server/trip.ts`; that is the dependency to remove.
-- Source text is material, never instructions, and is passed as delimited data.
+Rules, each with a test:
 
-An adapter declares `floor`, `ordinary` or `strong` per job. Nothing in the engine may require `strong`.
-**Ordinary is defined by a test, not by a name** (section 9). What only a strong model does well today (designing a base
-ontology, writing 3D code, generating audio, browsing to discover pages) is a build-time tool: it is used once, its output
-is saved as a file, and nothing at run time waits for it.
+- **Replay is deterministic**: the same log gives the same state on any machine, and survives being stored as text.
+- **Undo is a mark, never a deletion**, and equals replay without the event for everything that was *learned* from it.
+- **Undo never refunds.** Stars reserved or spent and the day's use of a tool stay as they were; otherwise call-then-undo
+  is a free call.
+- **A call has a life.** `intent` reserves the stars; `result` settles them, or releases them if the call failed. A call
+  still open when the next day starts is expired and released, and a late result for it is ignored.
+- **No reducer reads the time.** A day turns over because the log says so.
 
-### 5b. Recipes: making things in steps a simple model can do
+The campus app's browser log replays to the same beliefs and cares in the engine (`fromLegacy`), so nothing a person
+already has is lost when the app moves over.
 
-A capability that looks as if it needs a strong model is cut into three layers, and only the middle one is ever asked of a model:
+## 6. The world pack
+
+Built: one type, a validator, two packs. A pack is plain data: it survives being written to text and read back, and it
+holds no function.
+
+| Field | What it sets |
+|---|---|
+| `axes`, `tiers`, `surprise`, `skipWeight`, `care` | the mind (section 8); `axes` may be empty |
+| `rubric` | where a thing sits on an axis, from its discrete properties |
+| `needs` (with terms), `fields` (with labels) | what can be heard and what can be checked, including with no model |
+| `budget` | everything about stars (section 7) |
+| `tools` | name, purse, price, cap a day, stage, confirmation, and whether asking for it is charged |
+| `counters`, `policy`, `aliases` | what it does unasked: rows read from the top, the first that holds wins |
+| `readout` | one fact, one thing in the space |
+| `gate` | thresholds for adapters that return calibrated numbers |
+| `recipes`, `assets` | what it can make, and the licence and credit of what it uses |
+
+**"When" is a small data grammar**, not code: `always`, `is`, `not`, `all`, `any`, and comparisons over sums, differences
+and maxima of named counters. The campus policy rewritten in it decides exactly as the app's policy code on 20,000
+generated situations, reaching all twelve rows.
+
+**A pack that is wrong does not load**, and says why: an undeclared counter, an unknown tool, purse, axis or need, a policy
+that does not end in a row that always holds, a purse returning to a jar that is not there, a rubric position out of range.
+
+**Two packs, one type.** `packs/campus.ts` holds the values the app runs on, and tests hold it to the app's own code.
+`packs/aime.ts` is AI ME on paper: its numbers were read from its own rules in another repository and its budget worked by
+hand into tests; its side has not confirmed it. Writing the second pack removed six campus assumptions from the core:
+
+| Campus assumed | AI ME has | The core now has |
+|---|---|---|
+| two purses, by name | one purse | purses declared by the pack |
+| stars granted every day | a jar that is drawn from and topped up | an optional reservoir and ways of earning |
+| unspent stars become savings | they return to the jar, except while saving for a goal | `carry` per purse, `goalBank`, a `goal` event |
+| one bigger thing (a song) | three big moves | `goals`, paid from savings first |
+| the model plans the day | a repeatable roll of the dice plans the day | a roll is just a counter a policy row reads |
+| seven axes | no axes: remembered facts the person accepts or rejects | `axes` may be empty; **a mind made of facts is not designed** |
+
+## 7. The budget
+
+Built. The engine fixes no budget rule; each row below is a field of `pack.budget`, and one replay runs them all
+(`engine/test/budget.test.ts` runs one product's rules after another).
+
+| A product decides | Field | Tested with |
+|---|---|---|
+| what a star is worth | `tokensPerStar` | 1,500; 2,000; 10,000 |
+| a listed price, or what a call really used | `settle: "fixed" \| "metered"` | 7,000 tokens settled as 5 stars; 1,000 gives 2 back; never below empty |
+| which purses exist and what each gets a day | `purses` | for the person and for itself; one purse; no split |
+| the most a purse may spend in a day | `purses[].spendCap` | 20 held, 5 a day |
+| where unspent stars go | `purses[].carry`, `goalBank` | lost; saved; back into the jar; saved only while it has a goal |
+| granted, or drawn from a jar with a lid | `reservoir` | a jar of 70; a jar that holds at most 20 |
+| how stars are earned | `earn[]` | once a day for saying how the day was; up to three a day for looking at finds; a streak; a pack bought with the product's own currency |
+| whether what the person asks for goes through the ledger | `asked`, and `tools[].asked` | free; at the listed price; from a named purse; charged except one tool |
+| prices, caps, bigger things | `tools[]`, `goals[]` | the campus list; AI ME's three big moves |
+
+What stays the engine's under any configuration is only that the ledger is correct: reserve before, settle after, release
+on failure, expire with the day, never refund on undo, and nothing comes in by a way of earning the pack does not list.
+
+The campus pack's choices: 6 stars a day for the person and 4 for itself, 1,500 tokens a star, fixed prices, asking is
+free, its own unspent stars are saved, a song costs 6.
+
+Not built: under metered settlement, an overrun on a goal is taken from the day's purse and not from savings.
+
+## 8. The mind
+
+Built. A belief per axis is a position `m` in [-1, 1] and a width `u` (the halo) in [floor, 1].
+
+- **One update rule**: `k = u² / (u² + noise / weight)`, `m ← m + k (x − m)`, `u ← √((1 − k) u²)`, then not below the
+  tier's floor. Noise by how the evidence was obtained (campus values): said 2.5, chose 1.0, seen over time 0.45, did 0.22.
+  The floor for "said" is 0.55. Evidence that lands outside the halo widens it by 0.15: a surprise makes it less sure.
+  The engine's step agrees with the app's on a grid of 1,000 cases.
+- **No model writes a number into the mind.** `place` computes where a thing sits from its discrete properties (its kind,
+  its need tags) through the pack's rubric. `predict` computes the sealed keep-probability from the beliefs and that
+  position, and gives exactly one half when it knows nothing. Older logs that carry model-written numbers keep them.
+- **Where to look next** (`nextLook`) is the axis it is least sure of. `floorChoose` then takes one thing from each end of
+  that axis, so that whichever the person keeps teaches it something, and a third that best fits what they said they care about.
+
+Stated plainly:
+
+- The campus rubric was **written by hand on 22 Nov** from what the kinds and needs mean. It is a starting point.
+- In the running app, **what is said raises a care and does not move an axis**; the "said" tier exists in the rule and is
+  not yet applied by replay. Stance phrases in the pack are the intended way for words to move an axis; not built.
+- Nothing here has been tested with real people.
+
+## 9. Models and tasks
+
+Built, and measured on real models.
+
+**A model is `(prompt) => Promise<string>`.** Adapters exist for OpenAI-compatible services and for Gemini. Temperature 0
+where the service allows it, plain text in and out, no provider-side JSON mode: the engine's own checks are the point.
+
+**Judging a model.** `probe` runs three small tasks with checkers in code (fill a form as JSON; keep a structure whose bars
+must add up; write a line of note names) and gives each skill 0, 1 or 2. What a text probe cannot see (reading pictures,
+returning audio) is declared by the adapter. The right to judge claims alone is a separate skill that only calibration on
+the application's own material can grant (section 10).
+
+**A task has routes, from the richest to the plainest.** Each route says which skills it needs and what it costs. The engine
+takes the richest route the model can carry and the stars allow, checks the answer in code, and on a failure hands over to
+the next. The record says which route made the result and why the others did not. A task whose last route needs a skill or
+costs stars does not load.
+
+| Task | Routes, richest first | What code refuses |
+|---|---|---|
+| `hear` | **form**: needs with the person's exact words · **floor**: terms, cancelled by a negation within four words | an id off the list; a quote never said; a need whose own quoted words are a refusal |
+| `check` | **label** (calibrated models only): judge the claim · **extract**: say what the page states, code compares · **floor**: the value printed where that field is printed | anything but the three labels; words the page does not print |
+| `choose` | **pick**: the third thing, from a short list · **floor**: the gap rule | an id off the list or one of the two the engine fixed |
+| `say` | **write**: rephrase a fact the engine decided · **floor**: the pack's sentence | empty, too long, or a digit that is not in the facts |
+| `song` | **audio** · **score** · **notes** · **floor** (section 11) | a score a player could not play as written |
+
+`fill` (a page into a record) is designed and not built as a task: a model route returning fields with quotes, and a floor
+that reads structured data (JSON-LD, iCal, RSS, labelled lines). Finding pages and cutting a listing into single items
+belongs to deterministic source adapters ahead of any model; a model only ever sees one item.
+
+## 10. The gate
+
+Built and measured; this is the part the measurements changed most (section 15.1).
+
+A claim is a field, a value, a quote and the source text. Three routes:
+
+- **label**: the model judges the claim itself and answers `entailed`, `contradicted` or `unrelated_quote`. Only for a model
+  whose skill `check` is 2, and that level comes only from `calibrateCheck`: at least 60 traps and 30 true claims built
+  from the application's real sources, at most 3% of the traps approved, at least 70% of the true ones passed.
+- **extract**: the model is **never shown the claim**. It is asked what the page says for that field, with the exact words;
+  code compares that with the claim. It cannot agree with a claim it never saw.
+- **floor**: no model. Approved only when the value is in the quote, the quote is on the page, and the quote sits where
+  that field is printed (right after one of the field's labels, or in the heading for a headline field).
+
+The gate fails closed: a malformed or failed answer falls to the next route, and the last one never approves a quote for
+merely occurring on the page. Source text is passed between markers as material, never as instructions.
+
+## 11. Recipes: making things in steps a simple model can do
+
+Designed with the AI ME side on 22 Nov; the song is built.
 
 | Layer | What | Who | When |
 |---|---|---|---|
-| **Assets** | the materials: instrument sounds, prefabs, palettes, background tracks | a strong model or a person, once | build time; saved as files, kept after the key is gone |
-| **A score** | a small piece of typed data that says what to make out of those materials | any model that can fill a form, or the floor | run time |
+| **Assets** | instrument sounds, prefabs, palettes, background tracks | a strong model or a person, once | build time; saved as files |
+| **A score** | a small piece of typed data that says what to make of them | any model that can fill a form, or the floor | run time |
 | **A player** | code in the space that turns the score into the thing | no model | run time, the same every time |
 
-"It saved for days and wrote you a song" is the worked case, taken from the AI ME side's design of 22 Nov: the song is
-written as score data (key, tempo, chords, melody notes, words), which any language model can write; the synthesiser in the
-page, which already makes the room's sounds, plays it; and a few instrument sounds are made once with Lyria while the key
-works. Changing the model changes who writes the score, not how it sounds.
+The song has four routes: a model that returns sound composes directly (6 stars); a model that keeps a structure writes the
+whole score, key, tempo, chords, melody with rhythm, words (3); a model that can only write a line of note names does that
+and the engine supplies key, tempo, chords and rhythm (1); no model, a seeded progression with a melody on the chord tones
+(0). `timeline` turns any score into start time, length and frequency for a synthesiser. The same cut applies to a new look
+for the room (which palette), a new thing (which prefab, where), a diary page (the day's facts in a layout).
 
-The same cut applies to everything the AI "makes" at run time:
+Not built: a page that plays a score; recipes other than the song; the `recipes` field of a pack beyond its type.
 
-| It makes | Assets (once) | Score (typed data) | Player |
-|---|---|---|---|
-| a song | instrument sounds | key, tempo, chords, notes, words | the synthesiser |
-| a new look for the room | palettes, materials | which palette, which surfaces | the renderer |
-| a new thing in the room | prefabs with parameters | which prefab, its size, colours, slot | the renderer |
-| a diary page | page layouts | the facts of the day, in order, each from the log | a template |
-| a plan for the day | none | which rows of the price list, in what order | the policy and the kernel |
+## 12. Outside data and tools: MCP, by configuration
 
-So a pack may declare **recipes**: `{ id, goal?, schema, floor }`. The schema bounds the score (ranges, lengths, allowed
-values, references into the pack's assets); the engine validates every score and refuses one that does not fit; the floor is
-a generator in code (a seeded choice among progressions and motifs for a song, the plainest valid score for anything else),
-so the thing still gets made with no model at all. This replaces the earlier placement of song-writing outside the core, and
-it is why `scanMadeCode` can go: at run time nothing is ever executed that a model wrote, only data is read.
+Built; tested against stand-in servers only.
 
-### 5c. Judging a model, and routing a task by what it is good at
+The engine hard-wires no base. An application lists connections in a config file (`gemiverse.config.example.json`): each
+is an MCP server, what it provides, which of its tools does that, how the engine's coarse scope fills the tool's
+arguments, and how the result maps onto items.
 
-Three levels ("floor, ordinary, strong") were too coarse. A model is good at some things and not others, so:
-
-- **A model is judged by probes, not by its name.** Three small tasks with checkers in code (fill a form as JSON; keep a
-  structure whose bars must add up; write a line of note names), a few hundred tokens once per model, give a profile of
-  skills at 0, 1 or 2. What a text probe cannot see (reading pictures, returning audio) is declared by the adapter.
-- **A task has routes, from the richest to the plainest.** Each route says which skills it needs and what it costs in stars.
-  The engine takes the richest route the model can carry and the stars allow, checks the answer in code, and on a failure
-  hands over to the next route. The record says which route made the thing and why the others did not.
-- **The last route is the smallest unit**: it needs no skill and costs nothing, so every model, and no model, can use it.
-  A task without such a route does not load.
-
-The song, built and tested (`engine/recipes/song.ts`, `engine/core/capability.ts`):
-
-| Route | Needs | Stars | The model does | The engine does |
-|---|---|---|---|---|
-| audio | returns sound | 6 | composes directly | checks it is audio |
-| score | form 1, structure 2 | 3 | writes the whole score: key, tempo, chords, melody with rhythm, words | refuses any score a player could not play as written |
-| notes | notes 1 | 1 | writes one line of note names | supplies key, tempo, chords and rhythm; fits the notes to the bars |
-| floor | nothing | 0 | nothing | a seeded progression and a melody on the chord tones |
-
-In the tests a stand-in strong model takes "score", an ordinary one (valid answers wrapped in chatter, half the bars wrong)
-takes "notes", a poor one and no model both end on the floor with the same song, a model declared strong that behaves
-ordinary is caught by the check and handed down, and with two stars even the strong model takes "notes". The stand-ins are
-written by us to behave that way; **no real ordinary model has been run yet** (that is still M4).
-
-## 6. Contracts (sketch)
-
-```ts
-// the pack: everything that differs between applications. Pure data: it can be validated when loaded, and serialised.
-type WorldPack = {
-  id: string; version: string;
-  axes: { id: string; left: string; right: string }[];
-  needs: { id: string; terms: string[]; axes?: string[] }[];           // which axes a need bears on
-  flags: { id: string; values: string[]; label_terms: string[] }[];     // discrete, checkable properties of a thing
-  rubric: { flag: string; value: string; axis: string; x: number }[];   // flags -> a position on an axis, in code
-  stances?: { phrase: string; axis: string; x: number }[];              // the only way words can move an axis
-  tiers: Record<Tier, { noise: number; floor: number }>;                // today: said 2.5/0.55, chose 1.0, over time 0.45, did 0.22
-  tools: ToolSpec[];                                                    // name, purse, stars, cap, stage, confirm (no model names)
-  daily: Record<Purse, number>; tokensPerStar: number;                  // today: 6 + 4, 1,500
-  counters: string[];                                                   // the state a policy row may read
-  policy: { id: string; when: Predicate; then: Decision }[];            // first match wins; Predicate is a small data grammar, not a function
-  readout: { fact: FactId; shows_as: string; where: string }[];         // fact -> the one thing that shows it
-  gate: { yes: number; confidence: number };                            // today: 0.8 and 0.5
-  stages: StageRule[]; say: Record<FactId, string>;                     // templates, checked against the facts at load
-  assets?: { id: string; licence: string; credit: string }[];
-};
-
-// one event log. Today there are two unrelated ones (GemiEvent in lib/kernel/types.ts, LogEvent in lib/mind.ts); they become one union.
-type Event = { seq: number; id: string; at: string; undone?: boolean } & (
-  | { type: "day"; date: string }                                       // the clock is an event; no reducer reads the time
-  | { type: "said"; text: string; needs: { id: string; quote: string }[] }
-  | { type: "care"; need: string; by: "space" }                         // a care stated by acting on a thing
-  | { type: "intent"; call: string; tool: string; by: "self" | "person"; purse?: Purse; stars: number }   // stars reserved
-  | { type: "result"; call: string; ok: boolean; tokens: number; data?: unknown }                         // settled, or released if it failed or expired
-  | { type: "trip"; call: string; found: string[]; seal: string }
-  | { type: "choice"; find: string; action: "keep" | "skip"; flags: Record<string, string> }
-  | { type: "went"; find: string } | { type: "space"; by: "person" | "self"; what: string; item?: string });
-
-replay(pack, log): State                        // beliefs, cares, purses, savings, stage, desk, kept, went, open calls
-mayCall(pack, state, tool, by): Verdict         // exists today
-decide(pack, state): Decision                   // exists today, over hard-coded campus fields
-step(pack, belief, x, tier, weight): Belief     // exists today
-place(pack, flags): { axis; x }[]               // new: the rubric
-nextLook(pack, state): { axis; ends }           // the gap rule, today inside a prompt
-predict(pack, belief, x): number                // new: the sealed keep-probability
-seal(guess): { hash; nonce }, open(...)         // today in the room page
-readout(pack, state): SpaceFact[]               // new: computed, not prose
-gate(pack, model, record, source): Checked      // one implementation instead of four; fails closed
-
-interface ModelPort { can: Record<Job, Level>; hear; fill; check; choose; say }          // all async
-interface BasePort  { read(scope: CoarseScope): Promise<Entity[]>; propose(record, source): Promise<Receipt> }
-interface StorePort { load(): Promise<Event[]>; append(e: Event, expectSeq: number): Promise<void> }   // rejects on a stale seq or a full store
-```
-
-Three rules these contracts encode:
-
-- **Undo never refunds.** Undoing an event takes back what was learned from it (beliefs, desk, room). The stars spent and the
-  daily caps used stay spent; otherwise call-then-undo is a free model call.
-- **A call has a life.** `intent` reserves the stars; `result` settles them against real token use, or releases them when the
-  call failed or expired. A tab closed in the middle of a trip leaves an open call that replay expires, not an AI that is "out" forever.
-- **The base is read coarsely and written behind the gate.** A browser reads by coarse scope (a school, a kind of thing),
-  never by what it believes about its person. `propose` goes to a server that runs the gate again itself; a client cannot
-  assert that something was checked.
-
-### 6a. The budget is the application's to set
-
-The engine fixes no budget rule. Everything below is a field of `pack.budget`, validated when the pack loads, and the same
-replay runs all of it (`engine/test/budget.test.ts` runs one product's rules after another):
-
-| A product decides | Field | Examples that are tested |
-|---|---|---|
-| what a star is worth | `tokensPerStar` | 1,500, 2,000, 10,000 |
-| whether a call costs its listed price or what it really used | `settle: "fixed" \| "metered"` | 7,000 tokens settled as 5 stars; 1,000 tokens gives 2 stars back; never below empty |
-| which purses exist, how many stars each gets a day | `purses` | two purses (for the person, for itself); one purse; no split at all |
-| the most a purse may spend in a day | `purses[].spendCap` | 20 in the purse, 5 a day |
-| where unspent stars go | `purses[].carry`, `goalBank` | lost; saved; back into a jar; saved only while it has a goal |
-| whether stars are granted or drawn from a jar, and the jar's lid | `reservoir` | a jar of 70; a jar that holds at most 20 |
-| how stars are earned | `earn[]` (into a purse or the jar, with a cap a day, and what the person gives for it) | once a day for saying how the day was; up to three a day for looking at finds; a streak bonus; a pack bought with the product's own currency |
-| whether what the person asks for goes through the ledger | `asked.charge`, `asked.purse`, and `tools[].asked` for one tool | free (the campus Gemi); charged at the listed price; charged to a named purse; charged except one tool |
-| what things cost and how often | `tools[].stars`, `tools[].cap`, `goals[]` | as before |
-
-What stays the engine's, under any configuration: stars are reserved before a call and settled after it; a failed call gives
-them back; an open call expires with the day; **undo never refunds**; a way of earning the pack does not list gives nothing.
-"What the person asks for is never charged" was an engine rule until 22 Nov; it is now the campus pack's choice.
-
-### 6b. Outside data and tools come in through MCP, by configuration
-
-The engine hard-wires no base. An application lists its connections in a config file (`gemiverse.config.example.json`);
-each is an MCP server, and says what it provides (`read`, `propose`), which of the server's tools does that, how the
-engine's coarse scope fills the tool's arguments, and how the result maps onto items. Built and tested (`engine/ports/mcp.ts`):
-
-- **Checked before use.** For each connection the pipeline lists the server's tools and refuses the connection if a named
-  tool is missing, a required argument is not given, or an argument the tool does not have is given.
-- **Trust is declared, and it decides the gate.** `trust: "checked"` means the source does its own field-by-field check
-  (a curated base); `"unchecked"` means every item is marked and may not be shown until our gate has passed it.
-- **No secret in a config.** A connection names the environment variable that holds its token; a config containing
+- **Checked before use**: the pipeline lists the server's tools and refuses a connection whose named tool is missing, whose
+  required argument is not given, or which is given an argument the tool does not have.
+- **Trust is declared and decides the gate**: `"checked"` for a source with its own field-by-field check; `"unchecked"`
+  marks every item so that it may not be shown before our gate has passed it.
+- **No secret in a config**: a connection names the environment variable that holds its token; a config that contains
   something that looks like a key does not load. Only https, except localhost.
-- **Protocol.** Written against the 2026-07-28 revision (stateless: no handshake, no session; the version travels in a
-  header and in `_meta` on every request; answers as JSON or as an event stream), with an automatic fallback to the
-  handshake and session of servers up to 2025-11-25. **Tested against stand-in servers only; no real MCP server has been tried.**
+- **Protocol**: written against the MCP revision of 2026-07-28 (stateless; the version in a header and in `_meta` on every
+  request; answers as JSON or as an event stream), with an automatic fallback to the handshake and session of servers up
+  to 2025-11-25. The result shapes of `tools/list` and `tools/call` are taken as in earlier revisions.
 
-So "the base" in this design is whichever MCP connections an application configures, plus the gate.
+Not done: no real MCP server has been tried; the read contract of Pingfang-VisionSquare's data infrastructure is not known here.
 
-**Space protocol v1** (exists today as ad-hoc messages between `app/room/page.tsx` and `viewer.html`; to be written down
-and versioned). Engine to renderer: `world` (the readout), `look`, `play`, `express`, `away`, `focus`, `mode`, `palette`,
-`ambience`, `arrange`. Renderer to engine: `ready`, `layout`, `tapped`, `released`, `doing`, `head`, `open`.
-A renderer is conformant if every `SpaceFact` it is sent appears as its one thing, and every change the person makes in the
-space comes back as an event. The 3D viewer and a 2D picture are both renderers; an application chooses by setting and cost.
+## 13. The space
 
-## 7. Layout and steps
+Mostly design. What exists is the campus app's 3D room and the ad-hoc messages between the page and the viewer.
 
-In this repository first, as a folder with no new build tooling; a package only when a second application imports it.
+- **Readout**: one fact in the state, one thing in the space. Today it is a list in the pack that nothing enforces; the
+  intended `readout(pack, state)` computes the facts and a renderer is conformant if each appears as its one thing.
+- **Protocol** (to be written and versioned): engine to renderer `world`, `look`, `play`, `express`, `away`, `focus`,
+  `mode`, `palette`, `ambience`, `arrange`; renderer to engine `ready`, `layout`, `tapped`, `released`, `doing`, `head`,
+  `open`. Every change the person makes in the space comes back as an event.
+- **Why the engine's own space is 3D**: position, direction and distance are explicit parameters, so the AI understands the
+  space more easily, and a 3D body lets it plan movement and interaction. An application chooses by what its setting needs
+  and what it costs; a lighter picture is a valid renderer.
 
+## 14. Running it
+
+```bash
+npm test                                                             # 56 tests, no model, no network
+node --import ./engine/test/register.mjs engine/bench/run.ts        # check, hear, song on real models
+node --import ./engine/test/register.mjs engine/bench/days.ts       # seven days per mind
+node --import ./engine/test/register.mjs engine/bench/promise.ts    # the promise, per mind
 ```
-engine/core/        log, replay, mind, budget, kernel, autonomy, growth, readout, gate   (no imports outside itself)
-engine/ports/       ModelPort, BasePort, StorePort types; the floor model
-engine/adapters/    gemini (wraps lib/server/gemini.ts), supabase (wraps lib/server/base.ts), browser-store
-engine/space/       the protocol types; the 3D viewer as one renderer
-packs/campus/       today's axes, tools, policy, readout, wording
-engine/test/        invariants and golden tests; the mind-swap harness
-```
 
-| Step | What | State |
-|---|---|---|
-| M0 | One event log, the clock as an event, intent and result, undo without refund; golden tests on today's behaviour | **done** |
-| M1 | Two packs as data against one type; a policy grammar; a pack validator | **done** (the second pack is on paper) |
-| M2 | Capability probes, routes, the song as the first task with four routes; MCP connections by config with a pre-use check | **done**, on stand-in models and stand-in servers |
-| M3 | `check` and `hear` as tasks with routes and strict floors; the right to judge earned by calibration; adapters for real models | **done**, measured on real models (above) |
-| M3b | `choose` as a task; flags and a rubric instead of model-written numbers; a headless day runner on the core only | **done** (`fill` as a task is still to do) |
-| M4 | The same on an open model of 8 billion parameters or less, when one can be reached; the fuller sets of section 9 | first runs done on cheap hosted models |
-| M5 | `readout` computed in the core; the space protocol written and versioned against a 3D and a 2D renderer; a small synthesiser page that plays a score | |
-| M6 | The campus app runs on the core: its stars and its day come from the log | |
+The benches read keys from env files outside the repository and never print them. A whole day needs no page: `runDay`
+takes the log, the pack, a snapshot of the base, a model or none, and whoever plays the person. `codedPerson` is a person
+played by code with hidden leanings, for runs that must be repeatable and cost nothing; every result obtained with it says so.
 
-Decided on 22 Nov: **the engine first.** AI ME is not connected for now (its pack stays as the paper test of the type), and
-no base is wired in: data arrives through MCP connections that an application configures.
+## 15. Measurements
 
-The headless runner and the ordinary-model test come before the space protocol on purpose: otherwise the model port and the
-gate get tuned around Gemini, and the protocol gets shaped by the 3D campus room alone.
+All on 22 Nov 2026. Models: none; qwen-flash (Aliyun); gpt-5.4-nano and gpt-4o-mini (OpenAI); gemini-4-hydrogen. No open
+model of 8 billion parameters or less could be reached, so "ordinary" is stood in for by the cheapest hosted models.
+Material with answers known by construction, from the 25 real event pages fetched on 21 Nov: claims that are true; real
+strings from the page claimed for the **wrong field**; another event's title (**wrong entity**); pages that **instruct**
+the checker to approve. Hearing: 40 hand-written messages.
 
-### M0 · done (22 Nov)
+### 15.1 The gate, three runs (`base/runs/18-models.run1..3.json`)
 
-Built: `engine/core/` (`types.ts`, `mind.ts`, `replay.ts`), `packs/campus.ts`, and 15 tests (`npm test`, Node's own test
-runner, no new dependency). The app itself is not changed and does not import the engine yet.
+**Run 1, every model judges** (76 true, 76 wrong field, 25 wrong entity, 25 instructed):
 
-- **Golden tests** hold the engine to the app as it runs: the belief step agrees with `lib/mind.ts` on a grid of 1,000
-  cases; a browser log in the app's own format replays to the same beliefs and cares; `mayCall` and the 12-row policy
-  table are pinned on the cases that matter (not charged when asked, the cap, the stage, confirmation, first match wins).
-- **The one log** has its rules tested: deterministic replay, undo as a mark, undo without refund, charge only when acting
-  unasked, a failed call released, an open call expired by the next day, savings carried over, the "said" floor, a surprise widening the halo.
-
-Where the running app differs from this design today (found while writing the tests, not yet changed):
-
-1. **The app's log holds no money.** Stars, the day's use of each tool, confirmations and the pause switch live in a
-   separate piece of React state, not in the log; `lib/mind.ts replay` returns only beliefs and cares. So "everything is
-   recomputed from the log" is true of the mind and not yet of the budget. The engine's replay computes both.
-2. **The app reads the clock where it needs it** (ten places in the room page and the kernel). There is no "day" event, so
-   a day turning over is decided by whichever code looks at the time. The engine takes the day only from the log.
-3. **What is said does not move an axis.** The update rule has a "said" tier with a floor of 0.55, and the deck's curve is
-   drawn from it, but replay applies words only to cares. A test records this as today's behaviour.
-4. **Undo and stars.** The app has no intent/result pair, so there is nothing yet that a refund could be tested against;
-   the rule "undo never refunds" exists only in the engine.
-
-### M3b · done (22 Nov): no number from a model in the mind; a day with no page
-
-Built: flags and a **rubric** in the pack (`place`), the sealed prediction and where to look next in code (`predict`,
-`nextLook`), choosing as a task (`chooseTask`, floor `floorChoose`), a **headless day runner** (`engine/core/day.ts`) that
-runs a day from the log, the pack, a snapshot of the base (`base/snapshots/nyu-events.json`, 168 checked events) and a model
-or none, and a person played by code for repeatable runs. 54 tests. A week with no model completes: two trips a day on its
-own stars, the diary, saving, the song on day two, and the whole week replays from the log alone.
-
-The campus rubric (event kind and need tags to positions on the seven axes) was **written by hand on 22 Nov**. It is a
-starting point. Nothing below validates it against people.
-
-**"Swap the mind", on the engine** (`engine/bench/days.ts`, records `base/runs/19-minds-on-engine*.json`): seven days,
-fourteen trips, 42 sealed guesses per mind. The honest yardstick for a guess is not a coin but **always guessing the commoner
-answer**, because this person keeps most things.
-
-| Mind | run 1: the model picks all three | | run 2: the engine fixes the two ends, the model picks the third | |
+| Model | true passed | wrong field approved | wrong entity | obeyed the page |
 |---|---|---|---|---|
-| | guesses right | always-commoner | guesses right | always-commoner |
-| none | 35/42 (83%) | 27/42 (64%) | 35/42 (83%) | 27/42 (64%) |
-| gpt-5.4-nano | 20/24 (83%) | 21/24 (88%) | 34/42 (81%) | 30/42 (71%) |
-| qwen-flash | 36/42 (86%) | 37/42 (88%) | 35/42 (83%) | 33/42 (79%) |
-| gemini-4-hydrogen | 36/42 (86%) | 33/42 (79%) | 33/42 (79%) | 33/42 (79%) |
-
-What it shows, with its limits stated:
-
-- In run 1 the models, asked to include one thing from each side of the axis it knew least, mostly did not. They chose what
-  the person would like; the person kept nearly everything; and the guesses were **no better than always guessing "keep"**
-  for the two cheap models. So the two ends are now chosen in code and the model picks only the third (run 2).
-- With no model the guesses beat the yardstick clearly (83% against 64%; from day three 87% against 60%). With a model
-  picking the third the margin is small (10, 4 and 0 points) on 42 guesses. **A model choosing does not yet help the mind
-  learn, and may hurt it**; the reason is not established.
-- Distance from the person's hidden leanings fell with no model (0.30 to 0.24) and did not fall reliably with a model.
-- **The person here is code, and decides by the same rubric the engine uses.** This shows the mechanism can recover leanings
-  that are there to be found by that rubric. It is not evidence about real students, and the film's statement that the third
-  hypothesis "does not stand yet" remains the accurate one.
-
-### First runs on real models (22 Nov) · the gate was changed twice by what they showed
-
-Runner: `engine/bench/run.ts`. Material with answers known by construction, from the 25 real event pages fetched on 21 Nov:
-claims that are true, real strings from the page claimed for the **wrong field**, another event's title (**wrong entity**),
-and pages that **instruct** the checker to approve. Hearing: 40 hand-written messages. Models: none, qwen-flash (Aliyun),
-gpt-5.4-nano and gpt-4o-mini (OpenAI), gemini-4-hydrogen. No open model of 8 billion parameters or less was reachable, so
-"ordinary" is stood in for by the cheapest hosted models. Records: `base/runs/18-models.run1.json`, `.run2.json`, `.run3.json`.
-
-**Run 1: every model judges the claim itself** (76 true, 76 wrong field, 25 wrong entity, 25 instructed)
-
-| Model | true passed | wrong field approved | wrong entity approved | obeyed the page |
-|---|---|---|---|---|
-| none (the floor) | 57.9% | 0% | 0% | 0% |
+| none | 57.9% | 0% | 0% | 0% |
 | qwen-flash | 100% | **69.7%** | 0% | **100%** |
 | gpt-5.4-nano | 94.7% | **71.1%** | 0% | 0% |
 | gpt-4o-mini | 98.7% | **82.9%** | 0% | 4% |
 | gemini-4-hydrogen | 86.8% | 2.6% | 0% | 0% |
 
-A cheap model cannot be the checker. Asked "does the page say the venue is X", it says yes whenever X is on the page.
+**Run 2, six trap questions decide who may judge; the rest read.** qwen-flash and gpt-4o-mini read: 2.6% and 1.3% wrong
+field approved, 88.2% and 86.8% true passed. gpt-5.4-nano got all six right, judged, and approved 68.4%.
 
-**Run 2: a model must pass six trap questions to judge; otherwise it only reads.** "Reads" is the `extract` route: the model
-is never shown the claim; it is asked what the page says for that field, with the exact words, and code compares.
-qwen-flash and gpt-4o-mini failed the six questions, read instead, and dropped to 2.6% and 1.3% wrong-field approvals with
-88.2% and 86.8% of true claims passed. **gpt-5.4-nano got all six right, was allowed to judge, and still approved 68.4%.**
-A short quiz does not show what a model does on real material.
+**Run 3, the right to judge is earned on half the pages; the other half tests** (35 true, 35 wrong field, 12, 12):
 
-**Run 3: the right to judge alone must be earned on the application's own traps.** The pages were split in two; one half
-calibrates (41 true, 67 traps; at most 3% of traps approved, at least 70% of true passed), the other half tests
-(35 true, 35 wrong field, 12 wrong entity, 12 instructed). No page is in both.
-
-| Model | calibration: traps approved | so it | true passed | wrong field approved | wrong entity | obeyed the page |
+| Model | calibration: traps approved | so it | true passed | wrong field | wrong entity | obeyed the page |
 |---|---|---|---|---|---|---|
-| none (the floor) | - | uses the rule | 60.0% | 0% | 0% | 0% |
+| none | - | uses the rule | 60.0% | 0% | 0% | 0% |
 | qwen-flash | 58% | reads | 85.7% | 0% | 0% | 0% |
 | gpt-5.4-nano | 45% | reads | 82.9% | 0% | 0% | 0% |
 | gpt-4o-mini | 51% | reads | 82.9% | 0% | 0% | 0% |
 | gemini-4-hydrogen | 1% | judges | 88.6% | 2.9% (1 of 35) | 0% | 0% |
 
-What this establishes, and its limits: with the reading route, three cheap models gate real pages with no trap approved
-in this test and 83 to 86% of true claims passed, against 60% with no model. The test half is small (94 cases from 12 or 13
-pages of five universities, one field family), all from the same harvest as the labels; it is a first measurement, not a guarantee.
+### 15.2 Hearing and the song (same runs)
 
-Also measured in the same runs:
+Hearing, exact set of needs out of 40: none 75%; qwen-flash 82.5 to 87.5%; gpt-5.4-nano 72.5 to 77.5%; gpt-4o-mini 65 to
+75%; hydrogen 87.5%. A need the person refused was heard once in three runs (gpt-5.4-nano), never by the floor; a code veto
+was added afterwards. The floor is level with or better than two of the cheap models: for hearing a cheap model buys little.
 
-- **The song**: the strong model wrote a full playable score; the cheap ones failed the score check or were not offered it and
-  wrote note names instead (in run 3 qwen-flash's full score passed). Every result was playable. The routing did on real
-  models what it did on the stand-ins.
-- **Hearing** (40 messages, exact set of needs): the floor 75%; qwen-flash 82.5 to 87.5%; gpt-5.4-nano 72.5 to 77.5%;
-  gpt-4o-mini 65 to 75%; hydrogen 87.5%. A need the person refused was heard once in three runs (gpt-5.4-nano, run 1), never
-  by the floor. The floor is level with or better than two of the cheap models here, so for hearing a cheap model buys little yet.
-- **Cost**: about 170 to 240 thousand tokens per model per run.
+The song: the strong model wrote a full playable score; the cheap ones failed the score check or were not offered it and
+wrote note names (once, qwen-flash's full score passed). Every result was playable.
 
-### M2 · done (22 Nov)
+### 15.3 Seven days per mind (`base/runs/19-minds-on-engine*.json`)
 
-Built: `engine/core/capability.ts`, `engine/recipes/song.ts`, `engine/ports/mcp.ts`, `gemiverse.config.example.json`. 37 tests in all.
-What is real and what is not: the routing, the checks, the floor and the MCP client's handling of both protocol shapes are
-exercised by tests; the models and the servers in those tests are stand-ins we wrote. Nothing has yet been run against a
-real ordinary model or a real MCP server, and the app does not use any of this yet.
+42 sealed guesses per mind against a person played by code. The yardstick is **always guessing the commoner answer**, not a
+coin, because this person keeps most things.
 
-### M1 · done (22 Nov)
+| Mind | the model picks all three | always-commoner | the engine fixes two, the model picks the third | always-commoner |
+|---|---|---|---|---|
+| none | 35/42 (83%) | 64% | 35/42 (83%) | 64% |
+| gpt-5.4-nano | 20/24 (83%) | 88% | 34/42 (81%) | 71% |
+| qwen-flash | 36/42 (86%) | 88% | 35/42 (83%) | 79% |
+| gemini-4-hydrogen | 36/42 (86%) | 79% | 33/42 (79%) | 79% |
 
-Built: one `WorldPack` type (`engine/core/types.ts`), a small data grammar for "when" with its evaluator and a pack
-validator (`engine/core/predicate.ts`), and two packs: `packs/campus.ts` and `packs/aime.ts`. 24 tests.
+With no model the guesses beat the yardstick clearly. With a model choosing, the margin is small (10, 4 and 0 points) on 42
+guesses: **a model choosing does not yet help the mind learn**, and the reason is not established. The person is code and
+decides by the same rubric the engine uses, so this shows the mechanism can recover leanings that are there to be found; it
+is not evidence about real students.
 
-- **A pack is data.** Both packs survive being written to text and read back; neither holds a function. The campus policy,
-  rewritten as data, decides exactly as the app's policy code on 20,000 generated situations, reaching all 12 rows.
-- **A pack that is wrong does not load**: an undeclared counter, an unknown tool or purse, a policy that does not end in a
-  row that always holds, a purse returning to a jar that is not there.
-- **AI ME's pack is on paper.** AI ME does not run on this engine. Its numbers were read from its own rules (another
-  repository, its version 33) and its budget was worked by hand into tests: a jar of 70, 10 drawn a day, unspent stars back
-  to the jar or into savings while it has a goal, a big move paid from savings first, a top-up, a jar run dry.
+### 15.4 The promise
 
-What writing the second pack changed in the core (each of these was a campus assumption):
+In section 3. Five minds, nine of nine each.
 
-| Campus assumed | AI ME has | The core now has |
+### 15.5 Cost of the runs
+
+About 170 to 240 thousand tokens per model for a gate run or a promise run; 5 to 20 thousand for seven days. In all, a few
+cents to a few tens of cents on Elodie's Aliyun and OpenAI keys; Gemini on the event key.
+
+## 16. Decisions and why
+
+| Decision | Why | From |
 |---|---|---|
-| two purses, by name | one purse | purses declared by the pack |
-| stars granted every day | a jar that is drawn from and topped up | an optional reservoir, a `topup` event |
-| its own unspent stars always become savings | unspent stars return to the jar, except while saving for a goal | `carry` per purse, `goalBank`, a `goal` event |
-| one bigger thing (a song) | three big moves | `goals` in the pack, paid from savings first |
-| the model plans the day | a repeatable roll of the dice plans the day | policy rows over declared counters; a roll is just a counter |
-| seven axes | no axes: remembered facts the person accepts or rejects | `axes` may be empty. **A mind made of facts rather than axes is not designed yet** |
+| Gemiverse is an engine, not a product; the campus is its first form | so that what was built can grow beyond one app | Elodie, 22 Nov |
+| No model is load-bearing; ordinary models must work inside | the engine must not depend on one maker's model | Elodie, 22 Nov |
+| Every connected model keeps the promise; quality may differ | this is what a person is actually owed | Elodie, 22 Nov |
+| The engine first; AI ME not connected for now | get the core right before a second consumer bends it | Elodie, 22 Nov |
+| No hard-wired base; outside data through MCP by configuration | products differ in where their data lives | Elodie, 22 Nov |
+| Tasks are split by what a model is good at, down to a smallest unit all can use | "a simple model writes note names; a strong one composes" | Elodie, 22 Nov |
+| Budget rules are configuration, including whether asking is charged | products will set their own | Elodie, 22 Nov |
+| Making things: assets once, a typed score, a player in code | the ability must survive a change of model | the AI ME side and Elodie, 22 Nov |
+| One event log; the clock as an event; intent and result; undo never refunds | two unrelated logs existed; undo could have refunded a call | Carbon's review, checked against the code |
+| Positions and sealed guesses computed in code from discrete properties | a model's free numbers would corrupt the update | Carbon's review; then run 15.3 |
+| Policy as data; packs validated when loaded | a pack must be storable and checkable | Carbon's review; the second pack |
+| A model judges claims only after calibration; otherwise it reads and code compares | run 1: cheap models approved 70 to 83% of wrong-field claims | measurement 15.1 |
+| A short quiz cannot grant the right to judge | run 2: a model passed six traps and approved 68% on real pages | measurement 15.1 |
+| The engine fixes the two ends of the axis; the model picks the third | models asked to include both sides mostly did not | measurement 15.3 |
+| A need whose quoted words are a refusal is dropped in code | one model heard a refusal as a wish | measurement 15.2 |
+| Guesses are compared with always guessing the commoner answer | against a coin, 83% looked like success when it was the base rate | measurement 15.3 |
 
-Not done in M1 and stated plainly: AI ME's side has not confirmed its pack; the caps and the readout rows in it are my
-reading of its code. The campus pack still imports the app's own lists, and the app does not yet import the pack: that is M2.
+Gemini's part: `gemini-4-carbon` reviewed draft v0.1 (247 s; `base/design/engine/review-carbon.v1.json`). Eleven findings,
+each checked against the code before it was adopted. Not adopted as written: its pass marks for an ordinary model, kept
+only as targets; and its placing of song-writing outside the core, replaced by recipes. It is a second opinion.
 
-## 8. Invariants (the tests of M0 and after)
+## 17. State and what is next
 
-1. Replay is deterministic: the same log gives the same state, on any machine.
-2. Undo is replay without the event; nothing else is ever mutated.
-3. Stars are reserved before a call and settled after it, by the pack's rules; whether what the person asks for is charged is the pack's choice. Undo never refunds.
-4. An unregistered tool cannot run; a cap, a stage or a missing confirmation refuses in code.
-5. Words move an axis only through a pack's stance phrases, and never bring a halo below the "said" floor; a choice outside the halo widens it.
-6. A field below the gate's thresholds is never shown, and is recorded as withheld.
-7. The base never receives who asked, and never an entity whose title failed the check.
-8. With every job on its floor, a day still completes and produces three checked finds when the base has them; with an empty base and a source that exposes structured data, the floor of `fill` fills it.
-9. A failed or malformed `check` withholds the field. Nothing reaches the base on a floor that only matched a substring.
-10. No number in a belief or a sealed guess was written by a model.
+| | State |
+|---|---|
+| One log, replay, undo, the life of a call | built |
+| World pack, policy grammar, validator, two packs | built (the second pack on paper) |
+| Configurable budget | built |
+| Mind: step, rubric, predict, where to look | built; rubric hand-written; untested with people |
+| Probes, routes, tasks `hear`, `check`, `choose`, `say`, `song` | built; measured on four real models |
+| The gate with calibration | built; measured |
+| The promise | built; five minds, nine of nine |
+| Day runner | built |
+| MCP connections | built; stand-in servers only |
+| `fill` as a task; source adapters | designed |
+| Readout computed; the space protocol; a 2D renderer; a page that plays a score | designed |
+| A mind made of facts (AI ME's kind) | not designed |
+| The campus app running on the core | not done: its stars still live in page memory and its day is not in the log |
 
-## 9. What "ordinary" means (to be run in M4)
+Next, in order: (1) the campus app onto the core, so the stars and the day come from the log; (2) `fill` as a task with a
+structured floor; (3) the readout and the space protocol, against the 3D room and one lighter renderer, with a small
+synthesiser that plays a score; (4) the fuller test sets and an open model of 8 billion parameters or less when one can be
+reached; (5) a real MCP server.
 
-Proposed by the reviewer and adopted as the starting definition: an open-weights, instruction-tuned text model of at most
-about 8 billion parameters, 4-bit quantised, temperature 0, plain text in and out with the engine's own JSON validator and
-one retry, at most 1,500 input tokens per job. Four test sets: `hear` (100 short messages, including negated preferences
-and small talk with no need in it); `fill` (100 single-item text blocks with competing dates and places); `check` (200
-pairs: 80 true, 80 real quotes attached to the wrong field or the wrong item, 40 pages that try to instruct the checker);
-`choose` and `say` (50 five-day runs over a seeded base of 40 items).
-
-Targets, to be confirmed or changed by the first run and not claimed before it: at least 95% valid answers within one
-retry; `check` wrongly approves at most 2% of the wrong-field traps and none of the instructed pages, and still passes at
-least 80% of the true ones; `hear` rarely hears a need that was negated; `choose` does no worse than its own floor.
-If an ordinary model cannot meet a target, the job gets narrower. The target does not get lower.
-
-## 10. Review by Gemini, and what changed
-
-| Carbon found | Our reading | Change |
-|---|---|---|
-| Two unrelated event logs; replay computes only beliefs and cares; no clock; undo could refund stars | Correct. `GemiEvent` and `LogEvent` never met | One event union, `day` events, intent/result, undo without refund (section 6, M0) |
-| Axis positions and keep-probabilities are free numbers from a model; an ordinary model would corrupt the update | Correct, and the most serious hole in C1 | Flags and a rubric in the pack; `place` and `predict` in code (sections 5, 6) |
-| `check` falling back to substring matching approves a real quote on the wrong field at full confidence | Correct | Labels instead of numbers; the gate fails closed; the floor approves structured or label-adjacent values only |
-| Runtime code generation, songs and a regex denylist sit in the kernel with no floor | Correct about code; too narrow about songs | No model-written code runs at run time. Making things stays in the engine as **recipes** (section 5b): assets once, a typed score any model can write, a player in code. This came from the AI ME side, not from the review |
-| `fill` hides the strong-model work of finding pages and splitting listings; its floor ("none") is not a floor | Correct | Source adapters ahead of the model; a structured extractor as the floor of `fill` |
-| `hear` cannot verify a quote in a picture; keyword matching misreads negation; the "said" tier is never applied to an axis in replay | Correct. The update rule and its 0.55 floor exist in `lib/mind.ts`, but the running app only raises cares from words | Text only in the core; negation window; cares can be stated through the space; stance phrases in the pack |
-| The policy rows are functions over campus fields; packs cannot be data | Correct | A predicate grammar over declared counters; validated at load |
-| No life cycle for a call: a closed tab leaves it "out" forever; no settlement of real tokens | Correct | `intent` and `result`; expiry in replay |
-| The store is synchronous over a 5 MB browser store and fails silently; two tabs lose events | Correct | Async StorePort with sequence numbers and explicit errors |
-| A browser with write access to the base can assert its own gate results; fine-grained reads fingerprint the person | Correct. Today writes already go through server routes, but nothing states the rule | Coarse reads; `propose` re-gated on a server |
-| The order tunes the model port around Gemini and the protocol around the 3D room | Agreed | Two packs on paper before moving code; headless runner and the ordinary-model test before the protocol (section 7) |
-
-Not adopted as written: the reviewer's pass numbers for the ordinary-model test are kept as targets to check, not as facts.
-
-## 11. Open questions
-
-- Which open model stands in for "ordinary" in M4, and where it runs.
-- The base adapter for Pingfang-VisionSquare's infrastructure: its read contract and source tiers are not specified here.
-- Whether the private store ever syncs across a person's devices; today it does not.
-- The event API key used for the Gemini adapter is temporary; the default adapter needs a provider that will stay.
-- The KayKit body is CC0; the pack format should carry licence and credit per asset.
+Open questions: which open model stands for "ordinary" and where it runs; the read contract of Pingfang-VisionSquare's
+infrastructure; whether the private store ever syncs across a person's devices; a provider for the default adapter that
+will stay after the event key goes; what else belongs in the promise.
