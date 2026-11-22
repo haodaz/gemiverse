@@ -30,6 +30,7 @@ export type WorldPack = {
   policy: PolicyRow[];                                   // read from the top; the first row that matches wins
   readout: { fact: string; shows_as: string; where: string }[];   // one fact, one thing in the space
   gate: { yes: number; confidence: number };
+  recipes?: { id: string; goal?: string; makes: string; assets: string[] }[];   // things it can make as typed data that a player in the space turns into the thing (ENGINE.md 5b); schemas and floors come with M3
   assets?: { id: string; licence: string; credit: string }[];
 };
 

@@ -117,9 +117,39 @@ Rules:
 
 An adapter declares `floor`, `ordinary` or `strong` per job. Nothing in the engine may require `strong`.
 **Ordinary is defined by a test, not by a name** (section 9). What only a strong model does well today (designing a base
-ontology, writing a 3D object or a song, browsing to discover pages) is an application's optional extra or a build-time tool,
-outside the core and outside conformance. At run time, "make" and "decorate" mean choosing and parameterising prefabs,
-palettes and slots that the pack already contains.
+ontology, writing 3D code, generating audio, browsing to discover pages) is a build-time tool: it is used once, its output
+is saved as a file, and nothing at run time waits for it.
+
+### 5b. Recipes: making things in steps a simple model can do
+
+A capability that looks as if it needs a strong model is cut into three layers, and only the middle one is ever asked of a model:
+
+| Layer | What | Who | When |
+|---|---|---|---|
+| **Assets** | the materials: instrument sounds, prefabs, palettes, background tracks | a strong model or a person, once | build time; saved as files, kept after the key is gone |
+| **A score** | a small piece of typed data that says what to make out of those materials | any model that can fill a form, or the floor | run time |
+| **A player** | code in the space that turns the score into the thing | no model | run time, the same every time |
+
+"It saved for days and wrote you a song" is the worked case, taken from the AI ME side's design of 22 Nov: the song is
+written as score data (key, tempo, chords, melody notes, words), which any language model can write; the synthesiser in the
+page, which already makes the room's sounds, plays it; and a few instrument sounds are made once with Lyria while the key
+works. Changing the model changes who writes the score, not how it sounds.
+
+The same cut applies to everything the AI "makes" at run time:
+
+| It makes | Assets (once) | Score (typed data) | Player |
+|---|---|---|---|
+| a song | instrument sounds | key, tempo, chords, notes, words | the synthesiser |
+| a new look for the room | palettes, materials | which palette, which surfaces | the renderer |
+| a new thing in the room | prefabs with parameters | which prefab, its size, colours, slot | the renderer |
+| a diary page | page layouts | the facts of the day, in order, each from the log | a template |
+| a plan for the day | none | which rows of the price list, in what order | the policy and the kernel |
+
+So a pack may declare **recipes**: `{ id, goal?, schema, floor }`. The schema bounds the score (ranges, lengths, allowed
+values, references into the pack's assets); the engine validates every score and refuses one that does not fit; the floor is
+a generator in code (a seeded choice among progressions and motifs for a song, the plainest valid score for anything else),
+so the thing still gets made with no model at all. This replaces the earlier placement of song-writing outside the core, and
+it is why `scanMadeCode` can go: at run time nothing is ever executed that a model wrote, only data is read.
 
 ## 6. Contracts (sketch)
 
@@ -296,7 +326,7 @@ If an ordinary model cannot meet a target, the job gets narrower. The target doe
 | Two unrelated event logs; replay computes only beliefs and cares; no clock; undo could refund stars | Correct. `GemiEvent` and `LogEvent` never met | One event union, `day` events, intent/result, undo without refund (section 6, M0) |
 | Axis positions and keep-probabilities are free numbers from a model; an ordinary model would corrupt the update | Correct, and the most serious hole in C1 | Flags and a rubric in the pack; `place` and `predict` in code (sections 5, 6) |
 | `check` falling back to substring matching approves a real quote on the wrong field at full confidence | Correct | Labels instead of numbers; the gate fails closed; the floor approves structured or label-adjacent values only |
-| Runtime code generation, songs and a regex denylist sit in the kernel with no floor | Correct | Out of the core; runtime "make" is prefabs and palettes; code and music generation are optional extras |
+| Runtime code generation, songs and a regex denylist sit in the kernel with no floor | Correct about code; too narrow about songs | No model-written code runs at run time. Making things stays in the engine as **recipes** (section 5b): assets once, a typed score any model can write, a player in code. This came from the AI ME side, not from the review |
 | `fill` hides the strong-model work of finding pages and splitting listings; its floor ("none") is not a floor | Correct | Source adapters ahead of the model; a structured extractor as the floor of `fill` |
 | `hear` cannot verify a quote in a picture; keyword matching misreads negation; the "said" tier is never applied to an axis in replay | Correct. The update rule and its 0.55 floor exist in `lib/mind.ts`, but the running app only raises cares from words | Text only in the core; negation window; cares can be stated through the space; stance phrases in the pack |
 | The policy rows are functions over campus fields; packs cannot be data | Correct | A predicate grammar over declared counters; validated at load |
