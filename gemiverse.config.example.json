@@ -1,0 +1,21 @@
+{
+  "pack": "campus",
+  "model": { "adapter": "gemini", "env": "GEMINI_API_KEY" },
+  "connections": [
+    {
+      "id": "campus-base",
+      "url": "https://example.invalid/mcp",
+      "protocol": "auto",
+      "auth": { "header": "Authorization", "env": "CAMPUS_BASE_TOKEN" },
+      "trust": "checked",
+      "provides": {
+        "read": {
+          "tool": "list_events",
+          "args": { "school": "{school}", "kind": "event", "limit": 200 },
+          "items": "events",
+          "map": { "id": "id", "name": "title", "fields": { "start": "start", "venue_name": "venue", "organisation_name": "organiser" }, "quote": "source.quote", "url": "source.url" }
+        }
+      }
+    }
+  ]
+}

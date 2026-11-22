@@ -1,4 +1,4 @@
-# Gemiverse engine · engineering design (v0.2, 22 Nov 2026)
+# Gemiverse engine · engineering design (v0.3, 22 Nov 2026)
 
 Status: **design**. Nothing in this file is built unless it says "exists today". It describes how to turn what was written
 for one campus app into an engine that other applications (the campus Gemi, AI ME, others) can run on.
@@ -151,6 +151,33 @@ a generator in code (a seeded choice among progressions and motifs for a song, t
 so the thing still gets made with no model at all. This replaces the earlier placement of song-writing outside the core, and
 it is why `scanMadeCode` can go: at run time nothing is ever executed that a model wrote, only data is read.
 
+### 5c. Judging a model, and routing a task by what it is good at
+
+Three levels ("floor, ordinary, strong") were too coarse. A model is good at some things and not others, so:
+
+- **A model is judged by probes, not by its name.** Three small tasks with checkers in code (fill a form as JSON; keep a
+  structure whose bars must add up; write a line of note names), a few hundred tokens once per model, give a profile of
+  skills at 0, 1 or 2. What a text probe cannot see (reading pictures, returning audio) is declared by the adapter.
+- **A task has routes, from the richest to the plainest.** Each route says which skills it needs and what it costs in stars.
+  The engine takes the richest route the model can carry and the stars allow, checks the answer in code, and on a failure
+  hands over to the next route. The record says which route made the thing and why the others did not.
+- **The last route is the smallest unit**: it needs no skill and costs nothing, so every model, and no model, can use it.
+  A task without such a route does not load.
+
+The song, built and tested (`engine/recipes/song.ts`, `engine/core/capability.ts`):
+
+| Route | Needs | Stars | The model does | The engine does |
+|---|---|---|---|---|
+| audio | returns sound | 6 | composes directly | checks it is audio |
+| score | form 1, structure 2 | 3 | writes the whole score: key, tempo, chords, melody with rhythm, words | refuses any score a player could not play as written |
+| notes | notes 1 | 1 | writes one line of note names | supplies key, tempo, chords and rhythm; fits the notes to the bars |
+| floor | nothing | 0 | nothing | a seeded progression and a melody on the chord tones |
+
+In the tests a stand-in strong model takes "score", an ordinary one (valid answers wrapped in chatter, half the bars wrong)
+takes "notes", a poor one and no model both end on the floor with the same song, a model declared strong that behaves
+ordinary is caught by the check and handed down, and with two stars even the strong model takes "notes". The stand-ins are
+written by us to behave that way; **no real ordinary model has been run yet** (that is still M4).
+
 ## 6. Contracts (sketch)
 
 ```ts
@@ -210,6 +237,24 @@ Three rules these contracts encode:
   never by what it believes about its person. `propose` goes to a server that runs the gate again itself; a client cannot
   assert that something was checked.
 
+### 6b. Outside data and tools come in through MCP, by configuration
+
+The engine hard-wires no base. An application lists its connections in a config file (`gemiverse.config.example.json`);
+each is an MCP server, and says what it provides (`read`, `propose`), which of the server's tools does that, how the
+engine's coarse scope fills the tool's arguments, and how the result maps onto items. Built and tested (`engine/ports/mcp.ts`):
+
+- **Checked before use.** For each connection the pipeline lists the server's tools and refuses the connection if a named
+  tool is missing, a required argument is not given, or an argument the tool does not have is given.
+- **Trust is declared, and it decides the gate.** `trust: "checked"` means the source does its own field-by-field check
+  (a curated base); `"unchecked"` means every item is marked and may not be shown until our gate has passed it.
+- **No secret in a config.** A connection names the environment variable that holds its token; a config containing
+  something that looks like a key does not load. Only https, except localhost.
+- **Protocol.** Written against the 2026-07-28 revision (stateless: no handshake, no session; the version travels in a
+  header and in `_meta` on every request; answers as JSON or as an event stream), with an automatic fallback to the
+  handshake and session of servers up to 2025-11-25. **Tested against stand-in servers only; no real MCP server has been tried.**
+
+So "the base" in this design is whichever MCP connections an application configures, plus the gate.
+
 **Space protocol v1** (exists today as ad-hoc messages between `app/room/page.tsx` and `viewer.html`; to be written down
 and versioned). Engine to renderer: `world` (the readout), `look`, `play`, `express`, `away`, `focus`, `mode`, `palette`,
 `ambience`, `arrange`. Renderer to engine: `ready`, `layout`, `tapped`, `released`, `doing`, `head`, `open`.
@@ -229,15 +274,18 @@ packs/campus/       today's axes, tools, policy, readout, wording
 engine/test/        invariants and golden tests; the mind-swap harness
 ```
 
-| Step | What | Done when |
+| Step | What | State |
 |---|---|---|
-| M0 | One event union, the clock as an event, intent/result, undo without refund. Golden tests for `step`, `replay`, `mayCall`, `decide` on today's behaviour | the tests pass on the current code, and state the two places where today's code differs from this design |
-| M1 | Write **two packs on paper first**: `packs/campus` and AI ME's. Whatever only one of them needs leaves the core types | both packs validate against one `WorldPack` type; no function, closure or campus field is left in a pack |
-| M2 | Move the pure code into `engine/core` with the pack passed in | the app runs unchanged; M0 tests pass |
-| M3 | One `gate` (fail closed); ModelPort with the floor first, then the Gemini adapter; the rubric replaces model-written axis numbers; a **headless day runner** on the core only | a day completes with the floor model; `see`, `go`, `trip`, `day` call the same gate |
-| M4 | The ordinary-model test (section 9), run on the floor, on an ordinary open model, and on Gemini, same days | one table with the three columns; the line for "ordinary" is set from it |
-| M5 | `readout` computed in the core; the space protocol written and versioned against **both** a 3D and a 2D renderer | a test renderer receives exactly the facts the readout lists |
-| M6 | AI ME runs a day on `engine/core` with its own pack and its lighter renderer | the second application imports the core and adds no rule of its own to it |
+| M0 | One event log, the clock as an event, intent and result, undo without refund; golden tests on today's behaviour | **done** |
+| M1 | Two packs as data against one type; a policy grammar; a pack validator | **done** (the second pack is on paper) |
+| M2 | Capability probes, routes, the song as the first task with four routes; MCP connections by config with a pre-use check | **done**, on stand-in models and stand-in servers |
+| M3 | One `gate` that fails closed; the five jobs as tasks with routes; flags and a rubric instead of model-written numbers; a headless day runner on the core only | next |
+| M4 | The ordinary-model test (section 9) on a real open model, on the floor and on Gemini, the same days | |
+| M5 | `readout` computed in the core; the space protocol written and versioned against a 3D and a 2D renderer; a small synthesiser page that plays a score | |
+| M6 | The campus app runs on the core: its stars and its day come from the log | |
+
+Decided on 22 Nov: **the engine first.** AI ME is not connected for now (its pack stays as the paper test of the type), and
+no base is wired in: data arrives through MCP connections that an application configures.
 
 The headless runner and the ordinary-model test come before the space protocol on purpose: otherwise the model port and the
 gate get tuned around Gemini, and the protocol gets shaped by the 3D campus room alone.
@@ -264,6 +312,13 @@ Where the running app differs from this design today (found while writing the te
    drawn from it, but replay applies words only to cares. A test records this as today's behaviour.
 4. **Undo and stars.** The app has no intent/result pair, so there is nothing yet that a refund could be tested against;
    the rule "undo never refunds" exists only in the engine.
+
+### M2 · done (22 Nov)
+
+Built: `engine/core/capability.ts`, `engine/recipes/song.ts`, `engine/ports/mcp.ts`, `gemiverse.config.example.json`. 37 tests in all.
+What is real and what is not: the routing, the checks, the floor and the MCP client's handling of both protocol shapes are
+exercised by tests; the models and the servers in those tests are stand-ins we wrote. Nothing has yet been run against a
+real ordinary model or a real MCP server, and the app does not use any of this yet.
 
 ### M1 · done (22 Nov)
 
