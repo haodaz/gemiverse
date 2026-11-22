@@ -1,0 +1,150 @@
+[
+ {
+  "id": "o1",
+  "who": [
+   "mia",
+   "gemi"
+  ],
+  "prompt": "A golden autumn afternoon on a university campus: a red-brick hall with arched windows, a path covered in fallen leaves, a few tiny students far away. MIA walks along the path with a backpack, smiling a little. The GEMI floats beside her shoulder, looking at her.",
+  "motion": "she walks slowly along the path, leaves drift down, the little companion bobs gently beside her shoulder."
+ },
+ {
+  "id": "o2",
+  "who": [
+   "mia"
+  ],
+  "prompt": "MIA's small dorm desk in the evening under a warm lamp, the room still bright and cosy. An open laptop, stacked books, a paper cup, sticky notes. On the wall a big weekly planner grid, almost every cell filled with coloured blocks, only two small cells left empty and glowing softly. MIA rests her chin on her hand, tired.",
+  "motion": "she sighs and rubs her eyes, the lamp light flickers softly, one more coloured block slides into the wall planner."
+ },
+ {
+  "id": "o3",
+  "who": [
+   "mia"
+  ],
+  "prompt": "A long campus notice board wall completely covered with layers of overlapping colourful posters and flyers (abstract shapes only, nothing written). MIA stands small in front of it, seen from behind, looking up, a little lost. Loose flyers lie on the ground.",
+  "motion": "more flyers flutter down from above and pile up, she turns her head from side to side."
+ },
+ {
+  "id": "o4",
+  "who": [
+   "mia"
+  ],
+  "prompt": "MIA sits at her laptop. Out of the screen pours an endless stream of blank speech bubbles of many sizes, filling the air of the room up to the ceiling. Most bubbles are solid white; a few are only hollow dashed outlines, empty inside. She leans back, overwhelmed.",
+  "motion": "speech bubbles keep pouring out of the laptop and floating upward, a few hollow dashed ones wobble and fade."
+ },
+ {
+  "id": "o5",
+  "who": [
+   "mia"
+  ],
+  "prompt": "A bright cosy room. MIA holds out both palms. Just above them floats one small warm point of golden light with a soft lilac halo, like a tiny star. She looks at it with quiet wonder.",
+  "motion": "the small point of light pulses and drifts gently up and down above her palms, she smiles."
+ },
+ {
+  "id": "o6",
+  "who": [
+   "mia",
+   "gemi"
+  ],
+  "prompt": "Close view of MIA's open laptop on a wooden desk. On the screen: a tiny cosy isometric dorm room with a bed, a desk, a bookshelf and a window. The GEMI stands in the middle of that little room and waves up at her. MIA's face is at the edge of the picture, smiling at the screen.",
+  "motion": "the little companion waves, then walks a few steps to its tiny desk, she smiles and leans closer."
+ },
+ {
+  "id": "o7",
+  "who": [
+   "gemi"
+  ],
+  "prompt": "Close-up inside the GEMI's tiny room, on its small wooden desk: a glass jar holding exactly ten softly glowing stars, six golden and four lilac. The GEMI stands beside the jar, as tall as the jar, holding one golden star in both hands and looking at it thoughtfully.",
+  "motion": "the stars in the jar glimmer, the little companion turns the star in its hands and looks at the jar."
+ },
+ {
+  "id": "o8",
+  "who": [
+   "gemi"
+  ],
+  "prompt": "Only the GEMI is in this picture, no other person anywhere. The tiny GEMI walks alone, seen small in the middle of the picture, out of a small round-topped wooden door set in a garden wall, onto a storybook campus path in autumn. Three golden stars float after it like a small trail. Ahead, a library building with tall windows and wide steps.",
+  "motion": "the little companion walks along the path toward the library, the three stars trail behind it, leaves drift."
+ },
+ {
+  "id": "o9",
+  "who": [
+   "gemi"
+  ],
+  "prompt": "Inside a bright library hall with tall shelves. The GEMI stands on a small stool in front of a cork notice board with a few posters (abstract shapes only, nothing written), holding a magnifying glass up to one poster. In its other hand a small blank card. Small green check marks float from the poster down to the card; one spot on the card stays empty.",
+  "motion": "the little companion moves the magnifying glass across the poster, small green check marks float down onto the card one after another."
+ },
+ {
+  "id": "o10",
+  "who": [
+   "mia",
+   "gemi"
+  ],
+  "prompt": "On MIA's laptop screen, the GEMI's tiny room: three illustrated cards lie in a row on its little desk, each with a small green check mark in the corner (no writing). The GEMI stands behind them with open arms, proud. MIA leans in from the side, curious, pointing at the middle card.",
+  "motion": "the little companion gestures at the three cards one by one, she leans in and points at the middle one."
+ },
+ {
+  "id": "o11",
+  "who": [
+   "mia",
+   "gemi"
+  ],
+  "prompt": "Close view: the GEMI stands on the desk hiding a small sealed envelope with a red wax seal behind its back, with a playful look. In front of it lie three cards. MIA's hand reaches in from the side to pick up one card.",
+  "motion": "her hand picks up one card, the little companion peeks at the envelope behind its back and bounces on its toes."
+ },
+ {
+  "id": "o12",
+  "who": [
+   "gemi"
+  ],
+  "prompt": "Evening in the GEMI's tiny room, soft and still bright with a small lamp. The GEMI sits on the rug beside two glass jars: one almost empty, one slowly filling with saved lilac stars. An open little diary lies next to it. It drops one star into the saving jar.",
+  "motion": "the little companion drops one lilac star into the saving jar, the stars inside glow, it nods contentedly."
+ },
+ {
+  "id": "o13",
+  "who": [
+   "gemi"
+  ],
+  "prompt": "The GEMI sits on its little bed playing a tiny guitar, eyes closed, happy. Soft music notes shaped like small stars float up around it. An empty glass jar stands on the desk behind.",
+  "motion": "the little companion strums the tiny guitar and sways, star-shaped notes float upward."
+ },
+ {
+  "id": "o14",
+  "who": [
+   "mia",
+   "gemi"
+  ],
+  "prompt": "A real workshop room on campus in the afternoon. MIA sits at a table with three other students building something small out of cardboard, wires and tape, all laughing together. Her phone leans against a cup on the table; on its screen the GEMI cheers with both arms up.",
+  "motion": "the students laugh and pass a piece of cardboard across the table, on the phone screen the little companion cheers."
+ },
+ {
+  "id": "o15",
+  "who": [
+   "gemi"
+  ],
+  "prompt": "A sunny campus plaza drawn like a storybook. Five different tiny chibi AI companions, each with different hair and a different coloured tunic (the GEMI from the reference is one of them), meet around a small wooden gate with a hanging lantern. They pass small blank name cards to each other through the gate; one card is gently stopped at the gate by a little wooden bar.",
+  "motion": "the little companions pass small cards through the gate one after another, the lantern sways, one card stops at the bar."
+ },
+ {
+  "id": "o16",
+  "who": [],
+  "prompt": "A wide storybook map seen from high above: rolling land, rivers and coast, with many small university campuses dotted across it, each drawn as a little cluster of buildings with one tiny window glowing warm gold. Thin dotted paths of light connect the campuses like a constellation.",
+  "motion": "the golden windows light up one after another across the map and the dotted paths of light begin to glow between them."
+ },
+ {
+  "id": "o17",
+  "who": [
+   "gemi"
+  ],
+  "prompt": "On a light wooden table stand three identical tiny open dollhouse rooms side by side, each with the same bed, desk and jar of stars. In each room stands the same GEMI figure, but each has a different coloured soft glow above its head: blue, orange, purple. A hand with a pencil and an open notebook rests at the edge of the table, observing.",
+  "motion": "the three little companions each do something different: one walks to the door, one sits by its jar, one writes at its desk; the pencil makes a small note."
+ },
+ {
+  "id": "o18",
+  "who": [
+   "mia",
+   "gemi"
+  ],
+  "prompt": "Sunset in a city park with a white stone arch in the distance and autumn trees. MIA sits on a bench with her laptop closed on her lap, relaxed and smiling. The GEMI sits beside her on the bench, about the size of a cat, legs dangling. Both look up at the golden sky.",
+  "motion": "leaves drift down, the little companion swings its legs and leans slightly toward her, she smiles."
+ }
+]

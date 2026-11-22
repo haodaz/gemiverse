@@ -12,9 +12,9 @@ export const PLACE_NEEDS: Record<string, string[]> = {
   commons: ["rest_and_recover", "find_my_people", "contribute_beyond_self"],
   career: ["get_experience", "decide_a_direction", "fund_my_path", "get_mentorship_and_feedback"],
 };
-export type TripInput = { school: string; place: string; care?: Record<string, number>; beliefs?: Record<string, { m: number; u: number }>; wants?: string[]; seen?: string[]; lang?: string; thinking?: "low" | "medium" | "high" };
+export type TripInput = { school: string; place: string; care?: Record<string, number>; beliefs?: Record<string, { m: number; u: number }>; wants?: string[]; seen?: string[]; lang?: string; thinking?: "low" | "medium" | "high"; mind?: string };
 
-export async function takeTrip({ school, place, care = {}, beliefs = {}, wants = [], seen = [], lang = "en", thinking = "low" }: TripInput) {
+export async function takeTrip({ school, place, care = {}, beliefs = {}, wants = [], seen = [], lang = "en", thinking = "low", mind = "gemini-4-carbon" }: TripInput) {   // mind: which model chooses what to bring back (the minds experiment swaps it)
     const { entities, evidence } = await readBase(school);
     const passed: Record<string, number> = {}; for (const e of evidence) if (e.passed) passed[e.entity_id] = (passed[e.entity_id] ?? 0) + 1;
     const fits = (e: (typeof entities)[number]) => ((e.fields.needs as string[]) ?? []).some((n) => PLACE_NEEDS[place]?.includes(n));
@@ -26,7 +26,7 @@ export async function takeTrip({ school, place, care = {}, beliefs = {}, wants =
     const axes = AXES.map((a) => `${a.id}: -1 = ${a.left}, +1 = ${a.right}; current position ${(beliefs[a.id]?.m ?? 0).toFixed(2)}, uncertainty ${(beliefs[a.id]?.u ?? 1).toFixed(2)}`).join("\n");
     const cares = Object.entries(care as Record<string, number>).map(([k, v]) => `${k} (${NEEDS[k]?.label ?? k}): ${v}`).join(", ") || "nothing stated yet";
 
-    const r = await ask("gemini-4-carbon", `You are the planning mind of a student's AI companion (a Gemi). It just visited "${place}" on campus and must choose exactly three things to bring back from the candidates below. It has a small budget, so it brings back treasure, not a pile.
+    const r = await ask(mind, `You are the planning mind of a student's AI companion (a Gemi). It just visited "${place}" on campus and must choose exactly three things to bring back from the candidates below. It has a small budget, so it brings back treasure, not a pile.
 
 What the student has said they care about (need: weight 0..1): ${cares}
 Things they said they want or want to avoid: ${JSON.stringify(wants).slice(0, 600)}

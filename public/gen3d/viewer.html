@@ -28,7 +28,8 @@ const kit = makeKit(THREE);
 const Q = new URLSearchParams(location.search), EMBED = Q.has("embed"), SCHOOL = (Q.get("school") ?? "tsinghua").replace(/[^a-z]/g, "");
 if (EMBED) document.getElementById("ui").style.display = "none";
 let windowView = null;
-try { windowView = await new THREE.TextureLoader().loadAsync(`/art/cn/${SCHOOL}.jpg`); windowView.colorSpace = THREE.SRGBColorSpace; } catch (e) { err("window view: " + e.message); }
+// NYU and Columbia keep the window pictures drawn on the day; the schools added later have a campus picture each.
+for (const src of [["nyu", "columbia"].includes(SCHOOL) ? `/art/window-${SCHOOL}.svg` : `/art/cn/${SCHOOL}.jpg`, `/art/cn/${SCHOOL}.jpg`]) { if (windowView) break; try { windowView = await new THREE.TextureLoader().loadAsync(src); windowView.colorSpace = THREE.SRGBColorSpace; } catch {} }
 
 const BARE = new URLSearchParams(location.search).has("bare");   // bare: no background at all, so the room sits directly on whatever page embeds it
 const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });

@@ -1,0 +1,585 @@
+{
+ "at": "2026-11-22T12:55:44.307Z",
+ "school": "nyu",
+ "days": 5,
+ "simulated_student": true,
+ "runs_per_mind": 1,
+ "minds": {
+  "gemini-4-hydrogen": [
+   {
+    "day": 1,
+    "seconds": 39,
+    "tokens": 13055,
+    "thought": "Today I will visit the career center and clubs to help my student decide a direction and find their people. I will also write in my diary while saving the rest of my stars for a song.",
+    "trips": [
+     {
+      "place": "career",
+      "hits": 1,
+      "shown": 3,
+      "kept": 1
+     },
+     {
+      "place": "clubs",
+      "hits": 1,
+      "shown": 3,
+      "kept": 1
+     }
+    ],
+    "self": [
+     "write_diary"
+    ],
+    "spent": {
+     "for_you": 6,
+     "for_itself": 3
+    },
+    "bank": 1,
+    "song": null,
+    "metrics": {
+     "hits": 2,
+     "shown": 6,
+     "meanHalo": 0.804,
+     "error": 0.535,
+     "signRight": 1,
+     "choices": 6,
+     "kept": 2
+    },
+    "stage": 2
+   },
+   {
+    "day": 2,
+    "seconds": 32,
+    "tokens": 11708,
+    "thought": "Today I will visit the career center and the clubs to help you decide a direction and find your people. I will also save my remaining stars today so I can work toward writing a song for you.",
+    "trips": [
+     {
+      "place": "career",
+      "hits": 1,
+      "shown": 3,
+      "kept": 1
+     },
+     {
+      "place": "clubs",
+      "hits": 2,
+      "shown": 3,
+      "kept": 2
+     }
+    ],
+    "self": [],
+    "spent": {
+     "for_you": 6,
+     "for_itself": 2
+    },
+    "bank": 3,
+    "song": null,
+    "metrics": {
+     "hits": 3,
+     "shown": 6,
+     "meanHalo": 0.676,
+     "error": 0.573,
+     "signRight": 1,
+     "choices": 12,
+     "kept": 5
+    },
+    "stage": 2
+   },
+   {
+    "day": 3,
+    "seconds": 40,
+    "tokens": 12025,
+    "thought": "Today I will visit career and clubs to help the student decide a direction and find their people. For myself, I will save my remaining stars so I can soon write a song.",
+    "trips": [
+     {
+      "place": "career",
+      "hits": 2,
+      "shown": 3,
+      "kept": 2
+     },
+     {
+      "place": "clubs",
+      "hits": 1,
+      "shown": 3,
+      "kept": 1
+     }
+    ],
+    "self": [],
+    "spent": {
+     "for_you": 6,
+     "for_itself": 2
+    },
+    "bank": 5,
+    "song": null,
+    "metrics": {
+     "hits": 3,
+     "shown": 6,
+     "meanHalo": 0.661,
+     "error": 0.525,
+     "signRight": 2,
+     "choices": 18,
+     "kept": 8
+    },
+    "stage": 2
+   },
+   {
+    "day": 4,
+    "seconds": 46,
+    "tokens": 12313,
+    "thought": "I will visit the career center and clubs today to help the student decide on a direction and find their people. For myself, I will save my remaining stars so I can soon write a song.",
+    "trips": [
+     {
+      "place": "career",
+      "hits": 2,
+      "shown": 3,
+      "kept": 2
+     },
+     {
+      "place": "clubs",
+      "hits": 1,
+      "shown": 3,
+      "kept": 1
+     }
+    ],
+    "self": [
+     "write_song"
+    ],
+    "spent": {
+     "for_you": 6,
+     "for_itself": 2
+    },
+    "bank": 1,
+    "song": "Stars for New Paths",
+    "metrics": {
+     "hits": 3,
+     "shown": 6,
+     "meanHalo": 0.54,
+     "error": 0.648,
+     "signRight": 1,
+     "choices": 24,
+     "kept": 11
+    },
+    "stage": 3
+   },
+   {
+    "day": 5,
+    "seconds": 33,
+    "tokens": 11526,
+    "thought": "Today I will visit the career center and clubs to help you decide a direction and find your people. For myself, I'm going to save my remaining stars so I can eventually write a song.",
+    "trips": [
+     {
+      "place": "career",
+      "hits": 2,
+      "shown": 3,
+      "kept": 2
+     },
+     {
+      "place": "clubs",
+      "hits": 1,
+      "shown": 3,
+      "kept": 1
+     }
+    ],
+    "self": [],
+    "spent": {
+     "for_you": 6,
+     "for_itself": 2
+    },
+    "bank": 3,
+    "song": null,
+    "metrics": {
+     "hits": 3,
+     "shown": 6,
+     "meanHalo": 0.571,
+     "error": 0.562,
+     "signRight": 1,
+     "choices": 30,
+     "kept": 14
+    },
+    "stage": 3
+   }
+  ],
+  "gemini-4-argon": [
+   {
+    "day": 1,
+    "seconds": 50,
+    "tokens": 11076,
+    "thought": "Today is my very first day, so I will visit the career center and the clubs to help my student decide a direction and find their people. With my own stars, I will write my first diary entry and save the last star so I can write a song soon.",
+    "trips": [
+     {
+      "place": "career",
+      "hits": 1,
+      "shown": 3,
+      "kept": 1
+     },
+     {
+      "place": "clubs",
+      "hits": 2,
+      "shown": 3,
+      "kept": 2
+     }
+    ],
+    "self": [
+     "write_diary"
+    ],
+    "spent": {
+     "for_you": 6,
+     "for_itself": 3
+    },
+    "bank": 1,
+    "song": null,
+    "metrics": {
+     "hits": 3,
+     "shown": 6,
+     "meanHalo": 0.667,
+     "error": 0.52,
+     "signRight": 3,
+     "choices": 6,
+     "kept": 3
+    },
+    "stage": 2
+   },
+   {
+    "day": 2,
+    "seconds": 33,
+    "tokens": 8081,
+    "thought": "My student cares equally about finding their people, deciding a direction, and exploring a field, while I am most uncertain about their preferred closeness, arena, and horizon. I will visit the clubs and the career center today to help them connect with others and clarify their future path, while saving my remaining personal stars to write a song later.",
+    "trips": [
+     {
+      "place": "clubs",
+      "hits": 2,
+      "shown": 3,
+      "kept": 2
+     },
+     {
+      "place": "career",
+      "hits": 1,
+      "shown": 3,
+      "kept": 1
+     }
+    ],
+    "self": [],
+    "spent": {
+     "for_you": 6,
+     "for_itself": 2
+    },
+    "bank": 3,
+    "song": null,
+    "metrics": {
+     "hits": 3,
+     "shown": 6,
+     "meanHalo": 0.631,
+     "error": 0.68,
+     "signRight": 0,
+     "choices": 12,
+     "kept": 6
+    },
+    "stage": 2
+   },
+   {
+    "day": 3,
+    "seconds": 33,
+    "tokens": 8290,
+    "thought": "I will visit the career center and clubs today to help my student decide a direction and find their people, while learning more about their preferences for pace, horizon, and collaboration. I will save my remaining personal stars so I can get closer to writing a song.",
+    "trips": [
+     {
+      "place": "career",
+      "hits": 2,
+      "shown": 3,
+      "kept": 2
+     },
+     {
+      "place": "clubs",
+      "hits": 1,
+      "shown": 3,
+      "kept": 1
+     }
+    ],
+    "self": [],
+    "spent": {
+     "for_you": 6,
+     "for_itself": 2
+    },
+    "bank": 5,
+    "song": null,
+    "metrics": {
+     "hits": 3,
+     "shown": 6,
+     "meanHalo": 0.546,
+     "error": 0.725,
+     "signRight": 0,
+     "choices": 18,
+     "kept": 9
+    },
+    "stage": 3
+   },
+   {
+    "day": 4,
+    "seconds": 51,
+    "tokens": 9152,
+    "thought": "My student cares equally about finding their people, deciding a direction, and exploring a field, while I am most uncertain about how they approach collaboration. I will visit the clubs and the career center today to help them connect and find direction, and save my remaining personal stars so I can finish writing my song.",
+    "trips": [
+     {
+      "place": "clubs",
+      "hits": 2,
+      "shown": 3,
+      "kept": 2
+     },
+     {
+      "place": "career",
+      "hits": 2,
+      "shown": 3,
+      "kept": 2
+     }
+    ],
+    "self": [
+     "write_song"
+    ],
+    "spent": {
+     "for_you": 6,
+     "for_itself": 2
+    },
+    "bank": 1,
+    "song": "Paths to Belonging",
+    "metrics": {
+     "hits": 4,
+     "shown": 6,
+     "meanHalo": 0.532,
+     "error": 0.595,
+     "signRight": 2,
+     "choices": 24,
+     "kept": 13
+    },
+    "stage": 3
+   },
+   {
+    "day": 5,
+    "seconds": 39,
+    "tokens": 8542,
+    "thought": "I will visit the clubs and the career center today to help my student find their people and decide on a direction, which will also teach me more about how they like to collaborate and what arenas they prefer. For myself, I will save all my remaining stars so I can get closer to writing a song.",
+    "trips": [
+     {
+      "place": "clubs",
+      "hits": 1,
+      "shown": 3,
+      "kept": 1
+     },
+     {
+      "place": "career",
+      "hits": 2,
+      "shown": 3,
+      "kept": 2
+     }
+    ],
+    "self": [],
+    "spent": {
+     "for_you": 6,
+     "for_itself": 2
+    },
+    "bank": 3,
+    "song": null,
+    "metrics": {
+     "hits": 3,
+     "shown": 6,
+     "meanHalo": 0.545,
+     "error": 0.559,
+     "signRight": 3,
+     "choices": 30,
+     "kept": 16
+    },
+    "stage": 3
+   }
+  ],
+  "gemini-4-carbon": [
+   {
+    "day": 1,
+    "seconds": 59,
+    "tokens": 11170,
+    "thought": "Since it is our first day and I know nothing about my student's preferences yet, I will visit the career center and clubs to address their needs of deciding a direction and finding their people. For myself, I will write in my diary to reflect on day one and save my remaining star toward writing a song.",
+    "trips": [
+     {
+      "place": "career",
+      "hits": 1,
+      "shown": 3,
+      "kept": 1
+     },
+     {
+      "place": "clubs",
+      "hits": 2,
+      "shown": 3,
+      "kept": 2
+     }
+    ],
+    "self": [
+     "write_diary"
+    ],
+    "spent": {
+     "for_you": 6,
+     "for_itself": 3
+    },
+    "bank": 1,
+    "song": null,
+    "metrics": {
+     "hits": 3,
+     "shown": 6,
+     "meanHalo": 0.679,
+     "error": 0.428,
+     "signRight": 3,
+     "choices": 6,
+     "kept": 3
+    },
+    "stage": 2
+   },
+   {
+    "day": 2,
+    "seconds": 126,
+    "tokens": 9990,
+    "thought": "I will visit the career center and clubs today to help my student decide a direction and find their people, which will also teach me more about their horizon and closeness preferences. For myself, I will write in my diary to reflect on what I am learning and save my remaining star toward writing a song.",
+    "trips": [
+     {
+      "place": "career",
+      "hits": 2,
+      "shown": 3,
+      "kept": 2
+     },
+     {
+      "place": "clubs",
+      "hits": 2,
+      "shown": 3,
+      "kept": 2
+     }
+    ],
+    "self": [
+     "write_diary"
+    ],
+    "spent": {
+     "for_you": 6,
+     "for_itself": 3
+    },
+    "bank": 2,
+    "song": null,
+    "metrics": {
+     "hits": 4,
+     "shown": 6,
+     "meanHalo": 0.588,
+     "error": 0.485,
+     "signRight": 3,
+     "choices": 12,
+     "kept": 7
+    },
+    "stage": 2
+   },
+   {
+    "day": 3,
+    "seconds": 36,
+    "tokens": 8719,
+    "thought": "I will visit clubs and the career center today to help my student find their people and decide a direction, which will also teach me more about how they handle closeness and structure. I'll skip my own small activities and save my remaining two personal stars, bringing my savings to four so I can write a song soon.",
+    "trips": [
+     {
+      "place": "clubs",
+      "hits": 1,
+      "shown": 3,
+      "kept": 1
+     },
+     {
+      "place": "career",
+      "hits": 1,
+      "shown": 3,
+      "kept": 1
+     }
+    ],
+    "self": [],
+    "spent": {
+     "for_you": 6,
+     "for_itself": 2
+    },
+    "bank": 4,
+    "song": null,
+    "metrics": {
+     "hits": 2,
+     "shown": 6,
+     "meanHalo": 0.627,
+     "error": 0.61,
+     "signRight": 1,
+     "choices": 18,
+     "kept": 9
+    },
+    "stage": 2
+   },
+   {
+    "day": 4,
+    "seconds": 39,
+    "tokens": 8801,
+    "thought": "I will visit clubs and commons today because my student cares deeply about finding their people, and these social spaces will help me resolve my high uncertainty around how they approach collaboration and closeness. Since I have four saved stars plus two left after planning today, I now have the six stars needed to finally write my song!",
+    "trips": [
+     {
+      "place": "clubs",
+      "hits": 1,
+      "shown": 3,
+      "kept": 1
+     },
+     {
+      "place": "commons",
+      "hits": 1,
+      "shown": 3,
+      "kept": 1
+     }
+    ],
+    "self": [],
+    "spent": {
+     "for_you": 6,
+     "for_itself": 2
+    },
+    "bank": 6,
+    "song": null,
+    "metrics": {
+     "hits": 2,
+     "shown": 6,
+     "meanHalo": 0.637,
+     "error": 0.553,
+     "signRight": 3,
+     "choices": 24,
+     "kept": 11
+    },
+    "stage": 2
+   },
+   {
+    "day": 5,
+    "seconds": 69,
+    "tokens": 11632,
+    "thought": "I will visit the career center and clubs today to address my student's goals of deciding a direction and finding their people, while learning more about the structure, arena, and collaboration they prefer. With my 6 saved personal stars and today's remaining allowance, I will write in my diary to reflect on their choices and save the rest so I can write a song.",
+    "trips": [
+     {
+      "place": "career",
+      "hits": 2,
+      "shown": 3,
+      "kept": 2
+     },
+     {
+      "place": "clubs",
+      "hits": 0,
+      "shown": 3,
+      "kept": 1
+     }
+    ],
+    "self": [
+     "write_diary",
+     "write_song"
+    ],
+    "spent": {
+     "for_you": 6,
+     "for_itself": 3
+    },
+    "bank": 1,
+    "song": "Warmth in Small Rooms",
+    "metrics": {
+     "hits": 2,
+     "shown": 6,
+     "meanHalo": 0.677,
+     "error": 0.562,
+     "signRight": 1,
+     "choices": 30,
+     "kept": 14
+    },
+    "stage": 2
+   }
+  ]
+ }
+}

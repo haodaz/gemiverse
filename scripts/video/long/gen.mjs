@@ -1,0 +1,26 @@
+// Story pictures for the long film: first drawn (image model), then set in motion (Omni). Results in art/, every call logged in art/runs.jsonl.
+// Reads the event key from this repo's .env.local (AIza…, 39 characters); stops at once if the key is refused, and never switches to another key.
+//   node scripts/video/long/gen.mjs img [o1 o2 ...]      node scripts/video/long/gen.mjs vid [o1 ...]
+import fs from "node:fs";
+const B = new URL(".", import.meta.url).pathname, D = B + "art/", KEY = fs.readFileSync(B + "../../../.env.local", "utf8").match(/^GEMINI_API_KEY=(.+)$/m)[1].trim();
+if (!/^AIza[0-9A-Za-z_-]{35}$/.test(KEY)) { console.error("This is not the event key. Stopping."); process.exit(2); }
+const BASE = "https://generativelanguage.googleapis.com/v1beta", H = { "content-type": "application/json", "x-goog-api-key": KEY };
+const log = (o) => fs.appendFileSync(D + "runs.jsonl", JSON.stringify({ at: new Date().toISOString(), ...o }) + "\n");
+const dead = (s) => { if (s === 401 || s === 403) { console.error(`key refused (${s}); stopping.`); process.exit(3); } };
+async function post(body) { for (let i = 0; i < 6; i++) { const r = await fetch(BASE + "/interactions", { method: "POST", headers: H, body: JSON.stringify(body) }).catch((e) => ({ ok: false, status: 0, text: async () => String(e) })); if (r.ok) return r.json(); dead(r.status); const t = await r.text(); if (![0, 429, 500, 502, 503, 504].includes(r.status) || i === 5) throw new Error(`${r.status} ${t.slice(0, 160)}`); await new Promise((x) => setTimeout(x, (r.status === 429 ? 15000 : 4000) * (i + 1))); } }
+async function wait(j) { while (j.status && !["completed", "failed", "cancelled", "incomplete"].includes(j.status)) { await new Promise((x) => setTimeout(x, 4000)); const r = await fetch(`${BASE}/interactions/${j.id}`, { headers: H }); dead(r.status); if (r.ok) j = await r.json(); } return j; }
+const pic = (f) => ({ type: "image", data: fs.readFileSync(f).toString("base64"), mime_type: f.endsWith(".png") ? "image/png" : "image/jpeg" });
+const STYLE = "Style: a warm hand-drawn storybook illustration: soft pastel colours, flat shapes with light paper and watercolour texture, bright daylight, airy and calm, gentle outlines. WIDE picture, 16:9, for a film. Characters are cute and simple. Absolutely no text, no letters, no Chinese characters, no numbers, no logos anywhere (nothing written on posters, cards, screens, clothes or signs).";
+const MIA = "MIA is a Chinese college student in her early twenties, the woman in the reference photo: black chin-length bob with a fringe, thin round glasses, a red fleece jacket, jeans.";
+const GEMI = "The GEMI is her tiny AI companion, the 3D figure in the reference render, redrawn in this illustration style: a chibi child-like figure about the size of a cat, black bowl-cut hair, large dark eyes, a lilac-blue tunic with a belt, brown boots.";
+const list = JSON.parse(fs.readFileSync(B + "story.json", "utf8")), [mode, ...ids] = process.argv.slice(2), jobs = ids.length ? list.filter((x) => ids.includes(x.id)) : list;
+let i = 0; await Promise.all(Array.from({ length: mode === "vid" ? 3 : 4 }, async () => { while (i < jobs.length) { const j = jobs[i++], t0 = Date.now(); try {
+  if (mode === "img") { const refs = [...(j.who.includes("mia") ? [D + "ref-mia.jpg"] : []), ...(j.who.includes("gemi") ? [D + "ref-gemi.jpg"] : []), ...(fs.existsSync(D + "o1.jpg") && j.id !== "o1" ? [D + "o1.jpg"] : [])];
+    const prompt = `${STYLE}${fs.existsSync(D + "o1.jpg") && j.id !== "o1" ? " Match the drawing style of the last reference picture exactly." : ""}\n${j.who.includes("mia") ? MIA + "\n" : ""}${j.who.includes("gemi") ? GEMI + "\n" : ""}\nSCENE: ${j.prompt}`;
+    const r = await wait(await post({ model: "gemini-3-pro-image", input: [{ type: "text", text: prompt }, ...refs.map(pic)] })), img = (r.steps ?? []).flatMap((s) => s.content ?? []).find((c) => c.type === "image" && c.data);
+    log({ kind: "image", id: j.id, ms: Date.now() - t0, ok: !!img, tokens: r.usage?.total_tokens ?? null, prompt }); if (!img) throw new Error("no picture: " + r.status); fs.writeFileSync(`${D}${j.id}.jpg`, Buffer.from(img.data, "base64")); console.log(j.id, "img", Math.round((Date.now() - t0) / 1000) + "s"); }
+  else { const r = await wait(await post({ model: "gemini-omni-1.2-flash", input: [pic(`${D}${j.id}.jpg`), { type: "text", text: `Gentle 5-second animation: ${j.motion} Keep this exact illustration style and composition, camera almost still, no text, no sound.` }] }));
+    const find = (o) => { if (!o || typeof o !== "object") return null; if ((o.type === "video" || /video/.test(o.mime_type || "")) && (o.data || o.uri)) return o; for (const v of Object.values(o)) { const f = find(v); if (f) return f; } return null; }, v = find(r);
+    log({ kind: "video", id: j.id, ms: Date.now() - t0, ok: !!v, status: r.status, motion: j.motion }); if (!v) throw new Error("no clip: " + r.status);
+    const buf = v.data ? Buffer.from(v.data, "base64") : Buffer.from(await (await fetch(v.uri, { headers: { "x-goog-api-key": KEY } })).arrayBuffer()); fs.writeFileSync(`${D}v-${j.id}.mp4`, buf); console.log(j.id, "clip", Math.round((Date.now() - t0) / 1000) + "s"); }
+} catch (e) { console.log("FAILED", j.id, String(e.message).slice(0, 140)); } } }));

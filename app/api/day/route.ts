@@ -15,7 +15,9 @@ const DAILY = { for_you: 6, for_itself: 4 };
 
 export async function POST(req: Request) {
   try {
-    const { school = "nyu", day = 1, log = [], lang = "en", bank = 0 } = (await req.json()) as { school: string; day: number; log: LogEvent[]; lang: string; bank: number };
+    const { school = "nyu", day = 1, log = [], lang = "en", bank = 0, mind: asked } = (await req.json()) as { school: string; day: number; log: LogEvent[]; lang: string; bank: number; mind?: string };
+    // The minds experiment: the same day, budget and student, with a different model doing the planning and the choosing.
+    const mind = ["gemini-4-carbon", "gemini-4-hydrogen", "gemini-4-argon"].includes(asked ?? "") ? asked! : "gemini-4-carbon";
     const SONG = 6;
     const preset = PRESETS[school], events: LogEvent[] = [], steps: any[] = [], when = () => new Date().toISOString();
     let tokens = 0; const purse = { ...DAILY };
@@ -32,7 +34,7 @@ export async function POST(req: Request) {
 
     // THINK: what are today's stars best spent on?
     const m0 = state(), halos = AXES.map((a) => `${a.id} ${(m0.beliefs[a.id].u).toFixed(2)}`).join(", ");
-    const p = await ask("gemini-4-carbon", `You are a student's AI companion (a Gemi) planning your own day ${day}. You have your own daily allowance of Gem Stars: ${purse.for_you} for the student (going out, asking others) and ${purse.for_itself} for yourself (thinking, your diary, your room). Planning itself costs 2 of your own.
+    const p = await ask(mind, `You are a student's AI companion (a Gemi) planning your own day ${day}. You have your own daily allowance of Gem Stars: ${purse.for_you} for the student (going out, asking others) and ${purse.for_itself} for yourself (thinking, your diary, your room). Planning itself costs 2 of your own.
 What the student cares about (need: weight): ${JSON.stringify(m0.care)}
 How unsure you are on each axis of how they choose (1.00 = you know nothing): ${halos}
 Places you can visit (3 stars each): ${Object.entries(PLACE_NEEDS).map(([k, v]) => `${k} (${v.join(", ")})`).join("; ")}
@@ -48,7 +50,7 @@ Return only JSON: {"thought": "two sentences in the first person, in ${lang}: wh
     for (const place of (plan.trips ?? []).slice(0, 2)) {
       if (!(place in PLACE_NEEDS) || purse.for_you < 3) continue;
       const m = state();
-      const t = await takeTrip({ school, place, care: m.care, beliefs: m.beliefs, wants: [], seen: seen(), lang, thinking: "low" }); tokens += t.tokens;
+      const t = await takeTrip({ school, place, care: m.care, beliefs: m.beliefs, wants: [], seen: seen(), lang, thinking: "low", mind }); tokens += t.tokens;
       if (!t.finds.length) { steps.push({ tool: "go_out", by: "gemi", place, stars: 0, note: t.reason }); continue; }
       purse.for_you -= 3; bumpServed(school, t.finds.map((f: any) => f.id)).catch(() => {});
       const predicted = Object.fromEntries(t.finds.map((f: any) => [f.id, f.p_keep]));

@@ -40,3 +40,10 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 /vendor/
+
+# long film: working files and generated clips stay local
+scripts/video/long/clips-*/
+scripts/video/long/scenes-*/
+scripts/video/long/work*/
+scripts/video/long/tts*/
+scripts/video/long/art/
