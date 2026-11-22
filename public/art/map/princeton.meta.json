@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. The 600-acre main campus features Collegiate Gothic buildings, 17 distributed gardens, outdoor sculptures, and Lake Carnegie along its southern edge. Draw exactly these 6 features, well spread across the picture with space between them, each clearly recognisable: (1) Nassau Hall, a hall: Historic campus hall with front entrance flanked by two bronze tigers.; (2) Lake Carnegie, a lake: Artificial lake at the southern edge of campus with a rowing center.; (3) Firestone Library, a library: Large university library building, plain if unknown.; (4) Princeton University Art Museum, a museum: University art museum building, plain if unknown.; (5) Cannon Green, a quad: Courtyard south of Nassau Hall with a cannon buried in the center.; (6) Princeton Stadium, a stadium: University stadium next to Lewis Library, plain if unknown.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 19,
+ "tokens": 2390,
+ "at": "2026-11-22T12:42:30.051Z"
+}

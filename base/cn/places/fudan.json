@@ -1,0 +1,58 @@
+{
+ "school": "fudan",
+ "name": "复旦大学",
+ "at": "2026-11-22T12:41:41.582Z",
+ "source": "https://zh.wikipedia.org/wiki/%E5%A4%8D%E6%97%A6%E5%A4%A7%E5%AD%A6",
+ "character": null,
+ "map": "/art/map/fudan.jpg",
+ "landmarks": [
+  {
+   "name": "相辉堂",
+   "name_en": "Xianghui Hall",
+   "kind": "hall",
+   "quote": "当时的校园范围大致在现今的相辉堂一带，此后渐次扩充。",
+   "look": "Plain historic campus hall, simple architectural details.",
+   "check": 0.9467729933459876,
+   "confidence": 0.9467729933459876,
+   "passed": true,
+   "x": 0.205,
+   "y": 0.205
+  },
+  {
+   "name": "第三教学楼（3108教室）",
+   "name_en": "Third Teaching Building (Room 3108)",
+   "kind": "other",
+   "quote": "3108教室，即复旦邯郸校区第三教学楼一楼西2教室，可容纳约200人。",
+   "look": "Plain multi-story teaching building with a large 200-seat lecture room.",
+   "check": 0.930052804729992,
+   "confidence": 0.930052804729992,
+   "passed": true,
+   "x": 0.685,
+   "y": 0.445
+  },
+  {
+   "name": "正门",
+   "name_en": "Main Gate (Handan Campus)",
+   "kind": "gate",
+   "quote": "其正门位于邯郸路220号，近五角场。",
+   "look": "Plain university main gate facing Handan Road.",
+   "check": 0.5793456421483623,
+   "confidence": 0.5793456421483623,
+   "passed": false
+  },
+  {
+   "name": "中央饭厅",
+   "name_en": "Central Dining Hall",
+   "kind": "hall",
+   "quote": "复旦大学在4月15日半夜时刻发现贴于中央饭厅的四张小字报",
+   "look": "Plain campus dining hall building.",
+   "check": 0.8235742077925725,
+   "confidence": 0.8235742077925725,
+   "passed": true,
+   "x": 0.495,
+   "y": 0.775
+  }
+ ],
+ "tokens": 20554,
+ "seconds": 33
+}

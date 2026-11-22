@@ -8,7 +8,7 @@ import { execFile } from "node:child_process";
 import { ask, decide, parseJson, pool } from "./lib.mjs";
 const ROOT = new URL("../../", import.meta.url), OUT = new URL("base/cn/places/", ROOT), ART = new URL("public/art/map/", ROOT);
 const SCHOOLS = {};
-for (const m of fs.readFileSync(new URL("lib/schools.ts", ROOT), "utf8").matchAll(/S\("([a-z0-9]+)", "([^"]+)", "[^"]*", "[^"]*", "[^"]*", "[^"]*", "(cn|us)[^"]*"/g)) SCHOOLS[m[1]] = [m[2], m[3] === "cn"];
+for (const m of fs.readFileSync(new URL("lib/schools.ts", ROOT), "utf8").matchAll(/S\("([a-z0-9]+)",\s*"([^"]+)",\s*"[^"]*",\s*"[^"]*",\s*"[^"]*",\s*"[^"]*",\s*"(cn|us)[^"]*"/g)) SCHOOLS[m[1]] = [m[2], m[3] === "cn"];
 for (const m of JSON.parse(fs.readFileSync(new URL("lib/schools-more.json", ROOT), "utf8"))) SCHOOLS[m.id] = [m.name, m.group.startsWith("cn")];
 const failures = [];
 // Wikipedia turns away bursts ("You are making too many requests"), so article reads go one at a time, two seconds apart, and wait longer after a refusal.
@@ -19,6 +19,7 @@ async function wiki(name, zh) { const u = `https://${zh ? "zh" : "en"}.wikipedia
   if (!j) throw new Error("wikipedia refused four times");
   const p = Object.values(j.query?.pages ?? {})[0], t = p?.extract ?? "";
   if (t.length < 800) throw new Error("no article text"); const at = t.search(zh ? /\n==+ ?(校园|校區|校区|校园环境|建筑)/ : /\n==+ ?(Campus|Campuses|Main campus)/);
+  if (process.env.WIDE) return { text: t.slice(0, 32000), url: `https://${zh ? "zh" : "en"}.wikipedia.org/wiki/${encodeURIComponent(p.title)}` };   // second pass for schools whose campus section named nothing: read the whole article
   return { text: (t.slice(0, 2500) + "\n…\n" + (at > 0 ? t.slice(at, at + 11000) : t.slice(2500, 13000))), url: `https://${zh ? "zh" : "en"}.wikipedia.org/wiki/${encodeURIComponent(p.title)}` }; }
 const image = (id, prompt) => new Promise((ok) => execFile("node", ["scripts/art/image.mjs", id, prompt], { cwd: ROOT, env: { ...process.env, OUT_DIR: ART.pathname }, timeout: 240000 }, (e, so) => ok(e ? null : so.trim())));
 async function school(id) { const [name, zh] = SCHOOLS[id], t0 = Date.now(); let tokens = 0; const tok = (r) => { tokens += r.usage?.total_tokens ?? 0; return r; };

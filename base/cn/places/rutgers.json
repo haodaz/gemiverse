@@ -1,0 +1,82 @@
+{
+ "school": "rutgers",
+ "name": "Rutgers University",
+ "at": "2026-11-22T12:43:07.451Z",
+ "source": "https://en.wikipedia.org/wiki/Rutgers%20University",
+ "character": "The main campus features nineteenth- and early twentieth-century buildings at its historic core, extensive farms and woods on Cook Campus, the Raritan River, and modern structures like an all-glass business school.",
+ "map": "/art/map/rutgers.jpg",
+ "landmarks": [
+  {
+   "name": "Old Queens",
+   "name_en": "Old Queens",
+   "kind": "hall",
+   "quote": "includes the seat of the university, Old Queens",
+   "look": "Nineteenth-century university building with a cupola holding a bell.",
+   "check": 0.9777831775816164,
+   "confidence": 0.9777831775816164,
+   "passed": true,
+   "x": 0.54,
+   "y": 0.45
+  },
+  {
+   "name": "Queens Campus",
+   "name_en": "Queens Campus",
+   "kind": "quad",
+   "quote": "nineteenth-century and early twentieth-century buildings that constitute the Queens Campus and Voorhees Mall.",
+   "look": "Historic campus area framed by nineteenth- and early twentieth-century buildings.",
+   "check": 0.9605138303549497,
+   "confidence": 0.9605138303549497,
+   "passed": true,
+   "x": 0.46,
+   "y": 0.55
+  },
+  {
+   "name": "Voorhees Mall",
+   "name_en": "Voorhees Mall",
+   "kind": "quad",
+   "quote": "nineteenth-century and early twentieth-century buildings that constitute the Queens Campus and Voorhees Mall.",
+   "look": "Open campus mall lined with nineteenth- and early twentieth-century buildings.",
+   "check": 0.9806070090734,
+   "confidence": 0.9806070090734,
+   "passed": true,
+   "x": 0.73,
+   "y": 0.36
+  },
+  {
+   "name": "Jersey Mike's Arena",
+   "name_en": "Jersey Mike's Arena",
+   "kind": "stadium",
+   "quote": "The Livingston campus is home to Jersey Mike's Arena (formerly the Rutgers Athletic Center [RAC]), a trapezoidal building",
+   "look": "Trapezoidal sports arena building.",
+   "check": 0.9734721136034381,
+   "confidence": 0.9734721136034381,
+   "passed": true,
+   "x": 0.84,
+   "y": 0.65
+  },
+  {
+   "name": "100 Rock",
+   "name_en": "100 Rock",
+   "kind": "hall",
+   "quote": "the all-glass Rutgers Business School building known as \"100 Rock\"",
+   "look": "Modern all-glass academic building at the campus entrance.",
+   "check": 0.975940266457987,
+   "confidence": 0.975940266457987,
+   "passed": true,
+   "x": 0.63,
+   "y": 0.83
+  },
+  {
+   "name": "Raritan River",
+   "name_en": "Raritan River",
+   "kind": "other",
+   "quote": "Separated by the Raritan River is Busch Campus, in Piscataway, and Livingston Campus",
+   "look": "River separating the Busch and Livingston campuses from New Brunswick.",
+   "check": 0.3731880673362645,
+   "confidence": 0.6268119326637356,
+   "passed": false
+  }
+ ],
+ "tokens": 17828,
+ "seconds": 32
+}

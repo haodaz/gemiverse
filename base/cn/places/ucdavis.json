@@ -1,69 +1,91 @@
 {
  "school": "ucdavis",
  "name": "University of California, Davis",
- "at": "2026-11-22T00:19:50.334Z",
+ "at": "2026-11-22T12:42:59.585Z",
  "source": "https://en.wikipedia.org/wiki/University%20of%20California%2C%20Davis",
- "character": "Located in California's Central Valley, the vast campus features a large rectangular Quad, extensive bicycle trails, angular metallic buildings, and a 100-acre arboretum with 4,000 tree specimens, Putah Creek, and Lake Spafford.",
- "map": null,
+ "character": "Set in the Sacramento Valley, the vast, bike-friendly campus centers on a large rectangular quad and features a 100-acre arboretum with 4,000 trees, Putah Creek, Lake Spafford, and buildings ranging from historic halls to an angular, metallic design.",
+ "map": "/art/map/ucdavis.jpg",
  "landmarks": [
   {
    "name": "the Quad",
-   "name_en": "The Quad",
+   "name_en": "the Quad",
    "kind": "quad",
    "quote": "Towards the northeast end of campus is the Quad, a large rectangular field, which was the historic geographic center of campus.",
-   "look": "A large rectangular grassy field at the center of campus.",
-   "check": 0.9754799990280769,
-   "confidence": 0.9754799990280769,
-   "passed": true
+   "look": "Large rectangular open green field bordered by campus buildings.",
+   "check": 0.973330451251867,
+   "confidence": 0.973330451251867,
+   "passed": true,
+   "x": 0.5,
+   "y": 0.39
   },
   {
-   "name": "Shields Library",
-   "name_en": "Shields Library",
+   "name": "Peter J. Shields Library",
+   "name_en": "Peter J. Shields Library",
    "kind": "library",
-   "quote": "The Quad remains the center of campus life, anchored to the north by the Memorial Union (student union), to the south by the Shields Library",
-   "look": "A plain university library building bordering the south side of a quad.",
-   "check": 0.978028299095406,
-   "confidence": 0.978028299095406,
-   "passed": true
+   "quote": "The Peter J. Shields Library has three different architectural styles due to various construction and extensions being added",
+   "look": "Large library building combining three distinct architectural styles.",
+   "check": 0.9808565814769433,
+   "confidence": 0.9808565814769433,
+   "passed": true,
+   "x": 0.8,
+   "y": 0.49
   },
   {
    "name": "UC Davis Arboretum",
    "name_en": "UC Davis Arboretum",
    "kind": "garden",
    "quote": "To the south side of the campus core is the 100-acre UC Davis Arboretum, which includes 3.5 miles of paved paths, 4,000 tree specimens",
-   "look": "A sprawling 100-acre wooded garden with paved paths and thousands of trees.",
-   "check": 0.9766213610086957,
-   "confidence": 0.9766213610086957,
-   "passed": true
+   "look": "Expansive garden with paved paths and thousands of diverse trees.",
+   "check": 0.9856523804433184,
+   "confidence": 0.9856523804433184,
+   "passed": true,
+   "x": 0.23,
+   "y": 0.73
   },
   {
    "name": "Lake Spafford",
    "name_en": "Lake Spafford",
    "kind": "lake",
-   "quote": "the 100-acre UC Davis Arboretum, which includes 3.5 miles of paved paths, 4,000 tree specimens, Putah Creek and Lake Spafford.",
-   "look": "A calm lake surrounded by trees and paved paths in an arboretum.",
-   "check": 0.9764807654663966,
-   "confidence": 0.9764807654663966,
-   "passed": true
+   "quote": "which includes 3.5 miles of paved paths, 4,000 tree specimens, Putah Creek and Lake Spafford.",
+   "look": "Calm lake within the arboretum surrounded by trees and paths.",
+   "check": 0.9750306765948297,
+   "confidence": 0.9750306765948297,
+   "passed": true,
+   "x": 0.62,
+   "y": 0.76
+  },
+  {
+   "name": "Mrak Hall",
+   "name_en": "Mrak Hall",
+   "kind": "hall",
+   "quote": "When Mrak retired in 1969, the campus administration building was named Mrak Hall in his honor.",
+   "look": "Plain campus administration hall.",
+   "check": 0.9813236455431168,
+   "confidence": 0.9813236455431168,
+   "passed": true,
+   "x": 0.14,
+   "y": 0.32
   },
   {
    "name": "Wellman Hall",
    "name_en": "Wellman Hall",
    "kind": "hall",
    "quote": "The northeast side of campus holds more of the core buildings that were built earlier in UC Davis's history, such as Wellman Hall",
-   "look": "An older, plain campus hall near the northeast corner of the quad.",
-   "check": 0.9809184740615546,
-   "confidence": 0.9809184740615546,
-   "passed": true
+   "look": "Older core academic hall on the northeast side of campus.",
+   "check": 0.9707379092120945,
+   "confidence": 0.9707379092120945,
+   "passed": true,
+   "x": 0.83,
+   "y": 0.27
   },
   {
-   "name": "Mrak Hall",
-   "name_en": "Mrak Hall",
-   "kind": "hall",
-   "quote": "core buildings that were built earlier in UC Davis's history, such as Wellman Hall, Shields Library, Mrak Hall, and Hutchison Hall.",
-   "look": "An older, plain administrative hall with an egghead sculpture outside.",
-   "check": 0.99,
-   "confidence": 0.99,
+   "name": "Manetti Shrem Museum of Art",
+   "name_en": "Manetti Shrem Museum of Art",
+   "kind": "museum",
+   "quote": "Museums on campus include the C.N. Gorman Museum, specializing in indigenous and Native American art; and the Manetti Shrem Museum of Art",
+   "look": "Plain campus art museum building.",
+   "check": 0.9735539402018929,
+   "confidence": 0.9735539402018929,
    "passed": true
   },
   {
@@ -71,22 +93,12 @@
    "name_en": "C.N. Gorman Museum",
    "kind": "museum",
    "quote": "Museums on campus include the C.N. Gorman Museum, specializing in indigenous and Native American art",
-   "look": "A plain campus museum building.",
-   "check": 0.9769174902607933,
-   "confidence": 0.9769174902607933,
-   "passed": true
-  },
-  {
-   "name": "Manetti Shrem Museum of Art",
-   "name_en": "Manetti Shrem Museum of Art",
-   "kind": "museum",
-   "quote": "and the Manetti Shrem Museum of Art, with a focus on local artists from the Bay Area Figurative Movement, Pop art and Funk art movements.",
-   "look": "A plain campus art museum building.",
-   "check": 0.98258483196608,
-   "confidence": 0.98258483196608,
+   "look": "Plain campus museum building.",
+   "check": 0.9855857003818712,
+   "confidence": 0.9855857003818712,
    "passed": true
   }
  ],
- "tokens": 8063,
- "seconds": 95
+ "tokens": 18616,
+ "seconds": 79
 }

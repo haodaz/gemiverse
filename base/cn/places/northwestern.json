@@ -1,0 +1,104 @@
+{
+ "school": "northwestern",
+ "name": "Northwestern University",
+ "at": "2026-11-22T12:42:36.605Z",
+ "source": "https://en.wikipedia.org/wiki/Northwestern%20University",
+ "character": "Located on the shore of Lake Michigan, the 240-acre campus blends modern and historic gothic architecture, including an 84-acre Lakefill.",
+ "map": "/art/map/northwestern.jpg",
+ "landmarks": [
+  {
+   "name": "Lake Michigan",
+   "name_en": "Lake Michigan",
+   "kind": "lake",
+   "quote": "Northwestern's main campus is on the shore of Lake Michigan",
+   "look": "Expansive blue lake bordering the eastern edge of the campus.",
+   "check": 0.9538393689470656,
+   "confidence": 0.9538393689470656,
+   "passed": true,
+   "x": 0.75,
+   "y": 0.15
+  },
+  {
+   "name": "Charles Deering Memorial Library",
+   "name_en": "Charles Deering Memorial Library",
+   "kind": "library",
+   "quote": "Charles Deering Memorial Library: built in 1933, and named for Charles Deering",
+   "look": "Gothic-style stone library inspired by King's College Chapel.",
+   "check": 0.983521638712468,
+   "confidence": 0.983521638712468,
+   "passed": true,
+   "x": 0.45,
+   "y": 0.28
+  },
+  {
+   "name": "Ryan Field",
+   "name_en": "Ryan Field",
+   "kind": "stadium",
+   "quote": "Ryan Field, Northwestern's football stadium.",
+   "look": "Large collegiate football stadium with tiered seating.",
+   "check": 0.9572678486483462,
+   "confidence": 0.9572678486483462,
+   "passed": true,
+   "x": 0.17,
+   "y": 0.44
+  },
+  {
+   "name": "University Hall",
+   "name_en": "University Hall",
+   "kind": "hall",
+   "quote": "University Hall, was built in 1869 of the same Joliet limestone",
+   "look": "Historic 1869 academic hall built of Joliet limestone.",
+   "check": 0.9792830260063055,
+   "confidence": 0.9792830260063055,
+   "passed": true,
+   "x": 0.6,
+   "y": 0.58
+  },
+  {
+   "name": "University Library",
+   "name_en": "University Library",
+   "kind": "library",
+   "quote": "Buildings located on the resulting Lakefill include University Library",
+   "look": "Plain modern university library building situated on the Lakefill.",
+   "check": 0.9850033855174211,
+   "confidence": 0.9850033855174211,
+   "passed": true,
+   "x": 0.85,
+   "y": 0.36
+  },
+  {
+   "name": "Mary and Leigh Block Museum of Art",
+   "name_en": "Mary and Leigh Block Museum of Art",
+   "kind": "museum",
+   "quote": "South Campus is home to... the Mary and Leigh Block Museum of Art",
+   "look": "Plain art museum building on South Campus.",
+   "check": 0.9803877934808874,
+   "confidence": 0.9803877934808874,
+   "passed": true,
+   "x": 0.67,
+   "y": 0.84
+  },
+  {
+   "name": "Pick-Staiger Concert Hall",
+   "name_en": "Pick-Staiger Concert Hall",
+   "kind": "hall",
+   "quote": "music buildings like the Pick-Staiger Concert Hall",
+   "look": "Plain concert hall building on South Campus.",
+   "check": 0.9769771148978987,
+   "confidence": 0.9769771148978987,
+   "passed": true
+  },
+  {
+   "name": "Regenstein Hall of Music",
+   "name_en": "Regenstein Hall of Music",
+   "kind": "hall",
+   "quote": "Buildings located on the resulting Lakefill include... the Regenstein Hall of Music",
+   "look": "Plain music hall building located on the Lakefill.",
+   "check": 0.9543815583725258,
+   "confidence": 0.9543815583725258,
+   "passed": true
+  }
+ ],
+ "tokens": 17942,
+ "seconds": 36
+}

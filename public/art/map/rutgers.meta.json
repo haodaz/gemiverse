@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. The main campus features nineteenth- and early twentieth-century buildings at its historic core, extensive farms and woods on Cook Campus, the Raritan River, and modern structures like an all-glass business school. Draw exactly these 5 features, well spread across the picture with space between them, each clearly recognisable: (1) Old Queens, a hall: Nineteenth-century university building with a cupola holding a bell.; (2) Queens Campus, a quad: Historic campus area framed by nineteenth- and early twentieth-century buildings.; (3) Voorhees Mall, a quad: Open campus mall lined with nineteenth- and early twentieth-century buildings.; (4) Jersey Mike's Arena, a stadium: Trapezoidal sports arena building.; (5) 100 Rock, a hall: Modern all-glass academic building at the campus entrance.. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 19,
+ "tokens": 2118,
+ "at": "2026-11-22T12:43:02.408Z"
+}

@@ -1,0 +1,8 @@
+{
+ "model": "gemini-3-pro-image",
+ "prompt": "A hand-drawn illustrated campus map seen from above at a slight angle, like a storybook picture map. Soft warm pastel colours, flat shapes with light paper texture, winding paths, trees, a few tiny students. The main campus integrates hills and lakes into a Lingnan-style garden environment along a north-south main axis and an east-west lake axis, featuring historic buildings and 1950s–1960s practical structures with Xia-style sunshades. Draw exactly these 2 features, well spread across the picture with space between them, each clearly recognisable: (1) Former Sun Yat-sen University South Gate Archway, a gate: Traditional Chinese ceremonial archway gate, landmark structure; (2) Library Building, a library: Plain multi-story library building. Wide 16:9. Absolutely no text, no letters, no numbers, no labels, no logos, no emblems, no flags, no watermarks.",
+ "reference": null,
+ "seconds": 15,
+ "tokens": 1865,
+ "at": "2026-11-22T12:41:54.550Z"
+}

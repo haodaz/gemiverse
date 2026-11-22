@@ -1,0 +1,104 @@
+{
+ "school": "rice",
+ "name": "Rice University",
+ "at": "2026-11-22T12:42:42.043Z",
+ "source": "https://en.wikipedia.org/wiki/Rice%20University",
+ "character": "The heavily wooded campus is organized into quadrangles with over 4,000 trees and shrubs and features uniform Byzantine-style buildings made of sand and pink-colored bricks with large archways and columns.",
+ "map": "/art/map/rice.jpg",
+ "landmarks": [
+  {
+   "name": "Lovett Hall",
+   "name_en": "Lovett Hall",
+   "kind": "hall",
+   "quote": "Lovett Hall, named for Rice's first president, is the university's landmark building. Through its Sallyport arch",
+   "look": "Asymmetrical Byzantine-style brick building with a Sallyport arch and columns.",
+   "check": 0.9860578749085708,
+   "confidence": 0.9860578749085708,
+   "passed": true,
+   "x": 0.33,
+   "y": 0.22
+  },
+  {
+   "name": "Academic Quad",
+   "name_en": "Academic Quad",
+   "kind": "quad",
+   "quote": "The Academic Quad, anchored by a statue of founder William Marsh Rice, includes Ralph Adams Cram's masterpiece, the asymmetrical Lovett Hall",
+   "look": "Central open quadrangle anchored by a seated bronze statue facing Lovett Hall.",
+   "check": 0.9849381470300702,
+   "confidence": 0.9849381470300702,
+   "passed": true,
+   "x": 0.51,
+   "y": 0.47
+  },
+  {
+   "name": "First Community Stadium",
+   "name_en": "First Community Stadium",
+   "kind": "stadium",
+   "quote": "The on-campus football facility, First Community Stadium, opened in 1950 with a capacity of 70,000 seats.",
+   "look": "Large 47,000-seat football stadium on the western end of campus.",
+   "check": 0.9778530993638406,
+   "confidence": 0.9778530993638406,
+   "passed": true,
+   "x": 0.22,
+   "y": 0.61
+  },
+  {
+   "name": "Fondren Library",
+   "name_en": "Fondren Library",
+   "kind": "library",
+   "quote": "the asymmetrical Lovett Hall, the original administrative building; Fondren Library;",
+   "look": "Plain library building on the Academic Quad.",
+   "check": 0.9754601111170281,
+   "confidence": 0.9754601111170281,
+   "passed": true,
+   "x": 0.69,
+   "y": 0.31
+  },
+  {
+   "name": "Lynn R. Lowrey Arboretum",
+   "name_en": "Lynn R. Lowrey Arboretum",
+   "kind": "garden",
+   "quote": "The Lynn R. Lowrey Arboretum, consisting of more than 4000 trees and shrubs is spread throughout the campus.",
+   "look": "Wooded grounds with over 4,000 trees and shrubs spread across campus.",
+   "check": 0.9787282534704741,
+   "confidence": 0.9787282534704741,
+   "passed": true,
+   "x": 0.85,
+   "y": 0.18
+  },
+  {
+   "name": "Engineering Quad",
+   "name_en": "Engineering Quad",
+   "kind": "quad",
+   "quote": "In the Engineering Quad, a trinity of sculptures by Michael Heizer, collectively entitled 45 Degrees, 90 Degrees, 180 Degrees, are flanked by Abercrombie Laboratory",
+   "look": "Quadrangle featuring three geometric sculptures flanked by engineering buildings.",
+   "check": 0.9850404865160567,
+   "confidence": 0.9850404865160567,
+   "passed": true,
+   "x": 0.73,
+   "y": 0.73
+  },
+  {
+   "name": "Duncan Hall",
+   "name_en": "Duncan Hall",
+   "kind": "hall",
+   "quote": "Duncan Hall, Rice's computational engineering building, was designed to encourage collaboration between the four different departments situated there.",
+   "look": "Computational engineering hall with a foyer inspired by many world cultures.",
+   "check": 0.9880150898468133,
+   "confidence": 0.9880150898468133,
+   "passed": true
+  },
+  {
+   "name": "Herzstein Hall",
+   "name_en": "Herzstein Hall",
+   "kind": "hall",
+   "quote": "Herzstein Hall, the original physics building and home to the largest amphitheater on campus",
+   "look": "Plain academic hall housing the largest amphitheater on campus.",
+   "check": 0.9841336310163905,
+   "confidence": 0.9841336310163905,
+   "passed": true
+  }
+ ],
+ "tokens": 19164,
+ "seconds": 41
+}

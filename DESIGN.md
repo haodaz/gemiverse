@@ -138,6 +138,6 @@ Works end to end on a laptop: meet (`/start`), talk with Decisions routing, trip
 
 ## After the submission (22 Nov)
 - **Schools**: 90 in the picker; NYU and Columbia as submitted, 88 added, 73 of those with checked data (641 events). All in the shared base since 22 Nov.
-- **Campus map** (`/campus`) · built: landmarks named in public text, each checked by Decisions, drawn by the image model, located by Hydrogen. 74 maps. An illustration, said so on the page.
+- **Campus map** (`/campus`) · built: landmarks named in public text, each checked by Decisions, drawn by the image model, located by Hydrogen. 82 maps. An illustration, said so on the page.
 - **Body** · changed: KayKit Adventurers (CC0) by default; own doll behind `?body=doll`. Wardrobe and expressions for the new body · not built.
 - **Room light** · built: hour and weather.

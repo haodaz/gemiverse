@@ -1,0 +1,104 @@
+{
+ "school": "princeton",
+ "name": "Princeton University",
+ "at": "2026-11-22T12:42:35.332Z",
+ "source": "https://en.wikipedia.org/wiki/Princeton%20University",
+ "character": "The 600-acre main campus features Collegiate Gothic buildings, 17 distributed gardens, outdoor sculptures, and Lake Carnegie along its southern edge.",
+ "map": "/art/map/princeton.jpg",
+ "landmarks": [
+  {
+   "name": "Nassau Hall",
+   "name_en": "Nassau Hall",
+   "kind": "hall",
+   "quote": "Nassau Hall is the oldest building on campus.",
+   "look": "Historic campus hall with front entrance flanked by two bronze tigers.",
+   "check": 0.9801922589482822,
+   "confidence": 0.9801922589482822,
+   "passed": true,
+   "x": 0.5,
+   "y": 0.21
+  },
+  {
+   "name": "Lake Carnegie",
+   "name_en": "Lake Carnegie",
+   "kind": "lake",
+   "quote": "At the southern edge of the campus is Lake Carnegie, an artificial lake named for Andrew Carnegie.",
+   "look": "Artificial lake at the southern edge of campus with a rowing center.",
+   "check": 0.8754745378715026,
+   "confidence": 0.8754745378715026,
+   "passed": true,
+   "x": 0.4,
+   "y": 0.89
+  },
+  {
+   "name": "Firestone Library",
+   "name_en": "Firestone Library",
+   "kind": "library",
+   "quote": "with the construction of Firestone Library in 1948",
+   "look": "Large university library building, plain if unknown.",
+   "check": 0.9697709775244167,
+   "confidence": 0.9697709775244167,
+   "passed": true,
+   "x": 0.78,
+   "y": 0.17
+  },
+  {
+   "name": "Princeton University Art Museum",
+   "name_en": "Princeton University Art Museum",
+   "kind": "museum",
+   "quote": "the Princeton University Art Museum was not officially established until 1882",
+   "look": "University art museum building, plain if unknown.",
+   "check": 0.9754127482601086,
+   "confidence": 0.9754127482601086,
+   "passed": true,
+   "x": 0.84,
+   "y": 0.39
+  },
+  {
+   "name": "Cannon Green",
+   "name_en": "Cannon Green",
+   "kind": "quad",
+   "quote": "To the south of Nassau Hall lies a courtyard that is known as Cannon Green.",
+   "look": "Courtyard south of Nassau Hall with a cannon buried in the center.",
+   "check": 0.9688362740969293,
+   "confidence": 0.9688362740969293,
+   "passed": true,
+   "x": 0.5,
+   "y": 0.46
+  },
+  {
+   "name": "Princeton Stadium",
+   "name_en": "Princeton Stadium",
+   "kind": "stadium",
+   "quote": "between Peyton and Fine halls next to Princeton Stadium and the Lewis Library.",
+   "look": "University stadium next to Lewis Library, plain if unknown.",
+   "check": 0.9811854407297368,
+   "confidence": 0.9811854407297368,
+   "passed": true,
+   "x": 0.86,
+   "y": 0.73
+  },
+  {
+   "name": "Lewis Library",
+   "name_en": "Lewis Library",
+   "kind": "library",
+   "quote": "Several prominent architects have contributed some more recent additions, including Frank Gehry (Lewis Library)",
+   "look": "Modern library building designed by Frank Gehry.",
+   "check": 0.9781643041233364,
+   "confidence": 0.9781643041233364,
+   "passed": true
+  },
+  {
+   "name": "Whig Hall",
+   "name_en": "Whig Hall",
+   "kind": "hall",
+   "quote": "A second \"Little Cannon\" is buried in the lawn in front of nearby Whig Hall.",
+   "look": "Campus hall with a lawn in front holding a buried cannon.",
+   "check": 0.979232091186071,
+   "confidence": 0.979232091186071,
+   "passed": true
+  }
+ ],
+ "tokens": 17792,
+ "seconds": 35
+}

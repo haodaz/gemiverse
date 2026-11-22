@@ -1,0 +1,104 @@
+{
+ "school": "stanford",
+ "name": "Stanford University",
+ "at": "2026-11-22T12:42:38.719Z",
+ "source": "https://en.wikipedia.org/wiki/Stanford%20University",
+ "character": "The campus features one-storied Mission Revival and English-style buildings with dark red tiled roofs, a seasonal lake, and sculpture gardens.",
+ "map": "/art/map/stanford.jpg",
+ "landmarks": [
+  {
+   "name": "Main Quad",
+   "name_en": "Main Quad",
+   "kind": "quad",
+   "quote": "Contemporary campus landmarks include the Main Quad and Memorial Church,",
+   "look": "A large central quadrangle surrounded by one-storied, dark-red-tiled buildings.",
+   "check": 0.9696170462267198,
+   "confidence": 0.9696170462267198,
+   "passed": true,
+   "x": 0.5,
+   "y": 0.51
+  },
+  {
+   "name": "Hoover Tower",
+   "name_en": "Hoover Tower",
+   "kind": "tower",
+   "quote": "the Stanford Mausoleum with the nearby Angel of Grief, Hoover Tower,",
+   "look": "A tall, plain campus tower.",
+   "check": 0.9762928557627297,
+   "confidence": 0.9762928557627297,
+   "passed": true,
+   "x": 0.3,
+   "y": 0.17
+  },
+  {
+   "name": "Green Library",
+   "name_en": "Green Library",
+   "kind": "library",
+   "quote": "The main library in the SU library system is the Green Library,",
+   "look": "A large main university library building with reading rooms.",
+   "check": 0.982845807137415,
+   "confidence": 0.982845807137415,
+   "passed": true,
+   "x": 0.73,
+   "y": 0.76
+  },
+  {
+   "name": "Cantor Center for Visual Arts",
+   "name_en": "Cantor Center for Visual Arts",
+   "kind": "museum",
+   "quote": "Stanford is home to the Cantor Center for Visual Arts, a museum",
+   "look": "A museum with galleries, terraces, a courtyard, and sculpture gardens.",
+   "check": 0.9775111986201982,
+   "confidence": 0.9775111986201982,
+   "passed": true,
+   "x": 0.82,
+   "y": 0.31
+  },
+  {
+   "name": "Lake Lagunita",
+   "name_en": "Lake Lagunita",
+   "kind": "lake",
+   "quote": "The central campus includes a seasonal lake (Lake Lagunita, an irrigation reservoir),",
+   "look": "A seasonal lake and irrigation reservoir, sometimes dry or filled with water.",
+   "check": 0.9608474873019072,
+   "confidence": 0.9608474873019072,
+   "passed": true,
+   "x": 0.11,
+   "y": 0.52
+  },
+  {
+   "name": "Bing Concert Hall",
+   "name_en": "Bing Concert Hall",
+   "kind": "hall",
+   "quote": "the Cantor Center for Visual Arts and the Bing Concert Hall,",
+   "look": "A plain campus concert hall building.",
+   "check": 0.9802243331587605,
+   "confidence": 0.9802243331587605,
+   "passed": true,
+   "x": 0.24,
+   "y": 0.79
+  },
+  {
+   "name": "Rodin Sculpture Garden",
+   "name_en": "Rodin Sculpture Garden",
+   "kind": "garden",
+   "quote": "Hoover Tower, the Rodin Sculpture Garden, the Papua New Guinea Sculpture Garden,",
+   "look": "An outdoor garden displaying sculptures.",
+   "check": 0.9841399116301829,
+   "confidence": 0.9841399116301829,
+   "passed": true
+  },
+  {
+   "name": "Papua New Guinea Sculpture Garden",
+   "name_en": "Papua New Guinea Sculpture Garden",
+   "kind": "garden",
+   "quote": "The Papua New Guinea Sculpture Garden near Roble Hall features wood carvings and \"totem poles\".",
+   "look": "An outdoor garden featuring wood carvings and totem poles.",
+   "check": 0.9704354895859898,
+   "confidence": 0.9704354895859898,
+   "passed": true
+  }
+ ],
+ "tokens": 17727,
+ "seconds": 38
+}
